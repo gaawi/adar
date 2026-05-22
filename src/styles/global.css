@@ -1913,9 +1913,9 @@ html, body{ overflow-x: hidden; }
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  height: 100vh;
-  max-height: 880px;
-  min-height: 520px;
+  height: 50vh;
+  max-height: 440px;
+  min-height: 280px;
   aspect-ratio: auto;
   object-fit: cover;
   object-position: center;
@@ -1925,8 +1925,8 @@ html, body{ overflow-x: hidden; }
 }
 @media (max-width: 900px){
   .adar-archive-page .adar-archive-cover{
-    height: 70vh;
-    min-height: 380px;
+    height: 40vh;
+    min-height: 220px;
   }
 }
 
@@ -1940,10 +1940,13 @@ html, body{ overflow-x: hidden; }
 
 .adar-archive-page .adar-archive-right{
   position: absolute;
-  top: calc(100vh + 60px);
+  top: calc(50vh + 60px);
   right: max(32px, calc((100% - 1200px) / 2 + 32px));
   width: 320px;
   z-index: 3;
+}
+@supports (top: min(50vh, 440px)){
+  .adar-archive-page .adar-archive-right{ top: calc(min(50vh, 440px) + 60px); }
 }
 @media (max-width: 1100px){
   .adar-archive-page .adar-archive-right{
