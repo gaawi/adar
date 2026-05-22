@@ -1533,6 +1533,123 @@ body.has-header-image #content{
 }
 
 /* =============================================================
+   ADAR MOBILE NAVIGATION (hamburger + slide-down panel)
+   ============================================================= */
+.adar-nav-toggle{
+  display: none;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin-left: auto;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  z-index: 1001;
+  appearance: none;
+}
+.adar-nav-toggle-bar{
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform .25s ease, opacity .2s ease, top .25s ease;
+}
+.adar-nav-toggle-bar:nth-child(1){ top: 14px; }
+.adar-nav-toggle-bar:nth-child(2){ top: 21px; }
+.adar-nav-toggle-bar:nth-child(3){ top: 28px; }
+.adar-nav-open .adar-nav-toggle-bar:nth-child(1){
+  top: 21px;
+  transform: rotate(45deg);
+}
+.adar-nav-open .adar-nav-toggle-bar:nth-child(2){
+  opacity: 0;
+}
+.adar-nav-open .adar-nav-toggle-bar:nth-child(3){
+  top: 21px;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 900px){
+  .adar-nav-toggle{ display: block; }
+
+  .header-navigation-wrapper{
+    position: fixed;
+    inset: 0;
+    background: rgba(15,17,20,0.96);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transform: translateY(-100%);
+    transition: transform .35s cubic-bezier(.22,.61,.36,1);
+    z-index: 1000;
+    overflow-y: auto;
+    padding: 80px 24px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .header-navigation-wrapper.is-open{
+    transform: translateY(0);
+  }
+  .header-navigation-wrapper .primary-menu-wrapper{
+    width: 100%;
+  }
+  .header-navigation-wrapper ul.nav,
+  .header-navigation-wrapper ul.nav ul.sub-menu{
+    display: block !important;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: static;
+    background: transparent;
+    box-shadow: none;
+  }
+  .header-navigation-wrapper ul.nav > li{
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+  }
+  .header-navigation-wrapper ul.nav > li > a{
+    display: block;
+    padding: 14px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff !important;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .header-navigation-wrapper ul.sub-menu{
+    padding-left: 14px !important;
+    padding-bottom: 8px;
+  }
+  .header-navigation-wrapper ul.sub-menu li a{
+    display: block;
+    padding: 8px 0;
+    font-size: 15px;
+    color: rgba(255,255,255,0.8) !important;
+  }
+  .header-navigation-wrapper .svg-icon-angle-down{
+    float: right;
+    margin-top: 6px;
+  }
+  .header-navigation-wrapper .adar-header-lang{
+    margin-top: 22px;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 14px;
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    justify-content: flex-start;
+  }
+  body.adar-nav-open{
+    overflow: hidden;
+  }
+}
+
+/* =============================================================
    ADAR HEADER LANG SWITCHER
    ============================================================= */
 .adar-header-lang{
@@ -1786,14 +1903,16 @@ body.single-post .adar-archive-page{
   display: block;
 }
 
-/* COVER: full-viewport hero, escapes the layout container */
+/* COVER: full-viewport hero, escapes the layout container.
+   Uses the calc(50% - 50vw) margin pattern so it aligns with the
+   viewport edges regardless of the parent's width. */
+html, body{ overflow-x: hidden; }
+
 .adar-archive-page .adar-archive-cover{
   position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
   width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   height: 100vh;
   max-height: 880px;
   min-height: 520px;
