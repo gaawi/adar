@@ -23,13 +23,16 @@ translation_group: "pll_69b0256533f1b"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/Festival%20ADAR%20Photos/2023/06%20concierto%20grado/image5.jpg" alt="Concierto - Palacio de Miranda-Valdecarzana - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert at the Palacio de Miranda-Valdecarzana (Grado, 2023)</h1>
-
 <p class="adar-archive-lede">
 Grado consolidated its position as an important venue for the ADAR Festival in its third edition, with several events concentrated in a single day. The Palacio de Miranda-Valdecarzana once again welcomed the festival musicians, this time with a programme focused on Spanish and European chamber music.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

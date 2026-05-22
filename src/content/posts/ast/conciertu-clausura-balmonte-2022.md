@@ -23,13 +23,16 @@ translation_group: "pll_69b025645645c"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/Festival%20ADAR%20Photos/2022/concierto%20belmonte/PXL_20220813_175723812.jpg" alt="Conciertu de clausura - Belmonte de Miranda - ADAR 2022" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu de clausura en Belmonte de Miranda (2022)</h1>
-
 <p class="adar-archive-lede">
 Como zarru de la segunda edición del Festival ADAR, los músicos presentaron el so últimu conciertu na capital del conceyu onde s'alcuentra la sede de l'asociación: Balmonte de Miranda. Nun escenariu circular asitiáu nel parque del pueblu, la música de cámara fundióse col soníu del ríu y la natura arrodiente.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

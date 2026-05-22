@@ -23,13 +23,16 @@ translation_group: "pll_69b02565d1e7c"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar24fx30/12/IMG_0203.jpg" alt="Concierto - Monasterio de San Salvador - Cornellana - ADAR 2024" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert at the Monastery of San Salvador (Cornellana)</h1>
-
 <p class="adar-archive-lede">
 As part of the ADAR Festival 2024 and the millennium commemoration of the Monastery of San Salvador de Cornellana, the festival musicians presented a concert in this historic setting in Salas. The audience surrounded the performers, turning the evening into an intimate experience.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

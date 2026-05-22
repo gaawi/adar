@@ -22,14 +22,16 @@ translation_group: "pll_69b025646f028"
 <div class="adar-archive-header">
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_artistica_de_luz_y_proyecciones_Mizuko_Kaji/42.jpg" alt="Instalación artística de luz y proyecciones - Mizuko Kaji - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Instalación artística de luz y proyecciones (Mizuko Kaji)</h1>
-
-
 <p class="adar-archive-lede">
 Como nueva iniciativa del Festival ADAR, en 2023 se empezó a presentar instalaciones artísticas de artistas internacionales, como la arquitecto y diseñadora de escenografías Mizuko Kaji.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

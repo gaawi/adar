@@ -23,13 +23,16 @@ translation_group: "pll_69b02567369bf"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC00981.jpg" alt="Concierto en el Monasterio de Obona" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu nel Monasteriu d'Obona, Tinéu</h1>
-
 <p class="adar-archive-lede">
 El Festival ADAR 2025 llegó al Monasteriu de Santa María la Real d'Obona, en Tinéu, nun conciertu qu'agotó toles llocalidaes. Nesti enclave históricu, l'ensemble del festival interpretó un programa qu'unió refinamientu barrocu, folclore estilizáu y una poderosa narrativa musical.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <!-- (contenido intacto) -->

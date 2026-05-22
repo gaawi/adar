@@ -23,13 +23,16 @@ translation_group: "pll_69b0256398606"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/08_Concierto_visual_en_El_Franco/PXL_20220808_201603027~2.jpg" alt="Concierto visual - El Franco - ADAR 2022" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto visual en El Franco</h1>
-
 <p class="adar-archive-lede">
 El Complejo Cultural As Quintas, en El Franco, acogió el concierto inaugural de la segunda edición del Festival ADAR. Una velada que marcó un salto cualitativo en la propuesta del festival, con seis conciertos programados y una dimensión visual que transformó el auditorio en un espacio escénico envolvente.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

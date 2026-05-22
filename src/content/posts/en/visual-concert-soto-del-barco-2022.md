@@ -23,13 +23,16 @@ translation_group: "pll_69b02563b742f"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/09_Concierto_visual_en_Soto_del_Barco/PXL_20220809_190711391.jpg" alt="Visual concert - Soto del Barco - ADAR 2022" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Visual concert en Soto del Barco</h1>
-
 <p class="adar-archive-lede">
 The Teatro Clarín in Soto del Barco welcomed the musicians of the second edition of the ADAR Festival with a fresh and innovative programme. With a full house, the audience enjoyed a concert combining classical and contemporary repertoire, accompanied by a projection design that transformed the stage.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

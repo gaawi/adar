@@ -23,13 +23,16 @@ translation_group: "pll_69b0256533f1b"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/Festival%20ADAR%20Photos/2023/06%20concierto%20grado/image5.jpg" alt="Concierto - Palacio de Miranda-Valdecarzana - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto en el Palacio de Miranda-Valdecarzana (Grado, 2023)</h1>
-
 <p class="adar-archive-lede">
 Grado se consolidó como sede importante del Festival ADAR en su tercera edición, con varios eventos concentrados en un solo día. El Palacio de Miranda-Valdecarzana acogió de nuevo a los músicos del festival, esta vez con un programa centrado en la música española y europea de cámara.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

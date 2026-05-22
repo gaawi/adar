@@ -23,13 +23,16 @@ translation_group: "pll_69b025678d4ce"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg" alt="Paseu sonoru - Claustro del Parador de Corias - ADAR 2025" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Paseu sonoru en el Claustro del Parador de Corias</h1>
-
 <p class="adar-archive-lede">
 Como parte de la quinta edición del Festival ADAR, los músicos distribuyéronse pol Claustru del Parador de Corias pa ufiertar un paseu sonoru nel que Bach y Mozart resonaron ente les arcaes d'esti antiguu monasteriu benedictinu.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

@@ -23,13 +23,16 @@ translation_group: "pll_69b0256701e55"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg" alt="Paseo Sonoro en Leiguarda" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Paseu Sonoru en Lleiguarda</h1>
-
 <p class="adar-archive-lede">
 El Festival ADAR propunxo nesta xornada una esperiencia sonora en movimientu: un paseu guiáu dende l'horru sede del festival hasta la ilesia de Lleiguarda, acompañaos por música en vivu. La combinación del paisaxe natural, el recorríu nocturnu y el repertoriu solista tresformó esta actividá nun ritual íntimu d'escucha y conexón col entornu.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 

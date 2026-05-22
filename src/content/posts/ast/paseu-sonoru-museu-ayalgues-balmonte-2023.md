@@ -23,13 +23,16 @@ translation_group: "pll_69b025658f71e"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg" alt="Paseu sonoru - Museo de las Ayalgas - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Paseu sonoru en el Museo de las Ayalgas (Belmonte de Miranda)</h1>
-
 <p class="adar-archive-lede">
 El Museu de les Ayalgues de Silviella, una de les mayores atraiciones culturales de la zona, acoyó a los músicos del Festival ADAR pa un paseu sonoru onde les pieces históriques de la vida rural amestábense cola música de Bach y Mozart.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

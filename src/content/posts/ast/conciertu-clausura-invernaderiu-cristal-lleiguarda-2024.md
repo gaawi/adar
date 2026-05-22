@@ -23,13 +23,16 @@ translation_group: "pll_69b025668a0a7"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/image15.jpg" alt="Conciertu de clausura - Invernadero de cristal - Leiguarda - ADAR 2024" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu de clausura en el Invernadero de cristal (Leiguarda, 2024)</h1>
-
 <p class="adar-archive-lede">
 La cuarta edición del Festival ADAR zarróse con un conciertu nun invernaderiu de cristal construyíu espresamente pa la ocasión en Lleiguarda. Asitiáu nun terrenu detrás de la Ilesia, cedíu por unu de los vecinos, l'invernaderiu permitía al públicu esfrutar de les montañes como telón de fondu ensin perder la cercanía colos músicos.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

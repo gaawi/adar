@@ -23,13 +23,16 @@ translation_group: "pll_69b025637e009"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg" alt="Conciertu d'Inauguración - Lleiguarda - ADAR 2021" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu d'Inauguración en Lleiguarda</h1>
-
 <p class="adar-archive-lede">
 El 14 d'agostu de 2021, nel campu de la Ilesia de Lleiguarda, tuvo llugar el primer conciertu del Festival ADAR. Aquella nueche, acompañada pol orbayinu asturianu, más de 120 persones axuntáronse pa presenciar la nacencia d'un proyeutu cultural qu'aspiraba a devolver la música de cámara a les zones rurales d'Asturies.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

@@ -24,15 +24,18 @@ translation_group: "pll_69b02567d035d"
 <div class="adar-archive-left">
 
 <!-- COVER (panorámico, se recorta con CSS del template) -->
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg" alt="Evento de Clausura en Leiguarda - Concert and cider tasting" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Evento de Clausura en Leiguarda: Concert and cider tasting</h1>
-
 <p class="adar-archive-lede">
 The ADAR Festival 2025 culminates with a musical journey through two emblematic spaces in Leiguarda: the village church and its outdoor scenic greenhouse.
 This divided closing proposes two complementary atmospheres: the introspection of the solo piano repertoire under the church vault, and the celebration
 of contemporary chamber music in the heart of nature.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

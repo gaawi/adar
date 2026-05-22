@@ -22,13 +22,16 @@ translation_group: "pll_69b02564ab184"
 <div class="adar-archive-header">
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Paseo_sonoro_El_Franco/01.jpg" alt="Paseu sonoru - El Franco - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Paseu sonoru (El Franco)</h1>
-
 <p class="adar-archive-lede">
 Enantes del conciertu nel Auditoriu As Quintas, el pueblu d'El Francu averóse a la Plaza del Conceyu y al Parque María Cristina, onde los músicos interpretaron pieces de Bach en diferentes esquines.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

@@ -23,13 +23,16 @@ translation_group: "pll_69b025671d38d"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Micro-Concierto en Puerma (Las Regueras)" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Micro Conciertu en Puerma (Les Regueres)</h1>
-
 <p class="adar-archive-lede">
 Nel marcu del Concursu d'Hórreos y Paneres impulsáu pol Festival ADAR na primavera de 2025, esti micro conciertu tuvo llugar nuna de les estructures tradicionales seleicionaes pol so valor arquitectónicu, el so entornu y el so potencial escénicu.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <!-- (texto intacto) -->

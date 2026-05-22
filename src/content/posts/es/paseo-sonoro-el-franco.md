@@ -22,13 +22,16 @@ translation_group: "pll_69b02564ab184"
 <div class="adar-archive-header">
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Paseo_sonoro_El_Franco/01.jpg" alt="Paseo sonoro - El Franco - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Paseo sonoro (El Franco)</h1>
-
 <p class="adar-archive-lede">
 Antes del concierto en el Auditorio As Quintas, el pueblo de El Franco se acercó a la Plaza del Ayuntamiento y al Parque María Cristina, donde los músicos interpretaron piezas de Bach en diferentes esquinas.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

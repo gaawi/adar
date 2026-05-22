@@ -23,13 +23,16 @@ translation_group: "pll_69b025654eb98"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Micro_concierto_en_la_Capilla_de_los_Dolores_Grado_2023/31.jpg" alt="Micro concierto - Capilla de los Dolores - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Micro concierto en la Capilla de los Dolores (Grado, 2023)</h1>
-
 <p class="adar-archive-lede">
 Como parte de la intensa jornada del Festival ADAR en Grado, Guillermo Laporta ofreció un micro concierto en solitario en la Capilla de los Dolores, interpretando <em>Rekindle</em> de Michel van der Aa. Un formato íntimo que anticipaba la vocación del festival por activar pequeños espacios patrimoniales con música contemporánea.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

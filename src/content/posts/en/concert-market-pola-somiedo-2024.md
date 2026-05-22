@@ -23,14 +23,17 @@ translation_group: "pll_69b02565ee20e"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_02_03.jpg" alt="Concierto en el Mercado de Pola de Somiedo" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert at the Market of Pola de Somiedo</h1>
-
 <p class="adar-archive-lede">
 The ADAR Festival arrived in Pola de Somiedo with a chamber programme combining contemporary creation,
 classicism and baroque intensity, in a concert held at the town's Market.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-video">
 <div style="position:relative;padding-top:56.25%">

@@ -22,13 +22,16 @@ translation_group: "pll_69b02564c9ca6"
 <div class="adar-archive-header">
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg" alt="Concierto - El Franco - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu n'El Francu</h1>
-
 <p class="adar-archive-lede">
 Como segunda parte del día n'El Francu, los músicos d'ADAR presentaron un programa bien centráu na música española, arrodiaos polos tules diseñaos pola artista xaponesa Mizuko Kaji.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

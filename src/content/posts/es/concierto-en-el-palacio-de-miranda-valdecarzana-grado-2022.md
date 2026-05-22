@@ -23,13 +23,16 @@ translation_group: "pll_69b0256426431"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/12_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2022/PXL_20220812_184621365~2.jpg" alt="Concierto - Palacio de Miranda-Valdecarzana - ADAR 2022" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto en el Palacio de Miranda-Valdecarzana (Grado, 2022)</h1>
-
 <p class="adar-archive-lede">
 El Palacio de Miranda-Valdecarzana, uno de los escenarios más singulares que han acogido a los músicos del Festival ADAR, abrió sus puertas para una velada de música de cámara que agotó todas las plazas disponibles. Fue la primera de las muchas noches que el Festival celebraría en este emblemático palacio de Grado.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

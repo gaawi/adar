@@ -24,15 +24,18 @@ translation_group: "pll_69b02567d035d"
 <div class="adar-archive-left">
 
 <!-- COVER (panorámico, se recorta con CSS del template) -->
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg" alt="Evento de Clausura en Leiguarda - Conciertu y espicha" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Evento de Clausura en Leiguarda: Conciertu y espicha</h1>
-
 <p class="adar-archive-lede">
 El Festival ADAR 2025 culmina con un percorríu musical en dos espacios emblemáticos de Lleiguarda: la ilesia del pueblu y el so invernaderiu escénicu al aire llibre.
 Esta clausura dividida propón dos atmósferes complementaries: la introspección del repertoriu pa pianu solo baxo la bóveda de la ilesia, y la celebración
 colectiva de la música de cámara contemporánea en plena naturaleza.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

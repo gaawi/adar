@@ -23,15 +23,18 @@ translation_group: "pll_69b02566a96fa"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/05_Micro-Concierto_en_Susacasa_Agrocultural/C1575T01.jpg" alt="Micro-Concierto en Susacasa Agrocultural, Gozón" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">
 Micro-Concierto en Susacasa Agrocultural (Gozón)
 </h1>
-
 <p class="adar-archive-lede">
 El Festival ADAR 2025 inició su recorrido en Susacasa Agrocultural, un espacio de permacultura donde territorio, comunidad y creación artística conviven de forma orgánica. Este micro-concierto tuvo lugar en uno de los hórreos seleccionados dentro del concurso de hórreos y paneras impulsado por el festival.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

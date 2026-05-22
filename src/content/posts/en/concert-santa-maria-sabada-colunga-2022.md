@@ -23,13 +23,16 @@ translation_group: "pll_69b02563da4c2"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/10_Concierto_en_la_Iglesia_de_Santa_Maria_de_Sabada_Colunga/PXL_20220810_175359505.jpg" alt="Concierto - Iglesia de Santa María de Sabada - ADAR 2022" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert at the Church of Santa María de Sabada (Colunga)</h1>
-
 <p class="adar-archive-lede">
 The Church of Santa María de Sabada in Lastres offered exceptional acoustics for the third concert of the second edition of the ADAR Festival. In this historic setting in Colunga, a devoted audience enjoyed a programme featuring music by Brahms, Dvořák, Mozart, Caroline Shaw, and JP Jofre.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

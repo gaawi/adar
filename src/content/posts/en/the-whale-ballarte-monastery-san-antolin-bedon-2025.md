@@ -23,13 +23,16 @@ translation_group: "pll_69b02566c2c19"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/07_The_Whale_Ballarte_en_el_Monasterio_de_San_Antolin_de_Bedon/DSC00382.jpg" alt="The Whale - Ballarte - Monasterio de San Antolín de Bedón - ADAR 2025" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">The Whale (Ballarte) at the Monastery of San Antolín de Bedón</h1>
-
 <p class="adar-archive-lede">
 After a week as invited resident artists at the 2025 edition of the ADAR Festival, the Ballarte ensemble filled the Monastery of San Antolín de Bedón with magic and early music through <em>The Whale</em>, a multidisciplinary show based on a story written by Giulio Tanasini.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

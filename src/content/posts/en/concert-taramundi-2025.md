@@ -23,13 +23,16 @@ translation_group: "pll_69b0256754eb0"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01007.jpg" alt="Concierto en Taramundi" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert in Taramundi</h1>
-
 <p class="adar-archive-lede">
 The ADAR Festival 2025 arrived in Taramundi with a chamber concert at the Church of Taramundi. In this intimate space, the festival soloists performed a programme uniting baroque refinement, stylised folklore, and sonic painting in an ensemble format that highlighted timbral richness and interaction between performers.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

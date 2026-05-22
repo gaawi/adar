@@ -23,13 +23,16 @@ translation_group: "pll_69b025651736a"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/28.jpg" alt="Paseu sonoru - Palacio Fontela - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Paseu sonoru en el Palacio Fontela (Grado)</h1>
-
 <p class="adar-archive-lede">
 Col deséu de llevar la música clásica a entornos únicos y dar vida a habitaciones históriques, el Festival ADAR presentó un paseu sonoru nel Museu Etnográficu del Palaciu Fontela. Los músicos interpretaron arrodiaos de muebles antiguos y de la boticaria d'una farmacia d'époques pasaes.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

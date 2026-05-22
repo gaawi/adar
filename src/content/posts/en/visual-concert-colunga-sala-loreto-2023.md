@@ -23,13 +23,16 @@ translation_group: "pll_69b025656e325"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/11_Concierto_visual_en_Colunga_Sala_Loreto/48.jpg" alt="Visual concert - Sala Loreto - Colunga - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Visual concert en Colunga (Sala Loreto)</h1>
-
 <p class="adar-archive-lede">
 In the third edition of the ADAR Festival, Colunga offered a very different venue from the previous year. The Sala Loreto allowed an immersive projection design that completely surrounded the musicians, immersing the audience in a unique visual and sonic experience.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

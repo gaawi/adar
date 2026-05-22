@@ -23,13 +23,16 @@ translation_group: "pll_69b025678d4ce"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg" alt="Sound walk - Claustro del Parador de Corias - ADAR 2025" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Sound walk en el Claustro del Parador de Corias</h1>
-
 <p class="adar-archive-lede">
 As part of the fifth edition of the ADAR Festival, the musicians spread through the Cloister of the Parador de Corias to offer a sound walk in which Bach and Mozart resonated among the arcades of this former Benedictine monastery.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

@@ -23,13 +23,16 @@ translation_group: "pll_69b02565aa275"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/02.jpg" alt="Concierto visual de clausura - Leiguarda - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto visual de clausura en Leiguarda (2023)</h1>
-
 <p class="adar-archive-lede">
 La tercera edición del Festival ADAR se cerró con un concierto visual al aire libre en el campo detrás de la Iglesia de Leiguarda. El emblemático escenario con marco amarillo, que ya había sido protagonista de la inauguración en 2021, regresó como símbolo del festival en una noche que reunía música, proyecciones y comunidad.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

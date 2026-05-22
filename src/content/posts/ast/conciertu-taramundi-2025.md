@@ -23,13 +23,16 @@ translation_group: "pll_69b0256754eb0"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01007.jpg" alt="Concierto en Taramundi" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu en Taramundi</h1>
-
 <p class="adar-archive-lede">
 El Festival ADAR 2025 llegó a Taramundi con un conciertu de cámara na Ilesia de Taramundi. Nesti espaciu íntimu, los solistes del festival interpretaron un programa qu'unió refinamientu barrocu, folclore estilizáu y pintura sonora nun formatu d'ensemble que destacó la riqueza tímbrica y la interacción ente los intérpretes.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

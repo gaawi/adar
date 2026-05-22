@@ -23,13 +23,16 @@ translation_group: "pll_69b025671d38d"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Micro-Concierto en Puerma (Las Regueras)" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Micro Concert in Puerma (Las Regueras)</h1>
-
 <p class="adar-archive-lede">
 Within the framework of the Hórreo and Granary Contest launched by the ADAR Festival in spring 2025, this micro concert took place in one of the traditional structures selected for its architectural value, setting, and scenic potential.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <!-- (texto intacto) -->

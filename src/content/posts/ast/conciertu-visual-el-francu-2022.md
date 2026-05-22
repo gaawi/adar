@@ -23,13 +23,16 @@ translation_group: "pll_69b0256398606"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/08_Concierto_visual_en_El_Franco/PXL_20220808_201603027~2.jpg" alt="Conciertu visual - El Franco - ADAR 2022" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu visual en El Franco</h1>
-
 <p class="adar-archive-lede">
 El Compleju Cultural As Quintas, n'El Francu, acoyó'l conciertu inaugural de la segunda edición del Festival ADAR. Una velada que marcó un saltu cualitativu na propuesta del festival, con seis conciertos programaos y una dimensión visual que tresformó l'auditoriu nun espaciu escénicu envolvente.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

@@ -23,14 +23,17 @@ translation_group: "pll_69b02566185e2"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg" alt="Micro Conciertos en Leiguarda - Sede de ADAR y Hórreo Casantos" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Micro Conciertos y Paseo Sonoro en Leiguarda</h1>
-
 <p class="adar-archive-lede">
 Una noche de formatos íntimos en Leiguarda, con dos micro conciertos consecutivos y un paseo sonoro final acompañado de sidra,
 poniendo en diálogo la sede de ADAR y un hórreo tradicional como espacios escénicos.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-video">
 <div style="position:relative;padding-top:56.25%">

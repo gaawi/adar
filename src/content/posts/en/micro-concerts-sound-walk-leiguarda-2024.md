@@ -23,14 +23,17 @@ translation_group: "pll_69b02566185e2"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg" alt="Micro Conciertos en Leiguarda - Sede de ADAR y Hórreo Casantos" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Micro Concerts and Sound Walk in Leiguarda</h1>
-
 <p class="adar-archive-lede">
 A night of intimate formats in Leiguarda, with two consecutive micro concerts and a final sound walk accompanied by cider,
 placing ADAR's headquarters and a traditional hórreo in dialogue as performance spaces.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-video">
 <div style="position:relative;padding-top:56.25%">

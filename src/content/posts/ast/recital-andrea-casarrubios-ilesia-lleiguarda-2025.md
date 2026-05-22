@@ -24,13 +24,16 @@ translation_group: "pll_69b02567b23d9"
 <div class="adar-archive-left">
 
 <!-- COVER (panorámico, se recorta con CSS del template) -->
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01590.jpg" alt="Recital de Andrea Casarrubios en la Iglesia de Leiguarda" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Recital d'Andrea Casarrubios na Ilesia de Lleiguarda</h1>
-
 <p class="adar-archive-lede">
 Nesta velada del Festival ADAR 2025, la violonchelista y compositora Andrea Casarrubios protagonizó un recital na Ilesia de Lleiguarda. Formada ente España y Estaos Xuníos y apocayá nomada al Grammy pola so obra SEVEN, Casarrubios ufiertó una propuesta qu'unió virtuosismu interpretativu y una voz compositiva fondamente personal.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

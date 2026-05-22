@@ -23,13 +23,16 @@ translation_group: "pll_69b02565d1e7c"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar24fx30/12/IMG_0203.jpg" alt="Concierto - Monasterio de San Salvador - Cornellana - ADAR 2024" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu nel Monasteriu de San Salvador (Cornellana)</h1>
-
 <p class="adar-archive-lede">
 Como parte del Festival ADAR 2024 y de los actos de conmemoración del Milenariu del Monasteriu de San Salvador de Cornellana, los músicos del festival presentaron un conciertu nesti enclave históricu de Sales. L'audiencia arrodiaba a los intérpretes, convirtiendo la velada nuna esperiencia íntima y cercana.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

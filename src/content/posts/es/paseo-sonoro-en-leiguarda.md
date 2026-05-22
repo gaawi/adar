@@ -23,13 +23,16 @@ translation_group: "pll_69b0256701e55"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg" alt="Paseo Sonoro en Leiguarda" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Paseo Sonoro en Leiguarda</h1>
-
 <p class="adar-archive-lede">
 El Festival ADAR propuso en esta jornada una experiencia sonora en movimiento: un paseo guiado desde el hórreo sede del festival hasta la iglesia de Leiguarda, acompañados por música en vivo. La combinación del paisaje natural, el recorrido nocturno y el repertorio solista transformó esta actividad en un ritual íntimo de escucha y conexión con el entorno.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 

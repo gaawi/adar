@@ -23,13 +23,16 @@ translation_group: "pll_69b0256533f1b"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/Festival%20ADAR%20Photos/2023/06%20concierto%20grado/image5.jpg" alt="Concierto - Palacio de Miranda-Valdecarzana - ADAR 2023" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2023)</h1>
-
 <p class="adar-archive-lede">
 Grau consolidóse como sede importante del Festival ADAR na so tercera edición, con varios eventos concentraos nun solu día. El Palaciu de Miranda-Valdecarzana acoyó de nuevu a los músicos del festival, esta vegada con un programa centráu na música española y europea de cámara.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

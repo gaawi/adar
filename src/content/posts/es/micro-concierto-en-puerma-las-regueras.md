@@ -23,13 +23,16 @@ translation_group: "pll_69b025671d38d"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Micro-Concierto en Puerma (Las Regueras)" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Micro-Concierto en Puerma (Las Regueras)</h1>
-
 <p class="adar-archive-lede">
 En el marco del Concurso de Hórreos y Paneras impulsado por el Festival ADAR en la primavera de 2025, este micro-concierto tuvo lugar en una de las estructuras tradicionales seleccionadas por su valor arquitectónico, su entorno y su potencial escénico.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <!-- (texto intacto) -->

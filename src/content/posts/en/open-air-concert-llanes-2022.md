@@ -23,13 +23,16 @@ translation_group: "pll_69b025640585e"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/11_Concierto_en_Llanes/image59.jpg" alt="Concierto - Llanes - ADAR 2022" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concierto en Llanes</h1>
-
 <p class="adar-archive-lede">
 The Plaza Santa Ana in Llanes welcomed the ADAR Festival musicians as part of the town's festivities. A growing municipality, known for its beauty and vitality, enthusiastically received a classical music proposal in the open air that integrated classical and contemporary repertoire.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

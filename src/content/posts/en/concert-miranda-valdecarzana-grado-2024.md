@@ -23,13 +23,16 @@ translation_group: "pll_69b025663352f"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/20.jpg" alt="Concierto - Palacio de Miranda-Valdecarzana - ADAR 2024" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert at the Palacio de Miranda-Valdecarzana (Grado, 2024)</h1>
-
 <p class="adar-archive-lede">
 For the third consecutive year, the Palacio de Miranda-Valdecarzana in Grado hosted the ADAR Festival. In this edition, Grado became the festival's second home, presenting three different events in a single evening developed by the guest artists.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

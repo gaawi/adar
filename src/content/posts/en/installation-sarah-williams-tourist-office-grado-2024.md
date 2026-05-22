@@ -23,13 +23,16 @@ translation_group: "pll_69b02566549fe"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/17_Instalacion_site_specific_de_sara_k_william/image20.jpg" alt="Instalación Sarah K. Williams - Oficina de Turismo - Grado - ADAR 2024" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Sarah K. Williams Installation at the Tourist Office (Grado)</h1>
-
 <p class="adar-archive-lede">
 Visual artist Sarah K. Williams, based in New York and guest artist of the 2024 edition of the ADAR Festival, transformed a disused cubicle at the Grado Tourist Office into an artwork that integrated food as part of the piece, offering attendees an experience that transcended the visual.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

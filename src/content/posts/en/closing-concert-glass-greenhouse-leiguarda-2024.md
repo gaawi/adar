@@ -23,13 +23,16 @@ translation_group: "pll_69b025668a0a7"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/image15.jpg" alt="Closing concert - Invernadero de cristal - Leiguarda - ADAR 2024" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Closing concert en el Invernadero de cristal (Leiguarda, 2024)</h1>
-
 <p class="adar-archive-lede">
 The fourth edition of the ADAR Festival closed with a concert in a glass greenhouse built expressly for the occasion in Leiguarda. Located on a plot behind the Church, lent by one of the neighbours, the greenhouse allowed the audience to enjoy the mountains as a backdrop without losing their closeness to the musicians.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

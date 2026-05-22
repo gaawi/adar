@@ -23,13 +23,16 @@ translation_group: "pll_69b02567369bf"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC00981.jpg" alt="Concierto en el Monasterio de Obona" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert at the Monastery of Obona, Tineo</h1>
-
 <p class="adar-archive-lede">
 The ADAR Festival 2025 arrived at the Monastery of Santa María la Real de Obona in Tineo, in a concert that sold out all seats. In this historic setting, the festival ensemble performed a programme uniting baroque refinement, stylised folklore, and a powerful musical narrative.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <!-- (contenido intacto) -->

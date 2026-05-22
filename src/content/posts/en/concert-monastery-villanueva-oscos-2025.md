@@ -23,13 +23,16 @@ translation_group: "pll_69b0256774159"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01456.jpg" alt="Concierto en el Monasterio de Villanueva de Oscos" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert at the Monastery of Villanueva de Oscos</h1>
-
 <p class="adar-archive-lede">
 The ADAR Festival 2025 arrived at the Monastery of Santa María de Villanueva de Oscos, a recently restored site that in 2024 unveiled new roofing after an ambitious conservation process. The Romanesque church and the sober monastic setting provided an exceptional framework for a chamber concert with the festival soloists.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

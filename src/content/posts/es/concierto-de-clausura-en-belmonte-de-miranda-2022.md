@@ -23,13 +23,16 @@ translation_group: "pll_69b025645645c"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/Festival%20ADAR%20Photos/2022/concierto%20belmonte/PXL_20220813_175723812.jpg" alt="Concierto de clausura - Belmonte de Miranda - ADAR 2022" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto de clausura en Belmonte de Miranda (2022)</h1>
-
 <p class="adar-archive-lede">
 Como cierre de la segunda edición del Festival ADAR, los músicos presentaron su último concierto en la capital del concejo donde se encuentra la sede de la asociación: Belmonte de Miranda. En un escenario circular situado en el parque del pueblo, la música de cámara se fundió con el sonido del río y la naturaleza circundante.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

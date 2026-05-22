@@ -23,13 +23,16 @@ translation_group: "pll_69b02566549fe"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/17_Instalacion_site_specific_de_sara_k_william/image20.jpg" alt="Instalación Sarah K. Williams - Oficina de Turismo - Grado - ADAR 2024" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Instalación de Sarah K. Williams en la Oficina de Turismo (Grado)</h1>
-
 <p class="adar-archive-lede">
 La artista visual Sarah K. Williams, residente en Nueva York y artista invitada de la edición 2024 del Festival ADAR, transformó un cubículo en desuso de la Oficina de Turismo de Grado en una pieza artística que integraba alimentos como parte de la obra, ofreciendo a los asistentes una experiencia que trascendía lo visual.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>

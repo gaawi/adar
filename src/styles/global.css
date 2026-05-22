@@ -1908,26 +1908,74 @@ body.single-post .adar-archive-page{
    viewport edges regardless of the parent's width. */
 html, body{ overflow-x: hidden; }
 
-.adar-archive-page .adar-archive-cover{
+/* HERO BLOCK: image + dark overlay + eyebrow + title + subtitle,
+   mirroring the Map of Actions page. */
+.adar-archive-page .adar-archive-hero{
   position: relative;
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  height: 50vh;
-  max-height: 440px;
-  min-height: 280px;
-  aspect-ratio: auto;
+  height: 65vh;
+  max-height: 620px;
+  min-height: 420px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+@media (max-width: 900px){
+  .adar-archive-page .adar-archive-hero{
+    height: 60vh;
+    min-height: 360px;
+  }
+}
+.adar-archive-page .adar-archive-cover{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
+  margin: 0;
   border-radius: 0;
-  box-shadow: none;
+  z-index: 0;
+}
+.adar-archive-page .adar-archive-hero::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(15,17,20,0.35) 0%,
+    rgba(15,17,20,0.50) 50%,
+    rgba(15,17,20,0.78) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+.adar-archive-page .adar-archive-hero-text{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px 80px;
+  color: #fff;
 }
 @media (max-width: 900px){
-  .adar-archive-page .adar-archive-cover{
-    height: 40vh;
-    min-height: 220px;
+  .adar-archive-page .adar-archive-hero-text{
+    padding: 0 20px 48px;
   }
+}
+.adar-archive-page .adar-archive-eyebrow{
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: #d6c280;
+  margin-bottom: 22px;
+  font-weight: 500;
 }
 
 /* INNER CONTENT: centered container starts BELOW the hero. The right
@@ -1940,13 +1988,13 @@ html, body{ overflow-x: hidden; }
 
 .adar-archive-page .adar-archive-right{
   position: absolute;
-  top: calc(50vh + 60px);
+  top: calc(65vh + 60px);
   right: max(32px, calc((100% - 1200px) / 2 + 32px));
   width: 320px;
   z-index: 3;
 }
-@supports (top: min(50vh, 440px)){
-  .adar-archive-page .adar-archive-right{ top: calc(min(50vh, 440px) + 60px); }
+@supports (top: min(65vh, 620px)){
+  .adar-archive-page .adar-archive-right{ top: calc(min(65vh, 620px) + 60px); }
 }
 @media (max-width: 1100px){
   .adar-archive-page .adar-archive-right{
@@ -1971,8 +2019,42 @@ html, body{ overflow-x: hidden; }
   .adar-archive-page .adar-archive-cover{ max-height: 70vh; }
 }
 
-/* TITLE: serif, large, with thin underline (below the hero, in flow) */
-.adar-archive-page .adar-archive-title{
+/* TITLE inside the hero: large serif, white */
+.adar-archive-page .adar-archive-hero .adar-archive-title{
+  position: static;
+  margin: 0 0 18px;
+  padding: 0;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(40px, 5.6vw, 78px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: #fff;
+  border-bottom: none;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.45);
+  background: none;
+  max-width: 16ch;
+}
+.adar-archive-page .adar-archive-hero .adar-archive-title em{
+  font-style: italic;
+  color: #d6c280;
+}
+
+/* LEDE inside the hero: subtitle on the gradient */
+.adar-archive-page .adar-archive-hero .adar-archive-lede{
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+  margin: 0;
+  color: rgba(255,255,255,0.88);
+  opacity: 1;
+  font-weight: 400;
+  max-width: 56ch;
+  text-shadow: 0 1px 10px rgba(0,0,0,0.4);
+}
+
+/* Title outside hero (fallback, in case some posts didn't get wrapped) */
+.adar-archive-page > .adar-archive-header > .adar-archive-left > .adar-archive-title{
   position: static;
   margin: 64px 0 18px;
   padding: 0 0 18px;
@@ -1980,26 +2062,8 @@ html, body{ overflow-x: hidden; }
   font-weight: 400;
   font-size: clamp(30px, 3.6vw, 46px);
   line-height: 1.12;
-  letter-spacing: -0.005em;
   color: #1a1c1f;
   border-bottom: 1px solid rgba(0,0,0,0.14);
-  text-shadow: none;
-  background: none;
-}
-@media (max-width: 900px){
-  .adar-archive-page .adar-archive-title{
-    margin-top: 40px;
-  }
-}
-
-/* LEDE */
-.adar-archive-page .adar-archive-lede{
-  font-size: 17px;
-  line-height: 1.7;
-  margin: 22px 0 26px;
-  color: #2b2f36;
-  opacity: 1;
-  font-weight: 400;
 }
 
 /* BODY */

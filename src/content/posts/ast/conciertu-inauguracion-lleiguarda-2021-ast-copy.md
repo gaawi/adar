@@ -23,13 +23,16 @@ translation_group: "pll_69b02567ea135"
 
 <div class="adar-archive-left">
 
+<div class="adar-archive-hero">
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg" alt="Opening Concert - Leiguarda - ADAR 2021" loading="lazy">
-
+<div class="adar-archive-hero-text">
+<span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu d'Inauguración en Lleiguarda (EN/AST)</h1>
-
 <p class="adar-archive-lede">
 On 14 August 2021, in the churchyard of Leiguarda, the first concert of the ADAR Festival took place. That evening, accompanied by a gentle Asturian mist, more than 120 people gathered to witness the birth of a cultural project with one ambitious goal: to bring chamber music back to the rural communities of Asturies.
 </p>
+</div>
+</div>
 
 <div class="adar-archive-body">
 <p>
