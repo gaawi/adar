@@ -1319,15 +1319,34 @@ form.submitting .wpcf7-spinner {
   .amp-chip { font-size: .65rem !important; padding: .25rem .5rem !important; }
 }
 
-/* Page-specific hero min-height tweaks */
-.adar-impact > .amp-hero { min-height: 80vh; }
-.adar-sede-v2 > .amp-hero { min-height: 55vh; }
-.adar-horreos-v2 > .amp-hero { min-height: 60vh; }
-.adar-contact > .amp-hero { min-height: 45vh; }
-.adar-team > .amp-hero { min-height: 55vh; }
-.adar-impact-v3 > .amp-hero { min-height: 65vh; }
-.adar-impact-v3[class*="open-call"] > .amp-hero { min-height: 65vh; }
-.qe4 > .amp-hero { min-height: 60vh; }
+/* Unified hero — every .amp-hero gets the same height, regardless of
+   the page wrapper class it lives inside. Match the Map of Actions
+   model so all pages have a consistent opening. */
+.amp-hero,
+.adar-impact > .amp-hero,
+.adar-sede-v2 > .amp-hero,
+.adar-horreos-v2 > .amp-hero,
+.adar-contact > .amp-hero,
+.adar-team > .amp-hero,
+.adar-impact-v3 > .amp-hero,
+.adar-impact-v3[class*="open-call"] > .amp-hero,
+.qe4 > .amp-hero {
+  min-height: 65vh;
+  max-height: 620px;
+}
+@media (max-width: 900px){
+  .amp-hero,
+  .adar-impact > .amp-hero,
+  .adar-sede-v2 > .amp-hero,
+  .adar-horreos-v2 > .amp-hero,
+  .adar-contact > .amp-hero,
+  .adar-team > .amp-hero,
+  .adar-impact-v3 > .amp-hero,
+  .adar-impact-v3[class*="open-call"] > .amp-hero,
+  .qe4 > .amp-hero {
+    min-height: 60vh;
+  }
+}
 
 /* ─── H1 global (tema Inspiro) ───────────────────────────── */
 .entry-content h1, .widget-area h1, h1:not(.entry-title):not(.page-title):not(.site-title) {
@@ -1945,10 +1964,10 @@ html, body{ overflow-x: hidden; }
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to bottom,
-    rgba(15,17,20,0.35) 0%,
-    rgba(15,17,20,0.50) 50%,
-    rgba(15,17,20,0.78) 100%
+    to top,
+    rgba(30, 61, 40, .92) 0%,
+    rgba(30, 61, 40, .65) 40%,
+    rgba(30, 61, 40, .30) 100%
   );
   z-index: 1;
   pointer-events: none;
@@ -1973,7 +1992,7 @@ html, body{ overflow-x: hidden; }
   font-size: 12px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: #d6c280;
+  color: var(--adar-gold, #d6c280);
   margin-bottom: 22px;
   font-weight: 500;
 }
