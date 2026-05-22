@@ -257,7 +257,7 @@
     },
     {
       "title": "Memoria d’Acciones",
-      "url": "https://festivaladar.com/ast/category/memoria-dacciones/",
+      "url": "/ast/category/memoria-dacciones/",
       "order": 11,
       "parent_id": 0,
       "item_id": 347,
@@ -413,7 +413,7 @@
     },
     {
       "title": "Catalogo de Acciones",
-      "url": "https://festivaladar.com/category/memoria-de-acciones/",
+      "url": "/es/category/memoria-de-acciones/",
       "order": 12,
       "parent_id": 0,
       "item_id": 124,

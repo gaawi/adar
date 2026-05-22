@@ -1494,6 +1494,45 @@ form.submitting .wpcf7-spinner {
 div#primary { max-width: 1200px !important; }
 
 /* =============================================================
+   TRANSPARENT HEADER OVER HERO
+   Applies on home, single posts, and any page whose template is
+   "full-width-transparent" — matches the original WP rules so the
+   masthead floats above .amp-hero / featured imagery.
+   ============================================================= */
+body.single-post header.site-header,
+body.single header.site-header,
+body.page-template-full-width-transparent header.site-header,
+body.home header.site-header,
+body.has-header-image header.site-header{
+  position: absolute !important;
+  top: 0; left: 0; width: 100%;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  z-index: 999;
+}
+body.single-post header.site-header a,
+body.single header.site-header a,
+body.page-template-full-width-transparent header.site-header a,
+body.home header.site-header a,
+body.has-header-image header.site-header a,
+body.single-post .navbar a,
+body.single .navbar a,
+body.page-template-full-width-transparent .navbar a,
+body.home .navbar a,
+body.has-header-image .navbar a{ color: #fff !important; }
+
+/* When the header floats, the page content needs to start at the top */
+body.single-post #content,
+body.single #content,
+body.page-template-full-width-transparent #content,
+body.home #content,
+body.has-header-image #content{
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* =============================================================
    ADAR HEADER LANG SWITCHER
    ============================================================= */
 .adar-header-lang{

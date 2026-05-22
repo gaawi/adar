@@ -50,6 +50,18 @@ if (group) {
 const isHome = entry.data.permalink === `/${lang}/adar/` ||
                entry.data.permalink === `/${lang}/adar-festival/` ||
                entry.data.permalink === `/${lang}/festival-adar/`;
+
+const isPost = entry.collection === 'posts';
+const bodyClasses = [
+  isPost ? 'single single-post' : 'page',
+  isHome
+    ? 'home page-template page-template-full-width-transparent inspiro-front-page'
+    : '',
+  'has-header-image',
+  `page-id-${entry.data.wp_id || ''}`,
+]
+  .filter(Boolean)
+  .join(' ');
 ---
 
 <BaseLayout
@@ -59,7 +71,7 @@ const isHome = entry.data.permalink === `/${lang}/adar/` ||
   permalink={entry.data.permalink}
   featuredImage={entry.data.featured_image}
   translations={translations}
-  bodyClass={`page-${entry.collection} ${isHome ? 'home page-template-default' : ''} page-id-${entry.data.wp_id || ''}`}
+  bodyClass={bodyClasses}
 >
   <div class="builder-wrap full-width">
     <article id={`post-${entry.data.wp_id || ''}`} class={`post-${entry.data.wp_id || ''} ${entry.collection === 'pages' ? 'page' : 'post'} type-${entry.collection === 'pages' ? 'page' : 'post'} status-publish hentry`}>
