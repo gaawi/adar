@@ -1,6 +1,6 @@
 ---
 import type { Lang } from '../i18n/strings.ts';
-import { HOME_SLUG } from '../i18n/strings.ts';
+import { HOME_SLUG, LANGS } from '../i18n/strings.ts';
 import menusJson from '../content/_menus.json';
 
 interface MenuItem {
@@ -16,9 +16,10 @@ interface MenuItem {
 interface Props {
   lang: Lang;
   currentPath?: string;
+  translations?: Partial<Record<Lang, string>>;
 }
 
-const { lang, currentPath = '' } = Astro.props;
+const { lang, currentPath = '', translations = {} } = Astro.props;
 
 const menuKey = lang;
 const flat: MenuItem[] = (menusJson as Record<string, MenuItem[]>)[menuKey] ?? [];
@@ -60,7 +61,7 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
           <img
             width="300"
             height="115"
-            src="https://creartbox-media-cdn.b-cdn.net/adarimages/logoadar-whitev6.png"
+            src="/logoadar.png"
             class="custom-logo"
             alt="Festival ADAR"
             decoding="async"
@@ -111,6 +112,21 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
             ))}
           </ul>
         </nav>
+
+        <div class="adar-header-lang" aria-label="Language">
+          {LANGS.map((l) => {
+            const href = translations[l] || `/${l}/${HOME_SLUG[l]}/`;
+            return (
+              <a
+                class={`adar-header-lang-link ${l === lang ? 'is-active' : ''}`}
+                href={href}
+                hreflang={l}
+              >
+                {l.toUpperCase()}
+              </a>
+            );
+          })}
+        </div>
       </div>
     </div>
   </div>

@@ -1492,6 +1492,48 @@ form.submitting .wpcf7-spinner {
 .memoria-pagination{ padding-bottom: 60px; }
 .memoria-empty{ padding: 30px 0; color: #666; }
 div#primary { max-width: 1200px !important; }
+
+/* =============================================================
+   ADAR HEADER LANG SWITCHER
+   ============================================================= */
+.adar-header-lang{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-left:18px;
+  padding-left:18px;
+  border-left:1px solid rgba(255,255,255,.18);
+}
+.adar-header-lang-link{
+  display:inline-block;
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.06em;
+  padding:4px 8px;
+  border-radius:4px;
+  color:rgba(255,255,255,.7);
+  text-decoration:none;
+  transition:color .15s ease, background .15s ease;
+}
+.adar-header-lang-link:hover{
+  color:#fff;
+  background:rgba(255,255,255,.08);
+}
+.adar-header-lang-link.is-active{
+  color:#fff;
+  background:rgba(255,255,255,.14);
+}
+@media (max-width:782px){
+  .adar-header-lang{
+    margin-left:0;
+    padding-left:0;
+    border-left:none;
+    border-top:1px solid rgba(255,255,255,.18);
+    padding-top:10px;
+    margin-top:6px;
+  }
+}
+
 /* =============================================================
    ADAR ARCHIVE PAGE (single post/archive layout)
    ============================================================= */
