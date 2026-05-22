@@ -23,10 +23,7 @@ translation_group: "pll_69b025671d38d"
 
 <div class="adar-archive-left">
 
-<img class="adar-archive-cover"
-src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg"
-alt="Micro-Concierto en Puerma (Las Regueras)"
-loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Micro-Concierto en Puerma (Las Regueras)" loading="lazy">
 
 <h1 class="adar-archive-title">Micro Conciertu en Puerma (Les Regueres)</h1>
 

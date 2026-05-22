@@ -23,10 +23,7 @@ translation_group: "pll_69b02567369bf"
 
 <div class="adar-archive-left">
 
-<img class="adar-archive-cover"
-src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC00981.jpg"
-alt="Concierto en el Monasterio de Obona"
-loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC00981.jpg" alt="Concierto en el Monasterio de Obona" loading="lazy">
 
 <h1 class="adar-archive-title">Concierto en el Monasterio de Obona, Tineo</h1>
 

@@ -23,10 +23,7 @@ translation_group: "pll_69b0256774159"
 
 <div class="adar-archive-left">
 
-<img class="adar-archive-cover"
-src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01456.jpg"
-alt="Concierto en el Monasterio de Villanueva de Oscos"
-loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01456.jpg" alt="Concierto en el Monasterio de Villanueva de Oscos" loading="lazy">
 
 <h1 class="adar-archive-title">Concierto en el Monasterio de Villanueva de Oscos</h1>
 

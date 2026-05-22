@@ -24,10 +24,7 @@ translation_group: "pll_69b02567b23d9"
 <div class="adar-archive-left">
 
 <!-- COVER (panorámico, se recorta con CSS del template) -->
-<img class="adar-archive-cover"
-src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01590.jpg"
-alt="Recital de Andrea Casarrubios en la Iglesia de Leiguarda"
-loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01590.jpg" alt="Recital de Andrea Casarrubios en la Iglesia de Leiguarda" loading="lazy">
 
 <h1 class="adar-archive-title">Recital d'Andrea Casarrubios na Ilesia de Lleiguarda</h1>
 
@@ -63,12 +60,7 @@ La segunda parte incluyó Brown Leaves Moving, de Guillermo Laporta, una pieza q
 
 <!-- VIDEO (si quieres añadirlo, pega aquí)
 <div class="adar-archive-video">
-<iframe
-src="https://www.youtube.com/embed/XXXXXXXXXXX"
-title="Recital de Andrea Casarrubios en la Iglesia de Leiguarda"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/XXXXXXXXXXX" title="Recital de Andrea Casarrubios en la Iglesia de Leiguarda" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 -->
 

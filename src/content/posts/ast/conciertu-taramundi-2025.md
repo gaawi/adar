@@ -23,10 +23,7 @@ translation_group: "pll_69b0256754eb0"
 
 <div class="adar-archive-left">
 
-<img class="adar-archive-cover"
-src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01007.jpg"
-alt="Concierto en Taramundi"
-loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01007.jpg" alt="Concierto en Taramundi" loading="lazy">
 
 <h1 class="adar-archive-title">Conciertu en Taramundi</h1>
 

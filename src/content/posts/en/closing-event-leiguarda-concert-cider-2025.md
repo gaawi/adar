@@ -24,10 +24,7 @@ translation_group: "pll_69b02567d035d"
 <div class="adar-archive-left">
 
 <!-- COVER (panorámico, se recorta con CSS del template) -->
-<img class="adar-archive-cover"
-src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg"
-alt="Evento de Clausura en Leiguarda - Concert and cider tasting"
-loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg" alt="Evento de Clausura en Leiguarda - Concert and cider tasting" loading="lazy">
 
 <h1 class="adar-archive-title">Evento de Clausura en Leiguarda: Concert and cider tasting</h1>
 
@@ -67,12 +64,7 @@ A concert embracing diversity of languages, formats, and generations, as the epi
 
 <!-- VIDEO (si quieres añadir el video que ya mencionaste antes, pega aquí)
 <div class="adar-archive-video">
-<iframe
-src="https://www.youtube.com/embed/7Sk9PpsBIbo"
-title="Evento de Clausura en Leiguarda - Concert and cider tasting"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/7Sk9PpsBIbo" title="Evento de Clausura en Leiguarda - Concert and cider tasting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 -->
 

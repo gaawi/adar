@@ -35,14 +35,7 @@ As a new initiative of the ADAR Festival, in 2023 the festival began presenting 
 With tulle fabrics, the stage of the As Quintas Auditorium was filled. Accompanied by music by Guillermo Laporta, visitors could walk around the stage, discovering and exploring the environment where, days later, musicians would perform a concert as part of the Festival.
 </p>
 <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-<iframe 
-src="https://www.youtube.com/embed/AvtBZ7iWfKk?si=qZyhNTmm_x7_2K3q"
-title="YouTube video player"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-referrerpolicy="strict-origin-when-cross-origin"
-allowfullscreen
-style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+<iframe src="https://www.youtube.com/embed/AvtBZ7iWfKk?si=qZyhNTmm_x7_2K3q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
 </iframe>
 </div>
 
