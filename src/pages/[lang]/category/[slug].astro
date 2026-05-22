@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import type { Lang } from '../../../i18n/strings.ts';
 import { LANGS } from '../../../i18n/strings.ts';
+import { wpSlugify } from '../../../utils/slugify.ts';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -15,7 +16,7 @@ export async function getStaticPaths() {
       .filter((p) => p.data.lang === lang)
       .forEach((p) => {
         for (const c of p.data.categories) {
-          const slug = c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+          const slug = wpSlugify(c);
           if (slug) cats.set(slug, c);
         }
       });
@@ -40,9 +41,7 @@ const allPosts = await getCollection('posts');
 const items = allPosts
   .filter((p) => p.data.lang === lang && p.data.status === 'publish')
   .filter((p) =>
-    p.data.categories.some(
-      (c) => c.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') === slug,
-    ),
+    p.data.categories.some((c) => wpSlugify(c) === slug),
   )
   .sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0));
 
