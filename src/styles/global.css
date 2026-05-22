@@ -1889,13 +1889,34 @@ body.has-header-image #content{
      sticky right sidebar.
    ============================================================= */
 
-/* The .adar-archive-page is rendered inside our .builder-wrap on
-   single posts. We let the cover image break out to full viewport
-   width while keeping the inner content in a centered container. */
+/* Full-bleed page wrappers — applies to every page that uses a hero,
+   so the .amp-hero and .adar-archive-hero can extend edge to edge
+   without fighting the Inspiro builder-wrap padding. */
+body.has-header-image .builder-wrap,
+body.has-header-image .entry-content,
+body.has-header-image .site-main,
+body.has-header-image #primary,
 body.single .builder-wrap,
 body.single-post .builder-wrap{
-  max-width: none;
-  padding: 0;
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+body.has-header-image .entry-content,
+body.single .entry-content,
+body.single-post .entry-content{
+  overflow: visible !important;
+}
+
+/* HEROES: force full viewport width regardless of parent constraints */
+.amp-hero,
+.adar-archive-hero{
+  width: 100vw !important;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  border-radius: 0;
 }
 body.single .adar-archive-page,
 body.single-post .adar-archive-page{
