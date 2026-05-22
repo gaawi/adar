@@ -1,0 +1,38 @@
+[
+  {
+    "id": 164,
+    "slug": "2022",
+    "name": "2022",
+    "parent": ""
+  },
+  {
+    "id": 162,
+    "slug": "2023",
+    "name": "2023",
+    "parent": ""
+  },
+  {
+    "id": 160,
+    "slug": "2024",
+    "name": "2024",
+    "parent": ""
+  },
+  {
+    "id": 24,
+    "slug": "memoria-de-acciones",
+    "name": "Memoria de Acciones",
+    "parent": ""
+  },
+  {
+    "id": 158,
+    "slug": "programas",
+    "name": "Programas",
+    "parent": ""
+  },
+  {
+    "id": 1,
+    "slug": "uncategorized",
+    "name": "Uncategorized",
+    "parent": ""
+  }
+]

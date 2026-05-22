@@ -1,0 +1,162 @@
+[
+  {
+    "id": 421,
+    "slug": "2021",
+    "name": "2021"
+  },
+  {
+    "id": 427,
+    "slug": "2022",
+    "name": "2022"
+  },
+  {
+    "id": 433,
+    "slug": "2023",
+    "name": "2023"
+  },
+  {
+    "id": 439,
+    "slug": "2024",
+    "name": "2024"
+  },
+  {
+    "id": 445,
+    "slug": "2025",
+    "name": "2025"
+  },
+  {
+    "id": 451,
+    "slug": "2026",
+    "name": "2026"
+  },
+  {
+    "id": 601,
+    "slug": "aire-libre",
+    "name": "aire libre"
+  },
+  {
+    "id": 499,
+    "slug": "allande",
+    "name": "Allande"
+  },
+  {
+    "id": 577,
+    "slug": "arte-visual",
+    "name": "arte visual"
+  },
+  {
+    "id": 457,
+    "slug": "belmonte-de-miranda",
+    "name": "Belmonte de Miranda"
+  },
+  {
+    "id": 493,
+    "slug": "cangas-del-narcea",
+    "name": "Cangas del Narcea"
+  },
+  {
+    "id": 529,
+    "slug": "colunga",
+    "name": "Colunga"
+  },
+  {
+    "id": 553,
+    "slug": "concierto",
+    "name": "concierto"
+  },
+  {
+    "id": 559,
+    "slug": "concierto-visual",
+    "name": "concierto visual"
+  },
+  {
+    "id": 583,
+    "slug": "concurso-de-horreos",
+    "name": "concurso de hórreos"
+  },
+  {
+    "id": 517,
+    "slug": "el-franco",
+    "name": "El Franco"
+  },
+  {
+    "id": 595,
+    "slug": "espicha",
+    "name": "espicha"
+  },
+  {
+    "id": 535,
+    "slug": "gozon",
+    "name": "Gozón"
+  },
+  {
+    "id": 475,
+    "slug": "grado",
+    "name": "Grado"
+  },
+  {
+    "id": 505,
+    "slug": "las-regueras",
+    "name": "Las Regueras"
+  },
+  {
+    "id": 511,
+    "slug": "llanes",
+    "name": "Llanes"
+  },
+  {
+    "id": 607,
+    "slug": "lugar-emblematico",
+    "name": "lugar emblemático"
+  },
+  {
+    "id": 565,
+    "slug": "musica-de-camara",
+    "name": "música de cámara"
+  },
+  {
+    "id": 571,
+    "slug": "musica-tradicional",
+    "name": "música tradicional"
+  },
+  {
+    "id": 589,
+    "slug": "paseo-sonoro",
+    "name": "paseo sonoro"
+  },
+  {
+    "id": 481,
+    "slug": "salas",
+    "name": "Salas"
+  },
+  {
+    "id": 463,
+    "slug": "somiedo",
+    "name": "Somiedo"
+  },
+  {
+    "id": 523,
+    "slug": "soto-del-barco",
+    "name": "Soto del Barco"
+  },
+  {
+    "id": 541,
+    "slug": "taramundi",
+    "name": "Taramundi"
+  },
+  {
+    "id": 487,
+    "slug": "tineo",
+    "name": "Tineo"
+  },
+  {
+    "id": 547,
+    "slug": "villanueva-de-oscos",
+    "name": "Villanueva de Oscos"
+  },
+  {
+    "id": 469,
+    "slug": "yernes-y-tameza",
+    "name": "Yernes y Tameza"
+  }
+]

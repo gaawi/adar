@@ -1,0 +1,105 @@
+---
+title: "Sound Walk at the Museo de las Ayalgas (Belmonte de Miranda)"
+slug: "sound-walk-museo-ayalgas-belmonte-2023"
+lang: "en"
+date: "2023-08-12T15:00:17Z"
+modified: "2026-03-10T14:11:05Z"
+status: "publish"
+wp_id: 816
+original_url: "https://festivaladar.com/en/sound-walk-museo-ayalgas-belmonte-2023/"
+permalink: "/en/sound-walk-museo-ayalgas-belmonte-2023/"
+categories: ["Projects Archive"]
+tags: ["2023", "Belmonte de Miranda", "musica de camara", "paseo sonoro"]
+featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg"
+excerpt: ""
+author: "Guillermo Laporta"
+parent_id: 0
+menu_order: 0
+translation_group: "pll_69b025658f71e"
+---
+
+<div class="adar-archive-page">
+<div class="adar-archive-header">
+
+<div class="adar-archive-left">
+
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg" alt="Sound walk - Museo de las Ayalgas - ADAR 2023" loading="lazy">
+
+<h1 class="adar-archive-title">Sound walk en el Museo de las Ayalgas (Belmonte de Miranda)</h1>
+
+<p class="adar-archive-lede">
+The Museo de las Ayalgas in Silviella, one of the area's major cultural attractions, hosted ADAR Festival musicians for a sound walk where historic artefacts of rural life blended with the music of Bach and Mozart.
+</p>
+
+<div class="adar-archive-body">
+<p>
+El Museo de las Ayalgas, situado en Silviella (Belmonte de Miranda), alberga una colección singular de objetos que documentan la vida en el campo asturiano a lo largo de los siglos. Among iconic cars and motorcycles, 18th-century cradles and farming tools, los músicos del Festival ADAR se distribuyeron por las salas para ofrecer un paseo sonoro que creaba diálogos inesperados entre patrimonio material y música en vivo.
+</p>
+
+<p>
+El recorrido propuesto invitaba al público a descubrir el museo de una manera radicalmente diferente. Las suites para instrumentos solistas de Bach resonaban entre los vehículos de época, mientras que el Cuarteto para flauta y cuerdas de Mozart cerraba el paseo con una interpretación colectiva. The juxtaposition of everyday objects from the past with live chamber music generated a sensory experience that activated the historical memory of the place.
+</p>
+
+<h3 style="margin-top:28px">Programme</h3>
+
+<p>
+<strong>Wolfgang Amadeus Mozart</strong> – Cuarteto para flauta y cuerdas en Re Mayor, K. 285<br>
+<strong>Johann Sebastian Bach</strong> – Música para instrumentos de cuerda solistas
+</p>
+</div>
+
+<div class="adar-archive-gallery">
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/10.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/10.jpg" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/12.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/12.jpg" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/14.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/14.jpg" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/15.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/15.jpg" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/17.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/17.jpg" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/23.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/23.jpg" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/image27.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/image27.jpg" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/image56.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/image56.jpg" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/image60.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/image60.jpg" loading="lazy"></a>
+</div>
+
+</div>
+
+<div class="adar-archive-right">
+
+<div class="adar-archive-box">
+<h6>Event Details</h6>
+<p>
+<strong>Date:</strong><br>
+Saturday, 12 August 2023
+</p>
+<p>
+<strong>Location:</strong><br>
+Museo de las Ayalgas<br>
+Silviella, Belmonte de Miranda
+</p>
+<p>
+<strong>Musicians:</strong><br>
+Jone de la Fuente (violin)<br>
+Guillermo Laporta (flute)<br>
+Almudena Arribas (viola)<br>
+Natania Hoffman (cello)
+</p>
+<p>
+<strong>Format:</strong><br>
+Sound walk
+</p>
+</div>
+
+<div class="adar-archive-box">
+<h6>Tags</h6>
+<p class="adar-archive-tags">
+• 2023<br>
+• Belmonte de Miranda<br>
+• Sound walk<br>
+• Museum<br>
+• Heritage
+</p>
+</div>
+
+</div>
+
+</div>
+</div>

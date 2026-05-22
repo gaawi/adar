@@ -1,0 +1,76 @@
+---
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { Lang } from '../../i18n/strings.ts';
+import { LANGS } from '../../i18n/strings.ts';
+
+type AnyEntry =
+  | (CollectionEntry<'pages'> & { collection: 'pages' })
+  | (CollectionEntry<'posts'> & { collection: 'posts' });
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  const posts = await getCollection('posts');
+  const all: AnyEntry[] = [...pages, ...posts];
+
+  return all
+    .filter((e) => e.data.status === 'publish')
+    .map((entry) => {
+      const lang = entry.data.lang as Lang;
+      const permalink = entry.data.permalink || `/${lang}/${entry.data.slug}/`;
+      // Strip leading /{lang}/ and trailing /
+      let slug = permalink.replace(new RegExp(`^/${lang}/?`), '');
+      slug = slug.replace(/\/$/, '');
+      return {
+        params: { lang, slug },
+        props: { entry },
+      };
+    });
+}
+
+interface Props {
+  entry: AnyEntry;
+}
+const { entry } = Astro.props;
+const lang = entry.data.lang as Lang;
+const { Content } = await render(entry);
+
+// Build translation map by translation_group
+const group = entry.data.translation_group;
+let translations: Partial<Record<Lang, string>> = {};
+if (group) {
+  const all = [...(await getCollection('pages')), ...(await getCollection('posts'))];
+  all.forEach((e) => {
+    if (e.data.translation_group === group && LANGS.includes(e.data.lang as Lang)) {
+      translations[e.data.lang as Lang] = e.data.permalink;
+    }
+  });
+}
+
+const isHome = entry.data.permalink === `/${lang}/adar/` ||
+               entry.data.permalink === `/${lang}/adar-festival/` ||
+               entry.data.permalink === `/${lang}/festival-adar/`;
+---
+
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.excerpt || 'Festival ADAR'}
+  lang={lang}
+  permalink={entry.data.permalink}
+  featuredImage={entry.data.featured_image}
+  translations={translations}
+  bodyClass={`page-${entry.collection} ${isHome ? 'home page-template-default' : ''} page-id-${entry.data.wp_id || ''}`}
+>
+  <div class="builder-wrap full-width">
+    <article id={`post-${entry.data.wp_id || ''}`} class={`post-${entry.data.wp_id || ''} ${entry.collection === 'pages' ? 'page' : 'post'} type-${entry.collection === 'pages' ? 'page' : 'post'} status-publish hentry`}>
+      {!isHome && entry.collection === 'posts' && (
+        <header class="entry-header">
+          <h1 class="entry-title">{entry.data.title}</h1>
+        </header>
+      )}
+      <div class="entry-content">
+        <Content />
+      </div>
+    </article>
+  </div>
+</BaseLayout>

@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import type { Lang } from '../i18n/strings.ts';
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang: Lang;
+  permalink?: string;
+  bodyClass?: string;
+  featuredImage?: string;
+  translations?: Partial<Record<Lang, string>>;
+}
+
+const {
+  title = 'Festival ADAR',
+  description = 'Para el desarrollo de las artes en el medio rural',
+  lang,
+  permalink = '',
+  bodyClass = '',
+  featuredImage,
+  translations = {},
+} = Astro.props;
+
+const fullTitle = title === 'Festival ADAR'
+  ? `Festival ADAR – ${description}`
+  : `${title} – Festival ADAR`;
+const ogImage =
+  featuredImage || 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg';
+---
+
+<!doctype html>
+<html lang={lang === 'ast' ? 'ast' : lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={`https://festivaladar.com${permalink}`} />
+    {Object.entries(translations).map(([l, url]) => (
+      <link rel="alternate" hreflang={l} href={`https://festivaladar.com${url}`} />
+    ))}
+
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={`https://festivaladar.com${permalink}`} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+  </head>
+  <body class={`page ${bodyClass}`}>
+    <div id="page" class="site">
+      <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+      <Header lang={lang} currentPath={permalink} />
+      <div id="content" class="site-content">
+        <main id="main" class="site-main" role="main">
+          <slot />
+        </main>
+      </div>
+      <Footer lang={lang} />
+    </div>
+  </body>
+</html>

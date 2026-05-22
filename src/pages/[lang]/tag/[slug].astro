@@ -1,0 +1,87 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import type { Lang } from '../../../i18n/strings.ts';
+import { LANGS } from '../../../i18n/strings.ts';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  const seen = new Set<string>();
+  const paths: { params: { lang: Lang; slug: string }; props: any }[] = [];
+
+  for (const lang of LANGS) {
+    const tags = new Map<string, string>();
+    posts
+      .filter((p) => p.data.lang === lang)
+      .forEach((p) => {
+        for (const t of p.data.tags) {
+          const slug = t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+          if (slug) tags.set(slug, t);
+        }
+      });
+    for (const [slug, name] of tags) {
+      const key = `${lang}/${slug}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      paths.push({ params: { lang, slug }, props: { name } });
+    }
+  }
+  return paths;
+}
+
+interface Props {
+  name: string;
+}
+const { name } = Astro.props;
+const lang = Astro.params.lang as Lang;
+const slug = Astro.params.slug as string;
+
+const allPosts = await getCollection('posts');
+const items = allPosts
+  .filter((p) => p.data.lang === lang && p.data.status === 'publish')
+  .filter((p) =>
+    p.data.tags.some(
+      (t) => t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') === slug,
+    ),
+  )
+  .sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0));
+
+const titleByLang = {
+  es: `Etiqueta: ${name}`,
+  en: `Tag: ${name}`,
+  ast: `Etiqueta: ${name}`,
+}[lang];
+---
+
+<BaseLayout title={titleByLang} lang={lang} permalink={`/${lang}/tag/${slug}/`}>
+  <div class="builder-wrap full-width" style="padding: 40px 20px;">
+    <header class="entry-header" style="margin-bottom: 40px;">
+      <h1 class="entry-title">{titleByLang}</h1>
+    </header>
+
+    <div class="adar-archive-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
+      {items.map((p) => (
+        <a class="adar-archive-card" href={p.data.permalink} style="display: block; text-decoration: none; color: inherit;">
+          {p.data.featured_image && (
+            <img
+              src={p.data.featured_image}
+              alt={p.data.title}
+              loading="lazy"
+              style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px;"
+            />
+          )}
+          <h3 style="margin-top: 12px; font-size: 1.1rem;">{p.data.title}</h3>
+          {p.data.date && (
+            <p style="opacity: 0.6; font-size: 0.9rem;">
+              {p.data.date.toLocaleDateString(lang === 'en' ? 'en-GB' : 'es-ES', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric',
+              })}
+            </p>
+          )}
+        </a>
+      ))}
+    </div>
+  </div>
+</BaseLayout>

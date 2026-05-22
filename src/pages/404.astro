@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { HOME_SLUG } from '../i18n/strings.ts';
+---
+
+<BaseLayout title="404" description="Page not found" lang="es" permalink="/404/">
+  <div class="builder-wrap full-width" style="padding: 80px 20px; text-align: center; min-height: 50vh;">
+    <h1 style="font-size: 3rem; margin-bottom: 1rem;">404</h1>
+    <p style="font-size: 1.25rem; opacity: 0.7;">Página no encontrada · Page not found</p>
+    <p style="margin-top: 2rem;">
+      <a href={`/es/${HOME_SLUG.es}/`} style="margin: 0 1rem;">Inicio</a>
+      <a href={`/en/${HOME_SLUG.en}/`} style="margin: 0 1rem;">Home</a>
+      <a href={`/ast/${HOME_SLUG.ast}/`} style="margin: 0 1rem;">Aniciu</a>
+    </p>
+  </div>
+</BaseLayout>

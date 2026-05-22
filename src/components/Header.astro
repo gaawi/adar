@@ -1,0 +1,117 @@
+---
+import type { Lang } from '../i18n/strings.ts';
+import { HOME_SLUG } from '../i18n/strings.ts';
+import menusJson from '../content/_menus.json';
+
+interface MenuItem {
+  title: string;
+  url: string;
+  order: number;
+  parent_id: number;
+  item_id: number;
+  classes?: string;
+  children?: MenuItem[];
+}
+
+interface Props {
+  lang: Lang;
+  currentPath?: string;
+}
+
+const { lang, currentPath = '' } = Astro.props;
+
+const menuKey = lang;
+const flat: MenuItem[] = (menusJson as Record<string, MenuItem[]>)[menuKey] ?? [];
+
+function buildTree(items: MenuItem[]): MenuItem[] {
+  const byId = new Map<number, MenuItem>();
+  items.forEach((it) => byId.set(it.item_id, { ...it, children: [] }));
+  const roots: MenuItem[] = [];
+  byId.forEach((it) => {
+    if (it.parent_id && byId.has(it.parent_id)) {
+      byId.get(it.parent_id)!.children!.push(it);
+    } else {
+      roots.push(it);
+    }
+  });
+  const sortRec = (arr: MenuItem[]) => {
+    arr.sort((a, b) => a.order - b.order);
+    arr.forEach((i) => i.children && sortRec(i.children));
+  };
+  sortRec(roots);
+  return roots;
+}
+
+function localizeUrl(url: string): string {
+  return url
+    .replace(/^https?:\/\/festivaladar\.com/, '')
+    .replace(/^\/+/, '/');
+}
+
+const tree = buildTree(flat);
+const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
+---
+
+<header id="masthead" class="site-header" role="banner">
+  <div id="site-navigation" class="navbar">
+    <div class="header-inner inner-wrap wpz_menu_left">
+      <div class="header-logo-wrapper">
+        <a href={homeHref} class="custom-logo-link" rel="home">
+          <img
+            width="300"
+            height="115"
+            src="https://creartbox-media-cdn.b-cdn.net/adarimages/logoadar-whitev6.png"
+            class="custom-logo"
+            alt="Festival ADAR"
+            decoding="async"
+          />
+        </a>
+      </div>
+
+      <div class="header-navigation-wrapper">
+        <nav
+          class="primary-menu-wrapper navbar-collapse collapse"
+          aria-label="Menú horizontal superior"
+          role="navigation"
+        >
+          <ul id={`menu-${menuKey}-1`} class="nav navbar-nav dropdown sf-menu">
+            {tree.map((item) => (
+              <li
+                class={`menu-item ${item.classes ?? ''} ${item.children?.length ? 'menu-item-has-children' : ''} ${
+                  localizeUrl(item.url) === currentPath ? 'current-menu-item' : ''
+                }`}
+              >
+                <a href={localizeUrl(item.url)}>
+                  {item.title}
+                  {item.children?.length ? (
+                    <svg
+                      class="svg-icon svg-icon-angle-down"
+                      aria-hidden="true"
+                      role="img"
+                      focusable="false"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="21"
+                      height="32"
+                      viewBox="0 0 21 32"
+                    >
+                      <path d="M19.196 13.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l7.018 7.018 7.018-7.018q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z" />
+                    </svg>
+                  ) : null}
+                </a>
+                {item.children?.length ? (
+                  <ul class="sub-menu">
+                    {item.children.map((sub) => (
+                      <li class={`menu-item ${sub.classes ?? ''}`}>
+                        <a href={localizeUrl(sub.url)}>{sub.title}</a>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

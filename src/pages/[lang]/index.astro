@@ -1,0 +1,10 @@
+---
+import { HOME_SLUG, type Lang, LANGS } from '../../i18n/strings.ts';
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+return Astro.redirect(`/${lang}/${HOME_SLUG[lang]}/`, 308);
+---
