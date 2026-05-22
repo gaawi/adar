@@ -35,7 +35,7 @@ Paste this block into your page (Custom HTML / HTML Block).
 <h2 class="amp-title">Contemporary art and musical <em>excellence</em></h2>
 <p class="amp-subtitle">Creation, residencies and cultural mediation in the rural heart of Asturias · 2021 – 2025</p>
 <div class="amp-actions">
-<a class="amp-btn" href="https://festivaladar.com/en/map-of-actions/">Explore Action Map</a>
+<a class="amp-btn" href="/en/map-of-actions/">Explore Action Map</a>
 <a class="amp-btn amp-btn-ghost" href="#promo">Watch video</a>
 <a class="amp-btn amp-btn-ghost" href="#redes">Follow us</a>
 </div>

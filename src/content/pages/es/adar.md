@@ -35,7 +35,7 @@ Pega este bloque en tu página (Custom HTML / Bloque HTML).
 <h2 class="amp-title">Arte contemporáneo y excelencia <em>musical</em></h2>
 <p class="amp-subtitle">Creación, residencias y mediación cultural en el corazón rural de Asturias · 2021 – 2025</p>
 <div class="amp-actions">
-<a class="amp-btn" href="https://festivaladar.com/es/mapa-de-acciones/">Ver mapa de acciones</a>
+<a class="amp-btn" href="/es/mapa-de-acciones/">Ver mapa de acciones</a>
 <a class="amp-btn amp-btn-ghost" href="#promo">Ver video</a>
 <a class="amp-btn amp-btn-ghost" href="#redes">Seguir en redes</a>
 </div>

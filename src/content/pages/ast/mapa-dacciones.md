@@ -82,68 +82,68 @@ var CDN = 'https://creartbox-media-cdn.b-cdn.net/adarimages/';
 
 var concejos = [
 { name:'Balmonte de Miranda', lat:43.2185, lng:-6.2020, activities:[
-{ year:'2025', title:'Eventu de Clausura: Conciertu y Espicha en Lleiguarda',         url:'https://festivaladar.com/ast/eventu-clausura-lleiguarda-conciertu-espicha-2025/',    img:CDN+'adar25fx30/DSC01841.jpg' },
-{ year:'2025', title:"Recital d'Andrea Casarrubios na Ilesia de Lleiguarda",          url:'https://festivaladar.com/ast/recital-andrea-casarrubios-ilesia-lleiguarda-2025/',    img:CDN+'adar25fx30/DSC01590.jpg' },
-{ year:'2025', title:'Paseu Sonoru en Lleiguarda',                                     url:'https://festivaladar.com/ast/paseu-sonoru-lleiguarda-2025/',                          img:CDN+'ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg' },
-{ year:'2024', title:'Conciertu de Clausura nel Invernaderiu de Cristal (Lleiguarda)', url:'https://festivaladar.com/ast/conciertu-clausura-invernaderiu-cristal-lleiguarda-2024/', img:CDN+'ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/image15.jpg' },
-{ year:'2024', title:'Micro Conciertos y Paseu Sonoru en Lleiguarda',                  url:'https://festivaladar.com/ast/micro-conciertos-paseu-sonoru-lleiguarda-2024/',        img:CDN+'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg' },
-{ year:'2023', title:'Conciertu Visual de Clausura en Lleiguarda (2023)',               url:'https://festivaladar.com/ast/conciertu-visual-clausura-lleiguarda-2023/',            img:CDN+'ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/02.jpg' },
-{ year:'2023', title:'Paseu Sonoru nel Muséu de les Ayalgues (Balmonte)',               url:'https://festivaladar.com/ast/paseu-sonoru-museu-ayalgues-balmonte-2023/',            img:CDN+'ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg' },
-{ year:'2023', title:'Instalación: Toccata and Bruise (Celeste Oram)',                 url:'https://festivaladar.com/ast/instalacion-toccata-bruise-celeste-oram-2023/',         img:CDN+'ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg' },
-{ year:'2022', title:'Conciertu de Clausura en Balmonte de Miranda (2022)',             url:'https://festivaladar.com/ast/conciertu-clausura-balmonte-2022/',                     img:CDN+'Festival%20ADAR%20Photos/2022/concierto%20belmonte/PXL_20220813_175723812.jpg' },
-{ year:'2021', title:"Conciertu d'Inauguración en Lleiguarda",                        url:'https://festivaladar.com/ast/conciertu-inauguracion-lleiguarda-2021/',               img:CDN+'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg' }
+{ year:'2025', title:'Eventu de Clausura: Conciertu y Espicha en Lleiguarda',         url:'/ast/eventu-clausura-lleiguarda-conciertu-espicha-2025/',    img:CDN+'adar25fx30/DSC01841.jpg' },
+{ year:'2025', title:"Recital d'Andrea Casarrubios na Ilesia de Lleiguarda",          url:'/ast/recital-andrea-casarrubios-ilesia-lleiguarda-2025/',    img:CDN+'adar25fx30/DSC01590.jpg' },
+{ year:'2025', title:'Paseu Sonoru en Lleiguarda',                                     url:'/ast/paseu-sonoru-lleiguarda-2025/',                          img:CDN+'ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg' },
+{ year:'2024', title:'Conciertu de Clausura nel Invernaderiu de Cristal (Lleiguarda)', url:'/ast/conciertu-clausura-invernaderiu-cristal-lleiguarda-2024/', img:CDN+'ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/image15.jpg' },
+{ year:'2024', title:'Micro Conciertos y Paseu Sonoru en Lleiguarda',                  url:'/ast/micro-conciertos-paseu-sonoru-lleiguarda-2024/',        img:CDN+'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg' },
+{ year:'2023', title:'Conciertu Visual de Clausura en Lleiguarda (2023)',               url:'/ast/conciertu-visual-clausura-lleiguarda-2023/',            img:CDN+'ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/02.jpg' },
+{ year:'2023', title:'Paseu Sonoru nel Muséu de les Ayalgues (Balmonte)',               url:'/ast/paseu-sonoru-museu-ayalgues-balmonte-2023/',            img:CDN+'ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg' },
+{ year:'2023', title:'Instalación: Toccata and Bruise (Celeste Oram)',                 url:'/ast/instalacion-toccata-bruise-celeste-oram-2023/',         img:CDN+'ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg' },
+{ year:'2022', title:'Conciertu de Clausura en Balmonte de Miranda (2022)',             url:'/ast/conciertu-clausura-balmonte-2022/',                     img:CDN+'Festival%20ADAR%20Photos/2022/concierto%20belmonte/PXL_20220813_175723812.jpg' },
+{ year:'2021', title:"Conciertu d'Inauguración en Lleiguarda",                        url:'/ast/conciertu-inauguracion-lleiguarda-2021/',               img:CDN+'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg' }
 ]},
 { name:'Grau', lat:43.3861, lng:-6.0768, activities:[
-{ year:'2024', title:'Conciertu y Performance na Capilla de los Dolores (Grau, 2024)', url:'https://festivaladar.com/ast/conciertu-performance-capilla-dolores-grau-2024/',      img:CDN+'ADAR_Eventos/2024/17_Concierto_y_performance_en_la_Capilla_de_los_Dolores/capilla.jpg' },
-{ year:'2024', title:'Instalación de Sarah K. Williams na Oficina de Turismu (Grau)',  url:'https://festivaladar.com/ast/instalacion-sarah-williams-oficina-turismu-grau-2024/', img:CDN+'ADAR_Eventos/2024/17_Instalacion_site_specific_de_sara_k_william/image20.jpg' },
-{ year:'2024', title:'Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2024)',     url:'https://festivaladar.com/ast/conciertu-miranda-valdecarzana-grau-2024/',             img:CDN+'ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/20.jpg' },
-{ year:'2023', title:'Micro Conciertu na Capilla de los Dolores (Grau, 2023)',         url:'https://festivaladar.com/ast/micro-conciertu-capilla-dolores-grau-2023/',            img:CDN+'ADAR_Eventos/2023/10_Micro_concierto_en_la_Capilla_de_los_Dolores_Grado_2023/31.jpg' },
-{ year:'2023', title:'Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2023)',     url:'https://festivaladar.com/ast/conciertu-miranda-valdecarzana-grau-2023/',             img:CDN+'Festival%20ADAR%20Photos/2023/06%20concierto%20grado/image5.jpg' },
-{ year:'2023', title:'Paseu Sonoru nel Palaciu Fontela (Grau)',                        url:'https://festivaladar.com/ast/paseu-sonoru-palaciu-fontela-grau-2023/',               img:CDN+'ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/28.jpg' },
-{ year:'2022', title:'Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2022)',     url:'https://festivaladar.com/ast/conciertu-miranda-valdecarzana-grau-2022/',             img:CDN+'ADAR_Eventos/2022/12_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2022/PXL_20220812_184621365~2.jpg' }
+{ year:'2024', title:'Conciertu y Performance na Capilla de los Dolores (Grau, 2024)', url:'/ast/conciertu-performance-capilla-dolores-grau-2024/',      img:CDN+'ADAR_Eventos/2024/17_Concierto_y_performance_en_la_Capilla_de_los_Dolores/capilla.jpg' },
+{ year:'2024', title:'Instalación de Sarah K. Williams na Oficina de Turismu (Grau)',  url:'/ast/instalacion-sarah-williams-oficina-turismu-grau-2024/', img:CDN+'ADAR_Eventos/2024/17_Instalacion_site_specific_de_sara_k_william/image20.jpg' },
+{ year:'2024', title:'Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2024)',     url:'/ast/conciertu-miranda-valdecarzana-grau-2024/',             img:CDN+'ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/20.jpg' },
+{ year:'2023', title:'Micro Conciertu na Capilla de los Dolores (Grau, 2023)',         url:'/ast/micro-conciertu-capilla-dolores-grau-2023/',            img:CDN+'ADAR_Eventos/2023/10_Micro_concierto_en_la_Capilla_de_los_Dolores_Grado_2023/31.jpg' },
+{ year:'2023', title:'Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2023)',     url:'/ast/conciertu-miranda-valdecarzana-grau-2023/',             img:CDN+'Festival%20ADAR%20Photos/2023/06%20concierto%20grado/image5.jpg' },
+{ year:'2023', title:'Paseu Sonoru nel Palaciu Fontela (Grau)',                        url:'/ast/paseu-sonoru-palaciu-fontela-grau-2023/',               img:CDN+'ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/28.jpg' },
+{ year:'2022', title:'Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2022)',     url:'/ast/conciertu-miranda-valdecarzana-grau-2022/',             img:CDN+'ADAR_Eventos/2022/12_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2022/PXL_20220812_184621365~2.jpg' }
 ]},
 { name:'Llanes', lat:43.4185, lng:-4.7540, activities:[
-{ year:'2025', title:'Conciertu Visual en Llanes',                                     url:'https://festivaladar.com/ast/conciertu-visual-llanes-2025/',                         img:CDN+'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg' },
-{ year:'2025', title:'The Whale (Ballarte) nel Monasteriu de San Antolín de Bedón',   url:'https://festivaladar.com/ast/the-whale-ballarte-monasteriu-san-antolin-bedon-2025/', img:CDN+'ADAR_Eventos/2025/07_The_Whale_Ballarte_en_el_Monasterio_de_San_Antolin_de_Bedon/DSC00382.jpg' },
-{ year:'2024', title:'Conciertu nel Monasteriu de San Antolín de Bedón',               url:'https://festivaladar.com/ast/conciertu-monasteriu-san-antolin-bedon-2024/',          img:CDN+'ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/15.jpg' },
-{ year:'2022', title:'Conciertu al Aire Llibre en Llanes',                             url:'https://festivaladar.com/ast/conciertu-aire-llibre-llanes-2022/',                   img:CDN+'ADAR_Eventos/2022/11_Concierto_en_Llanes/image59.jpg' }
+{ year:'2025', title:'Conciertu Visual en Llanes',                                     url:'/ast/conciertu-visual-llanes-2025/',                         img:CDN+'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg' },
+{ year:'2025', title:'The Whale (Ballarte) nel Monasteriu de San Antolín de Bedón',   url:'/ast/the-whale-ballarte-monasteriu-san-antolin-bedon-2025/', img:CDN+'ADAR_Eventos/2025/07_The_Whale_Ballarte_en_el_Monasterio_de_San_Antolin_de_Bedon/DSC00382.jpg' },
+{ year:'2024', title:'Conciertu nel Monasteriu de San Antolín de Bedón',               url:'/ast/conciertu-monasteriu-san-antolin-bedon-2024/',          img:CDN+'ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/15.jpg' },
+{ year:'2022', title:'Conciertu al Aire Llibre en Llanes',                             url:'/ast/conciertu-aire-llibre-llanes-2022/',                   img:CDN+'ADAR_Eventos/2022/11_Concierto_en_Llanes/image59.jpg' }
 ]},
 { name:'El Francu', lat:43.5447, lng:-6.8283, activities:[
-{ year:'2023', title:'Conciertu nel Francu',                                           url:'https://festivaladar.com/ast/conciertu-nel-francu-2023/',                            img:CDN+'ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg' },
-{ year:'2023', title:'Paseu Sonoru nel Francu',                                        url:'https://festivaladar.com/ast/paseu-sonoru-el-francu-2023/',                          img:CDN+'ADAR_Eventos/2023/09_Paseo_sonoro_El_Franco/01.jpg' },
-{ year:'2023', title:'Instalación Artística de Lluz y Proyeiciones (Mizuko Kaji)',     url:'https://festivaladar.com/ast/instalacion-lluz-proyeiciones-mizuko-kaji-2023/',      img:CDN+'ADAR_Eventos/2023/03_Instalacion_artistica_de_luz_y_proyecciones_Mizuko_Kaji/42.jpg' },
-{ year:'2022', title:'Conciertu Visual nel Francu',                                    url:'https://festivaladar.com/ast/conciertu-visual-el-francu-2022/',                      img:CDN+'ADAR_Eventos/2022/08_Concierto_visual_en_El_Franco/PXL_20220808_201603027~2.jpg' }
+{ year:'2023', title:'Conciertu nel Francu',                                           url:'/ast/conciertu-nel-francu-2023/',                            img:CDN+'ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg' },
+{ year:'2023', title:'Paseu Sonoru nel Francu',                                        url:'/ast/paseu-sonoru-el-francu-2023/',                          img:CDN+'ADAR_Eventos/2023/09_Paseo_sonoro_El_Franco/01.jpg' },
+{ year:'2023', title:'Instalación Artística de Lluz y Proyeiciones (Mizuko Kaji)',     url:'/ast/instalacion-lluz-proyeiciones-mizuko-kaji-2023/',      img:CDN+'ADAR_Eventos/2023/03_Instalacion_artistica_de_luz_y_proyecciones_Mizuko_Kaji/42.jpg' },
+{ year:'2022', title:'Conciertu Visual nel Francu',                                    url:'/ast/conciertu-visual-el-francu-2022/',                      img:CDN+'ADAR_Eventos/2022/08_Concierto_visual_en_El_Franco/PXL_20220808_201603027~2.jpg' }
 ]},
 { name:'Colunga', lat:43.4810, lng:-5.2716, activities:[
-{ year:'2023', title:'Conciertu Visual en Colunga (Sala Loreto)',                      url:'https://festivaladar.com/ast/conciertu-visual-colunga-sala-loreto-2023/',           img:CDN+'ADAR_Eventos/2023/11_Concierto_visual_en_Colunga_Sala_Loreto/48.jpg' },
-{ year:'2022', title:'Conciertu na Ilesia de Santa María de Sabada (Colunga)',         url:'https://festivaladar.com/ast/conciertu-ilesia-santa-maria-sabada-colunga-2022/',    img:CDN+'ADAR_Eventos/2022/10_Concierto_en_la_Iglesia_de_Santa_Maria_de_Sabada_Colunga/PXL_20220810_175359505.jpg' }
+{ year:'2023', title:'Conciertu Visual en Colunga (Sala Loreto)',                      url:'/ast/conciertu-visual-colunga-sala-loreto-2023/',           img:CDN+'ADAR_Eventos/2023/11_Concierto_visual_en_Colunga_Sala_Loreto/48.jpg' },
+{ year:'2022', title:'Conciertu na Ilesia de Santa María de Sabada (Colunga)',         url:'/ast/conciertu-ilesia-santa-maria-sabada-colunga-2022/',    img:CDN+'ADAR_Eventos/2022/10_Concierto_en_la_Iglesia_de_Santa_Maria_de_Sabada_Colunga/PXL_20220810_175359505.jpg' }
 ]},
 { name:'Cangues del Narcea', lat:43.1753, lng:-6.5479, activities:[
-{ year:'2025', title:'Paseu Sonoru nel Claustru del Parador de Corias',                url:'https://festivaladar.com/ast/paseu-sonoru-claustru-parador-corias-2025/',            img:CDN+'adar25fx30/corias.jpg' }
+{ year:'2025', title:'Paseu Sonoru nel Claustru del Parador de Corias',                url:'/ast/paseu-sonoru-claustru-parador-corias-2025/',            img:CDN+'adar25fx30/corias.jpg' }
 ]},
 { name:"Villanova d'Oscos", lat:43.3615, lng:-6.8830, activities:[
-{ year:'2025', title:"Conciertu nel Monasteriu de Villanova d'Oscos",                 url:'https://festivaladar.com/ast/conciertu-monasteriu-villanueva-oscos-2025/',           img:CDN+'adar25fx30/DSC01456.jpg' }
+{ year:'2025', title:"Conciertu nel Monasteriu de Villanova d'Oscos",                 url:'/ast/conciertu-monasteriu-villanueva-oscos-2025/',           img:CDN+'adar25fx30/DSC01456.jpg' }
 ]},
 { name:'Taramundi', lat:43.3700, lng:-7.1020, activities:[
-{ year:'2025', title:'Conciertu en Taramundi',                                         url:'https://festivaladar.com/ast/conciertu-taramundi-2025/',                              img:CDN+'adar25fx30/DSC01007.jpg' }
+{ year:'2025', title:'Conciertu en Taramundi',                                         url:'/ast/conciertu-taramundi-2025/',                              img:CDN+'adar25fx30/DSC01007.jpg' }
 ]},
 { name:'Tinéu', lat:43.3305, lng:-6.5055, activities:[
-{ year:'2025', title:"Conciertu nel Monasteriu d'Obona, Tinéu",                       url:'https://festivaladar.com/ast/conciertu-monasteriu-obona-tineu-2025/',                img:CDN+'adar25fx30/DSC00981.jpg' }
+{ year:'2025', title:"Conciertu nel Monasteriu d'Obona, Tinéu",                       url:'/ast/conciertu-monasteriu-obona-tineu-2025/',                img:CDN+'adar25fx30/DSC00981.jpg' }
 ]},
 { name:'Les Regueres', lat:43.3730, lng:-5.9670, activities:[
-{ year:'2025', title:'Micro-Conciertu en Puerma (Les Regueres)',                       url:'https://festivaladar.com/ast/micro-conciertu-puerma-les-regueres-2025/',            img:CDN+'adar25fx30/C1970T01.jpg' }
+{ year:'2025', title:'Micro-Conciertu en Puerma (Les Regueres)',                       url:'/ast/micro-conciertu-puerma-les-regueres-2025/',            img:CDN+'adar25fx30/C1970T01.jpg' }
 ]},
 { name:'Gozón', lat:43.5680, lng:-5.8360, activities:[
-{ year:'2025', title:'Micro-Conciertu en Susacasa Agrocultural',                       url:'https://festivaladar.com/ast/micro-conciertu-susacasa-agrocultural-gozon-2025/',    img:CDN+'ADAR_Eventos/2025/05_Micro-Concierto_en_Susacasa_Agrocultural/C1575T01.jpg' }
+{ year:'2025', title:'Micro-Conciertu en Susacasa Agrocultural',                       url:'/ast/micro-conciertu-susacasa-agrocultural-gozon-2025/',    img:CDN+'ADAR_Eventos/2025/05_Micro-Concierto_en_Susacasa_Agrocultural/C1575T01.jpg' }
 ]},
 { name:'Somiedu', lat:43.0730, lng:-6.2490, activities:[
-{ year:'2024', title:'Conciertu nel Mercáu de Pola de Somiedu',                        url:'https://festivaladar.com/ast/conciertu-mercau-pola-somieu-2024/',                    img:CDN+'ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_02_03.jpg' }
+{ year:'2024', title:'Conciertu nel Mercáu de Pola de Somiedu',                        url:'/ast/conciertu-mercau-pola-somieu-2024/',                    img:CDN+'ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_02_03.jpg' }
 ]},
 { name:'Sales', lat:43.4128, lng:-6.2554, activities:[
-{ year:'2024', title:'Conciertu nel Monasteriu de San Salvador (Cornellana)',           url:'https://festivaladar.com/ast/conciertu-monasteriu-san-salvador-cornellana-2024/',   img:CDN+'adar24fx30/12/IMG_0203.jpg' }
+{ year:'2024', title:'Conciertu nel Monasteriu de San Salvador (Cornellana)',           url:'/ast/conciertu-monasteriu-san-salvador-cornellana-2024/',   img:CDN+'adar24fx30/12/IMG_0203.jpg' }
 ]},
 { name:'Sotu del Barcu', lat:43.5273, lng:-6.0700, activities:[
-{ year:'2022', title:'Conciertu Visual en Sotu del Barcu',                              url:'https://festivaladar.com/ast/conciertu-visual-sotu-del-barcu-2022/',                img:CDN+'ADAR_Eventos/2022/09_Concierto_visual_en_Soto_del_Barco/PXL_20220809_190711391.jpg' }
+{ year:'2022', title:'Conciertu Visual en Sotu del Barcu',                              url:'/ast/conciertu-visual-sotu-del-barcu-2022/',                img:CDN+'ADAR_Eventos/2022/09_Concierto_visual_en_Soto_del_Barco/PXL_20220809_190711391.jpg' }
 ]}
 ];
 

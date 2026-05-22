@@ -49,7 +49,7 @@ translation_group: "pll_69a5bc217b91b"
 In-person and hybrid residencies take place at the ADAR headquarters in Leiguarda, Asturias.
 </p>
 <div class="ai-actions" style="margin-top:12px">
-<a class="ai-btn ai-btn-ghost" href="https://festivaladar.com/en/headquarters/" target="_blank" rel="noopener">View Headquarters</a>
+<a class="ai-btn ai-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">View Headquarters</a>
 </div>
 </div>
 
@@ -161,7 +161,7 @@ For questions related to the call, please contact:
 
 <div style="margin-top:20px">
 <a class="amp-btn" href="https://tally.so/r/WOAQJe" target="_blank" rel="noopener">Open Application Portal</a>
-<a class="amp-btn ai-btn-ghost" href="https://festivaladar.com/en/headquarters/" target="_blank" rel="noopener">Explore the Headquarters</a>
+<a class="amp-btn ai-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Explore the Headquarters</a>
 </div>
 
 </div>

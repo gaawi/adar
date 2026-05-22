@@ -55,7 +55,7 @@ IMPORTANTE: este bloque utiliza el CSS .adar-impact-v3
 Las residencias presenciales e híbridas se desarrollan en la sede de ADAR en Leiguarda, Asturias.
 </p>
 <div class="ai-actions" style="margin-top:12px">
-<a class="ai-btn ai-btn-ghost" href="https://festivaladar.com/en/headquarters/" target="_blank" rel="noopener">Ver sede</a>
+<a class="ai-btn ai-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Ver sede</a>
 </div>
 </div>
 
@@ -167,7 +167,7 @@ Para consultas relacionadas con la convocatoria, contacte en:
 
 <div style="margin-top:20px">
 <a class="amp-btn" href="https://tally.so/r/WOAQJe" target="_blank" rel="noopener">Abrir portal de solicitud</a>
-<a class="amp-btn ai-btn-ghost" href="https://festivaladar.com/en/headquarters/" target="_blank" rel="noopener">Explorar la sede</a>
+<a class="amp-btn ai-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Explorar la sede</a>
 </div>
 
 

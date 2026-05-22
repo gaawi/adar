@@ -35,7 +35,7 @@ Pega esti bloque na to páxina (Custom HTML / Bloque HTML).
 <h2 class="amp-title">Arte contemporáneo y escelencia <em>musical</em></h2>
 <p class="amp-subtitle">Creación, residencies y mediación cultural nel corazón rural d'Asturies · 2021 – 2025</p>
 <div class="amp-actions">
-<a class="amp-btn" href="https://festivaladar.com/ast/mapa-dacciones/">Ver mapa d'acciones</a>
+<a class="amp-btn" href="/ast/mapa-dacciones/">Ver mapa d'acciones</a>
 <a class="amp-btn amp-btn-ghost" href="#promo">Ver videu</a>
 <a class="amp-btn amp-btn-ghost" href="#redes">Siguinos</a>
 </div>

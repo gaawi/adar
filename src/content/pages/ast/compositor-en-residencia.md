@@ -49,7 +49,7 @@ translation_group: "pll_69a5bc217b91b"
 Les residencies presenciales y híbrides desendólquense na sede d’ADAR en Leiguarda, Asturies.
 </p>
 <div class="ai-actions" style="margin-top:12px">
-<a class="ai-btn ai-btn-ghost" href="https://festivaladar.com/en/headquarters/" target="_blank" rel="noopener">Ver sede</a>
+<a class="ai-btn ai-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Ver sede</a>
 </div>
 </div>
 
@@ -161,7 +161,7 @@ Pa consultes rellacionaes cola convocatoria, contautar en:
 
 <div style="margin-top:20px">
 <a class="amp-btn" href="https://tally.so/r/WOAQJe" target="_blank" rel="noopener">Abrir portal de solicitú</a>
-<a class="amp-btn ai-btn-ghost" href="https://festivaladar.com/en/headquarters/" target="_blank" rel="noopener">Esplorar la sede</a>
+<a class="amp-btn ai-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Esplorar la sede</a>
 </div>
 
 </div>
