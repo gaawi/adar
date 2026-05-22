@@ -2020,7 +2020,7 @@ html, body{ overflow-x: hidden; }
 
 /* INNER CONTENT: centered container starts BELOW the hero. The right
    sidebar floats to the right of the title and body. */
-.adar-archive-page .adar-archive-left > *:not(.adar-archive-cover){
+.adar-archive-page .adar-archive-left > *:not(.adar-archive-cover):not(.adar-archive-hero){
   max-width: 720px;
   margin-left: max(32px, calc((100% - 1200px) / 2 + 32px));
   margin-right: 24px;
@@ -2041,7 +2041,7 @@ html, body{ overflow-x: hidden; }
     width: 300px;
     right: 24px;
   }
-  .adar-archive-page .adar-archive-left > *:not(.adar-archive-cover){
+  .adar-archive-page .adar-archive-left > *:not(.adar-archive-cover):not(.adar-archive-hero){
     margin-right: 360px;
   }
 }
@@ -2051,7 +2051,7 @@ html, body{ overflow-x: hidden; }
     width: auto;
     margin: 32px 20px 0;
   }
-  .adar-archive-page .adar-archive-left > *:not(.adar-archive-cover){
+  .adar-archive-page .adar-archive-left > *:not(.adar-archive-cover):not(.adar-archive-hero){
     margin-left: 20px;
     margin-right: 20px;
     max-width: none;
