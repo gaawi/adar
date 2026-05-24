@@ -24,50 +24,70 @@ const { lang, currentPath = '', translations = {} } = Astro.props;
 const menuKey = lang;
 const flat: MenuItem[] = (menusJson as Record<string, MenuItem[]>)[menuKey] ?? [];
 
-function buildTree(items: MenuItem[]): MenuItem[] {
-  const byId = new Map<number, MenuItem>();
-  items.forEach((it) => byId.set(it.item_id, { ...it, children: [] }));
-  const roots: MenuItem[] = [];
-  byId.forEach((it) => {
-    if (it.parent_id && byId.has(it.parent_id)) {
-      byId.get(it.parent_id)!.children!.push(it);
-    } else {
-      roots.push(it);
-    }
-  });
-  const sortRec = (arr: MenuItem[]) => {
-    arr.sort((a, b) => a.order - b.order);
-    arr.forEach((i) => i.children && sortRec(i.children));
-  };
-  sortRec(roots);
-  return roots;
-}
-
 function localizeUrl(url: string): string {
-  return url
-    .replace(/^https?:\/\/festivaladar\.com/, '')
-    .replace(/^\/+/, '/');
+  return url.replace(/^https?:\/\/festivaladar\.com/, '').replace(/^\/+/, '/');
 }
 
-const tree = buildTree(flat);
+// Top-level items only, ordered. Drop submenus for the editorial header.
+const tops = flat
+  .filter((m) => !m.parent_id)
+  .sort((a, b) => a.order - b.order);
+
+// Status bar copy per language
+const statusCopy = {
+  es: { left: 'Festival ADAR · Principado de Asturias', right: 'Asturias · España · Europa' },
+  en: { left: 'Festival ADAR · Principality of Asturias', right: 'Asturias · Spain · Europe' },
+  ast: { left: 'Festival ADAR · Principáu d’Asturies', right: 'Asturies · España · Europa' },
+}[lang];
+
+const ctaLabel = { es: 'Contacto', en: 'Contact', ast: 'Contautu' }[lang];
+const ctaHref =
+  tops.find((m) => /contact|contautu/i.test(m.url))?.url
+    .replace(/^https?:\/\/festivaladar\.com/, '') || `/${lang}/contacto/`;
+
 const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
 ---
 
-<header id="masthead" class="site-header" role="banner">
-  <div id="site-navigation" class="navbar">
-    <div class="header-inner inner-wrap wpz_menu_left">
-      <div class="header-logo-wrapper">
-        <a href={homeHref} class="custom-logo-link" rel="home">
-          <img
-            width="300"
-            height="115"
-            src="/logoadar.png"
-            class="custom-logo"
-            alt="Festival ADAR"
-            decoding="async"
-          />
-        </a>
+<header id="masthead" class="site-header cd-header" role="banner">
+  <div class="cd-status">
+    <div class="cdcontainer cd-status-inner">
+      <span><span class="cd-status-dot"></span>{statusCopy.left}</span>
+      <span class="cd-status-region">{statusCopy.right}</span>
+    </div>
+  </div>
+
+  <div class="cdcontainer cd-main">
+    <a href={homeHref} class="cd-mark" rel="home">
+      <span class="cd-mark-square">A</span>
+      <span class="cd-mark-text">FESTIVAL ADAR</span>
+    </a>
+
+    <nav class="cd-nav" aria-label="Primary">
+      {tops.map((item, i) => {
+        const href = localizeUrl(item.url);
+        return (
+          <a href={href} class={href === currentPath ? 'is-current' : ''}>
+            <span class="cd-nav-num">0{i + 1}</span>
+            {item.title}
+          </a>
+        );
+      })}
+    </nav>
+
+    <div class="cd-right">
+      <div class="cd-lang" aria-label="Language">
+        {LANGS.map((l) => {
+          const href = translations[l] || `/${l}/${HOME_SLUG[l]}/`;
+          return (
+            <a class={l === lang ? 'is-active' : ''} href={href} hreflang={l}>
+              {l.toUpperCase()}
+            </a>
+          );
+        })}
       </div>
+      <a class="cd-cta" href={ctaHref}>
+        {ctaLabel} <span class="cd-cta-arr">↗</span>
+      </a>
 
       <button
         type="button"
@@ -81,67 +101,31 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
         <span class="adar-nav-toggle-bar"></span>
         <span class="adar-nav-toggle-bar"></span>
       </button>
-
-      <div class="header-navigation-wrapper" id="primary-nav">
-        <nav
-          class="primary-menu-wrapper navbar-collapse collapse"
-          aria-label="Menú horizontal superior"
-          role="navigation"
-        >
-          <ul id={`menu-${menuKey}-1`} class="nav navbar-nav dropdown sf-menu">
-            {tree.map((item) => (
-              <li
-                class={`menu-item ${item.classes ?? ''} ${item.children?.length ? 'menu-item-has-children' : ''} ${
-                  localizeUrl(item.url) === currentPath ? 'current-menu-item' : ''
-                }`}
-              >
-                <a href={localizeUrl(item.url)}>
-                  {item.title}
-                  {item.children?.length ? (
-                    <svg
-                      class="svg-icon svg-icon-angle-down"
-                      aria-hidden="true"
-                      role="img"
-                      focusable="false"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="21"
-                      height="32"
-                      viewBox="0 0 21 32"
-                    >
-                      <path d="M19.196 13.143q0 0.232-0.179 0.411l-8.321 8.321q-0.179 0.179-0.411 0.179t-0.411-0.179l-8.321-8.321q-0.179-0.179-0.179-0.411t0.179-0.411l0.893-0.893q0.179-0.179 0.411-0.179t0.411 0.179l7.018 7.018 7.018-7.018q0.179-0.179 0.411-0.179t0.411 0.179l0.893 0.893q0.179 0.179 0.179 0.411z" />
-                    </svg>
-                  ) : null}
-                </a>
-                {item.children?.length ? (
-                  <ul class="sub-menu">
-                    {item.children.map((sub) => (
-                      <li class={`menu-item ${sub.classes ?? ''}`}>
-                        <a href={localizeUrl(sub.url)}>{sub.title}</a>
-                      </li>
-                    ))}
-                  </ul>
-                ) : null}
-              </li>
-            ))}
-          </ul>
-        </nav>
-
-        <div class="adar-header-lang" aria-label="Language">
-          {LANGS.map((l) => {
-            const href = translations[l] || `/${l}/${HOME_SLUG[l]}/`;
-            return (
-              <a
-                class={`adar-header-lang-link ${l === lang ? 'is-active' : ''}`}
-                href={href}
-                hreflang={l}
-              >
-                {l.toUpperCase()}
-              </a>
-            );
-          })}
-        </div>
-      </div>
     </div>
+  </div>
+
+  <div class="header-navigation-wrapper" id="primary-nav">
+    <nav class="primary-menu-wrapper" aria-label="Mobile" role="navigation">
+      <ul class="nav navbar-nav">
+        {tops.map((item, i) => (
+          <li class="menu-item">
+            <a href={localizeUrl(item.url)}>
+              <span class="cd-nav-num">0{i + 1}</span> {item.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+      <div class="adar-header-lang">
+        {LANGS.map((l) => {
+          const href = translations[l] || `/${l}/${HOME_SLUG[l]}/`;
+          return (
+            <a class={`adar-header-lang-link ${l === lang ? 'is-active' : ''}`} href={href} hreflang={l}>
+              {l.toUpperCase()}
+            </a>
+          );
+        })}
+      </div>
+    </nav>
   </div>
 </header>
 
@@ -155,10 +139,8 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       document.body.classList.toggle('adar-nav-open', open);
     });
-    // Close when a link is clicked
     nav.addEventListener('click', function (e) {
-      const t = e.target;
-      if (t instanceof HTMLAnchorElement) {
+      if (e.target instanceof HTMLAnchorElement) {
         nav.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', 'false');
         document.body.classList.remove('adar-nav-open');
