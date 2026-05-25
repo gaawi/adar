@@ -1554,6 +1554,7 @@ body.has-header-image #content{
 /* =============================================================
    ADAR MOBILE NAVIGATION (hamburger + slide-down panel)
    ============================================================= */
+.header-navigation-wrapper{ display: none; }
 .adar-nav-toggle{
   display: none;
   position: relative;
@@ -1595,6 +1596,7 @@ body.has-header-image #content{
   .adar-nav-toggle{ display: block; }
 
   .header-navigation-wrapper{
+    display: flex;
     position: fixed;
     inset: 0;
     background: rgba(15,17,20,0.96);
