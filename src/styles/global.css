@@ -5314,3 +5314,79 @@ body.home .adar-footer-cta { display: none !important; }
   .hm-funders-row { gap: 24px; }
   .hm-funders-row img { height: 44px; }
 }
+
+/* =============================================================
+   ADAR FOOTER LOGOS — editorial reset
+   New ul-based markup. Two rows (Funders / Partners) on paper.
+   ============================================================= */
+.adar-footer-logos {
+  background: var(--paper) !important;
+  border-top: 1px solid var(--line) !important;
+  padding: 56px 40px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 720px) { .adar-footer-logos { padding: 40px 20px !important; gap: 28px; } }
+.adar-footer-logos-row {
+  display: grid !important;
+  grid-template-columns: 200px 1fr;
+  gap: 32px;
+  align-items: center;
+  border-top: 1px solid var(--line-soft);
+  padding-top: 32px;
+}
+.adar-footer-logos-row:first-child { border-top: none; padding-top: 0; }
+@media (max-width: 720px) {
+  .adar-footer-logos-row { grid-template-columns: 1fr; gap: 16px; }
+}
+.adar-footer-logos-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.adar-footer-logos-row > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px 44px;
+}
+.adar-footer-logos-row > ul > li { display: inline-flex; align-items: center; }
+.adar-footer-logos-row > ul > li > a {
+  display: inline-flex;
+  align-items: center;
+  height: 56px;
+}
+.adar-footer-logos-row > ul img {
+  display: block;
+  height: 56px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  filter: grayscale(100%) brightness(0);
+  opacity: 0.78;
+  mix-blend-mode: multiply;
+  transition: opacity 0.2s ease;
+}
+.adar-footer-logos-row > ul > li > a:hover img { opacity: 1; }
+.adar-footer-logos-funders > ul img { height: 48px; }
+@media (max-width: 720px) {
+  .adar-footer-logos-row > ul { gap: 24px 28px; }
+  .adar-footer-logos-row > ul img { height: 40px; max-width: 140px; }
+  .adar-footer-logos-funders > ul img { height: 36px; }
+}
+
+/* Footer mark column */
+.adar-footer-mark {
+  display: block;
+  height: 64px;
+  width: auto;
+  max-width: 240px;
+  filter: invert(1) brightness(2);
+  opacity: 0.9;
+}
