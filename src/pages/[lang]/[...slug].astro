@@ -1,6 +1,7 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Home from '../../components/home/Home.astro';
 import type { Lang } from '../../i18n/strings.ts';
 import { LANGS } from '../../i18n/strings.ts';
 
@@ -81,7 +82,7 @@ const bodyClasses = [
         </header>
       )}
       <div class="entry-content">
-        <Content />
+        {isHome ? <Home lang={lang} /> : <Content />}
       </div>
     </article>
   </div>

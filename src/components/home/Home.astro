@@ -1,0 +1,557 @@
+---
+import { getCollection } from 'astro:content';
+import type { Lang } from '../../i18n/strings.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const ARCHIVE_CATEGORY: Record<Lang, string> = {
+  es: 'Memoria de Acciones',
+  en: 'Projects Archive',
+  ast: 'Memoria d’Acciones',
+};
+
+const ARCHIVE_HREF: Record<Lang, string> = {
+  es: '/es/category/memoria-de-acciones/',
+  en: '/en/category/projects-archive/',
+  ast: '/ast/category/memoria-de-acciones/',
+};
+
+const CONTACT_HREF: Record<Lang, string> = {
+  es: '/es/contacto/',
+  en: '/en/contact/',
+  ast: '/ast/contautu/',
+};
+
+const TEAM_HREF: Record<Lang, string> = {
+  es: '/es/equipo/',
+  en: '/en/team/',
+  ast: '/ast/equipu/',
+};
+
+const MAP_HREF: Record<Lang, string> = {
+  es: '/es/mapa-de-acciones/',
+  en: '/en/map-of-actions/',
+  ast: '/ast/mapa-acciones/',
+};
+
+const posts = await getCollection('posts');
+const archive = posts
+  .filter(
+    (p) =>
+      p.data.lang === lang &&
+      p.data.status === 'publish' &&
+      p.data.categories?.includes(ARCHIVE_CATEGORY[lang]) &&
+      p.data.featured_image,
+  )
+  .sort(
+    (a, b) =>
+      (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0),
+  );
+
+const featured = archive.slice(0, 6);
+
+function yearOf(tags: string[]): string {
+  return tags.find((t) => /^20\d{2}$/.test(t)) ?? '';
+}
+
+function placeOf(tags: string[]): string {
+  const ignore = new Set([
+    'concierto', 'concert', 'conciertu',
+    'música de cámara', 'chamber music', 'música cámara',
+    'instalación', 'installation', 'instalación sonora',
+    'aire libre', 'open air',
+    'lugar emblemático', 'landmark',
+    'sound walk', 'paseo sonoro',
+    'video', 'vídeo', 'videoarte',
+  ]);
+  const place = tags.find(
+    (t) => !/^20\d{2}$/.test(t) && !ignore.has(t.toLowerCase()),
+  );
+  return place ?? '';
+}
+
+function disciplineOf(tags: string[]): string {
+  const disciplines = [
+    'concierto', 'concert', 'conciertu',
+    'instalación', 'installation',
+    'sound walk', 'paseo sonoro',
+    'videoarte', 'video art',
+    'residencia', 'residency',
+  ];
+  return tags.find((t) => disciplines.includes(t.toLowerCase())) ?? '';
+}
+
+const COPY = {
+  es: {
+    eyebrow: 'Festival ADAR · Cuaderno 01 · 2021—2025',
+    title1: 'ARTES',
+    title2: 'vivas en el',
+    title3: 'MEDIO RURAL',
+    lede:
+      'ADAR es una asociación cultural fundada en Leiguarda (Asturias) que produce arte contemporáneo y música de excelencia en aldeas, iglesias, hórreos y paisajes del medio rural.',
+    watchVideo: 'Manifiesto en vídeo',
+    scrollHint: 'Desplazarse',
+    marquee:
+      ['Leiguarda', 'Bedón', 'Belmonte', 'Llanes', 'Colunga', 'Somiedo', 'Cornellana', 'Tineo', 'Grado', 'El Franco', 'Soto del Barco', 'Villanueva de Oscos', 'Taramundi'],
+    coord_eyebrow: '§ 01 · Coordenadas',
+    coord_h: 'Un proyecto situado.',
+    coord_lede:
+      'Un festival sin recinto: programa una temporada larga en sedes patrimoniales y paisajes vivos del occidente asturiano. La obra dialoga con el lugar; el lugar entra en la obra.',
+    coord_specsTitle: 'Ficha técnica',
+    coord_specs: [
+      ['Latitud', '43.2° N'],
+      ['Longitud', '6.2° W'],
+      ['Sede', 'Leiguarda · Belmonte de Miranda'],
+      ['Fundado', '2020 · Guillermo Laporta & Josefina Urraca'],
+      ['Ámbito', 'Asturias · España · Europa'],
+    ],
+    statsTitle: 'En cifras',
+    stats: [
+      ['06', 'ediciones'],
+      ['38', 'acciones documentadas'],
+      ['18', 'sedes y paisajes'],
+      ['50+', 'artistas residentes'],
+    ],
+    index_eyebrow: '§ 02 · Índice de acciones',
+    index_h: 'Catálogo razonado.',
+    index_lede:
+      'Una selección reciente del archivo. Cada acción se concibe para su lugar: una iglesia, un palacio, un invernadero de cristal, un horreo, una orilla.',
+    index_cta: 'Ver todo el catálogo',
+    video_eyebrow: '§ 03 · Vídeo manifiesto',
+    video_h: 'ADAR en movimiento.',
+    video_lede:
+      'Patrimonio, paisaje y creación contemporánea. Una temporada filmada con artistas de primer nivel.',
+    principles_eyebrow: '§ 04 · Seis principios',
+    principles_h: 'Lo que perseguimos.',
+    principles: [
+      ['Revitalizar el medio rural', 'Proyectos de excelencia en territorios que rara vez los reciben, y que casi siempre los merecen.'],
+      ['Activar patrimonio', 'Iglesias, palacios, hórreos, capillas e invernaderos como escenarios vivos, no como museo.'],
+      ['Encargo y residencia', 'Producimos obra nueva con artistas en residencia. Nada de relleno: piezas pensadas para el lugar.'],
+      ['Mediación cercana', 'Programa con el público local: charlas, paseos, escuela. La excelencia no riñe con la conversación.'],
+      ['Documentar para circular', 'Registro audiovisual cuidado, prensa y archivo, para que la obra siga viajando.'],
+      ['Asturias hacia Europa', 'Alianzas con instituciones nacionales y europeas; circuitos para artistas asturianos y para quienes nos visitan.'],
+    ],
+    press_eyebrow: '§ 05 · Prensa',
+    press_h: 'ADAR en los medios.',
+    press: [
+      ['20 · 05 · 2025', 'La Nueva España', 'El festival Adar busca los mejores hórreos para música de cámara.'],
+      ['12 · 08 · 2024', 'La Voz de Asturias', 'El Festival Adar despliega desde Belmonte otra edición de arte y música en entornos rurales.'],
+      ['08 · 08 · 2024', 'El Comercio', 'Adar, un festival distinto para revitalizar el mundo rural.'],
+      ['29 · 01 · 2024', 'Canal Prestosu', 'Nuestro compromiso: Festival de Música de Leiguarda.'],
+      ['29 · 01 · 2024', 'RPA · Radio Asturias', 'El Festival ADAR con Josefina Urraca.'],
+    ],
+    join_eyebrow: '§ 06 · Comunidad',
+    join_h_a: 'Únete al',
+    join_h_b: 'círculo',
+    join_h_c: 'ADAR.',
+    join_lede:
+      'Convocatorias, residencias, programación y procesos creativos. Una carta breve cada temporada — sin ruido.',
+    join_cta_email: 'Escribir a la oficina',
+    join_cta_ig: 'Seguir en Instagram',
+    footer_eyebrow: 'Próxima edición',
+    footer_date: 'Verano · 2026',
+    footer_h_a: 'ASTURIAS',
+    footer_h_b: 'ESPAÑA',
+    footer_h_c: 'EUROPA',
+    footer_cta_a: 'Contactar oficina',
+    footer_cta_b: 'Conocer al equipo',
+    footer_cta_c: 'Mapa de acciones',
+    colophon:
+      'Colofón — Tipografía: Bricolage Grotesque, EB Garamond, JetBrains Mono. Asociación ADAR · Leiguarda, Belmonte de Miranda, Principado de Asturias.',
+  },
+  en: {
+    eyebrow: 'Festival ADAR · Notebook 01 · 2021—2025',
+    title1: 'LIVING',
+    title2: 'arts in the',
+    title3: 'COUNTRYSIDE',
+    lede:
+      'ADAR is a cultural association based in Leiguarda (Asturias) producing contemporary art and music of excellence in villages, churches, granaries and landscapes of rural Spain.',
+    watchVideo: 'Watch the manifesto',
+    scrollHint: 'Scroll',
+    marquee:
+      ['Leiguarda', 'Bedón', 'Belmonte', 'Llanes', 'Colunga', 'Somiedo', 'Cornellana', 'Tineo', 'Grado', 'El Franco', 'Soto del Barco', 'Villanueva de Oscos', 'Taramundi'],
+    coord_eyebrow: '§ 01 · Coordinates',
+    coord_h: 'A grounded project.',
+    coord_lede:
+      'A festival without a venue: a long season unfolding across heritage sites and living landscapes of western Asturias. Work meets place; place enters the work.',
+    coord_specsTitle: 'Specs',
+    coord_specs: [
+      ['Latitude', '43.2° N'],
+      ['Longitude', '6.2° W'],
+      ['Base', 'Leiguarda · Belmonte de Miranda'],
+      ['Founded', '2020 · Guillermo Laporta & Josefina Urraca'],
+      ['Reach', 'Asturias · Spain · Europe'],
+    ],
+    statsTitle: 'In numbers',
+    stats: [
+      ['06', 'editions'],
+      ['38', 'actions documented'],
+      ['18', 'venues & landscapes'],
+      ['50+', 'resident artists'],
+    ],
+    index_eyebrow: '§ 02 · Index of actions',
+    index_h: 'Catalogue raisonné.',
+    index_lede:
+      'A recent selection from the archive. Each action is built for its place: a church, a palace, a glasshouse, a granary, a shoreline.',
+    index_cta: 'Browse the full catalogue',
+    video_eyebrow: '§ 03 · Manifesto film',
+    video_h: 'ADAR in motion.',
+    video_lede:
+      'Heritage, landscape and contemporary creation. A season filmed with first-rate artists.',
+    principles_eyebrow: '§ 04 · Six principles',
+    principles_h: 'What we chase.',
+    principles: [
+      ['Revitalise the countryside', 'First-rate projects in territories that rarely receive them, and almost always deserve them.'],
+      ['Activate heritage', 'Churches, palaces, granaries, chapels and glasshouses as living stages — not as museum.'],
+      ['Commission and residency', 'We produce new work with artists in residence. No filler: pieces built for the place.'],
+      ['Close mediation', 'Programme with the local audience: talks, walks, school. Excellence does not fight conversation.'],
+      ['Document to circulate', 'Careful audiovisual record, press, archive — so that work keeps travelling.'],
+      ['Asturias into Europe', 'Alliances with Spanish and European institutions; circuits for Asturian artists and for our visitors.'],
+    ],
+    press_eyebrow: '§ 05 · Press',
+    press_h: 'ADAR in the press.',
+    press: [
+      ['20 · 05 · 2025', 'La Nueva España', 'Festival Adar searches for the finest granaries for chamber music.'],
+      ['12 · 08 · 2024', 'La Voz de Asturias', 'Festival Adar opens from Belmonte another edition of art and music in rural settings.'],
+      ['08 · 08 · 2024', 'El Comercio', 'Adar, a different festival to revitalise rural Spain.'],
+      ['29 · 01 · 2024', 'Canal Prestosu', 'Our commitment: Festival de Música de Leiguarda.'],
+      ['29 · 01 · 2024', 'RPA · Asturias Radio', 'Festival ADAR with Josefina Urraca.'],
+    ],
+    join_eyebrow: '§ 06 · Circle',
+    join_h_a: 'Join the',
+    join_h_b: 'ADAR',
+    join_h_c: 'circle.',
+    join_lede:
+      'Open calls, residencies, programme and creative process. A short letter each season — no noise.',
+    join_cta_email: 'Write to the office',
+    join_cta_ig: 'Follow on Instagram',
+    footer_eyebrow: 'Next edition',
+    footer_date: 'Summer · 2026',
+    footer_h_a: 'ASTURIAS',
+    footer_h_b: 'SPAIN',
+    footer_h_c: 'EUROPE',
+    footer_cta_a: 'Contact the office',
+    footer_cta_b: 'Meet the team',
+    footer_cta_c: 'Map of actions',
+    colophon:
+      'Colophon — Typography: Bricolage Grotesque, EB Garamond, JetBrains Mono. Asociación ADAR · Leiguarda, Belmonte de Miranda, Principality of Asturias.',
+  },
+  ast: {
+    eyebrow: 'Festival ADAR · Cuadernu 01 · 2021—2025',
+    title1: 'ARTES',
+    title2: 'vives nel',
+    title3: 'MEDIU RURAL',
+    lede:
+      'ADAR ye una asociación cultural fundada en Lleiguarda (Asturies) que produz arte contemporáneo y música d’escelencia n’aldegues, ilesies, hórreos y paisaxes del mediu rural.',
+    watchVideo: 'Manifiestu en videu',
+    scrollHint: 'Esllizar',
+    marquee:
+      ['Lleiguarda', 'Bedón', 'Belmonte', 'Llanes', 'Colunga', 'Somiedu', 'Cornellana', 'Tinéu', 'Grau', 'El Franco', 'Soto del Barcu', 'Villanueva d’Oscos', 'Taramundi'],
+    coord_eyebrow: '§ 01 · Coordenaes',
+    coord_h: 'Un proyectu asitiáu.',
+    coord_lede:
+      'Un festival ensin recintu: programa una temporada llarga en sedes patrimoniales y paisaxes vivos del occidente asturianu. La obra dialoga col llugar; el llugar entra na obra.',
+    coord_specsTitle: 'Ficha técnica',
+    coord_specs: [
+      ['Llatitú', '43.2° N'],
+      ['Llonxitú', '6.2° W'],
+      ['Sede', 'Lleiguarda · Belmonte de Miranda'],
+      ['Fundáu', '2020 · Guillermo Laporta & Josefina Urraca'],
+      ['Ámbitu', 'Asturies · España · Europa'],
+    ],
+    statsTitle: 'En cifres',
+    stats: [
+      ['06', 'ediciones'],
+      ['38', 'acciones documentaes'],
+      ['18', 'sedes y paisaxes'],
+      ['50+', 'artistes residentes'],
+    ],
+    index_eyebrow: '§ 02 · Índiz d’acciones',
+    index_h: 'Catálogu razonáu.',
+    index_lede:
+      'Una escoyeta reciente del archivu. Cada acción concíbese pal so llugar: una ilesia, un palaciu, un invernáu de cristal, un hórreu, una vera.',
+    index_cta: 'Ver tol catálogu',
+    video_eyebrow: '§ 03 · Videu manifiestu',
+    video_h: 'ADAR en movimientu.',
+    video_lede:
+      'Patrimoniu, paisaxe y creación contemporánea. Una temporada filmada con artistes de primer nivel.',
+    principles_eyebrow: '§ 04 · Seis principios',
+    principles_h: 'Lo que persiguimos.',
+    principles: [
+      ['Revitalizar el mediu rural', 'Proyectos d’escelencia en territorios que rara vez los reciben, y que cuasi siempres los merecen.'],
+      ['Activar patrimoniu', 'Ilesies, palacios, hórreos, capielles ya invernaderos como escenarios vivos, non como muséu.'],
+      ['Encargu y residencia', 'Producimos obra nueva con artistes en residencia. Nada de rellenu: pieces pensaes pal llugar.'],
+      ['Mediación cercana', 'Programa col públicu llocal: charres, paseos, escuela. La escelencia nun riñe cola conversación.'],
+      ['Documentar pa circular', 'Rexistru audiovisual cuidáu, prensa y archivu, pa que la obra siga viaxando.'],
+      ['Asturies haza Europa', 'Aliances con instituciones nacionales y europees; circuitos pa artistes asturianos y pa quien nos visita.'],
+    ],
+    press_eyebrow: '§ 05 · Prensa',
+    press_h: 'ADAR nos medios.',
+    press: [
+      ['20 · 05 · 2025', 'La Nueva España', 'El festival Adar gueta los meyores hórreos pa música de cámara.'],
+      ['12 · 08 · 2024', 'La Voz de Asturias', 'El Festival Adar desplega dende Belmonte otra edición d’arte y música en contornos rurales.'],
+      ['08 · 08 · 2024', 'El Comercio', 'Adar, un festival distintu pa revitalizar el mundu rural.'],
+      ['29 · 01 · 2024', 'Canal Prestosu', 'El nuesu compromisu: Festival de Música de Lleiguarda.'],
+      ['29 · 01 · 2024', 'RPA · Radio Asturies', 'El Festival ADAR con Josefina Urraca.'],
+    ],
+    join_eyebrow: '§ 06 · Comunidá',
+    join_h_a: 'Xúnite al',
+    join_h_b: 'círculu',
+    join_h_c: 'ADAR.',
+    join_lede:
+      'Convocatories, residencies, programación y procesos creativos. Una carta curtia cada temporada — ensin ruíu.',
+    join_cta_email: 'Escribir a la oficina',
+    join_cta_ig: 'Siguir n’Instagram',
+    footer_eyebrow: 'Próxima edición',
+    footer_date: 'Branu · 2026',
+    footer_h_a: 'ASTURIES',
+    footer_h_b: 'ESPAÑA',
+    footer_h_c: 'EUROPA',
+    footer_cta_a: 'Contautar oficina',
+    footer_cta_b: 'Conocer al equipu',
+    footer_cta_c: 'Mapa d’acciones',
+    colophon:
+      'Colofón — Tipografía: Bricolage Grotesque, EB Garamond, JetBrains Mono. Asociación ADAR · Lleiguarda, Belmonte de Miranda, Principáu d’Asturies.',
+  },
+}[lang];
+
+const heroImage =
+  'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg';
+const marqueeLoop = [...COPY.marquee, ...COPY.marquee, ...COPY.marquee];
+---
+
+<div class="hm">
+  <!-- ============================================
+       HERO · acto inaugural
+       ============================================ -->
+  <section class="hm-hero">
+    <div class="hm-hero-img">
+      <img src={heroImage} alt="Festival ADAR" />
+    </div>
+    <div class="hm-hero-veil"></div>
+
+    <div class="hm-hero-meta">
+      <span class="hm-hero-meta-l">{COPY.eyebrow}</span>
+      <span class="hm-hero-meta-r mono">
+        43.2° N · 6.2° W
+      </span>
+    </div>
+
+    <div class="hm-hero-body">
+      <h1 class="hm-hero-title">
+        <span class="hm-hero-l1">{COPY.title1}</span>
+        <span class="hm-hero-l2"><em>{COPY.title2}</em></span>
+        <span class="hm-hero-l3">{COPY.title3}<span class="hm-dot">.</span></span>
+      </h1>
+      <p class="hm-hero-lede">{COPY.lede}</p>
+    </div>
+
+    <div class="hm-hero-foot">
+      <a href="#video" class="hm-hero-watch">
+        <span class="hm-play" aria-hidden="true"></span>
+        {COPY.watchVideo}
+      </a>
+      <span class="hm-scroll mono">↓ {COPY.scrollHint}</span>
+    </div>
+
+    <div class="hm-marquee" aria-hidden="true">
+      <div class="hm-marquee-track">
+        {marqueeLoop.map((place, i) => (
+          <span class="hm-marquee-item">
+            <span class="hm-marquee-num mono">{String((i % COPY.marquee.length) + 1).padStart(2, '0')}</span>
+            {place}
+          </span>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       § 01 COORDENADAS
+       ============================================ -->
+  <section class="hm-coord">
+    <header class="hm-section-head">
+      <span class="hm-eyebrow">{COPY.coord_eyebrow}</span>
+    </header>
+    <div class="hm-coord-grid">
+      <div class="hm-coord-lede">
+        <h2 class="hm-h2">{COPY.coord_h}</h2>
+        <p>{COPY.coord_lede}</p>
+      </div>
+
+      <dl class="hm-specs">
+        <p class="hm-specs-title mono">{COPY.coord_specsTitle}</p>
+        {COPY.coord_specs.map(([k, v]) => (
+          <div class="hm-spec">
+            <dt class="mono">{k}</dt>
+            <dd>{v}</dd>
+          </div>
+        ))}
+      </dl>
+
+      <div class="hm-stats">
+        <p class="hm-specs-title mono">{COPY.statsTitle}</p>
+        <div class="hm-stats-grid">
+          {COPY.stats.map(([n, l]) => (
+            <div class="hm-stat">
+              <span class="hm-stat-n">{n}</span>
+              <span class="hm-stat-l mono">{l}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       § 02 ÍNDICE DE ACCIONES
+       ============================================ -->
+  <section class="hm-index">
+    <header class="hm-section-head">
+      <span class="hm-eyebrow">{COPY.index_eyebrow}</span>
+      <div class="hm-section-head-r">
+        <h2 class="hm-h2">{COPY.index_h}</h2>
+        <p class="hm-section-lede">{COPY.index_lede}</p>
+      </div>
+    </header>
+
+    <ol class="hm-index-list">
+      {featured.map((p, i) => {
+        const tags = p.data.tags || [];
+        const year = yearOf(tags);
+        const place = placeOf(tags);
+        const discipline = disciplineOf(tags);
+        const num = String(i + 1).padStart(3, '0');
+        return (
+          <li class="hm-card" style={`--i:${i}`}>
+            <a href={p.data.permalink} class="hm-card-link">
+              <div class="hm-card-img">
+                <img src={p.data.featured_image} alt={p.data.title} loading="lazy" />
+              </div>
+              <div class="hm-card-meta mono">
+                <span class="hm-card-num">№ {num}</span>
+                <span class="hm-card-year">{year}</span>
+              </div>
+              <h3 class="hm-card-title">{p.data.title}</h3>
+              <div class="hm-card-foot mono">
+                {place && <span>{place}</span>}
+                {place && discipline && <span class="hm-card-sep">·</span>}
+                {discipline && <span>{discipline}</span>}
+                <span class="hm-card-arr">→</span>
+              </div>
+            </a>
+          </li>
+        );
+      })}
+    </ol>
+
+    <a class="hm-index-cta" href={ARCHIVE_HREF[lang]}>
+      <span class="hm-arr">→</span>
+      {COPY.index_cta}
+    </a>
+  </section>
+
+  <!-- ============================================
+       § 03 VIDEO MANIFESTO
+       ============================================ -->
+  <section class="hm-video" id="video">
+    <header class="hm-section-head">
+      <span class="hm-eyebrow">{COPY.video_eyebrow}</span>
+    </header>
+    <div class="hm-video-wrap">
+      <h2 class="hm-h2 hm-h2-light">{COPY.video_h}</h2>
+      <p class="hm-video-lede">{COPY.video_lede}</p>
+      <div class="hm-video-frame">
+        <iframe
+          src="https://iframe.mediadelivery.net/embed/449741/19a562fd-a1b7-4179-9781-d15788c5ced0?autoplay=false&loop=false&muted=false&preload=false&responsive=true"
+          loading="lazy"
+          allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+          allowfullscreen="true"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       § 04 SEIS PRINCIPIOS
+       ============================================ -->
+  <section class="hm-principles">
+    <header class="hm-section-head">
+      <span class="hm-eyebrow">{COPY.principles_eyebrow}</span>
+      <h2 class="hm-h2">{COPY.principles_h}</h2>
+    </header>
+    <ol class="hm-principles-list">
+      {COPY.principles.map(([h, d], i) => (
+        <li class="hm-principle">
+          <span class="hm-principle-n mono">0{i + 1}</span>
+          <h3 class="hm-principle-h">{h}<span class="hm-dot">.</span></h3>
+          <p class="hm-principle-d">{d}</p>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <!-- ============================================
+       § 05 PRENSA
+       ============================================ -->
+  <section class="hm-press">
+    <header class="hm-section-head">
+      <span class="hm-eyebrow">{COPY.press_eyebrow}</span>
+      <h2 class="hm-h2">{COPY.press_h}</h2>
+    </header>
+    <ul class="hm-press-list">
+      {COPY.press.map(([d, src, t]) => (
+        <li class="hm-press-row">
+          <span class="hm-press-date mono">{d}</span>
+          <span class="hm-press-src mono">{src}</span>
+          <span class="hm-press-title">{t}</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <!-- ============================================
+       § 06 CÍRCULO / COMUNIDAD
+       ============================================ -->
+  <section class="hm-join">
+    <span class="hm-eyebrow hm-eyebrow-light">{COPY.join_eyebrow}</span>
+    <h2 class="hm-join-h">
+      {COPY.join_h_a} <em>{COPY.join_h_b}</em> {COPY.join_h_c}
+    </h2>
+    <p class="hm-join-lede">{COPY.join_lede}</p>
+    <div class="hm-join-ctas">
+      <a class="hm-join-cta" href={CONTACT_HREF[lang]}>
+        <span class="hm-arr">→</span>
+        {COPY.join_cta_email}
+      </a>
+      <a class="hm-join-cta" href="https://instagram.com/festivaladar" target="_blank" rel="noopener">
+        <span class="hm-arr">→</span>
+        {COPY.join_cta_ig}
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER · monumento
+       ============================================ -->
+  <section class="hm-monument">
+    <div class="hm-monument-meta">
+      <span class="mono">{COPY.footer_eyebrow}</span>
+      <span class="mono">{COPY.footer_date}</span>
+    </div>
+    <h2 class="hm-monument-h">
+      <span>{COPY.footer_h_a}</span>
+      <span><em>{COPY.footer_h_b}</em></span>
+      <span>{COPY.footer_h_c}<span class="hm-dot">.</span></span>
+    </h2>
+    <div class="hm-monument-ctas">
+      <a href={CONTACT_HREF[lang]}>{COPY.footer_cta_a}<span class="hm-arr">↗</span></a>
+      <a href={TEAM_HREF[lang]}>{COPY.footer_cta_b}<span class="hm-arr">↗</span></a>
+      <a href={MAP_HREF[lang]}>{COPY.footer_cta_c}<span class="hm-arr">↗</span></a>
+    </div>
+    <p class="hm-colophon mono">{COPY.colophon}</p>
+  </section>
+</div>
