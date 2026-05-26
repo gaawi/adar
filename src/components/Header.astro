@@ -57,9 +57,14 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
   </div>
 
   <div class="cdcontainer cd-main">
-    <a href={homeHref} class="cd-mark" rel="home">
-      <span class="cd-mark-square">A</span>
-      <span class="cd-mark-text">FESTIVAL ADAR</span>
+    <a href={homeHref} class="cd-mark" rel="home" aria-label="Festival ADAR">
+      <img
+        class="cd-mark-logo"
+        src="https://creartbox-media-cdn.b-cdn.net/adarimages/logoadar-blackv5.png"
+        alt="Festival ADAR"
+        width="200"
+        height="56"
+      />
     </a>
 
     <nav class="cd-nav" aria-label="Primary">
