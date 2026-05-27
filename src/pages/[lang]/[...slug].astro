@@ -97,6 +97,7 @@ const bodyClasses = [
       title={entry.data.title}
       lede={heroLede}
       image={entry.data.featured_image}
+      variant={entry.collection === 'posts' ? 'banner' : 'overlay'}
     />
   )}
   <div class="builder-wrap full-width">
