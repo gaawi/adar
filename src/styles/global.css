@@ -5514,12 +5514,18 @@ body.home .adar-footer-cta { display: none !important; }
   .page-hero-inner { padding: 100px 20px 40px; }
 }
 
-/* Hide any legacy .amp-hero blocks living inside markdown content,
-   the page template now renders the unified <Hero> above the content. */
+/* Hide any legacy .amp-hero / .adar-archive-hero blocks living inside
+   the markdown body. The page template now renders the unified <Hero>
+   above the content and pulls the original eyebrow and lede from those
+   legacy blocks before hiding them. */
 .entry-content .amp-hero,
+.entry-content .adar-archive-hero,
 .builder-wrap .entry-content .amp-hero,
+.builder-wrap .entry-content .adar-archive-hero,
 body.single .entry-content .amp-hero,
-body.single-post .entry-content .amp-hero { display: none !important; }
+body.single .entry-content .adar-archive-hero,
+body.single-post .entry-content .amp-hero,
+body.single-post .entry-content .adar-archive-hero { display: none !important; }
 
 /* Headers that used to show "Categoría: X" / "Etiqueta: X" duplicated
    the hero on archive routes — we now hide them since the new Hero

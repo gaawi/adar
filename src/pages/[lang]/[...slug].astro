@@ -37,6 +37,22 @@ const { entry } = Astro.props;
 const lang = entry.data.lang as Lang;
 const { Content } = await render(entry);
 
+// Pull eyebrow and lede out of the legacy hero blocks living inside the
+// markdown body so the new unified Hero keeps the original copy. The old
+// inline heroes themselves are hidden by CSS.
+const body = (entry.body ?? '') as string;
+function pluck(re: RegExp): string | undefined {
+  const m = body.match(re);
+  if (!m) return undefined;
+  return m[1].replace(/\s+/g, ' ').trim() || undefined;
+}
+const ampEyebrow = pluck(/<span class="amp-eyebrow">([\s\S]*?)<\/span>/);
+const ampSubtitle = pluck(/<p class="amp-subtitle">([\s\S]*?)<\/p>/);
+const archEyebrow = pluck(/<span class="adar-archive-eyebrow">([\s\S]*?)<\/span>/);
+const archLede = pluck(/<p class="adar-archive-lede">([\s\S]*?)<\/p>/);
+const heroEyebrow = ampEyebrow || archEyebrow || 'Festival ADAR';
+const heroLede = entry.data.excerpt || ampSubtitle || archLede;
+
 // Build translation map by translation_group
 const group = entry.data.translation_group;
 let translations: Partial<Record<Lang, string>> = {};
@@ -77,8 +93,9 @@ const bodyClasses = [
 >
   {!isHome && (
     <Hero
+      eyebrow={heroEyebrow}
       title={entry.data.title}
-      lede={entry.data.excerpt}
+      lede={heroLede}
       image={entry.data.featured_image}
     />
   )}
