@@ -2,6 +2,7 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Home from '../../components/home/Home.astro';
+import Hero from '../../components/Hero.astro';
 import type { Lang } from '../../i18n/strings.ts';
 import { LANGS } from '../../i18n/strings.ts';
 
@@ -74,13 +75,15 @@ const bodyClasses = [
   translations={translations}
   bodyClass={bodyClasses}
 >
+  {!isHome && (
+    <Hero
+      title={entry.data.title}
+      lede={entry.data.excerpt}
+      image={entry.data.featured_image}
+    />
+  )}
   <div class="builder-wrap full-width">
     <article id={`post-${entry.data.wp_id || ''}`} class={`post-${entry.data.wp_id || ''} ${entry.collection === 'pages' ? 'page' : 'post'} type-${entry.collection === 'pages' ? 'page' : 'post'} status-publish hentry`}>
-      {!isHome && entry.collection === 'posts' && (
-        <header class="entry-header">
-          <h1 class="entry-title">{entry.data.title}</h1>
-        </header>
-      )}
       <div class="entry-content">
         {isHome ? <Home lang={lang} /> : <Content />}
       </div>

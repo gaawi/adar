@@ -1,0 +1,31 @@
+---
+interface Props {
+  eyebrow?: string;
+  title: string;
+  lede?: string;
+  image?: string;
+}
+const {
+  eyebrow = 'Festival ADAR',
+  title,
+  lede,
+  image,
+} = Astro.props;
+
+const fallback = 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg';
+const heroImage = image || fallback;
+---
+
+<section class="page-hero">
+  <div class="page-hero-img" aria-hidden="true">
+    <img src={heroImage} alt="" />
+  </div>
+  <div class="page-hero-veil" aria-hidden="true"></div>
+  <div class="page-hero-inner">
+    {eyebrow && <span class="page-hero-eyebrow">{eyebrow}</span>}
+    <h1 class="page-hero-title">
+      {title}<span class="page-hero-dot">.</span>
+    </h1>
+    {lede && <p class="page-hero-lede">{lede}</p>}
+  </div>
+</section>

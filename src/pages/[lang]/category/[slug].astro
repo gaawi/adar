@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Hero from '../../../components/Hero.astro';
 import type { Lang } from '../../../i18n/strings.ts';
 import { LANGS } from '../../../i18n/strings.ts';
 import { wpSlugify } from '../../../utils/slugify.ts';
@@ -50,14 +51,25 @@ const titleByLang = {
   en: `Category: ${name}`,
   ast: `Categoría: ${name}`,
 }[lang];
+
+const eyebrowByLang = {
+  es: 'Festival ADAR · Categoría',
+  en: 'Festival ADAR · Category',
+  ast: 'Festival ADAR · Categoría',
+}[lang];
+
+const ledeByLang = {
+  es: `${items.length} publicaciones en esta categoría.`,
+  en: `${items.length} entries in this category.`,
+  ast: `${items.length} publicaciones nesta categoría.`,
+}[lang];
+
+const heroImage = items[0]?.data.featured_image;
 ---
 
 <BaseLayout title={titleByLang} lang={lang} permalink={`/${lang}/category/${slug}/`}>
+  <Hero eyebrow={eyebrowByLang} title={name} lede={ledeByLang} image={heroImage} />
   <div class="builder-wrap full-width" style="padding: 40px 20px;">
-    <header class="entry-header" style="margin-bottom: 40px;">
-      <h1 class="entry-title">{titleByLang}</h1>
-    </header>
-
     <div class="adar-archive-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
       {items.map((p) => (
         <a class="adar-archive-card" href={p.data.permalink} style="display: block; text-decoration: none; color: inherit;">
