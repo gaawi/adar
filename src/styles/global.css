@@ -4598,7 +4598,7 @@ body.home article.page { margin: 0 !important; }
 .hm-marquee-track {
   display: flex;
   white-space: nowrap;
-  animation: hm-marquee 80s linear infinite;
+  animation: hm-marquee 30s linear infinite;
   padding: 18px 0;
 }
 .hm-marquee-item {
