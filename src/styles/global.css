@@ -5532,3 +5532,126 @@ body.single-post .entry-content .adar-archive-hero { display: none !important; }
    the hero on archive routes — we now hide them since the new Hero
    carries the title cleanly. */
 body.archive .entry-header { display: none; }
+
+/* =============================================================
+   ARCHIVE BROWSER — filter pills + card grid.
+   Used on category and tag pages.
+   ============================================================= */
+.archive-browser {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 64px 40px 120px;
+}
+@media (max-width: 720px) {
+  .archive-browser { padding: 40px 20px 80px; }
+}
+
+.archive-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 56px;
+}
+.archive-pill {
+  appearance: none;
+  cursor: pointer;
+  font: 500 13px/1 var(--font-sans);
+  letter-spacing: 0;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+.archive-pill:hover { background: var(--paper-2); }
+.archive-pill.is-active {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+
+.archive-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 56px 32px;
+}
+@media (max-width: 1100px) and (min-width: 721px) {
+  .archive-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 720px) {
+  .archive-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+.archive-card { margin: 0; }
+.archive-card[hidden] { display: none !important; }
+.archive-card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: var(--ink) !important;
+  text-decoration: none;
+}
+.archive-card-img {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+.archive-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(.22,.61,.36,1);
+}
+.archive-card-link:hover .archive-card-img img { transform: scale(1.03); }
+.archive-card-body { display: flex; flex-direction: column; gap: 10px; padding-top: 4px; }
+.archive-card-date {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.archive-card-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(20px, 1.6vw, 26px);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  margin: 0;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.archive-card-tags {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.archive-card-tag {
+  display: inline-block;
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.06em;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--paper);
+}
+
+.archive-empty {
+  margin: 24px 0 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}

@@ -1,0 +1,124 @@
+---
+import type { Lang } from '../i18n/strings.ts';
+import { wpSlugify } from '../utils/slugify.ts';
+
+interface Item {
+  data: {
+    title: string;
+    permalink: string;
+    date?: Date;
+    featured_image?: string;
+    tags: string[];
+    lang: Lang;
+  };
+}
+
+interface Props {
+  items: Item[];
+  lang: Lang;
+  allLabel?: string;
+}
+const { items, lang, allLabel } = Astro.props;
+
+const ALL = allLabel ?? ({ es: 'Ver todo', en: 'Show all', ast: 'Ver too' } as const)[lang];
+
+// Collect every tag once, split years from non-year tags.
+const tagSet = new Map<string, string>();
+for (const it of items) {
+  for (const t of it.data.tags || []) {
+    const slug = wpSlugify(t);
+    if (slug && !tagSet.has(slug)) tagSet.set(slug, t);
+  }
+}
+const allTags = [...tagSet.entries()];
+const years = allTags
+  .filter(([slug]) => /^20\d{2}$/.test(slug))
+  .sort(([a], [b]) => a.localeCompare(b));
+const rest = allTags
+  .filter(([slug]) => !/^20\d{2}$/.test(slug))
+  .sort(([, a], [, b]) => a.localeCompare(b, lang === 'en' ? 'en' : 'es'));
+const pills = [...years, ...rest];
+
+function fmtDate(d?: Date): string {
+  if (!d) return '';
+  return d.toLocaleDateString(lang === 'en' ? 'en-GB' : 'es-ES', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  }).toUpperCase();
+}
+
+function tagsAttr(tags: string[]): string {
+  return tags.map((t) => wpSlugify(t)).filter(Boolean).join(' ');
+}
+
+const emptyCopy = {
+  es: 'No hay publicaciones que coincidan con ese filtro.',
+  en: 'No entries match that filter.',
+  ast: 'Nun hai publicaciones que coincidan con esi filtru.',
+}[lang];
+---
+
+<div class="archive-browser" data-archive>
+  {pills.length > 0 && (
+    <nav class="archive-pills" aria-label="Filter">
+      <button class="archive-pill is-active" type="button" data-filter="">{ALL}</button>
+      {pills.map(([slug, label]) => (
+        <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
+      ))}
+    </nav>
+  )}
+
+  <ul class="archive-grid">
+    {items.map((p) => (
+      <li class="archive-card" data-tags={tagsAttr(p.data.tags || [])}>
+        <a href={p.data.permalink} class="archive-card-link">
+          {p.data.featured_image && (
+            <div class="archive-card-img">
+              <img src={p.data.featured_image} alt={p.data.title} loading="lazy" />
+            </div>
+          )}
+          <div class="archive-card-body">
+            {p.data.date && <p class="archive-card-date mono">{fmtDate(p.data.date)}</p>}
+            <h3 class="archive-card-title">{p.data.title}</h3>
+            {(p.data.tags || []).length > 0 && (
+              <ul class="archive-card-tags">
+                {(p.data.tags || []).slice(0, 4).map((t) => (
+                  <li><span class="archive-card-tag">{t}</span></li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <p class="archive-empty" hidden>{emptyCopy}</p>
+</div>
+
+<script is:inline>
+  (function () {
+    const roots = document.querySelectorAll('[data-archive]');
+    roots.forEach((root) => {
+      const pills = root.querySelectorAll('.archive-pill');
+      const cards = root.querySelectorAll('.archive-card');
+      const empty = root.querySelector('.archive-empty');
+      pills.forEach((pill) => {
+        pill.addEventListener('click', () => {
+          pills.forEach((p) => p.classList.remove('is-active'));
+          pill.classList.add('is-active');
+          const f = pill.getAttribute('data-filter') || '';
+          let visible = 0;
+          cards.forEach((card) => {
+            const tags = (card.getAttribute('data-tags') || '').split(' ');
+            const match = !f || tags.includes(f);
+            card.hidden = !match;
+            if (match) visible++;
+          });
+          if (empty) empty.hidden = visible !== 0;
+        });
+      });
+    });
+  })();
+</script>

@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Hero from '../../../components/Hero.astro';
+import ArchiveBrowser from '../../../components/ArchiveBrowser.astro';
 import type { Lang } from '../../../i18n/strings.ts';
 import { LANGS } from '../../../i18n/strings.ts';
 import { wpSlugify } from '../../../utils/slugify.ts';
@@ -69,34 +70,5 @@ const heroImage = items[0]?.data.featured_image;
 
 <BaseLayout title={titleByLang} lang={lang} permalink={`/${lang}/category/${slug}/`}>
   <Hero eyebrow={eyebrowByLang} title={name} lede={ledeByLang} image={heroImage} />
-  <div class="builder-wrap full-width" style="padding: 40px 20px;">
-    <div class="adar-archive-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px;">
-      {items.map((p) => (
-        <a class="adar-archive-card" href={p.data.permalink} style="display: block; text-decoration: none; color: inherit;">
-          {p.data.featured_image && (
-            <img
-              src={p.data.featured_image}
-              alt={p.data.title}
-              loading="lazy"
-              style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px;"
-            />
-          )}
-          <h3 style="margin-top: 12px; font-size: 1.1rem;">{p.data.title}</h3>
-          {p.data.date && (
-            <p style="opacity: 0.6; font-size: 0.9rem;">
-              {p.data.date.toLocaleDateString(lang === 'en' ? 'en-GB' : 'es-ES', {
-                day: 'numeric',
-                month: 'long',
-                year: 'numeric',
-              })}
-            </p>
-          )}
-        </a>
-      ))}
-    </div>
-
-    {items.length === 0 && (
-      <p style="opacity: 0.6;">No hay publicaciones en esta categoría.</p>
-    )}
-  </div>
+  <ArchiveBrowser items={items} lang={lang} />
 </BaseLayout>
