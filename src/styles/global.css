@@ -4793,11 +4793,16 @@ body.home article.page { margin: 0 !important; }
     scroll-snap-align: start;
   }
   .hm-card:last-child { padding-right: 20px; }
-  /* Reset hero/wide images to a Stories-friendly portrait */
+  /* Uniform portrait thumbnails, full colour. */
   .hm-card .hm-card-img,
   .hm-card:nth-child(1) .hm-card-img,
   .hm-card:nth-child(6) .hm-card-img {
     aspect-ratio: 3 / 4;
+  }
+  .hm-card .hm-card-img img,
+  .hm-card-link:hover .hm-card-img img {
+    filter: none;
+    transform: none;
   }
 }
 
