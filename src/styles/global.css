@@ -6126,3 +6126,22 @@ body.archive .entry-header { display: none; }
 @media (min-width: 1600px) {
   .prog-archive-cta { margin-left: calc((100vw - 1600px) / 2 + 40px); }
 }
+
+/* =============================================================
+   MOBILE NAV — legibility override
+   The global header link rule ( body.has-header-image header a {
+   color: var(--ink) !important; } ) was bleeding black into the
+   slide-down panel which already has a dark backdrop. Bump
+   specificity so links inside the open panel stay white.
+   ============================================================= */
+header.site-header.cd-header .header-navigation-wrapper a,
+header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link,
+body.has-header-image header.site-header .header-navigation-wrapper a,
+body.home header.site-header .header-navigation-wrapper a,
+body.single header.site-header .header-navigation-wrapper a {
+  color: var(--paper) !important;
+}
+header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link.is-active {
+  color: var(--paper) !important;
+  background: rgba(246,244,238,0.18);
+}
