@@ -40,10 +40,18 @@ const statusCopy = {
   ast: { left: 'Festival ADAR · Principáu d’Asturies', right: 'Asturies · España · Europa' },
 }[lang];
 
-const ctaLabel = { es: 'Contacto', en: 'Contact', ast: 'Contautu' }[lang];
-const ctaHref =
-  tops.find((m) => /contact|contautu/i.test(m.url))?.url
-    .replace(/^https?:\/\/festivaladar\.com/, '') || `/${lang}/contacto/`;
+const ctaLabel = { es: 'Newsletter', en: 'Newsletter', ast: 'Boletín' }[lang];
+const ctaSubject = {
+  es: 'Suscripción al boletín Festival ADAR',
+  en: 'Festival ADAR newsletter subscription',
+  ast: 'Suscripción al boletín Festival ADAR',
+}[lang];
+const ctaBody = {
+  es: 'Hola, me gustaría recibir el programa de la próxima edición del Festival ADAR.',
+  en: 'Hello, I would like to receive the programme for the next edition of Festival ADAR.',
+  ast: 'Hola, prestaríame recibir el programa de la próxima edición del Festival ADAR.',
+}[lang];
+const ctaHref = `mailto:leiguardamusic@gmail.com?subject=${encodeURIComponent(ctaSubject)}&body=${encodeURIComponent(ctaBody)}`;
 
 const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
 ---
@@ -90,9 +98,7 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
           );
         })}
       </div>
-      <a class="cd-cta" href={ctaHref}>
-        {ctaLabel} <span class="cd-cta-arr">↗</span>
-      </a>
+      <a class="cd-cta" href={ctaHref}>{ctaLabel}</a>
 
       <button
         type="button"

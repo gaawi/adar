@@ -36,6 +36,13 @@ const COPY = {
     edition_word: 'edición',
     actions_word: 'acciones',
     see_all: 'Ver memoria completa',
+    follow_eyebrow: 'Síguenos',
+    follow_h: 'Recibe el programa antes que nadie.',
+    follow_lede: 'La convocatoria de Compositor/a Residente está cerrada. Mientras preparamos la edición VI, sigue al festival en redes o déjanos tu correo para recibir el programa cuando se publique.',
+    follow_email_cta: 'Apuntarme al boletín',
+    follow_ig: 'Instagram',
+    follow_fb: 'Facebook',
+    follow_yt: 'YouTube',
   },
   en: {
     title: 'Programme',
@@ -61,6 +68,13 @@ const COPY = {
     edition_word: 'edition',
     actions_word: 'actions',
     see_all: 'See full archive',
+    follow_eyebrow: 'Follow us',
+    follow_h: 'Be the first to receive the programme.',
+    follow_lede: 'The Composer-in-Residence call is now closed. While we shape Edition VI, follow the festival on social media or leave your email to receive the programme when it goes live.',
+    follow_email_cta: 'Subscribe to the newsletter',
+    follow_ig: 'Instagram',
+    follow_fb: 'Facebook',
+    follow_yt: 'YouTube',
   },
   ast: {
     title: 'Programación',
@@ -86,6 +100,13 @@ const COPY = {
     edition_word: 'edición',
     actions_word: 'acciones',
     see_all: 'Ver memoria completa',
+    follow_eyebrow: 'Síguenos',
+    follow_h: 'Recibi’l programa antes que naide.',
+    follow_lede: 'La convocatoria de Compositor/a Residente ta zarrada. Mientres preparamos la edición VI, sigui al festival en redes o déxanos el to corréu pa recibir el programa cuando se publique.',
+    follow_email_cta: 'Apuntame al boletín',
+    follow_ig: 'Instagram',
+    follow_fb: 'Facebook',
+    follow_yt: 'YouTube',
   },
 }[lang];
 
@@ -185,32 +206,23 @@ const titleByLang = COPY.title;
         </div>
       </header>
 
-      {openCalls.length > 0 && (
-        <div class="prog-calls">
-          <span class="prog-pill prog-pill-light">{COPY.open_calls}</span>
-          <ul class="prog-calls-list">
-            {openCalls.map((p) => (
-              <li class="prog-call">
-                <a href={p.data.permalink} class="prog-call-link">
-                  {p.data.featured_image && (
-                    <div class="prog-call-img">
-                      <img src={p.data.featured_image} alt={p.data.title} loading="lazy" />
-                    </div>
-                  )}
-                  <div class="prog-call-body">
-                    <span class="prog-call-meta mono">
-                      {p.data.date?.toLocaleDateString(lang === 'en' ? 'en-GB' : 'es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase()}
-                    </span>
-                    <h3 class="prog-call-title">{p.data.title}</h3>
-                    {p.data.excerpt && <p class="prog-call-desc">{p.data.excerpt}</p>}
-                    <span class="prog-call-arr">{COPY.see_all === 'See full archive' ? 'Read more →' : 'Leer más →'}</span>
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
+      <aside class="prog-follow">
+        <span class="prog-pill prog-pill-light">{COPY.follow_eyebrow}</span>
+        <h3 class="prog-follow-h">{COPY.follow_h}</h3>
+        <p class="prog-follow-lede">{COPY.follow_lede}</p>
+        <a
+          class="prog-follow-cta"
+          href="mailto:leiguardamusic@gmail.com?subject=Suscripción%20al%20boletín%20Festival%20ADAR&body=Hola%2C%20me%20gustaría%20recibir%20el%20programa%20de%20la%20próxima%20edición%20del%20Festival%20ADAR.%0A%0AGracias."
+        >
+          <span class="prog-arr">→</span>
+          {COPY.follow_email_cta}
+        </a>
+        <ul class="prog-follow-social">
+          <li><a href="https://instagram.com/festivaladar" target="_blank" rel="noopener">{COPY.follow_ig}</a></li>
+          <li><a href="https://facebook.com/festivaladar" target="_blank" rel="noopener">{COPY.follow_fb}</a></li>
+          <li><a href="https://youtube.com/@festivaladar" target="_blank" rel="noopener">{COPY.follow_yt}</a></li>
+        </ul>
+      </aside>
     </div>
   </section>
 

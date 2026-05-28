@@ -142,6 +142,17 @@
       "object_type": "post_type",
       "object": "page",
       "object_id": "613"
+    },
+    {
+      "title": "Programme",
+      "url": "/en/programacion/",
+      "order": 9,
+      "parent_id": 0,
+      "item_id": 9001,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "9001"
     }
   ],
   "ast": [
@@ -287,6 +298,17 @@
       "object_type": "post_type",
       "object": "page",
       "object_id": "617"
+    },
+    {
+      "title": "Programación",
+      "url": "/ast/programacion/",
+      "order": 9,
+      "parent_id": 0,
+      "item_id": 9002,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "9002"
     }
   ],
   "es": [
@@ -432,6 +454,17 @@
       "object_type": "post_type",
       "object": "page",
       "object_id": "494"
+    },
+    {
+      "title": "Programación",
+      "url": "/es/programacion/",
+      "order": 9,
+      "parent_id": 0,
+      "item_id": 9003,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "9003"
     }
   ]
 }
