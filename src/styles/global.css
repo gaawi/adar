@@ -4383,16 +4383,22 @@ body.single header.site-header a.cd-cta {
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.65;
+  color: var(--ink-soft);
+}
+/* Sections sitting on dark or accent backgrounds keep paper-coloured
+   copy. Each one targets paragraphs that live inside .entry-content. */
+.hm-hero .entry-content p,
+.hm-video .entry-content p,
+.hm-monument .entry-content p,
+.prog-current .entry-content p,
+.hm-hero p,
+.hm-video p,
+.prog-current p {
   color: var(--paper);
 }
-.hm-principles p,
-.hm-principles .entry-content p,
-.hm-principles .adar-archive-body p,
-.hm-principles .prose p {
-  color: var(--ink);
-}
 .hm-join-lede,
-.hm-join .entry-content p {
+.hm-join .entry-content p,
+.hm-join p {
   color: var(--accent-ink);
 }
 
