@@ -1,0 +1,267 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import type { Lang } from '../../i18n/strings.ts';
+import { LANGS } from '../../i18n/strings.ts';
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+
+const COPY = {
+  es: {
+    title: 'Programación',
+    eyebrow: 'Festival ADAR · Calendario',
+    lede: 'Cinco ediciones de música clásica, arte visual contemporáneo y patrimonio activado en el medio rural asturiano. Aquí están los próximos pasos y todo lo que ya hicimos.',
+    edition_eyebrow: 'Próxima edición',
+    edition_kicker: 'Edición VI · Verano 2026',
+    edition_h_pre: 'La sexta edición',
+    edition_h_em: 'se anunciará',
+    edition_h_post: 'pronto.',
+    edition_lede:
+      'El programa completo de la edición 2026 estará disponible en mayo. Mientras tanto, las convocatorias abiertas, las residencias y los encargos ya están en marcha.',
+    open_calls: 'Convocatorias abiertas',
+    cta_contact: 'Hablar con la oficina',
+    cta_news: 'Recibir el programa por correo',
+    past_eyebrow: 'Archivo · 2021 — 2025',
+    past_h_pre: 'Cinco ediciones',
+    past_h_em: 'recorridas',
+    past_h_post: 'concejo a concejo.',
+    past_lede:
+      'Cada edición sumó nuevas sedes y nuevas voces. Estos son los encuentros que hicimos posibles, recogidos en la memoria del festival.',
+    no_actions: 'Sin acciones documentadas todavía.',
+    edition_word: 'edición',
+    actions_word: 'acciones',
+    see_all: 'Ver memoria completa',
+  },
+  en: {
+    title: 'Programme',
+    eyebrow: 'Festival ADAR · Calendar',
+    lede: 'Five editions of classical music, contemporary visual art and activated heritage across rural Asturias. Here is what comes next and everything we have made so far.',
+    edition_eyebrow: 'Next edition',
+    edition_kicker: 'Edition VI · Summer 2026',
+    edition_h_pre: 'The sixth edition',
+    edition_h_em: 'will be announced',
+    edition_h_post: 'soon.',
+    edition_lede:
+      'The full 2026 programme is published in May. Open calls, residencies and commissions for this edition are already in motion.',
+    open_calls: 'Open calls',
+    cta_contact: 'Speak with the office',
+    cta_news: 'Receive the programme by email',
+    past_eyebrow: 'Archive · 2021 — 2025',
+    past_h_pre: 'Five editions',
+    past_h_em: 'travelled',
+    past_h_post: 'municipality by municipality.',
+    past_lede:
+      'Each edition added new venues and new voices. Below are the encounters we made possible, recorded in the festival memory.',
+    no_actions: 'No documented actions yet.',
+    edition_word: 'edition',
+    actions_word: 'actions',
+    see_all: 'See full archive',
+  },
+  ast: {
+    title: 'Programación',
+    eyebrow: 'Festival ADAR · Calendariu',
+    lede: 'Cinco ediciones de música clásica, arte visual contemporáneu y patrimoniu activáu nel mediu rural asturianu. Equí ta lo que vien y too lo que xa fexéramos.',
+    edition_eyebrow: 'Próxima edición',
+    edition_kicker: 'Edición VI · Branu 2026',
+    edition_h_pre: 'La sesta edición',
+    edition_h_em: 'va anunciase',
+    edition_h_post: 'aína.',
+    edition_lede:
+      'El programa completu de la edición 2026 publícase en mayu. Mentanto, les convocatories, les residencies y los encargos d’esta edición ya tán en marcha.',
+    open_calls: 'Convocatories abiertes',
+    cta_contact: 'Falar cola oficina',
+    cta_news: 'Recibir el programa per corréu',
+    past_eyebrow: 'Archivu · 2021 — 2025',
+    past_h_pre: 'Cinco ediciones',
+    past_h_em: 'percorries',
+    past_h_post: 'conceyu a conceyu.',
+    past_lede:
+      'Cada edición sumó nueves sedes y nueves voces. Estos son los alcuentros que ficiéremos posibles, recoyíos na memoria del festival.',
+    no_actions: 'Ensin acciones documentaes entá.',
+    edition_word: 'edición',
+    actions_word: 'acciones',
+    see_all: 'Ver memoria completa',
+  },
+}[lang];
+
+const ARCHIVE_CATEGORY: Record<Lang, string> = {
+  es: 'Memoria de Acciones',
+  en: 'Projects Archive',
+  ast: 'Memoria d’Acciones',
+};
+const ARCHIVE_HREF: Record<Lang, string> = {
+  es: '/es/category/memoria-de-acciones/',
+  en: '/en/category/projects-archive/',
+  ast: '/ast/category/memoria-de-acciones/',
+};
+const CONTACT_HREF: Record<Lang, string> = {
+  es: '/es/contacto/',
+  en: '/en/contact/',
+  ast: '/ast/contautu/',
+};
+
+const allPosts = await getCollection('posts');
+const posts = allPosts
+  .filter(
+    (p) =>
+      p.data.lang === lang &&
+      p.data.status === 'publish' &&
+      p.data.categories?.includes(ARCHIVE_CATEGORY[lang]),
+  )
+  .sort(
+    (a, b) =>
+      (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0),
+  );
+
+function yearOf(p: (typeof posts)[number]): string | null {
+  const tagYear = (p.data.tags || []).find((t) => /^20\d{2}$/.test(t));
+  if (tagYear) return tagYear;
+  if (p.data.date) return String(p.data.date.getFullYear());
+  return null;
+}
+
+const byYear = new Map<string, typeof posts>();
+for (const p of posts) {
+  const y = yearOf(p);
+  if (!y) continue;
+  if (!byYear.has(y)) byYear.set(y, []);
+  byYear.get(y)!.push(p);
+}
+
+const currentYear = '2026';
+const upcomingYears = [...byYear.keys()].filter((y) => Number(y) >= Number(currentYear)).sort();
+const pastYears = [...byYear.keys()].filter((y) => Number(y) < Number(currentYear)).sort().reverse();
+
+// Open calls in 2026: any post tagged 2026 or with a 2026 date.
+const openCalls = allPosts.filter(
+  (p) =>
+    p.data.lang === lang &&
+    p.data.status === 'publish' &&
+    ((p.data.tags || []).includes('2026') ||
+      (p.data.date && p.data.date.getFullYear() === 2026)),
+);
+
+const editionLabels: Record<string, string> = {
+  '2021': lang === 'en' ? 'Edition I' : lang === 'ast' ? 'Edición I' : 'Edición I',
+  '2022': lang === 'en' ? 'Edition II' : 'Edición II',
+  '2023': lang === 'en' ? 'Edition III' : 'Edición III',
+  '2024': lang === 'en' ? 'Edition IV' : 'Edición IV',
+  '2025': lang === 'en' ? 'Edition V' : 'Edición V',
+  '2026': lang === 'en' ? 'Edition VI' : 'Edición VI',
+};
+
+const titleByLang = COPY.title;
+---
+
+<BaseLayout title={titleByLang} lang={lang} permalink={`/${lang}/programacion/`}>
+  <Hero eyebrow={COPY.eyebrow} title={COPY.title} lede={COPY.lede} variant="overlay" />
+
+  <!-- ============================================
+       NEXT EDITION · 2026
+       ============================================ -->
+  <section class="prog-current">
+    <div class="prog-current-inner">
+      <header class="prog-current-head">
+        <span class="prog-pill">{COPY.edition_eyebrow}</span>
+        <p class="prog-current-kicker mono">{COPY.edition_kicker}</p>
+        <h2 class="prog-current-h">
+          {COPY.edition_h_pre} <em>{COPY.edition_h_em}</em> {COPY.edition_h_post}
+        </h2>
+        <p class="prog-current-lede">{COPY.edition_lede}</p>
+        <div class="prog-current-ctas">
+          <a class="prog-cta prog-cta-primary" href={CONTACT_HREF[lang]}>
+            <span class="prog-arr">→</span>
+            {COPY.cta_contact}
+          </a>
+          <a class="prog-cta" href={`mailto:leiguardamusic@gmail.com`}>
+            <span class="prog-arr">→</span>
+            {COPY.cta_news}
+          </a>
+        </div>
+      </header>
+
+      {openCalls.length > 0 && (
+        <div class="prog-calls">
+          <span class="prog-pill prog-pill-light">{COPY.open_calls}</span>
+          <ul class="prog-calls-list">
+            {openCalls.map((p) => (
+              <li class="prog-call">
+                <a href={p.data.permalink} class="prog-call-link">
+                  {p.data.featured_image && (
+                    <div class="prog-call-img">
+                      <img src={p.data.featured_image} alt={p.data.title} loading="lazy" />
+                    </div>
+                  )}
+                  <div class="prog-call-body">
+                    <span class="prog-call-meta mono">
+                      {p.data.date?.toLocaleDateString(lang === 'en' ? 'en-GB' : 'es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).toUpperCase()}
+                    </span>
+                    <h3 class="prog-call-title">{p.data.title}</h3>
+                    {p.data.excerpt && <p class="prog-call-desc">{p.data.excerpt}</p>}
+                    <span class="prog-call-arr">{COPY.see_all === 'See full archive' ? 'Read more →' : 'Leer más →'}</span>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  </section>
+
+  <!-- ============================================
+       PAST EDITIONS
+       ============================================ -->
+  <section class="prog-archive">
+    <header class="prog-archive-head">
+      <span class="prog-pill">{COPY.past_eyebrow}</span>
+      <h2 class="prog-archive-h">
+        {COPY.past_h_pre} <em>{COPY.past_h_em}</em> {COPY.past_h_post}
+      </h2>
+      <p class="prog-archive-lede">{COPY.past_lede}</p>
+    </header>
+
+    {pastYears.map((y) => {
+      const items = byYear.get(y)!;
+      return (
+        <div class="prog-year">
+          <div class="prog-year-rail">
+            <span class="prog-year-num">{y}</span>
+            <span class="prog-year-label mono">
+              {editionLabels[y]} · {items.length} {COPY.actions_word}
+            </span>
+          </div>
+          <ul class="prog-year-list">
+            {items.map((p) => (
+              <li class="prog-year-item">
+                <a href={p.data.permalink} class="prog-year-link">
+                  {p.data.featured_image && (
+                    <div class="prog-year-img">
+                      <img src={p.data.featured_image} alt={p.data.title} loading="lazy" />
+                    </div>
+                  )}
+                  <div class="prog-year-body">
+                    <span class="prog-year-date mono">
+                      {p.data.date?.toLocaleDateString(lang === 'en' ? 'en-GB' : 'es-ES', { day: 'numeric', month: 'short' }).toUpperCase()}
+                    </span>
+                    <h3 class="prog-year-title">{p.data.title}</h3>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    })}
+
+    <a class="prog-archive-cta" href={ARCHIVE_HREF[lang]}>
+      <span class="prog-arr">→</span>
+      {COPY.see_all}
+    </a>
+  </section>
+</BaseLayout>
