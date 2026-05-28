@@ -5741,3 +5741,52 @@ body.archive .entry-header { display: none; }
   text-transform: uppercase;
   color: var(--muted);
 }
+
+/* =============================================================
+   PRESS ARTICLE — typography inside post body for class="Prensa"
+   ============================================================= */
+.press-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+.press-lede {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(20px, 1.8vw, 26px);
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0 0 32px;
+  text-wrap: balance;
+}
+.entry-content .press-lede,
+.adar-archive-body .press-lede,
+.prose .press-lede { color: var(--ink); }
+.press-source {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.press-source a { color: var(--ink); border-bottom: 1px solid var(--line); }
+.press-source a:hover { border-bottom-color: var(--ink); }
+
+/* Press row → link in the home press list */
+.hm-press-row-link {
+  display: contents;
+  color: var(--ink) !important;
+}
+.hm-press-row-link:hover .hm-press-title { color: var(--accent-ink); background: var(--accent); padding: 0 6px; }
+.hm-press-arr {
+  margin-left: auto;
+  color: var(--accent);
+  font-family: var(--font-serif);
+  font-size: 18px;
+}

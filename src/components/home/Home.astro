@@ -185,11 +185,12 @@ const COPY = {
     press_eyebrow: '§ 05 · Prensa',
     press_h: 'ADAR en los medios.',
     press: [
-      ['20 · 05 · 2025', 'La Nueva España', 'El festival Adar busca los mejores hórreos para música de cámara.'],
-      ['12 · 08 · 2024', 'La Voz de Asturias', 'El Festival Adar despliega desde Belmonte otra edición de arte y música en entornos rurales.'],
-      ['08 · 08 · 2024', 'El Comercio', 'Adar, un festival distinto para revitalizar el mundo rural.'],
-      ['29 · 01 · 2024', 'Canal Prestosu', 'Nuestro compromiso: Festival de Música de Leiguarda.'],
-      ['29 · 01 · 2024', 'RPA · Radio Asturias', 'El Festival ADAR con Josefina Urraca.'],
+      ['31 · 10 · 2024', 'CreArtBox · NYC', 'ADAR Festival Unfolds Another Edition of Art and Music in Rural Settings.', '/es/prensa/creartbox-belmonte-2024/'],
+      ['11 · 08 · 2024', 'Nortes', 'ADAR: un festival para disfrutar del patrimonio asturiano.', '/es/prensa/nortes-patrimonio-2024/'],
+      ['08 · 08 · 2024', 'Ayuntamiento de Llanes', 'El Festival ADAR comenzará en Llanes con un concierto en el Monasterio de San Antolín.', '/es/prensa/ayto-llanes-bedon-2024/'],
+      ['01 · 08 · 2024', 'La Voz del Trubia', 'Paseos sonoros y conciertos en Grado, Salas, Somiedo y Belmonte por el Festival ADAR.', '/es/prensa/lavoztrubia-paseos-2024/'],
+      ['28 · 07 · 2023', 'La Voz del Trubia', 'El Festival ADAR se amplía desde Belmonte a Grado, Colunga y El Franco.', '/es/prensa/lavoztrubia-amplia-2023/'],
+      ['01 · 09 · 2021', 'Compromiso Caja Rural', 'Festival de Música Clásica de Leiguarda.', '/es/prensa/cajarural-leiguarda/'],
     ],
     join_eyebrow: '§ 06 · Comunidad',
     join_h_a: 'Únete al',
@@ -603,13 +604,20 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
       <h2 class="hm-h2">{COPY.press_h}</h2>
     </header>
     <ul class="hm-press-list">
-      {COPY.press.map(([d, src, t]) => (
-        <li class="hm-press-row">
-          <span class="hm-press-date mono">{d}</span>
-          <span class="hm-press-src mono">{src}</span>
-          <span class="hm-press-title">{t}</span>
-        </li>
-      ))}
+      {COPY.press.map((row) => {
+        const [d, src, t, href] = row as [string, string, string, string?];
+        const Row = href ? 'a' : 'span';
+        return (
+          <li class="hm-press-row">
+            <Row class={href ? 'hm-press-row-link' : ''} href={href}>
+              <span class="hm-press-date mono">{d}</span>
+              <span class="hm-press-src mono">{src}</span>
+              <span class="hm-press-title">{t}</span>
+              {href && <span class="hm-press-arr">→</span>}
+            </Row>
+          </li>
+        );
+      })}
     </ul>
   </section>
 
