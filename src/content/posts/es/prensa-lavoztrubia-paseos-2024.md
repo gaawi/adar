@@ -13,14 +13,23 @@ author: "La Voz del Trubia"
 original_url: "https://lavozdeltrubia.es/2024/08/01/paseos-sonoros-y-conciertos-en-grado-salas-somiedo-y-belmonte-por-el-festival-adar/"
 ---
 
-<p class="press-meta"><strong>La Voz del Trubia</strong> · 1 de agosto de 2024 · Redacción / Grau</p>
+<header class="press-masthead">
+  <span class="press-masthead-name">La Voz del Trubia</span>
+  <span class="press-masthead-date">Diario comarcal · 01 ago 2024</span>
+</header>
+
+<p class="press-kicker">IV edición · ADAR en Ruta</p>
+
+<h1 class="press-clipping-title">Paseos sonoros y conciertos en Grado, Salas, Somiedo y Belmonte</h1>
 
 <p class="press-lede">
-Del 8 al 18 de agosto de 2024, el Festival ADAR celebra su cuarta edición ofreciendo una experiencia cultural que fusiona la belleza del medio rural asturiano con expresiones artísticas contemporáneas. Organizado por la Asociación para el Desarrollo de las Artes en el Medio Rural, el festival cuenta con la presencia de músicos y artistas de trayectoria internacional.
+Del 8 al 18 de agosto de 2024, el Festival ADAR celebra su cuarta edición ofreciendo una experiencia cultural que fusiona la belleza del medio rural asturiano con expresiones artísticas contemporáneas.
 </p>
 
+<p class="press-byline">Redacción / Grado</p>
+
 <p>
-El festival se estructura en dos variantes principales: la <strong>Residencia de Artistas</strong> en Leiguarda (Belmonte de Miranda) y el <strong>Festival ADAR en Ruta</strong>, un componente itinerante que lleva música clásica y contemporánea a diversas comunidades rurales de Asturias.
+Organizado por la Asociación para el Desarrollo de las Artes en el Medio Rural, el festival cuenta con la presencia de músicos y artistas de trayectoria internacional. Se estructura en dos variantes principales: la <strong>Residencia de Artistas</strong> en Leiguarda (Belmonte de Miranda) y el <strong>Festival ADAR en Ruta</strong>, un componente itinerante que lleva música clásica y contemporánea a diversas comunidades rurales de Asturias.
 </p>
 
 <p>

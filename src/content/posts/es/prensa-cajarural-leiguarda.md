@@ -13,7 +13,14 @@ author: "Compromiso Caja Rural de Asturias"
 original_url: "https://compromisocrasturias.com/proyectos/festival-de-musica-clasica-de-leiguarda/"
 ---
 
-<p class="press-meta"><strong>Compromiso Caja Rural de Asturias</strong></p>
+<header class="press-masthead">
+  <span class="press-masthead-name">Compromiso CR · Caja Rural de Asturias</span>
+  <span class="press-masthead-date">Proyectos · 2021</span>
+</header>
+
+<p class="press-kicker">Origen del Festival ADAR</p>
+
+<h1 class="press-clipping-title">Festival de Música Clásica de Leiguarda</h1>
 
 <p class="press-lede">
 Leiguarda (Lleiguarda en asturiano) es una aldea de apenas 150 habitantes en el concejo de Belmonte de Miranda. Durante la pandemia incorporó dos nuevos vecinos, el flautista Guillermo Laporta y la pianista Josefina Urraca.

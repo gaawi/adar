@@ -70,11 +70,15 @@ const isHome = entry.data.permalink === `/${lang}/adar/` ||
                entry.data.permalink === `/${lang}/festival-adar/`;
 
 const isPost = entry.collection === 'posts';
+const isPress = (entry.data.categories || []).some((c) =>
+  /prensa|press/i.test(c),
+);
 const bodyClasses = [
   isPost ? 'single single-post' : 'page',
   isHome
     ? 'home page-template page-template-full-width-transparent inspiro-front-page'
     : '',
+  isPress ? 'is-press' : '',
   'has-header-image',
   `page-id-${entry.data.wp_id || ''}`,
 ]
@@ -91,7 +95,7 @@ const bodyClasses = [
   translations={translations}
   bodyClass={bodyClasses}
 >
-  {!isHome && (
+  {!isHome && !isPress && (
     <Hero
       eyebrow={heroEyebrow}
       title={entry.data.title}

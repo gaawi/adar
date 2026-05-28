@@ -8,19 +8,28 @@ permalink: "/es/prensa/lavoztrubia-amplia-2023/"
 categories: ["Prensa"]
 tags: ["2023", "La Voz del Trubia", "Belmonte de Miranda", "Grado", "Colunga", "El Franco"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg"
-excerpt: "El Festival ADAR de Artes en el Medio Rural amplía su recorrido por concejos asturianos, llevando música clásica y arte visual a Grado, El Franco y Colunga junto a la sede en Belmonte de Miranda."
+excerpt: "El Festival ADAR amplía su recorrido por concejos asturianos, llevando música clásica y arte visual a Grado, El Franco y Colunga junto a la sede en Belmonte de Miranda."
 author: "La Voz del Trubia"
 original_url: "https://lavozdeltrubia.es/2023/07/28/el-festival-de-artes-en-el-medio-rural-se-amplia-desde-belmonte-a-grado-colunga-y-el-franco/"
 ---
 
-<p class="press-meta"><strong>La Voz del Trubia</strong> · 28 de julio de 2023 · Redacción / Grau</p>
+<header class="press-masthead">
+  <span class="press-masthead-name">La Voz del Trubia</span>
+  <span class="press-masthead-date">Diario comarcal · 28 jul 2023</span>
+</header>
+
+<p class="press-kicker">III edición · ADAR en Ruta</p>
+
+<h1 class="press-clipping-title">El Festival ADAR se amplía desde Belmonte a Grado, Colunga y El Franco</h1>
 
 <p class="press-lede">
 El Festival ADAR de Artes en el Medio Rural amplía su recorrido por concejos asturianos, llevando música clásica y arte visual a Grado, El Franco y Colunga junto a la sede en Belmonte de Miranda.
 </p>
 
+<p class="press-byline">Redacción / Grado</p>
+
 <p>
-La iniciativa, fundada por el flautista Guillermo Laporta y la pianista Josefina Urraca en colaboración con el ensemble neoyorquino CreArtBox, reúne en esta edición a solistas internacionales: la violinista Jone de la Fuente, la violista Almudena Arribas y la violonchelista ítalo-estadounidense Natania Hoffman.
+La iniciativa, fundada por el flautista Guillermo Laporta y la pianista Josefina Urraca en colaboración con el ensemble neoyorquino <strong>CreArtBox</strong>, reúne en esta edición a solistas internacionales: la violinista Jone de la Fuente, la violista Almudena Arribas y la violonchelista ítalo-estadounidense Natania Hoffman.
 </p>
 
 <blockquote>

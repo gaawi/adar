@@ -185,12 +185,16 @@ const COPY = {
     press_eyebrow: '§ 05 · Prensa',
     press_h: 'ADAR en los medios.',
     press: [
-      ['31 · 10 · 2024', 'CreArtBox · NYC', 'ADAR Festival Unfolds Another Edition of Art and Music in Rural Settings.', '/es/prensa/creartbox-belmonte-2024/'],
+      ['20 · 05 · 2025', 'La Nueva España', 'El Festival Adar busca los mejores hórreos para música de cámara.', '/es/prensa/lne-horreos-2025/'],
+      ['12 · 08 · 2024', 'La Nueva España', 'El Festival Adar despliega desde Belmonte otra edición de arte y música.', '/es/prensa/lne-despliega-belmonte-2024/'],
+      ['07 · 08 · 2024', 'El Comercio', 'Adar, un festival distinto para revitalizar el mundo rural.', '/es/prensa/elcomercio-revitalizar-2024/'],
       ['11 · 08 · 2024', 'Nortes', 'ADAR: un festival para disfrutar del patrimonio asturiano.', '/es/prensa/nortes-patrimonio-2024/'],
-      ['08 · 08 · 2024', 'Ayuntamiento de Llanes', 'El Festival ADAR comenzará en Llanes con un concierto en el Monasterio de San Antolín.', '/es/prensa/ayto-llanes-bedon-2024/'],
-      ['01 · 08 · 2024', 'La Voz del Trubia', 'Paseos sonoros y conciertos en Grado, Salas, Somiedo y Belmonte por el Festival ADAR.', '/es/prensa/lavoztrubia-paseos-2024/'],
-      ['28 · 07 · 2023', 'La Voz del Trubia', 'El Festival ADAR se amplía desde Belmonte a Grado, Colunga y El Franco.', '/es/prensa/lavoztrubia-amplia-2023/'],
-      ['01 · 09 · 2021', 'Compromiso Caja Rural', 'Festival de Música Clásica de Leiguarda.', '/es/prensa/cajarural-leiguarda/'],
+      ['10 · 08 · 2023', 'El Comercio', 'Paseos por la naturaleza en busca del arte y la música clásica.', '/es/prensa/elcomercio-paseos-naturaleza-2023/'],
+      ['09 · 08 · 2023', 'RTPA', '‘Paseos sonoros’ lleva música clásica a El Franco, Grado, Colunga y Belmonte.', '/es/prensa/rtpa-paseos-sonoros-2023/'],
+      ['08 · 08 · 2023', 'RNE · El Ojo Crítico', 'El Festival Adar con Josefina Urraca.', '/es/prensa/rne-ojo-critico-2023/'],
+      ['30 · 07 · 2022', 'La Nueva España', 'Josefina y Guillermo: un día tocan en Nueva York y otro en una panera de Leiguarda.', '/es/prensa/lne-tocan-newyork-leiguarda/'],
+      ['09 · 08 · 2021', 'RTPA', 'I Festival de Música Clásica de Lleiguarda.', '/es/prensa/rtpa-i-festival-2021/'],
+      ['05 · 08 · 2021', 'La Voz del Trubia', 'El festival de Música Clásica de Leiguarda agota entradas el día de su presentación.', '/es/prensa/lavoztrubia-presentacion-2021/'],
     ],
     join_eyebrow: '§ 06 · Comunidad',
     join_h_a: 'Únete al',
@@ -569,30 +573,54 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
        § 04 SEIS PRINCIPIOS
        ============================================ -->
   <section class="hm-principles">
-    <header class="hm-section-head hm-principles-head">
-      <span class="hm-eyebrow">{COPY.principles_eyebrow}</span>
-      <h2 class="hm-h2">{COPY.principles_h}</h2>
-      <p class="hm-section-lede">{COPY.principles_lede}</p>
-    </header>
-    <ol class="hm-principles-list">
-      {COPY.principles.map((item, i) => {
-        const [h, d, paragraphs] = item as [string, string, string[]?];
-        return (
-          <li class="hm-principle">
-            <span class="hm-principle-n mono">0{i + 1}</span>
-            <div class="hm-principle-body">
-              <h3 class="hm-principle-h">{h}<span class="hm-dot">.</span></h3>
-              <p class="hm-principle-d">{d}</p>
-              {paragraphs && paragraphs.length > 0 && (
-                <div class="hm-principle-detail">
-                  {paragraphs.map((para) => <p>{para}</p>)}
-                </div>
-              )}
-            </div>
-          </li>
-        );
-      })}
-    </ol>
+    <div class="hm-principles-inner">
+      <aside class="hm-principles-side">
+        <img
+          src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Instalacion_Sarah_K_Williams_Leiguarda/image01.jpg"
+          alt="Festival ADAR · Leiguarda"
+          loading="lazy"
+        />
+        <span class="hm-principles-side-cap mono">{COPY.principles_eyebrow}</span>
+      </aside>
+      <div class="hm-principles-main">
+        <span class="hm-eyebrow">{COPY.principles_eyebrow}</span>
+        <h2 class="hm-h2 hm-principles-h">{COPY.principles_h}</h2>
+        <p class="hm-section-lede hm-principles-lede">{COPY.principles_lede}</p>
+        <ol class="hm-principles-list">
+          {COPY.principles.map((item, i) => {
+            const [h, d, paragraphs] = item as [string, string, string[]?];
+            const hasDetail = !!(paragraphs && paragraphs.length > 0);
+            return (
+              <li class="hm-principle">
+                {hasDetail ? (
+                  <details class="hm-principle-toggle">
+                    <summary class="hm-principle-summary">
+                      <span class="hm-principle-n mono">0{i + 1}</span>
+                      <span class="hm-principle-summary-text">
+                        <span class="hm-principle-h">{h}<span class="hm-dot">.</span></span>
+                        <span class="hm-principle-d">{d}</span>
+                      </span>
+                      <span class="hm-principle-chevron" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="hm-principle-detail">
+                      {paragraphs!.map((para) => <p>{para}</p>)}
+                    </div>
+                  </details>
+                ) : (
+                  <div class="hm-principle-static">
+                    <span class="hm-principle-n mono">0{i + 1}</span>
+                    <span class="hm-principle-summary-text">
+                      <span class="hm-principle-h">{h}<span class="hm-dot">.</span></span>
+                      <span class="hm-principle-d">{d}</span>
+                    </span>
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ol>
+      </div>
+    </div>
   </section>
 
   <!-- ============================================

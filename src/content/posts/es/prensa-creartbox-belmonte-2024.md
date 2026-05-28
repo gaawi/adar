@@ -13,14 +13,21 @@ author: "CreArtBox"
 original_url: "https://creartbox.nyc/blogs/news/adar-festival-unfolds-another-edition-of-art-and-music-in-rural-settings-from-belmonte"
 ---
 
-<p class="press-meta"><strong>CreArtBox</strong> · Nueva York · 31 de octubre de 2024</p>
+<header class="press-masthead">
+  <span class="press-masthead-name">CreArtBox</span>
+  <span class="press-masthead-date">New York · 31 oct 2024</span>
+</header>
+
+<p class="press-kicker">IV edición · International coverage</p>
+
+<h1 class="press-clipping-title">ADAR Festival Unfolds Another Edition of Art and Music in Rural Settings</h1>
 
 <p class="press-lede">
 El Festival ADAR celebra su cuarta edición, un acontecimiento cultural poco convencional que mezcla música clásica y artes visuales contemporáneas en comunidades rurales asturianas. Fundado por los músicos Guillermo Laporta y Josefina Urraca, el festival se articula en torno a la aldea de Leiguarda, en Belmonte de Miranda.
 </p>
 
 <p>
-Esta edición refuerza dos ramas. La primera, una <strong>residencia artística en Leiguarda</strong> que culmina con un concierto final con piano de cola entre el paisaje de montaña. La segunda, <strong>“ADAR Festival on the Road”</strong>, lleva la programación a Llanes, Cornellana, Pola de Somiedo y Grado. Las instalaciones visuales y esculturas al aire libre de la artista estadounidense <strong>Sarah K. Williams</strong> amplían el alcance creativo del festival.
+Esta edición refuerza dos ramas. La primera, una <strong>residencia artística en Leiguarda</strong> que culmina con un concierto final con piano de cola entre el paisaje de montaña. La segunda, <strong>«ADAR Festival on the Road»</strong>, lleva la programación a Llanes, Cornellana, Pola de Somiedo y Grado. Las instalaciones visuales y esculturas al aire libre de la artista estadounidense <strong>Sarah K. Williams</strong> amplían el alcance creativo del festival.
 </p>
 
 <p>

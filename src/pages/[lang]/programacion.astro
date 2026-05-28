@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import Hero from '../../components/Hero.astro';
 import type { Lang } from '../../i18n/strings.ts';
 import { LANGS } from '../../i18n/strings.ts';
 
@@ -176,53 +175,138 @@ const editionLabels: Record<string, string> = {
   '2026': lang === 'en' ? 'Edition VI' : 'Edición VI',
 };
 
+interface ProgramEvent {
+  day: string;
+  time?: string;
+  kind: string;
+  venue: string;
+  municipality?: string;
+  note?: string;
+  slug?: string;
+}
+interface ProgramYear {
+  year: string;
+  dates: string;
+  events: ProgramEvent[];
+}
+
+// Schedule extracted from the printed festival programmes (carteles).
+// `slug` links the event to its memoria post in src/content/posts/es/.
+const PROGRAM: ProgramYear[] = [
+  {
+    year: '2025',
+    dates: '5 — 17 agosto',
+    events: [
+      { day: 'Mar 5',  time: '20:00', kind: 'Micro-concierto', venue: 'Susacasa Agrocultural',         municipality: 'Gozón',               note: 'Ganadores del concurso de hórreos y paneras.' },
+      { day: 'Jue 7',  time: '20:00', kind: 'Espectáculo',     venue: 'The Whale · Monasterio S. Antolín de Bedón', municipality: 'Llanes', note: 'Música en directo, narración, instalación y creación audiovisual. Leyenda escrita por Giulio Tanasini.', slug: 'the-whale-ballarte-en-el-monasterio-de-san-antolin-de-bedon' },
+      { day: 'Vie 8',  time: '20:00', kind: 'Concierto visual', venue: 'Monasterio San Antolín de Bedón', municipality: 'Llanes',           note: 'Cámara con diseño de iluminación y proyecciones.', slug: 'concierto-visual-en-llanes' },
+      { day: 'Sáb 9',  time: '21:30', kind: 'Paseo sonoro',    venue: 'Horreo Casantos y alrededores', municipality: 'Leiguarda · Belmonte', slug: 'paseo-sonoro-leiguarda' },
+      { day: 'Lun 11', time: '20:00', kind: 'Micro-concierto', venue: 'Casería de Paz Mesa y Xandru González', municipality: 'Puerma · Las Regueras', slug: 'micro-concierto-en-puerma-las-regueras' },
+      { day: 'Mar 12', time: '20:00', kind: 'Concierto',       venue: 'Monasterio de Obona',           municipality: 'Tineo',               note: 'El monasterio como caja de resonancia para una noche de belleza y contraste.', slug: 'concierto-en-el-monasterio-de-obona-tineo' },
+      { day: 'Mié 13', time: '20:00', kind: 'Concierto',       venue: 'Casa de Cultura Eduardo Lastra Pérez «Lalo»', municipality: 'Taramundi', slug: 'concierto-en-taramundi' },
+      { day: 'Jue 14', time: '20:00', kind: 'Concierto',       venue: 'Monasterio de Villanueva de Oscos', municipality: 'Villanueva de Oscos', slug: 'concierto-en-el-monasterio-de-villanueva-de-oscos' },
+      { day: 'Vie 15', time: '20:00', kind: 'Paseo sonoro',    venue: 'Claustro del Parador de Corias', municipality: 'Cangas del Narcea', note: 'Cuatro músicos interactúan con el público en pie dentro del claustro.' },
+      { day: 'Sáb 16', time: '20:00', kind: 'Recital',         venue: 'Iglesia de Leiguarda',          municipality: 'Belmonte de Miranda', note: 'Andrea Casarrubios, violonchelista nominada a los Grammy 2025.', slug: 'recital-de-andrea-casarrubios-en-la-iglesia-de-leiguarda' },
+      { day: 'Dom 17', time: '20:00', kind: 'Clausura',        venue: 'Iglesia e invernadero de cristal', municipality: 'Leiguarda · Belmonte', note: 'Clausura del Festival ADAR 2025.', slug: 'concierto-de-clausura-en-el-invernadero-de-cristal-leiguarda-2024' },
+    ],
+  },
+  {
+    year: '2024',
+    dates: '8 — 18 agosto',
+    events: [
+      { day: 'Jue 8',                kind: 'Apertura',        venue: 'Instalaciones artísticas',          municipality: 'Grado' },
+      { day: 'Lun 12', time: '19:30', kind: 'Concierto',       venue: 'Monasterio San Antolín de Bedón',  municipality: 'Llanes' },
+      { day: 'Mar 13', time: '20:00', kind: 'Concierto',       venue: 'Monasterio de San Salvador (Cornellana)', municipality: 'Salas' },
+      { day: 'Mié 14', time: '20:00', kind: 'Concierto',       venue: 'Mercado de Pola',                   municipality: 'Pola de Somiedo', slug: 'concierto-en-el-mercado-de-pola-de-somiedo' },
+      { day: 'Vie 16', time: '21:30', kind: 'Micro-concierto', venue: 'Sede ADAR',                         municipality: 'Leiguarda · Belmonte' },
+      { day: 'Vie 16', time: '22:00', kind: 'Micro-concierto', venue: 'Horreo Casantos',                   municipality: 'Leiguarda · Belmonte' },
+      { day: 'Vie 16', time: '23:00', kind: 'Paseo sonoro',    venue: 'Leiguarda (y sidra)',               municipality: 'Belmonte' },
+      { day: 'Sáb 17', time: '19:30', kind: 'Concierto',       venue: 'Palacio Miranda-Valdecarzana',      municipality: 'Grado', slug: 'concierto-en-el-palacio-de-miranda-valdecarzana-grado-2024-2' },
+      { day: 'Sáb 17', time: '21:00', kind: 'Micro-concierto', venue: 'Capilla de los Dolores',            municipality: 'Grado', note: 'Escenografía de Sarah K. Williams.' },
+      { day: 'Sáb 17', time: '22:00', kind: 'Instalación',    venue: 'Exterior del Palacio de Fontela',   municipality: 'Grado', note: 'Instalación artística y paseo sonoro.' },
+      { day: 'Dom 18', time: '19:30', kind: 'Clausura',        venue: 'Alrededores de la Iglesia de Leiguarda', municipality: 'Belmonte', slug: 'concierto-de-clausura-en-el-invernadero-de-cristal-leiguarda-2024' },
+      { day: 'Dom 18', time: '22:00', kind: 'Sobremesa',       venue: 'Sidra y empanada para todos',       municipality: 'Leiguarda · Belmonte' },
+    ],
+  },
+  {
+    year: '2023',
+    dates: '7 — 13 agosto',
+    events: [
+      { day: '7—10 ago', time: '12:00–14:00', kind: 'Instalación',    venue: 'Capilla de los Dolores',                  municipality: 'Grado' },
+      { day: '8—13 ago', time: '19:00–21:00', kind: 'Instalación',    venue: 'Auditorio As Quintas',                    municipality: 'El Franco' },
+      { day: 'Mié 9',    time: '12:00', kind: 'Paseo sonoro',   venue: 'Parque María Cristina y Plaza del Ayto.', municipality: 'El Franco' },
+      { day: 'Mié 9',    time: '20:30', kind: 'Concierto visual', venue: 'Auditorio As Quintas',                  municipality: 'El Franco', slug: 'concierto-visual-en-el-franco-2' },
+      { day: 'Jue 10',   time: '11:30', kind: 'Paseo sonoro',   venue: 'Palacio de Fontela',                     municipality: 'Grado', slug: 'paseo-sonoro-en-el-palacio-de-fontela-grado-2023' },
+      { day: 'Jue 10',   time: '20:30', kind: 'Concierto visual', venue: 'Palacio Miranda-Valdecarzana',         municipality: 'Grado', slug: 'concierto-en-el-palacio-de-miranda-valdecarzana-grado-2023-2' },
+      { day: 'Jue 10',   time: '22:00', kind: 'Micro-concierto', venue: 'Capilla de los Dolores',                municipality: 'Grado' },
+      { day: 'Vie 11',   time: '20:00', kind: 'Concierto visual', venue: 'Sala Loreto',                          municipality: 'Colunga', slug: 'concierto-visual-en-colunga-sala-loreto' },
+      { day: 'Sáb 12',   time: '19:00', kind: 'Paseo sonoro',    venue: 'Museo de las Ayalgas de Silviella',    municipality: 'Belmonte de Miranda', note: 'Aforo limitado.' },
+      { day: 'Sáb 12',   time: '22:00', kind: 'Micro-concierto', venue: 'Panera Casantos',                      municipality: 'Leiguarda', note: 'Aforo limitado.' },
+      { day: 'Sáb 12',   time: '23:00', kind: 'Paseo sonoro',    venue: 'Campo de la Iglesia (con video mapping)', municipality: 'Leiguarda' },
+      { day: '12—13 ago', time: '10:00–18:00', kind: 'Instalación', venue: 'Sede ADAR',                         municipality: 'Leiguarda' },
+      { day: 'Dom 13',   time: '19:30', kind: 'Concierto visual', venue: 'Campo de la Iglesia',                  municipality: 'Leiguarda' },
+    ],
+  },
+  {
+    year: '2022',
+    dates: '8 — 13 agosto',
+    events: [
+      { day: 'Lun 8',  kind: 'Concierto', venue: 'A Caridá',           municipality: 'El Franco' },
+      { day: 'Mar 9',  kind: 'Concierto', venue: 'Soto del Barco',     municipality: 'Soto del Barco' },
+      { day: 'Mié 10', kind: 'Concierto', venue: 'Llastres',           municipality: 'Colunga' },
+      { day: 'Jue 11', kind: 'Concierto', venue: 'Llanes',             municipality: 'Llanes' },
+      { day: 'Vie 12', kind: 'Concierto', venue: 'Grado',              municipality: 'Grado' },
+      { day: 'Sáb 13', kind: 'Concierto', venue: 'Belmonte de Miranda', municipality: 'Belmonte', note: 'Repertorio: Brahms · Caroline Shaw · Dvořák · JP Jofre · Mozart.' },
+    ],
+  },
+  {
+    year: '2021',
+    dates: 'Agosto · Edición inaugural',
+    events: [
+      { day: 'Ago 2021', kind: 'Inauguración', venue: 'Leiguarda',        municipality: 'Belmonte de Miranda', slug: 'concierto-de-inauguracion-en-leiguarda-2' },
+      { day: 'Ago 2021', kind: 'Clausura',     venue: 'Belmonte de Miranda', municipality: 'Belmonte',         slug: 'concierto-de-clausura-en-belmonte-de-miranda-2022' },
+    ],
+  },
+];
+
+// Build a quick lookup from slug → permalink + featured image for the
+// current language, so each event row can link to its memoria post.
+const postBySlug = new Map<string, (typeof posts)[number]>();
+for (const p of posts) postBySlug.set(p.data.slug, p);
+
 const titleByLang = COPY.title;
 ---
 
 <BaseLayout title={titleByLang} lang={lang} permalink={`/${lang}/programacion/`}>
-  <Hero eyebrow={COPY.eyebrow} title={COPY.title} lede={COPY.lede} variant="overlay" />
-
   <!-- ============================================
-       NEXT EDITION · 2026
+       NEXT EDITION · 2026 — yellow ring opener
        ============================================ -->
   <section class="prog-current">
-    <div class="prog-current-inner">
-      <header class="prog-current-head">
-        <span class="prog-pill">{COPY.edition_eyebrow}</span>
-        <p class="prog-current-kicker mono">{COPY.edition_kicker}</p>
-        <h2 class="prog-current-h">
-          {COPY.edition_h_pre} <em>{COPY.edition_h_em}</em> {COPY.edition_h_post}
-        </h2>
-        <p class="prog-current-lede">{COPY.edition_lede}</p>
-        <div class="prog-current-ctas">
-          <a class="prog-cta prog-cta-primary" href={CONTACT_HREF[lang]}>
-            <span class="prog-arr">→</span>
-            {COPY.cta_contact}
-          </a>
-          <a class="prog-cta" href={`mailto:leiguardamusic@gmail.com`}>
-            <span class="prog-arr">→</span>
-            {COPY.cta_news}
-          </a>
-        </div>
-      </header>
-
-      <aside class="prog-follow">
-        <span class="prog-pill prog-pill-light">{COPY.follow_eyebrow}</span>
-        <h3 class="prog-follow-h">{COPY.follow_h}</h3>
-        <p class="prog-follow-lede">{COPY.follow_lede}</p>
-        <a
-          class="prog-follow-cta"
-          href="mailto:leiguardamusic@gmail.com?subject=Suscripción%20al%20boletín%20Festival%20ADAR&body=Hola%2C%20me%20gustaría%20recibir%20el%20programa%20de%20la%20próxima%20edición%20del%20Festival%20ADAR.%0A%0AGracias."
-        >
+    <svg class="prog-current-ring" viewBox="0 0 800 800" aria-hidden="true">
+      <circle cx="400" cy="400" r="380" fill="none" stroke="currentColor" stroke-width="1" />
+      <circle cx="400" cy="400" r="320" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6" />
+      <circle cx="400" cy="400" r="260" fill="none" stroke="currentColor" stroke-width="1" />
+    </svg>
+    <div class="prog-current-body">
+      <span class="prog-current-pill">{COPY.edition_eyebrow}</span>
+      <p class="prog-current-kicker mono">{COPY.edition_kicker}</p>
+      <h1 class="prog-current-h">
+        {COPY.edition_h_pre} <em>{COPY.edition_h_em}</em> {COPY.edition_h_post}
+      </h1>
+      <p class="prog-current-lede">{COPY.edition_lede}</p>
+      <div class="prog-current-ctas">
+        <a class="prog-current-cta"
+           href="mailto:leiguardamusic@gmail.com?subject=Suscripci%C3%B3n%20al%20bolet%C3%ADn%20Festival%20ADAR&body=Hola%2C%20me%20gustar%C3%ADa%20recibir%20el%20programa%20de%20la%20pr%C3%B3xima%20edici%C3%B3n%20del%20Festival%20ADAR.">
           <span class="prog-arr">→</span>
           {COPY.follow_email_cta}
         </a>
-        <ul class="prog-follow-social">
-          <li><a href="https://instagram.com/festivaladar" target="_blank" rel="noopener">{COPY.follow_ig}</a></li>
-          <li><a href="https://facebook.com/festivaladar" target="_blank" rel="noopener">{COPY.follow_fb}</a></li>
-          <li><a href="https://youtube.com/@festivaladar" target="_blank" rel="noopener">{COPY.follow_yt}</a></li>
-        </ul>
-      </aside>
+        <a class="prog-current-cta prog-current-cta-ghost"
+           href={`https://instagram.com/festivaladar`}
+           target="_blank" rel="noopener">
+          <span class="prog-arr">→</span>
+          Instagram
+        </a>
+      </div>
     </div>
   </section>
 
@@ -238,35 +322,48 @@ const titleByLang = COPY.title;
       <p class="prog-archive-lede">{COPY.past_lede}</p>
     </header>
 
-    {pastYears.map((y) => {
-      const items = byYear.get(y)!;
+    {PROGRAM.map((edition) => {
+      const items = byYear.get(edition.year) ?? [];
       return (
         <div class="prog-year">
           <div class="prog-year-rail">
-            <span class="prog-year-num">{y}</span>
+            <span class="prog-year-num">{edition.year}</span>
             <span class="prog-year-label mono">
-              {editionLabels[y]} · {items.length} {COPY.actions_word}
+              {editionLabels[edition.year]} · {edition.dates}
+            </span>
+            <span class="prog-year-count mono">
+              {items.length || edition.events.length} {COPY.actions_word}
             </span>
           </div>
-          <ul class="prog-year-list">
-            {items.map((p) => (
-              <li class="prog-year-item">
-                <a href={p.data.permalink} class="prog-year-link">
-                  {p.data.featured_image && (
-                    <div class="prog-year-img">
-                      <img src={p.data.featured_image} alt={p.data.title} loading="lazy" />
+          <ol class="prog-schedule">
+            {edition.events.map((ev) => {
+              const linked = ev.slug ? postBySlug.get(ev.slug) : undefined;
+              const thumb = linked?.data.featured_image;
+              const href = linked?.data.permalink;
+              const Row = href ? 'a' : 'div';
+              return (
+                <li class="prog-event">
+                  <Row class={`prog-event-row${href ? ' prog-event-row-link' : ''}`} href={href}>
+                    <span class="prog-event-day mono">{ev.day}</span>
+                    <span class="prog-event-time mono">{ev.time ?? '—'}</span>
+                    <div class="prog-event-body">
+                      <span class="prog-event-kind mono">{ev.kind}</span>
+                      <h3 class="prog-event-venue">{ev.venue}</h3>
+                      {ev.municipality && (
+                        <span class="prog-event-muni mono">{ev.municipality}</span>
+                      )}
+                      {ev.note && <p class="prog-event-note">{ev.note}</p>}
                     </div>
-                  )}
-                  <div class="prog-year-body">
-                    <span class="prog-year-date mono">
-                      {p.data.date?.toLocaleDateString(lang === 'en' ? 'en-GB' : 'es-ES', { day: 'numeric', month: 'short' }).toUpperCase()}
-                    </span>
-                    <h3 class="prog-year-title">{p.data.title}</h3>
-                  </div>
-                </a>
-              </li>
-            ))}
-          </ul>
+                    {thumb && (
+                      <div class="prog-event-thumb">
+                        <img src={thumb} alt={ev.venue} loading="lazy" />
+                      </div>
+                    )}
+                  </Row>
+                </li>
+              );
+            })}
+          </ol>
         </div>
       );
     })}
