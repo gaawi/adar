@@ -34,8 +34,7 @@ translation_group: "pll_69a0974e4f5e2"
 <div class="adar-card">
 <h2>Información de Contautu</h2>
 <div class="adar-row"><div class="adar-label">Email</div><div class="adar-value"><a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a></div></div>
-<div class="adar-row"><div class="adar-label">Phone (ES)</div><div class="adar-value"><a href="tel:+34663604030">+34 663 604 030</a></div></div>
-<div class="adar-row"><div class="adar-label">Phone (US)</div><div class="adar-value"><a href="tel:+1646287158">+1 646 287 158</a></div></div>
+<div class="adar-row"><div class="adar-label">WhatsApp</div><div class="adar-value"><a href="https://wa.me/34663604030" target="_blank" rel="noopener">+34 663 604 030</a></div></div>
 <div class="adar-row"><div class="adar-label">Dirección</div><div class="adar-value">Leiguarda 47<br>33845 Belmonte de Miranda, Asturias<br>Spain</div></div>
 </div>
 <div class="adar-card">

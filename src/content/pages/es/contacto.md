@@ -46,16 +46,9 @@ translation_group: "pll_69a0974e4f5e2"
 </div>
 
 <div class="adar-row">
-<div class="adar-label">Teléfono (ES)</div>
+<div class="adar-label">WhatsApp</div>
 <div class="adar-value">
-<a href="tel:+34663604030">+34 663 604 030</a>
-</div>
-</div>
-
-<div class="adar-row">
-<div class="adar-label">Teléfono (US)</div>
-<div class="adar-value">
-<a href="tel:+1646287158">+1 646 287 158</a>
+<a href="https://wa.me/34663604030" target="_blank" rel="noopener">+34 663 604 030</a>
 </div>
 </div>
 
