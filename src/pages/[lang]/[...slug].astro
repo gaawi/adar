@@ -3,6 +3,7 @@ import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Home from '../../components/home/Home.astro';
 import Hero from '../../components/Hero.astro';
+import Contact from '../../components/Contact.astro';
 import type { Lang } from '../../i18n/strings.ts';
 import { LANGS } from '../../i18n/strings.ts';
 
@@ -73,12 +74,17 @@ const isPost = entry.collection === 'posts';
 const isPress = (entry.data.categories || []).some((c) =>
   /prensa|press/i.test(c),
 );
+const isContact =
+  entry.data.permalink === `/${lang}/contacto/` ||
+  entry.data.permalink === `/${lang}/contact/` ||
+  entry.data.permalink === `/${lang}/contautu/`;
 const bodyClasses = [
   isPost ? 'single single-post' : 'page',
   isHome
     ? 'home page-template page-template-full-width-transparent inspiro-front-page'
     : '',
   isPress ? 'is-press' : '',
+  isContact ? 'is-contact' : '',
   'has-header-image',
   `page-id-${entry.data.wp_id || ''}`,
 ]
@@ -95,7 +101,7 @@ const bodyClasses = [
   translations={translations}
   bodyClass={bodyClasses}
 >
-  {!isHome && !isPress && (
+  {!isHome && !isPress && !isContact && (
     <Hero
       eyebrow={heroEyebrow}
       title={entry.data.title}
@@ -107,7 +113,7 @@ const bodyClasses = [
   <div class="builder-wrap full-width">
     <article id={`post-${entry.data.wp_id || ''}`} class={`post-${entry.data.wp_id || ''} ${entry.collection === 'pages' ? 'page' : 'post'} type-${entry.collection === 'pages' ? 'page' : 'post'} status-publish hentry`}>
       <div class="entry-content">
-        {isHome ? <Home lang={lang} /> : <Content />}
+        {isHome ? <Home lang={lang} /> : isContact ? <Contact lang={lang} /> : <Content />}
       </div>
     </article>
   </div>

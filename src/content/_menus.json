@@ -153,6 +153,17 @@
       "object_type": "custom",
       "object": "custom",
       "object_id": "9001"
+    },
+    {
+      "title": "Press",
+      "url": "/en/prensa/",
+      "order": 10,
+      "parent_id": 0,
+      "item_id": 9004,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "9004"
     }
   ],
   "ast": [
@@ -309,6 +320,17 @@
       "object_type": "custom",
       "object": "custom",
       "object_id": "9002"
+    },
+    {
+      "title": "Prensa",
+      "url": "/ast/prensa/",
+      "order": 10,
+      "parent_id": 0,
+      "item_id": 9005,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "9005"
     }
   ],
   "es": [
@@ -465,6 +487,17 @@
       "object_type": "custom",
       "object": "custom",
       "object_id": "9003"
+    },
+    {
+      "title": "Prensa",
+      "url": "/es/prensa/",
+      "order": 10,
+      "parent_id": 0,
+      "item_id": 9006,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "9006"
     }
   ]
 }

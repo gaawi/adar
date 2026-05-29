@@ -1,0 +1,62 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Hero from '../../../components/Hero.astro';
+import ArchiveBrowser from '../../../components/ArchiveBrowser.astro';
+import type { Lang } from '../../../i18n/strings.ts';
+import { LANGS } from '../../../i18n/strings.ts';
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+
+const COPY = {
+  es: {
+    title: 'Prensa',
+    eyebrow: 'Festival ADAR · Hemeroteca',
+    lede:
+      'Cobertura del festival en medios locales, regionales y nacionales desde 2021. Filtra por año o medio para encontrar el recorte que buscas.',
+    empty: 'Aún no hay artículos de prensa publicados.',
+  },
+  en: {
+    title: 'Press',
+    eyebrow: 'Festival ADAR · Archive',
+    lede:
+      'Coverage of the festival in local, regional and national media since 2021. Filter by year or outlet to find the cutting you are looking for.',
+    empty: 'No press articles yet.',
+  },
+  ast: {
+    title: 'Prensa',
+    eyebrow: 'Festival ADAR · Hemeroteca',
+    lede:
+      'Cobertura del festival en medios locales, rexonales y nacionales dende 2021. Peñera per añu o mediu pa atopar el recorte que busques.',
+    empty: 'Entá nun hai artículos de prensa publicaos.',
+  },
+}[lang];
+
+const allPosts = await getCollection('posts');
+const items = allPosts
+  .filter(
+    (p) =>
+      p.data.lang === lang &&
+      p.data.status === 'publish' &&
+      (p.data.categories || []).some((c) => /prensa|press/i.test(c)),
+  )
+  .sort(
+    (a, b) =>
+      (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0),
+  );
+---
+
+<BaseLayout title={COPY.title} lang={lang} permalink={`/${lang}/prensa/`}>
+  <Hero eyebrow={COPY.eyebrow} title={COPY.title} lede={COPY.lede} variant="overlay" />
+  {items.length === 0 ? (
+    <div class="archive-browser">
+      <p class="archive-empty">{COPY.empty}</p>
+    </div>
+  ) : (
+    <ArchiveBrowser items={items} lang={lang} />
+  )}
+</BaseLayout>

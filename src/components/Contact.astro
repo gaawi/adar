@@ -1,0 +1,280 @@
+---
+import type { Lang } from '../i18n/strings.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+
+const COPY = {
+  es: {
+    eyebrow: 'Festival ADAR · Oficina',
+    title_a: 'Hablemos.',
+    title_b: 'Hagamos algo',
+    title_c: 'en el medio',
+    title_d: 'rural.',
+    lede:
+      'La oficina está en Leiguarda, Belmonte de Miranda. Escríbenos un correo, mándanos un WhatsApp o pásate por nuestras redes — respondemos a todo.',
+    cards: [
+      {
+        n: '01',
+        kicker: 'Vía rápida',
+        title: 'WhatsApp',
+        desc: 'La forma más directa de hablar con la oficina. Lunes a viernes, 10:00 — 19:00.',
+        cta: 'Abrir WhatsApp',
+        href: 'https://wa.me/34663604030',
+        external: true,
+      },
+      {
+        n: '02',
+        kicker: 'Para todo lo demás',
+        title: 'Email',
+        desc: 'Convocatorias, prensa, propuestas artísticas, residencias y colaboraciones.',
+        cta: 'leiguardamusic@gmail.com',
+        href: 'mailto:leiguardamusic@gmail.com',
+        external: false,
+      },
+      {
+        n: '03',
+        kicker: 'Día a día',
+        title: 'Instagram',
+        desc: 'Lo que se cuece detrás del telón. Fotos, vídeos cortos y avisos de programación.',
+        cta: '@festivaladar',
+        href: 'https://instagram.com/festivaladar',
+        external: true,
+      },
+      {
+        n: '04',
+        kicker: 'Avisos importantes',
+        title: 'Boletín',
+        desc: 'Una carta breve al inicio de cada temporada con el programa y las convocatorias abiertas.',
+        cta: 'Apuntarme al boletín',
+        href: 'mailto:leiguardamusic@gmail.com?subject=Suscripción%20al%20boletín%20Festival%20ADAR&body=Hola%2C%20me%20gustaría%20recibir%20el%20programa%20de%20la%20próxima%20edición%20del%20Festival%20ADAR.%0A%0AGracias.',
+        external: false,
+      },
+    ],
+    socials_eyebrow: 'También en',
+    socials: [
+      { name: 'Instagram', handle: '@festivaladar', href: 'https://instagram.com/festivaladar' },
+      { name: 'Facebook', handle: '/festivaladar', href: 'https://facebook.com/festivaladar' },
+      { name: 'YouTube', handle: '@festivaladar', href: 'https://youtube.com/@festivaladar' },
+    ],
+    office_eyebrow: 'Sede',
+    office_title: 'Asociación ADAR',
+    office_address: 'Leiguarda 47 · 33845 Belmonte de Miranda · Asturias',
+    office_cif: 'CIF · G06781884',
+    office_coords: '43.2° N · 6.2° W',
+    press_label: 'Prensa y comunicación',
+    press_lede: '¿Eres periodista? Tenemos dossier, biografías y fotografías en alta resolución a tu disposición.',
+    press_cta: 'Pedir dossier de prensa',
+    press_href: 'mailto:leiguardamusic@gmail.com?subject=Dossier%20de%20prensa%20Festival%20ADAR',
+    work_label: 'Trabajar con nosotros',
+    work_lede: 'Programadores, festivales y espacios: estamos abiertos a coproducción, gira y residencia.',
+    work_cta: 'Proponer colaboración',
+    work_href: 'mailto:leiguardamusic@gmail.com?subject=Propuesta%20de%20colaboración',
+  },
+  en: {
+    eyebrow: 'Festival ADAR · Office',
+    title_a: 'Let’s talk.',
+    title_b: 'Let’s make something',
+    title_c: 'in the',
+    title_d: 'countryside.',
+    lede:
+      'The office is in Leiguarda, Belmonte de Miranda. Write us, send a WhatsApp, or drop by our social channels — we answer everything.',
+    cards: [
+      {
+        n: '01',
+        kicker: 'Quickest',
+        title: 'WhatsApp',
+        desc: 'The most direct way to reach the office. Monday to Friday, 10:00 — 19:00.',
+        cta: 'Open WhatsApp',
+        href: 'https://wa.me/34663604030',
+        external: true,
+      },
+      {
+        n: '02',
+        kicker: 'Everything else',
+        title: 'Email',
+        desc: 'Open calls, press, artistic proposals, residencies and partnerships.',
+        cta: 'leiguardamusic@gmail.com',
+        href: 'mailto:leiguardamusic@gmail.com',
+        external: false,
+      },
+      {
+        n: '03',
+        kicker: 'Day-to-day',
+        title: 'Instagram',
+        desc: 'Behind-the-scenes photos, short clips, programme reminders.',
+        cta: '@festivaladar',
+        href: 'https://instagram.com/festivaladar',
+        external: true,
+      },
+      {
+        n: '04',
+        kicker: 'Big announcements',
+        title: 'Newsletter',
+        desc: 'A short letter at the start of each season with the programme and any open calls.',
+        cta: 'Subscribe',
+        href: 'mailto:leiguardamusic@gmail.com?subject=Festival%20ADAR%20newsletter%20subscription&body=Hello%2C%20I%20would%20like%20to%20receive%20the%20programme%20for%20the%20next%20edition.',
+        external: false,
+      },
+    ],
+    socials_eyebrow: 'Also on',
+    socials: [
+      { name: 'Instagram', handle: '@festivaladar', href: 'https://instagram.com/festivaladar' },
+      { name: 'Facebook', handle: '/festivaladar', href: 'https://facebook.com/festivaladar' },
+      { name: 'YouTube', handle: '@festivaladar', href: 'https://youtube.com/@festivaladar' },
+    ],
+    office_eyebrow: 'Headquarters',
+    office_title: 'Asociación ADAR',
+    office_address: 'Leiguarda 47 · 33845 Belmonte de Miranda · Asturias',
+    office_cif: 'Tax ID · G06781884',
+    office_coords: '43.2° N · 6.2° W',
+    press_label: 'Press and communications',
+    press_lede: 'Journalist? We have dossier, bios and hi-res photography ready to share.',
+    press_cta: 'Request press kit',
+    press_href: 'mailto:leiguardamusic@gmail.com?subject=Festival%20ADAR%20press%20kit',
+    work_label: 'Work with us',
+    work_lede: 'Programmers, festivals and venues: we’re open to co-production, touring and residency.',
+    work_cta: 'Propose a collaboration',
+    work_href: 'mailto:leiguardamusic@gmail.com?subject=Collaboration%20proposal',
+  },
+  ast: {
+    eyebrow: 'Festival ADAR · Oficina',
+    title_a: 'Falemos.',
+    title_b: 'Fagamos daqué',
+    title_c: 'nel mediu',
+    title_d: 'rural.',
+    lede:
+      'La oficina ta en Lleiguarda, Belmonte de Miranda. Escribinos un corréu, mándanos un WhatsApp o pásate poles nueses redes — respondemos a too.',
+    cards: [
+      {
+        n: '01',
+        kicker: 'Vía rápida',
+        title: 'WhatsApp',
+        desc: 'La forma más direuta de falar cola oficina. Llunes a vienres, 10:00 — 19:00.',
+        cta: 'Abrir WhatsApp',
+        href: 'https://wa.me/34663604030',
+        external: true,
+      },
+      {
+        n: '02',
+        kicker: 'Pa too lo demás',
+        title: 'Corréu',
+        desc: 'Convocatories, prensa, propuestes artístiques, residencies y collaboraciones.',
+        cta: 'leiguardamusic@gmail.com',
+        href: 'mailto:leiguardamusic@gmail.com',
+        external: false,
+      },
+      {
+        n: '03',
+        kicker: 'Día a día',
+        title: 'Instagram',
+        desc: 'Lo que cuez detrás del telar. Semeyes, videos curtios y avisos.',
+        cta: '@festivaladar',
+        href: 'https://instagram.com/festivaladar',
+        external: true,
+      },
+      {
+        n: '04',
+        kicker: 'Anuncios importantes',
+        title: 'Boletín',
+        desc: 'Una carta curtia al entamu de cada temporada cola programación y les convocatories.',
+        cta: 'Apuntame al boletín',
+        href: 'mailto:leiguardamusic@gmail.com?subject=Suscripción%20al%20boletín%20Festival%20ADAR',
+        external: false,
+      },
+    ],
+    socials_eyebrow: 'Tamién en',
+    socials: [
+      { name: 'Instagram', handle: '@festivaladar', href: 'https://instagram.com/festivaladar' },
+      { name: 'Facebook', handle: '/festivaladar', href: 'https://facebook.com/festivaladar' },
+      { name: 'YouTube', handle: '@festivaladar', href: 'https://youtube.com/@festivaladar' },
+    ],
+    office_eyebrow: 'Sede',
+    office_title: 'Asociación ADAR',
+    office_address: 'Lleiguarda 47 · 33845 Belmonte de Miranda · Asturies',
+    office_cif: 'CIF · G06781884',
+    office_coords: '43.2° N · 6.2° W',
+    press_label: 'Prensa y comunicación',
+    press_lede: '¿Yes periodista? Tenemos dossier, biografíes y fotografíes n’alta resolución a la to disposición.',
+    press_cta: 'Pidir dossier de prensa',
+    press_href: 'mailto:leiguardamusic@gmail.com?subject=Dossier%20de%20prensa%20Festival%20ADAR',
+    work_label: 'Trabayar con nós',
+    work_lede: 'Programadores, festivales y espacios: tamos abiertos a coproducción, xira y residencia.',
+    work_cta: 'Proponer collaboración',
+    work_href: 'mailto:leiguardamusic@gmail.com?subject=Propuesta%20de%20collaboración',
+  },
+}[lang];
+---
+
+<section class="ct">
+  <!-- Hero typographic — no image -->
+  <header class="ct-head">
+    <span class="ct-eyebrow">{COPY.eyebrow}</span>
+    <h1 class="ct-title">
+      <span class="ct-title-a">{COPY.title_a}</span>
+      <span class="ct-title-b"><em>{COPY.title_b}</em></span>
+      <span class="ct-title-c">{COPY.title_c}</span>
+      <span class="ct-title-d">{COPY.title_d}</span>
+    </h1>
+    <p class="ct-lede">{COPY.lede}</p>
+  </header>
+
+  <!-- Channels grid -->
+  <ol class="ct-cards" aria-label="Channels">
+    {COPY.cards.map((c) => (
+      <li class="ct-card">
+        <a href={c.href} class="ct-card-link" target={c.external ? '_blank' : undefined} rel={c.external ? 'noopener' : undefined}>
+          <span class="ct-card-n mono">{c.n}</span>
+          <span class="ct-card-kicker mono">{c.kicker}</span>
+          <h2 class="ct-card-title">{c.title}<span class="ct-card-dot">.</span></h2>
+          <p class="ct-card-desc">{c.desc}</p>
+          <span class="ct-card-cta">
+            <span class="ct-arr">→</span>
+            {c.cta}
+          </span>
+        </a>
+      </li>
+    ))}
+  </ol>
+
+  <!-- Socials strip -->
+  <div class="ct-socials">
+    <span class="ct-socials-eyebrow mono">{COPY.socials_eyebrow}</span>
+    <ul class="ct-socials-list">
+      {COPY.socials.map((s) => (
+        <li>
+          <a href={s.href} target="_blank" rel="noopener">
+            <span class="ct-socials-name">{s.name}</span>
+            <span class="ct-socials-handle mono">{s.handle}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  <!-- Office + specialised CTAs -->
+  <div class="ct-office">
+    <div class="ct-office-info">
+      <span class="ct-office-eyebrow mono">{COPY.office_eyebrow}</span>
+      <p class="ct-office-name">{COPY.office_title}</p>
+      <p class="ct-office-line">{COPY.office_address}</p>
+      <p class="ct-office-line mono">{COPY.office_cif}</p>
+      <p class="ct-office-line mono">{COPY.office_coords}</p>
+    </div>
+
+    <div class="ct-tracks">
+      <a class="ct-track" href={COPY.press_href}>
+        <span class="ct-track-label mono">{COPY.press_label}</span>
+        <span class="ct-track-lede">{COPY.press_lede}</span>
+        <span class="ct-track-cta"><span class="ct-arr">→</span> {COPY.press_cta}</span>
+      </a>
+      <a class="ct-track" href={COPY.work_href}>
+        <span class="ct-track-label mono">{COPY.work_label}</span>
+        <span class="ct-track-lede">{COPY.work_lede}</span>
+        <span class="ct-track-cta"><span class="ct-arr">→</span> {COPY.work_cta}</span>
+      </a>
+    </div>
+  </div>
+</section>
