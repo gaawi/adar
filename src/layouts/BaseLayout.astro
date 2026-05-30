@@ -70,5 +70,27 @@ const ogImage =
       </div>
       <Footer lang={lang} />
     </div>
+    <script is:inline>
+      (function () {
+        // Pages that begin with a .page-hero or .hm-hero get a floating
+        // header (transparent over the image). When the user scrolls
+        // past the hero, swap to the solid paper header.
+        var firstSection = document.querySelector('main .page-hero, main .hm-hero');
+        if (!firstSection) return;
+        document.body.classList.add('has-floating-header');
+        function update() {
+          var rect = firstSection.getBoundingClientRect();
+          var threshold = rect.height * 0.6;
+          if (rect.bottom < threshold) {
+            document.body.classList.add('is-scrolled');
+          } else {
+            document.body.classList.remove('is-scrolled');
+          }
+        }
+        update();
+        window.addEventListener('scroll', update, { passive: true });
+        window.addEventListener('resize', update);
+      })();
+    </script>
   </body>
 </html>

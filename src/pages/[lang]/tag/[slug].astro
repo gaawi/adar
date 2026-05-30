@@ -45,6 +45,7 @@ const items = allPosts
   .filter((p) =>
     p.data.tags.some((t) => wpSlugify(t) === slug),
   )
+  .filter((p) => !(p.data.categories || []).some((c) => /prensa|press/i.test(c)))
   .sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0));
 
 const titleByLang = {

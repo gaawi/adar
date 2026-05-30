@@ -4033,9 +4033,13 @@ html, body {
   color: var(--ink) !important;
   font-family: var(--font-sans) !important;
   font-weight: 400 !important;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "ss01" on, "ss02" on;
+}
+@media (max-width: 720px) {
+  html, body { font-size: 17px; }
 }
 body { overflow-x: hidden; }
 ::selection { background: var(--accent); color: var(--accent-ink); }
@@ -4390,15 +4394,15 @@ body.single header.site-header a.cd-cta {
 .hm-hero .entry-content p,
 .hm-video .entry-content p,
 .hm-monument .entry-content p,
-.prog-current .entry-content p,
 .hm-hero p,
-.hm-video p,
-.prog-current p {
+.hm-video p {
   color: var(--paper);
 }
 .hm-join-lede,
 .hm-join .entry-content p,
-.hm-join p {
+.hm-join p,
+.prog-current .entry-content p,
+.prog-current p {
   color: var(--accent-ink);
 }
 
@@ -4812,7 +4816,7 @@ body.home article.page { margin: 0 !important; }
     scroll-snap-align: start;
   }
   .hm-card:last-child { margin-right: 20px; }
-  .hm-card .hm-card-img { aspect-ratio: 4 / 5; }
+  .hm-card .hm-card-img { aspect-ratio: 16 / 10; }
   .hm-card-link:hover .hm-card-img img { transform: none; }
 }
 
@@ -4825,12 +4829,12 @@ body.home article.page { margin: 0 !important; }
 .hm-card-img {
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
   background: var(--paper-2);
 }
 .hm-card:nth-child(1) .hm-card-img,
-.hm-card:nth-child(6) .hm-card-img { aspect-ratio: 4 / 5; }
+.hm-card:nth-child(6) .hm-card-img { aspect-ratio: 16 / 10; }
 .hm-card-img img {
   width: 100%;
   height: 100%;
@@ -5455,9 +5459,9 @@ body.home .adar-footer-cta { display: none !important; }
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(120px, 22vw, 460px);
+  font-size: clamp(160px, 30vw, 640px);
   line-height: 0.84;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
   color: var(--paper);
   margin: 0;
   text-wrap: balance;
@@ -5485,7 +5489,8 @@ body.home .adar-footer-cta { display: none !important; }
    Image shown as-is, full clarity, no overlay. The title rides a
    paper-coloured banner edge-to-edge underneath, separated from the
    image by a thin yellow ribbon. Editorial, magazine-cover feel. */
-.page-hero--banner { display: flex; flex-direction: column; }
+.page-hero--banner { display: flex; flex-direction: column; margin-bottom: 80px; }
+@media (max-width: 720px) { .page-hero--banner { margin-bottom: 48px; } }
 .page-hero--banner .page-hero-img {
   position: relative;
   inset: auto;
@@ -6931,4 +6936,172 @@ body.is-contact article.page { padding: 0; margin: 0; max-width: none; }
     padding: 24px 0;
   }
   .ct-track-cta { justify-self: start; }
+}
+
+/* =============================================================
+   FLOATING HEADER · transparent over the page hero
+   The header normally sits with paper background. On pages whose
+   first section is a .page-hero or .hm-hero we want it to float
+   over the photograph, with a soft gradient guaranteeing the text
+   stays legible. A tiny scroll listener toggles body.is-scrolled
+   so the header returns to paper once the user passes the hero.
+   ============================================================= */
+body.has-floating-header header.site-header.cd-header {
+  background: transparent !important;
+  border-bottom: none !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+body.has-floating-header header.site-header.cd-header .cd-status {
+  border-bottom: 1px solid rgba(246,244,238,0.18);
+  background: linear-gradient(180deg, rgba(10,9,7,0.55) 0%, rgba(10,9,7,0.25) 100%);
+  color: rgba(246,244,238,0.85);
+}
+body.has-floating-header header.site-header.cd-header .cd-main {
+  background: linear-gradient(180deg, rgba(10,9,7,0.5) 0%, rgba(10,9,7,0) 100%);
+}
+body.has-floating-header header.site-header.cd-header,
+body.has-floating-header header.site-header.cd-header a {
+  color: var(--paper) !important;
+}
+body.has-floating-header header.site-header.cd-header .cd-status,
+body.has-floating-header header.site-header.cd-header .cd-status-inner span,
+body.has-floating-header header.site-header.cd-header .cd-status-region {
+  color: rgba(246,244,238,0.85) !important;
+}
+body.has-floating-header header.site-header.cd-header .cd-lang a { color: rgba(246,244,238,0.65) !important; }
+body.has-floating-header header.site-header.cd-header .cd-lang a.is-active {
+  background: var(--paper);
+  color: var(--ink) !important;
+}
+body.has-floating-header header.site-header.cd-header .cd-cta {
+  background: var(--accent);
+  color: var(--accent-ink) !important;
+}
+body.has-floating-header header.site-header.cd-header .cd-mark-logo {
+  filter: brightness(0) invert(1);
+}
+body.has-floating-header header.site-header.cd-header .adar-nav-toggle-bar {
+  background: var(--paper);
+}
+
+/* When the user scrolls past the hero, the header returns to its
+   solid paper state, so it stays readable over the content below. */
+body.has-floating-header.is-scrolled header.site-header.cd-header {
+  background: var(--paper) !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+body.has-floating-header.is-scrolled header.site-header.cd-header .cd-status,
+body.has-floating-header.is-scrolled header.site-header.cd-header .cd-main {
+  background: transparent;
+}
+body.has-floating-header.is-scrolled header.site-header.cd-header,
+body.has-floating-header.is-scrolled header.site-header.cd-header a {
+  color: var(--ink) !important;
+}
+body.has-floating-header.is-scrolled header.site-header.cd-header .cd-status,
+body.has-floating-header.is-scrolled header.site-header.cd-header .cd-status-inner span,
+body.has-floating-header.is-scrolled header.site-header.cd-header .cd-status-region {
+  color: var(--muted) !important;
+}
+body.has-floating-header.is-scrolled header.site-header.cd-header .cd-lang a {
+  color: var(--muted) !important;
+}
+body.has-floating-header.is-scrolled header.site-header.cd-header .cd-lang a.is-active {
+  background: var(--ink);
+  color: var(--paper) !important;
+}
+body.has-floating-header.is-scrolled header.site-header.cd-header .cd-cta {
+  background: var(--accent);
+  color: var(--accent-ink) !important;
+}
+body.has-floating-header.is-scrolled header.site-header.cd-header .cd-mark-logo {
+  filter: none;
+}
+body.has-floating-header.is-scrolled header.site-header.cd-header .adar-nav-toggle-bar {
+  background: var(--ink);
+}
+
+/* Hero gets pulled up under the floating header so the photograph
+   reaches the very top of the viewport. */
+body.has-floating-header .page-hero,
+body.has-floating-header .hm-hero {
+  margin-top: -104px;
+}
+@media (max-width: 720px) {
+  body.has-floating-header .page-hero,
+  body.has-floating-header .hm-hero { margin-top: -88px; }
+}
+
+/* =============================================================
+   HOME PRESS LIST — multi-column on desktop
+   ============================================================= */
+.hm-press-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+  border-top: 1px solid var(--ink);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 48px;
+}
+@media (max-width: 900px) {
+  .hm-press-list { grid-template-columns: 1fr; padding: 0 20px; }
+}
+.hm-press-row { margin: 0; border-bottom: 1px solid var(--line); }
+.hm-press-row .hm-press-row-link,
+.hm-press-row > span {
+  display: grid;
+  grid-template-columns: 120px 1fr 28px;
+  align-items: baseline;
+  gap: 16px;
+  padding: 18px 0;
+  color: var(--ink) !important;
+  text-decoration: none;
+  transition: background 0.18s ease;
+}
+.hm-press-row .hm-press-row-link:hover { background: var(--paper-2); }
+.hm-press-row .hm-press-row-link:hover .hm-press-arr { transform: translateX(4px); }
+.hm-press-date {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  grid-row: 1 / span 2;
+}
+.hm-press-src {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  grid-column: 2;
+  display: block;
+  margin-bottom: 4px;
+}
+.hm-press-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(17px, 1.4vw, 21px);
+  line-height: 1.25;
+  color: var(--ink);
+  grid-column: 2;
+  grid-row: 2;
+}
+.hm-press-arr {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  font-family: var(--font-serif);
+  color: var(--accent);
+  align-self: center;
+  transition: transform 0.18s ease;
+}
+@media (max-width: 600px) {
+  .hm-press-row .hm-press-row-link,
+  .hm-press-row > span {
+    grid-template-columns: 90px 1fr 22px;
+    gap: 12px;
+  }
 }
