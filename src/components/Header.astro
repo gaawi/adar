@@ -28,10 +28,17 @@ function localizeUrl(url: string): string {
   return url.replace(/^https?:\/\/festivaladar\.com/, '').replace(/^\/+/, '/');
 }
 
-// Top-level items only, ordered. Drop submenus for the editorial header.
+// Top-level items only, ordered. Children attached.
 const tops = flat
   .filter((m) => !m.parent_id)
-  .sort((a, b) => a.order - b.order);
+  .sort((a, b) => a.order - b.order)
+  .map((parent) => ({
+    ...parent,
+    children: flat
+      .filter((c) => c.parent_id === parent.item_id)
+      .filter((c) => c.url !== parent.url) // skip duplicate "Equipo > Equipo"
+      .sort((a, b) => a.order - b.order),
+  }));
 
 // Status bar copy per language
 const statusCopy = {
@@ -78,11 +85,28 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
     <nav class="cd-nav" aria-label="Primary">
       {tops.map((item, i) => {
         const href = localizeUrl(item.url);
+        const hasChildren = (item.children?.length ?? 0) > 0;
         return (
-          <a href={href} class={href === currentPath ? 'is-current' : ''}>
-            <span class="cd-nav-num">0{i + 1}</span>
-            {item.title}
-          </a>
+          <div class={`cd-nav-item${hasChildren ? ' has-children' : ''}`}>
+            <a href={href} class={href === currentPath ? 'is-current' : ''}>
+              <span class="cd-nav-num">0{i + 1}</span>
+              {item.title}
+              {hasChildren && <span class="cd-nav-chev" aria-hidden="true">›</span>}
+            </a>
+            {hasChildren && (
+              <div class="cd-submenu" role="menu">
+                <ul>
+                  {item.children!.map((sub) => (
+                    <li>
+                      <a href={localizeUrl(sub.url)} class={localizeUrl(sub.url) === currentPath ? 'is-current' : ''}>
+                        {sub.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
         );
       })}
     </nav>
@@ -123,6 +147,13 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
             <a href={localizeUrl(item.url)}>
               <span class="cd-nav-num">0{i + 1}</span> {item.title}
             </a>
+            {(item.children?.length ?? 0) > 0 && (
+              <ul class="sub-menu">
+                {item.children!.map((sub) => (
+                  <li><a href={localizeUrl(sub.url)}>{sub.title}</a></li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
       </ul>

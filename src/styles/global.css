@@ -7203,3 +7203,106 @@ body.is-press main { padding-top: 40px; }
   body:not(.has-floating-header):not(.home) main .prog-current { padding-top: 140px; }
   body.is-press main { padding-top: 24px; }
 }
+
+/* =============================================================
+   HEADER · primary nav with submenus
+   ============================================================= */
+.cd-nav { gap: 32px; }
+.cd-nav-item { position: relative; }
+.cd-nav-item.has-children > a { padding-right: 16px; }
+.cd-nav-chev {
+  display: inline-block;
+  margin-left: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  transform: rotate(90deg);
+  transition: transform 0.2s ease;
+  color: inherit;
+  opacity: 0.7;
+}
+.cd-nav-item.has-children:hover .cd-nav-chev,
+.cd-nav-item.has-children:focus-within .cd-nav-chev {
+  transform: rotate(-90deg);
+}
+
+.cd-submenu {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  min-width: 260px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  box-shadow: 0 24px 48px -16px rgba(10,9,7,0.18);
+  padding: 12px;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear 0.18s;
+  z-index: 60;
+}
+.cd-nav-item.has-children:hover .cd-submenu,
+.cd-nav-item.has-children:focus-within .cd-submenu {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0s linear;
+}
+/* Tiny yellow tick over the submenu top edge. */
+.cd-submenu::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 24px;
+  width: 32px;
+  height: 3px;
+  background: var(--accent);
+}
+.cd-submenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cd-submenu li { margin: 0; }
+.cd-submenu a {
+  display: block;
+  padding: 10px 14px;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.005em;
+  text-transform: none;
+  color: var(--ink) !important;
+  line-height: 1.25;
+  transition: background 0.15s ease;
+}
+.cd-submenu a:hover { background: var(--paper-2); }
+.cd-submenu a.is-current { background: var(--accent); color: var(--accent-ink) !important; }
+
+/* Floating header variant: dropdown stays paper, contrasts against the
+   transparent dark hero behind. */
+body.has-floating-header header.site-header.cd-header .cd-submenu {
+  background: var(--paper);
+}
+body.has-floating-header header.site-header.cd-header .cd-submenu a {
+  color: var(--ink) !important;
+}
+
+/* Mobile · indent sub-items inside the slide-down panel. */
+.header-navigation-wrapper ul.nav .sub-menu {
+  list-style: none;
+  margin: 4px 0 12px 0;
+  padding: 0 0 0 28px;
+  border-left: 1px solid rgba(255,255,255,0.18);
+}
+.header-navigation-wrapper ul.nav .sub-menu li { border: none; }
+.header-navigation-wrapper ul.nav .sub-menu a {
+  font-size: 14px;
+  font-family: var(--font-serif);
+  font-style: italic;
+  padding: 8px 0;
+  letter-spacing: 0;
+  color: rgba(255,255,255,0.85) !important;
+}
