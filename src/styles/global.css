@@ -5468,9 +5468,9 @@ body.home .adar-footer-cta { display: none !important; }
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(160px, 30vw, 640px);
-  line-height: 0.84;
-  letter-spacing: -0.03em;
+  font-size: clamp(200px, 38vw, 880px);
+  line-height: 0.82;
+  letter-spacing: -0.035em;
   color: var(--paper);
   margin: 0;
   text-wrap: balance;
@@ -6969,12 +6969,12 @@ body.has-floating-header header.site-header.cd-header {
   right: 0;
 }
 body.has-floating-header header.site-header.cd-header .cd-status {
-  border-bottom: 1px solid rgba(246,244,238,0.18);
-  background: linear-gradient(180deg, rgba(10,9,7,0.55) 0%, rgba(10,9,7,0.25) 100%);
+  border-bottom: 1px solid rgba(246,244,238,0.22);
+  background: transparent;
   color: rgba(246,244,238,0.85);
 }
 body.has-floating-header header.site-header.cd-header .cd-main {
-  background: linear-gradient(180deg, rgba(10,9,7,0.5) 0%, rgba(10,9,7,0) 100%);
+  background: transparent;
 }
 body.has-floating-header header.site-header.cd-header,
 body.has-floating-header header.site-header.cd-header a {
@@ -7132,4 +7132,62 @@ html { scroll-padding-top: 130px; }
 @media (max-width: 700px) {
   .hm-press-row .hm-press-row-link,
   .hm-press-row > span { padding: 22px 0; }
+}
+
+/* =============================================================
+   FLOATING HEADER · single image gradient
+   When the header floats over a hero, we paint ONE soft dark
+   gradient on top of the photograph so the navigation reads.
+   The header itself stays fully transparent; no double stacks.
+   ============================================================= */
+body.has-floating-header .page-hero::before,
+body.has-floating-header .hm-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 220px;
+  z-index: 3;
+  background: linear-gradient(
+    180deg,
+    rgba(10,9,7,0.78) 0%,
+    rgba(10,9,7,0.55) 40%,
+    rgba(10,9,7,0.0) 100%
+  );
+  pointer-events: none;
+}
+body.has-floating-header.is-scrolled .page-hero::before,
+body.has-floating-header.is-scrolled .hm-hero::before {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Push the content that follows the hero a little so it doesn't
+   slip under the sticky header on tall viewports. */
+.page-hero--overlay + *,
+.hm-hero + *,
+.page-hero--banner + *,
+.prog-current + * {
+  padding-top: 1px; /* trigger margin-collapse barrier */
+}
+.page-hero--overlay,
+.hm-hero,
+.page-hero--banner { position: relative; }
+
+/* =============================================================
+   STICKY HEADER · safe space on pages without a hero
+   When the header sits paper-solid at the top (no hero), the
+   first content needs to clear it. Add a top offset to the
+   common non-hero entry sections.
+   ============================================================= */
+body:not(.has-floating-header):not(.home) main .ct { padding-top: 152px; }
+body:not(.has-floating-header):not(.home) main .prog-current { padding-top: 200px; }
+body:not(.has-floating-header):not(.home) main > article > .entry-content > :first-child,
+body.is-press main > article > .entry-content { padding-top: 24px; }
+body.is-press main { padding-top: 40px; }
+@media (max-width: 720px) {
+  body:not(.has-floating-header):not(.home) main .ct { padding-top: 120px; }
+  body:not(.has-floating-header):not(.home) main .prog-current { padding-top: 140px; }
+  body.is-press main { padding-top: 24px; }
 }
