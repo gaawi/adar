@@ -1,8 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import Hero from '../../../components/Hero.astro';
-import ArchiveBrowser from '../../../components/ArchiveBrowser.astro';
 import type { Lang } from '../../../i18n/strings.ts';
 import { LANGS } from '../../../i18n/strings.ts';
 
@@ -17,21 +15,24 @@ const COPY = {
     title: 'Prensa',
     eyebrow: 'Festival ADAR · Hemeroteca',
     lede:
-      'Cobertura del festival en medios locales, regionales y nacionales desde 2021. Filtra por año o medio para encontrar el recorte que buscas.',
+      'Cobertura del festival en medios locales, regionales y nacionales desde 2021. Todos los recortes, ordenados de más reciente a más antiguo.',
+    read: 'Leer recorte',
     empty: 'Aún no hay artículos de prensa publicados.',
   },
   en: {
     title: 'Press',
     eyebrow: 'Festival ADAR · Archive',
     lede:
-      'Coverage of the festival in local, regional and national media since 2021. Filter by year or outlet to find the cutting you are looking for.',
+      'Coverage of the festival in local, regional and national media since 2021. Every cutting, sorted from latest to oldest.',
+    read: 'Read cutting',
     empty: 'No press articles yet.',
   },
   ast: {
     title: 'Prensa',
     eyebrow: 'Festival ADAR · Hemeroteca',
     lede:
-      'Cobertura del festival en medios locales, rexonales y nacionales dende 2021. Peñera per añu o mediu pa atopar el recorte que busques.',
+      'Cobertura del festival en medios locales, rexonales y nacionales dende 2021. Tolos recortes, axeitaos del más reciente al más antiguu.',
+    read: 'Lleer recorte',
     empty: 'Entá nun hai artículos de prensa publicaos.',
   },
 }[lang];
@@ -48,15 +49,49 @@ const items = allPosts
     (a, b) =>
       (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0),
   );
+
+function fmtDate(d?: Date): string {
+  if (!d) return '';
+  return d.toLocaleDateString(lang === 'en' ? 'en-GB' : 'es-ES', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  });
+}
+
+// Rotate clippings a little for the press-wall feel.
+const tilts = ['-1.2deg', '0.8deg', '-0.4deg', '1.4deg', '-0.8deg', '0.6deg'];
 ---
 
 <BaseLayout title={COPY.title} lang={lang} permalink={`/${lang}/prensa/`}>
-  <Hero eyebrow={COPY.eyebrow} title={COPY.title} lede={COPY.lede} variant="overlay" />
-  {items.length === 0 ? (
-    <div class="archive-browser">
-      <p class="archive-empty">{COPY.empty}</p>
-    </div>
-  ) : (
-    <ArchiveBrowser items={items} lang={lang} />
-  )}
+  <section class="press-wall">
+    <header class="press-wall-head">
+      <span class="press-wall-eyebrow mono">{COPY.eyebrow}</span>
+      <h1 class="press-wall-title">{COPY.title}<span class="press-wall-dot">.</span></h1>
+      <p class="press-wall-lede">{COPY.lede}</p>
+    </header>
+
+    {items.length === 0 ? (
+      <p class="press-wall-empty">{COPY.empty}</p>
+    ) : (
+      <ul class="press-wall-grid">
+        {items.map((p, i) => (
+          <li class="press-clip" style={`--tilt: ${tilts[i % tilts.length]}`}>
+            <a href={p.data.permalink} class="press-clip-link">
+              <span class="press-clip-tape" aria-hidden="true"></span>
+              <header class="press-clip-mast">
+                <span class="press-clip-outlet">{p.data.author}</span>
+                <span class="press-clip-date mono">{fmtDate(p.data.date)}</span>
+              </header>
+              <h2 class="press-clip-title">{p.data.title}</h2>
+              {p.data.excerpt && (
+                <p class="press-clip-lede">{p.data.excerpt}</p>
+              )}
+              <span class="press-clip-cta mono">{COPY.read} →</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
 </BaseLayout>

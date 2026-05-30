@@ -4099,19 +4099,21 @@ body.home #content {
 
 .cd-header { border-bottom: 1px solid var(--line); }
 .cd-status {
-  border-bottom: 1px solid var(--line-soft);
+  background: var(--ink-soft);
+  border-bottom: 1px solid rgba(246,244,238,0.12);
   font-size: 11px;
 }
 .cd-status-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 32px;
-  letter-spacing: 0.1em;
+  height: 36px;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: rgba(246,244,238,0.78);
   font-family: var(--font-mono);
 }
+.cd-status .cd-status-region { color: rgba(246,244,238,0.65); }
 .cd-status-dot {
   display: inline-block;
   width: 6px;
@@ -6976,9 +6978,8 @@ body.has-floating-header header.site-header.cd-header {
   right: 0;
 }
 body.has-floating-header header.site-header.cd-header .cd-status {
-  border-bottom: 1px solid rgba(246,244,238,0.22);
-  background: transparent;
-  color: rgba(246,244,238,0.85);
+  background: var(--ink-soft);
+  border-bottom: 1px solid rgba(246,244,238,0.12);
 }
 body.has-floating-header header.site-header.cd-header .cd-main {
   background: transparent;
@@ -7045,20 +7046,19 @@ body.has-floating-header.is-scrolled header.site-header.cd-header .adar-nav-togg
   background: var(--ink);
 }
 
-/* Hero gets pulled up under the floating header so the photograph
-   reaches the very top of the viewport, then padding-top puts the
-   content back below the header so the title and meta never overlap
-   the navigation. */
+/* Hero begins below the opaque cd-status strip and extends behind
+   the transparent cd-main bar. Negative margin equals cd-main height
+   only; padding-top reserves room below it before content. */
 body.has-floating-header .page-hero,
 body.has-floating-header .hm-hero {
-  margin-top: -120px;
-  padding-top: 120px;
+  margin-top: -88px;          /* cd-main height */
+  padding-top: 144px;          /* cd-main + 56px breathing room */
 }
 @media (max-width: 720px) {
   body.has-floating-header .page-hero,
   body.has-floating-header .hm-hero {
-    margin-top: -104px;
-    padding-top: 104px;
+    margin-top: -72px;
+    padding-top: 120px;
   }
 }
 
@@ -7315,4 +7315,337 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   padding: 8px 0;
   letter-spacing: 0;
   color: rgba(255,255,255,0.85) !important;
+}
+
+/* =============================================================
+   PRESS WALL · /{lang}/prensa/ index as a wall of cuttings
+   ============================================================= */
+.press-wall {
+  background: var(--paper-2);
+  padding: 120px 40px 140px;
+  min-height: 100vh;
+}
+@media (max-width: 720px) { .press-wall { padding: 80px 20px 100px; } }
+
+.press-wall-head {
+  max-width: 1280px;
+  margin: 0 auto 64px;
+}
+.press-wall-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+.press-wall-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(64px, 11vw, 200px);
+  line-height: 0.9;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  margin: 0;
+}
+.press-wall-dot { color: var(--accent); font-style: normal; }
+.press-wall-lede {
+  margin-top: 28px;
+  max-width: 620px;
+  font-family: var(--font-sans);
+  font-size: clamp(17px, 1.5vw, 22px);
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+
+.press-wall-grid {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 36px 28px;
+}
+@media (max-width: 1024px) {
+  .press-wall-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .press-wall-grid { grid-template-columns: 1fr; gap: 24px; }
+}
+
+.press-clip {
+  margin: 0;
+  transform: rotate(var(--tilt, 0deg));
+  transition: transform 0.25s ease;
+}
+.press-clip:hover { transform: rotate(0deg); }
+.press-clip-link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 32px 28px 28px;
+  background: #fff;
+  border: 1px solid var(--ink);
+  box-shadow: 0 18px 32px -18px rgba(10,9,7,0.25);
+  color: var(--ink) !important;
+  text-decoration: none;
+  height: 100%;
+  transition: box-shadow 0.25s ease;
+}
+.press-clip:hover .press-clip-link { box-shadow: 0 28px 48px -20px rgba(10,9,7,0.35); }
+.press-clip-tape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 72px;
+  height: 16px;
+  background: var(--accent);
+  opacity: 0.92;
+}
+.press-clip-mast {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--ink);
+}
+.press-clip-outlet {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+}
+.press-clip-date {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+}
+.press-clip-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: clamp(20px, 1.7vw, 26px);
+  line-height: 1.18;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin: 4px 0 0;
+}
+.press-clip-lede {
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.press-clip-cta {
+  margin-top: auto;
+  padding-top: 12px;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+}
+.press-wall-empty {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Catalog filter pills — horizontal scroll bar on mobile. */
+@media (max-width: 720px) {
+  .archive-pills {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .archive-pills::-webkit-scrollbar { display: none; }
+  .archive-pill {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+}
+
+/* =============================================================
+   QUE ES ADAR — editorial layout
+   ============================================================= */
+.qea {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 40px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+@media (max-width: 720px) {
+  .qea { padding: 56px 20px 80px; gap: 72px; }
+}
+.qea-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+.qea-h {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 500;
+  font-size: clamp(36px, 5vw, 80px);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  margin: 0;
+  text-wrap: balance;
+  color: var(--ink);
+}
+.qea-h em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-stretch: 100%;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  font-weight: 500;
+}
+.qea-lede {
+  margin: 28px 0 0;
+  max-width: 70ch;
+  font-family: var(--font-sans);
+  font-size: clamp(17px, 1.4vw, 21px);
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+.qea-twocol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  border-top: 1px solid var(--ink);
+  padding-top: 32px;
+}
+@media (max-width: 720px) {
+  .qea-twocol { grid-template-columns: 1fr; gap: 32px; }
+}
+.qea-twocol h3 {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(22px, 2vw, 30px);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 6px 0 14px;
+  color: var(--ink);
+}
+.qea-twocol p {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+.qea-kicker {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  background: var(--accent);
+  padding: 4px 10px;
+  margin: 0 0 12px;
+  width: fit-content;
+}
+
+.qea-list {
+  list-style: none;
+  margin: 32px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--ink);
+}
+.qea-list li {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 24px;
+  align-items: baseline;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+.qea-list-n {
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  color: var(--accent-ink);
+  background: var(--accent);
+  padding: 4px 8px;
+  width: fit-content;
+}
+.qea-list strong {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(18px, 1.5vw, 22px);
+  letter-spacing: -0.005em;
+}
+.qea-list div {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+@media (max-width: 600px) {
+  .qea-list li { grid-template-columns: 48px 1fr; gap: 16px; }
+}
+
+.qea-mode .qea-twocol {
+  border-top: 1px solid var(--ink);
+  padding-top: 32px;
+  margin-top: 32px;
+}
+
+.qea-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin: 0;
+}
+.qea-specs > div {
+  background: var(--paper);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.qea-specs dt {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.qea-specs dd {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.25;
+  color: var(--ink);
+}
+@media (max-width: 720px) {
+  .qea-specs { grid-template-columns: 1fr; }
 }
