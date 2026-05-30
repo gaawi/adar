@@ -7210,6 +7210,16 @@ body.is-press main { padding-top: 40px; }
 .cd-nav { gap: 32px; }
 .cd-nav-item { position: relative; }
 .cd-nav-item.has-children > a { padding-right: 16px; }
+/* Bridge the visual gap between the parent link and the dropdown panel
+   so moving the cursor down to the submenu doesn't lose hover. */
+.cd-nav-item.has-children::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: -16px;
+  right: -16px;
+  height: 16px;
+}
 .cd-nav-chev {
   display: inline-block;
   margin-left: 6px;
