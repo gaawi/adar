@@ -4125,8 +4125,11 @@ body.home #content {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  height: 72px;
+  height: 88px;
   gap: 40px;
+}
+@media (max-width: 720px) {
+  .cd-main { height: 72px; }
 }
 .cd-mark { display: flex; align-items: center; gap: 14px; }
 .cd-mark-logo {
@@ -4143,16 +4146,22 @@ body.home #content {
   display: flex;
   justify-content: center;
   gap: 28px;
+  font-family: var(--font-sans);
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 .cd-nav a {
   position: relative;
-  padding: 4px 0;
+  padding: 8px 0;
   color: var(--ink);
   white-space: nowrap;
 }
-.cd-nav a.is-current { color: var(--accent); }
+.cd-nav a.is-current {
+  color: var(--ink);
+  box-shadow: inset 0 -2px 0 var(--accent);
+}
 .cd-nav-num {
   font-family: var(--font-mono);
   font-size: 10px;
@@ -4878,7 +4887,7 @@ body.home article.page { margin: 0 !important; }
 .hm-card-sep { opacity: 0.5; }
 .hm-card-arr {
   margin-left: auto;
-  color: var(--accent);
+  color: var(--ink);
   font-family: var(--font-serif);
   font-size: 18px;
   letter-spacing: 0;
@@ -5183,7 +5192,7 @@ body.home article.page { margin: 0 !important; }
 .hm-monument-ctas a:last-child { border-right: none; }
 .hm-monument-ctas a:hover { background: var(--paper-2); }
 .hm-monument-ctas a .hm-arr {
-  color: var(--accent);
+  color: var(--ink);
   font-family: var(--font-serif);
 }
 .hm-colophon {
@@ -5980,7 +5989,7 @@ body.archive .entry-header { display: none; }
   font-style: italic;
   font-stretch: 100%;
   letter-spacing: -0.01em;
-  color: var(--accent);
+  color: var(--ink);
   font-weight: 500;
 }
 .prog-archive-lede {
@@ -6192,7 +6201,7 @@ header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link.i
   font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--muted);
 }
 .prog-schedule {
   list-style: none;
@@ -6220,10 +6229,10 @@ header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link.i
   color: var(--ink);
 }
 .prog-event-time {
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.1em;
-  color: var(--accent);
-  font-weight: 500;
+  color: var(--ink);
+  font-weight: 600;
 }
 .prog-event-body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .prog-event-kind {
@@ -6396,14 +6405,14 @@ header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link.i
 .hm-principle-static { cursor: default; grid-template-columns: 44px minmax(0, 1fr); }
 .hm-principle-summary::-webkit-details-marker { display: none; }
 .hm-principle-summary::marker { content: ""; }
-.hm-principle-summary:hover .hm-principle-chevron { color: var(--accent); }
+.hm-principle-summary:hover .hm-principle-chevron { color: var(--ink); transform: scale(1.15); }
 
 .hm-principle-n {
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.18em;
-  color: var(--accent);
-  font-weight: 500;
+  color: var(--ink);
+  font-weight: 600;
 }
 
 .hm-principle-summary-text {
@@ -6590,7 +6599,7 @@ body.is-press .press-source a {
   color: var(--ink);
   border-bottom: 1px solid var(--ink);
 }
-body.is-press .press-source a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+body.is-press .press-source a:hover { color: var(--ink); border-bottom-color: var(--accent); }
 
 /* Press intro masthead inside the article (set per article in markdown). */
 .press-masthead {
@@ -6633,7 +6642,10 @@ body.is-press .press-source a:hover { color: var(--accent); border-bottom-color:
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--ink);
+  background: var(--accent);
+  display: inline-block;
+  padding: 4px 10px;
   margin: 0 0 12px;
 }
 
@@ -6686,7 +6698,7 @@ body.is-contact article.page { padding: 0; margin: 0; max-width: none; }
   font-style: italic;
   font-stretch: 100%;
   letter-spacing: -0.02em;
-  color: var(--accent);
+  color: var(--ink);
 }
 .ct-title-b { padding-left: clamp(20px, 4vw, 80px); }
 .ct-title-c { padding-left: clamp(40px, 8vw, 140px); }
@@ -6775,7 +6787,7 @@ body.is-contact article.page { padding: 0; margin: 0; max-width: none; }
   padding-bottom: 4px;
   transition: color 0.2s ease;
 }
-.ct-arr { color: var(--accent); font-family: var(--font-serif); font-size: 18px; }
+.ct-arr { color: var(--ink); font-family: var(--font-serif); font-size: 18px; }
 @media (max-width: 720px) {
   .ct-card-link { padding: 28px 24px; }
   .ct-head { padding: 0 18px 48px; }
@@ -6813,7 +6825,7 @@ body.is-contact article.page { padding: 0; margin: 0; max-width: none; }
   gap: 4px;
   color: var(--ink) !important;
 }
-.ct-socials-list a:hover .ct-socials-name { color: var(--accent); }
+.ct-socials-list a:hover .ct-socials-name { box-shadow: inset 0 -3px 0 var(--accent); }
 .ct-socials-name {
   font-family: var(--font-display);
   font-stretch: 75%;
@@ -7027,15 +7039,20 @@ body.has-floating-header.is-scrolled header.site-header.cd-header .adar-nav-togg
 }
 
 /* Hero gets pulled up under the floating header so the photograph
-   reaches the very top of the viewport. */
+   reaches the very top of the viewport. The negative margin matches
+   the status bar (32px) + the main bar height. */
 body.has-floating-header .page-hero,
 body.has-floating-header .hm-hero {
-  margin-top: -104px;
+  margin-top: -120px;
 }
 @media (max-width: 720px) {
   body.has-floating-header .page-hero,
-  body.has-floating-header .hm-hero { margin-top: -88px; }
+  body.has-floating-header .hm-hero { margin-top: -104px; }
 }
+
+/* Reserve space for anchor scrolling so #links don't land under the
+   sticky header. */
+html { scroll-padding-top: 130px; }
 
 /* =============================================================
    HOME PRESS LIST — multi-column on desktop
@@ -7084,7 +7101,7 @@ body.has-floating-header .hm-hero {
   transition: background 0.18s ease;
 }
 .hm-press-row .hm-press-row-link:hover { background: var(--paper-2); }
-.hm-press-row .hm-press-row-link:hover .hm-press-arr { transform: translateX(4px); color: var(--accent); }
+.hm-press-row .hm-press-row-link:hover .hm-press-arr { transform: translateX(4px); }
 .hm-press-date {
   font-size: 11px;
   letter-spacing: 0.2em;
