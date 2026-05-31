@@ -7650,3 +7650,429 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
 @media (max-width: 720px) {
   .qea-specs { grid-template-columns: 1fr; }
 }
+
+/* =============================================================
+   EDITORIAL UNIFICATION
+   Maps every legacy WordPress class (.adar-*, .at-*, .qe4-*) to the
+   same design language used in /es/que-es-adar/ so the whole site
+   reads as a single piece. Applied inside .entry-content so this
+   only affects the markdown body of pages and posts, never the
+   editorial components (home, contact, programación, prensa, hero).
+   ============================================================= */
+
+/* Drop background tone modifiers — everything renders on paper now. */
+body.page .entry-content .adar-light,
+body.page .entry-content .adar-dark,
+body.page .entry-content .adar-cream,
+body.page .entry-content .at-light,
+body.page .entry-content .at-cream {
+  background: transparent !important;
+  color: var(--ink) !important;
+}
+
+/* Sections inside the markdown body. */
+body.page .entry-content > div > section,
+body.page .entry-content .adar-section,
+body.page .entry-content .at-section {
+  background: transparent !important;
+  padding: 64px 0;
+  margin: 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+}
+body.page .entry-content > div > section:first-child,
+body.page .entry-content .adar-section:first-child,
+body.page .entry-content .at-section:first-child {
+  border-top: none;
+  padding-top: 48px;
+}
+@media (max-width: 720px) {
+  body.page .entry-content > div > section,
+  body.page .entry-content .adar-section,
+  body.page .entry-content .at-section { padding: 44px 0; }
+}
+
+/* Content wrapper — centred, max-width like /que-es-adar/. */
+body.page .entry-content .adar-wrap,
+body.page .entry-content .at-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+@media (max-width: 720px) {
+  body.page .entry-content .adar-wrap,
+  body.page .entry-content .at-wrap { padding: 0 20px; }
+}
+
+/* Typography across the body. */
+body.page .entry-content .adar-head { margin-bottom: 28px; }
+
+body.page .entry-content h2,
+body.single .entry-content h2 {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 500;
+  font-size: clamp(28px, 4vw, 56px);
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+  color: var(--ink) !important;
+  margin: 0 0 20px;
+  text-wrap: balance;
+  background: none !important;
+  text-shadow: none !important;
+}
+body.page .entry-content h2 em,
+body.single .entry-content h2 em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-stretch: 100%;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+  color: var(--ink);
+}
+body.page .entry-content .adar-dark-title { color: var(--ink) !important; }
+
+body.page .entry-content h3,
+body.single .entry-content h3 {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(20px, 1.8vw, 28px);
+  line-height: 1.18;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+
+/* Eyebrows / kickers / labels. */
+body.page .entry-content .adar-eyebrow,
+body.page .entry-content .adar-eyebrow-dark,
+body.page .entry-content .at-eyebrow,
+body.page .entry-content .qe4-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted) !important;
+  background: transparent !important;
+  padding: 0;
+  margin: 0 0 16px;
+}
+
+/* Ledes / sub paragraphs. */
+body.page .entry-content .adar-lede,
+body.page .entry-content .adar-sub,
+body.page .entry-content .adar-sub-dark,
+body.page .entry-content .at-sub {
+  font-family: var(--font-sans);
+  font-size: clamp(17px, 1.4vw, 21px);
+  line-height: 1.55;
+  color: var(--ink-soft) !important;
+  max-width: 70ch;
+  margin: 0 0 24px;
+}
+
+/* Generic body paragraphs in markdown pages. */
+body.page .entry-content p {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  max-width: 70ch;
+  margin: 0 0 14px;
+}
+
+body.page .entry-content strong { color: var(--ink); }
+
+/* Two and three column grids. */
+body.page .entry-content .adar-two,
+body.page .entry-content .at-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+}
+body.page .entry-content .adar-three,
+body.page .entry-content .at-grid-3,
+body.page .entry-content .at-grid-artists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+body.page .entry-content .adar-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 32px;
+}
+@media (max-width: 900px) {
+  body.page .entry-content .adar-three,
+  body.page .entry-content .at-grid-3,
+  body.page .entry-content .at-grid-artists,
+  body.page .entry-content .adar-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+@media (max-width: 600px) {
+  body.page .entry-content .adar-two,
+  body.page .entry-content .at-grid-2,
+  body.page .entry-content .adar-three,
+  body.page .entry-content .at-grid-3,
+  body.page .entry-content .at-grid-artists,
+  body.page .entry-content .adar-features {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/* Cards: flat, hairline-bordered, paper. */
+body.page .entry-content .adar-card,
+body.page .entry-content .at-card,
+body.page .entry-content .at-item,
+body.page .entry-content .at-artist-card,
+body.page .entry-content .adar-feature {
+  background: transparent !important;
+  border: 1px solid var(--line);
+  border-radius: 0 !important;
+  padding: 24px;
+  box-shadow: none !important;
+  color: var(--ink);
+}
+body.page .entry-content .adar-card-title,
+body.page .entry-content .at-card-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 19px;
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+
+/* Buttons. */
+body.page .entry-content .adar-btn,
+body.page .entry-content .at-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: var(--ink);
+  color: var(--paper) !important;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  transition: background 0.18s ease;
+}
+body.page .entry-content .adar-btn:hover,
+body.page .entry-content .at-link-btn:hover { background: var(--ink-soft); }
+body.page .entry-content .adar-btn-ghost,
+body.page .entry-content .at-link-btn-dark {
+  background: transparent;
+  border: 1px solid var(--ink);
+  color: var(--ink) !important;
+}
+body.page .entry-content .adar-btn-ghost:hover,
+body.page .entry-content .at-link-btn-dark:hover {
+  background: var(--paper-2);
+}
+
+/* Gallery — restyle to a clean editorial grid. */
+body.page .entry-content .adar-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+body.page .entry-content .adar-g-item {
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+body.page .entry-content .adar-g-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+body.page .entry-content .adar-g-item:hover img { transform: scale(1.03); }
+
+/* Press blocks on pages. */
+body.page .entry-content .adar-press {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--ink);
+}
+body.page .entry-content .adar-press-item {
+  background: transparent !important;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+  margin: 0;
+}
+body.page .entry-content .adar-press-date {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 6px;
+}
+body.page .entry-content .adar-press-item h3 {
+  font-size: 18px;
+  margin: 0 0 6px;
+}
+body.page .entry-content .adar-press-excerpt {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: var(--ink-soft);
+}
+body.page .entry-content .adar-press-link {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+  text-decoration: none;
+}
+
+/* Footer CTA — keep dark-on-paper but flat. */
+body.page .entry-content .adar-footer-cta {
+  background: var(--ink) !important;
+  color: var(--paper) !important;
+  padding: 80px 40px;
+  margin: 80px 0 0;
+  text-align: center;
+}
+body.page .entry-content .adar-footer-cta h2 { color: var(--paper) !important; }
+body.page .entry-content .adar-footer-cta p { color: rgba(246,244,238,0.85) !important; }
+body.page .entry-content .adar-footer-cta .adar-btn {
+  background: var(--paper);
+  border-color: var(--paper);
+  color: var(--ink) !important;
+}
+body.page .entry-content .adar-footer-cta .adar-btn-ghost {
+  background: transparent;
+  border-color: var(--paper);
+  color: var(--paper) !important;
+}
+
+/* Embeds keep their 16:9 frame, no decorative card chrome. */
+body.page .entry-content .adar-embed,
+body.page .entry-content .at-emb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--paper-2);
+  margin: 32px 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+body.page .entry-content .adar-embed iframe,
+body.page .entry-content .at-emb iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Pills / chips reused across pages. */
+body.page .entry-content .adar-pill,
+body.page .entry-content .qe4-chips > div {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 6px 8px 0;
+}
+body.page .entry-content .qe4-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 0;
+}
+
+/* Stats blocks (impact page). */
+body.page .entry-content .adar-stat-v,
+body.page .entry-content .amp-stat-n,
+body.page .entry-content .amp-counter {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 500;
+  font-size: clamp(36px, 4vw, 64px);
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+body.page .entry-content .adar-stat-k,
+body.page .entry-content .adar-stat-t,
+body.page .entry-content .amp-stat-l {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Rows (key-value pairs in contact-like layouts). */
+body.page .entry-content .adar-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+body.page .entry-content .adar-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+body.page .entry-content .adar-value {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 17px;
+  color: var(--ink);
+}
+@media (max-width: 600px) {
+  body.page .entry-content .adar-row { grid-template-columns: 1fr; gap: 4px; }
+}
+
+/* Decorative bits we don't need any more. */
+body.page .entry-content .qe4-line,
+body.page .entry-content .adar-ring,
+body.page .entry-content .adar-dot {
+  display: none;
+}
+
+/* Top-level wrappers stripped of legacy padding so the unified
+   sections take care of spacing. */
+body.page .entry-content .adar-impact,
+body.page .entry-content .adar-impact-v3,
+body.page .entry-content .adar-residencias-v3,
+body.page .entry-content .adar-open-call-composer-v3,
+body.page .entry-content .adar-open-call-visualartist-v3,
+body.page .entry-content .adar-sede-v2,
+body.page .entry-content .adar-sede-v3,
+body.page .entry-content .adar-horreos-v2,
+body.page .entry-content .adar-team,
+body.page .entry-content .adar-partners,
+body.page .entry-content .adar-opencall {
+  padding: 0 !important;
+  background: transparent !important;
+}
