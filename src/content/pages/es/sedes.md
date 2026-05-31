@@ -11,384 +11,70 @@ permalink: "/es/sedes/"
 categories: []
 tags: []
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp"
-excerpt: ""
+excerpt: "Leiguarda 47. Una cuadra rehabilitada como sala de ensayo, estudio de producción y alojamiento de residencias en el corazón de Belmonte de Miranda."
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
 translation_group: "pll_6990a616ee1dd"
 ---
 
-<!-- =========================
-SEDE ADAR / LEIGUARDA 47
-========================= -->
+<article class="ed">
 
-<div class="adar-impact-v3 adar-sede-v3">
+<section class="ed-intro">
+<p class="ed-eyebrow">§ 01 · Leiguarda 47</p>
+<h2 class="ed-h">Donde ADAR <em>vive y trabaja</em>.</h2>
+<p class="ed-lede">
+Vivir, trabajar y presentar bajo el mismo techo. Una vieja cuadra de Leiguarda, en Belmonte de Miranda, rehabilitada como sala de ensayo, estudio de producción y alojamiento para residencias internacionales. La sede del Festival ADAR y el ancla cotidiana de la asociación.
+</p>
+</section>
 
-<!-- HERO -->
-<div class="amp-hero">
-<div class="amp-hero-bg">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp" alt="Leiguarda 47, sede de ADAR en Asturias" loading="lazy" />
-</div>
-<div class="amp-hero-inner">
-<span class="amp-eyebrow">Sede de ADAR</span>
-<h2 class="amp-title">Leiguarda <em>47</em></h2>
-<p class="amp-subtitle">Residencia artística, espacio de ensayo y creación en la Asturias rural.</p>
-<div class="amp-actions">
-<a class="amp-btn" href="#la-casa">Conocer la sede</a>
-<a class="amp-btn amp-btn-ghost" href="#galeria">Ver galería</a>
-</div>
-<div class="amp-chips" aria-label="Tags">
-<span class="amp-chip">Belmonte de Miranda, Asturias</span>
-<span class="amp-chip">Residencias / Conciertos / Creación</span>
-</div>
-</div>
-</div>
+<section class="ed-objectives">
+<p class="ed-eyebrow">§ 02 · Lo que ofrece la sede</p>
+<h2 class="ed-h">Cuatro funciones, un mismo edificio.</h2>
+<ol class="ed-list">
+<li><span class="ed-list-n mono">01</span><div><strong>Sala de ensayo y conciertos.</strong> Espacio acústicamente preparado con piano de cola, capaz de acoger ensayos largos, grabación y micro-conciertos para audiencia cercana.</div></li>
+<li><span class="ed-list-n mono">02</span><div><strong>Estudio de producción.</strong> Equipos para grabación de audio, edición de vídeo y documentación audiovisual de cada residencia y acción del festival.</div></li>
+<li><span class="ed-list-n mono">03</span><div><strong>Alojamiento.</strong> Habitaciones y zonas comunes para artistas en residencia, con cocina, baño completo y espacios compartidos de trabajo.</div></li>
+<li><span class="ed-list-n mono">04</span><div><strong>Entorno.</strong> Aldea de unos 100 habitantes, rodeada de prados, hórreos y caminos. Silencio, paisaje y concentración.</div></li>
+</ol>
+</section>
 
-<!-- INTRO -->
-<section class="ai-section ai-light" aria-label="Introducción">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">El lugar</p>
-<h2>Donde ADAR vive y trabaja</h2>
-<p class="ai-sub">
-Leiguarda 47 es la sede permanente de Festival ADAR. Una casa restaurada en la montaña del occidente asturiano donde artistas internacionales vienen a ensayar, componer, grabar y compartir su trabajo con el público local. Alojamiento, sala de ensayo con piano de cola, estudio de producción y espacio de conciertos, todo en el mismo edificio.
+<section class="ed-mode">
+<p class="ed-eyebrow">§ 03 · Cómo se trabaja aquí</p>
+<h2 class="ed-h">Conciertos, ensayos abiertos <em>y encuentros</em>.</h2>
+<div class="ed-twocol">
+<div>
+<h3>Residencias de creación.</h3>
+<p>
+Estancias de una a varias semanas para compositores, intérpretes y artistas visuales. El ritmo lo marca la obra, no el calendario: silencio, paisaje y atención plena.
+</p>
+<h3>Documentación y producción.</h3>
+<p>
+Cada residencia se acompaña de un registro audiovisual cuidado: grabaciones, fotografía y vídeo que prolongan la vida de la obra más allá del concierto.
+</p>
+</div>
+<div>
+<h3>Mentoría.</h3>
+<p>
+Acompañamiento curatorial por parte de la codirección y de especialistas invitados: lectura de partitura, análisis escénico, contextualización histórica.
+</p>
+<h3>Conexión local.</h3>
+<p>
+Cada residencia incluye encuentros con la población de Belmonte de Miranda: ensayos abiertos, charlas, cenas y, cuando procede, talleres con la escuela rural.
 </p>
 </div>
 </div>
 </section>
 
-<!-- LA CASA -->
-<section class="ai-section ai-cream" id="la-casa" aria-label="La casa">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">La casa</p>
-<h2>Vivir, trabajar y presentar bajo el mismo techo</h2>
-<p class="ai-sub">
-No es una sala de conciertos ni un hotel. Es una casa de trabajo donde la creación y la vida cotidiana comparten espacio. Quienes residen aquí conviven, comen juntos y desarrollan sus proyectos codo con codo. Desde 2020, más de 18 artistas de España, Italia, Alemania y Países Bajos han pasado por aquí.
-</p>
-</div>
-
-<div class="ai-grid-2">
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3427.webp" loading="lazy" alt="Fachada de piedra de Leiguarda 47" />
-</figure>
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_2808.jpeg" loading="lazy" alt="Interior de la sede" />
-</figure>
-</div>
-</div>
+<section class="ed-meta">
+<dl class="ed-specs">
+<div><dt class="mono">Dirección</dt><dd>Leiguarda 47 · 33845 Belmonte de Miranda · Asturias</dd></div>
+<div><dt class="mono">Coordenadas</dt><dd>43.2° N · 6.2° W</dd></div>
+<div><dt class="mono">Habitantes aldea</dt><dd>≈ 100</dd></div>
+<div><dt class="mono">Equipamiento</dt><dd>Piano de cola · Grabación · Vídeo</dd></div>
+<div><dt class="mono">Aforo</dt><dd>30–50 personas (micro-conciertos)</dd></div>
+<div><dt class="mono">Accesibilidad</dt><dd>Planta baja accesible · WC adaptado</dd></div>
+</dl>
 </section>
 
-<!-- ESPACIOS -->
-<section class="ai-section ai-light" id="espacios" aria-label="Espacios">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Espacios</p>
-<h2>Lo que ofrece la sede</h2>
-</div>
-
-<div class="ai-grid-2">
-
-<article class="ai-card">
-<h3>Sala de ensayo y conciertos</h3>
-<p>
-Espacio principal con piano de cola, sistema de sonido profesional, iluminación, proyectores y capacidad para unas 30 personas. Funciona como sala de ensayo diario y como espacio de conciertos íntimos.
-</p>
 </article>
-
-<article class="ai-card">
-<h3>Estudio de producción</h3>
-<p>
-Zona equipada para composición, edición, grabación de audio y vídeo, y trabajo digital. Internet de fibra (1 Gb), software creativo (Sibelius, Logic, Adobe Suite, QLab, MadMapper) y taller con herramientas para artes visuales.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>Alojamiento</h3>
-<p>
-Habitaciones individuales dentro de la propia sede, cocina equipada, salón común y terraza exterior. Comidas diarias con producto local. La estancia está cubierta desde el primer hasta el último día de la residencia.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>Entorno</h3>
-<p>
-Terrazas, caminos de pueblo, paisaje de montaña. Leiguarda es una aldea de unas 10 casas sin restricciones de ruido. Se puede trabajar a cualquier hora. El silencio y el contacto directo con el territorio forman parte del proceso.
-</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- CÓMO SE TRABAJA -->
-<section class="ai-section ai-cream" aria-label="Cómo se trabaja aquí">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Residencias</p>
-<h2>Cómo se trabaja aquí</h2>
-<p class="ai-sub">
-Los artistas viven y crean en el mismo lugar. La estructura es sencilla: mañanas de trabajo concentrado, tardes de ensayo e intercambio, noches abiertas a la conversación y la reflexión. Mentores, colaboradores y el equipo de ADAR forman parte de la vida diaria. La duración de las residencias permite un ciclo completo: desde las primeras ideas hasta la presentación pública.
-</p>
-</div>
-
-<div class="ai-grid-2">
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_0680.jpeg" loading="lazy" alt="Espacio de trabajo en Leiguarda 47" />
-</figure>
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_0740.jpeg" loading="lazy" alt="Interior de la casa" />
-</figure>
-</div>
-</div>
-</section>
-
-<!-- CONCIERTOS -->
-<section class="ai-section ai-light" aria-label="Conciertos y presentaciones">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Presentaciones</p>
-<h2>Conciertos, ensayos abiertos y encuentros</h2>
-<p class="ai-sub">
-La sede acoge conciertos íntimos, muestras de procesos en curso y sesiones abiertas al público local. La escala es deliberada: pocas decenas de asientos, contacto directo entre artistas y audiencia. Los proyectos que se desarrollan en residencia encuentran aquí su primera vida pública.
-</p>
-</div>
-
-<div class="ai-grid-2">
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_0755.jpeg" loading="lazy" alt="Espacio de concierto en Leiguarda 47" />
-</figure>
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_2938.jpeg" loading="lazy" alt="Montaje en la sala principal" />
-</figure>
-</div>
-</div>
-</section>
-
-<!-- TERRITORIO -->
-<section class="ai-section ai-cream" aria-label="Territorio">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">El territorio</p>
-<h2>Silencio, paisaje, concentración</h2>
-<p class="ai-sub">
-Leiguarda está en las montañas de Belmonte de Miranda, un municipio de menos de 2.000 habitantes en el occidente asturiano. La calma, la distancia con respecto a la vida urbana y la escala del pueblo no son un detalle: son las condiciones que hacen posible otra forma de trabajo.
-</p>
-</div>
-
-<div class="ai-grid-2">
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_3684.JPG" loading="lazy" alt="Paisaje de montaña en Asturias" />
-</figure>
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_20250717_164603.jpg" loading="lazy" alt="Entorno montañoso" />
-</figure>
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4393.JPG" loading="lazy" alt="Pasaje en la aldea" />
-</figure>
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4409.JPG" loading="lazy" alt="Vista rural cerca de Leiguarda" />
-</figure>
-</div>
-</div>
-</section>
-
-<!-- QUÉ PASA AQUÍ -->
-<section class="ai-section ai-light" aria-label="Qué sucede aquí">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Actividad</p>
-<h2>Qué sucede en Leiguarda 47</h2>
-</div>
-
-<div class="ai-grid-2">
-
-<article class="ai-card">
-<h3>Residencias de creación</h3>
-<p>
-Estancias para compositores, intérpretes y artistas visuales. Tiempo para desarrollar obra nueva, ensayar y preparar proyectos antes de que sigan su recorrido.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>Documentación y producción</h3>
-<p>
-Grabación de vídeo, fotografía y audio. El trabajo realizado en residencia se documenta para circular más allá de la sede.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>Mentoría</h3>
-<p>
-Sesiones individuales, encuentros colectivos y conversación informal entre artistas, mentores y el equipo de ADAR.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>Conexión local</h3>
-<p>
-Sesiones abiertas, visitas a patrimonio cercano y vínculos con las aldeas del entorno. La sede es el punto de partida de un trabajo cultural que se extiende por el territorio.
-</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- DATOS PRÁCTICOS -->
-<section class="ai-section ai-cream" aria-label="Datos prácticos">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Datos prácticos</p>
-<h2>Condiciones de la sede</h2>
-</div>
-
-<div class="ai-grid-2">
-
-<article class="ai-card">
-<h3>Equipamiento</h3>
-<p>
-Piano de cola, sistema de sonido, iluminación, proyectores, monitores, herramientas de grabación de audio y vídeo, software creativo, internet de fibra (1 Gb). Vehículo compartido disponible.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>Accesibilidad</h3>
-<p>
-Los espacios principales (sala de ensayo, cocina, baño) están a nivel de calle, sin escalones. ADAR planifica con cada residente para resolver cualquier necesidad de acceso con antelación.
-</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- GALERÍA -->
-<section class="ai-section ai-light" id="galeria" aria-label="Galería">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Galería</p>
-<h2>La sede y su entorno</h2>
-</div>
-
-<div class="ai-grid-3">
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/729daf41-f96e-4dc5-962c-1bb7d1fcffd3.jpg" loading="lazy" alt="Exterior de Leiguarda 47" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_0284.jpeg" loading="lazy" alt="Casa rural en Leiguarda" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_3066.jpeg" loading="lazy" alt="Detalle de la casa" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_3276.jpeg" loading="lazy" alt="Calle de la aldea" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_3514.JPG" loading="lazy" alt="Exterior de la residencia" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_2788.jpeg" loading="lazy" alt="Detalle exterior" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_3837.jpeg" loading="lazy" alt="Arquitectura de la aldea" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG" loading="lazy" alt="Detalle de la casa" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4388.JPG" loading="lazy" alt="Edificio de la residencia" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4394.JPG" loading="lazy" alt="Arquitectura rural asturiana" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4399.JPG" loading="lazy" alt="Exterior de la sede" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4401.JPG" loading="lazy" alt="Camino junto a Leiguarda 47" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4402.JPG" loading="lazy" alt="Vista de la aldea" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4405.JPG" loading="lazy" alt="Piedra y entorno rural" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4406.JPG" loading="lazy" alt="Escena exterior" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_20250717_133525.jpg" loading="lazy" alt="Paisaje cerca de Leiguarda" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_20250717_164637.jpg" loading="lazy" alt="Aldea y paisaje" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_20250804_155951.jpg" loading="lazy" alt="La casa y su contexto" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4421.JPG" loading="lazy" alt="Detalle arquitectónico" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4426.JPG" loading="lazy" alt="Casa y paisaje" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4856.JPG" loading="lazy" alt="Entorno de la residencia" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG-20250804-WA0025.jpg" loading="lazy" alt="Residencia de ADAR" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG-20250804-WA0027.jpg" loading="lazy" alt="Vida en la sede" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG-20250804-WA0028.jpg" loading="lazy" alt="Aldea y sede" />
-</figure>
-
-</div>
-</div>
-</section>
-
-<!-- CTA FINAL -->
-<section class="ai-section ai-cream" aria-label="Más información">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Contacto</p>
-<h2>Un lugar para crear con tiempo y atención</h2>
-<p class="ai-sub">
-Si eres artista, programador o colaborador y te interesa lo que hacemos en Leiguarda 47, escríbenos.
-</p>
-</div>
-
-<div class="ai-actions" style="margin-top:20px">
-<a class="ai-btn" href="/residencias/" target="_blank" rel="noopener">Residencias</a>
-<a class="ai-btn ai-btn-ghost" href="/" target="_blank" rel="noopener">Festival ADAR</a>
-</div>
-</div>
-</section>
-
-</div>

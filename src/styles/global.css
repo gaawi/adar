@@ -7486,7 +7486,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
 /* =============================================================
    QUE ES ADAR — editorial layout
    ============================================================= */
-.qea {
+.ed {
   max-width: 1280px;
   margin: 0 auto;
   padding: 80px 40px 120px;
@@ -7495,9 +7495,9 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   gap: 96px;
 }
 @media (max-width: 720px) {
-  .qea { padding: 56px 20px 80px; gap: 72px; }
+  .ed { padding: 56px 20px 80px; gap: 72px; }
 }
-.qea-eyebrow {
+.ed-eyebrow {
   display: inline-block;
   font-family: var(--font-mono);
   font-size: 11px;
@@ -7506,7 +7506,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   color: var(--muted);
   margin: 0 0 24px;
 }
-.qea-h {
+.ed-h {
   font-family: var(--font-display);
   font-stretch: 75%;
   font-weight: 500;
@@ -7517,7 +7517,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   text-wrap: balance;
   color: var(--ink);
 }
-.qea-h em {
+.ed-h em {
   font-family: var(--font-serif);
   font-style: italic;
   font-stretch: 100%;
@@ -7525,7 +7525,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   color: var(--ink);
   font-weight: 500;
 }
-.qea-lede {
+.ed-lede {
   margin: 28px 0 0;
   max-width: 70ch;
   font-family: var(--font-sans);
@@ -7534,7 +7534,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   color: var(--ink-soft);
 }
 
-.qea-twocol {
+.ed-twocol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 56px;
@@ -7542,9 +7542,9 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   padding-top: 32px;
 }
 @media (max-width: 720px) {
-  .qea-twocol { grid-template-columns: 1fr; gap: 32px; }
+  .ed-twocol { grid-template-columns: 1fr; gap: 32px; }
 }
-.qea-twocol h3 {
+.ed-twocol h3 {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
@@ -7554,13 +7554,13 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   margin: 6px 0 14px;
   color: var(--ink);
 }
-.qea-twocol p {
+.ed-twocol p {
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.6;
   color: var(--ink-soft);
 }
-.qea-kicker {
+.ed-kicker {
   display: block;
   font-size: 11px;
   letter-spacing: 0.22em;
@@ -7572,13 +7572,13 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   width: fit-content;
 }
 
-.qea-list {
+.ed-list {
   list-style: none;
   margin: 32px 0 0;
   padding: 0;
   border-top: 1px solid var(--ink);
 }
-.qea-list li {
+.ed-list li {
   display: grid;
   grid-template-columns: 60px 1fr;
   gap: 24px;
@@ -7586,7 +7586,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   padding: 24px 0;
   border-bottom: 1px solid var(--line);
 }
-.qea-list-n {
+.ed-list-n {
   font-size: 12px;
   letter-spacing: 0.18em;
   color: var(--accent-ink);
@@ -7594,30 +7594,30 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   padding: 4px 8px;
   width: fit-content;
 }
-.qea-list strong {
+.ed-list strong {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
   font-size: clamp(18px, 1.5vw, 22px);
   letter-spacing: -0.005em;
 }
-.qea-list div {
+.ed-list div {
   font-family: var(--font-sans);
   font-size: 16px;
   line-height: 1.55;
   color: var(--ink-soft);
 }
 @media (max-width: 600px) {
-  .qea-list li { grid-template-columns: 48px 1fr; gap: 16px; }
+  .ed-list li { grid-template-columns: 48px 1fr; gap: 16px; }
 }
 
-.qea-mode .qea-twocol {
+.ed-mode .ed-twocol {
   border-top: 1px solid var(--ink);
   padding-top: 32px;
   margin-top: 32px;
 }
 
-.qea-specs {
+.ed-specs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
@@ -7625,21 +7625,21 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   border: 1px solid var(--line);
   margin: 0;
 }
-.qea-specs > div {
+.ed-specs > div {
   background: var(--paper);
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
-.qea-specs dt {
+.ed-specs dt {
   font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--muted);
   margin: 0;
 }
-.qea-specs dd {
+.ed-specs dd {
   margin: 0;
   font-family: var(--font-serif);
   font-style: italic;
@@ -7648,7 +7648,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   color: var(--ink);
 }
 @media (max-width: 720px) {
-  .qea-specs { grid-template-columns: 1fr; }
+  .ed-specs { grid-template-columns: 1fr; }
 }
 
 /* =============================================================

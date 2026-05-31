@@ -18,28 +18,28 @@ menu_order: 0
 translation_group: "pll_6993527cab919"
 ---
 
-<article class="qea">
+<article class="ed">
 
-<section class="qea-intro">
-<p class="qea-eyebrow">§ 01 · Definición</p>
-<h2 class="qea-h">
+<section class="ed-intro">
+<p class="ed-eyebrow">§ 01 · Definición</p>
+<h2 class="ed-h">
 Una plataforma cultural <em>itinerante</em> con sede en una aldea de cien habitantes.
 </h2>
-<p class="qea-lede">
+<p class="ed-lede">
 ADAR es la <strong>Asociación para el Desarrollo de las Artes en el medio Rural</strong>, una iniciativa cultural sin ánimo de lucro fundada en 2020 en Leiguarda (Belmonte de Miranda, Asturias) por los músicos Guillermo Laporta y Josefina Urraca. El festival que nace de la asociación produce música clásica, arte visual contemporáneo y patrimonio activado en aldeas, iglesias, hórreos y paisajes del medio rural asturiano.
 </p>
 </section>
 
-<section class="qea-twocol">
+<section class="ed-twocol">
 <div>
-<p class="qea-kicker mono">Origen del nombre</p>
+<p class="ed-kicker mono">Origen del nombre</p>
 <h3>De siglas a programa.</h3>
 <p>
 El Festival ADAR lleva el nombre de la asociación que lo organiza y articula su visión cultural. Las siglas se convirtieron en programa: <em>Artes / Desarrollo / Rural</em>.
 </p>
 </div>
 <div>
-<p class="qea-kicker mono">La asociación</p>
+<p class="ed-kicker mono">La asociación</p>
 <h3>Dos músicos, una aldea.</h3>
 <p>
 Guillermo Laporta (flauta) y Josefina Urraca (piano) crearon la asociación durante la pandemia con el propósito de activar el patrimonio rural asturiano mediante la música y las artes vivas, con apoyo de nuevas tecnologías y red internacional.
@@ -47,23 +47,23 @@ Guillermo Laporta (flauta) y Josefina Urraca (piano) crearon la asociación dura
 </div>
 </section>
 
-<section class="qea-objectives">
-<p class="qea-eyebrow">§ 02 · Objetivos</p>
-<h2 class="qea-h">Seis líneas que cruzan cada edición.</h2>
-<ol class="qea-list">
-<li><span class="qea-list-n mono">01</span><div><strong>Revitalización.</strong> Proyectos culturales de impacto internacional en zonas rurales asturianas con escasa oferta cultural especializada.</div></li>
-<li><span class="qea-list-n mono">02</span><div><strong>Acercamiento.</strong> Llevar la música y las artes a territorios en riesgo de despoblación, con formatos de proximidad y mediación cercana.</div></li>
-<li><span class="qea-list-n mono">03</span><div><strong>Patrimonio activado.</strong> Reutilizar espacios rurales no convencionales o en desuso: hórreos, iglesias, monasterios, palacios, capillas, mercados.</div></li>
-<li><span class="qea-list-n mono">04</span><div><strong>Turismo cultural.</strong> Incentivar el turismo rural a través de la cultura y atraer artistas internacionales al territorio.</div></li>
-<li><span class="qea-list-n mono">05</span><div><strong>Conexión global.</strong> Conectar zonas rurales de Asturias con audiencias y circuitos internacionales —Nueva York, Porto, París, Berlín—.</div></li>
-<li><span class="qea-list-n mono">06</span><div><strong>Arte con propósito.</strong> Usar las artes para abordar problemáticas sociales contemporáneas: despoblación, identidad, sostenibilidad, transición justa.</div></li>
+<section class="ed-objectives">
+<p class="ed-eyebrow">§ 02 · Objetivos</p>
+<h2 class="ed-h">Seis líneas que cruzan cada edición.</h2>
+<ol class="ed-list">
+<li><span class="ed-list-n mono">01</span><div><strong>Revitalización.</strong> Proyectos culturales de impacto internacional en zonas rurales asturianas con escasa oferta cultural especializada.</div></li>
+<li><span class="ed-list-n mono">02</span><div><strong>Acercamiento.</strong> Llevar la música y las artes a territorios en riesgo de despoblación, con formatos de proximidad y mediación cercana.</div></li>
+<li><span class="ed-list-n mono">03</span><div><strong>Patrimonio activado.</strong> Reutilizar espacios rurales no convencionales o en desuso: hórreos, iglesias, monasterios, palacios, capillas, mercados.</div></li>
+<li><span class="ed-list-n mono">04</span><div><strong>Turismo cultural.</strong> Incentivar el turismo rural a través de la cultura y atraer artistas internacionales al territorio.</div></li>
+<li><span class="ed-list-n mono">05</span><div><strong>Conexión global.</strong> Conectar zonas rurales de Asturias con audiencias y circuitos internacionales —Nueva York, Porto, París, Berlín—.</div></li>
+<li><span class="ed-list-n mono">06</span><div><strong>Arte con propósito.</strong> Usar las artes para abordar problemáticas sociales contemporáneas: despoblación, identidad, sostenibilidad, transición justa.</div></li>
 </ol>
 </section>
 
-<section class="qea-mode">
-<p class="qea-eyebrow">§ 03 · Cómo funciona</p>
-<h2 class="qea-h">Residencia y festival <em>como un mismo ecosistema</em>.</h2>
-<div class="qea-twocol">
+<section class="ed-mode">
+<p class="ed-eyebrow">§ 03 · Cómo funciona</p>
+<h2 class="ed-h">Residencia y festival <em>como un mismo ecosistema</em>.</h2>
+<div class="ed-twocol">
 <div>
 <p>
 ADAR se desarrolla en aldeas, pueblos y parroquias asturianas de menos de 500 habitantes. La <strong>residencia</strong> y el <strong>festival</strong> funcionan como un único ecosistema creativo: ensayo, creación, mediación y concierto suceden en el mismo territorio, con los mismos artistas y la misma comunidad anfitriona.
@@ -83,8 +83,8 @@ Toda la programación es de entrada libre hasta completar aforo, sostenida con a
 </div>
 </section>
 
-<section class="qea-meta">
-<dl class="qea-specs">
+<section class="ed-meta">
+<dl class="ed-specs">
 <div><dt class="mono">Fundación</dt><dd>2020 · Leiguarda, Belmonte de Miranda</dd></div>
 <div><dt class="mono">Naturaleza</dt><dd>Asociación cultural sin ánimo de lucro</dd></div>
 <div><dt class="mono">Codirección</dt><dd>Guillermo Laporta · Josefina Urraca</dd></div>

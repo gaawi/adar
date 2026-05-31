@@ -11,65 +11,70 @@ permalink: "/ast/sede/"
 categories: []
 tags: []
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp"
-excerpt: ""
+excerpt: "Lleiguarda 47. Una cuadra rehabilitada como sala d'ensayu, estudiu de producción y allugamientu de residencies nel corazón de Belmonte de Miranda."
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
 translation_group: "pll_6990a616ee1dd"
 ---
 
-<div class="adar-sede-v2">
-<!-- HERO -->
-<div class="amp-hero">
-<div class="amp-hero-bg">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp" alt="Sede Leiguarda 47" />
-</div>
-<div class="amp-hero-inner">
-<span class="amp-eyebrow">Sede · Festival ADAR</span>
-<h2 class="amp-title">Leiguarda <em>47</em></h2>
-<p class="amp-subtitle">Residencies, conciertos y creación nel corazón rural d'Asturies</p>
-</div>
-</div>
+<article class="ed">
 
-<section class="sede-gallery" aria-label="Galería de Leiguarda 47">
-<img class="g-main" src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp" alt="Sala de conciertos y pianu" loading="lazy">
-<img class="g-2" src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3427.webp" alt="Dormitoriu" loading="lazy">
-<img class="g-3" src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_0680.webp" alt="Espaciu de trabayu" loading="lazy">
-<img class="g-4" src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_0673.webp" alt="Galería y vistes" loading="lazy">
-<img class="g-5" src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3429.webp" alt="Sala preparada pa conciertu" loading="lazy">
+<section class="ed-intro">
+<p class="ed-eyebrow">§ 01 · Lleiguarda 47</p>
+<h2 class="ed-h">Onde ADAR <em>vive y trabaya</em>.</h2>
+<p class="ed-lede">
+Vivir, trabayar y presentar baxo'l mesmu techu. Una vieya cuadra de Lleiguarda, en Belmonte de Miranda, rehabilitada como sala d'ensayu, estudiu de producción y allugamientu pa residencies internacionales. La sede del Festival ADAR y l'ancla cotidiana de l'asociación.
+</p>
 </section>
 
-<section class="sede-blocks">
-<div class="b">
-<h2>Residencies</h2>
+<section class="ed-objectives">
+<p class="ed-eyebrow">§ 02 · Lo que ufierta la sede</p>
+<h2 class="ed-h">Cuatro funciones, un mesmu edificiu.</h2>
+<ol class="ed-list">
+<li><span class="ed-list-n mono">01</span><div><strong>Sala d'ensayu y conciertos.</strong> Espaciu acústicamente preparáu con pianu de cola, capaz d'acoyer ensayos llargos, grabación y micro-conciertos pa públicu cercanu.</div></li>
+<li><span class="ed-list-n mono">02</span><div><strong>Estudiu de producción.</strong> Equipamientu pa grabación d'audio, edición de videu y documentación audiovisual de cada residencia y aición del festival.</div></li>
+<li><span class="ed-list-n mono">03</span><div><strong>Allugamientu.</strong> Habitaciones y zones comunes p'artistes en residencia, con cocina, baño completu y espacios compartíos de trabayu.</div></li>
+<li><span class="ed-list-n mono">04</span><div><strong>Contornu.</strong> Aldea d'unos 100 habitantes, arrodiada de praos, hórreos y caminos. Silenciu, paisaxe y concentración.</div></li>
+</ol>
+</section>
+
+<section class="ed-mode">
+<p class="ed-eyebrow">§ 03 · Cómo se trabaya equí</p>
+<h2 class="ed-h">Conciertos, ensayos abiertos <em>y alcuentros</em>.</h2>
+<div class="ed-twocol">
+<div>
+<h3>Residencies de creación.</h3>
 <p>
-Un llugar pa trabayar repertoriu y creación con tiempu real: ensayos, llectura, escucha y
-conversaciones. Ideal pa formatos de cámara y procesos collaborativos.
+Estancies d'una a delles selmanes pa compositores, intérpretes y artistes visuales. El ritmu marca-lu la obra, non el calendariu: silenciu, paisaxe y atención plena.
+</p>
+<h3>Documentación y producción.</h3>
+<p>
+Cada residencia acompáñase d'un rexistru audiovisual curiosu: grabaciones, semeyes y videu que prolonguen la vida de la obra más allá del conciertu.
 </p>
 </div>
-
-<div class="b">
-<h2>Conciertos</h2>
+<div>
+<h3>Mentoría.</h3>
 <p>
-Espacios íntimos pa públicu amenorgáu, con una rellación directa ente intérpretes y audiencia,
-y una acústica pensada pa música ensin amplificación.
+Acompañamientu curatorial pola codireición y por especialistes invitaos: llectura de partitura, análisis escénicu, contestualización histórica.
+</p>
+<h3>Conexón llocal.</h3>
+<p>
+Cada residencia inclúi alcuentros cola población de Belmonte de Miranda: ensayos abiertos, charres, cenes y, cuando procede, talleres cola escuela rural.
 </p>
 </div>
-
-<div class="b">
-<h2>Patrimoniu</h2>
-<p>
-Arquitectura tradicional, materiales nobles y paisaxe rural. La sede funciona como puntu de partida
-pa activar hórreos, caminos, places y llugares con memoria.
-</p>
-</div>
-
-<div class="b">
-<h2>Producción</h2>
-<p>
-Preparación de programes, grabación llixera, documentación y creación de materiales pal archivu,
-prensa y mediación.
-</p>
 </div>
 </section>
-</div>
+
+<section class="ed-meta">
+<dl class="ed-specs">
+<div><dt class="mono">Direición</dt><dd>Lleiguarda 47 · 33845 Belmonte de Miranda · Asturies</dd></div>
+<div><dt class="mono">Coordenaes</dt><dd>43.2° N · 6.2° W</dd></div>
+<div><dt class="mono">Habitantes aldea</dt><dd>≈ 100</dd></div>
+<div><dt class="mono">Equipamientu</dt><dd>Pianu de cola · Grabación · Videu</dd></div>
+<div><dt class="mono">Aforu</dt><dd>30–50 persones (micro-conciertos)</dd></div>
+<div><dt class="mono">Accesibilidá</dt><dd>Planta baxa accesible · WC adaptáu</dd></div>
+</dl>
+</section>
+
+</article>

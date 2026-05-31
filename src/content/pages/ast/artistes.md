@@ -11,290 +11,68 @@ permalink: "/ast/artistes/"
 categories: []
 tags: []
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg"
-excerpt: ""
+excerpt: "Arte, música, arquiteutura y naturaleza son intrínsecos a la esperiencia humana, faciéndose mutualmente más poderosos."
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
 translation_group: "pll_6993500e5b2bc"
 ---
 
-<div class="adar-team">
+<article class="ed">
 
-<!-- HERO -->
-<div class="amp-hero">
-<div class="amp-hero-bg">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="" />
-</div>
-<div class="amp-hero-inner">
-<span class="amp-eyebrow">Festival ADAR</span>
-<h2 class="amp-title"> <em>Artistes</em></h2>
-<p class="amp-subtitle">Arte, música, arquiteutura y naturaleza son intrinsecos a la esperiencia humana, faciéndose mutuamente más poderosos.</p>
-</div>
-</div>
-
-<!-- ARTISTES RESIDENTES -->
-<section class="at-section at-light" id="artistes-residentes">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Residentes</p>
-<h2>Artistes qu'acompañen el festival</h2>
-<p class="at-sub">
-Músicos, compositores, cineastes y artistes visuales que participaron al llongu les ediciones.
+<section class="ed-intro">
+<p class="ed-eyebrow">§ 01 · Comunidá artística</p>
+<h2 class="ed-h">Artistes que pasaron <em>por ADAR</em>.</h2>
+<p class="ed-lede">
+Cinco ediciones, más de sesenta intérpretes, compositores y artistes visuales que trabayaron col festival en residencia o en xira. Una nómina viva que crez edición tres edición.
 </p>
+</section>
+
+<section class="ed-objectives">
+<p class="ed-eyebrow">§ 02 · Intérpretes y residentes</p>
+<h2 class="ed-h">Quien tocó nos hórreos.</h2>
+<ol class="ed-list">
+<li><span class="ed-list-n mono">01</span><div><strong>Andrea Casarrubios.</strong> Violonchelista y compositora · nominada a los Grammy 2025.</div></li>
+<li><span class="ed-list-n mono">02</span><div><strong>BellArte Ensemble.</strong> Conxuntu multidisciplinar · espeutáculu <em>The Whale</em> 2025.</div></li>
+<li><span class="ed-list-n mono">03</span><div><strong>Almudena Arribas.</strong> Viola · solista internacional.</div></li>
+<li><span class="ed-list-n mono">04</span><div><strong>Jone de la Fuente.</strong> Violín · solista de cámara.</div></li>
+<li><span class="ed-list-n mono">05</span><div><strong>Natania Hoffman.</strong> Violonchelo · CreArtBox NYC.</div></li>
+<li><span class="ed-list-n mono">06</span><div><strong>Nathaniel Sullivan.</strong> Barítonu · CreArtBox NYC.</div></li>
+<li><span class="ed-list-n mono">07</span><div><strong>Emmanuel Bach.</strong> Violín.</div></li>
+<li><span class="ed-list-n mono">08</span><div><strong>Žilvinas Brazauskas.</strong> Clarinete.</div></li>
+<li><span class="ed-list-n mono">09</span><div><strong>Beatriz Blanco.</strong> Violonchelo · primera edición 2021.</div></li>
+<li><span class="ed-list-n mono">10</span><div><strong>Mario Molina.</strong> Pianu.</div></li>
+<li><span class="ed-list-n mono">11</span><div><strong>Nacho Laguna.</strong> Tiorba y electrónica.</div></li>
+<li><span class="ed-list-n mono">12</span><div><strong>María del Buey.</strong> Voz y visuales.</div></li>
+<li><span class="ed-list-n mono">13</span><div><strong>Compañeras Panderetas.</strong> Música tradicional asturiana.</div></li>
+</ol>
+</section>
+
+<section class="ed-objectives">
+<p class="ed-eyebrow">§ 03 · Compositores y artistes visuales</p>
+<h2 class="ed-h">Quien creó <em>obra nueva</em>.</h2>
+<ol class="ed-list">
+<li><span class="ed-list-n mono">01</span><div><strong>Marcos Fernández.</strong> Compositor · residencia inaugural 2021.</div></li>
+<li><span class="ed-list-n mono">02</span><div><strong>Sarah K. Williams.</strong> Artista visual estaunidense · escultura site-specific permanente en Lleiguarda.</div></li>
+<li><span class="ed-list-n mono">03</span><div><strong>Guillermo Ordás.</strong> Cinematógrafu · documentación audiovisual.</div></li>
+<li><span class="ed-list-n mono">04</span><div><strong>Mizuko Kaji.</strong> Artista visual xaponesa · instalación 2023.</div></li>
+<li><span class="ed-list-n mono">05</span><div><strong>Diego Arribas.</strong> Artista visual asturianu · intervención nel paisaxe.</div></li>
+</ol>
+</section>
+
+<section class="ed-mode">
+<p class="ed-eyebrow">§ 04 · Direición artística</p>
+<h2 class="ed-h">Codireición <em>paritaria</em>.</h2>
+<div class="ed-twocol">
+<div>
+<h3>Josefina Urraca.</h3>
+<p>Pianista · Directora Artística. Codirixe'l festival dende 2021.</p>
 </div>
-
-<div class="at-grid-artists">
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/img-3981-3028023682.jpg" alt="Andrea Casarrubios" loading="lazy">
-</div>
-<h3>Andrea Casarrubios</h3>
-<p class="at-artist-role">Violonchelista y compositora</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="BellArte Ensemble" loading="lazy">
-</div>
-<h3>BellArte Ensemble</h3>
-<p class="at-artist-role">Ensemble residente</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.02.35.jpg" alt="Almudena Arribas" loading="lazy">
-</div>
-<h3>Almudena Arribas</h3>
-<p class="at-artist-role">Violista</p>
-<p class="at-artist-years">2022 · 23 · 24 · 25</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.01.37.jpg" alt="Jone de la Fuente" loading="lazy">
-</div>
-<h3>Jone de la Fuente</h3>
-<p class="at-artist-role">Violinista</p>
-<p class="at-artist-years">2022 · 23 · 24 · 25</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Natania+Hoffman.jpeg" alt="Natania Hoffman" loading="lazy">
-</div>
-<h3>Natania Hoffman</h3>
-<p class="at-artist-role">Violonchelista</p>
-<p class="at-artist-years">2022 · 23 · 24 · 25</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/NathanielSullivan_2017_1002w.jpeg" alt="Nathaniel Sullivan" loading="lazy">
-</div>
-<h3>Nathaniel Sullivan</h3>
-<p class="at-artist-role">Barítonu</p>
-<p class="at-artist-years">2021</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Emmanuel-Bach-1-400.jpg.jpg" alt="Emmanuel Bach" loading="lazy">
-</div>
-<h3>Emmanuel Bach</h3>
-<p class="at-artist-role">Violinista</p>
-<p class="at-artist-years">2022</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://zitahouse.com/zita-api/uploads/musician_zilvinas_604aebd0d0.webp" alt="Žilvinas Brazauskas" loading="lazy">
-</div>
-<h3>Žilvinas Brazauskas</h3>
-<p class="at-artist-role">Clarinetista</p>
-<p class="at-artist-years">2022</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/78e28e_662f092233ee41e3ba36d51a977adb20_mv2_d_3311_3310_s_4_2.jpeg" alt="Beatriz Blanco" loading="lazy">
-</div>
-<h3>Beatriz Blanco</h3>
-<p class="at-artist-role">Violonchelista</p>
-<p class="at-artist-years">2021</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Nocturno-Sinfonico-Auditorio-de-Galicia.jpeg" alt="Marcos Fernández" loading="lazy">
-</div>
-<h3>Marcos Fernández</h3>
-<p class="at-artist-role">Compositor</p>
-<p class="at-artist-years">2021</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Mario.jpg" alt="Mario Molina" loading="lazy">
-</div>
-<h3>Mario Molina</h3>
-<p class="at-artist-role">Pianista</p>
-<p class="at-artist-years">2024</p>
-</article>
-
+<div>
+<h3>Guillermo Laporta.</h3>
+<p>Flautista, compositor y diseñador · Director Executivu. Codirixe'l festival dende 2021.</p>
 </div>
 </div>
 </section>
 
-<!-- ARTISTES VISUALES -->
-<section class="at-section at-cream" id="artistes-visuales">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Artes visuales</p>
-<h2>Artistes visuales</h2>
-<p class="at-sub">
-Creadores qu'aportaron la so visión plástica al festival al traviés d'instalaciones, proyecciones y obra in situ.
-</p>
-</div>
-
-<div class="at-grid-artists">
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Sarah-K-Williams_Website-Image-3088365824.jpg" alt="Sara K. Williams" loading="lazy">
-</div>
-<h3>Sara K. Williams</h3>
-<p class="at-artist-role">Artista visual</p>
-<p class="at-artist-years">2024</p>
 </article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Guillermo.JPG" alt="Guillermo Ordás" loading="lazy">
-</div>
-<h3>Guillermo Ordás</h3>
-<p class="at-artist-role">Cinematógrafu</p>
-<p class="at-artist-years">2023 · 24 · 25</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Mizuko+Kaji.jpeg" alt="Mizuko Kaji" loading="lazy">
-</div>
-<h3>Mizuko Kaji</h3>
-<p class="at-artist-role">Artista visual</p>
-<p class="at-artist-years">2023</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Diego-Arribas.jpg" alt="Diego Arribas" loading="lazy">
-</div>
-<h3>Diego Arribas</h3>
-<p class="at-artist-role">Artista visual</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">
-</div>
-<h3>Guillermo Laporta</h3>
-<p class="at-artist-role">Escenógrafu</p>
-<p class="at-artist-years">2021 · 22 · 23 · 24 · 25</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- ENSEMBLES Y GRUPOS INVITAOS -->
-<section class="at-section at-light" id="grupos-invitaos">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Invitaos</p>
-<h2>Ensembles y grupos invitaos</h2>
-<p class="at-sub">
-Formaciones qu'enriquecieron la programación del festival cola so participación.
-</p>
-</div>
-
-<div class="at-grid-artists">
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+11.13.00.jpg" alt="Compañeras Panderetas" loading="lazy">
-</div>
-<h3>Compañeras Panderetas</h3>
-<p class="at-artist-role">Grupu invitáu</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="Nacho Laguna" loading="lazy">
-</div>
-<h3>Nacho Laguna</h3>
-<p class="at-artist-role">Artista invitáu</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-<article class="at-card at-artist-card">
-<div class="at-artist-img">
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fin-sonora.org%2Fwp-content%2Fuploads%2F2022%2F02%2Fmaria-buey-in12-profile.jpg&f=1&nofb=1&ipt=9e737c74a901df03eb60c2111b4e0761dd1f968bd3bb4880e51b1dfdc3355d78" alt="María del Buey" loading="lazy">
-</div>
-<h3>María del Buey</h3>
-<p class="at-artist-role">Artista invitada</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- DIRECCIÓN ARTÍSTICA -->
-<section class="at-section at-cream" id="direccion-artistica">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Dirección</p>
-<h2>Dirección artística</h2>
-<p class="at-sub">
-Cofundadores de CreArtBox y del Festival ADAR. Creación, interpretación y producción.
-</p>
-</div>
-
-<div class="at-grid-2">
-
-<!-- Josefina -->
-<article class="at-card at-person">
-<div class="at-person-top">
-<div class="at-avatar">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg" alt="Josefina Urraca" loading="lazy">
-</div>
-<div class="at-person-meta">
-<h3>Josefina Urraca</h3>
-<p class="at-role">Pianista · Dirección Artística</p>
-</div>
-</div>
-</article>
-
-<!-- Guillermo -->
-<article class="at-card at-person">
-<div class="at-person-top">
-<div class="at-avatar">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">
-</div>
-<div class="at-person-meta">
-<h3>Guillermo Laporta</h3>
-<p class="at-role">Flautista · Direutor Executivu</p>
-</div>
-</div>
-</article>
-
-</div>
-</div>
-</section>
-
-</div>

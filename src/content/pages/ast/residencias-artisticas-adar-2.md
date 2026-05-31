@@ -11,156 +11,64 @@ permalink: "/ast/residencias-artisticas-adar-2/"
 categories: []
 tags: []
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1927T01.jpg"
-excerpt: ""
+excerpt: "Procesu, contornu y escucha. Estancies de creación en Lleiguarda con pianu de cola, paisaxe y comunidá llocal."
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_69935200f3d0c"
 ---
 
-<!-- =========================
-RESIDENCIES ADAR - HTML (v3) - AST
-IMPORTANTE: esti bloque usa'l CSS de .adar-impact-v3.
-========================= -->
+<article class="ed">
 
-<div class="adar-impact-v3 adar-residencias-v3">
-
-<!-- HERO (Impact style) -->
-<div class="amp-hero">
-<div class="amp-hero-bg">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1927T01.jpg" alt="" />
-</div>
-<div class="amp-hero-inner">
-<span class="amp-eyebrow">Residencies</span>
-<h2 class="amp-title">Residencies Artístiques <em>ADAR</em></h2>
-<p class="amp-subtitle">Un marcu de creación contemporánea nel mediu rural asturianu. Tiempu real de trabayu, espacios cuidáos, relación direuta col territoriu.</p>
-<div class="amp-chips" aria-label="Etiquetes">
-<span class="amp-chip">Contestu · Leiguarda, Asturies</span>
-<span class="amp-chip">Disciplines · Música, artes visuales, formatos híbridos</span>
-<span class="amp-chip">Resultáu · Obres nueves, activaciones, archivu audiovisual</span>
-<span class="amp-chip">Enfoque · Procesu, mediación y continuídá</span>
-</div>
-</div>
-</div>
-
-<!-- GALERIA -->
-<section class="ai-section ai-light" aria-label="Galería de residencies">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Galería</p>
-<h2>Procesu, entornu y escucha</h2>
-<p class="ai-sub">
-Imáxenes del trabayu en residencia y del contestu nel que se desarrollen los procesos.
+<section class="ed-intro">
+<p class="ed-eyebrow">§ 01 · Marcu</p>
+<h2 class="ed-h">Procesu, contornu <em>y escucha</em>.</h2>
+<p class="ed-lede">
+ADAR ufierta residencies artístiques a compositores, compositores, intérpretes y artistes visuales na sede de Lleiguarda (Belmonte de Miranda). Estancies diseñaes pa que la obra atope la so forma ensin la presión del calendariu habitual.
 </p>
+</section>
+
+<section class="ed-objectives">
+<p class="ed-eyebrow">§ 02 · Cómo funcionen</p>
+<h2 class="ed-h">Cuatro principios operativos.</h2>
+<ol class="ed-list">
+<li><span class="ed-list-n mono">01</span><div><strong>Procesu, non productu.</strong> La residencia mide l'ésitu pol camín, non pol resultáu. Acéptase'l silenciu, la dulda y la reescritura.</div></li>
+<li><span class="ed-list-n mono">02</span><div><strong>Territoriu y patrimoniu.</strong> El paisaxe, l'arquiteutura y la historia llocal entren na obra. La obra nun «usa» el llugar: dialoga con él.</div></li>
+<li><span class="ed-list-n mono">03</span><div><strong>Mediación y comunidá.</strong> Ensayos abiertos, alcuentros cola población llocal, charres. La residencia ye tamién conversación.</div></li>
+<li><span class="ed-list-n mono">04</span><div><strong>Archivu y continuidá.</strong> Cada residencia documéntase con grabación, semeyes y videu, y publícase como pieza d'archivu abiertu.</div></li>
+</ol>
+</section>
+
+<section class="ed-mode">
+<p class="ed-eyebrow">§ 03 · Artistes en residencia</p>
+<h2 class="ed-h">Compositores <em>y artistes</em> per añu.</h2>
+<div class="ed-twocol">
+<div>
+<h3>2021 · Marcos Fernández.</h3>
+<p>Compositor y pianista, primera residencia inaugural del proyectu.</p>
+<h3>2024 · Sarah K. Williams.</h3>
+<p>Artista visual estaunidense. Escultura site-specific permanente en Lleiguarda + instalación itinerante per Grau.</p>
 </div>
-
-<div class="ai-grid-2">
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1918T01.jpg" alt="Trabayu en residencia ADAR" loading="lazy" />
-</figure>
-
-<figure class="ai-fig">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg" alt="Residencies ADAR - entornu y procesu" loading="lazy" />
-</figure>
+<div>
+<h3>2025 · Andrea Casarrubios.</h3>
+<p>Violonchelista y compositora nominada a los Grammy 2025. Recital na Ilesia de Lleiguarda.</p>
+<h3>2025 · Diego Arribas.</h3>
+<p>Artista visual asturianu. Proyectu d'intervención nel paisaxe del conceyu de Belmonte de Miranda.</p>
+<h3>2025 · Ballarte Ensemble.</h3>
+<p>Espeutáculu multidisciplinar <em>The Whale (La Ballena)</em> sobre testu de Giulio Tanasini.</p>
 </div>
 </div>
 </section>
 
-<!-- BLOQUES (tarxetes) -->
-<section class="ai-section ai-cream" id="modelo">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Modelu</p>
-<h2>Cómo funcionen les residencies</h2>
-<p class="ai-sub">
-Tiempu, curiáu y acompañamientu pa que la creación asoceda con contestu.
-</p>
-</div>
-
-<div class="ai-grid-2">
-<article class="ai-card">
-<h3>Un modelu basáu en procesu</h3>
-<p>
-Les residencies ADAR prioricen tiempu y curiáu: investigación, ensayos, conversaciones y pruebes.
-Nun son solo encargos puntuales, son procesos con contestu y acompañamientu.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>Territoriu y patrimoniu</h3>
-<p>
-La creación dialoga con arquiteutura rural, hórreos, capiyes, caminos y paisaxe. La sede funciona como
-puntu de partida p'activar llugares con memoria mediante esperiencies site-specific.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>Mediación y comunídá</h3>
-<p>
-Alcuentros, apertures de procesu, charles y acciones de proximídá. Les residencies xeneren vínculo:
-públicu llocal y visitante, artistes y territoriu, práutica y escucha compartida.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>Archivu y continuídá</h3>
-<p>
-Documentación audiovisual, fotografía, testos y materiales de comunicación. Les obres continúen la so vida
-en conciertos, redes, futures programaciones y aliances, conectando Asturies con circuitos nacionales y europeos.
-</p>
-</article>
-</div>
-</div>
+<section class="ed-meta">
+<dl class="ed-specs">
+<div><dt class="mono">Duración</dt><dd>1 a 4 selmanes</dd></div>
+<div><dt class="mono">Sede</dt><dd>Lleiguarda 47 · Belmonte de Miranda</dd></div>
+<div><dt class="mono">Equipamientu</dt><dd>Pianu de cola · Grabación A/V</dd></div>
+<div><dt class="mono">Idioma</dt><dd>ES · EN</dd></div>
+<div><dt class="mono">Convocatoria</dt><dd>Abierta · públicu internacional</dd></div>
+<div><dt class="mono">Contautu</dt><dd><a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a></dd></div>
+</dl>
 </section>
 
-<!-- RESIDENTES -->
-<section class="ai-section ai-light" id="residentes">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Artistes residentes</p>
-<h2>Compositores, compositores y artistes por añu</h2>
-<p class="ai-sub">
-Una seleición de residentes que desarrollaron obra y procesos n'ADAR nos últimos años.
-</p>
-</div>
-
-<div class="ai-grid-2" aria-label="Llista d'artistes residentes por añu">
-<article class="ai-card">
-<h3>2021 · Marcos Fernández</h3>
-<p>
-Residencia de creación musical y desarrollu de nueves obres de cámara, con trabayu en formatu íntimu y documentación.
-</p>
 </article>
-
-<article class="ai-card">
-<h3>2024 · Sarah K Williams</h3>
-<p>
-Residencia interdisciplinar centrada n'escultura, instalación y procesos performativos vinculáos a materia, paisaxe y memoria.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>2025 · Andrea Casarrubios</h3>
-<p>
-Residencia de composición y producción de nueves obres, con un enfoque especialmente conectáu al entornu y la so naturaleza.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>2025 · Diego Arribas</h3>
-<p>
-Residencia de creación plástica centrada nel trabayu con formatos híbridos, esplorando la relación ente'l repertoriu interpretáu con escena y naturaleza.
-</p>
-</article>
-
-<article class="ai-card">
-<h3>2025 · Ballarte ensemble</h3>
-<p>
-Residencia pa la creación de «La Ballena», un espectáculu multidisciplinar, con múltiples capes: basáu nun relatu escritu por Giulio Tanasini, propone llevar a escena una historia mediante l'usu de música, interpretación, instalación escénica y elementos audiovisuales.
-</p>
-</article>
-</div>
-</div>
-</section>
-
-</div>
