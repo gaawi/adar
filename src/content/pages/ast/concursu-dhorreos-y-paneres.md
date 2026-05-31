@@ -11,70 +11,123 @@ permalink: "/ast/concursu-dhorreos-y-paneres/"
 categories: []
 tags: []
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg"
-excerpt: "Patrimoniu rural asturianu como espaciu escénicu. Micro-conciertos y esperiencies artístiques en hórreos seleicionaos."
+excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
 translation_group: "pll_6990ac582687f"
 ---
 
-<article class="ed">
+<!-- =========================
+PROYEUTU: CONCURSU D'HÓRREOS Y PANERES - HTML (perenne)
+Pega esti bloque na to páxina (Custom HTML / Bloque HTML).
+========================= -->
 
-<section class="ed-intro">
-<p class="ed-eyebrow">§ 01 · Marcu</p>
-<h2 class="ed-h">Patrimoniu como <em>escenariu</em>.</h2>
-<p class="ed-lede">
-El Concursu d'Hórreos y Paneres del Festival ADAR convoca cada añu pa seleicionar ente tres y cinco estructures tradicionales asturianes que se convertirán n'escenarios de micro-conciertos y esperiencies artístiques duranti'l festival d'agostu.
-</p>
-</section>
+<div class="adar-horreos-v2">
 
-<section class="ed-objectives">
-<p class="ed-eyebrow">§ 02 · Qué buscamos</p>
-<h2 class="ed-h">Criterios de seleición.</h2>
-<ol class="ed-list">
-<li><span class="ed-list-n mono">01</span><div><strong>Valor arquiteutónicu.</strong> Hórreu o panera bien caltenida, representativa de la so comarca, en pie sobre los sos pegollos orixinales.</div></li>
-<li><span class="ed-list-n mono">02</span><div><strong>Contornu cuidáu.</strong> Inserción nun paisaxe vivu: aldea habitada, prau, sendéu, vista panorámica.</div></li>
-<li><span class="ed-list-n mono">03</span><div><strong>Conexón llocal.</strong> Propiedá y vecindariu dispuestos a abrir l'espaciu al públicu durante una xornada del festival.</div></li>
-<li><span class="ed-list-n mono">04</span><div><strong>Potencial escénicu.</strong> Accesu razonable, electricidá cercana, posibilidá d'aforu reducíu (ente 30 y 80 persones).</div></li>
-</ol>
-</section>
-
-<section class="ed-mode">
-<p class="ed-eyebrow">§ 03 · Cómo funciona</p>
-<h2 class="ed-h">Del avisu al micro-conciertu.</h2>
-<div class="ed-twocol">
-<div>
-<h3>Candidatura.</h3>
-<p>
-Abasten tres semeyes (vista xeneral, detalle y contornu) unviaes por corréu o WhatsApp. Ensin papeleo.
-</p>
-<h3>Seleición curatorial.</h3>
-<p>
-L'equipu d'ADAR visita los hórreos finalistes, escucha l'acústica del contornu y decide en función del diálogu cola programación musical.
-</p>
+<!-- HERO -->
+<div class="amp-hero" id="top">
+<div class="amp-hero-bg">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Hórreos y paneres - Festival ADAR" />
 </div>
-<div>
-<h3>Producción y curiáu.</h3>
-<p>
-ADAR aporta soníu, iluminación, sielles, programa y mediación cultural. La propiedá caltién el control sobre'l so espaciu y el so tiempu.
-</p>
-<h3>Impautu territorial.</h3>
-<p>
-Cada hórreu seleicionáu pasa a formar parte de la rede de sedes patrimoniales activaes pol festival, con documentación abierta y posible continuidá n'ediciones futures.
-</p>
+<div class="amp-hero-inner">
+<span class="amp-eyebrow">Proyectu · Festival ADAR</span>
+<h2 class="amp-title">Concursu d'Hórreos y <em>Paneres</em></h2>
+<p class="amp-subtitle">Patrimoniu rural asturianu como espaciu escénicu · micro conciertos y esperiencies artístiques</p>
 </div>
 </div>
+
+<!-- GALERÍA -->
+<section class="horreos-gallery" aria-label="Galería del proyeutu">
+<img class="g-main" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Micro conciertu en hórreo o panera - Festival ADAR" loading="lazy">
+<img class="g-2" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar24fx30/16/14.jpg" alt="Formatu íntimu venceyáu a la sede y al patrimoniu" loading="lazy">
+<img class="g-3" src="https://images.squarespace-cdn.com/content/v1/63c4788ca0121b1f39ebd01d/31fabed5-8d98-4b77-9051-462985dad504/IMG_5163.jpg?format=1000w" alt="Arquitectura tradicional: hórreos y paneres" loading="lazy">
 </section>
 
-<section class="ed-meta">
-<dl class="ed-specs">
-<div><dt class="mono">Convocatoria</dt><dd>Abierta añalmente · primavera</dd></div>
-<div><dt class="mono">Premiu</dt><dd>500 € + micro-conciertu</dd></div>
-<div><dt class="mono">Candidatures 2025</dt><dd>≈ 100 recibíes</dd></div>
-<div><dt class="mono">Seleicionaos</dt><dd>3 hórreos/paneres por edición</dd></div>
-<div><dt class="mono">Aforu típicu</dt><dd>30–80 persones</dd></div>
-<div><dt class="mono">Contautu</dt><dd><a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a> · WhatsApp +34 663 60 40 30</dd></div>
-</dl>
+<!-- BLOQUES -->
+<section class="horreos-blocks" id="modelu">
+<div class="b">
+<h2>Qué buscamos</h2>
+<p>
+Espacios con valor patrimonial y potencial escénicu: hórreos y paneres bien conservaos,
+con un entornu cuidáu y una relación viva col llugar.
+</p>
+<p class="small">
+L'oxetivu nun ye "usar un contenedor", sinón crear una esperiencia artística respetuosa cola arquitectura, el paisaxe y la comunidá.
+</p>
+</div>
+
+<div class="b">
+<h2>Cómo funciona</h2>
+<p>
+El concursu articulase como una investigación distribuída:
+</p>
+<p>
+• Convocatoria pública y receición de propuestes<br>
+• Visites y seleición curatorial<br>
+• Micro conciertos y mediación in situ<br>
+• Documentación audiovisual y archivu
+</p>
+</div>
+
+<div class="b">
+<h2>Producción y cuidu</h2>
+<p>
+Diseñamos formatos pequeños, ensin presión sobre'l llugar:
+aforos amenorgaos, montaxe llixeru, tiempos de convivencia y un enfoque de cuidu del espaciu.
+</p>
+<p>
+La producción adáptase a cada hórreo o panera, respetando accesos, materiales, ruiu y ritmos del territoriu.
+</p>
+</div>
+
+<div class="b" id="impautu">
+<h2>Impautu territorial</h2>
+<p>
+El concursu xenera una rede d'espacios patrimoniales activaos que refuerza la identidá local,
+atrai públicu de manera sostenible y abre un marcu de collaboración con propietarios, vecindá y axentes culturales.
+</p>
+<p>
+Tamién crea un archivu de referencia (imaxe, videu y relatu) útil pa mediación, comunicación y futures aliances.
+</p>
+</div>
 </section>
 
-</article>
+<!-- BASES POR AÑU -->
+<section class="horreos-yearly" id="bases" aria-label="Bases del concursu por añu">
+<div class="yearly-head">
+<p class="horreos-eyebrow">Documentos</p>
+<h2>Bases por añu</h2>
+<p class="yearly-sub">
+Cada edición publica les sos propies bases y calendariu. Equí pues consultar les bases de cada añu.
+</p>
+</div>
+
+<div class="yearly-grid">
+<a class="year-card" href="PON_AQUI_LINK_BASES_2025">
+<div class="y-k">Edición</div>
+<div class="y-v">Bases 2026</div>
+<div class="y-a">Próximamente</div>
+</a>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="horreos-cta">
+<div class="cta-inner">
+<h2>Patrimoniu como escenariu</h2>
+<p>
+El Concursu d'Hórreos y Paneres ye una puerta d'entrada a la rede ADAR:
+un mapa vivu d'espacios onde la música y la creación contemporánea dialoguen con Asturies dende'l cuidu y la proximidá.
+</p>
+
+<div class="cta-actions">
+<a class="horreos-btn" href="/ast/contautu/contacto/">Contautar</a>
+<a class="horreos-btn horreos-btn-ghost" href="/ast/category/memoria-dacciones/">
+Ver actividaes realizaes
+</a>
+</div>
+</div>
+</section>
+
+</div>

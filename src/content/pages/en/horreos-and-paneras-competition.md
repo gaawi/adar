@@ -11,70 +11,123 @@ permalink: "/en/horreos-and-paneras-competition/"
 categories: []
 tags: []
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg"
-excerpt: "Asturian rural heritage as a stage. Micro-concerts and artistic experiences in selected granaries."
+excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
 translation_group: "pll_6990ac582687f"
 ---
 
-<article class="ed">
+<!-- =========================
+PROJECT: HÓRREOS AND PANERAS COMPETITION - HTML (evergreen)
+Paste this block into your page (Custom HTML / HTML Block).
+========================= -->
 
-<section class="ed-intro">
-<p class="ed-eyebrow">§ 01 · Frame</p>
-<h2 class="ed-h">Heritage as <em>stage</em>.</h2>
-<p class="ed-lede">
-Festival ADAR's Hórreos and Paneras Competition runs every year to select three to five traditional Asturian granaries that will become stages for micro-concerts and artistic experiences during the August festival.
-</p>
-</section>
+<div class="adar-horreos-v2">
 
-<section class="ed-objectives">
-<p class="ed-eyebrow">§ 02 · What we look for</p>
-<h2 class="ed-h">Selection criteria.</h2>
-<ol class="ed-list">
-<li><span class="ed-list-n mono">01</span><div><strong>Architectural value.</strong> Well-preserved granary, representative of its region, standing on its original pegollos.</div></li>
-<li><span class="ed-list-n mono">02</span><div><strong>Care of setting.</strong> Embedded in a living landscape: inhabited village, meadow, path, panoramic view.</div></li>
-<li><span class="ed-list-n mono">03</span><div><strong>Local connection.</strong> Owners and neighbours willing to open the space to the public during one day of the festival.</div></li>
-<li><span class="ed-list-n mono">04</span><div><strong>Staging potential.</strong> Reasonable access, nearby power, ability to seat a small audience (30 to 80 people).</div></li>
-</ol>
-</section>
-
-<section class="ed-mode">
-<p class="ed-eyebrow">§ 03 · How it works</p>
-<h2 class="ed-h">From notice to micro-concert.</h2>
-<div class="ed-twocol">
-<div>
-<h3>Submission.</h3>
-<p>
-Three photographs (general view, detail and surroundings) sent by email or WhatsApp are enough. No paperwork.
-</p>
-<h3>Curatorial selection.</h3>
-<p>
-The ADAR team visits the finalist granaries, listens to the acoustics of the setting and decides based on the dialogue with the musical programme.
-</p>
+<!-- HERO -->
+<div class="amp-hero" id="top">
+<div class="amp-hero-bg">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Hórreos and Granaries - ADAR Festival" />
 </div>
-<div>
-<h3>Production and care.</h3>
-<p>
-ADAR provides sound, lighting, seating, programme and cultural mediation. Owners retain control over their space and their time.
-</p>
-<h3>Territorial impact.</h3>
-<p>
-Each selected granary joins the festival's network of activated heritage venues, with open documentation and possible continuity in future editions.
-</p>
+<div class="amp-hero-inner">
+<span class="amp-eyebrow">Project · ADAR Festival</span>
+<h2 class="amp-title">Hórreos and <em>Granaries</em> Contest</h2>
+<p class="amp-subtitle">Rural Asturian heritage as performance space · micro concerts and artistic experiences</p>
 </div>
 </div>
+
+<!-- GALLERY -->
+<section class="horreos-gallery" aria-label="Project gallery">
+<img class="g-main" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Micro-concert in a hórreo or panera - Festival ADAR" loading="lazy">
+<img class="g-2" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar24fx30/16/14.jpg" alt="An intimate format connected to the headquarters and local heritage" loading="lazy">
+<img class="g-3" src="https://images.squarespace-cdn.com/content/v1/63c4788ca0121b1f39ebd01d/31fabed5-8d98-4b77-9051-462985dad504/IMG_5163.jpg?format=1000w" alt="Traditional architecture: hórreos and paneras" loading="lazy">
 </section>
 
-<section class="ed-meta">
-<dl class="ed-specs">
-<div><dt class="mono">Open call</dt><dd>Annual · spring</dd></div>
-<div><dt class="mono">Prize</dt><dd>€500 + micro-concert</dd></div>
-<div><dt class="mono">2025 entries</dt><dd>≈ 100 received</dd></div>
-<div><dt class="mono">Selected</dt><dd>3 granaries per edition</dd></div>
-<div><dt class="mono">Typical capacity</dt><dd>30–80 people</dd></div>
-<div><dt class="mono">Contact</dt><dd><a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a> · WhatsApp +34 663 60 40 30</dd></div>
-</dl>
+<!-- BLOCKS -->
+<section class="horreos-blocks" id="modelo">
+<div class="b">
+<h2>What we look for</h2>
+<p>
+Places with heritage value and real performance potential: well-preserved hórreos and paneras,
+in a well-cared-for setting, with a living connection to the local area.
+</p>
+<p class="small">
+The goal is not to "use a container", but to create an artistic experience that respects the architecture, landscape, and community.
+</p>
+</div>
+
+<div class="b">
+<h2>How it works</h2>
+<p>
+The competition is designed as a distributed research process:
+</p>
+<p>
+• Public call and submissions<br>
+• Site visits and curatorial selection<br>
+• Micro-concerts and on-site community engagement<br>
+• Audiovisual documentation and archiving
+</p>
+</div>
+
+<div class="b">
+<h2>Production and care</h2>
+<p>
+We design small-scale formats that place no pressure on the site:
+limited capacity, light setup, time for shared presence, and a care-centred approach to the space.
+</p>
+<p>
+Production is tailored to each hórreo or panera, respecting access, materials, sound levels, and the rhythms of the territory.
+</p>
+</div>
+
+<div class="b" id="impacto">
+<h2>Territorial impact</h2>
+<p>
+The competition builds a network of activated heritage spaces that strengthens local identity,
+attracts audiences sustainably, and opens a framework for collaboration with owners, neighbours, and cultural stakeholders.
+</p>
+<p>
+It also creates a reference archive (images, video, and narrative) useful for community engagement, communications, and future partnerships.
+</p>
+</div>
 </section>
 
-</article>
+<!-- GUIDELINES BY YEAR -->
+<section class="horreos-yearly" id="bases" aria-label="Competition guidelines by year">
+<div class="yearly-head">
+<p class="horreos-eyebrow">Documents</p>
+<h2>Guidelines by year</h2>
+<p class="yearly-sub">
+Each edition publishes its own guidelines and calendar. Here you can review the guidelines for each year.
+</p>
+</div>
+
+<div class="yearly-grid">
+<a class="year-card" href="PON_AQUI_LINK_BASES_2025">
+<div class="y-k">Edition</div>
+<div class="y-v">2026 Guidelines</div>
+<div class="y-a">Coming soon</div>
+</a>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="horreos-cta">
+<div class="cta-inner">
+<h2>Heritage as a stage</h2>
+<p>
+The Hórreos and Paneras Competition is a gateway into the ADAR network:
+a living map of spaces where music and contemporary creation engage with Asturias through care and closeness.
+</p>
+
+<div class="cta-actions">
+<a class="horreos-btn" href="/en/contact/">Get in touch</a>
+<a class="horreos-btn horreos-btn-ghost" href="/en/category/actions/">
+View past activities
+</a>
+</div>
+</div>
+</section>
+
+</div>

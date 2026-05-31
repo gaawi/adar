@@ -1,5 +1,5 @@
 ---
-title: "Compositor/a Residente"
+title: "Compositor Residente"
 slug: "compositor-residente"
 lang: "es"
 date: "2026-03-02T16:08:00Z"
@@ -11,62 +11,169 @@ permalink: "/es/compositor-residente/"
 categories: []
 tags: []
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_8026.JPG"
-excerpt: "Festival ADAR 2026. La residencia ofrece un formato flexible — presencial, híbrido o virtual — y culmina con una actuación destacada durante el festival."
+excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
 translation_group: "pll_69a5bc217b91b"
 ---
 
-<article class="ed">
+<!-- =========================
+ADAR COMPOSER-IN-RESIDENCE OPEN CALL - HTML
+Contenido estilo bases con secciones numeradas.
+IMPORTANTE: este bloque utiliza el CSS .adar-impact-v3
+========================= -->
 
-<section class="ed-intro">
-<p class="ed-eyebrow">§ 01 · Convocatoria</p>
-<h2 class="ed-h">Compositor/a en <em>Residencia</em> 2026.</h2>
-<p class="ed-lede">
-La residencia de composición de ADAR para la edición 2026 ofrece un formato flexible — presencial, híbrido o virtual — y culmina con una actuación destacada durante el festival, en agosto, en una sede patrimonial del medio rural asturiano.
+<div class="adar-impact-v3 adar-open-call-composer-v3">
+
+<!-- HERO -->
+<div class="amp-hero">
+<div class="amp-hero-bg">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_8026.JPG" alt="Festival ADAR paisaje rural - Compositor/a en Residencia" loading="lazy" />
+</div>
+<div class="amp-hero-inner">
+<span class="amp-eyebrow">Convocatoria Abierta</span>
+<h2 class="amp-title">Compositor/a en <em>Residencia</em></h2>
+<p class="amp-subtitle">Festival ADAR 2026. La residencia ofrece un formato flexible — presencial, híbrido o virtual — y culmina con una actuación destacada durante el festival.</p>
+<div class="amp-actions">
+<a class="amp-btn" href="https://tally.so/r/WOAQJe" target="_blank" rel="noopener">Portal de solicitud</a>
+<a class="amp-btn amp-btn-ghost" href="#guidelines">Leer bases</a>
+</div>
+<div class="amp-chips" aria-label="Etiquetas">
+<span class="amp-chip">Fecha límite · 15 de abril de 2026</span>
+</div>
+</div>
+</div>
+
+<!-- CONTEXT IMAGES -->
+<section class="ai-section ai-light" aria-label="Sede y entorno de ADAR">
+<div class="ai-wrap">
+<div class="ai-head">
+<p class="ai-eyebrow">Contexto</p>
+<h2>Sede y entorno rural</h2>
+<p class="ai-sub">
+Las residencias presenciales e híbridas se desarrollan en la sede de ADAR en Leiguarda, Asturias.
 </p>
+<div class="ai-actions" style="margin-top:12px">
+<a class="ai-btn ai-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Ver sede</a>
+</div>
+</div>
+
+<div class="ai-grid-2">
+<figure class="ai-fig">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp" alt="Exterior de la sede ADAR" loading="lazy" />
+</figure>
+<figure class="ai-fig">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_0673.webp" alt="Entorno rural de ADAR" loading="lazy" />
+</figure>
+<figure class="ai-fig">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3429.webp" alt="Espacio de trabajo en residencia" loading="lazy" />
+</figure>
+<figure class="ai-fig">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg" alt="Paisaje de Asturias" loading="lazy" />
+</figure>
+</div>
+</div>
 </section>
 
-<section class="ed-twocol">
-<div>
-<p class="ed-kicker mono">Sede y entorno</p>
-<h3>Una aldea como estudio.</h3>
-<p>
-La residencia presencial se desarrolla en Leiguarda (Belmonte de Miranda), aldea de unos cien habitantes con sala de ensayo equipada, piano de cola y alojamiento.
+<!-- BASES -->
+<section class="ai-section ai-cream" id="guidelines">
+<div class="ai-wrap">
+<div class="ai-head">
+<p class="ai-eyebrow">Bases</p>
+<h2>Compositor/a en Residencia 2026 - Términos Oficiales</h2>
+<p class="ai-sub">
+Por favor, revise las siguientes bases numeradas antes de enviar su solicitud.
 </p>
 </div>
-<div>
-<p class="ed-kicker mono">Estreno</p>
-<h3>Obra interpretada en el festival.</h3>
+
+<div class="ai-grid-2">
+
+<article class="ai-card">
+<h3>1. Fechas del Festival</h3>
 <p>
-La obra encargada se estrena durante el Festival ADAR 2026, con músicos del proyecto y registro audiovisual profesional para circulación posterior.
+El Festival ADAR 2026 tendrá lugar del 3 al 16 de agosto de 2026 en el entorno rural de Asturias, España.
+El/la compositor/a seleccionado/a contará con una actuación destacada dentro del periodo del festival.
 </p>
-</div>
-</section>
-
-<section class="ed-objectives">
-<p class="ed-eyebrow">§ 02 · Términos oficiales</p>
-<h2 class="ed-h">Lo que ofrece la residencia.</h2>
-<ol class="ed-list">
-<li><span class="ed-list-n mono">01</span><div><strong>Encargo de obra nueva.</strong> Para conjunto de cámara (entre 2 y 6 intérpretes) o pieza solista con electrónica.</div></li>
-<li><span class="ed-list-n mono">02</span><div><strong>Estreno en el festival.</strong> Interpretación en agosto de 2026 en una sede patrimonial seleccionada.</div></li>
-<li><span class="ed-list-n mono">03</span><div><strong>Honorarios y alojamiento.</strong> Honorario por encargo, alojamiento y manutención durante la estancia presencial.</div></li>
-<li><span class="ed-list-n mono">04</span><div><strong>Documentación audiovisual.</strong> Grabación profesional para circulación, prensa y archivo del festival.</div></li>
-<li><span class="ed-list-n mono">05</span><div><strong>Mentoría.</strong> Acompañamiento de la codirección artística y de los intérpretes a lo largo del proceso.</div></li>
-<li><span class="ed-list-n mono">06</span><div><strong>Formato flexible.</strong> Presencial, híbrido o virtual: el modelo se ajusta a las necesidades del compositor/a seleccionado/a.</div></li>
-</ol>
-</section>
-
-<section class="ed-meta">
-<dl class="ed-specs">
-<div><dt class="mono">Convocatoria</dt><dd>Cerrada · próxima edición 2027</dd></div>
-<div><dt class="mono">Plantilla</dt><dd>Cámara (2–6) o solista + electrónica</dd></div>
-<div><dt class="mono">Estreno</dt><dd>Agosto 2026 · sede patrimonial</dd></div>
-<div><dt class="mono">Formato</dt><dd>Presencial · híbrido · virtual</dd></div>
-<div><dt class="mono">Honorarios</dt><dd>Encargo + alojamiento + manutención</dd></div>
-<div><dt class="mono">Contacto</dt><dd><a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a></dd></div>
-</dl>
-</section>
-
 </article>
+
+<article class="ai-card">
+<h3>2. Estructura de la Residencia</h3>
+<p>
+La residencia podrá ser presencial, híbrida o virtual.
+Los periodos presenciales podrán desarrollarse durante junio, julio o agosto de 2026.
+Las fechas exactas se acordarán tras la selección.
+</p>
+</article>
+
+<article class="ai-card">
+<h3>3. Marco Creativo</h3>
+<p>
+ADAR interpretará (a) una nueva obra compuesta durante la residencia,
+(b) una obra ya existente del/de la compositor/a, o (c) una combinación de ambas.
+La instrumentación y el repertorio se definirán caso por caso.
+</p>
+</article>
+
+<article class="ai-card">
+<h3>4. Requisitos de Participación</h3>
+<p>
+Convocatoria abierta a compositores/as de cualquier nacionalidad y país de residencia.
+Se aceptan todas las estéticas y enfoques compositivos.
+</p>
+</article>
+
+<article class="ai-card">
+<h3>5. Apoyo Ofrecido</h3>
+<p>
+Actuación destacada durante el Festival ADAR 2026, tiempo de ensayo y documentación.
+Para residencias presenciales o híbridas: alojamiento y manutención diaria en la sede de ADAR durante el periodo de residencia,
+además de hasta 800 euros de ayuda para desplazamiento.
+</p>
+</article>
+
+<article class="ai-card">
+<h3>6. Documentación Requerida</h3>
+<p>
+CV, página web o enlace a portafolio, y enlaces a dos obras (audio o vídeo).
+Los solicitantes deberán indicar disponibilidad (junio, julio, agosto 2026) y formato preferido (presencial, híbrido o virtual).
+</p>
+</article>
+
+<article class="ai-card">
+<h3>7. Tasa Administrativa</h3>
+<p>
+Se requiere una tasa administrativa no reembolsable de 20 euros para enviar la solicitud a través del portal oficial.
+</p>
+</article>
+
+<article class="ai-card">
+<h3>8. Fechas Clave</h3>
+<p>
+Fecha límite de solicitud: 15 de abril de 2026.<br>
+Comunicación de resultados: 15 de mayo de 2026.
+</p>
+</article>
+
+<article class="ai-card">
+<h3>9. Consultas</h3>
+<p>
+Para consultas relacionadas con la convocatoria, contacte en:
+<a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a>
+</p>
+</article>
+
+</div>
+
+<div style="margin-top:20px">
+<a class="amp-btn" href="https://tally.so/r/WOAQJe" target="_blank" rel="noopener">Abrir portal de solicitud</a>
+<a class="amp-btn ai-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Explorar la sede</a>
+</div>
+
+
+
+</div>
+
+</section>
+
+</div>
