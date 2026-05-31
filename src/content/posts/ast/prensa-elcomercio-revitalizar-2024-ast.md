@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "La IV edición del evento veraniego llevará música, instalaciones, danza y arte visual a pueblos de Belmonte, Salas, Somiedo, Grado y Llanes del 8 al 18 de agosto."
 author: "El Comercio · Pablo Antón Marín Estrada"
 original_url: "https://www.elcomercio.es/culturas/arte/adar-festival-distinto-revitalizar-mundo-rural-20240807222849-nt.html"
+translation_group: "press-prensa-elcomercio-revitalizar-2024"
 ---
 
 <p class="press-meta"><em>Artículu publicáu orixinalmente en castellán. El cuerpu caltién el testu orixinal; consulta l’enllaz a la fonte abaxo.</em></p>

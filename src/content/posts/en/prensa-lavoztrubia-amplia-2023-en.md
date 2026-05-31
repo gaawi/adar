@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "El Festival ADAR amplía su recorrido por concejos asturianos, llevando música clásica y arte visual a Grado, El Franco y Colunga junto a la sede en Belmonte de Miranda."
 author: "La Voz del Trubia"
 original_url: "https://lavozdeltrubia.es/2023/07/28/el-festival-de-artes-en-el-medio-rural-se-amplia-desde-belmonte-a-grado-colunga-y-el-franco/"
+translation_group: "press-prensa-lavoztrubia-amplia-2023"
 ---
 
 <p class="press-meta"><em>Article originally published in Spanish. Body kept verbatim below; see source link for the original.</em></p>

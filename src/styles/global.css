@@ -5474,9 +5474,9 @@ body.home .adar-footer-cta { display: none !important; }
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(60px, 10vw, 200px);
-  line-height: 0.92;
-  letter-spacing: -0.025em;
+  font-size: clamp(40px, 6vw, 120px);
+  line-height: 0.96;
+  letter-spacing: -0.02em;
   color: var(--paper);
   margin: 0;
   text-wrap: balance;
@@ -5549,9 +5549,9 @@ body.home .adar-footer-cta { display: none !important; }
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(48px, 8vw, 160px);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
+  font-size: clamp(32px, 5vw, 96px);
+  line-height: 1.0;
+  letter-spacing: -0.015em;
   color: var(--ink);
   margin: 0;
   text-wrap: balance;
@@ -7159,13 +7159,14 @@ body.has-floating-header .hm-hero::before {
   top: 0;
   left: 0;
   right: 0;
-  height: 220px;
+  height: 280px;
   z-index: 3;
   background: linear-gradient(
     180deg,
-    rgba(10,9,7,0.78) 0%,
-    rgba(10,9,7,0.55) 40%,
-    rgba(10,9,7,0.0) 100%
+    rgba(28,20,12,0.95) 0%,
+    rgba(34,24,14,0.78) 35%,
+    rgba(40,28,16,0.4) 70%,
+    rgba(40,28,16,0.0) 100%
   );
   pointer-events: none;
 }
@@ -7339,13 +7340,13 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   color: var(--muted);
   margin-bottom: 24px;
 }
-.press-wall-title {
+.press-wall .press-wall-title.press-wall-title {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(64px, 11vw, 200px);
-  line-height: 0.9;
-  letter-spacing: -0.025em;
+  font-size: clamp(40px, 6vw, 120px);
+  line-height: 0.96;
+  letter-spacing: -0.02em;
   color: var(--ink);
   margin: 0;
 }

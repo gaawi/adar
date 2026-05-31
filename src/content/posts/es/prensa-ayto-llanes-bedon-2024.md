@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "La cuarta edición del Festival ADAR arranca su itinerancia con un concierto en el Monasterio de San Antolín de Bedón, en Llanes."
 author: "Ayuntamiento de Llanes"
 original_url: "https://www.ayuntamientodellanes.com/"
+translation_group: "press-prensa-ayto-llanes-bedon-2024"
 ---
 
 <header class="press-masthead">

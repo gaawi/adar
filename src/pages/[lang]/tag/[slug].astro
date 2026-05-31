@@ -67,9 +67,22 @@ const ledeByLang = {
 }[lang];
 
 const heroImage = items[0]?.data.featured_image;
+
+// For tags we just keep the same slug across languages. Year tags
+// (2021–2026) match. Semantic tags like "concierto" don't have a
+// guaranteed counterpart so the switcher will fall back to the home
+// if /{lang}/tag/{slug}/ isn't generated for that lang.
+const translations: Partial<Record<Lang, string>> = Object.fromEntries(
+  (LANGS as Lang[]).map((l) => [l, `/${l}/tag/${slug}/`]),
+);
 ---
 
-<BaseLayout title={titleByLang} lang={lang} permalink={`/${lang}/tag/${slug}/`}>
+<BaseLayout
+  title={titleByLang}
+  lang={lang}
+  permalink={`/${lang}/tag/${slug}/`}
+  translations={translations}
+>
   <Hero eyebrow={eyebrowByLang} title={name} lede={ledeByLang} image={heroImage} />
   <ArchiveBrowser items={items} lang={lang} />
 </BaseLayout>

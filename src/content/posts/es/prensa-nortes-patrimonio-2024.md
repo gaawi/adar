@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "Cobertura de Nortes sobre la cuarta edición del festival y la fusión del patrimonio rural asturiano con la expresión artística contemporánea."
 author: "Nortes"
 original_url: "https://www.nortes.me/2024/08/11/adar-un-festival-para-disfrutar-del-patrimonio-asturiano/"
+translation_group: "press-prensa-nortes-patrimonio-2024"
 ---
 
 <header class="press-masthead">

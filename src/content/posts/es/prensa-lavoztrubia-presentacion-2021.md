@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "Todo agotado el día de la presentación. La acogida del I Festival de Música Clásica de Leiguarda es prueba de la necesidad de impulsar iniciativas culturales en los pueblos."
 author: "La Voz del Trubia"
 original_url: "https://lavozdeltrubia.es/"
+translation_group: "press-prensa-lavoztrubia-presentacion-2021"
 ---
 
 <header class="press-masthead">

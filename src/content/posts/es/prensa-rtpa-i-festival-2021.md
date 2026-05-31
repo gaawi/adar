@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "Un certamen impulsado por dos músicos españoles que dejaron Nueva York por Belmonte."
 author: "RTPA · Radiotelevisión del Principado de Asturias"
 original_url: "https://www.rtpa.es/"
+translation_group: "press-prensa-rtpa-i-festival-2021"
 ---
 
 <header class="press-masthead">

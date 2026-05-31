@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "El festival Adar acerca la creación artística a la zona rural de Asturias en colaboración con la Escuela de Música Reina Sofía."
 author: "El Comercio · Miguel Rojo"
 original_url: "https://www.elcomercio.es/"
+translation_group: "press-prensa-elcomercio-paseos-naturaleza-2023"
 ---
 
 <p class="press-meta"><em>Article originally published in Spanish. Body kept verbatim below; see source link for the original.</em></p>

@@ -61,9 +61,15 @@ function fmtDate(d?: Date): string {
 
 // Rotate clippings a little for the press-wall feel.
 const tilts = ['-1.2deg', '0.8deg', '-0.4deg', '1.4deg', '-0.8deg', '0.6deg'];
+
+const translations: Partial<Record<Lang, string>> = {
+  es: '/es/prensa/',
+  en: '/en/prensa/',
+  ast: '/ast/prensa/',
+};
 ---
 
-<BaseLayout title={COPY.title} lang={lang} permalink={`/${lang}/prensa/`}>
+<BaseLayout title={COPY.title} lang={lang} permalink={`/${lang}/prensa/`} translations={translations}>
   <section class="press-wall">
     <header class="press-wall-head">
       <span class="press-wall-eyebrow mono">{COPY.eyebrow}</span>

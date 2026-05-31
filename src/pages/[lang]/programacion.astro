@@ -277,7 +277,16 @@ for (const p of posts) postBySlug.set(p.data.slug, p);
 const titleByLang = COPY.title;
 ---
 
-<BaseLayout title={titleByLang} lang={lang} permalink={`/${lang}/programacion/`}>
+<BaseLayout
+  title={titleByLang}
+  lang={lang}
+  permalink={`/${lang}/programacion/`}
+  translations={{
+    es: '/es/programacion/',
+    en: '/en/programacion/',
+    ast: '/ast/programacion/',
+  }}
+>
   <!-- ============================================
        NEXT EDITION · 2026 — yellow ring opener
        ============================================ -->

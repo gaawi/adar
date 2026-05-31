@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "Movidos por el deseo de reivindicar las zonas rurales a través de las artes vivas, el festival celebra su nueva edición con conciertos, charlas y paseos sonoros."
 author: "RNE · El Ojo Crítico"
 original_url: "https://www.rtve.es/play/audios/el-ojo-critico/"
+translation_group: "press-prensa-rne-ojo-critico-2023"
 ---
 
 <header class="press-masthead">

@@ -66,9 +66,33 @@ const ledeByLang = {
 }[lang];
 
 const heroImage = items[0]?.data.featured_image;
+
+// Known category slug mappings across the three languages, so the
+// header language switcher lands on the equivalent category page
+// instead of falling back to the home.
+const CATEGORY_MAP: Record<string, Record<Lang, string>> = {
+  'memoria-de-acciones': { es: 'memoria-de-acciones', en: 'projects-archive', ast: 'memoria-dacciones' },
+  'projects-archive':   { es: 'memoria-de-acciones', en: 'projects-archive', ast: 'memoria-dacciones' },
+  'memoria-dacciones':  { es: 'memoria-de-acciones', en: 'projects-archive', ast: 'memoria-dacciones' },
+  'prensa': { es: 'prensa', en: 'prensa', ast: 'prensa' },
+  'press':  { es: 'prensa', en: 'prensa', ast: 'prensa' },
+};
+const mapped = CATEGORY_MAP[slug];
+const translations: Partial<Record<Lang, string>> = mapped
+  ? Object.fromEntries(
+      (LANGS as Lang[]).map((l) => [l, `/${l}/category/${mapped[l]}/`]),
+    )
+  : Object.fromEntries(
+      (LANGS as Lang[]).map((l) => [l, `/${l}/category/${slug}/`]),
+    );
 ---
 
-<BaseLayout title={titleByLang} lang={lang} permalink={`/${lang}/category/${slug}/`}>
+<BaseLayout
+  title={titleByLang}
+  lang={lang}
+  permalink={`/${lang}/category/${slug}/`}
+  translations={translations}
+>
   <Hero eyebrow={eyebrowByLang} title={name} lede={ledeByLang} image={heroImage} />
   <ArchiveBrowser items={items} lang={lang} />
 </BaseLayout>

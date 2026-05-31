@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "El parque María Cristina y el auditorio As Quintas acogen el festival itinerante ADAR, que pretende «revitalizar las zonas rurales»."
 author: "El Comercio"
 original_url: "https://www.elcomercio.es/"
+translation_group: "press-prensa-elcomercio-paseo-caridad-2023"
 ---
 
 <p class="press-meta"><em>Artículu publicáu orixinalmente en castellán. El cuerpu caltién el testu orixinal; consulta l’enllaz a la fonte abaxo.</em></p>

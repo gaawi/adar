@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "El festival convoca un concurso para seleccionar tres hórreos o paneras de Asturias que se convertirán en escenarios únicos de música de cámara durante la quinta edición."
 author: "La Nueva España"
 original_url: "https://www.lne.es/occidente/2025/05/20/festival-adar-busca-mejores-horreos-117581643.html"
+translation_group: "press-prensa-lne-horreos-2025"
 ---
 
 <header class="press-masthead">

@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "La cuarta edición arranca esta semana con un recorrido por monasterios, palacios y hórreos del occidente y centro asturiano."
 author: "La Nueva España"
 original_url: "https://www.lne.es/occidente/2024/08/12/festival-adar-despliega-belmonte-edicion-106906827.html"
+translation_group: "press-prensa-lne-despliega-belmonte-2024"
 ---
 
 <p class="press-meta"><em>Artículu publicáu orixinalmente en castellán. El cuerpu caltién el testu orixinal; consulta l’enllaz a la fonte abaxo.</em></p>

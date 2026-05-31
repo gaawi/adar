@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "Cobertura previa de la cuarta edición del festival, que del 8 al 18 de agosto recorrió cuatro concejos del occidente con paseos sonoros, residencia artística y conciertos."
 author: "La Voz del Trubia"
 original_url: "https://lavozdeltrubia.es/2024/08/01/paseos-sonoros-y-conciertos-en-grado-salas-somiedo-y-belmonte-por-el-festival-adar/"
+translation_group: "press-prensa-lavoztrubia-paseos-2024"
 ---
 
 <header class="press-masthead">

@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "El ensemble neoyorquino CreArtBox publica una crónica internacional de la cuarta edición, con foco en la residencia artística de Sarah K. Williams y la itinerancia por Llanes, Cornellana, Pola de Somiedo y Grado."
 author: "CreArtBox"
 original_url: "https://creartbox.nyc/blogs/news/adar-festival-unfolds-another-edition-of-art-and-music-in-rural-settings-from-belmonte"
+translation_group: "press-prensa-creartbox-belmonte-2024"
 ---
 
 <p class="press-meta"><em>Artículu publicáu orixinalmente en castellán. El cuerpu caltién el testu orixinal; consulta l’enllaz a la fonte abaxo.</em></p>

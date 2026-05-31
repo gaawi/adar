@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "Es la tercera edición de conciertos que aspiran a llegar a más concejos en próximos veranos."
 author: "RTPA · Radiotelevisión del Principado de Asturias"
 original_url: "https://www.rtpa.es/"
+translation_group: "press-prensa-rtpa-paseos-sonoros-2023"
 ---
 
 <header class="press-masthead">

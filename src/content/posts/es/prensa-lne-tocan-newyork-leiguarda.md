@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "Una pareja de músicos españoles se afinca en Belmonte de Miranda, desde donde continúa con sus proyectos internacionales y donde ha puesto en marcha un festival para llevar las artes al medio rural."
 author: "La Nueva España"
 original_url: "https://www.lne.es/"
+translation_group: "press-prensa-lne-tocan-newyork-leiguarda"
 ---
 
 <header class="press-masthead">

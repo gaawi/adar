@@ -11,6 +11,7 @@ featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2
 excerpt: "Caja Rural de Asturias recoge el origen del proyecto: dos músicos que llegan a Leiguarda durante la pandemia y crean una asociación y un festival para revitalizar el medio rural a través de la cultura."
 author: "Compromiso Caja Rural de Asturias"
 original_url: "https://compromisocrasturias.com/proyectos/festival-de-musica-clasica-de-leiguarda/"
+translation_group: "press-prensa-cajarural-leiguarda"
 ---
 
 <p class="press-meta"><em>Artículu publicáu orixinalmente en castellán. El cuerpu caltién el testu orixinal; consulta l’enllaz a la fonte abaxo.</em></p>
