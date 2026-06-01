@@ -7359,6 +7359,10 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   line-height: 1.5;
   color: var(--ink-soft);
 }
+@media (max-width: 720px) {
+  .press-wall-title { font-size: clamp(88px, 22vw, 200px); }
+  .press-wall-lede { font-size: 16px; }
+}
 
 .press-wall-grid {
   list-style: none;
