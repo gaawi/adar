@@ -27,10 +27,16 @@ const COPY = {
     title: 'Memoria de Acciones',
     lede: `${items.length} acciones registradas entre aldeas, hórreos, iglesias y paisajes asturianos.`,
     search: 'Buscar acción, lugar o evento…',
+    searchShort: 'Buscar…',
     year: 'Año',
     place: 'Lugar',
     type: 'Tipo',
     all: 'Todos',
+    filter: 'Filtrar',
+    apply: 'Aplicar',
+    clear: 'Limpiar',
+    close: 'Cerrar',
+    filterTitle: 'Filtros',
     empty: 'No hay acciones que coincidan con esos filtros.',
     count: (n: number) => `${n} acción${n === 1 ? '' : 'es'}`,
   },
@@ -39,10 +45,16 @@ const COPY = {
     title: 'Projects archive',
     lede: `${items.length} actions across villages, hórreos, churches and Asturian landscapes.`,
     search: 'Search project, place or event…',
+    searchShort: 'Search…',
     year: 'Year',
     place: 'Place',
     type: 'Type',
     all: 'All',
+    filter: 'Filter',
+    apply: 'Apply',
+    clear: 'Clear',
+    close: 'Close',
+    filterTitle: 'Filters',
     empty: 'No projects match those filters.',
     count: (n: number) => `${n} project${n === 1 ? '' : 's'}`,
   },
@@ -51,10 +63,16 @@ const COPY = {
     title: 'Memoria d’Acciones',
     lede: `${items.length} acciones rexistraes ente aldegues, hórreos, ilesies y paisaxes asturianos.`,
     search: 'Buscar aición, llugar o eventu…',
+    searchShort: 'Buscar…',
     year: 'Añu',
     place: 'Llugar',
     type: 'Tipu',
     all: 'Toos',
+    filter: 'Peñerar',
+    apply: 'Aplicar',
+    clear: 'Llimpiar',
+    close: 'Zarrar',
+    filterTitle: 'Peñeres',
     empty: 'Nun hai aiciones que coincidan con esos filtros.',
     count: (n: number) => `${n} aición${n === 1 ? '' : 'es'}`,
   },
@@ -135,43 +153,63 @@ function searchText(it: Item): string {
       </svg>
       <input type="search" placeholder={COPY.search} data-archive-search aria-label={COPY.search} />
     </label>
+    <button class="archive-filter-trigger" type="button" data-filter-trigger aria-expanded="false" aria-controls="archive-filter-sheet">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <line x1="4" y1="6" x2="20" y2="6"/>
+        <line x1="7" y1="12" x2="17" y2="12"/>
+        <line x1="10" y1="18" x2="14" y2="18"/>
+      </svg>
+      <span>{COPY.filter}</span>
+      <span class="archive-filter-badge" data-filter-badge hidden>0</span>
+    </button>
     <p class="archive-count mono" data-archive-count>{COPY.count(items.length)}</p>
   </div>
 
-  <div class="archive-filters">
-    {years.length > 0 && (
-      <div class="archive-filter-row">
-        <p class="archive-filter-label mono">{COPY.year}</p>
-        <div class="archive-pills" data-pill-group="year">
-          <button class="archive-pill is-active" type="button" data-filter="">{COPY.all}</button>
-          {years.map(([slug, label]) => (
-            <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
-          ))}
+  <div class="archive-filter-backdrop" data-filter-backdrop hidden></div>
+  <div class="archive-filters" id="archive-filter-sheet" data-filter-sheet>
+    <header class="archive-filter-head">
+      <h3 class="archive-filter-title">{COPY.filterTitle}</h3>
+      <button class="archive-filter-close" type="button" data-filter-close aria-label={COPY.close}>×</button>
+    </header>
+    <div class="archive-filter-body">
+      {years.length > 0 && (
+        <div class="archive-filter-row">
+          <p class="archive-filter-label mono">{COPY.year}</p>
+          <div class="archive-pills" data-pill-group="year">
+            <button class="archive-pill is-active" type="button" data-filter="">{COPY.all}</button>
+            {years.map(([slug, label]) => (
+              <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
+            ))}
+          </div>
         </div>
-      </div>
-    )}
-    {places.length > 0 && (
-      <div class="archive-filter-row">
-        <p class="archive-filter-label mono">{COPY.place}</p>
-        <div class="archive-pills" data-pill-group="place">
-          <button class="archive-pill is-active" type="button" data-filter="">{COPY.all}</button>
-          {places.map(([slug, label]) => (
-            <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
-          ))}
+      )}
+      {places.length > 0 && (
+        <div class="archive-filter-row">
+          <p class="archive-filter-label mono">{COPY.place}</p>
+          <div class="archive-pills" data-pill-group="place">
+            <button class="archive-pill is-active" type="button" data-filter="">{COPY.all}</button>
+            {places.map(([slug, label]) => (
+              <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
+            ))}
+          </div>
         </div>
-      </div>
-    )}
-    {types.length > 0 && (
-      <div class="archive-filter-row">
-        <p class="archive-filter-label mono">{COPY.type}</p>
-        <div class="archive-pills" data-pill-group="type">
-          <button class="archive-pill is-active" type="button" data-filter="">{COPY.all}</button>
-          {types.map(([slug, label]) => (
-            <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
-          ))}
+      )}
+      {types.length > 0 && (
+        <div class="archive-filter-row">
+          <p class="archive-filter-label mono">{COPY.type}</p>
+          <div class="archive-pills" data-pill-group="type">
+            <button class="archive-pill is-active" type="button" data-filter="">{COPY.all}</button>
+            {types.map(([slug, label]) => (
+              <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
+            ))}
+          </div>
         </div>
-      </div>
-    )}
+      )}
+    </div>
+    <footer class="archive-filter-foot">
+      <button class="archive-filter-action archive-filter-action-ghost" type="button" data-filter-clear>{COPY.clear}</button>
+      <button class="archive-filter-action" type="button" data-filter-apply>{COPY.apply}</button>
+    </footer>
   </div>
 
   <ul class="archive-grid">
@@ -229,6 +267,13 @@ function searchText(it: Item): string {
       const empty = root.querySelector('.archive-empty');
       const search = root.querySelector('[data-archive-search]');
       const countEl = root.querySelector('[data-archive-count]');
+      const sheet = root.querySelector('[data-filter-sheet]');
+      const backdrop = root.querySelector('[data-filter-backdrop]');
+      const trigger = root.querySelector('[data-filter-trigger]');
+      const closeBtn = root.querySelector('[data-filter-close]');
+      const applyBtn = root.querySelector('[data-filter-apply]');
+      const clearBtn = root.querySelector('[data-filter-clear]');
+      const badge = root.querySelector('[data-filter-badge]');
 
       const filters = { year: '', place: '', type: '' };
       let query = '';
@@ -251,6 +296,12 @@ function searchText(it: Item): string {
           const word = visible === 1 ? countSingularTpl : countTpl;
           countEl.textContent = `${visible} ${word}`;
         }
+        if (badge) {
+          const n = ['year','place','type'].filter((k) => filters[k]).length;
+          badge.hidden = n === 0;
+          badge.textContent = String(n);
+        }
+        if (trigger) trigger.classList.toggle('has-active', !!badge && !badge.hidden);
       }
 
       pillGroups.forEach((group) => {
@@ -272,6 +323,40 @@ function searchText(it: Item): string {
           applyFilters();
         });
       }
+
+      function openSheet() {
+        if (!sheet) return;
+        sheet.classList.add('is-open');
+        if (backdrop) { backdrop.hidden = false; requestAnimationFrame(() => backdrop.classList.add('is-open')); }
+        document.body.classList.add('archive-sheet-open');
+        if (trigger) trigger.setAttribute('aria-expanded', 'true');
+      }
+      function closeSheet() {
+        if (!sheet) return;
+        sheet.classList.remove('is-open');
+        if (backdrop) {
+          backdrop.classList.remove('is-open');
+          setTimeout(() => { backdrop.hidden = true; }, 250);
+        }
+        document.body.classList.remove('archive-sheet-open');
+        if (trigger) trigger.setAttribute('aria-expanded', 'false');
+      }
+
+      if (trigger) trigger.addEventListener('click', openSheet);
+      if (closeBtn) closeBtn.addEventListener('click', closeSheet);
+      if (backdrop) backdrop.addEventListener('click', closeSheet);
+      if (applyBtn) applyBtn.addEventListener('click', closeSheet);
+      if (clearBtn) clearBtn.addEventListener('click', () => {
+        pillGroups.forEach((group) => {
+          const pills = group.querySelectorAll('.archive-pill');
+          pills.forEach((p, i) => p.classList.toggle('is-active', i === 0));
+          filters[group.getAttribute('data-pill-group')] = '';
+        });
+        applyFilters();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeSheet();
+      });
 
       // Carousel dot updates on horizontal scroll.
       root.querySelectorAll('[data-carousel]').forEach((carousel) => {
