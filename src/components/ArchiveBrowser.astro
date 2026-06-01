@@ -258,7 +258,7 @@ function searchText(it: Item): string {
   <p class="archive-empty" hidden>{COPY.empty}</p>
 </div>
 
-<script is:inline define:vars={{ countTpl: { es: 'acciones', en: 'projects', ast: 'aiciones' }[lang], countSingularTpl: { es: 'acción', en: 'project', ast: 'aición' }[lang] }}>
+<script define:vars={{ countTpl: { es: 'acciones', en: 'projects', ast: 'aiciones' }[lang], countSingularTpl: { es: 'acción', en: 'project', ast: 'aición' }[lang] }}>
   (function () {
     const roots = document.querySelectorAll('[data-archive]');
     roots.forEach((root) => {
