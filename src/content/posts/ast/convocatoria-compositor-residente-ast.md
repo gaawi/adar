@@ -8,7 +8,7 @@ status: "publish"
 wp_id: 857
 original_url: "https://festivaladar.com/ast/convocatoria-compositor-residente-ast/"
 permalink: "/ast/convocatoria-compositor-residente-ast/"
-categories: ["Memoria d’Acciones"]
+categories: ["Uncategorized"]
 tags: ["2026"]
 featured_image: ""
 excerpt: ""
