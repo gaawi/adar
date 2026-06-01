@@ -1592,7 +1592,7 @@ body.has-header-image #content{
   transform: rotate(-45deg);
 }
 
-@media (max-width: 900px){
+@media (max-width: 980px){
   .adar-nav-toggle{ display: block; }
 
   .header-navigation-wrapper{
@@ -1641,6 +1641,9 @@ body.has-header-image #content{
     color: #fff !important;
     text-transform: none;
     letter-spacing: 0;
+  }
+  .header-navigation-wrapper ul.nav .cd-nav-num{
+    color: rgba(255,255,255,0.55) !important;
   }
   .header-navigation-wrapper ul.sub-menu{
     padding-left: 14px !important;
