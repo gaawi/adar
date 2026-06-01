@@ -11,33 +11,94 @@ interface Item {
     tags: string[];
     lang: Lang;
   };
+  images?: string[];
 }
 
 interface Props {
   items: Item[];
   lang: Lang;
-  allLabel?: string;
+  variant?: 'default' | 'memoria';
 }
-const { items, lang, allLabel } = Astro.props;
+const { items, lang, variant = 'default' } = Astro.props;
 
-const ALL = allLabel ?? ({ es: 'Ver todo', en: 'Show all', ast: 'Ver too' } as const)[lang];
+const COPY = {
+  es: {
+    eyebrow: 'Festival ADAR · Memoria de Acciones',
+    title: 'Memoria de Acciones',
+    lede: `${items.length} acciones registradas entre aldeas, hórreos, iglesias y paisajes asturianos.`,
+    search: 'Buscar acción, lugar o evento…',
+    year: 'Año',
+    place: 'Lugar',
+    type: 'Tipo',
+    all: 'Todos',
+    empty: 'No hay acciones que coincidan con esos filtros.',
+    count: (n: number) => `${n} acción${n === 1 ? '' : 'es'}`,
+  },
+  en: {
+    eyebrow: 'Festival ADAR · Projects archive',
+    title: 'Projects archive',
+    lede: `${items.length} actions across villages, hórreos, churches and Asturian landscapes.`,
+    search: 'Search project, place or event…',
+    year: 'Year',
+    place: 'Place',
+    type: 'Type',
+    all: 'All',
+    empty: 'No projects match those filters.',
+    count: (n: number) => `${n} project${n === 1 ? '' : 's'}`,
+  },
+  ast: {
+    eyebrow: 'Festival ADAR · Memoria d’Acciones',
+    title: 'Memoria d’Acciones',
+    lede: `${items.length} acciones rexistraes ente aldegues, hórreos, ilesies y paisaxes asturianos.`,
+    search: 'Buscar aición, llugar o eventu…',
+    year: 'Añu',
+    place: 'Llugar',
+    type: 'Tipu',
+    all: 'Toos',
+    empty: 'Nun hai aiciones que coincidan con esos filtros.',
+    count: (n: number) => `${n} aición${n === 1 ? '' : 'es'}`,
+  },
+}[lang];
 
-// Collect every tag once, split years from non-year tags.
-const tagSet = new Map<string, string>();
+// Known event-type tags (multilingual).
+const TYPE_TAGS = new Set([
+  'concierto', 'concert', 'conciertu',
+  'musica-de-camara', 'musica-de-camara-2', 'chamber-music', 'musica-camara',
+  'concierto-visual', 'visual-concert', 'conciertu-visual',
+  'arte-visual', 'visual-art',
+  'instalacion', 'installation', 'instalacion-sonora',
+  'paseo-sonoro', 'paseu-sonoru', 'sound-walk',
+  'video', 'videoarte', 'video-art', 'videu',
+  'residencia', 'residency',
+  'espicha',
+  'aire-libre', 'al-aire-llibre', 'open-air', 'outdoor',
+  'lugar-emblematico', 'llugar-emblematicu', 'landmark',
+  'concurso-de-horreos', 'concursu-de-horreos',
+  'patrimonio',
+  'internacional',
+  'recital',
+  'exposicion', 'exhibition',
+  'conferencia', 'talk',
+]);
+
+// Collect tags, split into year / place / type.
+const allTags = new Map<string, string>();
 for (const it of items) {
   for (const t of it.data.tags || []) {
     const slug = wpSlugify(t);
-    if (slug && !tagSet.has(slug)) tagSet.set(slug, t);
+    if (slug && !allTags.has(slug)) allTags.set(slug, t);
   }
 }
-const allTags = [...tagSet.entries()];
-const years = allTags
+
+const years = [...allTags.entries()]
   .filter(([slug]) => /^20\d{2}$/.test(slug))
-  .sort(([a], [b]) => a.localeCompare(b));
-const rest = allTags
-  .filter(([slug]) => !/^20\d{2}$/.test(slug))
+  .sort(([a], [b]) => b.localeCompare(a));
+const types = [...allTags.entries()]
+  .filter(([slug]) => TYPE_TAGS.has(slug))
   .sort(([, a], [, b]) => a.localeCompare(b, lang === 'en' ? 'en' : 'es'));
-const pills = [...years, ...rest];
+const places = [...allTags.entries()]
+  .filter(([slug]) => !/^20\d{2}$/.test(slug) && !TYPE_TAGS.has(slug))
+  .sort(([, a], [, b]) => a.localeCompare(b, lang === 'en' ? 'en' : 'es'));
 
 function fmtDate(d?: Date): string {
   if (!d) return '';
@@ -52,72 +113,180 @@ function tagsAttr(tags: string[]): string {
   return tags.map((t) => wpSlugify(t)).filter(Boolean).join(' ');
 }
 
-const emptyCopy = {
-  es: 'No hay publicaciones que coincidan con ese filtro.',
-  en: 'No entries match that filter.',
-  ast: 'Nun hai publicaciones que coincidan con esi filtru.',
-}[lang];
+function searchText(it: Item): string {
+  return [it.data.title, ...(it.data.tags || [])].join(' ').toLowerCase();
+}
 ---
 
-<div class="archive-browser" data-archive>
-  {pills.length > 0 && (
-    <nav class="archive-pills" aria-label="Filter">
-      <button class="archive-pill is-active" type="button" data-filter="">{ALL}</button>
-      {pills.map(([slug, label]) => (
-        <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
-      ))}
-    </nav>
+<div class={`archive-browser ${variant === 'memoria' ? 'archive-memoria' : ''}`} data-archive>
+  {variant === 'memoria' && (
+    <header class="archive-mast">
+      <p class="archive-mast-eyebrow mono">{COPY.eyebrow}</p>
+      <h1 class="archive-mast-title">{COPY.title}</h1>
+      <p class="archive-mast-lede">{COPY.lede}</p>
+    </header>
   )}
 
+  <div class="archive-tools">
+    <label class="archive-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" />
+        <line x1="16.6" y1="16.6" x2="21" y2="21" />
+      </svg>
+      <input type="search" placeholder={COPY.search} data-archive-search aria-label={COPY.search} />
+    </label>
+    <p class="archive-count mono" data-archive-count>{COPY.count(items.length)}</p>
+  </div>
+
+  <div class="archive-filters">
+    {years.length > 0 && (
+      <div class="archive-filter-row">
+        <p class="archive-filter-label mono">{COPY.year}</p>
+        <div class="archive-pills" data-pill-group="year">
+          <button class="archive-pill is-active" type="button" data-filter="">{COPY.all}</button>
+          {years.map(([slug, label]) => (
+            <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
+          ))}
+        </div>
+      </div>
+    )}
+    {places.length > 0 && (
+      <div class="archive-filter-row">
+        <p class="archive-filter-label mono">{COPY.place}</p>
+        <div class="archive-pills" data-pill-group="place">
+          <button class="archive-pill is-active" type="button" data-filter="">{COPY.all}</button>
+          {places.map(([slug, label]) => (
+            <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
+          ))}
+        </div>
+      </div>
+    )}
+    {types.length > 0 && (
+      <div class="archive-filter-row">
+        <p class="archive-filter-label mono">{COPY.type}</p>
+        <div class="archive-pills" data-pill-group="type">
+          <button class="archive-pill is-active" type="button" data-filter="">{COPY.all}</button>
+          {types.map(([slug, label]) => (
+            <button class="archive-pill" type="button" data-filter={slug}>{label}</button>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+
   <ul class="archive-grid">
-    {items.map((p) => (
-      <li class="archive-card" data-tags={tagsAttr(p.data.tags || [])}>
-        <a href={p.data.permalink} class="archive-card-link">
-          {p.data.featured_image && (
-            <div class="archive-card-img">
-              <img src={p.data.featured_image} alt={p.data.title} loading="lazy" />
-            </div>
-          )}
-          <div class="archive-card-body">
-            {p.data.date && <p class="archive-card-date mono">{fmtDate(p.data.date)}</p>}
-            <h3 class="archive-card-title">{p.data.title}</h3>
-            {(p.data.tags || []).length > 0 && (
-              <ul class="archive-card-tags">
-                {(p.data.tags || []).slice(0, 4).map((t) => (
-                  <li><span class="archive-card-tag">{t}</span></li>
-                ))}
-              </ul>
+    {items.map((p) => {
+      const imgs = (p.images && p.images.length > 0)
+        ? p.images
+        : (p.data.featured_image ? [p.data.featured_image] : []);
+      return (
+        <li class="archive-card" data-tags={tagsAttr(p.data.tags || [])} data-search={searchText(p)}>
+          <a href={p.data.permalink} class="archive-card-link">
+            {imgs.length > 0 && (
+              <div class={`archive-card-media ${imgs.length > 1 ? 'is-carousel' : ''}`}>
+                <div class="archive-carousel" data-carousel>
+                  {imgs.slice(0, 8).map((src, i) => (
+                    <div class="archive-slide">
+                      <img src={src} alt={i === 0 ? p.data.title : ''} loading="lazy" />
+                    </div>
+                  ))}
+                </div>
+                {imgs.length > 1 && (
+                  <div class="archive-dots" aria-hidden="true">
+                    {imgs.slice(0, 8).map((_, i) => (
+                      <span class={`archive-dot ${i === 0 ? 'is-active' : ''}`}></span>
+                    ))}
+                  </div>
+                )}
+              </div>
             )}
-          </div>
-        </a>
-      </li>
-    ))}
+            <div class="archive-card-body">
+              {p.data.date && <p class="archive-card-date mono">{fmtDate(p.data.date)}</p>}
+              <h3 class="archive-card-title">{p.data.title}</h3>
+              {(p.data.tags || []).length > 0 && (
+                <ul class="archive-card-tags">
+                  {(p.data.tags || []).slice(0, 4).map((t) => (
+                    <li><span class="archive-card-tag">{t}</span></li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </a>
+        </li>
+      );
+    })}
   </ul>
 
-  <p class="archive-empty" hidden>{emptyCopy}</p>
+  <p class="archive-empty" hidden>{COPY.empty}</p>
 </div>
 
-<script is:inline>
+<script is:inline define:vars={{ countTpl: { es: 'acciones', en: 'projects', ast: 'aiciones' }[lang], countSingularTpl: { es: 'acción', en: 'project', ast: 'aición' }[lang] }}>
   (function () {
     const roots = document.querySelectorAll('[data-archive]');
     roots.forEach((root) => {
-      const pills = root.querySelectorAll('.archive-pill');
+      const pillGroups = root.querySelectorAll('[data-pill-group]');
       const cards = root.querySelectorAll('.archive-card');
       const empty = root.querySelector('.archive-empty');
-      pills.forEach((pill) => {
-        pill.addEventListener('click', () => {
-          pills.forEach((p) => p.classList.remove('is-active'));
-          pill.classList.add('is-active');
-          const f = pill.getAttribute('data-filter') || '';
-          let visible = 0;
-          cards.forEach((card) => {
-            const tags = (card.getAttribute('data-tags') || '').split(' ');
-            const match = !f || tags.includes(f);
-            card.hidden = !match;
-            if (match) visible++;
-          });
-          if (empty) empty.hidden = visible !== 0;
+      const search = root.querySelector('[data-archive-search]');
+      const countEl = root.querySelector('[data-archive-count]');
+
+      const filters = { year: '', place: '', type: '' };
+      let query = '';
+
+      function applyFilters() {
+        let visible = 0;
+        cards.forEach((card) => {
+          const tags = (card.getAttribute('data-tags') || '').split(' ');
+          const text = card.getAttribute('data-search') || '';
+          let ok = true;
+          if (filters.year && !tags.includes(filters.year)) ok = false;
+          if (filters.place && !tags.includes(filters.place)) ok = false;
+          if (filters.type && !tags.includes(filters.type)) ok = false;
+          if (ok && query && !text.includes(query)) ok = false;
+          card.hidden = !ok;
+          if (ok) visible++;
         });
+        if (empty) empty.hidden = visible !== 0;
+        if (countEl) {
+          const word = visible === 1 ? countSingularTpl : countTpl;
+          countEl.textContent = `${visible} ${word}`;
+        }
+      }
+
+      pillGroups.forEach((group) => {
+        const groupKey = group.getAttribute('data-pill-group');
+        const pills = group.querySelectorAll('.archive-pill');
+        pills.forEach((pill) => {
+          pill.addEventListener('click', () => {
+            pills.forEach((p) => p.classList.remove('is-active'));
+            pill.classList.add('is-active');
+            filters[groupKey] = pill.getAttribute('data-filter') || '';
+            applyFilters();
+          });
+        });
+      });
+
+      if (search) {
+        search.addEventListener('input', () => {
+          query = search.value.trim().toLowerCase();
+          applyFilters();
+        });
+      }
+
+      // Carousel dot updates on horizontal scroll.
+      root.querySelectorAll('[data-carousel]').forEach((carousel) => {
+        const dots = carousel.parentElement.querySelectorAll('.archive-dot');
+        if (!dots.length) return;
+        let raf = 0;
+        carousel.addEventListener('scroll', () => {
+          if (raf) return;
+          raf = requestAnimationFrame(() => {
+            raf = 0;
+            const w = carousel.clientWidth;
+            const i = Math.round(carousel.scrollLeft / w);
+            dots.forEach((d, idx) => d.classList.toggle('is-active', idx === i));
+          });
+        }, { passive: true });
       });
     });
   })();

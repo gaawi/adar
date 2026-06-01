@@ -40,12 +40,38 @@ const lang = Astro.params.lang as Lang;
 const slug = Astro.params.slug as string;
 
 const allPosts = await getCollection('posts');
-const items = allPosts
+const rawItems = allPosts
   .filter((p) => p.data.lang === lang && p.data.status === 'publish')
   .filter((p) =>
     p.data.categories.some((c) => wpSlugify(c) === slug),
   )
   .sort((a, b) => (b.data.date?.getTime() ?? 0) - (a.data.date?.getTime() ?? 0));
+
+function extractImages(body: string, featured?: string): string[] {
+  const urls: string[] = [];
+  const seen = new Set<string>();
+  if (featured) {
+    urls.push(featured);
+    seen.add(featured);
+  }
+  const re = /<img[^>]+src=["']([^"']+)["']/gi;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(body)) !== null) {
+    const u = m[1];
+    if (!seen.has(u)) {
+      urls.push(u);
+      seen.add(u);
+    }
+  }
+  return urls;
+}
+
+const items = rawItems.map((p) => ({
+  data: p.data,
+  images: extractImages(p.body ?? '', p.data.featured_image),
+}));
+
+const isMemoria = slug === 'memoria-de-acciones' || slug === 'projects-archive' || slug === 'memoria-dacciones';
 
 const titleByLang = {
   es: `Categoría: ${name}`,
@@ -93,6 +119,8 @@ const translations: Partial<Record<Lang, string>> = mapped
   permalink={`/${lang}/category/${slug}/`}
   translations={translations}
 >
-  <Hero eyebrow={eyebrowByLang} title={name} lede={ledeByLang} image={heroImage} />
-  <ArchiveBrowser items={items} lang={lang} />
+  {!isMemoria && (
+    <Hero eyebrow={eyebrowByLang} title={name} lede={ledeByLang} image={heroImage} />
+  )}
+  <ArchiveBrowser items={items} lang={lang} variant={isMemoria ? 'memoria' : 'default'} />
 </BaseLayout>

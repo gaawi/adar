@@ -8504,3 +8504,182 @@ body.page .entry-content .ed-social {
   flex-wrap: wrap;
   gap: 8px;
 }
+
+/* =============================================================
+   MEMORIA DE ACCIONES — masthead, search, grouped filters, carousel
+   ============================================================= */
+.archive-memoria { padding-top: 120px; }
+@media (max-width: 720px) { .archive-memoria { padding-top: 96px; } }
+
+.archive-mast {
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.archive-mast-eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  background: var(--accent);
+  padding: 4px 10px;
+  width: fit-content;
+  margin: 0;
+}
+.archive-mast-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(48px, 7vw, 120px);
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--ink);
+}
+.archive-mast-lede {
+  font-family: var(--font-sans);
+  font-size: clamp(17px, 1.4vw, 22px);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 680px;
+  margin: 0;
+}
+
+.archive-tools {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 0 24px;
+}
+.archive-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 320px;
+  min-width: 260px;
+  padding: 12px 16px;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+}
+.archive-search svg { flex: 0 0 auto; color: var(--ink); }
+.archive-search input {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--ink);
+  padding: 0;
+}
+.archive-search input::placeholder { color: var(--muted); }
+.archive-count {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+
+.archive-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0 0 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+.archive-filter-row {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+.archive-filter-label {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.archive-memoria .archive-pills { margin: 0; }
+
+@media (max-width: 720px) {
+  .archive-filter-row { grid-template-columns: 1fr; gap: 6px; }
+  .archive-filter-label { letter-spacing: 0.2em; }
+}
+
+/* Carousel inside cards */
+.archive-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+.archive-carousel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.archive-carousel::-webkit-scrollbar { display: none; }
+.archive-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.archive-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(.22,.61,.36,1);
+}
+.archive-card-link:hover .archive-slide img { transform: scale(1.03); }
+.archive-card-media.is-carousel::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  background: rgba(10,9,7,0.7);
+  color: var(--paper);
+  border-radius: 50%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.4" stroke-linecap="round"><path d="M2 12h20"/><path d="M14 6l6 6-6 6"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+.archive-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  pointer-events: none;
+}
+.archive-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(246,244,238,0.5);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.archive-dot.is-active {
+  background: var(--paper);
+  transform: scale(1.3);
+}
