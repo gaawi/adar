@@ -7339,7 +7339,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   color: var(--muted);
   margin-bottom: 24px;
 }
-.press-wall .press-wall-title.press-wall-title {
+.press-wall h1.press-wall-title.press-wall-title {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
@@ -8529,7 +8529,7 @@ body.page .entry-content .ed-social {
   width: fit-content;
   margin: 0;
 }
-.archive-mast-title {
+.archive-memoria h1.archive-mast-title.archive-mast-title {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
