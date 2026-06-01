@@ -8112,15 +8112,16 @@ body.page .entry-content .ed-wrap {
 body.page .entry-content .ed-head { margin-bottom: 28px; display: flex; flex-direction: column; gap: 10px; }
 
 body.page .entry-content .ed-eyebrow {
-  display: inline-block;
+  display: block;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--muted);
-  background: transparent;
-  padding: 0;
+  color: var(--accent-ink);
+  background: var(--accent);
+  padding: 4px 10px;
   margin: 0 0 12px;
+  width: fit-content;
 }
 
 body.page .entry-content .ed-lede {
