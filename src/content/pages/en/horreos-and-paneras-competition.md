@@ -96,7 +96,7 @@ It also creates a reference archive (images, video, and narrative) useful for co
 <!-- GUIDELINES BY YEAR -->
 <section class="horreos-yearly" id="bases" aria-label="Competition guidelines by year">
 <div class="yearly-head">
-<p class="horreos-eyebrow">Documents</p>
+<p class="ed-eyebrow">Documents</p>
 <h2>Guidelines by year</h2>
 <p class="yearly-sub">
 Each edition publishes its own guidelines and calendar. Here you can review the guidelines for each year.
@@ -122,8 +122,8 @@ a living map of spaces where music and contemporary creation engage with Asturia
 </p>
 
 <div class="cta-actions">
-<a class="horreos-btn" href="/en/contact/">Get in touch</a>
-<a class="horreos-btn horreos-btn-ghost" href="/en/category/actions/">
+<a class="ed-btn" href="/en/contact/">Get in touch</a>
+<a class="ed-btn ed-btn-ghost" href="/en/category/actions/">
 View past activities
 </a>
 </div>

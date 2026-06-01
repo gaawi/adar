@@ -40,36 +40,36 @@ Paste this block into your page (Custom HTML / HTML Block).
 
 
 <!-- DIRECTION -->
-<section class="at-section at-light" id="direccion">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Direction</p>
+<section class="ed-section" id="direccion">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Direction</p>
 <h2>People leading the project</h2>
-<p class="at-sub">
+<p class="ed-lede">
 Complementary backgrounds in creation, performance, production and site-specific experience design.
 </p>
 </div>
 
-<div class="at-grid-2">
+<div class="ed-twocol">
 
 <!-- Guillermo -->
-<article class="at-card at-person">
-<div class="at-person-top">
-<div class="at-avatar">
+<article class="ed-card ed-person">
+<div class="ed-item-top">
+<div class="ed-avatar">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">
 </div>
-<div class="at-person-meta">
+<div class="ed-item-meta">
 <h3>Guillermo Laporta</h3>
-<p class="at-role">Executive Director</p>
-<div class="at-tags">
-<span class="at-tag">Flute</span>
-<span class="at-tag">Composition</span>
-<span class="at-tag">Stage design</span>
+<p class="ed-role">Executive Director</p>
+<div class="ed-tags">
+<span class="ed-tag">Flute</span>
+<span class="ed-tag">Composition</span>
+<span class="ed-tag">Stage design</span>
 </div>
 </div>
 </div>
 
-<div class="at-prose">
+<div class="ed-prose">
 <p>
 <strong>Guillermo Laporta</strong> is a flutist, composer and designer based between Asturias and New York. His work has been featured in
 The New York Times, The New Yorker, Time Out, The Huffington Post, The Washington Post, EL PAÍS, El Mundo and Japan Entertainment,
@@ -85,30 +85,30 @@ He is founder and executive director of CreArtBox (NYC) and the ADAR Festival (A
 contemporary formats, residencies and mediation. As a performer, he has collaborated with orchestras such as the BBC Orchestra and
 performed at venues including Carnegie Hall and Lincoln Center.
 </p>
-<p class="at-muted">
+<p class="ed-muted">
 Education: Royal College of Music (2008-2012), studying with flutist and conductor Jaime Martín.
 </p>
 </div>
 </article>
 
 <!-- Josefina -->
-<article class="at-card at-person">
-<div class="at-person-top">
-<div class="at-avatar">
+<article class="ed-card ed-person">
+<div class="ed-item-top">
+<div class="ed-avatar">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg" alt="Josefina Urraca" loading="lazy">
 </div>
-<div class="at-person-meta">
+<div class="ed-item-meta">
 <h3>Josefina Urraca</h3>
-<p class="at-role">Artistic Director</p>
-<div class="at-tags">
-<span class="at-tag">Piano</span>
-<span class="at-tag">Curatorship</span>
-<span class="at-tag">Mediation</span>
+<p class="ed-role">Artistic Director</p>
+<div class="ed-tags">
+<span class="ed-tag">Piano</span>
+<span class="ed-tag">Curatorship</span>
+<span class="ed-tag">Mediation</span>
 </div>
 </div>
 </div>
 
-<div class="at-prose">
+<div class="ed-prose">
 <p>
 <strong>Josefina Urraca</strong>, is a Spanish pianist and co-director of CreArtBox and the Festival ADAR, praised by Mundo Clásico for performances marked by "introspection and musical abandon." Her artistry is defined by expressive depth, a refined sound, and a sensitivity that blends precision with poetic imagination. She has performed in landmark venues such as Salle Cortot in Paris, the Sony Auditorium in Madrid, Carnegie Hall in New York, and Monten Hall in Tokyo, bringing an intimate and narrative approach to every stage.
 </p>
@@ -126,93 +126,93 @@ Since 2021, she has co-directed Festival ADAR, a traveling arts festival in rura
 </section>
 
 <!-- PRODUCTION -->
-<section class="at-section at-cream" id="produccion">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Production</p>
+<section class="ed-section" id="produccion">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Production</p>
 <h2>Network of providers and collaborators</h2>
-<p class="at-sub">
+<p class="ed-lede">
 Sound services, printing, logistics, piano supply, construction and consultancy, based in Asturias with additional support.
 </p>
 </div>
 
-<div class="at-grid-3">
+<div class="ed-grid-3">
 
-<a class="at-card at-item" href="https://radio-junior.com/" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://radio-junior.com/" target="_blank" rel="noopener">
 <h3>Radio Junior</h3>
-<p class="at-mini">Professional sound design</p>
-<p class="at-loc">Oviedo, Asturias</p>
-<p class="at-link">radio-junior.com</p>
+<p class="ed-mini">Professional sound design</p>
+<p class="ed-loc">Oviedo, Asturias</p>
+<p class="ed-link">radio-junior.com</p>
 </a>
 
-<a class="at-card at-item" href="https://www.musicalarevalo.com/" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://www.musicalarevalo.com/" target="_blank" rel="noopener">
 <h3>Galería Musical Arévalo</h3>
-<p class="at-mini">Piano provider</p>
-<p class="at-loc">Oviedo, Asturias</p>
-<p class="at-link">musicalarevalo.com</p>
+<p class="ed-mini">Piano provider</p>
+<p class="ed-loc">Oviedo, Asturias</p>
+<p class="ed-link">musicalarevalo.com</p>
 </a>
 
-<a class="at-card at-item" href="https://www.ferpala.es/imprenta-en-grado/" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://www.ferpala.es/imprenta-en-grado/" target="_blank" rel="noopener">
 <h3>Gráficas Algar</h3>
-<p class="at-mini">Printed promotional materials</p>
-<p class="at-loc">Grado, Asturias</p>
-<p class="at-link">View location</p>
+<p class="ed-mini">Printed promotional materials</p>
+<p class="ed-loc">Grado, Asturias</p>
+<p class="ed-link">View location</p>
 </a>
 
-<a class="at-card at-item" href="https://carroceriasborra.es/" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://carroceriasborra.es/" target="_blank" rel="noopener">
 <h3>Carrocerías Borra</h3>
-<p class="at-mini">Scenographic construction</p>
-<p class="at-loc">Salas, Asturias</p>
-<p class="at-link">carroceriasborra.es</p>
+<p class="ed-mini">Scenographic construction</p>
+<p class="ed-loc">Salas, Asturias</p>
+<p class="ed-link">carroceriasborra.es</p>
 </a>
 
-<a class="at-card at-item" href="https://www.instagram.com/a_costy_marin/" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://www.instagram.com/a_costy_marin/" target="_blank" rel="noopener">
 <h3>Costel Marin</h3>
-<p class="at-mini">Scenographic construction</p>
-<p class="at-loc">Menes, Belmonte de Miranda</p>
-<p class="at-link">@a_costy_marin</p>
+<p class="ed-mini">Scenographic construction</p>
+<p class="ed-loc">Menes, Belmonte de Miranda</p>
+<p class="ed-link">@a_costy_marin</p>
 </a>
 
-<a class="at-card at-item" href="https://maps.app.goo.gl/pjD1T8hCqmH29qZHA" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://maps.app.goo.gl/pjD1T8hCqmH29qZHA" target="_blank" rel="noopener">
 <h3>David Martínez Taxis</h3>
-<p class="at-mini">Local transport and logistics</p>
-<p class="at-loc">Belmonte de Miranda, Asturias</p>
-<p class="at-link">View location</p>
+<p class="ed-mini">Local transport and logistics</p>
+<p class="ed-loc">Belmonte de Miranda, Asturias</p>
+<p class="ed-link">View location</p>
 </a>
 
-<a class="at-card at-item" href="https://www.tukan.es/" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://www.tukan.es/" target="_blank" rel="noopener">
 <h3>Imprenta Tukán</h3>
-<p class="at-mini">Programs and brochures</p>
-<p class="at-loc">Oviedo, Asturias</p>
-<p class="at-link">tukan.es</p>
+<p class="ed-mini">Programs and brochures</p>
+<p class="ed-loc">Oviedo, Asturias</p>
+<p class="ed-link">tukan.es</p>
 </a>
 
-<a class="at-card at-item" href="https://www.urracaasesores.com/" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://www.urracaasesores.com/" target="_blank" rel="noopener">
 <h3>Urraca Asesores</h3>
-<p class="at-mini">Legal consultancy</p>
-<p class="at-loc">Palencia</p>
-<p class="at-link">urracaasesores.com</p>
+<p class="ed-mini">Legal consultancy</p>
+<p class="ed-loc">Palencia</p>
+<p class="ed-link">urracaasesores.com</p>
 </a>
 
-<a class="at-card at-item" href="https://www.booking.com/searchresults.html?aid=311088&amp;label=la-casona-de-rey-DQJ7LJf63QFcqQGhZzrCIwS624722811111%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2397602597457%3Akwd-281120253753%3Alp9004331%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfNeh-lbHkPZ0F1ArkOgkMs&amp;gclid=CjwKCAiAzOXMBhASEiwAe14SadnAqhGd6LBe-jXn1aH1hteGJMAPaAEJc65cKZBnz_RTNQfhhKoLuBoCeHkQAvD_BwE&amp;highlighted_hotels=2136038&amp;redirected=1&amp;city=900056784&amp;hlrd=no_dates&amp;source=hotel&amp;expand_sb=1&amp;keep_landing=1&amp;sid=13d91a398151ca3ebf26fd69b48223b1" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://www.booking.com/searchresults.html?aid=311088&amp;label=la-casona-de-rey-DQJ7LJf63QFcqQGhZzrCIwS624722811111%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atiaud-2397602597457%3Akwd-281120253753%3Alp9004331%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YfNeh-lbHkPZ0F1ArkOgkMs&amp;gclid=CjwKCAiAzOXMBhASEiwAe14SadnAqhGd6LBe-jXn1aH1hteGJMAPaAEJc65cKZBnz_RTNQfhhKoLuBoCeHkQAvD_BwE&amp;highlighted_hotels=2136038&amp;redirected=1&amp;city=900056784&amp;hlrd=no_dates&amp;source=hotel&amp;expand_sb=1&amp;keep_landing=1&amp;sid=13d91a398151ca3ebf26fd69b48223b1" target="_blank" rel="noopener">
 <h3>La Casona del Rey</h3>
-<p class="at-mini">Accommodation and local support</p>
-<p class="at-loc">Belmonte de Miranda, Asturias</p>
-<p class="at-link">lacasonaderey.com</p>
+<p class="ed-mini">Accommodation and local support</p>
+<p class="ed-loc">Belmonte de Miranda, Asturias</p>
+<p class="ed-link">lacasonaderey.com</p>
 </a>
 
-<a class="at-card at-item" href="https://sidreriallagarherminio.es/" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://sidreriallagarherminio.es/" target="_blank" rel="noopener">
 <h3>Sidrería Llagar Herminio</h3>
-<p class="at-mini">Catering</p>
-<p class="at-loc">Colloto, Asturias</p>
-<p class="at-link">sidreriallagarherminio.es</p>
+<p class="ed-mini">Catering</p>
+<p class="ed-loc">Colloto, Asturias</p>
+<p class="ed-link">sidreriallagarherminio.es</p>
 </a>
 
-<a class="at-card at-item" href="https://panaderiahermanosmarron.com/" target="_blank" rel="noopener">
+<a class="ed-card ed-item" href="https://panaderiahermanosmarron.com/" target="_blank" rel="noopener">
 <h3>Panadería Hermanos Marrón</h3>
-<p class="at-mini">Bread and food supply</p>
-<p class="at-loc">Belmonte de Miranda, Asturias</p>
-<p class="at-link">panaderiahermanosmarron.com</p>
+<p class="ed-mini">Bread and food supply</p>
+<p class="ed-loc">Belmonte de Miranda, Asturias</p>
+<p class="ed-link">panaderiahermanosmarron.com</p>
 </a>
 
 </div>
@@ -220,18 +220,18 @@ Sound services, printing, logistics, piano supply, construction and consultancy,
 </section>
 
 <!-- AMBASSADORS -->
-<section class="at-section at-light" id="embajadores">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Community</p>
+<section class="ed-section" id="embajadores">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Community</p>
 <h2>Ambassadors</h2>
-<p class="at-sub">
+<p class="ed-lede">
 People who support, recommend and accompany the project in the territory.
 </p>
 </div>
 
-<div class="at-card at-emb">
-<p class="at-emb-list">
+<div class="ed-card ed-emb">
+<p class="ed-emb-list">
 Laude Martínez • Pepe Luis Alba • Esther Vergara Prieto • Juan Manuel Sánchez Trujillo • Isabel Vergara Prieto • Miguel Antón García
 </p>
 </div>

@@ -27,7 +27,7 @@ translation_group: "pll_6993527cab919"
 <h2 class="amp-title">What is <em>ADAR</em></h2>
 <p class="amp-subtitle">Association for the Development of Arts in Rural Areas. An artistic initiative that understands the rural environment as a space for contemporary creation.</p>
 </div>
-</div><section class="qe4-two">
+</div><section class="ed-twocol">
 <div>
 <h2>Origin of the name</h2>
 The ADAR Festival takes its name from the Association for the Development of the Arts in Rural Areas,
@@ -40,9 +40,9 @@ Founded by Guillermo Laporta and Josefina Urraca during the pandemic, the associ
 Asturian rural heritage through music and the performing arts, supported by new technologies.
 
 </div>
-</section><section class="qe4-obj">
+</section><section class="ed-section">
 <h2>Objectives</h2>
-<div class="qe4-chips">
+<div class="ed-chips">
 <div>Revitalize rural areas through cultural projects with international impact</div>
 <div>Bring music and the arts to territories at risk of depopulation</div>
 <div>Activate unconventional and unused rural spaces</div>
@@ -50,7 +50,7 @@ Asturian rural heritage through music and the performing arts, supported by new 
 <div>Connect rural areas of Asturias with audiences around the world</div>
 <div>Use the arts to address contemporary social issues</div>
 </div>
-</section><section class="qe4-end">
+</section><section class="ed-section">
 <div class="qe4-line" aria-hidden="true"></div>
 <div>
 <h2>Residency and Festival</h2>

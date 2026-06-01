@@ -45,22 +45,22 @@ IMPORTANTE: este bloque usa el CSS de .adar-impact-v3.
 </div>
 
 <!-- GALLERY (Impact figures) -->
-<section class="ai-section ai-light" aria-label="Galería de residencias">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Galería</p>
+<section class="ed-section" aria-label="Galería de residencias">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Galería</p>
 <h2>Proceso, entorno y escucha</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 Imágenes de trabajo en residencia y del contexto en el que se desarrollan los procesos.
 </p>
 </div>
 
-<div class="ai-grid-2">
-<figure class="ai-fig">
+<div class="ed-twocol">
+<figure class="ed-g-item">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1918T01.jpg" alt="Trabajo en residencia ADAR" loading="lazy" />
 </figure>
 
-<figure class="ai-fig">
+<figure class="ed-g-item">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg" alt="Residencias ADAR - entorno y proceso" loading="lazy" />
 </figure>
 </div>
@@ -68,18 +68,18 @@ Imágenes de trabajo en residencia y del contexto en el que se desarrollan los p
 </section>
 
 <!-- BLOCKS (Impact cards) -->
-<section class="ai-section ai-cream" id="modelo">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Modelo</p>
+<section class="ed-section" id="modelo">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Modelo</p>
 <h2>Cómo funcionan las residencias</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 Tiempo, cuidado y acompañamiento para que la creación ocurra con contexto.
 </p>
 </div>
 
-<div class="ai-grid-2">
-<article class="ai-card">
+<div class="ed-twocol">
+<article class="ed-card">
 <h3>Un modelo basado en proceso</h3>
 <p>
 Las residencias ADAR priorizan tiempo y cuidado: investigación, ensayos, conversaciones y pruebas.
@@ -87,7 +87,7 @@ No son solo encargos puntuales, son procesos con contexto y acompañamiento.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>Territorio y patrimonio</h3>
 <p>
 La creación dialoga con arquitectura rural, hórreos, capillas, caminos y paisaje. La sede funciona como
@@ -95,7 +95,7 @@ punto de partida para activar lugares con memoria mediante experiencias site-spe
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>Mediación y comunidad</h3>
 <p>
 Encuentros, aperturas de proceso, charlas y acciones de proximidad. Las residencias generan vínculo:
@@ -103,7 +103,7 @@ público local y visitante, artistas y territorio, práctica y escucha compartid
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>Archivo y continuidad</h3>
 <p>
 Documentación audiovisual, fotografía, textos y materiales de comunicación. Las obras continúan su vida
@@ -115,45 +115,45 @@ en conciertos, redes, futuras programaciones y alianzas, conectando Asturias con
 </section>
 
 <!-- RESIDENTS (Impact cards, timeline-like) -->
-<section class="ai-section ai-light" id="residentes">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Artistas residentes</p>
+<section class="ed-section" id="residentes">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Artistas residentes</p>
 <h2>Compositoras, compositores y artistas por año</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 Una selección de residentes que han desarrollado obra y procesos en ADAR en los últimos años.
 </p>
 </div>
 
-<div class="ai-grid-2" aria-label="Listado de artistas residentes por año">
-<article class="ai-card">
+<div class="ed-twocol" aria-label="Listado de artistas residentes por año">
+<article class="ed-card">
 <h3>2021 · Marcos Fernández</h3>
 <p>
 Residencia de creación musical y desarrollo de nuevas obras de cámara, con trabajo en formato íntimo y documentación.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2024 · Sarah K Williams</h3>
 <p>
 Residencia interdisciplinar centrada en escultura, instalación y procesos performativos vinculados a materia, paisaje y memoria.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2025 · Andrea Casarrubios</h3>
 <p>
 Residencia de composición y producción de nuevas obras, con un enfoque especialmente conectado al entorno y su naturaleza.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2025 · Diego Arribas</h3>
 <p>
 Residencia de creación plástica centrada en el trabajo con formatos híbridos, explorando la relación entre el repertorio interpretado con escena y naturaleza.
 </p>
 </article>
-<article class="ai-card">
+<article class="ed-card">
 <h3>2025 · Ballarte ensemble</h3>
 <p>
 Residencia para la creación de «La Ballena», un espectáculo multidisciplinar, con múltiples capas: basado en un relato escrito por Giulio Tanasini, propone llevar a escena una historia mediante el uso de música, interpretación, instalación escénica y elementos audiovisuales.

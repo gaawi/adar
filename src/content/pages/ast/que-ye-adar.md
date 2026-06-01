@@ -27,7 +27,7 @@ translation_group: "pll_6993527cab919"
 <h2 class="amp-title">Qué ye <em>ADAR</em></h2>
 <p class="amp-subtitle">Asociación pal Desarrollu de les Artes nel Mediu Rural. Una iniciativa artística qu'entiende'l mediu rural como un espaciu de creación contemporánea.</p>
 </div>
-</div><section class="qe4-two">
+</div><section class="ed-twocol">
 <div>
 <h2>Orixe del nome</h2>
 El Festival ADAR toma'l nome de la Asociación pal Desarrollu de les Artes nel Mediu Rural, la organización qu'executa'l proyectu y conforma la so visión cultural.

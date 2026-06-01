@@ -45,22 +45,22 @@ IMPORTANT: this block uses the .adar-impact-v3 CSS.
 </div>
 
 <!-- GALLERY (Impact figures) -->
-<section class="ai-section ai-light" aria-label="Residency gallery">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Gallery</p>
+<section class="ed-section" aria-label="Residency gallery">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Gallery</p>
 <h2>Process, environment and listening</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 Images from the residency work and the context in which the creative processes take place.
 </p>
 </div>
 
-<div class="ai-grid-2">
-<figure class="ai-fig">
+<div class="ed-twocol">
+<figure class="ed-g-item">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1918T01.jpg" alt="Work during ADAR residency" loading="lazy" />
 </figure>
 
-<figure class="ai-fig">
+<figure class="ed-g-item">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg" alt="ADAR residency environment and process" loading="lazy" />
 </figure>
 </div>
@@ -68,18 +68,18 @@ Images from the residency work and the context in which the creative processes t
 </section>
 
 <!-- BLOCKS (Impact cards) -->
-<section class="ai-section ai-cream" id="modelo">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Model</p>
+<section class="ed-section" id="modelo">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Model</p>
 <h2>How the residencies work</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 Time, care, and guidance so creation can unfold with context.
 </p>
 </div>
 
-<div class="ai-grid-2">
-<article class="ai-card">
+<div class="ed-twocol">
+<article class="ed-card">
 <h3>A process-based model</h3>
 <p>
 ADAR residencies prioritize time and care: research, rehearsals, conversations, and experimentation.
@@ -87,7 +87,7 @@ These are not one-off commissions, but processes with context and guidance.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>Territory and heritage</h3>
 <p>
 Creation engages with rural architecture, hórreos, chapels, paths, and landscape. The base serves as
@@ -95,7 +95,7 @@ a starting point to activate places with memory through site-specific experience
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>Mediation and community</h3>
 <p>
 Encounters, open process events, talks, and proximity actions. Residencies create bonds:
@@ -103,7 +103,7 @@ local and visiting audiences, artists and territory, shared practice and listeni
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>Archive and continuity</h3>
 <p>
 Audiovisual documentation, photography, texts, and communication materials. The works continue their life
@@ -115,46 +115,46 @@ in concerts, networks, future programming, and partnerships, connecting Asturias
 </section>
 
 <!-- RESIDENTS -->
-<section class="ai-section ai-light" id="residentes">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Resident artists</p>
+<section class="ed-section" id="residentes">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Resident artists</p>
 <h2>Composers and artists by year</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 A selection of residents who have developed works and processes at ADAR in recent years.
 </p>
 </div>
 
-<div class="ai-grid-2" aria-label="List of resident artists by year">
-<article class="ai-card">
+<div class="ed-twocol" aria-label="List of resident artists by year">
+<article class="ed-card">
 <h3>2021 · Marcos Fernández</h3>
 <p>
 Music creation residency and development of new chamber works, with work in intimate format and documentation.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2024 · Sarah K Williams</h3>
 <p>
 Interdisciplinary residency focused on sculpture, installation, and performative processes linked to material, landscape, and memory.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2025 · Andrea Casarrubios</h3>
 <p>
 Composition and production residency for new works, with an approach especially connected to the environment and its nature.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2025 · Diego Arribas</h3>
 <p>
 Visual art creation residency focused on working with hybrid formats, exploring the relationship between the performed repertoire with stage and nature.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2025 · Ballarte ensemble</h3>
 <p>
 Residency for the creation of «La Ballena», a multidisciplinary show with multiple layers: based on a story written by Giulio Tanasini, it proposes bringing to stage a narrative through the use of music, performance, scenic installation, and audiovisual elements.

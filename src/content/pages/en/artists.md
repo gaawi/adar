@@ -33,19 +33,19 @@ translation_group: "pll_6993500e5b2bc"
 </div>
 
 <!-- RESIDENT ARTISTS -->
-<section class="at-section at-light" id="resident-artists">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Residents</p>
+<section class="ed-section" id="resident-artists">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Residents</p>
 <h2>Artists of the festival</h2>
-<p class="at-sub">
+<p class="ed-lede">
 Musicians, composers, filmmakers, and visual artists who have participated across editions.
 </p>
 </div>
 
-<div class="at-grid-artists">
+<div class="ed-grid-3">
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/img-3981-3028023682.jpg" alt="Andrea Casarrubios" loading="lazy">
 </div>
@@ -54,7 +54,7 @@ Musicians, composers, filmmakers, and visual artists who have participated acros
 <p class="at-artist-years">2025</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="BellArte Ensemble" loading="lazy">
 </div>
@@ -63,7 +63,7 @@ Musicians, composers, filmmakers, and visual artists who have participated acros
 <p class="at-artist-years">2025</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.02.35.jpg" alt="Almudena Arribas" loading="lazy">
 </div>
@@ -72,7 +72,7 @@ Musicians, composers, filmmakers, and visual artists who have participated acros
 <p class="at-artist-years">2022 · 23 · 24 · 25</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.01.37.jpg" alt="Jone de la Fuente" loading="lazy">
 </div>
@@ -81,7 +81,7 @@ Musicians, composers, filmmakers, and visual artists who have participated acros
 <p class="at-artist-years">2022 · 23 · 24 · 25</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Natania+Hoffman.jpeg" alt="Natania Hoffman" loading="lazy">
 </div>
@@ -90,7 +90,7 @@ Musicians, composers, filmmakers, and visual artists who have participated acros
 <p class="at-artist-years">2022 · 23 · 24 · 25</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/NathanielSullivan_2017_1002w.jpeg" alt="Nathaniel Sullivan" loading="lazy">
 </div>

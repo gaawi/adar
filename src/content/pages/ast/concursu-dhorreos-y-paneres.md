@@ -96,7 +96,7 @@ Tamién crea un archivu de referencia (imaxe, videu y relatu) útil pa mediació
 <!-- BASES POR AÑU -->
 <section class="horreos-yearly" id="bases" aria-label="Bases del concursu por añu">
 <div class="yearly-head">
-<p class="horreos-eyebrow">Documentos</p>
+<p class="ed-eyebrow">Documentos</p>
 <h2>Bases por añu</h2>
 <p class="yearly-sub">
 Cada edición publica les sos propies bases y calendariu. Equí pues consultar les bases de cada añu.
@@ -122,8 +122,8 @@ un mapa vivu d'espacios onde la música y la creación contemporánea dialoguen 
 </p>
 
 <div class="cta-actions">
-<a class="horreos-btn" href="/ast/contautu/contacto/">Contautar</a>
-<a class="horreos-btn horreos-btn-ghost" href="/ast/category/memoria-dacciones/">
+<a class="ed-btn" href="/ast/contautu/contacto/">Contautar</a>
+<a class="ed-btn ed-btn-ghost" href="/ast/category/memoria-dacciones/">
 Ver actividaes realizaes
 </a>
 </div>

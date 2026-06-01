@@ -37,7 +37,7 @@ IMPORTANTE: este bloque utiliza el CSS .adar-impact-v3
 <p class="amp-subtitle">Festival ADAR 2026. La residencia ofrece un formato flexible — presencial, híbrido o virtual — y culmina con una actuación destacada durante el festival.</p>
 <div class="amp-actions">
 <a class="amp-btn" href="https://tally.so/r/WOAQJe" target="_blank" rel="noopener">Portal de solicitud</a>
-<a class="amp-btn amp-btn-ghost" href="#guidelines">Leer bases</a>
+<a class="ed-btn ed-btn-ghost" href="#guidelines">Leer bases</a>
 </div>
 <div class="amp-chips" aria-label="Etiquetas">
 <span class="amp-chip">Fecha límite · 15 de abril de 2026</span>
@@ -46,30 +46,30 @@ IMPORTANTE: este bloque utiliza el CSS .adar-impact-v3
 </div>
 
 <!-- CONTEXT IMAGES -->
-<section class="ai-section ai-light" aria-label="Sede y entorno de ADAR">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Contexto</p>
+<section class="ed-section" aria-label="Sede y entorno de ADAR">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Contexto</p>
 <h2>Sede y entorno rural</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 Las residencias presenciales e híbridas se desarrollan en la sede de ADAR en Leiguarda, Asturias.
 </p>
-<div class="ai-actions" style="margin-top:12px">
-<a class="ai-btn ai-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Ver sede</a>
+<div class="ed-actions" style="margin-top:12px">
+<a class="ed-btn ed-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Ver sede</a>
 </div>
 </div>
 
-<div class="ai-grid-2">
-<figure class="ai-fig">
+<div class="ed-twocol">
+<figure class="ed-g-item">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp" alt="Exterior de la sede ADAR" loading="lazy" />
 </figure>
-<figure class="ai-fig">
+<figure class="ed-g-item">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_0673.webp" alt="Entorno rural de ADAR" loading="lazy" />
 </figure>
-<figure class="ai-fig">
+<figure class="ed-g-item">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3429.webp" alt="Espacio de trabajo en residencia" loading="lazy" />
 </figure>
-<figure class="ai-fig">
+<figure class="ed-g-item">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg" alt="Paisaje de Asturias" loading="lazy" />
 </figure>
 </div>
@@ -77,19 +77,19 @@ Las residencias presenciales e híbridas se desarrollan en la sede de ADAR en Le
 </section>
 
 <!-- BASES -->
-<section class="ai-section ai-cream" id="guidelines">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Bases</p>
+<section class="ed-section" id="guidelines">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Bases</p>
 <h2>Compositor/a en Residencia 2026 - Términos Oficiales</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 Por favor, revise las siguientes bases numeradas antes de enviar su solicitud.
 </p>
 </div>
 
-<div class="ai-grid-2">
+<div class="ed-twocol">
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>1. Fechas del Festival</h3>
 <p>
 El Festival ADAR 2026 tendrá lugar del 3 al 16 de agosto de 2026 en el entorno rural de Asturias, España.
@@ -97,7 +97,7 @@ El/la compositor/a seleccionado/a contará con una actuación destacada dentro d
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2. Estructura de la Residencia</h3>
 <p>
 La residencia podrá ser presencial, híbrida o virtual.
@@ -106,7 +106,7 @@ Las fechas exactas se acordarán tras la selección.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>3. Marco Creativo</h3>
 <p>
 ADAR interpretará (a) una nueva obra compuesta durante la residencia,
@@ -115,7 +115,7 @@ La instrumentación y el repertorio se definirán caso por caso.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>4. Requisitos de Participación</h3>
 <p>
 Convocatoria abierta a compositores/as de cualquier nacionalidad y país de residencia.
@@ -123,7 +123,7 @@ Se aceptan todas las estéticas y enfoques compositivos.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>5. Apoyo Ofrecido</h3>
 <p>
 Actuación destacada durante el Festival ADAR 2026, tiempo de ensayo y documentación.
@@ -132,7 +132,7 @@ además de hasta 800 euros de ayuda para desplazamiento.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>6. Documentación Requerida</h3>
 <p>
 CV, página web o enlace a portafolio, y enlaces a dos obras (audio o vídeo).
@@ -140,14 +140,14 @@ Los solicitantes deberán indicar disponibilidad (junio, julio, agosto 2026) y f
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>7. Tasa Administrativa</h3>
 <p>
 Se requiere una tasa administrativa no reembolsable de 20 euros para enviar la solicitud a través del portal oficial.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>8. Fechas Clave</h3>
 <p>
 Fecha límite de solicitud: 15 de abril de 2026.<br>
@@ -155,7 +155,7 @@ Comunicación de resultados: 15 de mayo de 2026.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>9. Consultas</h3>
 <p>
 Para consultas relacionadas con la convocatoria, contacte en:
@@ -167,7 +167,7 @@ Para consultas relacionadas con la convocatoria, contacte en:
 
 <div style="margin-top:20px">
 <a class="amp-btn" href="https://tally.so/r/WOAQJe" target="_blank" rel="noopener">Abrir portal de solicitud</a>
-<a class="amp-btn ai-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Explorar la sede</a>
+<a class="ed-btn ed-btn-ghost" href="/en/headquarters/" target="_blank" rel="noopener">Explorar la sede</a>
 </div>
 
 

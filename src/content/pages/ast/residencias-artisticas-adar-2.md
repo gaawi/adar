@@ -44,22 +44,22 @@ IMPORTANTE: esti bloque usa'l CSS de .adar-impact-v3.
 </div>
 
 <!-- GALERIA -->
-<section class="ai-section ai-light" aria-label="Galería de residencies">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Galería</p>
+<section class="ed-section" aria-label="Galería de residencies">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Galería</p>
 <h2>Procesu, entornu y escucha</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 Imáxenes del trabayu en residencia y del contestu nel que se desarrollen los procesos.
 </p>
 </div>
 
-<div class="ai-grid-2">
-<figure class="ai-fig">
+<div class="ed-twocol">
+<figure class="ed-g-item">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1918T01.jpg" alt="Trabayu en residencia ADAR" loading="lazy" />
 </figure>
 
-<figure class="ai-fig">
+<figure class="ed-g-item">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg" alt="Residencies ADAR - entornu y procesu" loading="lazy" />
 </figure>
 </div>
@@ -67,18 +67,18 @@ Imáxenes del trabayu en residencia y del contestu nel que se desarrollen los pr
 </section>
 
 <!-- BLOQUES (tarxetes) -->
-<section class="ai-section ai-cream" id="modelo">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Modelu</p>
+<section class="ed-section" id="modelo">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Modelu</p>
 <h2>Cómo funcionen les residencies</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 Tiempu, curiáu y acompañamientu pa que la creación asoceda con contestu.
 </p>
 </div>
 
-<div class="ai-grid-2">
-<article class="ai-card">
+<div class="ed-twocol">
+<article class="ed-card">
 <h3>Un modelu basáu en procesu</h3>
 <p>
 Les residencies ADAR prioricen tiempu y curiáu: investigación, ensayos, conversaciones y pruebes.
@@ -86,7 +86,7 @@ Nun son solo encargos puntuales, son procesos con contestu y acompañamientu.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>Territoriu y patrimoniu</h3>
 <p>
 La creación dialoga con arquiteutura rural, hórreos, capiyes, caminos y paisaxe. La sede funciona como
@@ -94,7 +94,7 @@ puntu de partida p'activar llugares con memoria mediante esperiencies site-speci
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>Mediación y comunídá</h3>
 <p>
 Alcuentros, apertures de procesu, charles y acciones de proximídá. Les residencies xeneren vínculo:
@@ -102,7 +102,7 @@ públicu llocal y visitante, artistes y territoriu, práutica y escucha comparti
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>Archivu y continuídá</h3>
 <p>
 Documentación audiovisual, fotografía, testos y materiales de comunicación. Les obres continúen la so vida
@@ -114,46 +114,46 @@ en conciertos, redes, futures programaciones y aliances, conectando Asturies con
 </section>
 
 <!-- RESIDENTES -->
-<section class="ai-section ai-light" id="residentes">
-<div class="ai-wrap">
-<div class="ai-head">
-<p class="ai-eyebrow">Artistes residentes</p>
+<section class="ed-section" id="residentes">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Artistes residentes</p>
 <h2>Compositores, compositores y artistes por añu</h2>
-<p class="ai-sub">
+<p class="ed-lede">
 Una seleición de residentes que desarrollaron obra y procesos n'ADAR nos últimos años.
 </p>
 </div>
 
-<div class="ai-grid-2" aria-label="Llista d'artistes residentes por añu">
-<article class="ai-card">
+<div class="ed-twocol" aria-label="Llista d'artistes residentes por añu">
+<article class="ed-card">
 <h3>2021 · Marcos Fernández</h3>
 <p>
 Residencia de creación musical y desarrollu de nueves obres de cámara, con trabayu en formatu íntimu y documentación.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2024 · Sarah K Williams</h3>
 <p>
 Residencia interdisciplinar centrada n'escultura, instalación y procesos performativos vinculáos a materia, paisaxe y memoria.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2025 · Andrea Casarrubios</h3>
 <p>
 Residencia de composición y producción de nueves obres, con un enfoque especialmente conectáu al entornu y la so naturaleza.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2025 · Diego Arribas</h3>
 <p>
 Residencia de creación plástica centrada nel trabayu con formatos híbridos, esplorando la relación ente'l repertoriu interpretáu con escena y naturaleza.
 </p>
 </article>
 
-<article class="ai-card">
+<article class="ed-card">
 <h3>2025 · Ballarte ensemble</h3>
 <p>
 Residencia pa la creación de «La Ballena», un espectáculu multidisciplinar, con múltiples capes: basáu nun relatu escritu por Giulio Tanasini, propone llevar a escena una historia mediante l'usu de música, interpretación, instalación escénica y elementos audiovisuales.

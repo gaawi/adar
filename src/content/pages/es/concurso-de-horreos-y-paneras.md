@@ -96,7 +96,7 @@ También crea un archivo de referencia (imagen, video y relato) útil para media
 <!-- BASES POR AÑO -->
 <section class="horreos-yearly" id="bases" aria-label="Bases del concurso por año">
 <div class="yearly-head">
-<p class="horreos-eyebrow">Documentos</p>
+<p class="ed-eyebrow">Documentos</p>
 <h2>Bases por año</h2>
 <p class="yearly-sub">
 Cada edición publica sus propias bases y calendario. Aquí puedes consultar las bases de cada año.
@@ -122,8 +122,8 @@ un mapa vivo de espacios donde la música y la creación contemporánea dialogan
 </p>
 
 <div class="cta-actions">
-<a class="horreos-btn" href="/es/contacto/">Contactar</a>
-<a class="horreos-btn horreos-btn-ghost" href="/es/category/memoria-de-acciones//">
+<a class="ed-btn" href="/es/contacto/">Contactar</a>
+<a class="ed-btn ed-btn-ghost" href="/es/category/memoria-de-acciones//">
 Ver actividades realizadas
 </a>
 </div>

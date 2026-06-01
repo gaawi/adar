@@ -33,19 +33,19 @@ translation_group: "pll_6993500e5b2bc"
 </div>
 
 <!-- ARTISTES RESIDENTES -->
-<section class="at-section at-light" id="artistes-residentes">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Residentes</p>
+<section class="ed-section" id="artistes-residentes">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Residentes</p>
 <h2>Artistes qu'acompañen el festival</h2>
-<p class="at-sub">
+<p class="ed-lede">
 Músicos, compositores, cineastes y artistes visuales que participaron al llongu les ediciones.
 </p>
 </div>
 
-<div class="at-grid-artists">
+<div class="ed-grid-3">
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/img-3981-3028023682.jpg" alt="Andrea Casarrubios" loading="lazy">
 </div>
@@ -54,7 +54,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 <p class="at-artist-years">2025</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="BellArte Ensemble" loading="lazy">
 </div>
@@ -63,7 +63,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 <p class="at-artist-years">2025</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.02.35.jpg" alt="Almudena Arribas" loading="lazy">
 </div>
@@ -72,7 +72,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 <p class="at-artist-years">2022 · 23 · 24 · 25</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.01.37.jpg" alt="Jone de la Fuente" loading="lazy">
 </div>
@@ -81,7 +81,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 <p class="at-artist-years">2022 · 23 · 24 · 25</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Natania+Hoffman.jpeg" alt="Natania Hoffman" loading="lazy">
 </div>
@@ -90,7 +90,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 <p class="at-artist-years">2022 · 23 · 24 · 25</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/NathanielSullivan_2017_1002w.jpeg" alt="Nathaniel Sullivan" loading="lazy">
 </div>
@@ -99,7 +99,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 <p class="at-artist-years">2021</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Emmanuel-Bach-1-400.jpg.jpg" alt="Emmanuel Bach" loading="lazy">
 </div>
@@ -108,7 +108,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 <p class="at-artist-years">2022</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://zitahouse.com/zita-api/uploads/musician_zilvinas_604aebd0d0.webp" alt="Žilvinas Brazauskas" loading="lazy">
 </div>
@@ -117,7 +117,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 <p class="at-artist-years">2022</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/78e28e_662f092233ee41e3ba36d51a977adb20_mv2_d_3311_3310_s_4_2.jpeg" alt="Beatriz Blanco" loading="lazy">
 </div>
@@ -126,7 +126,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 <p class="at-artist-years">2021</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Nocturno-Sinfonico-Auditorio-de-Galicia.jpeg" alt="Marcos Fernández" loading="lazy">
 </div>
@@ -135,7 +135,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 <p class="at-artist-years">2021</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Mario.jpg" alt="Mario Molina" loading="lazy">
 </div>
@@ -149,19 +149,19 @@ Músicos, compositores, cineastes y artistes visuales que participaron al llongu
 </section>
 
 <!-- ARTISTES VISUALES -->
-<section class="at-section at-cream" id="artistes-visuales">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Artes visuales</p>
+<section class="ed-section" id="artistes-visuales">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Artes visuales</p>
 <h2>Artistes visuales</h2>
-<p class="at-sub">
+<p class="ed-lede">
 Creadores qu'aportaron la so visión plástica al festival al traviés d'instalaciones, proyecciones y obra in situ.
 </p>
 </div>
 
-<div class="at-grid-artists">
+<div class="ed-grid-3">
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Sarah-K-Williams_Website-Image-3088365824.jpg" alt="Sara K. Williams" loading="lazy">
 </div>
@@ -170,7 +170,7 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 <p class="at-artist-years">2024</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Guillermo.JPG" alt="Guillermo Ordás" loading="lazy">
 </div>
@@ -179,7 +179,7 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 <p class="at-artist-years">2023 · 24 · 25</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Mizuko+Kaji.jpeg" alt="Mizuko Kaji" loading="lazy">
 </div>
@@ -188,7 +188,7 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 <p class="at-artist-years">2023</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Diego-Arribas.jpg" alt="Diego Arribas" loading="lazy">
 </div>
@@ -197,7 +197,7 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 <p class="at-artist-years">2025</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">
 </div>
@@ -211,19 +211,19 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 </section>
 
 <!-- ENSEMBLES Y GRUPOS INVITAOS -->
-<section class="at-section at-light" id="grupos-invitaos">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Invitaos</p>
+<section class="ed-section" id="grupos-invitaos">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Invitaos</p>
 <h2>Ensembles y grupos invitaos</h2>
-<p class="at-sub">
+<p class="ed-lede">
 Formaciones qu'enriquecieron la programación del festival cola so participación.
 </p>
 </div>
 
-<div class="at-grid-artists">
+<div class="ed-grid-3">
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+11.13.00.jpg" alt="Compañeras Panderetas" loading="lazy">
 </div>
@@ -232,7 +232,7 @@ Formaciones qu'enriquecieron la programación del festival cola so participació
 <p class="at-artist-years">2025</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="Nacho Laguna" loading="lazy">
 </div>
@@ -241,7 +241,7 @@ Formaciones qu'enriquecieron la programación del festival cola so participació
 <p class="at-artist-years">2025</p>
 </article>
 
-<article class="at-card at-artist-card">
+<article class="ed-card ed-artist-card">
 <div class="at-artist-img">
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fin-sonora.org%2Fwp-content%2Fuploads%2F2022%2F02%2Fmaria-buey-in12-profile.jpg&f=1&nofb=1&ipt=9e737c74a901df03eb60c2111b4e0761dd1f968bd3bb4880e51b1dfdc3355d78" alt="María del Buey" loading="lazy">
 </div>
@@ -255,40 +255,40 @@ Formaciones qu'enriquecieron la programación del festival cola so participació
 </section>
 
 <!-- DIRECCIÓN ARTÍSTICA -->
-<section class="at-section at-cream" id="direccion-artistica">
-<div class="at-wrap">
-<div class="at-head">
-<p class="at-eyebrow">Dirección</p>
+<section class="ed-section" id="direccion-artistica">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Dirección</p>
 <h2>Dirección artística</h2>
-<p class="at-sub">
+<p class="ed-lede">
 Cofundadores de CreArtBox y del Festival ADAR. Creación, interpretación y producción.
 </p>
 </div>
 
-<div class="at-grid-2">
+<div class="ed-twocol">
 
 <!-- Josefina -->
-<article class="at-card at-person">
-<div class="at-person-top">
-<div class="at-avatar">
+<article class="ed-card ed-person">
+<div class="ed-item-top">
+<div class="ed-avatar">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg" alt="Josefina Urraca" loading="lazy">
 </div>
-<div class="at-person-meta">
+<div class="ed-item-meta">
 <h3>Josefina Urraca</h3>
-<p class="at-role">Pianista · Dirección Artística</p>
+<p class="ed-role">Pianista · Dirección Artística</p>
 </div>
 </div>
 </article>
 
 <!-- Guillermo -->
-<article class="at-card at-person">
-<div class="at-person-top">
-<div class="at-avatar">
+<article class="ed-card ed-person">
+<div class="ed-item-top">
+<div class="ed-avatar">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">
 </div>
-<div class="at-person-meta">
+<div class="ed-item-meta">
 <h3>Guillermo Laporta</h3>
-<p class="at-role">Flautista · Direutor Executivu</p>
+<p class="ed-role">Flautista · Direutor Executivu</p>
 </div>
 </div>
 </article>
