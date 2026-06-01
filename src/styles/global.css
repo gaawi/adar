@@ -5767,21 +5767,20 @@ body.archive .entry-header { display: none; }
    PROGRAMACIÓN — current edition spotlight + per-year archive
    ============================================================= */
 .prog-pill {
-  display: inline-block;
+  display: block;
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--ink);
-  padding: 6px 14px;
-  border: 1px solid var(--ink);
-  border-radius: 999px;
-  margin-bottom: 24px;
+  color: var(--accent-ink);
+  background: var(--accent);
+  padding: 4px 10px;
+  margin: 24px 0 12px;
+  width: fit-content;
 }
 .prog-pill-light {
-  color: var(--paper);
-  border-color: rgba(246,244,238,0.45);
-  background: rgba(246,244,238,0.06);
+  color: var(--accent-ink);
+  background: var(--accent);
 }
 
 /* ---------- CURRENT EDITION · yellow ring announce ---------- */
