@@ -28,7 +28,7 @@ translation_group: "pll_6993527cab919"
 <h2 class="amp-title">Qué es <em>ADAR</em></h2>
 <p class="amp-subtitle">Asociación para el Desarrollo de las Artes en el medio Rural. Una iniciativa artística que entiende el medio rural como un espacio de creación contemporánea.</p>
 </div>
-</div><section class="ed-twocol">
+</div><section class="qe4-two">
 <div>
 
 
@@ -43,9 +43,9 @@ Fundada por Guillermo Laporta y Josefina Urraca durante la pandemia, la asociaci
 el patrimonio rural asturiano a través de la música y las artes vivas, con apoyo de nuevas tecnologías.
 
 </div>
-</section><section class="ed-section">
+</section><section class="qe4-obj">
 <h2>Objetivos</h2>
-<div class="ed-chips">
+<div class="qe4-chips">
 <div>Revitalizar zonas rurales mediante proyectos culturales de impacto internacional</div>
 <div>Acercar la música y las artes a territorios en riesgo de despoblación</div>
 <div>Activar espacios rurales no convencionales y en desuso</div>
@@ -53,7 +53,7 @@ el patrimonio rural asturiano a través de la música y las artes vivas, con apo
 <div>Conectar zonas rurales de Asturias con audiencias de todo el mundo</div>
 <div>Usar las artes para abordar problemáticas sociales contemporáneas</div>
 </div>
-</section><section class="ed-section">
+</section><section class="qe4-end">
 <div class="qe4-line" aria-hidden="true"></div>
 <div>
 <h2>Residencia y Festival</h2>
