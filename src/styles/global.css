@@ -5671,15 +5671,29 @@ body.archive .entry-header { display: none; }
   .archive-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 
-.archive-card { margin: 0; }
-.archive-card[hidden] { display: none !important; }
-.archive-card-link {
+.archive-card {
+  margin: 0;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+.archive-card[hidden] { display: none !important; }
+.archive-card-link {
   color: var(--ink) !important;
   text-decoration: none;
+  display: inline;
 }
+/* Stretched link: the title <a> covers the whole card so taps anywhere
+   navigate, but the media sits above (z-index) so swipe on the carousel
+   stays interactive on touch devices. */
+.archive-card-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.archive-card-link:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
 .archive-card-img {
   position: relative;
   width: 100%;
@@ -5693,7 +5707,7 @@ body.archive .entry-header { display: none; }
   object-fit: cover;
   transition: transform 0.6s cubic-bezier(.22,.61,.36,1);
 }
-.archive-card-link:hover .archive-card-img img { transform: scale(1.03); }
+.archive-card:hover .archive-card-img img { transform: scale(1.03); }
 .archive-card-body { display: flex; flex-direction: column; gap: 10px; padding-top: 4px; }
 .archive-card-date {
   font-size: 11px;
@@ -8886,6 +8900,7 @@ body.page .entry-content .ed-social {
 /* Carousel inside cards */
 .archive-card-media {
   position: relative;
+  z-index: 2;
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
@@ -8899,6 +8914,9 @@ body.page .entry-content .ed-social {
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
+  touch-action: pan-x;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
 }
 .archive-carousel::-webkit-scrollbar { display: none; }
 .archive-slide {
@@ -8915,7 +8933,7 @@ body.page .entry-content .ed-social {
   display: block;
   transition: transform 0.6s cubic-bezier(.22,.61,.36,1);
 }
-.archive-card-link:hover .archive-slide img { transform: scale(1.03); }
+.archive-card:hover .archive-slide img { transform: scale(1.03); }
 .archive-card-media.is-carousel::after {
   content: '';
   position: absolute;

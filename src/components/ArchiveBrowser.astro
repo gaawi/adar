@@ -219,37 +219,37 @@ function searchText(it: Item): string {
         : (p.data.featured_image ? [p.data.featured_image] : []);
       return (
         <li class="archive-card" data-tags={tagsAttr(p.data.tags || [])} data-search={searchText(p)}>
-          <a href={p.data.permalink} class="archive-card-link">
-            {imgs.length > 0 && (
-              <div class={`archive-card-media ${imgs.length > 1 ? 'is-carousel' : ''}`}>
-                <div class="archive-carousel" data-carousel>
-                  {imgs.slice(0, 8).map((src, i) => (
-                    <div class="archive-slide">
-                      <img src={src} alt={i === 0 ? p.data.title : ''} loading="lazy" />
-                    </div>
+          {imgs.length > 0 && (
+            <div class={`archive-card-media ${imgs.length > 1 ? 'is-carousel' : ''}`}>
+              <div class="archive-carousel" data-carousel>
+                {imgs.slice(0, 8).map((src, i) => (
+                  <div class="archive-slide">
+                    <img src={src} alt={i === 0 ? p.data.title : ''} loading="lazy" />
+                  </div>
+                ))}
+              </div>
+              {imgs.length > 1 && (
+                <div class="archive-dots" aria-hidden="true">
+                  {imgs.slice(0, 8).map((_, i) => (
+                    <span class={`archive-dot ${i === 0 ? 'is-active' : ''}`}></span>
                   ))}
                 </div>
-                {imgs.length > 1 && (
-                  <div class="archive-dots" aria-hidden="true">
-                    {imgs.slice(0, 8).map((_, i) => (
-                      <span class={`archive-dot ${i === 0 ? 'is-active' : ''}`}></span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            )}
-            <div class="archive-card-body">
-              {p.data.date && <p class="archive-card-date mono">{fmtDate(p.data.date)}</p>}
-              <h3 class="archive-card-title">{p.data.title}</h3>
-              {(p.data.tags || []).length > 0 && (
-                <ul class="archive-card-tags">
-                  {(p.data.tags || []).slice(0, 4).map((t) => (
-                    <li><span class="archive-card-tag">{t}</span></li>
-                  ))}
-                </ul>
               )}
             </div>
-          </a>
+          )}
+          <div class="archive-card-body">
+            {p.data.date && <p class="archive-card-date mono">{fmtDate(p.data.date)}</p>}
+            <h3 class="archive-card-title">
+              <a href={p.data.permalink} class="archive-card-link">{p.data.title}</a>
+            </h3>
+            {(p.data.tags || []).length > 0 && (
+              <ul class="archive-card-tags">
+                {(p.data.tags || []).slice(0, 4).map((t) => (
+                  <li><span class="archive-card-tag">{t}</span></li>
+                ))}
+              </ul>
+            )}
+          </div>
         </li>
       );
     })}
