@@ -6357,7 +6357,7 @@ header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link.i
     grid-template-columns: none;
     gap: 0;
   }
-  .prog-event-row:has(.prog-event-thumb) { padding-right: 72px; }
+  .prog-event-row:has(.prog-event-thumb) { padding-left: 128px; }
   .prog-event-day {
     display: inline-block;
     margin: 0 10px 0 0;
@@ -6388,11 +6388,11 @@ header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link.i
   .prog-event-thumb {
     position: absolute;
     top: 16px;
-    right: 0;
+    left: 0;
     grid-column: auto;
     grid-row: auto;
-    width: 56px;
-    height: 56px;
+    width: 112px;
+    height: 112px;
     justify-self: auto;
     align-self: auto;
   }
