@@ -6753,20 +6753,31 @@ body.is-contact article.page { padding: 0; margin: 0; max-width: none; }
 /* ---------- CHANNEL CARDS ---------- */
 .ct-cards {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 40px;
   max-width: 1280px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--ink);
-  border: 1px solid var(--ink);
+  gap: 0;
+  background: var(--paper);
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
 }
 @media (max-width: 720px) {
   .ct-cards { grid-template-columns: 1fr; padding: 0 18px; }
 }
-.ct-card { margin: 0; background: var(--paper); }
+.ct-card {
+  margin: 0;
+  background: var(--paper);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.ct-card:nth-child(2n) { border-right: none; }
+.ct-card:nth-last-child(-n+2) { border-bottom: none; }
+@media (max-width: 720px) {
+  .ct-card { border-right: none; border-bottom: 1px solid var(--line); }
+  .ct-card:last-child { border-bottom: none; }
+}
 .ct-card-link {
   display: block;
   padding: 40px;
@@ -6779,12 +6790,16 @@ body.is-contact article.page { padding: 0; margin: 0; max-width: none; }
 .ct-card-link:hover { background: var(--paper-2); }
 .ct-card-link:hover .ct-card-cta { color: var(--ink); border-bottom-color: var(--accent); }
 .ct-card-n {
-  display: block;
+  display: inline-block;
+  font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--ink);
-  margin-bottom: 16px;
+  color: var(--accent-ink);
+  background: var(--accent);
+  padding: 4px 10px;
+  margin-bottom: 18px;
+  width: fit-content;
 }
 .ct-card-kicker {
   display: block;
