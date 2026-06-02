@@ -2824,6 +2824,365 @@ footer.site-footer,
   .adar-horreos-v2 .horreos-blocks{ grid-template-columns: 1fr; }
   .adar-horreos-v2 .yearly-grid{ grid-template-columns: 1fr; }
 }
+
+/* =============================================================
+   Hórreos · Convocatoria abierta + Ganadores + Prensa
+   Editorial sections layered onto the existing .adar-horreos-v2
+   container. Self-contained — no rule outside this block touches
+   .horreos-open*, .horreos-winners*, .horreos-press*.
+   ============================================================= */
+
+/* OPEN CALL */
+.adar-horreos-v2 .horreos-open {
+  margin: 36px 0 0;
+  padding: 36px 28px;
+  border: 1px solid var(--ink);
+  background: linear-gradient(180deg, rgba(247,213,46,0.18), rgba(247,213,46,0.02));
+  position: relative;
+}
+.adar-horreos-v2 .open-mast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+.adar-horreos-v2 .open-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  font-weight: 600;
+}
+.adar-horreos-v2 .open-pill::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-ink);
+  animation: horreos-pulse 1.6s ease-in-out infinite;
+}
+@keyframes horreos-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.adar-horreos-v2 .open-edition {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.adar-horreos-v2 .open-h {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 500;
+  font-size: clamp(32px, 4.4vw, 64px);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin: 0 0 18px;
+  text-wrap: balance;
+}
+.adar-horreos-v2 .open-h em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-stretch: 100%;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.adar-horreos-v2 .open-lede {
+  font-family: var(--font-sans);
+  font-size: clamp(16px, 1.3vw, 19px);
+  line-height: 1.55;
+  color: var(--ink-soft);
+  max-width: 70ch;
+  margin: 0 0 28px;
+}
+.adar-horreos-v2 .open-specs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  margin: 0 0 28px;
+}
+.adar-horreos-v2 .open-specs > div {
+  background: #fff;
+  padding: 18px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.adar-horreos-v2 .open-specs dt {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.adar-horreos-v2 .open-specs dd {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.35;
+  color: var(--ink);
+}
+.adar-horreos-v2 .open-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.adar-horreos-v2 .open-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  padding: 14px 22px;
+  background: var(--ink);
+  color: var(--paper) !important;
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+.adar-horreos-v2 .open-cta:hover { background: #2a2826; transform: translateY(-1px); }
+.adar-horreos-v2 .open-cta .open-arr {
+  color: var(--accent);
+  font-family: var(--font-serif);
+  font-size: 18px;
+}
+.adar-horreos-v2 .open-cta-ghost {
+  background: transparent;
+  color: var(--ink) !important;
+  border: 1px solid var(--ink);
+}
+.adar-horreos-v2 .open-cta-ghost:hover { background: var(--paper-2); }
+.adar-horreos-v2 .open-foot {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.adar-horreos-v2 .open-foot a { color: var(--ink); text-decoration: underline; }
+
+/* WINNERS */
+.adar-horreos-v2 .horreos-winners { margin: 56px 0 0; }
+.adar-horreos-v2 .winners-head { margin-bottom: 28px; }
+.adar-horreos-v2 .winners-h {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(28px, 3.4vw, 48px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 6px 0 12px;
+}
+.adar-horreos-v2 .winners-sub {
+  font-family: var(--font-sans);
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 70ch;
+  margin: 0;
+}
+.adar-horreos-v2 .winners-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.adar-horreos-v2 .winner-card { margin: 0; }
+.adar-horreos-v2 .winner-link {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-decoration: none;
+  color: var(--ink) !important;
+  border: 1px solid var(--line);
+  background: #fff;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+.adar-horreos-v2 .winner-link:hover {
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+.adar-horreos-v2 .winner-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--paper-2);
+}
+.adar-horreos-v2 .winner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(.22,.61,.36,1);
+}
+.adar-horreos-v2 .winner-link:hover .winner-img img { transform: scale(1.04); }
+.adar-horreos-v2 .winner-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 22px 24px;
+}
+.adar-horreos-v2 .winner-place {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.adar-horreos-v2 .winner-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(20px, 1.8vw, 26px);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  margin: 0;
+  color: var(--ink);
+}
+.adar-horreos-v2 .winner-note {
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.adar-horreos-v2 .winner-cta {
+  margin-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+}
+
+/* Yearly variants (active / archive) on top of existing .year-card */
+.adar-horreos-v2 .year-card-active {
+  border-color: var(--ink);
+  background: var(--accent);
+  color: var(--accent-ink) !important;
+}
+.adar-horreos-v2 .year-card-active .y-k,
+.adar-horreos-v2 .year-card-active .y-v,
+.adar-horreos-v2 .year-card-active .y-a {
+  color: var(--accent-ink);
+  opacity: 1;
+}
+.adar-horreos-v2 .year-card-archive { opacity: 0.78; }
+
+/* PRESS */
+.adar-horreos-v2 .horreos-press { margin: 56px 0 0; }
+.adar-horreos-v2 .press-head { margin-bottom: 24px; }
+.adar-horreos-v2 .press-h {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 500;
+  font-size: clamp(28px, 3.4vw, 48px);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 6px 0 10px;
+  color: var(--ink);
+}
+.adar-horreos-v2 .press-h em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-stretch: 100%;
+  font-weight: 500;
+}
+.adar-horreos-v2 .press-sub {
+  font-family: var(--font-sans);
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.adar-horreos-v2 .press-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--ink);
+}
+.adar-horreos-v2 .press-item { margin: 0; }
+.adar-horreos-v2 .press-link {
+  display: grid;
+  grid-template-columns: 110px 220px 1fr 80px;
+  gap: 24px;
+  align-items: baseline;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink) !important;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.adar-horreos-v2 .press-link:hover { background: var(--paper-2); }
+.adar-horreos-v2 .press-date {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.adar-horreos-v2 .press-outlet {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--ink);
+}
+.adar-horreos-v2 .press-title {
+  font-family: var(--font-serif);
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.3;
+  color: var(--ink);
+}
+.adar-horreos-v2 .press-arr {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  justify-self: end;
+}
+.adar-horreos-v2 .press-foot {
+  margin: 20px 0 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.adar-horreos-v2 .press-foot a { color: var(--ink); text-decoration: underline; }
+
+@media (max-width: 720px) {
+  .adar-horreos-v2 .horreos-open { padding: 24px 18px; }
+  .adar-horreos-v2 .open-specs { grid-template-columns: 1fr; }
+  .adar-horreos-v2 .open-actions { flex-direction: column; align-items: stretch; }
+  .adar-horreos-v2 .open-cta { justify-content: center; }
+  .adar-horreos-v2 .winners-grid { grid-template-columns: 1fr; }
+  .adar-horreos-v2 .press-link {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 18px 0;
+  }
+  .adar-horreos-v2 .press-arr { justify-self: start; }
+}
 /* =============================================================
    EQUIPO / TEAM
    Hero eliminado — ahora usa .amp-hero
