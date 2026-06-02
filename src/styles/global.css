@@ -4690,7 +4690,7 @@ body.home article.page { margin: 0 !important; }
       rgba(10,9,7,0.88) 80%,
       rgba(10,9,7,0.96) 100%);
   }
-  .hm-hero-body { padding-top: 16px; padding-bottom: 16px; }
+  .hm-hero-body { padding-top: 96px; padding-bottom: 16px; }
 }
 
 /* ---------- COORDENADAS ---------- */
