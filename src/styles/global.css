@@ -8787,10 +8787,11 @@ body.page .entry-content .ed-social {
     inset: 0;
     background: rgba(10,9,7,0.5);
     opacity: 0;
+    pointer-events: none;
     transition: opacity 0.25s ease;
     z-index: 999;
   }
-  .archive-filter-backdrop.is-open { opacity: 1; }
+  .archive-filter-backdrop.is-open { opacity: 1; pointer-events: auto; }
 
   .archive-memoria .archive-filters {
     position: fixed;
