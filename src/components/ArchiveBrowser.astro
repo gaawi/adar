@@ -259,7 +259,7 @@ function searchText(it: Item): string {
 </div>
 
 <script define:vars={{ countTpl: { es: 'acciones', en: 'projects', ast: 'aiciones' }[lang], countSingularTpl: { es: 'acción', en: 'project', ast: 'aición' }[lang] }}>
-  (function () {
+  function initArchive() {
     const roots = document.querySelectorAll('[data-archive]');
     roots.forEach((root) => {
       const pillGroups = root.querySelectorAll('[data-pill-group]');
@@ -374,5 +374,10 @@ function searchText(it: Item): string {
         }, { passive: true });
       });
     });
-  })();
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initArchive);
+  } else {
+    initArchive();
+  }
 </script>
