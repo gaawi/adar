@@ -5039,7 +5039,7 @@ body.home article.page { margin: 0 !important; }
    Drop the body's vertical padding so the title sits low, near the
    play button. */
 @media (max-width: 720px) {
-  .hm-hero-meta { display: none; }
+  .hm-hero-meta { padding-top: 101px; }
   .hm-hero-lede { display: none; }
   .hm-hero-veil {
     background: linear-gradient(180deg,
