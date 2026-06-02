@@ -6379,7 +6379,7 @@ header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link.i
   .prog-event-body {
     display: block;
     grid-column: auto;
-    margin-top: 8px;
+    margin-top: 2px;
   }
   .prog-event-kind { font-size: 10px; }
   .prog-event-venue { font-size: 18px; line-height: 1.25; }
