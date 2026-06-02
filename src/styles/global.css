@@ -5677,6 +5677,9 @@ body.archive .entry-header { display: none; }
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .archive-card[hidden] { display: none !important; }
 .archive-card-link {
