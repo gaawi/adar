@@ -6019,15 +6019,14 @@ body.archive .entry-header { display: none; }
 
 .archive-grid {
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 56px;
-  max-width: 760px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 56px 32px;
 }
 @media (max-width: 720px) {
-  .archive-grid { gap: 40px; }
+  .archive-grid { grid-template-columns: 1fr; gap: 40px; }
 }
 
 .archive-card {
