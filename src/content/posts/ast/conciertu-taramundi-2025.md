@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/ast/conciertu-taramundi-2025/"
 permalink: "/ast/conciertu-taramundi-2025/"
 categories: ["Memoria d’Acciones"]
 tags: ["2025", "conciertu", "llugar emblemáticu", "música de cámara", "Taramundi"]
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01007.jpg"
+featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01048.jpg"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -24,7 +24,7 @@ translation_group: "pll_69b0256754eb0"
 <div class="adar-archive-left">
 
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01007.jpg" alt="Concierto en Taramundi" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01048.jpg" alt="Concierto en Taramundi" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu en Taramundi</h1>

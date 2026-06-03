@@ -130,7 +130,7 @@ var concejos = [
 { year:'2025', title:'Concert at the Monastery of Villanueva de Oscos',                 url:'/en/concert-monastery-villanueva-oscos-2025/',               img:CDN+'adar25fx30/DSC01456.jpg' }
 ]},
 { name:'Taramundi', lat:43.3700, lng:-7.1020, activities:[
-{ year:'2025', title:'Concert in Taramundi',                                            url:'/en/concert-taramundi-2025/',                                 img:CDN+'adar25fx30/DSC01007.jpg' }
+{ year:'2025', title:'Concert in Taramundi',                                            url:'/en/concert-taramundi-2025/',                                 img:CDN+'adar25fx30/DSC01048.jpg' }
 ]},
 { name:'Tineo', lat:43.3305, lng:-6.5055, activities:[
 { year:'2025', title:'Concert at the Monastery of Obona, Tineo',                       url:'/en/concert-monastery-obona-tineo-2025/',                    img:CDN+'adar25fx30/DSC00981.jpg' }

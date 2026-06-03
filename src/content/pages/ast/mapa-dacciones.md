@@ -125,7 +125,7 @@ var concejos = [
 { year:'2025', title:"Conciertu nel Monasteriu de Villanova d'Oscos",                 url:'/ast/conciertu-monasteriu-villanueva-oscos-2025/',           img:CDN+'adar25fx30/DSC01456.jpg' }
 ]},
 { name:'Taramundi', lat:43.3700, lng:-7.1020, activities:[
-{ year:'2025', title:'Conciertu en Taramundi',                                         url:'/ast/conciertu-taramundi-2025/',                              img:CDN+'adar25fx30/DSC01007.jpg' }
+{ year:'2025', title:'Conciertu en Taramundi',                                         url:'/ast/conciertu-taramundi-2025/',                              img:CDN+'adar25fx30/DSC01048.jpg' }
 ]},
 { name:'Tinéu', lat:43.3305, lng:-6.5055, activities:[
 { year:'2025', title:"Conciertu nel Monasteriu d'Obona, Tinéu",                       url:'/ast/conciertu-monasteriu-obona-tineu-2025/',                img:CDN+'adar25fx30/DSC00981.jpg' }

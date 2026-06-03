@@ -6023,10 +6023,14 @@ body.archive .entry-header { display: none; }
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 56px 32px;
+  gap: 40px 24px;
+}
+.archive-memoria .archive-grid {
+  grid-template-columns: repeat(3, 1fr);
 }
 @media (max-width: 720px) {
-  .archive-grid { grid-template-columns: 1fr; gap: 40px; }
+  .archive-grid,
+  .archive-memoria .archive-grid { grid-template-columns: 1fr; gap: 32px; }
 }
 
 .archive-card {
@@ -9228,24 +9232,51 @@ body.page .entry-content .ed-social {
 /* =============================================================
    MEMORIA DE ACCIONES — masthead, search, grouped filters, carousel
    ============================================================= */
-.archive-memoria { padding-top: 120px; }
-@media (max-width: 720px) { .archive-memoria { padding-top: 96px; } }
+/* Memoria de Acciones layout
+   Desktop: 2-column grid (sidebar with filters + 4-col card grid).
+   Mobile (<=720px): single column flow with bottom-sheet filters. */
+.archive-memoria { padding-top: 56px; }
+@media (max-width: 720px) { .archive-memoria { padding-top: 80px; } }
+
+.archive-memoria {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-areas:
+    "mast    mast"
+    "tools   tools"
+    "filters grid";
+  column-gap: 40px;
+  row-gap: 20px;
+}
+.archive-memoria > .archive-mast { grid-area: mast; }
+.archive-memoria > .archive-tools { grid-area: tools; }
+.archive-memoria > .archive-filters,
+.archive-memoria > #archive-filter-sheet { grid-area: filters; }
+.archive-memoria > .archive-grid { grid-area: grid; }
+
+@media (max-width: 720px) {
+  .archive-memoria {
+    display: block;
+    column-gap: 0;
+    row-gap: 0;
+  }
+}
 
 .archive-mast {
   border-bottom: 1px solid var(--ink);
-  padding-bottom: 32px;
-  margin-bottom: 32px;
+  padding-bottom: 14px;
+  margin-bottom: 0;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 8px;
 }
 .archive-mast-eyebrow {
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent-ink);
   background: var(--accent);
-  padding: 4px 10px;
+  padding: 3px 8px;
   width: fit-content;
   margin: 0;
 }
@@ -9253,16 +9284,16 @@ body.page .entry-content .ed-social {
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 500;
-  font-size: clamp(48px, 7vw, 120px);
-  line-height: 0.96;
-  letter-spacing: -0.02em;
+  font-size: clamp(24px, 2.4vw, 36px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
   margin: 0;
   color: var(--ink);
 }
 .archive-mast-lede {
   font-family: var(--font-sans);
-  font-size: clamp(17px, 1.4vw, 22px);
-  line-height: 1.5;
+  font-size: 13px;
+  line-height: 1.45;
   color: var(--ink-soft);
   max-width: 680px;
   margin: 0;
@@ -9307,6 +9338,58 @@ body.page .entry-content .ed-social {
 }
 
 .archive-memoria .archive-pills { margin: 0; }
+
+/* Desktop sidebar — filters always visible, vertical stack, no modal chrome */
+@media (min-width: 721px) {
+  .archive-memoria .archive-filters {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    max-height: none;
+    max-width: none;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    padding: 0;
+    grid-template-rows: none;
+  }
+  .archive-memoria .archive-filter-head,
+  .archive-memoria .archive-filter-foot,
+  .archive-memoria .archive-filter-backdrop { display: none !important; }
+  .archive-memoria .archive-filter-body {
+    overflow: visible;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 100px;
+  }
+  .archive-memoria .archive-filter-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .archive-memoria .archive-filter-label {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+  }
+  .archive-memoria .archive-filter-trigger { display: none; }
+  .archive-memoria .archive-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .archive-memoria .archive-pill { padding: 6px 10px; font-size: 12px; }
+  .archive-memoria .archive-tools {
+    margin: 0;
+    gap: 10px;
+  }
+  .archive-memoria .archive-search { padding: 9px 12px; }
+}
 
 /* Filter trigger button — visible across all viewports, opens sheet */
 .archive-filter-trigger {
