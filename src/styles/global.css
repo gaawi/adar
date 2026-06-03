@@ -9339,58 +9339,6 @@ body.page .entry-content .ed-social {
 
 .archive-memoria .archive-pills { margin: 0; }
 
-/* Desktop sidebar — filters always visible, vertical stack, no modal chrome */
-@media (min-width: 721px) {
-  .archive-memoria .archive-filters {
-    position: static;
-    transform: none;
-    box-shadow: none;
-    max-height: none;
-    max-width: none;
-    margin: 0;
-    background: transparent;
-    border: 0;
-    border-radius: 0;
-    display: block;
-    padding: 0;
-    grid-template-rows: none;
-  }
-  .archive-memoria .archive-filter-head,
-  .archive-memoria .archive-filter-foot,
-  .archive-memoria .archive-filter-backdrop { display: none !important; }
-  .archive-memoria .archive-filter-body {
-    overflow: visible;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    position: sticky;
-    top: 100px;
-  }
-  .archive-memoria .archive-filter-row {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: stretch;
-  }
-  .archive-memoria .archive-filter-label {
-    font-size: 10px;
-    letter-spacing: 0.22em;
-  }
-  .archive-memoria .archive-filter-trigger { display: none; }
-  .archive-memoria .archive-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  .archive-memoria .archive-pill { padding: 6px 10px; font-size: 12px; }
-  .archive-memoria .archive-tools {
-    margin: 0;
-    gap: 10px;
-  }
-  .archive-memoria .archive-search { padding: 9px 12px; }
-}
-
 /* Filter trigger button — visible across all viewports, opens sheet */
 .archive-filter-trigger {
   display: inline-flex;
@@ -9549,6 +9497,60 @@ body.page .entry-content .ed-social {
 
 /* Body scroll lock applies whenever the sheet is open */
 body.archive-sheet-open { overflow: hidden; }
+
+/* Desktop sidebar — placed AFTER the default fixed-sheet rules so the
+   cascade resolves correctly. Filters become a static sidebar on the
+   left of the card grid, modal chrome is hidden. */
+@media (min-width: 721px) {
+  .archive-memoria .archive-filters {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    max-height: none;
+    max-width: none;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    display: block;
+    padding: 0;
+    grid-template-rows: none;
+  }
+  .archive-memoria .archive-filter-head,
+  .archive-memoria .archive-filter-foot,
+  .archive-memoria .archive-filter-backdrop { display: none !important; }
+  .archive-memoria .archive-filter-body {
+    overflow: visible;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 100px;
+  }
+  .archive-memoria .archive-filter-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+  .archive-memoria .archive-filter-label {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+  }
+  .archive-memoria .archive-filter-trigger { display: none; }
+  .archive-memoria .archive-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .archive-memoria .archive-pill { padding: 6px 10px; font-size: 12px; }
+  .archive-memoria .archive-tools {
+    margin: 0;
+    gap: 10px;
+  }
+  .archive-memoria .archive-search { padding: 9px 12px; }
+}
 
 @media (max-width: 720px) {
   .archive-memoria { padding-top: 32px; padding-left: 18px; padding-right: 18px; }

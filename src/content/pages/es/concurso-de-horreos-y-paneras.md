@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/es/concurso-de-horreos-y-paneras/"
 permalink: "/es/concurso-de-horreos-y-paneras/"
 categories: []
 tags: []
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg"
+featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/05_Micro-Concierto_en_Susacasa_Agrocultural/C1543T01.jpg"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
