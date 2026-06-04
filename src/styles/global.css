@@ -4921,9 +4921,10 @@ body.home article.page { margin: 0 !important; }
   text-shadow: 0 2px 24px rgba(0,0,0,0.45);
 }
 .hm-hero-l2 em { font-style: italic; }
-/* Element + class selector (0,1,1) so the rule wins against legacy
-   `.entry-content p { color: var(--ink-soft) }` without !important. */
-p.hm-hero-lede {
+/* Stronger selector (.hm-hero p.hm-hero-lede, 0,2,1) so the rule wins
+   against legacy .entry-content p without !important even if other
+   stylesheets add more rules downstream. */
+.hm-hero p.hm-hero-lede {
   max-width: 560px;
   font-family: var(--font-sans);
   font-size: clamp(16px, 1.3vw, 19px);
@@ -5032,6 +5033,10 @@ p.hm-hero-lede {
   .hm-hero-foot { padding-left: 20px; padding-right: 20px; }
   .hm-hero-l2 { padding-left: 20px; }
   .hm-hero-foot { gap: 16px; flex-wrap: wrap; }
+  /* Push the meta strip down so it clears the floating header logo +
+     newsletter pill. Stronger selector (.hm-hero .hm-hero-meta, 0,2,0)
+     beats any other class-level rule. */
+  .hm-hero .hm-hero-meta { padding-top: 101px; }
 }
 
 /* Mobile: the floating logo + Newsletter pill sit over the same band

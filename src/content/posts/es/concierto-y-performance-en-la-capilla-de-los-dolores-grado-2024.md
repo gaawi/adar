@@ -42,6 +42,10 @@ La Capilla de los Dolores, que el año anterior había acogido un micro conciert
 <p>
 Los músicos del festival interactuaron con la pieza de Williams mientras interpretaban el <em>Duo</em> de Jessie Montgomery, una obra que, con su energía rítmica y su escritura expresiva, encontró en la instalación un complemento visual inesperado. El resultado fue una experiencia multidisciplinar en la que música, arte visual y performance se fundieron en un único gesto artístico.
 </p>
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 28px 0;">
+<iframe src="https://www.youtube.com/embed/nFziarjucPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+</iframe>
+</div>
 </div>
 
 </div>

@@ -51,6 +51,11 @@ La combinación de patrimonio material y sonido en vivo creó una experiencia se
 </p>
 </div>
 
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 28px 0;">
+<iframe src="https://www.youtube.com/embed/mxyQMuZEOpQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+</iframe>
+</div>
+
 <div class="adar-archive-gallery">
 <a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/30.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/30.jpg" loading="lazy"></a>
 <a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/45.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/45.jpg" loading="lazy"></a>

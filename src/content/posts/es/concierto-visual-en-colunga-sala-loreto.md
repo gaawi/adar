@@ -54,6 +54,11 @@ El programa, centrado en la música española con obras de Turina y Granados jun
 </p>
 </div>
 
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 28px 0;">
+<iframe src="https://www.youtube.com/embed/pzcfbGmKnD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+</iframe>
+</div>
+
 <div class="adar-archive-gallery">
 <a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/11_Concierto_visual_en_Colunga_Sala_Loreto/50.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/11_Concierto_visual_en_Colunga_Sala_Loreto/50.jpg" loading="lazy"></a>
 </div>
