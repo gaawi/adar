@@ -1,0 +1,149 @@
+# Filename collisions (same filename referenced from multiple CDN paths)
+# These need manual review — same name does not always mean same file.
+
+
+=== 03.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/03.jpg
+      used in: src/content/posts/ast/conciertu-visual-clausura-lleiguarda-2023.md | src/content/posts/en/closing-visual-concert-leiguarda-2023.md | src/content/posts/es/concierto-visual-de-clausura-en-leiguarda-2023.md
+      proposed: images/memoria-de-acciones/2023-08-13-conciertu-visual-clausura-lleiguarda-2023/03.jpg
+  - /adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg
+      used in: src/content/pages/ast/mapa-dacciones.md | src/content/pages/en/map-of-actions.md | src/content/pages/es/mapa-de-acciones.md | src/content/posts/ast/micro-conciertos-paseu-sonoru-lleiguarda-2024.md | src/content/posts/en/micro-concerts-sound-walk-leiguarda-2024.md | src/content/posts/es/micro-conciertos-y-paseo-sonoro-en-leiguarda.md
+      proposed: images/memoria-de-acciones/2024-08-16-micro-conciertos-paseu-sonoru-lleiguarda-2024/03.jpg
+
+=== 14.jpg (3 variants) ===
+  - /adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/14.jpg
+      used in: src/content/posts/ast/paseu-sonoru-museu-ayalgues-balmonte-2023.md | src/content/posts/en/sound-walk-museo-ayalgas-belmonte-2023.md | src/content/posts/es/paseo-sonoro-en-el-museo-de-las-ayalgas-belmonte-de-miranda-2.md
+      proposed: images/memoria-de-acciones/2023-08-12-paseu-sonoru-museu-ayalgues-balmonte-2023/14.jpg
+  - /adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/14.jpg
+      used in: src/content/posts/ast/micro-conciertos-paseu-sonoru-lleiguarda-2024.md | src/content/posts/en/micro-concerts-sound-walk-leiguarda-2024.md | src/content/posts/es/micro-conciertos-y-paseo-sonoro-en-leiguarda.md
+      proposed: images/memoria-de-acciones/2024-08-16-micro-conciertos-paseu-sonoru-lleiguarda-2024/14.jpg
+  - /adarimages/adar24fx30/16/14.jpg
+      used in: src/content/pages/ast/concursu-dhorreos-y-paneres.md | src/content/pages/ast/impautu-modelu-y-archivu.md | src/content/pages/en/horreos-and-paneras-competition.md | src/content/pages/en/impact-model-and-archive.md | src/content/pages/es/impacto-modelo-y-archivo-del-proyecto-adar.md
+      proposed: images/shared/14.jpg
+
+=== 15.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/15.jpg
+      used in: src/content/posts/ast/paseu-sonoru-museu-ayalgues-balmonte-2023.md | src/content/posts/en/sound-walk-museo-ayalgas-belmonte-2023.md | src/content/posts/es/paseo-sonoro-en-el-museo-de-las-ayalgas-belmonte-de-miranda-2.md
+      proposed: images/memoria-de-acciones/2023-08-12-paseu-sonoru-museu-ayalgues-balmonte-2023/15.jpg
+  - /adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/15.jpg
+      used in: src/content/pages/ast/mapa-dacciones.md | src/content/pages/en/map-of-actions.md | src/content/pages/es/mapa-de-acciones.md | src/content/posts/ast/conciertu-monasteriu-san-antolin-bedon-2024.md | src/content/posts/es/concierto-en-el-monasterio-de-san-antolin-de-bedon.md
+      proposed: images/memoria-de-acciones/2024-08-12-conciertu-monasteriu-san-antolin-bedon-2024/15.jpg
+
+=== 16.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/16.jpg
+      used in: src/content/posts/ast/conciertu-visual-clausura-lleiguarda-2023.md | src/content/posts/en/closing-visual-concert-leiguarda-2023.md | src/content/posts/es/concierto-visual-de-clausura-en-leiguarda-2023.md
+      proposed: images/memoria-de-acciones/2023-08-13-conciertu-visual-clausura-lleiguarda-2023/16.jpg
+  - /adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/16.jpg
+      used in: src/content/posts/ast/conciertu-monasteriu-san-antolin-bedon-2024.md | src/content/posts/es/concierto-en-el-monasterio-de-san-antolin-de-bedon.md
+      proposed: images/memoria-de-acciones/2024-08-12-conciertu-monasteriu-san-antolin-bedon-2024/16.jpg
+
+=== 19.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/19.jpg
+      used in: src/content/posts/ast/conciertu-monasteriu-san-antolin-bedon-2024.md | src/content/posts/es/concierto-en-el-monasterio-de-san-antolin-de-bedon.md
+      proposed: images/memoria-de-acciones/2024-08-12-conciertu-monasteriu-san-antolin-bedon-2024/19.jpg
+  - /adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/19.jpg
+      used in: src/content/posts/ast/micro-conciertos-paseu-sonoru-lleiguarda-2024.md | src/content/posts/en/micro-concerts-sound-walk-leiguarda-2024.md | src/content/posts/es/micro-conciertos-y-paseo-sonoro-en-leiguarda.md
+      proposed: images/memoria-de-acciones/2024-08-16-micro-conciertos-paseu-sonoru-lleiguarda-2024/19.jpg
+
+=== 20.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/20.jpg
+      used in: src/content/posts/ast/conciertu-monasteriu-san-antolin-bedon-2024.md | src/content/posts/es/concierto-en-el-monasterio-de-san-antolin-de-bedon.md
+      proposed: images/memoria-de-acciones/2024-08-12-conciertu-monasteriu-san-antolin-bedon-2024/20.jpg
+  - /adarimages/ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/20.jpg
+      used in: src/content/pages/ast/mapa-dacciones.md | src/content/pages/en/map-of-actions.md | src/content/pages/es/mapa-de-acciones.md | src/content/posts/ast/conciertu-miranda-valdecarzana-grau-2024.md | src/content/posts/en/concert-miranda-valdecarzana-grado-2024.md | src/content/posts/es/concierto-en-el-palacio-de-miranda-valdecarzana-grado-2024-2.md
+      proposed: images/memoria-de-acciones/2024-08-17-conciertu-miranda-valdecarzana-grau-2024/20.jpg
+
+=== C1570T01.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2025/05_Micro-Concierto_en_Susacasa_Agrocultural/C1570T01.jpg
+      used in: src/content/posts/ast/micro-conciertu-susacasa-agrocultural-gozon-2025.md | src/content/posts/en/micro-concert-susacasa-agrocultural-gozon-2025.md | src/content/posts/es/micro-concierto-en-susacasa-agrocultural.md
+      proposed: images/memoria-de-acciones/2025-08-05-micro-conciertu-susacasa-agrocultural-gozon-2025/c1570t01.jpg
+  - /adarimages/adar25fx30/C1570T01.jpg
+      used in: src/content/pages/ast/artistes.md | src/content/pages/en/artists.md | src/content/pages/es/artistas.md
+      proposed: images/artists/c1570t01.jpg
+
+=== C1927T01.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg
+      used in: src/content/pages/ast/mapa-dacciones.md | src/content/pages/en/map-of-actions.md | src/content/pages/es/mapa-de-acciones.md | src/content/posts/ast/paseu-sonoru-lleiguarda-2025.md | src/content/posts/en/sound-walk-leiguarda-2025.md | src/content/posts/es/paseo-sonoro-en-leiguarda.md
+      proposed: images/memoria-de-acciones/2025-08-09-paseu-sonoru-lleiguarda-2025/c1927t01.jpg
+  - /adarimages/adar25fx30/C1927T01.jpg
+      used in: src/content/pages/ast/residencias-artisticas-adar-2.md | src/content/pages/ast/residencies-artistiques-adar.md | src/content/pages/en/adar-artistic-residencies.md | src/content/pages/es/residencias-artisticas-adar.md
+      proposed: images/residencies/c1927t01.jpg
+
+=== IMG_0203.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/IMG_0203.jpg
+      used in: src/content/posts/ast/conciertu-monasteriu-san-antolin-bedon-2024.md | src/content/posts/es/concierto-en-el-monasterio-de-san-antolin-de-bedon.md
+      proposed: images/memoria-de-acciones/2024-08-12-conciertu-monasteriu-san-antolin-bedon-2024/img-0203.jpg
+  - /adarimages/adar24fx30/12/IMG_0203.jpg
+      used in: src/content/pages/ast/mapa-dacciones.md | src/content/pages/en/map-of-actions.md | src/content/pages/es/mapa-de-acciones.md | src/content/posts/ast/conciertu-monasteriu-san-salvador-cornellana-2024.md | src/content/posts/en/concert-monastery-san-salvador-cornellana-2024.md | src/content/posts/es/concierto-en-el-monasterio-de-san-salvador-cornellana-2.md
+      proposed: images/memoria-de-acciones/2024-08-13-conciertu-monasteriu-san-salvador-cornellana-2024/img-0203.jpg
+
+=== PXL_20220809_191210314.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2022/08_Concierto_visual_en_El_Franco/PXL_20220809_191210314.jpg
+      used in: src/content/posts/ast/conciertu-visual-el-francu-2022.md | src/content/posts/en/visual-concert-el-franco-2022.md | src/content/posts/es/concierto-visual-en-el-franco-2.md
+      proposed: images/memoria-de-acciones/2022-08-08-conciertu-visual-el-francu-2022/pxl-20220809-191210314.jpg
+  - /adarimages/ADAR_Eventos/2022/09_Concierto_visual_en_Soto_del_Barco/PXL_20220809_191210314.jpg
+      used in: src/content/posts/ast/conciertu-visual-sotu-del-barcu-2022.md | src/content/posts/en/visual-concert-soto-del-barco-2022.md | src/content/posts/es/concierto-visual-en-soto-del-barco-2.md
+      proposed: images/memoria-de-acciones/2022-08-09-conciertu-visual-sotu-del-barcu-2022/pxl-20220809-191210314.jpg
+
+=== PXL_20220813_175723812.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/PXL_20220813_175723812.jpg
+      used in: src/content/posts/ast/conciertu-inauguracion-lleiguarda-2021-ast-copy.md | src/content/posts/ast/conciertu-inauguracion-lleiguarda-2021.md | src/content/posts/en/opening-concert-in-leiguarda-2.md | src/content/posts/en/opening-concert-leiguarda-2021.md | src/content/posts/es/concierto-de-inauguracion-en-leiguarda-2.md
+      proposed: images/memoria-de-acciones/2026-03-10-conciertu-inauguracion-lleiguarda-2021-ast-copy/pxl-20220813-175723812.jpg
+  - /adarimages/Festival%20ADAR%20Photos/2022/concierto%20belmonte/PXL_20220813_175723812.jpg
+      used in: src/content/pages/ast/mapa-dacciones.md | src/content/pages/en/map-of-actions.md | src/content/pages/es/mapa-de-acciones.md | src/content/posts/ast/conciertu-clausura-balmonte-2022.md | src/content/posts/en/closing-concert-belmonte-2022.md | src/content/posts/es/concierto-de-clausura-en-belmonte-de-miranda-2022.md
+      proposed: images/memoria-de-acciones/2022-08-13-conciertu-clausura-balmonte-2022/pxl-20220813-175723812.jpg
+
+=== capilla.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2024/17_Concierto_y_performance_en_la_Capilla_de_los_Dolores/capilla.jpg
+      used in: src/content/pages/ast/mapa-dacciones.md | src/content/pages/en/map-of-actions.md | src/content/pages/es/mapa-de-acciones.md
+      proposed: images/map/capilla.jpg
+  - /adarimages/capilla.jpg
+      used in: src/content/posts/ast/conciertu-performance-capilla-dolores-grau-2024.md | src/content/posts/en/concert-performance-capilla-dolores-grado-2024.md | src/content/posts/es/concierto-y-performance-en-la-capilla-de-los-dolores-grado-2024.md
+      proposed: images/memoria-de-acciones/2024-08-17-conciertu-performance-capilla-dolores-grau-2024/capilla.jpg
+
+=== image01.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2024/05_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/image01.jpg
+      used in: src/content/posts/ast/prensa-ayto-llanes-bedon-2024-ast.md | src/content/posts/en/prensa-ayto-llanes-bedon-2024-en.md | src/content/posts/es/prensa-ayto-llanes-bedon-2024.md
+      proposed: images/news/2024-08-08-prensa-ayto-llanes-bedon-2024-ast/image01.jpg
+  - /adarimages/ADAR_Eventos/2024/16_Instalacion_Sarah_K_Williams_Leiguarda/image01.jpg
+      used in: src/components/home/Home.astro | src/content/posts/ast/prensa-elcomercio-revitalizar-2024-ast.md | src/content/posts/ast/prensa-lne-despliega-belmonte-2024-ast.md | src/content/posts/ast/prensa-lne-horreos-2025-ast.md | src/content/posts/en/prensa-elcomercio-revitalizar-2024-en.md | src/content/posts/en/prensa-lne-despliega-belmonte-2024-en.md
+      proposed: images/news/2024-08-07-prensa-elcomercio-revitalizar-2024-ast/image01.jpg
+
+=== image5.jpg (2 variants) ===
+  - /adarimages/ADAR_Eventos/2022/12_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2022/image5.jpg
+      used in: src/content/posts/ast/conciertu-miranda-valdecarzana-grau-2022.md | src/content/posts/en/concert-miranda-valdecarzana-grado-2022.md | src/content/posts/es/concierto-en-el-palacio-de-miranda-valdecarzana-grado-2022.md
+      proposed: images/memoria-de-acciones/2022-08-12-conciertu-miranda-valdecarzana-grau-2022/image5.jpg
+  - /adarimages/Festival%20ADAR%20Photos/2023/06%20concierto%20grado/image5.jpg
+      used in: src/content/pages/ast/mapa-dacciones.md | src/content/pages/en/map-of-actions.md | src/content/pages/es/mapa-de-acciones.md | src/content/posts/ast/conciertu-miranda-valdecarzana-grau-2023.md | src/content/posts/en/concert-miranda-valdecarzana-grado-2023.md | src/content/posts/es/concierto-en-el-palacio-de-miranda-valdecarzana-grado-2023-2.md
+      proposed: images/memoria-de-acciones/2023-08-10-conciertu-miranda-valdecarzana-grau-2023/image5.jpg
+
+=== paradores.jpg (2 variants) ===
+  - /logos/paradores.jpg
+      used in: src/components/Footer.astro | src/components/home/Home.astro
+      proposed: images/logos/paradores.jpg
+  - /adarimages/paradores.jpg
+      used in: src/content/pages/ast/partners.md | src/content/pages/en/partners-2.md | src/content/pages/es/red-de-colaboracion.md
+      proposed: images/logos/paradores.jpg
+
+
+# Cross-section reuse (same URL used across multiple top-level sections)
+# Candidates for /images/shared/.
+
+  - https://creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg
+      used in: src/content/pages/ast/artistes.md | src/content/pages/ast/equipu.md | src/content/pages/en/team.md | src/content/pages/es/artistas.md | src/content/pages/es/equipo.md
+      proposed: images/shared/094.jpeg
+  - https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_0673.webp
+      used in: src/content/pages/ast/compositor-en-residencia.md | src/content/pages/ast/sede.md | src/content/pages/en/festival-adar-2026-composer-in-residence-open-call.md | src/content/pages/es/compositor-residente.md
+      proposed: images/shared/img-0673.webp
+  - https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp
+      used in: src/content/pages/ast/compositor-en-residencia.md | src/content/pages/ast/sede.md | src/content/pages/en/festival-adar-2026-composer-in-residence-open-call.md | src/content/pages/en/headquarters.md | src/content/pages/es/compositor-residente.md | src/content/pages/es/sedes.md
+      proposed: images/shared/img-3424.webp
+  - https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3429.webp
+      used in: src/content/pages/ast/compositor-en-residencia.md | src/content/pages/ast/sede.md | src/content/pages/en/festival-adar-2026-composer-in-residence-open-call.md | src/content/pages/es/compositor-residente.md
+      proposed: images/shared/img-3429.webp
+  - https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png
+      used in: src/content/pages/ast/artistes.md | src/content/pages/ast/equipu.md | src/content/pages/en/team.md | src/content/pages/es/artistas.md | src/content/pages/es/equipo.md
+      proposed: images/shared/about-guillermo.png
+  - https://creartbox-media-cdn.b-cdn.net/adarimages/adar24fx30/16/14.jpg
+      used in: src/content/pages/ast/concursu-dhorreos-y-paneres.md | src/content/pages/ast/impautu-modelu-y-archivu.md | src/content/pages/en/horreos-and-paneras-competition.md | src/content/pages/en/impact-model-and-archive.md | src/content/pages/es/impacto-modelo-y-archivo-del-proyecto-adar.md
+      proposed: images/shared/14.jpg
