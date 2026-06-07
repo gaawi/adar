@@ -4933,6 +4933,12 @@ body.home article.page { margin: 0 !important; }
   color: #fff;
   text-shadow: 0 1px 12px rgba(0,0,0,0.55);
 }
+/* (0,3,1) so we beat body.page .entry-content p (0,2,2) on the home page,
+   which would otherwise force the lede to var(--ink-soft) dark grey. */
+.entry-content .hm-hero p.hm-hero-lede {
+  color: #fff;
+  max-width: 560px;
+}
 
 .hm-hero-foot {
   display: flex;
