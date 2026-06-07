@@ -7539,7 +7539,7 @@ body.has-floating-header.is-scrolled header.site-header.cd-header .adar-nav-togg
 body.has-floating-header .page-hero,
 body.has-floating-header .hm-hero {
   margin-top: -88px;          /* cd-main height */
-  padding-top: 144px;          /* cd-main + 56px breathing room */
+  padding-top: 220px;          /* cd-status (36) + cd-main (88) + margin pull (88) + 8px breathing */
 }
 @media (max-width: 720px) {
   body.has-floating-header .page-hero,
