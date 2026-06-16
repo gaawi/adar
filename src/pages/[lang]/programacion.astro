@@ -18,10 +18,11 @@ const COPY = {
     edition_eyebrow: 'Próxima edición',
     edition_kicker: 'Edición VI · Verano 2026',
     edition_h_pre: 'La sexta edición',
-    edition_h_em: 'se anunciará',
-    edition_h_post: 'pronto.',
+    edition_h_em: 'ya tiene programa.',
+    edition_h_post: '',
     edition_lede:
-      'El programa completo de la edición 2026 estará disponible en mayo. Mientras tanto, las convocatorias abiertas, las residencias y los encargos ya están en marcha.',
+      'Diez días de música, paseos sonoros e instalaciones por el medio rural asturiano del 5 al 16 de agosto de 2026. Consulta el programa completo, fotos de cada sede y reserva tu plaza en Eventbrite.',
+    edition_cta_program: 'Ver programa 2026 completo',
     open_calls: 'Convocatorias abiertas',
     cta_contact: 'Hablar con la oficina',
     cta_news: 'Recibir el programa por correo',
@@ -50,10 +51,11 @@ const COPY = {
     edition_eyebrow: 'Next edition',
     edition_kicker: 'Edition VI · Summer 2026',
     edition_h_pre: 'The sixth edition',
-    edition_h_em: 'will be announced',
-    edition_h_post: 'soon.',
+    edition_h_em: 'has a programme.',
+    edition_h_post: '',
     edition_lede:
-      'The full 2026 programme is published in May. Open calls, residencies and commissions for this edition are already in motion.',
+      'Ten days of music, sound walks and installations across rural Asturias, 5 — 16 August 2026. See the full schedule, venue photos and book your seat on Eventbrite.',
+    edition_cta_program: 'See the full 2026 programme',
     open_calls: 'Open calls',
     cta_contact: 'Speak with the office',
     cta_news: 'Receive the programme by email',
@@ -82,10 +84,11 @@ const COPY = {
     edition_eyebrow: 'Próxima edición',
     edition_kicker: 'Edición VI · Branu 2026',
     edition_h_pre: 'La sesta edición',
-    edition_h_em: 'va anunciase',
-    edition_h_post: 'aína.',
+    edition_h_em: 'ya tien programa.',
+    edition_h_post: '',
     edition_lede:
-      'El programa completu de la edición 2026 publícase en mayu. Mentanto, les convocatories, les residencies y los encargos d’esta edición ya tán en marcha.',
+      'Diez díes de música, paseos sonoros ya instalaciones pel mediu rural asturianu del 5 al 16 d’agostu de 2026. Consulta’l programa completu, fotos de cada sede ya reserva la to plaza en Eventbrite.',
+    edition_cta_program: 'Ver programa 2026 completu',
     open_calls: 'Convocatories abiertes',
     cta_contact: 'Falar cola oficina',
     cta_news: 'Recibir el programa per corréu',
@@ -304,16 +307,14 @@ const titleByLang = COPY.title;
       </h1>
       <p class="prog-current-lede">{COPY.edition_lede}</p>
       <div class="prog-current-ctas">
-        <a class="prog-current-cta"
+        <a class="prog-current-cta" href={`/${lang}/programa-2026/`}>
+          <span class="prog-arr">→</span>
+          {COPY.edition_cta_program}
+        </a>
+        <a class="prog-current-cta prog-current-cta-ghost"
            href="mailto:leiguardamusic@gmail.com?subject=Suscripci%C3%B3n%20al%20bolet%C3%ADn%20Festival%20ADAR&body=Hola%2C%20me%20gustar%C3%ADa%20recibir%20el%20programa%20de%20la%20pr%C3%B3xima%20edici%C3%B3n%20del%20Festival%20ADAR.">
           <span class="prog-arr">→</span>
           {COPY.follow_email_cta}
-        </a>
-        <a class="prog-current-cta prog-current-cta-ghost"
-           href={`https://instagram.com/festivaladar`}
-           target="_blank" rel="noopener">
-          <span class="prog-arr">→</span>
-          Instagram
         </a>
       </div>
     </div>
