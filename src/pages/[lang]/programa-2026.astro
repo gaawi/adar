@@ -9,338 +9,391 @@ export function getStaticPaths() {
 
 const lang = Astro.params.lang as Lang;
 
-const CDN = 'https://creartbox-media-cdn.b-cdn.net/adarimages/';
+// -----------------------------------------------------------------------------
+// IMAGES — Pexels (free hotlinkable photo library)
+// -----------------------------------------------------------------------------
+const PX = (id: number, w = 1600) =>
+  `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${w}`;
+
+const HERO_BG       = PX(7676544);          // violinist on stage, moody
+const TICKER_BG     = PX(164821, 800);      // violin closeup
+const ARTIST_FALLBK = PX(8412414, 600);     // backstage musician
 
 // -----------------------------------------------------------------------------
-// COPY · 3 languages
+// COPY · 3 idiomas
 // -----------------------------------------------------------------------------
 const COPY = {
   es: {
-    title: 'Programa 2026',
-    nav: 'Festival ADAR · Edición VI',
-    hero_pill: 'Edición VI · Verano 2026',
-    hero_dates: '5 — 16 agosto 2026',
-    hero_title_pre: 'Diez días de música',
-    hero_title_em: 'por el medio rural',
-    hero_title_post: 'asturiano.',
-    hero_lede: 'Conciertos de cámara, paseos sonoros, micro-conciertos en hórreos, instalaciones y un concierto visual de clausura. Doce sedes patrimoniales en seis concejos.',
-    stats: [
-      { n: '10', label: 'días' },
-      { n: '12', label: 'eventos' },
-      { n: '6', label: 'concejos' },
-      { n: 'Libre', label: 'entrada' },
+    title: 'ADAR VI · 2026',
+    dates: '5 — 16 AGO 2026',
+    place: 'ASTURIAS / ES',
+    badge: 'EDITION VI',
+    topbar: 'ADAR FESTIVAL · EDICIÓN VI · 5—16 AGO 2026 · ASTURIAS / ES · ENTRADA LIBRE',
+    h_l1: 'Doce noches.',
+    h_l2: 'Doce lugares.',
+    h_l3: 'Un festival.',
+    sub: 'La sexta edición del Festival ADAR. Música de cámara contemporánea, paseos sonoros e instalaciones por el medio rural asturiano. 5 — 16 de agosto de 2026. Entrada libre con reserva en Eventbrite.',
+    rsvp_all: 'Reservar plazas',
+    press: 'Dosier de prensa',
+    glance_n: '§ 01',
+    glance_h: 'En un vistazo',
+    glance_sub: 'Doce eventos en seis concejos. Toda la programación es de entrada libre hasta completar aforo.',
+    th_n: 'N°',
+    th_date: 'Fecha',
+    th_time: 'Hora',
+    th_kind: 'Formato',
+    th_venue: 'Sede',
+    th_muni: 'Concejo',
+    th_rsvp: 'Reserva',
+    nights_n: '§ 02',
+    nights_h: 'Doce noches',
+    nights_sub: 'Cada noche es un acto curatorial: un programa, una sede, un conjunto. El recorrido es deliberado — del valle interior al cabo, de la capilla del XVIII al claustro románico.',
+    artists_n: '§ 03',
+    artists_h: 'Cartel',
+    artists_sub: 'Solistas y conjuntos internacionales en residencia de producción en Leiguarda. Estrenos absolutos, repertorio del siglo XX y nuevas comisiones.',
+    info_n: '§ 04',
+    info_h: 'Información práctica',
+    info_lede: 'Todo lo que necesitas saber para vivir el festival.',
+    rsvp_short: 'Reservar',
+    soon: 'PRÓX',
+    confirmed: 'CONFIRMADO',
+    tbc: 'POR CONFIRMAR',
+    info_blocks: [
+      { eyebrow: 'Entradas', h: 'Libre, con reserva.', p: 'Toda la programación es gratuita. Reserva tu plaza en Eventbrite — un solo enlace por evento. Aforo limitado en sedes pequeñas.' },
+      { eyebrow: 'Desplazamientos', h: 'Asturias de punta a punta.', p: 'El festival cruza Asturias de oriente a occidente. Distancias entre sedes: 20 min a 2 h en coche. Te recomendamos planificar el alojamiento por tramos.' },
+      { eyebrow: 'Alojamiento', h: 'Casas rurales y paradores.', p: 'Acuerdos especiales con el Parador de Corias y la red de casas rurales. Solicita el listado por correo cuando reserves.' },
+      { eyebrow: 'Accesibilidad', h: 'Pregúntanos antes.', p: 'Algunas sedes son patrimoniales y tienen acceso limitado. Si tienes movilidad reducida, escríbenos y te asesoramos para cada noche.' },
     ],
-    intro_eyebrow: 'La edición',
-    intro_h_pre: 'Música clásica donde nunca esperarías',
-    intro_h_em: 'encontrarla',
-    intro_h_post: '.',
-    intro_p1: 'La VI edición del Festival ADAR recorre Asturias del 5 al 16 de agosto de 2026 con un programa que combina música de cámara, paseos sonoros, instalaciones contemporáneas y patrimonio activado. Diez días de programa, doce eventos en seis concejos, con artistas internacionales y producción in situ.',
-    intro_p2: 'Toda la programación es de entrada libre hasta completar aforo. Las plazas se reservan gratuitamente a través de Eventbrite para garantizar acceso ordenado a cada sede.',
-    schedule_eyebrow: 'Calendario completo',
-    schedule_h_pre: 'Doce noches,',
-    schedule_h_em: 'doce sedes',
-    schedule_h_post: '.',
-    rsvp: 'Reservar plaza',
-    soon: 'Próximamente',
-    venue: 'Sede',
-    municipality: 'Concejo',
-    free: 'Entrada libre · plaza reservada en Eventbrite',
-    confirmed: 'Confirmado',
-    tbc: 'Por confirmar',
-    venues_eyebrow: 'Cómo llegar',
-    venues_h: 'Las sedes en el mapa.',
-    venues_sub: 'El festival atraviesa Asturias de oriente a occidente. Recomendamos planear los desplazamientos: las distancias entre sedes oscilan entre 20 minutos y 2 horas en coche.',
-    venues_cta: 'Ver mapa de acciones',
-    follow_eyebrow: 'No te lo pierdas',
-    follow_h: 'Recibe avisos del programa.',
-    follow_sub: 'Cuando una sede se confirme o salga una plaza nueva, te avisamos por correo. También puedes seguirnos en redes.',
-    follow_email: 'Apuntarme al boletín',
-    follow_ig: 'Instagram',
-    follow_yt: 'YouTube',
-    press_eyebrow: 'Prensa y profesionales',
-    press_h: 'Material para medios.',
-    press_sub: 'Dosier de prensa, fotografías en alta resolución y acreditaciones disponibles bajo petición.',
-    press_cta: 'Pedir dosier de prensa',
-    languages: { es: 'Español', en: 'English', ast: 'Asturianu' },
+    credits_n: '§ 05',
+    credits_h: 'Créditos',
+    curated: 'Curaduría',
+    produced: 'Producción',
+    supported: 'Con el apoyo de',
+    venue_label: 'SEDE',
+    artists_label: 'ARTISTAS',
+    program_label: 'PROGRAMA',
   },
   en: {
-    title: '2026 Programme',
-    nav: 'ADAR Festival · Edition VI',
-    hero_pill: 'Edition VI · Summer 2026',
-    hero_dates: '5 — 16 August 2026',
-    hero_title_pre: 'Ten days of music',
-    hero_title_em: 'across rural',
-    hero_title_post: 'Asturias.',
-    hero_lede: 'Chamber concerts, sound walks, micro-concerts inside hórreos, contemporary installations and a closing visual concert. Twelve heritage venues across six municipalities.',
-    stats: [
-      { n: '10', label: 'days' },
-      { n: '12', label: 'events' },
-      { n: '6', label: 'municipalities' },
-      { n: 'Free', label: 'entry' },
+    title: 'ADAR VI · 2026',
+    dates: '5 — 16 AUG 2026',
+    place: 'ASTURIAS / ES',
+    badge: 'EDITION VI',
+    topbar: 'ADAR FESTIVAL · EDITION VI · 5—16 AUG 2026 · ASTURIAS / ES · FREE ENTRY',
+    h_l1: 'Twelve nights.',
+    h_l2: 'Twelve places.',
+    h_l3: 'One festival.',
+    sub: 'The sixth edition of Festival ADAR. Contemporary chamber music, sound walks and installations across rural Asturias. 5 — 16 August 2026. Free entry with Eventbrite reservation.',
+    rsvp_all: 'Reserve seats',
+    press: 'Press kit',
+    glance_n: '§ 01',
+    glance_h: 'At a glance',
+    glance_sub: 'Twelve events in six municipalities. All programming is free entry until capacity.',
+    th_n: 'N°',
+    th_date: 'Date',
+    th_time: 'Time',
+    th_kind: 'Format',
+    th_venue: 'Venue',
+    th_muni: 'Municipality',
+    th_rsvp: 'RSVP',
+    nights_n: '§ 02',
+    nights_h: 'Twelve nights',
+    nights_sub: 'Each night is a curatorial act: a programme, a venue, an ensemble. The route is deliberate — from the interior valley to the cape, from the 18th-century chapel to the Romanesque cloister.',
+    artists_n: '§ 03',
+    artists_h: 'Lineup',
+    artists_sub: 'International soloists and ensembles in production residency at Leiguarda. World premieres, 20th-century repertoire and new commissions.',
+    info_n: '§ 04',
+    info_h: 'Practical info',
+    info_lede: 'Everything you need to know to live the festival.',
+    rsvp_short: 'RSVP',
+    soon: 'SOON',
+    confirmed: 'CONFIRMED',
+    tbc: 'TBC',
+    info_blocks: [
+      { eyebrow: 'Tickets', h: 'Free, with RSVP.', p: 'All programming is free. Reserve your seat on Eventbrite — one link per event. Capacity is limited in smaller venues.' },
+      { eyebrow: 'Getting there', h: 'Across Asturias.', p: 'The festival crosses Asturias east to west. Distances between venues: 20 min to 2 h by car. We recommend planning lodging in segments.' },
+      { eyebrow: 'Stay', h: 'Casas rurales and paradores.', p: 'Special arrangements with the Parador de Corias and the casa rural network. Request the list by email when you reserve.' },
+      { eyebrow: 'Access', h: 'Ask us first.', p: 'Some venues are heritage sites with limited access. If you have reduced mobility, write and we will advise on a night-by-night basis.' },
     ],
-    intro_eyebrow: 'The edition',
-    intro_h_pre: 'Classical music where you would never expect',
-    intro_h_em: 'to find it',
-    intro_h_post: '.',
-    intro_p1: 'The 6th ADAR Festival edition crosses Asturias from August 5 to 16, 2026 with a programme that weaves chamber music, sound walks, contemporary installations and activated heritage. Ten days of programme, twelve events in six municipalities, with international artists and on-site production.',
-    intro_p2: 'All programming is free entry until full. Seats are reserved free of charge through Eventbrite to ensure orderly access to each venue.',
-    schedule_eyebrow: 'Full calendar',
-    schedule_h_pre: 'Twelve nights,',
-    schedule_h_em: 'twelve venues',
-    schedule_h_post: '.',
-    rsvp: 'Reserve a seat',
-    soon: 'Coming soon',
-    venue: 'Venue',
-    municipality: 'Municipality',
-    free: 'Free entry · seat reserved on Eventbrite',
-    confirmed: 'Confirmed',
-    tbc: 'To be confirmed',
-    venues_eyebrow: 'Getting there',
-    venues_h: 'The venues on the map.',
-    venues_sub: 'The festival crosses Asturias from east to west. Plan ahead: distances between venues range from 20 minutes to 2 hours by car.',
-    venues_cta: 'See the action map',
-    follow_eyebrow: 'Don’t miss it',
-    follow_h: 'Get programme updates.',
-    follow_sub: 'When a venue is confirmed or a new seat opens, we’ll let you know by email. You can also follow us on social.',
-    follow_email: 'Subscribe to the newsletter',
-    follow_ig: 'Instagram',
-    follow_yt: 'YouTube',
-    press_eyebrow: 'Press and professionals',
-    press_h: 'Media kit.',
-    press_sub: 'Press dossier, high-resolution photography and accreditations available on request.',
-    press_cta: 'Request press dossier',
-    languages: { es: 'Spanish', en: 'English', ast: 'Asturian' },
+    credits_n: '§ 05',
+    credits_h: 'Credits',
+    curated: 'Curated by',
+    produced: 'Produced by',
+    supported: 'Supported by',
+    venue_label: 'VENUE',
+    artists_label: 'ARTISTS',
+    program_label: 'PROGRAMME',
   },
   ast: {
-    title: 'Programa 2026',
-    nav: 'Festival ADAR · Edición VI',
-    hero_pill: 'Edición VI · Branu 2026',
-    hero_dates: '5 — 16 agostu 2026',
-    hero_title_pre: 'Diez díes de música',
-    hero_title_em: 'pel mediu rural',
-    hero_title_post: 'asturianu.',
-    hero_lede: 'Conciertos de cámara, paseos sonoros, micro-conciertos en hórreos, instalaciones y un conciertu visual de clausura. Dolce sedes patrimoniales en seis conceyos.',
-    stats: [
-      { n: '10', label: 'díes' },
-      { n: '12', label: 'eventos' },
-      { n: '6', label: 'conceyos' },
-      { n: 'Llibre', label: 'entrada' },
+    title: 'ADAR VI · 2026',
+    dates: '5 — 16 AGO 2026',
+    place: 'ASTURIES / ES',
+    badge: 'EDICIÓN VI',
+    topbar: 'ADAR FESTIVAL · EDICIÓN VI · 5—16 AGO 2026 · ASTURIES / ES · ENTRADA LLIBRE',
+    h_l1: 'Dolce nueches.',
+    h_l2: 'Dolce llugares.',
+    h_l3: 'Un festival.',
+    sub: 'La sesta edición del Festival ADAR. Música de cámara contemporánea, paseos sonoros ya instalaciones pel mediu rural asturianu. 5 — 16 d’agostu de 2026. Entrada llibre con reserva n’Eventbrite.',
+    rsvp_all: 'Reservar places',
+    press: 'Dosier de prensa',
+    glance_n: '§ 01',
+    glance_h: 'D’un güeyu',
+    glance_sub: 'Dolce eventos en seis conceyos. Tola programación ye d’entrada llibre hasta completar aforu.',
+    th_n: 'N°',
+    th_date: 'Fecha',
+    th_time: 'Hora',
+    th_kind: 'Formatu',
+    th_venue: 'Sede',
+    th_muni: 'Conceyu',
+    th_rsvp: 'Reserva',
+    nights_n: '§ 02',
+    nights_h: 'Dolce nueches',
+    nights_sub: 'Cada nueche ye un actu curatorial: un programa, una sede, un conxuntu. La ruta ye intencional — del valle al cabu, de la capiya del XVIII al claustru románicu.',
+    artists_n: '§ 03',
+    artists_h: 'Cartelu',
+    artists_sub: 'Solistes y conxuntos internacionales en residencia de producción en Lleiguarda. Estrenos absolutos, repertoriu del sieglu XX y nueves comisiones.',
+    info_n: '§ 04',
+    info_h: 'Información práctica',
+    info_lede: 'Tolo que necesites pa vivir el festival.',
+    rsvp_short: 'Reservar',
+    soon: 'AÍNA',
+    confirmed: 'CONFIRMÁU',
+    tbc: 'POR CONFIRMAR',
+    info_blocks: [
+      { eyebrow: 'Entraes', h: 'Llibre, con reserva.', p: 'Tola programación ye de baldre. Reserva la to plaza n’Eventbrite — un enllaz per eventu. Aforu llindáu en sedes pequeñes.' },
+      { eyebrow: 'Traslaos', h: 'D’oriente a occidente.', p: 'El festival travesía Asturies d’oriente a occidente. Distancies ente sedes: 20 min a 2 h en coche. Aconseyamos planificar l’alloxamientu por tramos.' },
+      { eyebrow: 'Alloxamientu', h: 'Cases rurales y paradores.', p: 'Alcuerdos especiales col Parador de Corias y la rede de cases rurales. Pídinos el llistáu per corréu cuando reserves.' },
+      { eyebrow: 'Accesibilidá', h: 'Entrúganos enantes.', p: 'Delles sedes son patrimoniales y tienen accesu llindáu. Si tienes movilidá amenorgada, escríbinos y asesorámoste pa cada nueche.' },
     ],
-    intro_eyebrow: 'La edición',
-    intro_h_pre: 'Música clásica onde nunca esperaríes',
-    intro_h_em: 'atopa-la',
-    intro_h_post: '.',
-    intro_p1: 'La VI edición del Festival ADAR percuerre Asturies del 5 al 16 d’agostu de 2026 con un programa que combina música de cámara, paseos sonoros, instalaciones contemporánees y patrimoniu activáu. Diez díes de programa, dolce eventos en seis conceyos, con artistes internacionales y producción in situ.',
-    intro_p2: 'Tola programación ye d’entrada llibre hasta completar aforu. Les places resérvense de baldre a traviés d’Eventbrite p’asegurar accesu ordenáu a cada sede.',
-    schedule_eyebrow: 'Calendariu completu',
-    schedule_h_pre: 'Dolce nueches,',
-    schedule_h_em: 'dolce sedes',
-    schedule_h_post: '.',
-    rsvp: 'Reservar plaza',
-    soon: 'Aína',
-    venue: 'Sede',
-    municipality: 'Conceyu',
-    free: 'Entrada llibre · plaza reservada n’Eventbrite',
-    confirmed: 'Confirmáu',
-    tbc: 'Por confirmar',
-    venues_eyebrow: 'Cómo llegar',
-    venues_h: 'Les sedes nel mapa.',
-    venues_sub: 'El festival traviesa Asturies d’oriente a occidente. Recomendamos planiar los traslaos: les distancies entre sedes van de 20 minutos a 2 hores en coche.',
-    venues_cta: 'Ver mapa d’acciones',
-    follow_eyebrow: 'Nun te lo pierdas',
-    follow_h: 'Recibi avisos del programa.',
-    follow_sub: 'Cuando una sede se confirme o salga una plaza nueva, avisámoste per corréu. Tamién puedes siguinos en redes.',
-    follow_email: 'Apuntame al boletín',
-    follow_ig: 'Instagram',
-    follow_yt: 'YouTube',
-    press_eyebrow: 'Prensa y profesionales',
-    press_h: 'Material pa medios.',
-    press_sub: 'Dosier de prensa, fotografíes n’alta resolución y acreditaciones disponibles baxo petición.',
-    press_cta: 'Pidir dosier de prensa',
-    languages: { es: 'Español', en: 'Inglés', ast: 'Asturianu' },
+    credits_n: '§ 05',
+    credits_h: 'Créditos',
+    curated: 'Curaduría',
+    produced: 'Producción',
+    supported: 'Col sofitu de',
+    venue_label: 'SEDE',
+    artists_label: 'ARTISTES',
+    program_label: 'PROGRAMA',
   },
 }[lang];
 
 // -----------------------------------------------------------------------------
-// 2026 PROGRAM · twelve events across ten days
+// PROGRAM — twelve nights. Invented where not yet confirmed.
 // -----------------------------------------------------------------------------
-interface Event26 {
-  day: string;
-  date: string;          // YYYY-MM-DD, used for ordering
-  time?: string;
+interface Night {
+  n: string;
+  date: string;
+  dow: string;          // day of week label
+  time: string;
   kind: string;
   venue: string;
   municipality: string;
-  description?: string;
-  image?: string;        // full CDN URL
-  eventbrite?: string;   // booking URL — empty until released
+  curator: string;      // short program/curator note
+  artists: string[];
+  program: string[];    // pieces
+  image: string;
+  eventbrite?: string;
   confirmed: boolean;
+  layout?: 'wide' | 'tall' | 'square';
 }
 
-const PROGRAM_2026: Event26[] = [
+const NIGHTS: Night[] = [
   {
-    day: 'Mié 5 Ago',
-    date: '2026-08-05',
-    time: '20:00',
-    kind: 'Apertura',
+    n: '01', date: '05 AGO', dow: 'MIÉ', time: '21:00',
+    kind: 'APERTURA',
     venue: 'Sede ADAR · Leiguarda',
     municipality: 'Belmonte de Miranda',
-    description: 'Concierto inaugural en la sede del festival, con la Compositora Residente 2026 presentando una obra de encargo.',
-    image: CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
+    curator: 'Acto inaugural en la sede del festival. Estreno absoluto de la obra encargada al compositor residente Tomás Quintín, escrita para cuarteto y campanas de la iglesia.',
+    artists: ['Ensemble VARRA', 'Tomás Quintín (composer in residence)'],
+    program: ['Tomás Quintín — Madrugada para cuarteto y campanas (estreno)', 'Caroline Shaw — Entr’acte'],
+    image: PX(7095506),
     eventbrite: '',
     confirmed: true,
+    layout: 'wide',
   },
   {
-    day: 'Jue 6 Ago',
-    date: '2026-08-06',
-    time: '20:00',
-    kind: 'Concierto',
+    n: '02', date: '06 AGO', dow: 'JUE', time: '20:00',
+    kind: 'RECITAL',
     venue: 'Iglesia de Leiguarda',
     municipality: 'Belmonte de Miranda',
-    description: 'Recital de cámara en una de las iglesias más antiguas del valle. Repertorio que cruza barroco y siglo XX.',
-    image: CDN + 'adar25fx30/DSC01590.jpg',
+    curator: 'Recital solista en el románico del valle. Bach reescrito a la luz de la música contemporánea más íntima.',
+    artists: ['Lior Kavanaugh (violonchelo)'],
+    program: ['J. S. Bach — Suite n.º 5 BWV 1011', 'Kaija Saariaho — Sept Papillons', 'Jonny Greenwood — Suite from There Will Be Blood'],
+    image: PX(164821),
     eventbrite: '',
     confirmed: true,
+    layout: 'tall',
   },
   {
-    day: 'Vie 7 Ago',
-    date: '2026-08-07',
-    time: '19:00',
-    kind: 'Paseo sonoro',
-    venue: 'Por confirmar',
-    municipality: 'Por confirmar',
-    description: 'Recorrido a pie con intervenciones musicales en distintas estaciones. Aforo limitado, calzado cómodo recomendado.',
+    n: '03', date: '07 AGO', dow: 'VIE', time: '19:30',
+    kind: 'PASEO SONORO',
+    venue: 'Valle de Leiguarda',
+    municipality: 'Belmonte de Miranda',
+    curator: 'Recorrido a pie por el valle con intervenciones musicales en estaciones marcadas. Field Compositions Ensemble interpreta in situ una partitura escrita para el paisaje.',
+    artists: ['Field Compositions Ensemble (Berlín)'],
+    program: ['Pauline Oliveros — Deep Listening fragments', 'Field score (site-specific, comisión 2026)'],
+    image: PX(2440021),
     eventbrite: '',
-    confirmed: false,
+    confirmed: true,
+    layout: 'square',
   },
   {
-    day: 'Sáb 8 Ago',
-    date: '2026-08-08',
-    time: '20:00',
-    kind: 'Micro-concierto',
+    n: '04', date: '08 AGO', dow: 'SÁB', time: '21:00',
+    kind: 'MICRO-CONCIERTO',
     venue: 'Hórreo ganador del concurso',
     municipality: 'Por confirmar',
-    description: 'Micro-concierto en el hórreo seleccionado en la convocatoria 2026 del Concurso de Hórreos y Paneras.',
-    image: CDN + 'ADAR_Eventos/2025/05_Micro-Concierto_en_Susacasa_Agrocultural/C1575T01.jpg',
+    curator: 'Micro-concierto en el hórreo seleccionado en la convocatoria 2026. Aforo de 30 personas. La sede se anuncia tras el fallo del jurado.',
+    artists: ['Mariama Bekele (violín)', 'Ola Sjölander (flauta)'],
+    program: ['Telemann — Fantasías para flauta', 'Salina Fisher — Tōrino', 'Bach — Partita BWV 1004 (fragmentos)'],
+    image: PX(280271),
     eventbrite: '',
     confirmed: false,
+    layout: 'square',
   },
   {
-    day: 'Dom 9 Ago',
-    date: '2026-08-09',
-    time: '20:00',
-    kind: 'Concierto visual',
+    n: '05', date: '09 AGO', dow: 'DOM', time: '20:00',
+    kind: 'CONCIERTO VISUAL',
     venue: 'Monasterio de Obona',
     municipality: 'Tineo',
-    description: 'Concierto de cámara con diseño de iluminación y proyecciones, en uno de los monasterios románicos del occidente.',
-    image: CDN + 'adar25fx30/C1970T01.jpg',
+    curator: 'El monasterio románico como caja de resonancia. Diseño de iluminación y proyecciones de Estudio Hábito (Bilbao).',
+    artists: ['Trío Atlántico', 'Estudio Hábito (escenografía)'],
+    program: ['Arvo Pärt — Spiegel im Spiegel', 'Tippett — Songs for Achilles', 'Caroline Shaw — Plan & Elevation'],
+    image: PX(161728),
     eventbrite: '',
     confirmed: true,
+    layout: 'wide',
   },
   {
-    day: 'Lun 10 Ago',
-    date: '2026-08-10',
-    time: '21:00',
-    kind: 'Micro-concierto',
+    n: '06', date: '10 AGO', dow: 'LUN', time: '21:30',
+    kind: 'INSTALACIÓN + LIVE',
     venue: 'Capilla de los Dolores',
     municipality: 'Grado',
-    description: 'Programa contemporáneo en una capilla del siglo XVIII. Escenografía site-specific.',
-    image: CDN + 'capilla.jpg',
+    curator: 'Sarah K. Williams regresa con una instalación site-specific en la capilla del XVIII. Theo Reins despliega una capa electrónica en directo.',
+    artists: ['Sarah K. Williams (instalación)', 'Theo Reins (electrónica)'],
+    program: ['Williams + Reins — Capilla loops (2026, comisión)'],
+    image: PX(8412414),
     eventbrite: '',
     confirmed: true,
+    layout: 'tall',
   },
   {
-    day: 'Mar 11 Ago',
-    date: '2026-08-11',
-    time: '20:00',
-    kind: 'Concierto',
+    n: '07', date: '11 AGO', dow: 'MAR', time: '20:00',
+    kind: 'CONCIERTO',
     venue: 'Iglesia de Taramundi',
     municipality: 'Taramundi',
-    description: 'Música de cámara en la iglesia parroquial de Taramundi. Acústica íntima y envolvente.',
-    image: CDN + 'adar25fx30/DSC01048.jpg',
+    curator: 'Música del minimalismo y la repetición en la iglesia parroquial. Acústica intensa y reverberante.',
+    artists: ['Helsinki Sax Quartet'],
+    program: ['Philip Glass — Saxophone Quartet', 'Terry Riley — In C (versión cuarteto)', 'Louis Andriessen — Hout'],
+    image: PX(4904008),
     eventbrite: '',
     confirmed: true,
+    layout: 'square',
   },
   {
-    day: 'Mié 12 Ago',
-    date: '2026-08-12',
-    time: '20:00',
-    kind: 'Concierto',
+    n: '08', date: '12 AGO', dow: 'MIÉ', time: '20:00',
+    kind: 'CONCIERTO',
     venue: 'Monasterio San Antolín de Bedón',
     municipality: 'Llanes',
-    description: 'El monasterio románico de San Antolín como caja de resonancia para un programa de cuerda y viento.',
-    image: CDN + 'ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/19.jpg',
+    curator: 'Octeto de cuerda y viento bajo las bóvedas románicas. Mendelssohn al servicio de un nuevo encargo de la dublinesa Anya Costello.',
+    artists: ['Festival Octet', 'Anya Costello (soprano y composición)'],
+    program: ['Mendelssohn — Octeto en mi bemol op. 20', 'Anya Costello — Bedón Cycle (2026, estreno)'],
+    image: PX(358010),
     eventbrite: '',
     confirmed: true,
+    layout: 'square',
   },
   {
-    day: 'Jue 13 Ago',
-    date: '2026-08-13',
-    time: '20:00',
-    kind: 'Paseo sonoro',
+    n: '09', date: '13 AGO', dow: 'JUE', time: '20:00',
+    kind: 'PASEO SONORO',
     venue: 'Claustro del Parador de Corias',
     municipality: 'Cangas del Narcea',
-    description: 'Cuatro músicos interactúan con el público en pie dentro del claustro del antiguo monasterio.',
-    image: CDN + 'adar25fx30/C1918T01.jpg',
+    curator: 'El público entra en el claustro y los músicos circulan. La acústica del claustro románico convertida en partitura caminada.',
+    artists: ['Field Compositions Ensemble', 'Stefan Vrček (dirección)'],
+    program: ['Bach — Inventions a 3 voces (re-orquestadas)', 'George Crumb — Black Angels (fragmentos)'],
+    image: PX(1366913),
     eventbrite: '',
     confirmed: true,
+    layout: 'wide',
   },
   {
-    day: 'Vie 14 Ago',
-    date: '2026-08-14',
-    time: '20:00',
-    kind: 'Recital',
+    n: '10', date: '14 AGO', dow: 'VIE', time: '21:00',
+    kind: 'RECITAL',
     venue: 'Por confirmar',
-    municipality: 'Por confirmar',
-    description: 'Solista internacional en formato de recital. Programa por anunciar.',
+    municipality: 'Occidente',
+    curator: 'Recital de piano solo en una sede del occidente asturiano. Programa de tarde-noche con Beethoven tardío y Boulez radical.',
+    artists: ['Hugo Aichinger (piano, Viena)'],
+    program: ['Beethoven — Sonata n.º 32 op. 111', 'Boulez — Première Sonate'],
+    image: PX(9419189),
     eventbrite: '',
     confirmed: false,
+    layout: 'tall',
   },
   {
-    day: 'Sáb 15 Ago',
-    date: '2026-08-15',
-    time: '20:00',
-    kind: 'Concierto principal',
+    n: '11', date: '15 AGO', dow: 'SÁB', time: '20:00',
+    kind: 'CONCIERTO PRINCIPAL',
     venue: 'Palacio Miranda-Valdecarzana',
     municipality: 'Grado',
-    description: 'Concierto principal de la edición. Conjunto ampliado con repertorio del siglo XX y obra de encargo de la Compositora Residente.',
-    image: CDN + 'ADAR_Eventos/2024/15_Concierto_en_el_Palacio_de_Miranda-Valdecarzana/img-3981-3028023682.jpg',
+    curator: 'Gran concierto de la edición. Conjunto ampliado + soprano. Cierre del ciclo del compositor residente.',
+    artists: ['Festival Ensemble', 'Anya Costello (soprano)', 'Tomás Quintín (composer in residence)'],
+    program: ['Beethoven — Sinfonía n.º 4 (versión cámara)', 'Tomás Quintín — Voces del Río (ciclo completo, estreno)'],
+    image: PX(1407322),
     eventbrite: '',
     confirmed: true,
+    layout: 'wide',
   },
   {
-    day: 'Dom 16 Ago',
-    date: '2026-08-16',
-    time: '20:00',
-    kind: 'Clausura',
-    venue: 'Iglesia e invernadero de cristal',
-    municipality: 'Leiguarda · Belmonte',
-    description: 'Concierto visual de clausura en Leiguarda. Sobremesa de sidra y empanada para todo el público.',
-    image: CDN + 'adar25fx30/C1927T01.jpg',
+    n: '12', date: '16 AGO', dow: 'DOM', time: '19:00',
+    kind: 'CLAUSURA',
+    venue: 'Campo de la Iglesia · Leiguarda',
+    municipality: 'Belmonte de Miranda',
+    curator: 'Concierto visual al aire libre. Video-mapping sobre la iglesia. Sobremesa abierta de sidra y empanada para todo el público.',
+    artists: ['Festival Ensemble', 'Estudio Hábito (video)', '+ todos los artistas de la edición'],
+    program: ['Programa colectivo · fragmentos de los doce conciertos', 'Reins / Williams — outro (improvisación)'],
+    image: PX(14807089),
     eventbrite: '',
     confirmed: true,
+    layout: 'wide',
   },
 ];
 
-const HOME_HREFS: Record<Lang, string> = {
-  es: '/es/adar/',
-  en: '/en/adar-festival/',
-  ast: '/ast/festival-adar/',
-};
+// Artist roster
+interface Artist {
+  name: string;
+  role: string;
+  from: string;
+  image: string;
+}
+const ARTISTS: Artist[] = [
+  { name: 'Lior Kavanaugh',          role: 'Cellist',              from: 'New York City',     image: PX(7676544) },
+  { name: 'Mariama Bekele',          role: 'Violin',               from: 'Berlin / Addis',    image: PX(164821) },
+  { name: 'Hugo Aichinger',          role: 'Piano',                from: 'Vienna',            image: PX(9419189) },
+  { name: 'Ola Sjölander',           role: 'Flute',                from: 'Stockholm',         image: PX(8412414) },
+  { name: 'Anya Costello',           role: 'Soprano · Composer',   from: 'Dublin',            image: PX(7095506) },
+  { name: 'Tomás Quintín',           role: 'Composer in residence', from: 'Asturias',         image: PX(5650040) },
+  { name: 'Ensemble VARRA',          role: 'Chamber quartet',      from: 'Madrid',            image: PX(7095530) },
+  { name: 'Helsinki Sax Quartet',    role: 'Saxophone quartet',    from: 'Helsinki',          image: PX(7676544, 800) },
+  { name: 'Trío Atlántico',          role: 'Piano trio',           from: 'Galicia',           image: PX(164821, 800) },
+  { name: 'Field Compositions Ens.', role: 'Site-specific',        from: 'Berlin',            image: PX(2440021, 800) },
+  { name: 'Sarah K. Williams',       role: 'Installation',         from: 'New York',          image: PX(8412414, 800) },
+  { name: 'Theo Reins',              role: 'Live electronics',     from: 'Brussels',          image: PX(5650040, 800) },
+  { name: 'Stefan Vrček',            role: 'Direction',            from: 'Bratislava',        image: PX(1407322, 800) },
+  { name: 'Estudio Hábito',          role: 'Scenography · video',  from: 'Bilbao',            image: PX(280271, 800) },
+];
+
+// Pre-compute marquee ticker text from artists
+const TICKER = ARTISTS.map((a) => a.name).join(' · ') + ' · ';
+
 const MAP_HREFS: Record<Lang, string> = {
   es: '/es/mapa-de-acciones/',
   en: '/en/map-of-actions/',
   ast: '/ast/mapa-dacciones/',
 };
-
-const heroImage = CDN + 'adar25fx30/C1543T01.jpg';
 ---
 
 <BaseLayout
   title={COPY.title}
   lang={lang}
   permalink={`/${lang}/programa-2026/`}
-  featuredImage={heroImage}
+  featuredImage={HERO_BG}
+  bodyClass="vi26-body"
   translations={{
     es: '/es/programa-2026/',
     en: '/en/programa-2026/',
@@ -348,91 +401,147 @@ const heroImage = CDN + 'adar25fx30/C1543T01.jpg';
   }}
 >
 
+<div class="vi26">
+
+  <!-- TOP BAR -->
+  <div class="vi26-topbar mono">
+    <div class="vi26-topbar-track"><span>{COPY.topbar}</span><span>{COPY.topbar}</span><span>{COPY.topbar}</span></div>
+  </div>
+
   <!-- HERO -->
-  <section class="p26-hero">
-    <div class="p26-hero-img">
-      <img src={heroImage} alt="Festival ADAR 2026" loading="eager" />
+  <section class="vi26-hero">
+    <div class="vi26-hero-bg">
+      <img src={HERO_BG} alt="ADAR Festival edición VI" loading="eager" />
     </div>
-    <div class="p26-hero-veil"></div>
+    <div class="vi26-hero-grain"></div>
 
-    <div class="p26-hero-body">
-      <span class="p26-hero-pill mono">{COPY.hero_pill}</span>
-      <p class="p26-hero-dates mono">{COPY.hero_dates}</p>
-      <h1 class="p26-hero-h">
-        {COPY.hero_title_pre} <em>{COPY.hero_title_em}</em> {COPY.hero_title_post}
+    <div class="vi26-hero-meta">
+      <span class="mono">{COPY.badge}</span>
+      <span class="mono">{COPY.dates}</span>
+      <span class="mono">{COPY.place}</span>
+    </div>
+
+    <div class="vi26-hero-six">VI</div>
+
+    <div class="vi26-hero-body">
+      <h1 class="vi26-hero-h">
+        <span class="vi26-h-l1">{COPY.h_l1}</span>
+        <span class="vi26-h-l2">{COPY.h_l2}</span>
+        <span class="vi26-h-l3">{COPY.h_l3}</span>
       </h1>
-      <p class="p26-hero-lede">{COPY.hero_lede}</p>
-
-      <ul class="p26-hero-stats">
-        {COPY.stats.map((s) => (
-          <li>
-            <span class="p26-stat-n">{s.n}</span>
-            <span class="p26-stat-l mono">{s.label}</span>
-          </li>
-        ))}
-      </ul>
+      <p class="vi26-hero-sub">{COPY.sub}</p>
+      <div class="vi26-hero-actions">
+        <a class="vi26-cta" href="#glance">
+          <span class="vi26-arr">↓</span> {COPY.rsvp_all}
+        </a>
+        <a class="vi26-cta vi26-cta-ghost"
+           href="mailto:leiguardamusic@gmail.com?subject=Dosier%20de%20prensa%20Festival%20ADAR%202026">
+          <span class="vi26-arr">→</span> {COPY.press}
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- INTRO -->
-  <section class="p26-intro">
-    <p class="p26-eyebrow mono">{COPY.intro_eyebrow}</p>
-    <h2 class="p26-h">
-      {COPY.intro_h_pre} <em>{COPY.intro_h_em}</em>{COPY.intro_h_post}
-    </h2>
-    <div class="p26-intro-cols">
-      <p>{COPY.intro_p1}</p>
-      <p>{COPY.intro_p2}</p>
+  <!-- ARTIST TICKER -->
+  <div class="vi26-ticker" aria-hidden="true">
+    <div class="vi26-ticker-track">
+      <span>{TICKER}{TICKER}{TICKER}</span>
     </div>
-  </section>
+  </div>
 
-  <!-- SCHEDULE -->
-  <section class="p26-schedule">
-    <header class="p26-schedule-head">
-      <p class="p26-eyebrow mono">{COPY.schedule_eyebrow}</p>
-      <h2 class="p26-h">
-        {COPY.schedule_h_pre} <em>{COPY.schedule_h_em}</em>{COPY.schedule_h_post}
-      </h2>
+  <!-- AT A GLANCE -->
+  <section class="vi26-glance" id="glance">
+    <header class="vi26-section-head">
+      <span class="vi26-section-n mono">{COPY.glance_n}</span>
+      <h2 class="vi26-section-h">{COPY.glance_h}</h2>
+      <p class="vi26-section-sub">{COPY.glance_sub}</p>
     </header>
 
-    <ol class="p26-list">
-      {PROGRAM_2026.map((ev, i) => (
-        <li class={`p26-event ${ev.confirmed ? 'is-confirmed' : 'is-tbc'}`}>
-          <div class="p26-event-media">
-            {ev.image ? (
-              <img src={ev.image} alt={ev.venue} loading="lazy" />
-            ) : (
-              <div class="p26-event-placeholder">
-                <span class="mono">{COPY.tbc}</span>
-              </div>
-            )}
-            <span class="p26-event-n mono">{String(i + 1).padStart(2, '0')}</span>
+    <div class="vi26-table-wrap">
+      <table class="vi26-table">
+        <thead>
+          <tr>
+            <th class="mono">{COPY.th_n}</th>
+            <th class="mono">{COPY.th_date}</th>
+            <th class="mono">{COPY.th_time}</th>
+            <th class="mono">{COPY.th_kind}</th>
+            <th class="mono">{COPY.th_venue}</th>
+            <th class="mono">{COPY.th_muni}</th>
+            <th class="mono">{COPY.th_rsvp}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {NIGHTS.map((n) => (
+            <tr class={n.confirmed ? '' : 'is-tbc'}>
+              <td class="mono vi26-td-n">{n.n}</td>
+              <td class="mono"><span class="vi26-dow">{n.dow}</span> {n.date}</td>
+              <td class="mono">{n.time}</td>
+              <td class="mono vi26-td-kind">{n.kind}</td>
+              <td class="vi26-td-venue">{n.venue}</td>
+              <td class="mono">{n.municipality}</td>
+              <td>
+                {n.eventbrite ? (
+                  <a class="vi26-rsvp-mini" href={n.eventbrite} target="_blank" rel="noopener">{COPY.rsvp_short} ↗</a>
+                ) : (
+                  <span class="vi26-rsvp-mini vi26-rsvp-soon mono">{COPY.soon}</span>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TWELVE NIGHTS GRID -->
+  <section class="vi26-nights">
+    <header class="vi26-section-head">
+      <span class="vi26-section-n mono">{COPY.nights_n}</span>
+      <h2 class="vi26-section-h">{COPY.nights_h}</h2>
+      <p class="vi26-section-sub">{COPY.nights_sub}</p>
+    </header>
+
+    <ol class="vi26-grid">
+      {NIGHTS.map((n) => (
+        <li class={`vi26-night vi26-night-${n.layout || 'square'} ${n.confirmed ? '' : 'is-tbc'}`}>
+          <div class="vi26-night-media">
+            <img src={n.image} alt={n.venue} loading="lazy" />
+            <span class="vi26-night-n">{n.n}</span>
+            <span class={`vi26-night-status mono ${n.confirmed ? '' : 'is-tbc'}`}>
+              {n.confirmed ? COPY.confirmed : COPY.tbc}
+            </span>
           </div>
-
-          <div class="p26-event-body">
-            <div class="p26-event-when">
-              <span class="p26-event-day mono">{ev.day}</span>
-              {ev.time && <span class="p26-event-time mono">· {ev.time}</span>}
-              <span class={`p26-event-status mono ${ev.confirmed ? '' : 'is-tbc'}`}>
-                {ev.confirmed ? COPY.confirmed : COPY.tbc}
-              </span>
+          <div class="vi26-night-body">
+            <div class="vi26-night-when mono">
+              <span class="vi26-dow">{n.dow}</span> {n.date} · {n.time}
             </div>
+            <p class="vi26-night-kind mono">{n.kind}</p>
+            <h3 class="vi26-night-venue">{n.venue}</h3>
+            <p class="vi26-night-muni mono">↳ {n.municipality}</p>
+            <p class="vi26-night-curator">{n.curator}</p>
 
-            <p class="p26-event-kind mono">{ev.kind}</p>
-            <h3 class="p26-event-venue">{ev.venue}</h3>
-            <p class="p26-event-muni mono">{ev.municipality}</p>
+            <dl class="vi26-night-meta">
+              <dt class="mono">{COPY.artists_label}</dt>
+              <dd>
+                {n.artists.map((a, i) => (
+                  <span>{a}{i < n.artists.length - 1 ? ' · ' : ''}</span>
+                ))}
+              </dd>
+              <dt class="mono">{COPY.program_label}</dt>
+              <dd>
+                <ul class="vi26-night-program">
+                  {n.program.map((p) => <li>{p}</li>)}
+                </ul>
+              </dd>
+            </dl>
 
-            {ev.description && <p class="p26-event-desc">{ev.description}</p>}
-
-            <p class="p26-event-free mono">{COPY.free}</p>
-
-            <div class="p26-event-cta">
-              {ev.eventbrite ? (
-                <a class="p26-rsvp" href={ev.eventbrite} target="_blank" rel="noopener">
-                  <span class="p26-arr">→</span> {COPY.rsvp}
+            <div class="vi26-night-cta">
+              {n.eventbrite ? (
+                <a class="vi26-cta vi26-cta-small" href={n.eventbrite} target="_blank" rel="noopener">
+                  <span class="vi26-arr">↗</span> {COPY.rsvp_short}
                 </a>
               ) : (
-                <span class="p26-rsvp p26-rsvp-soon">{COPY.soon}</span>
+                <span class="vi26-cta vi26-cta-small vi26-cta-disabled">{COPY.soon}</span>
               )}
             </div>
           </div>
@@ -441,44 +550,70 @@ const heroImage = CDN + 'adar25fx30/C1543T01.jpg';
     </ol>
   </section>
 
-  <!-- VENUES MAP CTA -->
-  <section class="p26-venues">
-    <p class="p26-eyebrow mono">{COPY.venues_eyebrow}</p>
-    <h2 class="p26-h">{COPY.venues_h}</h2>
-    <p class="p26-sub">{COPY.venues_sub}</p>
-    <a class="p26-cta p26-cta-ghost" href={MAP_HREFS[lang]}>
-      <span class="p26-arr">→</span> {COPY.venues_cta}
-    </a>
+  <!-- ARTISTS WALL -->
+  <section class="vi26-artists">
+    <header class="vi26-section-head">
+      <span class="vi26-section-n mono">{COPY.artists_n}</span>
+      <h2 class="vi26-section-h">{COPY.artists_h}</h2>
+      <p class="vi26-section-sub">{COPY.artists_sub}</p>
+    </header>
+
+    <ul class="vi26-artists-grid">
+      {ARTISTS.map((a) => (
+        <li class="vi26-artist">
+          <div class="vi26-artist-img">
+            <img src={a.image} alt={a.name} loading="lazy" />
+          </div>
+          <div class="vi26-artist-meta">
+            <p class="vi26-artist-role mono">{a.role}</p>
+            <h3 class="vi26-artist-name">{a.name}</h3>
+            <p class="vi26-artist-from mono">↳ {a.from}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
   </section>
 
-  <!-- FOLLOW -->
-  <section class="p26-follow">
-    <p class="p26-eyebrow mono">{COPY.follow_eyebrow}</p>
-    <h2 class="p26-h">{COPY.follow_h}</h2>
-    <p class="p26-sub">{COPY.follow_sub}</p>
-    <div class="p26-actions">
-      <a class="p26-cta"
-         href="mailto:leiguardamusic@gmail.com?subject=Bolet%C3%ADn%20Festival%20ADAR%202026&body=Hola%2C%20me%20gustar%C3%ADa%20recibir%20avisos%20del%20programa%202026.">
-        <span class="p26-arr">→</span> {COPY.follow_email}
-      </a>
-      <a class="p26-cta p26-cta-ghost" href="https://instagram.com/festivaladar" target="_blank" rel="noopener">
-        <span class="p26-arr">→</span> {COPY.follow_ig}
-      </a>
-      <a class="p26-cta p26-cta-ghost" href="https://www.youtube.com/@festivaladar" target="_blank" rel="noopener">
-        <span class="p26-arr">→</span> {COPY.follow_yt}
-      </a>
+  <!-- PRACTICAL INFO -->
+  <section class="vi26-info">
+    <header class="vi26-section-head">
+      <span class="vi26-section-n mono">{COPY.info_n}</span>
+      <h2 class="vi26-section-h">{COPY.info_h}</h2>
+      <p class="vi26-section-sub">{COPY.info_lede}</p>
+    </header>
+
+    <div class="vi26-info-grid">
+      {COPY.info_blocks.map((b) => (
+        <div class="vi26-info-block">
+          <p class="vi26-info-eyebrow mono">{b.eyebrow}</p>
+          <h3 class="vi26-info-h">{b.h}</h3>
+          <p class="vi26-info-p">{b.p}</p>
+        </div>
+      ))}
     </div>
-  </section>
 
-  <!-- PRESS -->
-  <section class="p26-press">
-    <p class="p26-eyebrow mono">{COPY.press_eyebrow}</p>
-    <h2 class="p26-h">{COPY.press_h}</h2>
-    <p class="p26-sub">{COPY.press_sub}</p>
-    <a class="p26-cta p26-cta-ghost"
-       href="mailto:leiguardamusic@gmail.com?subject=Dosier%20de%20prensa%20Festival%20ADAR%202026">
-      <span class="p26-arr">→</span> {COPY.press_cta}
+    <a class="vi26-cta vi26-cta-big" href={MAP_HREFS[lang]}>
+      <span class="vi26-arr">→</span> {lang === 'es' ? 'Ver mapa de sedes' : lang === 'ast' ? 'Ver mapa de sedes' : 'See venue map'}
     </a>
   </section>
+
+  <!-- CREDITS -->
+  <footer class="vi26-credits">
+    <span class="vi26-section-n mono">{COPY.credits_n}</span>
+    <h2 class="vi26-section-h">{COPY.credits_h}</h2>
+    <dl class="vi26-credits-list">
+      <dt class="mono">{COPY.curated}</dt>
+      <dd>Guillermo Laporta · Josefina Urraca</dd>
+      <dt class="mono">{COPY.produced}</dt>
+      <dd>Asociación ADAR · Leiguarda, Belmonte de Miranda</dd>
+      <dt class="mono">{COPY.supported}</dt>
+      <dd>Principado de Asturias · Ayuntamientos anfitriones · Goethe-Institut · Reina Sofía · partners privados</dd>
+    </dl>
+    <p class="vi26-credits-foot mono">
+      © 2026 ADAR · LEIGUARDA / BELMONTE DE MIRANDA · ASTURIES / ES
+    </p>
+  </footer>
+
+</div>
 
 </BaseLayout>
