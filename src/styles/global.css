@@ -9688,10 +9688,10 @@ body.archive-sheet-open { overflow: hidden; }
 .vi26 {
   --vi-ink:   #0a0907;
   --vi-paper: #f4eee2;
-  --vi-acid:  #d9f24a;
+  --vi-acid:  var(--accent);
   --vi-mute:  rgba(244,238,226,0.55);
   --vi-line:  rgba(244,238,226,0.16);
-  --vi-glow:  rgba(217,242,74,0.15);
+  --vi-glow:  rgba(245,215,47,0.18);
   background: var(--vi-ink);
   color: var(--vi-paper);
   font-family: var(--font-sans);
@@ -9804,7 +9804,7 @@ body.page .entry-content .vi26 p,
   opacity: 0.95;
   pointer-events: none;
   z-index: -1;
-  text-shadow: 0 0 100px rgba(217,242,74,0.18);
+  text-shadow: 0 0 100px rgba(245,215,47,0.20);
 }
 @media (max-width: 900px) {
   .vi26-hero-six {
@@ -10008,7 +10008,7 @@ body.page .entry-content .vi26 p,
 }
 .vi26-table tr:last-child td { border-bottom: 0; }
 .vi26-table tr { transition: background 0.15s ease; }
-.vi26-table tbody tr:hover { background: rgba(217,242,74,0.06); }
+.vi26-table tbody tr:hover { background: rgba(245,215,47,0.07); }
 .vi26-table .vi26-td-n {
   font-weight: 700;
   font-size: 14px;
@@ -10203,7 +10203,7 @@ body.page .entry-content .vi26 p,
 /* ARTISTS GRID */
 .vi26-artists {
   padding-bottom: 80px;
-  background: linear-gradient(180deg, transparent 0%, rgba(217,242,74,0.04) 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(245,215,47,0.05) 100%);
 }
 .vi26-artists-grid {
   list-style: none;
@@ -10663,3 +10663,452 @@ body.page .entry-content .vi26 p,
 @media (max-width: 720px) {
   .vi26-follow-actions { padding: 0 20px; }
 }
+
+/* =============================================================
+   POSTER HERO (.vi26-poster) — typographic festival key art
+   ============================================================= */
+.vi26-poster {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  background: var(--vi-ink);
+  color: var(--vi-paper);
+  margin-top: -88px;
+  padding: 144px 56px 56px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 32px;
+  isolation: isolate;
+}
+@media (max-width: 720px) {
+  .vi26-poster { margin-top: -72px; padding: 120px 20px 32px; gap: 20px; }
+}
+.vi26-poster-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+.vi26-poster-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(1) contrast(1.1) brightness(0.35);
+  opacity: 0.55;
+}
+.vi26-poster-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 50% 60%, rgba(10,9,7,0.55) 0%, rgba(10,9,7,0.92) 80%),
+    linear-gradient(180deg, rgba(10,9,7,0.4), rgba(10,9,7,0.95));
+}
+.vi26-poster-grain {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(244,238,226,0.025) 0 1px, transparent 1px 3px);
+  mix-blend-mode: screen;
+}
+.vi26-poster-rules {
+  position: absolute;
+  inset: 24px;
+  width: calc(100% - 48px);
+  height: calc(100% - 48px);
+  color: var(--vi-acid);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+@media (max-width: 720px) {
+  .vi26-poster-rules { inset: 12px; width: calc(100% - 24px); height: calc(100% - 24px); }
+}
+
+/* Corner crosses */
+.vi26-corner {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--vi-acid);
+  z-index: 1;
+}
+.vi26-corner-tl { top: 18px;    left: 18px; }
+.vi26-corner-tr { top: 18px;    right: 18px; }
+.vi26-corner-bl { bottom: 18px; left: 18px; }
+.vi26-corner-br { bottom: 18px; right: 18px; }
+
+/* Top band */
+.vi26-poster-top {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0 0 16px;
+  border-bottom: 1px solid rgba(244,238,226,0.2);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+}
+.vi26-poster-top span:last-child { color: var(--vi-acid); }
+
+/* Center poster stack */
+.vi26-poster-stack {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0;
+}
+.vi26-poster-date {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 500;
+  font-size: clamp(64px, 12vw, 180px);
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+  margin: 0 0 8px !important;
+  color: var(--vi-paper);
+}
+.vi26-poster-mo {
+  font-family: var(--font-mono);
+  font-size: clamp(14px, 1.4vw, 20px);
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  margin: 0 0 24px !important;
+  color: var(--vi-acid);
+}
+.vi26-poster-mark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: -8px 0;
+  line-height: 1;
+}
+.vi26-poster-vi {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(180px, 26vw, 420px);
+  line-height: 0.78;
+  letter-spacing: -0.05em;
+  color: var(--vi-acid);
+  text-shadow:
+    0 0 60px rgba(245,215,47,0.25),
+    -3px 3px 0 rgba(10,9,7,0.85);
+}
+.vi26-poster-h {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 700;
+  font-size: clamp(48px, 9vw, 120px);
+  line-height: 0.86;
+  letter-spacing: 0.06em;
+  margin: 8px 0 16px !important;
+  color: var(--vi-paper);
+}
+.vi26-poster-h span {
+  display: inline-block;
+  padding: 2px 14px;
+  background: var(--vi-paper);
+  color: var(--vi-ink);
+}
+.vi26-poster-sub {
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  color: rgba(244,238,226,0.78);
+  margin: 0 !important;
+}
+
+/* Bottom band: stats + CTAs */
+.vi26-poster-bottom {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 16px 0 0;
+  border-top: 1px solid rgba(244,238,226,0.2);
+}
+.vi26-poster-stats {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 24px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+}
+.vi26-poster-stats li {
+  position: relative;
+  padding-left: 14px;
+  color: rgba(244,238,226,0.85);
+}
+.vi26-poster-stats li::before {
+  content: '+';
+  position: absolute;
+  left: 0;
+  color: var(--vi-acid);
+}
+.vi26-poster-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Topbar dot column color tweak (already vi-acid via --accent) */
+.vi26-section-n,
+.vi26-acid { color: var(--vi-acid); }
+
+/* =============================================================
+   EVENT METADATA · used by the program section
+   ============================================================= */
+.vi26-venue-date {
+  color: var(--vi-paper);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+}
+.vi26-venue-tbc {
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--vi-acid);
+  color: var(--vi-ink);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  margin-left: 6px;
+}
+.vi26-event-sub {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--vi-acid);
+  margin: -8px 0 0 !important;
+}
+
+.vi26-event-block {
+  margin: 12px 0 0;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 6px 16px;
+  border-top: 1px solid var(--vi-line);
+  padding-top: 12px;
+}
+@media (max-width: 720px) {
+  .vi26-event-block { grid-template-columns: 1fr; gap: 4px; }
+}
+.vi26-event-block dt {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  color: var(--vi-acid);
+  text-transform: uppercase;
+  padding-top: 2px;
+}
+.vi26-event-block dd { margin: 0; }
+.vi26-fact-place {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--vi-acid);
+  margin-top: 2px;
+}
+.vi26-fact-note {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: var(--vi-mute);
+  margin-top: 6px;
+}
+
+/* Program list */
+.vi26-program {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+  counter-reset: program;
+}
+.vi26-program li {
+  counter-increment: program;
+  position: relative;
+  padding: 4px 0 4px 26px;
+  border-bottom: 1px dashed var(--vi-line);
+  color: var(--vi-paper);
+}
+.vi26-program li:last-child { border-bottom: 0; }
+.vi26-program li::before {
+  content: counter(program, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 6px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  color: var(--vi-acid);
+}
+.vi26-program-composer {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--vi-paper);
+}
+.vi26-program-years {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--vi-mute);
+}
+.vi26-program-piece em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--vi-paper);
+}
+.vi26-program-dur {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: var(--vi-acid);
+  margin-left: 4px;
+}
+.vi26-program-note {
+  font-size: 14px;
+  line-height: 1.55;
+  color: rgba(244,238,226,0.82) !important;
+  margin: 0 !important;
+  font-style: italic;
+}
+.vi26-program-total {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--vi-acid);
+  margin: 10px 0 0 !important;
+  text-align: right;
+}
+
+/* Artist line */
+.vi26-artist-line {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13.5px;
+}
+.vi26-artist-l-name {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--vi-paper);
+}
+.vi26-artist-l-role {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--vi-acid);
+}
+
+/* Rest day card */
+.vi26-event-rest {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 28px 24px;
+  border: 1px dashed var(--vi-line);
+  background: transparent;
+}
+.vi26-rest-date {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: var(--vi-paper);
+}
+.vi26-rest-label {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 500;
+  font-style: italic;
+  font-size: clamp(28px, 3vw, 44px);
+  letter-spacing: -0.015em;
+  color: var(--vi-acid);
+  line-height: 1;
+}
+.vi26-rest-sub {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--vi-mute);
+}
+
+/* Empty slider fallback */
+.vi26-slider-empty {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #161310;
+  color: var(--vi-mute);
+  font-size: 11px;
+  letter-spacing: 0.22em;
+}
+
+/* =============================================================
+   CARTEL section
+   ============================================================= */
+.vi26-cartel { padding-bottom: 80px; }
+.vi26-cartel-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1400px;
+  border-top: 1px solid var(--vi-paper);
+  border-bottom: 1px solid var(--vi-paper);
+}
+@media (max-width: 720px) { .vi26-cartel-list { padding: 0 20px; } }
+.vi26-cartel-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: baseline;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--vi-line);
+  transition: background 0.18s ease, padding 0.18s ease;
+}
+.vi26-cartel-row:last-child { border-bottom: 0; }
+.vi26-cartel-row:hover {
+  background: rgba(245,215,47,0.06);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.vi26-cartel-name {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 500;
+  font-size: clamp(22px, 2.4vw, 38px);
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  color: var(--vi-paper);
+}
+.vi26-cartel-role {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: var(--vi-acid);
+  text-align: right;
+}
+@media (max-width: 720px) {
+  .vi26-cartel-row { grid-template-columns: 1fr; gap: 4px; }
+  .vi26-cartel-role { text-align: left; }
+}
+
+/* Calendar table extras */
+.vi26-table tr.is-rest td {
+  font-style: italic;
+  color: var(--vi-mute);
+}
+.vi26-td-muni { color: var(--vi-mute); }
