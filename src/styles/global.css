@@ -11469,23 +11469,26 @@ body.page .entry-content .vi26 p,
 }
 .vi26-aside-when {
   display: flex;
-  align-items: baseline;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
   margin: 0 !important;
   padding-bottom: 14px;
   border-bottom: 1px solid rgba(10,9,7,0.15);
 }
 .vi26-aside-dow {
-  font-size: 11px;
-  letter-spacing: 0.22em;
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
   color: var(--accent-ink);
+  opacity: 0.7;
   font-weight: 700;
 }
 .vi26-aside-date {
   font-family: var(--font-display);
   font-stretch: 75%;
   font-weight: 500;
-  font-size: clamp(30px, 2.6vw, 40px);
+  font-size: clamp(32px, 2.6vw, 42px);
   line-height: 1;
   letter-spacing: -0.02em;
   color: #0a0907;
@@ -11595,28 +11598,32 @@ body.page .entry-content .vi26 p,
   padding: 8px 0;
 }
 
-/* CTA block (one yellow button + free note) */
+/* CTA block (one yellow button + free note) — sized for the sidebar */
 .vi26-event-cta {
-  margin-top: 14px;
+  margin-top: 8px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(10,9,7,0.15);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 8px;
 }
 .vi26-event-cta .vi26-rsvp {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: center;
+  gap: 10px;
   background: var(--accent);
   color: var(--accent-ink) !important;
   font-family: var(--font-mono);
-  font-size: 13px;
-  letter-spacing: 0.22em;
+  font-size: 12px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 18px 32px;
+  padding: 16px 18px;
   text-decoration: none;
   border: 1px solid var(--accent);
+  width: 100%;
   transition: transform 0.18s ease, box-shadow 0.22s ease, background 0.18s ease;
 }
 .vi26-event-cta .vi26-rsvp:hover {
@@ -11634,7 +11641,9 @@ body.page .entry-content .vi26 p,
 .vi26-event-cta .vi26-rsvp .vi26-arr { color: var(--accent-ink); }
 .vi26-rsvp-note {
   margin: 0 !important;
-  font-size: 11px;
-  letter-spacing: 0.16em;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-align: center;
   color: rgba(10,9,7,0.55);
+  line-height: 1.4;
 }

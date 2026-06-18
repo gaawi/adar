@@ -271,7 +271,7 @@ interface Event {
 
 const EVENTS: Event[] = [
   {
-    n: '01', date: '04', dow: 'MAR', fullDate: '4 AGO',
+    n: '01', date: '04', dow: 'Martes', fullDate: '4 AGO',
     capacity: 30,
     title: 'Micro concierto de clavicémbalo',
     subtitle: 'Inauguración · Concurso de Hórreos y Paneras',
@@ -288,7 +288,7 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '02', date: '05', dow: 'MIÉ', fullDate: '5 AGO',
+    n: '02', date: '05', dow: 'Miércoles', fullDate: '5 AGO',
     capacity: 60,
     title: 'La forma de la memoria',
     subtitle: 'ADAR EN RUTA · Concierto de trío con piano',
@@ -315,7 +315,7 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '03', date: '06', dow: 'JUE', fullDate: '6 AGO',
+    n: '03', date: '06', dow: 'Jueves', fullDate: '6 AGO',
     capacity: 80,
     title: 'La forma de la memoria',
     subtitle: 'Concierto de trío con piano',
@@ -341,7 +341,7 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '04', date: '07', dow: 'VIE', fullDate: '7 AGO',
+    n: '04', date: '07', dow: 'Viernes', fullDate: '7 AGO',
     capacity: 60,
     title: 'UMBRAL ZERO',
     subtitle: 'Concierto de música minimalista y arte visual',
@@ -366,7 +366,7 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '05', date: '08', dow: 'SÁB–DOM', fullDate: '8 — 9 AGO',
+    n: '05', date: '08', dow: 'Sábado–Domingo', fullDate: '8 — 9 AGO',
     capacity: 100,
     title: 'Intervención site-specific · Colectivo Menhir',
     subtitle: 'Dos jornadas · Creación site-specific',
@@ -386,7 +386,7 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '06', date: '11', dow: 'MAR', fullDate: '11 AGO',
+    n: '06', date: '11', dow: 'Martes', fullDate: '11 AGO',
     capacity: 200,
     title: 'The Rest is Silence',
     subtitle: 'ADAR EN RUTA · Concierto de música de cámara y arte visual',
@@ -423,7 +423,7 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '07', date: '12', dow: 'MIÉ', fullDate: '12 AGO',
+    n: '07', date: '12', dow: 'Miércoles', fullDate: '12 AGO',
     capacity: 50,
     title: 'Micro concierto durante el eclipse',
     subtitle: 'Muestra de la Residencia The Rest Project',
@@ -443,7 +443,7 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '08', date: '13', dow: 'JUE', fullDate: '13 AGO',
+    n: '08', date: '13', dow: 'Jueves', fullDate: '13 AGO',
     capacity: 80,
     title: 'Concierto de música de cámara y arte visual',
     subtitle: 'ADAR EN RUTA',
@@ -469,7 +469,7 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '09', date: '15', dow: 'SÁB', fullDate: '15 AGO',
+    n: '09', date: '15', dow: 'Sábado', fullDate: '15 AGO',
     capacity: 40,
     title: 'Paseo sonoro en Leiguarda',
     subtitle: 'Creación site-specific',
@@ -491,7 +491,7 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '10', date: '16', dow: 'DOM', fullDate: '16 AGO',
+    n: '10', date: '16', dow: 'Domingo', fullDate: '16 AGO',
     capacity: 60,
     title: 'Clausura · Concierto de quinteto y espicha',
     subtitle: 'Cierre de la VI edición',
@@ -620,6 +620,17 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
                 {e.venueNote && (
                   <p class="vi26-aside-note mono">{e.venueNote}</p>
                 )}
+
+                <div class="vi26-event-cta">
+                  {e.eventbrite ? (
+                    <a class="vi26-rsvp" href={e.eventbrite} target="_blank" rel="noopener">
+                      <span class="vi26-arr">→</span> {COPY.rsvp}
+                    </a>
+                  ) : (
+                    <span class="vi26-rsvp is-soon">{COPY.seats_soon}</span>
+                  )}
+                  <p class="vi26-rsvp-note mono">{COPY.free_note}</p>
+                </div>
               </div>
             </aside>
 
@@ -660,17 +671,6 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
                     </li>
                   ))}
                 </ul>
-              </div>
-
-              <div class="vi26-event-cta">
-                {e.eventbrite ? (
-                  <a class="vi26-rsvp" href={e.eventbrite} target="_blank" rel="noopener">
-                    <span class="vi26-arr">→</span> {COPY.rsvp}
-                  </a>
-                ) : (
-                  <span class="vi26-rsvp is-soon">{COPY.seats_soon}</span>
-                )}
-                <p class="vi26-rsvp-note mono">{COPY.free_note}</p>
               </div>
             </div>
           </li>
