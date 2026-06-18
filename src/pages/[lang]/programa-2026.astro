@@ -18,7 +18,9 @@ const COPY = {
   es: {
     title: 'ADAR VI · 2026',
     topbar: 'FESTIVAL ADAR · EDICIÓN VI · 4—16 AGO 2026 · ASTURIES / ES · ENTRADA LIBRE · RESERVA EN EVENTBRITE',
-    poster_kicker: 'FESTIVAL DE MÚSICA Y ARTES VIVAS EN EL MEDIO RURAL',
+    poster_kicker: 'Edición VI · 4 — 16 agosto 2026',
+    hero_h: 'Festival ADAR 2026',
+    hero_tag: 'Festival para el desarrollo de las artes en el medio rural.',
     poster_dates: '4 → 16',
     poster_month: 'AGOSTO',
     poster_year: 'MMXXVI',
@@ -39,7 +41,11 @@ const COPY = {
     eds_h: 'ADAR aquí en',
     visit_h: 'Visto en ADAR',
     web_h: 'Web oficial',
-    rsvp: 'Reservar',
+    rsvp: 'Reserva tu entrada',
+    free_note: 'Entrada gratuita hasta completar aforo',
+    capacity_label: 'Aforo',
+    seats_label: 'plazas',
+    seats_soon: 'Venta próxima',
     soon: 'PRÓXIMAMENTE',
     rest: 'DESCANSO',
     rest_sub: 'Día sin programa público.',
@@ -84,7 +90,9 @@ const COPY = {
   en: {
     title: 'ADAR VI · 2026',
     topbar: 'FESTIVAL ADAR · EDITION VI · 4—16 AUG 2026 · ASTURIAS / ES · FREE ENTRY · RSVP ON EVENTBRITE',
-    poster_kicker: 'FESTIVAL OF MUSIC AND LIVE ARTS IN RURAL ASTURIAS',
+    poster_kicker: 'Edition VI · 4 — 16 August 2026',
+    hero_h: 'Festival ADAR 2026',
+    hero_tag: 'A festival for the development of the arts in rural areas.',
     poster_dates: '4 → 16',
     poster_month: 'AUGUST',
     poster_year: 'MMXXVI',
@@ -105,7 +113,11 @@ const COPY = {
     eds_h: 'ADAR here in',
     visit_h: 'Seen at ADAR',
     web_h: 'Official site',
-    rsvp: 'RSVP',
+    rsvp: 'Reserve your seat',
+    free_note: 'Free entry until capacity is reached',
+    capacity_label: 'Capacity',
+    seats_label: 'seats',
+    seats_soon: 'Booking opens soon',
     soon: 'COMING SOON',
     rest: 'REST',
     rest_sub: 'No public programme.',
@@ -150,7 +162,9 @@ const COPY = {
   ast: {
     title: 'ADAR VI · 2026',
     topbar: 'FESTIVAL ADAR · EDICIÓN VI · 4—16 AGO 2026 · ASTURIES / ES · ENTRADA LLIBRE · RESERVA N’EVENTBRITE',
-    poster_kicker: 'FESTIVAL DE MÚSICA Y ARTES VIVES NEL MEDIU RURAL',
+    poster_kicker: 'Edición VI · 4 — 16 d’agostu 2026',
+    hero_h: 'Festival ADAR 2026',
+    hero_tag: 'Festival pal desarrollu de les artes nel mediu rural.',
     poster_dates: '4 → 16',
     poster_month: 'AGOSTU',
     poster_year: 'MMXXVI',
@@ -171,7 +185,11 @@ const COPY = {
     eds_h: 'ADAR equí en',
     visit_h: 'Vistu n’ADAR',
     web_h: 'Web oficial',
-    rsvp: 'Reservar',
+    rsvp: 'Reserva la to entrada',
+    free_note: 'Entrada de baldre hasta completar aforu',
+    capacity_label: 'Aforu',
+    seats_label: 'places',
+    seats_soon: 'Apertura aína',
     soon: 'AÍNA',
     rest: 'DESCANSU',
     rest_sub: 'Día ensin programa públicu.',
@@ -234,6 +252,7 @@ interface Event {
   title: string;
   subtitle?: string;
   description?: string;
+  capacity?: number;
   programName?: string;
   programNote?: string;
   pieces: Piece[];
@@ -253,26 +272,27 @@ interface Event {
 const EVENTS: Event[] = [
   {
     n: '01', date: '04', dow: 'MAR', fullDate: '4 AGO',
+    capacity: 30,
     title: 'Micro concierto de clavicémbalo',
     subtitle: 'Inauguración · Concurso de Hórreos y Paneras',
-    description: 'Apertura íntima en el hórreo seleccionado por el jurado del Concurso de Hórreos y Paneras 2026. Aforo limitado a treinta personas en un espacio patrimonial restaurado para la ocasión, antes de que el festival arranque su recorrido por el resto de Asturias.',
+    description: 'Apertura íntima en el hórreo seleccionado por el jurado del Concurso de Hórreos y Paneras 2026. Aforo limitado a treinta personas en un espacio patrimonial restaurado para la ocasión. La sede concreta se anuncia tras el fallo del jurado en julio. Un encuentro recogido para abrir la edición antes de que el festival arranque su recorrido por el resto de Asturias.',
     programNote: 'Programa por anunciar.',
     pieces: [],
     venue: 'Hórreo ganador del concurso 2026',
-    venueNote: 'Sede específica tras el fallo del jurado.',
-    municipality: 'Por confirmar',
+    venueNote: 'Sede ganadora del Concurso de Hórreos · se anuncia el 25 de julio.',
+    municipality: 'Asturies',
     photo: 'https://s1.abcstatics.com/abc/www/multimedia/sevilla/2023/01/18/ignacio-priego-uno_20230118120520-kJAB-Rz4H5Ye2vCc2SwoCBKMcEPM-1200x840@abc.jpg',
     memoriaSlug: 'micro-concierto-en-puerma-las-regueras',
     memoriaYear: 2025,
     artists: [{ name: 'Ignacio Priego', role: 'clave' }],
     eventbrite: '',
-    tbc: true,
   },
   {
     n: '02', date: '05', dow: 'MIÉ', fullDate: '5 AGO',
+    capacity: 60,
     title: 'La forma de la memoria',
     subtitle: 'ADAR EN RUTA · Concierto de trío con piano',
-    description: 'El trío de María Martínez, Frederieke Saeijs y Josefina Urraca atraviesa la idea del recuerdo y el duelo en la biblioteca del Parador de Corias. El op. 8 de Shostakóvich a los diecisiete años, los Nocturnes de Bloch y el Trío élégiaque de Rajmáninov tejen una constelación con la Lili Boulanger del Nocturne y una obra reciente de Brittney Benton.',
+    description: 'El trío de María Martínez, Frederieke Saeijs y Josefina Urraca atraviesa la idea del recuerdo y el duelo desde la biblioteca del Parador de Corias, antiguo monasterio benedictino del siglo XI. El op. 8 que Shostakóvich escribió a los diecisiete años abre el programa, seguido por los Nocturnes de Bloch y el Trío élégiaque de Rajmáninov; el Nocturne de Lili Boulanger y una obra reciente de Brittney Benton completan la constelación. Una hora exacta de música de cámara en uno de los entornos más recogidos del occidente asturiano.',
     pieces: [
       { composer: 'Dmitri Shostakóvich',  years: '1906–1975', piece: 'Trío con piano n.º 1 en do menor, op. 8',           duration: '14′' },
       { composer: 'Lili Boulanger',        years: '1893–1918', piece: 'Nocturne para violín y piano',                       duration: '4′' },
@@ -296,9 +316,10 @@ const EVENTS: Event[] = [
   },
   {
     n: '03', date: '06', dow: 'JUE', fullDate: '6 AGO',
+    capacity: 80,
     title: 'La forma de la memoria',
     subtitle: 'Concierto de trío con piano',
-    description: 'Segunda lectura de La forma de la memoria, ahora en Llanes. Mismo trío, mismas obras, otra acústica. Una manera de comprobar cómo el espacio reescribe la pieza.',
+    description: 'Segunda lectura del programa La forma de la memoria, ahora en Llanes. El mismo trío interpreta las mismas cinco obras, pero la acústica del nuevo espacio reescribe la pieza. Una manera de comprobar cómo el lugar transforma la música: un Shostakóvich a las once de la noche en la biblioteca de un parador no suena igual que ese mismo Shostakóvich a la luz del atardecer en una villa marinera del oriente.',
     pieces: [
       { composer: 'Dmitri Shostakóvich',  years: '1906–1975', piece: 'Trío con piano n.º 1 en do menor, op. 8',           duration: '14′' },
       { composer: 'Lili Boulanger',        years: '1893–1918', piece: 'Nocturne para violín y piano',                       duration: '4′' },
@@ -308,7 +329,6 @@ const EVENTS: Event[] = [
     ],
     totalDuration: '≈ 45′',
     venue: 'Llanes',
-    venueNote: 'Sede específica por confirmar.',
     municipality: 'Llanes',
     photo: CDN + 'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00600.jpg',
     memoriaSlug: 'concierto-visual-en-llanes',
@@ -319,13 +339,13 @@ const EVENTS: Event[] = [
       { name: 'Josefina Urraca',    role: 'piano' },
     ],
     eventbrite: '',
-    tbc: true,
   },
   {
     n: '04', date: '07', dow: 'VIE', fullDate: '7 AGO',
+    capacity: 60,
     title: 'UMBRAL ZERO',
     subtitle: 'Concierto de música minimalista y arte visual',
-    description: 'Programa de flauta y piano entre el minimalismo contemporáneo y el barroco. Guillermo Laporta y Josefina Urraca cruzan Vladimir’s Blues de Max Richter y Dream Journal de Hannah Selin con la Suite n.º 1 de Bach y Les Barricades Mystérieuses de Couperin, hilados por dos roads del propio Laporta.',
+    description: 'Programa de flauta y piano construido sobre la idea del umbral cero, ese punto exacto donde el sonido aparece y desaparece. Guillermo Laporta y Josefina Urraca cruzan el minimalismo de Max Richter y Hannah Selin con el barroco de Bach y Couperin, hilados por dos roads del propio Laporta. El Aula del Oro de Belmonte de Miranda, antiguo espacio expositivo del concejo, acoge una noche íntima de cámara con proyección visual integrada en el programa.',
     programName: 'Umbral Zero',
     pieces: [
       { composer: 'Max Richter',           years: '1966–',     piece: 'Vladimir’s Blues',                                  duration: '6′' },
@@ -347,9 +367,10 @@ const EVENTS: Event[] = [
   },
   {
     n: '05', date: '08', dow: 'SÁB–DOM', fullDate: '8 — 9 AGO',
+    capacity: 100,
     title: 'Intervención site-specific · Colectivo Menhir',
     subtitle: 'Dos jornadas · Creación site-specific',
-    description: 'Coco Moya e Iván Cebrián, del Colectivo Menhir, recorren Leiguarda durante dos jornadas con un dispositivo abierto de voz, guitarra, electrónica y creación sonora. Obras originales, arreglos, improvisación y una manera de hacer del pueblo entero la sala de conciertos.',
+    description: 'Coco Moya e Iván Cebrián recorren Leiguarda durante dos jornadas como Colectivo Menhir, una formación dedicada a la investigación artística y la creación site-specific. Voz, guitarra, electrónica y creación sonora se despliegan por las calles del pueblo en un dispositivo abierto: obras originales, arreglos, improvisación. Cada día propone un recorrido distinto y el público va llegando, se detiene, se reencuentra. El pueblo entero como sala de conciertos durante dos atardeceres.',
     programNote: 'Dos días de intervención por las calles del pueblo. Recorridos distintos cada jornada, obras originales, arreglos e improvisación.',
     pieces: [],
     venue: 'Calles de Leiguarda',
@@ -366,9 +387,10 @@ const EVENTS: Event[] = [
   },
   {
     n: '06', date: '11', dow: 'MAR', fullDate: '11 AGO',
+    capacity: 200,
     title: 'The Rest is Silence',
     subtitle: 'ADAR EN RUTA · Concierto de música de cámara y arte visual',
-    description: 'Quince piezas breves del siglo XX y XXI alternadas con cánones de Bach que funcionan como fugas entre los temas. Ligeti, Gubaidúlina, Kurtág, Webern, Penderecki, Stravinsky y Cage construyen un mosaico sobre el silencio en el Auditorio de El Franco con el trío Florea / Fernández / Claret.',
+    description: 'Programa-mosaico construido sobre la idea del silencio. Quince piezas breves del siglo XX y XXI alternadas con cánones de Bach que funcionan como fugas entre los temas. Ligeti, Gubaidúlina, Kurtág, Webern, Penderecki, Stravinsky y Cage construyen una secuencia rota deliberadamente por la regularidad de Bach. El trío Florea / Fernández / Claret aterriza en el Auditorio As Quintas de El Franco con escenografía visual y un programa que se escucha de un tirón, sin aplausos entre piezas.',
     programName: 'The Rest is Silence',
     pieces: [
       { composer: 'György Ligeti',           years: '1923–2006', piece: 'Hora Lunga',                          duration: '7′' },
@@ -402,9 +424,10 @@ const EVENTS: Event[] = [
   },
   {
     n: '07', date: '12', dow: 'MIÉ', fullDate: '12 AGO',
+    capacity: 50,
     title: 'Micro concierto durante el eclipse',
     subtitle: 'Muestra de la Residencia The Rest Project',
-    description: 'Micro concierto al aire libre durante el eclipse solar visible en Asturias. Muestra abierta del trabajo desarrollado por Maria Florea, Lara Fernández y Daniel Claret durante la residencia The Rest Project. Lugar de la cita en las calles de Leiguarda.',
+    description: 'Micro concierto al aire libre en las calles de Leiguarda durante el eclipse solar visible en Asturias el 12 de agosto. Muestra abierta del trabajo desarrollado por Maria Florea, Lara Fernández y Daniel Claret durante la residencia The Rest Project: una exploración del silencio, la pausa y el tiempo suspendido. La hora exacta se anuncia una vez se confirme el horario óptimo del eclipse para la ubicación del concierto.',
     programNote: 'Muestra abierta del trabajo desarrollado en la residencia The Rest Project durante el eclipse solar visible en Asturias.',
     pieces: [],
     venue: 'Calles de Leiguarda',
@@ -421,9 +444,10 @@ const EVENTS: Event[] = [
   },
   {
     n: '08', date: '13', dow: 'JUE', fullDate: '13 AGO',
+    capacity: 80,
     title: 'Concierto de música de cámara y arte visual',
     subtitle: 'ADAR EN RUTA',
-    description: 'Cuarteto y quinteto bajo las bóvedas de uno de los monasterios cistercienses del occidente. Twilight at Dawn de Devin Cholodenko (2024) abre la noche antes del Cuarteto op. 60 de Brahms y el Quinteto op. 81 de Dvořák — dos cumbres del siglo XIX leídas en una nave del XII.',
+    description: 'Cuarteto y quinteto bajo las bóvedas del monasterio cisterciense de Villanueva de Oscos, fundado en el siglo XII. Twilight at Dawn de Devin Cholodenko (2024) abre la noche antes del Cuarteto op. 60 de Brahms —escrito durante la crisis personal del compositor— y dos movimientos del Quinteto op. 81 de Dvořák. Dos cumbres del siglo XIX leídas en una nave del XII, con un encargo contemporáneo que las sitúa en el presente.',
     pieces: [
       { composer: 'Devin Cholodenko',                                piece: 'Twilight at Dawn (2024)',                                            duration: '8′' },
       { composer: 'Johannes Brahms',  years: '1833–1897',           piece: 'Cuarteto para piano n.º 3 en do menor, op. 60 (selección)',          duration: '20′' },
@@ -446,9 +470,10 @@ const EVENTS: Event[] = [
   },
   {
     n: '09', date: '15', dow: 'SÁB', fullDate: '15 AGO',
+    capacity: 40,
     title: 'Paseo sonoro en Leiguarda',
     subtitle: 'Creación site-specific',
-    description: 'Caminata musical por el valle con paradas en distintas estaciones. El quinteto Hoffman / Brazauskas / Saeijs / Laporta / Urraca interpreta obras originales, arreglos e improvisación a lo largo del recorrido. Aforo limitado, calzado cómodo recomendado.',
+    description: 'Caminata sonora por el valle con paradas en distintas estaciones del recorrido. El quinteto Hoffman / Brazauskas / Saeijs / Laporta / Urraca interpreta obras originales, arreglos e improvisación a lo largo del trayecto, integrando el paisaje en la partitura. Aforo limitado por motivos de movilidad: el grupo camina junto al público entre estación y estación. Calzado cómodo recomendado.',
     programNote: 'Creación site-specific con obras originales, arreglos e improvisación a lo largo del valle de Leiguarda.',
     pieces: [],
     venue: 'Calles de Leiguarda',
@@ -467,9 +492,10 @@ const EVENTS: Event[] = [
   },
   {
     n: '10', date: '16', dow: 'DOM', fullDate: '16 AGO',
+    capacity: 60,
     title: 'Clausura · Concierto de quinteto y espicha',
     subtitle: 'Cierre de la VI edición',
-    description: 'Cierre de la VI edición. Quinteto con el mismo equipo que el paseo sonoro del día anterior: Ravel (Ma mère l’Oye), Ligeti (Musica Ricercata), Beethoven (Dúo para clarinete y violonchelo) y Stravinsky (Tres piezas para clarinete solo). Tras el concierto, espicha abierta para todo el público.',
+    description: 'Cierre de la VI edición. El mismo quinteto que firmó el paseo sonoro del día anterior se reencuentra en la iglesia parroquial de Leiguarda para un programa concentrado: Ravel (Ma mère l’Oye), Ligeti (Musica Ricercata), Beethoven (Dúo para clarinete y violonchelo) y Stravinsky (Tres piezas para clarinete solo). Tras el concierto, espicha abierta para todo el público en el campo de la iglesia. La noche larga que despide el festival.',
     pieces: [
       { composer: 'Maurice Ravel',      years: '1875–1937', piece: 'Ma mère l’Oye',                       duration: '20′' },
       { composer: 'György Ligeti',      years: '1923–2006', piece: 'Musica Ricercata',                    duration: '10′' },
@@ -478,7 +504,6 @@ const EVENTS: Event[] = [
     ],
     totalDuration: '≈ 46′',
     venue: 'Iglesia de Leiguarda',
-    venueNote: 'Concierto seguido de espicha para todo el público.',
     municipality: 'Belmonte de Miranda',
     photo: CDN + 'adar25fx30/DSC01590.jpg',
     memoriaSlug: 'recital-de-andrea-casarrubios-en-la-iglesia-de-leiguarda',
@@ -526,8 +551,8 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
 
 <div class="vi26">
 
-  <!-- HERO · estilo prog-current (anillo amarillo) -->
-  <section class="prog-current">
+  <!-- HERO · anillo amarillo · "Festival ADAR 2026" gigante -->
+  <section class="prog-current vi26-hero-ring">
     <svg class="prog-current-ring" viewBox="0 0 800 800" aria-hidden="true">
       <circle cx="400" cy="400" r="380" fill="none" stroke="currentColor" stroke-width="1" />
       <circle cx="400" cy="400" r="320" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6" />
@@ -535,11 +560,8 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
     </svg>
     <div class="prog-current-body">
       <span class="prog-current-pill">{COPY.poster_kicker}</span>
-      <p class="prog-current-kicker mono">Edición VI · 4—16 agosto 2026</p>
-      <h1 class="prog-current-h">
-        La sexta edición <em>ya tiene programa.</em>
-      </h1>
-      <p class="prog-current-lede">{COPY.nights_sub}</p>
+      <h1 class="vi26-hero-title">{COPY.hero_h}</h1>
+      <p class="vi26-hero-tag">{COPY.hero_tag}</p>
       <div class="prog-current-ctas">
         <a class="prog-current-cta" href="#program">
           <span class="prog-arr">↓</span>
@@ -562,49 +584,55 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
       <p class="vi26-section-sub">{COPY.nights_sub}</p>
     </header>
 
-    <ol class="vi26-venue-list">
-      {EVENTS.map((e, idx) => e.rest ? (
-        <li class="vi26-event-rest">
-          <span class="vi26-rest-date mono"><span class="vi26-dow">{e.dow}</span> {e.fullDate}</span>
-          <span class="vi26-rest-label">{COPY.rest}</span>
-          <span class="vi26-rest-sub mono">{COPY.rest_sub}</span>
-        </li>
-      ) : (
-        <li class={`vi26-venue ${idx % 2 === 1 ? 'is-reverse' : ''}`}>
-          {e.photo ? (
-            <figure class="vi26-cover">
-              <img src={e.photo} alt={e.venue} loading="lazy" />
-            </figure>
-          ) : (
-            <div class="vi26-cover vi26-cover-empty">
-              <span class="mono">{COPY.tbc}</span>
-            </div>
-          )}
+    <ol class="vi26-event-list">
+      {EVENTS.filter((e) => !e.rest).map((e) => {
+        const kind = e.subtitle ? e.subtitle.split('·')[0].trim() : '';
+        const isLongProgram = e.pieces.length > 8;
+        return (
+          <li class="vi26-event">
+            <aside class="vi26-aside">
+              {e.photo ? (
+                <figure class="vi26-cover">
+                  <img src={e.photo} alt={e.venue} loading="lazy" />
+                </figure>
+              ) : (
+                <div class="vi26-cover vi26-cover-empty">
+                  <span class="mono">{COPY.soon}</span>
+                </div>
+              )}
 
-          <div class="vi26-venue-meta">
-            <div class="vi26-venue-mark">
-              <span class="vi26-venue-n mono">N° {e.n}</span>
-              <span class="vi26-venue-date mono"><span class="vi26-dow">{e.dow}</span> {e.fullDate}</span>
-              {e.tbc && <span class="vi26-venue-tbc mono">{COPY.tbc}</span>}
-            </div>
+              <div class="vi26-aside-info">
+                <p class="vi26-aside-n mono">N° {e.n}</p>
+                <p class="vi26-aside-when">
+                  <span class="vi26-aside-dow mono">{e.dow}</span>
+                  <span class="vi26-aside-date">{e.fullDate}</span>
+                </p>
 
-            <h3 class="vi26-venue-name">{e.title}</h3>
-            {e.subtitle && <p class="vi26-event-sub mono">↳ {e.subtitle}</p>}
+                <dl class="vi26-aside-facts">
+                  {kind && (<><dt class="mono">{COPY.th_kind}</dt><dd>{kind}</dd></>)}
+                  <dt class="mono">{COPY.venue_h}</dt><dd>{e.venue}</dd>
+                  <dt class="mono">Concejo</dt><dd>{e.municipality}</dd>
+                  {e.capacity && (
+                    <><dt class="mono">{COPY.capacity_label}</dt><dd>{e.capacity} {COPY.seats_label}</dd></>
+                  )}
+                </dl>
 
-            <dl class="vi26-event-block">
-              <dt class="mono">{COPY.venue_h}</dt>
-              <dd>
-                <span class="vi26-fact-line">{e.venue}</span>
-                <span class="vi26-fact-place mono">{e.municipality}</span>
-                {e.venueNote && <span class="vi26-fact-note mono">{e.venueNote}</span>}
-              </dd>
-            </dl>
+                {e.venueNote && (
+                  <p class="vi26-aside-note mono">{e.venueNote}</p>
+                )}
+              </div>
+            </aside>
 
-            <dl class="vi26-event-block">
-              <dt class="mono">{COPY.program_h}{e.programName ? ` · ${e.programName}` : ''}</dt>
-              <dd>
-                {e.pieces.length > 0 ? (
-                  <ol class="vi26-program">
+            <div class="vi26-content">
+              <h3 class="vi26-event-title">{e.title}</h3>
+              {e.subtitle && <p class="vi26-event-sub mono">↳ {e.subtitle}</p>}
+
+              {e.description && <p class="vi26-event-desc">{e.description}</p>}
+
+              {e.pieces.length > 0 ? (
+                <div class="vi26-program-wrap">
+                  <p class="vi26-block-label mono">{COPY.program_h}{e.programName ? ` · ${e.programName}` : ''}</p>
+                  <ol class={`vi26-program ${isLongProgram ? 'is-multi' : ''}`}>
                     {e.pieces.map((p) => (
                       <li>
                         <span class="vi26-program-composer">{p.composer}{p.years ? <span class="vi26-program-years mono"> {p.years}</span> : null}</span>
@@ -613,16 +641,17 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
                       </li>
                     ))}
                   </ol>
-                ) : (
-                  <p class="vi26-program-note">{e.programNote || COPY.program_tbd}</p>
-                )}
-                {e.totalDuration && <p class="vi26-program-total mono">{COPY.duration_total} · {e.totalDuration}</p>}
-              </dd>
-            </dl>
+                  {e.totalDuration && <p class="vi26-program-total mono">{COPY.duration_total} · {e.totalDuration}</p>}
+                </div>
+              ) : e.programNote ? (
+                <div class="vi26-program-wrap">
+                  <p class="vi26-block-label mono">{COPY.program_h}</p>
+                  <p class="vi26-program-note">{e.programNote}</p>
+                </div>
+              ) : null}
 
-            <dl class="vi26-event-block">
-              <dt class="mono">{COPY.artists_h}</dt>
-              <dd>
+              <div class="vi26-artists-wrap">
+                <p class="vi26-block-label mono">{COPY.artists_h}</p>
                 <ul class="vi26-artist-line">
                   {e.artists.map((a) => (
                     <li>
@@ -631,31 +660,22 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
                     </li>
                   ))}
                 </ul>
-              </dd>
-            </dl>
+              </div>
 
-            <div class="vi26-venue-links">
-              {e.memoriaSlug && (
-                <a class="vi26-link" href={`/${lang}/${e.memoriaSlug}/`}>
-                  <span class="vi26-arr">↗</span> {COPY.visit_h} {e.memoriaYear}
-                </a>
-              )}
-              {e.venueWebsite && (
-                <a class="vi26-link" href={e.venueWebsite} target="_blank" rel="noopener">
-                  <span class="vi26-arr">↗</span> {COPY.web_h}
-                </a>
-              )}
-              {e.eventbrite ? (
-                <a class="vi26-cta vi26-cta-small" href={e.eventbrite} target="_blank" rel="noopener">
-                  <span class="vi26-arr">→</span> {COPY.rsvp}
-                </a>
-              ) : (
-                <span class="vi26-cta vi26-cta-small vi26-cta-disabled">{COPY.soon}</span>
-              )}
+              <div class="vi26-event-cta">
+                {e.eventbrite ? (
+                  <a class="vi26-rsvp" href={e.eventbrite} target="_blank" rel="noopener">
+                    <span class="vi26-arr">→</span> {COPY.rsvp}
+                  </a>
+                ) : (
+                  <span class="vi26-rsvp is-soon">{COPY.seats_soon}</span>
+                )}
+                <p class="vi26-rsvp-note mono">{COPY.free_note}</p>
+              </div>
             </div>
-          </div>
-        </li>
-      ))}
+          </li>
+        );
+      })}
     </ol>
   </section>
 

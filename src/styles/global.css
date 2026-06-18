@@ -11376,3 +11376,265 @@ body.page .entry-content .vi26 p,
 .vi26-cta { background: var(--accent); color: var(--accent-ink) !important; }
 .vi26-cta-ghost { background: transparent; color: #0a0907 !important; border-color: #0a0907; }
 .vi26-cta-ghost:hover { background: #ebe5d8; color: #0a0907 !important; }
+
+/* =============================================================
+   VI26 · HERO RING ("Festival ADAR 2026" gigante)
+   ============================================================= */
+.vi26-hero-ring .vi26-hero-title {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 700;
+  font-size: clamp(56px, 9vw, 156px);
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  margin: 18px 0 16px;
+  color: var(--accent-ink);
+  text-wrap: balance;
+}
+.vi26-hero-ring .vi26-hero-tag {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(18px, 1.7vw, 28px);
+  line-height: 1.35;
+  letter-spacing: -0.005em;
+  color: var(--accent-ink);
+  margin: 0 0 26px !important;
+  max-width: 32ch;
+}
+
+/* =============================================================
+   VI26 · NEW EVENT LAYOUT
+   Image left + sidebar info below image, content on the right.
+   Long programs wrap into two columns.
+   ============================================================= */
+.vi26-event-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+@media (max-width: 720px) {
+  .vi26-event-list { padding: 0 20px; gap: 56px; }
+}
+
+.vi26-event {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 56px;
+  align-items: start;
+  padding-bottom: 56px;
+  border-bottom: 1px solid rgba(10,9,7,0.16);
+}
+.vi26-event:last-child { border-bottom: 0; }
+@media (max-width: 1024px) {
+  .vi26-event { grid-template-columns: 280px minmax(0, 1fr); gap: 40px; }
+}
+@media (max-width: 720px) {
+  .vi26-event { grid-template-columns: 1fr; gap: 28px; padding-bottom: 40px; }
+}
+
+/* ASIDE — image + info sidebar */
+.vi26-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: sticky;
+  top: 120px;
+  align-self: start;
+}
+@media (max-width: 1024px) { .vi26-aside { position: static; } }
+
+.vi26-aside .vi26-cover {
+  aspect-ratio: 1 / 1 !important;
+  margin: 0;
+}
+.vi26-aside-info {
+  border: 1px solid rgba(10,9,7,0.18);
+  border-top: 0;
+  padding: 20px 22px 22px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.vi26-aside-n {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: var(--accent-ink);
+  opacity: 0.6;
+  margin: 0;
+}
+.vi26-aside-when {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 !important;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(10,9,7,0.15);
+}
+.vi26-aside-dow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  color: var(--accent-ink);
+  font-weight: 700;
+}
+.vi26-aside-date {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 500;
+  font-size: clamp(30px, 2.6vw, 40px);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0a0907;
+}
+.vi26-aside-facts {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 6px 14px;
+  margin: 0;
+  font-size: 13px;
+}
+.vi26-aside-facts dt {
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  color: var(--accent-ink);
+  opacity: 0.6;
+  padding-top: 3px;
+  margin: 0;
+}
+.vi26-aside-facts dd {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.35;
+  color: #0a0907;
+}
+.vi26-aside-note {
+  margin: 0 !important;
+  padding: 10px 12px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+/* CONTENT column */
+.vi26-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 4px;
+}
+.vi26-event-title {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 500;
+  font-size: clamp(32px, 3.6vw, 56px);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: #0a0907;
+  text-wrap: balance;
+}
+.vi26-content .vi26-event-sub {
+  font-size: 12px !important;
+  letter-spacing: 0.18em !important;
+  color: var(--accent-ink) !important;
+  margin: -16px 0 0 !important;
+}
+.vi26-content .vi26-event-desc {
+  font-family: var(--font-sans);
+  font-size: 17px !important;
+  line-height: 1.6 !important;
+  color: rgba(10,9,7,0.85) !important;
+  max-width: 68ch;
+  margin: 0 !important;
+}
+
+.vi26-block-label {
+  font-size: 10px !important;
+  letter-spacing: 0.24em;
+  color: var(--accent-ink);
+  opacity: 0.7;
+  margin: 0 0 10px !important;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #0a0907;
+}
+
+.vi26-program-wrap,
+.vi26-artists-wrap { margin: 0; }
+
+/* Program list (multi-column for long programs) */
+.vi26-program.is-multi {
+  column-count: 2;
+  column-gap: 40px;
+  column-fill: balance;
+}
+.vi26-program.is-multi li {
+  break-inside: avoid;
+  padding-left: 30px;
+}
+@media (max-width: 720px) {
+  .vi26-program.is-multi { column-count: 1; }
+}
+
+/* Artist list */
+.vi26-artists-wrap .vi26-artist-line {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px 24px;
+}
+.vi26-artists-wrap .vi26-artist-line li {
+  border-bottom: 1px dashed rgba(10,9,7,0.16);
+  padding: 8px 0;
+}
+
+/* CTA block (one yellow button + free note) */
+.vi26-event-cta {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.vi26-event-cta .vi26-rsvp {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--accent);
+  color: var(--accent-ink) !important;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 18px 32px;
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  transition: transform 0.18s ease, box-shadow 0.22s ease, background 0.18s ease;
+}
+.vi26-event-cta .vi26-rsvp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245,215,47,0.45);
+  background: #f0d010;
+}
+.vi26-event-cta .vi26-rsvp.is-soon {
+  background: transparent;
+  color: rgba(10,9,7,0.55) !important;
+  border: 1px dashed rgba(10,9,7,0.3);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.vi26-event-cta .vi26-rsvp .vi26-arr { color: var(--accent-ink); }
+.vi26-rsvp-note {
+  margin: 0 !important;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: rgba(10,9,7,0.55);
+}
