@@ -11121,3 +11121,258 @@ body.page .entry-content .vi26 p,
   color: var(--vi-mute);
 }
 .vi26-td-muni { color: var(--vi-mute); }
+
+/* =============================================================
+   LIGHT MODE OVERRIDE — flips the vi26 canvas to cream paper
+   while keeping the yellow accent and typographic scale.
+   ============================================================= */
+.vi26-body,
+.vi26-body .entry-content,
+.vi26-body .builder-wrap,
+.vi26-body .builder-wrap.full-width { background: #f4eee2; }
+
+.vi26 {
+  --vi-mute:  rgba(10,9,7,0.55);
+  --vi-line:  rgba(10,9,7,0.16);
+  background: #f4eee2;
+  color: #0a0907;
+}
+.vi26 p { color: #0a0907; }
+
+/* Larger base type on cards */
+.vi26 { font-size: 16px; }
+
+/* Poster */
+.vi26-poster { background: #f4eee2; color: #0a0907; }
+.vi26-poster-bg img {
+  filter: grayscale(1) contrast(1.05) brightness(1.05);
+  opacity: 0.28;
+}
+.vi26-poster-bg::after {
+  background:
+    radial-gradient(ellipse at 50% 60%, rgba(244,238,226,0.6) 0%, rgba(244,238,226,0.95) 80%),
+    linear-gradient(180deg, rgba(244,238,226,0.7), rgba(244,238,226,0.95));
+}
+.vi26-poster-grain { background-image: repeating-linear-gradient(0deg, rgba(10,9,7,0.03) 0 1px, transparent 1px 3px); mix-blend-mode: multiply; }
+.vi26-poster-rules { color: #0a0907; opacity: 0.4; }
+.vi26-corner { color: #0a0907; }
+.vi26-poster-top {
+  color: #0a0907;
+  border-bottom-color: rgba(10,9,7,0.25);
+}
+.vi26-poster-top span:last-child { color: var(--accent-ink); }
+.vi26-poster-date { color: #0a0907; }
+.vi26-poster-mo { color: #0a0907; }
+.vi26-poster-vi {
+  color: var(--accent);
+  text-shadow:
+    0 0 60px rgba(245,215,47,0.6),
+    -3px 3px 0 rgba(10,9,7,0.15);
+}
+.vi26-poster-h { color: #0a0907; }
+.vi26-poster-h span { background: #0a0907; color: #f4eee2; }
+.vi26-poster-sub { color: rgba(10,9,7,0.7); }
+.vi26-poster-bottom { border-top-color: rgba(10,9,7,0.25); }
+.vi26-poster-stats li { color: rgba(10,9,7,0.82); }
+
+/* Section headers */
+.vi26-section-n { color: var(--accent-ink); opacity: 0.65; }
+.vi26-section-h { color: #0a0907; }
+.vi26-section-sub { color: rgba(10,9,7,0.7) !important; font-size: 17px !important; }
+
+/* Event cards · light */
+.vi26-venue {
+  border-bottom-color: rgba(10,9,7,0.18);
+  /* Cover smaller on desktop */
+  grid-template-columns: minmax(0, 300px) minmax(0, 1fr) !important;
+}
+.vi26-venue.is-reverse {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 300px) !important;
+}
+@media (max-width: 1024px) {
+  .vi26-venue,
+  .vi26-venue.is-reverse { grid-template-columns: 1fr !important; }
+}
+.vi26-cover {
+  background: #ebe5d8;
+  border-color: rgba(10,9,7,0.16);
+}
+.vi26-venue:hover .vi26-cover { border-color: #0a0907; }
+
+.vi26-venue-mark { border-top-color: #0a0907; }
+.vi26-venue-name { color: #0a0907; font-size: clamp(28px, 3vw, 44px) !important; }
+.vi26-venue-muni,
+.vi26-venue-date { color: var(--accent-ink); }
+.vi26-venue-tbc { background: var(--accent); color: var(--accent-ink); }
+.vi26-event-sub { color: rgba(10,9,7,0.7); font-size: 13px !important; letter-spacing: 0.16em !important; }
+.vi26-venue-desc { color: rgba(10,9,7,0.82) !important; font-size: 16px !important; line-height: 1.55 !important; }
+
+/* Event metadata block */
+.vi26-event-block { border-top-color: rgba(10,9,7,0.16); }
+.vi26-event-block dt { color: var(--accent-ink); opacity: 0.8; font-size: 10px !important; }
+.vi26-fact-line { color: #0a0907; font-size: 17px !important; }
+.vi26-fact-place { color: var(--accent-ink); opacity: 0.85; font-size: 12px !important; }
+.vi26-fact-note { color: rgba(10,9,7,0.6); font-size: 11px !important; }
+
+/* Program list — bumped */
+.vi26-program {
+  font-size: 15.5px !important;
+  line-height: 1.6 !important;
+}
+.vi26-program li {
+  color: #0a0907;
+  border-bottom-color: rgba(10,9,7,0.12);
+  padding: 6px 0 6px 30px;
+}
+.vi26-program li::before {
+  color: var(--accent-ink);
+  opacity: 0.6;
+  font-size: 10px !important;
+}
+.vi26-program-composer { color: #0a0907; }
+.vi26-program-years { color: rgba(10,9,7,0.55); font-size: 11px !important; }
+.vi26-program-piece em { color: #0a0907; }
+.vi26-program-dur { color: var(--accent-ink); opacity: 0.85; font-size: 11px !important; }
+.vi26-program-note { color: rgba(10,9,7,0.82) !important; font-size: 15px !important; line-height: 1.6 !important; }
+.vi26-program-total { color: var(--accent-ink); opacity: 0.7; font-size: 11px !important; }
+
+/* Artist list — bumped */
+.vi26-artist-line { font-size: 16px !important; }
+.vi26-artist-l-name { color: #0a0907; font-size: 17px !important; }
+.vi26-artist-l-role { color: rgba(10,9,7,0.55); font-size: 11px !important; }
+
+/* Event description — new field */
+.vi26-event-desc {
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  color: rgba(10,9,7,0.82) !important;
+  margin: 12px 0 4px !important;
+  max-width: 64ch;
+}
+
+/* CTA block per event — only ONE big yellow button */
+.vi26-event-cta {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+.vi26-event-cta .vi26-rsvp {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--accent);
+  color: var(--accent-ink) !important;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 16px 28px;
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  transition: transform 0.18s ease, box-shadow 0.22s ease;
+}
+.vi26-event-cta .vi26-rsvp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(245,215,47,0.45);
+}
+.vi26-event-cta .vi26-rsvp.is-soon {
+  background: transparent;
+  color: rgba(10,9,7,0.55) !important;
+  border: 1px dashed rgba(10,9,7,0.3);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+.vi26-event-cta .vi26-rsvp .vi26-arr { color: var(--accent-ink); }
+
+/* Hide old links inside venue-links */
+.vi26-venue-links .vi26-link { display: none !important; }
+
+/* Rest cards — light (kept just in case any sneak through) */
+.vi26-event-rest {
+  border-color: rgba(10,9,7,0.16);
+  background: rgba(10,9,7,0.03);
+}
+.vi26-rest-date { color: #0a0907; }
+.vi26-rest-label { color: var(--accent-ink); opacity: 0.85; }
+.vi26-rest-sub { color: rgba(10,9,7,0.55); }
+
+/* Cartel · light */
+.vi26-cartel-list { border-top-color: #0a0907; border-bottom-color: #0a0907; }
+.vi26-cartel-row { border-bottom-color: rgba(10,9,7,0.16); }
+.vi26-cartel-row:hover { background: rgba(245,215,47,0.18); }
+.vi26-cartel-name { color: #0a0907; font-size: clamp(24px, 2.4vw, 42px) !important; }
+.vi26-cartel-role { color: var(--accent-ink); opacity: 0.85; font-size: 12px !important; }
+
+/* Calendar table · light */
+.vi26-table {
+  color: #0a0907;
+  border-top-color: #0a0907;
+  border-bottom-color: #0a0907;
+  font-size: 12px !important;
+}
+.vi26-table th {
+  color: var(--accent-ink);
+  border-bottom-color: rgba(10,9,7,0.25);
+  font-size: 11px !important;
+}
+.vi26-table td {
+  border-bottom-color: rgba(10,9,7,0.12);
+  padding: 20px 16px;
+}
+.vi26-table tbody tr:hover { background: rgba(245,215,47,0.18); }
+.vi26-table .vi26-td-n { color: var(--accent-ink); font-size: 15px !important; }
+.vi26-table .vi26-td-kind { color: #0a0907; }
+.vi26-table .vi26-td-venue { color: #0a0907; font-size: 15px !important; }
+.vi26-table .vi26-dow { color: var(--accent-ink); }
+.vi26-table tr.is-tbc td { color: rgba(10,9,7,0.55); }
+.vi26-table tr.is-tbc .vi26-td-venue { color: rgba(10,9,7,0.55); }
+.vi26-td-muni { color: rgba(10,9,7,0.55); }
+
+.vi26-rsvp-mini {
+  border-color: var(--accent-ink);
+  color: var(--accent-ink);
+  font-size: 11px;
+}
+.vi26-rsvp-mini:hover { background: var(--accent); color: var(--accent-ink); }
+.vi26-rsvp-soon { border-color: rgba(10,9,7,0.2); color: rgba(10,9,7,0.4); }
+
+/* Info section (was already light, ensure consistent paper bg) */
+.vi26-info { background: #ebe5d8; color: #0a0907; }
+.vi26-info .vi26-section-sub { color: rgba(10,9,7,0.65) !important; }
+
+/* Follow section — keep yellow */
+.vi26-follow { background: var(--accent); color: var(--accent-ink); }
+.vi26-follow .vi26-section-h { color: var(--accent-ink); }
+.vi26-follow .vi26-section-sub { color: rgba(10,9,7,0.78) !important; }
+.vi26-follow .vi26-cta { background: #0a0907; color: var(--accent) !important; }
+.vi26-follow .vi26-cta-ghost { background: transparent; color: var(--accent-ink) !important; border-color: var(--accent-ink); }
+.vi26-follow .vi26-cta-ghost:hover { background: var(--accent-ink); color: var(--accent) !important; }
+
+/* Credits */
+.vi26-credits {
+  border-top-color: rgba(10,9,7,0.2);
+  color: #0a0907;
+}
+.vi26-credits .vi26-section-h { color: #0a0907; }
+.vi26-credits-list dt { color: var(--accent-ink); opacity: 0.8; }
+.vi26-credits-list dd { color: #0a0907; }
+.vi26-credits-foot {
+  border-top-color: rgba(10,9,7,0.15);
+  color: rgba(10,9,7,0.55);
+}
+
+/* Section sub paddings */
+.vi26-section-head {
+  padding: 80px 40px 32px;
+}
+@media (max-width: 720px) {
+  .vi26-section-head { padding: 56px 20px 24px; }
+}
+
+/* CTAs general — keep dark text on yellow */
+.vi26-cta { background: var(--accent); color: var(--accent-ink) !important; }
+.vi26-cta-ghost { background: transparent; color: #0a0907 !important; border-color: #0a0907; }
+.vi26-cta-ghost:hover { background: #ebe5d8; color: #0a0907 !important; }

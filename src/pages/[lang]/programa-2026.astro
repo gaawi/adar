@@ -24,7 +24,7 @@ const COPY = {
     poster_year: 'MMXXVI',
     poster_h: 'ADAR',
     poster_sub: 'Edición VI · Asturies / ES · 43.2° N · 6.2° W',
-    poster_stat_a: '11 conciertos',
+    poster_stat_a: '10 conciertos',
     poster_stat_b: '13 artistas',
     poster_stat_c: '7 sedes patrimoniales',
     poster_stat_d: 'Entrada libre',
@@ -32,7 +32,7 @@ const COPY = {
     cta_press: 'Dosier de prensa',
     nights_n: '§ 01',
     nights_h: 'Programa',
-    nights_sub: 'Once conciertos del 4 al 16 de agosto, distribuidos entre conciertos de cámara «ADAR en ruta», intervenciones site-specific en Leiguarda y un cierre de quinteto con espicha. Programa publicado · sedes en confirmación final.',
+    nights_sub: 'Diez conciertos del 4 al 16 de agosto, distribuidos entre conciertos de cámara «ADAR en ruta», intervenciones site-specific en Leiguarda y un cierre de quinteto con espicha. Programa publicado · sedes en confirmación final.',
     program_h: 'Programa',
     artists_h: 'Intérpretes',
     venue_h: 'Sede',
@@ -49,7 +49,7 @@ const COPY = {
     cartel_sub: 'Trece intérpretes y un colectivo de creación. Música de cámara, residencia artística y trabajo site-specific.',
     cal_n: '§ 03',
     cal_h: 'Calendario',
-    cal_sub: 'Trece días, once conciertos, dos descansos. Toda la programación es de entrada libre hasta completar aforo.',
+    cal_sub: 'Diez conciertos del 4 al 16 de agosto. Toda la programación es de entrada libre hasta completar aforo.',
     th_n: 'N°',
     th_date: 'Fecha',
     th_kind: 'Formato',
@@ -90,7 +90,7 @@ const COPY = {
     poster_year: 'MMXXVI',
     poster_h: 'ADAR',
     poster_sub: 'Edition VI · Asturias / ES · 43.2° N · 6.2° W',
-    poster_stat_a: '11 concerts',
+    poster_stat_a: '10 concerts',
     poster_stat_b: '13 performers',
     poster_stat_c: '7 heritage venues',
     poster_stat_d: 'Free entry',
@@ -98,7 +98,7 @@ const COPY = {
     cta_press: 'Press kit',
     nights_n: '§ 01',
     nights_h: 'Programme',
-    nights_sub: 'Eleven concerts from 4 to 16 August: chamber music on tour, site-specific interventions in Leiguarda and a closing quintet with espicha. Programme published · final venues being confirmed.',
+    nights_sub: 'Ten concerts from 4 to 16 August: chamber music on tour, site-specific interventions in Leiguarda and a closing quintet with espicha. Programme published · final venues being confirmed.',
     program_h: 'Programme',
     artists_h: 'Performers',
     venue_h: 'Venue',
@@ -115,7 +115,7 @@ const COPY = {
     cartel_sub: 'Thirteen performers and one creation collective. Chamber music, artistic residency and site-specific work.',
     cal_n: '§ 03',
     cal_h: 'Calendar',
-    cal_sub: 'Thirteen days, eleven concerts, two rest days. All programming is free until capacity.',
+    cal_sub: 'Ten concerts from 4 to 16 August. All programming is free until capacity.',
     th_n: 'N°',
     th_date: 'Date',
     th_kind: 'Format',
@@ -156,7 +156,7 @@ const COPY = {
     poster_year: 'MMXXVI',
     poster_h: 'ADAR',
     poster_sub: 'Edición VI · Asturies / ES · 43.2° N · 6.2° W',
-    poster_stat_a: '11 conciertos',
+    poster_stat_a: '10 conciertos',
     poster_stat_b: '13 intérpretes',
     poster_stat_c: '7 sedes patrimoniales',
     poster_stat_d: 'Entrada llibre',
@@ -164,7 +164,7 @@ const COPY = {
     cta_press: 'Dosier de prensa',
     nights_n: '§ 01',
     nights_h: 'Programa',
-    nights_sub: 'Once conciertos del 4 al 16 d’agostu, distribuyíos ente conciertos de cámara «ADAR en ruta», intervenciones site-specific en Lleiguarda y un zarru de quintetu con espicha. Programa publicáu · sedes en confirmación final.',
+    nights_sub: 'Diez conciertos del 4 al 16 d’agostu, distribuyíos ente conciertos de cámara «ADAR en ruta», intervenciones site-specific en Lleiguarda y un zarru de quintetu con espicha. Programa publicáu · sedes en confirmación final.',
     program_h: 'Programa',
     artists_h: 'Intérpretes',
     venue_h: 'Sede',
@@ -233,6 +233,7 @@ interface Event {
   rest?: boolean;
   title: string;
   subtitle?: string;
+  description?: string;
   programName?: string;
   programNote?: string;
   pieces: Piece[];
@@ -254,12 +255,13 @@ const EVENTS: Event[] = [
     n: '01', date: '04', dow: 'MAR', fullDate: '4 AGO',
     title: 'Micro concierto de clavicémbalo',
     subtitle: 'Inauguración · Concurso de Hórreos y Paneras',
+    description: 'Apertura íntima en el hórreo seleccionado por el jurado del Concurso de Hórreos y Paneras 2026. Aforo limitado a treinta personas en un espacio patrimonial restaurado para la ocasión, antes de que el festival arranque su recorrido por el resto de Asturias.',
     programNote: 'Programa por anunciar.',
     pieces: [],
     venue: 'Hórreo ganador del concurso 2026',
     venueNote: 'Sede específica tras el fallo del jurado.',
     municipality: 'Por confirmar',
-    photo: CDN + 'adar25fx30/C1970T01.jpg',
+    photo: 'https://s1.abcstatics.com/abc/www/multimedia/sevilla/2023/01/18/ignacio-priego-uno_20230118120520-kJAB-Rz4H5Ye2vCc2SwoCBKMcEPM-1200x840@abc.jpg',
     memoriaSlug: 'micro-concierto-en-puerma-las-regueras',
     memoriaYear: 2025,
     artists: [{ name: 'Ignacio Priego', role: 'clave' }],
@@ -270,6 +272,7 @@ const EVENTS: Event[] = [
     n: '02', date: '05', dow: 'MIÉ', fullDate: '5 AGO',
     title: 'La forma de la memoria',
     subtitle: 'ADAR EN RUTA · Concierto de trío con piano',
+    description: 'El trío de María Martínez, Frederieke Saeijs y Josefina Urraca atraviesa la idea del recuerdo y el duelo en la biblioteca del Parador de Corias. El op. 8 de Shostakóvich a los diecisiete años, los Nocturnes de Bloch y el Trío élégiaque de Rajmáninov tejen una constelación con la Lili Boulanger del Nocturne y una obra reciente de Brittney Benton.',
     pieces: [
       { composer: 'Dmitri Shostakóvich',  years: '1906–1975', piece: 'Trío con piano n.º 1 en do menor, op. 8',           duration: '14′' },
       { composer: 'Lili Boulanger',        years: '1893–1918', piece: 'Nocturne para violín y piano',                       duration: '4′' },
@@ -280,7 +283,7 @@ const EVENTS: Event[] = [
     totalDuration: '≈ 45′',
     venue: 'Biblioteca del Parador de Corias',
     municipality: 'Cangas del Narcea',
-    photo: CDN + 'adar25fx30/corias.jpg',
+    photo: 'https://paradores.es/sites/default/files/images/blog/20210421_162035.jpg',
     memoriaSlug: 'paseo-sonoro-en-el-claustro-del-parador-de-corias',
     memoriaYear: 2025,
     venueWebsite: 'https://www.paradores.es/es/parador-de-corias',
@@ -295,6 +298,7 @@ const EVENTS: Event[] = [
     n: '03', date: '06', dow: 'JUE', fullDate: '6 AGO',
     title: 'La forma de la memoria',
     subtitle: 'Concierto de trío con piano',
+    description: 'Segunda lectura de La forma de la memoria, ahora en Llanes. Mismo trío, mismas obras, otra acústica. Una manera de comprobar cómo el espacio reescribe la pieza.',
     pieces: [
       { composer: 'Dmitri Shostakóvich',  years: '1906–1975', piece: 'Trío con piano n.º 1 en do menor, op. 8',           duration: '14′' },
       { composer: 'Lili Boulanger',        years: '1893–1918', piece: 'Nocturne para violín y piano',                       duration: '4′' },
@@ -321,6 +325,7 @@ const EVENTS: Event[] = [
     n: '04', date: '07', dow: 'VIE', fullDate: '7 AGO',
     title: 'UMBRAL ZERO',
     subtitle: 'Concierto de música minimalista y arte visual',
+    description: 'Programa de flauta y piano entre el minimalismo contemporáneo y el barroco. Guillermo Laporta y Josefina Urraca cruzan Vladimir’s Blues de Max Richter y Dream Journal de Hannah Selin con la Suite n.º 1 de Bach y Les Barricades Mystérieuses de Couperin, hilados por dos roads del propio Laporta.',
     programName: 'Umbral Zero',
     pieces: [
       { composer: 'Max Richter',           years: '1966–',     piece: 'Vladimir’s Blues',                                  duration: '6′' },
@@ -333,7 +338,7 @@ const EVENTS: Event[] = [
     totalDuration: '≈ 57′',
     venue: 'Aula del Oro',
     municipality: 'Belmonte de Miranda',
-    photo: CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
+    photo: 'https://creartbox-media-cdn.b-cdn.net/webimg/projects_photos/20211015/007.jpg',
     artists: [
       { name: 'Guillermo Laporta', role: 'flauta' },
       { name: 'Josefina Urraca',   role: 'piano' },
@@ -341,14 +346,15 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '05', date: '08', dow: 'SÁB', fullDate: '8 AGO',
+    n: '05', date: '08', dow: 'SÁB–DOM', fullDate: '8 — 9 AGO',
     title: 'Intervención site-specific · Colectivo Menhir',
-    subtitle: 'Día 1 de 2 · Creación site-specific',
-    programNote: 'Creación site-specific con obras originales, arreglos e improvisación.',
+    subtitle: 'Dos jornadas · Creación site-specific',
+    description: 'Coco Moya e Iván Cebrián, del Colectivo Menhir, recorren Leiguarda durante dos jornadas con un dispositivo abierto de voz, guitarra, electrónica y creación sonora. Obras originales, arreglos, improvisación y una manera de hacer del pueblo entero la sala de conciertos.',
+    programNote: 'Dos días de intervención por las calles del pueblo. Recorridos distintos cada jornada, obras originales, arreglos e improvisación.',
     pieces: [],
     venue: 'Calles de Leiguarda',
     municipality: 'Belmonte de Miranda',
-    photo: CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
+    photo: 'https://fundacioncerezalesantoninoycinia.org/wp-content/uploads/2024/11/Menhir_2021-fundacion-cerezales.jpg',
     memoriaSlug: 'paseo-sonoro-en-leiguarda',
     memoriaYear: 2025,
     artists: [
@@ -359,36 +365,10 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '06', date: '09', dow: 'DOM', fullDate: '9 AGO',
-    title: 'Intervención site-specific · Colectivo Menhir',
-    subtitle: 'Día 2 de 2 · Creación site-specific',
-    programNote: 'Creación site-specific con obras originales, arreglos e improvisación.',
-    pieces: [],
-    venue: 'Calles de Leiguarda',
-    municipality: 'Belmonte de Miranda',
-    photo: CDN + 'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/PXL_20220813_180027994.jpg',
-    memoriaSlug: 'paseo-sonoro-en-leiguarda',
-    memoriaYear: 2025,
-    artists: [
-      { name: 'Coco Moya',       role: 'voz, electrónica y creación sonora' },
-      { name: 'Iván Cebrián',     role: 'guitarra, electrónica y creación sonora' },
-      { name: 'Colectivo Menhir', role: 'investigación artística y creación site-specific' },
-    ],
-    eventbrite: '',
-  },
-  {
-    n: 'R1', date: '10', dow: 'LUN', fullDate: '10 AGO',
-    rest: true,
-    title: 'Descanso',
-    pieces: [],
-    venue: '',
-    municipality: '',
-    artists: [],
-  },
-  {
-    n: '07', date: '11', dow: 'MAR', fullDate: '11 AGO',
+    n: '06', date: '11', dow: 'MAR', fullDate: '11 AGO',
     title: 'The Rest is Silence',
     subtitle: 'ADAR EN RUTA · Concierto de música de cámara y arte visual',
+    description: 'Quince piezas breves del siglo XX y XXI alternadas con cánones de Bach que funcionan como fugas entre los temas. Ligeti, Gubaidúlina, Kurtág, Webern, Penderecki, Stravinsky y Cage construyen un mosaico sobre el silencio en el Auditorio de El Franco con el trío Florea / Fernández / Claret.',
     programName: 'The Rest is Silence',
     pieces: [
       { composer: 'György Ligeti',           years: '1923–2006', piece: 'Hora Lunga',                          duration: '7′' },
@@ -410,7 +390,7 @@ const EVENTS: Event[] = [
     totalDuration: '≈ 50′',
     venue: 'Auditorio de El Franco',
     municipality: 'El Franco',
-    photo: CDN + 'ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg',
+    photo: 'https://images.squarespace-cdn.com/content/v1/6447d97edb0dde0915a32018/211dc9d7-c145-4100-9044-173346a1968d/DSC_6964.jpg?format=2500w',
     memoriaSlug: 'concierto-en-el-franco',
     memoriaYear: 2023,
     artists: [
@@ -421,14 +401,15 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '08', date: '12', dow: 'MIÉ', fullDate: '12 AGO',
+    n: '07', date: '12', dow: 'MIÉ', fullDate: '12 AGO',
     title: 'Micro concierto durante el eclipse',
     subtitle: 'Muestra de la Residencia The Rest Project',
+    description: 'Micro concierto al aire libre durante el eclipse solar visible en Asturias. Muestra abierta del trabajo desarrollado por Maria Florea, Lara Fernández y Daniel Claret durante la residencia The Rest Project. Lugar de la cita en las calles de Leiguarda.',
     programNote: 'Muestra abierta del trabajo desarrollado en la residencia The Rest Project durante el eclipse solar visible en Asturias.',
     pieces: [],
     venue: 'Calles de Leiguarda',
     municipality: 'Belmonte de Miranda',
-    photo: CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/19.jpg',
+    photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/Timeline%201_01_00_21_17.jpg',
     memoriaSlug: 'micro-conciertos-y-paseo-sonoro-en-leiguarda',
     memoriaYear: 2024,
     artists: [
@@ -439,9 +420,10 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '09', date: '13', dow: 'JUE', fullDate: '13 AGO',
+    n: '08', date: '13', dow: 'JUE', fullDate: '13 AGO',
     title: 'Concierto de música de cámara y arte visual',
     subtitle: 'ADAR EN RUTA',
+    description: 'Cuarteto y quinteto bajo las bóvedas de uno de los monasterios cistercienses del occidente. Twilight at Dawn de Devin Cholodenko (2024) abre la noche antes del Cuarteto op. 60 de Brahms y el Quinteto op. 81 de Dvořák — dos cumbres del siglo XIX leídas en una nave del XII.',
     pieces: [
       { composer: 'Devin Cholodenko',                                piece: 'Twilight at Dawn (2024)',                                            duration: '8′' },
       { composer: 'Johannes Brahms',  years: '1833–1897',           piece: 'Cuarteto para piano n.º 3 en do menor, op. 60 (selección)',          duration: '20′' },
@@ -463,18 +445,10 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: 'R2', date: '14', dow: 'VIE', fullDate: '14 AGO',
-    rest: true,
-    title: 'Descanso',
-    pieces: [],
-    venue: '',
-    municipality: '',
-    artists: [],
-  },
-  {
-    n: '10', date: '15', dow: 'SÁB', fullDate: '15 AGO',
+    n: '09', date: '15', dow: 'SÁB', fullDate: '15 AGO',
     title: 'Paseo sonoro en Leiguarda',
     subtitle: 'Creación site-specific',
+    description: 'Caminata musical por el valle con paradas en distintas estaciones. El quinteto Hoffman / Brazauskas / Saeijs / Laporta / Urraca interpreta obras originales, arreglos e improvisación a lo largo del recorrido. Aforo limitado, calzado cómodo recomendado.',
     programNote: 'Creación site-specific con obras originales, arreglos e improvisación a lo largo del valle de Leiguarda.',
     pieces: [],
     venue: 'Calles de Leiguarda',
@@ -492,9 +466,10 @@ const EVENTS: Event[] = [
     eventbrite: '',
   },
   {
-    n: '11', date: '16', dow: 'DOM', fullDate: '16 AGO',
+    n: '10', date: '16', dow: 'DOM', fullDate: '16 AGO',
     title: 'Clausura · Concierto de quinteto y espicha',
     subtitle: 'Cierre de la VI edición',
+    description: 'Cierre de la VI edición. Quinteto con el mismo equipo que el paseo sonoro del día anterior: Ravel (Ma mère l’Oye), Ligeti (Musica Ricercata), Beethoven (Dúo para clarinete y violonchelo) y Stravinsky (Tres piezas para clarinete solo). Tras el concierto, espicha abierta para todo el público.',
     pieces: [
       { composer: 'Maurice Ravel',      years: '1875–1937', piece: 'Ma mère l’Oye',                       duration: '20′' },
       { composer: 'György Ligeti',      years: '1923–2006', piece: 'Musica Ricercata',                    duration: '10′' },
@@ -551,64 +526,29 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
 
 <div class="vi26">
 
-  <!-- TOP MARQUEE -->
-  <div class="vi26-topbar mono">
-    <div class="vi26-topbar-track"><span>{COPY.topbar}</span><span>{COPY.topbar}</span><span>{COPY.topbar}</span></div>
-  </div>
-
-  <!-- POSTER HERO -->
-  <section class="vi26-poster">
-    <div class="vi26-poster-bg" aria-hidden="true">
-      <img src={POSTER_BG} alt="" loading="eager" />
-    </div>
-    <div class="vi26-poster-grain" aria-hidden="true"></div>
-
-    <!-- Decorative geometry -->
-    <svg class="vi26-poster-rules" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
-      <line x1="0" y1="120" x2="1200" y2="120" stroke="currentColor" stroke-width="1" />
-      <line x1="0" y1="680" x2="1200" y2="680" stroke="currentColor" stroke-width="1" />
-      <line x1="80"   y1="0" x2="80"   y2="800" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6" />
-      <line x1="1120" y1="0" x2="1120" y2="800" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6" />
+  <!-- HERO · estilo prog-current (anillo amarillo) -->
+  <section class="prog-current">
+    <svg class="prog-current-ring" viewBox="0 0 800 800" aria-hidden="true">
+      <circle cx="400" cy="400" r="380" fill="none" stroke="currentColor" stroke-width="1" />
+      <circle cx="400" cy="400" r="320" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6" />
+      <circle cx="400" cy="400" r="260" fill="none" stroke="currentColor" stroke-width="1" />
     </svg>
-
-    <!-- Corner marks -->
-    <span class="vi26-corner vi26-corner-tl" aria-hidden="true">+</span>
-    <span class="vi26-corner vi26-corner-tr" aria-hidden="true">+</span>
-    <span class="vi26-corner vi26-corner-bl" aria-hidden="true">+</span>
-    <span class="vi26-corner vi26-corner-br" aria-hidden="true">+</span>
-
-    <!-- Top band -->
-    <div class="vi26-poster-top mono">
-      <span>{COPY.poster_kicker}</span>
-      <span>{COPY.poster_year}</span>
-    </div>
-
-    <!-- Center composition -->
-    <div class="vi26-poster-stack">
-      <p class="vi26-poster-date">{COPY.poster_dates}</p>
-      <p class="vi26-poster-mo">{COPY.poster_month}</p>
-
-      <div class="vi26-poster-mark" aria-hidden="true">
-        <span class="vi26-poster-vi">VI</span>
-      </div>
-
-      <h1 class="vi26-poster-h"><span>{COPY.poster_h}</span></h1>
-      <p class="vi26-poster-sub mono">{COPY.poster_sub}</p>
-    </div>
-
-    <!-- Bottom band: stats + CTAs -->
-    <div class="vi26-poster-bottom">
-      <ul class="vi26-poster-stats mono">
-        <li>{COPY.poster_stat_a}</li>
-        <li>{COPY.poster_stat_b}</li>
-        <li>{COPY.poster_stat_c}</li>
-        <li>{COPY.poster_stat_d}</li>
-      </ul>
-      <div class="vi26-poster-actions">
-        <a class="vi26-cta" href="#program"><span class="vi26-arr">↓</span> {COPY.cta_program}</a>
-        <a class="vi26-cta vi26-cta-ghost"
+    <div class="prog-current-body">
+      <span class="prog-current-pill">{COPY.poster_kicker}</span>
+      <p class="prog-current-kicker mono">Edición VI · 4—16 agosto 2026</p>
+      <h1 class="prog-current-h">
+        La sexta edición <em>ya tiene programa.</em>
+      </h1>
+      <p class="prog-current-lede">{COPY.nights_sub}</p>
+      <div class="prog-current-ctas">
+        <a class="prog-current-cta" href="#program">
+          <span class="prog-arr">↓</span>
+          {COPY.cta_program}
+        </a>
+        <a class="prog-current-cta prog-current-cta-ghost"
            href="mailto:leiguardamusic@gmail.com?subject=Dosier%20de%20prensa%20Festival%20ADAR%202026">
-          <span class="vi26-arr">→</span> {COPY.cta_press}
+          <span class="prog-arr">→</span>
+          {COPY.cta_press}
         </a>
       </div>
     </div>

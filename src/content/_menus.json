@@ -164,6 +164,72 @@
       "object_type": "custom",
       "object": "custom",
       "object_id": "9004"
+    },
+    {
+      "title": "VI · 2026 (Current)",
+      "url": "/en/programa-2026/",
+      "order": 1,
+      "parent_id": 9001,
+      "item_id": 95006,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95006"
+    },
+    {
+      "title": "V · 2025",
+      "url": "/en/programacion-archivo/#y-2025",
+      "order": 2,
+      "parent_id": 9001,
+      "item_id": 95007,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95007"
+    },
+    {
+      "title": "IV · 2024",
+      "url": "/en/programacion-archivo/#y-2024",
+      "order": 3,
+      "parent_id": 9001,
+      "item_id": 95008,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95008"
+    },
+    {
+      "title": "III · 2023",
+      "url": "/en/programacion-archivo/#y-2023",
+      "order": 4,
+      "parent_id": 9001,
+      "item_id": 95009,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95009"
+    },
+    {
+      "title": "II · 2022",
+      "url": "/en/programacion-archivo/#y-2022",
+      "order": 5,
+      "parent_id": 9001,
+      "item_id": 95010,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95010"
+    },
+    {
+      "title": "I · 2021",
+      "url": "/en/programacion-archivo/#y-2021",
+      "order": 6,
+      "parent_id": 9001,
+      "item_id": 95011,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95011"
     }
   ],
   "ast": [
@@ -331,6 +397,72 @@
       "object_type": "custom",
       "object": "custom",
       "object_id": "9005"
+    },
+    {
+      "title": "VI · 2026 (En cursu)",
+      "url": "/ast/programa-2026/",
+      "order": 1,
+      "parent_id": 9002,
+      "item_id": 95012,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95012"
+    },
+    {
+      "title": "V · 2025",
+      "url": "/ast/programacion-archivo/#y-2025",
+      "order": 2,
+      "parent_id": 9002,
+      "item_id": 95013,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95013"
+    },
+    {
+      "title": "IV · 2024",
+      "url": "/ast/programacion-archivo/#y-2024",
+      "order": 3,
+      "parent_id": 9002,
+      "item_id": 95014,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95014"
+    },
+    {
+      "title": "III · 2023",
+      "url": "/ast/programacion-archivo/#y-2023",
+      "order": 4,
+      "parent_id": 9002,
+      "item_id": 95015,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95015"
+    },
+    {
+      "title": "II · 2022",
+      "url": "/ast/programacion-archivo/#y-2022",
+      "order": 5,
+      "parent_id": 9002,
+      "item_id": 95016,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95016"
+    },
+    {
+      "title": "I · 2021",
+      "url": "/ast/programacion-archivo/#y-2021",
+      "order": 6,
+      "parent_id": 9002,
+      "item_id": 95017,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95017"
     }
   ],
   "es": [
@@ -498,6 +630,72 @@
       "object_type": "custom",
       "object": "custom",
       "object_id": "9006"
+    },
+    {
+      "title": "VI · 2026 (En curso)",
+      "url": "/es/programa-2026/",
+      "order": 1,
+      "parent_id": 9003,
+      "item_id": 95000,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95000"
+    },
+    {
+      "title": "V · 2025",
+      "url": "/es/programacion-archivo/#y-2025",
+      "order": 2,
+      "parent_id": 9003,
+      "item_id": 95001,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95001"
+    },
+    {
+      "title": "IV · 2024",
+      "url": "/es/programacion-archivo/#y-2024",
+      "order": 3,
+      "parent_id": 9003,
+      "item_id": 95002,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95002"
+    },
+    {
+      "title": "III · 2023",
+      "url": "/es/programacion-archivo/#y-2023",
+      "order": 4,
+      "parent_id": 9003,
+      "item_id": 95003,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95003"
+    },
+    {
+      "title": "II · 2022",
+      "url": "/es/programacion-archivo/#y-2022",
+      "order": 5,
+      "parent_id": 9003,
+      "item_id": 95004,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95004"
+    },
+    {
+      "title": "I · 2021",
+      "url": "/es/programacion-archivo/#y-2021",
+      "order": 6,
+      "parent_id": 9003,
+      "item_id": 95005,
+      "classes": "",
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": "95005"
     }
   ]
 }
