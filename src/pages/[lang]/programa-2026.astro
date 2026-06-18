@@ -241,7 +241,7 @@ interface Event {
   venueNote?: string;
   venueWebsite?: string;
   municipality: string;
-  photos: string[];
+  photo?: string;
   memoriaSlug?: string;
   memoriaYear?: number;
   artists: Performer[];
@@ -259,13 +259,7 @@ const EVENTS: Event[] = [
     venue: 'Hórreo ganador del concurso 2026',
     venueNote: 'Sede específica tras el fallo del jurado.',
     municipality: 'Por confirmar',
-    photos: [
-      CDN + 'adar25fx30/C1970T01.jpg',
-      CDN + 'adar25fx30/C1965T01.jpg',
-      CDN + 'adar25fx30/C1972T01.jpg',
-      CDN + 'adar25fx30/C1957T01.jpg',
-      CDN + 'adar25fx30/C1968T01.jpg',
-    ],
+    photo: CDN + 'adar25fx30/C1970T01.jpg',
     memoriaSlug: 'micro-concierto-en-puerma-las-regueras',
     memoriaYear: 2025,
     artists: [{ name: 'Ignacio Priego', role: 'clave' }],
@@ -286,10 +280,7 @@ const EVENTS: Event[] = [
     totalDuration: '≈ 45′',
     venue: 'Biblioteca del Parador de Corias',
     municipality: 'Cangas del Narcea',
-    photos: [
-      CDN + 'adar25fx30/corias.jpg',
-      CDN + 'adar25fx30/C1918T01.jpg',
-    ],
+    photo: CDN + 'adar25fx30/corias.jpg',
     memoriaSlug: 'paseo-sonoro-en-el-claustro-del-parador-de-corias',
     memoriaYear: 2025,
     venueWebsite: 'https://www.paradores.es/es/parador-de-corias',
@@ -315,14 +306,7 @@ const EVENTS: Event[] = [
     venue: 'Llanes',
     venueNote: 'Sede específica por confirmar.',
     municipality: 'Llanes',
-    photos: [
-      CDN + 'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00600.jpg',
-      CDN + 'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00601.jpg',
-      CDN + 'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00603.jpg',
-      CDN + 'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00607.jpg',
-      CDN + 'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00610.jpg',
-      CDN + 'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00612.jpg',
-    ],
+    photo: CDN + 'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00600.jpg',
     memoriaSlug: 'concierto-visual-en-llanes',
     memoriaYear: 2025,
     artists: [
@@ -349,10 +333,7 @@ const EVENTS: Event[] = [
     totalDuration: '≈ 57′',
     venue: 'Aula del Oro',
     municipality: 'Belmonte de Miranda',
-    photos: [
-      CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
-      CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/14.jpg',
-    ],
+    photo: CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
     artists: [
       { name: 'Guillermo Laporta', role: 'flauta' },
       { name: 'Josefina Urraca',   role: 'piano' },
@@ -367,13 +348,7 @@ const EVENTS: Event[] = [
     pieces: [],
     venue: 'Calles de Leiguarda',
     municipality: 'Belmonte de Miranda',
-    photos: [
-      CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
-      CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/14.jpg',
-      CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/19.jpg',
-      CDN + 'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/PXL_20220813_175510704.jpg',
-      CDN + 'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image4.jpg',
-    ],
+    photo: CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
     memoriaSlug: 'paseo-sonoro-en-leiguarda',
     memoriaYear: 2025,
     artists: [
@@ -391,11 +366,7 @@ const EVENTS: Event[] = [
     pieces: [],
     venue: 'Calles de Leiguarda',
     municipality: 'Belmonte de Miranda',
-    photos: [
-      CDN + 'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/PXL_20220813_180027994.jpg',
-      CDN + 'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/PXL_20220813_181621975.jpg',
-      CDN + 'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/PXL_20220813_183445582.jpg',
-    ],
+    photo: CDN + 'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/PXL_20220813_180027994.jpg',
     memoriaSlug: 'paseo-sonoro-en-leiguarda',
     memoriaYear: 2025,
     artists: [
@@ -412,7 +383,6 @@ const EVENTS: Event[] = [
     pieces: [],
     venue: '',
     municipality: '',
-    photos: [],
     artists: [],
   },
   {
@@ -440,14 +410,7 @@ const EVENTS: Event[] = [
     totalDuration: '≈ 50′',
     venue: 'Auditorio de El Franco',
     municipality: 'El Franco',
-    photos: [
-      CDN + 'ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg',
-      CDN + 'ADAR_Eventos/2023/09_Concierto_en_El_Franco/53.jpg',
-      CDN + 'ADAR_Eventos/2023/09_Concierto_en_El_Franco/IMG_3231.jpeg',
-      CDN + 'ADAR_Eventos/2023/09_Concierto_en_El_Franco/IMG_3235.jpeg',
-      CDN + 'ADAR_Eventos/2023/09_Concierto_en_El_Franco/IMG_3237.jpeg',
-      CDN + 'ADAR_Eventos/2023/09_Concierto_en_El_Franco/image29.jpg',
-    ],
+    photo: CDN + 'ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg',
     memoriaSlug: 'concierto-en-el-franco',
     memoriaYear: 2023,
     artists: [
@@ -465,11 +428,7 @@ const EVENTS: Event[] = [
     pieces: [],
     venue: 'Calles de Leiguarda',
     municipality: 'Belmonte de Miranda',
-    photos: [
-      CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/19.jpg',
-      CDN + 'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/PXL_20220813_175723812.jpg',
-      CDN + 'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/PXL_20220813_181621975.jpg',
-    ],
+    photo: CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/19.jpg',
     memoriaSlug: 'micro-conciertos-y-paseo-sonoro-en-leiguarda',
     memoriaYear: 2024,
     artists: [
@@ -491,14 +450,7 @@ const EVENTS: Event[] = [
     totalDuration: '≈ 50′',
     venue: 'Monasterio de Villanueva de Oscos',
     municipality: 'Villanueva de Oscos',
-    photos: [
-      CDN + 'adar25fx30/DSC01456.jpg',
-      CDN + 'adar25fx30/DSC01458.jpg',
-      CDN + 'adar25fx30/DSC01460.jpg',
-      CDN + 'adar25fx30/DSC01462.jpg',
-      CDN + 'adar25fx30/DSC01464.jpg',
-      CDN + 'adar25fx30/DSC01465.jpg',
-    ],
+    photo: CDN + 'adar25fx30/DSC01456.jpg',
     memoriaSlug: 'concierto-en-el-monasterio-de-villanueva-de-oscos',
     memoriaYear: 2025,
     artists: [
@@ -517,7 +469,6 @@ const EVENTS: Event[] = [
     pieces: [],
     venue: '',
     municipality: '',
-    photos: [],
     artists: [],
   },
   {
@@ -528,12 +479,7 @@ const EVENTS: Event[] = [
     pieces: [],
     venue: 'Calles de Leiguarda',
     municipality: 'Belmonte de Miranda',
-    photos: [
-      CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
-      CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/14.jpg',
-      CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/19.jpg',
-      CDN + 'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/PXL_20220813_180027994.jpg',
-    ],
+    photo: CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
     memoriaSlug: 'paseo-sonoro-en-leiguarda',
     memoriaYear: 2025,
     artists: [
@@ -559,14 +505,7 @@ const EVENTS: Event[] = [
     venue: 'Iglesia de Leiguarda',
     venueNote: 'Concierto seguido de espicha para todo el público.',
     municipality: 'Belmonte de Miranda',
-    photos: [
-      CDN + 'adar25fx30/DSC01590.jpg',
-      CDN + 'adar25fx30/DSC01632.jpg',
-      CDN + 'adar25fx30/DSC01673.jpg',
-      CDN + 'adar25fx30/DSC01680.jpg',
-      CDN + 'adar25fx30/DSC01700.jpg',
-      CDN + 'adar25fx30/DSC01765.jpg',
-    ],
+    photo: CDN + 'adar25fx30/DSC01590.jpg',
     memoriaSlug: 'recital-de-andrea-casarrubios-en-la-iglesia-de-leiguarda',
     memoriaYear: 2025,
     artists: [
@@ -675,13 +614,6 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
     </div>
   </section>
 
-  <!-- ARTIST TICKER -->
-  <div class="vi26-ticker" aria-hidden="true">
-    <div class="vi26-ticker-track">
-      <span>{ARTISTS.map((a) => a.name).join(' · ')} · {ARTISTS.map((a) => a.name).join(' · ')}</span>
-    </div>
-  </div>
-
   <!-- PROGRAM -->
   <section class="vi26-venues" id="program">
     <header class="vi26-section-head">
@@ -699,28 +631,12 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
         </li>
       ) : (
         <li class={`vi26-venue ${idx % 2 === 1 ? 'is-reverse' : ''}`}>
-          {e.photos.length > 0 ? (
-            <div class="vi26-slider" data-slider>
-              <div class="vi26-slider-track" data-slider-track>
-                {e.photos.map((src, i) => (
-                  <div class="vi26-slide">
-                    <img src={src} alt={`${e.venue} · ${i + 1}`} loading="lazy" />
-                  </div>
-                ))}
-              </div>
-              {e.photos.length > 1 && (
-                <>
-                  <button class="vi26-slider-btn vi26-slider-prev" type="button" aria-label="Prev" data-slider-prev>‹</button>
-                  <button class="vi26-slider-btn vi26-slider-next" type="button" aria-label="Next" data-slider-next>›</button>
-                  <div class="vi26-slider-dots" data-slider-dots>
-                    {e.photos.map((_, i) => <span class={`vi26-dot ${i === 0 ? 'is-active' : ''}`}></span>)}
-                  </div>
-                </>
-              )}
-              <div class="vi26-slider-counter mono"><span data-slider-current>1</span> / {e.photos.length}</div>
-            </div>
+          {e.photo ? (
+            <figure class="vi26-cover">
+              <img src={e.photo} alt={e.venue} loading="lazy" />
+            </figure>
           ) : (
-            <div class="vi26-slider vi26-slider-empty">
+            <div class="vi26-cover vi26-cover-empty">
               <span class="mono">{COPY.tbc}</span>
             </div>
           )}
@@ -935,33 +851,5 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
 
 </div>
 
-<script>
-  document.querySelectorAll('[data-slider]').forEach((root) => {
-    const track = root.querySelector('[data-slider-track]');
-    const dots  = root.querySelectorAll('[data-slider-dots] .vi26-dot');
-    const current = root.querySelector('[data-slider-current]');
-    const prev  = root.querySelector('[data-slider-prev]');
-    const next  = root.querySelector('[data-slider-next]');
-    if (!track) return;
-    let raf = 0;
-    const updateActive = () => {
-      const slideW = track.clientWidth;
-      if (!slideW) return;
-      const i = Math.round(track.scrollLeft / slideW);
-      dots.forEach((d, idx) => d.classList.toggle('is-active', idx === i));
-      if (current) current.textContent = String(i + 1);
-    };
-    track.addEventListener('scroll', () => {
-      if (raf) return;
-      raf = requestAnimationFrame(() => { raf = 0; updateActive(); });
-    }, { passive: true });
-    const scrollBy = (dir) => { track.scrollBy({ left: dir * track.clientWidth, behavior: 'smooth' }); };
-    prev && prev.addEventListener('click', () => scrollBy(-1));
-    next && next.addEventListener('click', () => scrollBy(1));
-    dots.forEach((d, i) => d.addEventListener('click', () => {
-      track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
-    }));
-  });
-</script>
 
 </BaseLayout>
