@@ -395,17 +395,20 @@ const joinBg =
 // 2026 edition · compact index shown on the home page.
 // Source of truth lives in /pages/[lang]/programa-2026.astro; this is the
 // short surface for the homepage announcement.
+const ADAR26_POSTER = 'https://www.llanes.es/sites/llanes/files/festival_adar.jpg';
+
 const ADAR26 = [
-  { n: '01', dow: 'Mar', date: '4 ago',     kind: 'Apertura · Clavecín',         venue: 'Hórreo ganador del Concurso', muni: 'Asturies' },
-  { n: '02', dow: 'Mié', date: '5 ago',     kind: 'ADAR en ruta · Trío',         venue: 'Biblioteca del Parador de Corias', muni: 'Cangas del Narcea' },
-  { n: '03', dow: 'Jue', date: '6 ago',     kind: 'Trío con piano',              venue: 'Llanes', muni: 'Llanes' },
-  { n: '04', dow: 'Vie', date: '7 ago',     kind: 'Umbral Zero · Flauta + piano', venue: 'Aula del Oro', muni: 'Belmonte de Miranda' },
-  { n: '05', dow: 'Sáb–Dom', date: '8 — 9 ago', kind: 'Site-specific · Menhir',   venue: 'Calles de Leiguarda', muni: 'Belmonte de Miranda' },
-  { n: '06', dow: 'Mar', date: '11 ago',    kind: 'ADAR en ruta · The Rest is Silence', venue: 'Auditorio de El Franco', muni: 'El Franco' },
-  { n: '07', dow: 'Mié', date: '12 ago',    kind: 'Eclipse · Micro concierto',    venue: 'Calles de Leiguarda', muni: 'Belmonte de Miranda' },
-  { n: '08', dow: 'Jue', date: '13 ago',    kind: 'ADAR en ruta · Brahms · Dvořák', venue: 'Monasterio de Villanueva de Oscos', muni: 'Villanueva de Oscos' },
-  { n: '09', dow: 'Sáb', date: '15 ago',    kind: 'Paseo sonoro',                 venue: 'Calles de Leiguarda', muni: 'Belmonte de Miranda' },
-  { n: '10', dow: 'Dom', date: '16 ago',    kind: 'Clausura · Quinteto y espicha', venue: 'Iglesia de Leiguarda', muni: 'Belmonte de Miranda' },
+  { n: '01', dow: 'Mar', date: '4 ago',     title: 'Micro concierto de clavicémbalo en el hórreo ganador',                              venue: 'Hórreo ganador del Concurso', muni: 'Asturies',                     photo: 'https://s1.abcstatics.com/abc/www/multimedia/sevilla/2023/01/18/ignacio-priego-uno_20230118120520-kJAB-Rz4H5Ye2vCc2SwoCBKMcEPM-1200x840@abc.jpg' },
+  { n: '02', dow: 'Mié', date: '5 ago',     title: 'La forma de la memoria · ADAR EN RUTA · Concierto de trío con piano',               venue: 'Biblioteca del Parador de Corias', muni: 'Cangas del Narcea',        photo: 'https://paradores.es/sites/default/files/images/blog/20210421_162035.jpg' },
+  { n: '03', dow: 'Jue', date: '6 ago',     title: 'La forma de la memoria · Concierto de trío con piano',                              venue: 'Llanes', muni: 'Llanes',                                              photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00600.jpg' },
+  { n: '04', dow: 'Vie', date: '7 ago',     title: 'UMBRAL ZERO · Concierto de música minimalista y arte visual',                       venue: 'Aula del Oro', muni: 'Belmonte de Miranda',                          photo: 'https://creartbox-media-cdn.b-cdn.net/webimg/projects_photos/20211015/007.jpg' },
+  { n: '05', dow: 'Sáb–Dom', date: '8 — 9 ago', title: 'Intervención site-specific del Colectivo Menhir en Leiguarda',                  venue: 'Calles de Leiguarda', muni: 'Belmonte de Miranda',                    photo: 'https://fundacioncerezalesantoninoycinia.org/wp-content/uploads/2024/11/Menhir_2021-fundacion-cerezales.jpg' },
+  { n: '06', dow: 'Mar', date: '11 ago',    title: 'ADAR EN RUTA · Concierto de música de cámara y arte visual',                        venue: 'Auditorio de El Franco', muni: 'El Franco',                    photo: 'https://images.squarespace-cdn.com/content/v1/6447d97edb0dde0915a32018/211dc9d7-c145-4100-9044-173346a1968d/DSC_6964.jpg?format=2500w' },
+  { n: '07', dow: 'Mié', date: '12 ago',    title: 'Micro concierto durante el eclipse en Leiguarda',                                   venue: 'Calles de Leiguarda', muni: 'Belmonte de Miranda',                    photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/Timeline%201_01_00_21_17.jpg' },
+  { n: '08', dow: 'Jue', date: '13 ago',    title: 'ADAR EN RUTA · Concierto de música de cámara y arte visual',                        venue: 'Monasterio de Villanueva de Oscos', muni: 'Villanueva de Oscos',    photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01456.jpg' },
+  { n: '09', dow: 'Vie', date: '14 ago',    title: 'Micro concierto · The Rest is Silence en residencia',                                venue: 'Segundo hórreo ganador del Concurso', muni: 'Asturies',              photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1965T01.jpg' },
+  { n: '10', dow: 'Sáb', date: '15 ago',    title: 'Paseo sonoro en Leiguarda',                                                          venue: 'Calles de Leiguarda', muni: 'Belmonte de Miranda',                    photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg' },
+  { n: '11', dow: 'Dom', date: '16 ago',    title: 'Clausura del festival · Concierto de quinteto y espicha en la Iglesia de Leiguarda', venue: 'Iglesia de Leiguarda', muni: 'Belmonte de Miranda',                  photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01590.jpg' },
 ];
 
 const ADAR26_HREF = `/${lang}/programa-2026/`;
@@ -416,12 +419,12 @@ const ADAR26_COPY = {
     title_pre: 'Festival ADAR',
     title_year: '2026',
     tag: 'Festival para el desarrollo de las artes en el medio rural.',
-    sub: 'Diez conciertos del 4 al 16 de agosto en siete sedes patrimoniales de Asturias. Música de cámara, intervenciones site-specific en Leiguarda y un cierre con espicha.',
-    ix_label: 'Diez conciertos',
+    sub: 'Once conciertos del 4 al 16 de agosto en siete sedes patrimoniales de Asturias. Música de cámara, intervenciones site-specific en Leiguarda y un cierre con espicha.',
+    ix_label: 'Once conciertos',
     free: 'Entrada gratuita hasta completar aforo · reserva en Eventbrite',
     cta_program: 'Ver programa completo',
     cta_press: 'Dosier de prensa',
-    horreo_note: 'La sede del concierto 01 se anuncia el 25 de julio, tras el fallo del jurado del Concurso de Hórreos.',
+    horreo_note: 'Las sedes de los conciertos 01 y 09 (los dos hórreos ganadores del Concurso) se anuncian el 25 de julio, tras el fallo del jurado.',
   },
   en: {
     eyebrow: 'Next edition · Edition VI',
@@ -429,12 +432,12 @@ const ADAR26_COPY = {
     title_pre: 'Festival ADAR',
     title_year: '2026',
     tag: 'A festival for the development of the arts in rural areas.',
-    sub: 'Ten concerts from 4 to 16 August across seven heritage venues in Asturias. Chamber music, site-specific interventions in Leiguarda and a closing with espicha.',
-    ix_label: 'Ten concerts',
+    sub: 'Eleven concerts from 4 to 16 August across seven heritage venues in Asturias. Chamber music, site-specific interventions in Leiguarda and a closing with espicha.',
+    ix_label: 'Eleven concerts',
     free: 'Free entry until capacity is reached · RSVP on Eventbrite',
     cta_program: 'See the full programme',
     cta_press: 'Press kit',
-    horreo_note: 'The venue for concert 01 is announced on 25 July, after the Hórreos competition jury.',
+    horreo_note: 'The venues for concerts 01 and 09 (the two winning hórreos) are announced on 25 July, after the jury decision.',
   },
   ast: {
     eyebrow: 'Próxima edición · Edición VI',
@@ -442,8 +445,8 @@ const ADAR26_COPY = {
     title_pre: 'Festival ADAR',
     title_year: '2026',
     tag: 'Festival pal desarrollu de les artes nel mediu rural.',
-    sub: 'Diez conciertos del 4 al 16 d’agostu en siete sedes patrimoniales d’Asturies. Música de cámara, intervenciones site-specific en Lleiguarda y un zarru con espicha.',
-    ix_label: 'Diez conciertos',
+    sub: 'Once conciertos del 4 al 16 d’agostu en siete sedes patrimoniales d’Asturies. Música de cámara, intervenciones site-specific en Lleiguarda y un zarru con espicha.',
+    ix_label: 'Once conciertos',
     free: 'Entrada de baldre hasta completar aforu · reserva n’Eventbrite',
     cta_program: 'Ver programa completu',
     cta_press: 'Dosier de prensa',
@@ -527,6 +530,10 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
 
       <div class="hm-adar26-grid">
         <div class="hm-adar26-left">
+          <a class="hm-adar26-poster" href={ADAR26_HREF} aria-label={ADAR26_COPY.cta_program}>
+            <img src={ADAR26_POSTER} alt="Cartel oficial Festival ADAR 2026" loading="lazy" />
+          </a>
+
           <h2 class="hm-adar26-h" id="adar26-h">
             {ADAR26_COPY.title_pre} <em>{ADAR26_COPY.title_year}</em>
           </h2>
@@ -552,13 +559,16 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
             {ADAR26.map((e) => (
               <li class="hm-adar26-row">
                 <a class="hm-adar26-link" href={ADAR26_HREF + '#program'}>
+                  <span class="hm-adar26-thumb">
+                    <img src={e.photo} alt="" loading="lazy" />
+                  </span>
                   <span class="hm-adar26-n mono">{e.n}</span>
                   <span class="hm-adar26-when mono">
                     <span class="hm-adar26-dow">{e.dow}</span>
                     <span class="hm-adar26-date">{e.date}</span>
                   </span>
                   <span class="hm-adar26-body">
-                    <span class="hm-adar26-kind">{e.kind}</span>
+                    <span class="hm-adar26-kind">{e.title}</span>
                     <span class="hm-adar26-venue mono">{e.venue} · {e.muni}</span>
                   </span>
                 </a>

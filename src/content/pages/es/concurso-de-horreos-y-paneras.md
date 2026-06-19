@@ -37,12 +37,12 @@ El <strong>Concurso de Hórreos y Paneras</strong> selecciona cada año tres esp
 Presenta tu hórreo o panera <em>para 2026</em>.
 </h2>
 <p class="qea-lede">
-Buscamos tres hórreos o paneras singulares de Asturias que se conviertan en escenarios de la VI edición del Festival ADAR. Si tienes un espacio con valor patrimonial, entorno cuidado y ganas de acoger un micro-concierto, envíanos tu candidatura.
+Buscamos **dos hórreos o paneras** singulares de Asturias que se conviertan en escenarios de la VI edición del Festival ADAR: uno acogerá la apertura del 4 de agosto con un micro-concierto de clavicémbalo de Ignacio Priego, el otro la muestra de residencia del 14 de agosto del trío The Rest is Silence. Si tienes un espacio con valor patrimonial, entorno cuidado y ganas de acoger un micro-concierto, envíanos tu candidatura antes del 30 de abril. El fallo del jurado se publica el 25 de julio.
 </p>
 
 <dl class="qea-specs qea-specs-2x2">
 <div><dt class="mono">Plazo</dt><dd>Hasta el 30 de abril de 2026</dd></div>
-<div><dt class="mono">Premios</dt><dd>500 € al primer hórreo · todos los seleccionados acogerán un micro-concierto producido por ADAR</dd></div>
+<div><dt class="mono">Premios</dt><dd>500 € a cada uno de los dos hórreos seleccionados · ambos acogerán un micro-concierto producido por ADAR durante la edición VI</dd></div>
 <div><dt class="mono">Quién puede participar</dt><dd>Propietarios particulares, ayuntamientos, asociaciones y cualquier persona con vinculación al espacio</dd></div>
 <div><dt class="mono">Cómo enviarla</dt><dd>Correo con fotografías del hórreo: vista general, detalle y entorno</dd></div>
 </dl>
@@ -148,7 +148,7 @@ Cobertura del Concurso de Hórreos y Paneras en medios locales y regionales.
 <section class="qea-meta">
 <dl class="qea-specs">
 <div><dt class="mono">Premio principal</dt><dd>500 € · micro-concierto producido</dd></div>
-<div><dt class="mono">Plazas</dt><dd>3 hórreos · 3 paneras por edición</dd></div>
+<div><dt class="mono">Plazas 2026</dt><dd>Dos hórreos seleccionados · uno acogerá la apertura del 4 de agosto, otro la muestra de residencia del 14 de agosto</dd></div>
 <div><dt class="mono">Ámbito</dt><dd>Principado de Asturias</dd></div>
 <div><dt class="mono">Cierre 2026</dt><dd>30 de abril</dd></div>
 <div><dt class="mono">Producción</dt><dd>Festival ADAR</dd></div>
