@@ -388,11 +388,68 @@ const COPY = {
 }[lang];
 
 const heroImage =
-  'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg';
+  'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01523.jpg';
 const joinBg =
   'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg';
-const marqueeLoop = [...COPY.marquee, ...COPY.marquee, ...COPY.marquee];
 
+// 2026 edition · compact index shown on the home page.
+// Source of truth lives in /pages/[lang]/programa-2026.astro; this is the
+// short surface for the homepage announcement.
+const ADAR26 = [
+  { n: '01', dow: 'Mar', date: '4 ago',     kind: 'Apertura · Clavecín',         venue: 'Hórreo ganador del Concurso', muni: 'Asturies' },
+  { n: '02', dow: 'Mié', date: '5 ago',     kind: 'ADAR en ruta · Trío',         venue: 'Biblioteca del Parador de Corias', muni: 'Cangas del Narcea' },
+  { n: '03', dow: 'Jue', date: '6 ago',     kind: 'Trío con piano',              venue: 'Llanes', muni: 'Llanes' },
+  { n: '04', dow: 'Vie', date: '7 ago',     kind: 'Umbral Zero · Flauta + piano', venue: 'Aula del Oro', muni: 'Belmonte de Miranda' },
+  { n: '05', dow: 'Sáb–Dom', date: '8 — 9 ago', kind: 'Site-specific · Menhir',   venue: 'Calles de Leiguarda', muni: 'Belmonte de Miranda' },
+  { n: '06', dow: 'Mar', date: '11 ago',    kind: 'ADAR en ruta · The Rest is Silence', venue: 'Auditorio de El Franco', muni: 'El Franco' },
+  { n: '07', dow: 'Mié', date: '12 ago',    kind: 'Eclipse · Micro concierto',    venue: 'Calles de Leiguarda', muni: 'Belmonte de Miranda' },
+  { n: '08', dow: 'Jue', date: '13 ago',    kind: 'ADAR en ruta · Brahms · Dvořák', venue: 'Monasterio de Villanueva de Oscos', muni: 'Villanueva de Oscos' },
+  { n: '09', dow: 'Sáb', date: '15 ago',    kind: 'Paseo sonoro',                 venue: 'Calles de Leiguarda', muni: 'Belmonte de Miranda' },
+  { n: '10', dow: 'Dom', date: '16 ago',    kind: 'Clausura · Quinteto y espicha', venue: 'Iglesia de Leiguarda', muni: 'Belmonte de Miranda' },
+];
+
+const ADAR26_HREF = `/${lang}/programa-2026/`;
+const ADAR26_COPY = {
+  es: {
+    eyebrow: 'Próxima edición · Edición VI',
+    dates: '4 — 16 agosto 2026',
+    title_pre: 'Festival ADAR',
+    title_year: '2026',
+    tag: 'Festival para el desarrollo de las artes en el medio rural.',
+    sub: 'Diez conciertos del 4 al 16 de agosto en siete sedes patrimoniales de Asturias. Música de cámara, intervenciones site-specific en Leiguarda y un cierre con espicha.',
+    ix_label: 'Diez conciertos',
+    free: 'Entrada gratuita hasta completar aforo · reserva en Eventbrite',
+    cta_program: 'Ver programa completo',
+    cta_press: 'Dosier de prensa',
+    horreo_note: 'La sede del concierto 01 se anuncia el 25 de julio, tras el fallo del jurado del Concurso de Hórreos.',
+  },
+  en: {
+    eyebrow: 'Next edition · Edition VI',
+    dates: '4 — 16 August 2026',
+    title_pre: 'Festival ADAR',
+    title_year: '2026',
+    tag: 'A festival for the development of the arts in rural areas.',
+    sub: 'Ten concerts from 4 to 16 August across seven heritage venues in Asturias. Chamber music, site-specific interventions in Leiguarda and a closing with espicha.',
+    ix_label: 'Ten concerts',
+    free: 'Free entry until capacity is reached · RSVP on Eventbrite',
+    cta_program: 'See the full programme',
+    cta_press: 'Press kit',
+    horreo_note: 'The venue for concert 01 is announced on 25 July, after the Hórreos competition jury.',
+  },
+  ast: {
+    eyebrow: 'Próxima edición · Edición VI',
+    dates: '4 — 16 d’agostu 2026',
+    title_pre: 'Festival ADAR',
+    title_year: '2026',
+    tag: 'Festival pal desarrollu de les artes nel mediu rural.',
+    sub: 'Diez conciertos del 4 al 16 d’agostu en siete sedes patrimoniales d’Asturies. Música de cámara, intervenciones site-specific en Lleiguarda y un zarru con espicha.',
+    ix_label: 'Diez conciertos',
+    free: 'Entrada de baldre hasta completar aforu · reserva n’Eventbrite',
+    cta_program: 'Ver programa completu',
+    cta_press: 'Dosier de prensa',
+    horreo_note: 'La sede del conciertu 01 anúnciase’l 25 de xunetu, tres el fallu del xuráu del Concursu de Hórreos.',
+  },
+}[lang];
 const PARTNERS: { name: string; logo: string; href: string }[] = [
   { name: 'CreArtBox', logo: '/logos/creartbox.jpg', href: 'https://creartbox.nyc/' },
   { name: 'Porto PianoFest', logo: '/logos/portopiano.jpg', href: 'https://www.portopianofest.com/' },
@@ -446,14 +503,71 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
       <span class="hm-scroll mono">↓ {COPY.scrollHint}</span>
     </div>
 
-    <div class="hm-marquee" aria-hidden="true">
+    <div class="hm-marquee" aria-hidden="false">
       <div class="hm-marquee-track">
-        {marqueeLoop.map((place, i) => (
+        {COPY.marquee.map((place, i) => (
           <span class="hm-marquee-item">
-            <span class="hm-marquee-num mono">{String((i % COPY.marquee.length) + 1).padStart(2, '0')}</span>
+            <span class="hm-marquee-num mono">{String(i + 1).padStart(2, '0')}</span>
             {place}
           </span>
         ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       § ANUNCIO · Edición VI · 2026
+       ============================================ -->
+  <section class="hm-adar26" id="adar26" aria-labelledby="adar26-h">
+    <div class="hm-adar26-wrap">
+      <header class="hm-adar26-head">
+        <span class="hm-adar26-tag mono">{ADAR26_COPY.eyebrow}</span>
+        <span class="hm-adar26-dates mono">{ADAR26_COPY.dates}</span>
+      </header>
+
+      <div class="hm-adar26-grid">
+        <div class="hm-adar26-left">
+          <h2 class="hm-adar26-h" id="adar26-h">
+            {ADAR26_COPY.title_pre} <em>{ADAR26_COPY.title_year}</em>
+          </h2>
+          <p class="hm-adar26-lede">{ADAR26_COPY.tag}</p>
+          <p class="hm-adar26-sub">{ADAR26_COPY.sub}</p>
+
+          <div class="hm-adar26-ctas">
+            <a class="hm-adar26-cta" href={ADAR26_HREF}>
+              <span aria-hidden="true">→</span>
+              {ADAR26_COPY.cta_program}
+            </a>
+            <a class="hm-adar26-cta hm-adar26-cta-ghost"
+               href="mailto:leiguardamusic@gmail.com?subject=Dosier%20de%20prensa%20Festival%20ADAR%202026">
+              <span aria-hidden="true">↗</span>
+              {ADAR26_COPY.cta_press}
+            </a>
+          </div>
+        </div>
+
+        <div class="hm-adar26-right">
+          <p class="hm-adar26-ix-label mono">{ADAR26_COPY.ix_label}</p>
+          <ol class="hm-adar26-list">
+            {ADAR26.map((e) => (
+              <li class="hm-adar26-row">
+                <a class="hm-adar26-link" href={ADAR26_HREF + '#program'}>
+                  <span class="hm-adar26-n mono">{e.n}</span>
+                  <span class="hm-adar26-when mono">
+                    <span class="hm-adar26-dow">{e.dow}</span>
+                    <span class="hm-adar26-date">{e.date}</span>
+                  </span>
+                  <span class="hm-adar26-body">
+                    <span class="hm-adar26-kind">{e.kind}</span>
+                    <span class="hm-adar26-venue mono">{e.venue} · {e.muni}</span>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ol>
+          <p class="hm-adar26-free mono">{ADAR26_COPY.free}</p>
+          <p class="hm-adar26-note mono">↳ {ADAR26_COPY.horreo_note}</p>
+        </div>
       </div>
     </div>
   </section>

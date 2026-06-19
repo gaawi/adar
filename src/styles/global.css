@@ -4999,9 +4999,12 @@ body.home article.page { margin: 0 !important; }
 }
 .hm-marquee-track {
   display: flex;
-  white-space: nowrap;
-  animation: hm-marquee 30s linear infinite;
-  padding: 18px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 8px;
+  padding: 18px 40px;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 .hm-marquee-item {
   font-family: var(--font-display);
@@ -5010,27 +5013,23 @@ body.home article.page { margin: 0 !important; }
   letter-spacing: -0.02em;
   color: var(--paper);
   font-weight: 500;
-  padding: 0 28px;
+  padding: 0 20px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
 }
-.hm-marquee-item::after {
+.hm-marquee-item:not(:last-child)::after {
   content: '';
   display: inline-block;
-  width: 8px; height: 8px;
+  width: 6px; height: 6px;
   background: var(--accent);
   border-radius: 50%;
-  margin-left: 28px;
+  margin-left: 20px;
 }
 .hm-marquee-num {
   font-size: 11px;
   color: rgba(246,244,238,0.6);
   letter-spacing: 0.18em;
-}
-@keyframes hm-marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-33.333%); }
 }
 
 @media (max-width: 768px) {
@@ -5063,6 +5062,224 @@ body.home article.page { margin: 0 !important; }
       rgba(10,9,7,0.96) 100%);
   }
   .hm-hero-body { padding-top: 96px; padding-bottom: 16px; }
+}
+
+/* ----------------------------------------------------------------
+   § Anuncio Edición VI · 2026 (.hm-adar26-*)
+   Block that announces the upcoming edition on the homepage,
+   between the photo hero and the rest of the page. Two columns
+   on desktop: identity on the left, ten-concert index on the right.
+   ---------------------------------------------------------------- */
+.hm-adar26 {
+  background: var(--paper);
+  color: var(--ink);
+  border-bottom: 1px solid rgba(10,9,7,0.12);
+}
+.hm-adar26-wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 96px 40px 96px;
+}
+@media (max-width: 720px) {
+  .hm-adar26-wrap { padding: 64px 20px; }
+}
+
+/* Top band with eyebrow + dates */
+.hm-adar26-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px 24px;
+  flex-wrap: wrap;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--ink);
+}
+.hm-adar26-tag {
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  padding: 5px 10px;
+  background: var(--accent);
+  display: inline-block;
+}
+.hm-adar26-dates {
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: rgba(10,9,7,0.65);
+}
+
+/* Two-column composition */
+.hm-adar26-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 56px;
+  align-items: start;
+}
+@media (max-width: 980px) {
+  .hm-adar26-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* Left: identity */
+.hm-adar26-h {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 600;
+  font-size: clamp(48px, 6.4vw, 108px);
+  line-height: 0.92;
+  letter-spacing: -0.025em;
+  margin: 0 0 18px;
+  color: var(--ink);
+  text-wrap: balance;
+}
+.hm-adar26-h em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-stretch: 100%;
+  font-weight: 500;
+  color: var(--accent-ink);
+  background: var(--accent);
+  padding: 0 12px;
+  margin-left: 0.06em;
+}
+.hm-adar26-lede {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(17px, 1.6vw, 22px);
+  line-height: 1.35;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  margin: 0 0 18px;
+  max-width: 28ch;
+}
+.hm-adar26-sub {
+  font-family: var(--font-sans);
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: rgba(10,9,7,0.72);
+  margin: 0 0 28px;
+  max-width: 46ch;
+}
+
+.hm-adar26-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.hm-adar26-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 14px 22px;
+  text-decoration: none;
+  border: 1px solid var(--ink);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+.hm-adar26-cta:hover { transform: translateY(-1px); background: #2a2826; }
+.hm-adar26-cta-ghost {
+  background: transparent;
+  color: var(--ink);
+}
+.hm-adar26-cta-ghost:hover { background: var(--ink); color: var(--paper); }
+
+/* Right: ten-concert index */
+.hm-adar26-ix-label {
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  color: var(--accent-ink);
+  opacity: 0.6;
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--ink);
+}
+.hm-adar26-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hm-adar26-row { margin: 0; }
+.hm-adar26-link {
+  display: grid;
+  grid-template-columns: 36px 110px 1fr;
+  gap: 8px 18px;
+  align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(10,9,7,0.14);
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.15s ease, padding 0.15s ease;
+}
+.hm-adar26-row:last-child .hm-adar26-link { border-bottom: 0; }
+.hm-adar26-link:hover {
+  background: var(--accent);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.hm-adar26-n {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--accent-ink);
+  opacity: 0.55;
+  font-weight: 700;
+}
+.hm-adar26-link:hover .hm-adar26-n { opacity: 1; }
+.hm-adar26-when {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+}
+.hm-adar26-dow { color: rgba(10,9,7,0.6); }
+.hm-adar26-date { color: var(--ink); font-weight: 700; font-size: 13px; letter-spacing: 0.12em; }
+.hm-adar26-body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.hm-adar26-kind {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+}
+.hm-adar26-venue {
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(10,9,7,0.55);
+}
+
+.hm-adar26-free {
+  margin: 18px 0 0;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+.hm-adar26-note {
+  margin: 8px 0 0;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: rgba(10,9,7,0.6);
+  line-height: 1.5;
+  max-width: 56ch;
+}
+
+@media (max-width: 720px) {
+  .hm-adar26-link {
+    grid-template-columns: 36px 1fr;
+    gap: 6px 14px;
+  }
+  .hm-adar26-when { grid-column: 2; flex-direction: row; gap: 8px; align-items: baseline; }
+  .hm-adar26-body { grid-column: 2; }
 }
 
 /* ---------- COORDENADAS ---------- */
