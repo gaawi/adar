@@ -97,7 +97,7 @@ Formación: Royal College of Music (2008-2012), con estudios junto al flautista 
 <p class="ed-role">Directora Artística</p>
 <div class="ed-tags">
 <span class="ed-tag">Piano</span>
-<span class="ed-tag">Curaduría</span>
+<span class="ed-tag">Dirección artística y comisariado</span>
 <span class="ed-tag">Mediación</span>
 </div>
 </div>
