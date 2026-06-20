@@ -96,7 +96,7 @@ const COPY = {
     scrollHint: 'Desplazarse',
     marquee:
       ['Música clásica', 'Arte visual contemporáneo', 'Patrimonio rural', 'Residencias creativas', 'Música de cámara', 'Site-specific', 'Mediación cultural', 'Instalaciones sonoras', 'Paseos sonoros', 'Comunidad'],
-    coord_eyebrow: '§ 01 · Qué es ADAR',
+    coord_eyebrow: '§ 02 · Qué es ADAR',
     coord_h: 'Revitalizando el medio rural con artes vivas.',
     coord_lede:
       'ADAR convierte aldeas y pueblos en escenarios de arte contemporáneo, creando puentes entre tradición, innovación y comunidad. Diseñamos experiencias artísticas exigentes, con producción cuidada, mediación y documentación audiovisual.',
@@ -115,12 +115,12 @@ const COPY = {
       ['60+', 'artistas'],
       ['4.500+', 'asistentes'],
     ],
-    index_eyebrow: '§ 02 · Selección de acciones',
+    index_eyebrow: '§ 03 · Selección de acciones',
     index_h: 'Catálogo de acciones.',
     index_lede:
       'Una selección reciente del archivo. Cada acción se concibe para su lugar: una iglesia, un palacio, un invernadero de cristal, un hórreo, un museo.',
     index_cta: 'Ver todo el catálogo',
-    video_eyebrow: '§ 03 · Vídeo manifiesto',
+    video_eyebrow: '§ 01 · Vídeo manifiesto',
     video_h: 'ADAR en movimiento.',
     video_lede:
       'Patrimonio, paisaje y creación contemporánea. Una temporada filmada con artistas de primer nivel.',
@@ -249,12 +249,12 @@ const COPY = {
       ['18', 'venues & landscapes'],
       ['50+', 'resident artists'],
     ],
-    index_eyebrow: '§ 02 · Selected actions',
+    index_eyebrow: '§ 03 · Selected actions',
     index_h: 'Catalogue of actions.',
     index_lede:
       'A recent selection from the archive. Each action is built for its place: a church, a palace, a glasshouse, a granary, a shoreline.',
     index_cta: 'Browse the full catalogue',
-    video_eyebrow: '§ 03 · Manifesto film',
+    video_eyebrow: '§ 01 · Manifesto film',
     video_h: 'ADAR in motion.',
     video_lede:
       'Heritage, landscape and contemporary creation. A season filmed with first-rate artists.',
@@ -313,7 +313,7 @@ const COPY = {
     scrollHint: 'Esllizar',
     marquee:
       ['Música clásica', 'Arte visual contemporáneu', 'Patrimoniu rural', 'Residencies creatives', 'Música de cámara', 'Site-specific', 'Mediación cultural', 'Instalaciones sonores', 'Paseos sonoros', 'Comunidá'],
-    coord_eyebrow: '§ 01 · Qué ye ADAR',
+    coord_eyebrow: '§ 02 · Qué ye ADAR',
     coord_h: 'Revitalizando’l mediu rural con artes vives.',
     coord_lede:
       'ADAR convierte aldegues y pueblos n’escenarios d’arte contemporáneo, creando pontes ente tradición, innovación y comunidá. Diseñamos esperiencies artístiques exixentes, con producción cuidada, mediación y documentación audiovisual.',
@@ -332,12 +332,12 @@ const COPY = {
       ['18', 'sedes y paisaxes'],
       ['50+', 'artistes residentes'],
     ],
-    index_eyebrow: '§ 02 · Esbilla d’acciones',
+    index_eyebrow: '§ 03 · Esbilla d’acciones',
     index_h: 'Catálogu d’acciones.',
     index_lede:
       'Una escoyeta reciente del archivu. Cada acción concíbese pal so llugar: una ilesia, un palaciu, un invernáu de cristal, un hórreu, una vera.',
     index_cta: 'Ver tol catálogu',
-    video_eyebrow: '§ 03 · Videu manifiestu',
+    video_eyebrow: '§ 01 · Videu manifiestu',
     video_h: 'ADAR en movimientu.',
     video_lede:
       'Patrimoniu, paisaxe y creación contemporánea. Una temporada filmada con artistes de primer nivel.',
@@ -583,7 +583,28 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
   </section>
 
   <!-- ============================================
-       § 01 COORDENADAS
+       § 01 VIDEO MANIFESTO
+       ============================================ -->
+  <section class="hm-video" id="video">
+    <header class="hm-section-head">
+      <span class="hm-eyebrow">{COPY.video_eyebrow}</span>
+    </header>
+    <div class="hm-video-wrap">
+      <h2 class="hm-h2 hm-h2-light">{COPY.video_h}</h2>
+      <p class="hm-video-lede">{COPY.video_lede}</p>
+      <div class="hm-video-frame">
+        <iframe
+          src="https://iframe.mediadelivery.net/embed/449741/19a562fd-a1b7-4179-9781-d15788c5ced0?autoplay=false&loop=false&muted=false&preload=false&responsive=true"
+          loading="lazy"
+          allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
+          allowfullscreen="true"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       § 02 COORDENADAS
        ============================================ -->
   <section class="hm-coord">
     <header class="hm-section-head">
@@ -673,34 +694,13 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
   </section>
 
   <!-- ============================================
-       § 03 VIDEO MANIFESTO
-       ============================================ -->
-  <section class="hm-video" id="video">
-    <header class="hm-section-head">
-      <span class="hm-eyebrow">{COPY.video_eyebrow}</span>
-    </header>
-    <div class="hm-video-wrap">
-      <h2 class="hm-h2 hm-h2-light">{COPY.video_h}</h2>
-      <p class="hm-video-lede">{COPY.video_lede}</p>
-      <div class="hm-video-frame">
-        <iframe
-          src="https://iframe.mediadelivery.net/embed/449741/19a562fd-a1b7-4179-9781-d15788c5ced0?autoplay=false&loop=false&muted=false&preload=false&responsive=true"
-          loading="lazy"
-          allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;"
-          allowfullscreen="true"
-        ></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
        § 04 SEIS PRINCIPIOS
        ============================================ -->
   <section class="hm-principles">
     <div class="hm-principles-inner">
       <aside class="hm-principles-side">
         <img
-          src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Instalacion_Sarah_K_Williams_Leiguarda/image01.jpg"
+          src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1981T01.jpg"
           alt="Festival ADAR · Leiguarda"
           loading="lazy"
         />
