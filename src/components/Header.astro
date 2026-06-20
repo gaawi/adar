@@ -28,17 +28,27 @@ function localizeUrl(url: string): string {
   return url.replace(/^https?:\/\/festivaladar\.com/, '').replace(/^\/+/, '/');
 }
 
-// Top-level items only, ordered. Children attached.
+// Top-level items, ordered. For items that have children, prepend the
+// parent's own page as the first dropdown entry so the section landing
+// page is one click away from the hover panel. Dedupe by URL so an
+// existing self-child (WordPress-style "Equipo > Equipo") doesn't
+// duplicate the prepended parent.
 const tops = flat
   .filter((m) => !m.parent_id)
   .sort((a, b) => a.order - b.order)
-  .map((parent) => ({
-    ...parent,
-    children: flat
+  .map((parent) => {
+    const raw = flat
       .filter((c) => c.parent_id === parent.item_id)
-      .filter((c) => c.url !== parent.url) // skip duplicate "Equipo > Equipo"
-      .sort((a, b) => a.order - b.order),
-  }));
+      .sort((a, b) => a.order - b.order);
+    if (raw.length === 0) return { ...parent, children: [] };
+    const seen = new Set<string>();
+    const childList: MenuItem[] = [parent, ...raw].filter((c) => {
+      if (seen.has(c.url)) return false;
+      seen.add(c.url);
+      return true;
+    });
+    return { ...parent, children: childList };
+  });
 
 // Status bar copy per language
 const statusCopy = {
@@ -96,13 +106,20 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
             {hasChildren && (
               <div class="cd-submenu" role="menu">
                 <ul>
-                  {item.children!.map((sub) => (
-                    <li>
-                      <a href={localizeUrl(sub.url)} class={localizeUrl(sub.url) === currentPath ? 'is-current' : ''}>
-                        {sub.title}
-                      </a>
-                    </li>
-                  ))}
+                  {item.children!.map((sub, si) => {
+                    const isOverview = si === 0 && sub.url === item.url;
+                    const cls = [
+                      isOverview ? 'is-overview' : '',
+                      localizeUrl(sub.url) === currentPath ? 'is-current' : '',
+                    ].filter(Boolean).join(' ');
+                    return (
+                      <li>
+                        <a href={localizeUrl(sub.url)} class={cls}>
+                          {sub.title}
+                        </a>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             )}

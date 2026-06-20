@@ -37,7 +37,7 @@ const COPY = {
     nights_sub: 'Once conciertos del 4 al 16 de agosto, distribuidos entre conciertos de cámara «ADAR en ruta», intervenciones site-specific en Leiguarda y un cierre de quinteto con espicha. Programa publicado · sedes en confirmación final.',
     program_h: 'Programa',
     artists_h: 'Intérpretes',
-    venue_h: 'Sede',
+    venue_h: 'Localización',
     eds_h: 'ADAR aquí en',
     visit_h: 'Visto en ADAR',
     web_h: 'Web oficial',
@@ -59,7 +59,7 @@ const COPY = {
     th_n: 'N°',
     th_date: 'Fecha',
     th_kind: 'Formato',
-    th_venue: 'Sede',
+    th_venue: 'Localización',
     th_artists: 'Intérpretes',
     th_rsvp: 'Reserva',
     info_n: '§ 04',
@@ -109,7 +109,7 @@ const COPY = {
     nights_sub: 'Eleven concerts from 4 to 16 August: chamber music on tour, site-specific interventions in Leiguarda and a closing quintet with espicha. Programme published · final venues being confirmed.',
     program_h: 'Programme',
     artists_h: 'Performers',
-    venue_h: 'Venue',
+    venue_h: 'Location',
     eds_h: 'ADAR here in',
     visit_h: 'Seen at ADAR',
     web_h: 'Official site',
@@ -181,7 +181,7 @@ const COPY = {
     nights_sub: 'Once conciertos del 4 al 16 d’agostu, distribuyíos ente conciertos de cámara «ADAR en ruta», intervenciones site-specific en Lleiguarda y un zarru de quintetu con espicha. Programa publicáu · sedes en confirmación final.',
     program_h: 'Programa',
     artists_h: 'Intérpretes',
-    venue_h: 'Sede',
+    venue_h: 'Localización',
     eds_h: 'ADAR equí en',
     visit_h: 'Vistu n’ADAR',
     web_h: 'Web oficial',
@@ -203,7 +203,7 @@ const COPY = {
     th_n: 'N°',
     th_date: 'Fecha',
     th_kind: 'Formatu',
-    th_venue: 'Sede',
+    th_venue: 'Localización',
     th_artists: 'Intérpretes',
     th_rsvp: 'Reserva',
     info_n: '§ 04',
@@ -261,6 +261,7 @@ interface Event {
   venueNote?: string;
   venueWebsite?: string;
   municipality: string;
+  address?: string;
   photo?: string;
   memoriaSlug?: string;
   memoriaYear?: number;
@@ -279,6 +280,7 @@ const EVENTS: Event[] = [
     programNote: 'Programa por anunciar.',
     pieces: [],
     venue: 'Hórreo ganador del concurso 2026',
+    address: 'Hórreo seleccionado por el jurado · sede exacta el 25 de julio · Asturies',
     venueNote: 'Sede ganadora del Concurso de Hórreos · se anuncia el 25 de julio.',
     municipality: 'Asturies',
     photo: 'https://s1.abcstatics.com/abc/www/multimedia/sevilla/2023/01/18/ignacio-priego-uno_20230118120520-kJAB-Rz4H5Ye2vCc2SwoCBKMcEPM-1200x840@abc.jpg',
@@ -302,6 +304,7 @@ const EVENTS: Event[] = [
     ],
     totalDuration: '≈ 45′',
     venue: 'Biblioteca del Parador de Corias',
+    address: 'Parador de Corias · Monasterio de Corias, s/n · 33800 Cangas del Narcea',
     municipality: 'Cangas del Narcea',
     photo: 'https://paradores.es/sites/default/files/images/blog/20210421_162035.jpg',
     memoriaSlug: 'paseo-sonoro-en-el-claustro-del-parador-de-corias',
@@ -329,6 +332,7 @@ const EVENTS: Event[] = [
     ],
     totalDuration: '≈ 45′',
     venue: 'Llanes',
+    address: 'Sede específica en Llanes por confirmar · Concejo de Llanes · Asturies',
     municipality: 'Llanes',
     photo: CDN + 'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00600.jpg',
     memoriaSlug: 'concierto-visual-en-llanes',
@@ -357,6 +361,7 @@ const EVENTS: Event[] = [
     ],
     totalDuration: '≈ 57′',
     venue: 'Aula del Oro',
+    address: 'Aula del Oro · Belmonte de Miranda · 33840 · Asturies',
     municipality: 'Belmonte de Miranda',
     photo: 'https://creartbox-media-cdn.b-cdn.net/webimg/projects_photos/20211015/007.jpg',
     artists: [
@@ -374,6 +379,7 @@ const EVENTS: Event[] = [
     programNote: 'Dos días de intervención por las calles del pueblo. Recorridos distintos cada jornada, obras originales, arreglos e improvisación.',
     pieces: [],
     venue: 'Calles de Leiguarda',
+    address: 'Calles del pueblo de Leiguarda · 33840 Belmonte de Miranda',
     municipality: 'Belmonte de Miranda',
     photo: 'https://fundacioncerezalesantoninoycinia.org/wp-content/uploads/2024/11/Menhir_2021-fundacion-cerezales.jpg',
     memoriaSlug: 'paseo-sonoro-en-leiguarda',
@@ -411,6 +417,7 @@ const EVENTS: Event[] = [
     ],
     totalDuration: '≈ 50′',
     venue: 'Auditorio de El Franco',
+    address: 'Auditorio As Quintas · A Caridá · 33778 El Franco · Asturies',
     municipality: 'El Franco',
     photo: 'https://images.squarespace-cdn.com/content/v1/6447d97edb0dde0915a32018/211dc9d7-c145-4100-9044-173346a1968d/DSC_6964.jpg?format=2500w',
     memoriaSlug: 'concierto-en-el-franco',
@@ -431,6 +438,7 @@ const EVENTS: Event[] = [
     programNote: 'Muestra abierta del trabajo desarrollado en la residencia The Rest Project durante el eclipse solar visible en Asturias.',
     pieces: [],
     venue: 'Calles de Leiguarda',
+    address: 'Calles del pueblo de Leiguarda · 33840 Belmonte de Miranda',
     municipality: 'Belmonte de Miranda',
     photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/Timeline%201_01_00_21_17.jpg',
     memoriaSlug: 'micro-conciertos-y-paseo-sonoro-en-leiguarda',
@@ -455,6 +463,7 @@ const EVENTS: Event[] = [
     ],
     totalDuration: '≈ 50′',
     venue: 'Monasterio de Villanueva de Oscos',
+    address: 'Monasterio de Santa María · 33777 Villanueva de Oscos · Asturies',
     municipality: 'Villanueva de Oscos',
     photo: CDN + 'adar25fx30/DSC01456.jpg',
     memoriaSlug: 'concierto-en-el-monasterio-de-villanueva-de-oscos',
@@ -477,6 +486,7 @@ const EVENTS: Event[] = [
     programNote: 'Muestra de la residencia The Rest Project · obras desarrolladas durante la estancia de creación en Leiguarda.',
     pieces: [],
     venue: 'Segundo hórreo ganador del Concurso 2026',
+    address: 'Segundo hórreo seleccionado por el jurado · sede exacta el 25 de julio · Asturies',
     venueNote: 'Sede ganadora del Concurso de Hórreos · se anuncia el 25 de julio.',
     municipality: 'Asturies',
     photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1965T01.jpg',
@@ -496,6 +506,7 @@ const EVENTS: Event[] = [
     programNote: 'Creación site-specific con obras originales, arreglos e improvisación a lo largo del valle de Leiguarda.',
     pieces: [],
     venue: 'Calles de Leiguarda',
+    address: 'Calles del pueblo de Leiguarda · 33840 Belmonte de Miranda',
     municipality: 'Belmonte de Miranda',
     photo: CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
     memoriaSlug: 'paseo-sonoro-en-leiguarda',
@@ -523,6 +534,7 @@ const EVENTS: Event[] = [
     ],
     totalDuration: '≈ 46′',
     venue: 'Iglesia de Leiguarda',
+    address: 'Iglesia parroquial de Leiguarda · 33840 Belmonte de Miranda',
     municipality: 'Belmonte de Miranda',
     photo: CDN + 'adar25fx30/DSC01590.jpg',
     memoriaSlug: 'recital-de-andrea-casarrubios-en-la-iglesia-de-leiguarda',
@@ -608,7 +620,7 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
         const kind = e.subtitle ? e.subtitle.split('·')[0].trim() : '';
         const isLongProgram = e.pieces.length > 8;
         return (
-          <li class="vi26-event">
+          <li class="vi26-event" id={`event-${e.n}`}>
             <aside class="vi26-aside">
               {e.photo ? (
                 <figure class="vi26-cover">
@@ -629,8 +641,11 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
 
                 <dl class="vi26-aside-facts">
                   {kind && (<><dt class="mono">{COPY.th_kind}</dt><dd>{kind}</dd></>)}
-                  <dt class="mono">{COPY.venue_h}</dt><dd>{e.venue}</dd>
-                  <dt class="mono">Concejo</dt><dd>{e.municipality}</dd>
+                  <dt class="mono">{COPY.venue_h}</dt>
+                  <dd>
+                    <span class="vi26-aside-venue">{e.venue}</span>
+                    {e.address && <span class="vi26-aside-address mono">{e.address}</span>}
+                  </dd>
                   {e.capacity && (
                     <><dt class="mono">{COPY.capacity_label}</dt><dd>{e.capacity} {COPY.seats_label}</dd></>
                   )}

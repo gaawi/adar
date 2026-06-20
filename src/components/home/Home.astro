@@ -558,7 +558,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
           <ol class="hm-adar26-list">
             {ADAR26.map((e) => (
               <li class="hm-adar26-row">
-                <a class="hm-adar26-link" href={ADAR26_HREF + '#program'}>
+                <a class="hm-adar26-link" href={`${ADAR26_HREF}#event-${e.n}`}>
                   <span class="hm-adar26-thumb">
                     <img src={e.photo} alt="" loading="lazy" />
                   </span>
