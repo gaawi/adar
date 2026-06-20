@@ -42,7 +42,7 @@ Buscamos **dos hórreos o paneras** singulares de Asturias que se conviertan en 
 
 <dl class="qea-specs qea-specs-2x2">
 <div><dt class="mono">Plazo</dt><dd>Hasta el 30 de abril de 2026</dd></div>
-<div><dt class="mono">Premios</dt><dd>500 € a cada uno de los dos hórreos seleccionados · ambos acogerán un micro-concierto producido por ADAR durante la edición VI</dd></div>
+<div><dt class="mono">Premios</dt><dd>Dotación económica para cada uno de los dos hórreos seleccionados · ambos acogerán un micro-concierto producido por ADAR durante la edición VI</dd></div>
 <div><dt class="mono">Quién puede participar</dt><dd>Propietarios particulares, ayuntamientos, asociaciones y cualquier persona con vinculación al espacio</dd></div>
 <div><dt class="mono">Cómo enviarla</dt><dd>Correo con fotografías del hórreo: vista general, detalle y entorno</dd></div>
 </dl>
@@ -147,7 +147,7 @@ Cobertura del Concurso de Hórreos y Paneras en medios locales y regionales.
 
 <section class="qea-meta">
 <dl class="qea-specs">
-<div><dt class="mono">Premio principal</dt><dd>500 € · micro-concierto producido</dd></div>
+<div><dt class="mono">Premio principal</dt><dd>Dotación económica · micro-concierto producido</dd></div>
 <div><dt class="mono">Plazas 2026</dt><dd>Dos hórreos seleccionados · uno acogerá la apertura del 4 de agosto, otro la muestra de residencia del 14 de agosto</dd></div>
 <div><dt class="mono">Ámbito</dt><dd>Principado de Asturias</dd></div>
 <div><dt class="mono">Cierre 2026</dt><dd>30 de abril</dd></div>

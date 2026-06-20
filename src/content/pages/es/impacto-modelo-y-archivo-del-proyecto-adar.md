@@ -78,13 +78,13 @@ con continuidad institucional y retorno cultural verificable.</p>
 </div>
 <div class="adar-stat">
 <p class="ed-stat-k">Apoyo público</p>
-<p class="ed-stat-v">20.000 - 40.000 €</p>
-<p class="ed-stat-t">Apoyo recurrente del Principado en 4 de los últimos 5 años.</p>
+<p class="ed-stat-v">una dotación institucional</p>
+<p class="ed-stat-t">Apoyo recurrente del Principado en varios años consecutivos.</p>
 
 </div>
 <div class="adar-stat">
 <p class="ed-stat-k">Audiencia</p>
-<p class="ed-stat-v">4.000+</p>
+<p class="ed-stat-v"></p>
 <p class="ed-stat-t">Asistentes acumulados en formatos de proximidad, con aforos completos de forma sistemática.</p>
 
 </div>
@@ -99,7 +99,7 @@ con continuidad institucional y retorno cultural verificable.</p>
 <h3>Datos verificados</h3>
 <ul class="ed-prose">
 <li>ADAR se funda en 2021 en Leiguarda y evoluciona hacia una red estable de concejos rurales.</li>
-<li>Apoyo recurrente del Principado de Asturias en 4 de los últimos 5 años, con ayudas entre 20.000 y 40.000 euros.</li>
+<li>Apoyo recurrente del Principado de Asturias en varios años consecutivos, con ayudas entre 20.000 y una dotación.</li>
 <li>Miles de asistentes y presencia destacada en prensa regional, además de cobertura nacional, incluyendo RNE.</li>
 </ul>
 <p class="adar-source">Fuente: Memoria del proyecto ADAR.</p>

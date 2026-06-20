@@ -67,12 +67,12 @@ translation_group: "pll_699351de5bc59"
 </div>
 <div class="adar-stat">
 <p class="ed-stat-k">Apoyu públicu</p>
-<p class="ed-stat-v">20.000 - 40.000 €</p>
-<p class="ed-stat-t">Apoyu recurrente del Principáu en 4 de los últimos 5 años.</p>
+<p class="ed-stat-v">una dotación institucional</p>
+<p class="ed-stat-t">Apoyu recurrente del Principáu en varios años consecutivos.</p>
 </div>
 <div class="adar-stat">
 <p class="ed-stat-k">Audiencia</p>
-<p class="ed-stat-v">4.000+</p>
+<p class="ed-stat-v"></p>
 <p class="ed-stat-t">Asistentes acumulaos en formatos de proximidá, con aforos completos de forma sistemática.</p>
 </div>
 <div class="adar-stat">
@@ -85,7 +85,7 @@ translation_group: "pll_699351de5bc59"
 <h3>Datos verificaos</h3>
 <ul class="ed-prose">
 <li>ADAR fúndase en 2021 en Leiguarda y evoluciona hacia una rede estable de conceyos rurales.</li>
-<li>Apoyu recurrente del Principáu d'Asturies en 4 de los últimos 5 años, con ayudes ente 20.000 y 40.000 euros.</li>
+<li>Apoyu recurrente del Principáu d'Asturies en varios años consecutivos, con ayudes ente 20.000 y una dotación.</li>
 <li>Miles d'asistentes y presencia destacada en prensa rexonal, amás de cobertura nacional, incluyendo RNE.</li>
 </ul>
 <p class="adar-source">Fonte: Memoria del proyeutu ADAR.</p>

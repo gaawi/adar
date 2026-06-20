@@ -122,7 +122,7 @@ All musical aesthetics and compositional approaches are welcome.
 <p>
 Featured performance during Festival ADAR 2026, rehearsal time, and documentation.
 For in-person or hybrid residencies: accommodation and daily meals at the ADAR headquarters during the residency period,
-plus up to €800 in travel support.
+plus up to una ayuda in travel support.
 </p>
 </article>
 
@@ -137,7 +137,7 @@ Applicants should indicate their availability (June, July, August 2026) and pref
 <article class="ed-card">
 <h3>7. Administrative Fee</h3>
 <p>
-A non-refundable €20 administrative fee is required to submit an application through the official portal.
+A non-refundable una ayuda administrative fee is required to submit an application through the official portal.
 </p>
 </article>
 

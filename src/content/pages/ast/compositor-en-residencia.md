@@ -122,7 +122,7 @@ Acéptense toles estétiques y enfoques compositivos.
 <p>
 Actuación destacada mientres el Festival ADAR 2026, tiempu d’ensayu y documentación.
 Pa residencies presenciales o híbrides: allugamientu y manutención diaria na sede d’ADAR mientres el periodu de residencia,
-amás de hasta 800 euros d’ayuda pal desplazamientu.
+amás de hasta una dotación d’ayuda pal desplazamientu.
 </p>
 </article>
 
@@ -137,7 +137,7 @@ Les persones solicitantes tendrán d’indicar disponibilidad (xunu, xunetu, ago
 <article class="ed-card">
 <h3>7. Tasa Alministrativa</h3>
 <p>
-Requierse una tasa alministrativa non reembolsable de 20 euros pa unviar la solicitú al traviés del portal oficial.
+Requierse una tasa alministrativa non reembolsable de una dotación pa unviar la solicitú al traviés del portal oficial.
 </p>
 </article>
 

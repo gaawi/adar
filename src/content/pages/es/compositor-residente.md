@@ -128,7 +128,7 @@ Se aceptan todas las estéticas y enfoques compositivos.
 <p>
 Actuación destacada durante el Festival ADAR 2026, tiempo de ensayo y documentación.
 Para residencias presenciales o híbridas: alojamiento y manutención diaria en la sede de ADAR durante el periodo de residencia,
-además de hasta 800 euros de ayuda para desplazamiento.
+además de hasta una dotación de ayuda para desplazamiento.
 </p>
 </article>
 
@@ -143,7 +143,7 @@ Los solicitantes deberán indicar disponibilidad (junio, julio, agosto 2026) y f
 <article class="ed-card">
 <h3>7. Tasa Administrativa</h3>
 <p>
-Se requiere una tasa administrativa no reembolsable de 20 euros para enviar la solicitud a través del portal oficial.
+Se requiere una tasa administrativa no reembolsable de una dotación para enviar la solicitud a través del portal oficial.
 </p>
 </article>
 

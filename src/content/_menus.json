@@ -145,7 +145,7 @@
     },
     {
       "title": "Programme",
-      "url": "/en/programacion/",
+      "url": "/en/programa-2026/",
       "order": 9,
       "parent_id": 0,
       "item_id": 9001,
@@ -378,7 +378,7 @@
     },
     {
       "title": "Programación",
-      "url": "/ast/programacion/",
+      "url": "/ast/programa-2026/",
       "order": 9,
       "parent_id": 0,
       "item_id": 9002,
@@ -611,7 +611,7 @@
     },
     {
       "title": "Programación",
-      "url": "/es/programacion/",
+      "url": "/es/programa-2026/",
       "order": 9,
       "parent_id": 0,
       "item_id": 9003,

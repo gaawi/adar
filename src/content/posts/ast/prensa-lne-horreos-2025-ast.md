@@ -38,7 +38,7 @@ La meta no es «usar un contenedor», sino crear una experiencia artística que 
 </p>
 
 <p>
-El primer premio recibirá además una dotación económica de 500 €. Para participar, basta con enviar un correo a leiguardamusic@gmail.com o un mensaje de WhatsApp al 663 604 030 con varias fotografías del hórreo o panera —vista general, detalle y entorno—.
+El primer premio recibirá además una dotación económica de una dotación. Para participar, basta con enviar un correo a leiguardamusic@gmail.com o un mensaje de WhatsApp al 663 604 030 con varias fotografías del hórreo o panera —vista general, detalle y entorno—.
 </p>
 
 <p>
