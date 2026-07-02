@@ -11,7 +11,7 @@ permalink: "/es/artista-mario-molina/"
 categories: []
 tags: []
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/Mario.jpg"
-excerpt: "Pianista"
+excerpt: "Pianista · Piano de recital y música de cámara"
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
@@ -22,9 +22,9 @@ translation_group: ""
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Pianista</p>
+<p class="qea-kicker mono">Pianista · Piano de recital y música de cámara</p>
 <p class="qea-lede">
-Mario Molina es pianista y participó en la edición 2024 del Festival ADAR.
+Mario Molina, nacido en Soria en 1986, es pianista. Inició estudios musicales a los nueve años en el Conservatorio Oreste Camarca de Soria y finalizó el Grado Superior en el Conservatori Superior de les Illes Balears en 2011 con las más altas calificaciones en piano y música de cámara. Ese mismo año inició un máster en piano en Rotterdam con el profesor Bart van de Roer. Ha asistido a cursos de perfeccionamiento con Francisco José Segovia, Tomeu Jaume y Ricardo Requejo Retegui, entre otros, y a clases magistrales con Leonel Morales, Gustavo Díaz Jerez, Daniel del Pino, Lars Vogt e Igor Roma, entre otros. En 2012 ganó el concurso de la Orquesta Lira Numantina, interpretando como solista el Concierto n.º 3 de Beethoven en el festival Otoño Musical Soriano.
 </p>
 </section>
 
