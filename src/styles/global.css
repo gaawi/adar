@@ -11858,15 +11858,23 @@ body.page .entry-content .vi26 p,
   padding-top: 4px;
 }
 
-/* Venue + municipality banner ABOVE the concert title. Reads as
-   the primary geo-anchor before you know what the event is. */
+/* Venue + municipality banner ABOVE the concert title. Reads as the
+   primary geo-anchor before you know what the event is. Two-column
+   header: venue+concejo on the left, day+date on the right. */
 .vi26-event-place {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px 24px;
+  align-items: start;
+  margin-bottom: 8px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(10,9,7,0.12);
+}
+.vi26-event-place-main {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-bottom: 4px;
-  padding-bottom: 14px;
-  border-bottom: 1px solid rgba(10,9,7,0.12);
+  min-width: 0;
 }
 .vi26-event-place-venue {
   font-family: var(--font-display);
@@ -11885,14 +11893,53 @@ body.page .entry-content .vi26 p,
   color: var(--accent-ink);
   opacity: 0.7;
 }
-
-.vi26-event-title {
+.vi26-event-place-when {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  text-align: right;
+  padding-top: 4px;
+}
+.vi26-event-place-dow {
+  font-size: 11px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  opacity: 0.7;
+  font-weight: 700;
+}
+.vi26-event-place-date {
   font-family: var(--font-display);
   font-stretch: 75%;
   font-weight: 500;
-  font-size: clamp(32px, 3.6vw, 56px);
-  line-height: 1.02;
+  font-size: clamp(24px, 2.2vw, 36px);
+  line-height: 1;
   letter-spacing: -0.02em;
+  color: #0a0907;
+  white-space: nowrap;
+}
+@media (max-width: 720px) {
+  .vi26-event-place {
+    grid-template-columns: 1fr;
+  }
+  .vi26-event-place-when {
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: row;
+    gap: 12px;
+    align-items: baseline;
+  }
+  .vi26-event-place-date { font-size: 22px; }
+}
+
+.vi26-event-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(22px, 2vw, 32px);
+  line-height: 1.15;
+  letter-spacing: -0.005em;
   margin: 0;
   color: #0a0907;
   text-wrap: balance;

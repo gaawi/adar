@@ -650,10 +650,6 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
 
               <div class="vi26-aside-info">
                 <p class="vi26-aside-n mono">N° {e.n}</p>
-                <p class="vi26-aside-when">
-                  <span class="vi26-aside-dow mono">{e.dow}</span>
-                  <span class="vi26-aside-date">{e.fullDate}</span>
-                </p>
 
                 <dl class="vi26-aside-facts">
                   {kind && (<><dt class="mono">{COPY.th_kind}</dt><dd>{kind}</dd></>)}
@@ -686,8 +682,14 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
 
             <div class="vi26-content">
               <header class="vi26-event-place">
-                <span class="vi26-event-place-venue">{e.venue}</span>
-                <span class="vi26-event-place-muni mono">{e.municipality}</span>
+                <div class="vi26-event-place-main">
+                  <span class="vi26-event-place-venue">{e.venue}</span>
+                  <span class="vi26-event-place-muni mono">{e.municipality}</span>
+                </div>
+                <div class="vi26-event-place-when">
+                  <span class="vi26-event-place-dow mono">{e.dow}</span>
+                  <span class="vi26-event-place-date">{e.fullDate}</span>
+                </div>
               </header>
               <h3 class="vi26-event-title">{e.title}</h3>
               {e.subtitle && <p class="vi26-event-sub mono">↳ {e.subtitle}</p>}
