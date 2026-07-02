@@ -12284,3 +12284,93 @@ body.page .entry-content .legal ol,
 @media (min-width: 721px) {
   .hm-hero-meta { display: none !important; }
 }
+
+/* =============================================================
+   .hm-side-banner — sticky right-edge announcement (desktop only)
+   Ancla del anuncio "programación 2026 disponible" siempre visible
+   mientras el usuario navega por la home. Se oculta bajo 900px
+   porque en móvil el bloque .hm-adar26 ya cumple la función.
+   ============================================================= */
+.hm-side-banner {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 900;
+  width: 220px;
+  pointer-events: none;
+}
+.hm-side-banner-link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 20px 20px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  text-decoration: none;
+  border: 2px solid var(--accent-ink);
+  box-shadow: 6px 6px 0 rgba(10,9,7,0.9);
+  transition: transform 0.2s ease, box-shadow 0.22s ease;
+  pointer-events: auto;
+  position: relative;
+}
+.hm-side-banner-link:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 10px 10px 0 rgba(10,9,7,0.95);
+}
+.hm-side-banner-pulse {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-ink);
+  animation: hm-side-pulse 1.5s ease-in-out infinite;
+}
+@keyframes hm-side-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.35; transform: scale(1.4); }
+}
+.hm-side-banner-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--accent-ink);
+  opacity: 0.75;
+}
+.hm-side-banner-h {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  color: var(--accent-ink);
+  margin: 2px 0 6px;
+}
+.hm-side-banner-sub {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--accent-ink);
+  opacity: 0.7;
+  line-height: 1.4;
+}
+.hm-side-banner-cta {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(10,9,7,0.35);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--accent-ink);
+}
+@media (max-width: 1200px) {
+  .hm-side-banner { width: 180px; }
+  .hm-side-banner-h { font-size: 22px; }
+}
+@media (max-width: 900px) {
+  .hm-side-banner { display: none; }
+}
