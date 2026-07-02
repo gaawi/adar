@@ -1,0 +1,37 @@
+---
+title: "Lara Fernández"
+slug: "artista-lara-fernandez"
+lang: "es"
+date: "2026-06-16T00:00:00Z"
+modified: "2026-06-16T00:00:00Z"
+status: "publish"
+wp_id: 0
+original_url: ""
+permalink: "/es/artista-lara-fernandez/"
+categories: []
+tags: []
+featured_image: "https://csma.es/wp-content/uploads/2024/05/Foto-CV-Lara-scaled.jpg"
+excerpt: "Viola · Violista del Cosmos Quartet y de The Rest Project"
+author: "gaawi_rei1q"
+parent_id: 0
+menu_order: 0
+translation_group: ""
+---
+
+<article class="qea">
+
+<section class="qea-intro">
+<p class="qea-eyebrow">§ 00 · Biografía</p>
+<p class="qea-kicker mono">Viola · Violista del Cosmos Quartet y de The Rest Project</p>
+<p class="qea-lede">
+Lara Fernández Ponce (Soria) es violista. Comenzó sus estudios de viola a los siete años en Soria y Madrid con Jensen Horn Sin Lam y Elena Pochekina, y se graduó con distinción en el Conservatorio Superior de Música de Aragón, con Avri Levitan y formación de música de cámara con el Cuarteto Quiroga y Kennedy Moretti. Amplió su formación con un máster en la Hochschule Hanns Eisler de Berlín bajo Volker Sprenger y Eberhard Feltz, y continuó en la Hochschule de Hannover con Oliver Wille, del Kuss Quartet. Es violista del Cosmos Quartet (Barcelona, 2014), conjunto residente en el Palau de la Música Catalana (2021-2024), con el que ha obtenido el primer premio de la Fundación Irene Steels-Wilsing (2018) y el Premio BBVA de Música de Cámara Montserrat Alavedra (2018). Desde 2023 forma parte de The Rest Project junto a Maria Florea y Daniel Claret. Toca una viola David Bagué de 2019.
+</p>
+</section>
+
+<section class="qea-call">
+<div class="qea-actions">
+<a class="qea-cta qea-cta-ghost" href="/es/artistas/">&larr; Volver a Artistas</a>
+</div>
+</section>
+
+</article>

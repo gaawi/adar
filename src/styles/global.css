@@ -9191,6 +9191,24 @@ body.page .entry-content .ed-person {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+/* Artist roster cards link out to individual bio pages. display:contents
+   keeps the anchor invisible in the flex layout so it doesn't disturb
+   the existing image/h3 stacking inside .ed-card / .ed-person. */
+body.page .entry-content .ed-artist-link {
+  display: contents;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+body.page .entry-content .ed-artist-card:has(.ed-artist-link):hover,
+body.page .entry-content .ed-person:has(.ed-artist-link):hover {
+  border-color: var(--ink);
+  transform: translateY(-2px);
+}
+body.page .entry-content .ed-artist-link:hover h3 {
+  text-decoration: underline;
 }
 body.page .entry-content .ed-card-title {
   font-family: var(--font-serif);
