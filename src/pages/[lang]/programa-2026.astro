@@ -37,7 +37,7 @@ const COPY = {
     nights_sub: 'Once conciertos del 4 al 16 de agosto, distribuidos entre conciertos de cámara «ADAR en ruta», intervenciones site-specific en Leiguarda y un cierre de quinteto con espicha. Programa publicado · sedes en confirmación final.',
     program_h: 'Programa',
     artists_h: 'Intérpretes',
-    venue_h: 'Localización',
+    venue_h: 'Dirección',
     eds_h: 'ADAR aquí en',
     visit_h: 'Visto en ADAR',
     web_h: 'Web oficial',
@@ -59,7 +59,7 @@ const COPY = {
     th_n: 'N°',
     th_date: 'Fecha',
     th_kind: 'Formato',
-    th_venue: 'Localización',
+    th_venue: 'Dirección',
     th_artists: 'Intérpretes',
     th_rsvp: 'Reserva',
     info_n: '§ 04',
@@ -109,7 +109,7 @@ const COPY = {
     nights_sub: 'Eleven concerts from 4 to 16 August: chamber music on tour, site-specific interventions in Leiguarda and a closing quintet with espicha. Programme published · final venues being confirmed.',
     program_h: 'Programme',
     artists_h: 'Performers',
-    venue_h: 'Location',
+    venue_h: 'Address',
     eds_h: 'ADAR here in',
     visit_h: 'Seen at ADAR',
     web_h: 'Official site',
@@ -181,7 +181,7 @@ const COPY = {
     nights_sub: 'Once conciertos del 4 al 16 d’agostu, distribuyíos ente conciertos de cámara «ADAR en ruta», intervenciones site-specific en Lleiguarda y un zarru de quintetu con espicha. Programa publicáu · sedes en confirmación final.',
     program_h: 'Programa',
     artists_h: 'Intérpretes',
-    venue_h: 'Localización',
+    venue_h: 'Dirección',
     eds_h: 'ADAR equí en',
     visit_h: 'Vistu n’ADAR',
     web_h: 'Web oficial',
@@ -203,7 +203,7 @@ const COPY = {
     th_n: 'N°',
     th_date: 'Fecha',
     th_kind: 'Formatu',
-    th_venue: 'Localización',
+    th_venue: 'Dirección',
     th_artists: 'Intérpretes',
     th_rsvp: 'Reserva',
     info_n: '§ 04',
@@ -685,6 +685,10 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
             </aside>
 
             <div class="vi26-content">
+              <header class="vi26-event-place">
+                <span class="vi26-event-place-venue">{e.venue}</span>
+                <span class="vi26-event-place-muni mono">{e.municipality}</span>
+              </header>
               <h3 class="vi26-event-title">{e.title}</h3>
               {e.subtitle && <p class="vi26-event-sub mono">↳ {e.subtitle}</p>}
 

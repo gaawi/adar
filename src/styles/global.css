@@ -11857,6 +11857,35 @@ body.page .entry-content .vi26 p,
   gap: 24px;
   padding-top: 4px;
 }
+
+/* Venue + municipality banner ABOVE the concert title. Reads as
+   the primary geo-anchor before you know what the event is. */
+.vi26-event-place {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 4px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(10,9,7,0.12);
+}
+.vi26-event-place-venue {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 600;
+  font-size: clamp(28px, 3.4vw, 52px);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+  color: #0a0907;
+  text-wrap: balance;
+}
+.vi26-event-place-muni {
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  opacity: 0.7;
+}
+
 .vi26-event-title {
   font-family: var(--font-display);
   font-stretch: 75%;
