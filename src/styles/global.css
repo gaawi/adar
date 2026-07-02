@@ -5283,6 +5283,7 @@ body.home article.page { margin: 0 !important; }
 }
 .hm-adar26-dow { color: rgba(10,9,7,0.6); }
 .hm-adar26-date { color: var(--ink); font-weight: 700; font-size: 13px; letter-spacing: 0.12em; }
+.hm-adar26-time { color: var(--accent-ink); opacity: 0.75; font-size: 11px; letter-spacing: 0.16em; font-weight: 600; margin-top: 1px; }
 .hm-adar26-body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .hm-adar26-kind {
   font-family: var(--font-serif);
@@ -11949,6 +11950,14 @@ body.page .entry-content .vi26 p,
   letter-spacing: -0.02em;
   color: #0a0907;
   white-space: nowrap;
+}
+.vi26-event-place-time {
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  color: var(--accent-ink);
+  opacity: 0.85;
+  font-weight: 700;
+  margin-top: 2px;
 }
 @media (max-width: 720px) {
   .vi26-event-place {

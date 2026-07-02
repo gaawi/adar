@@ -248,6 +248,7 @@ interface Event {
   date: string;
   dow: string;
   fullDate: string;
+  time?: string;
   rest?: boolean;
   title: string;
   subtitle?: string;
@@ -274,6 +275,7 @@ interface Event {
 const EVENTS: Event[] = [
   {
     n: '01', date: '04', dow: 'Martes', fullDate: '4 AGO',
+    time: '20:30',
     capacity: 30,
     title: 'De danzas y sonatas',
     subtitle: 'Recital de clave · Inauguración · Concurso de Hórreos y Paneras',
@@ -301,6 +303,7 @@ const EVENTS: Event[] = [
   },
   {
     n: '02', date: '05', dow: 'Miércoles', fullDate: '5 AGO',
+    time: '20:30',
     capacity: 60,
     title: 'La forma de la memoria',
     subtitle: 'ADAR EN RUTA · Concierto de trío con piano',
@@ -330,6 +333,7 @@ const EVENTS: Event[] = [
   },
   {
     n: '03', date: '06', dow: 'Jueves', fullDate: '6 AGO',
+    time: '20:30',
     capacity: 80,
     title: 'La forma de la memoria',
     subtitle: 'Concierto de trío con piano',
@@ -358,6 +362,7 @@ const EVENTS: Event[] = [
   },
   {
     n: '04', date: '07', dow: 'Viernes', fullDate: '7 AGO',
+    time: '20:30',
     capacity: 60,
     title: 'UMBRAL ZERO',
     subtitle: 'Concierto de música minimalista y arte visual',
@@ -387,6 +392,7 @@ const EVENTS: Event[] = [
   },
   {
     n: '05', date: '08', dow: 'Sábado–Domingo', fullDate: '8 — 9 AGO',
+    time: '20:30',
     capacity: 100,
     title: 'Intervención site-specific · Colectivo Menhir',
     subtitle: 'Dos jornadas · Creación site-specific',
@@ -409,6 +415,7 @@ const EVENTS: Event[] = [
   },
   {
     n: '06', date: '11', dow: 'Martes', fullDate: '11 AGO',
+    time: '20:30',
     capacity: 200,
     title: 'The Rest is Silence',
     subtitle: 'ADAR EN RUTA · Concierto de música de cámara y arte visual',
@@ -448,6 +455,7 @@ const EVENTS: Event[] = [
   },
   {
     n: '07', date: '12', dow: 'Miércoles', fullDate: '12 AGO',
+    time: '20:30',
     capacity: 50,
     title: 'Micro concierto durante el eclipse',
     subtitle: 'Muestra de la Residencia The Rest Project',
@@ -470,6 +478,7 @@ const EVENTS: Event[] = [
   },
   {
     n: '08', date: '13', dow: 'Jueves', fullDate: '13 AGO',
+    time: '20:30',
     capacity: 80,
     title: 'Concierto de música de cámara y arte visual',
     subtitle: 'ADAR EN RUTA',
@@ -498,6 +507,7 @@ const EVENTS: Event[] = [
   },
   {
     n: '09', date: '14', dow: 'Viernes', fullDate: '14 AGO',
+    time: '20:30',
     capacity: 30,
     title: 'Micro concierto · The Rest is Silence en residencia',
     subtitle: 'Muestra de residencia · Segundo hórreo ganador',
@@ -518,6 +528,7 @@ const EVENTS: Event[] = [
   },
   {
     n: '10', date: '15', dow: 'Sábado', fullDate: '15 AGO',
+    time: '21:30',
     capacity: 40,
     title: 'Paseo sonoro en Leiguarda',
     subtitle: 'Creación site-specific',
@@ -542,6 +553,7 @@ const EVENTS: Event[] = [
   },
   {
     n: '11', date: '16', dow: 'Domingo', fullDate: '16 AGO',
+    time: '21:30',
     capacity: 60,
     title: 'Clausura · Concierto de quinteto y espicha',
     subtitle: 'Cierre de la VI edición',
@@ -708,6 +720,7 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
                 <div class="vi26-event-place-when">
                   <span class="vi26-event-place-dow mono">{e.dow}</span>
                   <span class="vi26-event-place-date">{e.fullDate}</span>
+                  {e.time && <span class="vi26-event-place-time mono">{e.time}h</span>}
                 </div>
               </header>
               <h3 class="vi26-event-title">{e.title}</h3>
