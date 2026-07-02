@@ -412,6 +412,11 @@ const ADAR26 = [
 ];
 
 const ADAR26_HREF = `/${lang}/programa-2026/`;
+const ADAR26_PRESS_HREF = {
+  es:  '/es/nota-de-prensa-adar-2026/',
+  en:  '/en/press-release-adar-2026/',
+  ast: '/ast/nota-de-prensa-adar-2026/',
+}[lang];
 const ADAR26_COPY = {
   es: {
     eyebrow: 'Próxima edición · Edición VI',
@@ -424,7 +429,7 @@ const ADAR26_COPY = {
     free: 'Entrada gratuita hasta completar aforo · reserva en Eventbrite',
     cta_program: 'Ver programa completo',
     cta_press: 'Dosier de prensa',
-    horreo_note: 'Las sedes de los conciertos 01 y 09 se anunciarán cuando se publique la convocatoria del Concurso de Hórreos.',
+    horreo_note: 'Las sedes de los conciertos 01 y 09 (los dos hórreos ganadores del Concurso) se anuncian el 25 de julio, tras el fallo del jurado.',
   },
   en: {
     eyebrow: 'Next edition · Edition VI',
@@ -546,7 +551,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
               {ADAR26_COPY.cta_program}
             </a>
             <a class="hm-adar26-cta hm-adar26-cta-ghost"
-               href="mailto:leiguardamusic@gmail.com?subject=Dosier%20de%20prensa%20Festival%20ADAR%202026">
+               href={ADAR26_PRESS_HREF}>
               <span aria-hidden="true">↗</span>
               {ADAR26_COPY.cta_press}
             </a>

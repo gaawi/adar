@@ -274,19 +274,28 @@ const EVENTS: Event[] = [
   {
     n: '01', date: '04', dow: 'Martes', fullDate: '4 AGO',
     capacity: 30,
-    title: 'Micro concierto de clavicémbalo',
-    subtitle: 'Inauguración · Concurso de Hórreos y Paneras',
-    description: 'Apertura íntima en el hórreo seleccionado por el jurado del Concurso de Hórreos y Paneras 2026. Aforo limitado a treinta personas en un espacio patrimonial restaurado para la ocasión. La sede concreta se anuncia tras el fallo del jurado en julio. Un encuentro recogido para abrir la edición antes de que el festival arranque su recorrido por el resto de Asturias.',
-    programNote: 'Programa por anunciar.',
-    pieces: [],
+    title: 'De danzas y sonatas',
+    subtitle: 'Recital de clave · Inauguración · Concurso de Hórreos y Paneras',
+    description: 'Un recorrido por algunas de las formas de danza que vertebraron la música para teclado entre los siglos XVI y XVIII. Desde las variaciones renacentistas de Antonio de Cabezón y las célebres Folías de España —una de las progresiones armónicas más influyentes de la historia— hasta la refinada suite inglesa de Henry Purcell y el inconfundible lenguaje de Domenico Scarlatti, la danza aparece transformada en un espacio de invención, virtuosismo y expresión. El recorrido culmina con la monumental Chacona de la Partita para violín en re menor de J. S. Bach, en la transcripción realizada por Brahms, una obra que eleva una antigua danza barroca a una de las cimas de la literatura musical occidental.',
+    programName: 'De danzas y sonatas',
+    pieces: [
+      { composer: 'Antonio de Cabezón',    years: '1510–1566', piece: 'Diferencias sobre el Canto del Cavallero',                             duration: '6′' },
+      { composer: 'Anónimo · Martín i Coll', years: '1709',       piece: 'Folías de España (de Flores de Música)',                            duration: '5′' },
+      { composer: 'Henry Purcell',          years: '1659–1695', piece: 'Suite n.º 1 en sol mayor Z. 660 — Prelude · Almand · Corant · Minuet', duration: '9′' },
+      { composer: 'Henry Purcell',          years: '1659–1695', piece: 'Ground en do menor',                                                    duration: '4′' },
+      { composer: 'Domenico Scarlatti',     years: '1685–1757', piece: 'Sonata K. 213 en re menor',                                             duration: '6′' },
+      { composer: 'Domenico Scarlatti',     years: '1685–1757', piece: 'Sonata K. 27 en si menor',                                              duration: '4′' },
+      { composer: 'Johann S. Bach',         years: '1685–1750', piece: 'Ciaccona · de la Partita para violín en re menor (trans. J. Brahms)',   duration: '14′' },
+    ],
+    totalDuration: '≈ 50′',
     venue: 'Hórreo ganador del concurso 2026',
-    address: 'Hórreo seleccionado en el Concurso · sede por anunciar · Asturies',
-    venueNote: 'Sede ganadora del Concurso de Hórreos · convocatoria próxima.',
+    address: 'Hórreo ganador · sede exacta el 25 de julio · Asturies',
+    venueNote: 'Sede ganadora del Concurso de Hórreos · se anuncia el 25 de julio.',
     municipality: 'Asturies',
     photo: 'https://s1.abcstatics.com/abc/www/multimedia/sevilla/2023/01/18/ignacio-priego-uno_20230118120520-kJAB-Rz4H5Ye2vCc2SwoCBKMcEPM-1200x840@abc.jpg',
     memoriaSlug: 'micro-concierto-en-puerma-las-regueras',
     memoriaYear: 2025,
-    artists: [{ name: 'Ignacio Priego', role: 'clave' }],
+    artists: [{ name: 'Ignacio Prego', role: 'clave' }],
     eventbrite: 'https://www.eventbrite.com/o/festival-adar-89763163323',
   },
   {
@@ -377,7 +386,7 @@ const EVENTS: Event[] = [
     capacity: 100,
     title: 'Intervención site-specific · Colectivo Menhir',
     subtitle: 'Dos jornadas · Creación site-specific',
-    description: 'Coco Moya e Iván Cebrián recorren Leiguarda durante dos jornadas como Colectivo Menhir, una formación dedicada a la investigación artística y la creación site-specific. Voz, guitarra, electrónica y creación sonora se despliegan por las calles del pueblo en un dispositivo abierto: obras originales, arreglos, improvisación. Cada día propone un recorrido distinto y el público va llegando, se detiene, se reencuentra. El pueblo entero como sala de conciertos durante dos atardeceres.',
+    description: 'Menhir es un colectivo de arte y música que crea piezas de arte sonoro site-specific. Para ADAR 2026 firman un recorrido sonoro geolocalizado por Leiguarda: a lo largo del trayecto, quien lo camine escuchará elementos sonoros, fragmentos musicales y palabras que van apareciendo según la ubicación. Puede hacerse en solitario o en grupo, y estará disponible en cualquier momento durante las dos jornadas — la ruta pasa a formar parte del paisaje inmaterial del pueblo.',
     programNote: 'Dos días de intervención por las calles del pueblo. Recorridos distintos cada jornada, obras originales, arreglos e improvisación.',
     pieces: [],
     venue: 'Calles de Leiguarda',
@@ -488,8 +497,8 @@ const EVENTS: Event[] = [
     programNote: 'Muestra de la residencia The Rest Project · obras desarrolladas durante la estancia de creación en Leiguarda.',
     pieces: [],
     venue: 'Segundo hórreo ganador del Concurso 2026',
-    address: 'Segundo hórreo seleccionado en el Concurso · sede por anunciar · Asturies',
-    venueNote: 'Sede ganadora del Concurso de Hórreos · convocatoria próxima.',
+    address: 'Segundo hórreo ganador · sede exacta el 25 de julio · Asturies',
+    venueNote: 'Sede ganadora del Concurso de Hórreos · se anuncia el 25 de julio.',
     municipality: 'Asturies',
     photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1965T01.jpg',
     artists: [
@@ -566,6 +575,12 @@ const MAP_HREFS: Record<Lang, string> = {
   ast: '/ast/mapa-dacciones/',
 };
 
+const PRESS_HREF: Record<Lang, string> = {
+  es:  '/es/nota-de-prensa-adar-2026/',
+  en:  '/en/press-release-adar-2026/',
+  ast: '/ast/nota-de-prensa-adar-2026/',
+};
+
 const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
 ---
 
@@ -600,8 +615,7 @@ const POSTER_BG = CDN + 'adar25fx30/DSC01680.jpg';
           <span class="prog-arr">↓</span>
           {COPY.cta_program}
         </a>
-        <a class="prog-current-cta prog-current-cta-ghost"
-           href="mailto:leiguardamusic@gmail.com?subject=Dosier%20de%20prensa%20Festival%20ADAR%202026">
+        <a class="prog-current-cta prog-current-cta-ghost" href={PRESS_HREF[lang]}>
           <span class="prog-arr">→</span>
           {COPY.cta_press}
         </a>
