@@ -18,35 +18,29 @@ menu_order: 0
 translation_group: "pll_2026_press_note"
 ---
 
-<article class="qea">
+<article class="doc">
 
-<section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Nota de prensa</p>
-<h2 class="qea-h">
-Festival ADAR · <em>Edición VI</em> · 2026.
-</h2>
-<p class="qea-lede">
-Once conciertos del 4 al 16 d’agostu de 2026 en siete sedes patrimoniales d’Asturies. Música de cámara, intervenciones site-specific y un zarru de quintetu con espicha na ilesia de Lleiguarda. Tola programación ye d’entrada llibre con reserva n’Eventbrite.
+<header class="doc-head">
+<p class="doc-eyebrow">NOTA DE PRENSA</p>
+<p class="doc-meta">Pa publicación inmediata · Lleiguarda, xunu de 2026</p>
+</header>
+
+<h1 class="doc-h1">El Festival ADAR celebra la so sesta edición del 4 al 16 d’agostu de 2026 nel mediu rural asturianu</h1>
+
+<p class="doc-lede"><strong>Once conciertos, siete sedes patrimoniales, seis conceyos y trece intérpretes internacionales.</strong> L’Asociación pal Desarrollu de les Artes nel Mediu Rural (ADAR) presenta la edición VI del Festival ADAR, con entrada llibre en tolos conciertos previa reserva n’Eventbrite.</p>
+
+<p>LLEIGUARDA (Balmonte de Miranda, Asturies). — El Festival ADAR celebra la so sesta edición del 4 al 16 d’agostu de 2026, con un programa que percuerre ilesies, monasterios, un parador, un auditoriu municipal, dos hórreos patrimoniales y les calles del pueblu de Lleiguarda. La programación combina música de cámara contemporánea, intervenciones sonores site-specific, una muestra de residencia artística y un conciertu de zarru siguíu d’espicha.</p>
+
+<h2 class="doc-h2">Contactu de prensa</h2>
+
+<p>
+Festival ADAR<br>
+Corréu: <a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a><br>
+Teléfonu / WhatsApp: <a href="https://wa.me/34663604030">+34 663 604 030</a><br>
+Web: <a href="https://festivaladar.com">festivaladar.com</a><br>
+Instagram: <a href="https://instagram.com/festivaladar" target="_blank" rel="noopener">@festivaladar</a>
 </p>
-</section>
 
-<section class="qea-press">
-<p class="qea-eyebrow">§ 01 · Contactu de prensa</p>
-<h2 class="qea-h">Materiales <em>y acreditaciones</em>.</h2>
-<p class="qea-lede">
-Solicita fotografíes n’alta resolución, biografíes de los intérpretes, dosier completu y acreditación de prensa per corréu:
-</p>
-
-<p class="qea-note mono">
-<a href="mailto:leiguardamusic@gmail.com?subject=Prensa%20Festival%20ADAR%202026">leiguardamusic@gmail.com</a> · WhatsApp <a href="https://wa.me/34663604030">663 604 030</a>
-</p>
-
-<div class="qea-actions" style="margin-top: 32px;">
-<a class="qea-cta" href="mailto:leiguardamusic@gmail.com?subject=Dosier%20de%20prensa%20Festival%20ADAR%202026">
-<span class="qea-arr">→</span> Solicitar dosier
-</a>
-<a class="qea-cta qea-cta-ghost" href="/ast/programa-2026/">Ver programa completu</a>
-</div>
-</section>
+<p class="doc-end">— fin —</p>
 
 </article>

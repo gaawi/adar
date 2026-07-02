@@ -18,97 +18,74 @@ menu_order: 0
 translation_group: "pll_2026_press_note"
 ---
 
-<article class="qea">
+<article class="doc">
 
-<section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Nota de prensa</p>
-<h2 class="qea-h">
-Festival ADAR · <em>edición VI</em> · 2026.
-</h2>
-<p class="qea-lede">
-Once conciertos del 4 al 16 de agosto de 2026 en siete sedes patrimoniales de Asturias. Música de cámara, intervenciones site-specific y una clausura de quinteto y espicha en la iglesia de Leiguarda. Toda la programación es de entrada libre con reserva en Eventbrite.
+<header class="doc-head">
+<p class="doc-eyebrow">NOTA DE PRENSA</p>
+<p class="doc-meta">Para publicación inmediata · Leiguarda, junio de 2026</p>
+</header>
+
+<h1 class="doc-h1">El Festival ADAR celebra su sexta edición del 4 al 16 de agosto de 2026 en el medio rural asturiano</h1>
+
+<p class="doc-lede"><strong>Once conciertos, siete sedes patrimoniales, seis concejos y trece intérpretes internacionales.</strong> La Asociación para el Desarrollo de las Artes en el medio Rural (ADAR) presenta la edición VI del Festival ADAR, con entrada libre en todos los conciertos previa reserva en Eventbrite.</p>
+
+<p>LEIGUARDA (Belmonte de Miranda, Asturias). — El Festival ADAR celebra su sexta edición del 4 al 16 de agosto de 2026 con un programa que recorre iglesias, monasterios, un parador, un auditorio municipal, dos hórreos patrimoniales y las calles del pueblo de Leiguarda. La programación combina música de cámara contemporánea, intervenciones sonoras site-specific, una muestra de residencia artística y un concierto de clausura seguido de espicha.</p>
+
+<p>La edición arranca el martes 4 de agosto con un recital de clave a cargo de Ignacio Prego en el hórreo ganador del Concurso de Hórreos y Paneras 2026 —cuya sede se anuncia el 25 de julio—. El programa «De danzas y sonatas» recorre las formas de danza para teclado entre los siglos XVI y XVIII, desde Antonio de Cabezón y las Folías de España hasta la Chacona de la Partita para violín en re menor de J. S. Bach en la transcripción de Johannes Brahms.</p>
+
+<p>El ciclo «ADAR en ruta» reúne cuatro conciertos itinerantes de cámara. «La forma de la memoria», del trío María Martínez (violonchelo), Frederieke Saeijs (violín) y Josefina Urraca (piano), se interpreta los días 5 y 6 de agosto en la biblioteca del Parador de Corias (Cangas del Narcea) y en Llanes, con obras de Shostakóvich, Lili Boulanger, Ernest Bloch, Rajmáninov y Brittney Benton. El martes 11 de agosto, el trío Maria Florea, Lara Fernández y Daniel Claret presenta «The Rest is Silence» en el Auditorio As Quintas de El Franco, un mosaico construido sobre la idea del silencio con obras de Ligeti, Gubaidúlina, Kurtág, Webern, Penderecki, Stravinsky, Cage y Bach. El jueves 13 de agosto, ese mismo trío se amplía a quinteto en el Monasterio de Santa María de Villanueva de Oscos, con obras de Devin Cholodenko, Brahms y Dvořák.</p>
+
+<p>El colectivo Menhir (Coco Moya e Iván Cebrián) firma una intervención site-specific durante dos jornadas —8 y 9 de agosto— en las calles de Leiguarda: un recorrido sonoro geolocalizado que combina elementos musicales, sonoros y palabras que aparecen según la ubicación del caminante. La ruta puede realizarse en solitario o en grupo en cualquier momento durante ambas jornadas.</p>
+
+<p>La programación incluye además el concierto «UMBRAL ZERO» de música minimalista con Guillermo Laporta (flauta) y Josefina Urraca (piano) en el Aula del Oro de Belmonte de Miranda el 7 de agosto, un micro concierto durante el eclipse solar del 12 de agosto en Leiguarda, y una muestra de residencia del trío The Rest is Silence en el segundo hórreo seleccionado por el jurado del concurso el 14 de agosto. El paseo sonoro del 15 de agosto por Leiguarda y la clausura del 16 de agosto en la iglesia parroquial cierran la edición. El concierto de clausura reúne un quinteto (Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca) con obras de Ravel, Ligeti, Beethoven y Stravinsky, seguido de espicha abierta al público.</p>
+
+<h2 class="doc-h2">Datos clave</h2>
+
+<table class="doc-table">
+<tr><th>Edición</th><td>VI</td></tr>
+<tr><th>Fechas</th><td>4 al 16 de agosto de 2026</td></tr>
+<tr><th>Conciertos</th><td>11 (más dos jornadas de intervención site-specific)</td></tr>
+<tr><th>Sedes</th><td>7 espacios patrimoniales</td></tr>
+<tr><th>Concejos</th><td>6 (Belmonte de Miranda, Cangas del Narcea, El Franco, Villanueva de Oscos, Llanes, Grado)</td></tr>
+<tr><th>Intérpretes</th><td>13 solistas y conjuntos + colectivo Menhir</td></tr>
+<tr><th>Entrada</th><td>Libre, previa reserva en Eventbrite</td></tr>
+<tr><th>Web</th><td>festivaladar.com</td></tr>
+</table>
+
+<h2 class="doc-h2">Sedes por concejo</h2>
+
+<ul class="doc-list">
+<li><strong>Belmonte de Miranda</strong> — Aula del Oro · Calles de Leiguarda · Iglesia parroquial de Leiguarda</li>
+<li><strong>Cangas del Narcea</strong> — Biblioteca del Parador de Corias (Monasterio de Corias, s/n)</li>
+<li><strong>El Franco</strong> — Auditorio As Quintas (A Caridá)</li>
+<li><strong>Villanueva de Oscos</strong> — Monasterio de Santa María</li>
+<li><strong>Llanes</strong> — Sede en el concejo (por confirmar)</li>
+<li><strong>Concurso de Hórreos 2026</strong> — Dos hórreos ganadores anunciados el 25 de julio</li>
+</ul>
+
+<h2 class="doc-h2">Sobre ADAR</h2>
+
+<p>La Asociación para el Desarrollo de las Artes en el medio Rural (ADAR) es una organización cultural sin ánimo de lucro con sede en Leiguarda (Belmonte de Miranda, Asturias), fundada en 2020 por los músicos Guillermo Laporta y Josefina Urraca. Desde su primera edición en 2021, el festival produce música clásica contemporánea, arte visual y patrimonio activado en aldeas, iglesias, hórreos, monasterios y paisajes del medio rural asturiano.</p>
+
+<p>El proyecto opera con un modelo descentralizado que combina residencias artísticas, mediación cultural con los ayuntamientos anfitriones, documentación audiovisual y circulación internacional. La programación es de entrada libre y se sostiene con el apoyo institucional del Principado de Asturias, la Comisión Europea, el Goethe-Institut y una red de partners culturales.</p>
+
+<h2 class="doc-h2">Materiales para prensa</h2>
+
+<p>Fotografías en alta resolución de las sedes y los intérpretes, biografías completas, dosier técnico y acreditaciones están disponibles bajo petición. Solicítelos indicando medio, nombre del periodista y enfoque previsto del reportaje.</p>
+
+<hr class="doc-rule">
+
+<div class="doc-contact">
+<p class="doc-contact-h">Contacto de prensa</p>
+<p>
+Festival ADAR<br>
+Correo: <a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a><br>
+Teléfono / WhatsApp: <a href="https://wa.me/34663604030">+34 663 604 030</a><br>
+Web: <a href="https://festivaladar.com">festivaladar.com</a><br>
+Instagram: <a href="https://instagram.com/festivaladar" target="_blank" rel="noopener">@festivaladar</a>
 </p>
-</section>
-
-<section class="qea-call">
-<p class="qea-eyebrow">§ 01 · Titular</p>
-<h2 class="qea-h">
-El Festival ADAR vuelve al medio rural asturiano con su <em>sexta edición</em>.
-</h2>
-<p class="qea-lede">
-La <strong>Asociación para el Desarrollo de las Artes en el medio Rural</strong> presenta la edición VI del Festival ADAR: doce noches consecutivas de música clásica contemporánea, dos intervenciones site-specific en Leiguarda y una muestra de residencia. La programación recorre siete espacios patrimoniales entre Belmonte de Miranda, Cangas del Narcea, El Franco, Villanueva de Oscos, Llanes y dos hórreos ganadores del Concurso de Hórreos y Paneras 2026 —cuyas sedes se anuncian el 25 de julio—.
-</p>
-
-<dl class="qea-specs qea-specs-2x2">
-<div><dt class="mono">Fechas</dt><dd>4 — 16 de agosto de 2026</dd></div>
-<div><dt class="mono">Edición</dt><dd>VI</dd></div>
-<div><dt class="mono">Territorio</dt><dd>Asturias · seis concejos</dd></div>
-<div><dt class="mono">Entrada</dt><dd>Libre · reserva previa en Eventbrite</dd></div>
-</dl>
-</section>
-
-<section class="qea-model">
-<p class="qea-eyebrow">§ 02 · Qué es ADAR</p>
-<h2 class="qea-h">
-Festival <em>para el desarrollo de las artes</em> en el medio rural.
-</h2>
-<p class="qea-lede">
-Fundada en Leiguarda (Belmonte de Miranda) por los músicos Guillermo Laporta y Josefina Urraca, ADAR produce música clásica contemporánea, arte visual y patrimonio activado en aldeas, iglesias, hórreos, monasterios y paisajes del medio rural asturiano. El festival articula un modelo de creación descentralizado, con residencias artísticas, mediación local y colaboración institucional con el Principado de Asturias, la Comisión Europea, el Goethe-Institut y una red de partners culturales.
-</p>
-</section>
-
-<section class="qea-model">
-<p class="qea-eyebrow">§ 03 · Titulares del programa</p>
-<h2 class="qea-h">Cuatro claves del <em>programa 2026</em>.</h2>
-<ol class="qea-list">
-<li><span class="qea-list-n mono">01</span><div><strong>Apertura de clave.</strong> El clavecinista Ignacio Prego inaugura la edición desde el hórreo ganador del Concurso 2026 con «De danzas y sonatas» — un recorrido por Cabezón, Purcell, Scarlatti y la Chacona de Bach en la transcripción de Brahms.</div></li>
-<li><span class="qea-list-n mono">02</span><div><strong>ADAR en ruta.</strong> Cuatro conciertos itinerantes de cámara: «La forma de la memoria» del trío Martínez / Saeijs / Urraca (Parador de Corias, Llanes), «The Rest is Silence» del trío Florea / Fernández / Claret (Auditorio de El Franco), y el concierto Brahms · Dvořák en el Monasterio de Villanueva de Oscos.</div></li>
-<li><span class="qea-list-n mono">03</span><div><strong>Intervenciones site-specific.</strong> El Colectivo Menhir (Coco Moya · Iván Cebrián) firma un recorrido sonoro geolocalizado por Leiguarda: elementos sonoros, fragmentos musicales y palabras que aparecen según la ubicación, durante dos jornadas. Y el paseo sonoro del quinteto por el valle el 15 de agosto.</div></li>
-<li><span class="qea-list-n mono">04</span><div><strong>Clausura de quinteto y espicha.</strong> El 16 de agosto en la Iglesia de Leiguarda: Ravel (Ma mère l’Oye), Ligeti (Musica Ricercata), Beethoven (Dúo) y Stravinsky (Tres piezas para clarinete). El festival cierra con espicha abierta para todo el público.</div></li>
-</ol>
-</section>
-
-<section class="qea-history">
-<p class="qea-eyebrow">§ 04 · Intérpretes</p>
-<h2 class="qea-h">Cartel <em>2026</em>.</h2>
-<p class="qea-lede">
-Trece intérpretes internacionales y un colectivo de creación site-specific:
-</p>
-<p class="qea-lede">
-Ignacio Prego · clave · María Martínez · violonchelo · Frederieke Saeijs · violín · Josefina Urraca · piano · Guillermo Laporta · flauta · Coco Moya · voz, electrónica y creación sonora · Iván Cebrián · guitarra, electrónica y creación sonora · Colectivo Menhir · investigación y creación site-specific · Maria Florea · violín · Lara Fernández · viola · Daniel Claret · violonchelo · Natania Hoffman · violonchelo · Žilvinas Brazauskas · clarinete.
-</p>
-</section>
-
-<section class="qea-history">
-<p class="qea-eyebrow">§ 05 · Sedes</p>
-<h2 class="qea-h">Siete espacios <em>patrimoniales</em>.</h2>
-<dl class="qea-specs">
-<div><dt class="mono">Belmonte de Miranda</dt><dd>Aula del Oro · Calles de Leiguarda · Iglesia de Leiguarda</dd></div>
-<div><dt class="mono">Cangas del Narcea</dt><dd>Biblioteca del Parador de Corias</dd></div>
-<div><dt class="mono">El Franco</dt><dd>Auditorio As Quintas · A Caridá</dd></div>
-<div><dt class="mono">Villanueva de Oscos</dt><dd>Monasterio de Santa María</dd></div>
-<div><dt class="mono">Llanes</dt><dd>Sede en el concejo · por confirmar</dd></div>
-<div><dt class="mono">Concurso 2026</dt><dd>Dos hórreos ganadores · sedes anunciadas el 25 de julio</dd></div>
-</dl>
-</section>
-
-<section class="qea-press">
-<p class="qea-eyebrow">§ 06 · Contacto de prensa</p>
-<h2 class="qea-h">Materiales <em>y acreditaciones</em>.</h2>
-<p class="qea-lede">
-Solicita fotografías en alta resolución, biografías de los intérpretes, dosier completo y acreditación de prensa por correo:
-</p>
-
-<p class="qea-note mono">
-<a href="mailto:leiguardamusic@gmail.com?subject=Prensa%20Festival%20ADAR%202026">leiguardamusic@gmail.com</a> · WhatsApp <a href="https://wa.me/34663604030">663 604 030</a>
-</p>
-
-<div class="qea-actions" style="margin-top: 32px;">
-<a class="qea-cta" href="mailto:leiguardamusic@gmail.com?subject=Dosier%20de%20prensa%20Festival%20ADAR%202026&body=Hola%2C%20soy%20periodista%20y%20me%20gustar%C3%ADa%20recibir%20el%20dosier%20de%20prensa%20del%20Festival%20ADAR%20VI%20%C2%B7%202026.%0A%0ANombre%3A%0AMedio%3A%0AEnfoque%20del%20reportaje%3A%0A%0AGracias.">
-<span class="qea-arr">→</span> Solicitar dosier
-</a>
-<a class="qea-cta qea-cta-ghost" href="/es/programa-2026/">Ver programa completo</a>
 </div>
-</section>
+
+<p class="doc-end">— fin —</p>
 
 </article>
