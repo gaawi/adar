@@ -340,8 +340,8 @@ const EVENTS: Event[] = [
       { composer: 'Brittney Benton',                            piece: 'Trío con piano n.º 1',                                duration: '5′' },
     ],
     totalDuration: '≈ 45′',
-    venue: 'Llanes',
-    address: 'Sede específica en Llanes por confirmar · Concejo de Llanes · Asturies',
+    venue: 'Monasterio de San Antolín de Bedón',
+    address: 'Naves · 33594 Llanes · Asturies',
     municipality: 'Llanes',
     photo: CDN + 'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00600.jpg',
     memoriaSlug: 'concierto-visual-en-llanes',
@@ -684,7 +684,14 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
               <header class="vi26-event-place">
                 <div class="vi26-event-place-main">
                   <span class="vi26-event-place-venue">{e.venue}</span>
-                  <span class="vi26-event-place-muni mono">{e.municipality}</span>
+                  <span class="vi26-event-place-sub mono">
+                    <span class="vi26-event-place-addr">{e.address || e.municipality}</span>
+                    <a class="vi26-event-place-map"
+                       href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent((e.venue + ', ' + (e.address || e.municipality)).replace(/·/g, ','))}`}
+                       target="_blank" rel="noopener">
+                      Ver mapa <span aria-hidden="true">↗</span>
+                    </a>
+                  </span>
                 </div>
                 <div class="vi26-event-place-when">
                   <span class="vi26-event-place-dow mono">{e.dow}</span>
