@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/en/headquarters/"
 permalink: "/en/headquarters/"
 categories: []
 tags: []
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp"
+featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -27,7 +27,7 @@ ADAR HEADQUARTERS / LEIGUARDA 47
 <!-- HERO -->
 <div class="amp-hero">
 <div class="amp-hero-bg">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp" alt="Leiguarda 47, ADAR headquarters in rural Asturias" loading="lazy" />
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG" alt="Leiguarda 47, ADAR headquarters in rural Asturias" loading="lazy" />
 </div>
 <div class="amp-hero-inner">
 <span class="amp-eyebrow">ADAR Headquarters</span>
@@ -316,7 +316,7 @@ Concentrating everything in one place reduces transport, simplifies logistics, a
 </figure>
 
 <figure class="ed-g-item">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG" loading="lazy" alt="Leiguarda house detail" />
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp" loading="lazy" alt="Leiguarda house detail" />
 </figure>
 
 <figure class="ed-g-item">

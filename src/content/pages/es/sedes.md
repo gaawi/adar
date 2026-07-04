@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/es/sedes/"
 permalink: "/es/sedes/"
 categories: []
 tags: []
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp"
+featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -27,7 +27,7 @@ SEDE ADAR / LEIGUARDA 47
 <!-- HERO -->
 <div class="amp-hero">
 <div class="amp-hero-bg">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp" alt="Leiguarda 47, sede de ADAR en Asturias" loading="lazy" />
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG" alt="Leiguarda 47, sede de ADAR en Asturias" loading="lazy" />
 </div>
 <div class="amp-hero-inner">
 <span class="amp-eyebrow">Sede de ADAR</span>
@@ -302,7 +302,7 @@ Los espacios principales (sala de ensayo, cocina, baño) están a nivel de calle
 </figure>
 
 <figure class="ed-g-item">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG" loading="lazy" alt="Detalle de la casa" />
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp" loading="lazy" alt="Detalle de la casa" />
 </figure>
 
 <figure class="ed-g-item">

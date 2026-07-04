@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/ast/sede/"
 permalink: "/ast/sede/"
 categories: []
 tags: []
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp"
+featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -22,7 +22,7 @@ translation_group: "pll_6990a616ee1dd"
 <!-- HERO -->
 <div class="amp-hero">
 <div class="amp-hero-bg">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_3424.webp" alt="Sede Leiguarda 47" />
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG" alt="Sede Leiguarda 47" />
 </div>
 <div class="amp-hero-inner">
 <span class="amp-eyebrow">Sede · Festival ADAR</span>
