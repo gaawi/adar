@@ -20,12 +20,21 @@ translation_group: "pll_2026_press_note"
 
 <article class="doc">
 
+<div class="doc-topline">
+<div class="doc-topline-text">
 <header class="doc-head">
 <p class="doc-eyebrow">PRESS RELEASE</p>
 <p class="doc-meta">For immediate release · Leiguarda, June 2026</p>
 </header>
 
 <h1 class="doc-h1">ADAR Festival returns for its sixth edition, from 4 to 16 August 2026 across rural Asturias</h1>
+</div>
+
+<a class="doc-poster" href="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" alt="Official ADAR Festival 2026 poster" loading="lazy" />
+<span class="doc-poster-dl mono">Download poster ↓</span>
+</a>
+</div>
 
 <p class="doc-lede"><strong>Eleven concerts, seven heritage venues, six municipalities and thirteen international performers.</strong> The Association for the Development of the Arts in Rural Areas (ADAR) presents the VI edition of ADAR Festival, with free admission to all concerts via RSVP on Eventbrite.</p>
 
@@ -61,9 +70,46 @@ translation_group: "pll_2026_press_note"
 
 <p>The project runs a decentralised model combining artist residencies, cultural mediation with host municipalities, audiovisual documentation and international circulation. All programming is free and is supported by the Principality of Asturias, the European Commission, the Goethe-Institut and a network of cultural partners.</p>
 
+<h2 class="doc-h2">Downloads</h2>
+
+<p>Official poster and a selection of high-resolution images, free for editorial use with credit to Festival ADAR. Click any image to open or download the file.</p>
+
+<div class="doc-downloads">
+<figure>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" alt="Official ADAR Festival 2026 poster" loading="lazy" />
+</a>
+<figcaption class="mono">Official poster 2026 ↓</figcaption>
+</figure>
+<figure>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01523.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01523.jpg" alt="ADAR Festival concert 2025" loading="lazy" />
+</a>
+<figcaption class="mono">Concert · ADAR 2025 ↓</figcaption>
+</figure>
+<figure>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg" alt="Visual concert in Llanes 2025" loading="lazy" />
+</a>
+<figcaption class="mono">Visual concert · Llanes 2025 ↓</figcaption>
+</figure>
+<figure>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Micro-concert in a hórreo 2025" loading="lazy" />
+</a>
+<figcaption class="mono">Micro-concert in a hórreo ↓</figcaption>
+</figure>
+<figure>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/Timeline%201_01_00_21_17.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/Timeline%201_01_00_21_17.jpg" alt="Closing concert, Leiguarda 2024" loading="lazy" />
+</a>
+<figcaption class="mono">Closing · Leiguarda 2024 ↓</figcaption>
+</figure>
+</div>
+
 <h2 class="doc-h2">Press materials</h2>
 
-<p>High-resolution photography of venues and performers, complete biographies, technical dossier and accreditations are available on request. Please state outlet, journalist name and intended angle.</p>
+<p>Complete artist biographies, technical materials and accreditations are available on request. Please state outlet, journalist name and intended angle.</p>
 
 <hr class="doc-rule">
 

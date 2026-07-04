@@ -78,6 +78,9 @@ const isContact =
   entry.data.permalink === `/${lang}/contacto/` ||
   entry.data.permalink === `/${lang}/contact/` ||
   entry.data.permalink === `/${lang}/contautu/`;
+// Press-release / dossier pages render as plain documents (.doc) — no hero.
+const isPressRelease =
+  /nota-de-prensa|press-release/.test(entry.data.permalink);
 const bodyClasses = [
   isPost ? 'single single-post' : 'page',
   isHome
@@ -101,7 +104,7 @@ const bodyClasses = [
   translations={translations}
   bodyClass={bodyClasses}
 >
-  {!isHome && !isPress && !isContact && (
+  {!isHome && !isPress && !isContact && !isPressRelease && (
     <Hero
       eyebrow={heroEyebrow}
       title={entry.data.title}

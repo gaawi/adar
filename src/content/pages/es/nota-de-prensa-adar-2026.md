@@ -20,12 +20,21 @@ translation_group: "pll_2026_press_note"
 
 <article class="doc">
 
+<div class="doc-topline">
+<div class="doc-topline-text">
 <header class="doc-head">
 <p class="doc-eyebrow">NOTA DE PRENSA</p>
 <p class="doc-meta">Para publicación inmediata · Leiguarda, junio de 2026</p>
 </header>
 
 <h1 class="doc-h1">El Festival ADAR celebra su sexta edición del 4 al 16 de agosto de 2026 en el medio rural asturiano</h1>
+</div>
+
+<a class="doc-poster" href="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" alt="Cartel oficial del Festival ADAR 2026" loading="lazy" />
+<span class="doc-poster-dl mono">Descargar cartel ↓</span>
+</a>
+</div>
 
 <p class="doc-lede"><strong>Once conciertos, siete sedes patrimoniales, seis concejos y trece intérpretes internacionales.</strong> La Asociación para el Desarrollo de las Artes en el medio Rural (ADAR) presenta la edición VI del Festival ADAR, con entrada libre en todos los conciertos previa reserva en Eventbrite.</p>
 
@@ -72,9 +81,46 @@ translation_group: "pll_2026_press_note"
 
 <p>El proyecto opera con un modelo descentralizado que combina residencias artísticas, mediación cultural con los ayuntamientos anfitriones, documentación audiovisual y circulación internacional. La programación es de entrada libre y se sostiene con el apoyo institucional del Principado de Asturias, la Comisión Europea, el Goethe-Institut y una red de partners culturales.</p>
 
+<h2 class="doc-h2">Descargas</h2>
+
+<p>Cartel oficial y una selección de imágenes en alta resolución, libres para uso editorial con crédito a Festival ADAR. Haz clic en cada imagen para abrir o descargar el archivo.</p>
+
+<div class="doc-downloads">
+<figure>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" alt="Cartel oficial Festival ADAR 2026" loading="lazy" />
+</a>
+<figcaption class="mono">Cartel oficial 2026 ↓</figcaption>
+</figure>
+<figure>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01523.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01523.jpg" alt="Concierto Festival ADAR 2025" loading="lazy" />
+</a>
+<figcaption class="mono">Concierto · ADAR 2025 ↓</figcaption>
+</figure>
+<figure>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg" alt="Concierto visual en Llanes 2025" loading="lazy" />
+</a>
+<figcaption class="mono">Concierto visual · Llanes 2025 ↓</figcaption>
+</figure>
+<figure>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Micro-concierto en hórreo 2025" loading="lazy" />
+</a>
+<figcaption class="mono">Micro-concierto en hórreo ↓</figcaption>
+</figure>
+<figure>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/Timeline%201_01_00_21_17.jpg" target="_blank" rel="noopener" download>
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/Timeline%201_01_00_21_17.jpg" alt="Clausura en el invernadero de cristal, Leiguarda 2024" loading="lazy" />
+</a>
+<figcaption class="mono">Clausura · Leiguarda 2024 ↓</figcaption>
+</figure>
+</div>
+
 <h2 class="doc-h2">Materiales para prensa</h2>
 
-<p>Fotografías en alta resolución de las sedes y los intérpretes, biografías completas, material técnico y acreditaciones están disponibles bajo petición. Solicítelos indicando medio, nombre del periodista y enfoque previsto del reportaje.</p>
+<p>Biografías completas de los intérpretes, material técnico y acreditaciones están disponibles bajo petición. Solicítelos indicando medio, nombre del periodista y enfoque previsto del reportaje.</p>
 
 <hr class="doc-rule">
 
