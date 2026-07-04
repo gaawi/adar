@@ -40,7 +40,7 @@ translation_group: "pll_2026_press_note"
 
 <p>LEIGUARDA (Belmonte de Miranda, Asturias). — ADAR Festival celebrates its sixth edition from 4 to 16 August 2026, with a programme that travels across churches, monasteries, a parador, a municipal auditorium, two heritage hórreos and the streets of the village of Leiguarda. The lineup weaves contemporary chamber music, site-specific sound interventions, an artist residency showcase and a closing concert followed by an open espicha.</p>
 
-<p>The edition opens on Tuesday 4 August with a harpsichord recital by Ignacio Prego at the winning hórreo of the 2026 Hórreos & Paneras Competition — the venue is announced on 25 July. The programme «Of Dances and Sonatas» traces dance forms in keyboard music from the 16th to the 18th century, from Antonio de Cabezón and the Folías de España to J. S. Bach's Chaconne from the Partita in D minor for solo violin, in the transcription by Johannes Brahms.</p>
+<p>The edition opens on Tuesday 4 August with a harpsichord recital by Ignacio Prego at the winning hórreo of the 2026 Hórreos & Paneras Competition — the venue is announced on 1 August. The programme «Of Dances and Sonatas» traces dance forms in keyboard music from the 16th to the 18th century, from Antonio de Cabezón and the Folías de España to J. S. Bach's Chaconne from the Partita in D minor for solo violin, in the transcription by Johannes Brahms.</p>
 
 <p>The «ADAR on tour» series brings together four itinerant chamber concerts. «The Shape of Memory», by the trio María Martínez (cello), Frederieke Saeijs (violin) and Josefina Urraca (piano), plays on 5 and 6 August at the library of the Parador de Corias and at the Monastery of San Antolín de Bedón (Llanes), with works by Haydn, Lili Boulanger, Messiaen, Rachmaninoff and Brittney Benton. On Tuesday 11 August, the trio Maria Florea, Lara Fernández and Daniel Claret presents «The Rest is Silence» at the As Quintas Auditorium in El Franco, a mosaic on silence with works by Ligeti, Gubaidulina, Kurtág, Webern, Penderecki, Stravinsky, Cage and Bach. On Thursday 13 August, that trio expands to a quintet at the Monastery of Villanueva de Oscos, with works by Schubert, Joan Magrané and Dvořák.</p>
 
@@ -68,7 +68,7 @@ translation_group: "pll_2026_press_note"
 <h2 class="doc-h2">Full programme</h2>
 
 <ul class="doc-list">
-<li><strong>4 AUG · 20:30</strong> — «Of Dances and Sonatas», harpsichord recital by <strong>Ignacio Prego</strong>. Opening · Hórreos & Paneras Competition. <em>Winning hórreo of the competition (venue announced 25 July).</em></li>
+<li><strong>4 AUG · 20:30</strong> — «Of Dances and Sonatas», harpsichord recital by <strong>Ignacio Prego</strong>. Opening · Hórreos & Paneras Competition. <em>Winning hórreo of the competition (venue announced 1 August).</em></li>
 <li><strong>5 AUG · 20:30</strong> — «The Shape of Memory», piano trio with <strong>María Martínez</strong> (cello), <strong>Frederieke Saeijs</strong> (violin) and <strong>Josefina Urraca</strong> (piano). ADAR on tour. <em>Library of the Parador de Corias, Cangas del Narcea.</em></li>
 <li><strong>6 AUG · 20:30</strong> — «The Shape of Memory», second reading by the same trio. <em>Monastery of San Antolín de Bedón, Llanes.</em></li>
 <li><strong>7 AUG · 20:30</strong> — «UMBRAL ZERO», minimalist music and visual art with <strong>Guillermo Laporta</strong> (flute) and <strong>Josefina Urraca</strong> (piano). <em>Aula del Oro, Belmonte de Miranda.</em></li>
@@ -83,7 +83,7 @@ translation_group: "pll_2026_press_note"
 
 <h2 class="doc-h2">Hórreos & Paneras Competition · open call</h2>
 
-<p>The call for the <strong>2026 Hórreos & Paneras Competition</strong> is open. ADAR invites owners, town councils and communities to propose a hórreo or panera as the venue for two of the festival's concerts: the two winning sites will be announced on <strong>25 July 2026</strong> and will host the opening harpsichord recital (4 August) and the «Equilibrium» residency showcase (14 August).</p>
+<p>The call for the <strong>2026 Hórreos & Paneras Competition</strong> is open. ADAR invites owners, town councils and communities to propose a hórreo or panera as the venue for two of the festival's concerts: each selected hórreo receives a prize of <strong>€300 per hórreo</strong> and will host either the opening harpsichord recital (4 August) or the «Equilibrium» residency showcase (14 August). The call is open <strong>until 23:59 on 25 July 2026</strong>, and the winners are published on <strong>1 August 2026</strong>.</p>
 
 <p>To apply, send a single email to <a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a> with the subject <strong>«Candidatura Concurso Hórreos 2026»</strong>, including: the applicant's identification details (name, ID/tax number, address, email and phone), the location and a brief description of the hórreo or panera, photographs of the structure and —if the applicant is not the owner— written authorisation from the owner. Full rules and jury criteria are available on <a href="/es/concurso-de-horreos-y-paneras/">the competition page</a>.</p>
 

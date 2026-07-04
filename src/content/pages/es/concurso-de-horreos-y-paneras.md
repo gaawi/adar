@@ -23,7 +23,7 @@ translation_group: "pll_6990ac582687f"
 <header class="legal-head">
 <p class="legal-eyebrow">BASES DE LA CONVOCATORIA</p>
 <h1 class="legal-h1">Concurso de Hórreos y Paneras · Festival ADAR · Edición VI · 2026</h1>
-<p class="legal-meta">Publicado el 16 de junio de 2026 · Convocatoria abierta hasta el 30 de abril de 2026</p>
+<p class="legal-meta">Publicado el 16 de junio de 2026 · Convocatoria abierta hasta el 25 de julio de 2026</p>
 </header>
 
 <h2 class="legal-h2">1. Objeto</h2>
@@ -52,8 +52,8 @@ translation_group: "pll_6990ac582687f"
 
 <h2 class="legal-h2">5. Plazo y calendario</h2>
 <ol>
-<li><strong>Presentación de candidaturas:</strong> hasta las 23:59 h del 30 de abril de 2026.</li>
-<li><strong>Fallo del jurado:</strong> 25 de julio de 2026.</li>
+<li><strong>Presentación de candidaturas:</strong> hasta las 23:59 h del 25 de julio de 2026.</li>
+<li><strong>Publicación de ganadores:</strong> 1 de agosto de 2026.</li>
 <li><strong>Conciertos en los hórreos ganadores:</strong> 4 de agosto (recital de clave de Ignacio Prego) y 14 de agosto (muestra de residencia del trío The Rest is Silence) de 2026.</li>
 </ol>
 
@@ -80,7 +80,7 @@ translation_group: "pll_6990ac582687f"
 
 <h2 class="legal-h2">8. Premio</h2>
 <ol>
-<li>Cada uno de los dos hórreos seleccionados recibirá una dotación económica destinada a compensar los gastos derivados de la cesión del espacio.</li>
+<li>Cada uno de los dos hórreos seleccionados recibirá un premio de <strong>300 € por hórreo</strong>, destinado a compensar los gastos derivados de la cesión del espacio.</li>
 <li>Ambos acogerán un concierto producido íntegramente por ADAR, con asistencia libre y gratuita.</li>
 <li>Los hórreos seleccionados figurarán en la comunicación oficial del festival: página web, cartelería, nota de prensa y documentación audiovisual del evento.</li>
 </ol>

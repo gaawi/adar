@@ -40,7 +40,7 @@ translation_group: "pll_2026_press_note"
 
 <p>LEIGUARDA (Belmonte de Miranda, Asturias). — El Festival ADAR celebra su sexta edición del 4 al 16 de agosto de 2026 con un programa que recorre iglesias, monasterios, un parador, un auditorio municipal, dos hórreos patrimoniales y las calles del pueblo de Leiguarda. La programación combina música de cámara contemporánea, intervenciones sonoras site-specific, una muestra de residencia artística y un concierto de clausura seguido de espicha.</p>
 
-<p>La edición arranca el martes 4 de agosto con un recital de clave a cargo de Ignacio Prego en el hórreo ganador del Concurso de Hórreos y Paneras 2026 —cuya sede se anuncia el 25 de julio—. El programa «De danzas y sonatas» recorre las formas de danza para teclado entre los siglos XVI y XVIII, desde Antonio de Cabezón y las Folías de España hasta la Chacona de la Partita para violín en re menor de J. S. Bach en la transcripción de Johannes Brahms.</p>
+<p>La edición arranca el martes 4 de agosto con un recital de clave a cargo de Ignacio Prego en el hórreo ganador del Concurso de Hórreos y Paneras 2026 —cuya sede se anuncia el 1 de agosto—. El programa «De danzas y sonatas» recorre las formas de danza para teclado entre los siglos XVI y XVIII, desde Antonio de Cabezón y las Folías de España hasta la Chacona de la Partita para violín en re menor de J. S. Bach en la transcripción de Johannes Brahms.</p>
 
 <p>El ciclo «ADAR en ruta» reúne cuatro conciertos itinerantes de cámara. «La forma de la memoria», del trío María Martínez (violonchelo), Frederieke Saeijs (violín) y Josefina Urraca (piano), se interpreta los días 5 y 6 de agosto en la biblioteca del Parador de Corias (Cangas del Narcea) y en el Monasterio de San Antolín de Bedón (Llanes), con obras de Haydn, Lili Boulanger, Messiaen, Rajmáninov y Brittney Benton. El martes 11 de agosto, el trío Maria Florea, Lara Fernández y Daniel Claret presenta «The Rest is Silence» en el Auditorio As Quintas de El Franco, un mosaico construido sobre la idea del silencio con obras de Ligeti, Gubaidúlina, Kurtág, Webern, Penderecki, Stravinsky, Cage y Bach. El jueves 13 de agosto, ese mismo trío se amplía a quinteto en el Monasterio de Villanueva de Oscos, con obras de Schubert, Joan Magrané y Dvořák.</p>
 
@@ -68,7 +68,7 @@ translation_group: "pll_2026_press_note"
 <h2 class="doc-h2">Programación completa</h2>
 
 <ul class="doc-list">
-<li><strong>4 AGO · 20:30</strong> — «De danzas y sonatas», recital de clave con <strong>Ignacio Prego</strong>. Inauguración · Concurso de Hórreos y Paneras. <em>Hórreo ganador del concurso (sede anunciada el 25 de julio).</em></li>
+<li><strong>4 AGO · 20:30</strong> — «De danzas y sonatas», recital de clave con <strong>Ignacio Prego</strong>. Inauguración · Concurso de Hórreos y Paneras. <em>Hórreo ganador del concurso (sede anunciada el 1 de agosto).</em></li>
 <li><strong>5 AGO · 20:30</strong> — «La forma de la memoria», trío con piano de <strong>María Martínez</strong> (violonchelo), <strong>Frederieke Saeijs</strong> (violín) y <strong>Josefina Urraca</strong> (piano). ADAR en ruta. <em>Biblioteca del Parador de Corias, Cangas del Narcea.</em></li>
 <li><strong>6 AGO · 20:30</strong> — «La forma de la memoria», segunda lectura del mismo trío. <em>Monasterio de San Antolín de Bedón, Llanes.</em></li>
 <li><strong>7 AGO · 20:30</strong> — «UMBRAL ZERO», música minimalista y arte visual con <strong>Guillermo Laporta</strong> (flauta) y <strong>Josefina Urraca</strong> (piano). <em>Aula del Oro, Belmonte de Miranda.</em></li>
@@ -83,7 +83,7 @@ translation_group: "pll_2026_press_note"
 
 <h2 class="doc-h2">Concurso de Hórreos y Paneras · convocatoria abierta</h2>
 
-<p>La convocatoria del <strong>Concurso de Hórreos y Paneras 2026</strong> está abierta. ADAR invita a propietarios, ayuntamientos y comunidades a proponer un hórreo o panera como sede de dos de los conciertos del festival: los dos espacios ganadores se anunciarán el <strong>25 de julio de 2026</strong> y acogerán el recital inaugural de clave (4 de agosto) y la muestra de residencia «Equilibrium» (14 de agosto).</p>
+<p>La convocatoria del <strong>Concurso de Hórreos y Paneras 2026</strong> está abierta. ADAR invita a propietarios, ayuntamientos y comunidades a proponer un hórreo o panera como sede de dos de los conciertos del festival: cada hórreo seleccionado recibe un premio de <strong>300 € por hórreo</strong> y acogerá el recital inaugural de clave (4 de agosto) o la muestra de residencia «Equilibrium» (14 de agosto). El plazo de candidaturas está abierto <strong>hasta las 23:59 h del 25 de julio de 2026</strong> y los ganadores se publican el <strong>1 de agosto de 2026</strong>.</p>
 
 <p>Para presentar candidatura basta con enviar un único correo electrónico a <a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a> con el asunto <strong>«Candidatura Concurso Hórreos 2026»</strong>, incluyendo: datos de identificación del solicitante (nombre, DNI/NIF, dirección, correo y teléfono), ubicación y breve descripción del hórreo o panera, fotografías del bien y —si el solicitante no es el propietario— autorización escrita de la propiedad. Las bases completas y los criterios del jurado están disponibles en <a href="/es/concurso-de-horreos-y-paneras/">la página del concurso</a>.</p>
 

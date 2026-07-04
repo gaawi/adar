@@ -249,6 +249,7 @@ interface Event {
   dow: string;
   fullDate: string;
   time?: string;
+  timeTbc?: boolean;
   rest?: boolean;
   title: string;
   subtitle?: string;
@@ -387,10 +388,10 @@ const EVENTS: Event[] = [
   },
   {
     n: '05', date: '08', dow: 'Sábado–Domingo', fullDate: '8 — 9 AGO',
-    time: '20:30',
+    timeTbc: true,
     capacity: 40,
     title: 'Intervención site-specific · Colectivo Menhir',
-    subtitle: 'Dos jornadas · Creación site-specific',
+    subtitle: 'Instalación artística abierta · Dos jornadas · Creación site-specific',
     description: 'Menhir es un colectivo de arte y música que crea piezas de arte sonoro site-specific. Para ADAR 2026 firman un recorrido sonoro geolocalizado por Leiguarda: a lo largo del trayecto, quien lo camine escuchará elementos sonoros, fragmentos musicales y palabras que van apareciendo según la ubicación. Puede hacerse en solitario o en grupo, y estará disponible en cualquier momento durante las dos jornadas — la ruta pasa a formar parte del paisaje inmaterial del pueblo.',
     programNote: 'Dos días de intervención por las calles del pueblo. Recorridos distintos cada jornada, obras originales, arreglos e improvisación.',
     pieces: [],
@@ -610,7 +611,7 @@ const EV_I18N: Record<string, Record<string, any>> = {
   "02": { "title": "The Shape of Memory", "subtitle": "ADAR ON TOUR · Piano trio concert", "description": "The trio of María Martínez, Frederieke Saeijs and Josefina Urraca explores the ideas of remembrance and mourning from the library of the Parador de Corias, a former 11th-century Benedictine monastery. A chamber programme that brings together the Classicism of Haydn, Lili Boulanger's Nocturne, Messiaen's Thème et variations for violin and piano, Rachmaninoff's Trio élégiaque and a recent work by Brittney Benton, in one of the most secluded settings in western Asturias." },
   "03": { "title": "The Shape of Memory", "subtitle": "Piano trio concert", "description": "A second reading of the programme The Shape of Memory, this time in Llanes. The same trio performs the same works, but the acoustics of the new space rewrite the piece. A way to see how place transforms music: the same repertoire does not sound the same in the light of dusk in a seaside town in the east as it does in the library of a parador in the west." },
   "04": { "title": "UMBRAL ZERO", "subtitle": "Concert of minimalist music and visual art", "description": "A programme for flute and piano built on minimalism: music that tends toward zero, reducing gesture to a minimum until it brushes against silence—hence the title, \"Umbral Zero\" (Threshold Zero). Guillermo Laporta and Josefina Urraca link the minimalism of Max Richter, Meredith Monk and Hannah Selin with the bare simplicity of Satie and Bach, threaded together by Laporta's own two \"roads.\" The Aula del Oro in Belmonte de Miranda, a former exhibition space of the municipality, hosts an intimate chamber evening with visual projection woven into the programme.", "programName": "Umbral Zero" },
-  "05": { "title": "Site-specific intervention · Menhir collective", "subtitle": "Two days · Site-specific creation", "description": "Menhir is an art and music collective that creates site-specific sound art pieces. For ADAR 2026 they present a geolocated sound walk through Leiguarda: along the route, those who walk it will hear sound elements, musical fragments and words that appear according to their location. It can be done alone or in a group, and will be available at any time over the two days—the route becoming part of the village's intangible landscape.", "programNote": "Two days of intervention through the streets of the village. Different routes each day, original works, arrangements and improvisation." },
+  "05": { "title": "Site-specific intervention · Menhir collective", "subtitle": "Open art installation · Two days · Site-specific creation", "description": "Menhir is an art and music collective that creates site-specific sound art pieces. For ADAR 2026 they present a geolocated sound walk through Leiguarda: along the route, those who walk it will hear sound elements, musical fragments and words that appear according to their location. It can be done alone or in a group, and will be available at any time over the two days—the route becoming part of the village's intangible landscape.", "programNote": "Two days of intervention through the streets of the village. Different routes each day, original works, arrangements and improvisation." },
   "06": { "title": "The Rest is Silence", "subtitle": "ADAR ON TOUR · Concert of chamber music and visual art", "description": "A mosaic-programme built on the idea of silence. Fifteen short pieces from the 20th and 21st centuries alternate with Bach canons that act as bridges between the works. Ligeti, Gubaidulina, Kurtág, Webern, Penderecki, Stravinsky and Cage build a sequence deliberately broken by the regularity of Bach. The Florea / Fernández / Claret trio arrives at the As Quintas Auditorium in El Franco with a visual staging and a programme heard in a single sweep, with no applause between pieces.", "programName": "The Rest is Silence" },
   "07": { "title": "Micro concert at the Centro ADAR", "subtitle": "Piano quintet", "description": "A micro concert at the Centro ADAR in Leiguarda. The quintet formed by Maria Florea, Lara Fernández, Daniel Claret, Guillermo Laporta and Josefina Urraca performs the first movement of Antonín Dvořák's Piano Quintet No. 2 in A major, Op. 81." },
   "08": { "title": "Concert of chamber music and visual art", "subtitle": "ADAR ON TOUR", "description": "Beneath the vaults of the Cistercian monastery of Villanueva de Oscos, founded in the 12th century, the ensemble performs the first movement of Schubert's String Trio, New Beginnings by the Catalan composer Joan Magrané, and two movements of Dvořák's Quintet, Op. 81. Classical and contemporary repertoire read within a 12th-century nave." },
@@ -623,7 +624,7 @@ const EV_I18N: Record<string, Record<string, any>> = {
   "02": { "title": "La forma de la memoria", "subtitle": "ADAR EN RUTA · Conciertu de tríu con pianu", "description": "El tríu de María Martínez, Frederieke Saeijs y Josefina Urraca traviesa la idea del recuerdu y el duelu dende la biblioteca del Parador de Corias, antiguu monasteriu benedictín del sieglu XI. Un programa de cámara qu'axunta'l clasicismu de Haydn, el Nocturne de Lili Boulanger, el Thème et variations de Messiaen pa violín y pianu, el Trío élégiaque de Rajmáninov y una obra reciente de Brittney Benton, nun de los entornos más recoyíos del occidente asturianu." },
   "03": { "title": "La forma de la memoria", "subtitle": "Conciertu de tríu con pianu", "description": "Segunda llectura del programa La forma de la memoria, agora en Llanes. El mesmu tríu interpreta les mesmes obres, pero l'acústica del nuevu espaciu reescribe la pieza. Una manera de comprobar cómo'l llugar tresforma la música: el mesmu repertoriu nun suena igual a la lluz del atapecer nuna villa marinera del oriente qu'na biblioteca d'un parador del occidente." },
   "04": { "title": "UMBRAL ZERO", "subtitle": "Conciertu de música minimalista y arte visual", "description": "Programa de flauta y pianu construyíu sobre'l minimalismu: una música que tiende a cero, que reduz el xestu al mínimu hasta rozar el silenciu —d'ehí'l títulu, «Umbral Zero»—. Guillermo Laporta y Josefina Urraca enllacen el minimalismu de Max Richter, Meredith Monk y Hannah Selin cola desnudez de Satie y de Bach, filaos poles dos «roads» del propiu Laporta. L'Aula del Oru de Belmonte de Miranda, antiguu espaciu espositivu del conceyu, acueye una nueche íntima de cámara con proyección visual integrada nel programa.", "programName": "Umbral Zero" },
-  "05": { "title": "Intervención site-specific · Coleutivu Menhir", "subtitle": "Dos xornaes · Creación site-specific", "description": "Menhir ye un coleutivu d'arte y música que crea pieces d'arte sonoru site-specific. Pa ADAR 2026 firmen un recorríu sonoru xeollocalizáu por Lleiguarda: a lo llargo del trayeutu, quien lu camine escuchará elementos sonoros, fragmentos musicales y pallabres que van apaeciendo según l'allugamientu. Pue facese en solitariu o en grupu, y va tar disponible en cualquier momentu demientres les dos xornaes — la ruta pasa a formar parte del paisaxe inmaterial del pueblu.", "programNote": "Dos díes d'intervención poles calles del pueblu. Recorríos distintos cada xornada, obres orixinales, iguadures ya improvisación." },
+  "05": { "title": "Intervención site-specific · Coleutivu Menhir", "subtitle": "Instalación artística abierta · Dos xornaes · Creación site-specific", "description": "Menhir ye un coleutivu d'arte y música que crea pieces d'arte sonoru site-specific. Pa ADAR 2026 firmen un recorríu sonoru xeollocalizáu por Lleiguarda: a lo llargo del trayeutu, quien lu camine escuchará elementos sonoros, fragmentos musicales y pallabres que van apaeciendo según l'allugamientu. Pue facese en solitariu o en grupu, y va tar disponible en cualquier momentu demientres les dos xornaes — la ruta pasa a formar parte del paisaxe inmaterial del pueblu.", "programNote": "Dos díes d'intervención poles calles del pueblu. Recorríos distintos cada xornada, obres orixinales, iguadures ya improvisación." },
   "06": { "title": "The Rest is Silence", "subtitle": "ADAR EN RUTA · Conciertu de música de cámara y arte visual", "description": "Programa-mosaicu construyíu sobre la idea del silenciu. Quince pieces breves del sieglu XX y XXI alternaes con cánones de Bach que furrulen como fugues ente los temes. Ligeti, Gubaidúlina, Kurtág, Webern, Penderecki, Stravinsky y Cage construyen una secuencia rota deliberadamente pola regularidá de Bach. El tríu Florea / Fernández / Claret aterriza nel Auditoriu As Quintas d'El Franco con escenografía visual y un programa que s'escucha d'un tirón, ensin aplausos ente pieces.", "programName": "The Rest is Silence" },
   "07": { "title": "Micro conciertu nel Centru ADAR", "subtitle": "Quintetu con pianu", "description": "Micro conciertu nel Centru ADAR de Lleiguarda. El quintetu formáu por Maria Florea, Lara Fernández, Daniel Claret, Guillermo Laporta y Josefina Urraca interpreta'l primer movimientu del Quintetu pa pianu n.º 2 en la mayor, op. 81, d'Antonín Dvořák." },
   "08": { "title": "Conciertu de música de cámara y arte visual", "subtitle": "ADAR EN RUTA", "description": "So les bóvedes del monasteriu cisterciense de Villanueva de Uscos, fundáu nel sieglu XII, el conxuntu interpreta'l primer movimientu del Tríu de cuerdes de Schubert, New Beginnings del compositor catalán Joan Magrané y dos movimientos del Quintetu op. 81 de Dvořák. Repertoriu clásicu y contemporáneu lleíu nuna nave del sieglu XII." },
@@ -711,10 +712,10 @@ function tEv(e: Event, field: string): any {
   return (o && o[field] != null) ? o[field] : (e as any)[field];
 }
 const LBL = ({
-  es:  { when: 'Cuándo', where: 'Dónde', map: 'Ver mapa' },
-  en:  { when: 'When',   where: 'Where', map: 'View map' },
-  ast: { when: 'Cuándo', where: 'Ónde',  map: 'Ver mapa' },
-} as Record<string, { when: string; where: string; map: string }>)[lang];
+  es:  { when: 'Cuándo', where: 'Dónde', map: 'Ver mapa', timeTbc: 'Horario por confirmar' },
+  en:  { when: 'When',   where: 'Where', map: 'View map', timeTbc: 'Hours TBC' },
+  ast: { when: 'Cuándo', where: 'Ónde',  map: 'Ver mapa', timeTbc: 'Horariu por confirmar' },
+} as Record<string, { when: string; where: string; map: string; timeTbc: string }>)[lang];
 
 const MAP_HREFS: Record<Lang, string> = {
   es: '/es/mapa-de-acciones/',
@@ -848,7 +849,9 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
                 <span class="vi26-aside-when-label mono">{LBL.when}</span>
                 <span class="vi26-aside-when-dow">{tDict(DOW_I18N, e.dow)}</span>
                 <span class="vi26-aside-when-date">{e.fullDate}</span>
-                {e.time && <span class="vi26-aside-when-time mono">{e.time}h</span>}
+                {e.time
+                  ? <span class="vi26-aside-when-time mono">{e.time}h</span>
+                  : e.timeTbc && <span class="vi26-aside-when-time mono">{LBL.timeTbc}</span>}
               </div>
 
               <!-- DÓNDE -->
