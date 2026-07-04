@@ -28,7 +28,7 @@ translation_group: "pll_69b02566a96fa"
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">
-Micro-Concierto en Susacasa Agrocultural (Gozón)
+Micro Concert at Susacasa Agrocultural (Gozón)
 </h1>
 <p class="adar-archive-lede">
 The ADAR Festival 2025 began its journey at Susacasa Agrocultural, a permaculture space where territory, community, and artistic creation coexist organically. This micro concert took place in one of the hórreos selected in the hórreo and granary contest launched by the festival.
@@ -38,20 +38,20 @@ The ADAR Festival 2025 began its journey at Susacasa Agrocultural, a permacultur
 
 <div class="adar-archive-body">
 <p>
-Susacasa, managed by Keko Marcos and Sandra Murillo, proposes an active relationship with the rural environment, integrando actividades ecológicas, educativas y culturales en una gran panera adaptada para usos comunitarios. En este contexto, el hórreo se transformó en un espacio sonoro íntimo donde el público vivió la música en cercanía directa con los intérpretes.
+Susacasa, managed by Keko Marcos and Sandra Murillo, proposes an active relationship with the rural environment, integrating ecological, educational, and cultural activities within a large granary adapted for community use. In this context, the hórreo was transformed into an intimate sound space where the audience experienced the music in direct proximity to the performers.
 </p>
 
 <p>
-This concert clearly represented one of the core principles of the ADAR Festival: activating Asturian rural heritage as a contemporary performance space. La arquitectura tradicional no funcionó como simple contenedor, sino como parte activa de la experiencia artística.
+This concert clearly represented one of the core principles of the ADAR Festival: activating Asturian rural heritage as a contemporary performance space. The traditional architecture did not function as a mere container, but as an active part of the artistic experience.
 </p>
 
 <p>
-Nacho Laguna and María del Buey presented a selection from the album <em>Ferrarese – tiorba</em> (2023), combinando repertorio barroco ibérico con improvisación contemporánea en un diálogo entre tradición e innovación perfectamente integrado en el paisaje y el espacio.
+Nacho Laguna and María del Buey presented a selection from the album <em>Ferrarese – tiorba</em> (2023), combining Iberian Baroque repertoire with contemporary improvisation in a dialogue between tradition and innovation perfectly integrated into the landscape and the space.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>
 <p style="margin-top:14px">
-Selección del álbum <strong>Ferrarese – tiorba</strong> (2023)
+Selection from the album <strong>Ferrarese – tiorba</strong> (2023)
 </p>
 </div>
 

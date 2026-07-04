@@ -27,7 +27,7 @@ translation_group: "pll_69b025656e325"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/11_Concierto_visual_en_Colunga_Sala_Loreto/48.jpg" alt="Visual concert - Sala Loreto - Colunga - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Visual concert en Colunga (Sala Loreto)</h1>
+<h1 class="adar-archive-title">Visual concert in Colunga (Sala Loreto)</h1>
 <p class="adar-archive-lede">
 In the third edition of the ADAR Festival, Colunga offered a very different venue from the previous year. The Sala Loreto allowed an immersive projection design that completely surrounded the musicians, immersing the audience in a unique visual and sonic experience.
 </p>
@@ -36,20 +36,20 @@ In the third edition of the ADAR Festival, Colunga offered a very different venu
 
 <div class="adar-archive-body">
 <p>
-Tras el concierto de 2022 en la Iglesia de Santa María de Sabada, el Festival ADAR regresó a Colunga con un formato renovado. La Sala Loreto, con sus paredes que permitían una proyección envolvente a 360 grados, became the ideal setting for a visual concert in which music and image merged inseparably.
+Following the 2022 concert at the Church of Santa María de Sábada, the ADAR Festival returned to Colunga with a renewed format. The Sala Loreto, with walls that allowed an immersive 360-degree projection, became the ideal setting for a visual concert in which music and image merged inseparably.
 </p>
 
 <p>
-El programa, centrado en la música española con obras de Turina y Granados junto a piezas de Boulanger, Telemann y Arvo Pärt, se vio enriquecido por un diseño de proyecciones que acompañaba cada obra con un universo visual propio. The audience experienced the sensation of images overlapping with the performers, creating an atmosphere of total immersion.
+The programme, centred on Spanish music with works by Turina and Granados alongside pieces by Boulanger, Telemann, and Arvo Pärt, was enriched by a projection design that accompanied each work with its own visual universe. The audience experienced the sensation of images overlapping with the performers, creating an atmosphere of total immersion.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
 <strong>Nadia Boulanger</strong> – Modéré<br>
-<strong>Georg Philipp Telemann</strong> – Cuarteto en sol menor, TWV 43:G4<br>
-<strong>Joaquín Turina</strong> – Cuarteto para piano y cuerdas en la menor, op. 67<br>
-<strong>Enrique Granados</strong> – Quinteto para piano, flauta y cuerdas en sol menor, op. 49<br>
+<strong>Georg Philipp Telemann</strong> – Quartet in G minor, TWV 43:G4<br>
+<strong>Joaquín Turina</strong> – Piano Quartet in A minor, op. 67<br>
+<strong>Enrique Granados</strong> – Quintet for piano, flute and strings in G minor, op. 49<br>
 <strong>Arvo Pärt</strong> – Spiegel im Spiegel
 </p>
 </div>

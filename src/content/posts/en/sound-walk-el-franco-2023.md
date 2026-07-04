@@ -57,8 +57,8 @@ Laude Martínez (host)
 
 <h3 style="margin-top:28px">Repertoire</h3>
 <p>
-Mozart – Cuarteto para flauta y cuerdas en Re Mayor, K285<br>
-Bach – Música para instrumentos de cuerda solistas
+Mozart – Flute Quartet in D major, K285<br>
+Bach – Music for solo string instruments
 </p>
 </div>
 

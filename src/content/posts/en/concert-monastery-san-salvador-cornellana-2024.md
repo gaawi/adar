@@ -36,11 +36,11 @@ As part of the ADAR Festival 2024 and the millennium commemoration of the Monast
 
 <div class="adar-archive-body">
 <p>
-The Monastery of San Salvador de Cornellana, founded in the 11th century and declared a National Monument, was celebrating its millennium with a special cultural programme that included the ADAR Festival. El concierto se desarrolló en el interior del monasterio, con el público dispuesto alrededor de los músicos, rompiendo la distancia convencional entre intérpretes y audiencia.
+The Monastery of San Salvador de Cornellana, founded in the 11th century and declared a National Monument, was celebrating its millennium with a special cultural programme that included the ADAR Festival. The concert took place inside the monastery, with the audience arranged around the musicians, breaking the conventional distance between performers and audience.
 </p>
 
 <p>
-El programa combinó creación contemporánea española, con <em>Mensajes del Agua</em> de Andrea Casarrubios, y obras de Mozart, Debussy, Jessie Montgomery, Strauss y Vivaldi. The stylistic diversity of the repertoire, from classicism to contemporary American music, reflected the festival's commitment to building programmes that engage with the present without abandoning tradition.
+The programme combined contemporary Spanish creation, with <em>Mensajes del Agua</em> by Andrea Casarrubios, and works by Mozart, Debussy, Jessie Montgomery, Strauss and Vivaldi. The stylistic diversity of the repertoire, from classicism to contemporary American music, reflected the festival's commitment to building programmes that engage with the present without abandoning tradition.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>

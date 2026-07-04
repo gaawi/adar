@@ -27,20 +27,20 @@ translation_group: "pll_69b025654eb98"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Micro_concierto_en_la_Capilla_de_los_Dolores_Grado_2023/31.jpg" alt="Micro concert - Capilla de los Dolores - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Micro concert en la Capilla de los Dolores (Grado, 2023)</h1>
+<h1 class="adar-archive-title">Micro Concert at the Capilla de los Dolores (Grado, 2023)</h1>
 <p class="adar-archive-lede">
-As part of the ADAR Festival's intense day in Grado, Guillermo Laporta offered a solo micro concert at the Capilla de los Dolores, performing <em>Rekindle</em> de Michel van der Aa. An intimate format that anticipated the festival's commitment to activating small heritage spaces with contemporary music.
+As part of the ADAR Festival's intense day in Grado, Guillermo Laporta offered a solo micro concert at the Capilla de los Dolores, performing <em>Rekindle</em> by Michel van der Aa. An intimate format that anticipated the festival's commitment to activating small heritage spaces with contemporary music.
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-La Capilla de los Dolores, un espacio recogido y de gran carga simbólica en el centro de Grado, acogió a brief but intense musical intervention. Guillermo Laporta interpretó <em>Rekindle</em>, obra del compositor holandés Michel van der Aa, a piece that explores the relationship between performer and space through delicate sonic textures and an expressive use of silence.
+The Capilla de los Dolores, an intimate space of great symbolic significance in the centre of Grado, hosted a brief but intense musical intervention. Guillermo Laporta performed <em>Rekindle</em>, a work by the Dutch composer Michel van der Aa, a piece that explores the relationship between performer and space through delicate sonic textures and an expressive use of silence.
 </p>
 
 <p>
-Este micro concierto formaba parte de una programación más amplia que incluía el paseo sonoro en el Palacio Fontela y el concierto principal en el Palacio de Miranda-Valdecarzana. La Capilla de los Dolores se convertiría, en la edición siguiente, en escenario de una instalación y performance de la artista Sarah K. Williams.
+This micro concert was part of a wider programme that included the sound walk at the Palacio Fontela and the main concert at the Palacio de Miranda-Valdecarzana. The following year, the Capilla de los Dolores would become the setting for an installation and performance by the artist Sarah K. Williams.
 </p>
 </div>
 

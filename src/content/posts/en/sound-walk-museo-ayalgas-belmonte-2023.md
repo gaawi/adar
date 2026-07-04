@@ -27,7 +27,7 @@ translation_group: "pll_69b025658f71e"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg" alt="Sound walk - Museo de las Ayalgas - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Sound walk en el Museo de las Ayalgas (Belmonte de Miranda)</h1>
+<h1 class="adar-archive-title">Sound walk at the Museo de las Ayalgas (Belmonte de Miranda)</h1>
 <p class="adar-archive-lede">
 The Museo de las Ayalgas in Silviella, one of the area's major cultural attractions, hosted ADAR Festival musicians for a sound walk where historic artefacts of rural life blended with the music of Bach and Mozart.
 </p>
@@ -36,18 +36,18 @@ The Museo de las Ayalgas in Silviella, one of the area's major cultural attracti
 
 <div class="adar-archive-body">
 <p>
-El Museo de las Ayalgas, situado en Silviella (Belmonte de Miranda), alberga una colección singular de objetos que documentan la vida en el campo asturiano a lo largo de los siglos. Among iconic cars and motorcycles, 18th-century cradles and farming tools, los músicos del Festival ADAR se distribuyeron por las salas para ofrecer un paseo sonoro que creaba diálogos inesperados entre patrimonio material y música en vivo.
+The Museo de las Ayalgas, located in Silviella (Belmonte de Miranda), houses a singular collection of objects that document rural life in Asturias over the centuries. Among iconic cars and motorcycles, 18th-century cradles and farming tools, the musicians of the ADAR Festival spread out across the rooms to offer a sound walk that created unexpected dialogues between material heritage and live music.
 </p>
 
 <p>
-El recorrido propuesto invitaba al público a descubrir el museo de una manera radicalmente diferente. Las suites para instrumentos solistas de Bach resonaban entre los vehículos de época, mientras que el Cuarteto para flauta y cuerdas de Mozart cerraba el paseo con una interpretación colectiva. The juxtaposition of everyday objects from the past with live chamber music generated a sensory experience that activated the historical memory of the place.
+The proposed route invited the audience to discover the museum in a radically different way. Bach's suites for solo instruments resonated among the vintage vehicles, while Mozart's Flute Quartet closed the walk with a collective performance. The juxtaposition of everyday objects from the past with live chamber music generated a sensory experience that activated the historical memory of the place.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
-<strong>Wolfgang Amadeus Mozart</strong> – Cuarteto para flauta y cuerdas en Re Mayor, K. 285<br>
-<strong>Johann Sebastian Bach</strong> – Música para instrumentos de cuerda solistas
+<strong>Wolfgang Amadeus Mozart</strong> – Flute Quartet in D major, K. 285<br>
+<strong>Johann Sebastian Bach</strong> – Music for solo string instruments
 </p>
 </div>
 

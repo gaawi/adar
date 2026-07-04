@@ -27,7 +27,7 @@ translation_group: "pll_69b025651736a"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/28.jpg" alt="Sound walk - Palacio Fontela - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Sound walk en el Palacio Fontela (Grado)</h1>
+<h1 class="adar-archive-title">Sound walk at the Palacio Fontela (Grado)</h1>
 <p class="adar-archive-lede">
 With the desire to bring classical music to unique settings and breathe life into historic rooms, the ADAR Festival presented a sound walk at the Ethnographic Museum of the Palacio Fontela. Musicians performed surrounded by antique furniture and an apothecary from bygone eras.
 </p>
@@ -36,18 +36,18 @@ With the desire to bring classical music to unique settings and breathe life int
 
 <div class="adar-archive-body">
 <p>
-The Ethnographic Museum of the Palacio Fontela, with its rooms full of objects narrating everyday life in Grado over the centuries, was transformed into an unexpected stage for chamber music. Los músicos del Festival ADAR se distribuyeron por las distintas estancias del museo, invitando al público a deambular entre las piezas históricas mientras descubría, en cada rincón, una intervención musical.
+The Ethnographic Museum of the Palacio Fontela, with its rooms full of objects narrating everyday life in Grado over the centuries, was transformed into an unexpected stage for chamber music. The musicians of the ADAR Festival spread out across the museum's various rooms, inviting the audience to wander among the historic pieces while discovering, in every corner, a musical intervention.
 </p>
 
 <p>
-The combination of material heritage and live sound created a complete sensory experience: las suites de Bach resonaban junto a muebles centenarios, y el Cuarteto de Mozart para flauta y cuerdas encontraba en la arquitectura del palacio una acústica íntima y envolvente. El formato de paseo sonoro, que el festival vendría desarrollando en ediciones sucesivas, demonstrated here its capacity to activate heritage spaces and generate new connections between music, history, and territory.
+The combination of material heritage and live sound created a complete sensory experience: Bach's suites resonated alongside centuries-old furniture, and Mozart's Flute Quartet found in the palace's architecture an intimate, enveloping acoustic. The sound walk format, which the festival would go on to develop in subsequent editions, demonstrated here its capacity to activate heritage spaces and generate new connections between music, history, and territory.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
-<strong>Wolfgang Amadeus Mozart</strong> – Cuarteto para flauta y cuerdas en Re Mayor, K. 285<br>
-<strong>Johann Sebastian Bach</strong> – Música para instrumentos de cuerda solistas
+<strong>Wolfgang Amadeus Mozart</strong> – Flute Quartet in D major, K. 285<br>
+<strong>Johann Sebastian Bach</strong> – Music for solo string instruments
 </p>
 </div>
 

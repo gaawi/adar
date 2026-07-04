@@ -36,18 +36,18 @@ The ADAR Festival 2025 arrived at the Monastery of Santa María de Villanueva de
 
 <div class="adar-archive-body">
 <p>
-The programme brought together three complementary musical universes: the baroque refinement of Telemann, the stylised folklore of Falla, and the sonic painting of Mussorgsky. A través de esta diversidad estética, el concierto propuso un diálogo entre épocas, estilos y formas de narrar, poniendo en primer plano la riqueza tímbrica del ensemble y la escucha colectiva entre intérpretes.
+The programme brought together three complementary musical universes: the baroque refinement of Telemann, the stylised folklore of Falla, and the sonic painting of Mussorgsky. Through this aesthetic diversity, the concert proposed a dialogue between eras, styles and ways of storytelling, bringing to the foreground the timbral richness of the ensemble and the collective listening among the performers.
 </p>
 
 <h3 style="margin-top:28px;">Programme</h3>
 
 <p style="margin-top:18px;">
-<strong>Georg Philipp Telemann</strong> - Cuartetos para flauta (selección) (ca. 1730) 10’
+<strong>Georg Philipp Telemann</strong> - Flute Quartets (selection) (ca. 1730) 10’
 </p>
 
 <p style="margin-top:18px;">
-<strong>Manuel de Falla</strong> - Siete canciones populares españolas (1914) 12’<br>
-Arreglo para quinteto<br>
+<strong>Manuel de Falla</strong> - Seven Spanish Folk Songs (1914) 12’<br>
+Arrangement for quintet<br>
 • El paño moruno<br>
 • Seguidilla murciana<br>
 • Asturiana<br>

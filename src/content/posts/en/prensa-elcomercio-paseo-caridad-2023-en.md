@@ -18,31 +18,31 @@ translation_group: "press-prensa-elcomercio-paseo-caridad-2023"
 
 <header class="press-masthead">
   <span class="press-masthead-name">El Comercio</span>
-  <span class="press-masthead-date">Cultura · 10 ago 2023</span>
+  <span class="press-masthead-date">Culture · 10 Aug 2023</span>
 </header>
 
 <p class="press-kicker">Festival ADAR · El Franco</p>
 
-<h1 class="press-clipping-title">Un ‘paseo sonoro’ por La Caridad para acercar la música y el arte al pueblo</h1>
+<h1 class="press-clipping-title">A ‘sound walk’ through La Caridad to bring music and art to the village</h1>
 
 <p class="press-lede">
-El parque María Cristina y el auditorio As Quintas acogen el festival itinerante ADAR, que pretende «revitalizar las zonas rurales».
+The María Cristina park and the As Quintas auditorium host the travelling festival ADAR, which aims to “revitalise rural areas”.
 </p>
 
 <p class="press-byline">Á. Rubiera</p>
 
 <p>
-Vecinos y visitantes participaron del ‘paseo sonoro’ que el <strong>Festival ADAR</strong> propuso este miércoles en el Parque María Cristina, en La Caridad. Una propuesta itinerante que, con la complicidad del concejo de El Franco, lleva la música de cámara a la plaza, al banco y al árbol.
+Residents and visitors took part in the ‘sound walk’ that the <strong>Festival ADAR</strong> offered this Wednesday in María Cristina Park, in La Caridad. A travelling proposal that, with the collaboration of the municipality of El Franco, brings chamber music to the square, to the bench and to the tree.
 </p>
 
 <p>
-La iniciativa, impulsada por los músicos Guillermo Laporta y Josefina Urraca desde su sede en Leiguarda (Belmonte de Miranda), recala estos días en El Franco con el Auditorio As Quintas como segundo escenario. ADAR completa así su tercera edición, ampliando el mapa de concejos asturianos que reciben programación contemporánea de calidad.
+The initiative, led by the musicians Guillermo Laporta and Josefina Urraca from their base in Leiguarda (Belmonte de Miranda), stops these days in El Franco with the As Quintas Auditorium as its second venue. ADAR thus completes its third edition, expanding the map of Asturian municipalities that receive quality contemporary programming.
 </p>
 
 <p>
-La organización subraya el carácter de proximidad de la propuesta: «No buscamos el concepto de festival de verano que atrae a gente de todos sitios. Pretendemos revitalizar y activar el propio territorio rural, implicando en ello a la propia población».
+The organisers stress the proximity-focused nature of the proposal: “We are not looking for the concept of a summer festival that draws people from everywhere. We aim to revitalise and activate the rural territory itself, involving the local population in it.”
 </p>
 
 <p class="press-source">
-Texto original publicado en <a href="https://www.elcomercio.es/" target="_blank" rel="noopener">El Comercio</a>.
+Original text published in <a href="https://www.elcomercio.es/" target="_blank" rel="noopener">El Comercio</a>.
 </p>

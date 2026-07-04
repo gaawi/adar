@@ -45,16 +45,16 @@ placing ADAR's headquarters and a traditional hórreo in dialogue as performance
 <div class="adar-archive-body">
 <p>
 The evening in Leiguarda was structured as a continuous sequence of small-scale experiences designed for proximity,
-listening and togetherness. Dos micro conciertos, primero en la Sede de ADAR y después en el Hórreo Casantos, dieron paso a un paseo sonoro
-nocturno, cerrando la noche con sidra y conversación.
+listening and togetherness. Two micro concerts, first at the Sede de ADAR and then at the Hórreo Casantos, gave way to a
+nighttime sound walk, closing the evening with cider and conversation.
 </p>
 
 <h3 style="margin-top:28px">Schedule</h3>
 
 <p>
-<strong>21:30</strong> - Micro Concierto en la Sede de ADAR<br>
-<strong>22:00</strong> - Micro Concierto en el Hórreo Casantos<br>
-<strong>23:00</strong> - Paseo Sonoro (y sidra)
+<strong>21:30</strong> - Micro concert at the Sede de ADAR<br>
+<strong>22:00</strong> - Micro concert at the Hórreo Casantos<br>
+<strong>23:00</strong> - Sound walk (and cider)
 </p>
 
 <h3 style="margin-top:28px">Notes</h3>
@@ -85,14 +85,14 @@ Friday, 16 August 2024<br>
 
 <p>
 <strong>Location:</strong><br>
-Sede de ADAR y Hórreo Casantos<br>
+Sede de ADAR and Hórreo Casantos<br>
 Leiguarda, Asturias
 </p>
 
 <p>
 <strong>Performers:</strong><br>
 Guillermo Laporta (flute)<br>
-Artistas del Festival ADAR
+ADAR Festival artists
 </p>
 
 <p>

@@ -36,11 +36,11 @@ For the third consecutive year, the Palacio de Miranda-Valdecarzana in Grado hos
 
 <div class="adar-archive-body">
 <p>
-The relationship between the ADAR Festival and the Palacio de Miranda-Valdecarzana was consolidated in the 2024 edition, que presentó un nuevo programa con músicos y repertorio renovados. El concierto incluyó obras de Andrea Casarrubios, Mozart, Debussy, Jessie Montgomery, Strauss y Vivaldi, en un programa que transitaba desde la creación contemporánea española hasta el barroco italiano.
+The relationship between the ADAR Festival and the Palacio de Miranda-Valdecarzana was consolidated in the 2024 edition, which presented a new programme with fresh musicians and renewed repertoire. The concert featured works by Andrea Casarrubios, Mozart, Debussy, Jessie Montgomery, Strauss and Vivaldi, in a programme that ranged from contemporary Spanish creation to the Italian baroque.
 </p>
 
 <p>
-La velada en Grado fue especialmente intensa: junto al concierto principal en el palacio, la artista visual Sarah K. Williams presentó una instalación en la Oficina de Turismo y una performance en la Capilla de los Dolores. Grado thus became a true hub of the festival, ofreciendo al público la posibilidad de experimentar música, artes visuales y performance en una misma noche.
+The evening in Grado was especially intense: alongside the main concert at the palace, visual artist Sarah K. Williams presented an installation at the Tourist Office and a performance at the Capilla de los Dolores. Grado thus became a true hub of the festival, offering the public the chance to experience music, visual arts and performance in a single night.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>

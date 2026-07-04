@@ -27,7 +27,7 @@ translation_group: "pll_69b025645645c"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/Festival%20ADAR%20Photos/2022/concierto%20belmonte/PXL_20220813_175723812.jpg" alt="Closing concert - Belmonte de Miranda - ADAR 2022" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Closing concert en Belmonte de Miranda (2022)</h1>
+<h1 class="adar-archive-title">Closing Concert in Belmonte de Miranda (2022)</h1>
 <p class="adar-archive-lede">
 As the closing of the ADAR Festival's second edition, the musicians presented their final concert in the capital of the municipality where the association is based: Belmonte de Miranda. On a circular stage in the town park, chamber music merged with the sound of the river and the surrounding nature.
 </p>
@@ -46,11 +46,11 @@ The music of Brahms, Dvořák, Shaw, Mozart, and Jofre blended with the flow of 
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
-<strong>Johannes Brahms</strong> – Quinteto para clarinete y cuerdas en si menor, op. 115<br>
-<strong>Antonín Dvořák</strong> – Cuarteto americano en Fa Mayor, op. 96<br>
+<strong>Johannes Brahms</strong> – Quintet for Clarinet and Strings in B minor, Op. 115<br>
+<strong>Antonín Dvořák</strong> – American Quartet in F major, Op. 96<br>
 <strong>Caroline Shaw</strong> – Blueprint<br>
-<strong>Wolfgang Amadeus Mozart</strong> – Quinteto para clarinete y cuerdas en La Mayor, KV 581<br>
-<strong>JP Jofre</strong> – Como el Agua y Primavera
+<strong>Wolfgang Amadeus Mozart</strong> – Quintet for Clarinet and Strings in A major, KV 581<br>
+<strong>JP Jofre</strong> – Como el Agua and Primavera
 </p>
 </div>
 

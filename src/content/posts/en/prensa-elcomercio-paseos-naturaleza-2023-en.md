@@ -18,35 +18,35 @@ translation_group: "press-prensa-elcomercio-paseos-naturaleza-2023"
 
 <header class="press-masthead">
   <span class="press-masthead-name">El Comercio</span>
-  <span class="press-masthead-date">Oviedo · 10 ago 2023</span>
+  <span class="press-masthead-date">Oviedo · 10 Aug 2023</span>
 </header>
 
-<p class="press-kicker">Festival ADAR · Videomapping en Ibias</p>
+<p class="press-kicker">Festival ADAR · Video mapping in Ibias</p>
 
-<h1 class="press-clipping-title">Paseos por la naturaleza en busca del arte y la música clásica</h1>
+<h1 class="press-clipping-title">Walks through nature in search of art and classical music</h1>
 
 <p class="press-lede">
-El festival Adar acerca la creación artística a la zona rural de Asturias en colaboración con la Escuela Superior de Música Reina Sofía.
+The Adar festival brings artistic creation to rural Asturias in collaboration with the Reina Sofía School of Music.
 </p>
 
 <p class="press-byline">Miguel Rojo</p>
 
 <p>
-Artistas de renombre internacional participan estos días en un festival itinerante de música clásica y arte visual en diferentes zonas de Asturias. Este proyecto está dirigido por el flautista Guillermo Laporta y la pianista Josefina Urraca, artistas internacionales que en 2020 establecieron su residencia en la aldea de Leiguarda, en Belmonte de Miranda. La <strong>Asociación para el Desarrollo de las Artes en el Medio Rural (ADAR)</strong> da nombre a esta entidad, que también se llama así al festival.
+Internationally renowned artists are taking part these days in a travelling festival of classical music and visual art in different parts of Asturias. This project is directed by the flautist Guillermo Laporta and the pianist Josefina Urraca, international artists who in 2020 took up residence in the village of Leiguarda, in Belmonte de Miranda. The <strong>Association for the Development of the Arts in Rural Areas (ADAR)</strong> gives its name to this organisation, which is also the name of the festival.
 </p>
 
 <p>
-Los eventos fusionan música clásica y nueva música a través de actuaciones que sirven como aliciente para descubrir la zona. El punto de partida es un espectáculo de videomapping que iluminará la fachada de la iglesia de Leiguarda, donde residen los 150 habitantes distribuidos en diferentes barrios.
+The events blend classical music and new music through performances that serve as an incentive to discover the area. The starting point is a video mapping show that will light up the façade of the Leiguarda church, home to the 150 inhabitants spread across its different neighbourhoods.
 </p>
 
 <p>
-El objetivo de Adar, nacido en 2021 en Belmonte de Miranda, es revitalizar zonas rurales a través de proyectos culturales de impacto internacional, acercar a estos lugares la música y las artes, fomentar el uso de espacios no convencionales, e incentivar el turismo rural a través de la cultura, educar, motivar e inspirar a futuras generaciones, explica Guillermo Laporta.
+The aim of Adar, founded in 2021 in Belmonte de Miranda, is to revitalise rural areas through cultural projects of international impact, to bring music and the arts to these places, to promote the use of unconventional spaces, and to encourage rural tourism through culture, as well as to educate, motivate and inspire future generations, explains Guillermo Laporta.
 </p>
 
 <p>
-Para esta tercera edición, además, ha iniciado una colaboración con la <strong>Escuela Superior de Música Reina Sofía</strong> a través de su programa «GreenME», que participa también asesorando en la relación de los lugares que han bautizado como ‘Paseos sonoros’, a través de los cuales el festival busca impulsar el diálogo con la naturaleza vinculando el territorio, la historia y los manuscritos de las músicas participantes. La programación incluye actuaciones en lugares como el Auditorio As Quintas y la Capilla de los Dolores de Grado. También incluye actuaciones en El Franco y en Colunga, con el apoyo del Gobierno del Principado de Asturias y de Caja Rural de Asturias.
+For this third edition it has, moreover, launched a collaboration with the <strong>Reina Sofía School of Music</strong> through its “GreenME” programme, which also advises on the selection of the places they have christened ‘Sound walks’, through which the festival seeks to foster dialogue with nature by linking the territory, its history and the manuscripts of the participating musicians. The programme includes performances in places such as the As Quintas Auditorium and the Capilla de los Dolores in Grado. It also includes performances in El Franco and in Colunga, with the support of the Government of the Principality of Asturias and Caja Rural de Asturias.
 </p>
 
 <p class="press-source">
-Texto original publicado en <a href="https://www.elcomercio.es/" target="_blank" rel="noopener">El Comercio</a>.
+Original text published in <a href="https://www.elcomercio.es/" target="_blank" rel="noopener">El Comercio</a>.
 </p>
