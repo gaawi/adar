@@ -18,6 +18,7 @@ menu_order: 0
 translation_group: "pll_6993500e5b2bc"
 ---
 
+
 <div class="adar-team">
 
 <!-- HERO -->
@@ -28,18 +29,18 @@ translation_group: "pll_6993500e5b2bc"
 <div class="amp-hero-inner">
 <span class="amp-eyebrow">Festival ADAR</span>
 <h2 class="amp-title"> <em>Artists</em></h2>
-<p class="amp-subtitle">Art, music, architecture and nature are intrinsic to the human experience, making each other more powerful.</p>
+<p class="amp-subtitle">Art, music, architecture and nature are intrinsic to the human experience, making one another more powerful.</p>
 </div>
 </div>
 
-<!-- EDITION VI · 2026 -->
+<!-- EDICIÓN VI · 2026 -->
 <section class="ed-section" id="artistas-2026">
 <div class="ed-wrap">
 <div class="ed-head">
 <p class="ed-eyebrow">Edition VI</p>
 <h2>2026 Lineup</h2>
 <p class="ed-lede">
-Performers and creators of the sixth edition of Festival ADAR, from August 4 to 16, 2026.
+Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 August 2026.
 </p>
 </div>
 
@@ -82,7 +83,7 @@ Performers and creators of the sixth edition of Festival ADAR, from August 4 to 
 </div>
 <h3>Coco Moya</h3>
 </a>
-<p class="at-artist-role">Voice, electronics and sound creation</p>
+<p class="at-artist-role">Voice, electronics &amp; sound creation</p>
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
@@ -92,7 +93,7 @@ Performers and creators of the sixth edition of Festival ADAR, from August 4 to 
 </div>
 <h3>Iván Cebrián</h3>
 </a>
-<p class="at-artist-role">Guitar, electronics and sound creation</p>
+<p class="at-artist-role">Guitar, electronics &amp; sound creation</p>
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
@@ -102,7 +103,7 @@ Performers and creators of the sixth edition of Festival ADAR, from August 4 to 
 </div>
 <h3>Colectivo Menhir</h3>
 </a>
-<p class="at-artist-role">Artistic research and site-specific creation</p>
+<p class="at-artist-role">Artistic research &amp; site-specific creation</p>
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
@@ -143,7 +144,7 @@ Performers and creators of the sixth edition of Festival ADAR, from August 4 to 
 </div>
 <h3>Zygmund de Somogyi</h3>
 </a>
-<p class="at-artist-role">Composer in residence</p>
+<p class="at-artist-role">Resident composer</p>
 <p class="at-artist-years">2026</p>
 </article>
 
@@ -162,14 +163,14 @@ Performers and creators of the sixth edition of Festival ADAR, from August 4 to 
 </div>
 </section>
 
-<!-- RESIDENT ARTISTS -->
+<!-- ARTISTAS RESIDENTES -->
 <section class="ed-section" id="artistas-residentes">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Residents</p>
-<h2>Artists of the festival</h2>
+<p class="ed-eyebrow">Resident</p>
+<h2>Festival artists</h2>
 <p class="ed-lede">
-Musicians, composers, filmmakers, and visual artists who have taken part across the festival's editions.
+Musicians, composers, filmmakers and visual artists who have taken part across the editions.
 </p>
 </div>
 
@@ -182,7 +183,7 @@ Musicians, composers, filmmakers, and visual artists who have taken part across 
 </div>
 <h3>Andrea Casarrubios</h3>
 </a>
-<p class="at-artist-role">Cellist and composer</p>
+<p class="at-artist-role">Cellist &amp; composer</p>
 <p class="at-artist-years">2025</p>
 </article>
 
@@ -193,7 +194,7 @@ Musicians, composers, filmmakers, and visual artists who have taken part across 
 </div>
 <h3>BallArte Ensemble</h3>
 </a>
-<p class="at-artist-role">Ensemble in residence</p>
+<p class="at-artist-role">Resident ensemble</p>
 <p class="at-artist-years">2025</p>
 </article>
 
@@ -259,7 +260,7 @@ Musicians, composers, filmmakers, and visual artists who have taken part across 
 </div>
 <h3>Žilvinas Brazauskas</h3>
 </a>
-<p class="at-artist-role">Clarinetist</p>
+<p class="at-artist-role">Clarinettist</p>
 <p class="at-artist-years">2022</p>
 </article>
 
@@ -300,14 +301,14 @@ Musicians, composers, filmmakers, and visual artists who have taken part across 
 </div>
 </section>
 
-<!-- VISUAL ARTISTS -->
+<!-- ARTISTAS VISUALES -->
 <section class="ed-section" id="artistas-visuales">
 <div class="ed-wrap">
 <div class="ed-head">
 <p class="ed-eyebrow">Visual arts</p>
 <h2>Visual artists</h2>
 <p class="ed-lede">
-Creators who have brought their visual vision to the festival through installations, projections, and on-site work.
+Creators who have brought their visual vision to the festival through installations, projections and in-situ work.
 </p>
 </div>
 
@@ -364,7 +365,7 @@ Creators who have brought their visual vision to the festival through installati
 </div>
 <h3>Guillermo Laporta</h3>
 </a>
-<p class="at-artist-role">Set designer</p>
+<p class="at-artist-role">Stage designer</p>
 <p class="at-artist-years">2021 · 22 · 23 · 24 · 25</p>
 </article>
 
@@ -372,14 +373,14 @@ Creators who have brought their visual vision to the festival through installati
 </div>
 </section>
 
-<!-- GUEST ENSEMBLES AND GROUPS -->
+<!-- ENSEMBLES Y GRUPOS INVITADOS -->
 <section class="ed-section" id="grupos-invitados">
 <div class="ed-wrap">
 <div class="ed-head">
 <p class="ed-eyebrow">Guests</p>
 <h2>Guest ensembles and groups</h2>
 <p class="ed-lede">
-Groups that have enriched the festival's program through their participation.
+Ensembles that have enriched the festival's programme with their participation.
 </p>
 </div>
 
@@ -422,14 +423,14 @@ Groups that have enriched the festival's program through their participation.
 </div>
 </section>
 
-<!-- ARTISTIC DIRECTION -->
+<!-- DIRECCIÓN ARTÍSTICA -->
 <section class="ed-section" id="direccion-artistica">
 <div class="ed-wrap">
 <div class="ed-head">
 <p class="ed-eyebrow">Direction</p>
 <h2>Artistic direction</h2>
 <p class="ed-lede">
-Co-founders of CreArtBox and Festival ADAR. Creation, performance, and production.
+Co-founders of CreArtBox and Festival ADAR. Creation, performance and production.
 </p>
 </div>
 
@@ -459,7 +460,7 @@ Co-founders of CreArtBox and Festival ADAR. Creation, performance, and productio
 </div>
 <div class="ed-item-meta">
 <h3>Guillermo Laporta</h3>
-<p class="ed-role">Flutist · Executive Director</p>
+<p class="ed-role">Flautist · Executive Director</p>
 </div>
 </div>
 </a>

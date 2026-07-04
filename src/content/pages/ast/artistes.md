@@ -18,6 +18,7 @@ menu_order: 0
 translation_group: "pll_6993500e5b2bc"
 ---
 
+
 <div class="adar-team">
 
 <!-- HERO -->
@@ -28,7 +29,7 @@ translation_group: "pll_6993500e5b2bc"
 <div class="amp-hero-inner">
 <span class="amp-eyebrow">Festival ADAR</span>
 <h2 class="amp-title"> <em>Artistes</em></h2>
-<p class="amp-subtitle">L'arte, la música, l'arquiteutura y la naturaleza son intrínsecos a la esperiencia humana, faciéndose unos a otros más poderosos.</p>
+<p class="amp-subtitle">L'arte, la música, l'arquiteutura y la natura son intrínseques a la esperiencia humana, faciéndose unes a otres más poderoses.</p>
 </div>
 </div>
 
@@ -162,7 +163,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 </div>
 </section>
 
-<!-- ARTISTES RESIDENTES -->
+<!-- ARTISTAS RESIDENTES -->
 <section class="ed-section" id="artistas-residentes">
 <div class="ed-wrap">
 <div class="ed-head">
@@ -300,14 +301,14 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </div>
 </section>
 
-<!-- ARTISTES VISUALES -->
+<!-- ARTISTAS VISUALES -->
 <section class="ed-section" id="artistas-visuales">
 <div class="ed-wrap">
 <div class="ed-head">
 <p class="ed-eyebrow">Artes visuales</p>
 <h2>Artistes visuales</h2>
 <p class="ed-lede">
-Creadores qu'aportaron la so visión plástica al festival al traviés d'instalaciones, proyecciones y obra in situ.
+Creadores qu'aportaron la so visión plástica al festival al traviés d'instalaciones, proyeiciones y obra in situ.
 </p>
 </div>
 
@@ -372,14 +373,14 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 </div>
 </section>
 
-<!-- ENSEMBLES Y GRUPOS INVITAOS -->
+<!-- ENSEMBLES Y GRUPOS INVITADOS -->
 <section class="ed-section" id="grupos-invitados">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Invitaos</p>
-<h2>Ensembles y grupos invitaos</h2>
+<p class="ed-eyebrow">Convidaos</p>
+<h2>Ensembles y grupos convidaos</h2>
 <p class="ed-lede">
-Formaciones qu'enriquecieron la programación del festival cola so participación.
+Formaciones qu'arriquecieron la programación del festival cola so participación.
 </p>
 </div>
 
@@ -392,7 +393,7 @@ Formaciones qu'enriquecieron la programación del festival cola so participació
 </div>
 <h3>Compañeras Pandereteras</h3>
 </a>
-<p class="at-artist-role">Grupu invitáu</p>
+<p class="at-artist-role">Grupu convidáu</p>
 <p class="at-artist-years">2025</p>
 </article>
 
@@ -403,7 +404,7 @@ Formaciones qu'enriquecieron la programación del festival cola so participació
 </div>
 <h3>Nacho Laguna</h3>
 </a>
-<p class="at-artist-role">Artista invitáu</p>
+<p class="at-artist-role">Artista convidáu</p>
 <p class="at-artist-years">2025</p>
 </article>
 
@@ -414,7 +415,7 @@ Formaciones qu'enriquecieron la programación del festival cola so participació
 </div>
 <h3>María del Buey</h3>
 </a>
-<p class="at-artist-role">Artista invitada</p>
+<p class="at-artist-role">Artista convidada</p>
 <p class="at-artist-years">2025</p>
 </article>
 
@@ -422,7 +423,7 @@ Formaciones qu'enriquecieron la programación del festival cola so participació
 </div>
 </section>
 
-<!-- DIREICIÓN ARTÍSTICA -->
+<!-- DIRECCIÓN ARTÍSTICA -->
 <section class="ed-section" id="direccion-artistica">
 <div class="ed-wrap">
 <div class="ed-head">
@@ -459,7 +460,7 @@ Cofundadores de CreArtBox y del Festival ADAR. Creación, interpretación y prod
 </div>
 <div class="ed-item-meta">
 <h3>Guillermo Laporta</h3>
-<p class="ed-role">Flautista · Direutor Executivu</p>
+<p class="ed-role">Flautista · Director Executivu</p>
 </div>
 </div>
 </a>
