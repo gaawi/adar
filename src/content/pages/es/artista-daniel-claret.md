@@ -10,7 +10,7 @@ original_url: ""
 permalink: "/es/artista-daniel-claret/"
 categories: []
 tags: []
-featured_image: "https://www.conservatoriliceu.es/en/wp-content/uploads/sites/3/claret.jpg"
+featured_image: "https://forummusikae.com/wp-content/uploads/yootheme/cache/36/DSC7351dx-3604bb79.jpg"
 excerpt: "Violonchelo · Violonchelista solista y de cámara, profesor en el Conservatori Liceu, miembro de The Rest Project"
 author: "gaawi_rei1q"
 parent_id: 0

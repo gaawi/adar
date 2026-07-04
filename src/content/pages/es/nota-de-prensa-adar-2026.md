@@ -71,7 +71,7 @@ translation_group: "pll_2026_press_note"
 
 <h2 class="doc-h2">Materiales para prensa</h2>
 
-<p>Fotografías en alta resolución de las sedes y los intérpretes, biografías completas, dosier técnico y acreditaciones están disponibles bajo petición. Solicítelos indicando medio, nombre del periodista y enfoque previsto del reportaje.</p>
+<p>Fotografías en alta resolución de las sedes y los intérpretes, biografías completas, material técnico y acreditaciones están disponibles bajo petición. Solicítelos indicando medio, nombre del periodista y enfoque previsto del reportaje.</p>
 
 <hr class="doc-rule">
 

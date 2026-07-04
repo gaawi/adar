@@ -11757,31 +11757,92 @@ body.page .entry-content .vi26 p,
   opacity: 0.6;
   margin: 0;
 }
+/* CUÁNDO — bloque destacado en la tarjeta blanca */
 .vi26-aside-when {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: 2px;
   margin: 0 !important;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
   border-bottom: 1px solid rgba(10,9,7,0.15);
 }
-.vi26-aside-dow {
-  font-size: 10px;
-  letter-spacing: 0.26em;
+.vi26-aside-when-label,
+.vi26-aside-where-label {
+  font-size: 9px;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--accent-ink);
-  opacity: 0.7;
+  opacity: 0.55;
+  margin-bottom: 4px;
+}
+.vi26-aside-when-dow {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
   font-weight: 700;
 }
-.vi26-aside-date {
+.vi26-aside-when-date {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
-  font-size: clamp(32px, 2.6vw, 42px);
-  line-height: 1;
+  font-weight: 600;
+  font-size: clamp(34px, 3vw, 46px);
+  line-height: 0.95;
   letter-spacing: -0.02em;
   color: #0a0907;
+}
+.vi26-aside-when-time {
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  color: #0a0907;
+  font-weight: 700;
+  margin-top: 4px;
+  padding: 2px 8px;
+  background: var(--accent);
+}
+/* DÓNDE — bloque destacado en la tarjeta blanca */
+.vi26-aside-where {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  margin: 0 !important;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(10,9,7,0.15);
+}
+.vi26-aside-where-venue {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.2;
+  color: #0a0907;
+}
+.vi26-aside-where-addr {
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  line-height: 1.45;
+  color: rgba(10,9,7,0.6);
+  margin-top: 3px;
+}
+.vi26-aside-where-map {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--accent-ink) !important;
+  border-bottom: 1px solid rgba(10,9,7,0.35);
+  padding-bottom: 2px;
+  text-decoration: none;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+.vi26-aside-where-map:hover {
+  color: #0a0907 !important;
+  border-bottom-color: #0a0907;
 }
 .vi26-aside-facts {
   display: grid;
@@ -11992,12 +12053,12 @@ body.page .entry-content .vi26 p,
 }
 
 .vi26-event-title {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-display);
+  font-stretch: 75%;
   font-weight: 500;
-  font-size: clamp(22px, 2vw, 32px);
-  line-height: 1.15;
-  letter-spacing: -0.005em;
+  font-size: clamp(30px, 3.4vw, 52px);
+  line-height: 1.02;
+  letter-spacing: -0.02em;
   margin: 0;
   color: #0a0907;
   text-wrap: balance;

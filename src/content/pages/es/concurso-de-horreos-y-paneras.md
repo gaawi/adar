@@ -82,7 +82,7 @@ translation_group: "pll_6990ac582687f"
 <ol>
 <li>Cada uno de los dos hórreos seleccionados recibirá una dotación económica destinada a compensar los gastos derivados de la cesión del espacio.</li>
 <li>Ambos acogerán un concierto producido íntegramente por ADAR, con asistencia libre y gratuita.</li>
-<li>Los hórreos seleccionados figurarán en la comunicación oficial del festival: página web, cartelería, dosier de prensa y documentación audiovisual del evento.</li>
+<li>Los hórreos seleccionados figurarán en la comunicación oficial del festival: página web, cartelería, nota de prensa y documentación audiovisual del evento.</li>
 </ol>
 
 <h2 class="legal-h2">9. Obligaciones de los seleccionados</h2>

@@ -68,7 +68,7 @@ Intérpretes y creadores de la sexta edición del Festival ADAR, del 4 al 16 de 
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/es/artista-frederieke-saeijs/">
 <div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="Frederieke Saeijs" loading="lazy">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRllaSawaUhyhnLJDgPzZRvdtVId2aDU4Q6H-Sj2diNF0FrLLiY1hSQ9iLNZMs0NYDqiHCTxqueDmLBPN_y-vb0vQ43ExghPwFHdC1Q7g&s=10" alt="Frederieke Saeijs" loading="lazy">
 </div>
 <h3>Frederieke Saeijs</h3>
 </a>
@@ -108,7 +108,7 @@ Intérpretes y creadores de la sexta edición del Festival ADAR, del 4 al 16 de 
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/es/artista-maria-florea/">
 <div class="at-artist-img">
-<img src="https://franzschubertfilh.com/wp-content/uploads/2025/10/4Y0A8374-768x1152.jpg" alt="Maria Florea" loading="lazy">
+<img src="https://www.schubertiada.cat/images/Biografies/MariaFlorea_bio.jpg" alt="Maria Florea" loading="lazy">
 </div>
 <h3>Maria Florea</h3>
 </a>
@@ -128,7 +128,7 @@ Intérpretes y creadores de la sexta edición del Festival ADAR, del 4 al 16 de 
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/es/artista-daniel-claret/">
 <div class="at-artist-img">
-<img src="https://www.conservatoriliceu.es/en/wp-content/uploads/sites/3/claret.jpg" alt="Daniel Claret" loading="lazy">
+<img src="https://forummusikae.com/wp-content/uploads/yootheme/cache/36/DSC7351dx-3604bb79.jpg" alt="Daniel Claret" loading="lazy">
 </div>
 <h3>Daniel Claret</h3>
 </a>

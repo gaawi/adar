@@ -10,7 +10,7 @@ original_url: ""
 permalink: "/es/artista-frederieke-saeijs/"
 categories: []
 tags: []
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg"
+featured_image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRllaSawaUhyhnLJDgPzZRvdtVId2aDU4Q6H-Sj2diNF0FrLLiY1hSQ9iLNZMs0NYDqiHCTxqueDmLBPN_y-vb0vQ43ExghPwFHdC1Q7g&s=10"
 excerpt: "Violín · Violinista neerlandesa, ganadora del Long-Thibaud (2005), especializada en repertorio para violín solo"
 author: "gaawi_rei1q"
 parent_id: 0

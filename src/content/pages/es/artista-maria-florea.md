@@ -10,7 +10,7 @@ original_url: ""
 permalink: "/es/artista-maria-florea/"
 categories: []
 tags: []
-featured_image: "https://franzschubertfilh.com/wp-content/uploads/2025/10/4Y0A8374-768x1152.jpg"
+featured_image: "https://www.schubertiada.cat/images/Biografies/MariaFlorea_bio.jpg"
 excerpt: "Violín · Violinista solista y de cámara, concertino de la Franz Schubert Filharmonia"
 author: "gaawi_rei1q"
 parent_id: 0

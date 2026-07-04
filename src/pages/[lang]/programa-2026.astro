@@ -31,7 +31,7 @@ const COPY = {
     poster_stat_c: '7 sedes patrimoniales',
     poster_stat_d: 'Entrada libre',
     cta_program: 'Ver programa',
-    cta_press: 'Dosier de prensa',
+    cta_press: 'Nota de prensa',
     nights_n: '§ 01',
     nights_h: 'Programa',
     nights_sub: 'Once conciertos del 4 al 16 de agosto, distribuidos entre conciertos de cámara «ADAR en ruta», intervenciones site-specific en Leiguarda y un cierre de quinteto con espicha. Programa publicado · sedes en confirmación final.',
@@ -175,7 +175,7 @@ const COPY = {
     poster_stat_c: '7 sedes patrimoniales',
     poster_stat_d: 'Entrada llibre',
     cta_program: 'Ver programa',
-    cta_press: 'Dosier de prensa',
+    cta_press: 'Nota de prensa',
     nights_n: '§ 01',
     nights_h: 'Programa',
     nights_sub: 'Once conciertos del 4 al 16 d’agostu, distribuyíos ente conciertos de cámara «ADAR en ruta», intervenciones site-specific en Lleiguarda y un zarru de quintetu con espicha. Programa publicáu · sedes en confirmación final.',
@@ -673,13 +673,28 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
               <div class="vi26-aside-info">
                 <p class="vi26-aside-n mono">N° {e.n}</p>
 
+                <!-- CUÁNDO -->
+                <div class="vi26-aside-when">
+                  <span class="vi26-aside-when-label mono">Cuándo</span>
+                  <span class="vi26-aside-when-dow">{e.dow}</span>
+                  <span class="vi26-aside-when-date">{e.fullDate}</span>
+                  {e.time && <span class="vi26-aside-when-time mono">{e.time}h</span>}
+                </div>
+
+                <!-- DÓNDE -->
+                <div class="vi26-aside-where">
+                  <span class="vi26-aside-where-label mono">Dónde</span>
+                  <span class="vi26-aside-where-venue">{e.venue}</span>
+                  {e.address && <span class="vi26-aside-where-addr mono">{e.address}</span>}
+                  {e.mapUrl && (
+                    <a class="vi26-aside-where-map mono" href={e.mapUrl} target="_blank" rel="noopener">
+                      Ver mapa <span aria-hidden="true">↗</span>
+                    </a>
+                  )}
+                </div>
+
                 <dl class="vi26-aside-facts">
                   {kind && (<><dt class="mono">{COPY.th_kind}</dt><dd>{kind}</dd></>)}
-                  <dt class="mono">{COPY.venue_h}</dt>
-                  <dd>
-                    <span class="vi26-aside-venue">{e.venue}</span>
-                    {e.address && <span class="vi26-aside-address mono">{e.address}</span>}
-                  </dd>
                   {e.capacity && (
                     <><dt class="mono">{COPY.capacity_label}</dt><dd>{e.capacity} {COPY.seats_label}</dd></>
                   )}
@@ -703,26 +718,6 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
             </aside>
 
             <div class="vi26-content">
-              <header class="vi26-event-place">
-                <div class="vi26-event-place-main">
-                  <span class="vi26-event-place-venue">{e.venue}</span>
-                  <span class="vi26-event-place-sub mono">
-                    <span class="vi26-event-place-addr">{e.address || e.municipality}</span>
-                    {e.mapUrl && (
-                      <a class="vi26-event-place-map"
-                         href={e.mapUrl}
-                         target="_blank" rel="noopener">
-                        Ver mapa <span aria-hidden="true">↗</span>
-                      </a>
-                    )}
-                  </span>
-                </div>
-                <div class="vi26-event-place-when">
-                  <span class="vi26-event-place-dow mono">{e.dow}</span>
-                  <span class="vi26-event-place-date">{e.fullDate}</span>
-                  {e.time && <span class="vi26-event-place-time mono">{e.time}h</span>}
-                </div>
-              </header>
               <h3 class="vi26-event-title">{e.title}</h3>
               {e.subtitle && <p class="vi26-event-sub mono">↳ {e.subtitle}</p>}
 
