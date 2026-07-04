@@ -91,7 +91,9 @@ translation_group: "pll_2026_press_note"
 
 <p>La Asociación para el Desarrollo de las Artes en el medio Rural (ADAR) es una organización cultural sin ánimo de lucro con sede en Leiguarda (Belmonte de Miranda, Asturias), fundada en 2020 por los músicos Guillermo Laporta y Josefina Urraca. Desde su primera edición en 2021, el festival produce música clásica contemporánea, arte visual y patrimonio activado en aldeas, iglesias, hórreos, monasterios y paisajes del medio rural asturiano.</p>
 
-<p>El proyecto opera con un modelo descentralizado que combina residencias artísticas, mediación cultural con los ayuntamientos anfitriones, documentación audiovisual y circulación internacional. La programación es de entrada libre y se sostiene con el apoyo institucional del Principado de Asturias, la Comisión Europea, el Goethe-Institut y una red de partners culturales.</p>
+<p>Con seis años de trayectoria, el Festival ADAR se ha consolidado como un referente cultural en Asturias y ha ido adquiriendo una dimensión europea, tejiendo una red internacional de artistas, residencias y colaboraciones más allá de nuestras fronteras.</p>
+
+<p>El proyecto opera con un modelo descentralizado que combina residencias artísticas, mediación cultural con los ayuntamientos anfitriones, documentación audiovisual y circulación internacional. La programación es de entrada libre y se sostiene con el apoyo del <strong>Principado de Asturias</strong>, la beca europea <strong>Culture Moves Europe</strong> y <strong>Caja Rural</strong>, junto a una red de partners culturales.</p>
 
 <h2 class="doc-h2">Descargas</h2>
 
