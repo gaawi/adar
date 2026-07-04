@@ -68,15 +68,15 @@ The second part included Brown Leaves Moving by Guillermo Laporta, a piece that 
 -->
 
 <div class="adar-archive-gallery">
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01828.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01828.jpg" alt="Galería 1" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01819.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01819.jpg" alt="Galería 2" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01787.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01787.jpg" alt="Galería 3" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01765.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01765.jpg" alt="Galería 4" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01700.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01700.jpg" alt="Galería 5" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01687.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01687.jpg" alt="Galería 6" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01680.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01680.jpg" alt="Galería 7" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01673.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01673.jpg" alt="Galería 8" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01632.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01632.jpg" alt="Galería 9" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01828.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01828.jpg" alt="Gallery 1" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01819.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01819.jpg" alt="Gallery 2" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01787.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01787.jpg" alt="Gallery 3" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01765.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01765.jpg" alt="Gallery 4" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01700.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01700.jpg" alt="Gallery 5" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01687.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01687.jpg" alt="Gallery 6" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01680.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01680.jpg" alt="Gallery 7" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01673.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01673.jpg" alt="Gallery 8" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01632.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01632.jpg" alt="Gallery 9" loading="lazy"></a>
 </div>
 
 </div>

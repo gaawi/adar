@@ -14,7 +14,7 @@ original_url: "https://www.rtve.es/play/audios/el-ojo-critico/"
 translation_group: "press-prensa-rne-ojo-critico-2023"
 ---
 
-<p class="press-meta"><em>Article originally published in Spanish. Body kept verbatim below; see source link for the original.</em></p>
+<p class="press-meta"><em>Article originally published in Spanish; translated below. See the source link for the original.</em></p>
 
 <header class="press-masthead">
   <span class="press-masthead-name">RNE · El Ojo Crítico</span>

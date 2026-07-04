@@ -14,7 +14,7 @@ original_url: "https://lavozdeltrubia.es/2023/07/28/el-festival-de-artes-en-el-m
 translation_group: "press-prensa-lavoztrubia-amplia-2023"
 ---
 
-<p class="press-meta"><em>Article originally published in Spanish. Body kept verbatim below; see source link for the original.</em></p>
+<p class="press-meta"><em>Article originally published in Spanish; translated below. See the source link for the original.</em></p>
 
 <header class="press-masthead">
   <span class="press-masthead-name">La Voz del Trubia</span>

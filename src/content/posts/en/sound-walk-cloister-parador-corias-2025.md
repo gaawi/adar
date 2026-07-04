@@ -24,10 +24,10 @@ translation_group: "pll_69b025678d4ce"
 <div class="adar-archive-left">
 
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg" alt="Sound walk - Claustro del Parador de Corias - ADAR 2025" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg" alt="Sound walk - Cloister of the Parador de Corias - ADAR 2025" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Sound walk en el Claustro del Parador de Corias</h1>
+<h1 class="adar-archive-title">Sound walk in the Cloister of the Parador de Corias</h1>
 <p class="adar-archive-lede">
 As part of the fifth edition of the ADAR Festival, the musicians spread through the Cloister of the Parador de Corias to offer a sound walk in which Bach and Mozart resonated among the arcades of this former Benedictine monastery.
 </p>
@@ -36,18 +36,18 @@ As part of the fifth edition of the ADAR Festival, the musicians spread through 
 
 <div class="adar-archive-body">
 <p>
-Every year, the ADAR Festival develops concerts in which musicians, distributed across various points in the space, invite listeners to walk following the music and pause around it. El Claustro del Parador de Corias, con su arquitectura monástica y su silencio solemne, ofreció un marco excepcional para este formato.
+Every year, the ADAR Festival develops concerts in which musicians, distributed across various points in the space, invite listeners to walk following the music and pause around it. The Cloister of the Parador de Corias, with its monastic architecture and solemn silence, offered an exceptional setting for this format.
 </p>
 
 <p>
-El programa se articuló en torno a la música de Bach, con partitas y suites para instrumentos solistas distribuidas por los distintos ángulos del claustro. The audience wandered freely, discovering a different musical intervention in every corner. El paseo concluyó con el segundo movimiento del Cuarteto para flauta y cuerdas en Re Mayor de Mozart, interpretado por el conjunto reunido.
+The programme was built around the music of Bach, with partitas and suites for solo instruments distributed across the different corners of the cloister. The audience wandered freely, discovering a different musical intervention in every corner. The walk concluded with the second movement of Mozart's Flute Quartet in D major, performed by the assembled ensemble.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
-<strong>Johann Sebastian Bach</strong> – Partita para violín, Partita para flauta, Suite para violonchelo n.º 3, Sonata para viola<br>
-<strong>Wolfgang Amadeus Mozart</strong> – Cuarteto para flauta y cuerdas en Re Mayor, K. 285 (segundo movimiento)
+<strong>Johann Sebastian Bach</strong> – Partita for violin, Partita for flute, Cello Suite No. 3, Sonata for viola<br>
+<strong>Wolfgang Amadeus Mozart</strong> – Flute Quartet in D major, K. 285 (second movement)
 </p>
 </div>
 

@@ -14,7 +14,7 @@ original_url: "https://lavozdeltrubia.es/2024/08/01/paseos-sonoros-y-conciertos-
 translation_group: "press-prensa-lavoztrubia-paseos-2024"
 ---
 
-<p class="press-meta"><em>Article originally published in Spanish. Body kept verbatim below; see source link for the original.</em></p>
+<p class="press-meta"><em>Article originally published in Spanish; translated below. See the source link for the original.</em></p>
 
 <header class="press-masthead">
   <span class="press-masthead-name">La Voz del Trubia</span>

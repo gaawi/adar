@@ -14,7 +14,7 @@ original_url: "https://www.lne.es/occidente/2025/05/20/festival-adar-busca-mejor
 translation_group: "press-prensa-lne-horreos-2025"
 ---
 
-<p class="press-meta"><em>Article originally published in Spanish. Body kept verbatim below; see source link for the original.</em></p>
+<p class="press-meta"><em>Article originally published in Spanish; translated below. See the source link for the original.</em></p>
 
 <header class="press-masthead">
   <span class="press-masthead-name">La Nueva España</span>
