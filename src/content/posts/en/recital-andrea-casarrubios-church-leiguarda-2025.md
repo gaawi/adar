@@ -25,7 +25,7 @@ translation_group: "pll_69b02567b23d9"
 
 <!-- COVER (panorámico, se recorta con CSS del template) -->
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01590.jpg" alt="Recital de Andrea Casarrubios en la Iglesia de Leiguarda" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01590.jpg" alt="Recital by Andrea Casarrubios at the Church of Leiguarda" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Recital by Andrea Casarrubios at the Church of Leiguarda</h1>
@@ -37,26 +37,26 @@ In this evening of the ADAR Festival 2025, cellist and composer Andrea Casarrubi
 
 <div class="adar-archive-body">
 <p>
-The programme spanned more than two centuries of music. Abrió con dos sonatas de Luigi Boccherini, figura esencial del clasicismo que desarrolló gran parte de su carrera en España. A continuación, el piano tomó protagonismo con la delicadeza impresionista de Claude Debussy, preparando una sección central especialmente íntima con tres obras de la propia Casarrubios (2018-2023), donde memoria, folclore y emoción dialogaron en un lenguaje propio.
+The programme spanned more than two centuries of music. It opened with two sonatas by Luigi Boccherini, an essential figure of Classicism who developed much of his career in Spain. Next, the piano took centre stage with the impressionist delicacy of Claude Debussy, setting up an especially intimate central section with three works by Casarrubios herself (2018-2023), in which memory, folklore and emotion conversed in a language all her own.
 </p>
 
 <p>
-The second part included Brown Leaves Moving by Guillermo Laporta, una pieza que entrelazó improvisación y escritura en un formato abierto. Casarrubios interpretó después SEVEN, compuesta en homenaje a las víctimas de la pandemia. The recital closed with a section of Dvořák's Dumky Trio, en la que melancolía y energía popular convivieron en una estructura libre y profundamente expresiva.
+The second part included Brown Leaves Moving by Guillermo Laporta, a piece that interwove improvisation and composition in an open format. Casarrubios then performed SEVEN, composed in tribute to the victims of the pandemic. The recital closed with a section of Dvořák's Dumky Trio, in which melancholy and folk energy coexisted within a free and deeply expressive structure.
 </p>
 
 <h3 style="margin-top:28px;">Programme</h3>
 
 <p>
-<strong>Luigi Boccherini</strong> - Sonata para violonchelo y bajo continuo G. 9 en fa mayor, Adagio assai (1764) 4’
-<br><strong>Luigi Boccherini</strong> - Sonata para violonchelo y bajo continuo G. 6 en do mayor, Allegro (1772) 3’
-<br><strong>Claude Debussy</strong> - Arabesque n.º 1 para piano solo (1888) 5’
-<br><strong>Andrea Casarrubios</strong> - Tres piezas para violonchelo y piano 16’
+<strong>Luigi Boccherini</strong> - Sonata for cello and basso continuo, G. 9 in F major, Adagio assai (1764) 4’
+<br><strong>Luigi Boccherini</strong> - Sonata for cello and basso continuo, G. 6 in C major, Allegro (1772) 3’
+<br><strong>Claude Debussy</strong> - Arabesque No. 1 for solo piano (1888) 5’
+<br><strong>Andrea Casarrubios</strong> - Three pieces for cello and piano 16’
 <br>• Silbo (2021)
 <br>• Sonia (2023)
 <br>• 24 Mozas (2018)
 <br><strong>Guillermo Laporta</strong> - Brown Leaves Moving (2020) 6’
-<br><strong>Andrea Casarrubios</strong> - SEVEN para violonchelo solo (2020) 10’
-<br><strong>Antonín Dvořák</strong> - Trío “Dumky”, Op. 90 6’
+<br><strong>Andrea Casarrubios</strong> - SEVEN for solo cello (2020) 10’
+<br><strong>Antonín Dvořák</strong> - “Dumky” Trio, Op. 90 6’
 <br>• Lento maestoso - Allegro vivace
 </p>
 </div>

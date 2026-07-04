@@ -34,13 +34,13 @@ Those strolling this midday through the Parque María Cristina in La Caridad, in
 </p>
 
 <p>
-La de los ‘paseos sonoros’, una iniciativa de la <strong>Asociación para el Desarrollo de las Artes en el Medio Rural</strong> cuyo objetivo es llevar la música clásica a las zonas menos pobladas.
+That of the ‘sound walks’, an initiative of the <strong>Asociación para el Desarrollo de las Artes en el Medio Rural</strong> whose aim is to bring classical music to the least populated areas.
 </p>
 
 <p>
-Un proyecto que entre hoy y el sábado visitará también Grado, Colunga y Belmonte de Miranda. Se trata de la tercera edición de estos conciertos, financiados por la Escuela Superior de Música Reina Sofía, que aspiran a llegar a más concejos en próximos veranos.
+A project that, between today and Saturday, will also visit Grado, Colunga and Belmonte de Miranda. This is the third edition of these concerts, funded by the Escuela Superior de Música Reina Sofía, which aim to reach more municipalities in the summers to come.
 </p>
 
 <p class="press-source">
-Texto original publicado en <a href="https://www.rtpa.es/" target="_blank" rel="noopener">RTPA · Radiotelevisión del Principado de Asturias</a>.
+Original text published in <a href="https://www.rtpa.es/" target="_blank" rel="noopener">RTPA · Radiotelevisión del Principado de Asturias</a>.
 </p>
