@@ -11713,33 +11713,62 @@ body.page .entry-content .vi26 p,
 .vi26-event {
   display: grid;
   grid-template-columns: 340px minmax(0, 1fr);
-  gap: 56px;
+  grid-template-areas:
+    "cover   content"
+    "info    content";
+  column-gap: 48px;
+  row-gap: 0;
   align-items: start;
   padding-bottom: 56px;
   border-bottom: 1px solid rgba(10,9,7,0.16);
 }
 .vi26-event:last-child { border-bottom: 0; }
+.vi26-event > .vi26-cover { grid-area: cover; aspect-ratio: 1 / 1 !important; margin: 0; }
+.vi26-event > .vi26-content { grid-area: content; }
+.vi26-event > .vi26-aside-info { grid-area: info; }
+
 @media (max-width: 1024px) {
-  .vi26-event { grid-template-columns: 280px minmax(0, 1fr); gap: 40px; }
+  .vi26-event { grid-template-columns: 260px minmax(0, 1fr); column-gap: 32px; }
+}
+
+/* MÓVIL — todo el evento dentro de una única tarjeta blanca:
+   foto arriba, luego municipio + título + descripción, y al final
+   el bloque de cuándo/dónde/reserva. */
+@media (max-width: 720px) {
+  .vi26-event {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 0;
+    background: #fff;
+    border: 1px solid rgba(10,9,7,0.18);
+    overflow: hidden;
+  }
+  .vi26-event > .vi26-cover { aspect-ratio: 4 / 3 !important; }
+  .vi26-event > .vi26-content { order: 2; padding: 22px 20px 8px; }
+  .vi26-event > .vi26-aside-info {
+    order: 3;
+    border: 0;
+    border-top: 1px solid rgba(10,9,7,0.14);
+    background: transparent;
+    padding: 18px 20px 22px;
+  }
+}
+
+/* Municipio — grande y claro, encima del título del concierto */
+.vi26-event-muni {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 600;
+  font-size: clamp(22px, 2vw, 30px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  margin: 0 0 6px !important;
 }
 @media (max-width: 720px) {
-  .vi26-event { grid-template-columns: 1fr; gap: 28px; padding-bottom: 40px; }
-}
-
-/* ASIDE — image + info sidebar */
-.vi26-aside {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  position: sticky;
-  top: 120px;
-  align-self: start;
-}
-@media (max-width: 1024px) { .vi26-aside { position: static; } }
-
-.vi26-aside .vi26-cover {
-  aspect-ratio: 1 / 1 !important;
-  margin: 0;
+  .vi26-event-muni { font-size: 26px; margin-bottom: 4px !important; }
 }
 .vi26-aside-info {
   border: 1px solid rgba(10,9,7,0.18);

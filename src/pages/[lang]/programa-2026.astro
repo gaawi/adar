@@ -667,65 +667,18 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
         const isLongProgram = e.pieces.length > 8;
         return (
           <li class="vi26-event" id={`event-${e.n}`}>
-            <aside class="vi26-aside">
-              {e.photo ? (
-                <figure class="vi26-cover">
-                  <img src={e.photo} alt={e.venue} loading="lazy" />
-                </figure>
-              ) : (
-                <div class="vi26-cover vi26-cover-empty">
-                  <span class="mono">{COPY.soon}</span>
-                </div>
-              )}
-
-              <div class="vi26-aside-info">
-                <p class="vi26-aside-n mono">N° {e.n}</p>
-
-                <!-- CUÁNDO -->
-                <div class="vi26-aside-when">
-                  <span class="vi26-aside-when-label mono">Cuándo</span>
-                  <span class="vi26-aside-when-dow">{e.dow}</span>
-                  <span class="vi26-aside-when-date">{e.fullDate}</span>
-                  {e.time && <span class="vi26-aside-when-time mono">{e.time}h</span>}
-                </div>
-
-                <!-- DÓNDE -->
-                <div class="vi26-aside-where">
-                  <span class="vi26-aside-where-label mono">Dónde</span>
-                  <span class="vi26-aside-where-venue">{e.venue}</span>
-                  {e.address && <span class="vi26-aside-where-addr mono">{e.address}</span>}
-                  {e.mapUrl && (
-                    <a class="vi26-aside-where-map mono" href={e.mapUrl} target="_blank" rel="noopener">
-                      Ver mapa <span aria-hidden="true">↗</span>
-                    </a>
-                  )}
-                </div>
-
-                <dl class="vi26-aside-facts">
-                  {kind && (<><dt class="mono">{COPY.th_kind}</dt><dd>{kind}</dd></>)}
-                  {e.capacity && (
-                    <><dt class="mono">{COPY.capacity_label}</dt><dd>{e.capacity} {COPY.seats_label}</dd></>
-                  )}
-                </dl>
-
-                {e.venueNote && (
-                  <p class="vi26-aside-note mono">{e.venueNote}</p>
-                )}
-
-                <div class="vi26-event-cta">
-                  {e.eventbrite ? (
-                    <a class="vi26-rsvp" href={e.eventbrite} target="_blank" rel="noopener">
-                      <span class="vi26-arr">→</span> {COPY.rsvp}
-                    </a>
-                  ) : (
-                    <span class="vi26-rsvp is-soon">{COPY.seats_soon}</span>
-                  )}
-                  <p class="vi26-rsvp-note mono">{COPY.free_note}</p>
-                </div>
+            {e.photo ? (
+              <figure class="vi26-cover">
+                <img src={e.photo} alt={e.venue} loading="lazy" />
+              </figure>
+            ) : (
+              <div class="vi26-cover vi26-cover-empty">
+                <span class="mono">{COPY.soon}</span>
               </div>
-            </aside>
+            )}
 
             <div class="vi26-content">
+              <p class="vi26-event-muni">{e.municipality}</p>
               <h3 class="vi26-event-title">{e.title}</h3>
               {e.subtitle && <p class="vi26-event-sub mono">↳ {e.subtitle}</p>}
 
@@ -762,6 +715,52 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
                     </li>
                   ))}
                 </ul>
+              </div>
+            </div>
+
+            <div class="vi26-aside-info">
+              <p class="vi26-aside-n mono">N° {e.n}</p>
+
+              <!-- CUÁNDO -->
+              <div class="vi26-aside-when">
+                <span class="vi26-aside-when-label mono">Cuándo</span>
+                <span class="vi26-aside-when-dow">{e.dow}</span>
+                <span class="vi26-aside-when-date">{e.fullDate}</span>
+                {e.time && <span class="vi26-aside-when-time mono">{e.time}h</span>}
+              </div>
+
+              <!-- DÓNDE -->
+              <div class="vi26-aside-where">
+                <span class="vi26-aside-where-label mono">Dónde</span>
+                <span class="vi26-aside-where-venue">{e.venue}</span>
+                {e.address && <span class="vi26-aside-where-addr mono">{e.address}</span>}
+                {e.mapUrl && (
+                  <a class="vi26-aside-where-map mono" href={e.mapUrl} target="_blank" rel="noopener">
+                    Ver mapa <span aria-hidden="true">↗</span>
+                  </a>
+                )}
+              </div>
+
+              <dl class="vi26-aside-facts">
+                {kind && (<><dt class="mono">{COPY.th_kind}</dt><dd>{kind}</dd></>)}
+                {e.capacity && (
+                  <><dt class="mono">{COPY.capacity_label}</dt><dd>{e.capacity} {COPY.seats_label}</dd></>
+                )}
+              </dl>
+
+              {e.venueNote && (
+                <p class="vi26-aside-note mono">{e.venueNote}</p>
+              )}
+
+              <div class="vi26-event-cta">
+                {e.eventbrite ? (
+                  <a class="vi26-rsvp" href={e.eventbrite} target="_blank" rel="noopener">
+                    <span class="vi26-arr">→</span> {COPY.rsvp}
+                  </a>
+                ) : (
+                  <span class="vi26-rsvp is-soon">{COPY.seats_soon}</span>
+                )}
+                <p class="vi26-rsvp-note mono">{COPY.free_note}</p>
               </div>
             </div>
           </li>
