@@ -65,6 +65,21 @@ if (group) {
     }
   });
 }
+// Individual artist bio pages exist mostly in Spanish only. Rather than
+// dropping the visitor on the site home when they switch language, keep the
+// current page for its own language and point the others at the Artists
+// roster of that language (the closest corresponding page).
+const ARTIST_ROSTER: Record<Lang, string> = {
+  es: '/es/artistas/',
+  en: '/en/artists/',
+  ast: '/ast/artistes/',
+};
+if (/\/(artista|artist)-/.test(entry.data.permalink)) {
+  translations[lang] = translations[lang] || entry.data.permalink;
+  (LANGS as Lang[]).forEach((l) => {
+    if (!translations[l]) translations[l] = ARTIST_ROSTER[l];
+  });
+}
 
 const isHome = entry.data.permalink === `/${lang}/adar/` ||
                entry.data.permalink === `/${lang}/adar-festival/` ||

@@ -23,13 +23,19 @@ const baseSchema = z.object({
   translation_group: z.string().optional(),
 });
 
+// Folder-qualified id: the default glob id is the filename only, so two
+// files with the same basename in different language folders (e.g.
+// es/nota-de-prensa-adar-2026.md and ast/nota-de-prensa-adar-2026.md)
+// collide and one silently overwrites the other. Include the subfolder.
+const byPath = ({ entry }: { entry: string }) => entry.replace(/\.md$/, '');
+
 const pages = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/pages', generateId: byPath }),
   schema: baseSchema,
 });
 
 const posts = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),
+  loader: glob({ pattern: '**/*.md', base: './src/content/posts', generateId: byPath }),
   schema: baseSchema,
 });
 

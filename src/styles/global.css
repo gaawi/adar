@@ -4580,8 +4580,20 @@ body.single header.site-header a.cd-cta {
 
 @media (max-width: 980px) {
   .cd-nav { display: none; }
-  .cd-status .cd-status-region,
-  .cd-right .cd-lang { display: none; }
+  .cd-status .cd-status-region { display: none; }
+  /* Language switch stays visible at the top, immediately to the right of
+     the yellow CTA (before the hamburger). */
+  .cd-right { gap: 10px; }
+  .cd-right .cd-lang { display: flex; order: 2; }
+  .cd-right .cd-cta { order: 1; }
+  .cd-right .adar-nav-toggle { order: 3; }
+}
+@media (max-width: 560px) {
+  /* Tighten so logo + yellow CTA + language switch + menu all fit one row. */
+  .cd-right { gap: 6px; }
+  .cd-cta { padding: 8px 11px; font-size: 11px; }
+  .cd-lang { font-size: 10px; }
+  .cd-lang a { padding: 3px 5px; }
 }
 
 /* =============================================================

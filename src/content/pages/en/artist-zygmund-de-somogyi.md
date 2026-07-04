@@ -15,7 +15,7 @@ excerpt: "Resident composer · Composer, interdisciplinary artist and music jour
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_somogyi_bio"
 ---
 
 <article class="qea">
