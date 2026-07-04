@@ -98,7 +98,7 @@ Intérpretes y creadores de la sexta edición del Festival ADAR, del 4 al 16 de 
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/es/artista-colectivo-menhir/">
 <div class="at-artist-img">
-<img src="https://proyector.info/wp-content/uploads/2025/11/menhir-2-300x309.jpg" alt="Colectivo Menhir" loading="lazy">
+<img src="https://laboralcentrodearte.org/wp-content/uploads/2015/09/Menhir-Instalacion-0_72ppp.webp" alt="Colectivo Menhir" loading="lazy">
 </div>
 <h3>Colectivo Menhir</h3>
 </a>

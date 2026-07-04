@@ -10,7 +10,7 @@ original_url: ""
 permalink: "/es/artista-colectivo-menhir/"
 categories: []
 tags: []
-featured_image: "https://proyector.info/wp-content/uploads/2025/11/menhir-2-300x309.jpg"
+featured_image: "https://laboralcentrodearte.org/wp-content/uploads/2015/09/Menhir-Instalacion-0_72ppp.webp"
 excerpt: "Investigación artística y creación site-specific · Colectivo de música e instalación centrado en la relación entre paisaje sonoro y territorio"
 author: "gaawi_rei1q"
 parent_id: 0

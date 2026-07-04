@@ -599,6 +599,123 @@ const ARTISTS = [...EVENTS.flatMap((e) => e.artists), ...EXTRA_CREDITS].filter((
   return true;
 });
 
+// -----------------------------------------------------------------------------
+// i18n for event content (EN / AST). Spanish is the source in EVENTS above;
+// these maps localize the prose, day-of-week, roles and venue/municipality
+// labels. Piece titles stay in their catalogue form across languages.
+// -----------------------------------------------------------------------------
+const EV_I18N: Record<string, Record<string, any>> = {
+  en: {
+  "01": { "title": "Of Dances and Sonatas", "subtitle": "Harpsichord recital · Opening · Hórreos & Paneras Competition", "description": "A journey through some of the dance forms that shaped keyboard music between the 16th and 18th centuries. From the Renaissance variations of Antonio de Cabezón and the celebrated Folías de España—one of the most influential harmonic progressions in history—to the refined English suite of Henry Purcell and the unmistakable idiom of Domenico Scarlatti, dance appears here transformed into a space for invention, virtuosity and expression. The programme culminates in the monumental Chaconne from J. S. Bach's Partita for solo violin in D minor, in Brahms's transcription—a work that raises an old Baroque dance to one of the summits of Western musical literature.", "programName": "Of Dances and Sonatas" },
+  "02": { "title": "The Shape of Memory", "subtitle": "ADAR ON TOUR · Piano trio concert", "description": "The trio of María Martínez, Frederieke Saeijs and Josefina Urraca explores the ideas of remembrance and mourning from the library of the Parador de Corias, a former 11th-century Benedictine monastery. A chamber programme that brings together the Classicism of Haydn, Lili Boulanger's Nocturne, Messiaen's Thème et variations for violin and piano, Rachmaninoff's Trio élégiaque and a recent work by Brittney Benton, in one of the most secluded settings in western Asturias." },
+  "03": { "title": "The Shape of Memory", "subtitle": "Piano trio concert", "description": "A second reading of the programme The Shape of Memory, this time in Llanes. The same trio performs the same works, but the acoustics of the new space rewrite the piece. A way to see how place transforms music: the same repertoire does not sound the same in the light of dusk in a seaside town in the east as it does in the library of a parador in the west." },
+  "04": { "title": "UMBRAL ZERO", "subtitle": "Concert of minimalist music and visual art", "description": "A programme for flute and piano built on minimalism: music that tends toward zero, reducing gesture to a minimum until it brushes against silence—hence the title, \"Umbral Zero\" (Threshold Zero). Guillermo Laporta and Josefina Urraca link the minimalism of Max Richter, Meredith Monk and Hannah Selin with the bare simplicity of Satie and Bach, threaded together by Laporta's own two \"roads.\" The Aula del Oro in Belmonte de Miranda, a former exhibition space of the municipality, hosts an intimate chamber evening with visual projection woven into the programme.", "programName": "Umbral Zero" },
+  "05": { "title": "Site-specific intervention · Menhir collective", "subtitle": "Two days · Site-specific creation", "description": "Menhir is an art and music collective that creates site-specific sound art pieces. For ADAR 2026 they present a geolocated sound walk through Leiguarda: along the route, those who walk it will hear sound elements, musical fragments and words that appear according to their location. It can be done alone or in a group, and will be available at any time over the two days—the route becoming part of the village's intangible landscape.", "programNote": "Two days of intervention through the streets of the village. Different routes each day, original works, arrangements and improvisation." },
+  "06": { "title": "The Rest is Silence", "subtitle": "ADAR ON TOUR · Concert of chamber music and visual art", "description": "A mosaic-programme built on the idea of silence. Fifteen short pieces from the 20th and 21st centuries alternate with Bach canons that act as bridges between the works. Ligeti, Gubaidulina, Kurtág, Webern, Penderecki, Stravinsky and Cage build a sequence deliberately broken by the regularity of Bach. The Florea / Fernández / Claret trio arrives at the As Quintas Auditorium in El Franco with a visual staging and a programme heard in a single sweep, with no applause between pieces.", "programName": "The Rest is Silence" },
+  "07": { "title": "Micro concert at the Centro ADAR", "subtitle": "Piano quintet", "description": "A micro concert at the Centro ADAR in Leiguarda. The quintet formed by Maria Florea, Lara Fernández, Daniel Claret, Guillermo Laporta and Josefina Urraca performs the first movement of Antonín Dvořák's Piano Quintet No. 2 in A major, Op. 81." },
+  "08": { "title": "Concert of chamber music and visual art", "subtitle": "ADAR ON TOUR", "description": "Beneath the vaults of the Cistercian monastery of Villanueva de Oscos, founded in the 12th century, the ensemble performs the first movement of Schubert's String Trio, New Beginnings by the Catalan composer Joan Magrané, and two movements of Dvořák's Quintet, Op. 81. Classical and contemporary repertoire read within a 12th-century nave." },
+  "09": { "title": "Equilibrium", "subtitle": "Residency showcase · The Rest is Silence", "description": "\"Equilibrium\" takes 3 as the number of balance—spirit, soul and body: three musicians and three composers in harmony. Coinciding with the centenary of György Kurtág, the trio The Rest is Silence performs his complete Signs, Games and Messages for string trio in dialogue with a selection from Bach's Goldberg Variations, adding Francesc Prat's Kurtág-inspired Die stille summt. Throughout the concert, the poetry of Joan Margarit also resounds—a poet with whom the group shares a personal bond.", "programName": "Equilibrium" },
+  "10": { "title": "Sound walk in Leiguarda", "subtitle": "Site-specific creation", "description": "A sound walk through the valley with stops at different stations along the route. The quintet Hoffman / Brazauskas / Saeijs / Laporta / Urraca performs original works, arrangements and improvisation along the way, weaving the landscape into the score. Capacity is limited for mobility reasons: the group walks alongside the audience from station to station. Comfortable footwear recommended.", "programNote": "Site-specific creation with original works, arrangements and improvisation throughout the valley of Leiguarda." },
+  "11": { "title": "Closing · Quintet concert and espicha", "subtitle": "Close of the 6th edition", "description": "The close of the 6th edition. The same quintet that gave the sound walk the previous day reunites in the parish church of Leiguarda for a concentrated programme: Ravel (Ma mère l'Oye), Ligeti (Musica Ricercata), Beethoven (Duo for clarinet and cello) and Stravinsky (Three Pieces for solo clarinet). After the concert, an open espicha (traditional Asturian cider gathering) for everyone in the church grounds. The long night that sends off the festival." }
+},
+  ast: {
+  "01": { "title": "De danzas y sonates", "subtitle": "Recital de clave · Inauguración · Concursu d'Hórreos y Paneres", "description": "Un recorríu por delles de les formes de danza que vertebraron la música pa teclau ente los sieglos XVI y XVIII. Dende les variaciones renacentistes d'Antonio de Cabezón y les célebres Folíes d'España —una de les progresiones armóniques más influyentes de la hestoria— hasta la refinada suite inglesa de Henry Purcell y el inconfundible llinguaxe de Domenico Scarlatti, la danza apaez tresformada nun espaciu d'invención, virtuosismu y espresión. El recorríu remata cola monumental Chacona de la Partita pa violín en re menor de J. S. Bach, na trescripción fecha por Brahms, una obra qu'alza una antigua danza barroca a una de les cumes de la lliteratura musical occidental.", "programName": "De danzas y sonates" },
+  "02": { "title": "La forma de la memoria", "subtitle": "ADAR EN RUTA · Conciertu de tríu con pianu", "description": "El tríu de María Martínez, Frederieke Saeijs y Josefina Urraca traviesa la idea del recuerdu y el duelu dende la biblioteca del Parador de Corias, antiguu monasteriu benedictín del sieglu XI. Un programa de cámara qu'axunta'l clasicismu de Haydn, el Nocturne de Lili Boulanger, el Thème et variations de Messiaen pa violín y pianu, el Trío élégiaque de Rajmáninov y una obra reciente de Brittney Benton, nun de los entornos más recoyíos del occidente asturianu." },
+  "03": { "title": "La forma de la memoria", "subtitle": "Conciertu de tríu con pianu", "description": "Segunda llectura del programa La forma de la memoria, agora en Llanes. El mesmu tríu interpreta les mesmes obres, pero l'acústica del nuevu espaciu reescribe la pieza. Una manera de comprobar cómo'l llugar tresforma la música: el mesmu repertoriu nun suena igual a la lluz del atapecer nuna villa marinera del oriente qu'na biblioteca d'un parador del occidente." },
+  "04": { "title": "UMBRAL ZERO", "subtitle": "Conciertu de música minimalista y arte visual", "description": "Programa de flauta y pianu construyíu sobre'l minimalismu: una música que tiende a cero, que reduz el xestu al mínimu hasta rozar el silenciu —d'ehí'l títulu, «Umbral Zero»—. Guillermo Laporta y Josefina Urraca enllacen el minimalismu de Max Richter, Meredith Monk y Hannah Selin cola desnudez de Satie y de Bach, filaos poles dos «roads» del propiu Laporta. L'Aula del Oru de Belmonte de Miranda, antiguu espaciu espositivu del conceyu, acueye una nueche íntima de cámara con proyección visual integrada nel programa.", "programName": "Umbral Zero" },
+  "05": { "title": "Intervención site-specific · Coleutivu Menhir", "subtitle": "Dos xornaes · Creación site-specific", "description": "Menhir ye un coleutivu d'arte y música que crea pieces d'arte sonoru site-specific. Pa ADAR 2026 firmen un recorríu sonoru xeollocalizáu por Lleiguarda: a lo llargo del trayeutu, quien lu camine escuchará elementos sonoros, fragmentos musicales y pallabres que van apaeciendo según l'allugamientu. Pue facese en solitariu o en grupu, y va tar disponible en cualquier momentu demientres les dos xornaes — la ruta pasa a formar parte del paisaxe inmaterial del pueblu.", "programNote": "Dos díes d'intervención poles calles del pueblu. Recorríos distintos cada xornada, obres orixinales, iguadures ya improvisación." },
+  "06": { "title": "The Rest is Silence", "subtitle": "ADAR EN RUTA · Conciertu de música de cámara y arte visual", "description": "Programa-mosaicu construyíu sobre la idea del silenciu. Quince pieces breves del sieglu XX y XXI alternaes con cánones de Bach que furrulen como fugues ente los temes. Ligeti, Gubaidúlina, Kurtág, Webern, Penderecki, Stravinsky y Cage construyen una secuencia rota deliberadamente pola regularidá de Bach. El tríu Florea / Fernández / Claret aterriza nel Auditoriu As Quintas d'El Franco con escenografía visual y un programa que s'escucha d'un tirón, ensin aplausos ente pieces.", "programName": "The Rest is Silence" },
+  "07": { "title": "Micro conciertu nel Centru ADAR", "subtitle": "Quintetu con pianu", "description": "Micro conciertu nel Centru ADAR de Lleiguarda. El quintetu formáu por Maria Florea, Lara Fernández, Daniel Claret, Guillermo Laporta y Josefina Urraca interpreta'l primer movimientu del Quintetu pa pianu n.º 2 en la mayor, op. 81, d'Antonín Dvořák." },
+  "08": { "title": "Conciertu de música de cámara y arte visual", "subtitle": "ADAR EN RUTA", "description": "So les bóvedes del monasteriu cisterciense de Villanueva de Uscos, fundáu nel sieglu XII, el conxuntu interpreta'l primer movimientu del Tríu de cuerdes de Schubert, New Beginnings del compositor catalán Joan Magrané y dos movimientos del Quintetu op. 81 de Dvořák. Repertoriu clásicu y contemporáneu lleíu nuna nave del sieglu XII." },
+  "09": { "title": "Equilibrium", "subtitle": "Muestra de residencia · The Rest is Silence", "description": "«Equilibrium» parte del 3 como númberu del equilibriu —espíritu, alma y cuerpu—: trés músicos y trés compositores n'armonía. Coincidiendo col centenariu de György Kurtág, el tríu The Rest is Silence interpreta la so obra completa Signs, Games and Messages pa tríu de cuerda en diálogu con una seleición de les Variaciones Goldberg de Bach, y suma Die stille summt de Francesc Prat, d'inspiración kurtagiana. A lo llargo del conciertu resuena amás la poesía de Joan Margarit, con quien el grupu comparte un vencelu personal.", "programName": "Equilibrium" },
+  "10": { "title": "Paséu sonoru en Lleiguarda", "subtitle": "Creación site-specific", "description": "Caminata sonora pel valle con paraes en distintes estaciones del recorríu. El quintetu Hoffman / Brazauskas / Saeijs / Laporta / Urraca interpreta obres orixinales, iguadures ya improvisación a lo llargo del trayeutu, integrando'l paisaxe na partitura. Aforu llimitáu por motivos de movilidá: el grupu camina xunto al públicu ente estación y estación. Encaláu cómodu recomendáu.", "programNote": "Creación site-specific con obres orixinales, iguadures ya improvisación a lo llargo del valle de Lleiguarda." },
+  "11": { "title": "Zarru · Conciertu de quintetu y espicha", "subtitle": "Zarru de la VI edición", "description": "Zarru de la VI edición. El mesmu quintetu que firmó'l paséu sonoru del día anterior s'axunta de nuevu na ilesia parroquial de Lleiguarda pa un programa concentráu: Ravel (Ma mère l'Oye), Ligeti (Musica Ricercata), Beethoven (Dúu pa clarinete y violonchelu) y Stravinsky (Trés pieces pa clarinete solu). Tres del conciertu, espicha abierta pa tol públicu nel campu de la ilesia. La nueche llarga que despide'l festival." }
+},
+};
+const DOW_I18N: Record<string, Record<string, string>> = {
+  en:  { 'Martes':'Tuesday','Miércoles':'Wednesday','Jueves':'Thursday','Viernes':'Friday','Sábado':'Saturday','Domingo':'Sunday','Sábado–Domingo':'Saturday–Sunday' },
+  ast: { 'Martes':'Martes','Miércoles':'Miércoles','Jueves':'Xueves','Viernes':'Vienres','Sábado':'Sábadu','Domingo':'Domingu','Sábado–Domingo':'Sábadu–Domingu' },
+};
+const ROLE_I18N: Record<string, Record<string, string>> = {
+  en: {
+    'clave':'harpsichord','violín':'violin','viola':'viola','violonchelo':'cello','flauta':'flute','piano':'piano','clarinete':'clarinet','poesía':'poetry',
+    'voz, electrónica y creación sonora':'voice, electronics & sound creation',
+    'guitarra, electrónica y creación sonora':'guitar, electronics & sound creation',
+    'investigación artística y creación site-specific':'artistic research & site-specific creation',
+    'Compositor residente':'Resident composer','Cinematógrafo':'Cinematographer',
+  },
+  ast: {
+    'clave':'clave','violín':'violín','viola':'viola','violonchelo':'violonchelu','flauta':'flauta','piano':'pianu','clarinete':'clarinete','poesía':'poesía',
+    'voz, electrónica y creación sonora':'voz, electrónica y creación sonora',
+    'guitarra, electrónica y creación sonora':'guitarra, electrónica y creación sonora',
+    'investigación artística y creación site-specific':'investigación artística y creación site-specific',
+    'Compositor residente':'Compositor residente','Cinematógrafo':'Cinematógrafu',
+  },
+};
+const VENUE_I18N: Record<string, Record<string, string>> = {
+  en: {
+    'Hórreo ganador del concurso 2026':'Winning hórreo of the 2026 competition',
+    'Biblioteca del Parador de Corias':'Library of the Parador de Corias',
+    'Monasterio de San Antolín de Bedón':'Monastery of San Antolín de Bedón',
+    'Calles de Leiguarda':'Streets of Leiguarda',
+    'Auditorio de El Franco':'As Quintas Auditorium',
+    'Centro ADAR · Leiguarda':'Centro ADAR · Leiguarda',
+    'Monasterio de Villanueva de Oscos':'Monastery of Villanueva de Oscos',
+    'Segundo hórreo ganador del Concurso 2026':'Second winning hórreo of the 2026 competition',
+    'Iglesia de Leiguarda':'Church of Leiguarda',
+  },
+  ast: {
+    'Hórreo ganador del concurso 2026':'Hórreu ganador del concursu 2026',
+    'Biblioteca del Parador de Corias':'Biblioteca del Parador de Corias',
+    'Monasterio de San Antolín de Bedón':'Monasteriu de San Antolín de Bedón',
+    'Aula del Oro':'Aula del Oru',
+    'Calles de Leiguarda':'Caleyes de Lleiguarda',
+    'Auditorio de El Franco':'Auditoriu As Quintas',
+    'Centro ADAR · Leiguarda':'Centru ADAR · Lleiguarda',
+    'Monasterio de Villanueva de Oscos':'Monasteriu de Villanueva de Uscos',
+    'Segundo hórreo ganador del Concurso 2026':'Segundu hórreu ganador del Concursu 2026',
+    'Iglesia de Leiguarda':'Ilesia de Lleiguarda',
+  },
+};
+const MUNI_I18N: Record<string, Record<string, string>> = {
+  en: {
+    'Hórreo ganador del concurso':'Winning hórreo of the competition',
+    'Monasterio de San Antolín de Bedón (Llanes)':'Monastery of San Antolín de Bedón (Llanes)',
+    'Auditorio As Quintas, A Caridá (El Franco)':'As Quintas Auditorium, A Caridá (El Franco)',
+    'Monasterio de Villanueva de Oscos':'Monastery of Villanueva de Oscos',
+    'Calles de Leiguarda (Belmonte de Miranda)':'Streets of Leiguarda (Belmonte de Miranda)',
+    'Iglesia de Leiguarda (Belmonte de Miranda)':'Church of Leiguarda (Belmonte de Miranda)',
+  },
+  ast: {
+    'Hórreo ganador del concurso':'Hórreu ganador del concursu',
+    'Monasterio de San Antolín de Bedón (Llanes)':'Monasteriu de San Antolín de Bedón (Llanes)',
+    'Aula del Oro (Belmonte de Miranda)':'Aula del Oru (Belmonte de Miranda)',
+    'Centro ADAR, Leiguarda (Belmonte de Miranda)':'Centru ADAR, Lleiguarda (Belmonte de Miranda)',
+    'Auditorio As Quintas, A Caridá (El Franco)':'Auditoriu As Quintas, A Caridá (El Franco)',
+    'Monasterio de Villanueva de Oscos':'Monasteriu de Villanueva de Uscos',
+    'Calles de Leiguarda (Belmonte de Miranda)':'Caleyes de Lleiguarda (Belmonte de Miranda)',
+    'Iglesia de Leiguarda (Belmonte de Miranda)':'Ilesia de Lleiguarda (Belmonte de Miranda)',
+  },
+};
+const ADDR_I18N: Record<string, Record<string, string>> = {
+  en:  { 'Sede por anunciar':'Venue to be announced' },
+  ast: { 'Sede por anunciar':'Sede por anunciar' },
+};
+function tDict(map: Record<string, Record<string, string>>, val: string): string {
+  if (lang === 'es' || !val) return val;
+  return (map[lang] && map[lang][val]) || val;
+}
+function tEv(e: Event, field: string): any {
+  if (lang === 'es') return (e as any)[field];
+  const o = EV_I18N[lang] && EV_I18N[lang][e.n];
+  return (o && o[field] != null) ? o[field] : (e as any)[field];
+}
+const LBL = ({
+  es:  { when: 'Cuándo', where: 'Dónde', map: 'Ver mapa' },
+  en:  { when: 'When',   where: 'Where', map: 'View map' },
+  ast: { when: 'Cuándo', where: 'Ónde',  map: 'Ver mapa' },
+} as Record<string, { when: string; where: string; map: string }>)[lang];
+
 const MAP_HREFS: Record<Lang, string> = {
   es: '/es/mapa-de-acciones/',
   en: '/en/map-of-actions/',
@@ -663,7 +780,12 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
 
     <ol class="vi26-event-list">
       {EVENTS.filter((e) => !e.rest).map((e) => {
-        const kind = e.subtitle ? e.subtitle.split('·')[0].trim() : '';
+        const title = tEv(e, 'title');
+        const subtitle = tEv(e, 'subtitle');
+        const description = tEv(e, 'description');
+        const programName = tEv(e, 'programName');
+        const programNote = tEv(e, 'programNote');
+        const kind = subtitle ? subtitle.split('·')[0].trim() : '';
         const isLongProgram = e.pieces.length > 8;
         return (
           <li class="vi26-event" id={`event-${e.n}`}>
@@ -678,15 +800,15 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
             )}
 
             <div class="vi26-content">
-              <p class="vi26-event-muni">{e.municipality}</p>
-              <h3 class="vi26-event-title">{e.title}</h3>
-              {e.subtitle && <p class="vi26-event-sub mono">↳ {e.subtitle}</p>}
+              <p class="vi26-event-muni">{tDict(MUNI_I18N, e.municipality)}</p>
+              <h3 class="vi26-event-title">{title}</h3>
+              {subtitle && <p class="vi26-event-sub mono">↳ {subtitle}</p>}
 
-              {e.description && <p class="vi26-event-desc">{e.description}</p>}
+              {description && <p class="vi26-event-desc">{description}</p>}
 
               {e.pieces.length > 0 ? (
                 <div class="vi26-program-wrap">
-                  <p class="vi26-block-label mono">{COPY.program_h}{e.programName ? ` · ${e.programName}` : ''}</p>
+                  <p class="vi26-block-label mono">{COPY.program_h}{programName ? ` · ${programName}` : ''}</p>
                   <ol class={`vi26-program ${isLongProgram ? 'is-multi' : ''}`}>
                     {e.pieces.map((p) => (
                       <li>
@@ -698,10 +820,10 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
                   </ol>
                   {e.totalDuration && <p class="vi26-program-total mono">{COPY.duration_total} · {e.totalDuration}</p>}
                 </div>
-              ) : e.programNote ? (
+              ) : programNote ? (
                 <div class="vi26-program-wrap">
                   <p class="vi26-block-label mono">{COPY.program_h}</p>
-                  <p class="vi26-program-note">{e.programNote}</p>
+                  <p class="vi26-program-note">{programNote}</p>
                 </div>
               ) : null}
 
@@ -711,7 +833,7 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
                   {e.artists.map((a) => (
                     <li>
                       <span class="vi26-artist-l-name">{a.name}</span>
-                      <span class="vi26-artist-l-role mono"> · {a.role}</span>
+                      <span class="vi26-artist-l-role mono"> · {tDict(ROLE_I18N, a.role)}</span>
                     </li>
                   ))}
                 </ul>
@@ -723,20 +845,20 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
 
               <!-- CUÁNDO -->
               <div class="vi26-aside-when">
-                <span class="vi26-aside-when-label mono">Cuándo</span>
-                <span class="vi26-aside-when-dow">{e.dow}</span>
+                <span class="vi26-aside-when-label mono">{LBL.when}</span>
+                <span class="vi26-aside-when-dow">{tDict(DOW_I18N, e.dow)}</span>
                 <span class="vi26-aside-when-date">{e.fullDate}</span>
                 {e.time && <span class="vi26-aside-when-time mono">{e.time}h</span>}
               </div>
 
               <!-- DÓNDE -->
               <div class="vi26-aside-where">
-                <span class="vi26-aside-where-label mono">Dónde</span>
-                <span class="vi26-aside-where-venue">{e.venue}</span>
-                {e.address && <span class="vi26-aside-where-addr mono">{e.address}</span>}
+                <span class="vi26-aside-where-label mono">{LBL.where}</span>
+                <span class="vi26-aside-where-venue">{tDict(VENUE_I18N, e.venue)}</span>
+                {e.address && <span class="vi26-aside-where-addr mono">{tDict(ADDR_I18N, e.address)}</span>}
                 {e.mapUrl && (
                   <a class="vi26-aside-where-map mono" href={e.mapUrl} target="_blank" rel="noopener">
-                    Ver mapa <span aria-hidden="true">↗</span>
+                    {LBL.map} <span aria-hidden="true">↗</span>
                   </a>
                 )}
               </div>
@@ -781,7 +903,7 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
       {ARTISTS.map((a) => (
         <li class="vi26-cartel-row">
           <span class="vi26-cartel-name">{a.name}</span>
-          <span class="vi26-cartel-role mono">{a.role}</span>
+          <span class="vi26-cartel-role mono">{tDict(ROLE_I18N, a.role)}</span>
         </li>
       ))}
     </ul>
@@ -811,7 +933,7 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
           {EVENTS.map((e) => e.rest ? (
             <tr class="is-tbc is-rest">
               <td class="mono vi26-td-n">—</td>
-              <td class="mono"><span class="vi26-dow">{e.dow}</span> {e.fullDate}</td>
+              <td class="mono"><span class="vi26-dow">{tDict(DOW_I18N, e.dow)}</span> {e.fullDate}</td>
               <td class="mono vi26-td-kind">{COPY.rest}</td>
               <td class="vi26-td-venue">—</td>
               <td class="mono">—</td>
@@ -820,9 +942,9 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
           ) : (
             <tr class={e.tbc ? 'is-tbc' : ''}>
               <td class="mono vi26-td-n">{e.n}</td>
-              <td class="mono"><span class="vi26-dow">{e.dow}</span> {e.fullDate}</td>
-              <td class="mono vi26-td-kind">{e.subtitle?.split('·')[0]?.trim() || e.title}</td>
-              <td class="vi26-td-venue">{e.venue}{e.municipality ? <span class="mono vi26-td-muni"> · {e.municipality}</span> : null}</td>
+              <td class="mono"><span class="vi26-dow">{tDict(DOW_I18N, e.dow)}</span> {e.fullDate}</td>
+              <td class="mono vi26-td-kind">{(tEv(e, 'subtitle') as string)?.split('·')[0]?.trim() || tEv(e, 'title')}</td>
+              <td class="vi26-td-venue">{tDict(VENUE_I18N, e.venue)}{e.municipality ? <span class="mono vi26-td-muni"> · {tDict(MUNI_I18N, e.municipality)}</span> : null}</td>
               <td class="mono">{e.artists.map((a) => a.name.split(' ')[0]).join(' · ')}</td>
               <td>
                 {e.eventbrite ? (
