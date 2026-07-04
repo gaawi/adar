@@ -36,31 +36,31 @@ The Monastery of San Antolín de Bedón, a 13th-century Romanesque building now 
 
 <div class="adar-archive-body">
 <p>
-The audience sat in a circular format, surrounding the interior of the monastery and creating an intimate, shared atmosphere in which music flowed from the centre to every corner. El programa combinó elegancia barroca, impresionismo francés y creación contemporánea, con una narrativa pensada para resonar con el lugar y su silencio.
+The audience sat in a circular format, surrounding the interior of the monastery and creating an intimate, shared atmosphere in which music flowed from the centre to every corner. The programme combined Baroque elegance, French impressionism, and contemporary creation, with a narrative designed to resonate with the place and its silence.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>
 
 <p style="margin-top:18px">
-<strong>Claude Debussy</strong> - Arabesque n.º 1 para piano solo (1888) 5’<br>
+<strong>Claude Debussy</strong> - Arabesque No. 1 for solo piano (1888) 5’<br>
 <strong>Guillermo Laporta</strong> - Brown Leaves Moving (2020) 6’<br>
 <strong>François Couperin</strong> - Les Barricades Mystérieuses (1717) 3’<br>
 </p>
 
 <p style="margin-top:18px">
-<strong>Claude Debussy</strong> - Sonata para flauta, viola y arpa (1915) 17’<br>
+<strong>Claude Debussy</strong> - Sonata for flute, viola and harp (1915) 17’<br>
 • Pastorale. Lento, dolce rubato<br>
 • Interlude. Tempo di minuetto<br>
 • Final. Allegro moderato ma risoluto
 </p>
 
 <p style="margin-top:18px">
-<strong>Georg Philipp Telemann</strong> - Cuartetos para flauta (selección) (ca. 1730) 10’<br>
+<strong>Georg Philipp Telemann</strong> - Flute Quartets (selection) (ca. 1730) 10’<br>
 <strong>Arvo Pärt</strong> - Spiegel im Spiegel (1978) 9’<br>
 </p>
 
 <p style="margin-top:18px">
-<strong>Claude Debussy</strong> - Sonata para violín y piano (1917) 12’<br>
+<strong>Claude Debussy</strong> - Sonata for violin and piano (1917) 12’<br>
 • Allegro vivo<br>
 • Intermède: Fantasque et léger<br>
 • Finale: Très animé

@@ -54,7 +54,7 @@ the colour of Debussy, the intimacy of Strauss, and the drama of Vivaldi.
 <p><strong>Andrea Casarrubios</strong> - Mensajes de Agua</p>
 
 <p>
-<strong>W. A. Mozart</strong> - Cuarteto para piano en mi bemol mayor, K.493<br>
+<strong>W. A. Mozart</strong> - Quartet for Piano in E-flat major, K.493<br>
 • Larghetto<br>
 • Allegro
 </p>
@@ -65,7 +65,7 @@ the colour of Debussy, the intimacy of Strauss, and the drama of Vivaldi.
 
 <p><strong>Richard Strauss</strong> - Morgen!</p>
 
-<p><strong>Jessie Montgomery</strong> - Duo para violín y violonchelo</p>
+<p><strong>Jessie Montgomery</strong> - Duo for Violin and Cello</p>
 
 <p><strong>Antonio Vivaldi</strong> - "La Notte"</p>
 </div>

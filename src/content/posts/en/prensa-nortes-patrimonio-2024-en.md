@@ -18,31 +18,31 @@ translation_group: "press-prensa-nortes-patrimonio-2024"
 
 <header class="press-masthead">
   <span class="press-masthead-name">Nortes</span>
-  <span class="press-masthead-date">Centradas en la periferia · 11 ago 2024</span>
+  <span class="press-masthead-date">Focused on the periphery · 11 Aug 2024</span>
 </header>
 
-<p class="press-kicker">IV edición · Patrimonio asturiano</p>
+<p class="press-kicker">4th edition · Asturian heritage</p>
 
-<h1 class="press-clipping-title">ADAR: Un festival para disfrutar del patrimonio asturiano</h1>
+<h1 class="press-clipping-title">ADAR: A festival to enjoy Asturian heritage</h1>
 
 <p class="press-lede">
-La cuarta edición del Festival ADAR, del 8 al 18 de agosto, fusiona el patrimonio rural y cultural asturiano con las expresiones artísticas contemporáneas. El concierto de apertura tiene lugar el lunes 12 a las 19:30 en el Monasterio de San Antolín de Bedón.
+The fourth edition of the Festival ADAR, from 8 to 18 August, blends Asturias's rural and cultural heritage with contemporary artistic expression. The opening concert takes place on Monday the 12th at 19:30 at the Monasterio de San Antolín de Bedón.
 </p>
 
-<p class="press-byline">Redacción Nortes</p>
+<p class="press-byline">Nortes editorial team</p>
 
 <p>
-La nómina de intérpretes internacionales incluye a Jone de la Fuente (violín), Almudena Rivas (viola), Natania Hoffman (cello), Mario Molina (piano), Guillermo Laporta (flauta) y Josefina Urraca (piano). El repertorio recorre obras de Mozart, Debussy, Vivaldi y compositoras contemporáneas como Andrea Casarrubios.
-</p>
-
-<p>
-Organizado por la Asociación para el Desarrollo de las Artes en el Medio Rural, el festival opera mediante dos formatos: una <strong>residencia artística</strong> en Leiguarda (Belmonte de Miranda) y <strong>“ADAR en Ruta”</strong>, que lleva la música clásica y contemporánea —y arte visual— a varios concejos.
+The line-up of international performers includes Jone de la Fuente (violin), Almudena Rivas (viola), Natania Hoffman (cello), Mario Molina (piano), Guillermo Laporta (flute) and Josefina Urraca (piano). The repertoire runs through works by Mozart, Debussy, Vivaldi and contemporary composers such as Andrea Casarrubios.
 </p>
 
 <p>
-Entre las sedes figuran el Monasterio de Cornellana, el Palacio Miranda-Valdecarzana y el Monasterio de San Antolín de Bedón. La programación incluye también paseos sonoros y conciertos en hórreos. Todas las actividades son de entrada libre hasta completar aforo.
+Organised by the Asociación para el Desarrollo de las Artes en el Medio Rural, the festival operates through two formats: an <strong>artistic residency</strong> in Leiguarda (Belmonte de Miranda) and <strong>“ADAR en Ruta”</strong>, which brings classical and contemporary music —and visual art— to several municipalities.
+</p>
+
+<p>
+The venues include the Monasterio de Cornellana, the Palacio Miranda-Valdecarzana and the Monasterio de San Antolín de Bedón. The programme also includes sound walks and concerts in hórreos. All activities are free admission until capacity is reached.
 </p>
 
 <p class="press-source">
-Texto original publicado en <a href="https://www.nortes.me/2024/08/11/adar-un-festival-para-disfrutar-del-patrimonio-asturiano/" target="_blank" rel="noopener">Nortes</a>.
+Original text published in <a href="https://www.nortes.me/2024/08/11/adar-un-festival-para-disfrutar-del-patrimonio-asturiano/" target="_blank" rel="noopener">Nortes</a>.
 </p>

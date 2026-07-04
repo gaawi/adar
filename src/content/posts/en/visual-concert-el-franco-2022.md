@@ -27,7 +27,7 @@ translation_group: "pll_69b0256398606"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/08_Concierto_visual_en_El_Franco/PXL_20220808_201603027~2.jpg" alt="Visual concert - El Franco - ADAR 2022" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Visual concert en El Franco</h1>
+<h1 class="adar-archive-title">Visual concert in El Franco</h1>
 <p class="adar-archive-lede">
 The As Quintas Cultural Centre in El Franco hosted the opening concert of the second edition of the ADAR Festival. An evening that marked a significant step forward in the festival's artistic vision, with six concerts programmed and a visual dimension that transformed the auditorium into an immersive stage.
 </p>
@@ -46,11 +46,11 @@ The programme brought together works spanning from Mozart's classicism to the co
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
-<strong>Johannes Brahms</strong> – Quinteto para clarinete y cuerdas en si menor, op. 115<br>
-<strong>Antonín Dvořák</strong> – Cuarteto americano en Fa Mayor, op. 96<br>
+<strong>Johannes Brahms</strong> – Clarinet Quintet in B minor, op. 115<br>
+<strong>Antonín Dvořák</strong> – American Quartet in F major, op. 96<br>
 <strong>Caroline Shaw</strong> – Blueprint<br>
-<strong>Wolfgang Amadeus Mozart</strong> – Quinteto para clarinete y cuerdas en La Mayor, KV 581<br>
-<strong>JP Jofre</strong> – Como el Agua y Primavera
+<strong>Wolfgang Amadeus Mozart</strong> – Clarinet Quintet in A major, KV 581<br>
+<strong>JP Jofre</strong> – Como el Agua and Primavera
 </p>
 </div>
 

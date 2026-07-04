@@ -46,11 +46,11 @@ That was the first time the ADAR Festival visited this palace, a space that woul
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
-<strong>Johannes Brahms</strong> – Quinteto para clarinete y cuerdas en si menor, op. 115<br>
-<strong>Antonín Dvořák</strong> – Cuarteto americano en Fa Mayor, op. 96<br>
+<strong>Johannes Brahms</strong> – Quintet for Clarinet and Strings in B minor, Op. 115<br>
+<strong>Antonín Dvořák</strong> – American Quartet in F major, Op. 96<br>
 <strong>Caroline Shaw</strong> – Blueprint<br>
-<strong>Wolfgang Amadeus Mozart</strong> – Quinteto para clarinete y cuerdas en La Mayor, KV 581<br>
-<strong>JP Jofre</strong> – Como el Agua y Primavera
+<strong>Wolfgang Amadeus Mozart</strong> – Quintet for Clarinet and Strings in A major, KV 581<br>
+<strong>JP Jofre</strong> – Como el Agua and Primavera
 </p>
 </div>
 

@@ -18,35 +18,35 @@ translation_group: "press-prensa-lavoztrubia-presentacion-2021"
 
 <header class="press-masthead">
   <span class="press-masthead-name">La Voz del Trubia</span>
-  <span class="press-masthead-date">Diario comarcal · 05 ago 2021</span>
+  <span class="press-masthead-date">Regional daily · 05 Aug 2021</span>
 </header>
 
-<p class="press-kicker">Belmonte de Miranda · Presentación</p>
+<p class="press-kicker">Belmonte de Miranda · Launch event</p>
 
-<h1 class="press-clipping-title">El festival de Música Clásica de Leiguarda agota entradas el día de su presentación</h1>
+<h1 class="press-clipping-title">The Leiguarda Classical Music festival sells out on the day of its launch</h1>
 
 <p class="press-lede">
-El centro sociocultural de Belmonte acogió ayer la presentación de la Asociación para el Desarrollo de las Artes en el Medio Rural, impulsada por los músicos Josefina Urraca y Guillermo Laporta.
+Belmonte’s socio-cultural centre yesterday hosted the launch of the Association for the Development of the Arts in Rural Areas, driven by the musicians Josefina Urraca and Guillermo Laporta.
 </p>
 
-<p class="press-byline">Redacción / Grado</p>
+<p class="press-byline">Editorial staff / Grado</p>
 
 <p>
-Todo agotado el día de la presentación. La acogida que ha tenido el I Festival de Música Clásica de Leiguarda, que se presentó ayer en el centro sociocultural de Belmonte, es buena prueba de la necesidad de impulsar iniciativas culturales en los pueblos. Precisamente con este fin nace la Asociación para el Desarrollo de las Artes en el Medio Rural, una iniciativa de los artistas Guillermo Laporta, flautista, y Josefina Urraca, pianista, que en 2020 se afincaron en la localidad belmontina, donde con el apoyo del Ayuntamiento y de Caja Rural han lanzado este primer festival, que cuenta con músicos de peso internacional y que profundiza en la música clásica y en las nuevas músicas.
-</p>
-
-<p>
-El programa del “I Festival de Música de Leiguarda” incluye miembros de la agrupación CreArtBox de Nueva York, así como solistas internacionales, españoles y americanos. Entre ellos, la violonchelista Beatriz Blanco, el barítono americano Nathaniel Sullivan, la pianista Josefina Urraca, el flautista Guillermo Laporta y el compositor Marcos Fernández.
+Sold out on the day of its launch. The reception given to the 1st Leiguarda Classical Music Festival, presented yesterday at Belmonte’s socio-cultural centre, is clear proof of the need to promote cultural initiatives in the villages. It is precisely with this aim that the Association for the Development of the Arts in Rural Areas is born, an initiative of the artists Guillermo Laporta, flautist, and Josefina Urraca, pianist, who in 2020 settled in the Belmonte town, where, with the support of the Town Council and Caja Rural, they have launched this first festival, which features musicians of international standing and delves into classical music and new music.
 </p>
 
 <p>
-El evento fusiona música clásica y nueva música presentando compositores como J. S. Bach, Joseph Haydn, Félix Mendelssohn, Leonard Bernstein, John Harbison, Marcos Fernández y Manuel de Falla. Será el 14 de agosto, en el campo de la iglesia de Leiguarda, y la entrada es gratuita, con un aforo de cien personas. Aunque ya se han agotado las reservas, se recomienda a los interesados pedir reserva, por si falla alguien, escribiendo a la oficina.
+The programme of the “1st Leiguarda Music Festival” includes members of the CreArtBox ensemble from New York, as well as international soloists, both Spanish and American. Among them, the cellist Beatriz Blanco, the American baritone Nathaniel Sullivan, the pianist Josefina Urraca, the flautist Guillermo Laporta and the composer Marcos Fernández.
 </p>
 
 <p>
-La presentación contó con la presencia de la alcaldesa, Rosa Rodríguez, y de Laude Martínez, presentador de “Romandela”, de TPA, además de los dos músicos impulsores de la asociación.
+The event blends classical music and new music, presenting composers such as J. S. Bach, Joseph Haydn, Félix Mendelssohn, Leonard Bernstein, John Harbison, Marcos Fernández and Manuel de Falla. It will take place on 14 August, on the grounds of the Leiguarda church, and admission is free, with a capacity of one hundred people. Although reservations are already sold out, those interested are advised to request a booking, in case someone drops out, by writing to the office.
+</p>
+
+<p>
+The launch was attended by the mayor, Rosa Rodríguez, and by Laude Martínez, presenter of “Romandela” on TPA, in addition to the two musicians behind the association.
 </p>
 
 <p class="press-source">
-Texto original publicado en <a href="https://lavozdeltrubia.es/" target="_blank" rel="noopener">La Voz del Trubia</a>.
+Original text published in <a href="https://lavozdeltrubia.es/" target="_blank" rel="noopener">La Voz del Trubia</a>.
 </p>

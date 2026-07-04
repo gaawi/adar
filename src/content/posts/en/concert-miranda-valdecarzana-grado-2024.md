@@ -47,7 +47,7 @@ The evening in Grado was especially intense: alongside the main concert at the p
 
 <p>
 <strong>Andrea Casarrubios</strong> – Mensajes del Agua<br>
-<strong>Wolfgang Amadeus Mozart</strong> – Cuarteto para piano y cuerdas en Re Mayor, K. 136<br>
+<strong>Wolfgang Amadeus Mozart</strong> – Quartet for piano and strings in D major, K. 136<br>
 <strong>Claude Debussy</strong> – Petite Suite, L65<br>
 <strong>Jessie Montgomery</strong> – Duo<br>
 <strong>Richard Strauss</strong> – Morgen<br>

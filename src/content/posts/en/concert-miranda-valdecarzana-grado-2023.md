@@ -36,20 +36,20 @@ Grado consolidated its position as an important venue for the ADAR Festival in i
 
 <div class="adar-archive-body">
 <p>
-For the second consecutive year, the Palacio de Miranda-Valdecarzana opened its doors to the ADAR Festival. En esta ocasión, Grado se convirtió en una verdadera sede del festival, concentrando en una misma jornada un paseo sonoro en el Palacio Fontela, un micro concierto en la Capilla de los Dolores y el concierto principal en el palacio. Music flooded the town.
+For the second consecutive year, the Palacio de Miranda-Valdecarzana opened its doors to the ADAR Festival. On this occasion, Grado became a true festival hub, concentrating into a single day a sound walk at the Palacio Fontela, a micro concert in the Capilla de los Dolores, and the main concert at the palace. Music flooded the town.
 </p>
 
 <p>
-El programa de esta edición ofrecía una mirada especialmente atenta a la música española, con obras de Joaquín Turina y Enrique Granados junto a piezas de Nadia Boulanger, Telemann y Arvo Pärt. The stylistic diversity of the repertoire, from baroque to contemporary minimalism, confirmed the festival's commitment to offering programmes that are both rigorous and accessible.
+This edition's programme took a particularly attentive look at Spanish music, with works by Joaquín Turina and Enrique Granados alongside pieces by Nadia Boulanger, Telemann, and Arvo Pärt. The stylistic diversity of the repertoire, from baroque to contemporary minimalism, confirmed the festival's commitment to offering programmes that are both rigorous and accessible.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
 <strong>Nadia Boulanger</strong> – Modéré<br>
-<strong>Georg Philipp Telemann</strong> – Cuarteto en sol menor, TWV 43:G4<br>
-<strong>Joaquín Turina</strong> – Cuarteto para piano y cuerdas en la menor, op. 67<br>
-<strong>Enrique Granados</strong> – Quinteto para piano, flauta y cuerdas en sol menor, op. 49<br>
+<strong>Georg Philipp Telemann</strong> – Quartet in G minor, TWV 43:G4<br>
+<strong>Joaquín Turina</strong> – Quartet for Piano and Strings in A minor, Op. 67<br>
+<strong>Enrique Granados</strong> – Quintet for Piano, Flute and Strings in G minor, Op. 49<br>
 <strong>Arvo Pärt</strong> – Spiegel im Spiegel
 </p>
 </div>

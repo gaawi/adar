@@ -35,7 +35,7 @@ As the second part of the day in El Franco, ADAR musicians presented a programme
 
 <div class="adar-archive-body">
 <p>
-Como segunda parte del día en El Franco, los músicos de ADAR presentaron un programa muy centrado en la música española, rodeados por los tules diseñados por la artista japonesa Mizuko Kaji, where projections floated, making the audience believe the images overlapped with the performers as the tulle fabrics were placed both in front of and behind them.
+As the second part of the day in El Franco, the ADAR musicians presented a programme firmly focused on Spanish music, surrounded by the tulle fabrics designed by Japanese artist Mizuko Kaji, where projections floated, making the audience believe the images overlapped with the performers as the tulle fabrics were placed both in front of and behind them.
 </p>
 
 <div style="position:relative;padding-top:56.25%;"><iframe src="https://player.mediadelivery.net/embed/449741/3d77a5cf-c0ac-487d-98e9-5541b8c65cb8?autoplay=true&loop=true&muted=false&preload=true&responsive=true" loading="lazy" style="border:0;position:absolute;top:0;height:100%;width:100%;" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe></div>
@@ -53,9 +53,9 @@ Josefina Urraca (piano)
 <h3 style="margin-top:28px">Repertoire</h3>
 <p>
 Nadia Boulanger – Modéré<br>
-Telemann – Cuarteto en sol menor, TWV 43G4<br>
-Turina – Cuarteto para piano y cuerdas en la menor, op. 67<br>
-Granados – Quinteto para piano, flauta y cuerdas en sol menor, op. 49<br>
+Telemann – Quartet in G minor, TWV 43:G4<br>
+Turina – Quartet for Piano and Strings in A minor, Op. 67<br>
+Granados – Quintet for Piano, Flute and Strings in G minor, Op. 49<br>
 Arvo Pärt – Spiegel im Spiegel
 </p>
 </div>

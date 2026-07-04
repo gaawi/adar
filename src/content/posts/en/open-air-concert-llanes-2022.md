@@ -27,7 +27,7 @@ translation_group: "pll_69b025640585e"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/11_Concierto_en_Llanes/image59.jpg" alt="Concierto - Llanes - ADAR 2022" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Concierto en Llanes</h1>
+<h1 class="adar-archive-title">Concert in Llanes</h1>
 <p class="adar-archive-lede">
 The Plaza Santa Ana in Llanes welcomed the ADAR Festival musicians as part of the town's festivities. A growing municipality, known for its beauty and vitality, enthusiastically received a classical music proposal in the open air that integrated classical and contemporary repertoire.
 </p>
@@ -46,11 +46,11 @@ The people of Llanes welcomed the classical musicians with warmth and curiosity.
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
-<strong>Johannes Brahms</strong> – Quinteto para clarinete y cuerdas en si menor, op. 115<br>
-<strong>Antonín Dvořák</strong> – Cuarteto americano en Fa Mayor, op. 96<br>
+<strong>Johannes Brahms</strong> – Clarinet Quintet in B minor, Op. 115<br>
+<strong>Antonín Dvořák</strong> – American Quartet in F major, Op. 96<br>
 <strong>Caroline Shaw</strong> – Blueprint<br>
-<strong>Wolfgang Amadeus Mozart</strong> – Quinteto para clarinete y cuerdas en La Mayor, KV 581<br>
-<strong>JP Jofre</strong> – Como el Agua y Primavera
+<strong>Wolfgang Amadeus Mozart</strong> – Clarinet Quintet in A major, KV 581<br>
+<strong>JP Jofre</strong> – Como el Agua and Primavera
 </p>
 </div>
 

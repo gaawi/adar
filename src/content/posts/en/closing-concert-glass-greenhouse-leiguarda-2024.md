@@ -27,7 +27,7 @@ translation_group: "pll_69b025668a0a7"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/image15.jpg" alt="Closing concert - Invernadero de cristal - Leiguarda - ADAR 2024" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Closing concert en el Invernadero de cristal (Leiguarda, 2024)</h1>
+<h1 class="adar-archive-title">Closing Concert in the Glass Greenhouse (Leiguarda, 2024)</h1>
 <p class="adar-archive-lede">
 The fourth edition of the ADAR Festival closed with a concert in a glass greenhouse built expressly for the occasion in Leiguarda. Located on a plot behind the Church, lent by one of the neighbours, the greenhouse allowed the audience to enjoy the mountains as a backdrop without losing their closeness to the musicians.
 </p>
@@ -36,22 +36,22 @@ The fourth edition of the ADAR Festival closed with a concert in a glass greenho
 
 <div class="adar-archive-body">
 <p>
-Building the glass greenhouse took several days of work: la estructura, la base para acomodar a los músicos e instrumentos, y la logística necesaria para crear un espacio escénico eficaz en un entorno rural. The result was a transparent stage that eliminated barriers between performers, audience, and landscape.
+Building the glass greenhouse took several days of work: the structure itself, the base to accommodate the musicians and their instruments, and the logistics needed to create an effective performance space in a rural setting. The result was a transparent stage that eliminated barriers between performers, audience, and landscape.
 </p>
 
 <p>
-El terreno, cedido por uno de los vecinos de Leiguarda, se encuentra detrás de la Iglesia y ofrece una vista privilegiada de las montañas circundantes. Los asistentes podían contemplar el paisaje mientras escuchaban y veían a los músicos a través de la estructura de cristal, en una experiencia que fusionaba arquitectura efímera, música de cámara y naturaleza.
+The plot, lent by one of the residents of Leiguarda, sits behind the Church and offers a privileged view of the surrounding mountains. Attendees could take in the landscape while listening to and watching the musicians through the glass structure, in an experience that blended ephemeral architecture, chamber music, and nature.
 </p>
 
 <p>
-El programa reunió obras de Casarrubios, Mozart, Debussy, Jessie Montgomery, Strauss y Vivaldi, cerrando una edición que había llevado al festival a nuevos concejos y formatos.
+The programme brought together works by Casarrubios, Mozart, Debussy, Jessie Montgomery, Strauss, and Vivaldi, closing an edition that had taken the festival to new municipalities and formats.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
 <strong>Andrea Casarrubios</strong> – Mensajes del Agua<br>
-<strong>Wolfgang Amadeus Mozart</strong> – Cuarteto para piano y cuerdas en Re Mayor, K. 136<br>
+<strong>Wolfgang Amadeus Mozart</strong> – Quartet for Piano and Strings in D major, K. 136<br>
 <strong>Claude Debussy</strong> – Petite Suite, L65<br>
 <strong>Jessie Montgomery</strong> – Duo<br>
 <strong>Richard Strauss</strong> – Morgen<br>

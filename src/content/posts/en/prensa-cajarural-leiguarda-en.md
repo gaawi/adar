@@ -14,33 +14,33 @@ original_url: "https://compromisocrasturias.com/proyectos/festival-de-musica-cla
 translation_group: "press-prensa-cajarural-leiguarda"
 ---
 
-<p class="press-meta"><em>Article originally published in Spanish. Body kept verbatim below; see source link for the original.</em></p>
+<p class="press-meta"><em>Article originally published in Spanish; translated into English below. See source link for the original.</em></p>
 
 <header class="press-masthead">
   <span class="press-masthead-name">Compromiso CR · Caja Rural de Asturias</span>
   <span class="press-masthead-date">Proyectos · 2021</span>
 </header>
 
-<p class="press-kicker">Origen del Festival ADAR</p>
+<p class="press-kicker">The origins of the ADAR Festival</p>
 
 <h1 class="press-clipping-title">Festival de Música Clásica de Leiguarda</h1>
 
 <p class="press-lede">
-Leiguarda (Lleiguarda en asturiano) es una aldea de apenas 150 habitantes en el concejo de Belmonte de Miranda. Durante la pandemia incorporó dos nuevos vecinos, el flautista Guillermo Laporta y la pianista Josefina Urraca.
+Leiguarda (Lleiguarda in Asturian) is a village of barely 150 inhabitants in the municipality of Belmonte de Miranda. During the pandemic, it gained two new residents: the flautist Guillermo Laporta and the pianist Josefina Urraca.
 </p>
 
 <p>
-Primero crearon la <strong>Asociación para el Desarrollo del Arte en el Medio Rural</strong> y, acto seguido, el <strong>Festival de Música Clásica de Leiguarda</strong>, que en agosto celebró su primera edición.
+First they created the <strong>Association for the Development of Art in Rural Areas</strong> and, immediately afterwards, the <strong>Festival de Música Clásica de Leiguarda</strong>, which held its first edition in August.
 </p>
 
 <p>
-El evento, organizado junto a la agrupación CreArtBox de Nueva York y con la colaboración y patrocinio del Ayuntamiento de Belmonte de Miranda y Caja Rural de Asturias, pretende hacer de la cultura un aliciente para revitalizar las zonas rurales, empleando a tal fin espacios alternativos o en desuso, atrayendo visitantes a lugares poco frecuentados.
+The event, organised together with the New York-based ensemble CreArtBox and with the collaboration and sponsorship of the Ayuntamiento de Belmonte de Miranda and Caja Rural de Asturias, aims to make culture an incentive for revitalising rural areas, using alternative or disused spaces to that end and drawing visitors to less-frequented places.
 </p>
 
 <blockquote>
-Una iniciativa que recupera la función social del arte y contribuye al desarrollo del medio rural.
+An initiative that reclaims the social function of art and contributes to the development of rural areas.
 </blockquote>
 
 <p class="press-source">
-Texto original publicado en <a href="https://compromisocrasturias.com/proyectos/festival-de-musica-clasica-de-leiguarda/" target="_blank" rel="noopener">Compromiso Caja Rural de Asturias</a>.
+Original text published on <a href="https://compromisocrasturias.com/proyectos/festival-de-musica-clasica-de-leiguarda/" target="_blank" rel="noopener">Compromiso Caja Rural de Asturias</a>.
 </p>

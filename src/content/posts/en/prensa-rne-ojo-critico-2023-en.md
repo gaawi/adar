@@ -18,29 +18,29 @@ translation_group: "press-prensa-rne-ojo-critico-2023"
 
 <header class="press-masthead">
   <span class="press-masthead-name">RNE · El Ojo Crítico</span>
-  <span class="press-masthead-date">Radio · 08 ago 2023 · 07:25</span>
+  <span class="press-masthead-date">Radio · 08 Aug 2023 · 07:25</span>
 </header>
 
-<p class="press-kicker">Entrevista · Josefina Urraca</p>
+<p class="press-kicker">Interview · Josefina Urraca</p>
 
-<h1 class="press-clipping-title">El Festival Adar con Josefina Urraca</h1>
+<h1 class="press-clipping-title">The ADAR Festival with Josefina Urraca</h1>
 
 <p class="press-lede">
-Movidos por el deseo de reivindicar las zonas rurales a través de las artes vivas, el festival celebra su nueva edición con conciertos, charlas y paseos sonoros.
+Driven by the desire to champion rural areas through the living arts, the festival holds its new edition with concerts, talks and sound walks.
 </p>
 
 <p>
-El Ojo Crítico, el magacín cultural de Radio Nacional dedicó un espacio al <strong>Festival ADAR</strong> en la voz de Josefina Urraca, co-directora del proyecto.
+El Ojo Crítico, the cultural magazine programme of Radio Nacional, devoted a segment to the <strong>Festival ADAR</strong>, in the words of Josefina Urraca, co-director of the project.
 </p>
 
 <p>
-En la entrevista, Urraca relata cómo se gestó la iniciativa: dos músicos que vivían entre Nueva York y Asturias deciden, durante la pandemia, instalarse en Leiguarda y poner en marcha un festival itinerante de música clásica y artes vivas. La conversación recorre el modelo de residencias artísticas en la sede, la apuesta por encargar obra nueva a compositoras y compositores contemporáneos, y el formato de los paseos sonoros que llevan la cámara a la plaza del pueblo.
+In the interview, Urraca recounts how the initiative came about: two musicians living between New York and Asturias decide, during the pandemic, to settle in Leiguarda and launch a travelling festival of classical music and living arts. The conversation covers the model of artistic residencies at the home base, the commitment to commissioning new work from contemporary composers, and the format of the sound walks that bring chamber music to the village square.
 </p>
 
 <p>
-La emisión completa, de algo más de siete minutos, está disponible en el archivo de podcasts de RTVE.
+The full broadcast, running a little over seven minutes, is available in the RTVE podcast archive.
 </p>
 
 <p class="press-source">
-Audio original en <a href="https://www.rtve.es/play/audios/el-ojo-critico/" target="_blank" rel="noopener">RNE · El Ojo Crítico (RTVE Play)</a>.
+Original audio at <a href="https://www.rtve.es/play/audios/el-ojo-critico/" target="_blank" rel="noopener">RNE · El Ojo Crítico (RTVE Play)</a>.
 </p>

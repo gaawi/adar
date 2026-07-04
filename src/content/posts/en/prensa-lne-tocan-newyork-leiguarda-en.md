@@ -18,53 +18,53 @@ translation_group: "press-prensa-lne-tocan-newyork-leiguarda"
 
 <header class="press-masthead">
   <span class="press-masthead-name">La Nueva España</span>
-  <span class="press-masthead-date">Cultura · Oviedo · julio 2022</span>
+  <span class="press-masthead-date">Culture · Oviedo · July 2022</span>
 </header>
 
 <p class="press-kicker">Festival ADAR · Belmonte de Miranda</p>
 
-<h1 class="press-clipping-title">Josefina y Guillermo: un día tocan en Nueva York y otro en una panera de Leiguarda</h1>
+<h1 class="press-clipping-title">Josefina and Guillermo: one day they play in New York, the next in a granary in Leiguarda</h1>
 
 <p class="press-lede">
-Una pareja de músicos españoles se afinca en Belmonte de Miranda, desde donde continúa con sus proyectos internacionales y donde ha puesto en marcha un festival para llevar las artes al medio rural.
+A pair of Spanish musicians have settled in Belmonte de Miranda, from where they continue their international projects and where they have launched a festival to bring the arts to rural areas.
 </p>
 
 <p class="press-byline">A. Rubiera · Oviedo</p>
 
 <p>
-La pandemia dejó en Leiguarda, una aldea de poco más de una veintena de habitantes del concejo de Belmonte de Miranda, dos nuevos vecinos. Dos músicos de profesión que en la maleta se trajeron todo un proyecto de arte para la zona rural asturiana. Tras once años viviendo y trabajando en Nueva York —una residencia que mantienen la mitad del año— la pianista palentina Josefina Urraca y el oscense Guillermo Laporta se convencieron de que era el momento de buscarse una casa en alguna zona rural en la que afincarse casi la mitad del año.
+The pandemic left two new residents in Leiguarda, a village of little more than twenty inhabitants in the municipality of Belmonte de Miranda. Two professional musicians who brought in their suitcase a whole art project for rural Asturias. After eleven years living and working in New York —a home base they keep for half the year— the Palencia-born pianist Josefina Urraca and the Huesca-born Guillermo Laporta became convinced that it was time to find a house in a rural area where they could settle for almost half the year.
 </p>
 
 <p>
-De su búsqueda por Asturias acabaron con un pack completo de «finca, casa, cuadra, pajar, hórreo…» de los muchos que hay por rehabilitar en la región y que poco a poco han ido adecuando a sus necesidades. La vieja cuadra ya es una sala de ensayos, algo que era indispensable.
+Their search across Asturias ended with a complete package of «estate, house, stable, hayloft, hórreo…», one of the many awaiting restoration in the region, which they have gradually been adapting to their needs. The old stable is already a rehearsal room, something that was indispensable.
 </p>
 
 <p>
-Y sin dejar pasar mucho tiempo también echaron a andar su sueño, que tiene nombre y registro: <strong>Asociación para el Desarrollo de las Artes en el Medio Rural (ADAR)</strong>. Una fundación desde la que poner en marcha proyectos musicales en entornos de esa «Asturias vaciada», contando con el uso de nuevas tecnologías para revitalizar la vida en los pueblos y con ellas acercar las artes vivas a espectadores poco o nada habituados.
+And without letting much time pass, they also set their dream in motion, one that has a name and is officially registered: <strong>Asociación para el Desarrollo de las Artes en el Medio Rural (ADAR)</strong>. A foundation from which to launch musical projects in the settings of that «emptied Asturias», drawing on new technologies to revitalise village life and, with them, bring the living arts closer to audiences who are little or not at all accustomed to them.
 </p>
 
 <p>
-Colgada de esa idea hay muchas más, todas alineadas: incentivar el turismo rural a través de la cultura; conectar y dar a conocer zonas de Asturias a audiencias de todo el mundo; atraer artistas de corrientes culturales internacionales a paisajes nuevos, hasta ofrecer residencias musicales en su hórreo.
+Hanging from that idea are many more, all aligned: to encourage rural tourism through culture; to connect and showcase areas of Asturias to audiences around the world; to attract artists from international cultural currents to new landscapes; and even to offer musical residencies in their hórreo.
 </p>
 
 <p>
-La expresión más tangible de todo eso es el Festival ADAR, que se desarrollará del 4 al 13 de agosto y tendrá programación en Leiguarda, en Grado, en El Franco y en Colunga.
+The most tangible expression of all this is the Festival ADAR, which will run from 4 to 13 August and will feature programming in Leiguarda, Grado, El Franco and Colunga.
 </p>
 
 <blockquote>
-No es un típico festival; nunca lo pensamos así. La idea es programar conciertos y actividades que sean una palanca de desarrollo rural, vinculando distintas propuestas artísticas a estas zonas y a la belleza de la región.
+It is not a typical festival; we never conceived of it that way. The idea is to programme concerts and activities that act as a lever for rural development, linking different artistic proposals to these areas and to the beauty of the region.
 </blockquote>
 
 <p>
-El festival, detallan, incluye conciertos de música clásica, charlas, entrevistas, conferencias, encargos a compositores y artistas visuales. Así que habrá música, conciertos visuales, videomapping, teatro multidisciplinar, street art y diseño escenográfico. Y desplegarán sus propuestas por el auditorio de As Quintas (El Franco), por el Museo de las Ayalgas de Silviella (Belmonte); por la Capilla de los Dolores, el Palacio de Fontela y el de Miranda-Valdecarzana (en Grado), por la Sala Loreto (Colunga) y hasta por el Campo de la Iglesia de Leiguarda, la casa de los promotores y la Panera Casantos.
+The festival, they explain, includes classical music concerts, talks, interviews, lectures, and commissions to composers and visual artists. So there will be music, visual concerts, video mapping, multidisciplinary theatre, street art and stage design. And they will roll out their offerings at the As Quintas auditorium (El Franco), the Museo de las Ayalgas in Silviella (Belmonte); the Capilla de los Dolores, the Palacio de Fontela and the Palacio de Miranda-Valdecarzana (in Grado), the Sala Loreto (Colunga), and even the Campo de la Iglesia in Leiguarda, the promoters' own home and the Panera Casantos.
 </p>
 
 <blockquote>
-La música es universal y sabemos que con una buena conexión entre Leiguarda y Nueva York los proyectos no tienen por qué diferir tanto.
+Music is universal, and we know that with a good connection between Leiguarda and New York, the projects need not differ so much.
 </blockquote>
 
 <p class="press-byline">— Josefina Urraca</p>
 
 <p class="press-source">
-Texto original publicado en <a href="https://www.lne.es/" target="_blank" rel="noopener">La Nueva España</a>.
+Original text published in <a href="https://www.lne.es/" target="_blank" rel="noopener">La Nueva España</a>.
 </p>

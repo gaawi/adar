@@ -18,31 +18,31 @@ translation_group: "press-prensa-lavoztrubia-amplia-2023"
 
 <header class="press-masthead">
   <span class="press-masthead-name">La Voz del Trubia</span>
-  <span class="press-masthead-date">Diario comarcal · 28 jul 2023</span>
+  <span class="press-masthead-date">Regional daily · 28 Jul 2023</span>
 </header>
 
-<p class="press-kicker">III edición · ADAR en Ruta</p>
+<p class="press-kicker">3rd edition · ADAR en Ruta</p>
 
-<h1 class="press-clipping-title">El Festival ADAR se amplía desde Belmonte a Grado, Colunga y El Franco</h1>
+<h1 class="press-clipping-title">The ADAR Festival expands from Belmonte to Grado, Colunga and El Franco</h1>
 
 <p class="press-lede">
-El Festival ADAR de Artes en el Medio Rural amplía su recorrido por concejos asturianos, llevando música clásica y arte visual a Grado, El Franco y Colunga junto a la sede en Belmonte de Miranda.
+The ADAR Festival of Arts in Rural Areas expands its route across Asturian municipalities, bringing classical music and visual art to Grado, El Franco and Colunga alongside its base in Belmonte de Miranda.
 </p>
 
-<p class="press-byline">Redacción / Grado</p>
+<p class="press-byline">Editorial staff / Grado</p>
 
 <p>
-La iniciativa, fundada por el flautista Guillermo Laporta y la pianista Josefina Urraca en colaboración con el ensemble neoyorquino <strong>CreArtBox</strong>, reúne en esta edición a solistas internacionales: la violinista Jone de la Fuente, la violista Almudena Arribas y la violonchelista ítalo-estadounidense Natania Hoffman.
+The initiative, founded by the flautist Guillermo Laporta and the pianist Josefina Urraca in collaboration with the New York ensemble <strong>CreArtBox</strong>, brings together international soloists for this edition: the violinist Jone de la Fuente, the violist Almudena Arribas and the Italian-American cellist Natania Hoffman.
 </p>
 
 <blockquote>
-El proyecto aspira a revitalizar las zonas rurales mediante iniciativas culturales de impacto internacional, acercar la música y las artes a la población del campo, fomentar el uso de espacios no convencionales, incentivar el turismo rural a través de la cultura y educar a las generaciones venideras.
+The project aspires to revitalise rural areas through cultural initiatives of international impact, to bring music and the arts to the rural population, to promote the use of unconventional spaces, to encourage rural tourism through culture and to educate the coming generations.
 </blockquote>
 
 <p>
-La programación incluye paseos sonoros, conciertos e instalaciones artísticas con un repertorio que cruza épocas: Granados, Turina y Arvo Pärt, entre otros. Las actividades se desarrollaron del 4 al 13 de agosto de 2023 en distintos enclaves. Entrada libre hasta completar aforo.
+The programme includes sound walks, concerts and art installations with a repertoire that spans eras: Granados, Turina and Arvo Pärt, among others. The activities ran from 4 to 13 August 2023 at various locations. Free admission until capacity is reached.
 </p>
 
 <p class="press-source">
-Texto original publicado en <a href="https://lavozdeltrubia.es/2023/07/28/el-festival-de-artes-en-el-medio-rural-se-amplia-desde-belmonte-a-grado-colunga-y-el-franco/" target="_blank" rel="noopener">La Voz del Trubia</a>.
+Original text published in <a href="https://lavozdeltrubia.es/2023/07/28/el-festival-de-artes-en-el-medio-rural-se-amplia-desde-belmonte-a-grado-colunga-y-el-franco/" target="_blank" rel="noopener">La Voz del Trubia</a>.
 </p>

@@ -58,8 +58,8 @@ Arrangement for quintet<br>
 </p>
 
 <p style="margin-top:18px;">
-<strong>Modest Mussorgsky</strong> - Cuadros de una exposición (1874) 35’<br>
-Versión para ensemble (arreglo de CreArtBox)<br>
+<strong>Modest Mussorgsky</strong> - Pictures at an Exhibition (1874) 35’<br>
+Version for ensemble (arrangement by CreArtBox)<br>
 • Promenade<br>
 • Gnomus<br>
 • Promenade<br>

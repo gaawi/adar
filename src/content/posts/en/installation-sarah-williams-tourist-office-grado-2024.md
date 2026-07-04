@@ -36,11 +36,11 @@ Visual artist Sarah K. Williams, based in New York and guest artist of the 2024 
 
 <div class="adar-archive-body">
 <p>
-The glass box of the former Grado Tourist Office had been unused for years. Sarah K. Williams reclaimed it as an exhibition space, transformando su interior en una instalación que desafiaba los límites entre arte, gastronomía y espacio público. La pieza incorporaba alimentos que los asistentes podían degustar, convirtiéndose así en participantes activos de la obra.
+The glass box of the former Grado Tourist Office had been unused for years. Sarah K. Williams reclaimed it as an exhibition space, transforming its interior into an installation that challenged the boundaries between art, gastronomy and public space. The piece incorporated food that visitors could taste, thereby becoming active participants in the work.
 </p>
 
 <p>
-Esta intervención formaba parte de una noche en la que Grado acogió tres eventos simultáneos del Festival ADAR: el concierto en el Palacio de Miranda-Valdecarzana, esta instalación y una performance en la Capilla de los Dolores. Williams's proposal demonstrated the festival's capacity to activate forgotten urban spaces and generate unexpected encounters between art and community.
+This intervention was part of an evening in which Grado hosted three simultaneous events of the ADAR Festival: the concert at the Palacio de Miranda-Valdecarzana, this installation, and a performance at the Capilla de los Dolores. Williams's proposal demonstrated the festival's capacity to activate forgotten urban spaces and generate unexpected encounters between art and community.
 </p>
 </div>
 
@@ -56,7 +56,7 @@ Saturday, 17 August 2024
 </p>
 <p>
 <strong>Location:</strong><br>
-Oficina de Turismo (caja de cristal)<br>
+Oficina de Turismo (glass box)<br>
 Grado, Asturias
 </p>
 <p>

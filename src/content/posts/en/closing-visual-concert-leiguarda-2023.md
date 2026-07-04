@@ -27,7 +27,7 @@ translation_group: "pll_69b02565aa275"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/02.jpg" alt="Closing visual concert - Leiguarda - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Closing visual concert en Leiguarda (2023)</h1>
+<h1 class="adar-archive-title">Closing Visual Concert in Leiguarda (2023)</h1>
 <p class="adar-archive-lede">
 The third edition of the ADAR Festival closed with an open-air visual concert in the field behind the Church of Leiguarda. The emblematic stage with its yellow frame, which had already starred in the 2021 opening, returned as a symbol of the festival on a night that brought together music, projections, and community.
 </p>
@@ -36,20 +36,20 @@ The third edition of the ADAR Festival closed with an open-air visual concert in
 
 <div class="adar-archive-body">
 <p>
-El campo detrás de la Iglesia de Leiguarda volvió a acoger a los músicos del Festival ADAR para el concierto de clausura de la edición 2023. El escenario, enmarcado por el marco amarillo que se ha convertido en seña de identidad del festival, ofrecía como fondo las montañas y la aldea iluminada, mientras las proyecciones añadían una capa visual que dialogaba con la música en directo.
+The field behind the Church of Leiguarda once again welcomed the musicians of the ADAR Festival for the closing concert of the 2023 edition. The stage, framed by the yellow frame that has become a hallmark of the festival, was set against a backdrop of mountains and the illuminated village, while the projections added a visual layer that dialogued with the live music.
 </p>
 
 <p>
-El programa, con un marcado carácter español gracias a las obras de Turina y Granados, junto a piezas de Boulanger, Telemann y Arvo Pärt, cerró una edición que había recorrido cinco concejos asturianos llevando música de cámara a espacios patrimoniales, museos, capillas y plazas. Leiguarda, the heart of the festival, was once again the place where music and community met in the most intimate way.
+The programme, with a distinctly Spanish character thanks to the works of Turina and Granados, alongside pieces by Boulanger, Telemann, and Arvo Pärt, closed an edition that had travelled across five Asturian municipalities, bringing chamber music to heritage sites, museums, chapels, and squares. Leiguarda, the heart of the festival, was once again the place where music and community met in the most intimate way.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>
 
 <p>
 <strong>Nadia Boulanger</strong> – Modéré<br>
-<strong>Georg Philipp Telemann</strong> – Cuarteto en sol menor, TWV 43:G4<br>
-<strong>Joaquín Turina</strong> – Cuarteto para piano y cuerdas en la menor, op. 67<br>
-<strong>Enrique Granados</strong> – Quinteto para piano, flauta y cuerdas en sol menor, op. 49<br>
+<strong>Georg Philipp Telemann</strong> – Quartet in G minor, TWV 43:G4<br>
+<strong>Joaquín Turina</strong> – Quartet for Piano and Strings in A minor, Op. 67<br>
+<strong>Enrique Granados</strong> – Quintet for Piano, Flute and Strings in G minor, Op. 49<br>
 <strong>Arvo Pärt</strong> – Spiegel im Spiegel
 </p>
 </div>
@@ -106,7 +106,7 @@ Closing visual concert
 • Leiguarda<br>
 • Visual concert<br>
 • Closing<br>
-• Marco amarillo
+• Yellow frame
 </p>
 </div>
 

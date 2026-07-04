@@ -18,29 +18,29 @@ translation_group: "press-prensa-rtpa-i-festival-2021"
 
 <header class="press-masthead">
   <span class="press-masthead-name">RTPA · El Asturianu</span>
-  <span class="press-masthead-date">Sociedad / Cultura · 09 ago 2021 · 19:25</span>
+  <span class="press-masthead-date">Society / Culture · 09 Aug 2021 · 19:25</span>
 </header>
 
 <p class="press-kicker">Lleiguarda · Belmonte de Miranda</p>
 
-<h1 class="press-clipping-title">I Festival de Música Clásica de Lleiguarda</h1>
+<h1 class="press-clipping-title">1st Classical Music Festival of Lleiguarda</h1>
 
 <p class="press-lede">
-Un certamen impulsado por dos músicos españoles que dejaron Nueva York por Belmonte.
+A festival driven by two Spanish musicians who left New York for Belmonte.
 </p>
 
 <p>
-Lleiguarda celebrará este sábado su <strong>I Festival de Música Clásica</strong>.
+This Saturday, Lleiguarda will hold its <strong>1st Classical Music Festival</strong>.
 </p>
 
 <p>
-La iniciativa está impulsada por el flautista Guillermo Laporta y la pianista Josefina Urraca, quienes hace un año decidieron cambiar su vida en Nueva York por la aldea de Belmonte.
+The initiative is led by flautist Guillermo Laporta and pianist Josefina Urraca, who a year ago decided to trade their life in New York for the village in Belmonte.
 </p>
 
 <p>
-Las entradas ya están agotadas, pero sus organizadores ya piensan en nuevas ediciones.
+Tickets are already sold out, but the organisers are already thinking about future editions.
 </p>
 
 <p class="press-source">
-Texto original publicado en <a href="https://www.rtpa.es/" target="_blank" rel="noopener">RTPA · Radiotelevisión del Principado de Asturias</a>.
+Original text published in <a href="https://www.rtpa.es/" target="_blank" rel="noopener">RTPA · Radiotelevisión del Principado de Asturias</a>.
 </p>

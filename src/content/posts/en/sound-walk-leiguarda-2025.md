@@ -37,65 +37,65 @@ The ADAR Festival proposed on this day a sonic experience in motion: a guided wa
 <div class="adar-archive-body">
 
 <p>
-The audience slowly made their way along the village paths at dusk, guiado por la música y por una intervención lumínica que convertía el desplazamiento en parte esencial de la experiencia artística. El paisaje, la arquitectura tradicional y el sonido en directo dejaron de ser elementos separados para formar un único gesto escénico.
+The audience slowly made their way along the village paths at dusk, guided by the music and by a lighting intervention that turned the journey itself into an essential part of the artistic experience. The landscape, the traditional architecture, and the live sound ceased to be separate elements and came together into a single scenic gesture.
 </p>
 
 <p>
-La propuesta combinó música antigua interpretada con tiorba, intervenciones instrumentales a lo largo del recorrido y una acción visual que acompañaba el tránsito del público entre el hórreo y la iglesia. More than a concert, a collective experience was generated where walking, listening, and watching were all part of the same dramaturgy.
+The programme combined early music performed on the theorbo, instrumental interventions along the route, and a visual action that accompanied the audience's passage between the hórreo and the church. More than a concert, a collective experience was generated where walking, listening, and watching were all part of the same dramaturgy.
 </p>
 
 <p>
-Días después, esta experiencia fue recogida en un relato publicado por la revista cultural <em>Hombre Superfluo</em>, que describió con sensibilidad lo vivido durante aquella noche en Leiguarda:
+Days later, this experience was captured in an account published by the cultural magazine <em>Hombre Superfluo</em>, which described with great sensitivity what was lived that night in Leiguarda:
 </p>
 
 <p>
-«Josefina, había dejado el piano y sostenía a Eliot, el hijo de ambos de apenas un año de edad, que observaba todo sin que un futuro pueda discernir nada de lo visto. Sin embargo, quiero pensar que lo vivido le ayude a comprender de adulto lo que merece la pena: la paz que daba escuchar la música de su padre o la sonrisa de su madre. No se acordará de mí, ni de su mirada perdida con el chupete en la boca, pensando: “¿quién será este?”. Sería bonito que en un futuro, el bebé tomara el testigo de sus padres y siguiera organizando el mismo festival de música cada vez más clásica, gracias al paso del tiempo.
+«Josefina had left the piano and was holding Eliot, their son barely a year old, who watched everything without yet being able to discern anything of what he saw. Even so, I like to think that what he lived through will help him understand as an adult what is truly worthwhile: the peace of listening to his father's music or his mother's smile. He will not remember me, nor his distant gaze with the pacifier in his mouth, thinking: “Who might this be?”. It would be lovely if, in the future, the baby took up the baton from his parents and went on organising this same festival of music that grows ever more classical, thanks to the passing of time.
 </p>
 
 <p>
-Tras terminar, pudimos conversar con Pepe, Josefina y el resto de los músicos comiendo empanada vegetariana y bebiendo sidra bajo el hórreo familiar.
+After it ended, we were able to chat with Pepe, Josefina, and the rest of the musicians while eating vegetarian empanada and drinking cider beneath the family hórreo.
 </p>
 
 <p>
-Si hace unos meses vivimos el sueño de una noche de invierno, volvimos al original sueño de una noche de verano, gracias a una nueva y acertada propuesta de Noe. De regreso a casa, vimos a lo lejos las bolas luminosas que descansaban sobre el muro donde las habíamos dejado. Se apagarían solas durante la madrugada.»
+If a few months ago we lived a midwinter night's dream, we now returned to the original midsummer night's dream, thanks to a new and well-judged proposal from Noe. On the way home, we saw in the distance the glowing orbs resting on the wall where we had left them. They would switch themselves off during the small hours.»
 </p>
 
 <p>
-«Pepe nos contó que durante la pandemia de COVID, Guillermo y Josefina compraron la casa familiar y desde entonces organizan este festival de música clásica llamado ADAR. Cambiaron la ciudad de Nueva York por una pequeña aldea asturiana, él flautista y ella pianista.
+«Pepe told us that during the COVID pandemic, Guillermo and Josefina bought the family house and have since been organising this classical music festival called ADAR. They traded the city of New York for a small Asturian village, he a flautist and she a pianist.
 </p>
 
 <p>
-Poco antes de llegar a la iglesia de Leiguarda nos sorprendió una imagen que parecía una telaraña gigante de unos diez metros de alto que resultó ser una proyección preparada por Guillermo hacia un árbol, lo cual apoyaba la polivalencia del artista que había mencionado Pepe.
+Shortly before reaching the church of Leiguarda, we were struck by an image that looked like a giant spiderweb some ten metres tall, which turned out to be a projection Guillermo had set up onto a tree, further confirming the artist's versatility that Pepe had mentioned.
 </p>
 
 <p>
-Posamos todas las bolas luminosas en el atrio de la capilla y entramos. En medio de la iglesia vacía, unos testigos de hormigón utilizados en prospecciones mineras sobre un círculo de tierra simbolizaban la búsqueda de la veta madre, asemejándose también a un bosque talado.»
+We set all the glowing orbs down in the atrium of the chapel and went inside. In the middle of the empty church, several concrete core samples used in mining surveys, arranged over a circle of earth, symbolised the search for the mother lode, while also resembling a felled forest.»
 </p>
 
 <p>
-«También jugábamos con ventaja: sabíamos que vivía en Leiguarda y no hay más que ver a ambos para entender que más que padre e hija, parecen mellizos: sus gestos, su forma de caminar, sus principios, su amabilidad.
+«We also had an advantage: we knew he lived in Leiguarda, and one need only see the two of them to understand that, more than father and daughter, they seem like twins: their gestures, the way they walk, their principles, their kindness.
 </p>
 
 <p>
-Antes de escuchar a Josefina al piano, nos habían sorprendido unas piezas tocadas con un instrumento barroco que desconocía llamado tiorba. Se parece a un laúd, pero con un mástil muy largo propio de un sitar. Lo tocaba Nacho, un joven que no desentonaría ni en TikTok, ni en un cuadro de Caravaggio, ni en el Lincoln Center, ni en el diminuto hórreo en el que su instrumento apenas cabía.
+Before hearing Josefina at the piano, we had been surprised by a few pieces played on a Baroque instrument I did not know, called the theorbo. It resembles a lute, but with a very long neck like that of a sitar. It was played by Nacho, a young man who would look perfectly at home on TikTok, in a Caravaggio painting, at Lincoln Center, or in the tiny hórreo where his instrument barely fit.
 </p>
 
 <p>
-Seguimos caminando bajo el orbayu asturiano haciendo de las suyas en una noche algo cerrada. Nos guiaban las luces a modo de antorchas, semejantes al viaje de redención de Fernando Alfaro:
+We kept walking beneath the Asturian orbayu, which was up to its usual tricks on a somewhat overcast night. The lights guided us like torches, reminiscent of Fernando Alfaro's journey of redemption:
 </p>
 
-<p><em>Mira esa fila de antorchas que van una tras otra en viaje lunar…</em></p>
+<p><em>Look at that row of torches going one after another on a lunar journey…</em></p>
 
 <p>
-Mientras salíamos de la estancia donde acabábamos de escuchar Arabesque nº 1, nos tropezamos con Pepe. Yo sostenía en la mano una gran bola luminosa que debía transportar por Leiguarda, junto a otros diez voluntarios.
-</p>
-
-<p>
-Salimos a escuchar a Almudena tocar la viola. Tras aplaudir de nuevo, ya pudimos resolver el misterio.
+As we left the room where we had just heard Arabesque No. 1, we ran into Pepe. I was holding in my hand a large glowing orb that I had to carry through Leiguarda, along with ten other volunteers.
 </p>
 
 <p>
-Pepe no nos ponía cara, pero Noe apuntó que padre de Cris solo hay uno, pero amigos suyos hay muchos.»
+We went out to hear Almudena play the viola. After applauding once more, we could finally solve the mystery.
+</p>
+
+<p>
+Pepe couldn't quite place our faces, but Noe pointed out that Cris has only one father, though he has many friends.»
 </p>
 
 <h3 style="margin-top:28px">Artistic Credits</h3>

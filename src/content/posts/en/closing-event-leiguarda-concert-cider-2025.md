@@ -25,10 +25,10 @@ translation_group: "pll_69b02567d035d"
 
 <!-- COVER (panorámico, se recorta con CSS del template) -->
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg" alt="Evento de Clausura en Leiguarda - Concert and cider tasting" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg" alt="Closing Event in Leiguarda - Concert and cider tasting" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Evento de Clausura en Leiguarda: Concert and cider tasting</h1>
+<h1 class="adar-archive-title">Closing Event in Leiguarda: Concert and Cider Tasting</h1>
 <p class="adar-archive-lede">
 The ADAR Festival 2025 culminates with a musical journey through two emblematic spaces in Leiguarda: the village church and its outdoor scenic greenhouse.
 This divided closing proposes two complementary atmospheres: the introspection of the solo piano repertoire under the church vault, and the celebration
@@ -44,20 +44,20 @@ A concert embracing diversity of languages, formats, and generations, as the epi
 
 <h3 style="margin-top:28px;">Programme</h3>
 
-<p style="margin-top:18px;"><strong>Primera parte - Iglesia de Leiguarda</strong></p>
+<p style="margin-top:18px;"><strong>First Part - Church of Leiguarda</strong></p>
 <p>
-<strong>Claude Debussy</strong> - Arabesque n.º 1 para piano solo (1888) 5’
-<br><strong>Pyotr Ilyich Tchaikovsky</strong> - En la Iglesia, Op. 29 n.º 24 (1878) 2’
+<strong>Claude Debussy</strong> - Arabesque No. 1 for solo piano (1888) 5’
+<br><strong>Pyotr Ilyich Tchaikovsky</strong> - In Church, Op. 29 No. 24 (1878) 2’
 <br><strong>François Couperin</strong> - Les Barricades Mystérieuses (1717) 3’
 </p>
 
-<p style="margin-top:18px;"><strong>Segunda parte - Invernadero al aire libre</strong></p>
+<p style="margin-top:18px;"><strong>Second Part - Open-air Greenhouse</strong></p>
 <p>
-<strong>Antonín Dvořák</strong> - Cuarteto de cuerda en fa mayor, Op. 96 “Americano” (1893) 20’
+<strong>Antonín Dvořák</strong> - String Quartet in F major, Op. 96 “American” (1893) 20’
 <br>• Allegro ma non troppo
 <br>• Lento
-<br><strong>Luigi Boccherini</strong> - Sonata para violonchelo y bajo continuo G. 9 en fa mayor, Adagio assai (1764) 4’
-<br><strong>Luigi Boccherini</strong> - Sonata para violonchelo y bajo continuo G. 6 en do mayor, Allegro (1772) 3’
+<br><strong>Luigi Boccherini</strong> - Sonata for Cello and Basso Continuo, G. 9, in F major, Adagio assai (1764) 4’
+<br><strong>Luigi Boccherini</strong> - Sonata for Cello and Basso Continuo, G. 6, in C major, Allegro (1772) 3’
 </p>
 
 <p style="margin-top:22px;">
@@ -72,16 +72,16 @@ A concert embracing diversity of languages, formats, and generations, as the epi
 -->
 
 <div class="adar-archive-gallery">
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01899.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01899.jpg" alt="Galería 1" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01898.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01898.jpg" alt="Galería 2" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01887.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01887.jpg" alt="Galería 3" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01886.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01886.jpg" alt="Galería 4" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01885.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01885.jpg" alt="Galería 5" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01884.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01884.jpg" alt="Galería 6" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01866.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01866.jpg" alt="Galería 7" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg" alt="Galería 8" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01850.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01850.jpg" alt="Galería 9" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg" alt="Galería 10" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01899.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01899.jpg" alt="Gallery 1" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01898.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01898.jpg" alt="Gallery 2" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01887.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01887.jpg" alt="Gallery 3" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01886.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01886.jpg" alt="Gallery 4" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01885.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01885.jpg" alt="Gallery 5" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01884.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01884.jpg" alt="Gallery 6" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01866.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01866.jpg" alt="Gallery 7" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg" alt="Gallery 8" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01850.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01850.jpg" alt="Gallery 9" loading="lazy"></a>
+<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg" alt="Gallery 10" loading="lazy"></a>
 </div>
 
 </div>
@@ -97,7 +97,7 @@ Sunday, 17 August 2025<br>
 </p>
 <p>
 <strong>Location:</strong><br>
-Iglesia e invernadero de cristal de Leiguarda<br>
+Church and glass greenhouse of Leiguarda<br>
 Leiguarda, Belmonte de Miranda
 </p>
 <p>

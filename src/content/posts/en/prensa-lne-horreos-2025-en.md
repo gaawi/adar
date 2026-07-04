@@ -18,33 +18,33 @@ translation_group: "press-prensa-lne-horreos-2025"
 
 <header class="press-masthead">
   <span class="press-masthead-name">La Nueva España</span>
-  <span class="press-masthead-date">Occidente · 20 may 2025</span>
+  <span class="press-masthead-date">Occidente · 20 May 2025</span>
 </header>
 
-<p class="press-kicker">Concurso de hórreos y paneras 2025</p>
+<p class="press-kicker">Hórreos and paneras contest 2025</p>
 
-<h1 class="press-clipping-title">El Festival Adar busca los mejores hórreos para música de cámara</h1>
+<h1 class="press-clipping-title">The Adar Festival seeks the best hórreos for chamber music</h1>
 
 <p class="press-lede">
-El festival convoca un concurso para seleccionar tres hórreos o paneras de Asturias que se convertirán en escenarios únicos de música de cámara durante su quinta edición, del 4 al 17 de agosto.
+The festival launches a contest to select three hórreos or paneras in Asturias that will become unique chamber-music stages during its fifth edition, from 4 to 17 August.
 </p>
 
 <p>
-El <strong>Festival ADAR</strong> celebrará su quinta edición del 4 al 17 de agosto de 2025 con una nueva iniciativa que une música, tradición y participación ciudadana: el <strong>Concurso de Hórreos y Paneras 2025</strong>. El objetivo es seleccionar tres hórreos o paneras singulares de Asturias que se transformarán en escenarios únicos para conciertos de música de cámara durante el festival.
+The <strong>Festival ADAR</strong> will hold its fifth edition from 4 to 17 August 2025 with a new initiative that unites music, tradition and citizen participation: the <strong>Hórreos and Paneras Contest 2025</strong>. The aim is to select three distinctive hórreos or paneras in Asturias that will be transformed into unique stages for chamber-music concerts during the festival.
 </p>
 
 <p>
-La meta no es «usar un contenedor», sino crear una experiencia artística que respete la arquitectura, el paisaje y la comunidad de cada lugar. Los hórreos y paneras seleccionados serán evaluados por su valor arquitectónico, su entorno y su potencial escénico. Los micro-conciertos resultantes contarán con intérpretes de la red del festival y se documentarán en formato audiovisual.
+The goal is not to “use a container”, but to create an artistic experience that respects the architecture, the landscape and the community of each place. The selected hórreos and paneras will be assessed for their architectural value, their surroundings and their scenic potential. The resulting micro-concerts will feature performers from the festival’s network and will be documented in audiovisual format.
 </p>
 
 <p>
-El primer premio recibirá además una dotación económica de una dotación. Para participar, basta con enviar un correo a leiguardamusic@gmail.com o un mensaje de WhatsApp al 663 604 030 con varias fotografías del hórreo o panera —vista general, detalle y entorno—.
+The first prize will also receive a cash award. To take part, simply send an email to leiguardamusic@gmail.com or a WhatsApp message to 663 604 030 with several photographs of the hórreo or panera —general view, detail and surroundings—.
 </p>
 
 <p>
-La iniciativa, impulsada por la Asociación para el Desarrollo de las Artes en el Medio Rural, busca también activar la conservación del patrimonio etnográfico asturiano mediante la creación contemporánea. ADAR trabaja desde Leiguarda (Belmonte de Miranda) en colaboración con ayuntamientos, propietarios y vecindario.
+The initiative, driven by the Association for the Development of the Arts in Rural Areas, also seeks to promote the conservation of Asturian ethnographic heritage through contemporary creation. ADAR works from Leiguarda (Belmonte de Miranda) in collaboration with town councils, owners and local residents.
 </p>
 
 <p class="press-source">
-Texto original publicado en <a href="https://www.lne.es/occidente/2025/05/20/festival-adar-busca-mejores-horreos-117581643.html" target="_blank" rel="noopener">La Nueva España</a>.
+Original text published in <a href="https://www.lne.es/occidente/2025/05/20/festival-adar-busca-mejores-horreos-117581643.html" target="_blank" rel="noopener">La Nueva España</a>.
 </p>

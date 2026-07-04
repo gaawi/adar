@@ -27,20 +27,20 @@ translation_group: "pll_69b0256670ea1"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/capilla.jpg" alt="Concert and performance - Capilla de los Dolores - ADAR 2024" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Concert and performance en la Capilla de los Dolores (Grado, 2024)</h1>
+<h1 class="adar-archive-title">Concert and performance at the Capilla de los Dolores (Grado, 2024)</h1>
 <p class="adar-archive-lede">
-The same evening the ADAR Festival presented its main programme at the Palacio de Miranda-Valdecarzana, visual artist Sarah K. Williams transformed the Capilla de los Dolores in Grado with a uniquely creative installation and performance, in which the musicians interacted with her piece while performing the <em>Duo</em> de Jessie Montgomery.
+The same evening the ADAR Festival presented its main programme at the Palacio de Miranda-Valdecarzana, visual artist Sarah K. Williams transformed the Capilla de los Dolores in Grado with a uniquely creative installation and performance, in which the musicians interacted with her piece while performing the <em>Duo</em> by Jessie Montgomery.
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-The Capilla de los Dolores, which the previous year had hosted a solo flute micro concert, was completely transformed in the 2024 edition gracias a la intervención de Sarah K. Williams. La artista, afincada en Nueva York, concibió una instalación site-specific que alteraba la percepción del espacio y creaba un diálogo entre la arquitectura sacra, el arte visual y la música en vivo.
+The Capilla de los Dolores, which the previous year had hosted a solo flute micro concert, was completely transformed in the 2024 edition thanks to the intervention of Sarah K. Williams. The artist, based in New York, conceived a site-specific installation that altered the perception of the space and created a dialogue between sacred architecture, visual art and live music.
 </p>
 
 <p>
-Los músicos del festival interactuaron con la pieza de Williams mientras interpretaban el <em>Duo</em> de Jessie Montgomery, una obra que, con su energía rítmica y su escritura expresiva, encontró en la instalación un complemento visual inesperado. The result was a multidisciplinary experience in which music, visual art, and performance merged into a single artistic gesture.
+The festival musicians interacted with Williams's piece while performing the <em>Duo</em> by Jessie Montgomery, a work whose rhythmic energy and expressive writing found in the installation an unexpected visual complement. The result was a multidisciplinary experience in which music, visual art, and performance merged into a single artistic gesture.
 </p>
 <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 28px 0;">
 <iframe src="https://www.youtube.com/embed/nFziarjucPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">

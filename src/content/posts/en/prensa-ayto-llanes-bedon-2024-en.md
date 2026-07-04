@@ -14,7 +14,7 @@ original_url: "https://www.ayuntamientodellanes.com/"
 translation_group: "press-prensa-ayto-llanes-bedon-2024"
 ---
 
-<p class="press-meta"><em>Article originally published in Spanish. Body kept verbatim below; see source link for the original.</em></p>
+<p class="press-meta"><em>Article originally published in Spanish; translated into English below. See source link for the original.</em></p>
 
 <header class="press-masthead">
   <span class="press-masthead-name">Ayuntamiento de Llanes</span>
@@ -23,24 +23,24 @@ translation_group: "press-prensa-ayto-llanes-bedon-2024"
 
 <p class="press-kicker">Llanes · San Antolín de Bedón</p>
 
-<h1 class="press-clipping-title">El Festival ADAR comenzará en Llanes con un concierto en el Monasterio de San Antolín</h1>
+<h1 class="press-clipping-title">The ADAR Festival will begin in Llanes with a concert at the Monasterio de San Antolín</h1>
 
 <p class="press-lede">
-La cuarta edición del Festival ADAR, del 8 al 18 de agosto, abrirá su itinerancia en Llanes con un concierto en el Monasterio de San Antolín de Bedón el lunes 12 de agosto a las 19:30.
+The fourth edition of the ADAR Festival, running from 8 to 18 August, will open its touring programme in Llanes with a concert at the Monasterio de San Antolín de Bedón on Monday 12 August at 19:30.
 </p>
 
 <p>
-El festival celebra las artes en el medio rural a través de la música clásica y contemporánea. Entre los intérpretes figuran la violinista Jone de la Fuente, la violista Almudena Rivas, la violonchelista Natania Hoffman, los pianistas Mario Molina y Josefina Urraca, y el flautista Guillermo Laporta. El programa incluye obras de Mozart, Debussy, Vivaldi y la compositora contemporánea Andrea Casarrubios.
+The festival celebrates the arts in rural areas through classical and contemporary music. The performers include the violinist Jone de la Fuente, the violist Almudena Rivas, the cellist Natania Hoffman, the pianists Mario Molina and Josefina Urraca, and the flautist Guillermo Laporta. The programme features works by Mozart, Debussy, Vivaldi, and the contemporary composer Andrea Casarrubios.
 </p>
 
 <blockquote>
-ADAR promueve el acceso a la cultura de alta calidad fomentando la implicación de la comunidad y revitalizando la vida cultural en enclaves rurales asturianos.
+ADAR promotes access to high-quality culture by encouraging community involvement and revitalising cultural life in rural Asturian enclaves.
 </blockquote>
 
 <p>
-El festival opera mediante dos componentes principales: una residencia artística en Leiguarda y “ADAR en Ruta”, que lleva las propuestas a distintas comunidades rurales. Entre las sedes destacan el Monasterio de Cornellana y el Palacio Miranda-Valdecarzana. La programación incluye también instalaciones, paseos sonoros y conciertos en hórreos. Todas las actividades son de entrada libre hasta completar aforo.
+The festival operates through two main components: an artistic residency in Leiguarda and “ADAR en Ruta”, which brings its projects to different rural communities. Among the venues are the Monasterio de Cornellana and the Palacio Miranda-Valdecarzana. The programme also includes installations, sound walks, and concerts in hórreos. All activities are free to attend until capacity is reached.
 </p>
 
 <p class="press-source">
-Texto original publicado por el <a href="https://www.ayuntamientodellanes.com/" target="_blank" rel="noopener">Ayuntamiento de Llanes</a>.
+Original text published by the <a href="https://www.ayuntamientodellanes.com/" target="_blank" rel="noopener">Ayuntamiento de Llanes</a>.
 </p>
