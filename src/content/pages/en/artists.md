@@ -138,7 +138,7 @@ Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 Augu
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-zygmund-de-somogyi/">
+<a class="ed-artist-link" href="/en/artist-zygmund-de-somogyi/">
 <div class="at-artist-img">
 <img src="https://static.wixstatic.com/media/555625_f20b6016899249db88bd703a58041391~mv2.jpg" alt="Zygmund de Somogyi" loading="lazy">
 </div>

@@ -706,6 +706,16 @@ function tDict(map: Record<string, Record<string, string>>, val: string): string
   if (lang === 'es' || !val) return val;
   return (map[lang] && map[lang][val]) || val;
 }
+const PIECE_I18N: Record<string, Record<string, string[]>> = {
+  en: {"01": ["Diferencias sobre el Canto del Cavallero", "Folías de España (from Flores de Música)", "Suite No. 1 in G major Z. 660 — Prelude · Almand · Corant · Minuet", "Ground in C minor", "Sonata K. 213 in D minor", "Sonata K. 27 in B minor", "Ciaccona · from the Partita for violin in D minor (trans. J. Brahms)"], "02": ["Piano Trio", "Nocturne for violin and piano", "Thème et variations, for violin and piano", "Trio élégiaque No. 1 in G minor", "Piano Trio No. 1"], "03": ["Piano Trio", "Nocturne for violin and piano", "Thème et variations, for violin and piano", "Trio élégiaque No. 1 in G minor", "Piano Trio No. 1"], "04": ["Vladimir’s Blues", "Trois Gymnopédies — I. Lent et douloureux · II. Lent et triste · III. Lent et grave", "Two Roads — I. Walts · II. Circle of Choices", "Rekindle (flute and electronics)", "Cello Suite No. 1 in G major, BWV 1007", "Dream Journal", "Night Song"], "06": ["Hora Lunga", "Canon a 2 Cancrizans", "Listen to the Still Small Voice Within", "Az Hit", "Canon a 2 per Motum Contrarium", "Allegro con Fuoco", "Satz", "Canon a 2 Violini al Unisono", "Pizzicato-Arco", "Vivace", "Virág az Ember", "Canon a 2 per Tonos", "Élégie", "4′33″", "Ricercar a 3"], "07": ["Piano Quintet No. 2 in A major, Op. 81 — I. Allegro, ma non tanto"], "08": ["String Trio — I. movement", "New Beginnings", "Piano Quintet No. 2 in A major, Op. 81 — I. Allegro · II. Dumka"], "09": ["Signs, Games and Messages (complete work, for string trio)", "Goldberg Variations (selection)", "Die stille summt"], "11": ["Ma mère l’Oye", "Musica Ricercata", "Duo for clarinet and cello", "Three Pieces for solo clarinet"]},
+  ast: {"01": ["Diferencias sobre el Canto del Cavallero", "Folías de España (de Flores de Música)", "Suite n.º 1 en sol mayor Z. 660 — Prelude · Almand · Corant · Minuet", "Ground en do menor", "Sonata K. 213 en re menor", "Sonata K. 27 en si menor", "Ciaccona · de la Partita pa violín en re menor (trans. J. Brahms)"], "02": ["Tríu con pianu", "Nocturne pa violín y pianu", "Thème et variations, pa violín y pianu", "Trío élégiaque n.º 1 en sol menor", "Tríu con pianu n.º 1"], "03": ["Tríu con pianu", "Nocturne pa violín y pianu", "Thème et variations, pa violín y pianu", "Trío élégiaque n.º 1 en sol menor", "Tríu con pianu n.º 1"], "04": ["Vladimir’s Blues", "Trois Gymnopédies — I. Lent et douloureux · II. Lent et triste · III. Lent et grave", "Two Roads — I. Walts · II. Circle of Choices", "Rekindle (flauta y electrónica)", "Suite pa violonchelu n.º 1 en sol mayor, BWV 1007", "Dream Journal", "Night Song"], "06": ["Hora Lunga", "Canon a 2 Cancrizans", "Listen to the Still Small Voice Within", "Az Hit", "Canon a 2 per Motum Contrarium", "Allegro con Fuoco", "Satz", "Canon a 2 Violini al Unisono", "Pizzicato-Arco", "Vivace", "Virág az Ember", "Canon a 2 per Tonos", "Élégie", "4′33″", "Ricercar a 3"], "07": ["Quintetu pa pianu n.º 2 en la mayor, op. 81 — I. Allegro, ma non tanto"], "08": ["Tríu de cuerdes — I. movimientu", "New Beginnings", "Quintetu pa pianu n.º 2 en la mayor, op. 81 — I. Allegro · II. Dumka"], "09": ["Signs, Games and Messages (obra completa, pa tríu de cuerda)", "Variaciones Goldberg (seleición)", "Die stille summt"], "11": ["Ma mère l’Oye", "Musica Ricercata", "Dúu pa clarinete y violonchelu", "Trés pieces pa clarinete solu"]},
+};
+function tPiece(e: Event, i: number, piece: string): string {
+  if (lang === 'es') return piece;
+  const arr = PIECE_I18N[lang] && PIECE_I18N[lang][e.n];
+  return (arr && arr[i] != null) ? arr[i] : piece;
+}
+
 function tEv(e: Event, field: string): any {
   if (lang === 'es') return (e as any)[field];
   const o = EV_I18N[lang] && EV_I18N[lang][e.n];
@@ -811,10 +821,10 @@ const POSTER_BG = 'https://creartbox-archive.b-cdn.net/adarimages/posters/2026.j
                 <div class="vi26-program-wrap">
                   <p class="vi26-block-label mono">{COPY.program_h}{programName ? ` · ${programName}` : ''}</p>
                   <ol class={`vi26-program ${isLongProgram ? 'is-multi' : ''}`}>
-                    {e.pieces.map((p) => (
+                    {e.pieces.map((p, i) => (
                       <li>
                         <span class="vi26-program-composer">{p.composer}{p.years ? <span class="vi26-program-years mono"> {p.years}</span> : null}</span>
-                        <span class="vi26-program-piece"> · <em>{p.piece}</em></span>
+                        <span class="vi26-program-piece"> · <em>{tPiece(e, i, p.piece)}</em></span>
                         {p.duration && <span class="vi26-program-dur mono"> [{p.duration}]</span>}
                       </li>
                     ))}
