@@ -27,7 +27,7 @@ const COPY = {
     poster_h: 'ADAR',
     poster_sub: 'Edición VI · Asturies / ES · 43.2° N · 6.2° W',
     poster_stat_a: '11 conciertos',
-    poster_stat_b: '13 artistas',
+    poster_stat_b: '15 artistas',
     poster_stat_c: '7 sedes patrimoniales',
     poster_stat_d: 'Entrada libre',
     cta_program: 'Ver programa',
@@ -52,7 +52,7 @@ const COPY = {
     tbc: 'POR CONFIRMAR',
     cartel_n: '§ 02',
     cartel_h: 'Cartel',
-    cartel_sub: 'Trece intérpretes y un colectivo de creación. Música de cámara, residencia artística y trabajo site-specific.',
+    cartel_sub: 'Intérpretes, un colectivo de creación, compositor residente y cinematógrafo. Música de cámara, residencia artística y trabajo site-specific.',
     cal_n: '§ 03',
     cal_h: 'Calendario',
     cal_sub: 'Once conciertos del 4 al 16 de agosto. Toda la programación es de entrada libre hasta completar aforo.',
@@ -99,7 +99,7 @@ const COPY = {
     poster_h: 'ADAR',
     poster_sub: 'Edition VI · Asturias / ES · 43.2° N · 6.2° W',
     poster_stat_a: '11 concerts',
-    poster_stat_b: '13 performers',
+    poster_stat_b: '15 artists',
     poster_stat_c: '7 heritage venues',
     poster_stat_d: 'Free entry',
     cta_program: 'See programme',
@@ -124,7 +124,7 @@ const COPY = {
     tbc: 'TBC',
     cartel_n: '§ 02',
     cartel_h: 'Lineup',
-    cartel_sub: 'Thirteen performers and one creation collective. Chamber music, artistic residency and site-specific work.',
+    cartel_sub: 'Performers, a creation collective, a resident composer and a cinematographer. Chamber music, artistic residency and site-specific work.',
     cal_n: '§ 03',
     cal_h: 'Calendar',
     cal_sub: 'Eleven concerts from 4 to 16 August. All programming is free until capacity.',
@@ -171,7 +171,7 @@ const COPY = {
     poster_h: 'ADAR',
     poster_sub: 'Edición VI · Asturies / ES · 43.2° N · 6.2° W',
     poster_stat_a: '11 conciertos',
-    poster_stat_b: '13 intérpretes',
+    poster_stat_b: '15 artistes',
     poster_stat_c: '7 sedes patrimoniales',
     poster_stat_d: 'Entrada llibre',
     cta_program: 'Ver programa',
@@ -196,7 +196,7 @@ const COPY = {
     tbc: 'POR CONFIRMAR',
     cartel_n: '§ 02',
     cartel_h: 'Cartelu',
-    cartel_sub: 'Trece intérpretes y un coleutivu de creación. Música de cámara, residencia artística y trabayu site-specific.',
+    cartel_sub: 'Intérpretes, un coleutivu de creación, compositor residente y cinematógrafu. Música de cámara, residencia artística y trabayu site-specific.',
     cal_n: '§ 03',
     cal_h: 'Calendariu',
     cal_sub: 'Trece díes, once conciertos, dos descansos. Tola programación ye d’entrada llibre hasta completar aforu.',
@@ -583,9 +583,16 @@ const EVENTS: Event[] = [
   },
 ];
 
+// Creative team credited for the edition beyond the performing lineup
+// (resident composer, cinematographer). Rendered in the Cartel section.
+const EXTRA_CREDITS: Performer[] = [
+  { name: 'Zygmund de Somogyi', role: 'Compositor residente' },
+  { name: 'Guillermo Ordás', role: 'Cinematógrafo' },
+];
+
 // Build a unique artist list (preserving instrument labels from first occurrence)
 const seen = new Set<string>();
-const ARTISTS = EVENTS.flatMap((e) => e.artists).filter((a) => {
+const ARTISTS = [...EVENTS.flatMap((e) => e.artists), ...EXTRA_CREDITS].filter((a) => {
   if (seen.has(a.name)) return false;
   seen.add(a.name);
   return true;

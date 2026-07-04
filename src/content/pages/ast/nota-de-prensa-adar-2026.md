@@ -31,6 +31,8 @@ translation_group: "pll_2026_press_note"
 
 <p>LLEIGUARDA (Balmonte de Miranda, Asturies). — El Festival ADAR celebra la so sesta edición del 4 al 16 d’agostu de 2026, con un programa que percuerre ilesies, monasterios, un parador, un auditoriu municipal, dos hórreos patrimoniales y les calles del pueblu de Lleiguarda. La programación combina música de cámara contemporánea, intervenciones sonores site-specific, una muestra de residencia artística y un conciertu de zarru siguíu d’espicha.</p>
 
+<p>La edición cuenta tamién con un equipu creativu propiu: el compositor británicu-filipín <strong>Zygmund de Somogyi</strong> como compositor residente y el realizador <strong>Guillermo Ordás</strong> como cinematógrafu, encargáu de la documentación audiovisual del festival.</p>
+
 <h2 class="doc-h2">Contactu de prensa</h2>
 
 <p>

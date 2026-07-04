@@ -39,6 +39,8 @@ translation_group: "pll_2026_press_note"
 
 <p>The programme also includes the «UMBRAL ZERO» minimalist concert with Guillermo Laporta (flute) and Josefina Urraca (piano) at the Aula del Oro in Belmonte de Miranda on 7 August, a micro concert during the 12 August solar eclipse in Leiguarda, and a residency showcase by The Rest is Silence trio at the second winning hórreo on 14 August. The sound walk of 15 August through Leiguarda and the closing concert of 16 August at the parish church wrap up the edition. The closing brings together a quintet (Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta and Josefina Urraca) with works by Ravel, Ligeti, Beethoven and Stravinsky, followed by an open espicha for all audience members.</p>
 
+<p>The edition also has its own creative team: British-Filipino composer <strong>Zygmund de Somogyi</strong> as resident composer and filmmaker <strong>Guillermo Ordás</strong> as cinematographer, in charge of the festival's audiovisual documentation.</p>
+
 <h2 class="doc-h2">Key facts</h2>
 
 <table class="doc-table">
@@ -48,6 +50,7 @@ translation_group: "pll_2026_press_note"
 <tr><th>Venues</th><td>7 heritage sites</td></tr>
 <tr><th>Municipalities</th><td>6 (Belmonte de Miranda, Cangas del Narcea, El Franco, Villanueva de Oscos, Llanes, Grado)</td></tr>
 <tr><th>Performers</th><td>13 soloists and ensembles + Menhir collective</td></tr>
+<tr><th>Creative team</th><td>Zygmund de Somogyi (resident composer) · Guillermo Ordás (cinematographer)</td></tr>
 <tr><th>Admission</th><td>Free, with advance RSVP on Eventbrite</td></tr>
 <tr><th>Website</th><td>festivaladar.com</td></tr>
 </table>

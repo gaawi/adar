@@ -39,6 +39,8 @@ translation_group: "pll_2026_press_note"
 
 <p>La programación incluye además el concierto «UMBRAL ZERO» de música minimalista con Guillermo Laporta (flauta) y Josefina Urraca (piano) en el Aula del Oro de Belmonte de Miranda el 7 de agosto, un micro concierto durante el eclipse solar del 12 de agosto en Leiguarda, y una muestra de residencia del trío The Rest is Silence en el segundo hórreo seleccionado por el jurado del concurso el 14 de agosto. El paseo sonoro del 15 de agosto por Leiguarda y la clausura del 16 de agosto en la iglesia parroquial cierran la edición. El concierto de clausura reúne un quinteto (Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca) con obras de Ravel, Ligeti, Beethoven y Stravinsky, seguido de espicha abierta al público.</p>
 
+<p>La edición cuenta además con un equipo creativo propio: el compositor británico-filipino <strong>Zygmund de Somogyi</strong> como compositor residente y el realizador <strong>Guillermo Ordás</strong> como cinematógrafo, encargado de la documentación audiovisual del festival.</p>
+
 <h2 class="doc-h2">Datos clave</h2>
 
 <table class="doc-table">
@@ -48,6 +50,7 @@ translation_group: "pll_2026_press_note"
 <tr><th>Sedes</th><td>7 espacios patrimoniales</td></tr>
 <tr><th>Concejos</th><td>6 (Belmonte de Miranda, Cangas del Narcea, El Franco, Villanueva de Oscos, Llanes, Grado)</td></tr>
 <tr><th>Intérpretes</th><td>13 solistas y conjuntos + colectivo Menhir</td></tr>
+<tr><th>Equipo creativo</th><td>Zygmund de Somogyi (compositor residente) · Guillermo Ordás (cinematógrafo)</td></tr>
 <tr><th>Entrada</th><td>Libre, previa reserva en Eventbrite</td></tr>
 <tr><th>Web</th><td>festivaladar.com</td></tr>
 </table>

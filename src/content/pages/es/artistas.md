@@ -136,6 +136,28 @@ Intérpretes y creadores de la sexta edición del Festival ADAR, del 4 al 16 de 
 <p class="at-artist-years">2026</p>
 </article>
 
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/es/artista-zygmund-de-somogyi/">
+<div class="at-artist-img">
+<img src="https://static.wixstatic.com/media/555625_f20b6016899249db88bd703a58041391~mv2.jpg" alt="Zygmund de Somogyi" loading="lazy">
+</div>
+<h3>Zygmund de Somogyi</h3>
+</a>
+<p class="at-artist-role">Compositor residente</p>
+<p class="at-artist-years">2026</p>
+</article>
+
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/es/artista-guillermo-ordas/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Guillermo.JPG" alt="Guillermo Ordás" loading="lazy">
+</div>
+<h3>Guillermo Ordás</h3>
+</a>
+<p class="at-artist-role">Cinematógrafo</p>
+<p class="at-artist-years">2023 · 24 · 25 · 26</p>
+</article>
+
 </div>
 </div>
 </section>
@@ -310,7 +332,7 @@ Creadores que han aportado su visión plástica al festival a través de instala
 <h3>Guillermo Ordás</h3>
 </a>
 <p class="at-artist-role">Cinematógrafo</p>
-<p class="at-artist-years">2023 · 24 · 25</p>
+<p class="at-artist-years">2023 · 24 · 25 · 26</p>
 </article>
 
 <article class="ed-card ed-artist-card">
