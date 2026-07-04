@@ -42,19 +42,20 @@ translation_group: "pll_2026_press_note"
 
 <p>La edición arranca el martes 4 de agosto con un recital de clave a cargo de Ignacio Prego en el hórreo ganador del Concurso de Hórreos y Paneras 2026 —cuya sede se anuncia el 25 de julio—. El programa «De danzas y sonatas» recorre las formas de danza para teclado entre los siglos XVI y XVIII, desde Antonio de Cabezón y las Folías de España hasta la Chacona de la Partita para violín en re menor de J. S. Bach en la transcripción de Johannes Brahms.</p>
 
-<p>El ciclo «ADAR en ruta» reúne cuatro conciertos itinerantes de cámara. «La forma de la memoria», del trío María Martínez (violonchelo), Frederieke Saeijs (violín) y Josefina Urraca (piano), se interpreta los días 5 y 6 de agosto en la biblioteca del Parador de Corias (Cangas del Narcea) y en Llanes, con obras de Shostakóvich, Lili Boulanger, Ernest Bloch, Rajmáninov y Brittney Benton. El martes 11 de agosto, el trío Maria Florea, Lara Fernández y Daniel Claret presenta «The Rest is Silence» en el Auditorio As Quintas de El Franco, un mosaico construido sobre la idea del silencio con obras de Ligeti, Gubaidúlina, Kurtág, Webern, Penderecki, Stravinsky, Cage y Bach. El jueves 13 de agosto, ese mismo trío se amplía a quinteto en el Monasterio de Santa María de Villanueva de Oscos, con obras de Devin Cholodenko, Brahms y Dvořák.</p>
+<p>El ciclo «ADAR en ruta» reúne cuatro conciertos itinerantes de cámara. «La forma de la memoria», del trío María Martínez (violonchelo), Frederieke Saeijs (violín) y Josefina Urraca (piano), se interpreta los días 5 y 6 de agosto en la biblioteca del Parador de Corias (Cangas del Narcea) y en el Monasterio de San Antolín de Bedón (Llanes), con obras de Haydn, Lili Boulanger, Messiaen, Rajmáninov y Brittney Benton. El martes 11 de agosto, el trío Maria Florea, Lara Fernández y Daniel Claret presenta «The Rest is Silence» en el Auditorio As Quintas de El Franco, un mosaico construido sobre la idea del silencio con obras de Ligeti, Gubaidúlina, Kurtág, Webern, Penderecki, Stravinsky, Cage y Bach. El jueves 13 de agosto, ese mismo trío se amplía a quinteto en el Monasterio de Villanueva de Oscos, con obras de Schubert, Joan Magrané y Dvořák.</p>
 
 <p>El colectivo Menhir (Coco Moya e Iván Cebrián) firma una intervención site-specific durante dos jornadas —8 y 9 de agosto— en las calles de Leiguarda: un recorrido sonoro geolocalizado que combina elementos musicales, sonoros y palabras que aparecen según la ubicación del caminante. La ruta puede realizarse en solitario o en grupo en cualquier momento durante ambas jornadas.</p>
 
-<p>La programación incluye además el concierto «UMBRAL ZERO» de música minimalista con Guillermo Laporta (flauta) y Josefina Urraca (piano) en el Aula del Oro de Belmonte de Miranda el 7 de agosto, un micro concierto durante el eclipse solar del 12 de agosto en Leiguarda, y una muestra de residencia del trío The Rest is Silence en el segundo hórreo seleccionado por el jurado del concurso el 14 de agosto. El paseo sonoro del 15 de agosto por Leiguarda y la clausura del 16 de agosto en la iglesia parroquial cierran la edición. El concierto de clausura reúne un quinteto (Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca) con obras de Ravel, Ligeti, Beethoven y Stravinsky, seguido de espicha abierta al público.</p>
+<p>La programación incluye además el concierto «UMBRAL ZERO» de música minimalista con Guillermo Laporta (flauta) y Josefina Urraca (piano) en el Aula del Oro de Belmonte de Miranda el 7 de agosto, un micro concierto de quinteto en el Centro ADAR de Leiguarda el 12 de agosto, y una muestra de residencia del trío The Rest is Silence en el segundo hórreo seleccionado por el jurado del concurso el 14 de agosto. El paseo sonoro del 15 de agosto por Leiguarda y la clausura del 16 de agosto en la iglesia parroquial cierran la edición. El concierto de clausura reúne un quinteto (Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca) con obras de Ravel, Ligeti, Beethoven y Stravinsky, seguido de espicha abierta al público.</p>
 
-<p>La edición cuenta además con un equipo creativo propio: el compositor británico-filipino <strong>Zygmund de Somogyi</strong> como compositor residente y el realizador <strong>Guillermo Ordás</strong> como cinematógrafo, encargado de la documentación audiovisual del festival.</p>
+<p>El festival está dirigido por <strong>Josefina Urraca</strong> y <strong>Guillermo Laporta</strong>, responsables también de la dirección artística y el comisariado de la programación. La edición cuenta además con un equipo creativo propio: el compositor británico-filipino <strong>Zygmund de Somogyi</strong> como compositor residente y el realizador <strong>Guillermo Ordás</strong> como cinematógrafo, encargado de la documentación audiovisual del festival.</p>
 
 <h2 class="doc-h2">Datos clave</h2>
 
 <table class="doc-table">
 <tr><th>Edición</th><td>VI</td></tr>
 <tr><th>Fechas</th><td>4 al 16 de agosto de 2026</td></tr>
+<tr><th>Dirección</th><td>Josefina Urraca y Guillermo Laporta (dirección artística y comisariado)</td></tr>
 <tr><th>Conciertos</th><td>11 (más dos jornadas de intervención site-specific)</td></tr>
 <tr><th>Sedes</th><td>7 espacios patrimoniales</td></tr>
 <tr><th>Concejos</th><td>6 (Belmonte de Miranda, Cangas del Narcea, El Franco, Villanueva de Oscos, Llanes, Grado)</td></tr>
@@ -64,16 +65,27 @@ translation_group: "pll_2026_press_note"
 <tr><th>Web</th><td>festivaladar.com</td></tr>
 </table>
 
-<h2 class="doc-h2">Sedes por concejo</h2>
+<h2 class="doc-h2">Programación completa</h2>
 
 <ul class="doc-list">
-<li><strong>Belmonte de Miranda</strong> — Aula del Oro · Calles de Leiguarda · Iglesia parroquial de Leiguarda</li>
-<li><strong>Cangas del Narcea</strong> — Biblioteca del Parador de Corias (Monasterio de Corias, s/n)</li>
-<li><strong>El Franco</strong> — Auditorio As Quintas (A Caridá)</li>
-<li><strong>Villanueva de Oscos</strong> — Monasterio de Santa María</li>
-<li><strong>Llanes</strong> — Sede en el concejo (por confirmar)</li>
-<li><strong>Concurso de Hórreos 2026</strong> — Dos hórreos ganadores anunciados el 25 de julio</li>
+<li><strong>4 AGO · 20:30</strong> — «De danzas y sonatas», recital de clave con <strong>Ignacio Prego</strong>. Inauguración · Concurso de Hórreos y Paneras. <em>Hórreo ganador del concurso (sede anunciada el 25 de julio).</em></li>
+<li><strong>5 AGO · 20:30</strong> — «La forma de la memoria», trío con piano de <strong>María Martínez</strong> (violonchelo), <strong>Frederieke Saeijs</strong> (violín) y <strong>Josefina Urraca</strong> (piano). ADAR en ruta. <em>Biblioteca del Parador de Corias, Cangas del Narcea.</em></li>
+<li><strong>6 AGO · 20:30</strong> — «La forma de la memoria», segunda lectura del mismo trío. <em>Monasterio de San Antolín de Bedón, Llanes.</em></li>
+<li><strong>7 AGO · 20:30</strong> — «UMBRAL ZERO», música minimalista y arte visual con <strong>Guillermo Laporta</strong> (flauta) y <strong>Josefina Urraca</strong> (piano). <em>Aula del Oro, Belmonte de Miranda.</em></li>
+<li><strong>8 — 9 AGO</strong> — Intervención site-specific del <strong>Colectivo Menhir</strong> (Coco Moya e Iván Cebrián): recorrido sonoro geolocalizado durante dos jornadas. <em>Calles de Leiguarda, Belmonte de Miranda.</em></li>
+<li><strong>11 AGO · 20:30</strong> — «The Rest is Silence», trío de <strong>Maria Florea</strong> (violín), <strong>Lara Fernández</strong> (viola) y <strong>Daniel Claret</strong> (violonchelo). ADAR en ruta. <em>Auditorio As Quintas, A Caridá (El Franco).</em></li>
+<li><strong>12 AGO · 20:30</strong> — Micro concierto: quinteto con piano (Florea, Fernández, Claret, Laporta y Urraca) con el op. 81 de Dvořák. <em>Centro ADAR, Leiguarda.</em></li>
+<li><strong>13 AGO · 20:30</strong> — Concierto de cámara y arte visual: quinteto con obras de Schubert, Joan Magrané y Dvořák. ADAR en ruta. <em>Monasterio de Villanueva de Oscos.</em></li>
+<li><strong>14 AGO · 20:30</strong> — «Equilibrium», muestra de residencia del trío The Rest is Silence con la poesía de <strong>Joan Margarit</strong> (Kurtág y Bach). <em>Segundo hórreo ganador del concurso.</em></li>
+<li><strong>15 AGO · 21:30</strong> — Paseo sonoro por Leiguarda: quinteto <strong>Hoffman · Brazauskas · Saeijs · Laporta · Urraca</strong>. Creación site-specific. <em>Calles de Leiguarda.</em></li>
+<li><strong>16 AGO · 21:30</strong> — Clausura: concierto de quinteto (Ravel, Ligeti, Beethoven, Stravinsky) y espicha abierta. <em>Iglesia parroquial de Leiguarda.</em></li>
 </ul>
+
+<h2 class="doc-h2">Concurso de Hórreos y Paneras · convocatoria abierta</h2>
+
+<p>La convocatoria del <strong>Concurso de Hórreos y Paneras 2026</strong> está abierta. ADAR invita a propietarios, ayuntamientos y comunidades a proponer un hórreo o panera como sede de dos de los conciertos del festival: los dos espacios ganadores se anunciarán el <strong>25 de julio de 2026</strong> y acogerán el recital inaugural de clave (4 de agosto) y la muestra de residencia «Equilibrium» (14 de agosto).</p>
+
+<p>Para presentar candidatura basta con enviar un único correo electrónico a <a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a> con el asunto <strong>«Candidatura Concurso Hórreos 2026»</strong>, incluyendo: datos de identificación del solicitante (nombre, DNI/NIF, dirección, correo y teléfono), ubicación y breve descripción del hórreo o panera, fotografías del bien y —si el solicitante no es el propietario— autorización escrita de la propiedad. Las bases completas y los criterios del jurado están disponibles en <a href="/es/concurso-de-horreos-y-paneras/">la página del concurso</a>.</p>
 
 <h2 class="doc-h2">Sobre ADAR</h2>
 

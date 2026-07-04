@@ -12156,6 +12156,17 @@ body.page .entry-content .vi26 p,
 .vi26-program-wrap,
 .vi26-artists-wrap { margin: 0; }
 
+/* MÓVIL — display:contents elimina el gap:24px de .vi26-content, así que
+   reponemos el ritmo vertical con márgenes (y anulamos el margin -16px del
+   subtítulo, pensado para el gap de escritorio, que en móvil solapaba el
+   título). Va después de las reglas base para ganar en cascada. */
+@media (max-width: 720px) {
+  .vi26-content .vi26-event-sub { margin: 6px 0 0 !important; }
+  .vi26-content .vi26-event-desc { margin-top: 6px !important; }
+  .vi26-program-wrap { margin-top: 22px !important; }
+  .vi26-artists-wrap { margin-top: 22px !important; }
+}
+
 /* Program list (multi-column for long programs) */
 .vi26-program.is-multi {
   column-count: 2;
