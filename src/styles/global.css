@@ -11731,28 +11731,64 @@ body.page .entry-content .vi26 p,
   .vi26-event { grid-template-columns: 260px minmax(0, 1fr); column-gap: 32px; }
 }
 
-/* MÓVIL — todo el evento dentro de una única tarjeta blanca:
-   foto arriba, luego municipio + título + descripción, y al final
-   el bloque de cuándo/dónde/reserva. */
+/* MÓVIL — todo el evento en una única tarjeta blanca. Orden pensado para
+   el móvil: foto · municipio · título · CUÁNDO · DÓNDE (datos arriba, junto
+   al título) · descripción · programa · artistas · datos · nota · reserva.
+   Desplegamos .vi26-content y .vi26-aside-info con display:contents para
+   intercalar cuándo/dónde justo bajo el título SIN tocar la maqueta de
+   escritorio (que se rige por grid-template-areas). */
 @media (max-width: 720px) {
   .vi26-event {
     display: flex;
     flex-direction: column;
     gap: 0;
-    padding-bottom: 0;
+    padding: 0 0 24px;
     background: #fff;
     border: 1px solid rgba(10,9,7,0.18);
     overflow: hidden;
   }
-  .vi26-event > .vi26-cover { aspect-ratio: 4 / 3 !important; }
-  .vi26-event > .vi26-content { order: 2; padding: 22px 20px 8px; }
-  .vi26-event > .vi26-aside-info {
-    order: 3;
-    border: 0;
-    border-top: 1px solid rgba(10,9,7,0.14);
-    background: transparent;
-    padding: 18px 20px 22px;
+  .vi26-event > .vi26-content,
+  .vi26-event > .vi26-aside-info { display: contents; }
+
+  /* Foto a sangre, siempre en primer lugar */
+  .vi26-event > .vi26-cover {
+    aspect-ratio: 4 / 3 !important;
+    order: 0;
+    margin: 0;
   }
+  /* Márgenes laterales comunes para todo el texto (la foto va a sangre) */
+  .vi26-event > .vi26-content > *,
+  .vi26-event > .vi26-aside-info > * {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .vi26-event-muni              { order: 1; margin: 18px 0 2px !important; }
+  .vi26-event-title             { order: 2; }
+  .vi26-content .vi26-event-sub { order: 3; }
+  .vi26-aside-when              { order: 4; }
+  .vi26-aside-where             { order: 5; }
+  .vi26-event-desc              { order: 6; }
+  .vi26-program-wrap            { order: 7; }
+  .vi26-artists-wrap            { order: 8; }
+  .vi26-aside-facts             { order: 9; }
+  .vi26-aside-note              { order: 10; }
+  .vi26-event-cta               { order: 11; }
+  .vi26-aside-n                 { display: none; }
+
+  /* CUÁNDO + DÓNDE — banda de datos destacada justo bajo el título */
+  .vi26-aside-when {
+    margin-top: 14px !important;
+    padding-top: 14px;
+    border-top: 1px solid rgba(10,9,7,0.15);
+  }
+  /* Datos/reserva del pie, separados del cuerpo del programa */
+  .vi26-aside-facts {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(10,9,7,0.14);
+  }
+  .vi26-event-cta { margin-top: 16px; }
 }
 
 /* Municipio — grande y claro, encima del título del concierto */
