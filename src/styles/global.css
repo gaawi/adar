@@ -4595,6 +4595,16 @@ body.single header.site-header a.cd-cta {
   .cd-lang { font-size: 10px; }
   .cd-lang a { padding: 3px 5px; }
 }
+@media (max-width: 400px) {
+  /* Very small phones: shrink further and keep the hamburger on-screen. */
+  .cd-main { gap: 8px; }
+  .cd-mark-logo { height: 24px; }
+  .cd-right { gap: 4px; }
+  .cd-cta { padding: 6px 9px; font-size: 10px; }
+  .cd-lang { font-size: 9px; }
+  .cd-lang a { padding: 2px 4px; letter-spacing: 0.06em; }
+  .adar-nav-toggle { flex: 0 0 auto; }
+}
 
 /* =============================================================
    HEROES — typography rewrite for .amp-hero and .adar-archive-hero
