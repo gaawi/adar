@@ -70,7 +70,7 @@ translation_group: "pll_699351de5bc59"
 </div>
 <div class="adar-stat">
 <p class="ed-stat-k">Public support</p>
-<p class="ed-stat-v">20,000 - 40,una dotación</p>
+<p class="ed-stat-v">An institutional grant</p>
 <p class="ed-stat-t">Recurring support from the Principality of Asturias in several consecutive years.</p>
 </div>
 <div class="adar-stat">
@@ -88,7 +88,7 @@ translation_group: "pll_699351de5bc59"
 <h3>Verified data</h3>
 <ul class="ed-prose">
 <li>ADAR was founded in 2021 in Leiguarda and has evolved into a stable network of rural councils.</li>
-<li>Recurring support from the Principality of Asturias in several consecutive years, with grants between 20,000 and 40,una dotación.</li>
+<li>Recurring support from the Principality of Asturias over several consecutive years, with institutional grants from €20,000.</li>
 <li>Thousands of attendees and prominent coverage in regional press, as well as national coverage including RNE.</li>
 </ul>
 <p class="adar-source">Source: ADAR project report.</p>
