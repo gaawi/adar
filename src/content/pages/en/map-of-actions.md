@@ -51,10 +51,10 @@ WORDPRESS: Editor → Text (no Visual) → pega todo → Update
 
 <!-- STATS — mismo ancho que el mapa -->
 <div class="amp-stats">
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="36">0</span><span class="amp-stat-l">Activities</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">0</span><span class="amp-stat-l">Municipalities</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="5">0</span><span class="amp-stat-l">Editions</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">0</span><span class="amp-stat-l">Since</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="36">36</span><span class="amp-stat-l">Activities</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">14</span><span class="amp-stat-l">Municipalities</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="5">5</span><span class="amp-stat-l">Editions</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">2021</span><span class="amp-stat-l">Since</span></div>
 </div>
 <div class="amp-filters">
 <button class="amp-filter-btn active" data-year="all">All years</button>
@@ -153,6 +153,7 @@ var concejos = [
 ];
 
 /* MAP */
+if (typeof L !== 'undefined') {
 var map = L.map('adar-leaflet-map',{center:[43.28,-6.05],zoom:8,zoomControl:true,scrollWheelZoom:false,tap:false});
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{
 attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com">CARTO</a>',
@@ -232,6 +233,7 @@ if(document.readyState === 'loading'){
 document.addEventListener('DOMContentLoaded', initFilters);
 } else {
 initFilters();
+}
 }
 
 /* COUNTERS */

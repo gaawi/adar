@@ -34,25 +34,25 @@ translation_group: "pll_69b06583421f1"
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg" alt=""/>
 </div>
 <div class="amp-hero-inner">
-<span class="amp-eyebrow">Festival ADAR · Asturias, Spain</span>
-<h2 class="amp-title">Map of <em>Actions</em></h2>
-<p class="amp-subtitle">Contemporary art in rural areas · 2021 – 2025</p>
+<span class="amp-eyebrow">Festival ADAR · Asturies, España</span>
+<h2 class="amp-title">Mapa d’<em>Acciones</em></h2>
+<p class="amp-subtitle">Arte contemporáneu nel mediu rural · 2021 – 2025</p>
 </div>
 </div>
 
 <!-- MAP -->
 <div class="amp-map-wrap">
-<p class="amp-section-label">ADAR Territory</p>
+<p class="amp-section-label">Territoriu ADAR</p>
 
 <!-- STATS — mismo ancho que el mapa -->
 <div class="amp-stats">
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="36">0</span><span class="amp-stat-l">Activities</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">0</span><span class="amp-stat-l">Municipalities</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="5">0</span><span class="amp-stat-l">Editions</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">0</span><span class="amp-stat-l">Since</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="36">36</span><span class="amp-stat-l">Actividaes</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">14</span><span class="amp-stat-l">Conceyos</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="5">5</span><span class="amp-stat-l">Ediciones</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">2021</span><span class="amp-stat-l">Dende</span></div>
 </div>
 <div class="amp-filters">
-<button class="amp-filter-btn active" data-year="all">All years</button>
+<button class="amp-filter-btn active" data-year="all">Tolos años</button>
 <button class="amp-filter-btn" data-year="2025">2025</button>
 <button class="amp-filter-btn" data-year="2024">2024</button>
 <button class="amp-filter-btn" data-year="2023">2023</button>
@@ -148,6 +148,7 @@ var concejos = [
 ];
 
 /* MAP */
+if (typeof L !== 'undefined') {
 var map = L.map('adar-leaflet-map',{center:[43.28,-6.05],zoom:8,zoomControl:true,scrollWheelZoom:false,tap:false});
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{
 attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com">CARTO</a>',
@@ -252,6 +253,7 @@ if(document.readyState === 'loading'){
 document.addEventListener('DOMContentLoaded', function(){ buildMarkers(concejos); });
 } else {
 buildMarkers(concejos);
+}
 }
 
 /* COUNTERS */
