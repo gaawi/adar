@@ -15,7 +15,7 @@ excerpt: "Clave · Clavecinista, fundador y director de Tiento Nuovo, primer cla
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_art_ignacio_prego"
 ---
 
 <article class="qea">

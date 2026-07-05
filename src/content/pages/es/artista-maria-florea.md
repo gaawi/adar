@@ -15,7 +15,7 @@ excerpt: "Violín · Violinista solista y de cámara, concertino de la Franz Sch
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_art_maria_florea"
 ---
 
 <article class="qea">

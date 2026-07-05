@@ -15,7 +15,7 @@ excerpt: "Artista visual · Escultura y arte comestible interdisciplinar"
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_art_sarah_k_williams"
 ---
 
 <article class="qea">

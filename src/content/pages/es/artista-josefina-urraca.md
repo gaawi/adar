@@ -15,7 +15,7 @@ excerpt: "Piano · Dirección Artística · Pianista y gestora cultural, cofunda
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_art_josefina_urraca"
 ---
 
 <article class="qea">

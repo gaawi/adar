@@ -15,7 +15,7 @@ excerpt: "Pianista · Piano de recital y música de cámara"
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_art_mario_molina"
 ---
 
 <article class="qea">

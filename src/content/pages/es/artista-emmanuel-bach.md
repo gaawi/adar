@@ -15,7 +15,7 @@ excerpt: "Violinista · Violín solista y de cámara, repertorio desde Bach hast
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_art_emmanuel_bach"
 ---
 
 <article class="qea">

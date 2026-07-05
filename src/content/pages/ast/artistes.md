@@ -47,7 +47,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 <div class="ed-grid-3">
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-ignacio-prego/">
+<a class="ed-artist-link" href="/ast/artista-ignacio-prego/">
 <div class="at-artist-img">
 <img src="https://s1.abcstatics.com/abc/www/multimedia/sevilla/2023/01/18/ignacio-priego-uno_20230118120520-kJAB-Rz4H5Ye2vCc2SwoCBKMcEPM-1200x840@abc.jpg" alt="Ignacio Prego" loading="lazy">
 </div>
@@ -57,7 +57,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-maria-martinez/">
+<a class="ed-artist-link" href="/ast/artista-maria-martinez/">
 <div class="at-artist-img">
 <img src="https://katarinagurska.com/wp-content/uploads/2022/03/maria-martinez-interior.jpg" alt="María Martínez" loading="lazy">
 </div>
@@ -67,7 +67,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-frederieke-saeijs/">
+<a class="ed-artist-link" href="/ast/artista-frederieke-saeijs/">
 <div class="at-artist-img">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRllaSawaUhyhnLJDgPzZRvdtVId2aDU4Q6H-Sj2diNF0FrLLiY1hSQ9iLNZMs0NYDqiHCTxqueDmLBPN_y-vb0vQ43ExghPwFHdC1Q7g&s=10" alt="Frederieke Saeijs" loading="lazy">
 </div>
@@ -77,7 +77,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-coco-moya/">
+<a class="ed-artist-link" href="/ast/artista-coco-moya/">
 <div class="at-artist-img">
 <img src="https://laboralcentrodearte.org/wp-content/uploads/2025/04/foto-coco-2022_04-1.webp" alt="Coco Moya" loading="lazy">
 </div>
@@ -87,7 +87,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-ivan-cebrian/">
+<a class="ed-artist-link" href="/ast/artista-ivan-cebrian/">
 <div class="at-artist-img">
 <img src="https://valencia.berklee.edu/sites/default/files/styles/scale_to_480px_width/public/2023-02/Ivan%20Cebrian%20Berklee.jpg" alt="Iván Cebrián" loading="lazy">
 </div>
@@ -97,7 +97,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-colectivo-menhir/">
+<a class="ed-artist-link" href="/ast/artista-colectivo-menhir/">
 <div class="at-artist-img">
 <img src="https://laboralcentrodearte.org/wp-content/uploads/2015/09/Menhir-Instalacion-0_72ppp.webp" alt="Colectivo Menhir" loading="lazy">
 </div>
@@ -107,7 +107,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-maria-florea/">
+<a class="ed-artist-link" href="/ast/artista-maria-florea/">
 <div class="at-artist-img">
 <img src="https://www.schubertiada.cat/images/Biografies/MariaFlorea_bio.jpg" alt="Maria Florea" loading="lazy">
 </div>
@@ -117,7 +117,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-lara-fernandez/">
+<a class="ed-artist-link" href="/ast/artista-lara-fernandez/">
 <div class="at-artist-img">
 <img src="https://csma.es/wp-content/uploads/2024/05/Foto-CV-Lara-scaled.jpg" alt="Lara Fernández" loading="lazy">
 </div>
@@ -127,7 +127,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-daniel-claret/">
+<a class="ed-artist-link" href="/ast/artista-daniel-claret/">
 <div class="at-artist-img">
 <img src="https://forummusikae.com/wp-content/uploads/yootheme/cache/36/DSC7351dx-3604bb79.jpg" alt="Daniel Claret" loading="lazy">
 </div>
@@ -138,7 +138,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-zygmund-de-somogyi/">
+<a class="ed-artist-link" href="/ast/artista-zygmund-de-somogyi/">
 <div class="at-artist-img">
 <img src="https://static.wixstatic.com/media/555625_f20b6016899249db88bd703a58041391~mv2.jpg" alt="Zygmund de Somogyi" loading="lazy">
 </div>
@@ -149,7 +149,7 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-guillermo-ordas/">
+<a class="ed-artist-link" href="/ast/artista-guillermo-ordas/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Guillermo.JPG" alt="Guillermo Ordás" loading="lazy">
 </div>
@@ -177,7 +177,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 <div class="ed-grid-3">
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-andrea-casarrubios/">
+<a class="ed-artist-link" href="/ast/artista-andrea-casarrubios/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/img-3981-3028023682.jpg" alt="Andrea Casarrubios" loading="lazy">
 </div>
@@ -188,7 +188,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-ballarte-ensemble/">
+<a class="ed-artist-link" href="/ast/artista-ballarte-ensemble/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="BellArte Ensemble" loading="lazy">
 </div>
@@ -199,7 +199,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-almudena-arribas/">
+<a class="ed-artist-link" href="/ast/artista-almudena-arribas/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.02.35.jpg" alt="Almudena Arribas" loading="lazy">
 </div>
@@ -210,7 +210,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-jone-de-la-fuente/">
+<a class="ed-artist-link" href="/ast/artista-jone-de-la-fuente/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.01.37.jpg" alt="Jone de la Fuente" loading="lazy">
 </div>
@@ -221,7 +221,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-natania-hoffman/">
+<a class="ed-artist-link" href="/ast/artista-natania-hoffman/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Natania+Hoffman.jpeg" alt="Natania Hoffman" loading="lazy">
 </div>
@@ -232,7 +232,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-nathaniel-sullivan/">
+<a class="ed-artist-link" href="/ast/artista-nathaniel-sullivan/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/NathanielSullivan_2017_1002w.jpeg" alt="Nathaniel Sullivan" loading="lazy">
 </div>
@@ -243,7 +243,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-emmanuel-bach/">
+<a class="ed-artist-link" href="/ast/artista-emmanuel-bach/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Emmanuel-Bach-1-400.jpg.jpg" alt="Emmanuel Bach" loading="lazy">
 </div>
@@ -254,7 +254,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-zilvinas-brazauskas/">
+<a class="ed-artist-link" href="/ast/artista-zilvinas-brazauskas/">
 <div class="at-artist-img">
 <img src="https://zitahouse.com/zita-api/uploads/musician_zilvinas_604aebd0d0.webp" alt="Žilvinas Brazauskas" loading="lazy">
 </div>
@@ -265,7 +265,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-beatriz-blanco/">
+<a class="ed-artist-link" href="/ast/artista-beatriz-blanco/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/78e28e_662f092233ee41e3ba36d51a977adb20_mv2_d_3311_3310_s_4_2.jpeg" alt="Beatriz Blanco" loading="lazy">
 </div>
@@ -276,7 +276,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-marcos-fernandez/">
+<a class="ed-artist-link" href="/ast/artista-marcos-fernandez/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Nocturno-Sinfonico-Auditorio-de-Galicia.jpeg" alt="Marcos Fernández" loading="lazy">
 </div>
@@ -287,7 +287,7 @@ Músicos, compositores, cineastes y artistes visuales que participaron a lo llar
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-mario-molina/">
+<a class="ed-artist-link" href="/ast/artista-mario-molina/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Mario.jpg" alt="Mario Molina" loading="lazy">
 </div>
@@ -315,7 +315,7 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 <div class="ed-grid-3">
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-sarah-k-williams/">
+<a class="ed-artist-link" href="/ast/artista-sarah-k-williams/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Sarah-K-Williams_Website-Image-3088365824.jpg" alt="Sara K. Williams" loading="lazy">
 </div>
@@ -326,7 +326,7 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-guillermo-ordas/">
+<a class="ed-artist-link" href="/ast/artista-guillermo-ordas/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Guillermo.JPG" alt="Guillermo Ordás" loading="lazy">
 </div>
@@ -337,7 +337,7 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-mizuko-kaji/">
+<a class="ed-artist-link" href="/ast/artista-mizuko-kaji/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Mizuko+Kaji.jpeg" alt="Mizuko Kaji" loading="lazy">
 </div>
@@ -348,7 +348,7 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-diego-arribas/">
+<a class="ed-artist-link" href="/ast/artista-diego-arribas/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Diego-Arribas.jpg" alt="Diego Arribas" loading="lazy">
 </div>
@@ -359,7 +359,7 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-guillermo-laporta/">
+<a class="ed-artist-link" href="/ast/artista-guillermo-laporta/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">
 </div>
@@ -387,7 +387,7 @@ Formaciones qu'arriquecieron la programación del festival cola so participació
 <div class="ed-grid-3">
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-companeras-pandereteras/">
+<a class="ed-artist-link" href="/ast/artista-companeras-pandereteras/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+11.13.00.jpg" alt="Compañeras Panderetas" loading="lazy">
 </div>
@@ -398,7 +398,7 @@ Formaciones qu'arriquecieron la programación del festival cola so participació
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-nacho-laguna/">
+<a class="ed-artist-link" href="/ast/artista-nacho-laguna/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="Nacho Laguna" loading="lazy">
 </div>
@@ -409,7 +409,7 @@ Formaciones qu'arriquecieron la programación del festival cola so participació
 </article>
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/es/artista-maria-del-buey/">
+<a class="ed-artist-link" href="/ast/artista-maria-del-buey/">
 <div class="at-artist-img">
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fin-sonora.org%2Fwp-content%2Fuploads%2F2022%2F02%2Fmaria-buey-in12-profile.jpg&f=1&nofb=1&ipt=9e737c74a901df03eb60c2111b4e0761dd1f968bd3bb4880e51b1dfdc3355d78" alt="Maria del Buey" loading="lazy">
 </div>
@@ -438,7 +438,7 @@ Cofundadores de CreArtBox y del Festival ADAR. Creación, interpretación y prod
 
 <!-- Josefina -->
 <article class="ed-card ed-person">
-<a class="ed-artist-link" href="/es/artista-josefina-urraca/">
+<a class="ed-artist-link" href="/ast/artista-josefina-urraca/">
 <div class="ed-item-top">
 <div class="ed-avatar">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg" alt="Josefina Urraca" loading="lazy">
@@ -453,7 +453,7 @@ Cofundadores de CreArtBox y del Festival ADAR. Creación, interpretación y prod
 
 <!-- Guillermo -->
 <article class="ed-card ed-person">
-<a class="ed-artist-link" href="/es/artista-guillermo-laporta/">
+<a class="ed-artist-link" href="/ast/artista-guillermo-laporta/">
 <div class="ed-item-top">
 <div class="ed-avatar">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">

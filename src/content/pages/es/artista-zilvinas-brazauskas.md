@@ -15,7 +15,7 @@ excerpt: "Clarinetista · Clarinete solista y de cámara, escena centroeuropea d
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_art_zilvinas_brazauskas"
 ---
 
 <article class="qea">

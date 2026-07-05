@@ -15,7 +15,7 @@ excerpt: "Violinista"
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_art_jone_de_la_fuente"
 ---
 
 <article class="qea">

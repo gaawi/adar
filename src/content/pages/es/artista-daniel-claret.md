@@ -15,7 +15,7 @@ excerpt: "Violonchelo · Violonchelista solista y de cámara, profesor en el Con
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_art_daniel_claret"
 ---
 
 <article class="qea">

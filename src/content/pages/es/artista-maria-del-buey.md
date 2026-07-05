@@ -15,7 +15,7 @@ excerpt: "Artista invitada · Artista e investigadora centrada en espacios espec
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
-translation_group: ""
+translation_group: "pll_art_maria_del_buey"
 ---
 
 <article class="qea">
