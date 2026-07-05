@@ -11855,10 +11855,16 @@ body.page .entry-content .vi26 p,
    intercalar cuándo/dónde justo bajo el título SIN tocar la maqueta de
    escritorio (que se rige por grid-template-areas). */
 @media (max-width: 720px) {
+  /* Grid de 2 columnas: todo ocupa el ancho completo salvo CUÁNDO y DÓNDE,
+     que comparten fila (una columna cada uno) bajo el título. El orden de
+     lectura se mantiene con `order` (la colocación automática del grid lo
+     respeta). */
   .vi26-event {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0;
+    column-gap: 0;       /* anula el column-gap de escritorio (48px) */
+    align-items: stretch; /* iguala la altura de CUÁNDO y DÓNDE */
     padding: 0 0 24px;
     background: #fff;
     border: 1px solid rgba(10,9,7,0.18);
@@ -11872,12 +11878,14 @@ body.page .entry-content .vi26 p,
     aspect-ratio: 4 / 3 !important;
     order: 0;
     margin: 0;
+    grid-column: 1 / -1;
   }
   /* Márgenes laterales comunes para todo el texto (la foto va a sangre) */
   .vi26-event > .vi26-content > *,
   .vi26-event > .vi26-aside-info > * {
     padding-left: 20px;
     padding-right: 20px;
+    grid-column: 1 / -1;
   }
 
   .vi26-event-muni              { order: 1; margin: 18px 0 2px !important; }
@@ -11893,12 +11901,26 @@ body.page .entry-content .vi26 p,
   .vi26-event-cta               { order: 11; }
   .vi26-aside-n                 { display: none; }
 
-  /* CUÁNDO + DÓNDE — banda de datos destacada justo bajo el título */
-  .vi26-aside-when {
+  /* CUÁNDO + DÓNDE — dos columnas, lado a lado bajo el título, con una
+     única hairline superior compartida. */
+  .vi26-event > .vi26-aside-info > .vi26-aside-when {
+    grid-column: 1;
     margin-top: 14px !important;
-    padding-top: 14px;
+    padding: 14px 10px 14px 20px;
     border-top: 1px solid rgba(10,9,7,0.15);
+    border-bottom: 1px solid rgba(10,9,7,0.15);
   }
+  .vi26-event > .vi26-aside-info > .vi26-aside-where {
+    grid-column: 2;
+    margin-top: 14px !important;
+    padding: 14px 20px 14px 10px;
+    border-top: 1px solid rgba(10,9,7,0.15);
+    border-bottom: 1px solid rgba(10,9,7,0.15);
+  }
+  /* La fecha grande se ajusta a la media columna */
+  .vi26-aside-when-date { font-size: 26px; }
+  .vi26-aside-where-venue { font-size: 16px; }
+
   /* Datos/reserva del pie, separados del cuerpo del programa */
   .vi26-aside-facts {
     margin-top: 18px;
