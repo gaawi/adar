@@ -9,7 +9,7 @@ wp_id: 788
 original_url: "https://festivaladar.com/en/visual-concert-soto-del-barco-2022/"
 permalink: "/en/visual-concert-soto-del-barco-2022/"
 categories: ["Projects Archive"]
-tags: ["2022", "musica de camara", "Soto del Barco", "visual concert"]
+tags: ["2022", "chamber music", "Soto del Barco", "visual concert"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/09_Concierto_visual_en_Soto_del_Barco/PXL_20220809_190711391.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

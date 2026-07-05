@@ -9,7 +9,7 @@ wp_id: 821
 original_url: "https://festivaladar.com/en/concert-monastery-san-salvador-cornellana-2024/"
 permalink: "/en/concert-monastery-san-salvador-cornellana-2024/"
 categories: ["Projects Archive"]
-tags: ["2024", "concert", "lugar emblematico", "musica de camara", "Salas"]
+tags: ["2024", "concert", "landmark venue", "chamber music", "Salas"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar24fx30/12/IMG_0203.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

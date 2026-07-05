@@ -9,7 +9,7 @@ wp_id: 810
 original_url: "https://festivaladar.com/en/concert-miranda-valdecarzana-grado-2023/"
 permalink: "/en/concert-miranda-valdecarzana-grado-2023/"
 categories: ["Projects Archive"]
-tags: ["2023", "concert", "Grado", "lugar emblematico", "musica de camara"]
+tags: ["2023", "concert", "Grado", "landmark venue", "chamber music"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/Festival%20ADAR%20Photos/2023/06%20concierto%20grado/image5.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

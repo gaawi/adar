@@ -9,7 +9,7 @@ wp_id: 804
 original_url: "https://festivaladar.com/en/concert-el-franco-2023/"
 permalink: "/en/concert-el-franco-2023/"
 categories: ["Projects Archive"]
-tags: ["2023", "El Franco", "musica de camara", "visual concert"]
+tags: ["2023", "El Franco", "chamber music", "visual concert"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

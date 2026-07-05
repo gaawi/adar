@@ -9,7 +9,7 @@ wp_id: 841
 original_url: "https://festivaladar.com/en/sound-walk-leiguarda-2025/"
 permalink: "/en/sound-walk-leiguarda-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "Belmonte de Miranda", "paseo sonoro", "visual art"]
+tags: ["2025", "Belmonte de Miranda", "sound walk", "visual art"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

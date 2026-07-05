@@ -9,7 +9,7 @@ wp_id: 0
 original_url: ""
 permalink: "/en/concert-monastery-san-antolin-bedon-2024/"
 categories: ["Projects Archive"]
-tags: ["2024", "concert", "Llanes", "lugar emblematico", "musica de camara"]
+tags: ["2024", "concert", "Llanes", "landmark venue", "chamber music"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/15.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

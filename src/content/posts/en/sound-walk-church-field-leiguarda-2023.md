@@ -9,7 +9,7 @@ wp_id: 0
 original_url: ""
 permalink: "/en/sound-walk-church-field-leiguarda-2023/"
 categories: ["Projects Archive"]
-tags: ["2023", "Belmonte de Miranda", "paseo sonoro", "visual art"]
+tags: ["2023", "Belmonte de Miranda", "sound walk", "visual art"]
 featured_image: ""
 excerpt: ""
 author: "Festival ADAR"

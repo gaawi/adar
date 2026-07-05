@@ -9,7 +9,7 @@ wp_id: 0
 original_url: ""
 permalink: "/en/installation-palacio-fontela-grado-2024/"
 categories: ["Projects Archive"]
-tags: ["2024", "Grado", "visual art", "lugar emblematico"]
+tags: ["2024", "Grado", "visual art", "landmark venue"]
 featured_image: ""
 excerpt: ""
 author: "Festival ADAR"

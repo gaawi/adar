@@ -9,7 +9,7 @@ wp_id: 802
 original_url: "https://festivaladar.com/en/sound-walk-el-franco-2023/"
 permalink: "/en/sound-walk-el-franco-2023/"
 categories: ["Projects Archive"]
-tags: ["2023", "El Franco", "musica de camara", "paseo sonoro"]
+tags: ["2023", "El Franco", "chamber music", "sound walk"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Paseo_sonoro_El_Franco/01.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

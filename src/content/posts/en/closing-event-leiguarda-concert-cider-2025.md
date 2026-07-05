@@ -9,7 +9,7 @@ wp_id: 855
 original_url: "https://festivaladar.com/en/closing-event-leiguarda-concert-cider-2025/"
 permalink: "/en/closing-event-leiguarda-concert-cider-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "Belmonte de Miranda", "concert", "espicha", "musica de camara"]
+tags: ["2025", "Belmonte de Miranda", "concert", "espicha", "chamber music"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

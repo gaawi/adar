@@ -9,7 +9,7 @@ wp_id: 786
 original_url: "https://festivaladar.com/en/visual-concert-el-franco-2022/"
 permalink: "/en/visual-concert-el-franco-2022/"
 categories: ["Projects Archive"]
-tags: ["2022", "El Franco", "musica de camara", "visual concert"]
+tags: ["2022", "El Franco", "chamber music", "visual concert"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/08_Concierto_visual_en_El_Franco/PXL_20220808_201603027~2.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

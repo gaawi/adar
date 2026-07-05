@@ -9,7 +9,7 @@ wp_id: 784
 original_url: "https://festivaladar.com/en/opening-concert-leiguarda-2021/"
 permalink: "/en/opening-concert-leiguarda-2021/"
 categories: ["Projects Archive"]
-tags: ["2021", "Belmonte de Miranda", "concert", "musica de camara"]
+tags: ["2021", "Belmonte de Miranda", "concert", "chamber music"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

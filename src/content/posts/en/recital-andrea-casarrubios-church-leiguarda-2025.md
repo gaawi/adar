@@ -9,7 +9,7 @@ wp_id: 853
 original_url: "https://festivaladar.com/en/recital-andrea-casarrubios-church-leiguarda-2025/"
 permalink: "/en/recital-andrea-casarrubios-church-leiguarda-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "Belmonte de Miranda", "concert", "musica de camara"]
+tags: ["2025", "Belmonte de Miranda", "concert", "chamber music"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01590.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

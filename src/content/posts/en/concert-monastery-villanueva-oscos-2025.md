@@ -9,7 +9,7 @@ wp_id: 849
 original_url: "https://festivaladar.com/en/concert-monastery-villanueva-oscos-2025/"
 permalink: "/en/concert-monastery-villanueva-oscos-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "concert", "lugar emblematico", "musica de camara", "Villanueva de Oscos"]
+tags: ["2025", "concert", "landmark venue", "chamber music", "Villanueva de Oscos"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01456.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

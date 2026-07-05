@@ -9,7 +9,7 @@ wp_id: 833
 original_url: "https://festivaladar.com/en/closing-concert-glass-greenhouse-leiguarda-2024/"
 permalink: "/en/closing-concert-glass-greenhouse-leiguarda-2024/"
 categories: ["Projects Archive"]
-tags: ["2024", "Belmonte de Miranda", "concert", "musica de camara"]
+tags: ["2024", "Belmonte de Miranda", "concert", "chamber music"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/image15.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

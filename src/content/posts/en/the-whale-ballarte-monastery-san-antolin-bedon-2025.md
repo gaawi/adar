@@ -9,7 +9,7 @@ wp_id: 837
 original_url: "https://festivaladar.com/en/the-whale-ballarte-monastery-san-antolin-bedon-2025/"
 permalink: "/en/the-whale-ballarte-monastery-san-antolin-bedon-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "concert", "llanes", "lugar emblematico"]
+tags: ["2025", "concert", "Llanes", "landmark venue"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/07_The_Whale_Ballarte_en_el_Monasterio_de_San_Antolin_de_Bedon/DSC00382.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

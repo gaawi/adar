@@ -9,7 +9,7 @@ wp_id: 825
 original_url: "https://festivaladar.com/en/micro-concerts-sound-walk-leiguarda-2024/"
 permalink: "/en/micro-concerts-sound-walk-leiguarda-2024/"
 categories: ["Projects Archive"]
-tags: ["2024", "Belmonte de Miranda", "concert", "paseo sonoro"]
+tags: ["2024", "Belmonte de Miranda", "concert", "sound walk"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

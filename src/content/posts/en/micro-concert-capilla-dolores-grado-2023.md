@@ -9,7 +9,7 @@ wp_id: 812
 original_url: "https://festivaladar.com/en/micro-concert-capilla-dolores-grado-2023/"
 permalink: "/en/micro-concert-capilla-dolores-grado-2023/"
 categories: ["Projects Archive"]
-tags: ["2023", "concert", "Grado", "lugar emblematico"]
+tags: ["2023", "concert", "Grado", "landmark venue"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Micro_concierto_en_la_Capilla_de_los_Dolores_Grado_2023/31.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

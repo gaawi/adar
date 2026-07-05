@@ -9,7 +9,7 @@ wp_id: 843
 original_url: "https://festivaladar.com/en/micro-concert-puerma-las-regueras-2025/"
 permalink: "/en/micro-concert-puerma-las-regueras-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "concert", "concurso de horreos", "Las Regueras"]
+tags: ["2025", "concert", "hórreos competition", "Las Regueras"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

@@ -9,7 +9,7 @@ wp_id: 0
 original_url: ""
 permalink: "/en/micro-concert-panera-casantos-leiguarda-2023/"
 categories: ["Projects Archive"]
-tags: ["2023", "Belmonte de Miranda", "concert", "lugar emblematico", "musica de camara"]
+tags: ["2023", "Belmonte de Miranda", "concert", "landmark venue", "chamber music"]
 featured_image: ""
 excerpt: ""
 author: "Festival ADAR"

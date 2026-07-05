@@ -9,7 +9,7 @@ wp_id: 847
 original_url: "https://festivaladar.com/en/concert-taramundi-2025/"
 permalink: "/en/concert-taramundi-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "concert", "lugar emblematico", "musica de camara", "Taramundi"]
+tags: ["2025", "concert", "landmark venue", "chamber music", "Taramundi"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01048.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

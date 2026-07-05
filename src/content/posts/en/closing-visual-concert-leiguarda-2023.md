@@ -9,7 +9,7 @@ wp_id: 818
 original_url: "https://festivaladar.com/en/closing-visual-concert-leiguarda-2023/"
 permalink: "/en/closing-visual-concert-leiguarda-2023/"
 categories: ["Projects Archive"]
-tags: ["2023", "Belmonte de Miranda", "musica de camara", "outdoor", "visual concert"]
+tags: ["2023", "Belmonte de Miranda", "chamber music", "outdoor", "visual concert"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/02.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

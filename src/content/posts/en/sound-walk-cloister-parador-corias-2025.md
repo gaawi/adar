@@ -9,7 +9,7 @@ wp_id: 851
 original_url: "https://festivaladar.com/en/sound-walk-cloister-parador-corias-2025/"
 permalink: "/en/sound-walk-cloister-parador-corias-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "Cangas del Narcea", "lugar emblematico", "musica de camara", "paseo sonoro"]
+tags: ["2025", "Cangas del Narcea", "landmark venue", "chamber music", "sound walk"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

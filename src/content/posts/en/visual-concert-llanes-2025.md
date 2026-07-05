@@ -9,7 +9,7 @@ wp_id: 839
 original_url: "https://festivaladar.com/en/visual-concert-llanes-2025/"
 permalink: "/en/visual-concert-llanes-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "llanes", "lugar emblematico", "musica de camara", "visual concert"]
+tags: ["2025", "Llanes", "landmark venue", "chamber music", "visual concert"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

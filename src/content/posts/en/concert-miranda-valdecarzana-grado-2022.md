@@ -9,7 +9,7 @@ wp_id: 794
 original_url: "https://festivaladar.com/en/concert-miranda-valdecarzana-grado-2022/"
 permalink: "/en/concert-miranda-valdecarzana-grado-2022/"
 categories: ["Projects Archive"]
-tags: ["2022", "concert", "Grado", "lugar emblematico", "musica de camara"]
+tags: ["2022", "concert", "Grado", "landmark venue", "chamber music"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/12_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2022/PXL_20220812_184621365~2.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

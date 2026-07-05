@@ -9,7 +9,7 @@ wp_id: 827
 original_url: "https://festivaladar.com/en/concert-miranda-valdecarzana-grado-2024/"
 permalink: "/en/concert-miranda-valdecarzana-grado-2024/"
 categories: ["Projects Archive"]
-tags: ["2024", "concert", "Grado", "lugar emblematico", "musica de camara"]
+tags: ["2024", "concert", "Grado", "landmark venue", "chamber music"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/20.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

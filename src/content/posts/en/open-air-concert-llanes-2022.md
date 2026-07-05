@@ -9,7 +9,7 @@ wp_id: 792
 original_url: "https://festivaladar.com/en/open-air-concert-llanes-2022/"
 permalink: "/en/open-air-concert-llanes-2022/"
 categories: ["Projects Archive"]
-tags: ["2022", "concert", "llanes", "musica de camara", "outdoor"]
+tags: ["2022", "concert", "Llanes", "chamber music", "outdoor"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/11_Concierto_en_Llanes/image59.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

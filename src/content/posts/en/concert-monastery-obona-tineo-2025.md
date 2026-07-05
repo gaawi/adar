@@ -9,7 +9,7 @@ wp_id: 845
 original_url: "https://festivaladar.com/en/concert-monastery-obona-tineo-2025/"
 permalink: "/en/concert-monastery-obona-tineo-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "concert", "lugar emblematico", "musica de camara", "Tineo"]
+tags: ["2025", "concert", "landmark venue", "chamber music", "Tineo"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC00981.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

@@ -9,7 +9,7 @@ wp_id: 0
 original_url: ""
 permalink: "/en/closing-concert-belmonte-2021/"
 categories: ["Projects Archive"]
-tags: ["2021", "Belmonte de Miranda", "concert", "musica de camara"]
+tags: ["2021", "Belmonte de Miranda", "concert", "chamber music"]
 featured_image: ""
 excerpt: ""
 author: "Festival ADAR"

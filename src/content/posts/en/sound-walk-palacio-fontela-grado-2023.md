@@ -9,7 +9,7 @@ wp_id: 808
 original_url: "https://festivaladar.com/en/sound-walk-palacio-fontela-grado-2023/"
 permalink: "/en/sound-walk-palacio-fontela-grado-2023/"
 categories: ["Projects Archive"]
-tags: ["2023", "Grado", "lugar emblematico", "musica de camara", "paseo sonoro"]
+tags: ["2023", "Grado", "landmark venue", "chamber music", "sound walk"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/28.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

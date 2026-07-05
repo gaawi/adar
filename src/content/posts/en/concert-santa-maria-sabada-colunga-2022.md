@@ -9,7 +9,7 @@ wp_id: 790
 original_url: "https://festivaladar.com/en/concert-santa-maria-sabada-colunga-2022/"
 permalink: "/en/concert-santa-maria-sabada-colunga-2022/"
 categories: ["Projects Archive"]
-tags: ["2022", "Colunga", "concert", "lugar emblematico", "musica de camara"]
+tags: ["2022", "Colunga", "concert", "landmark venue", "chamber music"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/10_Concierto_en_la_Iglesia_de_Santa_Maria_de_Sabada_Colunga/PXL_20220810_175359505.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

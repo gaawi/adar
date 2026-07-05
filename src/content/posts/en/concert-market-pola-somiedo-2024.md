@@ -9,7 +9,7 @@ wp_id: 823
 original_url: "https://festivaladar.com/en/concert-market-pola-somiedo-2024/"
 permalink: "/en/concert-market-pola-somiedo-2024/"
 categories: ["Projects Archive"]
-tags: ["2024", "concert", "musica de camara", "Somiedo"]
+tags: ["2024", "concert", "chamber music", "Somiedo"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_02_03.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

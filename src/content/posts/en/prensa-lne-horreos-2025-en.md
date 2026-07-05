@@ -6,7 +6,7 @@ date: "2025-05-20T08:00:00Z"
 status: "publish"
 permalink: "/en/prensa/lne-horreos-2025/"
 categories: ["Prensa"]
-tags: ["2025", "La Nueva España", "Asturias", "concurso de hórreos"]
+tags: ["2025", "La Nueva España", "Asturias", "hórreos competition"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Instalacion_Sarah_K_Williams_Leiguarda/image01.jpg"
 excerpt: "El festival convoca un concurso para seleccionar tres hórreos o paneras de Asturias que se convertirán en escenarios únicos de música de cámara durante la quinta edición."
 author: "La Nueva España"

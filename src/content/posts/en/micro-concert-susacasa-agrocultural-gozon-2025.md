@@ -9,7 +9,7 @@ wp_id: 835
 original_url: "https://festivaladar.com/en/micro-concert-susacasa-agrocultural-gozon-2025/"
 permalink: "/en/micro-concert-susacasa-agrocultural-gozon-2025/"
 categories: ["Projects Archive"]
-tags: ["2025", "concert", "concurso de horreos", "Gozón"]
+tags: ["2025", "concert", "hórreos competition", "Gozón"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/05_Micro-Concierto_en_Susacasa_Agrocultural/C1575T01.jpg"
 excerpt: ""
 author: "gaawi_rei1q"

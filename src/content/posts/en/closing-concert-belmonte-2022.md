@@ -9,7 +9,7 @@ wp_id: 796
 original_url: "https://festivaladar.com/en/closing-concert-belmonte-2022/"
 permalink: "/en/closing-concert-belmonte-2022/"
 categories: ["Projects Archive"]
-tags: ["2022", "Belmonte de Miranda", "concert", "musica de camara"]
+tags: ["2022", "Belmonte de Miranda", "concert", "chamber music"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/Festival%20ADAR%20Photos/2022/concierto%20belmonte/PXL_20220813_175723812.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

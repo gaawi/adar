@@ -9,7 +9,7 @@ wp_id: 814
 original_url: "https://festivaladar.com/en/visual-concert-colunga-sala-loreto-2023/"
 permalink: "/en/visual-concert-colunga-sala-loreto-2023/"
 categories: ["Projects Archive"]
-tags: ["2023", "Colunga", "musica de camara", "visual concert"]
+tags: ["2023", "Colunga", "chamber music", "visual concert"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/11_Concierto_visual_en_Colunga_Sala_Loreto/48.jpg"
 excerpt: ""
 author: "Guillermo Laporta"

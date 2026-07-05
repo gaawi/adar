@@ -9,7 +9,7 @@ wp_id: 816
 original_url: "https://festivaladar.com/en/sound-walk-museo-ayalgas-belmonte-2023/"
 permalink: "/en/sound-walk-museo-ayalgas-belmonte-2023/"
 categories: ["Projects Archive"]
-tags: ["2023", "Belmonte de Miranda", "musica de camara", "paseo sonoro"]
+tags: ["2023", "Belmonte de Miranda", "chamber music", "sound walk"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg"
 excerpt: ""
 author: "Guillermo Laporta"
