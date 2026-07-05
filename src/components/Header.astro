@@ -139,6 +139,24 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
           );
         })}
       </div>
+
+      <details class="cd-lang-dd" aria-label="Language">
+        <summary>
+          <span class="cd-lang-dd-cur">{lang.toUpperCase()}</span>
+          <span class="cd-lang-dd-caret" aria-hidden="true">▾</span>
+        </summary>
+        <div class="cd-lang-dd-menu">
+          {LANGS.map((l) => {
+            const href = translations[l] || `/${l}/${HOME_SLUG[l]}/`;
+            return (
+              <a class={l === lang ? 'is-active' : ''} href={href} hreflang={l}>
+                {l.toUpperCase()}
+              </a>
+            );
+          })}
+        </div>
+      </details>
+
       <a class="cd-cta" href={ctaHref}>{ctaLabel}</a>
 
       <button
@@ -205,5 +223,12 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
         document.body.classList.remove('adar-nav-open');
       }
     });
+    // Close the language dropdown when clicking outside it.
+    var langDd = document.querySelector('.cd-lang-dd');
+    if (langDd) {
+      document.addEventListener('click', function (e) {
+        if (langDd.open && !langDd.contains(e.target)) langDd.open = false;
+      });
+    }
   })();
 </script>

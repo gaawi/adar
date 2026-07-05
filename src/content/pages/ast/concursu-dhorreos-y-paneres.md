@@ -122,7 +122,7 @@ un mapa vivu d'espacios onde la música y la creación contemporánea dialoguen 
 </p>
 
 <div class="cta-actions">
-<a class="ed-btn" href="/ast/contautu/contacto/">Contautar</a>
+<a class="ed-btn" href="/ast/contautu/">Contautar</a>
 <a class="ed-btn ed-btn-ghost" href="/ast/category/memoria-dacciones/">
 Ver actividaes realizaes
 </a>

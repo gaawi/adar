@@ -102,13 +102,13 @@ Formación: Royal College of Music (2008-2012), con estudios xuntu al flautista 
 
 <div class="ed-prose">
 <p>
-<strong>Josefina Urraca</strong>, ye una pianista española y codirectora de CreArtBox y del Festival ADAR, aclamada por Mundo Clásico poles sos interpretación marcardes pola "introspeción y el desenfrenu musical". El so arte defín ese pola profundidá expresiva, un son refináu y una sensibilidad que combina precisión con imaxinación poética. Actuó en espaciu emblemáticu como la Salle Cortot de París, l'Auditoriu Sony de Madrid, el Carnegie Hall de Nueva York y el Monten Hall de Tokio, aportando a cada escenario un enfoqui íntimu y narrativu.
+<strong>Josefina Urraca</strong>, ye una pianista española y codirectora de CreArtBox y del Festival ADAR, aclamada por Mundo Clásico poles sos interpretaciones marcaes pola "introspeción y el desenfrenu musical". El so arte defín ese pola profundidá expresiva, un son refináu y una sensibilidad que combina precisión con imaxinación poética. Actuó en espaciu emblemáticu como la Salle Cortot de París, l'Auditoriu Sony de Madrid, el Carnegie Hall de Nueva York y el Monten Hall de Tokio, aportando a cada escenario un enfoqui íntimu y narrativu.
 </p>
 <p>
 Como cofundadora de CreArtBox, diseña propuestes escéniques onde la música clásica dialoga con elementos visuales y teatrales, creando esperiencies inmersives y emocionalmente intensas pa'l públicu contemporaneu. La so llabor va más allá de la interpretación e inclúi la concepción artística, la programación y el trabayu xuntu con compositores, artistas visuales e intérpretes pa explorar la relación ente espaciu, soníu y narrativa.
 </p>
 <p>
-dende 2021, codirixe'l Festival ADAR, un festival itinerante d'arbres nel mediu rural asturianu, onde la música y'l paisaxe s'entrelacen en creaciones site-specific que transformen los pueblos en llienzos artísticos. La so voz musical formóse a traviés d'estudios en Madrid, París, Londres y Nueva York con maestros como Maria João Pires, Dmitri Bashkirov, Ferenc Rados y Josep Colom. Nacida en Palencia, reparte agora la so vida artística ente Nueva York y Asturies.
+dende 2021, codirixe'l Festival ADAR, un festival itinerante d'artes nel mediu rural asturianu, onde la música y'l paisaxe s'entrelacen en creaciones site-specific que transformen los pueblos en llienzos artísticos. La so voz musical formóse a traviés d'estudios en Madrid, París, Londres y Nueva York con maestros como Maria João Pires, Dmitri Bashkirov, Ferenc Rados y Josep Colom. Nacida en Palencia, reparte agora la so vida artística ente Nueva York y Asturies.
 </p>
 </div>
 </article>

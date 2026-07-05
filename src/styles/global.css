@@ -4578,31 +4578,76 @@ body.single header.site-header a.cd-cta {
 }
 .cd-cta-arr { font-family: serif; }
 
+/* Language dropdown — used on mobile (the inline .cd-lang is desktop-only).
+   Native <details> so it works without JS. */
+.cd-lang-dd { display: none; position: relative; }
+.cd-lang-dd summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  padding: 5px 9px;
+  color: var(--ink);
+  border: 1px solid rgba(10,9,7,0.28);
+}
+.cd-lang-dd summary::-webkit-details-marker { display: none; }
+.cd-lang-dd .cd-lang-dd-caret { font-size: 9px; transition: transform 0.18s ease; }
+.cd-lang-dd[open] .cd-lang-dd-caret { transform: rotate(180deg); }
+.cd-lang-dd-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  min-width: 84px;
+  background: var(--paper);
+  border: 1px solid rgba(10,9,7,0.28);
+  box-shadow: 0 10px 26px rgba(10,9,7,0.16);
+}
+.cd-lang-dd-menu a {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+.cd-lang-dd-menu a + a { border-top: 1px solid rgba(10,9,7,0.12); }
+/* Force dark-on-cream regardless of the floating/dark header link colour. */
+header.site-header.cd-header .cd-lang-dd-menu a { color: var(--ink) !important; }
+header.site-header.cd-header .cd-lang-dd-menu a.is-active {
+  background: var(--ink);
+  color: var(--paper) !important;
+}
+.cd-lang-dd-menu a:not(.is-active):hover { background: rgba(10,9,7,0.06); }
+/* On floating/dark header (home hero) make the closed pill legible on dark. */
+body.has-floating-header:not(.is-scrolled) header.site-header.cd-header .cd-lang-dd summary {
+  color: var(--paper);
+  border-color: rgba(246,244,238,0.4);
+}
+
 @media (max-width: 980px) {
   .cd-nav { display: none; }
   .cd-status .cd-status-region { display: none; }
-  /* Language switch stays visible at the top, immediately to the right of
-     the yellow CTA (before the hamburger). */
+  /* Swap the inline switch for a compact dropdown, kept at the top to the
+     right of the yellow CTA (before the hamburger). */
   .cd-right { gap: 10px; }
-  .cd-right .cd-lang { display: flex; order: 2; }
+  .cd-right .cd-lang { display: none; }
+  .cd-right .cd-lang-dd { display: block; order: 2; }
   .cd-right .cd-cta { order: 1; }
   .cd-right .adar-nav-toggle { order: 3; }
 }
-@media (max-width: 560px) {
-  /* Tighten so logo + yellow CTA + language switch + menu all fit one row. */
-  .cd-right { gap: 6px; }
-  .cd-cta { padding: 8px 11px; font-size: 11px; }
-  .cd-lang { font-size: 10px; }
-  .cd-lang a { padding: 3px 5px; }
-}
 @media (max-width: 400px) {
-  /* Very small phones: shrink further and keep the hamburger on-screen. */
+  /* Very small phones: tighten so logo + CTA + switch + menu fit one row. */
   .cd-main { gap: 8px; }
   .cd-mark-logo { height: 24px; }
-  .cd-right { gap: 4px; }
-  .cd-cta { padding: 6px 9px; font-size: 10px; }
-  .cd-lang { font-size: 9px; }
-  .cd-lang a { padding: 2px 4px; letter-spacing: 0.06em; }
+  .cd-right { gap: 6px; }
+  .cd-cta { padding: 7px 10px; font-size: 10px; }
+  .cd-lang-dd summary { padding: 5px 7px; font-size: 10px; }
   .adar-nav-toggle { flex: 0 0 auto; }
 }
 
@@ -5060,6 +5105,28 @@ body.home article.page { margin: 0 !important; }
   color: rgba(246,244,238,0.6);
   letter-spacing: 0.18em;
 }
+/* Mobile: the wrapped, centred marquee reads as a messy list. Turn it into a
+   tidy left-aligned index — number + term per row, hairline separators, no
+   floating dots. */
+@media (max-width: 720px) {
+  .hm-marquee-track {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 4px 20px;
+    row-gap: 0;
+  }
+  .hm-marquee-item {
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 2px;
+    gap: 12px;
+    border-bottom: 1px solid rgba(246,244,238,0.12);
+  }
+  .hm-marquee-item:last-child { border-bottom: 0; }
+  .hm-marquee-item:not(:last-child)::after { display: none; }
+  .hm-marquee-num { min-width: 20px; text-align: right; }
+}
 
 @media (max-width: 768px) {
   .hm-hero-meta,
@@ -5338,13 +5405,32 @@ body.home article.page { margin: 0 !important; }
   max-width: 56ch;
 }
 
+/* The homepage list is an <ol> inside .entry-content, whose global rule
+   `.entry-content ol li { list-style-type: decimal }` was drawing a second
+   "1. 2. 3." marker next to the styled "01" badge. Kill it. */
+.entry-content ol.hm-adar26-list,
+.entry-content ol.hm-adar26-list li { list-style: none; }
+
 @media (max-width: 720px) {
+  /* Mobile card: square thumbnail on the left, date on top-right, title +
+     venue below. Purpose-built for narrow screens (not just a reflow). */
   .hm-adar26-link {
-    grid-template-columns: 36px 1fr;
-    gap: 6px 14px;
+    grid-template-columns: 52px 1fr;
+    grid-template-areas: "thumb meta" "thumb body";
+    column-gap: 14px;
+    row-gap: 3px;
+    align-items: start;
+    padding: 14px 0;
   }
-  .hm-adar26-when { grid-column: 2; flex-direction: row; gap: 8px; align-items: baseline; }
-  .hm-adar26-body { grid-column: 2; }
+  .hm-adar26-thumb { grid-area: thumb; width: 52px; height: 52px; align-self: start; }
+  .hm-adar26-n { display: none; }
+  .hm-adar26-when {
+    grid-area: meta;
+    flex-direction: row;
+    gap: 8px;
+    align-items: baseline;
+  }
+  .hm-adar26-body { grid-area: body; }
 }
 
 /* ---------- COORDENADAS ---------- */
@@ -7755,6 +7841,15 @@ body.has-floating-header header.site-header.cd-header .cd-main {
 }
 body.has-floating-header header.site-header.cd-header,
 body.has-floating-header header.site-header.cd-header a {
+  color: var(--paper) !important;
+}
+/* …but the language dropdown menu is a cream popover, so its links must stay
+   dark even over the floating/dark hero header (beats the rule above). */
+body.has-floating-header header.site-header.cd-header .cd-lang-dd-menu a,
+body.has-floating-header.is-scrolled header.site-header.cd-header .cd-lang-dd-menu a {
+  color: var(--ink) !important;
+}
+body.has-floating-header header.site-header.cd-header .cd-lang-dd-menu a.is-active {
   color: var(--paper) !important;
 }
 body.has-floating-header header.site-header.cd-header .cd-status,
