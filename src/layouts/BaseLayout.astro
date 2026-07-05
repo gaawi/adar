@@ -92,5 +92,37 @@ const ogImage =
         window.addEventListener('resize', update);
       })();
     </script>
+    <script is:inline>
+      (function () {
+        // Smart header para páginas SIN hero flotante: position:sticky se
+        // rompe por un overflow ancestro y el header desaparecía al hacer
+        // scroll sin volver nunca. Lo pasamos a fijo (compensando su altura
+        // con padding-top), se oculta al bajar y REAPARECE en cuanto el
+        // usuario hace scroll hacia arriba.
+        var body = document.body;
+        if (body.classList.contains('has-floating-header')) return;
+        var header = document.getElementById('masthead');
+        if (!header) return;
+        function setH() {
+          body.style.setProperty('--adar-hdr-h', header.offsetHeight + 'px');
+        }
+        setH();
+        body.classList.add('adar-header-fixed');
+        window.addEventListener('resize', setH);
+        var lastY = window.scrollY;
+        window.addEventListener('scroll', function () {
+          var y = Math.max(0, window.scrollY);
+          var dy = y - lastY;
+          if (Math.abs(dy) < 6) return;
+          var keep =
+            y <= header.offsetHeight ||
+            dy < 0 ||
+            body.classList.contains('adar-nav-open') ||
+            document.querySelector('.cd-lang-dd[open]');
+          body.classList.toggle('adar-header-hidden', !keep);
+          lastY = y;
+        }, { passive: true });
+      })();
+    </script>
   </body>
 </html>
