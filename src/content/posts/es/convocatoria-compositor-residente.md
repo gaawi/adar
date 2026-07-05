@@ -4,7 +4,7 @@ slug: "convocatoria-compositor-residente"
 lang: "es"
 date: "2026-02-16T20:29:42Z"
 modified: "2026-02-16T20:29:42Z"
-status: "publish"
+status: "draft"
 wp_id: 486
 original_url: "https://festivaladar.com/es/convocatoria-compositor-residente/"
 permalink: "/es/convocatoria-compositor-residente/"
