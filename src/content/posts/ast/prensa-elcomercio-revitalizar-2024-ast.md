@@ -1,5 +1,5 @@
 ---
-title: "Adar, un festival distinto para revitalizar el mundo rural"
+title: "Adar, un festival distintu pa revitalizar el mundu rural"
 slug: "prensa-elcomercio-revitalizar-2024-ast"
 lang: "ast"
 date: "2024-08-07T22:28:00Z"
@@ -8,7 +8,7 @@ permalink: "/ast/prensa/elcomercio-revitalizar-2024/"
 categories: ["Prensa"]
 tags: ["2024", "El Comercio", "Belmonte de Miranda", "Salas", "Grado", "Pola de Somiedo", "Llanes"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Instalacion_Sarah_K_Williams_Leiguarda/image01.jpg"
-excerpt: "La IV edición del evento veraniego llevará música, instalaciones, danza y arte visual a pueblos de Belmonte, Salas, Somiedo, Grado y Llanes del 8 al 18 de agosto."
+excerpt: "La IV edición del eventu braniegu llevará música, instalaciones, danza y arte visual a pueblos de Belmonte, Salas, Somiedo, Grau y Llanes del 8 al 18 d'agostu."
 author: "El Comercio · Pablo Antón Marín Estrada"
 original_url: "https://www.elcomercio.es/culturas/arte/adar-festival-distinto-revitalizar-mundo-rural-20240807222849-nt.html"
 translation_group: "press-prensa-elcomercio-revitalizar-2024"

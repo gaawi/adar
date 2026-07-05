@@ -1,5 +1,5 @@
 ---
-title: "Un ‘paseo sonoro’ por La Caridad para acercar la música y el arte al pueblo"
+title: "A \"sound walk\" through La Caridá to bring music and art closer to the community"
 slug: "prensa-elcomercio-paseo-caridad-2023-en"
 lang: "en"
 date: "2023-08-10T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/en/prensa/elcomercio-paseo-caridad-2023/"
 categories: ["Prensa"]
 tags: ["2023", "El Comercio", "El Franco"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg"
-excerpt: "El parque María Cristina y el auditorio As Quintas acogen el festival itinerante ADAR, que pretende «revitalizar las zonas rurales»."
+excerpt: "María Cristina Park and the As Quintas auditorium host the touring ADAR festival, which aims to \"revitalise rural areas\"."
 author: "El Comercio"
 original_url: "https://www.elcomercio.es/"
 translation_group: "press-prensa-elcomercio-paseo-caridad-2023"

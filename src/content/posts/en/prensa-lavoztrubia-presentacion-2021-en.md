@@ -1,5 +1,5 @@
 ---
-title: "El festival de Música Clásica de Leiguarda agota entradas el día de su presentación"
+title: "The Leiguarda Classical Music Festival sells out on the day of its launch"
 slug: "prensa-lavoztrubia-presentacion-2021-en"
 lang: "en"
 date: "2021-08-05T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/en/prensa/lavoztrubia-presentacion-2021/"
 categories: ["Prensa"]
 tags: ["2021", "La Voz del Trubia", "Belmonte de Miranda", "Leiguarda"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg"
-excerpt: "Todo agotado el día de la presentación. La acogida del I Festival de Música Clásica de Leiguarda es prueba de la necesidad de impulsar iniciativas culturales en los pueblos."
+excerpt: "Sold out on launch day. The reception of the 1st Leiguarda Classical Music Festival is proof of the need to foster cultural initiatives in rural villages."
 author: "La Voz del Trubia"
 original_url: "https://lavozdeltrubia.es/"
 translation_group: "press-prensa-lavoztrubia-presentacion-2021"

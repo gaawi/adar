@@ -1,5 +1,5 @@
 ---
-title: "Paseos por la naturaleza en busca del arte y la música clásica"
+title: "Paséos pela naturaleza a la gueta del arte y la música clásica"
 slug: "prensa-elcomercio-paseos-naturaleza-2023-ast"
 lang: "ast"
 date: "2023-08-10T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/ast/prensa/elcomercio-paseos-naturaleza-2023/"
 categories: ["Prensa"]
 tags: ["2023", "El Comercio", "Ibias", "Leiguarda", "Escuela Reina Sofía"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg"
-excerpt: "El festival Adar acerca la creación artística a la zona rural de Asturias en colaboración con la Escuela de Música Reina Sofía."
+excerpt: "El festival Adar avera la creación artística a la zona rural d'Asturies en collaboración cola Escuela de Música Reina Sofía."
 author: "El Comercio · Miguel Rojo"
 original_url: "https://www.elcomercio.es/"
 translation_group: "press-prensa-elcomercio-paseos-naturaleza-2023"

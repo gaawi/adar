@@ -1,5 +1,5 @@
 ---
-title: "El Festival Adar despliega desde Belmonte otra edición de arte y música en entornos rurales"
+title: "The ADAR Festival rolls out from Belmonte another edition of art and music in rural settings"
 slug: "prensa-lne-despliega-belmonte-2024-en"
 lang: "en"
 date: "2024-08-12T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/en/prensa/lne-despliega-belmonte-2024/"
 categories: ["Prensa"]
 tags: ["2024", "La Nueva España", "Belmonte de Miranda", "Llanes", "Grado", "Salas", "Pola de Somiedo"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Instalacion_Sarah_K_Williams_Leiguarda/image01.jpg"
-excerpt: "La cuarta edición arranca esta semana con un recorrido por monasterios, palacios y hórreos del occidente y centro asturiano."
+excerpt: "The fourth edition begins this week with a tour of monasteries, palaces and hórreos across western and central Asturias."
 author: "La Nueva España"
 original_url: "https://www.lne.es/occidente/2024/08/12/festival-adar-despliega-belmonte-edicion-106906827.html"
 translation_group: "press-prensa-lne-despliega-belmonte-2024"

@@ -8,7 +8,7 @@ permalink: "/ast/prensa/rtpa-i-festival-2021/"
 categories: ["Prensa"]
 tags: ["2021", "RTPA", "Belmonte de Miranda", "Leiguarda"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg"
-excerpt: "Un certamen impulsado por dos músicos españoles que dejaron Nueva York por Belmonte."
+excerpt: "Un certame impulsáu por dos músicos españoles que dexaron Nueva York por Belmonte."
 author: "RTPA · Radiotelevisión del Principado de Asturias"
 original_url: "https://www.rtpa.es/"
 translation_group: "press-prensa-rtpa-i-festival-2021"

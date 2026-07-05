@@ -1,5 +1,5 @@
 ---
-title: "Paseos sonoros y conciertos en Grado, Salas, Somiedo y Belmonte"
+title: "Paséos sonoros y conciertos en Grau, Salas, Somiedo y Belmonte"
 slug: "prensa-lavoztrubia-paseos-2024-ast"
 lang: "ast"
 date: "2024-08-01T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/ast/prensa/lavoztrubia-paseos-2024/"
 categories: ["Prensa"]
 tags: ["2024", "La Voz del Trubia", "Belmonte de Miranda", "Grado", "Salas", "Somiedo"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/image15.jpg"
-excerpt: "Cobertura previa de la cuarta edición del festival, que del 8 al 18 de agosto recorrió cuatro concejos del occidente con paseos sonoros, residencia artística y conciertos."
+excerpt: "Cobertoria previa de la cuarta edición del festival, que del 8 al 18 d'agostu percorrió cuatro conceyos del occidente con paséos sonoros, residencia artística y conciertos."
 author: "La Voz del Trubia"
 original_url: "https://lavozdeltrubia.es/2024/08/01/paseos-sonoros-y-conciertos-en-grado-salas-somiedo-y-belmonte-por-el-festival-adar/"
 translation_group: "press-prensa-lavoztrubia-paseos-2024"

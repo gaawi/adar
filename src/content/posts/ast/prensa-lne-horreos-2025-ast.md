@@ -1,5 +1,5 @@
 ---
-title: "El Festival Adar busca los mejores hórreos para música de cámara"
+title: "El Festival Adar busca los meyores hórreos pa música de cámara"
 slug: "prensa-lne-horreos-2025-ast"
 lang: "ast"
 date: "2025-05-20T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/ast/prensa/lne-horreos-2025/"
 categories: ["Prensa"]
 tags: ["2025", "La Nueva España", "Asturias", "concursu de hórreos"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Instalacion_Sarah_K_Williams_Leiguarda/image01.jpg"
-excerpt: "El festival convoca un concurso para seleccionar tres hórreos o paneras de Asturias que se convertirán en escenarios únicos de música de cámara durante la quinta edición."
+excerpt: "El festival convoca un concursu pa esbillar trés hórreos o paneres d'Asturies que se convertirán n'escenarios únicos de música de cámara demientres la quinta edición."
 author: "La Nueva España"
 original_url: "https://www.lne.es/occidente/2025/05/20/festival-adar-busca-mejores-horreos-117581643.html"
 translation_group: "press-prensa-lne-horreos-2025"

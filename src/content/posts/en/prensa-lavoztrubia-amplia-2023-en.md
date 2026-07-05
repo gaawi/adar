@@ -1,5 +1,5 @@
 ---
-title: "El Festival ADAR se amplía desde Belmonte a Grado, Colunga y El Franco"
+title: "The ADAR Festival expands from Belmonte to Grado, Colunga and El Franco"
 slug: "prensa-lavoztrubia-amplia-2023-en"
 lang: "en"
 date: "2023-07-28T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/en/prensa/lavoztrubia-amplia-2023/"
 categories: ["Prensa"]
 tags: ["2023", "La Voz del Trubia", "Belmonte de Miranda", "Grado", "Colunga", "El Franco"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg"
-excerpt: "El Festival ADAR amplía su recorrido por concejos asturianos, llevando música clásica y arte visual a Grado, El Franco y Colunga junto a la sede en Belmonte de Miranda."
+excerpt: "The ADAR Festival extends its tour across Asturian municipalities, bringing classical music and visual art to Grado, El Franco and Colunga alongside its base in Belmonte de Miranda."
 author: "La Voz del Trubia"
 original_url: "https://lavozdeltrubia.es/2023/07/28/el-festival-de-artes-en-el-medio-rural-se-amplia-desde-belmonte-a-grado-colunga-y-el-franco/"
 translation_group: "press-prensa-lavoztrubia-amplia-2023"

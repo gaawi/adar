@@ -1,5 +1,5 @@
 ---
-title: "Festival de Música Clásica de Leiguarda"
+title: "Festival de Música Clásica de Lleiguarda"
 slug: "prensa-cajarural-leiguarda-ast"
 lang: "ast"
 date: "2021-09-01T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/ast/prensa/cajarural-leiguarda/"
 categories: ["Prensa"]
 tags: ["2021", "Caja Rural de Asturias", "Compromiso CR", "Belmonte de Miranda", "Leiguarda"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg"
-excerpt: "Caja Rural de Asturias recoge el origen del proyecto: dos músicos que llegan a Leiguarda durante la pandemia y crean una asociación y un festival para revitalizar el medio rural a través de la cultura."
+excerpt: "Caja Rural de Asturias recueye l'orixe del proyeutu: dos músicos que lleguen a Lleiguarda demientres la pandemia y crien una asociación y un festival pa revitalizar el mediu rural al traviés de la cultura."
 author: "Compromiso Caja Rural de Asturias"
 original_url: "https://compromisocrasturias.com/proyectos/festival-de-musica-clasica-de-leiguarda/"
 translation_group: "press-prensa-cajarural-leiguarda"

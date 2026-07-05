@@ -1,5 +1,5 @@
 ---
-title: "‘Paseos sonoros’ lleva música clásica a El Franco y después visitará Grado, Colunga y Belmonte de Miranda"
+title: "‘Paséos sonoros’ lleva música clásica a El Franco y depués visitará Grau, Colunga y Belmonte de Miranda"
 slug: "prensa-rtpa-paseos-sonoros-2023-ast"
 lang: "ast"
 date: "2023-08-09T17:52:00Z"
@@ -8,7 +8,7 @@ permalink: "/ast/prensa/rtpa-paseos-sonoros-2023/"
 categories: ["Prensa"]
 tags: ["2023", "RTPA", "El Franco", "Grado", "Colunga", "Belmonte de Miranda"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg"
-excerpt: "Es la tercera edición de conciertos que aspiran a llegar a más concejos en próximos veranos."
+excerpt: "Ye la tercera edición de conciertos qu'aspiren a aportar a más conceyos nos próximos branos."
 author: "RTPA · Radiotelevisión del Principado de Asturias"
 original_url: "https://www.rtpa.es/"
 translation_group: "press-prensa-rtpa-paseos-sonoros-2023"

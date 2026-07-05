@@ -8,7 +8,7 @@ permalink: "/ast/prensa/rne-ojo-critico-2023/"
 categories: ["Prensa"]
 tags: ["2023", "RNE", "RTVE", "Belmonte de Miranda"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg"
-excerpt: "Movidos por el deseo de reivindicar las zonas rurales a través de las artes vivas, el festival celebra su nueva edición con conciertos, charlas y paseos sonoros."
+excerpt: "Movíos pol deseu de reivindicar les zones rurales al traviés de les artes vives, el festival celebra la so nueva edición con conciertos, charres y paséos sonoros."
 author: "RNE · El Ojo Crítico"
 original_url: "https://www.rtve.es/play/audios/el-ojo-critico/"
 translation_group: "press-prensa-rne-ojo-critico-2023"

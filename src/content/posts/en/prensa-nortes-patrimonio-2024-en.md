@@ -1,5 +1,5 @@
 ---
-title: "ADAR: Un festival para disfrutar del patrimonio asturiano"
+title: "ADAR: A festival to enjoy Asturian heritage"
 slug: "prensa-nortes-patrimonio-2024-en"
 lang: "en"
 date: "2024-08-11T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/en/prensa/nortes-patrimonio-2024/"
 categories: ["Prensa"]
 tags: ["2024", "Nortes", "Belmonte de Miranda", "Llanes", "heritage"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Salvador_Cornellana_2024/image06.jpg"
-excerpt: "Cobertura de Nortes sobre la cuarta edición del festival y la fusión del patrimonio rural asturiano con la expresión artística contemporánea."
+excerpt: "Nortes' coverage of the festival's fourth edition and the fusion of Asturian rural heritage with contemporary artistic expression."
 author: "Nortes"
 original_url: "https://www.nortes.me/2024/08/11/adar-un-festival-para-disfrutar-del-patrimonio-asturiano/"
 translation_group: "press-prensa-nortes-patrimonio-2024"

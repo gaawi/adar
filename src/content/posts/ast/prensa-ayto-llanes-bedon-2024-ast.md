@@ -1,5 +1,5 @@
 ---
-title: "El Festival ADAR comenzará en Llanes con un concierto en el Monasterio de San Antolín"
+title: "El Festival ADAR entamará en Llanes con un conciertu nel Monesteriu de San Antolín"
 slug: "prensa-ayto-llanes-bedon-2024-ast"
 lang: "ast"
 date: "2024-08-08T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/ast/prensa/ayto-llanes-bedon-2024/"
 categories: ["Prensa"]
 tags: ["2024", "Ayuntamiento de Llanes", "Llanes", "San Antolín de Bedón"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/05_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/image01.jpg"
-excerpt: "La cuarta edición del Festival ADAR arranca su itinerancia con un concierto en el Monasterio de San Antolín de Bedón, en Llanes."
+excerpt: "La cuarta edición del Festival ADAR entama la so itinerancia con un conciertu nel Monesteriu de San Antolín de Bedón, en Llanes."
 author: "Ayuntamiento de Llanes"
 original_url: "https://www.ayuntamientodellanes.com/"
 translation_group: "press-prensa-ayto-llanes-bedon-2024"

@@ -1,5 +1,5 @@
 ---
-title: "Josefina y Guillermo: un día tocan en Nueva York y otro en una panera de Leiguarda"
+title: "Josefina y Guillermo: un día toquen en Nueva York y otru nuna panera de Lleiguarda"
 slug: "prensa-lne-tocan-newyork-leiguarda-ast"
 lang: "ast"
 date: "2022-07-30T08:00:00Z"
@@ -8,7 +8,7 @@ permalink: "/ast/prensa/lne-tocan-newyork-leiguarda/"
 categories: ["Prensa"]
 tags: ["2022", "La Nueva España", "Belmonte de Miranda", "Leiguarda"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/09_Concierto_visual_en_Soto_del_Barco/PXL_20220809_190711391.jpg"
-excerpt: "Una pareja de músicos españoles se afinca en Belmonte de Miranda, desde donde continúa con sus proyectos internacionales y donde ha puesto en marcha un festival para llevar las artes al medio rural."
+excerpt: "Una pareya de músicos españoles afínquense en Belmonte de Miranda, dende onde siguen colos sos proyeutos internacionales y onde punxeron en marcha un festival pa llevar les artes al mediu rural."
 author: "La Nueva España"
 original_url: "https://www.lne.es/"
 translation_group: "press-prensa-lne-tocan-newyork-leiguarda"

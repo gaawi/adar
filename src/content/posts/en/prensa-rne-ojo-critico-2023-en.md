@@ -1,5 +1,5 @@
 ---
-title: "El Festival Adar con Josefina Urraca"
+title: "The ADAR Festival with Josefina Urraca"
 slug: "prensa-rne-ojo-critico-2023-en"
 lang: "en"
 date: "2023-08-08T07:25:00Z"
@@ -8,7 +8,7 @@ permalink: "/en/prensa/rne-ojo-critico-2023/"
 categories: ["Prensa"]
 tags: ["2023", "RNE", "RTVE", "Belmonte de Miranda"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg"
-excerpt: "Movidos por el deseo de reivindicar las zonas rurales a través de las artes vivas, el festival celebra su nueva edición con conciertos, charlas y paseos sonoros."
+excerpt: "Driven by a desire to champion rural areas through the living arts, the festival holds its latest edition with concerts, talks and sound walks."
 author: "RNE · El Ojo Crítico"
 original_url: "https://www.rtve.es/play/audios/el-ojo-critico/"
 translation_group: "press-prensa-rne-ojo-critico-2023"

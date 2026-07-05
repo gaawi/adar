@@ -1,5 +1,5 @@
 ---
-title: "I Festival de Música Clásica de Lleiguarda"
+title: "1st Leiguarda Classical Music Festival"
 slug: "prensa-rtpa-i-festival-2021-en"
 lang: "en"
 date: "2021-08-09T19:25:00Z"
@@ -8,7 +8,7 @@ permalink: "/en/prensa/rtpa-i-festival-2021/"
 categories: ["Prensa"]
 tags: ["2021", "RTPA", "Belmonte de Miranda", "Leiguarda"]
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg"
-excerpt: "Un certamen impulsado por dos músicos españoles que dejaron Nueva York por Belmonte."
+excerpt: "An event driven by two Spanish musicians who left New York for Belmonte."
 author: "RTPA · Radiotelevisión del Principado de Asturias"
 original_url: "https://www.rtpa.es/"
 translation_group: "press-prensa-rtpa-i-festival-2021"
