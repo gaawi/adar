@@ -36,31 +36,39 @@ translation_group: "pll_2026_press_note"
 </a>
 </div>
 
-<p class="doc-lede"><strong>Once conciertos, siete sedes patrimoniales, seis concejos y trece intérpretes internacionales.</strong> La Asociación para el Desarrollo de las Artes en el medio Rural (ADAR) presenta la edición VI del Festival ADAR, con entrada libre en todos los conciertos previa reserva en Eventbrite.</p>
+<p class="doc-lede"><strong>Once conciertos, siete sedes patrimoniales, seis concejos y trece intérpretes internacionales.</strong> La Asociación para el Desarrollo de las Artes en el Medio Rural presenta la sexta edición del Festival ADAR, con entrada libre en todos los conciertos mediante reserva previa en Eventbrite.</p>
 
-<p>LEIGUARDA (Belmonte de Miranda, Asturias). — El Festival ADAR celebra su sexta edición del 4 al 16 de agosto de 2026 con un programa que recorre iglesias, monasterios, un parador, un auditorio municipal, dos hórreos patrimoniales y las calles del pueblo de Leiguarda. La programación combina música de cámara contemporánea, intervenciones sonoras site-specific, una muestra de residencia artística y un concierto de clausura seguido de espicha.</p>
+<p><strong>LEIGUARDA, Belmonte de Miranda, Asturias.</strong> — El Festival ADAR celebra su <strong>VI edición del 4 al 16 de agosto de 2026</strong> con una programación que recorre iglesias, monasterios, un parador, un auditorio municipal, hórreos patrimoniales y las calles de Leiguarda. La propuesta combina música de cámara contemporánea, arte visual, intervenciones sonoras site-specific, residencias artísticas y actividades vinculadas al patrimonio rural asturiano.</p>
 
-<p>La edición arranca el martes 4 de agosto con un recital de clave a cargo de Ignacio Prego en el hórreo ganador del Concurso de Hórreos y Paneras 2026 —cuya sede se anuncia el 1 de agosto—. El programa «De danzas y sonatas» recorre las formas de danza para teclado entre los siglos XVI y XVIII, desde Antonio de Cabezón y las Folías de España hasta la Chacona de la Partita para violín en re menor de J. S. Bach en la transcripción de Johannes Brahms.</p>
+<p>En su sexta edición, ADAR se consolida como <strong>uno de los proyectos de referencia</strong> para la música clásica, la creación contemporánea y el arte visual en el medio rural asturiano. Desde Leiguarda y con una programación que se extiende por distintos concejos de Asturias, el festival reúne este año a artistas asturianos, nacionales e internacionales de primer nivel, fortaleciendo un modelo cultural que vincula excelencia artística, patrimonio, paisaje y participación comunitaria.</p>
 
-<p>El ciclo «ADAR en ruta» reúne cuatro conciertos itinerantes de cámara. «La forma de la memoria», del trío María Martínez (violonchelo), Frederieke Saeijs (violín) y Josefina Urraca (piano), se interpreta los días 5 y 6 de agosto en la biblioteca del Parador de Corias (Cangas del Narcea) y en el Monasterio de San Antolín de Bedón (Llanes), con obras de Haydn, Lili Boulanger, Messiaen, Rajmáninov y Brittney Benton. El martes 11 de agosto, el trío Maria Florea, Lara Fernández y Daniel Claret presenta «The Rest is Silence» en el Auditorio As Quintas de El Franco, un mosaico construido sobre la idea del silencio con obras de Ligeti, Gubaidúlina, Kurtág, Webern, Penderecki, Stravinsky, Cage y Bach. El jueves 13 de agosto, ese mismo trío se amplía a quinteto en el Monasterio de Villanueva de Oscos, con obras de Schubert, Joan Magrané y Dvořák.</p>
+<p>El proyecto mantiene el apoyo del <strong>Principado de Asturias</strong> y da en 2026 un nuevo paso en su proyección europea tras la selección de ADAR como organización anfitriona dentro de <strong>Culture Moves Europe · Call for Residency Hosts</strong>, el programa de movilidad cultural financiado por <strong>Creative Europe</strong> de la Unión Europea e implementado por el <strong>Goethe-Institut</strong>. Esta dimensión internacional se suma a su participación en el ecosistema cultural de <strong>Oviedo 2031</strong>, ciudad candidata a Capital Europea de la Cultura, reforzando el papel de ADAR como plataforma de creación desde el territorio rural asturiano hacia Europa.</p>
 
-<p>El colectivo Menhir (Coco Moya e Iván Cebrián) firma una intervención site-specific durante dos jornadas —8 y 9 de agosto— en las calles de Leiguarda: un recorrido sonoro geolocalizado que combina elementos musicales, sonoros y palabras que aparecen según la ubicación del caminante. La ruta puede realizarse en solitario o en grupo en cualquier momento durante ambas jornadas.</p>
+<p>La edición comienza el <strong>martes 4 de agosto</strong> con un recital de clave de <strong>Ignacio Prego</strong> en el hórreo ganador del Concurso de Hórreos y Paneras 2026, cuya sede se anunciará el <strong>1 de agosto</strong>. El programa, titulado <strong>«De danzas y sonatas»</strong>, propone un recorrido por formas de danza para teclado entre los siglos XVI y XVIII, con obras de Antonio de Cabezón, las Folías de España y la Chacona de la Partita para violín en re menor de J. S. Bach, en transcripción de Johannes Brahms. El recital se ofrecerá en <strong>tres pases de 30 minutos</strong>.</p>
 
-<p>La programación incluye además el concierto «UMBRAL ZERO» de música minimalista con Guillermo Laporta (flauta) y Josefina Urraca (piano) en el Aula del Oro de Belmonte de Miranda el 7 de agosto, un micro concierto de quinteto en el Centro ADAR de Leiguarda el 12 de agosto, y una muestra de residencia del trío The Rest is Silence en el segundo hórreo seleccionado por el jurado del concurso el 14 de agosto. El paseo sonoro del 15 de agosto por Leiguarda y la clausura del 16 de agosto en la iglesia parroquial cierran la edición. El concierto de clausura reúne un quinteto (Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca) con obras de Ravel, Ligeti, Beethoven y Stravinsky, seguido de espicha abierta al público.</p>
+<p>El ciclo <strong>«ADAR en ruta»</strong> reúne cuatro conciertos itinerantes de cámara. <strong>«La forma de la memoria»</strong>, con <strong>María Martínez</strong>, <strong>Frederieke Saeijs</strong> y <strong>Josefina Urraca</strong>, se presenta los días 5 y 6 de agosto en la biblioteca del Parador de Corias, en Cangas del Narcea, y en el Monasterio de San Antolín de Bedón, en Llanes, con obras de Haydn, Lili Boulanger, Messiaen, Rajmáninov y Brittney Benton.</p>
 
-<p>El festival está dirigido por <strong>Josefina Urraca</strong> y <strong>Guillermo Laporta</strong>, responsables también de la dirección artística y el comisariado de la programación. La edición cuenta además con un equipo creativo propio: el compositor británico-filipino <strong>Zygmund de Somogyi</strong> como compositor residente y el realizador <strong>Guillermo Ordás</strong> como cinematógrafo, encargado de la documentación audiovisual del festival.</p>
+<p>El 11 de agosto, el trío formado por <strong>Maria Florea</strong>, <strong>Lara Fernández</strong> y <strong>Daniel Claret</strong> presenta <strong>«The Rest is Silence»</strong> en el Auditorio As Quintas de El Franco, con un programa construido en torno a la idea del silencio y obras de Ligeti, Shostakóvich, Gubaidulina, Kurtág, Webern, Penderecki, Stravinsky, Cage y Bach. El 13 de agosto, el mismo trío se amplía a quinteto en el Monasterio de Villanueva de Oscos, con obras de Schubert, Joan Magrané, Brahms y Dvořák.</p>
+
+<p>El colectivo <strong>Menhir</strong>, formado por Coco Moya e Iván Cebrián, firma una intervención site-specific durante los días <strong>8 y 9 de agosto</strong> en las calles de Leiguarda, de <strong>19:00 a 22:00</strong>. Se trata de un recorrido sonoro geolocalizado que combina elementos musicales, sonoros y textuales que aparecen según la ubicación del caminante. La ruta puede realizarse individualmente o en grupo durante ambas jornadas.</p>
+
+<p>La programación incluye también <strong>«UMBRAL ZERO»</strong>, un concierto de música minimalista con Guillermo Laporta y Josefina Urraca en el Aula del Oro de Belmonte de Miranda el 7 de agosto; un microconcierto de quinteto en el Centro ADAR de Leiguarda el 12 de agosto; y <strong>«Equilibrium»</strong>, una muestra de residencia del trío The Rest is Silence en el segundo hórreo seleccionado por el jurado el 14 de agosto, con <strong>tres pases de 30 minutos</strong>.</p>
+
+<p>El paseo sonoro del 15 de agosto por Leiguarda y el concierto de clausura del 16 de agosto en la iglesia parroquial cierran la edición. La clausura reúne a <strong>Natania Hoffman</strong>, <strong>Žilvinas Brazauskas</strong>, <strong>Frederieke Saeijs</strong>, <strong>Guillermo Laporta</strong> y <strong>Josefina Urraca</strong> en un programa con obras de Ravel, Ligeti, Beethoven, Brahms y Lang, seguido de una <strong>espicha</strong> abierta al público.</p>
+
+<p>El festival está dirigido por <strong>Josefina Urraca</strong> y <strong>Guillermo Laporta</strong>, responsables de la dirección artística y el comisariado. La edición cuenta además con <strong>Zygmund de Somogyi</strong> como compositor residente y <strong>Guillermo Ordás</strong> como cinematógrafo encargado de la documentación audiovisual.</p>
 
 <h2 class="doc-h2">Datos clave</h2>
 
 <table class="doc-table">
 <tr><th>Edición</th><td>VI</td></tr>
 <tr><th>Fechas</th><td>4 al 16 de agosto de 2026</td></tr>
-<tr><th>Dirección</th><td>Josefina Urraca y Guillermo Laporta (dirección artística y comisariado)</td></tr>
-<tr><th>Conciertos</th><td>11 (más dos jornadas de intervención site-specific)</td></tr>
+<tr><th>Dirección</th><td>Josefina Urraca y Guillermo Laporta</td></tr>
+<tr><th>Conciertos</th><td>11, más dos jornadas de intervención site-specific</td></tr>
 <tr><th>Sedes</th><td>7 espacios patrimoniales</td></tr>
-<tr><th>Concejos</th><td>6 (Belmonte de Miranda, Cangas del Narcea, El Franco, Villanueva de Oscos, Llanes, Grado)</td></tr>
-<tr><th>Intérpretes</th><td>13 solistas y conjuntos + colectivo Menhir</td></tr>
-<tr><th>Equipo creativo</th><td>Zygmund de Somogyi (compositor residente) · Guillermo Ordás (cinematógrafo)</td></tr>
+<tr><th>Concejos</th><td>Belmonte de Miranda, Cangas del Narcea, El Franco, Villanueva de Oscos, Llanes y Grado</td></tr>
+<tr><th>Intérpretes</th><td>13 solistas y conjuntos, más el colectivo Menhir</td></tr>
+<tr><th>Equipo creativo</th><td>Zygmund de Somogyi y Guillermo Ordás</td></tr>
 <tr><th>Entrada</th><td>Libre, previa reserva en Eventbrite</td></tr>
 <tr><th>Web</th><td>festivaladar.com</td></tr>
 </table>
@@ -68,32 +76,38 @@ translation_group: "pll_2026_press_note"
 <h2 class="doc-h2">Programación completa</h2>
 
 <ul class="doc-list">
-<li><strong>4 AGO · 20:30</strong> — «De danzas y sonatas», recital de clave con <strong>Ignacio Prego</strong>. Inauguración · Concurso de Hórreos y Paneras. <em>Hórreo ganador del concurso (sede anunciada el 1 de agosto).</em></li>
-<li><strong>5 AGO · 20:30</strong> — «La forma de la memoria», trío con piano de <strong>María Martínez</strong> (violonchelo), <strong>Frederieke Saeijs</strong> (violín) y <strong>Josefina Urraca</strong> (piano). ADAR en ruta. <em>Biblioteca del Parador de Corias, Cangas del Narcea.</em></li>
-<li><strong>6 AGO · 20:30</strong> — «La forma de la memoria», segunda lectura del mismo trío. <em>Monasterio de San Antolín de Bedón, Llanes.</em></li>
-<li><strong>7 AGO · 20:30</strong> — «UMBRAL ZERO», música minimalista y arte visual con <strong>Guillermo Laporta</strong> (flauta) y <strong>Josefina Urraca</strong> (piano). <em>Aula del Oro, Belmonte de Miranda.</em></li>
-<li><strong>8 — 9 AGO</strong> — Intervención site-specific del <strong>Colectivo Menhir</strong> (Coco Moya e Iván Cebrián): recorrido sonoro geolocalizado durante dos jornadas. <em>Calles de Leiguarda, Belmonte de Miranda.</em></li>
-<li><strong>11 AGO · 20:30</strong> — «The Rest is Silence», trío de <strong>Maria Florea</strong> (violín), <strong>Lara Fernández</strong> (viola) y <strong>Daniel Claret</strong> (violonchelo). ADAR en ruta. <em>Auditorio As Quintas, A Caridá (El Franco).</em></li>
-<li><strong>12 AGO · 20:30</strong> — Micro concierto: quinteto con piano (Florea, Fernández, Claret, Laporta y Urraca) con el op. 81 de Dvořák. <em>Centro ADAR, Leiguarda.</em></li>
-<li><strong>13 AGO · 20:30</strong> — Concierto de cámara y arte visual: quinteto con obras de Schubert, Joan Magrané y Dvořák. ADAR en ruta. <em>Monasterio de Villanueva de Oscos.</em></li>
-<li><strong>14 AGO · 20:30</strong> — «Equilibrium», muestra de residencia del trío The Rest is Silence con la poesía de <strong>Joan Margarit</strong> (Kurtág y Bach). <em>Segundo hórreo ganador del concurso.</em></li>
-<li><strong>15 AGO · 21:30</strong> — Paseo sonoro por Leiguarda: quinteto <strong>Hoffman · Brazauskas · Saeijs · Laporta · Urraca</strong>. Creación site-specific. <em>Calles de Leiguarda.</em></li>
-<li><strong>16 AGO · 21:30</strong> — Clausura: concierto de quinteto (Ravel, Ligeti, Beethoven, Stravinsky) y espicha abierta. <em>Iglesia parroquial de Leiguarda.</em></li>
+<li><strong>4 AGO · 20:30</strong> · <strong>«De danzas y sonatas»</strong> — Recital de clave con <strong>Ignacio Prego</strong>. Inauguración · Concurso de Hórreos y Paneras. Tres pases de 30 minutos. <em>Hórreo ganador del concurso, sede anunciada el 1 de agosto.</em></li>
+<li><strong>5 AGO · 20:30</strong> · <strong>«La forma de la memoria»</strong> — Trío con piano de María Martínez, Frederieke Saeijs y Josefina Urraca. ADAR en ruta. <em>Biblioteca del Parador de Corias, Cangas del Narcea.</em></li>
+<li><strong>6 AGO · 20:30</strong> · <strong>«La forma de la memoria»</strong> — Segunda presentación del mismo trío. ADAR en ruta. <em>Monasterio de San Antolín de Bedón, Llanes.</em></li>
+<li><strong>7 AGO · 20:30</strong> · <strong>«UMBRAL ZERO»</strong> — Música minimalista y arte visual con Guillermo Laporta y Josefina Urraca. <em>Aula del Oro, Belmonte de Miranda.</em></li>
+<li><strong>8 y 9 AGO · 19:00 a 22:00</strong> — Intervención site-specific del colectivo Menhir: recorrido sonoro geolocalizado por las calles de Leiguarda, con Coco Moya e Iván Cebrián.</li>
+<li><strong>11 AGO · 20:30</strong> · <strong>«The Rest is Silence»</strong> — Trío de Maria Florea, Lara Fernández y Daniel Claret, con obras de Ligeti, Shostakóvich, Gubaidulina, Kurtág, Webern, Penderecki, Stravinsky, Cage y Bach. ADAR en ruta. <em>Auditorio As Quintas, A Caridá, El Franco.</em></li>
+<li><strong>12 AGO · 20:30</strong> · Microconcierto — Quinteto con piano con Maria Florea, Lara Fernández, Daniel Claret, Guillermo Laporta y Josefina Urraca, con el op. 81 de Dvořák. <em>Centro ADAR, Leiguarda.</em></li>
+<li><strong>13 AGO · 20:30</strong> · Concierto de cámara y arte visual — Quinteto con obras de Schubert, Joan Magrané, Brahms y Dvořák. ADAR en ruta. <em>Monasterio de Villanueva de Oscos.</em></li>
+<li><strong>14 AGO · 20:30</strong> · <strong>«Equilibrium»</strong> — Muestra de residencia del trío The Rest is Silence con poesía de Joan Margarit, Kurtág y Bach. Tres pases de 30 minutos. <em>Segundo hórreo ganador del concurso.</em></li>
+<li><strong>15 AGO · 21:30</strong> · Paseo sonoro por Leiguarda — Creación site-specific con Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca. <em>Calles de Leiguarda.</em></li>
+<li><strong>16 AGO · 21:30</strong> · Clausura — Concierto de quinteto con obras de Ravel, Ligeti, Beethoven, Brahms y Lang, seguido de espicha abierta. <em>Iglesia parroquial de Leiguarda.</em></li>
 </ul>
 
-<h2 class="doc-h2">Concurso de Hórreos y Paneras · convocatoria abierta</h2>
+<h2 class="doc-h2">Concurso de Hórreos y Paneras</h2>
 
-<p>La convocatoria del <strong>Concurso de Hórreos y Paneras 2026</strong> está abierta. ADAR invita a propietarios, ayuntamientos y comunidades a proponer un hórreo o panera como sede de dos de los conciertos del festival: cada hórreo seleccionado recibe un premio de <strong>300 € por hórreo</strong> y acogerá el recital inaugural de clave (4 de agosto) o la muestra de residencia «Equilibrium» (14 de agosto). El plazo de candidaturas está abierto <strong>hasta las 23:59 h del 25 de julio de 2026</strong> y los ganadores se publican el <strong>1 de agosto de 2026</strong>.</p>
+<p>La convocatoria del <strong>Concurso de Hórreos y Paneras 2026</strong> está abierta. ADAR invita a propietarios, ayuntamientos y comunidades a proponer un hórreo o panera como sede de dos conciertos del festival. Cada hórreo seleccionado recibe un premio de <strong>300 €</strong> y acogerá el recital inaugural del 4 de agosto o la muestra de residencia del 14 de agosto.</p>
 
-<p>Para presentar candidatura basta con enviar un único correo electrónico a <a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a> con el asunto <strong>«Candidatura Concurso Hórreos 2026»</strong>, incluyendo: datos de identificación del solicitante (nombre, DNI/NIF, dirección, correo y teléfono), ubicación y breve descripción del hórreo o panera, fotografías del bien y —si el solicitante no es el propietario— autorización escrita de la propiedad. Las bases completas y los criterios del jurado están disponibles en <a href="/es/concurso-de-horreos-y-paneras/">la página del concurso</a>.</p>
+<p>Ambos conciertos en hórreos se ofrecerán en <strong>tres pases de 30 minutos</strong>, con el objetivo de adaptar la experiencia al espacio, favorecer una escucha cercana y permitir la asistencia de distintos grupos de público.</p>
+
+<p>El plazo de candidaturas está abierto <strong>hasta las 23:59 h del 25 de julio de 2026</strong>. Los ganadores se publicarán el <strong>1 de agosto de 2026</strong>.</p>
+
+<p>Para participar, debe enviarse un correo a <a href="mailto:leiguardamusic@gmail.com">leiguardamusic@gmail.com</a> con el asunto <strong>«Candidatura Concurso Hórreos 2026»</strong>, incluyendo datos del solicitante, ubicación y descripción del hórreo o panera, fotografías y autorización de la propiedad cuando corresponda. Bases completas en <a href="/es/concurso-de-horreos-y-paneras/">la página del concurso</a>.</p>
 
 <h2 class="doc-h2">Sobre ADAR</h2>
 
-<p>La Asociación para el Desarrollo de las Artes en el medio Rural (ADAR) es una organización cultural sin ánimo de lucro con sede en Leiguarda (Belmonte de Miranda, Asturias), fundada en 2020 por los músicos Guillermo Laporta y Josefina Urraca. Desde su primera edición en 2021, el festival produce música clásica contemporánea, arte visual y patrimonio activado en aldeas, iglesias, hórreos, monasterios y paisajes del medio rural asturiano.</p>
+<p>La <strong>Asociación para el Desarrollo de las Artes en el Medio Rural</strong> es una organización cultural sin ánimo de lucro con sede en Leiguarda, Belmonte de Miranda, Asturias. Fundada en 2020 por <strong>Guillermo Laporta</strong> y <strong>Josefina Urraca</strong>, ADAR desarrolla proyectos que conectan música clásica contemporánea, arte visual, patrimonio y paisaje rural.</p>
 
-<p>Con seis años de trayectoria, el Festival ADAR se ha consolidado como un referente cultural en Asturias y ha ido adquiriendo una dimensión europea, tejiendo una red internacional de artistas, residencias y colaboraciones más allá de nuestras fronteras.</p>
+<p>La línea de trabajo de ADAR en torno a paisaje, escucha y sostenibilidad recibió ya un reconocimiento temprano a través de <strong>«Paseos Sonoros»</strong>, proyecto ganador de la convocatoria <strong>Green Music &amp; Entrepreneurship (GreenME)</strong> de la Escuela Superior de Música Reina Sofía, financiada por <strong>MusicAIRE</strong> dentro del programa Creative Europe de la Unión Europea. Esta iniciativa abrió una línea de investigación artística que conecta música, medioambiente, patrimonio rural y acción comunitaria, y que continúa desarrollándose en las residencias e intervenciones site-specific del festival.</p>
 
-<p>El proyecto opera con un modelo descentralizado que combina residencias artísticas, mediación cultural con los ayuntamientos anfitriones, documentación audiovisual y circulación internacional. La programación es de entrada libre y se sostiene con el apoyo del <strong>Principado de Asturias</strong>, la beca europea <strong>Culture Moves Europe</strong> y <strong>Caja Rural</strong>, junto a una red de partners culturales.</p>
+<p>Desde su primera edición en 2021, el Festival ADAR ha activado aldeas, iglesias, hórreos, monasterios y espacios patrimoniales del medio rural asturiano, consolidándose como un proyecto cultural con dimensión regional, nacional e internacional.</p>
+
+<p>El festival trabaja con un modelo descentralizado basado en residencias artísticas, colaboración con ayuntamientos anfitriones, documentación audiovisual, circulación internacional y programación de entrada libre. Cuenta con el apoyo del <strong>Principado de Asturias</strong>, <strong>Culture Moves Europe</strong>, <strong>Caja Rural</strong> y una red de colaboradores culturales.</p>
 
 <h2 class="doc-h2">Descargas</h2>
 
