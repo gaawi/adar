@@ -4,7 +4,7 @@ slug: "conciertu-inauguracion-lleiguarda-2021-ast-copy"
 lang: "ast"
 date: "2026-03-10T12:43:07Z"
 modified: "2026-03-10T14:11:15Z"
-status: "publish"
+status: "draft"
 wp_id: 858
 original_url: "https://festivaladar.com/ast/conciertu-inauguracion-lleiguarda-2021-ast-copy/"
 permalink: "/ast/conciertu-inauguracion-lleiguarda-2021-ast-copy/"

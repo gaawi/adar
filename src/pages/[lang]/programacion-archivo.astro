@@ -21,7 +21,7 @@ const COPY = {
     edition_h_em: 'ya tiene programa.',
     edition_h_post: '',
     edition_lede:
-      'Diez días de música, paseos sonoros e instalaciones por el medio rural asturiano del 5 al 16 de agosto de 2026. Consulta el programa completo, fotos de cada sede y reserva tu plaza en Eventbrite.',
+      'Once conciertos de música de cámara, arte visual e intervenciones sonoras por el medio rural asturiano, del 4 al 16 de agosto de 2026. Consulta el programa completo, fotos de cada sede y reserva tu plaza en Eventbrite.',
     edition_cta_program: 'Ver programa 2026 completo',
     open_calls: 'Convocatorias abiertas',
     cta_contact: 'Hablar con la oficina',
@@ -54,7 +54,7 @@ const COPY = {
     edition_h_em: 'has a programme.',
     edition_h_post: '',
     edition_lede:
-      'Ten days of music, sound walks and installations across rural Asturias, 5 — 16 August 2026. See the full schedule, venue photos and book your seat on Eventbrite.',
+      'Eleven chamber-music concerts, visual art and sound interventions across rural Asturias, 4 — 16 August 2026. See the full schedule, venue photos and book your seat on Eventbrite.',
     edition_cta_program: 'See the full 2026 programme',
     open_calls: 'Open calls',
     cta_contact: 'Speak with the office',
@@ -87,7 +87,7 @@ const COPY = {
     edition_h_em: 'ya tien programa.',
     edition_h_post: '',
     edition_lede:
-      'Diez díes de música, paseos sonoros ya instalaciones pel mediu rural asturianu del 5 al 16 d’agostu de 2026. Consulta’l programa completu, fotos de cada sede ya reserva la to plaza en Eventbrite.',
+      'Once conciertos de música de cámara, arte visual ya intervenciones sonores pel mediu rural asturianu, del 4 al 16 d’agostu de 2026. Consulta’l programa completu, fotos de cada sede ya reserva la to plaza en Eventbrite.',
     edition_cta_program: 'Ver programa 2026 completu',
     open_calls: 'Convocatories abiertes',
     cta_contact: 'Falar cola oficina',
@@ -127,6 +127,48 @@ const CONTACT_HREF: Record<Lang, string> = {
   en: '/en/contact/',
   ast: '/ast/contautu/',
 };
+
+
+// Localize the archive schedule labels (data is stored in Spanish).
+const KIND_I18N: Record<string, Record<string,string>> = {
+  en: {'Apertura':'Opening','Clausura':'Closing','Concierto visual':'Visual concert','Concierto':'Concert','Espectáculo':'Show','Inauguración':'Opening','Instalación':'Installation','Micro-concierto':'Micro-concert','Paseo sonoro':'Sound walk','Recital':'Recital','Sobremesa':'Gathering'},
+  ast: {'Apertura':'Apertura','Clausura':'Clausura','Concierto visual':'Conciertu visual','Concierto':'Conciertu','Espectáculo':'Espectáculu','Inauguración':'Inauguración','Instalación':'Instalación','Micro-concierto':'Micro-conciertu','Paseo sonoro':'Paséu sonoru','Recital':'Recital','Sobremesa':'Sobremesa'},
+};
+const NOTE_I18N: Record<string, Record<string,string>> = {
+  en: {
+    'Aforo limitado.':'Limited capacity.',
+    'Andrea Casarrubios, violonchelista nominada a los Grammy 2025.':'Andrea Casarrubios, cellist nominated for the 2025 Grammys.',
+    'Clausura del Festival ADAR 2025.':'Closing of the 2025 ADAR Festival.',
+    'Cuatro músicos interactúan con el público en pie dentro del claustro.':'Four musicians interact with the standing audience inside the cloister.',
+    'Cámara con diseño de iluminación y proyecciones.':'Chamber music with lighting design and projections.',
+    'El monasterio como caja de resonancia para una noche de belleza y contraste.':'The monastery as a resonating chamber for a night of beauty and contrast.',
+    'Escenografía de Sarah K. Williams.':'Set design by Sarah K. Williams.',
+    'Ganadores del concurso de hórreos y paneras.':'Winners of the hórreos and paneras competition.',
+    'Instalación artística y paseo sonoro.':'Art installation and sound walk.',
+    'Música en directo, narración, instalación y creación audiovisual. Leyenda escrita por Giulio Tanasini.':'Live music, narration, installation and audiovisual creation. Story written by Giulio Tanasini.',
+    'Repertorio: Brahms · Caroline Shaw · Dvořák · JP Jofre · Mozart.':'Repertoire: Brahms · Caroline Shaw · Dvořák · JP Jofre · Mozart.',
+  },
+  ast: {
+    'Aforo limitado.':'Aforu llimitáu.',
+    'Andrea Casarrubios, violonchelista nominada a los Grammy 2025.':'Andrea Casarrubios, violonchelista nomada a los Grammy 2025.',
+    'Clausura del Festival ADAR 2025.':'Clausura del Festival ADAR 2025.',
+    'Cuatro músicos interactúan con el público en pie dentro del claustro.':'Cuatro músicos interactúen col públicu en pie dientro del claustru.',
+    'Cámara con diseño de iluminación y proyecciones.':'Cámara con diseñu d’illuminación y proyeiciones.',
+    'El monasterio como caja de resonancia para una noche de belleza y contraste.':'El monasteriu como caxa de resonancia pa una nueche de guapura y contraste.',
+    'Escenografía de Sarah K. Williams.':'Escenografía de Sarah K. Williams.',
+    'Ganadores del concurso de hórreos y paneras.':'Ganadores del concursu d’hórreos y paneres.',
+    'Instalación artística y paseo sonoro.':'Instalación artística y paséu sonoru.',
+    'Música en directo, narración, instalación y creación audiovisual. Leyenda escrita por Giulio Tanasini.':'Música en directo, narración, instalación y creación audiovisual. Lleenda escrita por Giulio Tanasini.',
+    'Repertorio: Brahms · Caroline Shaw · Dvořák · JP Jofre · Mozart.':'Repertoriu: Brahms · Caroline Shaw · Dvořák · JP Jofre · Mozart.',
+  },
+};
+const DOW_ABBR: Record<string, Record<string,string>> = {
+  en: {'Lun':'Mon','Mar':'Tue','Mié':'Wed','Jue':'Thu','Vie':'Fri','Sáb':'Sat','Dom':'Sun','Ago':'Aug'},
+  ast: {'Lun':'Llu','Mar':'Mar','Mié':'Mié','Jue':'Xue','Vie':'Vie','Sáb':'Sáb','Dom':'Dom','Ago':'Ago'},
+};
+function tKind(k: string): string { if (lang === 'es' || !k) return k; return (KIND_I18N[lang] || {})[k] || k; }
+function tNote(n?: string): string | undefined { if (!n || lang === 'es') return n; return (NOTE_I18N[lang] || {})[n] || n; }
+function tDay(d: string): string { if (lang === 'es' || !d) return d; const parts = d.split(' '); const m = (DOW_ABBR[lang] || {})[parts[0]] || parts[0]; parts[0] = m; return parts.join(' '); }
 
 const allPosts = await getCollection('posts');
 const posts = allPosts
@@ -354,15 +396,15 @@ const titleByLang = COPY.title;
               return (
                 <li class="prog-event">
                   <Row class={`prog-event-row${href ? ' prog-event-row-link' : ''}`} href={href}>
-                    <span class="prog-event-day mono">{ev.day}</span>
+                    <span class="prog-event-day mono">{tDay(ev.day)}</span>
                     <span class="prog-event-time mono">{ev.time ?? '—'}</span>
                     <div class="prog-event-body">
-                      <span class="prog-event-kind mono">{ev.kind}</span>
+                      <span class="prog-event-kind mono">{tKind(ev.kind)}</span>
                       <h3 class="prog-event-venue">{ev.venue}</h3>
                       {ev.municipality && (
                         <span class="prog-event-muni mono">{ev.municipality}</span>
                       )}
-                      {ev.note && <p class="prog-event-note">{ev.note}</p>}
+                      {ev.note && <p class="prog-event-note">{tNote(ev.note)}</p>}
                     </div>
                     {thumb && (
                       <div class="prog-event-thumb">
