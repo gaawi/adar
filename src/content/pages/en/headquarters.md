@@ -407,7 +407,7 @@ Leiguarda 47 is where ADAR's work begins. If you are an artist, a programmer, or
 </div>
 
 <div class="ed-actions" style="margin-top:20px">
-<a class="ed-btn" href="/en/residencies/" target="_blank" rel="noopener">Explore residencies</a>
+<a class="ed-btn" href="/en/adar-artistic-residencies/" target="_blank" rel="noopener">Explore residencies</a>
 <a class="ed-btn ed-btn-ghost" href="/en/" target="_blank" rel="noopener">Visit Festival ADAR</a>
 </div>
 </div>

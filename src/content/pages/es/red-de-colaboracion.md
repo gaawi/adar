@@ -178,8 +178,8 @@ coproducción o apoyo en especie.
 </p>
 </div>
 <div class="ed-cta-actions">
-<a class="ed-btn ed-btn-ghost" href="/contacto/">Contactar</a>
-<a class="ed-btn" href="/equipo/">Ver equipo</a>
+<a class="ed-btn ed-btn-ghost" href="/es/contacto/">Contactar</a>
+<a class="ed-btn" href="/es/equipo/">Ver equipo</a>
 </div>
 </div>
 </div>

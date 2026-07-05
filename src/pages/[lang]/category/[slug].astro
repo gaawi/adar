@@ -103,13 +103,21 @@ const CATEGORY_MAP: Record<string, Record<Lang, string>> = {
   'prensa': { es: 'prensa', en: 'prensa', ast: 'prensa' },
   'press':  { es: 'prensa', en: 'prensa', ast: 'prensa' },
 };
+const ARCHIVE_HREF: Record<Lang, string> = {
+  es: '/es/category/memoria-de-acciones/',
+  en: '/en/category/projects-archive/',
+  ast: '/ast/category/memoria-dacciones/',
+};
 const mapped = CATEGORY_MAP[slug];
 const translations: Partial<Record<Lang, string>> = mapped
   ? Object.fromEntries(
       (LANGS as Lang[]).map((l) => [l, `/${l}/category/${mapped[l]}/`]),
     )
+  // Unmapped categories (e.g. "uncategorized") have no guaranteed
+  // counterpart: keep the current language on its page and send the others
+  // to their archive index rather than a missing same-slug category.
   : Object.fromEntries(
-      (LANGS as Lang[]).map((l) => [l, `/${l}/category/${slug}/`]),
+      (LANGS as Lang[]).map((l) => [l, l === lang ? `/${lang}/category/${slug}/` : ARCHIVE_HREF[l]]),
     );
 ---
 

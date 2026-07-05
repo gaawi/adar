@@ -126,7 +126,7 @@ Experiences for local and visiting audiences, with mediation and context.
 <figure class="ed-g-item"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar24fx30/16/14.jpg" alt="Proximity format" /><figcaption>Intimate formats and care for the environment.</figcaption></figure>
 <figure class="ed-g-item"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Heritage activation" /><figcaption>Heritage as a scenic experience.</figcaption></figure>
 </div>
-<div class="ed-lede"><a class="ed-btn" href="/adar/category/memoria-de-acciones/">View action archive</a>
+<div class="ed-lede"><a class="ed-btn" href="/en/category/projects-archive/">View action archive</a>
 <a class="ed-btn ed-btn-ghost" href="#top">Back to top</a></div>
 </div>
 </section>
@@ -175,7 +175,7 @@ Photo and video with professional standards for outreach and reuse.
 Foundation for reports, partners, sponsorship, and future programming.
 </div>
 </div>
-<div class="ed-lede"><a class="ed-btn" href="/en/category/memoria-de-acciones/">Go to archive</a>
+<div class="ed-lede"><a class="ed-btn" href="/en/category/projects-archive/">Go to archive</a>
 <a class="ed-btn ed-btn-ghost" href="#top">Back to top</a></div>
 </div>
 </section>

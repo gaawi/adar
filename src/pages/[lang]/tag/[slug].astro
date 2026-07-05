@@ -86,12 +86,28 @@ const ledeByLang = {
 
 const heroImage = items[0]?.data.featured_image;
 
-// For tags we just keep the same slug across languages. Year tags
-// (2021–2026) match. Semantic tags like "concierto" don't have a
-// guaranteed counterpart so the switcher will fall back to the home
-// if /{lang}/tag/{slug}/ isn't generated for that lang.
+// Tag slugs are language-specific (a "concierto" tag has no "concierto"
+// page in EN). Only offer the switcher for languages where THIS exact tag
+// slug actually exists; otherwise send the visitor to that language's
+// archive index so the switcher never points at a missing page.
+const ARCHIVE_HREF: Record<Lang, string> = {
+  es: '/es/category/memoria-de-acciones/',
+  en: '/en/category/projects-archive/',
+  ast: '/ast/category/memoria-dacciones/',
+};
+const tagSlugsByLang: Record<string, Set<string>> = {};
+for (const l of LANGS as Lang[]) {
+  const set = new Set<string>();
+  allPosts
+    .filter((p) => p.data.lang === l && p.data.status === 'publish')
+    .forEach((p) => p.data.tags.forEach((t) => { const s = wpSlugify(t); if (s) set.add(s); }));
+  tagSlugsByLang[l] = set;
+}
 const translations: Partial<Record<Lang, string>> = Object.fromEntries(
-  (LANGS as Lang[]).map((l) => [l, `/${l}/tag/${slug}/`]),
+  (LANGS as Lang[]).map((l) => [
+    l,
+    l === lang || tagSlugsByLang[l].has(slug) ? `/${l}/tag/${slug}/` : ARCHIVE_HREF[l],
+  ]),
 );
 ---
 

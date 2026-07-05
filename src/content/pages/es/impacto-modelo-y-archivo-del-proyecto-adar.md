@@ -143,7 +143,7 @@ Experiencias para público local y visitante, con mediación y contexto.
 <figure class="ed-g-item"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar24fx30/16/14.jpg" alt="Formato de proximidad" /><figcaption>Formatos íntimos y cuidado del entorno.</figcaption></figure>
 <figure class="ed-g-item"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Activación patrimonial" /><figcaption>Patrimonio como experiencia escénica.</figcaption></figure>
 </div>
-<div class="ed-lede"><a class="ed-btn" href="/adar/category/memoria-de-acciones/">Ver memoria de acciones</a>
+<div class="ed-lede"><a class="ed-btn" href="/es/category/memoria-de-acciones/">Ver memoria de acciones</a>
 <a class="ed-btn ed-btn-ghost" href="#top">Volver arriba</a></div>
 </div>
 </section><!-- MODELO -->

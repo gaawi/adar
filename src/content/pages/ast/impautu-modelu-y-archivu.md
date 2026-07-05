@@ -123,7 +123,7 @@ Esperiencies pal públicu llocal y visitante, con mediación y contestu.
 <figure class="ed-g-item"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar24fx30/16/14.jpg" alt="Formatu de proximidá" /><figcaption>Formatos íntimos y curiáu del entornu.</figcaption></figure>
 <figure class="ed-g-item"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1970T01.jpg" alt="Activación patrimonial" /><figcaption>Patrimoniu como esperiencia escénica.</figcaption></figure>
 </div>
-<div class="ed-lede"><a class="ed-btn" href="/adar/category/memoria-de-acciones/">Ver memoria d'acciones</a>
+<div class="ed-lede"><a class="ed-btn" href="/ast/category/memoria-dacciones/">Ver memoria d'acciones</a>
 <a class="ed-btn ed-btn-ghost" href="#top">Volver arriba</a></div>
 </div>
 </section>
@@ -172,7 +172,7 @@ Foto y videu con estándares profesionales pa difusión y reutilización.
 Base pa informes, partners, patrocinios y programación futura.
 </div>
 </div>
-<div class="ed-lede"><a class="ed-btn" href="/ast/category/memoria-de-acciones/">Dir al archivu</a>
+<div class="ed-lede"><a class="ed-btn" href="/ast/category/memoria-dacciones/">Dir al archivu</a>
 <a class="ed-btn ed-btn-ghost" href="#top">Volver arriba</a></div>
 </div>
 </section>

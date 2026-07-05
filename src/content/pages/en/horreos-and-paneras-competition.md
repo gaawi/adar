@@ -123,7 +123,7 @@ a living map of spaces where music and contemporary creation engage with Asturia
 
 <div class="cta-actions">
 <a class="ed-btn" href="/en/contact/">Get in touch</a>
-<a class="ed-btn ed-btn-ghost" href="/en/category/actions/">
+<a class="ed-btn ed-btn-ghost" href="/en/category/projects-archive/">
 View past activities
 </a>
 </div>

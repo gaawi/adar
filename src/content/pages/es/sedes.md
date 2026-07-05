@@ -385,8 +385,8 @@ Si eres artista, programador o colaborador y te interesa lo que hacemos en Leigu
 </div>
 
 <div class="ed-actions" style="margin-top:20px">
-<a class="ed-btn" href="/residencias/" target="_blank" rel="noopener">Residencias</a>
-<a class="ed-btn ed-btn-ghost" href="/" target="_blank" rel="noopener">Festival ADAR</a>
+<a class="ed-btn" href="/es/residencias-artisticas-adar/" target="_blank" rel="noopener">Residencias</a>
+<a class="ed-btn ed-btn-ghost" href="/es/adar/" target="_blank" rel="noopener">Festival ADAR</a>
 </div>
 </div>
 </section>
