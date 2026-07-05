@@ -420,7 +420,7 @@ const ADAR26_ROWS = [
     title: { es: 'UMBRAL ZERO · Música minimalista', en: 'UMBRAL ZERO · Minimalist music', ast: 'UMBRAL ZERO · Música minimalista' },
     venue: { es: 'Aula del Oro', en: 'Aula del Oro', ast: 'Aula del Oru' },
     muni:  { es: 'Belmonte de Miranda', en: 'Belmonte de Miranda', ast: 'Belmonte de Miranda' } },
-  { n: '05', date: '8 — 9 ago', time: '', photo: 'https://fundacioncerezalesantoninoycinia.org/wp-content/uploads/2024/11/Menhir_2021-fundacion-cerezales.jpg',
+  { n: '05', date: '8 — 9 ago', time: '19:00 — 22:00', photo: 'https://fundacioncerezalesantoninoycinia.org/wp-content/uploads/2024/11/Menhir_2021-fundacion-cerezales.jpg',
     dow: { es: 'Sáb–Dom', en: 'Sat–Sun', ast: 'Sáb–Dom' },
     title: { es: 'Intervención site-specific · Colectivo Menhir', en: 'Site-specific intervention · Menhir collective', ast: 'Intervención site-specific · Coleutivu Menhir' },
     venue: { es: 'Calles de Leiguarda', en: 'Streets of Leiguarda', ast: 'Caleyes de Lleiguarda' },
@@ -635,7 +635,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                   <span class="hm-adar26-when mono">
                     <span class="hm-adar26-dow">{e.dow}</span>
                     <span class="hm-adar26-date">{e.date}</span>
-                    {e.time && <span class="hm-adar26-time">{e.time}h</span>}
+                    {e.time && <span class="hm-adar26-time">{e.time}{e.time.includes('—') ? '' : 'h'}</span>}
                   </span>
                   <span class="hm-adar26-body">
                     <span class="hm-adar26-kind">{e.title}</span>
