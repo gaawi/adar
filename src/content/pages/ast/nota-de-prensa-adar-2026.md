@@ -10,7 +10,7 @@ original_url: ""
 permalink: "/ast/nota-de-prensa-adar-2026/"
 categories: []
 tags: []
-featured_image: "https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg"
+featured_image: "/posters/adar-2026.png"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -30,8 +30,8 @@ translation_group: "pll_2026_press_note"
 <h1 class="doc-h1">El Festival ADAR celebra la so sesta edición del 4 al 16 d'agostu de 2026 nel mediu rural asturianu</h1>
 </div>
 
-<a class="doc-poster" href="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" target="_blank" rel="noopener" download>
-<img src="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" alt="Cartel oficial del Festival ADAR 2026" loading="lazy" />
+<a class="doc-poster" href="/posters/adar-2026.png" target="_blank" rel="noopener" download>
+<img src="/posters/adar-2026.png" alt="Cartel oficial del Festival ADAR 2026" loading="lazy" />
 <span class="doc-poster-dl mono">Descargar cartelu ↓</span>
 </a>
 </div>
@@ -44,7 +44,7 @@ translation_group: "pll_2026_press_note"
 
 <p>El proyectu caltién el sofitu del <strong>Principáu d'Asturies</strong> y da en 2026 un nuevu pasu na so proyeición europea tres la seleición d'ADAR como organización anfitriona dientro de <strong>Culture Moves Europe · Call for Residency Hosts</strong>, el programa de movilidá cultural financiáu por <strong>Creative Europe</strong> de la Xunión Europea ya implementáu pol <strong>Goethe-Institut</strong>. Esta dimensión internacional súmase a la so participación nel ecosistema cultural d'<strong>Oviedo 2031</strong>, ciudá candidata a Capital Europea de la Cultura, reforciando'l papel d'ADAR como plataforma de creación dende'l territoriu rural asturianu escontra Europa.</p>
 
-<p>La edición entama'l <strong>martes 4 d'agostu</strong> con un recital de clave d'<strong>Ignacio Prego</strong> nel hórreu ganador del Concursu d'Hórreos y Paneres 2026, que la so sede s'anunciará'l <strong>1 d'agostu</strong>. El programa, tituláu <strong>«De danzas y sonatas»</strong>, propón un percorríu peles formes de danza pa tecláu ente los sieglos XVI y XVIII, con obres d'Antonio de Cabezón, les Folíes d'España y la Chacona de la Partita pa violín en re menor de J. S. Bach, en transcripción de Johannes Brahms. Pola mor del aforu llimitáu de los hórreos, ufiertaránse <strong>trés pases de 30 minutos</strong>.</p>
+<p>La edición entama'l <strong>martes 4 d'agostu</strong> con un recital de clave d'<strong>Ignacio Prego</strong> nel hórreu ganador del Concursu d'Hórreos y Paneres 2026, que la so sede s'anunciará'l <strong>1 d'agostu</strong>. El programa, tituláu <strong>«De danzas y sonatas»</strong>, propón un percorríu peles formes de danza pa tecláu ente los sieglos XVI y XVIII, con obres d'Antonio de Cabezón, les Folíes d'España y la Chacona de la Partita pa violín en re menor de J. S. Bach, en transcripción de Johannes Brahms. Pola mor del aforu llimitáu de los hórreos, ufiertaránse <strong>dos pases de 30 minutos</strong>.</p>
 
 <p>El ciclu <strong>«ADAR en ruta»</strong> axunta cuatro conciertos itinerantes de cámara. <strong>«La forma de la memoria»</strong>, con <strong>María Martínez</strong>, <strong>Frederieke Saeijs</strong> y <strong>Josefina Urraca</strong>, preséntase los díes 5 y 6 d'agostu na biblioteca del Parador de Corias, en Cangas del Narcea, y nel Monasteriu de San Antolín de Bedón, en Llanes, con obres de Haydn, Lili Boulanger, Messiaen, Rajmáninov y Brittney Benton.</p>
 
@@ -52,7 +52,7 @@ translation_group: "pll_2026_press_note"
 
 <p>El coleutivu <strong>Menhir</strong>, formáu por Coco Moya ya Iván Cebrián, robla una intervención site-specific demientres los díes <strong>8 y 9 d'agostu</strong> nes calles de Lleiguarda, de <strong>19:00 a 22:00</strong>. Trátase d'un percorríu sonoru xeollocalizáu qu'entemez elementos musicales, sonoros y testuales qu'apaecen según l'allugamientu del caminante. La ruta pue facese individualmente o en grupu demientres dambes xornaes.</p>
 
-<p>El programa inclúi tamién <strong>«UMBRAL ZERO»</strong>, un conciertu de música minimalista con Guillermo Laporta y Josefina Urraca nel Aula del Oru de Balmonte de Miranda'l 7 d'agostu; un microconciertu de quintetu nel Centru ADAR de Lleiguarda'l 12 d'agostu; y <strong>«Equilibrium»</strong>, una muestra de residencia del tríu The Rest is Silence nel segundu hórreu seleicionáu pol xuráu'l 14 d'agostu, con <strong>trés pases de 30 minutos</strong>.</p>
+<p>El programa inclúi tamién <strong>«UMBRAL ZERO»</strong>, un conciertu de música minimalista con Guillermo Laporta y Josefina Urraca nel Aula del Oru de Balmonte de Miranda'l 7 d'agostu; un microconciertu de quintetu nel Centru ADAR de Lleiguarda'l 12 d'agostu; y <strong>«Equilibrium»</strong>, una muestra de residencia del tríu The Rest is Silence nel segundu hórreu seleicionáu pol xuráu'l 14 d'agostu, con <strong>dos pases de 30 minutos</strong>.</p>
 
 <p>El paséu sonoru del 15 d'agostu per Lleiguarda y el conciertu de zarru del 16 d'agostu na ilesia parroquial zarren la edición. El zarru axunta a <strong>Natania Hoffman</strong>, <strong>Žilvinas Brazauskas</strong>, <strong>Frederieke Saeijs</strong>, <strong>Guillermo Laporta</strong> y <strong>Josefina Urraca</strong> nun programa con obres de Ravel, Ligeti, Beethoven, Brahms y Lang, siguíu d'una <strong>espicha</strong> abierta al públicu.</p>
 
@@ -76,7 +76,7 @@ translation_group: "pll_2026_press_note"
 <h2 class="doc-h2">Programación completa</h2>
 
 <ul class="doc-list">
-<li><strong>4 AGO · 20:30</strong> · <strong>«De danzas y sonatas»</strong> — Recital de clave con <strong>Ignacio Prego</strong>. Inauguración · Concursu d'Hórreos y Paneres. Trés pases de 30 minutos. <em>Hórreu ganador del concursu, sede anunciada'l 1 d'agostu.</em></li>
+<li><strong>4 AGO · 20:30</strong> · <strong>«De danzas y sonatas»</strong> — Recital de clave con <strong>Ignacio Prego</strong>. Inauguración · Concursu d'Hórreos y Paneres. Dos pases de 30 minutos. <em>Hórreu ganador del concursu, sede anunciada'l 1 d'agostu.</em></li>
 <li><strong>5 AGO · 20:30</strong> · <strong>«La forma de la memoria»</strong> — Tríu con pianu de María Martínez, Frederieke Saeijs y Josefina Urraca. ADAR en ruta. <em>Biblioteca del Parador de Corias, Cangas del Narcea.</em></li>
 <li><strong>6 AGO · 20:30</strong> · <strong>«La forma de la memoria»</strong> — Segunda presentación del mesmu tríu. ADAR en ruta. <em>Monasteriu de San Antolín de Bedón, Llanes.</em></li>
 <li><strong>7 AGO · 20:30</strong> · <strong>«UMBRAL ZERO»</strong> — Música minimalista y arte visual con Guillermo Laporta y Josefina Urraca. <em>Aula del Oru, Balmonte de Miranda.</em></li>
@@ -84,7 +84,7 @@ translation_group: "pll_2026_press_note"
 <li><strong>11 AGO · 20:30</strong> · <strong>«The Rest is Silence»</strong> — Tríu de Maria Florea, Lara Fernández y Daniel Claret, con obres de Ligeti, Shostakóvich, Gubaidulina, Kurtág, Webern, Penderecki, Stravinsky, Cage y Bach. ADAR en ruta. <em>Auditoriu As Quintas, A Caridá, El Franco.</em></li>
 <li><strong>12 AGO · 20:30</strong> · Microconciertu — Quintetu con pianu con Maria Florea, Lara Fernández, Daniel Claret, Guillermo Laporta y Josefina Urraca, col op. 81 de Dvořák. <em>Centru ADAR, Lleiguarda.</em></li>
 <li><strong>13 AGO · 20:30</strong> · Conciertu de cámara y arte visual — Quintetu con obres de Schubert, Joan Magrané, Brahms y Dvořák. ADAR en ruta. <em>Monasteriu de Villanueva de Oscos.</em></li>
-<li><strong>14 AGO · 20:30</strong> · <strong>«Equilibrium»</strong> — Muestra de residencia del tríu The Rest is Silence con poesía de Joan Margarit, Kurtág y Bach. Trés pases de 30 minutos. <em>Segundu hórreu ganador del concursu.</em></li>
+<li><strong>14 AGO · 20:30</strong> · <strong>«Equilibrium»</strong> — Muestra de residencia del tríu The Rest is Silence con poesía de Joan Margarit, Kurtág y Bach. Dos pases de 30 minutos. <em>Segundu hórreu ganador del concursu.</em></li>
 <li><strong>15 AGO · 21:30</strong> · Paséu sonoru per Lleiguarda — Creación site-specific con Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca. <em>Calles de Lleiguarda.</em></li>
 <li><strong>16 AGO · 21:30</strong> · Zarru — Conciertu de quintetu con obres de Ravel, Ligeti, Beethoven, Brahms y Lang, siguíu d'espicha abierta. <em>Ilesia parroquial de Lleiguarda.</em></li>
 </ul>
@@ -93,7 +93,7 @@ translation_group: "pll_2026_press_note"
 
 <p>La convocatoria del <strong>Concursu d'Hórreos y Paneres 2026</strong> ta abierta. ADAR convida a propietarios, conceyos y comunidaes a proponer un hórreu o panera como sede de dos conciertos del festival. Cada hórreu seleicionáu recibe un premiu de <strong>300 €</strong> y acoyerá'l recital inaugural del 4 d'agostu o la muestra de residencia del 14 d'agostu.</p>
 
-<p>Dambos conciertos n'hórreos ufiertaránse en <strong>trés pases de 30 minutos</strong>, col envís d'axustar la esperiencia al espaciu, favorecer una escucha cercana y permitir l'asistencia de distintos grupos de públicu.</p>
+<p>Dambos conciertos n'hórreos ufiertaránse en <strong>dos pases de 30 minutos</strong>, col envís d'axustar la esperiencia al espaciu, favorecer una escucha cercana y permitir l'asistencia de distintos grupos de públicu.</p>
 
 <p>El plazu de candidatures ta abiertu <strong>fasta les 23:59 h del 25 de xunetu de 2026</strong>. Los ganadores espublizaránse'l <strong>1 d'agostu de 2026</strong>.</p>
 
@@ -115,8 +115,8 @@ translation_group: "pll_2026_press_note"
 
 <div class="doc-downloads">
 <figure>
-<a href="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" target="_blank" rel="noopener" download>
-<img src="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" alt="Cartel oficial Festival ADAR 2026" loading="lazy" />
+<a href="/posters/adar-2026.png" target="_blank" rel="noopener" download>
+<img src="/posters/adar-2026.png" alt="Cartel oficial Festival ADAR 2026" loading="lazy" />
 </a>
 <figcaption class="mono">Cartelu oficial 2026 ↓</figcaption>
 </figure>

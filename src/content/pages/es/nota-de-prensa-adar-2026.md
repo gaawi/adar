@@ -10,7 +10,7 @@ original_url: ""
 permalink: "/es/nota-de-prensa-adar-2026/"
 categories: []
 tags: []
-featured_image: "https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg"
+featured_image: "/posters/adar-2026.png"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -30,8 +30,8 @@ translation_group: "pll_2026_press_note"
 <h1 class="doc-h1">El Festival ADAR celebra su sexta edición del 4 al 16 de agosto de 2026 en el medio rural asturiano</h1>
 </div>
 
-<a class="doc-poster" href="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" target="_blank" rel="noopener" download>
-<img src="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" alt="Cartel oficial del Festival ADAR 2026" loading="lazy" />
+<a class="doc-poster" href="/posters/adar-2026.png" target="_blank" rel="noopener" download>
+<img src="/posters/adar-2026.png" alt="Cartel oficial del Festival ADAR 2026" loading="lazy" />
 <span class="doc-poster-dl mono">Descargar cartel ↓</span>
 </a>
 </div>
@@ -44,7 +44,7 @@ translation_group: "pll_2026_press_note"
 
 <p>El proyecto mantiene el apoyo del <strong>Principado de Asturias</strong> y da en 2026 un nuevo paso en su proyección europea tras la selección de ADAR como organización anfitriona dentro de <strong>Culture Moves Europe · Call for Residency Hosts</strong>, el programa de movilidad cultural financiado por <strong>Creative Europe</strong> de la Unión Europea e implementado por el <strong>Goethe-Institut</strong>. Esta dimensión internacional se suma a su participación en el ecosistema cultural de <strong>Oviedo 2031</strong>, ciudad candidata a Capital Europea de la Cultura, reforzando el papel de ADAR como plataforma de creación desde el territorio rural asturiano hacia Europa.</p>
 
-<p>La edición comienza el <strong>martes 4 de agosto</strong> con un recital de clave de <strong>Ignacio Prego</strong> en el hórreo ganador del Concurso de Hórreos y Paneras 2026, cuya sede se anunciará el <strong>1 de agosto</strong>. El programa, titulado <strong>«De danzas y sonatas»</strong>, propone un recorrido por formas de danza para teclado entre los siglos XVI y XVIII, con obras de Antonio de Cabezón, las Folías de España y la Chacona de la Partita para violín en re menor de J. S. Bach, en transcripción de Johannes Brahms. Debido al aforo limitado de los hórreos, se ofrecerán <strong>tres pases de 30 minutos</strong>.</p>
+<p>La edición comienza el <strong>martes 4 de agosto</strong> con un recital de clave de <strong>Ignacio Prego</strong> en el hórreo ganador del Concurso de Hórreos y Paneras 2026, cuya sede se anunciará el <strong>1 de agosto</strong>. El programa, titulado <strong>«De danzas y sonatas»</strong>, propone un recorrido por formas de danza para teclado entre los siglos XVI y XVIII, con obras de Antonio de Cabezón, las Folías de España y la Chacona de la Partita para violín en re menor de J. S. Bach, en transcripción de Johannes Brahms. Debido al aforo limitado de los hórreos, se ofrecerán <strong>dos pases de 30 minutos</strong>.</p>
 
 <p>El ciclo <strong>«ADAR en ruta»</strong> reúne cuatro conciertos itinerantes de cámara. <strong>«La forma de la memoria»</strong>, con <strong>María Martínez</strong>, <strong>Frederieke Saeijs</strong> y <strong>Josefina Urraca</strong>, se presenta los días 5 y 6 de agosto en la biblioteca del Parador de Corias, en Cangas del Narcea, y en el Monasterio de San Antolín de Bedón, en Llanes, con obras de Haydn, Lili Boulanger, Messiaen, Rachmaninoff, Shostakovich, y Brittney Benton.</p>
 
@@ -52,7 +52,7 @@ translation_group: "pll_2026_press_note"
 
 <p>El colectivo <strong>Menhir</strong>, formado por Coco Moya e Iván Cebrián, firma una intervención site-specific durante los días <strong>8 y 9 de agosto</strong> en las calles de Leiguarda, de <strong>19:00 a 22:00</strong>. Se trata de un recorrido sonoro geolocalizado que combina elementos musicales, sonoros y textuales que aparecen según la ubicación del caminante. La ruta puede realizarse individualmente o en grupo durante ambas jornadas.</p>
 
-<p>La programación incluye también <strong>«UMBRAL ZERO»</strong>, un concierto de música minimalista con Guillermo Laporta y Josefina Urraca en el Aula del Oro de Belmonte de Miranda el 7 de agosto; un microconcierto de <strong>quinteto<s/trong> en el Centro ADAR de Leiguarda el 12 de agosto; y <strong>«Equilibrium»</strong>, una muestra de residencia del trío The Rest is Silence en el segundo hórreo seleccionado por el jurado el 14 de agosto, con <strong>tres pases de 30 minutos</strong>.</p>
+<p>La programación incluye también <strong>«UMBRAL ZERO»</strong>, un concierto de música minimalista con Guillermo Laporta y Josefina Urraca en el Aula del Oro de Belmonte de Miranda el 7 de agosto; un microconcierto de <strong>quinteto</strong> en el Centro ADAR de Leiguarda el 12 de agosto; y <strong>«Equilibrium»</strong>, una muestra de residencia del trío The Rest is Silence en el segundo hórreo seleccionado por el jurado el 14 de agosto, con <strong>dos pases de 30 minutos</strong>.</p>
 
 <p>El paseo sonoro del 15 de agosto por Leiguarda y el concierto de clausura del 16 de agosto en la iglesia parroquial cierran la edición. La clausura reúne a <strong>Natania Hoffman</strong>, <strong>Žilvinas Brazauskas</strong>, <strong>Frederieke Saeijs</strong>, <strong>Guillermo Laporta</strong> y <strong>Josefina Urraca</strong> en un programa con obras de Ravel, Ligeti, Beethoven, Brahms y Lang, seguido de una <strong>espicha</strong> abierta al público.</p>
 
@@ -76,7 +76,7 @@ translation_group: "pll_2026_press_note"
 <h2 class="doc-h2">Programación completa</h2>
 
 <ul class="doc-list">
-<li><strong>4 AGO · 20:30</strong> · <strong>«De danzas y sonatas»</strong> — Recital de clave con <strong>Ignacio Prego</strong>. Inauguración · Concurso de Hórreos y Paneras. Tres pases de 30 minutos. <em>Hórreo ganador del concurso, sede anunciada el 1 de agosto.</em></li>
+<li><strong>4 AGO · 20:30</strong> · <strong>«De danzas y sonatas»</strong> — Recital de clave con <strong>Ignacio Prego</strong>. Inauguración · Concurso de Hórreos y Paneras. Dos pases de 30 minutos. <em>Hórreo ganador del concurso, sede anunciada el 1 de agosto.</em></li>
 <li><strong>5 AGO · 20:30</strong> · <strong>«La forma de la memoria»</strong> — Trío con piano de María Martínez, Frederieke Saeijs y Josefina Urraca. ADAR en ruta. <em>Biblioteca del Parador de Corias, Cangas del Narcea.</em></li>
 <li><strong>6 AGO · 20:30</strong> · <strong>«La forma de la memoria»</strong> — Segunda presentación del mismo trío. ADAR en ruta. <em>Monasterio de San Antolín de Bedón, Llanes.</em></li>
 <li><strong>7 AGO · 20:30</strong> · <strong>«UMBRAL ZERO»</strong> — Música minimalista y arte visual con Guillermo Laporta y Josefina Urraca. <em>Aula del Oro, Belmonte de Miranda.</em></li>
@@ -84,7 +84,7 @@ translation_group: "pll_2026_press_note"
 <li><strong>11 AGO · 20:30</strong> · <strong>«The Rest is Silence»</strong> — Trío de Maria Florea, Lara Fernández y Daniel Claret, con obras de Ligeti, Shostakóvich, Gubaidulina, Kurtág, Webern, Penderecki, Stravinsky, Cage y Bach. ADAR en ruta. <em>Auditorio As Quintas, A Caridá, El Franco.</em></li>
 <li><strong>12 AGO · 20:30</strong> · Microconcierto — Quinteto con piano con Maria Florea, Lara Fernández, Daniel Claret, Guillermo Laporta y Josefina Urraca, con el op. 81 de Dvořák. <em>Centro ADAR, Leiguarda.</em></li>
 <li><strong>13 AGO · 20:30</strong> · Concierto de cámara y arte visual — Quinteto con obras de Schubert, Joan Magrané, Brahms y Dvořák. ADAR en ruta. <em>Monasterio de Villanueva de Oscos.</em></li>
-<li><strong>14 AGO · 20:30</strong> · <strong>«Equilibrium»</strong> — Muestra de residencia del trío The Rest is Silence con poesía de Joan Margarit, Kurtág y Bach. Tres pases de 30 minutos. <em>Segundo hórreo ganador del concurso.</em></li>
+<li><strong>14 AGO · 20:30</strong> · <strong>«Equilibrium»</strong> — Muestra de residencia del trío The Rest is Silence con poesía de Joan Margarit, Kurtág y Bach. Dos pases de 30 minutos. <em>Segundo hórreo ganador del concurso.</em></li>
 <li><strong>15 AGO · 21:30</strong> · Paseo sonoro por Leiguarda — Creación site-specific con Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca. <em>Calles de Leiguarda.</em></li>
 <li><strong>16 AGO · 21:30</strong> · Clausura — Concierto de quinteto con obras de Ravel, Ligeti, Beethoven, Brahms y Lang, seguido de espicha abierta. <em>Iglesia parroquial de Leiguarda.</em></li>
 </ul>
@@ -93,7 +93,7 @@ translation_group: "pll_2026_press_note"
 
 <p>La convocatoria del <strong>Concurso de Hórreos y Paneras 2026</strong> está abierta. ADAR invita a propietarios, ayuntamientos y comunidades a proponer un hórreo o panera como sede de dos conciertos del festival. Cada hórreo seleccionado recibe un premio de <strong>300 €</strong> y acogerá el recital inaugural del 4 de agosto o la muestra de residencia del 14 de agosto.</p>
 
-<p>Ambos conciertos en hórreos se ofrecerán en <strong>tres pases de 30 minutos</strong>, con el objetivo de adaptar la experiencia al espacio, favorecer una escucha cercana y permitir la asistencia de distintos grupos de público.</p>
+<p>Ambos conciertos en hórreos se ofrecerán en <strong>dos pases de 30 minutos</strong>, con el objetivo de adaptar la experiencia al espacio, favorecer una escucha cercana y permitir la asistencia de distintos grupos de público.</p>
 
 <p>El plazo de candidaturas está abierto <strong>hasta las 23:59 h del 25 de julio de 2026</strong>. Los ganadores se publicarán el <strong>1 de agosto de 2026</strong>.</p>
 
@@ -115,8 +115,8 @@ translation_group: "pll_2026_press_note"
 
 <div class="doc-downloads">
 <figure>
-<a href="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" target="_blank" rel="noopener" download>
-<img src="https://creartbox-archive.b-cdn.net/adarimages/posters/2026.jpg" alt="Cartel oficial Festival ADAR 2026" loading="lazy" />
+<a href="/posters/adar-2026.png" target="_blank" rel="noopener" download>
+<img src="/posters/adar-2026.png" alt="Cartel oficial Festival ADAR 2026" loading="lazy" />
 </a>
 <figcaption class="mono">Cartel oficial 2026 ↓</figcaption>
 </figure>
