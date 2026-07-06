@@ -58,21 +58,6 @@ translation_group: "pll_2026_press_note"
 
 <p>El festival está dirigido por <strong>Josefina Urraca</strong> y <strong>Guillermo Laporta</strong>, responsables de la dirección artística y el comisariado. La edición cuenta además con <strong>Zygmund de Somogyi</strong> como compositor residente y <strong>Guillermo Ordás</strong> como cinematógrafo encargado de la documentación audiovisual.</p>
 
-<h2 class="doc-h2">Datos clave</h2>
-
-<table class="doc-table">
-<tr><th>Edición</th><td>VI</td></tr>
-<tr><th>Fechas</th><td>4 al 16 de agosto de 2026</td></tr>
-<tr><th>Dirección</th><td>Josefina Urraca y Guillermo Laporta</td></tr>
-<tr><th>Conciertos</th><td>11, más dos jornadas de intervención site-specific</td></tr>
-<tr><th>Sedes</th><td>7 espacios patrimoniales</td></tr>
-<tr><th>Concejos</th><td>Belmonte de Miranda, Cangas del Narcea, El Franco, Villanueva de Oscos, Llanes y Grado</td></tr>
-<tr><th>Intérpretes</th><td>13 solistas y conjuntos, más el colectivo Menhir</td></tr>
-<tr><th>Equipo creativo</th><td>Zygmund de Somogyi y Guillermo Ordás</td></tr>
-<tr><th>Entrada</th><td>Libre, previa reserva en Eventbrite</td></tr>
-<tr><th>Web</th><td>festivaladar.com</td></tr>
-</table>
-
 <h2 class="doc-h2">Programación completa</h2>
 
 <ul class="doc-list">
