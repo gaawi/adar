@@ -4446,6 +4446,17 @@ body.single header.site-header,
 body.single-post header.site-header,
 body.page-template-full-width-transparent header.site-header,
 body.home header.site-header,
+header.site-header.cd-header {
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background: var(--paper) !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  z-index: 50 !important;
+}
+
 /* Smart header (páginas sin hero flotante): el header pasa a fijo —el
    sticky se rompía por un overflow ancestro—, se oculta al bajar y vuelve
    a aparecer al primer scroll hacia arriba. El padding-top del body
@@ -4461,17 +4472,6 @@ body.adar-header-fixed header.site-header.cd-header {
 }
 body.adar-header-fixed.adar-header-hidden header.site-header.cd-header {
   transform: translateY(-110%);
-}
-
-header.site-header.cd-header {
-  position: sticky !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  background: var(--paper) !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-  z-index: 50 !important;
 }
 body.has-header-image header.site-header a,
 body.single header.site-header a,
