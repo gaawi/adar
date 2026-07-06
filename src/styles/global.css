@@ -6648,7 +6648,7 @@ body.archive .entry-header { display: none; }
   line-height: 1.0;
   letter-spacing: -0.02em;
   margin: 0;
-  color: var(--ink);
+  color: var(--ink) !important;
 }
 .vi26-poster-hero .vi26-hero-tag {
   font-family: var(--font-serif);
