@@ -52,7 +52,7 @@ translation_group: "pll_2026_press_note"
 
 <p>El colectivo <strong>Menhir</strong>, formado por Coco Moya e Iván Cebrián, firma una intervención site-specific durante los días <strong>8 y 9 de agosto</strong> en el palomar de Leiguarda, de <strong>19:00 a 22:00</strong>. Se trata de un recorrido sonoro geolocalizado que combina elementos musicales, sonoros y textuales que aparecen según la ubicación del caminante. La ruta puede realizarse individualmente o en grupo durante ambas jornadas.</p>
 
-<p>La programación incluye también <strong>«UMBRAL ZERO»</strong>, un concierto de música minimalista con Guillermo Laporta y Josefina Urraca en el Aula del Oro de Belmonte de Miranda el 7 de agosto; un microconcierto de <strong>quinteto</strong> en el Centro ADAR de Leiguarda durante el eclipse solar del 12 de agosto; y <strong>«Equilibrium»</strong>, una muestra de residencia del trío The Rest is Silence en el segundo hórreo seleccionado por el jurado el 14 de agosto, con <strong>dos pases de 30 minutos</strong>.</p>
+<p>La programación incluye también <strong>«UMBRAL ZERO»</strong>, un concierto de música minimalista con Guillermo Laporta y Josefina Urraca en el Aula del Oro de Belmonte de Miranda el 7 de agosto; un microconcierto de <strong>quinteto</strong> en el Centro ADAR de Leiguarda durante el eclipse solar del 12 de agosto; y <strong>«Equilibrium»</strong>, una muestra de residencia del trío The Rest is Silence en el segundo hórreo seleccionado por el jurado el 14 de agosto, con <strong>dos pases de 20 minutos</strong>.</p>
 
 <p>El paseo sonoro del 15 de agosto por Leiguarda y el concierto de clausura del 16 de agosto en la iglesia parroquial cierran la edición. La clausura reúne a <strong>Natania Hoffman</strong>, <strong>Žilvinas Brazauskas</strong>, <strong>Frederieke Saeijs</strong>, <strong>Guillermo Laporta</strong> y <strong>Josefina Urraca</strong> en un programa con obras de Ravel, Ligeti, Beethoven, Brahms y Lang, seguido de una <strong>espicha</strong> abierta al público.</p>
 
@@ -84,7 +84,7 @@ translation_group: "pll_2026_press_note"
 <li><strong>11 AGO · 20:30</strong> · <strong>«The Rest is Silence»</strong> — Trío de Maria Florea, Lara Fernández y Daniel Claret, con obras de Ligeti, Shostakóvich, Gubaidulina, Kurtág, Webern, Penderecki, Stravinsky, Cage y Bach. ADAR en ruta. <em>Auditorio As Quintas, A Caridá, El Franco.</em></li>
 <li><strong>12 AGO · 20:30</strong> · Microconcierto durante el eclipse — Quinteto con piano (Florea, Fernández, Claret, Laporta y Urraca) con el op. 81 de Dvořák y <em>Twilight at Dawn</em> de Devin Cholodenko. <em>Centro ADAR, Leiguarda.</em></li>
 <li><strong>13 AGO · 20:30</strong> · Concierto de cámara y arte visual — Quinteto con obras de Devin Cholodenko, Schubert, Joan Magrané, Brahms y Dvořák. ADAR en ruta. <em>Monasterio de Villanueva de Oscos.</em></li>
-<li><strong>14 AGO · 20:30</strong> · <strong>«Equilibrium»</strong> — Muestra de residencia del trío The Rest is Silence: programa abierto desarrollado durante la residencia, con la poesía de Joan Margarit. Dos pases de 30 minutos. <em>Segundo hórreo ganador del concurso.</em></li>
+<li><strong>14 AGO · 20:30</strong> · <strong>«Equilibrium»</strong> — Muestra de residencia del trío The Rest is Silence: programa abierto desarrollado durante la residencia, con la poesía de Joan Margarit. Dos pases de 20 minutos. <em>Segundo hórreo ganador del concurso.</em></li>
 <li><strong>15 AGO · 21:30</strong> · Paseo sonoro por Leiguarda — Creación site-specific con Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca. <em>Calles de Leiguarda.</em></li>
 <li><strong>16 AGO · 21:30</strong> · Clausura — Concierto de quinteto con obras de Ravel, Ligeti, Beethoven, Brahms y Lang, seguido de espicha abierta. <em>Iglesia parroquial de Leiguarda.</em></li>
 </ul>
@@ -93,7 +93,7 @@ translation_group: "pll_2026_press_note"
 
 <p>La convocatoria del <strong>Concurso de Hórreos y Paneras 2026</strong> está abierta. ADAR invita a propietarios, ayuntamientos y comunidades a proponer un hórreo o panera como sede de dos conciertos del festival. Cada hórreo seleccionado recibe un premio de <strong>300 €</strong> y acogerá el recital inaugural del 4 de agosto o la muestra de residencia del 14 de agosto.</p>
 
-<p>Ambos conciertos en hórreos se ofrecerán en <strong>dos pases de 30 minutos</strong>, con el objetivo de adaptar la experiencia al espacio, favorecer una escucha cercana y permitir la asistencia de distintos grupos de público.</p>
+<p>Ambos conciertos en hórreos se ofrecerán en <strong>dos pases</strong> (de 30 minutos el 4 de agosto y de 20 minutos el 14), con el objetivo de adaptar la experiencia al espacio, favorecer una escucha cercana y permitir la asistencia de distintos grupos de público.</p>
 
 <p>El plazo de candidaturas está abierto <strong>hasta las 23:59 h del 25 de julio de 2026</strong>. Los ganadores se publicarán el <strong>1 de agosto de 2026</strong>.</p>
 
