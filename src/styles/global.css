@@ -6596,63 +6596,71 @@ body.archive .entry-header { display: none; }
   isolation: isolate;
 }
 
-/* HERO de programación con el cartel oficial 2026 (sobre crema para que el
-   cartel amarillo destaque; 2 columnas cartel + texto). */
+/* HERO de programación: banner a ancho completo basado en el cartel oficial
+   2026. El cartel llena todo el ancho recortando arriba/abajo (los nombres
+   del anillo se cortan a propósito) y queda centrado en el círculo ADAR.
+   Debajo, una barra clara con el titular y las llamadas a la acción. */
 .vi26-poster-hero {
   background: var(--paper);
   color: var(--ink);
-  padding: 76px 40px;
+  padding: 0;
   text-align: left;
-  overflow: visible;
+  overflow: hidden;
 }
-.vi26-poster-hero-grid {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
-  gap: 56px;
-  align-items: center;
-}
-.vi26-poster-hero-fig {
+.vi26-poster-hero-banner {
   display: block;
-  border: 1px solid rgba(10,9,7,0.14);
-  box-shadow: 0 24px 60px rgba(10,9,7,0.18);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 100%;
 }
-.vi26-poster-hero-fig:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 30px 72px rgba(10,9,7,0.24);
+.vi26-poster-hero-banner img {
+  display: block;
+  width: 100%;
+  height: clamp(360px, 60vh, 720px);
+  object-fit: cover;
+  object-position: center;
 }
-.vi26-poster-hero-fig img { display: block; width: 100%; height: auto; }
-.vi26-poster-hero-side {
+.vi26-poster-hero-bar {
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  padding: 26px 40px;
+}
+.vi26-poster-hero-bar-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px 40px;
+  flex-wrap: wrap;
+}
+.vi26-poster-hero-txt {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
 }
-.vi26-poster-hero-side .prog-current-pill { margin-bottom: 0; }
-.vi26-poster-hero-side .prog-current-ctas { justify-content: flex-start; }
+.vi26-poster-hero-txt .prog-current-pill { margin-bottom: 0; }
+.vi26-poster-hero .prog-current-ctas { justify-content: flex-start; }
 .vi26-poster-hero .vi26-hero-title {
   font-family: var(--font-display);
   font-stretch: 75%;
   font-weight: 600;
-  font-size: clamp(34px, 4.2vw, 60px);
-  line-height: 0.98;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.0;
   letter-spacing: -0.02em;
   margin: 0;
   color: var(--ink);
-  text-wrap: balance;
 }
 .vi26-poster-hero .vi26-hero-tag {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(16px, 1.6vw, 21px);
+  font-size: clamp(15px, 1.4vw, 19px);
   line-height: 1.4;
-  color: rgba(10,9,7,0.75);
+  color: rgba(10,9,7,0.72);
   margin: 0;
-  max-width: 36ch;
+  max-width: 40ch;
 }
 .vi26-poster-hero-dl {
+  align-self: center;
   font-family: var(--font-mono);
   font-size: 12px;
   letter-spacing: 0.14em;
@@ -6662,17 +6670,13 @@ body.archive .entry-header { display: none; }
   text-decoration: none;
 }
 .vi26-poster-hero-dl:hover { border-bottom-color: var(--accent-ink); }
-@media (max-width: 900px) {
-  .vi26-poster-hero { padding: 32px 20px 52px; }
-  .vi26-poster-hero-grid { grid-template-columns: 1fr; gap: 26px; }
-  .vi26-poster-hero-fig { max-width: 440px; margin: 0 auto; width: 100%; }
-}
-/* El body ya reserva el alto del header fijo (--adar-hdr-h); el padding-top
-   de 200/140px pensado para el header fijo antiguo sobra en este hero y deja
-   un hueco enorme. Lo neutralizamos con la misma especificidad. */
-body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 48px; }
-@media (max-width: 900px) {
-  body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 24px; }
+/* El body ya reserva el alto del header fijo (--adar-hdr-h): el banner debe
+   arrancar justo bajo el header, sin el padding-top antiguo de 200/140px. */
+body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 0 !important; }
+@media (max-width: 720px) {
+  .vi26-poster-hero-banner img { height: clamp(300px, 52vh, 460px); }
+  .vi26-poster-hero-bar { padding: 20px; }
+  .vi26-poster-hero-bar-inner { gap: 18px; }
 }
 .prog-current-ring {
   position: absolute;
