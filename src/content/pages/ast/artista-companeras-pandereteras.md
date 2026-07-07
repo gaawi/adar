@@ -22,7 +22,6 @@ translation_group: "pll_art_companeras_pandereteras"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Grupu convidáu</p>
 <p class="qea-lede">
 Compañeras Pandereteras ye un coleutivu dedicáu a la pandereta y al cantu tradicional que participó como convidáu na edición 2025 del Festival ADAR.
 </p>

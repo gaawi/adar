@@ -22,7 +22,6 @@ translation_group: "pll_somogyi_bio"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Compositor residente · Compositor, artista interdisciplinar y periodista musical</p>
 <p class="qea-lede">
 Zygmund de Somogyi «Zyggy» ye compositor, artista interdisciplinar y periodista musical d'orixe británicu-filipín, con base en Londres (usa'l pronome <em>they/them</em>). Partiendo d'un trasfondu nel punk rock y d'una ética DIY, aborda la composición dende un enfoque multifacéticu ya irreverente qu'atraviesa la música clásica contemporánea, la ópera, el teatru, el cine, los videoxuegos y la música electrónica. La so obra reciente esplora'l folclor en llinia, la construcción collaborativa de mundos (<em>worldbuilding</em>), la identidá queer, la estética metamoderna y la recontestualización contradictoria de xéneros y formes.
 </p>

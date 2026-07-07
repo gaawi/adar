@@ -22,7 +22,6 @@ translation_group: "pll_art_maria_martinez"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Violonchelo · Violonchelista y docente, catedrática en el RCSMM, con trayectoria en repertorio histórico</p>
 <p class="qea-lede">
 María Martínez es violonchelista formada en el Trinity College de Londres, la Musikhochschule de Colonia, la Universidad de Indiana con János Starker, y la Universidad Stony Brook de Nueva York con Colin Carr; completó su formación en violonchelo barroco con Phoebe Carrai, Bruno Cocset y Anner Bylsma. Ejerció como docente junto a Starker en Indiana y junto a Carr en Stony Brook, y actualmente es catedrática de violonchelo en el Real Conservatorio Superior de Música de Madrid y profesora del Centro Superior Katarina Gurska. Como solista se ha presentado en Estados Unidos, Europa y China, y ha colaborado con Yo-Yo Ma y el Emerson String Quartet, así como con directores como Riccardo Muti y Jaap van Zweden. Fue miembro de la Chicago Civic Orchestra (2012-2013) y actúa como solista con la Orquesta Sinfónica de Navarra y la Orquesta de la Comunidad de Madrid. Como violonchelista principal de Tiento Nuovo, dirigido por Ignacio Prego, participó en la grabación de los Concerti Grossi de Avison, distinguida con el Diapasón de Oro.
 </p>

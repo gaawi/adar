@@ -22,7 +22,6 @@ translation_group: "pll_art_companeras_pandereteras"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Grupo invitado</p>
 <p class="qea-lede">
 Compañeras Pandereteras es un colectivo dedicado a la pandereta y el canto tradicional que participó como invitado en la edición 2025 del Festival ADAR.
 </p>

@@ -22,7 +22,6 @@ translation_group: "pll_art_andrea_casarrubios"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Cellist and composer · Cello and contemporary composition</p>
 <p class="qea-lede">
 Andrea Casarrubios is a Spanish cellist and composer. She trained as a cellist with Maria de Macedo, Lluís Claret, Amit Peled, Marcy Rosen and Ralph Kirshbaum, and completed a doctorate focused on composition under the guidance of John Corigliano. She was a member of Ensemble Connect, a Carnegie Hall program. As a composer, her work SEVEN (2021), premiered at Carnegie Hall, is a tribute to essential workers during the pandemic; she has also received commissions from the Chicago Symphony (Afilador, orchestral version, 2022-23) and Sphinx Virtuosi (Herencia for string orchestra, 2023). Her album SEVEN: Works by Andrea Casarrubios (2024) received a Grammy nomination in 2025. She has performed and presented her compositions in venues such as the National Auditorium of Madrid, the National Centre for the Performing Arts in Beijing and the Ravinia and Verbier festivals, and collaborates with orchestras including those of Indianapolis, Philadelphia and Charlotte. She teaches master classes at institutions across several continents and has been an affiliated faculty member at Juilliard, USC and CUNY, among others.
 </p>

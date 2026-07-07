@@ -22,7 +22,6 @@ translation_group: "pll_art_guillermo_ordas"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Cinematographer · Documentary film and visual design for concerts</p>
 <p class="qea-lede">
 Guillermo Ordás (Bilbao, 1999) is an audiovisual creator dedicated to directing and producing film projects. He received his first camera at the age of nine and has since directed and produced various audiovisual pieces, combining this activity with his studies at the ECAM (Madrid School of Cinematography and Audiovisual Arts). His work includes a documentary about classical music shot between New York and Asturias, as well as visual design for concerts and several short films. His most recent project, La suerte de Katalina, explores experimental narrative resources and a hybrid visual language; the piece has achieved fourteen festival selections and several national awards. His work has also been selected at events such as NotodoFilmFest, Euskal Zine Bilera and the Soria Film Festival.
 </p>

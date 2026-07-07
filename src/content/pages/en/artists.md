@@ -69,7 +69,7 @@ Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 Augu
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/en/artist-frederieke-saeijs/">
 <div class="at-artist-img">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRllaSawaUhyhnLJDgPzZRvdtVId2aDU4Q6H-Sj2diNF0FrLLiY1hSQ9iLNZMs0NYDqiHCTxqueDmLBPN_y-vb0vQ43ExghPwFHdC1Q7g&s=10" alt="Frederieke Saeijs" loading="lazy">
+<img src="https://creartbox-archive.b-cdn.net/adarimages/images/artists/Frederieke.jpg" alt="Frederieke Saeijs" loading="lazy">
 </div>
 <h3>Frederieke Saeijs</h3>
 </a>

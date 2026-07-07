@@ -22,7 +22,6 @@ translation_group: "pll_art_ivan_cebrian"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Guitarra, electrónica y creación sonora · Guitarrista de jazz y creador sonoro, cofundador del colectivo Menhir</p>
 <p class="qea-lede">
 Iván Cebrián (Cuenca, 1980) es guitarrista, compositor, arreglista y docente afincado en Valencia. Se formó como guitarrista de jazz y ha desarrollado una carrera que combina interpretación, composición y enseñanza. Ha colaborado con músicos de jazz como Perico Sambeat, Jack Walrath y Joe Magnarelli, actuando en festivales de Europa, el norte de África y América Latina. Paralelamente ha trabajado como guitarrista de sesión en pop, rock, folk y música latinoamericana, colaborando con Sole Giménez y Mocedades. Ha sido jefe del Departamento de Guitarra Moderna del Conservatorio Profesional de Música de Valencia y es profesor asistente en Berklee Valencia. Ganó el Certamen de Jazz de la UJI en 2014 y recibió el Premio Extraordinario Fin de Grado en guitarra jazz. Junto a la artista Coco Moya forma el colectivo Menhir, con el que desarrolla proyectos de creación sonora vinculados al territorio.
 </p>

@@ -22,7 +22,6 @@ translation_group: "pll_art_ivan_cebrian"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Guitar, electronics and sound creation · Jazz guitarist and sound creator, co-founder of the Menhir collective</p>
 <p class="qea-lede">
 Iván Cebrián (Cuenca, 1980) is a guitarist, composer, arranger and teacher based in Valencia. He trained as a jazz guitarist and has developed a career combining performance, composition and teaching. He has collaborated with jazz musicians such as Perico Sambeat, Jack Walrath and Joe Magnarelli, performing at festivals in Europe, North Africa and Latin America. In parallel he has worked as a session guitarist in pop, rock, folk and Latin American music, collaborating with Sole Giménez and Mocedades. He has been head of the Modern Guitar Department at the Professional Conservatory of Music of Valencia and is an assistant professor at Berklee Valencia. He won the UJI Jazz Competition in 2014 and received the Extraordinary Graduation Award in jazz guitar. Together with the artist Coco Moya he forms the Menhir collective, with which he develops sound creation projects linked to the territory.
 </p>

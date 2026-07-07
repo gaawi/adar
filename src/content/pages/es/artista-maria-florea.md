@@ -22,7 +22,6 @@ translation_group: "pll_art_maria_florea"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Violín · Violinista solista y de cámara, concertino de la Franz Schubert Filharmonia</p>
 <p class="qea-lede">
 Maria Florea (Esparreguera/Barcelona, 1993) es violinista. Nacida en una familia de músicos, comenzó a tocar el violín a los cuatro años y debutó como solista a los siete con la Orquesta de Montbéliard. Estudió con Gonçal Comellas y Stefan Gheorghiu antes de formarse con Zakhar Bron y Yuri Volguin en la Escuela Superior de Música Reina Sofía (2010-2014). Cursó un máster con distinción con György Pauk en la Royal Academy of Music de Londres y estudios de posgrado con Rainer Schmidt en el Mozarteum de Salzburgo, además de formarse en la Musik-Akademie de Basilea. Ha actuado como solista en el Palau de la Música Catalana y en escenarios de Francia, Alemania, Bulgaria, Ecuador y el Reino Unido. En 2017 fue competidora en la Bartók World Competition. Actualmente es concertino de la Franz Schubert Filharmonia (temporada 2025-26). Es fundadora de los conjuntos de cámara Trio Da Vinci y The Rest Project, junto a la violista Lara Fernández y el violonchelista Daniel Claret.
 </p>

@@ -22,7 +22,6 @@ translation_group: "pll_art_guillermo_laporta"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Flautist · Executive Director · Pioneer of the “visual concert” — chamber music integrated with theatre, video and installation</p>
 <p class="qea-lede">
 Guillermo Laporta is a flautist, composer and cultural manager, known for integrating theatre, dance and video into musical performance under the concept of the visual concert. He trained at the Royal College of Music in London (Bachelor 2008, Master 2010), earned his higher degree at Musikene and a Master's in Arts Management from the Universidad de Alcalá de Henares (2009); he studied with Jaime Martín, Sue Thomas, Paul Edmund-Davies and Miguel Ángel Angulo. He was co-principal flute of Oviedo Filarmonía (2009-2012), principal of the Herald Chamber Orchestra (2012-2015) and of the New York International Chamber Orchestra (2013-2018), performing under conductors such as Roger Norrington and Vladimir Ashkenazy, in venues such as Carnegie Hall. In 2013 he founded CreArtBox, of which he is executive director, and in 2020 he founded and directs Festival ADAR, which brings classical music to rural communities in Asturias. Among his works are Architecture of a Common Man (2023) and Awave (2018-2019). He has received support from NYSCA and the Aaron Copland Fund for Music, and has been featured in The New Yorker and El País.
 </p>

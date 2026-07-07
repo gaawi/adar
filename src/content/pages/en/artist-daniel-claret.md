@@ -22,7 +22,6 @@ translation_group: "pll_art_daniel_claret"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Cello · Solo and chamber cellist, professor at the Conservatori Liceu, member of The Rest Project</p>
 <p class="qea-lede">
 Daniel Claret (Barcelona, 1987) is a cellist born into a family of musicians linked to the cello. He completed his higher studies at the Conservatori Liceu in Barcelona with Jordi Mora, Julius Berger and Bernard Greenhouse. He made his solo debut at the Palau de la Música Catalana at the age of 23 and has performed concertos by Schumann, Haydn, Saint-Saëns, Brahms and Beethoven with orchestras in Spain, Germany and Andorra. His projects include the complete works for cello and piano by Beethoven with pianist Àlex Ramírez, and La fe…, a project for solo cello featuring music by Kurtág and Bach's Suites played with a baroque bow. He has collaborated with the dance company Mal Pelo. He is a professor of cello at the Conservatori Liceu and, since 2023, a member of The Rest Project alongside Maria Florea and Lara Fernández, with which he presented The Rest is Silence (2023).
 </p>

@@ -22,7 +22,6 @@ translation_group: "pll_somogyi_bio"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Resident composer · Composer, interdisciplinary artist and music journalist</p>
 <p class="qea-lede">
 Zygmund de Somogyi (“Zyggy”) is a British-Filipino composer, interdisciplinary artist and music journalist based in London (they/them). Drawing from their punk rock background and DIY ethics, they employ a uniquely multifaceted approach to composition across contemporary classical, opera, theatre, film, video games and electronic music, marked by stylistic irreverence and eclecticism. Their recent works have explored themes of online folklore, collaborative worldbuilding, queer identity, metamodern aesthetics, and contradictory recontextualisations of genre and form.
 </p>

@@ -22,7 +22,6 @@ translation_group: "pll_art_mizuko_kaji"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Visual artist · Interdisciplinary spatial art between architecture, fashion and theatre</p>
 <p class="qea-lede">
 Mizuko Kaji is a Japanese artist, architect and stage designer whose practice combines architecture, fashion and theatre in an approach she herself describes as interdisciplinary spatial art. She trained at Hosei University, where she earned her bachelor's degree (2004) and master's degree (2006) in Architecture, and took a postgraduate certificate at Bunka Fashion College (2015); she is currently a doctoral candidate in Fine Arts at the Tokyo University of the Arts (since 2025). She is a registered first-class architect in Japan. She worked at the SANAA studio (Kazuyo Sejima + Ryue Nishizawa) between 2006 and 2014, and as a freelance costume designer in New York (2016-2017). In 2017 she founded her own studio, Atelier MIZUKO KAJI. Her recent works include the exhibition Fragments beyond Spacetime (2025), SPILT WATER...? (2025) and the stage design for AMANOGAWA (2026). In 2022 she received the Semi-Grand Prize at SICF23.
 </p>

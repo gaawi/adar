@@ -22,7 +22,6 @@ translation_group: "pll_art_beatriz_blanco"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Cellist · Solo cello and pedagogy, early and chamber music</p>
 <p class="qea-lede">
 Beatriz Blanco is a Spanish cellist and professor of cello at the Hochschule für Musik Trossingen (Germany) since the 2021/22 academic year. She trained with Asier Polo at Musikene, Ivan Monighetti at the Musikhochschule in Basel, Clemens Hagen at the Mozarteum in Salzburg and Thomas Grossenbacher at the Zürcher Hochschule der Künste. She has been a prizewinner at the Antonio Janigro Competition in Zagreb, the Rahn Music Prize in Zurich and the Primer Palau Prize at the Palau de la Música Catalana, and she won the Racimo de las Artes Prize of Spain (2015) and first prize at the Salieri-Zinetti Competition (2015). She previously taught at the Royal Conservatory of Music of Madrid and held the cello chair at the Landeskonservatorium of Feldkirch (Austria). She has performed with orchestras such as the Castilla y León Symphony, the RTVE Symphony, the Basel Symphony and the Musikkollegium Winterthur. She plays a 1720 C. Pierray cello and founded the Ribeira Sacra Festival and Academy.
 </p>

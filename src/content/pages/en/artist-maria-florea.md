@@ -22,7 +22,6 @@ translation_group: "pll_art_maria_florea"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Violin · Solo and chamber violinist, concertmaster of the Franz Schubert Filharmonia</p>
 <p class="qea-lede">
 Maria Florea (Esparreguera/Barcelona, 1993) is a violinist. Born into a family of musicians, she began playing the violin at the age of four and made her solo debut at seven with the Montbéliard Orchestra. She studied with Gonçal Comellas and Stefan Gheorghiu before training with Zakhar Bron and Yuri Volguin at the Reina Sofía School of Music (2010-2014). She completed a master's degree with distinction under György Pauk at the Royal Academy of Music in London and postgraduate studies with Rainer Schmidt at the Mozarteum in Salzburg, in addition to training at the Musik-Akademie in Basel. She has performed as a soloist at the Palau de la Música Catalana and on stages in France, Germany, Bulgaria, Ecuador and the United Kingdom. In 2017 she was a competitor at the Bartók World Competition. She is currently concertmaster of the Franz Schubert Filharmonia (2025-26 season). She is the founder of the chamber ensembles Trio Da Vinci and The Rest Project, alongside violist Lara Fernández and cellist Daniel Claret.
 </p>

@@ -22,7 +22,6 @@ translation_group: "pll_art_companeras_pandereteras"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Guest group</p>
 <p class="qea-lede">
 Compañeras Pandereteras is a collective devoted to the tambourine and traditional singing that took part as a guest in the 2025 edition of the ADAR Festival.
 </p>

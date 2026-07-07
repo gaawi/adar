@@ -22,7 +22,6 @@ translation_group: "pll_art_nacho_laguna"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Artista invitáu · Interpretación histórica de tiorba y repertoriu barrocu</p>
 <p class="qea-lede">
 Nacho Laguna ye tiorbista, guitarrista y artista sonoru especializáu en música antigua, natural de Monzón (Huesca). Descubrió la tiorba mientres estudiaba guitarra clásica en Zaragoza. Formóse nel Conservatoriu Superior de Música d'Andalucía, la Universität der Künste de Berlín y la Schola Cantorum Basiliensis. Ye fundador d'Acciaccatura Ensemble, Ballarte Ensemble y el Ballarte Festival. Collabora con conxuntos de referencia en repertoriu barrocu como Gli Incogniti, Artaserse, Les Musiciens du Louvre, I Gemelli, La Ritirata, Le Consort o Il Pomo d'Oro, y con solistes como Amandine Beyer, Philippe Jaroussky, Théotime Langlois de Swarte y Christina Pluhar. Actuó en sales como'l Théâtre des Champs-Élysées, la Ópera Real de Versalles, el Tokyo Opera City y el Concertgebouw d'Ámsterdam. La so discografía inclúi grabaciones pa Harmonia Mundi, Aparte, Naïve y Warner Classics. El so álbum de debú, Ferrarese (2023), recibió cinco diapasones de la revista Diapason.
 </p>

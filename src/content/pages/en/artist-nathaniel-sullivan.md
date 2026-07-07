@@ -22,7 +22,6 @@ translation_group: "pll_art_nathaniel_sullivan"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Baritone · Lyric baritone — contemporary opera and oratorio</p>
 <p class="qea-lede">
 Nathaniel Sullivan is an American baritone, with a degree in vocal performance from the University of Nebraska-Lincoln and a master's from the Bard College Conservatory. He was a vocal fellow at the Tanglewood Music Center (2018-19) and the Ravinia Steans Music Institute (2023), and won the Astral Artists National Competition in 2023. His operatic roles include The King in the North American premiere of George Benjamin's Lessons in Love and Violence (Tanglewood, with the London Philharmonic Orchestra), Jokanaan in Salome with Heartbeat Opera, and Harvey Milk in the premiere of Harvey Milk Reimagined with Opera Theatre of Saint Louis. He has appeared as a soloist in choral and oratorio works such as Fauré's Requiem, Bach's Mass in B minor and St John Passion, and Handel's Messiah. During the pandemic he launched the Pandemigrams project, which raised over $7,500 for 43 charities.
 </p>

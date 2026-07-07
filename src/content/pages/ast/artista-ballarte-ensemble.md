@@ -22,7 +22,6 @@ translation_group: "pll_art_ballarte_ensemble"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Ensemble residente · Música antigua ya interdisciplinariedá escénica</p>
 <p class="qea-lede">
 BallArte ye un conxuntu interdisciplinar con sede en Basilea (Suiza), fundáu por músicos venceyaos al Valle de Benasque, que combina música clásica con danza y elementos escénicos contemporáneos. Ente los sos impulsores ta Nacho Laguna, tiorbista y guitarrista barrocu. Laguna collabora davezu con formaciones de referencia en música antigua como la Venice Baroque Orchestra y Les Musiciens du Louvre, y trabayó xunto a artistes como Philippe Jaroussky y Christina Pluhar, actuando en sales como'l Concertgebouw d'Ámsterdam y la Ópera Real de Versalles. Xunto a Laguna, el nucleu de BallArte fórmenlu la violinista Berta Ares (organizadora fundadora), el gambista Giulio Tanasini (cofundador tamién de Trio Acciaccatura) y la baillarina Marina Ares, amás de más d'una quincena de músicos, técnicos y artistes invitaos que participen nel festival.
 </p>

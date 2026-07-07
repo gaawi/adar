@@ -8572,6 +8572,32 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   color: var(--ink-soft);
 }
 
+/* Cita destacada de prensa en las biografías (qea). */
+.qea-pull {
+  margin: 28px 0 0;
+  max-width: 70ch;
+  padding-left: 20px;
+  border-left: 2px solid var(--accent);
+}
+.qea-pull p {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: clamp(19px, 1.7vw, 24px);
+  line-height: 1.4;
+  font-style: italic;
+  color: var(--ink);
+}
+.qea-pull cite {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-style: normal;
+  color: var(--muted);
+}
+
 .qea-twocol {
   display: grid;
   grid-template-columns: 1fr 1fr;

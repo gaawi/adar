@@ -22,7 +22,6 @@ translation_group: "pll_art_daniel_claret"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Violonchelo · Violonchelista solista y de cámara, profesor en el Conservatori Liceu, miembro de The Rest Project</p>
 <p class="qea-lede">
 Daniel Claret (Barcelona, 1987) es violonchelista, nacido en una familia de músicos vinculada al chelo. Cursó estudios superiores en el Conservatori Liceu de Barcelona con Jordi Mora, Julius Berger y Bernard Greenhouse. Debutó como solista en el Palau de la Música Catalana a los 23 años y ha interpretado conciertos de Schumann, Haydn, Saint-Saëns, Brahms y Beethoven junto a orquestas de España, Alemania y Andorra. Entre sus proyectos destacan la integral de obras para violonchelo y piano de Beethoven junto al pianista Àlex Ramírez, y La fe…, un proyecto para violonchelo solo con música de Kurtág y las Suites de Bach con arco barroco. Ha colaborado con la compañía de danza Mal Pelo. Es profesor de violonchelo en el Conservatori Liceu y, desde 2023, integra The Rest Project junto a Maria Florea y Lara Fernández, con el que presentó The Rest is Silence (2023).
 </p>

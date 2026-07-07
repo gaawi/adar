@@ -22,7 +22,6 @@ translation_group: "pll_art_colectivo_menhir"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Investigación artística y creación site-specific · Colectivo de música e instalación centrado en la relación entre paisaje sonoro y territorio</p>
 <p class="qea-lede">
 Menhir es un colectivo artístico formado por la artista Coco Moya y el músico Iván Cebrián. Su trabajo conjunto combina música, instalación y proyectos itinerantes en torno al concepto de geopunción: la idea de que la música puede actuar como un menhir virtual que reconfigura la relación entre lo humano y lo no humano. Su investigación indaga en los modos de escucha y de conocimiento como vía para repensar la habitabilidad del territorio, explorando la simbiosis entre música y paisaje —en particular el paisaje asturiano. Entre sus publicaciones destacan el LP Geomantic Works (2022, Piano and Coffee Records), Just Before Silence junto a Suso Saiz (2021), el sencillo Osiris (2021) y Music for Mountain (2016). Han presentado su trabajo en el Museo Reina Sofía, CentroCentro Cibeles, la Academia de España en Roma, La Casa Encendida, el Museo Arqueológico Nacional y LABoral Centro de Arte.
 </p>

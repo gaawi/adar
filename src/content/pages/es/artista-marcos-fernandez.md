@@ -22,7 +22,6 @@ translation_group: "pll_art_marcos_fernandez"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Compositor · Composición sinfónica y escénica contemporánea española</p>
 <p class="qea-lede">
 Marcos Fernández-Barrero es un compositor, pianista y profesor español nacido en Barcelona en 1984. Se formó en piano en el Conservatorio Municipal de Barcelona con Maria Jesús Crespo, cursó un segundo grado en composición en el Royal Conservatoire of Scotland con Rory Boyle y un máster en composición en el Royal College of Music de Londres con Joe Horowitz. Es miembro de la Royal Society of Arts de Londres. Ha recibido el Premio Francisco Guerrero de la Fundación SGAE y el IX Premio AEOS-Fundación BBVA, que lo reconoció como el compositor vivo más programado en las salas sinfónicas españolas entre 2018 y 2020. Entre sus obras destacan un Réquiem estrenado en 2022 en el Auditorio Nacional de España, un Concierto para cuarteto de saxofones y orquesta, America (Homenaje a Bernstein), tres óperas —entre ellas The Soldier's Return— y el ballet Smart City. Desde 2019 es profesor de piano en el Conservatorio Municipal de Barcelona.
 </p>

@@ -22,7 +22,6 @@ translation_group: "pll_art_emmanuel_bach"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Violinist · Solo and chamber violin, repertoire from Bach to contemporary</p>
 <p class="qea-lede">
 Emmanuel Bach is a violinist trained at Magdalen College, Oxford and subsequently at the Royal College of Music in London, where he earned his master's degree and the Artist Diploma under the guidance of Natasha Boyarsky, Radu Blidar and Felix Andrievsky. He was a prizewinner at the Royal Over-Seas League Strings Competition (2018) and received the JS Bach Prize. Between 2017 and 2020 he was a Recital Artist of the Countess of Munster Trust. He has performed as co-soloist alongside Anne-Sophie Mutter in J. S. Bach's Double Concerto and has appeared at venues such as Wigmore Hall, the Queen Elizabeth Hall and St Martin-in-the-Fields, with broadcasts on BBC Radio 3. He has collaborated in chamber music with the Artis, Brentano, Elias and Emerson quartets. He has several recordings to his name, among them Bach to the Future (2015) and Nordic Tales (2024).
 </p>

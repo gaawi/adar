@@ -22,7 +22,6 @@ translation_group: "pll_art_almudena_arribas"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
-<p class="qea-kicker mono">Violist · Symphonic and chamber viola</p>
 <p class="qea-lede">
 Almudena Arribas is a Spanish violist from Teruel. After nine years of training and professional activity abroad, she spent two years as a member of the Aachen Symphony Orchestra (Germany), returning to Spain in mid-2018. Since then she has collaborated with ensembles such as the RTVE Symphony Orchestra in Madrid, the Valencia Orchestra and the Liceu in Barcelona, as well as touring with the Orquesta de Cadaqués. During the 2020 lockdown she developed, together with cellist Gustavo Lapresta, a music video project featuring quartet arrangements of popular pieces and works by Piazzolla and Monteverdi. She has also collaborated with Victoria Ensemble, a piano quartet focused on the repertoire of Mozart and Strauss.
 </p>

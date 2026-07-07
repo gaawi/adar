@@ -22,7 +22,6 @@ translation_group: "pll_art_almudena_arribas"
 
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
-<p class="qea-kicker mono">Violista · Viola sinfónica y de cámara</p>
 <p class="qea-lede">
 Almudena Arribas ye una violista española natural de Teruel. Tres de nueve años de formación y actividá profesional nel estranxeru, integró durante dos años la Orquesta Sinfónica d'Aquisgrán (Alemaña), volviendo a España a mediaos de 2018. Dende entós collaboró con formaciones como la Orquesta Sinfónica de RTVE en Madrid, la Orquesta de Valencia y el Liceu de Barcelona, amás de xirar cola Orquesta de Cadaqués. Nel confinamientu de 2020 desenvolvió, xunto al violonchelista Gustavo Lapresta, un proyeutu de vídeos musicales con arreglos pa cuartetu de pieces populares y de Piazzolla y Monteverdi. Tamién collaboró en Victoria Ensemble, un cuartetu con pianu centráu nel repertoriu de Mozart y Strauss.
 </p>
