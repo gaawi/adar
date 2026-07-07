@@ -835,11 +835,9 @@ const POSTER_BG = '/posters/adar-2026.png';
                       <li>
                         <span class="vi26-program-composer">{p.composer}{p.years ? <span class="vi26-program-years mono"> {p.years}</span> : null}</span>
                         <span class="vi26-program-piece"> · <em>{tPiece(e, i, p.piece)}</em></span>
-                        {p.duration && <span class="vi26-program-dur mono"> [{p.duration}]</span>}
                       </li>
                     ))}
                   </ol>
-                  {e.totalDuration && <p class="vi26-program-total mono">{COPY.duration_total} · {e.totalDuration}</p>}
                 </div>
               ) : programNote ? (
                 <div class="vi26-program-wrap">
