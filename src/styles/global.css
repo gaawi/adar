@@ -4468,10 +4468,17 @@ body.adar-header-fixed header.site-header.cd-header {
   left: 0;
   right: 0;
   transition: transform 0.28s ease;
-  will-change: transform;
 }
 body.adar-header-fixed.adar-header-hidden header.site-header.cd-header {
   transform: translateY(-110%);
+}
+/* El menú móvil (.header-navigation-wrapper) es position:fixed;inset:0 y vive
+   DENTRO del <header>. Cualquier transform (o will-change:transform) en el
+   header crea un bloque contenedor y atrapa el overlay dentro de la franja del
+   header en vez de cubrir el viewport. Con el menú abierto forzamos transform
+   none para que el panel se muestre a pantalla completa. */
+body.adar-header-fixed.adar-nav-open header.site-header.cd-header {
+  transform: none !important;
 }
 body.has-header-image header.site-header a,
 body.single header.site-header a,
