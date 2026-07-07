@@ -136,6 +136,26 @@ Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 Augu
 <p class="at-artist-role">Cello</p>
 <p class="at-artist-years">2026</p>
 </article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-josefina-urraca/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg" alt="Josefina Urraca" loading="lazy">
+</div>
+<h3>Josefina Urraca</h3>
+</a>
+<p class="at-artist-role">Piano · Artistic direction</p>
+<p class="at-artist-years">2021 · 22 · 23 · 24 · 25 · 26</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-guillermo-laporta/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">
+</div>
+<h3>Guillermo Laporta</h3>
+</a>
+<p class="at-artist-role">Flute · Executive direction</p>
+<p class="at-artist-years">2021 · 22 · 23 · 24 · 25 · 26</p>
+</article>
 
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/en/artist-zygmund-de-somogyi/">
@@ -356,17 +376,6 @@ Creators who have brought their visual vision to the festival through installati
 </a>
 <p class="at-artist-role">Visual artist</p>
 <p class="at-artist-years">2025</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-guillermo-laporta/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">
-</div>
-<h3>Guillermo Laporta</h3>
-</a>
-<p class="at-artist-role">Stage designer</p>
-<p class="at-artist-years">2021 · 22 · 23 · 24 · 25</p>
 </article>
 
 </div>

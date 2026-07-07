@@ -136,6 +136,26 @@ Intérpretes y creadores de la sesta edición del Festival ADAR, del 4 al 16 d'a
 <p class="at-artist-role">Violonchelu</p>
 <p class="at-artist-years">2026</p>
 </article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/ast/artista-josefina-urraca/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg" alt="Josefina Urraca" loading="lazy">
+</div>
+<h3>Josefina Urraca</h3>
+</a>
+<p class="at-artist-role">Pianu · Direición artística</p>
+<p class="at-artist-years">2021 · 22 · 23 · 24 · 25 · 26</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/ast/artista-guillermo-laporta/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">
+</div>
+<h3>Guillermo Laporta</h3>
+</a>
+<p class="at-artist-role">Flauta · Direición executiva</p>
+<p class="at-artist-years">2021 · 22 · 23 · 24 · 25 · 26</p>
+</article>
 
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/ast/artista-zygmund-de-somogyi/">
@@ -356,17 +376,6 @@ Creadores qu'aportaron la so visión plástica al festival al traviés d'instala
 </a>
 <p class="at-artist-role">Artista visual</p>
 <p class="at-artist-years">2025</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/ast/artista-guillermo-laporta/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/about-guillermo.png" alt="Guillermo Laporta" loading="lazy">
-</div>
-<h3>Guillermo Laporta</h3>
-</a>
-<p class="at-artist-role">Escenógrafu</p>
-<p class="at-artist-years">2021 · 22 · 23 · 24 · 25</p>
 </article>
 
 </div>
