@@ -6866,7 +6866,10 @@ body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 
 .prog-archive {
   background: var(--paper);
   color: var(--ink);
-  padding: 120px 0;
+  /* Es la primera sección de la página (el hero de 2026 se retiró): el
+     offset del header fijo ya aporta separación arriba, así que el padding
+     superior es menor que el inferior. */
+  padding: 56px 0 120px;
 }
 .prog-archive-head {
   max-width: 1600px;

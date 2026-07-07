@@ -333,44 +333,14 @@ const titleByLang = COPY.title;
   }}
 >
   <!-- ============================================
-       NEXT EDITION · 2026 — yellow ring opener
-       ============================================ -->
-  <section class="prog-current">
-    <svg class="prog-current-ring" viewBox="0 0 800 800" aria-hidden="true">
-      <circle cx="400" cy="400" r="380" fill="none" stroke="currentColor" stroke-width="1" />
-      <circle cx="400" cy="400" r="320" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2 6" />
-      <circle cx="400" cy="400" r="260" fill="none" stroke="currentColor" stroke-width="1" />
-    </svg>
-    <div class="prog-current-body">
-      <span class="prog-current-pill">{COPY.edition_eyebrow}</span>
-      <p class="prog-current-kicker mono">{COPY.edition_kicker}</p>
-      <h1 class="prog-current-h">
-        {COPY.edition_h_pre} <em>{COPY.edition_h_em}</em> {COPY.edition_h_post}
-      </h1>
-      <p class="prog-current-lede">{COPY.edition_lede}</p>
-      <div class="prog-current-ctas">
-        <a class="prog-current-cta" href={`/${lang}/programa-2026/`}>
-          <span class="prog-arr">→</span>
-          {COPY.edition_cta_program}
-        </a>
-        <a class="prog-current-cta prog-current-cta-ghost"
-           href="mailto:leiguardamusic@gmail.com?subject=Suscripci%C3%B3n%20al%20bolet%C3%ADn%20Festival%20ADAR&body=Hola%2C%20me%20gustar%C3%ADa%20recibir%20el%20programa%20de%20la%20pr%C3%B3xima%20edici%C3%B3n%20del%20Festival%20ADAR.">
-          <span class="prog-arr">→</span>
-          {COPY.follow_email_cta}
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       PAST EDITIONS
+       PAST EDITIONS · archive opens directly on 2025
        ============================================ -->
   <section class="prog-archive">
     <header class="prog-archive-head">
       <span class="prog-pill">{COPY.past_eyebrow}</span>
-      <h2 class="prog-archive-h">
+      <h1 class="prog-archive-h">
         {COPY.past_h_pre} <em>{COPY.past_h_em}</em> {COPY.past_h_post}
-      </h2>
+      </h1>
       <p class="prog-archive-lede">{COPY.past_lede}</p>
     </header>
 
