@@ -54,7 +54,7 @@ translation_group: "pll_6990ac582687f"
 <ol>
 <li><strong>Presentación de candidaturas:</strong> hasta las 23:59 h del 25 de julio de 2026.</li>
 <li><strong>Publicación de ganadores:</strong> 1 de agosto de 2026.</li>
-<li><strong>Conciertos en los hórreos ganadores:</strong> 4 de agosto (recital de clave de Ignacio Prego) y 14 de agosto (muestra de residencia del trío The Rest is Silence) de 2026.</li>
+<li><strong>Conciertos en los hórreos ganadores:</strong> 4 de agosto (recital de clave de Ignacio Prego) y 14 de agosto (muestra de residencia del trío The Rest Project) de 2026.</li>
 </ol>
 
 <h2 class="legal-h2">6. Documentación requerida</h2>
