@@ -54,7 +54,7 @@ translation_group: "pll_2026_press_note"
 
 <p>La programación incluye también <strong>«UMBRAL ZERO»</strong>, un concierto de música minimalista con Guillermo Laporta y Josefina Urraca en el Aula del Oro de Belmonte de Miranda el 7 de agosto; un microconcierto de <strong>quinteto</strong> en el Centro ADAR de Leiguarda durante el eclipse solar del 12 de agosto; y <strong>«Equilibrium»</strong>, una muestra de residencia del trío The Rest Project en el segundo hórreo seleccionado por el jurado el 14 de agosto, con <strong>dos pases de 20 minutos</strong>.</p>
 
-<p>El paseo sonoro del 15 de agosto por Leiguarda y el concierto de clausura del 16 de agosto en la iglesia parroquial cierran la edición. La clausura reúne a <strong>Natania Hoffman</strong>, <strong>Žilvinas Brazauskas</strong>, <strong>Frederieke Saeijs</strong>, <strong>Guillermo Laporta</strong> y <strong>Josefina Urraca</strong> en un programa con obras de Ravel, Ligeti, Beethoven, Brahms y Lang, seguido de una <strong>espicha</strong> abierta al público.</p>
+<p>El paseo sonoro del 15 de agosto por Leiguarda y el concierto de clausura del 16 de agosto en la iglesia parroquial cierran la edición. La clausura reúne a <strong>Natania Hoffman</strong>, <strong>Žilvinas Brazauskas</strong>, <strong>Frederieke Saeijs</strong>, <strong>Guillermo Laporta</strong> y <strong>Josefina Urraca</strong> en un programa con obras de Vivaldi (arr. Bach), Mendelssohn, Brahms, Ravel, Ligeti y Lang, seguido de una <strong>espicha</strong> abierta al público.</p>
 
 <p>El festival está dirigido por <strong>Josefina Urraca</strong> y <strong>Guillermo Laporta</strong>, responsables de la dirección artística y el comisariado. La edición cuenta además con <strong>Zygmund de Somogyi</strong> como compositor residente y <strong>Guillermo Ordás</strong> como cinematógrafo encargado de la documentación audiovisual.</p>
 
@@ -71,7 +71,7 @@ translation_group: "pll_2026_press_note"
 <li><strong>13 AGO · 20:30</strong> · Concierto de cámara y arte visual — Quinteto con obras de Devin Cholodenko, Schubert, Joan Magrané, Brahms y Dvořák. ADAR en ruta. <em>Monasterio de Villanueva de Oscos.</em></li>
 <li><strong>14 AGO · 20:30</strong> · <strong>«Equilibrium»</strong> — Muestra de residencia del trío The Rest Project: programa abierto desarrollado durante la residencia, con la poesía de Joan Margarit. Dos pases de 20 minutos. <em>Segundo hórreo ganador del concurso.</em></li>
 <li><strong>15 AGO · 21:30</strong> · Paseo sonoro por Leiguarda — Creación site-specific con Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca. <em>Calles de Leiguarda.</em></li>
-<li><strong>16 AGO · 21:30</strong> · Clausura — Concierto de quinteto con obras de Ravel, Ligeti, Beethoven, Brahms y Lang, seguido de espicha abierta. <em>Iglesia parroquial de Leiguarda.</em></li>
+<li><strong>16 AGO · 21:30</strong> · Clausura — Concierto de quinteto con obras de Vivaldi (arr. Bach), Mendelssohn, Brahms, Ravel, Ligeti y Lang, seguido de espicha abierta. <em>Iglesia parroquial de Leiguarda.</em></li>
 </ul>
 
 <h2 class="doc-h2">Concurso de Hórreos y Paneras</h2>

@@ -54,7 +54,7 @@ translation_group: "pll_2026_press_note"
 
 <p>El programa inclúi tamién <strong>«UMBRAL ZERO»</strong>, un conciertu de música minimalista con Guillermo Laporta y Josefina Urraca nel Aula del Oru de Balmonte de Miranda'l 7 d'agostu; un microconciertu de <strong>quintetu</strong> nel Centru ADAR de Lleiguarda demientres l'eclís solar del 12 d'agostu; y <strong>«Equilibrium»</strong>, una muestra de residencia del tríu The Rest Project nel segundu hórreu seleicionáu pol xuráu'l 14 d'agostu, con <strong>dos pases de 20 minutos</strong>.</p>
 
-<p>El paséu sonoru del 15 d'agostu per Lleiguarda y el conciertu de zarru del 16 d'agostu na ilesia parroquial zarren la edición. El zarru axunta a <strong>Natania Hoffman</strong>, <strong>Žilvinas Brazauskas</strong>, <strong>Frederieke Saeijs</strong>, <strong>Guillermo Laporta</strong> y <strong>Josefina Urraca</strong> nun programa con obres de Ravel, Ligeti, Beethoven, Brahms y Lang, siguíu d'una <strong>espicha</strong> abierta al públicu.</p>
+<p>El paséu sonoru del 15 d'agostu per Lleiguarda y el conciertu de zarru del 16 d'agostu na ilesia parroquial zarren la edición. El zarru axunta a <strong>Natania Hoffman</strong>, <strong>Žilvinas Brazauskas</strong>, <strong>Frederieke Saeijs</strong>, <strong>Guillermo Laporta</strong> y <strong>Josefina Urraca</strong> nun programa con obres de Vivaldi (arr. Bach), Mendelssohn, Brahms, Ravel, Ligeti y Lang, siguíu d'una <strong>espicha</strong> abierta al públicu.</p>
 
 <p>El festival ta dirixíu por <strong>Josefina Urraca</strong> y <strong>Guillermo Laporta</strong>, responsables de la direición artística y el comisariáu. La edición cuenta amás con <strong>Zygmund de Somogyi</strong> como compositor residente y <strong>Guillermo Ordás</strong> como cinematógrafu encargáu de la documentación audiovisual.</p>
 
@@ -71,7 +71,7 @@ translation_group: "pll_2026_press_note"
 <li><strong>13 AGO · 20:30</strong> · Conciertu de cámara y arte visual — Quintetu con obres de Devin Cholodenko, Schubert, Joan Magrané, Brahms y Dvořák. ADAR en ruta. <em>Monasteriu de Villanueva de Uscos.</em></li>
 <li><strong>14 AGO · 20:30</strong> · <strong>«Equilibrium»</strong> — Muestra de residencia del tríu The Rest Project: programa abiertu desarrolláu demientres la residencia, cola poesía de Joan Margarit. Dos pases de 20 minutos. <em>Segundu hórreu ganador del concursu.</em></li>
 <li><strong>15 AGO · 21:30</strong> · Paséu sonoru per Lleiguarda — Creación site-specific con Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta y Josefina Urraca. <em>Calles de Lleiguarda.</em></li>
-<li><strong>16 AGO · 21:30</strong> · Zarru — Conciertu de quintetu con obres de Ravel, Ligeti, Beethoven, Brahms y Lang, siguíu d'espicha abierta. <em>Ilesia parroquial de Lleiguarda.</em></li>
+<li><strong>16 AGO · 21:30</strong> · Zarru — Conciertu de quintetu con obres de Vivaldi (arr. Bach), Mendelssohn, Brahms, Ravel, Ligeti y Lang, siguíu d'espicha abierta. <em>Ilesia parroquial de Lleiguarda.</em></li>
 </ul>
 
 <h2 class="doc-h2">Concursu d'Hórreos y Paneres</h2>

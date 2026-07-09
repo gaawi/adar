@@ -54,7 +54,7 @@ translation_group: "pll_2026_press_note"
 
 <p>The programme also includes <strong>«UMBRAL ZERO»</strong>, a minimalist music concert with Guillermo Laporta and Josefina Urraca at the Aula del Oro in Belmonte de Miranda on 7 August; a <strong>quintet</strong> micro concert at the Centro ADAR in Leiguarda during the solar eclipse of 12 August; and <strong>«Equilibrium»</strong>, a residency showcase by The Rest Project trio at the second hórreo selected by the jury on 14 August, in <strong>two 20-minute sittings</strong>.</p>
 
-<p>The sound walk of 15 August through Leiguarda and the closing concert of 16 August at the parish church bring the edition to a close. The closing brings together <strong>Natania Hoffman</strong>, <strong>Žilvinas Brazauskas</strong>, <strong>Frederieke Saeijs</strong>, <strong>Guillermo Laporta</strong> and <strong>Josefina Urraca</strong> in a programme with works by Ravel, Ligeti, Beethoven, Brahms and Lang, followed by an <strong>espicha</strong> (a traditional Asturian cider gathering) open to the public.</p>
+<p>The sound walk of 15 August through Leiguarda and the closing concert of 16 August at the parish church bring the edition to a close. The closing brings together <strong>Natania Hoffman</strong>, <strong>Žilvinas Brazauskas</strong>, <strong>Frederieke Saeijs</strong>, <strong>Guillermo Laporta</strong> and <strong>Josefina Urraca</strong> in a programme with works by Vivaldi (arr. Bach), Mendelssohn, Brahms, Ravel, Ligeti and Lang, followed by an <strong>espicha</strong> (a traditional Asturian cider gathering) open to the public.</p>
 
 <p>The festival is directed by <strong>Josefina Urraca</strong> and <strong>Guillermo Laporta</strong>, responsible for its artistic direction and curation. The edition also features <strong>Zygmund de Somogyi</strong> as resident composer and <strong>Guillermo Ordás</strong> as cinematographer in charge of the audiovisual documentation.</p>
 
@@ -71,7 +71,7 @@ translation_group: "pll_2026_press_note"
 <li><strong>13 AUG · 20:30</strong> · Chamber and visual-art concert — Quintet with works by Devin Cholodenko, Schubert, Joan Magrané, Brahms and Dvořák. ADAR on tour. <em>Monastery of Villanueva de Oscos.</em></li>
 <li><strong>14 AUG · 20:30</strong> · <strong>«Equilibrium»</strong> — Residency showcase by The Rest Project trio: an open programme developed during the residency, with the poetry of Joan Margarit. Two 20-minute sittings. <em>Second winning hórreo of the competition.</em></li>
 <li><strong>15 AUG · 21:30</strong> · Sound walk through Leiguarda — Site-specific creation with Natania Hoffman, Žilvinas Brazauskas, Frederieke Saeijs, Guillermo Laporta and Josefina Urraca. <em>Streets of Leiguarda.</em></li>
-<li><strong>16 AUG · 21:30</strong> · Closing — Quintet concert with works by Ravel, Ligeti, Beethoven, Brahms and Lang, followed by an open espicha. <em>Parish church of Leiguarda.</em></li>
+<li><strong>16 AUG · 21:30</strong> · Closing — Quintet concert with works by Vivaldi (arr. Bach), Mendelssohn, Brahms, Ravel, Ligeti and Lang, followed by an open espicha. <em>Parish church of Leiguarda.</em></li>
 </ul>
 
 <h2 class="doc-h2">Hórreos &amp; Paneras Competition</h2>
