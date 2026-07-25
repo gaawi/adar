@@ -11834,6 +11834,36 @@ body.page .entry-content .vi26 p,
 }
 .vi26-event-cta .vi26-rsvp .vi26-arr { color: var(--accent-ink); }
 
+/* Entradas agotadas: botón inerte y tachado */
+.vi26-event-cta .vi26-rsvp.is-soldout {
+  background: transparent;
+  color: rgba(10,9,7,0.55) !important;
+  border: 1px solid rgba(10,9,7,0.3);
+  cursor: not-allowed;
+  pointer-events: none;
+  text-decoration: line-through;
+}
+/* Últimas entradas: distintivo junto al botón de reserva */
+.vi26-few-badge {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 3px 10px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+.vi26-rsvp-mini.vi26-rsvp-soldout {
+  color: var(--vi-mute);
+  border-color: var(--vi-line);
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
 /* Hide old links inside venue-links */
 .vi26-venue-links .vi26-link { display: none !important; }
 
