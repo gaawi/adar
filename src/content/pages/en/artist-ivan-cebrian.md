@@ -10,8 +10,8 @@ original_url: ""
 permalink: "/en/artist-ivan-cebrian/"
 categories: []
 tags: []
-featured_image: "https://valencia.berklee.edu/sites/default/files/styles/scale_to_480px_width/public/2023-02/Ivan%20Cebrian%20Berklee.jpg"
-excerpt: "Guitar, electronics and sound creation · Jazz guitarist and sound creator, co-founder of the Menhir collective"
+featured_image: "https://laboralcentrodearte.org/wp-content/uploads/2015/09/Menhir-Instalacion-0_72ppp.webp"
+excerpt: "Electronics and sound creation · Musician and sound artist, co-founder of the Menhir collective"
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
@@ -23,7 +23,7 @@ translation_group: "pll_art_ivan_cebrian"
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biography</p>
 <p class="qea-lede">
-Iván Cebrián (Cuenca, 1980) is a guitarist, composer, arranger and teacher based in Valencia. He trained as a jazz guitarist and has developed a career combining performance, composition and teaching. He has collaborated with jazz musicians such as Perico Sambeat, Jack Walrath and Joe Magnarelli, performing at festivals in Europe, North Africa and Latin America. In parallel he has worked as a session guitarist in pop, rock, folk and Latin American music, collaborating with Sole Giménez and Mocedades. He has been head of the Modern Guitar Department at the Professional Conservatory of Music of Valencia and is an assistant professor at Berklee Valencia. He won the UJI Jazz Competition in 2014 and received the Extraordinary Graduation Award in jazz guitar. Together with the artist Coco Moya he forms the Menhir collective, with which he develops sound creation projects linked to the territory.
+Iván Cebrián (Cuenca, 1980) is a musician and sound artist. Together with the visual artist Coco Moya he forms the music and art collective Menhir, with which he develops site-specific electronic pieces in dialogue with the territory: interactive sound installations where technology and the organic merge and where the landscape—or the context—becomes the score. He composes and creates sound spaces for contemporary dance companies, and runs his own record production while also producing other musicians. He holds a degree in Psychology from the UNED and a postgraduate qualification in Music Therapy from the Universidad de Alcalá de Henares. The Menhir project—which uses analogue synthesizers and acoustic instruments and draws on the notion of geopuncture, music as a "virtual menhir" that alters and transforms the territory—was recognised with the LABjoven_Los Bragales Prize (Los Bragales Collection and LABoral Centro de Arte).
 </p>
 </section>
 

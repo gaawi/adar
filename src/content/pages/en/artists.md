@@ -89,11 +89,11 @@ Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 Augu
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/en/artist-ivan-cebrian/">
 <div class="at-artist-img">
-<img src="https://valencia.berklee.edu/sites/default/files/styles/scale_to_480px_width/public/2023-02/Ivan%20Cebrian%20Berklee.jpg" alt="Iván Cebrián" loading="lazy">
+<img src="https://laboralcentrodearte.org/wp-content/uploads/2015/09/Menhir-Instalacion-0_72ppp.webp" alt="Iván Cebrián" loading="lazy">
 </div>
 <h3>Iván Cebrián</h3>
 </a>
-<p class="at-artist-role">Guitar, electronics &amp; sound creation</p>
+<p class="at-artist-role">Electronics &amp; sound creation</p>
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">

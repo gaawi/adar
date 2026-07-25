@@ -10,8 +10,8 @@ original_url: ""
 permalink: "/es/artista-ivan-cebrian/"
 categories: []
 tags: []
-featured_image: "https://valencia.berklee.edu/sites/default/files/styles/scale_to_480px_width/public/2023-02/Ivan%20Cebrian%20Berklee.jpg"
-excerpt: "Guitarra, electrónica y creación sonora · Guitarrista de jazz y creador sonoro, cofundador del colectivo Menhir"
+featured_image: "https://laboralcentrodearte.org/wp-content/uploads/2015/09/Menhir-Instalacion-0_72ppp.webp"
+excerpt: "Electrónica y creación sonora · Músico y creador sonoro, cofundador del colectivo Menhir"
 author: "gaawi_rei1q"
 parent_id: 0
 menu_order: 0
@@ -23,7 +23,7 @@ translation_group: "pll_art_ivan_cebrian"
 <section class="qea-intro">
 <p class="qea-eyebrow">§ 00 · Biografía</p>
 <p class="qea-lede">
-Iván Cebrián (Cuenca, 1980) es guitarrista, compositor, arreglista y docente afincado en Valencia. Se formó como guitarrista de jazz y ha desarrollado una carrera que combina interpretación, composición y enseñanza. Ha colaborado con músicos de jazz como Perico Sambeat, Jack Walrath y Joe Magnarelli, actuando en festivales de Europa, el norte de África y América Latina. Paralelamente ha trabajado como guitarrista de sesión en pop, rock, folk y música latinoamericana, colaborando con Sole Giménez y Mocedades. Ha sido jefe del Departamento de Guitarra Moderna del Conservatorio Profesional de Música de Valencia y es profesor asistente en Berklee Valencia. Ganó el Certamen de Jazz de la UJI en 2014 y recibió el Premio Extraordinario Fin de Grado en guitarra jazz. Junto a la artista Coco Moya forma el colectivo Menhir, con el que desarrolla proyectos de creación sonora vinculados al territorio.
+Iván Cebrián (Cuenca, 1980) es músico y creador sonoro. Junto a la artista visual Coco Moya forma el colectivo de música y arte Menhir, con el que desarrolla piezas electrónicas site-specific en diálogo con el territorio: instalaciones sonoras interactivas donde se funden la tecnología y lo orgánico y en las que el paisaje —o el contexto— se convierte en partitura. Compone y crea espacios sonoros para compañías de danza contemporánea, y desarrolla su propia producción discográfica además de producir a otros músicos. Es licenciado en Psicología por la UNED y posgraduado en Musicoterapia por la Universidad de Alcalá de Henares. El proyecto Menhir —que emplea sintetizadores analógicos e instrumentos acústicos y parte de la noción de geopunción, la música como «menhir virtual» que altera y transforma el territorio— fue reconocido con el Premio LABjoven_Los Bragales (Colección Los Bragales y LABoral Centro de Arte).
 </p>
 </section>
 
