@@ -77,6 +77,14 @@ const ogImage =
         // past the hero, swap to the solid paper header.
         var firstSection = document.querySelector('main .page-hero, main .hm-hero');
         if (!firstSection) return;
+        // On the homepage the programme block is reordered above the hero on
+        // mobile/tablet (≤900px), so the dark hero is no longer behind the
+        // header. Skip the floating (transparent + white logo) treatment
+        // there — otherwise the white logo lands on the light programme and
+        // disappears; the smart sticky paper header (next script) takes over.
+        // Interior hero pages (.page-hero) are not reordered, so they keep it.
+        var isHomeHero = firstSection.classList.contains('hm-hero');
+        if (isHomeHero && window.matchMedia('(max-width: 900px)').matches) return;
         document.body.classList.add('has-floating-header');
         function update() {
           var rect = firstSection.getBoundingClientRect();
