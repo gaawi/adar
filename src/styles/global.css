@@ -5189,6 +5189,24 @@ body.home article.page { margin: 0 !important; }
 }
 
 /* ----------------------------------------------------------------
+   MÓVIL/TABLET (≤900px): la programación va lo PRIMERO.
+   En pantallas donde el banner lateral fijo desaparece, el visitante
+   aterrizaba sobre el hero a pantalla completa y tenía que hacer
+   scroll para encontrar el programa y reservar. Convertimos .hm en
+   columna flex y adelantamos el bloque .hm-adar26 al primer puesto
+   (order:-1); el hero pasa justo debajo, reducido para que actúe como
+   banner y no como un muro de 100vh. El escritorio (>900px) queda
+   intacto: .hm sigue en flujo de bloque y el orden original se
+   mantiene. (.hm-side-banner es position:fixed + display:none aquí,
+   así que queda fuera del flujo flex.)
+   ---------------------------------------------------------------- */
+@media (max-width: 900px) {
+  .hm { display: flex; flex-direction: column; }
+  .hm-adar26 { order: -1; }
+  .hm-hero { min-height: 68vh; min-height: 68svh; }
+}
+
+/* ----------------------------------------------------------------
    § Anuncio Edición VI · 2026 (.hm-adar26-*)
    Block that announces the upcoming edition on the homepage,
    between the photo hero and the rest of the page. Two columns
