@@ -52,29 +52,16 @@ const tops = flat
 
 // Status bar copy per language
 const statusCopy = {
-  es: { name: 'Festival ADAR', suffix: 'Principado de Asturias', right: 'Asturias · España · Europa' },
-  en: { name: 'Festival ADAR', suffix: 'Principality of Asturias', right: 'Asturias · Spain · Europe' },
-  ast: { name: 'Festival ADAR', suffix: 'Principáu d’Asturies', right: 'Asturies · España · Europa' },
+  es: { left: 'Festival ADAR · Principado de Asturias', right: 'Asturias · España · Europa' },
+  en: { left: 'Festival ADAR · Principality of Asturias', right: 'Asturias · Spain · Europe' },
+  ast: { left: 'Festival ADAR · Principáu d’Asturies', right: 'Asturies · España · Europa' },
 }[lang];
 
-// Donations · PayPal (leiguardamusic@gmail.com). Kept in the top status
-// bar so it is the first thing on every page.
-const donateLabel = { es: 'Donar', en: 'Donate', ast: 'Donar' }[lang];
-const donateHref =
+// Main header CTA · Donations via PayPal (leiguardamusic@gmail.com), in EUR.
+// Replaces the former newsletter button.
+const ctaLabel = { es: 'Donar', en: 'Donate', ast: 'Donar' }[lang];
+const ctaHref =
   'https://www.paypal.com/donate/?business=leiguardamusic%40gmail.com&no_recurring=0&item_name=Festival%20ADAR&currency_code=EUR';
-
-const ctaLabel = { es: 'Newsletter', en: 'Newsletter', ast: 'Boletín' }[lang];
-const ctaSubject = {
-  es: 'Suscripción al boletín Festival ADAR',
-  en: 'Festival ADAR newsletter subscription',
-  ast: 'Suscripción al boletín Festival ADAR',
-}[lang];
-const ctaBody = {
-  es: 'Hola, me gustaría recibir el programa de la próxima edición del Festival ADAR.',
-  en: 'Hello, I would like to receive the programme for the next edition of Festival ADAR.',
-  ast: 'Hola, prestaríame recibir el programa de la próxima edición del Festival ADAR.',
-}[lang];
-const ctaHref = `mailto:leiguardamusic@gmail.com?subject=${encodeURIComponent(ctaSubject)}&body=${encodeURIComponent(ctaBody)}`;
 
 const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
 ---
@@ -82,13 +69,8 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
 <header id="masthead" class="site-header cd-header" role="banner">
   <div class="cd-status">
     <div class="cdcontainer cd-status-inner">
-      <span class="cd-status-left"><span class="cd-status-dot"></span>{statusCopy.name}<span class="cd-status-suffix"> · {statusCopy.suffix}</span></span>
-      <span class="cd-status-r">
-        <span class="cd-status-region">{statusCopy.right}</span>
-        <a class="cd-status-donate" href={donateHref} target="_blank" rel="noopener">
-          <span class="cd-status-heart" aria-hidden="true">♥</span> {donateLabel}
-        </a>
-      </span>
+      <span><span class="cd-status-dot"></span>{statusCopy.left}</span>
+      <span class="cd-status-region">{statusCopy.right}</span>
     </div>
   </div>
 
@@ -168,7 +150,7 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
         </div>
       </details>
 
-      <a class="cd-cta" href={ctaHref}>{ctaLabel}</a>
+      <a class="cd-cta" href={ctaHref} target="_blank" rel="noopener"><span class="cd-cta-arr" aria-hidden="true">♥</span> {ctaLabel}</a>
 
       <button
         type="button"

@@ -4515,32 +4515,6 @@ body.home #content {
   font-family: var(--font-mono);
 }
 .cd-status .cd-status-region { color: rgba(246,244,238,0.65); }
-.cd-status-r { display: flex; align-items: center; gap: 16px; }
-/* Donate button — lives in the top status bar so it is the first thing
-   on every page. Accent pill on the dark ribbon. */
-.cd-status-donate {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 4px 12px 5px;
-  background: var(--accent);
-  color: var(--accent-ink) !important;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  line-height: 1;
-  text-decoration: none;
-  transition: filter 0.15s ease, transform 0.15s ease;
-}
-.cd-status-donate:hover { filter: brightness(1.06); transform: translateY(-1px); }
-.cd-status-heart { font-size: 12px; line-height: 1; }
-/* Keep the donate text dark on accent regardless of the header link-colour
-   rules (solid, home, single and floating states). */
-header.site-header.cd-header a.cd-status-donate,
-body.home header.site-header a.cd-status-donate,
-body.single header.site-header a.cd-status-donate,
-body.has-floating-header header.site-header.cd-header a.cd-status-donate {
-  color: var(--accent-ink) !important;
-}
 .cd-status-dot {
   display: inline-block;
   width: 6px;
@@ -4695,15 +4669,9 @@ body.has-floating-header:not(.is-scrolled) header.site-header.cd-header .cd-lang
   .cd-right .cd-cta { order: 1; }
   .cd-right .adar-nav-toggle { order: 3; }
 }
-@media (max-width: 680px) {
-  /* Phones: drop the "· Principado de Asturias" suffix so the festival
-     name and the donate button share the top ribbon comfortably. */
-  .cd-status-suffix { display: none; }
-}
 @media (max-width: 400px) {
   /* Very small phones: tighten so logo + CTA + switch + menu fit one row. */
   .cd-main { gap: 8px; }
-  .cd-status-donate { padding: 4px 10px; letter-spacing: 0.06em; }
   .cd-mark-logo { height: 24px; }
   .cd-right { gap: 6px; }
   .cd-cta { padding: 7px 10px; font-size: 10px; }
