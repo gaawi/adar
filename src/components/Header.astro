@@ -57,11 +57,10 @@ const statusCopy = {
   ast: { left: 'Festival ADAR · Principáu d’Asturies', right: 'Asturies · España · Europa' },
 }[lang];
 
-// Main header CTA · Donations via PayPal (leiguardamusic@gmail.com), in EUR.
+// Main header CTA · Donations via Stripe payment link.
 // Replaces the former newsletter button.
 const ctaLabel = { es: 'Donar', en: 'Donate', ast: 'Donar' }[lang];
-const ctaHref =
-  'https://www.paypal.com/donate/?business=leiguardamusic%40gmail.com&no_recurring=0&item_name=Festival%20ADAR&currency_code=EUR';
+const ctaHref = 'https://buy.stripe.com/aEUaFobka6nCfxm001';
 
 const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
 ---
