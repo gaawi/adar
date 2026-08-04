@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
 import type { Lang } from '../../i18n/strings.ts';
 import { LANGS } from '../../i18n/strings.ts';
 
@@ -624,6 +625,22 @@ const ARTISTS = [...EVENTS.flatMap((e) => e.artists), ...EXTRA_CREDITS].filter((
   return true;
 });
 
+// Map each performer name to its individual bio page (slug artista-*/artist-*)
+// for the CURRENT language, so names in the programme link to the bio we
+// actually have. Matching is by normalized title; if there is no published
+// bio for a name it simply stays plain text (never a dead link).
+const normName = (s: string) =>
+  s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim();
+const BIO_HREF = new Map<string, string>();
+for (const p of await getCollection('pages')) {
+  if (p.data.lang !== lang) continue;
+  if (p.data.status !== 'publish') continue;
+  const perma = p.data.permalink || `/${lang}/${p.data.slug}/`;
+  if (!/\/(artista|artist)-/.test(perma)) continue;
+  BIO_HREF.set(normName(p.data.title), perma);
+}
+const bioHref = (name: string): string | undefined => BIO_HREF.get(normName(name));
+
 // -----------------------------------------------------------------------------
 // i18n for event content (EN / AST). Spanish is the source in EVENTS above;
 // these maps localize the prose, day-of-week, roles and venue/municipality
@@ -868,12 +885,19 @@ const POSTER_BG = '/posters/adar-2026.png';
               <div class="vi26-artists-wrap">
                 <p class="vi26-block-label mono">{COPY.artists_h}</p>
                 <ul class="vi26-artist-line">
-                  {e.artists.map((a) => (
-                    <li>
-                      <span class="vi26-artist-l-name">{a.name}</span>
-                      <span class="vi26-artist-l-role mono"> · {tDict(ROLE_I18N, a.role)}</span>
-                    </li>
-                  ))}
+                  {e.artists.map((a) => {
+                    const href = bioHref(a.name);
+                    return (
+                      <li>
+                        {href ? (
+                          <a class="vi26-artist-l-name vi26-artist-link" href={href}>{a.name}</a>
+                        ) : (
+                          <span class="vi26-artist-l-name">{a.name}</span>
+                        )}
+                        <span class="vi26-artist-l-role mono"> · {tDict(ROLE_I18N, a.role)}</span>
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
@@ -945,12 +969,19 @@ const POSTER_BG = '/posters/adar-2026.png';
     </header>
 
     <ul class="vi26-cartel-list">
-      {ARTISTS.map((a) => (
-        <li class="vi26-cartel-row">
-          <span class="vi26-cartel-name">{a.name}</span>
-          <span class="vi26-cartel-role mono">{tDict(ROLE_I18N, a.role)}</span>
-        </li>
-      ))}
+      {ARTISTS.map((a) => {
+        const href = bioHref(a.name);
+        return (
+          <li class="vi26-cartel-row">
+            {href ? (
+              <a class="vi26-cartel-name vi26-artist-link" href={href}>{a.name}</a>
+            ) : (
+              <span class="vi26-cartel-name">{a.name}</span>
+            )}
+            <span class="vi26-cartel-role mono">{tDict(ROLE_I18N, a.role)}</span>
+          </li>
+        );
+      })}
     </ul>
   </section>
 
@@ -990,7 +1021,16 @@ const POSTER_BG = '/posters/adar-2026.png';
               <td class="mono"><span class="vi26-dow">{tDict(DOW_I18N, e.dow)}</span> {e.fullDate}</td>
               <td class="mono vi26-td-kind">{(tEv(e, 'subtitle') as string)?.split('·')[0]?.trim() || tEv(e, 'title')}</td>
               <td class="vi26-td-venue">{tDict(VENUE_I18N, e.venue)}{e.municipality ? <span class="mono vi26-td-muni"> · {tDict(MUNI_I18N, e.municipality)}</span> : null}</td>
-              <td class="mono">{e.artists.map((a) => a.name.split(' ')[0]).join(' · ')}</td>
+              <td class="mono">{e.artists.map((a, i) => {
+                const href = bioHref(a.name);
+                const first = a.name.split(' ')[0];
+                return (
+                  <>
+                    {i > 0 ? ' · ' : ''}
+                    {href ? <a class="vi26-artist-link" href={href}>{first}</a> : first}
+                  </>
+                );
+              })}</td>
               <td>
                 {e.ticketStatus === 'soldout' ? (
                   <span class="vi26-rsvp-mini vi26-rsvp-soldout mono">{COPY.sold_out_short}</span>

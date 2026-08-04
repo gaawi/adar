@@ -11588,6 +11588,26 @@ body.page .entry-content .vi26 p,
   color: var(--vi-acid);
 }
 
+/* Performer names link to their individual bio page. Inherit the
+   surrounding name colour/typography and add a subtle underline so it
+   reads as clickable; strengthen it on hover/focus. */
+.vi26-artist-link {
+  color: inherit;
+  text-decoration: none;
+  text-underline-offset: 0.18em;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: currentColor;
+  -webkit-text-decoration-color: currentColor;
+  opacity: 0.92;
+  transition: opacity 0.15s ease, text-decoration-thickness 0.15s ease;
+}
+.vi26-artist-link:hover,
+.vi26-artist-link:focus-visible {
+  opacity: 1;
+  text-decoration-thickness: 2px;
+}
+
 /* Rest day card */
 .vi26-event-rest {
   list-style: none;
