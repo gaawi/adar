@@ -492,6 +492,7 @@ const ADAR26_COPY = {
     horreo_note: 'Los conciertos 01 y 09 se celebran en los dos hórreos ganadores del Concurso 2026: La Figal de Xugabolos (Casazorrina, Salas) y La Casona de Belmonte (Belmonte de Miranda).',
     past_label: 'Celebrado',
     lived_cta: 'Cómo se vivió · fotos y vídeos en Instagram',
+    lived_short: 'Cómo se vivió en redes',
   },
   en: {
     eyebrow: 'Next edition · Edition VI',
@@ -508,6 +509,7 @@ const ADAR26_COPY = {
     horreo_note: 'Concerts 01 and 09 take place in the two winning hórreos of the 2026 Competition: La Figal de Xugabolos (Casazorrina, Salas) and La Casona de Belmonte (Belmonte de Miranda).',
     past_label: 'Held',
     lived_cta: 'How it was lived · photos & videos on Instagram',
+    lived_short: 'How it was lived',
   },
   ast: {
     eyebrow: 'Próxima edición · Edición VI',
@@ -524,6 +526,7 @@ const ADAR26_COPY = {
     horreo_note: 'Los conciertos 01 y 09 celébrense nos dos hórreos ganadores del Concursu 2026: La Figal de Xugabolos (Casazorrina, Salas) y La Casona de Belmonte (Belmonte de Miranda).',
     past_label: 'Celebráu',
     lived_cta: 'Cómo se vivió · semeyes y vídeos n’Instagram',
+    lived_short: 'Cómo se vivió en redes',
   },
 }[lang];
 const PARTNERS: { name: string; logo: string; href: string }[] = [
@@ -658,6 +661,9 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                     <span class="hm-adar26-venue mono">{e.venue}</span>
                     <span class="hm-adar26-past-badge mono" aria-hidden="true">✓ {ADAR26_COPY.past_label}</span>
                   </span>
+                </a>
+                <a class="hm-adar26-row-lived mono" href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">
+                  {ADAR26_COPY.lived_short}<span aria-hidden="true"> ↗</span>
                 </a>
               </li>
             ))}

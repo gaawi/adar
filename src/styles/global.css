@@ -5472,6 +5472,28 @@ body.home article.page { margin: 0 !important; }
 .hm-adar26-row.is-past .hm-adar26-date { text-decoration: line-through; }
 .hm-adar26-row.is-past .hm-adar26-past-badge { display: inline-block; }
 
+/* "Cómo se vivió en redes" en cada concierto ya celebrado (sólo aparece
+   cuando la fila está marcada como pasada). Va fuera del <a> de la fila
+   para no anidar enlaces; se alinea bajo la columna de texto. */
+.hm-adar26-row-lived { display: none; }
+.hm-adar26-row.is-past .hm-adar26-row-lived {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 0 12px;
+  padding-left: 278px; /* 64 + 32 + 128 columnas + 3×18 gaps → bajo el cuerpo */
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--accent-ink);
+  text-decoration: none;
+}
+.hm-adar26-row.is-past .hm-adar26-row-lived:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* "Cómo se vivió" · enlace a redes bajo el listado */
 .hm-adar26-lived {
   display: inline-flex;
@@ -5523,14 +5545,14 @@ body.home article.page { margin: 0 !important; }
   /* Mobile card: square thumbnail on the left, date on top-right, title +
      venue below. Purpose-built for narrow screens (not just a reflow). */
   .hm-adar26-link {
-    grid-template-columns: 52px 1fr;
+    grid-template-columns: 64px 1fr;
     grid-template-areas: "thumb meta" "thumb body";
     column-gap: 14px;
     row-gap: 3px;
     align-items: start;
     padding: 14px 0;
   }
-  .hm-adar26-thumb { grid-area: thumb; width: 52px; height: 52px; align-self: start; }
+  .hm-adar26-thumb { grid-area: thumb; width: 64px; height: 64px; align-self: start; }
   .hm-adar26-n { display: none; }
   .hm-adar26-when {
     grid-area: meta;
@@ -5542,6 +5564,9 @@ body.home article.page { margin: 0 !important; }
   /* Zone on its own line, first, above the date. */
   .hm-adar26-zone { flex-basis: 100%; font-size: 11px; margin-bottom: 1px; }
   .hm-adar26-body { grid-area: body; }
+  /* Align the per-concert "cómo se vivió" link under the text column
+     (thumb 64px + 14px gap) on mobile. */
+  .hm-adar26-row.is-past .hm-adar26-row-lived { padding-left: 78px; margin-top: 2px; }
 }
 
 /* ---------- COORDENADAS ---------- */
