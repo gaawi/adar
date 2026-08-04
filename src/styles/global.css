@@ -12266,30 +12266,38 @@ body.page .entry-content .vi26 p,
 }
 .vi26-event.is-past .vi26-cover img { filter: grayscale(1) contrast(0.96); }
 .vi26-event.is-past .vi26-content { opacity: 0.72; }
-/* A concert already held: mute its reservation CTA (no longer bookable). */
-.vi26-event.is-past .vi26-event-cta .vi26-rsvp { filter: grayscale(1); opacity: 0.5; }
+/* A concert already held: its reservation CTA is replaced by a
+   "cómo se vivió" button linking to Instagram (you can't book it anymore,
+   but you can see how it was lived). */
+.vi26-event.is-past .vi26-event-cta .vi26-rsvp,
+.vi26-event.is-past .vi26-event-cta .vi26-few-badge,
+.vi26-event.is-past .vi26-event-cta .vi26-rsvp-note { display: none; }
+.vi26-lived-btn { display: none; }
+.vi26-event.is-past .vi26-lived-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 22px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: filter 0.15s ease, transform 0.15s ease;
+}
+.vi26-event.is-past .vi26-lived-btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
+.ig-icon { flex: 0 0 auto; }
 /* Tabla-calendario */
 .vi26-table tr.is-past { opacity: 0.6; }
 .vi26-table tr.is-past .vi26-td-kind { text-decoration: line-through; }
 
-/* "Cómo se vivió" · enlace a redes en la cabecera del programa */
-.vi26-lived {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 20px;
-  padding: 9px 15px;
-  border: 1px solid rgba(10,9,7,0.45);
-  color: #0a0907;
-  text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  font-weight: 600;
-  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+/* Móvil/tablet: en la página de programa, la programación va primero y
+   después el cartel (hero) y el resto. Igual que en la home. */
+@media (max-width: 900px) {
+  .vi26 { display: flex; flex-direction: column; }
+  .vi26-venues { order: -1; }
 }
-.vi26-lived:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
-.vi26-lived-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex: 0 0 auto; }
 
 .vi26-aside-info {
   border: 1px solid rgba(10,9,7,0.18);

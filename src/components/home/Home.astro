@@ -471,6 +471,7 @@ const ADAR26 = ADAR26_ROWS.map((r) => ({
 }));
 
 const ADAR26_HREF = `/${lang}/programa-2026/`;
+const IG_SVG = '<svg class="ig-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>';
 const ADAR26_PRESS_HREF = {
   es:  '/es/nota-de-prensa-adar-2026/',
   en:  '/en/press-release-adar-2026/',
@@ -663,13 +664,14 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                   </span>
                 </a>
                 <a class="hm-adar26-row-lived mono" href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">
-                  {ADAR26_COPY.lived_short}<span aria-hidden="true"> ↗</span>
+                  <Fragment set:html={IG_SVG} />
+                  {ADAR26_COPY.lived_short}
                 </a>
               </li>
             ))}
           </ol>
           <a class="hm-adar26-lived mono" href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">
-            <span class="hm-adar26-lived-dot" aria-hidden="true"></span>
+            <Fragment set:html={IG_SVG} />
             {ADAR26_COPY.lived_cta}
             <span aria-hidden="true"> ↗</span>
           </a>

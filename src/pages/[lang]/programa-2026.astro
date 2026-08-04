@@ -53,6 +53,7 @@ const COPY = {
     few_left: 'Últimas entradas',
     past_label: 'Celebrado',
     lived_cta: 'Cómo se vivió · fotos y vídeos en Instagram',
+    lived_short: 'Cómo se vivió',
     rest: 'DESCANSO',
     rest_sub: 'Día sin programa público.',
     tbc: 'POR CONFIRMAR',
@@ -130,6 +131,7 @@ const COPY = {
     few_left: 'Few tickets left',
     past_label: 'Held',
     lived_cta: 'How it was lived · photos & videos on Instagram',
+    lived_short: 'How it was lived',
     rest: 'REST',
     rest_sub: 'No public programme.',
     tbc: 'TBC',
@@ -207,6 +209,7 @@ const COPY = {
     few_left: 'Últimes entraes',
     past_label: 'Celebráu',
     lived_cta: 'Cómo se vivió · semeyes y vídeos n’Instagram',
+    lived_short: 'Cómo se vivió',
     rest: 'DESCANSU',
     rest_sub: 'Día ensin programa públicu.',
     tbc: 'POR CONFIRMAR',
@@ -657,6 +660,7 @@ function eventStartISO(fullDate: string, time: string): string {
   return `2026-08-${day}T${tm}:00+02:00`;
 }
 const INSTAGRAM_URL = 'https://www.instagram.com/festivaladar';
+const IG_SVG = '<svg class="ig-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>';
 
 // -----------------------------------------------------------------------------
 // i18n for event content (EN / AST). Spanish is the source in EVENTS above;
@@ -850,11 +854,6 @@ const POSTER_BG = '/posters/adar-2026.png';
       <span class="vi26-section-n mono">{COPY.nights_n}</span>
       <h2 class="vi26-section-h">{COPY.nights_h}</h2>
       <p class="vi26-section-sub">{COPY.nights_sub}</p>
-      <a class="vi26-lived mono" href={INSTAGRAM_URL} target="_blank" rel="noopener">
-        <span class="vi26-lived-dot" aria-hidden="true"></span>
-        {COPY.lived_cta}
-        <span aria-hidden="true"> ↗</span>
-      </a>
     </header>
 
     <ol class="vi26-event-list">
@@ -976,6 +975,10 @@ const POSTER_BG = '/posters/adar-2026.png';
                 {e.ticketStatus === 'few' && (
                   <span class="vi26-few-badge mono">{COPY.few_left}</span>
                 )}
+                <a class="vi26-lived-btn" href={INSTAGRAM_URL} target="_blank" rel="noopener">
+                  <Fragment set:html={IG_SVG} />
+                  {COPY.lived_short}
+                </a>
                 <p class="vi26-rsvp-note mono">{COPY.free_note}</p>
               </div>
             </div>
