@@ -633,13 +633,14 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                   </span>
                   <span class="hm-adar26-n mono">{e.n}</span>
                   <span class="hm-adar26-when mono">
+                    <span class="hm-adar26-zone">{e.muni}</span>
                     <span class="hm-adar26-dow">{e.dow}</span>
                     <span class="hm-adar26-date">{e.date}</span>
                     {e.time && <span class="hm-adar26-time">{e.time}{e.time.includes('—') ? '' : 'h'}</span>}
                   </span>
                   <span class="hm-adar26-body">
                     <span class="hm-adar26-kind">{e.title}</span>
-                    <span class="hm-adar26-venue mono">{e.venue} · {e.muni}</span>
+                    <span class="hm-adar26-venue mono">{e.venue}</span>
                   </span>
                 </a>
               </li>

@@ -5370,7 +5370,7 @@ body.home article.page { margin: 0 !important; }
 .hm-adar26-row { margin: 0; }
 .hm-adar26-link {
   display: grid;
-  grid-template-columns: 64px 32px 100px 1fr;
+  grid-template-columns: 64px 32px 128px 1fr;
   gap: 8px 18px;
   align-items: center;
   padding: 12px 0;
@@ -5416,6 +5416,18 @@ body.home article.page { margin: 0 !important; }
   font-size: 11px;
   letter-spacing: 0.18em;
 }
+/* Concejo (zone) surfaced first, above the date: it's the first thing
+   visitors ask — "where is it?". */
+.hm-adar26-zone {
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.15;
+  margin-bottom: 3px;
+}
+.hm-adar26-link:hover .hm-adar26-zone { color: var(--accent-ink); }
 .hm-adar26-dow { color: rgba(10,9,7,0.6); }
 .hm-adar26-date { color: var(--ink); font-weight: 700; font-size: 13px; letter-spacing: 0.12em; }
 .hm-adar26-time { color: var(--accent-ink); opacity: 0.75; font-size: 11px; letter-spacing: 0.16em; font-weight: 600; margin-top: 1px; }
@@ -5473,9 +5485,12 @@ body.home article.page { margin: 0 !important; }
   .hm-adar26-when {
     grid-area: meta;
     flex-direction: row;
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 2px 8px;
     align-items: baseline;
   }
+  /* Zone on its own line, first, above the date. */
+  .hm-adar26-zone { flex-basis: 100%; font-size: 11px; margin-bottom: 1px; }
   .hm-adar26-body { grid-area: body; }
 }
 
