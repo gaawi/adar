@@ -456,8 +456,17 @@ const ADAR26_ROWS = [
     venue: { es: 'Iglesia de Leiguarda', en: 'Church of Leiguarda', ast: 'Ilesia de Lleiguarda' },
     muni:  { es: 'Belmonte de Miranda', en: 'Belmonte de Miranda', ast: 'Belmonte de Miranda' } },
 ];
+// ISO start datetime per concert so the client can mark past ones as
+// "celebrado" (the list advances on its own each day, no rebuild needed).
+// August in Asturias is CEST (UTC+2). For multi-day rows, use the last day.
+function eventStartISO(dateStr: string, timeStr: string): string {
+  const days = (dateStr.match(/\d+/g) || ['1']).map(Number);
+  const day = String(days[days.length - 1]).padStart(2, '0');
+  const tm = (timeStr.match(/\d{1,2}:\d{2}/) || ['20:30'])[0];
+  return `2026-08-${day}T${tm}:00+02:00`;
+}
 const ADAR26 = ADAR26_ROWS.map((r) => ({
-  n: r.n, date: r.date, time: r.time, photo: r.photo,
+  n: r.n, date: r.date, time: r.time, photo: r.photo, start: eventStartISO(r.date, r.time),
   dow: r.dow[lang], title: r.title[lang], venue: r.venue[lang], muni: r.muni[lang],
 }));
 
@@ -481,6 +490,8 @@ const ADAR26_COPY = {
     cta_press: 'Nota de prensa',
     credits: 'Dirección artística y comisariado: Josefina Urraca y Guillermo Laporta · Compositor residente: Zygmund de Somogyi · Cinematógrafo: Guillermo Ordás.',
     horreo_note: 'Los conciertos 01 y 09 se celebran en los dos hórreos ganadores del Concurso 2026: La Figal de Xugabolos (Casazorrina, Salas) y La Casona de Belmonte (Belmonte de Miranda).',
+    past_label: 'Celebrado',
+    lived_cta: 'Cómo se vivió · fotos y vídeos en Instagram',
   },
   en: {
     eyebrow: 'Next edition · Edition VI',
@@ -495,6 +506,8 @@ const ADAR26_COPY = {
     cta_press: 'Press kit',
     credits: 'Artistic direction & curation: Josefina Urraca and Guillermo Laporta · Resident composer: Zygmund de Somogyi · Cinematographer: Guillermo Ordás.',
     horreo_note: 'Concerts 01 and 09 take place in the two winning hórreos of the 2026 Competition: La Figal de Xugabolos (Casazorrina, Salas) and La Casona de Belmonte (Belmonte de Miranda).',
+    past_label: 'Held',
+    lived_cta: 'How it was lived · photos & videos on Instagram',
   },
   ast: {
     eyebrow: 'Próxima edición · Edición VI',
@@ -509,6 +522,8 @@ const ADAR26_COPY = {
     cta_press: 'Nota de prensa',
     credits: 'Direición artística y comisariáu: Josefina Urraca y Guillermo Laporta · Compositor residente: Zygmund de Somogyi · Cinematógrafu: Guillermo Ordás.',
     horreo_note: 'Los conciertos 01 y 09 celébrense nos dos hórreos ganadores del Concursu 2026: La Figal de Xugabolos (Casazorrina, Salas) y La Casona de Belmonte (Belmonte de Miranda).',
+    past_label: 'Celebráu',
+    lived_cta: 'Cómo se vivió · semeyes y vídeos n’Instagram',
   },
 }[lang];
 const PARTNERS: { name: string; logo: string; href: string }[] = [
@@ -626,7 +641,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
           <p class="hm-adar26-ix-label mono">{ADAR26_COPY.ix_label}</p>
           <ol class="hm-adar26-list">
             {ADAR26.map((e) => (
-              <li class="hm-adar26-row">
+              <li class="hm-adar26-row" data-start={e.start}>
                 <a class="hm-adar26-link" href={`${ADAR26_HREF}#event-${e.n}`}>
                   <span class="hm-adar26-thumb">
                     <img src={e.photo} alt="" loading="lazy" />
@@ -641,11 +656,17 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                   <span class="hm-adar26-body">
                     <span class="hm-adar26-kind">{e.title}</span>
                     <span class="hm-adar26-venue mono">{e.venue}</span>
+                    <span class="hm-adar26-past-badge mono" aria-hidden="true">✓ {ADAR26_COPY.past_label}</span>
                   </span>
                 </a>
               </li>
             ))}
           </ol>
+          <a class="hm-adar26-lived mono" href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">
+            <span class="hm-adar26-lived-dot" aria-hidden="true"></span>
+            {ADAR26_COPY.lived_cta}
+            <span aria-hidden="true"> ↗</span>
+          </a>
           <p class="hm-adar26-free mono">{ADAR26_COPY.free}</p>
           <p class="hm-adar26-note mono">↳ {ADAR26_COPY.credits}</p>
           <p class="hm-adar26-note mono">↳ {ADAR26_COPY.horreo_note}</p>
@@ -911,3 +932,16 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
     <p class="hm-colophon mono">{COPY.colophon}</p>
   </section>
 </div>
+
+<script is:inline>
+  /* Mark concerts that have already taken place so the list visibly
+     advances as the festival unfolds (kept visible, just struck through).
+     Runs on the client, so it updates day to day without a rebuild. */
+  (function () {
+    var now = Date.now();
+    document.querySelectorAll('.hm-adar26-row[data-start]').forEach(function (li) {
+      var t = Date.parse(li.getAttribute('data-start'));
+      if (!isNaN(t) && now >= t) li.classList.add('is-past');
+    });
+  })();
+</script>

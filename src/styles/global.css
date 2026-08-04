@@ -5447,6 +5447,56 @@ body.home article.page { margin: 0 !important; }
   color: rgba(10,9,7,0.55);
 }
 
+/* ---- Concierto ya celebrado: se mantiene visible, pero tachado y
+   atenuado, con un sello "Celebrado". El festival avanza a la vista. ---- */
+.hm-adar26-past-badge {
+  display: none;
+  align-self: start;
+  margin-top: 2px;
+  padding: 2px 8px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+.hm-adar26-row.is-past .hm-adar26-link { opacity: 0.62; }
+.hm-adar26-row.is-past .hm-adar26-link:hover { opacity: 1; }
+.hm-adar26-row.is-past .hm-adar26-kind {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(10,9,7,0.5);
+}
+.hm-adar26-row.is-past .hm-adar26-thumb img { filter: grayscale(1) contrast(0.95); }
+.hm-adar26-row.is-past .hm-adar26-date { text-decoration: line-through; }
+.hm-adar26-row.is-past .hm-adar26-past-badge { display: inline-block; }
+
+/* "Cómo se vivió" · enlace a redes bajo el listado */
+.hm-adar26-lived {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding: 8px 14px;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.hm-adar26-lived:hover { background: var(--ink); color: var(--paper); }
+.hm-adar26-lived-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: 0 0 auto;
+}
+
 .hm-adar26-free {
   margin: 18px 0 0;
   font-size: 11px;
@@ -12168,6 +12218,54 @@ body.page .entry-content .vi26 p,
 @media (max-width: 720px) {
   .vi26-event-muni { font-size: 26px; margin-bottom: 4px !important; }
 }
+
+/* ---- Concierto ya celebrado (programa): visible, tachado + sello. El
+   festival avanza a la vista, sin recompilar (se marca en cliente). ---- */
+.vi26-event-past {
+  display: none;
+  margin-left: 12px;
+  padding: 3px 10px;
+  vertical-align: middle;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+.vi26-event.is-past .vi26-event-past { display: inline-block; }
+.vi26-event.is-past .vi26-event-title {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(10,9,7,0.4);
+}
+.vi26-event.is-past .vi26-cover img { filter: grayscale(1) contrast(0.96); }
+.vi26-event.is-past .vi26-content { opacity: 0.72; }
+/* A concert already held: mute its reservation CTA (no longer bookable). */
+.vi26-event.is-past .vi26-event-cta .vi26-rsvp { filter: grayscale(1); opacity: 0.5; }
+/* Tabla-calendario */
+.vi26-table tr.is-past { opacity: 0.6; }
+.vi26-table tr.is-past .vi26-td-kind { text-decoration: line-through; }
+
+/* "Cómo se vivió" · enlace a redes en la cabecera del programa */
+.vi26-lived {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 9px 15px;
+  border: 1px solid rgba(10,9,7,0.45);
+  color: #0a0907;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.vi26-lived:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.vi26-lived-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); flex: 0 0 auto; }
+
 .vi26-aside-info {
   border: 1px solid rgba(10,9,7,0.18);
   border-top: 0;

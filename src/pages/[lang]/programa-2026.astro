@@ -51,6 +51,8 @@ const COPY = {
     sold_out: 'Entradas agotadas',
     sold_out_short: 'AGOTADO',
     few_left: 'Últimas entradas',
+    past_label: 'Celebrado',
+    lived_cta: 'Cómo se vivió · fotos y vídeos en Instagram',
     rest: 'DESCANSO',
     rest_sub: 'Día sin programa público.',
     tbc: 'POR CONFIRMAR',
@@ -126,6 +128,8 @@ const COPY = {
     sold_out: 'Sold out',
     sold_out_short: 'SOLD OUT',
     few_left: 'Few tickets left',
+    past_label: 'Held',
+    lived_cta: 'How it was lived · photos & videos on Instagram',
     rest: 'REST',
     rest_sub: 'No public programme.',
     tbc: 'TBC',
@@ -201,6 +205,8 @@ const COPY = {
     sold_out: 'Entrades escosaes',
     sold_out_short: 'ESCOSÁU',
     few_left: 'Últimes entraes',
+    past_label: 'Celebráu',
+    lived_cta: 'Cómo se vivió · semeyes y vídeos n’Instagram',
     rest: 'DESCANSU',
     rest_sub: 'Día ensin programa públicu.',
     tbc: 'POR CONFIRMAR',
@@ -641,6 +647,17 @@ for (const p of await getCollection('pages')) {
 }
 const bioHref = (name: string): string | undefined => BIO_HREF.get(normName(name));
 
+// ISO start datetime per concert so the client can mark past ones as
+// "celebrado" (the programme advances on its own each day, no rebuild).
+// August in Asturias is CEST (UTC+2). For multi-day events use the last day.
+function eventStartISO(fullDate: string, time: string): string {
+  const days = (fullDate.match(/\d+/g) || ['1']).map(Number);
+  const day = String(days[days.length - 1]).padStart(2, '0');
+  const tm = (time.match(/\d{1,2}:\d{2}/) || ['20:30'])[0];
+  return `2026-08-${day}T${tm}:00+02:00`;
+}
+const INSTAGRAM_URL = 'https://www.instagram.com/festivaladar';
+
 // -----------------------------------------------------------------------------
 // i18n for event content (EN / AST). Spanish is the source in EVENTS above;
 // these maps localize the prose, day-of-week, roles and venue/municipality
@@ -833,6 +850,11 @@ const POSTER_BG = '/posters/adar-2026.png';
       <span class="vi26-section-n mono">{COPY.nights_n}</span>
       <h2 class="vi26-section-h">{COPY.nights_h}</h2>
       <p class="vi26-section-sub">{COPY.nights_sub}</p>
+      <a class="vi26-lived mono" href={INSTAGRAM_URL} target="_blank" rel="noopener">
+        <span class="vi26-lived-dot" aria-hidden="true"></span>
+        {COPY.lived_cta}
+        <span aria-hidden="true"> ↗</span>
+      </a>
     </header>
 
     <ol class="vi26-event-list">
@@ -845,7 +867,7 @@ const POSTER_BG = '/posters/adar-2026.png';
         const kind = subtitle ? subtitle.split('·')[0].trim() : '';
         const isLongProgram = e.pieces.length > 8;
         return (
-          <li class="vi26-event" id={`event-${e.n}`}>
+          <li class="vi26-event" id={`event-${e.n}`} data-start={eventStartISO(e.fullDate, e.time)}>
             {e.photo ? (
               <figure class="vi26-cover">
                 <img src={e.photo} alt={e.venue} loading="lazy" />
@@ -857,7 +879,10 @@ const POSTER_BG = '/posters/adar-2026.png';
             )}
 
             <div class="vi26-content">
-              <p class="vi26-event-muni">{tDict(MUNI_I18N, e.municipality)}</p>
+              <p class="vi26-event-muni">
+                {tDict(MUNI_I18N, e.municipality)}
+                <span class="vi26-event-past mono" aria-hidden="true">✓ {COPY.past_label}</span>
+              </p>
               <h3 class="vi26-event-title">{title}</h3>
               {subtitle && <p class="vi26-event-sub mono">↳ {subtitle}</p>}
 
@@ -1016,7 +1041,7 @@ const POSTER_BG = '/posters/adar-2026.png';
               <td>—</td>
             </tr>
           ) : (
-            <tr class={e.tbc ? 'is-tbc' : ''}>
+            <tr class={e.tbc ? 'is-tbc' : ''} data-start={eventStartISO(e.fullDate, e.time)}>
               <td class="mono vi26-td-n">{e.n}</td>
               <td class="mono"><span class="vi26-dow">{tDict(DOW_I18N, e.dow)}</span> {e.fullDate}</td>
               <td class="mono vi26-td-kind">{(tEv(e, 'subtitle') as string)?.split('·')[0]?.trim() || tEv(e, 'title')}</td>
@@ -1110,5 +1135,17 @@ const POSTER_BG = '/posters/adar-2026.png';
 
 </div>
 
+<script is:inline>
+  /* Mark concerts already held so the programme visibly advances as the
+     festival unfolds (kept fully visible, just struck through + stamped).
+     Client-side, so it updates day to day without a rebuild. */
+  (function () {
+    var now = Date.now();
+    document.querySelectorAll('[data-start]').forEach(function (el) {
+      var t = Date.parse(el.getAttribute('data-start'));
+      if (!isNaN(t) && now >= t) el.classList.add('is-past');
+    });
+  })();
+</script>
 
 </BaseLayout>
