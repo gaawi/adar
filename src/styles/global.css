@@ -5472,6 +5472,38 @@ body.home article.page { margin: 0 !important; }
 .hm-adar26-row.is-past .hm-adar26-date { text-decoration: line-through; }
 .hm-adar26-row.is-past .hm-adar26-past-badge { display: inline-block; }
 
+/* ---- Concierto CANCELADO en el listado de la home ---- */
+.hm-adar26-cancel-badge {
+  align-self: start;
+  margin-top: 2px;
+  padding: 2px 8px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #b3261e;
+}
+.hm-adar26-row.is-cancelled .hm-adar26-kind {
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  text-decoration-color: rgba(122,26,19,0.55);
+  color: rgba(10,9,7,0.65);
+}
+.hm-adar26-row.is-cancelled .hm-adar26-thumb img { filter: grayscale(1); opacity: 0.85; }
+.hm-adar26-row.is-cancelled .hm-adar26-date { text-decoration: line-through; }
+.hm-adar26-cancel-note {
+  display: block;
+  padding-left: 278px; /* bajo la columna de texto (igual que el enlace "cómo se vivió") */
+  margin: 0 0 12px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #b3261e;
+}
+
 /* "Cómo se vivió en redes" en cada concierto ya celebrado (sólo aparece
    cuando la fila está marcada como pasada). Va fuera del <a> de la fila
    para no anidar enlaces; se alinea bajo la columna de texto. */
@@ -5567,6 +5599,7 @@ body.home article.page { margin: 0 !important; }
   /* Align the per-concert "cómo se vivió" link under the text column
      (thumb 64px + 14px gap) on mobile. */
   .hm-adar26-row.is-past .hm-adar26-row-lived { padding-left: 78px; margin-top: 2px; }
+  .hm-adar26-cancel-note { padding-left: 78px; margin-top: 2px; }
 }
 
 /* ---------- COORDENADAS ---------- */
@@ -12318,6 +12351,51 @@ body.page .entry-content .vi26 p,
 }
 .vi26-dl-btn:hover { background: #2a2826; transform: translateY(-1px); }
 .vi26-dl-hint { font-size: 11px; letter-spacing: 0.08em; color: rgba(10,9,7,0.55); text-transform: uppercase; }
+
+/* ---- Concierto CANCELADO (programa) · aviso claro en rojo ---- */
+.vi26-cancel-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 12px;
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  background: #fdecea;
+  border-left: 4px solid #b3261e;
+  color: #7a1a13;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.vi26-cancel-tag {
+  display: inline-block;
+  background: #b3261e;
+  color: #fff;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.vi26-cancel-text { color: #7a1a13; }
+.vi26-event.is-cancelled .vi26-event-title {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(122,26,19,0.5);
+}
+.vi26-event.is-cancelled .vi26-cover img { filter: grayscale(1) contrast(0.96); opacity: 0.85; }
+.vi26-event.is-cancelled .vi26-event-past,
+.vi26-event.is-cancelled .vi26-lived-btn { display: none !important; }
+.vi26-event-cta .vi26-rsvp.is-cancelled {
+  background: #b3261e !important;
+  color: #fff !important;
+  border-color: #b3261e !important;
+  cursor: default;
+}
+.vi26-event.is-cancelled .vi26-rsvp-note { color: #7a1a13; }
+.vi26-rsvp-mini.vi26-rsvp-cancelled { color: #b3261e; border-color: #b3261e; font-weight: 700; }
+.vi26-table tr.is-cancelled { opacity: 0.72; }
+.vi26-table tr.is-cancelled .vi26-td-kind { text-decoration: line-through; }
 
 /* Programa imprimible: oculto en pantalla. */
 .vi26-print-program { display: none; }

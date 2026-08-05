@@ -56,6 +56,8 @@ const COPY = {
     lived_short: 'Cómo se vivió',
     dl_program: 'Descargar programa (PDF)',
     dl_hint: 'Guárdalo en PDF y compártelo por WhatsApp',
+    cancel_label: 'Cancelado',
+    cancel_note: 'Este concierto, organizado en coordinación con el Ayuntamiento de Llanes, queda cancelado por el luto oficial declarado en el concejo. Nos unimos al sentir de Llanes.',
     rest: 'DESCANSO',
     rest_sub: 'Día sin programa público.',
     tbc: 'POR CONFIRMAR',
@@ -136,6 +138,8 @@ const COPY = {
     lived_short: 'How it was lived',
     dl_program: 'Download programme (PDF)',
     dl_hint: 'Save it as a PDF and share it on WhatsApp',
+    cancel_label: 'Cancelled',
+    cancel_note: 'This concert, organised in coordination with the Ayuntamiento de Llanes (Llanes Town Council), has been cancelled owing to the official mourning declared in the municipality. Our thoughts are with Llanes.',
     rest: 'REST',
     rest_sub: 'No public programme.',
     tbc: 'TBC',
@@ -216,6 +220,8 @@ const COPY = {
     lived_short: 'Cómo se vivió',
     dl_program: 'Descargar programa (PDF)',
     dl_hint: 'Guárdalu en PDF y compártilu por WhatsApp',
+    cancel_label: 'Canceláu',
+    cancel_note: 'Esti conciertu, entamáu en coordinación col Ayuntamientu de Llanes, queda canceláu pol lutu oficial declaráu nel conceyu. Xunímonos al sentir de Llanes.',
     rest: 'DESCANSU',
     rest_sub: 'Día ensin programa públicu.',
     tbc: 'POR CONFIRMAR',
@@ -297,6 +303,7 @@ interface Event {
   eventbrite?: string;
   ticketStatus?: 'soldout' | 'few';
   tbc?: boolean;
+  cancelled?: boolean;
 }
 
 const EVENTS: Event[] = [
@@ -386,6 +393,7 @@ const EVENTS: Event[] = [
       { name: 'Josefina Urraca',    role: 'piano' },
     ],
     eventbrite: 'https://www.eventbrite.es/e/1996200105251',
+    cancelled: true,
   },
   {
     n: '04', date: '07', dow: 'Viernes', fullDate: '7 AGO',
@@ -879,7 +887,7 @@ const POSTER_BG = '/posters/adar-2026.png';
         const kind = subtitle ? subtitle.split('·')[0].trim() : '';
         const isLongProgram = e.pieces.length > 8;
         return (
-          <li class="vi26-event" id={`event-${e.n}`} data-start={eventStartISO(e.fullDate, e.time)}>
+          <li class:list={['vi26-event', e.cancelled && 'is-cancelled']} id={`event-${e.n}`} data-start={eventStartISO(e.fullDate, e.time)}>
             {e.photo ? (
               <figure class="vi26-cover">
                 <img src={e.photo} alt={e.venue} loading="lazy" />
@@ -891,6 +899,12 @@ const POSTER_BG = '/posters/adar-2026.png';
             )}
 
             <div class="vi26-content">
+              {e.cancelled && (
+                <p class="vi26-cancel-banner" role="alert">
+                  <span class="vi26-cancel-tag mono">✕ {COPY.cancel_label}</span>
+                  <span class="vi26-cancel-text">{COPY.cancel_note}</span>
+                </p>
+              )}
               <p class="vi26-event-muni">
                 {tDict(MUNI_I18N, e.municipality)}
                 <span class="vi26-event-past mono" aria-hidden="true">✓ {COPY.past_label}</span>
@@ -976,7 +990,9 @@ const POSTER_BG = '/posters/adar-2026.png';
               )}
 
               <div class="vi26-event-cta">
-                {e.ticketStatus === 'soldout' ? (
+                {e.cancelled ? (
+                  <span class="vi26-rsvp is-cancelled">✕ {COPY.cancel_label}</span>
+                ) : e.ticketStatus === 'soldout' ? (
                   <span class="vi26-rsvp is-soldout">{COPY.sold_out}</span>
                 ) : e.eventbrite ? (
                   <a class="vi26-rsvp" href={e.eventbrite} target="_blank" rel="noopener">
@@ -985,14 +1001,16 @@ const POSTER_BG = '/posters/adar-2026.png';
                 ) : (
                   <span class="vi26-rsvp is-soon">{COPY.seats_soon}</span>
                 )}
-                {e.ticketStatus === 'few' && (
+                {!e.cancelled && e.ticketStatus === 'few' && (
                   <span class="vi26-few-badge mono">{COPY.few_left}</span>
                 )}
-                <a class="vi26-lived-btn" href={INSTAGRAM_URL} target="_blank" rel="noopener">
-                  <Fragment set:html={IG_SVG} />
-                  {COPY.lived_short}
-                </a>
-                <p class="vi26-rsvp-note mono">{COPY.free_note}</p>
+                {!e.cancelled && (
+                  <a class="vi26-lived-btn" href={INSTAGRAM_URL} target="_blank" rel="noopener">
+                    <Fragment set:html={IG_SVG} />
+                    {COPY.lived_short}
+                  </a>
+                )}
+                <p class="vi26-rsvp-note mono">{e.cancelled ? COPY.cancel_note : COPY.free_note}</p>
               </div>
             </div>
           </li>
@@ -1057,7 +1075,7 @@ const POSTER_BG = '/posters/adar-2026.png';
               <td>—</td>
             </tr>
           ) : (
-            <tr class={e.tbc ? 'is-tbc' : ''} data-start={eventStartISO(e.fullDate, e.time)}>
+            <tr class:list={[e.tbc && 'is-tbc', e.cancelled && 'is-cancelled']} data-start={eventStartISO(e.fullDate, e.time)}>
               <td class="mono vi26-td-n">{e.n}</td>
               <td class="mono"><span class="vi26-dow">{tDict(DOW_I18N, e.dow)}</span> {e.fullDate}</td>
               <td class="mono vi26-td-kind">{(tEv(e, 'subtitle') as string)?.split('·')[0]?.trim() || tEv(e, 'title')}</td>
@@ -1073,7 +1091,9 @@ const POSTER_BG = '/posters/adar-2026.png';
                 );
               })}</td>
               <td>
-                {e.ticketStatus === 'soldout' ? (
+                {e.cancelled ? (
+                  <span class="vi26-rsvp-mini vi26-rsvp-cancelled mono">✕ {COPY.cancel_label}</span>
+                ) : e.ticketStatus === 'soldout' ? (
                   <span class="vi26-rsvp-mini vi26-rsvp-soldout mono">{COPY.sold_out_short}</span>
                 ) : e.eventbrite ? (
                   <a class="vi26-rsvp-mini" href={e.eventbrite} target="_blank" rel="noopener">{COPY.rsvp} ↗{e.ticketStatus === 'few' ? ` · ${COPY.few_left}` : ''}</a>
@@ -1161,7 +1181,7 @@ const POSTER_BG = '/posters/adar-2026.png';
       {EVENTS.filter((e) => !e.rest).map((e) => (
         <li class="vpp-item">
           <span class="vpp-date">{e.fullDate}<br />{e.time}</span>
-          <span class="vpp-title2">{tEv(e, 'title')}</span>
+          <span class="vpp-title2">{tEv(e, 'title')}{e.cancelled ? ` — ${COPY.cancel_label}` : ''}</span>
           <span class="vpp-venue">{tDict(MUNI_I18N, e.municipality)}</span>
         </li>
       ))}
@@ -1178,6 +1198,7 @@ const POSTER_BG = '/posters/adar-2026.png';
   (function () {
     var now = Date.now();
     document.querySelectorAll('[data-start]').forEach(function (el) {
+      if (el.classList.contains('is-cancelled')) return;
       var t = Date.parse(el.getAttribute('data-start'));
       if (!isNaN(t) && now >= t) el.classList.add('is-past');
     });

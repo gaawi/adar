@@ -414,7 +414,8 @@ const ADAR26_ROWS = [
     dow: { es: 'Jue', en: 'Thu', ast: 'Xue' },
     title: { es: 'La forma de la memoria', en: 'The Shape of Memory', ast: 'La forma de la memoria' },
     venue: { es: 'Monasterio de San Antolín de Bedón', en: 'Monastery of San Antolín de Bedón', ast: 'Monasteriu de San Antolín de Bedón' },
-    muni:  { es: 'Llanes', en: 'Llanes', ast: 'Llanes' } },
+    muni:  { es: 'Llanes', en: 'Llanes', ast: 'Llanes' },
+    cancelled: true },
   { n: '04', date: '7 ago', time: '20:30', photo: 'https://creartbox-media-cdn.b-cdn.net/webimg/projects_photos/20211015/007.jpg',
     dow: { es: 'Vie', en: 'Fri', ast: 'Vie' },
     title: { es: 'UMBRAL ZERO · Música minimalista', en: 'UMBRAL ZERO · Minimalist music', ast: 'UMBRAL ZERO · Música minimalista' },
@@ -468,6 +469,7 @@ function eventStartISO(dateStr: string, timeStr: string): string {
 const ADAR26 = ADAR26_ROWS.map((r) => ({
   n: r.n, date: r.date, time: r.time, photo: r.photo, start: eventStartISO(r.date, r.time),
   dow: r.dow[lang], title: r.title[lang], venue: r.venue[lang], muni: r.muni[lang],
+  cancelled: r.cancelled === true,
 }));
 
 const ADAR26_HREF = `/${lang}/programa-2026/`;
@@ -494,6 +496,8 @@ const ADAR26_COPY = {
     past_label: 'Celebrado',
     lived_cta: 'Cómo se vivió · fotos y vídeos en Instagram',
     lived_short: 'Cómo se vivió en redes',
+    cancel_label: 'Cancelado',
+    cancel_note: 'Coordinado con el Ayuntamiento de Llanes · cancelado por el luto oficial en el concejo',
   },
   en: {
     eyebrow: 'Next edition · Edition VI',
@@ -511,6 +515,8 @@ const ADAR26_COPY = {
     past_label: 'Held',
     lived_cta: 'How it was lived · photos & videos on Instagram',
     lived_short: 'How it was lived',
+    cancel_label: 'Cancelled',
+    cancel_note: 'In coordination with Llanes Town Council · cancelled due to the official mourning in the municipality',
   },
   ast: {
     eyebrow: 'Próxima edición · Edición VI',
@@ -528,6 +534,8 @@ const ADAR26_COPY = {
     past_label: 'Celebráu',
     lived_cta: 'Cómo se vivió · semeyes y vídeos n’Instagram',
     lived_short: 'Cómo se vivió en redes',
+    cancel_label: 'Canceláu',
+    cancel_note: 'En coordinación col Ayuntamientu de Llanes · canceláu pol lutu oficial nel conceyu',
   },
 }[lang];
 const PARTNERS: { name: string; logo: string; href: string }[] = [
@@ -645,7 +653,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
           <p class="hm-adar26-ix-label mono">{ADAR26_COPY.ix_label}</p>
           <ol class="hm-adar26-list">
             {ADAR26.map((e) => (
-              <li class="hm-adar26-row" data-start={e.start}>
+              <li class:list={['hm-adar26-row', e.cancelled && 'is-cancelled']} data-start={e.start}>
                 <a class="hm-adar26-link" href={`${ADAR26_HREF}#event-${e.n}`}>
                   <span class="hm-adar26-thumb">
                     <img src={e.photo} alt="" loading="lazy" />
@@ -660,13 +668,19 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                   <span class="hm-adar26-body">
                     <span class="hm-adar26-kind">{e.title}</span>
                     <span class="hm-adar26-venue mono">{e.venue}</span>
-                    <span class="hm-adar26-past-badge mono" aria-hidden="true">✓ {ADAR26_COPY.past_label}</span>
+                    {e.cancelled
+                      ? <span class="hm-adar26-cancel-badge mono">✕ {ADAR26_COPY.cancel_label}</span>
+                      : <span class="hm-adar26-past-badge mono" aria-hidden="true">✓ {ADAR26_COPY.past_label}</span>}
                   </span>
                 </a>
-                <a class="hm-adar26-row-lived mono" href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">
-                  <Fragment set:html={IG_SVG} />
-                  {ADAR26_COPY.lived_short}
-                </a>
+                {e.cancelled ? (
+                  <span class="hm-adar26-cancel-note mono">{ADAR26_COPY.cancel_note}</span>
+                ) : (
+                  <a class="hm-adar26-row-lived mono" href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">
+                    <Fragment set:html={IG_SVG} />
+                    {ADAR26_COPY.lived_short}
+                  </a>
+                )}
               </li>
             ))}
           </ol>
@@ -948,6 +962,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
   (function () {
     var now = Date.now();
     document.querySelectorAll('.hm-adar26-row[data-start]').forEach(function (li) {
+      if (li.classList.contains('is-cancelled')) return;
       var t = Date.parse(li.getAttribute('data-start'));
       if (!isNaN(t) && now >= t) li.classList.add('is-past');
     });
