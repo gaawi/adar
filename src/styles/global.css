@@ -12299,6 +12299,56 @@ body.page .entry-content .vi26 p,
   .vi26-venues { order: -1; }
 }
 
+/* "Descargar programa (PDF)" · botón en la cabecera del programa */
+.vi26-dl-wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 22px; }
+.vi26-dl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 20px;
+  background: #0a0907;
+  color: #f4eee2;
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.vi26-dl-btn:hover { background: #2a2826; transform: translateY(-1px); }
+.vi26-dl-hint { font-size: 11px; letter-spacing: 0.08em; color: rgba(10,9,7,0.55); text-transform: uppercase; }
+
+/* Programa imprimible: oculto en pantalla. */
+.vi26-print-program { display: none; }
+
+/* Al imprimir / guardar como PDF, sólo sale el programa limpio. */
+@media print {
+  @page { margin: 14mm; }
+  html, body { background: #fff !important; margin: 0 !important; padding: 0 !important; }
+  #page > *:not(#content) { display: none !important; }
+  #content, #main, .vi26 { display: block !important; margin: 0 !important; padding: 0 !important; background: #fff !important; }
+  .vi26 > *:not(.vi26-print-program) { display: none !important; }
+  .vi26-print-program { display: block !important; color: #000; font-family: Arial, Helvetica, sans-serif; }
+  .vpp-head { text-align: center; border-bottom: 2px solid #000; padding-bottom: 6mm; margin: 0 0 8mm; }
+  .vpp-kicker { font-size: 10pt; letter-spacing: 0.18em; text-transform: uppercase; margin: 0 0 3mm; }
+  .vpp-title { font-size: 27pt; margin: 0; letter-spacing: -0.01em; }
+  .vpp-list { list-style: none; margin: 0; padding: 0; }
+  .vpp-item {
+    display: grid;
+    grid-template-columns: 32mm 1fr;
+    column-gap: 6mm;
+    padding: 3.4mm 0;
+    border-bottom: 0.3pt solid #999;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+  .vpp-date { grid-row: span 2; font-weight: 700; font-size: 10.5pt; line-height: 1.25; }
+  .vpp-title2 { font-weight: 700; font-size: 12pt; }
+  .vpp-venue { font-size: 10pt; color: #333; margin-top: 0.6mm; }
+  .vpp-foot { margin-top: 8mm; text-align: center; font-size: 9.5pt; color: #333; }
+}
+
 .vi26-aside-info {
   border: 1px solid rgba(10,9,7,0.18);
   border-top: 0;

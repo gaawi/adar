@@ -54,6 +54,8 @@ const COPY = {
     past_label: 'Celebrado',
     lived_cta: 'Cómo se vivió · fotos y vídeos en Instagram',
     lived_short: 'Cómo se vivió',
+    dl_program: 'Descargar programa (PDF)',
+    dl_hint: 'Guárdalo en PDF y compártelo por WhatsApp',
     rest: 'DESCANSO',
     rest_sub: 'Día sin programa público.',
     tbc: 'POR CONFIRMAR',
@@ -132,6 +134,8 @@ const COPY = {
     past_label: 'Held',
     lived_cta: 'How it was lived · photos & videos on Instagram',
     lived_short: 'How it was lived',
+    dl_program: 'Download programme (PDF)',
+    dl_hint: 'Save it as a PDF and share it on WhatsApp',
     rest: 'REST',
     rest_sub: 'No public programme.',
     tbc: 'TBC',
@@ -210,6 +214,8 @@ const COPY = {
     past_label: 'Celebráu',
     lived_cta: 'Cómo se vivió · semeyes y vídeos n’Instagram',
     lived_short: 'Cómo se vivió',
+    dl_program: 'Descargar programa (PDF)',
+    dl_hint: 'Guárdalu en PDF y compártilu por WhatsApp',
     rest: 'DESCANSU',
     rest_sub: 'Día ensin programa públicu.',
     tbc: 'POR CONFIRMAR',
@@ -854,6 +860,13 @@ const POSTER_BG = '/posters/adar-2026.png';
       <span class="vi26-section-n mono">{COPY.nights_n}</span>
       <h2 class="vi26-section-h">{COPY.nights_h}</h2>
       <p class="vi26-section-sub">{COPY.nights_sub}</p>
+      <div class="vi26-dl-wrap">
+        <button type="button" class="vi26-dl-btn" data-print-program>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4 20h16"/></svg>
+          {COPY.dl_program}
+        </button>
+        <span class="vi26-dl-hint mono">{COPY.dl_hint}</span>
+      </div>
     </header>
 
     <ol class="vi26-event-list">
@@ -1136,6 +1149,26 @@ const POSTER_BG = '/posters/adar-2026.png';
     </p>
   </footer>
 
+  <!-- Programa imprimible: oculto en pantalla, es lo único que sale al
+       imprimir / guardar como PDF. Se construye desde los mismos datos
+       EVENTS, así que siempre está al día y en el idioma de la página. -->
+  <section class="vi26-print-program" aria-hidden="true">
+    <header class="vpp-head">
+      <p class="vpp-kicker">{COPY.poster_kicker}</p>
+      <h1 class="vpp-title">{COPY.hero_h}</h1>
+    </header>
+    <ol class="vpp-list">
+      {EVENTS.filter((e) => !e.rest).map((e) => (
+        <li class="vpp-item">
+          <span class="vpp-date">{e.fullDate}<br />{e.time}</span>
+          <span class="vpp-title2">{tEv(e, 'title')}</span>
+          <span class="vpp-venue">{tDict(MUNI_I18N, e.municipality)}</span>
+        </li>
+      ))}
+    </ol>
+    <p class="vpp-foot">{COPY.free_note} · festivaladar.com</p>
+  </section>
+
 </div>
 
 <script is:inline>
@@ -1147,6 +1180,10 @@ const POSTER_BG = '/posters/adar-2026.png';
     document.querySelectorAll('[data-start]').forEach(function (el) {
       var t = Date.parse(el.getAttribute('data-start'));
       if (!isNaN(t) && now >= t) el.classList.add('is-past');
+    });
+    // "Descargar programa (PDF)" → diálogo de impresión (guardar como PDF).
+    document.querySelectorAll('[data-print-program]').forEach(function (btn) {
+      btn.addEventListener('click', function () { window.print(); });
     });
   })();
 </script>
