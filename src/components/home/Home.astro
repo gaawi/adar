@@ -503,6 +503,8 @@ const ADAR26_COPY = {
     recap_reel: 'Ver el reel',
     recap_page: 'Ver página',
     recap_instagram: 'Ver en Instagram',
+    today_label: 'Hoy',
+    today_cta: 'Ver el programa',
   },
   en: {
     eyebrow: 'Next edition · Edition VI',
@@ -525,6 +527,8 @@ const ADAR26_COPY = {
     recap_reel: 'Watch the reel',
     recap_page: 'View page',
     recap_instagram: 'View on Instagram',
+    today_label: 'Today',
+    today_cta: 'See the programme',
   },
   ast: {
     eyebrow: 'Próxima edición · Edición VI',
@@ -547,6 +551,8 @@ const ADAR26_COPY = {
     recap_reel: 'Ver el reel',
     recap_page: 'Ver páxina',
     recap_instagram: 'Ver n’Instagram',
+    today_label: 'Güei',
+    today_cta: 'Ver el programa',
   },
 }[lang];
 const PARTNERS: { name: string; logo: string; href: string }[] = [
@@ -579,6 +585,17 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
       <span class="hm-side-banner-cta mono">Ver programa <span aria-hidden="true">→</span></span>
     </a>
   </aside>
+
+  <!-- Tarjeta "HOY": en móvil, el concierto de hoy va lo primero y en
+       grande, con enlace a su programa completo. La rellena el script del
+       final leyendo la fila del listado cuya fecha es hoy. -->
+  <a class="hm-today" id="hm-today" hidden>
+    <span class="hm-today-tag mono">{ADAR26_COPY.today_label} · <span data-today-when></span></span>
+    <span class="hm-today-zone mono" data-today-zone></span>
+    <span class="hm-today-title" data-today-title></span>
+    <span class="hm-today-venue mono" data-today-venue></span>
+    <span class="hm-today-cta mono">{ADAR26_COPY.today_cta} <span aria-hidden="true">→</span></span>
+  </a>
 
   <!-- ============================================
        HERO · acto inaugural
@@ -984,5 +1001,28 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
       var t = Date.parse(li.getAttribute('data-start'));
       if (!isNaN(t) && now >= t) li.classList.add('is-past');
     });
+
+    /* "HOY": destaca el concierto de hoy (día de Asturias) arriba del todo
+       en móvil, enlazando a su programa completo. Sin datos duplicados: lo
+       rellena desde la fila del listado cuya fecha es hoy. */
+    var card = document.getElementById('hm-today');
+    if (card) {
+      var todayES = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Madrid' });
+      var todayRow = null;
+      document.querySelectorAll('.hm-adar26-row[data-start]').forEach(function (li) {
+        if ((li.getAttribute('data-start') || '').slice(0, 10) === todayES) todayRow = li;
+      });
+      if (todayRow && !todayRow.classList.contains('is-cancelled')) {
+        var q = function (sel) { var e = todayRow.querySelector(sel); return e ? e.textContent.trim() : ''; };
+        var set = function (sel, val) { var e = card.querySelector(sel); if (e) e.textContent = val; };
+        set('[data-today-when]', [q('.hm-adar26-dow'), q('.hm-adar26-date'), q('.hm-adar26-time')].filter(Boolean).join(' · '));
+        set('[data-today-zone]', q('.hm-adar26-zone'));
+        set('[data-today-title]', q('.hm-adar26-kind'));
+        set('[data-today-venue]', q('.hm-adar26-venue'));
+        var link = todayRow.querySelector('.hm-adar26-link');
+        if (link) card.setAttribute('href', link.getAttribute('href'));
+        card.hidden = false;
+      }
+    }
   })();
 </script>
