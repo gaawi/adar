@@ -11682,6 +11682,7 @@ body.page .entry-content .vi26 p,
   margin: 0 !important;
   font-style: italic;
 }
+.vi26-program-note-standalone { margin-top: 14px !important; }
 .vi26-program-total {
   font-size: 10px;
   letter-spacing: 0.2em;
