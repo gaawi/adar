@@ -501,6 +501,8 @@ const ADAR26_COPY = {
     cancel_label: 'Cancelado',
     cancel_note: 'Coordinado con el Ayuntamiento de Llanes · cancelado por el luto oficial en el concejo',
     recap_reel: 'Ver el reel',
+    recap_page: 'Ver página',
+    recap_instagram: 'Ver en Instagram',
   },
   en: {
     eyebrow: 'Next edition · Edition VI',
@@ -521,6 +523,8 @@ const ADAR26_COPY = {
     cancel_label: 'Cancelled',
     cancel_note: 'In coordination with Llanes Town Council · cancelled due to the official mourning in the municipality',
     recap_reel: 'Watch the reel',
+    recap_page: 'View page',
+    recap_instagram: 'View on Instagram',
   },
   ast: {
     eyebrow: 'Próxima edición · Edición VI',
@@ -541,6 +545,8 @@ const ADAR26_COPY = {
     cancel_label: 'Canceláu',
     cancel_note: 'En coordinación col Ayuntamientu de Llanes · canceláu pol lutu oficial nel conceyu',
     recap_reel: 'Ver el reel',
+    recap_page: 'Ver páxina',
+    recap_instagram: 'Ver n’Instagram',
   },
 }[lang];
 const PARTNERS: { name: string; logo: string; href: string }[] = [
@@ -681,11 +687,17 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                 {e.cancelled ? (
                   <span class="hm-adar26-cancel-note mono">{ADAR26_COPY.cancel_note}</span>
                 ) : (
-                  <a class="hm-adar26-row-lived mono" href={RECAPS[e.n]?.instagram || 'https://www.instagram.com/festivaladar'} target="_blank" rel="noopener">
-                    <Fragment set:html={IG_SVG} />
-                    {RECAPS[e.n]?.instagram && <Fragment set:html={PLAY_SVG} />}
-                    {RECAPS[e.n]?.instagram ? ADAR26_COPY.recap_reel : ADAR26_COPY.lived_short}
-                  </a>
+                  <span class="hm-adar26-row-actions">
+                    {RECAPS[e.n]?.page && (
+                      <a class="hm-adar26-row-lived is-page mono" href={`/${lang}/${RECAPS[e.n].page}/`}>
+                        {ADAR26_COPY.recap_page} <span aria-hidden="true">→</span>
+                      </a>
+                    )}
+                    <a class="hm-adar26-row-lived mono" href={RECAPS[e.n]?.instagram || 'https://www.instagram.com/festivaladar'} target="_blank" rel="noopener">
+                      <Fragment set:html={IG_SVG} />
+                      {ADAR26_COPY.recap_instagram}
+                    </a>
+                  </span>
                 )}
               </li>
             ))}

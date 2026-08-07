@@ -62,7 +62,8 @@ const COPY = {
     recap_reel: 'Ver el reel',
     recap_video: 'Vídeo en YouTube',
     recap_photos: 'Fotos',
-    recap_instagram: 'En Instagram',
+    recap_instagram: 'Ver en Instagram',
+    recap_page: 'Ver página',
     rest: 'DESCANSO',
     rest_sub: 'Día sin programa público.',
     tbc: 'POR CONFIRMAR',
@@ -148,7 +149,8 @@ const COPY = {
     recap_reel: 'Watch the reel',
     recap_video: 'Video on YouTube',
     recap_photos: 'Photos',
-    recap_instagram: 'On Instagram',
+    recap_instagram: 'View on Instagram',
+    recap_page: 'View page',
     rest: 'REST',
     rest_sub: 'No public programme.',
     tbc: 'TBC',
@@ -234,7 +236,8 @@ const COPY = {
     recap_reel: 'Ver el reel',
     recap_video: 'Vídeu en YouTube',
     recap_photos: 'Semeyes',
-    recap_instagram: 'N’Instagram',
+    recap_instagram: 'Ver n’Instagram',
+    recap_page: 'Ver páxina',
     rest: 'DESCANSU',
     rest_sub: 'Día ensin programa públicu.',
     tbc: 'POR CONFIRMAR',
@@ -1030,26 +1033,14 @@ const POSTER_BG = '/posters/adar-2026.png';
                   <div class="vi26-recap">
                     <span class="vi26-recap-label mono">{COPY.lived_short}</span>
                     <div class="vi26-recap-links">
-                      {recap?.instagram && (
-                        <a class="vi26-recap-btn is-ig" href={recap.instagram} target="_blank" rel="noopener">
-                          <Fragment set:html={IG_SVG} /><Fragment set:html={PLAY_SVG} /> {COPY.recap_reel}
+                      {recap?.page && (
+                        <a class="vi26-recap-btn is-page" href={`/${lang}/${recap.page}/`}>
+                          {COPY.recap_page} <span aria-hidden="true">→</span>
                         </a>
                       )}
-                      {recap?.youtube && (
-                        <a class="vi26-recap-btn is-yt" href={recap.youtube} target="_blank" rel="noopener">
-                          <Fragment set:html={YT_SVG} /> {COPY.recap_video}
-                        </a>
-                      )}
-                      {recap?.photos && (
-                        <a class="vi26-recap-btn is-photos" href={recap.photos} target="_blank" rel="noopener">
-                          <Fragment set:html={PHOTO_SVG} /> {COPY.recap_photos}
-                        </a>
-                      )}
-                      {!recap && (
-                        <a class="vi26-recap-btn is-ig" href={INSTAGRAM_URL} target="_blank" rel="noopener">
-                          <Fragment set:html={IG_SVG} /> {COPY.recap_instagram}
-                        </a>
-                      )}
+                      <a class="vi26-recap-btn is-ig" href={recap?.instagram || INSTAGRAM_URL} target="_blank" rel="noopener">
+                        <Fragment set:html={IG_SVG} /> {COPY.recap_instagram}
+                      </a>
                     </div>
                   </div>
                 )}

@@ -1778,6 +1778,23 @@ body.has-header-image #content{
   margin: 0 0 16px;
   max-width: 780px;
 }
+/* Botón a redes dentro de la página de archivo (reel de Instagram) */
+.adar-archive-social{ margin: 20px 0 6px; }
+.adar-archive-social-btn{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #0a0907;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  transition: background .15s ease, transform .15s ease;
+}
+.adar-archive-social-btn:hover{ background: #2a2826; transform: translateY(-1px); }
+.adar-archive-social-list a{ text-decoration: none; font-weight: 600; border-bottom: 1px solid currentColor; }
 .adar-archive-video{
   margin: 18px 0 16px;
   border-radius: var(--border-radius-md);
@@ -5507,13 +5524,19 @@ body.home article.page { margin: 0 !important; }
 /* "Cómo se vivió en redes" en cada concierto ya celebrado (sólo aparece
    cuando la fila está marcada como pasada). Va fuera del <a> de la fila
    para no anidar enlaces; se alinea bajo la columna de texto. */
-.hm-adar26-row-lived { display: none; }
-.hm-adar26-row.is-past .hm-adar26-row-lived {
+.hm-adar26-row-actions { display: none; }
+.hm-adar26-row.is-past .hm-adar26-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 16px;
+  margin: 2px 0 12px;
+  padding-left: 278px; /* 64 + 32 + 128 columnas + 3×18 gaps → bajo el cuerpo */
+}
+.hm-adar26-row-lived {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  margin: 0 0 12px;
-  padding-left: 278px; /* 64 + 32 + 128 columnas + 3×18 gaps → bajo el cuerpo */
   font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -5521,10 +5544,8 @@ body.home article.page { margin: 0 !important; }
   color: var(--accent-ink);
   text-decoration: none;
 }
-.hm-adar26-row.is-past .hm-adar26-row-lived:hover {
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
+.hm-adar26-row-lived.is-page { color: var(--ink); }
+.hm-adar26-row-lived:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* "Cómo se vivió" · enlace a redes bajo el listado */
 .hm-adar26-lived {
@@ -5598,7 +5619,7 @@ body.home article.page { margin: 0 !important; }
   .hm-adar26-body { grid-area: body; }
   /* Align the per-concert "cómo se vivió" link under the text column
      (thumb 64px + 14px gap) on mobile. */
-  .hm-adar26-row.is-past .hm-adar26-row-lived { padding-left: 78px; margin-top: 2px; }
+  .hm-adar26-row.is-past .hm-adar26-row-actions { padding-left: 78px; }
   .hm-adar26-cancel-note { padding-left: 78px; margin-top: 2px; }
 }
 
@@ -12339,6 +12360,8 @@ body.page .entry-content .vi26 p,
   transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
 .vi26-recap-btn:hover { transform: translateY(-1px); }
+.vi26-recap-btn.is-page { background: #0a0907; color: #fff; border-color: #0a0907; }
+.vi26-recap-btn.is-page:hover { background: #2a2826; border-color: #2a2826; }
 .vi26-recap-btn.is-ig:hover { background: #0a0907; color: #fff; border-color: #0a0907; }
 .vi26-recap-btn.is-yt:hover { background: #ff0000; color: #fff; border-color: #ff0000; }
 .vi26-recap-btn.is-photos:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
