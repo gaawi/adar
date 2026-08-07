@@ -46,13 +46,14 @@ translation_group: "pll_69b06583421f1"
 
 <!-- STATS — mismo ancho que el mapa -->
 <div class="amp-stats">
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="36">36</span><span class="amp-stat-l">Actividaes</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="38">38</span><span class="amp-stat-l">Actividaes</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">14</span><span class="amp-stat-l">Conceyos</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="5">5</span><span class="amp-stat-l">Ediciones</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="6">6</span><span class="amp-stat-l">Ediciones</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">2021</span><span class="amp-stat-l">Dende</span></div>
 </div>
 <div class="amp-filters">
 <button class="amp-filter-btn active" data-year="all">Tolos años</button>
+<button class="amp-filter-btn" data-year="2026">2026</button>
 <button class="amp-filter-btn" data-year="2025">2025</button>
 <button class="amp-filter-btn" data-year="2024">2024</button>
 <button class="amp-filter-btn" data-year="2023">2023</button>
@@ -119,6 +120,7 @@ var concejos = [
 { year:'2022', title:'Conciertu na Ilesia de Santa María de Sabada (Colunga)',         url:'/ast/conciertu-ilesia-santa-maria-sabada-colunga-2022/',    img:CDN+'ADAR_Eventos/2022/10_Concierto_en_la_Iglesia_de_Santa_Maria_de_Sabada_Colunga/PXL_20220810_175359505.jpg' }
 ]},
 { name:'Cangues del Narcea', lat:43.1753, lng:-6.5479, activities:[
+{ year:'2026', title:'La forma de la memoria (Parador de Corias)', url:'/ast/la-forma-de-la-memoria-parador-de-corias/', img:'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_1.jpg' },
 { year:'2025', title:'Paseu Sonoru nel Claustru del Parador de Corias',                url:'/ast/paseu-sonoru-claustru-parador-corias-2025/',            img:CDN+'adar25fx30/corias.jpg' }
 ]},
 { name:"Villanova d'Oscos", lat:43.3615, lng:-6.8830, activities:[
@@ -140,6 +142,7 @@ var concejos = [
 { year:'2024', title:'Conciertu nel Mercáu de Pola de Somiedu',                        url:'/ast/conciertu-mercau-pola-somieu-2024/',                    img:CDN+'ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_02_03.jpg' }
 ]},
 { name:'Sales', lat:43.4128, lng:-6.2554, activities:[
+{ year:'2026', title:'De danzas y sonates (La Figal de Xugabolos)', url:'/ast/de-danzas-y-sonatas-la-figal-de-xugabolos/', img:'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_1.jpg' },
 { year:'2024', title:'Conciertu nel Monasteriu de San Salvador (Cornellana)',           url:'/ast/conciertu-monasteriu-san-salvador-cornellana-2024/',   img:CDN+'adar24fx30/12/IMG_0203.jpg' }
 ]},
 { name:'Sotu del Barcu', lat:43.5273, lng:-6.0700, activities:[
