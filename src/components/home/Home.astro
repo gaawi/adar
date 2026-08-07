@@ -504,6 +504,7 @@ const ADAR26_COPY = {
     recap_page: 'Ver página',
     recap_instagram: 'Ver en Instagram',
     today_label: 'Hoy',
+    today_intro: 'El concierto de hoy',
     today_cta: 'Ver el programa',
   },
   en: {
@@ -528,6 +529,7 @@ const ADAR26_COPY = {
     recap_page: 'View page',
     recap_instagram: 'View on Instagram',
     today_label: 'Today',
+    today_intro: "Today's concert",
     today_cta: 'See the programme',
   },
   ast: {
@@ -552,6 +554,7 @@ const ADAR26_COPY = {
     recap_page: 'Ver páxina',
     recap_instagram: 'Ver n’Instagram',
     today_label: 'Güei',
+    today_intro: 'El conciertu de güei',
     today_cta: 'Ver el programa',
   },
 }[lang];
@@ -590,11 +593,15 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
        grande, con enlace a su programa completo. La rellena el script del
        final leyendo la fila del listado cuya fecha es hoy. -->
   <a class="hm-today" id="hm-today" hidden>
-    <span class="hm-today-tag mono">{ADAR26_COPY.today_label} · <span data-today-when></span></span>
-    <span class="hm-today-zone mono" data-today-zone></span>
-    <span class="hm-today-title" data-today-title></span>
-    <span class="hm-today-venue mono" data-today-venue></span>
-    <span class="hm-today-cta mono">{ADAR26_COPY.today_cta} <span aria-hidden="true">→</span></span>
+    <span class="hm-today-photo"><img data-today-photo src="" alt="" loading="lazy" /></span>
+    <span class="hm-today-body">
+      <span class="hm-today-tag mono"><span class="hm-today-dot" aria-hidden="true"></span>{ADAR26_COPY.today_label} · <span data-today-when></span></span>
+      <span class="hm-today-intro mono">{ADAR26_COPY.today_intro}</span>
+      <span class="hm-today-zone mono" data-today-zone></span>
+      <span class="hm-today-title" data-today-title></span>
+      <span class="hm-today-venue mono" data-today-venue></span>
+      <span class="hm-today-cta mono">{ADAR26_COPY.today_cta} <span aria-hidden="true">→</span></span>
+    </span>
   </a>
 
   <!-- ============================================
@@ -1019,6 +1026,14 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
         set('[data-today-zone]', q('.hm-adar26-zone'));
         set('[data-today-title]', q('.hm-adar26-kind'));
         set('[data-today-venue]', q('.hm-adar26-venue'));
+        var rowImg = todayRow.querySelector('.hm-adar26-thumb img');
+        var cardImg = card.querySelector('[data-today-photo]');
+        if (rowImg && cardImg && rowImg.getAttribute('src')) {
+          cardImg.setAttribute('src', rowImg.getAttribute('src'));
+          cardImg.setAttribute('alt', q('.hm-adar26-kind'));
+        } else if (cardImg) {
+          cardImg.parentNode.style.display = 'none';
+        }
         var link = todayRow.querySelector('.hm-adar26-link');
         if (link) card.setAttribute('href', link.getAttribute('href'));
         card.hidden = false;
