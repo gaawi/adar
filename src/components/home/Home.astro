@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import type { Lang } from '../../i18n/strings.ts';
+import { RECAPS } from '../../data/recaps.ts';
 
 interface Props {
   lang: Lang;
@@ -474,6 +475,7 @@ const ADAR26 = ADAR26_ROWS.map((r) => ({
 
 const ADAR26_HREF = `/${lang}/programa-2026/`;
 const IG_SVG = '<svg class="ig-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>';
+const PLAY_SVG = '<svg class="ig-icon" viewBox="0 0 24 24" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
 const ADAR26_PRESS_HREF = {
   es:  '/es/nota-de-prensa-adar-2026/',
   en:  '/en/press-release-adar-2026/',
@@ -498,6 +500,7 @@ const ADAR26_COPY = {
     lived_short: 'Cómo se vivió en redes',
     cancel_label: 'Cancelado',
     cancel_note: 'Coordinado con el Ayuntamiento de Llanes · cancelado por el luto oficial en el concejo',
+    recap_reel: 'Ver el reel',
   },
   en: {
     eyebrow: 'Next edition · Edition VI',
@@ -517,6 +520,7 @@ const ADAR26_COPY = {
     lived_short: 'How it was lived',
     cancel_label: 'Cancelled',
     cancel_note: 'In coordination with Llanes Town Council · cancelled due to the official mourning in the municipality',
+    recap_reel: 'Watch the reel',
   },
   ast: {
     eyebrow: 'Próxima edición · Edición VI',
@@ -536,6 +540,7 @@ const ADAR26_COPY = {
     lived_short: 'Cómo se vivió en redes',
     cancel_label: 'Canceláu',
     cancel_note: 'En coordinación col Ayuntamientu de Llanes · canceláu pol lutu oficial nel conceyu',
+    recap_reel: 'Ver el reel',
   },
 }[lang];
 const PARTNERS: { name: string; logo: string; href: string }[] = [
@@ -676,9 +681,10 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                 {e.cancelled ? (
                   <span class="hm-adar26-cancel-note mono">{ADAR26_COPY.cancel_note}</span>
                 ) : (
-                  <a class="hm-adar26-row-lived mono" href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">
+                  <a class="hm-adar26-row-lived mono" href={RECAPS[e.n]?.instagram || 'https://www.instagram.com/festivaladar'} target="_blank" rel="noopener">
                     <Fragment set:html={IG_SVG} />
-                    {ADAR26_COPY.lived_short}
+                    {RECAPS[e.n]?.instagram && <Fragment set:html={PLAY_SVG} />}
+                    {RECAPS[e.n]?.instagram ? ADAR26_COPY.recap_reel : ADAR26_COPY.lived_short}
                   </a>
                 )}
               </li>

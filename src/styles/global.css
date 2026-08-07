@@ -12306,22 +12306,43 @@ body.page .entry-content .vi26 p,
 .vi26-event.is-past .vi26-event-cta .vi26-rsvp,
 .vi26-event.is-past .vi26-event-cta .vi26-few-badge,
 .vi26-event.is-past .vi26-event-cta .vi26-rsvp-note { display: none; }
-.vi26-lived-btn { display: none; }
-.vi26-event.is-past .vi26-lived-btn {
+.ig-icon { flex: 0 0 auto; }
+
+/* Recap "cómo se vivió": en conciertos ya celebrados sustituye al CTA de
+   reserva por enlaces visuales a redes (reel, YouTube, fotos). */
+.vi26-event.is-past .vi26-event-cta .vi26-rsvp:not(.is-cancelled),
+.vi26-event.is-past .vi26-event-cta .vi26-few-badge,
+.vi26-event.is-past .vi26-event-cta .vi26-rsvp-note { display: none; }
+.vi26-recap { display: none; }
+.vi26-event.is-past .vi26-recap { display: block; }
+.vi26-recap-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(10,9,7,0.55);
+  margin-bottom: 10px;
+}
+.vi26-recap-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.vi26-recap-btn {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  padding: 14px 22px;
-  background: var(--accent);
-  color: var(--accent-ink);
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 0.02em;
+  gap: 8px;
+  padding: 11px 16px;
+  border: 1px solid rgba(10,9,7,0.25);
+  background: #fff;
+  color: #0a0907;
   text-decoration: none;
-  transition: filter 0.15s ease, transform 0.15s ease;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
 }
-.vi26-event.is-past .vi26-lived-btn:hover { filter: brightness(1.05); transform: translateY(-1px); }
-.ig-icon { flex: 0 0 auto; }
+.vi26-recap-btn:hover { transform: translateY(-1px); }
+.vi26-recap-btn.is-ig:hover { background: #0a0907; color: #fff; border-color: #0a0907; }
+.vi26-recap-btn.is-yt:hover { background: #ff0000; color: #fff; border-color: #ff0000; }
+.vi26-recap-btn.is-photos:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.vi26-play { flex: 0 0 auto; margin-left: -3px; }
 /* Tabla-calendario */
 .vi26-table tr.is-past { opacity: 0.6; }
 .vi26-table tr.is-past .vi26-td-kind { text-decoration: line-through; }
