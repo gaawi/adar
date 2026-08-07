@@ -4938,17 +4938,29 @@ body.home article.page { margin: 0 !important; }
 .hm-h2-light { color: var(--paper); }
 .hm-dot { color: var(--accent); }
 
-/* ---------- HOY · concierto de hoy destacado (solo móvil) ---------- */
+/* ---------- HOY · concierto de hoy destacado (móvil y escritorio) ---------- */
 .hm-today { display: none; }
+.hm-today:not([hidden]) {
+  display: block;
+  background: var(--paper);
+  border-bottom: 3px solid var(--ink);
+  text-decoration: none;
+  color: var(--ink);
+}
 @media (max-width: 900px) {
+  .hm-today:not([hidden]) { order: -2; }
+}
+@media (min-width: 901px) {
   .hm-today:not([hidden]) {
-    display: block;
-    order: -2;
-    background: var(--paper);
-    border-bottom: 3px solid var(--ink);
-    text-decoration: none;
-    color: var(--ink);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    border-top: 1px solid var(--line);
   }
+  .hm-today-photo { aspect-ratio: auto !important; height: 100%; min-height: 360px; }
+  .hm-today-body { justify-content: center; padding: 48px clamp(32px, 5vw, 72px) !important; }
+  .hm-today-title { font-size: clamp(44px, 4.2vw, 68px) !important; }
+  .hm-today-tag { font-size: 13px; }
 }
 .hm-today-photo {
   display: block;
@@ -13372,3 +13384,6 @@ body.page .entry-content .legal ol,
 @media (max-width: 900px) {
   .hm-side-banner { display: none; }
 }
+/* Con la tarjeta "HOY" visible, el banner lateral flotante sobra (y se
+   solaparía con la tarjeta): se oculta ese día. */
+html.has-hm-today .hm-side-banner { display: none !important; }

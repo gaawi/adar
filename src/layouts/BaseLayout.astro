@@ -84,7 +84,12 @@ const ogImage =
         // disappears; the smart sticky paper header (next script) takes over.
         // Interior hero pages (.page-hero) are not reordered, so they keep it.
         var isHomeHero = firstSection.classList.contains('hm-hero');
-        if (isHomeHero && window.matchMedia('(max-width: 900px)').matches) return;
+        // Skip the floating (white-over-hero) header on the homepage when the
+        // programme leads on mobile, OR when the "HOY" card is shown (it sits
+        // above the hero, so a white logo would land on a light card).
+        var todayCard = document.getElementById('hm-today');
+        var hasToday = todayCard && !todayCard.hidden;
+        if (isHomeHero && (window.matchMedia('(max-width: 900px)').matches || hasToday)) return;
         document.body.classList.add('has-floating-header');
         function update() {
           var rect = firstSection.getBoundingClientRect();

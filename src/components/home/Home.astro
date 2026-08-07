@@ -1037,6 +1037,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
         var link = todayRow.querySelector('.hm-adar26-link');
         if (link) card.setAttribute('href', link.getAttribute('href'));
         card.hidden = false;
+        document.documentElement.classList.add('has-hm-today');
       }
     }
   })();
