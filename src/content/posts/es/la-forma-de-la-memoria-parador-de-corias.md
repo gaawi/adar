@@ -10,7 +10,7 @@ original_url: ""
 permalink: "/es/la-forma-de-la-memoria-parador-de-corias/"
 categories: ["Memoria de Acciones"]
 tags: ["2026", "Parador de Corias", "Cangas del Narcea", "trío con piano", "ADAR en ruta", "música de cámara"]
-featured_image: "https://paradores.es/sites/default/files/images/blog/20210421_162035.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_1.jpg"
 excerpt: "Concierto de trío con piano en la Biblioteca del Parador de Corias (Cangas del Narcea). ADAR en ruta, VI edición."
 author: "gaawi_rei1q"
 parent_id: 0
@@ -24,7 +24,7 @@ translation_group: "pll_adar26_02"
 <div class="adar-archive-left">
 
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://paradores.es/sites/default/files/images/blog/20210421_162035.jpg" alt="La forma de la memoria - Biblioteca del Parador de Corias" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_1.jpg" alt="La forma de la memoria - Biblioteca del Parador de Corias" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">La forma de la memoria</h1>
@@ -53,7 +53,15 @@ Un recorrido íntimo por uno de los entornos más recogidos del occidente asturi
 <strong>Dmitri Shostakóvich</strong> — Trío con piano n.º 1, op. 8
 </p>
 
-<!-- galería: pendiente de incrustar las fotos del CDN (05.08.26_Parador de Corias_Fotos_1..7) cuando se confirme la URL pública -->
+<div class="adar-archive-gallery">
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_1.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_2.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_3.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_3.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_4.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_4.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_5.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_5.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_6.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_6.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_7.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_7.jpg" loading="lazy"></a>
+</div>
 </div>
 
 </div>

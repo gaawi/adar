@@ -10,7 +10,7 @@ original_url: ""
 permalink: "/es/de-danzas-y-sonatas-la-figal-de-xugabolos/"
 categories: ["Memoria de Acciones"]
 tags: ["2026", "La Figal de Xugabolos", "Salas", "recital de clave", "hórreo", "Ignacio Prego"]
-featured_image: "https://s1.abcstatics.com/abc/www/multimedia/sevilla/2023/01/18/ignacio-priego-uno_20230118120520-kJAB-Rz4H5Ye2vCc2SwoCBKMcEPM-1200x840@abc.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_1.jpg"
 excerpt: "Recital de clave de Ignacio Prego en La Figal de Xugabolos, hórreo ganador del Concurso 2026. Concierto inaugural de la VI edición."
 author: "gaawi_rei1q"
 parent_id: 0
@@ -24,7 +24,7 @@ translation_group: "pll_adar26_01"
 <div class="adar-archive-left">
 
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://s1.abcstatics.com/abc/www/multimedia/sevilla/2023/01/18/ignacio-priego-uno_20230118120520-kJAB-Rz4H5Ye2vCc2SwoCBKMcEPM-1200x840@abc.jpg" alt="De danzas y sonatas - Ignacio Prego en La Figal de Xugabolos" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_1.jpg" alt="De danzas y sonatas - Ignacio Prego en La Figal de Xugabolos" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">De danzas y sonatas</h1>
@@ -54,7 +54,16 @@ Desde las variaciones renacentistas de Antonio de Cabezón y las célebres Folí
 <strong>Johann Sebastian Bach</strong> — Ciaccona, de la Partita para violín en re menor (trans. J. Brahms)
 </p>
 
-<!-- galería: pendiente de incrustar las fotos del CDN (04.08.26_La Figal de Xugabolos_Fotos_1..8) cuando se confirme la URL pública -->
+<div class="adar-archive-gallery">
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_1.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_2.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_3.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_3.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_4.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_4.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_5.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_5.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_6.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_6.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_7.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_7.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_8.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_8.jpg" loading="lazy"></a>
+</div>
 </div>
 
 </div>

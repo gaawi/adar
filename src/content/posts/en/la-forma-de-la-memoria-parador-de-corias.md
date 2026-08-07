@@ -10,7 +10,7 @@ original_url: ""
 permalink: "/en/la-forma-de-la-memoria-parador-de-corias/"
 categories: ["Memoria de Acciones"]
 tags: ["2026", "Parador de Corias", "Cangas del Narcea", "piano trio", "ADAR on tour", "chamber music"]
-featured_image: "https://paradores.es/sites/default/files/images/blog/20210421_162035.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_1.jpg"
 excerpt: "Piano trio concert in the library of the Parador de Corias (Cangas del Narcea). ADAR on tour, 6th edition."
 author: "gaawi_rei1q"
 parent_id: 0
@@ -24,7 +24,7 @@ translation_group: "pll_adar26_02"
 <div class="adar-archive-left">
 
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://paradores.es/sites/default/files/images/blog/20210421_162035.jpg" alt="The Shape of Memory - Library of the Parador de Corias" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_1.jpg" alt="The Shape of Memory - Library of the Parador de Corias" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memory of Actions</span>
 <h1 class="adar-archive-title">The Shape of Memory</h1>
@@ -53,7 +53,15 @@ An intimate evening in one of the most secluded settings in western Asturias, li
 <strong>Dmitri Shostakovich</strong> — Piano Trio No. 1, Op. 8
 </p>
 
-<!-- gallery: CDN photos (05.08.26_Parador de Corias_Fotos_1..7) to be embedded once the public URL is confirmed -->
+<div class="adar-archive-gallery">
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_1.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_2.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_3.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_3.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_4.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_4.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_5.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_5.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_6.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_6.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_7.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_7.jpg" loading="lazy"></a>
+</div>
 </div>
 
 </div>
