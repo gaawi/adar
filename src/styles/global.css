@@ -1618,6 +1618,11 @@ body.has-header-image #content{
   .header-navigation-wrapper.is-open{
     transform: translateY(0);
   }
+  /* Fix: el mapa Leaflet (z-index alto en su propio contexto) tapaba el menú
+     móvil, que quedaba atrapado en el contexto del header (z-index:50). Con el
+     menú abierto el header sube por encima del mapa y este se oculta. */
+  body.adar-nav-open header.site-header.cd-header { z-index: 3000 !important; }
+  body.adar-nav-open .amp-map-outer { visibility: hidden; }
   .header-navigation-wrapper .primary-menu-wrapper{
     width: 100%;
   }
