@@ -67,9 +67,9 @@ translation_group: "pll_69b06583421f1"
 <div class="amp-map-footer">
 <div class="amp-legend">
 <div class="amp-legend-item"><div class="amp-leg-dot"></div>Sede con actividaes</div>
-<div class="amp-legend-item"><div class="amp-leg-badge">N</div>Number of actions</div>
+<div class="amp-legend-item"><div class="amp-leg-badge">N</div>Númberu d’acciones</div>
 </div>
-<p class="amp-map-hint">Click on each marker</p>
+<p class="amp-map-hint">Fai clic en cada marcador</p>
 </div>
 </div>
 
@@ -116,7 +116,7 @@ var concejos = [
 { name:'Palacio Fontela', concejo:'Grado', lat:43.38824, lng:-6.06882, activities:[
 { year:'2023', title:'Paseu Sonoru nel Palaciu Fontela (Grau)',                        url:'/ast/paseu-sonoru-palaciu-fontela-grau-2023/',               img:CDN+'ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/28.jpg' }
 ]},
-{ name:'Llanes', concejo:'Llanes', lat:43.42112, lng:-4.75308, activities:[
+{ name:'Plaza de Santa Ana · Llanes', concejo:'Llanes', lat:43.42119, lng:-4.7525, activities:[
 { year:'2025', title:'Conciertu Visual en Llanes',                                     url:'/ast/conciertu-visual-llanes-2025/',                         img:CDN+'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg' },
 { year:'2022', title:'Conciertu al Aire Llibre en Llanes',                             url:'/ast/conciertu-aire-llibre-llanes-2022/',                   img:CDN+'ADAR_Eventos/2022/11_Concierto_en_Llanes/image59.jpg' }
 ]},
@@ -124,7 +124,7 @@ var concejos = [
 { year:'2025', title:'The Whale (Ballarte) nel Monasteriu de San Antolín de Bedón',   url:'/ast/the-whale-ballarte-monasteriu-san-antolin-bedon-2025/', img:CDN+'ADAR_Eventos/2025/07_The_Whale_Ballarte_en_el_Monasterio_de_San_Antolin_de_Bedon/DSC00382.jpg' },
 { year:'2024', title:'Conciertu nel Monasteriu de San Antolín de Bedón',               url:'/ast/conciertu-monasteriu-san-antolin-bedon-2024/',          img:CDN+'ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/15.jpg' }
 ]},
-{ name:'El Franco · La Caridad', concejo:'El Franco', lat:43.54708, lng:-6.82756, activities:[
+{ name:'Auditorio As Quintas · La Caridad', concejo:'El Franco', lat:43.55239, lng:-6.83154, activities:[
 { year:'2023', title:'Conciertu nel Francu',                                           url:'/ast/conciertu-nel-francu-2023/',                            img:CDN+'ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg' },
 { year:'2023', title:'Paseu Sonoru nel Francu',                                        url:'/ast/paseu-sonoru-el-francu-2023/',                          img:CDN+'ADAR_Eventos/2023/09_Paseo_sonoro_El_Franco/01.jpg' },
 { year:'2023', title:'Instalación Artística de Lluz y Proyeiciones (Mizuko Kaji)',     url:'/ast/instalacion-lluz-proyeiciones-mizuko-kaji-2023/',      img:CDN+'ADAR_Eventos/2023/03_Instalacion_artistica_de_luz_y_proyecciones_Mizuko_Kaji/42.jpg' },

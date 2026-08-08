@@ -120,7 +120,7 @@ var concejos = [
 { name:'Palacio Fontela', concejo:'Grado', lat:43.38824, lng:-6.06882, activities:[
 { year:'2023', title:'Paseo sonoro en el Palacio Fontela',                             url:'/es/paseo-sonoro-en-el-palacio-fontela-grado-2/',                                              img:CDN+'ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/28.jpg' }
 ]},
-{ name:'Llanes', concejo:'Llanes', lat:43.42112, lng:-4.75308, activities:[
+{ name:'Plaza de Santa Ana · Llanes', concejo:'Llanes', lat:43.42119, lng:-4.7525, activities:[
 { year:'2025', title:'Concierto Visual en Llanes',                                     url:'/es/concierto-visual-en-llanes/',                                                                img:CDN+'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg' },
 { year:'2022', title:'Concierto al aire libre en Llanes',                              url:'/es/concierto-en-llanes-2/',                                                                    img:CDN+'ADAR_Eventos/2022/11_Concierto_en_Llanes/image59.jpg' }
 ]},
@@ -128,7 +128,7 @@ var concejos = [
 { year:'2025', title:'The Whale (Ballarte) en el Monasterio de San Antolín de Bedón', url:'/es/the-whale-ballarte-en-el-monasterio-de-san-antolin-de-bedon/',                              img:CDN+'ADAR_Eventos/2025/07_The_Whale_Ballarte_en_el_Monasterio_de_San_Antolin_de_Bedon/DSC00382.jpg' },
 { year:'2024', title:'Concierto en el Monasterio de San Antolín de Bedón',             url:'/es/concierto-en-el-monasterio-de-san-antolin-de-bedon/',                                      img:CDN+'ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/15.jpg' }
 ]},
-{ name:'El Franco · La Caridad', concejo:'El Franco', lat:43.54708, lng:-6.82756, activities:[
+{ name:'Auditorio As Quintas · La Caridad', concejo:'El Franco', lat:43.55239, lng:-6.83154, activities:[
 { year:'2023', title:'Concierto en El Franco',                                         url:'/es/concierto-en-el-franco/',                                                                    img:CDN+'ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg' },
 { year:'2023', title:'Paseo sonoro en El Franco',                                      url:'/es/paseo-sonoro-el-franco/',                                                                    img:CDN+'ADAR_Eventos/2023/09_Paseo_sonoro_El_Franco/01.jpg' },
 { year:'2023', title:'Instalación artística de luz y proyecciones (Mizuko Kaji)',      url:'/es/instalacion-artistica-de-luz-y-proyecciones-mizuko-kaji/',                                  img:CDN+'ADAR_Eventos/2023/03_Instalacion_artistica_de_luz_y_proyecciones_Mizuko_Kaji/42.jpg' },
