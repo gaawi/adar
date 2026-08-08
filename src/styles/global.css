@@ -12571,16 +12571,16 @@ body.page .entry-content .vi26 p,
   color: #8a6a2a;
 }
 .vi26-aside-when-postponed {
-  display: block;
-  margin-top: 10px;
-  padding: 7px 10px;
-  background: #fdf1d6;
-  border-left: 3px solid #c88a1e;
-  color: #6b4e12;
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 8px;
+  padding: 3px 9px;
+  background: #c88a1e;
+  color: #fff;
   font-size: 11px;
-  line-height: 1.45;
-  letter-spacing: 0.02em;
-  text-transform: none;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 /* Programa imprimible: oculto en pantalla. */

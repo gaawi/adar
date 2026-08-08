@@ -1039,7 +1039,7 @@ const POSTER_BG = '/posters/adar-2026.png';
                   ? <span class="vi26-aside-when-time mono">{e.time}{e.time.includes('—') ? '' : 'h'}</span>
                   : e.timeTbc && <span class="vi26-aside-when-time mono">{LBL.timeTbc}</span>}
                 {e.postponed && !e.cancelled && (
-                  <span class="vi26-aside-when-postponed mono">↻ {COPY.postponed_note}</span>
+                  <span class="vi26-aside-when-postponed mono">↻ {COPY.postponed_label}</span>
                 )}
               </div>
 
@@ -1085,7 +1085,7 @@ const POSTER_BG = '/posters/adar-2026.png';
                 {!e.cancelled && e.ticketStatus === 'few' && (
                   <span class="vi26-few-badge mono">{COPY.few_left}</span>
                 )}
-                {!e.cancelled && (
+                {!e.cancelled && !e.postponed && (
                   <div class="vi26-recap">
                     <span class="vi26-recap-label mono">{COPY.lived_short}</span>
                     <div class="vi26-recap-links">
