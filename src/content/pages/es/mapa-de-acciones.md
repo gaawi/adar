@@ -40,7 +40,7 @@ WORDPRESS: Editor → Text (no Visual) → pega todo → Update
 <div class="amp-hero-inner">
 <span class="amp-eyebrow">Festival ADAR · Principado de Asturias</span>
 <h2 class="amp-title">Mapa de <em>Acciones</em></h2>
-<p class="amp-subtitle">Arte contemporáneo en el medio rural · 2021 – 2025</p>
+<p class="amp-subtitle">Arte contemporáneo en el medio rural · 2021 – 2026</p>
 </div>
 </div>
 
@@ -70,7 +70,7 @@ WORDPRESS: Editor → Text (no Visual) → pega todo → Update
 </div>
 <div class="amp-map-footer">
 <div class="amp-legend">
-<div class="amp-legend-item"><div class="amp-leg-dot"></div>Concejo con actividades</div>
+<div class="amp-legend-item"><div class="amp-leg-dot"></div>Sede con actividades</div>
 <div class="amp-legend-item"><div class="amp-leg-badge">N</div>Número de acciones</div>
 </div>
 <p class="amp-map-hint">Haz clic en cada marcador</p>
@@ -86,71 +86,89 @@ WORDPRESS: Editor → Text (no Visual) → pega todo → Update
 var CDN = 'https://creartbox-media-cdn.b-cdn.net/adarimages/';
 
 var concejos = [
-{ name:'Belmonte de Miranda', lat:43.2185, lng:-6.2020, activities:[
-{ year:'2026', title:'Umbral Zero (Aula del Oro)', url:'/es/umbral-zero-aula-del-oro/', img:'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/07.08.26_Aula%20del%20oro_Fotos/07.08.26_Aula%20del%20oro_Fotos_1.jpg' },
+{ name:'Aula del Oro', concejo:'Belmonte de Miranda', lat:43.28298, lng:-6.21847, activities:[
+{ year:'2026', title:'Umbral Zero (Aula del Oro)', url:'/es/umbral-zero-aula-del-oro/', img:'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/07.08.26_Aula%20del%20oro_Fotos/07.08.26_Aula%20del%20oro_Fotos_1.jpg' }
+]},
+{ name:'Leiguarda', concejo:'Belmonte de Miranda', lat:43.33015, lng:-6.22539, activities:[
 { year:'2025', title:'Evento de Clausura: Concierto y Espicha en Leiguarda',          url:'/es/134/',                                                                                          img:CDN+'adar25fx30/DSC01841.jpg' },
 { year:'2025', title:'Recital de Andrea Casarrubios en la Iglesia de Leiguarda',      url:'/es/recital-de-andrea-casarrubios-en-la-iglesia-de-leiguarda/',                                    img:CDN+'adar25fx30/DSC01590.jpg' },
 { year:'2025', title:'Paseo Sonoro en Leiguarda',                                      url:'/es/paseo-sonoro-en-leiguarda/',                                                                    img:CDN+'ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg' },
 { year:'2024', title:'Concierto de clausura en el Invernadero de Cristal',             url:'/es/concierto-de-clausura-en-el-invernadero-de-cristal-leiguarda-2024/',                          img:CDN+'ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/image15.jpg' },
 { year:'2024', title:'Micro Conciertos y Paseo Sonoro en Leiguarda',                  url:'/es/micro-conciertos-y-paseo-sonoro-en-leiguarda/',                                              img:CDN+'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg' },
 { year:'2023', title:'Concierto visual de clausura en Leiguarda',                      url:'/es/concierto-visual-de-clausura-en-leiguarda-2023/',                                            img:CDN+'ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/02.jpg' },
-{ year:'2023', title:'Paseo sonoro en el Museo de las Ayalgas',                        url:'/es/paseo-sonoro-en-el-museo-de-las-ayalgas-belmonte-de-miranda-2/',                            img:CDN+'ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg' },
 { year:'2023', title:'Instalación: Toccata and Bruise (Celeste Oram)',                  url:'/es/instalacion-toccata-and-bruise-celeste-oram/',                                              img:CDN+'ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg' },
-{ year:'2022', title:'Concierto de clausura en Belmonte de Miranda',                   url:'/es/concierto-de-clausura-en-belmonte-de-miranda-2022/',                                        img:CDN+'Festival%20ADAR%20Photos/2022/concierto%20belmonte/PXL_20220813_175723812.jpg' },
 { year:'2021', title:'Concierto de Inauguración en Leiguarda',                         url:'/es/concierto-de-inauguracion-en-leiguarda-2/',                                                  img:CDN+'ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg' }
 ]},
-{ name:'Grado', lat:43.3861, lng:-6.0768, activities:[
+{ name:'Museo de las Ayalgas', concejo:'Belmonte de Miranda', lat:43.32853, lng:-6.21148, activities:[
+{ year:'2023', title:'Paseo sonoro en el Museo de las Ayalgas',                        url:'/es/paseo-sonoro-en-el-museo-de-las-ayalgas-belmonte-de-miranda-2/',                            img:CDN+'ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg' }
+]},
+{ name:'Belmonte de Miranda (villa)', concejo:'Belmonte de Miranda', lat:43.279, lng:-6.2205, activities:[
+{ year:'2022', title:'Concierto de clausura en Belmonte de Miranda',                   url:'/es/concierto-de-clausura-en-belmonte-de-miranda-2022/',                                        img:CDN+'Festival%20ADAR%20Photos/2022/concierto%20belmonte/PXL_20220813_175723812.jpg' }
+]},
+{ name:'Capilla de los Dolores', concejo:'Grado', lat:43.38977, lng:-6.06847, activities:[
 { year:'2024', title:'Concierto y performance en la Capilla de los Dolores',           url:'/es/concierto-y-performance-en-la-capilla-de-los-dolores-grado-2024/',                          img:CDN+'ADAR_Eventos/2024/17_Concierto_y_performance_en_la_Capilla_de_los_Dolores/capilla.jpg' },
-{ year:'2024', title:'Instalación de Sarah K. Williams en la Oficina de Turismo',     url:'/es/instalacion-de-sarah-k-williams-en-la-oficina-de-turismo-grado/',                          img:CDN+'ADAR_Eventos/2024/17_Instalacion_site_specific_de_sara_k_william/image20.jpg' },
+{ year:'2023', title:'Micro concierto en la Capilla de los Dolores',                   url:'/es/micro-concierto-en-la-capilla-de-los-dolores-grado-2023/',                                  img:CDN+'ADAR_Eventos/2023/10_Micro_concierto_en_la_Capilla_de_los_Dolores_Grado_2023/31.jpg' }
+]},
+{ name:'Oficina de Turismo de Grado', concejo:'Grado', lat:43.38909, lng:-6.06886, activities:[
+{ year:'2024', title:'Instalación de Sarah K. Williams en la Oficina de Turismo',     url:'/es/instalacion-de-sarah-k-williams-en-la-oficina-de-turismo-grado/',                          img:CDN+'ADAR_Eventos/2024/17_Instalacion_site_specific_de_sara_k_william/image20.jpg' }
+]},
+{ name:'Palacio de Miranda-Valdecarzana', concejo:'Grado', lat:43.39004, lng:-6.0682, activities:[
 { year:'2024', title:'Concierto en el Palacio de Miranda-Valdecarzana (2024)',         url:'/es/concierto-en-el-palacio-de-miranda-valdecarzana-grado-2024-2/',                            img:CDN+'ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/20.jpg' },
-{ year:'2023', title:'Micro concierto en la Capilla de los Dolores',                   url:'/es/micro-concierto-en-la-capilla-de-los-dolores-grado-2023/',                                  img:CDN+'ADAR_Eventos/2023/10_Micro_concierto_en_la_Capilla_de_los_Dolores_Grado_2023/31.jpg' },
 { year:'2023', title:'Concierto en el Palacio de Miranda-Valdecarzana (2023)',         url:'/es/concierto-en-el-palacio-de-miranda-valdecarzana-grado-2023-2/',                            img:CDN+'Festival%20ADAR%20Photos/2023/06%20concierto%20grado/image5.jpg' },
-{ year:'2023', title:'Paseo sonoro en el Palacio Fontela',                             url:'/es/paseo-sonoro-en-el-palacio-fontela-grado-2/',                                              img:CDN+'ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/28.jpg' },
 { year:'2022', title:'Concierto en el Palacio de Miranda-Valdecarzana (2022)',         url:'/es/concierto-en-el-palacio-de-miranda-valdecarzana-grado-2022/',                              img:CDN+'ADAR_Eventos/2022/12_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2022/PXL_20220812_184621365~2.jpg' }
 ]},
-{ name:'Llanes', lat:43.4185, lng:-4.7540, activities:[
+{ name:'Palacio Fontela', concejo:'Grado', lat:43.38824, lng:-6.06882, activities:[
+{ year:'2023', title:'Paseo sonoro en el Palacio Fontela',                             url:'/es/paseo-sonoro-en-el-palacio-fontela-grado-2/',                                              img:CDN+'ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/28.jpg' }
+]},
+{ name:'Llanes', concejo:'Llanes', lat:43.42112, lng:-4.75308, activities:[
 { year:'2025', title:'Concierto Visual en Llanes',                                     url:'/es/concierto-visual-en-llanes/',                                                                img:CDN+'ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg' },
-{ year:'2025', title:'The Whale (Ballarte) en el Monasterio de San Antolín de Bedón', url:'/es/the-whale-ballarte-en-el-monasterio-de-san-antolin-de-bedon/',                              img:CDN+'ADAR_Eventos/2025/07_The_Whale_Ballarte_en_el_Monasterio_de_San_Antolin_de_Bedon/DSC00382.jpg' },
-{ year:'2024', title:'Concierto en el Monasterio de San Antolín de Bedón',             url:'/es/concierto-en-el-monasterio-de-san-antolin-de-bedon/',                                      img:CDN+'ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/15.jpg' },
 { year:'2022', title:'Concierto al aire libre en Llanes',                              url:'/es/concierto-en-llanes-2/',                                                                    img:CDN+'ADAR_Eventos/2022/11_Concierto_en_Llanes/image59.jpg' }
 ]},
-{ name:'El Franco', lat:43.5447, lng:-6.8283, activities:[
+{ name:'Monasterio de San Antolín de Bedón', concejo:'Llanes', lat:43.4381, lng:-4.86936, activities:[
+{ year:'2025', title:'The Whale (Ballarte) en el Monasterio de San Antolín de Bedón', url:'/es/the-whale-ballarte-en-el-monasterio-de-san-antolin-de-bedon/',                              img:CDN+'ADAR_Eventos/2025/07_The_Whale_Ballarte_en_el_Monasterio_de_San_Antolin_de_Bedon/DSC00382.jpg' },
+{ year:'2024', title:'Concierto en el Monasterio de San Antolín de Bedón',             url:'/es/concierto-en-el-monasterio-de-san-antolin-de-bedon/',                                      img:CDN+'ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/15.jpg' }
+]},
+{ name:'El Franco · La Caridad', concejo:'El Franco', lat:43.54708, lng:-6.82756, activities:[
 { year:'2023', title:'Concierto en El Franco',                                         url:'/es/concierto-en-el-franco/',                                                                    img:CDN+'ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg' },
 { year:'2023', title:'Paseo sonoro en El Franco',                                      url:'/es/paseo-sonoro-el-franco/',                                                                    img:CDN+'ADAR_Eventos/2023/09_Paseo_sonoro_El_Franco/01.jpg' },
 { year:'2023', title:'Instalación artística de luz y proyecciones (Mizuko Kaji)',      url:'/es/instalacion-artistica-de-luz-y-proyecciones-mizuko-kaji/',                                  img:CDN+'ADAR_Eventos/2023/03_Instalacion_artistica_de_luz_y_proyecciones_Mizuko_Kaji/42.jpg' },
 { year:'2022', title:'Concierto visual en El Franco',                                  url:'/es/concierto-visual-en-el-franco-2/',                                                          img:CDN+'ADAR_Eventos/2022/08_Concierto_visual_en_El_Franco/PXL_20220808_201603027~2.jpg' }
 ]},
-{ name:'Colunga', lat:43.4810, lng:-5.2716, activities:[
-{ year:'2023', title:'Concierto visual en Colunga (Sala Loreto)',                      url:'/es/concierto-visual-en-colunga-sala-loreto/',                                                  img:CDN+'ADAR_Eventos/2023/11_Concierto_visual_en_Colunga_Sala_Loreto/48.jpg' },
+{ name:'Sala Loreto', concejo:'Colunga', lat:43.48512, lng:-5.27067, activities:[
+{ year:'2023', title:'Concierto visual en Colunga (Sala Loreto)',                      url:'/es/concierto-visual-en-colunga-sala-loreto/',                                                  img:CDN+'ADAR_Eventos/2023/11_Concierto_visual_en_Colunga_Sala_Loreto/48.jpg' }
+]},
+{ name:'Iglesia de Santa María de Sábada · Lué', concejo:'Colunga', lat:43.49497, lng:-5.31686, activities:[
 { year:'2022', title:'Concierto en la Iglesia de Santa María de Sabada',               url:'/es/concierto-en-la-iglesia-de-santa-maria-de-sabada-colunga/',                                img:CDN+'ADAR_Eventos/2022/10_Concierto_en_la_Iglesia_de_Santa_Maria_de_Sabada_Colunga/PXL_20220810_175359505.jpg' }
 ]},
-{ name:'Cangas del Narcea', lat:43.1753, lng:-6.5479, activities:[
+{ name:'Parador de Corias', concejo:'Cangas del Narcea', lat:43.19548, lng:-6.54346, activities:[
 { year:'2026', title:'La forma de la memoria (Parador de Corias)', url:'/es/la-forma-de-la-memoria-parador-de-corias/', img:'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_1.jpg' },
 { year:'2025', title:'Paseo sonoro en el Claustro del Parador de Corias',              url:'/es/paseo-sonoro-en-el-claustro-del-parador-de-corias/',                                        img:CDN+'adar25fx30/corias.jpg' }
 ]},
-{ name:'Villanueva de Oscos', lat:43.3615, lng:-6.8830, activities:[
+{ name:'Monasterio de Villanueva de Oscos', concejo:'Villanueva de Oscos', lat:43.312, lng:-6.98593, activities:[
 { year:'2025', title:'Concierto en el Monasterio de Villanueva de Oscos',              url:'/es/concierto-en-el-monasterio-de-villanueva-de-oscos/',                                        img:CDN+'adar25fx30/DSC01456.jpg' }
 ]},
-{ name:'Taramundi', lat:43.3700, lng:-7.1020, activities:[
+{ name:'Taramundi', concejo:'Taramundi', lat:43.36319, lng:-7.07778, activities:[
 { year:'2025', title:'Concierto en Taramundi',                                         url:'/es/concierto-en-taramundi/',                                                                    img:CDN+'adar25fx30/DSC01048.jpg' }
 ]},
-{ name:'Tineo', lat:43.3305, lng:-6.5055, activities:[
+{ name:'Monasterio de Obona', concejo:'Tineo', lat:43.34007, lng:-6.47991, activities:[
 { year:'2025', title:'Concierto en el Monasterio de Obona, Tineo',                     url:'/es/concierto-en-el-monasterio-de-obona-tineo/',                                                img:CDN+'adar25fx30/DSC00981.jpg' }
 ]},
-{ name:'Las Regueras', lat:43.3730, lng:-5.9670, activities:[
+{ name:'Puerma', concejo:'Las Regueras', lat:43.39922, lng:-6.02041, activities:[
 { year:'2025', title:'Micro-Concierto en Puerma',                                      url:'/es/micro-concierto-en-puerma-las-regueras/',                                                  img:CDN+'adar25fx30/C1970T01.jpg' }
 ]},
-{ name:'Gozón', lat:43.5680, lng:-5.8360, activities:[
+{ name:'Susacasa Agrocultural', concejo:'Gozón', lat:43.60539, lng:-5.83758, activities:[
 { year:'2025', title:'Micro-Concierto en Susacasa Agrocultural',                       url:'/es/micro-concierto-en-susacasa-agrocultural/',                                                img:CDN+'ADAR_Eventos/2025/05_Micro-Concierto_en_Susacasa_Agrocultural/C1575T01.jpg' }
 ]},
-{ name:'Somiedo', lat:43.0730, lng:-6.2490, activities:[
+{ name:'Mercado de Pola de Somiedo', concejo:'Somiedo', lat:43.09315, lng:-6.25725, activities:[
 { year:'2024', title:'Concierto en el Mercado de Pola de Somiedo',                     url:'/es/concierto-en-el-mercado-de-pola-de-somiedo/',                                              img:CDN+'ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_02_03.jpg' }
 ]},
-{ name:'Salas', lat:43.4128, lng:-6.2554, activities:[
-{ year:'2026', title:'De danzas y sonatas (La Figal de Xugabolos)', url:'/es/de-danzas-y-sonatas-la-figal-de-xugabolos/', img:'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_1.jpg' },
+{ name:'La Figal de Xugabolos', concejo:'Salas', lat:43.40343, lng:-6.23333, activities:[
+{ year:'2026', title:'De danzas y sonatas (La Figal de Xugabolos)', url:'/es/de-danzas-y-sonatas-la-figal-de-xugabolos/', img:'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_1.jpg' }
+]},
+{ name:'Monasterio de San Salvador de Cornellana', concejo:'Salas', lat:43.40896, lng:-6.15702, activities:[
 { year:'2024', title:'Concierto en el Monasterio de San Salvador (Cornellana)',        url:'/es/concierto-en-el-monasterio-de-san-salvador-cornellana-2/',                                  img:CDN+'adar24fx30/12/IMG_0203.jpg' }
 ]},
-{ name:'Soto del Barco', lat:43.5273, lng:-6.0700, activities:[
+{ name:'Soto del Barco', concejo:'Soto del Barco', lat:43.52632, lng:-6.05211, activities:[
 { year:'2022', title:'Concierto visual en Soto del Barco',                             url:'/es/concierto-visual-en-soto-del-barco-2/',                                                    img:CDN+'ADAR_Eventos/2022/09_Concierto_visual_en_Soto_del_Barco/PXL_20220809_190711391.jpg' }
 ]}
 ];
@@ -182,7 +200,7 @@ thumb+
 }).join('');
 return '<div class="amp-popup-inner">'+
 '<div class="amp-popup-header">'+
-'<div class="amp-popup-concejo">Concejo de</div>'+
+(c.concejo&&c.concejo!==c.name?'<div class="amp-popup-concejo">'+c.concejo+'</div>':'')+
 '<div class="amp-popup-title">'+c.name+'</div>'+
 '<div class="amp-popup-count">'+acts.length+' acción'+(acts.length!==1?'es':'')+'</div>'+
 '</div>'+
