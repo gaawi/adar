@@ -219,6 +219,13 @@ const COPY = {
     partners_h: 'Red de programación y producción',
     funders_eyebrow: 'Con el apoyo de',
     funders_h: 'Subvenciones y ayudas',
+    map_eyebrow: 'Territorio ADAR',
+    map_h: 'Seis años por la Asturias rural.',
+    map_lede: 'Cada concierto, paseo sonoro e instalación, sede a sede: explora el mapa de todo lo que ha pasado desde 2021.',
+    map_cta: 'Ver el mapa de acciones',
+    map_s1: 'acciones',
+    map_s2: 'concejos',
+    map_s3: 'ediciones',
   },
   en: {
     eyebrow: 'Festival ADAR · Notebook 01 · 2021—2025',
@@ -302,6 +309,13 @@ const COPY = {
     partners_h: 'Programming and production network',
     funders_eyebrow: 'With the support of',
     funders_h: 'Grants and public funding',
+    map_eyebrow: 'ADAR Territory',
+    map_h: 'Six years across rural Asturias.',
+    map_lede: 'Every concert, sound walk and installation, venue by venue: explore the map of everything since 2021.',
+    map_cta: 'Explore the map of actions',
+    map_s1: 'actions',
+    map_s2: 'municipalities',
+    map_s3: 'editions',
   },
   ast: {
     eyebrow: 'Festival ADAR · Cuadernu 01 · 2021—2025',
@@ -385,6 +399,13 @@ const COPY = {
     partners_h: 'Rede de programación y producción',
     funders_eyebrow: 'Col sofitu de',
     funders_h: 'Subvenciones y ayudes',
+    map_eyebrow: 'Territoriu ADAR',
+    map_h: 'Seis años pela Asturies rural.',
+    map_lede: 'Cada conciertu, paseu sonoru ya instalación, sede a sede: esplora’l mapa de too lo que pasó dende 2021.',
+    map_cta: 'Ver el mapa d’acciones',
+    map_s1: 'acciones',
+    map_s2: 'conceyos',
+    map_s3: 'ediciones',
   },
 }[lang];
 
@@ -770,6 +791,53 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ============================================
+       MAPA DE ACCIONES · banner territorial
+       ============================================ -->
+  <section class="hm-map" aria-labelledby="hm-map-h">
+    <a class="hm-map-link" href={MAP_HREF[lang]}>
+      <div class="hm-map-illo" aria-hidden="true">
+        <svg viewBox="0 0 520 380" role="img" preserveAspectRatio="xMidYMid meet">
+          <!-- landmass -->
+          <path d="M40,152 C92,120 152,112 212,122 C272,131 330,104 392,120 C444,133 486,150 492,188 C488,228 452,252 400,258 C330,266 268,252 198,260 C138,267 78,252 54,221 C36,200 30,176 40,152 Z"
+                fill="rgba(244,239,227,0.05)" stroke="rgba(200,168,75,0.40)" stroke-width="1.6"/>
+          <!-- contour lines -->
+          <path d="M78,168 C150,150 240,150 320,160 C380,168 430,178 456,192" fill="none" stroke="rgba(200,168,75,0.20)" stroke-width="1.1"/>
+          <path d="M88,206 C160,192 250,196 330,204 C388,210 420,216 448,224" fill="none" stroke="rgba(200,168,75,0.14)" stroke-width="1.1"/>
+          <!-- dotted route between venues -->
+          <path d="M96,196 L176,150 L250,182 L322,138 L398,176 L444,150" fill="none" stroke="rgba(200,168,75,0.45)" stroke-width="1.4" stroke-dasharray="1.5 7" stroke-linecap="round"/>
+          <!-- static venue dots -->
+          <circle cx="96" cy="196" r="4.5" fill="#c8a84b" stroke="#0a0907" stroke-width="1"/>
+          <circle cx="250" cy="182" r="4.5" fill="#c8a84b" stroke="#0a0907" stroke-width="1"/>
+          <circle cx="398" cy="176" r="4.5" fill="#c8a84b" stroke="#0a0907" stroke-width="1"/>
+          <circle cx="444" cy="150" r="4.5" fill="#c8a84b" stroke="#0a0907" stroke-width="1"/>
+          <circle cx="150" cy="224" r="4"   fill="#4a7c59" stroke="#0a0907" stroke-width="1"/>
+          <circle cx="352" cy="220" r="4"   fill="#4a7c59" stroke="#0a0907" stroke-width="1"/>
+          <!-- pulsing highlighted pins -->
+          <g class="hm-map-ping" transform="translate(176,150)">
+            <circle class="hm-map-ping-ring" r="11" fill="none" stroke="#c8a84b" stroke-width="1.5"/>
+            <circle r="6.5" fill="#c8a84b" stroke="#fff" stroke-width="1.6"/>
+          </g>
+          <g class="hm-map-ping hm-map-ping-2" transform="translate(322,138)">
+            <circle class="hm-map-ping-ring" r="11" fill="none" stroke="#c8a84b" stroke-width="1.5"/>
+            <circle r="6.5" fill="#c8a84b" stroke="#fff" stroke-width="1.6"/>
+          </g>
+        </svg>
+      </div>
+      <div class="hm-map-body">
+        <span class="hm-map-eyebrow mono">◈ {COPY.map_eyebrow}</span>
+        <h2 class="hm-map-h" id="hm-map-h">{COPY.map_h}</h2>
+        <p class="hm-map-lede">{COPY.map_lede}</p>
+        <div class="hm-map-stats">
+          <span class="hm-map-stat"><b>39</b> {COPY.map_s1}</span>
+          <span class="hm-map-stat"><b>14</b> {COPY.map_s2}</span>
+          <span class="hm-map-stat"><b>6</b> {COPY.map_s3}</span>
+        </div>
+        <span class="hm-map-cta mono">{COPY.map_cta} <span class="hm-map-arrow" aria-hidden="true">→</span></span>
+      </div>
+    </a>
   </section>
 
   <!-- ============================================

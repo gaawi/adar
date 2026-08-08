@@ -50,13 +50,6 @@ WORDPRESS: Editor → Text (no Visual) → pega todo → Update
 <div class="amp-map-wrap">
 <p class="amp-section-label">ADAR Territory</p>
 
-<!-- STATS — mismo ancho que el mapa -->
-<div class="amp-stats">
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="39">39</span><span class="amp-stat-l">Activities</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">14</span><span class="amp-stat-l">Municipalities</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="6">6</span><span class="amp-stat-l">Editions</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">2021</span><span class="amp-stat-l">Since</span></div>
-</div>
 <div class="amp-filters">
 <button class="amp-filter-btn active" data-year="all">All years</button>
 <button class="amp-filter-btn" data-year="2026">2026</button>
@@ -76,6 +69,13 @@ WORDPRESS: Editor → Text (no Visual) → pega todo → Update
 <div class="amp-legend-item"><div class="amp-leg-badge">N</div>Number of actions</div>
 </div>
 <p class="amp-map-hint">Click on each marker</p>
+</div>
+<!-- STATS — mismo ancho que el mapa -->
+<div class="amp-stats">
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="39">39</span><span class="amp-stat-l">Activities</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">14</span><span class="amp-stat-l">Municipalities</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="6">6</span><span class="amp-stat-l">Editions</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">2021</span><span class="amp-stat-l">Since</span></div>
 </div>
 </div>
 

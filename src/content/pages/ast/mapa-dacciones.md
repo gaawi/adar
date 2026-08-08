@@ -45,13 +45,6 @@ translation_group: "pll_69b06583421f1"
 <div class="amp-map-wrap">
 <p class="amp-section-label">Territoriu ADAR</p>
 
-<!-- STATS — mismo ancho que el mapa -->
-<div class="amp-stats">
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="39">39</span><span class="amp-stat-l">Actividaes</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">14</span><span class="amp-stat-l">Conceyos</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="6">6</span><span class="amp-stat-l">Ediciones</span></div>
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">2021</span><span class="amp-stat-l">Dende</span></div>
-</div>
 <div class="amp-filters">
 <button class="amp-filter-btn active" data-year="all">Tolos años</button>
 <button class="amp-filter-btn" data-year="2026">2026</button>
@@ -71,6 +64,13 @@ translation_group: "pll_69b06583421f1"
 <div class="amp-legend-item"><div class="amp-leg-badge">N</div>Númberu d’acciones</div>
 </div>
 <p class="amp-map-hint">Fai clic en cada marcador</p>
+</div>
+<!-- STATS — mismo ancho que el mapa -->
+<div class="amp-stats">
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="39">39</span><span class="amp-stat-l">Actividaes</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">14</span><span class="amp-stat-l">Conceyos</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="6">6</span><span class="amp-stat-l">Ediciones</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">2021</span><span class="amp-stat-l">Dende</span></div>
 </div>
 </div>
 
