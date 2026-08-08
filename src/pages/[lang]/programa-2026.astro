@@ -1038,6 +1038,9 @@ const POSTER_BG = '/posters/adar-2026.png';
                 {e.time
                   ? <span class="vi26-aside-when-time mono">{e.time}{e.time.includes('—') ? '' : 'h'}</span>
                   : e.timeTbc && <span class="vi26-aside-when-time mono">{LBL.timeTbc}</span>}
+                {e.postponed && !e.cancelled && (
+                  <span class="vi26-aside-when-postponed mono">↻ {COPY.postponed_note}</span>
+                )}
               </div>
 
               <!-- DÓNDE -->
