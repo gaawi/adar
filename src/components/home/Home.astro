@@ -467,8 +467,14 @@ function eventStartISO(dateStr: string, timeStr: string): string {
   const tm = (timeStr.match(/\d{1,2}:\d{2}/) || ['20:30'])[0];
   return `2026-08-${day}T${tm}:00+02:00`;
 }
+// First day (yyyy-mm-dd) — para casar "hoy" en eventos de varios días.
+function eventFirstDay(dateStr: string): string {
+  const days = (dateStr.match(/\d+/g) || ['1']).map(Number);
+  return `2026-08-${String(days[0]).padStart(2, '0')}`;
+}
 const ADAR26 = ADAR26_ROWS.map((r) => ({
-  n: r.n, date: r.date, time: r.time, photo: r.photo, start: eventStartISO(r.date, r.time),
+  n: r.n, date: r.date, time: r.time, photo: r.photo,
+  start: eventStartISO(r.date, r.time), firstday: eventFirstDay(r.date),
   dow: r.dow[lang], title: r.title[lang], venue: r.venue[lang], muni: r.muni[lang],
   cancelled: r.cancelled === true,
 }));
@@ -688,7 +694,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
           <p class="hm-adar26-ix-label mono">{ADAR26_COPY.ix_label}</p>
           <ol class="hm-adar26-list">
             {ADAR26.map((e) => (
-              <li class:list={['hm-adar26-row', e.cancelled && 'is-cancelled']} data-start={e.start}>
+              <li class:list={['hm-adar26-row', e.cancelled && 'is-cancelled']} data-start={e.start} data-firstday={e.firstday}>
                 <a class="hm-adar26-link" href={`${ADAR26_HREF}#event-${e.n}`}>
                   <span class="hm-adar26-thumb">
                     <img src={e.photo} alt="" loading="lazy" />
@@ -1017,7 +1023,9 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
       var todayES = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Madrid' });
       var todayRow = null;
       document.querySelectorAll('.hm-adar26-row[data-start]').forEach(function (li) {
-        if ((li.getAttribute('data-start') || '').slice(0, 10) === todayES) todayRow = li;
+        var lastDay = (li.getAttribute('data-start') || '').slice(0, 10);
+        var firstDay = li.getAttribute('data-firstday') || lastDay;
+        if (todayES >= firstDay && todayES <= lastDay) todayRow = li;
       });
       if (todayRow && !todayRow.classList.contains('is-cancelled')) {
         var q = function (sel) { var e = todayRow.querySelector(sel); return e ? e.textContent.trim() : ''; };

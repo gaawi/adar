@@ -64,6 +64,8 @@ const COPY = {
     recap_photos: 'Fotos',
     recap_instagram: 'Ver en Instagram',
     recap_page: 'Ver página',
+    echoes_cta: 'Abrir el recorrido en Echoes',
+    echoes_note: 'Recorrido autoguiado y gratuito. Trae auriculares y descarga la app Echoes (echoes.xyz). Punto de encuentro: el árbol junto a la iglesia de Leiguarda.',
     rest: 'DESCANSO',
     rest_sub: 'Día sin programa público.',
     tbc: 'POR CONFIRMAR',
@@ -151,6 +153,8 @@ const COPY = {
     recap_photos: 'Photos',
     recap_instagram: 'View on Instagram',
     recap_page: 'View page',
+    echoes_cta: 'Open the walk in Echoes',
+    echoes_note: 'Free, self-guided sound walk. Bring headphones and download the Echoes app (echoes.xyz). Meeting point: the tree by the church in Leiguarda.',
     rest: 'REST',
     rest_sub: 'No public programme.',
     tbc: 'TBC',
@@ -238,6 +242,8 @@ const COPY = {
     recap_photos: 'Semeyes',
     recap_instagram: 'Ver n’Instagram',
     recap_page: 'Ver páxina',
+    echoes_cta: 'Abrir el recorríu n’Echoes',
+    echoes_note: 'Recorríu autoguiáu y de baldre. Trai auriculares y descarga la app Echoes (echoes.xyz). Puntu d’alcuentru: l’árbol xunto a la ilesia de Lleiguarda.',
     rest: 'DESCANSU',
     rest_sub: 'Día ensin programa públicu.',
     tbc: 'POR CONFIRMAR',
@@ -320,6 +326,7 @@ interface Event {
   ticketStatus?: 'soldout' | 'few';
   tbc?: boolean;
   cancelled?: boolean;
+  echoes?: string;
 }
 
 const EVENTS: Event[] = [
@@ -446,6 +453,7 @@ const EVENTS: Event[] = [
     n: '05', date: '08', dow: 'Sábado–Domingo', fullDate: '8 — 9 AGO',
     time: '19:00 — 22:00',
     capacity: 40,
+    echoes: 'https://explore.echoes.xyz/collections/TRnLtJKk33kWxX1Q',
     title: 'Intervención site-specific · Colectivo Menhir',
     subtitle: 'Instalación artística abierta · Dos jornadas · Creación site-specific',
     description: 'Menhir es un colectivo de arte y música que crea piezas de arte sonoro site-specific. Para ADAR 2026 firman un recorrido sonoro geolocalizado por Leiguarda: a lo largo del trayecto, quien lo camine escuchará elementos sonoros, fragmentos musicales y palabras que van apareciendo según la ubicación. Puede hacerse en solitario o en grupo, y estará disponible en cualquier momento durante las dos jornadas — la ruta pasa a formar parte del paisaje inmaterial del pueblo.',
@@ -1016,6 +1024,10 @@ const POSTER_BG = '/posters/adar-2026.png';
               <div class="vi26-event-cta">
                 {e.cancelled ? (
                   <span class="vi26-rsvp is-cancelled">✕ {COPY.cancel_label}</span>
+                ) : e.echoes ? (
+                  <a class="vi26-rsvp" href={e.echoes} target="_blank" rel="noopener">
+                    <span class="vi26-arr">▶</span> {COPY.echoes_cta}
+                  </a>
                 ) : e.ticketStatus === 'soldout' ? (
                   <span class="vi26-rsvp is-soldout">{COPY.sold_out}</span>
                 ) : e.eventbrite ? (
@@ -1043,7 +1055,7 @@ const POSTER_BG = '/posters/adar-2026.png';
                     </div>
                   </div>
                 )}
-                <p class="vi26-rsvp-note mono">{e.cancelled ? COPY.cancel_note : COPY.free_note}</p>
+                <p class="vi26-rsvp-note mono">{e.cancelled ? COPY.cancel_note : e.echoes ? COPY.echoes_note : COPY.free_note}</p>
               </div>
             </div>
           </li>
