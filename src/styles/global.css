@@ -11790,6 +11790,12 @@ body.page .entry-content .vi26 p,
   font-style: italic;
 }
 .vi26-program-note-standalone { margin-top: 14px !important; }
+/* Recorrido sonoro por estaciones (evento site-specific, p. ej. Menhir) */
+.vi26-walk { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 12px; }
+.vi26-walk li { display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: baseline; }
+.vi26-walk-n { color: var(--accent-ink); font-weight: 700; font-size: 12px; opacity: 0.65; }
+.vi26-walk-t { font-size: 14px; line-height: 1.6; color: rgba(10,9,7,0.82); }
+.vi26-walk-t strong { color: #0a0907; }
 .vi26-program-total {
   font-size: 10px;
   letter-spacing: 0.2em;

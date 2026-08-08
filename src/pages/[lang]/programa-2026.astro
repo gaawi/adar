@@ -66,6 +66,7 @@ const COPY = {
     recap_page: 'Ver página',
     echoes_cta: 'Abrir el recorrido en Echoes',
     echoes_note: 'Recorrido autoguiado y gratuito. Trae auriculares y descarga la app Echoes (echoes.xyz). Punto de encuentro: el árbol junto a la iglesia de Leiguarda.',
+    walk_h: 'El recorrido',
     rest: 'DESCANSO',
     rest_sub: 'Día sin programa público.',
     tbc: 'POR CONFIRMAR',
@@ -155,6 +156,7 @@ const COPY = {
     recap_page: 'View page',
     echoes_cta: 'Open the walk in Echoes',
     echoes_note: 'Free, self-guided sound walk. Bring headphones and download the Echoes app (echoes.xyz). Meeting point: the tree by the church in Leiguarda.',
+    walk_h: 'The walk',
     rest: 'REST',
     rest_sub: 'No public programme.',
     tbc: 'TBC',
@@ -244,6 +246,7 @@ const COPY = {
     recap_page: 'Ver páxina',
     echoes_cta: 'Abrir el recorríu n’Echoes',
     echoes_note: 'Recorríu autoguiáu y de baldre. Trai auriculares y descarga la app Echoes (echoes.xyz). Puntu d’alcuentru: l’árbol xunto a la ilesia de Lleiguarda.',
+    walk_h: 'El recorríu',
     rest: 'DESCANSU',
     rest_sub: 'Día ensin programa públicu.',
     tbc: 'POR CONFIRMAR',
@@ -327,6 +330,7 @@ interface Event {
   tbc?: boolean;
   cancelled?: boolean;
   echoes?: string;
+  walk?: { n: string; title: string; text?: string }[];
 }
 
 const EVENTS: Event[] = [
@@ -457,8 +461,18 @@ const EVENTS: Event[] = [
     title: 'Intervención site-specific · Colectivo Menhir',
     subtitle: 'Instalación artística abierta · Dos jornadas · Creación site-specific',
     description: 'Menhir es un colectivo de arte y música que crea piezas de arte sonoro site-specific. Para ADAR 2026 firman un recorrido sonoro geolocalizado por Leiguarda: a lo largo del trayecto, quien lo camine escuchará elementos sonoros, fragmentos musicales y palabras que van apareciendo según la ubicación. Puede hacerse en solitario o en grupo, y estará disponible en cualquier momento durante las dos jornadas — la ruta pasa a formar parte del paisaje inmaterial del pueblo.',
-    programNote: 'Dos días de intervención en el palomar de Leiguarda. Recorridos distintos cada jornada, obras originales, arreglos e improvisación.',
+    programNote: 'Claros de Cueva · recorrido sonoro geolocalizado e instalación. Empieza en la iglesia de Leiguarda y termina en el Palomar; un diálogo con «Claros del bosque» de María Zambrano.',
     pieces: [],
+    walk: [
+      { n: '1', title: 'Intro', text: 'A tu lado tienes el cementerio. Al otro lado, también hay una montaña, quizás una nube. Aquí el horizonte crece a lo alto. Y los hombres se siembran en la tierra.' },
+      { n: '2', title: 'Nana popular asturiana', text: 'Les tus cabres Xuan, por el monte van, la tu cabra negra ye la delantera, collarín de plata collarín de seda, toca la xiblata y vete a cortexar.' },
+      { n: '3', title: 'Salir del ruido', text: '«El claro del bosque es un centro en el que no siempre es posible entrar; desde la linde se le mira. […] No hay que buscarlo. No hay que buscar. […] para no ser devorado por la nada o por el vacío haya que hacerlos en uno mismo, haya a lo menos que detenerse, quedar en suspenso.» María Zambrano.' },
+      { n: '4', title: 'Entrar en trance' },
+      { n: '5', title: 'Umbral', text: 'Vislumbrar el sitio. El punto desde el que ver sin mirar. Dónde te encuentras. Dónde no te escondes.' },
+      { n: '6', title: 'Morir-renacer' },
+      { n: '7', title: 'Texto final', text: '«Y aparece luego en el claro del bosque, en el escondido y en el asequible […] el temblor del espejo. La visión adecuada al mirar despierto y dormido a la par. […] Ligeramente se curva la luz arrastrando consigo al tiempo.» María Zambrano.' },
+      { n: '8', title: 'Palomar', text: 'Claro de cueva.' },
+    ],
     venue: 'Palomar de Leiguarda',
     address: 'Palomar de Leiguarda · 33840 Belmonte de Miranda',
     mapUrl: 'https://maps.app.goo.gl/EPxFASazLDi5FekL8',
@@ -963,6 +977,20 @@ const POSTER_BG = '/posters/adar-2026.png';
 
               {e.pieces.length > 0 && programNote && (
                 <p class="vi26-program-note vi26-program-note-standalone">{programNote}</p>
+              )}
+
+              {e.walk && (
+                <div class="vi26-program-wrap">
+                  <p class="vi26-block-label mono">{COPY.walk_h}</p>
+                  <ol class="vi26-walk">
+                    {e.walk.map((s) => (
+                      <li>
+                        <span class="vi26-walk-n mono">{s.n}</span>
+                        <span class="vi26-walk-t"><strong>{s.title}</strong>{s.text ? ` — ${s.text}` : ''}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </div>
               )}
 
               <div class="vi26-artists-wrap">
