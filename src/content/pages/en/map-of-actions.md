@@ -27,6 +27,7 @@ WORDPRESS: Editor → Text (no Visual) → pega todo → Update
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/vendor/leaflet/leaflet.css"/>
+<link rel="stylesheet" href="/vendor/leaflet/MarkerCluster.css"/>
 
 
 
@@ -81,6 +82,7 @@ WORDPRESS: Editor → Text (no Visual) → pega todo → Update
 </div>
 
 <script src="/vendor/leaflet/leaflet.js"></script>
+<script src="/vendor/leaflet/leaflet.markercluster.js"></script>
 <script>
 (function(){
 
@@ -209,33 +211,57 @@ return '<div class="amp-popup-inner">'+
 '</div>';
 }
 
-/* MARKERS */
+/* MARKERS + AGRUPACIÓN (clustering) */
 var currentYear = 'all';
 var markerObjects = [];
-concejos.forEach(function(c,i){
+
+/* Icono del pin, con el nº de acciones del año filtrado */
+function makeIcon(c, i){
+var count = (currentYear==='all') ? c.activities.length : c.activities.filter(function(a){return a.year===currentYear;}).length;
 var el = document.createElement('div');
 el.className='adar-pin';
-el.innerHTML='<div class="adar-ring" style="animation-delay:'+(i*0.28)+'s"><div class="adar-dot"></div></div><div class="adar-badge">'+c.activities.length+'</div>';
-var icon = L.divIcon({html:el.outerHTML,className:'',iconSize:[38,38],iconAnchor:[19,19],popupAnchor:[0,-24]});
+el.innerHTML='<div class="adar-ring" style="animation-delay:'+(i*0.28)+'s"><div class="adar-dot"></div></div><div class="adar-badge">'+count+'</div>';
+return L.divIcon({html:el.outerHTML,className:'',iconSize:[38,38],iconAnchor:[19,19],popupAnchor:[0,-24]});
+}
+
+/* Grupo de clúster: agrupa sedes cercanas y las separa al ampliar */
+var clusterGroup = (typeof L.markerClusterGroup === 'function') ? L.markerClusterGroup({
+showCoverageOnHover:false,
+spiderfyOnMaxZoom:true,
+maxClusterRadius:48,
+iconCreateFunction:function(cluster){
+return L.divIcon({html:'<div class="adar-cluster">'+cluster.getChildCount()+'</div>',className:'',iconSize:L.point(46,46)});
+}
+}) : null;
+
+concejos.forEach(function(c,i){
 var popup = L.popup({className:'adar-popup',closeButton:true,maxWidth:330,offset:L.point(0,-6),autoPanPadding:L.point(28,28)});
-var marker = L.marker([c.lat,c.lng],{icon:icon}).addTo(map);
-var refresh = function(){
-var yr = currentYear;
-var html = buildPopup(c, yr);
-var markerEl = marker.getElement();
-if(html){
-popup.setContent(html);
-marker.bindPopup(popup);
-if(markerEl) markerEl.style.opacity = '1';
-} else {
-marker.unbindPopup();
-map.closePopup();
-if(markerEl) markerEl.style.opacity = '0.2';
-}
-}
-refresh();
-markerObjects.push({marker:marker,concejo:c,refresh:refresh});
+var marker = L.marker([c.lat,c.lng],{icon:makeIcon(c,i)});
+markerObjects.push({marker:marker,concejo:c,popup:popup,i:i});
 });
+
+/* Muestra solo las sedes con acciones en el año filtrado; recalcula clústeres */
+function refreshAll(){
+if(clusterGroup) clusterGroup.clearLayers();
+var shown=[];
+markerObjects.forEach(function(m){
+if(!clusterGroup) map.removeLayer(m.marker);
+var html = buildPopup(m.concejo, currentYear);
+if(html){
+m.marker.setIcon(makeIcon(m.concejo, m.i));
+m.popup.setContent(html);
+m.marker.bindPopup(m.popup);
+shown.push(m.marker);
+} else {
+m.marker.unbindPopup();
+}
+});
+if(clusterGroup) clusterGroup.addLayers(shown);
+else shown.forEach(function(mk){ mk.addTo(map); });
+}
+
+if(clusterGroup) map.addLayer(clusterGroup);
+refreshAll();
 
 /* FILTERS — event delegation en el contenedor, compatible con WordPress */
 function initFilters(){
@@ -247,7 +273,7 @@ if(!btn) return;
 document.querySelectorAll('.amp-filter-btn').forEach(function(b){ b.classList.remove('active'); });
 btn.classList.add('active');
 currentYear = btn.getAttribute('data-year') || 'all';
-markerObjects.forEach(function(m){ m.refresh(); });
+refreshAll();
 map.closePopup();
 });
 }

@@ -4191,6 +4191,17 @@ div#comments{ display: none; }
   font-family: 'work Sans', sans-serif;
   box-shadow: 0 1px 4px rgba(0,0,0,.18);
 }
+/* Círculo de agrupación (clustering): varias sedes cercanas en un solo marcador */
+.adar-cluster {
+  width: 46px; height: 46px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(circle at 32% 28%, #d8bb62, #c8a84b);
+  border: 2px solid #fff; color: #2a2410;
+  font-family: 'Work Sans', sans-serif; font-weight: 700; font-size: 15px;
+  box-shadow: 0 3px 12px rgba(0,0,0,.28), 0 0 0 6px rgba(200,168,75,.18);
+  cursor: pointer; transition: transform .18s ease;
+}
+.leaflet-marker-icon:hover .adar-cluster { transform: scale(1.08); }
 @keyframes adarPulse {
   0%,100% { box-shadow: 0 2px 8px rgba(0,0,0,.13), 0 0 0 0 rgba(200,168,75,.28); }
   55%      { box-shadow: 0 2px 8px rgba(0,0,0,.13), 0 0 0 11px rgba(200,168,75,0); }
