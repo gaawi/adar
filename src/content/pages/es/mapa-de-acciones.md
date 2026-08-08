@@ -50,7 +50,7 @@ WORDPRESS: Editor → Text (no Visual) → pega todo → Update
 
 <!-- STATS — mismo ancho que el mapa -->
 <div class="amp-stats">
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="38">38</span><span class="amp-stat-l">Actividades</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="39">39</span><span class="amp-stat-l">Actividades</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">14</span><span class="amp-stat-l">Concejos</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="6">6</span><span class="amp-stat-l">Ediciones</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">2021</span><span class="amp-stat-l">Desde</span></div>
@@ -87,6 +87,7 @@ var CDN = 'https://creartbox-media-cdn.b-cdn.net/adarimages/';
 
 var concejos = [
 { name:'Belmonte de Miranda', lat:43.2185, lng:-6.2020, activities:[
+{ year:'2026', title:'Umbral Zero (Aula del Oro)', url:'/es/umbral-zero-aula-del-oro/', img:'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/07.08.26_Aula%20del%20oro_Fotos/07.08.26_Aula%20del%20oro_Fotos_1.jpg' },
 { year:'2025', title:'Evento de Clausura: Concierto y Espicha en Leiguarda',          url:'/es/134/',                                                                                          img:CDN+'adar25fx30/DSC01841.jpg' },
 { year:'2025', title:'Recital de Andrea Casarrubios en la Iglesia de Leiguarda',      url:'/es/recital-de-andrea-casarrubios-en-la-iglesia-de-leiguarda/',                                    img:CDN+'adar25fx30/DSC01590.jpg' },
 { year:'2025', title:'Paseo Sonoro en Leiguarda',                                      url:'/es/paseo-sonoro-en-leiguarda/',                                                                    img:CDN+'ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg' },

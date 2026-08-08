@@ -26,4 +26,8 @@ export const RECAPS: Record<string, Recap> = {
     page: 'la-forma-de-la-memoria-parador-de-corias',
     instagram: 'https://www.instagram.com/reel/DbvDkAEoQrP/',
   },
+  // 04 · Umbral Zero (Aula del Oro, Belmonte de Miranda)
+  '04': {
+    page: 'umbral-zero-aula-del-oro',
+  },
 };

@@ -46,7 +46,7 @@ translation_group: "pll_69b06583421f1"
 
 <!-- STATS — mismo ancho que el mapa -->
 <div class="amp-stats">
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="38">38</span><span class="amp-stat-l">Actividaes</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="39">39</span><span class="amp-stat-l">Actividaes</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">14</span><span class="amp-stat-l">Conceyos</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="6">6</span><span class="amp-stat-l">Ediciones</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">2021</span><span class="amp-stat-l">Dende</span></div>
@@ -83,6 +83,7 @@ var CDN = 'https://creartbox-media-cdn.b-cdn.net/adarimages/';
 
 var concejos = [
 { name:'Balmonte de Miranda', lat:43.2185, lng:-6.2020, activities:[
+{ year:'2026', title:'Umbral Zero (Aula del Oro)', url:'/ast/umbral-zero-aula-del-oro/', img:'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/07.08.26_Aula%20del%20oro_Fotos/07.08.26_Aula%20del%20oro_Fotos_1.jpg' },
 { year:'2025', title:'Eventu de Clausura: Conciertu y Espicha en Lleiguarda',         url:'/ast/eventu-clausura-lleiguarda-conciertu-espicha-2025/',    img:CDN+'adar25fx30/DSC01841.jpg' },
 { year:'2025', title:"Recital d'Andrea Casarrubios na Ilesia de Lleiguarda",          url:'/ast/recital-andrea-casarrubios-ilesia-lleiguarda-2025/',    img:CDN+'adar25fx30/DSC01590.jpg' },
 { year:'2025', title:'Paseu Sonoru en Lleiguarda',                                     url:'/ast/paseu-sonoru-lleiguarda-2025/',                          img:CDN+'ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg' },

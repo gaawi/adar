@@ -51,7 +51,7 @@ WORDPRESS: Editor → Text (no Visual) → pega todo → Update
 
 <!-- STATS — mismo ancho que el mapa -->
 <div class="amp-stats">
-<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="38">38</span><span class="amp-stat-l">Activities</span></div>
+<div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="39">39</span><span class="amp-stat-l">Activities</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="14">14</span><span class="amp-stat-l">Municipalities</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="6">6</span><span class="amp-stat-l">Editions</span></div>
 <div class="amp-stat"><span class="amp-stat-n amp-counter" data-target="2021">2021</span><span class="amp-stat-l">Since</span></div>
@@ -88,6 +88,7 @@ var CDN = 'https://creartbox-media-cdn.b-cdn.net/adarimages/';
 
 var concejos = [
 { name:'Belmonte de Miranda', lat:43.2185, lng:-6.2020, activities:[
+{ year:'2026', title:'Umbral Zero (Aula del Oro)', url:'/en/umbral-zero-aula-del-oro/', img:'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/07.08.26_Aula%20del%20oro_Fotos/07.08.26_Aula%20del%20oro_Fotos_1.jpg' },
 { year:'2025', title:'Closing Event in Leiguarda: Concert and Cider Tasting',          url:'/en/closing-event-leiguarda-concert-cider-2025/',             img:CDN+'adar25fx30/DSC01841.jpg' },
 { year:'2025', title:'Recital by Andrea Casarrubios at the Church of Leiguarda',       url:'/en/recital-andrea-casarrubios-church-leiguarda-2025/',       img:CDN+'adar25fx30/DSC01590.jpg' },
 { year:'2025', title:'Sound Walk in Leiguarda',                                         url:'/en/sound-walk-leiguarda-2025/',                               img:CDN+'ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg' },
