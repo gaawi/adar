@@ -426,7 +426,8 @@ const ADAR26_ROWS = [
     dow: { es: 'Sáb–Dom', en: 'Sat–Sun', ast: 'Sáb–Dom' },
     title: { es: 'Intervención site-specific · Colectivo Menhir', en: 'Site-specific intervention · Menhir collective', ast: 'Intervención site-specific · Coleutivu Menhir' },
     venue: { es: 'Palomar de Leiguarda', en: 'Dovecote of Leiguarda', ast: 'Palombar de Lleiguarda' },
-    muni:  { es: 'Belmonte de Miranda', en: 'Belmonte de Miranda', ast: 'Belmonte de Miranda' } },
+    muni:  { es: 'Belmonte de Miranda', en: 'Belmonte de Miranda', ast: 'Belmonte de Miranda' },
+    postponed: true },
   { n: '06', date: '11 ago', time: '20:30', photo: 'https://images.squarespace-cdn.com/content/v1/6447d97edb0dde0915a32018/211dc9d7-c145-4100-9044-173346a1968d/DSC_6964.jpg?format=2500w',
     dow: { es: 'Mar', en: 'Tue', ast: 'Mar' },
     title: { es: 'The Rest is Silence · ADAR en ruta', en: 'The Rest is Silence · ADAR on tour', ast: 'The Rest is Silence · ADAR en ruta' },
@@ -476,7 +477,7 @@ const ADAR26 = ADAR26_ROWS.map((r) => ({
   n: r.n, date: r.date, time: r.time, photo: r.photo,
   start: eventStartISO(r.date, r.time), firstday: eventFirstDay(r.date),
   dow: r.dow[lang], title: r.title[lang], venue: r.venue[lang], muni: r.muni[lang],
-  cancelled: r.cancelled === true,
+  cancelled: r.cancelled === true, postponed: r.postponed === true,
 }));
 
 const ADAR26_HREF = `/${lang}/programa-2026/`;
@@ -506,6 +507,8 @@ const ADAR26_COPY = {
     lived_short: 'Cómo se vivió en redes',
     cancel_label: 'Cancelado',
     cancel_note: 'Coordinado con el Ayuntamiento de Llanes · cancelado por el luto oficial en el concejo',
+    postponed_label: 'Pospuesto',
+    postponed_note: 'Pospuesto por alerta de tormenta · disponible el 12 y 15 de agosto, sin nueva reserva',
     recap_reel: 'Ver el reel',
     recap_page: 'Ver página',
     recap_instagram: 'Ver en Instagram',
@@ -531,6 +534,8 @@ const ADAR26_COPY = {
     lived_short: 'How it was lived',
     cancel_label: 'Cancelled',
     cancel_note: 'In coordination with Llanes Town Council · cancelled due to the official mourning in the municipality',
+    postponed_label: 'Postponed',
+    postponed_note: 'Postponed due to storm warning · available on 12 & 15 August, no new booking',
     recap_reel: 'Watch the reel',
     recap_page: 'View page',
     recap_instagram: 'View on Instagram',
@@ -556,6 +561,8 @@ const ADAR26_COPY = {
     lived_short: 'Cómo se vivió en redes',
     cancel_label: 'Canceláu',
     cancel_note: 'En coordinación col Ayuntamientu de Llanes · canceláu pol lutu oficial nel conceyu',
+    postponed_label: 'Pospuestu',
+    postponed_note: 'Pospuestu por alerta de tormenta · disponible el 12 y 15 d’agostu, ensin nueva reserva',
     recap_reel: 'Ver el reel',
     recap_page: 'Ver páxina',
     recap_instagram: 'Ver n’Instagram',
@@ -694,7 +701,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
           <p class="hm-adar26-ix-label mono">{ADAR26_COPY.ix_label}</p>
           <ol class="hm-adar26-list">
             {ADAR26.map((e) => (
-              <li class:list={['hm-adar26-row', e.cancelled && 'is-cancelled']} data-start={e.start} data-firstday={e.firstday}>
+              <li class:list={['hm-adar26-row', e.cancelled && 'is-cancelled', e.postponed && 'is-postponed']} data-start={e.start} data-firstday={e.firstday}>
                 <a class="hm-adar26-link" href={`${ADAR26_HREF}#event-${e.n}`}>
                   <span class="hm-adar26-thumb">
                     <img src={e.photo} alt="" loading="lazy" />
@@ -711,11 +718,15 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                     <span class="hm-adar26-venue mono">{e.venue}</span>
                     {e.cancelled
                       ? <span class="hm-adar26-cancel-badge mono">✕ {ADAR26_COPY.cancel_label}</span>
+                      : e.postponed
+                      ? <span class="hm-adar26-cancel-badge is-postponed mono">↻ {ADAR26_COPY.postponed_label}</span>
                       : <span class="hm-adar26-past-badge mono" aria-hidden="true">✓ {ADAR26_COPY.past_label}</span>}
                   </span>
                 </a>
                 {e.cancelled ? (
                   <span class="hm-adar26-cancel-note mono">{ADAR26_COPY.cancel_note}</span>
+                ) : e.postponed ? (
+                  <span class="hm-adar26-cancel-note is-postponed mono">{ADAR26_COPY.postponed_note}</span>
                 ) : (
                   <span class="hm-adar26-row-actions">
                     {RECAPS[e.n]?.page && (
@@ -1010,7 +1021,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
   (function () {
     var now = Date.now();
     document.querySelectorAll('.hm-adar26-row[data-start]').forEach(function (li) {
-      if (li.classList.contains('is-cancelled')) return;
+      if (li.classList.contains('is-cancelled') || li.classList.contains('is-postponed')) return;
       var t = Date.parse(li.getAttribute('data-start'));
       if (!isNaN(t) && now >= t) li.classList.add('is-past');
     });
@@ -1027,7 +1038,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
         var firstDay = li.getAttribute('data-firstday') || lastDay;
         if (todayES >= firstDay && todayES <= lastDay) todayRow = li;
       });
-      if (todayRow && !todayRow.classList.contains('is-cancelled')) {
+      if (todayRow && !todayRow.classList.contains('is-cancelled') && !todayRow.classList.contains('is-postponed')) {
         var q = function (sel) { var e = todayRow.querySelector(sel); return e ? e.textContent.trim() : ''; };
         var set = function (sel, val) { var e = card.querySelector(sel); if (e) e.textContent = val; };
         set('[data-today-when]', [q('.hm-adar26-dow'), q('.hm-adar26-date'), q('.hm-adar26-time')].filter(Boolean).join(' · '));

@@ -59,6 +59,8 @@ const COPY = {
     dl_hint: 'Guárdalo en PDF y compártelo por WhatsApp',
     cancel_label: 'Cancelado',
     cancel_note: 'Este concierto, organizado en coordinación con el Ayuntamiento de Llanes, queda cancelado por el luto oficial declarado en el concejo.',
+    postponed_label: 'Pospuesto',
+    postponed_note: 'Pospuesto por la alerta de tormenta. Podrás vivir el recorrido los días 12 y 15 de agosto, coincidiendo con otras actividades del festival en Leiguarda; esos días habrá personal para recibirte. No necesitas nueva reserva: ven cualquiera de los dos días y hazlo a tu ritmo.',
     recap_reel: 'Ver el reel',
     recap_video: 'Vídeo en YouTube',
     recap_photos: 'Fotos',
@@ -149,6 +151,8 @@ const COPY = {
     dl_hint: 'Save it as a PDF and share it on WhatsApp',
     cancel_label: 'Cancelled',
     cancel_note: 'This concert, organised in coordination with the Ayuntamiento de Llanes (Llanes Town Council), has been cancelled owing to the official mourning declared in the municipality.',
+    postponed_label: 'Postponed',
+    postponed_note: 'Postponed due to the storm warning. You will be able to experience the walk on 12 and 15 August, alongside other festival activities in Leiguarda; on those days there will be staff to welcome you. No new booking needed: come on either day and do it at your own pace.',
     recap_reel: 'Watch the reel',
     recap_video: 'Video on YouTube',
     recap_photos: 'Photos',
@@ -239,6 +243,8 @@ const COPY = {
     dl_hint: 'Guárdalu en PDF y compártilu por WhatsApp',
     cancel_label: 'Canceláu',
     cancel_note: 'Esti conciertu, entamáu en coordinación col Ayuntamientu de Llanes, queda canceláu pol lutu oficial declaráu nel conceyu.',
+    postponed_label: 'Pospuestu',
+    postponed_note: 'Pospuestu pola alerta de tormenta. Podrás vivir el recorríu los díes 12 y 15 d’agostu, coincidiendo con otres actividaes del festival en Lleiguarda; esos díes habrá personal pa recibite. Nun necesites nueva reserva: ven cualquiera de los dos díes y failo al to ritmu.',
     recap_reel: 'Ver el reel',
     recap_video: 'Vídeu en YouTube',
     recap_photos: 'Semeyes',
@@ -329,6 +335,7 @@ interface Event {
   ticketStatus?: 'soldout' | 'few';
   tbc?: boolean;
   cancelled?: boolean;
+  postponed?: boolean;
   echoes?: string;
   walk?: { n: string; title: string; text?: string }[];
 }
@@ -457,6 +464,7 @@ const EVENTS: Event[] = [
     n: '05', date: '08', dow: 'Sábado–Domingo', fullDate: '8 — 9 AGO',
     time: '19:00 — 22:00',
     capacity: 40,
+    postponed: true,
     echoes: 'https://explore.echoes.xyz/collections/TRnLtJKk33kWxX1Q',
     title: 'Intervención site-specific · Colectivo Menhir',
     subtitle: 'Instalación artística abierta · Dos jornadas · Creación site-specific',
@@ -929,7 +937,7 @@ const POSTER_BG = '/posters/adar-2026.png';
         const isLongProgram = e.pieces.length > 8;
         const recap = RECAPS[e.n];
         return (
-          <li class:list={['vi26-event', e.cancelled && 'is-cancelled']} id={`event-${e.n}`} data-start={eventStartISO(e.fullDate, e.time)}>
+          <li class:list={['vi26-event', e.cancelled && 'is-cancelled', e.postponed && 'is-postponed']} id={`event-${e.n}`} data-start={eventStartISO(e.fullDate, e.time)}>
             {e.photo ? (
               <figure class="vi26-cover">
                 <img src={e.photo} alt={e.venue} loading="lazy" />
@@ -945,6 +953,12 @@ const POSTER_BG = '/posters/adar-2026.png';
                 <p class="vi26-cancel-banner" role="alert">
                   <span class="vi26-cancel-tag mono">✕ {COPY.cancel_label}</span>
                   <span class="vi26-cancel-text">{COPY.cancel_note}</span>
+                </p>
+              )}
+              {e.postponed && !e.cancelled && (
+                <p class="vi26-cancel-banner is-postponed" role="alert">
+                  <span class="vi26-cancel-tag mono">↻ {COPY.postponed_label}</span>
+                  <span class="vi26-cancel-text">{COPY.postponed_note}</span>
                 </p>
               )}
               <p class="vi26-event-muni">
@@ -1148,7 +1162,7 @@ const POSTER_BG = '/posters/adar-2026.png';
               <td>—</td>
             </tr>
           ) : (
-            <tr class:list={[e.tbc && 'is-tbc', e.cancelled && 'is-cancelled']} data-start={eventStartISO(e.fullDate, e.time)}>
+            <tr class:list={[e.tbc && 'is-tbc', e.cancelled && 'is-cancelled', e.postponed && 'is-postponed']} data-start={eventStartISO(e.fullDate, e.time)}>
               <td class="mono vi26-td-n">{e.n}</td>
               <td class="mono"><span class="vi26-dow">{tDict(DOW_I18N, e.dow)}</span> {e.fullDate}</td>
               <td class="mono vi26-td-kind">{(tEv(e, 'subtitle') as string)?.split('·')[0]?.trim() || tEv(e, 'title')}</td>
@@ -1166,6 +1180,8 @@ const POSTER_BG = '/posters/adar-2026.png';
               <td>
                 {e.cancelled ? (
                   <span class="vi26-rsvp-mini vi26-rsvp-cancelled mono">✕ {COPY.cancel_label}</span>
+                ) : e.postponed ? (
+                  <span class="vi26-rsvp-mini vi26-rsvp-postponed mono">↻ {COPY.postponed_label}</span>
                 ) : e.ticketStatus === 'soldout' ? (
                   <span class="vi26-rsvp-mini vi26-rsvp-soldout mono">{COPY.sold_out_short}</span>
                 ) : e.eventbrite ? (
@@ -1271,7 +1287,7 @@ const POSTER_BG = '/posters/adar-2026.png';
   (function () {
     var now = Date.now();
     document.querySelectorAll('[data-start]').forEach(function (el) {
-      if (el.classList.contains('is-cancelled')) return;
+      if (el.classList.contains('is-cancelled') || el.classList.contains('is-postponed')) return;
       var t = Date.parse(el.getAttribute('data-start'));
       if (!isNaN(t) && now >= t) el.classList.add('is-past');
     });

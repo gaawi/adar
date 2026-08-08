@@ -5606,6 +5606,9 @@ body.home article.page { margin: 0 !important; }
   font-weight: 700;
   color: #b3261e;
 }
+/* Variante "pospuesto" (ámbar; el evento sigue en pie, no se tacha el título) */
+.hm-adar26-cancel-badge.is-postponed { background: #c88a1e; color: #fff; }
+.hm-adar26-cancel-note.is-postponed { color: #a06a12; }
 
 /* "Cómo se vivió en redes" en cada concierto ya celebrado (sólo aparece
    cuando la fila está marcada como pasada). Va fuera del <a> de la fila
@@ -12533,6 +12536,12 @@ body.page .entry-content .vi26 p,
 .vi26-rsvp-mini.vi26-rsvp-cancelled { color: #b3261e; border-color: #b3261e; font-weight: 700; }
 .vi26-table tr.is-cancelled { opacity: 0.72; }
 .vi26-table tr.is-cancelled .vi26-td-kind { text-decoration: line-through; }
+
+/* Pospuesto: aviso ámbar (el evento sigue en pie, en otras fechas) */
+.vi26-cancel-banner.is-postponed { background: #fdf1d6; border-left-color: #c88a1e; color: #6b4e12; }
+.vi26-cancel-banner.is-postponed .vi26-cancel-tag { background: #c88a1e; }
+.vi26-cancel-banner.is-postponed .vi26-cancel-text { color: #6b4e12; }
+.vi26-rsvp-mini.vi26-rsvp-postponed { color: #a06a12; border-color: #c88a1e; font-weight: 700; }
 
 /* Programa imprimible: oculto en pantalla. */
 .vi26-print-program { display: none; }
