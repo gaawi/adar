@@ -5028,6 +5028,22 @@ body.home article.page { margin: 0 !important; }
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+.hm-today-note {
+  margin-top: 12px;
+  padding: 9px 12px;
+  background: #fdf1d6;
+  border-left: 3px solid #c88a1e;
+  color: #6b4e12;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.hm-today-note[hidden] { display: none; }
+/* Modo pospuesto: la tarjeta de hoy avisa (ámbar) en vez de anunciar */
+.hm-today.is-postponed:not([hidden]) { border-bottom-color: #c88a1e; }
+.hm-today.is-postponed .hm-today-tag { background: #c88a1e; color: #fff; }
+.hm-today.is-postponed .hm-today-dot { background: #fff; }
+.hm-today.is-postponed .hm-today-intro { color: #a06a12; }
 
 .hm-section-head { padding: 0 40px; max-width: 1600px; margin: 0 auto; }
 @media (max-width: 768px) { .hm-section-head { padding: 0 20px; } }

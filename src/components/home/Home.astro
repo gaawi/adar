@@ -514,6 +514,8 @@ const ADAR26_COPY = {
     recap_instagram: 'Ver en Instagram',
     today_label: 'Hoy',
     today_intro: 'El concierto de hoy',
+    today_postponed_label: 'Pospuesto',
+    today_postponed_intro: 'La actividad de hoy se pospone',
     today_cta: 'Ver el programa',
   },
   en: {
@@ -541,6 +543,8 @@ const ADAR26_COPY = {
     recap_instagram: 'View on Instagram',
     today_label: 'Today',
     today_intro: "Today's concert",
+    today_postponed_label: 'Postponed',
+    today_postponed_intro: "Today's activity is postponed",
     today_cta: 'See the programme',
   },
   ast: {
@@ -568,6 +572,8 @@ const ADAR26_COPY = {
     recap_instagram: 'Ver n’Instagram',
     today_label: 'Güei',
     today_intro: 'El conciertu de güei',
+    today_postponed_label: 'Pospuestu',
+    today_postponed_intro: 'La actividá de güei pospónse',
     today_cta: 'Ver el programa',
   },
 }[lang];
@@ -605,14 +611,24 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
   <!-- Tarjeta "HOY": en móvil, el concierto de hoy va lo primero y en
        grande, con enlace a su programa completo. La rellena el script del
        final leyendo la fila del listado cuya fecha es hoy. -->
-  <a class="hm-today" id="hm-today" hidden>
+  <a
+    class="hm-today"
+    id="hm-today"
+    hidden
+    data-today-label={ADAR26_COPY.today_label}
+    data-today-intro={ADAR26_COPY.today_intro}
+    data-postponed-label={ADAR26_COPY.today_postponed_label}
+    data-postponed-intro={ADAR26_COPY.today_postponed_intro}
+    data-postponed-note={ADAR26_COPY.postponed_note}
+  >
     <span class="hm-today-photo"><img data-today-photo src="" alt="" loading="lazy" /></span>
     <span class="hm-today-body">
-      <span class="hm-today-tag mono"><span class="hm-today-dot" aria-hidden="true"></span>{ADAR26_COPY.today_label} · <span data-today-when></span></span>
-      <span class="hm-today-intro mono">{ADAR26_COPY.today_intro}</span>
+      <span class="hm-today-tag mono"><span class="hm-today-dot" aria-hidden="true"></span><span data-today-tag>{ADAR26_COPY.today_label}</span> · <span data-today-when></span></span>
+      <span class="hm-today-intro mono" data-today-intro-el>{ADAR26_COPY.today_intro}</span>
       <span class="hm-today-zone mono" data-today-zone></span>
       <span class="hm-today-title" data-today-title></span>
       <span class="hm-today-venue mono" data-today-venue></span>
+      <span class="hm-today-note mono" data-today-note hidden></span>
       <span class="hm-today-cta mono">{ADAR26_COPY.today_cta} <span aria-hidden="true">→</span></span>
     </span>
   </a>
@@ -1038,7 +1054,11 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
         var firstDay = li.getAttribute('data-firstday') || lastDay;
         if (todayES >= firstDay && todayES <= lastDay) todayRow = li;
       });
-      if (todayRow && !todayRow.classList.contains('is-cancelled') && !todayRow.classList.contains('is-postponed')) {
+      /* Se muestra la tarjeta si hoy hay evento, incluso pospuesto
+         (así quien esperaba la actividad de hoy ve el aviso). Sólo los
+         cancelados se omiten. */
+      if (todayRow && !todayRow.classList.contains('is-cancelled')) {
+        var isPostponed = todayRow.classList.contains('is-postponed');
         var q = function (sel) { var e = todayRow.querySelector(sel); return e ? e.textContent.trim() : ''; };
         var set = function (sel, val) { var e = card.querySelector(sel); if (e) e.textContent = val; };
         set('[data-today-when]', [q('.hm-adar26-dow'), q('.hm-adar26-date'), q('.hm-adar26-time')].filter(Boolean).join(' · '));
@@ -1052,6 +1072,13 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
           cardImg.setAttribute('alt', q('.hm-adar26-kind'));
         } else if (cardImg) {
           cardImg.parentNode.style.display = 'none';
+        }
+        if (isPostponed) {
+          card.classList.add('is-postponed');
+          set('[data-today-tag]', card.getAttribute('data-postponed-label') || '');
+          set('[data-today-intro-el]', card.getAttribute('data-postponed-intro') || '');
+          var noteEl = card.querySelector('[data-today-note]');
+          if (noteEl) { noteEl.textContent = card.getAttribute('data-postponed-note') || ''; noteEl.hidden = false; }
         }
         var link = todayRow.querySelector('.hm-adar26-link');
         if (link) card.setAttribute('href', link.getAttribute('href'));
