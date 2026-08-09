@@ -51,7 +51,7 @@ translation_group: "pll_adar26_amigos"
 <li>Boletín del sociu cola axenda y conteníu ente bastidores.</li>
 <li>El to nome nel muriu d’Amigos del festival.</li>
 </ul>
-<a class="soc-cta" href="/ast/contautu/">Faite Amigu <span aria-hidden="true">→</span></a>
+<a class="soc-cta" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Faite Amigu <span aria-hidden="true">→</span></a>
 </article>
 
 <article class="soc-tier is-featured">
@@ -60,14 +60,17 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-tier-name">Amigu VIP</p>
 <p class="soc-price"><span class="soc-amount">50&nbsp;€</span><span class="soc-per">/ añu</span></p>
 </header>
-<p class="soc-includes mono">Too lo d’Amigu, y amás:</p>
 <ul class="soc-perks">
+<li>Entraes anticipaes pa tolos conciertos, enantes de la apertura al públicu.</li>
+<li>Reserva y disponibilidá anticipada pa les futures ediciones.</li>
+<li>Boletín del sociu cola axenda y conteníu ente bastidores.</li>
+<li>El to nome nel muriu d’Amigos del festival.</li>
 <li>Asientos VIP nos meyores sitios en tolos eventos.</li>
 <li>Grabaciones inédites de los conciertos (audiu y vídeu).</li>
 <li>Camiseta del festival d’edición llimitada.</li>
 <li>Invitación a la espicha de zarru y a un alcuentru colos artistes.</li>
 </ul>
-<a class="soc-cta is-primary" href="/ast/contautu/">Faite Amigu VIP <span aria-hidden="true">→</span></a>
+<a class="soc-cta is-primary" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Faite Amigu VIP <span aria-hidden="true">→</span></a>
 </article>
 
 </div>

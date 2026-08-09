@@ -51,7 +51,7 @@ translation_group: "pll_adar26_amigos"
 <li>Boletín del socio con la agenda y contenido entre bastidores.</li>
 <li>Tu nombre en el muro de Amigos del festival.</li>
 </ul>
-<a class="soc-cta" href="/es/contacto/">Hazte Amigo <span aria-hidden="true">→</span></a>
+<a class="soc-cta" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Hazte Amigo <span aria-hidden="true">→</span></a>
 </article>
 
 <article class="soc-tier is-featured">
@@ -60,14 +60,17 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-tier-name">Amigo VIP</p>
 <p class="soc-price"><span class="soc-amount">50&nbsp;€</span><span class="soc-per">/ año</span></p>
 </header>
-<p class="soc-includes mono">Todo lo de Amigo, y además:</p>
 <ul class="soc-perks">
+<li>Entradas anticipadas para todos los conciertos, antes de la apertura al público.</li>
+<li>Reserva y disponibilidad anticipada para las futuras ediciones.</li>
+<li>Boletín del socio con la agenda y contenido entre bastidores.</li>
+<li>Tu nombre en el muro de Amigos del festival.</li>
 <li>Asientos VIP en los mejores sitios en todos los eventos.</li>
 <li>Grabaciones inéditas de los conciertos (audio y vídeo).</li>
 <li>Camiseta del festival de edición limitada.</li>
 <li>Invitación a la espicha de clausura y a un encuentro con los artistas.</li>
 </ul>
-<a class="soc-cta is-primary" href="/es/contacto/">Hazte Amigo VIP <span aria-hidden="true">→</span></a>
+<a class="soc-cta is-primary" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Hazte Amigo VIP <span aria-hidden="true">→</span></a>
 </article>
 
 </div>

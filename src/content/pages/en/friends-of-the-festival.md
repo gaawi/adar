@@ -51,7 +51,7 @@ translation_group: "pll_adar26_amigos"
 <li>Members' newsletter with the programme and behind-the-scenes content.</li>
 <li>Your name on the festival's Friends wall.</li>
 </ul>
-<a class="soc-cta" href="/en/contact/">Become a Friend <span aria-hidden="true">→</span></a>
+<a class="soc-cta" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Become a Friend <span aria-hidden="true">→</span></a>
 </article>
 
 <article class="soc-tier is-featured">
@@ -60,14 +60,17 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-tier-name">VIP Friend</p>
 <p class="soc-price"><span class="soc-amount">€50</span><span class="soc-per">/ year</span></p>
 </header>
-<p class="soc-includes mono">Everything in Friend, plus:</p>
 <ul class="soc-perks">
+<li>Early tickets to every concert, before they open to the public.</li>
+<li>Priority booking and early availability for future editions.</li>
+<li>Members' newsletter with the programme and behind-the-scenes content.</li>
+<li>Your name on the festival's Friends wall.</li>
 <li>VIP seats in the best spots at every event.</li>
 <li>Unreleased recordings of the concerts (audio and video).</li>
 <li>A limited-edition festival T-shirt.</li>
 <li>An invitation to the closing espicha and to a meet-the-artists gathering.</li>
 </ul>
-<a class="soc-cta is-primary" href="/en/contact/">Become a VIP Friend <span aria-hidden="true">→</span></a>
+<a class="soc-cta is-primary" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Become a VIP Friend <span aria-hidden="true">→</span></a>
 </article>
 
 </div>
