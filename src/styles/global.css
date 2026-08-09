@@ -2280,7 +2280,9 @@ html, body{ overflow-x: hidden; }
   .adar-archive-gallery-dots li{
     width: 6px; height: 6px; border-radius: 50%;
     background: rgba(10,9,7,0.22); cursor: pointer; transition: all .2s ease;
+    list-style: none !important;
   }
+  .adar-archive-gallery-dots li::marker{ content: none; }
   .adar-archive-gallery-dots li.is-active{ background: var(--accent, #c8a84b); transform: scale(1.35); }
 }
 
