@@ -42,6 +42,20 @@ translation_group: "pll_adar26_amigos"
 
 <article class="soc-tier">
 <header class="soc-tier-head">
+<p class="soc-tier-name">Colaborador</p>
+<p class="soc-price"><span class="soc-amount">10&nbsp;€</span><span class="soc-per">/ año</span></p>
+</header>
+<p class="soc-clarify mono">Apoyo al festival · sin acceso a entradas</p>
+<ul class="soc-perks">
+<li>Sostienes la música y el arte contemporáneo en las aldeas asturianas.</li>
+<li>Boletín del socio con la agenda y contenido entre bastidores.</li>
+<li>Tu nombre en el muro de Amigos del festival.</li>
+</ul>
+<a class="soc-cta" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Colaborar <span aria-hidden="true">→</span></a>
+</article>
+
+<article class="soc-tier">
+<header class="soc-tier-head">
 <p class="soc-tier-name">Amigo</p>
 <p class="soc-price"><span class="soc-amount">30&nbsp;€</span><span class="soc-per">/ año</span></p>
 </header>

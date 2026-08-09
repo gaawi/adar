@@ -42,6 +42,20 @@ translation_group: "pll_adar26_amigos"
 
 <article class="soc-tier">
 <header class="soc-tier-head">
+<p class="soc-tier-name">Supporter</p>
+<p class="soc-price"><span class="soc-amount">€10</span><span class="soc-per">/ year</span></p>
+</header>
+<p class="soc-clarify mono">Support the festival · no ticket access</p>
+<ul class="soc-perks">
+<li>You keep music and contemporary art alive in Asturian villages.</li>
+<li>Members' newsletter with the programme and behind-the-scenes content.</li>
+<li>Your name on the festival's Friends wall.</li>
+</ul>
+<a class="soc-cta" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Support us <span aria-hidden="true">→</span></a>
+</article>
+
+<article class="soc-tier">
+<header class="soc-tier-head">
 <p class="soc-tier-name">Friend</p>
 <p class="soc-price"><span class="soc-amount">€30</span><span class="soc-per">/ year</span></p>
 </header>

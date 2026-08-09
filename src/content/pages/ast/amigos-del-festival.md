@@ -42,6 +42,20 @@ translation_group: "pll_adar26_amigos"
 
 <article class="soc-tier">
 <header class="soc-tier-head">
+<p class="soc-tier-name">Collaborador</p>
+<p class="soc-price"><span class="soc-amount">10&nbsp;€</span><span class="soc-per">/ añu</span></p>
+</header>
+<p class="soc-clarify mono">Sofitu al festival · ensin accesu a entraes</p>
+<ul class="soc-perks">
+<li>Sostienes la música y l’arte contemporáneu nes aldees asturianes.</li>
+<li>Boletín del sociu cola axenda y conteníu ente bastidores.</li>
+<li>El to nome nel muriu d’Amigos del festival.</li>
+</ul>
+<a class="soc-cta" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Collaborar <span aria-hidden="true">→</span></a>
+</article>
+
+<article class="soc-tier">
+<header class="soc-tier-head">
 <p class="soc-tier-name">Amigu</p>
 <p class="soc-price"><span class="soc-amount">30&nbsp;€</span><span class="soc-per">/ añu</span></p>
 </header>
