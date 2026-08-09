@@ -5768,16 +5768,26 @@ body.home article.page { margin: 0 !important; }
 .hm-adar26-row-lived {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 7px;
   font-size: 10px;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 700;
-  color: var(--accent-ink);
+  color: var(--ink);
+  text-decoration: none;
+  padding: 7px 13px;
+  border: 1px solid rgba(10,9,7,0.20);
+  border-radius: 999px;
+  background: transparent;
+  transition: background .18s ease, border-color .18s ease, color .18s ease;
+}
+.hm-adar26-row-lived svg { width: 14px; height: 14px; flex-shrink: 0; }
+.hm-adar26-row-lived:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
   text-decoration: none;
 }
-.hm-adar26-row-lived.is-page { color: var(--ink); }
-.hm-adar26-row-lived:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 /* "Cómo se vivió" · enlace a redes bajo el listado */
 .hm-adar26-lived {

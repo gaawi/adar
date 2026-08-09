@@ -504,6 +504,7 @@ const ADAR26 = ADAR26_ROWS.map((r) => ({
 const ADAR26_HREF = `/${lang}/programa-2026/`;
 const IG_SVG = '<svg class="ig-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>';
 const PLAY_SVG = '<svg class="ig-icon" viewBox="0 0 24 24" width="11" height="11" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+const PAGE_SVG = '<svg class="ig-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2.5h8L19 7v13.5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-17a1 1 0 0 1 1-1z"/><path d="M13.5 2.5V7.5H19"/><path d="M8.5 13h7"/><path d="M8.5 16.5h7"/></svg>';
 const ADAR26_PRESS_HREF = {
   es:  '/es/nota-de-prensa-adar-2026/',
   en:  '/en/press-release-adar-2026/',
@@ -768,7 +769,8 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                   <span class="hm-adar26-row-actions">
                     {RECAPS[e.n]?.page && (
                       <a class="hm-adar26-row-lived is-page mono" href={`/${lang}/${RECAPS[e.n].page}/`}>
-                        {ADAR26_COPY.recap_page} <span aria-hidden="true">→</span>
+                        <Fragment set:html={PAGE_SVG} />
+                        {ADAR26_COPY.recap_page}
                       </a>
                     )}
                     <a class="hm-adar26-row-lived mono" href={RECAPS[e.n]?.instagram || 'https://www.instagram.com/festivaladar'} target="_blank" rel="noopener">
