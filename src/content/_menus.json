@@ -230,6 +230,17 @@
       "object_type": "custom",
       "object": "custom",
       "object_id": "95011"
+    },
+    {
+      "title": "Friends of the Festival",
+      "url": "/en/friends-of-the-festival/",
+      "order": 6,
+      "parent_id": 13,
+      "item_id": 95102,
+      "classes": [],
+      "object_type": "post_type",
+      "object": "page",
+      "object_id": 0
     }
   ],
   "ast": [
@@ -463,6 +474,17 @@
       "object_type": "custom",
       "object": "custom",
       "object_id": "95017"
+    },
+    {
+      "title": "Amigos del Festival",
+      "url": "/ast/amigos-del-festival/",
+      "order": 6,
+      "parent_id": 427,
+      "item_id": 95103,
+      "classes": [],
+      "object_type": "post_type",
+      "object": "page",
+      "object_id": 0
     }
   ],
   "es": [
@@ -696,6 +718,17 @@
       "object_type": "custom",
       "object": "custom",
       "object_id": "95005"
+    },
+    {
+      "title": "Amigos del Festival",
+      "url": "/es/amigos-del-festival/",
+      "order": 6,
+      "parent_id": 428,
+      "item_id": 95101,
+      "classes": [],
+      "object_type": "post_type",
+      "object": "page",
+      "object_id": 0
     }
   ]
 }

@@ -13574,3 +13574,73 @@ body.page .entry-content .legal ol,
 /* Con la tarjeta "HOY" visible, el banner lateral flotante sobra (y se
    solaparía con la tarjeta): se oculta ese día. */
 html.has-hm-today .hm-side-banner { display: none !important; }
+
+/* =============================================================
+   AMIGOS DEL FESTIVAL · niveles de socio (pricing tiers)
+   ============================================================= */
+.soc-tiers{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 6px;
+}
+@media (max-width: 760px){ .soc-tiers{ grid-template-columns: 1fr; gap: 26px; } }
+.soc-tier{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(10,9,7,0.16);
+  border-radius: 8px;
+  padding: 30px 28px;
+  background: #fff;
+}
+.soc-tier.is-featured{
+  border-color: #c8a84b;
+  box-shadow: 0 10px 34px rgba(10,9,7,0.09);
+}
+.soc-badge{
+  position: absolute; top: -12px; left: 28px;
+  background: #c8a84b; color: #1a1508;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 4px 11px; border-radius: 999px;
+}
+.soc-tier-head{ margin-bottom: 18px; }
+.soc-tier-name{
+  font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700;
+  color: var(--accent-ink, #8a6a12); margin: 0 0 8px;
+}
+.soc-price{ display: flex; align-items: baseline; gap: 7px; margin: 0; }
+.soc-amount{
+  font-family: var(--font-display); font-stretch: 75%; font-weight: 600;
+  font-size: 50px; line-height: 0.9; letter-spacing: -0.02em; color: var(--ink, #0a0907);
+}
+.soc-per{ font-size: 13px; letter-spacing: 0.04em; color: rgba(10,9,7,0.55); }
+.soc-includes{
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700;
+  color: var(--accent-ink, #8a6a12); margin: 0 0 10px;
+}
+.soc-perks{ list-style: none !important; margin: 0 0 26px; padding: 0; display: flex; flex-direction: column; gap: 12px; flex: 1 1 auto; }
+.soc-perks li{
+  list-style: none !important;
+  position: relative; padding-left: 27px;
+  font-size: 15px; line-height: 1.5; color: var(--ink, #0a0907);
+}
+.soc-perks li::marker{ content: none; }
+.soc-perks li::before{
+  content: "✓"; position: absolute; left: 0; top: 2px;
+  width: 17px; height: 17px; border-radius: 50%;
+  background: #c8a84b; color: #1a1508;
+  font-size: 10px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.soc-cta{
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 20px; border: 1px solid var(--ink, #0a0907); border-radius: 999px;
+  color: var(--ink, #0a0907); text-decoration: none;
+  font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
+  transition: background .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
+}
+.soc-cta:hover{ background: var(--ink, #0a0907); color: var(--paper, #f6f4ee); }
+.soc-cta.is-primary{ background: #c8a84b; border-color: #c8a84b; color: #1a1508; }
+.soc-cta.is-primary:hover{ background: #d8bb62; border-color: #d8bb62; }
+.soc-note{ margin: 24px 0 0; font-size: 12px; letter-spacing: 0.03em; color: rgba(10,9,7,0.55); }
