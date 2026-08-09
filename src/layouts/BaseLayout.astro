@@ -137,5 +137,43 @@ const ogImage =
         }, { passive: true });
       })();
     </script>
+    <script is:inline>
+      /* Galerías de Memoria de Acciones: en móvil son un slider tipo Instagram;
+         añade puntos indicadores y navegación por toque. */
+      (function () {
+        function initGalleries() {
+          if (window.innerWidth > 768) return;
+          document.querySelectorAll('.adar-archive-gallery').forEach(function (g) {
+            if (g.dataset.sliderInit) return;
+            var slides = g.querySelectorAll('a');
+            if (slides.length < 2) return;
+            g.dataset.sliderInit = '1';
+            var dots = document.createElement('ul');
+            dots.className = 'adar-archive-gallery-dots';
+            slides.forEach(function (s, i) {
+              var li = document.createElement('li');
+              li.addEventListener('click', function () {
+                g.scrollTo({ left: g.clientWidth * i, behavior: 'smooth' });
+              });
+              dots.appendChild(li);
+            });
+            g.insertAdjacentElement('afterend', dots);
+            var update = function () {
+              var idx = Math.round(g.scrollLeft / g.clientWidth);
+              var lis = dots.querySelectorAll('li');
+              for (var i = 0; i < lis.length; i++) lis[i].classList.toggle('is-active', i === idx);
+            };
+            update();
+            var t;
+            g.addEventListener('scroll', function () {
+              window.clearTimeout(t);
+              t = window.setTimeout(update, 60);
+            }, { passive: true });
+          });
+        }
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initGalleries);
+        else initGalleries();
+      })();
+    </script>
   </body>
 </html>
