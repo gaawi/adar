@@ -454,7 +454,7 @@ const ADAR26_ROWS = [
     title: { es: 'The Rest is Silence · ADAR en ruta', en: 'The Rest is Silence · ADAR on tour', ast: 'The Rest is Silence · ADAR en ruta' },
     venue: { es: 'Auditorio As Quintas', en: 'As Quintas Auditorium', ast: 'Auditoriu As Quintas' },
     muni:  { es: 'El Franco', en: 'El Franco', ast: 'El Franco' } },
-  { n: '07', date: '12 ago', time: '20:45', photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
+  { n: '07', date: '12 ago', time: '20:45', moved: true, photo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
     dow: { es: 'Mié', en: 'Wed', ast: 'Mié' },
     title: { es: 'Micro concierto durante el eclipse', en: 'Micro concert during the eclipse', ast: 'Micro conciertu durante l’eclís' },
     venue: { es: 'Alto de La Corredoria', en: 'Alto de La Corredoria', ast: 'Altu de La Corredoria' },
@@ -498,7 +498,7 @@ const ADAR26 = ADAR26_ROWS.map((r) => ({
   n: r.n, date: r.date, time: r.time, photo: r.photo,
   start: eventStartISO(r.date, r.time), firstday: eventFirstDay(r.date),
   dow: r.dow[lang], title: r.title[lang], venue: r.venue[lang], muni: r.muni[lang],
-  cancelled: r.cancelled === true, postponed: r.postponed === true,
+  cancelled: r.cancelled === true, postponed: r.postponed === true, moved: r.moved === true,
 }));
 
 const ADAR26_HREF = `/${lang}/programa-2026/`;
@@ -531,6 +531,8 @@ const ADAR26_COPY = {
     cancel_note: 'Coordinado con el Ayuntamiento de Llanes · cancelado por el luto oficial en el concejo',
     postponed_label: 'Pospuesto',
     postponed_note: 'Pospuesto por alerta de tormenta · disponible el 12 y 15 de agosto, sin nueva reserva',
+    moved_label: 'Cambio de ubicación',
+    moved_note: 'Cambio de ubicación · ahora en el Alto de La Corredoria (Belmonte de Miranda), a las 20:45, para ver mejor el eclipse',
     recap_reel: 'Ver el reel',
     recap_page: 'Ver página',
     recap_instagram: 'Ver en Instagram',
@@ -560,6 +562,8 @@ const ADAR26_COPY = {
     cancel_note: 'In coordination with Llanes Town Council · cancelled due to the official mourning in the municipality',
     postponed_label: 'Postponed',
     postponed_note: 'Postponed due to storm warning · available on 12 & 15 August, no new booking',
+    moved_label: 'New location',
+    moved_note: 'New location · now at the Alto de La Corredoria (Belmonte de Miranda), at 20:45, for a better view of the eclipse',
     recap_reel: 'Watch the reel',
     recap_page: 'View page',
     recap_instagram: 'View on Instagram',
@@ -589,6 +593,8 @@ const ADAR26_COPY = {
     cancel_note: 'En coordinación col Ayuntamientu de Llanes · canceláu pol lutu oficial nel conceyu',
     postponed_label: 'Pospuestu',
     postponed_note: 'Pospuestu por alerta de tormenta · disponible el 12 y 15 d’agostu, ensin nueva reserva',
+    moved_label: 'Cambéu d’allugamientu',
+    moved_note: 'Cambéu d’allugamientu · agora nel Altu de La Corredoria (Belmonte de Miranda), a les 20:45, pa ver meyor l’eclís',
     recap_reel: 'Ver el reel',
     recap_page: 'Ver páxina',
     recap_instagram: 'Ver n’Instagram',
@@ -739,7 +745,7 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
           <p class="hm-adar26-ix-label mono">{ADAR26_COPY.ix_label}</p>
           <ol class="hm-adar26-list">
             {ADAR26.map((e) => (
-              <li class:list={['hm-adar26-row', e.cancelled && 'is-cancelled', e.postponed && 'is-postponed']} data-start={e.start} data-firstday={e.firstday}>
+              <li class:list={['hm-adar26-row', e.cancelled && 'is-cancelled', e.postponed && 'is-postponed', e.moved && 'is-moved']} data-start={e.start} data-firstday={e.firstday}>
                 <a class="hm-adar26-link" href={`${ADAR26_HREF}#event-${e.n}`}>
                   <span class="hm-adar26-thumb">
                     <img src={e.photo} alt="" loading="lazy" />
@@ -758,6 +764,8 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                       ? <span class="hm-adar26-cancel-badge mono">✕ {ADAR26_COPY.cancel_label}</span>
                       : e.postponed
                       ? <span class="hm-adar26-cancel-badge is-postponed mono">↻ {ADAR26_COPY.postponed_label}</span>
+                      : e.moved
+                      ? <span class="hm-adar26-cancel-badge is-moved mono">⇄ {ADAR26_COPY.moved_label}</span>
                       : <span class="hm-adar26-past-badge mono" aria-hidden="true">✓ {ADAR26_COPY.past_label}</span>}
                   </span>
                 </a>
@@ -765,6 +773,8 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
                   <span class="hm-adar26-cancel-note mono">{ADAR26_COPY.cancel_note}</span>
                 ) : e.postponed ? (
                   <span class="hm-adar26-cancel-note is-postponed mono">{ADAR26_COPY.postponed_note}</span>
+                ) : e.moved ? (
+                  <span class="hm-adar26-cancel-note is-moved mono">{ADAR26_COPY.moved_note}</span>
                 ) : (
                   <span class="hm-adar26-row-actions">
                     {RECAPS[e.n]?.page && (

@@ -61,6 +61,8 @@ const COPY = {
     cancel_note: 'Este concierto, organizado en coordinación con el Ayuntamiento de Llanes, queda cancelado por el luto oficial declarado en el concejo.',
     postponed_label: 'Pospuesto',
     postponed_note: 'Pospuesto por la alerta de tormenta. Podrás vivir el recorrido los días 12 y 15 de agosto, coincidiendo con otras actividades del festival en Leiguarda; esos días habrá personal para recibirte. No necesitas nueva reserva: ven cualquiera de los dos días y hazlo a tu ritmo.',
+    moved_label: 'Cambio de ubicación',
+    moved_note: 'Para ver mejor el eclipse, este concierto se traslada de Leiguarda al Alto de La Corredoria (Belmonte de Miranda). Nueva hora: 20:45; se une a la observación del eclipse que organiza el Ayuntamiento de Belmonte de Miranda.',
     recap_reel: 'Ver el reel',
     recap_video: 'Vídeo en YouTube',
     recap_photos: 'Fotos',
@@ -153,6 +155,8 @@ const COPY = {
     cancel_note: 'This concert, organised in coordination with the Ayuntamiento de Llanes (Llanes Town Council), has been cancelled owing to the official mourning declared in the municipality.',
     postponed_label: 'Postponed',
     postponed_note: 'Postponed due to the storm warning. You will be able to experience the walk on 12 and 15 August, alongside other festival activities in Leiguarda; on those days there will be staff to welcome you. No new booking needed: come on either day and do it at your own pace.',
+    moved_label: 'New location',
+    moved_note: 'For a better view of the eclipse, this concert moves from Leiguarda to the Alto de La Corredoria (Belmonte de Miranda). New time: 20:45; it joins the eclipse observation organised by Belmonte de Miranda Town Hall.',
     recap_reel: 'Watch the reel',
     recap_video: 'Video on YouTube',
     recap_photos: 'Photos',
@@ -245,6 +249,8 @@ const COPY = {
     cancel_note: 'Esti conciertu, entamáu en coordinación col Ayuntamientu de Llanes, queda canceláu pol lutu oficial declaráu nel conceyu.',
     postponed_label: 'Pospuestu',
     postponed_note: 'Pospuestu pola alerta de tormenta. Podrás vivir el recorríu los díes 12 y 15 d’agostu, coincidiendo con otres actividaes del festival en Lleiguarda; esos díes habrá personal pa recibite. Nun necesites nueva reserva: ven cualquiera de los dos díes y failo al to ritmu.',
+    moved_label: 'Cambéu d’allugamientu',
+    moved_note: 'Pa ver meyor l’eclís, esti conciertu treslládase de Lleiguarda al Altu de La Corredoria (Belmonte de Miranda). Nueva hora: 20:45; xúnese a la observación del eclís qu’entama’l Conceyu de Belmonte de Miranda.',
     recap_reel: 'Ver el reel',
     recap_video: 'Vídeu en YouTube',
     recap_photos: 'Semeyes',
@@ -336,6 +342,7 @@ interface Event {
   tbc?: boolean;
   cancelled?: boolean;
   postponed?: boolean;
+  moved?: boolean;
   echoes?: string;
   walk?: { n: string; title: string; text?: string }[];
 }
@@ -539,6 +546,7 @@ const EVENTS: Event[] = [
     n: '07', date: '12', dow: 'Miércoles', fullDate: '12 AGO',
     time: '20:45',
     capacity: 40,
+    moved: true,
     title: 'Micro concierto durante el eclipse',
     subtitle: 'Cuarteto con flauta',
     description: 'Cuarteto con flauta en el Alto de La Corredoria (Belmonte de Miranda), uno de los mejores miradores del concejo, coincidiendo con el eclipse total de sol. Guillermo Laporta (flauta), Maria Florea (violín), Lara Fernández (viola) y Daniel Claret (violonchelo) ponen música a la caída de la tarde, como actividad complementaria a la observación guiada del eclipse que organiza el Ayuntamiento de Belmonte de Miranda.',
@@ -959,6 +967,12 @@ const POSTER_BG = '/posters/adar-2026.png';
                   <span class="vi26-cancel-text">{COPY.postponed_note}</span>
                 </p>
               )}
+              {e.moved && !e.cancelled && !e.postponed && (
+                <p class="vi26-cancel-banner is-moved" role="status">
+                  <span class="vi26-cancel-tag mono">⇄ {COPY.moved_label}</span>
+                  <span class="vi26-cancel-text">{COPY.moved_note}</span>
+                </p>
+              )}
               <p class="vi26-event-muni">
                 {tDict(MUNI_I18N, e.municipality)}
                 <span class="vi26-event-past mono" aria-hidden="true">✓ {COPY.past_label}</span>
@@ -1163,7 +1177,7 @@ const POSTER_BG = '/posters/adar-2026.png';
               <td>—</td>
             </tr>
           ) : (
-            <tr class:list={[e.tbc && 'is-tbc', e.cancelled && 'is-cancelled', e.postponed && 'is-postponed']} data-start={eventStartISO(e.fullDate, e.time)}>
+            <tr class:list={[e.tbc && 'is-tbc', e.cancelled && 'is-cancelled', e.postponed && 'is-postponed', e.moved && 'is-moved']} data-start={eventStartISO(e.fullDate, e.time)}>
               <td class="mono vi26-td-n">{e.n}</td>
               <td class="mono"><span class="vi26-dow">{tDict(DOW_I18N, e.dow)}</span> {e.fullDate}</td>
               <td class="mono vi26-td-kind">{(tEv(e, 'subtitle') as string)?.split('·')[0]?.trim() || tEv(e, 'title')}</td>

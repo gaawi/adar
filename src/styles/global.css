@@ -5747,6 +5747,9 @@ body.home article.page { margin: 0 !important; }
 /* Variante "pospuesto" (ámbar; el evento sigue en pie: se tacha la fecha, no el título) */
 .hm-adar26-cancel-badge.is-postponed { background: #c88a1e; color: #fff; }
 .hm-adar26-cancel-note.is-postponed { color: #a06a12; }
+/* Variante "cambio de ubicación" (azul info) */
+.hm-adar26-cancel-badge.is-moved { background: #2f6f8f; color: #fff; }
+.hm-adar26-cancel-note.is-moved { color: #245a74; }
 .hm-adar26-row.is-postponed .hm-adar26-date {
   text-decoration: line-through;
   text-decoration-color: rgba(200,138,30,0.75);
@@ -12694,6 +12697,10 @@ body.page .entry-content .vi26 p,
 .vi26-cancel-banner.is-postponed { background: #fdf1d6; border-left-color: #c88a1e; color: #6b4e12; }
 .vi26-cancel-banner.is-postponed .vi26-cancel-tag { background: #c88a1e; }
 .vi26-cancel-banner.is-postponed .vi26-cancel-text { color: #6b4e12; }
+/* Cambio de ubicación: aviso azul (informativo, el evento sigue en pie) */
+.vi26-cancel-banner.is-moved { background: #e7f0f5; border-left-color: #2f6f8f; color: #1e4a5f; }
+.vi26-cancel-banner.is-moved .vi26-cancel-tag { background: #2f6f8f; }
+.vi26-cancel-banner.is-moved .vi26-cancel-text { color: #1e4a5f; }
 .vi26-rsvp-mini.vi26-rsvp-postponed { color: #a06a12; border-color: #c88a1e; font-weight: 700; }
 /* Pospuesto: se tacha la fecha grande (esa fecha ya no vale) y se explica al lado */
 .vi26-event.is-postponed .vi26-aside-when-date {
