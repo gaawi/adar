@@ -82,7 +82,7 @@ translation_group: "pll_adar26_amigos"
 <li class="is-key is-vip">Asientos VIP nos meyores sitios en tolos eventos.</li>
 <li>Grabaciones inédites de los conciertos (audiu y vídeu).</li>
 <li>Camiseta del festival d’edición llimitada.</li>
-<li>Invitación a la espicha de zarru y a un alcuentru colos artistes.</li>
+<li class="is-key">Celebración privada nel Centru ADAR enantes del festival, namás pa socios VIP: conoz a los directores y a los artistes residentes.</li>
 </ul>
 <a class="soc-cta is-primary" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Faite Amigu VIP <span aria-hidden="true">→</span></a>
 </article>
