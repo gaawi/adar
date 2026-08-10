@@ -36,7 +36,7 @@ The ADAR Festival 2025 arrived at the Monastery of Santa María de Villanueva de
 
 <div class="adar-archive-body">
 <p>
-The programme brought together three complementary musical universes: the baroque refinement of Telemann, the stylised folklore of Falla, and the sonic painting of Mussorgsky. Through this aesthetic diversity, the concert proposed a dialogue between eras, styles and ways of storytelling, bringing to the foreground the timbral richness of the ensemble and the collective listening among the performers.
+The festival soloists —Jone de la Fuente (violin), Almudena Arribas (viola), Natania Hoffman (cello), Guillermo Laporta (flute) and Josefina Urraca (piano)— in the monastery's Romanesque church. Works by Telemann, Falla and Mussorgsky.
 </p>
 
 <h3 style="margin-top:28px;">Programme</h3>

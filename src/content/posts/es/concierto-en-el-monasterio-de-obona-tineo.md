@@ -29,7 +29,7 @@ translation_group: "pll_69b02567369bf"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto en el Monasterio de Obona, Tineo</h1>
 <p class="adar-archive-lede">
-El Festival ADAR 2025 llegó al Monasterio de Santa María la Real de Obona, en Tineo, en un concierto que agotó todas las localidades. En este enclave histórico, el ensemble del festival interpretó un programa que unió refinamiento barroco, folclore estilizado y una poderosa narrativa musical.
+V edición del festival · concierto de cámara en el Monasterio de Santa María la Real de Obona (Tineo), uno de los cenobios más antiguos de Asturias. Aforo completo, con los solistas del festival: Jone de la Fuente (violín), Almudena Arribas (viola), Natania Hoffman (violonchelo), Guillermo Laporta (flauta) y Josefina Urraca (piano).
 </p>
 </div>
 </div>

@@ -29,7 +29,7 @@ translation_group: "pll_69b02567369bf"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu nel Monasteriu d'Obona, Tinéu</h1>
 <p class="adar-archive-lede">
-El Festival ADAR 2025 llegó al Monasteriu de Santa María la Real d'Obona, en Tinéu, nun conciertu qu'agotó toles llocalidaes. Nesti enclave históricu, l'ensemble del festival interpretó un programa qu'unió refinamientu barrocu, folclore estilizáu y una poderosa narrativa musical.
+V edición del festival · conciertu de cámara nel Monasteriu de Santa María la Real d’Obona (Tinéu), unu de los cenobios más antiguos d’Asturies. Aforu completu, colos solistes del festival: Jone de la Fuente (violín), Almudena Arribas (viola), Natania Hoffman (violonchelu), Guillermo Laporta (flauta) y Josefina Urraca (pianu).
 </p>
 </div>
 </div>

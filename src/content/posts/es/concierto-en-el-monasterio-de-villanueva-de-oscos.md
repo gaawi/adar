@@ -36,7 +36,7 @@ El Festival ADAR 2025 llegó al Monasterio de Santa María de Villanueva de Osco
 
 <div class="adar-archive-body">
 <p>
-El programa reunió tres universos musicales complementarios: el refinamiento barroco de Telemann, el folclore estilizado de Falla y la pintura sonora de Mussorgsky. A través de esta diversidad estética, el concierto propuso un diálogo entre épocas, estilos y formas de narrar, poniendo en primer plano la riqueza tímbrica del ensemble y la escucha colectiva entre intérpretes.
+Los solistas del festival —Jone de la Fuente (violín), Almudena Arribas (viola), Natania Hoffman (violonchelo), Guillermo Laporta (flauta) y Josefina Urraca (piano)— en la iglesia románica del monasterio. Obras de Telemann, Falla y Mussorgsky.
 </p>
 
 <h3 style="margin-top:28px;">Programa</h3>
