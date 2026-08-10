@@ -62,8 +62,7 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-price"><span class="soc-amount">30&nbsp;€</span><span class="soc-per">/ añu</span></p>
 </header>
 <ul class="soc-perks">
-<li class="is-key">Entraes anticipaes a tolos conciertos: la to plaza asegurada enantes de que s’agoten.</li>
-<li class="is-key">Reserva y disponibilidá anticipada pa les futures ediciones.</li>
+<li class="is-key">Entraes y reserva anticipaes a tolos conciertos y a les futures ediciones: la to plaza asegurada enantes de que s’agoten.</li>
 <li>Boletín del sociu cola axenda y conteníu ente bastidores.</li>
 <li>El to nome nel muriu d’Amigos del festival.</li>
 </ul>
@@ -77,11 +76,10 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-price"><span class="soc-amount">50&nbsp;€</span><span class="soc-per">/ añu</span></p>
 </header>
 <ul class="soc-perks">
-<li class="is-key">Entraes anticipaes a tolos conciertos: la to plaza asegurada enantes de que s’agoten.</li>
-<li class="is-key">Reserva y disponibilidá anticipada pa les futures ediciones.</li>
+<li class="is-key">Entraes y reserva anticipaes a tolos conciertos y a les futures ediciones: la to plaza asegurada enantes de que s’agoten.</li>
 <li>Boletín del sociu cola axenda y conteníu ente bastidores.</li>
 <li>El to nome nel muriu d’Amigos del festival.</li>
-<li class="is-key">Asientos VIP nos meyores sitios en tolos eventos.</li>
+<li class="is-key is-vip">Asientos VIP nos meyores sitios en tolos eventos.</li>
 <li>Grabaciones inédites de los conciertos (audiu y vídeu).</li>
 <li>Camiseta del festival d’edición llimitada.</li>
 <li>Invitación a la espicha de zarru y a un alcuentru colos artistes.</li>

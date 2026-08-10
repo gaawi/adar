@@ -13661,6 +13661,14 @@ html.has-hm-today .hm-side-banner { display: none !important; }
   content: "★"; left: 11px; top: 9px;
   background: #0a0907; color: #d8bb62; font-size: 9px;
 }
+/* Perk VIP estrella (asientos VIP): destaca aún más, en rojo */
+.soc-perks li.is-vip{
+  background: rgba(179,38,19,0.12);
+  color: #7a1a13;
+}
+.soc-perks li.is-vip::before{
+  background: #b3261e; color: #fff;
+}
 .soc-cta{
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: 14px 20px; border: 1px solid var(--ink, #0a0907); border-radius: 999px;

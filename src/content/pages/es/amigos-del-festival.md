@@ -62,8 +62,7 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-price"><span class="soc-amount">30&nbsp;€</span><span class="soc-per">/ año</span></p>
 </header>
 <ul class="soc-perks">
-<li class="is-key">Entradas anticipadas a todos los conciertos: tu plaza asegurada antes de que se agoten.</li>
-<li class="is-key">Reserva y disponibilidad anticipada para las futuras ediciones.</li>
+<li class="is-key">Entradas y reserva anticipadas a todos los conciertos y a las futuras ediciones: tu plaza asegurada antes de que se agoten.</li>
 <li>Boletín del socio con la agenda y contenido entre bastidores.</li>
 <li>Tu nombre en el muro de Amigos del festival.</li>
 </ul>
@@ -77,11 +76,10 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-price"><span class="soc-amount">50&nbsp;€</span><span class="soc-per">/ año</span></p>
 </header>
 <ul class="soc-perks">
-<li class="is-key">Entradas anticipadas a todos los conciertos: tu plaza asegurada antes de que se agoten.</li>
-<li class="is-key">Reserva y disponibilidad anticipada para las futuras ediciones.</li>
+<li class="is-key">Entradas y reserva anticipadas a todos los conciertos y a las futuras ediciones: tu plaza asegurada antes de que se agoten.</li>
 <li>Boletín del socio con la agenda y contenido entre bastidores.</li>
 <li>Tu nombre en el muro de Amigos del festival.</li>
-<li class="is-key">Asientos VIP en los mejores sitios en todos los eventos.</li>
+<li class="is-key is-vip">Asientos VIP en los mejores sitios en todos los eventos.</li>
 <li>Grabaciones inéditas de los conciertos (audio y vídeo).</li>
 <li>Camiseta del festival de edición limitada.</li>
 <li>Invitación a la espicha de clausura y a un encuentro con los artistas.</li>
