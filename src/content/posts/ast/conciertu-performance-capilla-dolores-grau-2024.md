@@ -36,11 +36,11 @@ La mesma nueche que'l Festival ADAR presentaba'l so programa principal nel Palac
 
 <div class="adar-archive-body">
 <p>
-La Capilla de los Dolores, que el año anterior había acogido un micro concierto de flauta sola, se transformó completamente en la edición 2024 gracias a la intervención de Sarah K. Williams. La artista, afincada en Nueva York, concibió una instalación site-specific que alteraba la percepción del espacio y creaba un diálogo entre la arquitectura sacra, el arte visual y la música en vivo.
+La Capilla de los Dolores, que l’añu anterior acoyera un micro conciertu de flauta sola, tresformóse en 2024 con una instalación site-specific de Sarah K. Williams, artista afincada en Nueva York.
 </p>
 
 <p>
-Los músicos del festival interactuaron con la pieza de Williams mientras interpretaban el <em>Duo</em> de Jessie Montgomery, una obra que, con su energía rítmica y su escritura expresiva, encontró en la instalación un complemento visual inesperado. El resultado fue una experiencia multidisciplinar en la que música, arte visual y performance se fundieron en un único gesto artístico.
+Los músicos del festival interpretaron el <em>Duo</em> de Jessie Montgomery dientro de la instalación de Williams.
 </p>
 <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 28px 0;">
 <iframe src="https://www.youtube.com/embed/nFziarjucPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">

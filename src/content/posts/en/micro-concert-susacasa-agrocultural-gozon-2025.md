@@ -42,10 +42,6 @@ Susacasa, managed by Keko Marcos and Sandra Murillo, proposes an active relation
 </p>
 
 <p>
-This concert clearly represented one of the core principles of the ADAR Festival: activating Asturian rural heritage as a contemporary performance space. The traditional architecture did not function as a mere container, but as an active part of the artistic experience.
-</p>
-
-<p>
 Nacho Laguna and María del Buey presented a selection from the album <em>Ferrarese – tiorba</em> (2023), combining Iberian Baroque repertoire with contemporary improvisation in a dialogue between tradition and innovation perfectly integrated into the landscape and the space.
 </p>
 

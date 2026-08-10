@@ -42,10 +42,6 @@ Susacasa, gestionado por Keko Marcos y Sandra Murillo, propone una relación act
 </p>
 
 <p>
-Este concierto representó de forma clara uno de los ejes del Festival ADAR: activar el patrimonio rural asturiano como espacio escénico contemporáneo. La arquitectura tradicional no funcionó como simple contenedor, sino como parte activa de la experiencia artística.
-</p>
-
-<p>
 Nacho Laguna y María del Buey presentaron una selección del álbum <em>Ferrarese – tiorba</em> (2023), combinando repertorio barroco ibérico con improvisación contemporánea en un diálogo entre tradición e innovación perfectamente integrado en el paisaje y el espacio.
 </p>
 

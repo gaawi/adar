@@ -29,18 +29,18 @@ translation_group: "pll_69b025656e325"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu visual en Colunga (Sala Loreto)</h1>
 <p class="adar-archive-lede">
-Na tercera edición del Festival ADAR, Colunga ufiertó una sala mui diferente a la del añu anterior. La Sala Loreto permitió un diseñu de proyeiciones envolvente qu'arrodió completamente a los músicos, sumiendo a l'audiencia nuna esperiencia visual y sonora única.
+III edición del festival · conciertu visual na Sala Loreto de Colunga, na mariña xurásica asturiana: proyeiciones envolventes a 360° alredor de los músicos.
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-Tras el concierto de 2022 en la Iglesia de Santa María de Sabada, el Festival ADAR regresó a Colunga con un formato renovado. La Sala Loreto, con sus paredes que permitían una proyección envolvente a 360 grados, se convirtió en el escenario ideal para un concierto visual en el que música e imagen se fundieron de manera inseparable.
+Tres el conciertu de 2022 na ilesia de Santa María de Sabada, ADAR volvió a Colunga con otru formatu. La Sala Loreto —sala polivalente de la Casa de Cultura, nel barriu que toma’l nome de la ermita de la Virxe de Loreto (1662)— dexaba proyeutar sobre les paredes en 360°.
 </p>
 
 <p>
-El programa, centrado en la música española con obras de Turina y Granados junto a piezas de Boulanger, Telemann y Arvo Pärt, se vio enriquecido por un diseño de proyecciones que acompañaba cada obra con un universo visual propio. La audiencia experimentó la sensación de que las imágenes se superponían con los intérpretes, creando una atmósfera de inmersión total.
+Programa de música española —Turina y Granados— con Boulanger, Telemann y Arvo Pärt, cada obra col so propiu diseñu visual.
 </p>
 
 <h3 style="margin-top:28px">Programa</h3>

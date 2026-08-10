@@ -29,18 +29,18 @@ translation_group: "pll_69b025656e325"
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Visual concert in Colunga (Sala Loreto)</h1>
 <p class="adar-archive-lede">
-In the third edition of the ADAR Festival, Colunga offered a very different venue from the previous year. The Sala Loreto allowed an immersive projection design that completely surrounded the musicians, immersing the audience in a unique visual and sonic experience.
+3rd edition of the festival · a visual concert at the Sala Loreto in Colunga, on Asturias's Jurassic coast: immersive 360° projections around the musicians.
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-Following the 2022 concert at the Church of Santa María de Sábada, the ADAR Festival returned to Colunga with a renewed format. The Sala Loreto, with walls that allowed an immersive 360-degree projection, became the ideal setting for a visual concert in which music and image merged inseparably.
+After the 2022 concert at the church of Santa María de Sábada, ADAR returned to Colunga in a different format. The Sala Loreto —a multipurpose hall of the Casa de Cultura, in the district named after the Virgen de Loreto hermitage (1662)— allowed projections across its walls in 360°.
 </p>
 
 <p>
-The programme, centred on Spanish music with works by Turina and Granados alongside pieces by Boulanger, Telemann, and Arvo Pärt, was enriched by a projection design that accompanied each work with its own visual universe. The audience experienced the sensation of images overlapping with the performers, creating an atmosphere of total immersion.
+A programme of Spanish music —Turina and Granados— with Boulanger, Telemann and Arvo Pärt, each work with its own visual design.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>
