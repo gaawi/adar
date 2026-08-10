@@ -69,7 +69,7 @@ translation_group: "pll_adar26_amigos"
 </article>
 
 <article class="soc-tier is-featured">
-<span class="soc-badge mono">El favoritu</span>
+<span class="soc-badge mono">Más valoráu pol públicu</span>
 <header class="soc-tier-head">
 <p class="soc-tier-name">Amigu VIP</p>
 <p class="soc-price"><span class="soc-amount">50&nbsp;€</span><span class="soc-per">/ añu</span></p>

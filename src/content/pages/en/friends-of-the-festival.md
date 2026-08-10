@@ -69,7 +69,7 @@ translation_group: "pll_adar26_amigos"
 </article>
 
 <article class="soc-tier is-featured">
-<span class="soc-badge mono">Most popular</span>
+<span class="soc-badge mono">Most valued by the public</span>
 <header class="soc-tier-head">
 <p class="soc-tier-name">VIP Friend</p>
 <p class="soc-price"><span class="soc-amount">€50</span><span class="soc-per">/ year</span></p>
