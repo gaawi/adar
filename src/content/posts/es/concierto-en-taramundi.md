@@ -29,14 +29,14 @@ translation_group: "pll_69b0256754eb0"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto en Taramundi</h1>
 <p class="adar-archive-lede">
-El Festival ADAR 2025 llegó a Taramundi con un concierto de cámara en la Iglesia de Taramundi. En este espacio íntimo, los solistas del festival interpretaron un programa que unió refinamiento barroco, folclore estilizado y pintura sonora en un formato de ensemble que destacó la riqueza tímbrica y la interacción entre los intérpretes.
+V edición del festival · concierto de cámara de una hora en la iglesia de Taramundi, en el occidente de Asturias.
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-El programa reunió tres universos musicales distintos: el refinamiento de Telemann, el imaginario popular transformado por Falla y la poderosa narrativa musical de Mussorgsky. A través de esta diversidad estética, el concierto propuso un diálogo entre épocas, estilos y formas de narrar, mostrando la versatilidad del ensemble y la cercanía con el público.
+Taramundi, en el occidente de Asturias, es conocido por su cuchillería artesana. En su iglesia sonaron obras de Telemann, Falla y Mussorgsky, a cargo de Jone de la Fuente (violín), Almudena Arribas (viola), Natania Hoffman (violonchelo), Guillermo Laporta (flauta) y Josefina Urraca (piano).
 </p>
 
 

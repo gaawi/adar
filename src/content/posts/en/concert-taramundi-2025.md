@@ -29,14 +29,14 @@ translation_group: "pll_69b0256754eb0"
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert in Taramundi</h1>
 <p class="adar-archive-lede">
-The ADAR Festival 2025 arrived in Taramundi with a chamber concert at the Church of Taramundi. In this intimate space, the festival soloists performed a programme uniting baroque refinement, stylised folklore, and sonic painting in an ensemble format that highlighted timbral richness and interaction between performers.
+5th edition of the festival · a one-hour chamber concert at the church of Taramundi, in western Asturias.
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-The programme brought together three distinct musical universes: the refinement of Telemann, the popular imagery transformed by Falla, and the powerful musical narrative of Mussorgsky. Through this aesthetic diversity, the concert proposed a dialogue between eras, styles, and ways of storytelling, showcasing the ensemble's versatility and closeness with the audience.
+Taramundi, in western Asturias, is known for its handmade knives. Works by Telemann, Falla and Mussorgsky sounded in its church, played by Jone de la Fuente (violin), Almudena Arribas (viola), Natania Hoffman (cello), Guillermo Laporta (flute) and Josefina Urraca (piano).
 </p>
 
 

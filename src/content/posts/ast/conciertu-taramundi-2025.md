@@ -29,14 +29,14 @@ translation_group: "pll_69b0256754eb0"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu en Taramundi</h1>
 <p class="adar-archive-lede">
-El Festival ADAR 2025 llegó a Taramundi con un conciertu de cámara na Ilesia de Taramundi. Nesti espaciu íntimu, los solistes del festival interpretaron un programa qu'unió refinamientu barrocu, folclore estilizáu y pintura sonora nun formatu d'ensemble que destacó la riqueza tímbrica y la interacción ente los intérpretes.
+V edición del festival · conciertu de cámara d’una hora na ilesia de Taramundi, nel occidente d’Asturies.
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-El programa reunió tres universos musicales distintos: el refinamiento de Telemann, el imaginario popular transformado por Falla y la poderosa narrativa musical de Mussorgsky. A través de esta diversidad estética, el concierto propuso un diálogo entre épocas, estilos y formas de narrar, mostrando la versatilidad del ensemble y la cercanía con el público.
+Taramundi, nel occidente d’Asturies, ye conocíu pola so cuchillería artesana. Na so ilesia sonaron obres de Telemann, Falla y Mussorgsky, a cargu de Jone de la Fuente (violín), Almudena Arribas (viola), Natania Hoffman (violonchelu), Guillermo Laporta (flauta) y Josefina Urraca (pianu).
 </p>
 
 
