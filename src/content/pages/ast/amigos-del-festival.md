@@ -78,11 +78,11 @@ translation_group: "pll_adar26_amigos"
 <ul class="soc-perks">
 <li class="is-key is-vip">Asientos VIP nos meyores sitios en tolos eventos.</li>
 <li class="is-key">Entraes y reserva anticipaes a tolos conciertos y a les futures ediciones: la to plaza asegurada enantes de que s’agoten.</li>
+<li class="is-key">Celebración privada nel Centru ADAR enantes del festival, namás pa socios VIP: conoz a los directores y a los artistes residentes.</li>
 <li>Boletín del sociu cola axenda y conteníu ente bastidores.</li>
 <li>El to nome nel muriu d’Amigos del festival.</li>
 <li>Grabaciones inédites de los conciertos (audiu y vídeu).</li>
 <li>Camiseta del festival d’edición llimitada.</li>
-<li class="is-key">Celebración privada nel Centru ADAR enantes del festival, namás pa socios VIP: conoz a los directores y a los artistes residentes.</li>
 </ul>
 <a class="soc-cta is-primary" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Faite Amigu VIP <span aria-hidden="true">→</span></a>
 </article>

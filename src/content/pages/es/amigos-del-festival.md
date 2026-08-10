@@ -78,11 +78,11 @@ translation_group: "pll_adar26_amigos"
 <ul class="soc-perks">
 <li class="is-key is-vip">Asientos VIP en los mejores sitios en todos los eventos.</li>
 <li class="is-key">Entradas y reserva anticipadas a todos los conciertos y a las futuras ediciones: tu plaza asegurada antes de que se agoten.</li>
+<li class="is-key">Celebración privada en el Centro ADAR antes del festival, solo para socios VIP: conoce a los directores y a los artistas residentes.</li>
 <li>Boletín del socio con la agenda y contenido entre bastidores.</li>
 <li>Tu nombre en el muro de Amigos del festival.</li>
 <li>Grabaciones inéditas de los conciertos (audio y vídeo).</li>
 <li>Camiseta del festival de edición limitada.</li>
-<li class="is-key">Celebración privada en el Centro ADAR antes del festival, solo para socios VIP: conoce a los directores y a los artistas residentes.</li>
 </ul>
 <a class="soc-cta is-primary" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Hazte Amigo VIP <span aria-hidden="true">→</span></a>
 </article>

@@ -78,11 +78,11 @@ translation_group: "pll_adar26_amigos"
 <ul class="soc-perks">
 <li class="is-key is-vip">VIP seats in the best spots at every event.</li>
 <li class="is-key">Early access and priority booking for every concert and future editions: your seat secured before they sell out.</li>
+<li class="is-key">A private gathering at the ADAR centre before the festival, VIP members only: meet the directors and the resident artists.</li>
 <li>Members' newsletter with the programme and behind-the-scenes content.</li>
 <li>Your name on the festival's Friends wall.</li>
 <li>Unreleased recordings of the concerts (audio and video).</li>
 <li>A limited-edition festival T-shirt.</li>
-<li class="is-key">A private gathering at the ADAR centre before the festival, VIP members only: meet the directors and the resident artists.</li>
 </ul>
 <a class="soc-cta is-primary" href="https://buy.stripe.com/aEUaFobka6nCfxm001" target="_blank" rel="noopener">Become a VIP Friend <span aria-hidden="true">→</span></a>
 </article>
