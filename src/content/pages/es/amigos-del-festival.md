@@ -10,7 +10,7 @@ original_url: ""
 permalink: "/es/amigos-del-festival/"
 categories: []
 tags: []
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_3.jpg"
 excerpt: "Hazte socio y vive ADAR desde dentro: entradas anticipadas, asientos VIP y contenido exclusivo que sostiene el arte en el medio rural."
 author: "gaawi_rei1q"
 parent_id: 0
@@ -20,7 +20,7 @@ translation_group: "pll_adar26_amigos"
 
 <div class="amp-hero">
 <div class="amp-hero-bg">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg" alt="" />
+<img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_Fotos_3.jpg" alt="" />
 </div>
 <div class="amp-hero-inner">
 <span class="amp-eyebrow">Festival ADAR · Comunidad</span>
