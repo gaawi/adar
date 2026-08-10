@@ -13661,13 +13661,14 @@ html.has-hm-today .hm-side-banner { display: none !important; }
   content: "★"; left: 11px; top: 9px;
   background: #0a0907; color: #d8bb62; font-size: 9px;
 }
-/* Perk VIP estrella (asientos VIP): destaca aún más, en rojo */
+/* Perk VIP estrella (asientos VIP): el más destacado, chip oscuro premium */
 .soc-perks li.is-vip{
-  background: rgba(179,38,19,0.12);
-  color: #7a1a13;
+  background: #0f0d0a;
+  color: #f6f4ee !important;
+  box-shadow: 0 4px 16px rgba(10,9,7,0.18);
 }
 .soc-perks li.is-vip::before{
-  background: #b3261e; color: #fff;
+  content: "★"; background: #d8bb62; color: #0a0907;
 }
 .soc-cta{
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
