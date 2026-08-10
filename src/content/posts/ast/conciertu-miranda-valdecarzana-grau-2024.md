@@ -29,18 +29,14 @@ translation_group: "pll_69b025663352f"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2024)</h1>
 <p class="adar-archive-lede">
-Pol tercer añu consecutivu, el Palaciu de Miranda-Valdecarzana de Grau acoyó al Festival ADAR. N'esta edición, Grau convirtióse en segunda sede del festival, presentando nuna mesma nueche tres eventos distintos desendolcaos polos artistes convidaos.
+IV edición del festival · tercer añu nel Palaciu de Miranda-Valdecarzana de Grau. Esa nueche Grau axuntó tres actos: el conciertu nel palaciu, una instalación de Sarah K. Williams na Oficina de Turismu y una performance na Capilla de los Dolores.
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-La relación entre el Festival ADAR y el Palacio de Miranda-Valdecarzana se consolidó en la edición de 2024, que presentó un nuevo programa con músicos y repertorio renovados. El concierto incluyó obras de Andrea Casarrubios, Mozart, Debussy, Jessie Montgomery, Strauss y Vivaldi, en un programa que transitaba desde la creación contemporánea española hasta el barroco italiano.
-</p>
-
-<p>
-La velada en Grado fue especialmente intensa: junto al concierto principal en el palacio, la artista visual Sarah K. Williams presentó una instalación en la Oficina de Turismo y una performance en la Capilla de los Dolores. Grado se convirtió así en un verdadero eje del festival, ofreciendo al público la posibilidad de experimentar música, artes visuales y performance en una misma noche.
+Los músicos del festival —Jone de la Fuente (violín), Guillermo Laporta (flauta), Almudena Arribas (viola), Natania Hoffman (violonchelu) y Mario Molina (pianu)— con obres de Casarrubios, Mozart, Debussy, Jessie Montgomery, Strauss y Vivaldi.
 </p>
 
 <h3 style="margin-top:28px">Programa</h3>

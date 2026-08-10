@@ -29,18 +29,18 @@ translation_group: "pll_69b0256533f1b"
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert at the Palacio de Miranda-Valdecarzana (Grado, 2023)</h1>
 <p class="adar-archive-lede">
-Grado consolidated its position as an important venue for the ADAR Festival in its third edition, with several events concentrated in a single day. The Palacio de Miranda-Valdecarzana once again welcomed the festival musicians, this time with a programme focused on Spanish and European chamber music.
+3rd edition of the festival · a chamber concert at the Palacio de Miranda-Valdecarzana in Grado, medieval in origin and rebuilt in Baroque style in the 17th century (today the town's Casa de Cultura).
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-For the second consecutive year, the Palacio de Miranda-Valdecarzana opened its doors to the ADAR Festival. On this occasion, Grado became a true festival hub, concentrating into a single day a sound walk at the Palacio Fontela, a micro concert in the Capilla de los Dolores, and the main concert at the palace. Music flooded the town.
+That day Grado hosted three festival events: a sound walk at the Palacio Fontela, a micro concert in the Capilla de los Dolores, and the main concert at the palace.
 </p>
 
 <p>
-This edition's programme took a particularly attentive look at Spanish music, with works by Joaquín Turina and Enrique Granados alongside pieces by Nadia Boulanger, Telemann, and Arvo Pärt. The stylistic diversity of the repertoire, from baroque to contemporary minimalism, confirmed the festival's commitment to offering programmes that are both rigorous and accessible.
+A programme focused on Spanish music —Turina and Granados— alongside Boulanger, Telemann and Arvo Pärt.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>

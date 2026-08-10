@@ -29,18 +29,18 @@ translation_group: "pll_69b0256533f1b"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto en el Palacio de Miranda-Valdecarzana (Grado, 2023)</h1>
 <p class="adar-archive-lede">
-Grado se consolidó como sede importante del Festival ADAR en su tercera edición, con varios eventos concentrados en un solo día. El Palacio de Miranda-Valdecarzana acogió de nuevo a los músicos del festival, esta vez con un programa centrado en la música española y europea de cámara.
+III edición del festival · concierto de cámara en el Palacio de Miranda-Valdecarzana de Grado, de origen medieval y reformado en estilo barroco en el siglo XVII (hoy Casa de Cultura).
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-Por segundo año consecutivo, el Palacio de Miranda-Valdecarzana abrió sus puertas al Festival ADAR. En esta ocasión, Grado se convirtió en una verdadera sede del festival, concentrando en una misma jornada un paseo sonoro en el Palacio Fontela, un micro concierto en la Capilla de los Dolores y el concierto principal en el palacio. La música inundó el pueblo.
+Ese día Grado concentró tres actos del festival: paseo sonoro en el Palacio Fontela, micro concierto en la Capilla de los Dolores y el concierto principal en el palacio.
 </p>
 
 <p>
-El programa de esta edición ofrecía una mirada especialmente atenta a la música española, con obras de Joaquín Turina y Enrique Granados junto a piezas de Nadia Boulanger, Telemann y Arvo Pärt. La diversidad estilística del repertorio, desde el barroco hasta el minimalismo contemporáneo, confirmó la vocación del festival por ofrecer programas rigurosos y accesibles a la vez.
+Programa centrado en la música española —Turina y Granados— junto a Boulanger, Telemann y Arvo Pärt.
 </p>
 
 <h3 style="margin-top:28px">Programa</h3>

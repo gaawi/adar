@@ -29,8 +29,7 @@ translation_group: "pll_69b02565ee20e"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto en el Mercado de Pola de Somiedo</h1>
 <p class="adar-archive-lede">
-El Festival ADAR llegó a Pola de Somiedo con un programa de cámara que combinó creación contemporánea,
-clasicismo e intensidad barroca, en un concierto celebrado en el Mercado de la localidad.
+IV edición del festival · concierto de cámara en el Mercado de Pola de Somiedo, capital del Parque Natural de Somiedo (Reserva de la Biosfera y la mayor población de oso pardo de España).
 </p>
 </div>
 </div>
@@ -44,9 +43,7 @@ clasicismo e intensidad barroca, en un concierto celebrado en el Mercado de la l
 
 <div class="adar-archive-body">
 <p>
-La velada reunió obras de compositoras y compositores actuales junto a páginas emblemáticas del repertorio,
-con un recorrido que fue de la narrativa sonora de Andrea Casarrubios al clasicismo de Mozart,
-el color de Debussy, la intimidad de Strauss y el dramatismo de Vivaldi.
+Los músicos del festival —Guillermo Laporta (flauta), Mario Molina (piano), Jone de la Fuente (violín), Almudena Arribas (viola) y Natania Hoffman (violonchelo)— con un programa de Casarrubios, Mozart, Debussy, Strauss y Vivaldi.
 </p>
 
 <h3 style="margin-top:28px">Programa</h3>

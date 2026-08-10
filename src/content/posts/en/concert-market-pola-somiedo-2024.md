@@ -29,8 +29,7 @@ translation_group: "pll_69b02565ee20e"
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert at the Market of Pola de Somiedo</h1>
 <p class="adar-archive-lede">
-The ADAR Festival arrived in Pola de Somiedo with a chamber programme combining contemporary creation,
-classicism and baroque intensity, in a concert held at the town's Market.
+4th edition of the festival · a chamber concert at the Market of Pola de Somiedo, capital of the Somiedo Natural Park (a UNESCO Biosphere Reserve and home to Spain's largest brown-bear population).
 </p>
 </div>
 </div>
@@ -44,9 +43,7 @@ classicism and baroque intensity, in a concert held at the town's Market.
 
 <div class="adar-archive-body">
 <p>
-The evening brought together works by contemporary composers alongside emblematic pages of the repertoire,
-with a journey from Andrea Casarrubios's sonic narrative to Mozart's classicism,
-the colour of Debussy, the intimacy of Strauss, and the drama of Vivaldi.
+The festival musicians —Guillermo Laporta (flute), Mario Molina (piano), Jone de la Fuente (violin), Almudena Arribas (viola) and Natania Hoffman (cello)— with a programme of Casarrubios, Mozart, Debussy, Strauss and Vivaldi.
 </p>
 
 <h3 style="margin-top:28px">Programme</h3>

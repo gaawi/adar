@@ -29,18 +29,18 @@ translation_group: "pll_69b0256533f1b"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2023)</h1>
 <p class="adar-archive-lede">
-Grau consolidóse como sede importante del Festival ADAR na so tercera edición, con varios eventos concentraos nun solu día. El Palaciu de Miranda-Valdecarzana acoyó de nuevu a los músicos del festival, esta vegada con un programa centráu na música española y europea de cámara.
+III edición del festival · conciertu de cámara nel Palaciu de Miranda-Valdecarzana de Grau, d’orixe medieval y reformáu n’estilu barrocu nel sieglu XVII (güei Casa de Cultura).
 </p>
 </div>
 </div>
 
 <div class="adar-archive-body">
 <p>
-Por segundo año consecutivo, el Palacio de Miranda-Valdecarzana abrió sus puertas al Festival ADAR. En esta ocasión, Grado se convirtió en una verdadera sede del festival, concentrando en una misma jornada un paseo sonoro en el Palacio Fontela, un micro concierto en la Capilla de los Dolores y el concierto principal en el palacio. La música inundó el pueblo.
+Esi día Grau concentró tres actos del festival: paseu sonoru nel Palaciu Fontela, micro conciertu na Capilla de los Dolores y el conciertu principal nel palaciu.
 </p>
 
 <p>
-El programa de esta edición ofrecía una mirada especialmente atenta a la música española, con obras de Joaquín Turina y Enrique Granados junto a piezas de Nadia Boulanger, Telemann y Arvo Pärt. La diversidad estilística del repertorio, desde el barroco hasta el minimalismo contemporáneo, confirmó la vocación del festival por ofrecer programas rigurosos y accesibles a la vez.
+Programa centráu na música española —Turina y Granados— xunto a Boulanger, Telemann y Arvo Pärt.
 </p>
 
 <h3 style="margin-top:28px">Programa</h3>

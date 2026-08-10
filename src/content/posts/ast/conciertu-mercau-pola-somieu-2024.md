@@ -29,8 +29,7 @@ translation_group: "pll_69b02565ee20e"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
 <h1 class="adar-archive-title">Conciertu nel Mercáu de Pola de Somiéu</h1>
 <p class="adar-archive-lede">
-El Festival ADAR llegó a Pola de Somiéu con un programa de cámara que combinó creación contemporánea,
-clasicismu ya intensidá barroca, nun conciertu celebráu nel Mercáu de la llocalidá.
+IV edición del festival · conciertu de cámara nel Mercáu de Pola de Somiéu, capital del Parque Natural de Somiéu (Reserva de la Biosfera y la mayor población d’osu pardu d’España).
 </p>
 </div>
 </div>
@@ -44,9 +43,7 @@ clasicismu ya intensidá barroca, nun conciertu celebráu nel Mercáu de la lloc
 
 <div class="adar-archive-body">
 <p>
-La velada axuntó obres de compositores y compositores actuales xunto a páxines emblemátiques del repertoriu,
-con un recorrido que fue de la narrativa sonora de Andrea Casarrubios al clasicismo de Mozart,
-el color de Debussy, la intimidad de Strauss y el dramatismo de Vivaldi.
+Los músicos del festival —Guillermo Laporta (flauta), Mario Molina (pianu), Jone de la Fuente (violín), Almudena Arribas (viola) y Natania Hoffman (violonchelu)— con un programa de Casarrubios, Mozart, Debussy, Strauss y Vivaldi.
 </p>
 
 <h3 style="margin-top:28px">Programa</h3>
