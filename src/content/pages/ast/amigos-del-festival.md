@@ -38,6 +38,8 @@ translation_group: "pll_adar26_amigos"
 <p class="ed-lede">Los Amigos del Festival sostienen la música y l’arte contemporáneu nel mediu rural asturianu. A cambiu, viven cada edición dende primer filera —y dende dentro—. Escueyi’l to nivel y xúnite al círculu.</p>
 </div>
 
+<p class="soc-scarcity"><strong>Les entraes son de baldre… y vuelen.</strong> Munchos conciertos agótense’l mesmu día que se publiquen, o a los pocos díes. Ser Amigu garantízate la plaza en cada edición, ensin depender de la suerte.</p>
+
 <div class="soc-tiers">
 
 <article class="soc-tier">
@@ -60,7 +62,7 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-price"><span class="soc-amount">30&nbsp;€</span><span class="soc-per">/ añu</span></p>
 </header>
 <ul class="soc-perks">
-<li class="is-key">Entraes anticipaes pa tolos conciertos, enantes de la apertura al públicu.</li>
+<li class="is-key">Entraes anticipaes a tolos conciertos: la to plaza asegurada enantes de que s’agoten.</li>
 <li class="is-key">Reserva y disponibilidá anticipada pa les futures ediciones.</li>
 <li>Boletín del sociu cola axenda y conteníu ente bastidores.</li>
 <li>El to nome nel muriu d’Amigos del festival.</li>
@@ -69,13 +71,13 @@ translation_group: "pll_adar26_amigos"
 </article>
 
 <article class="soc-tier is-featured">
-<span class="soc-badge mono">Más valoráu pol públicu</span>
+<span class="soc-badge mono">El más solicitáu</span>
 <header class="soc-tier-head">
 <p class="soc-tier-name">Amigu VIP</p>
 <p class="soc-price"><span class="soc-amount">50&nbsp;€</span><span class="soc-per">/ añu</span></p>
 </header>
 <ul class="soc-perks">
-<li class="is-key">Entraes anticipaes pa tolos conciertos, enantes de la apertura al públicu.</li>
+<li class="is-key">Entraes anticipaes a tolos conciertos: la to plaza asegurada enantes de que s’agoten.</li>
 <li class="is-key">Reserva y disponibilidá anticipada pa les futures ediciones.</li>
 <li>Boletín del sociu cola axenda y conteníu ente bastidores.</li>
 <li>El to nome nel muriu d’Amigos del festival.</li>

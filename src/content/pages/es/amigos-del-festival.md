@@ -38,6 +38,8 @@ translation_group: "pll_adar26_amigos"
 <p class="ed-lede">Los Amigos del Festival sostienen la música y el arte contemporáneo en el medio rural asturiano. A cambio, viven cada edición desde primera fila —y desde dentro—. Elige tu nivel y únete al círculo.</p>
 </div>
 
+<p class="soc-scarcity"><strong>Las entradas son gratuitas… y vuelan.</strong> Muchos conciertos se agotan el mismo día en que se publican, o a los pocos días. Ser Amigo te garantiza tu plaza en cada edición, sin depender de la suerte.</p>
+
 <div class="soc-tiers">
 
 <article class="soc-tier">
@@ -60,7 +62,7 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-price"><span class="soc-amount">30&nbsp;€</span><span class="soc-per">/ año</span></p>
 </header>
 <ul class="soc-perks">
-<li class="is-key">Entradas anticipadas para todos los conciertos, antes de la apertura al público.</li>
+<li class="is-key">Entradas anticipadas a todos los conciertos: tu plaza asegurada antes de que se agoten.</li>
 <li class="is-key">Reserva y disponibilidad anticipada para las futuras ediciones.</li>
 <li>Boletín del socio con la agenda y contenido entre bastidores.</li>
 <li>Tu nombre en el muro de Amigos del festival.</li>
@@ -69,13 +71,13 @@ translation_group: "pll_adar26_amigos"
 </article>
 
 <article class="soc-tier is-featured">
-<span class="soc-badge mono">Más valorado por el público</span>
+<span class="soc-badge mono">El más solicitado</span>
 <header class="soc-tier-head">
 <p class="soc-tier-name">Amigo VIP</p>
 <p class="soc-price"><span class="soc-amount">50&nbsp;€</span><span class="soc-per">/ año</span></p>
 </header>
 <ul class="soc-perks">
-<li class="is-key">Entradas anticipadas para todos los conciertos, antes de la apertura al público.</li>
+<li class="is-key">Entradas anticipadas a todos los conciertos: tu plaza asegurada antes de que se agoten.</li>
 <li class="is-key">Reserva y disponibilidad anticipada para las futuras ediciones.</li>
 <li>Boletín del socio con la agenda y contenido entre bastidores.</li>
 <li>Tu nombre en el muro de Amigos del festival.</li>
