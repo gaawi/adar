@@ -13637,6 +13637,19 @@ html.has-hm-today .hm-side-banner { display: none !important; }
   font-size: 10px; font-weight: 700;
   display: flex; align-items: center; justify-content: center;
 }
+/* Perks destacados (entradas / asientos VIP): resaltados */
+.soc-perks li.is-key{
+  font-weight: 700;
+  color: var(--ink, #0a0907);
+  background: rgba(200,168,75,0.16);
+  border-radius: 7px;
+  padding: 8px 12px 8px 34px;
+  margin: -1px 0;
+}
+.soc-perks li.is-key::before{
+  content: "★"; left: 11px; top: 9px;
+  background: #0a0907; color: #d8bb62; font-size: 9px;
+}
 .soc-cta{
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: 14px 20px; border: 1px solid var(--ink, #0a0907); border-radius: 999px;

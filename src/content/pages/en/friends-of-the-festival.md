@@ -60,8 +60,8 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-price"><span class="soc-amount">€30</span><span class="soc-per">/ year</span></p>
 </header>
 <ul class="soc-perks">
-<li>Early tickets to every concert, before they open to the public.</li>
-<li>Priority booking and early availability for future editions.</li>
+<li class="is-key">Early tickets to every concert, before they open to the public.</li>
+<li class="is-key">Priority booking and early availability for future editions.</li>
 <li>Members' newsletter with the programme and behind-the-scenes content.</li>
 <li>Your name on the festival's Friends wall.</li>
 </ul>
@@ -75,11 +75,11 @@ translation_group: "pll_adar26_amigos"
 <p class="soc-price"><span class="soc-amount">€50</span><span class="soc-per">/ year</span></p>
 </header>
 <ul class="soc-perks">
-<li>Early tickets to every concert, before they open to the public.</li>
-<li>Priority booking and early availability for future editions.</li>
+<li class="is-key">Early tickets to every concert, before they open to the public.</li>
+<li class="is-key">Priority booking and early availability for future editions.</li>
 <li>Members' newsletter with the programme and behind-the-scenes content.</li>
 <li>Your name on the festival's Friends wall.</li>
-<li>VIP seats in the best spots at every event.</li>
+<li class="is-key">VIP seats in the best spots at every event.</li>
 <li>Unreleased recordings of the concerts (audio and video).</li>
 <li>A limited-edition festival T-shirt.</li>
 <li>An invitation to the closing espicha and to a meet-the-artists gathering.</li>
