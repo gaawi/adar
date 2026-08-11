@@ -9,7 +9,7 @@ wp_id: 0
 original_url: ""
 permalink: "/es/la-suite-de-bach-en-video-guillermo-ordas/"
 categories: ["Memoria de Acciones"]
-tags: ["2023", "videoarte", "Guillermo Ordás", "Natania Hoffman", "Bach", "violonchelo"]
+tags: ["2023", "videoarte", "Guillermo Ordás", "Natania Hoffman", "Bach", "Leiguarda"]
 featured_image: "https://i.ytimg.com/vi/Xk_Qz361e0o/maxresdefault.jpg"
 excerpt: "Videoarte de Guillermo Ordás sobre la Suite para violonchelo n.º 1 de J.S. Bach, con Natania Hoffman. Festival ADAR 2023."
 author: "gaawi_rei1q"
@@ -29,7 +29,7 @@ translation_group: "pll_adar26_bach_ordas"
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">La Suite de Bach, en vídeo</h1>
 <p class="adar-archive-lede">
-Videoarte de Guillermo Ordás, cinematógrafo del festival, sobre la Suite para violonchelo n.º 1 de J.S. Bach, con Natania Hoffman al violonchelo. III edición · 2023.
+Videoarte de Guillermo Ordás sobre la Suite para violonchelo n.º 1 de J.S. Bach, con Natania Hoffman al violonchelo. Grabado en Leiguarda durante el Festival ADAR 2023.
 </p>
 </div>
 </div>
@@ -41,7 +41,7 @@ Videoarte de Guillermo Ordás, cinematógrafo del festival, sobre la Suite para 
 </div>
 
 <p>
-Guillermo Ordás —cinematógrafo del Festival ADAR— firma este videoarte sobre la Suite para violonchelo n.º 1 en sol mayor (BWV 1007) de J.S. Bach, interpretada por Natania Hoffman. Grabado en la edición de 2023.
+Concepto, cinematografía y montaje de Guillermo Ordás, cinematógrafo del Festival ADAR, sobre la Suite para violonchelo n.º 1 en sol mayor (BWV 1007) de J.S. Bach, con Natania Hoffman al violonchelo. Grabado en Leiguarda (Belmonte de Miranda), Asturias, en agosto de 2023.
 </p>
 
 <div class="adar-archive-social">
@@ -57,20 +57,24 @@ Guillermo Ordás —cinematógrafo del Festival ADAR— firma este videoarte sob
 <div class="adar-archive-box">
 <h6>Ficha</h6>
 <p>
-<strong>Vídeo:</strong><br>
-Guillermo Ordás (cinematógrafo)
+<strong>Concepto, cinematografía y montaje:</strong><br>
+Guillermo Ordás
 </p>
 <p>
 <strong>Violonchelo:</strong><br>
 Natania Hoffman
 </p>
 <p>
+<strong>Ayudante de montaje:</strong><br>
+Žilvinas Brazauskas
+</p>
+<p>
 <strong>Obra:</strong><br>
 J.S. Bach · Suite para violonchelo n.º 1 en sol mayor, BWV 1007
 </p>
 <p>
-<strong>Edición:</strong><br>
-III · 2023
+<strong>Grabado en:</strong><br>
+Leiguarda (Belmonte de Miranda) · agosto de 2023
 </p>
 <p>
 <strong>Formato:</strong><br>

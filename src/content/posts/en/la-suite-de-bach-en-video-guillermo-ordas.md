@@ -9,7 +9,7 @@ wp_id: 0
 original_url: ""
 permalink: "/en/la-suite-de-bach-en-video-guillermo-ordas/"
 categories: ["Projects Archive"]
-tags: ["2023", "video art", "Guillermo Ordás", "Natania Hoffman", "Bach", "cello"]
+tags: ["2023", "video art", "Guillermo Ordás", "Natania Hoffman", "Bach", "Leiguarda"]
 featured_image: "https://i.ytimg.com/vi/Xk_Qz361e0o/maxresdefault.jpg"
 excerpt: "Video art by Guillermo Ordás on J.S. Bach's Cello Suite No. 1, with Natania Hoffman. Festival ADAR 2023."
 author: "gaawi_rei1q"
@@ -29,7 +29,7 @@ translation_group: "pll_adar26_bach_ordas"
 <span class="adar-archive-eyebrow">Festival ADAR · Projects Archive</span>
 <h1 class="adar-archive-title">Bach on film</h1>
 <p class="adar-archive-lede">
-Video art by Guillermo Ordás, the festival's cinematographer, on J.S. Bach's Cello Suite No. 1, with Natania Hoffman on cello. 3rd edition · 2023.
+Video art by Guillermo Ordás on J.S. Bach's Cello Suite No. 1, with Natania Hoffman on cello. Filmed in Leiguarda during Festival ADAR 2023.
 </p>
 </div>
 </div>
@@ -41,7 +41,7 @@ Video art by Guillermo Ordás, the festival's cinematographer, on J.S. Bach's Ce
 </div>
 
 <p>
-Guillermo Ordás —cinematographer of Festival ADAR— created this video art on J.S. Bach's Cello Suite No. 1 in G major (BWV 1007), performed by Natania Hoffman. Filmed during the 2023 edition.
+Concept, cinematography and editing by Guillermo Ordás, cinematographer of Festival ADAR, on J.S. Bach's Cello Suite No. 1 in G major (BWV 1007), with Natania Hoffman on cello. Filmed in Leiguarda (Belmonte de Miranda), Asturias, in August 2023.
 </p>
 
 <div class="adar-archive-social">
@@ -57,20 +57,24 @@ Guillermo Ordás —cinematographer of Festival ADAR— created this video art o
 <div class="adar-archive-box">
 <h6>Details</h6>
 <p>
-<strong>Video:</strong><br>
-Guillermo Ordás (cinematographer)
+<strong>Concept, cinematography & editing:</strong><br>
+Guillermo Ordás
 </p>
 <p>
 <strong>Cello:</strong><br>
 Natania Hoffman
 </p>
 <p>
+<strong>Assistant editor:</strong><br>
+Žilvinas Brazauskas
+</p>
+<p>
 <strong>Work:</strong><br>
 J.S. Bach · Cello Suite No. 1 in G major, BWV 1007
 </p>
 <p>
-<strong>Edition:</strong><br>
-3rd · 2023
+<strong>Filmed in:</strong><br>
+Leiguarda (Belmonte de Miranda) · August 2023
 </p>
 <p>
 <strong>Format:</strong><br>
