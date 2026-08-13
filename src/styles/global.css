@@ -13688,3 +13688,45 @@ html.has-hm-today .hm-side-banner { display: none !important; }
 .soc-cta.is-primary{ background: #c8a84b; border-color: #c8a84b; color: #1a1508; }
 .soc-cta.is-primary:hover{ background: #d8bb62; border-color: #d8bb62; }
 .soc-note{ margin: 24px 0 0; font-size: 12px; letter-spacing: 0.03em; color: rgba(10,9,7,0.55); }
+
+/* =============================================================
+   CONCURSO DE HÓRREOS Y PANERAS · sección informativa
+   ============================================================= */
+.hc-subhead{ font-family: var(--font-display); font-stretch: 75%; font-weight: 600; font-size: clamp(20px,2.4vw,28px); margin: 40px 0 14px; color: var(--ink,#0a0907); letter-spacing:-0.01em; }
+.hc-note{ font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(10,9,7,0.45); margin: 0 0 10px; }
+
+.hc-winners{ display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; margin: 0 0 4px; }
+@media (max-width:640px){ .hc-winners{ grid-template-columns: 1fr; } }
+.hc-win{ border: 1px solid rgba(10,9,7,0.16); border-radius: 8px; padding: 16px 18px; background: #fff; }
+.hc-win-year{ font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink,#8a6a12); margin: 0 0 8px; }
+.hc-win ul{ list-style: none !important; margin: 0; padding: 0; }
+.hc-win li{ list-style: none !important; padding: 6px 0; font-size: 15px; line-height: 1.45; color: var(--ink,#0a0907); border-top: 1px solid rgba(10,9,7,0.08); }
+.hc-win li:first-child{ border-top: 0; padding-top: 0; }
+.hc-win li::marker{ content:none; }
+
+.hc-carousel{ display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 2px 0 14px; scrollbar-width: none; }
+.hc-carousel::-webkit-scrollbar{ display: none; }
+.hc-card{ flex: 0 0 82%; max-width: 320px; scroll-snap-align: start; display: flex; flex-direction: column; border: 1px solid rgba(10,9,7,0.16); border-radius: 8px; overflow: hidden; background: #fff; text-decoration: none; color: var(--ink,#0a0907); transition: box-shadow .2s ease, transform .2s ease; }
+@media (min-width:640px){ .hc-card{ flex-basis: 290px; } }
+.hc-card:hover{ box-shadow: 0 8px 24px rgba(10,9,7,0.1); transform: translateY(-2px); }
+.hc-card-img{ display: block; width: 100%; aspect-ratio: 4/3; background: #e9e4d8; overflow: hidden; }
+.hc-card-img img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+.hc-card-ph{ display: flex; align-items: center; justify-content: center; font-size: 34px; color: rgba(10,9,7,0.28); }
+.hc-card-body{ display: flex; flex-direction: column; gap: 3px; padding: 13px 15px; }
+.hc-card-year{ font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink,#8a6a12); }
+.hc-card-title{ font-family: var(--font-display); font-stretch: 75%; font-weight: 600; font-size: 19px; line-height: 1.05; color: var(--ink,#0a0907); }
+.hc-card-venue{ font-size: 11px; letter-spacing: 0.03em; color: rgba(10,9,7,0.55); }
+
+.hc-2027{ margin: 6px 0 18px; padding: 15px 18px; background: rgba(200,168,75,0.16); border-left: 3px solid #c8a84b; border-radius: 0 8px 8px 0; font-size: 15px; line-height: 1.6; color: var(--ink,#0a0907); }
+.hc-notify{ display: inline-block; margin-top: 4px; font-weight: 700; color: var(--ink,#0a0907); text-decoration: underline; text-underline-offset: 3px; }
+.hc-notify:hover{ color: var(--accent-ink,#8a6a12); }
+
+.hc-bases{ border: 1px solid rgba(10,9,7,0.16); border-radius: 8px; margin: 0 0 10px; background: #fff; overflow: hidden; }
+.hc-bases > summary{ cursor: pointer; padding: 14px 18px; font-weight: 700; font-size: 14px; letter-spacing: 0.02em; color: var(--ink,#0a0907); list-style: none; }
+.hc-bases > summary::-webkit-details-marker{ display: none; }
+.hc-bases > summary::before{ content: "▸  "; color: var(--accent-ink,#8a6a12); }
+.hc-bases[open] > summary::before{ content: "▾  "; }
+.hc-bases-body{ padding: 4px 18px 16px; border-top: 1px solid rgba(10,9,7,0.1); }
+.hc-bases-body h4{ font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-ink,#8a6a12); margin: 16px 0 4px; }
+.hc-bases-body p{ font-size: 14px; line-height: 1.55; color: var(--ink,#0a0907); margin: 0 0 8px; }
+.hc-bases-meta, .hc-bases-foot{ font-size: 12px; color: rgba(10,9,7,0.55); }
