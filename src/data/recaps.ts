@@ -29,5 +29,16 @@ export const RECAPS: Record<string, Recap> = {
   // 04 · Umbral Zero (Aula del Oro, Belmonte de Miranda)
   '04': {
     page: 'umbral-zero-aula-del-oro',
+    instagram: 'https://www.instagram.com/p/DbxxHtwiCQq/',
+  },
+  // 06 · The Rest is Silence (Auditorio As Quintas · El Franco)
+  '06': {
+    page: 'the-rest-is-silence-el-franco',
+    instagram: 'https://www.instagram.com/p/Db-mXZZiGOT/',
+  },
+  // 07 · Concierto del eclipse (Alto de La Corredoria)
+  '07': {
+    page: 'concierto-del-eclipse-la-corredoria',
+    instagram: 'https://www.instagram.com/p/Db_Hl0LiNys/',
   },
 };

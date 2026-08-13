@@ -40,7 +40,7 @@ A flute-and-piano programme that linked the minimalism of Max Richter with the b
 </p>
 
 <div class="adar-archive-social">
-<a class="adar-archive-social-btn is-ig" href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">▶ See on Instagram</a>
+<a class="adar-archive-social-btn is-ig" href="https://www.instagram.com/p/DbxxHtwiCQq/" target="_blank" rel="noopener">▶ See on Instagram</a>
 </div>
 
 <h3 style="margin-top:28px">Programme</h3>
@@ -96,7 +96,7 @@ Minimalist music and visual art concert
 <div class="adar-archive-box">
 <h6>Social</h6>
 <p class="adar-archive-social-list">
-<a href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">▶ See on Instagram ↗</a>
+<a href="https://www.instagram.com/p/DbxxHtwiCQq/" target="_blank" rel="noopener">▶ See on Instagram ↗</a>
 </p>
 </div>
 

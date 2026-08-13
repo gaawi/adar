@@ -40,7 +40,7 @@ Un programa de flauta y pianu qu'enllazó'l minimalismu de Max Richter cola desn
 </p>
 
 <div class="adar-archive-social">
-<a class="adar-archive-social-btn is-ig" href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">▶ Ver n’Instagram</a>
+<a class="adar-archive-social-btn is-ig" href="https://www.instagram.com/p/DbxxHtwiCQq/" target="_blank" rel="noopener">▶ Ver n’Instagram</a>
 </div>
 
 <h3 style="margin-top:28px">Programa</h3>
@@ -96,7 +96,7 @@ Conciertu de música minimalista y arte visual
 <div class="adar-archive-box">
 <h6>Redes</h6>
 <p class="adar-archive-social-list">
-<a href="https://www.instagram.com/festivaladar" target="_blank" rel="noopener">▶ Ver n’Instagram ↗</a>
+<a href="https://www.instagram.com/p/DbxxHtwiCQq/" target="_blank" rel="noopener">▶ Ver n’Instagram ↗</a>
 </p>
 </div>
 
