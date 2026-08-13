@@ -87,8 +87,8 @@ translation_group: "pll_6990ac582687f"
 </span>
 </a>
 
-<a class="hc-card" href="/ast/micro-conciertu-panera-casantos-lleiguarda-2023/">
-<span class="hc-card-img hc-card-ph" aria-hidden="true">♪</span>
+<a class="hc-card" href="/ast/micro-conciertos-paseu-sonoru-lleiguarda-2024/">
+<span class="hc-card-img"><img src="https://creartbox-archive.b-cdn.net/adarimages/memoria-de-acciones/2024-08-16-micro-conciertos-paseo-sonoro-leiguarda-2024/03.jpg" alt="" loading="lazy"></span>
 <span class="hc-card-body">
 <span class="hc-card-year mono">2023 · El primeru</span>
 <span class="hc-card-title">Micro-conciertu · Panera Casantos</span>

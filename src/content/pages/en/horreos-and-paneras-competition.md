@@ -87,8 +87,8 @@ translation_group: "pll_6990ac582687f"
 </span>
 </a>
 
-<a class="hc-card" href="/en/micro-concert-panera-casantos-leiguarda-2023/">
-<span class="hc-card-img hc-card-ph" aria-hidden="true">♪</span>
+<a class="hc-card" href="/en/micro-concerts-sound-walk-leiguarda-2024/">
+<span class="hc-card-img"><img src="https://creartbox-archive.b-cdn.net/adarimages/memoria-de-acciones/2024-08-16-micro-conciertos-paseo-sonoro-leiguarda-2024/03.jpg" alt="" loading="lazy"></span>
 <span class="hc-card-body">
 <span class="hc-card-year mono">2023 · The first one</span>
 <span class="hc-card-title">Micro concert · Panera Casantos</span>
