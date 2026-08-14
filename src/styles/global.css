@@ -1595,6 +1595,20 @@ body.has-header-image #content{
 .adar-nav-open .adar-nav-toggle-bar{
   background: #fff;
 }
+/* El panel del menú (oscuro, a pantalla completa) tapa el fondo del header,
+   así que sus controles quedan SIEMPRE sobre oscuro: fuerza la «X», el logo y
+   el selector de idioma a claro, ganando a las reglas del estado "scrolled"
+   (que los volvía oscuros → invisibles sobre el panel). */
+body.adar-nav-open header.site-header.cd-header .adar-nav-toggle-bar{
+  background: #fff !important;
+}
+body.adar-nav-open header.site-header.cd-header .cd-mark-logo{
+  filter: brightness(0) invert(1) !important;
+}
+body.adar-nav-open header.site-header.cd-header .cd-lang-dd summary{
+  color: #fff !important;
+  border-color: rgba(246,244,238,0.4) !important;
+}
 
 @media (max-width: 980px){
   .adar-nav-toggle{ display: block; }
@@ -3920,9 +3934,9 @@ footer.site-footer,
   }
   body.single-post .site-content{ padding-top: 0 !important; }
   body.single-post .site-main{ margin-top: 0 !important; }
-  body.single-post header.site-header a,
-  body.single-post header.site-header *,
-  body.single-post .navbar a{ color: #fff !important; }
+  body.single-post.has-floating-header:not(.is-scrolled) header.site-header a,
+  body.single-post.has-floating-header:not(.is-scrolled) header.site-header *,
+  body.single-post.has-floating-header:not(.is-scrolled) .navbar a{ color: #fff !important; }
 }
 @media (min-width: 901px){
   .adar-mobile-hero{ display: none; }
