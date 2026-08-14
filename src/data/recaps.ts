@@ -43,4 +43,8 @@ export const RECAPS: Record<string, Recap> = {
     page: 'concierto-del-eclipse-la-corredoria',
     instagram: 'https://www.instagram.com/p/Db_Hl0LiNys/',
   },
+  // 08 · ADAR en Ruta · Villanueva de Oscos
+  '08': {
+    page: 'bajo-las-bovedas-villanueva-de-oscos',
+  },
 };
