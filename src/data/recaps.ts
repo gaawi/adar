@@ -47,4 +47,8 @@ export const RECAPS: Record<string, Recap> = {
   '08': {
     page: 'bajo-las-bovedas-villanueva-de-oscos',
   },
+  // 09 · Equilibrium (Muestra de residencia · La Casona de Belmonte)
+  '09': {
+    page: 'equilibrium-la-casona-de-belmonte',
+  },
 };
