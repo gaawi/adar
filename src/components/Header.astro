@@ -57,10 +57,15 @@ const statusCopy = {
   ast: { left: 'Festival ADAR · Principáu d’Asturies', right: 'Asturies · España · Europa' },
 }[lang];
 
-// Main header CTA · Donations via Stripe payment link.
-// Replaces the former newsletter button.
-const ctaLabel = { es: 'Donar', en: 'Donate', ast: 'Donar' }[lang];
-const ctaHref = 'https://buy.stripe.com/aEUaFobka6nCfxm001';
+// Main header CTA · "Amigos del Festival" membership page (tiers + perks).
+// Replaces the former donation button; the naming mirrors the destination
+// page, which is built around the "Amigo/Friend" identity.
+const ctaLabel = { es: 'Hazte amigo', en: 'Become a friend', ast: 'Faite amigu' }[lang];
+const ctaHref = {
+  es: '/es/amigos-del-festival/',
+  en: '/en/friends-of-the-festival/',
+  ast: '/ast/amigos-del-festival/',
+}[lang];
 
 const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
 ---
@@ -149,7 +154,7 @@ const homeHref = `/${lang}/${HOME_SLUG[lang]}/`;
         </div>
       </details>
 
-      <a class="cd-cta" href={ctaHref} target="_blank" rel="noopener"><span class="cd-cta-arr" aria-hidden="true">♥</span> {ctaLabel}</a>
+      <a class="cd-cta" href={ctaHref}><span class="cd-cta-arr" aria-hidden="true">♥</span> {ctaLabel}</a>
 
       <button
         type="button"
