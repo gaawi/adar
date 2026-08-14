@@ -8432,6 +8432,21 @@ body.has-floating-header.is-scrolled header.site-header.cd-header .cd-mark-logo 
 body.has-floating-header.is-scrolled header.site-header.cd-header .adar-nav-toggle-bar {
   background: var(--ink);
 }
+/* El panel del menú móvil es SIEMPRE un overlay oscuro (inset:0). Cuando el
+   header está en estado "scrolled" vuelve su texto a --ink (oscuro) y, por
+   especificidad, apagaba también los enlaces del menú abierto → texto oscuro
+   sobre panel oscuro = ilegible. Al abrir el menú (body.adar-nav-open) se
+   reafirma el color claro del panel con especificidad suficiente para ganar. */
+body.adar-nav-open header.site-header.cd-header .header-navigation-wrapper ul.nav > li > a,
+body.adar-nav-open header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link {
+  color: #fff !important;
+}
+body.adar-nav-open header.site-header.cd-header .header-navigation-wrapper ul.sub-menu li a {
+  color: rgba(255,255,255,0.78) !important;
+}
+body.adar-nav-open header.site-header.cd-header .header-navigation-wrapper ul.nav .cd-nav-num {
+  color: rgba(255,255,255,0.55) !important;
+}
 
 /* Hero begins below the opaque cd-status strip and extends behind
    the transparent cd-main bar. Negative margin equals cd-main height
