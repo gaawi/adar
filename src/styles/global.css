@@ -13119,6 +13119,30 @@ body.page .entry-content .vi26 p,
 .vi26-program-wrap,
 .vi26-artists-wrap { margin: 0; }
 
+/* Destacado por evento (p. ej. instrumento especial de un intérprete) */
+.vi26-highlight {
+  margin: 4px 0 2px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--accent);
+  background: rgba(245,215,47,0.14);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.vi26-highlight-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.vi26-highlight-star { color: var(--accent); font-size: 13px; }
+.vi26-highlight p { margin: 0; font-size: 14px; line-height: 1.45; color: var(--ink); }
+
 /* MÓVIL — display:contents elimina el gap:24px de .vi26-content, así que
    reponemos el ritmo vertical con márgenes (y anulamos el margin -16px del
    subtítulo, pensado para el gap de escritorio, que en móvil solapaba el
