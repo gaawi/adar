@@ -349,6 +349,7 @@ interface Event {
   echoes?: string;
   walk?: { n: string; title: string; text?: string }[];
   highlight?: string;
+  highlightLabel?: string;
 }
 
 const EVENTS: Event[] = [
@@ -632,13 +633,13 @@ const EVENTS: Event[] = [
     capacity: 40,
     title: 'Paseo sonoro en Leiguarda',
     subtitle: 'Creación site-specific',
-    description: 'Caminata sonora por el valle con paradas en distintas estaciones del recorrido. El quinteto Hoffman / Brazauskas / Saeijs / Laporta / Urraca interpreta obras originales, arreglos e improvisación a lo largo del trayecto, integrando el paisaje en la partitura. Aforo limitado por motivos de movilidad: el grupo camina junto al público entre estación y estación. Calzado cómodo recomendado.',
-    programNote: 'Creación site-specific con obras originales, arreglos e improvisación a lo largo del valle de Leiguarda.',
+    description: 'Caminata sonora por Leiguarda con la iglesia parroquial como punto de partida y llegada. El quinteto Hoffman / Brazauskas / Saeijs / Laporta / Urraca interpreta obras originales, arreglos e improvisación a lo largo del recorrido, integrando el entorno en la partitura. Aforo limitado por motivos de movilidad: el grupo camina junto al público entre parada y parada. Calzado cómodo recomendado.',
+    programNote: 'Creación site-specific con obras originales, arreglos e improvisación, con la iglesia de Leiguarda como punto de partida y llegada.',
     pieces: [],
-    venue: 'Calles de Leiguarda',
-    address: 'Calles del pueblo de Leiguarda · 33840 Belmonte de Miranda',
-    mapUrl: 'https://maps.app.goo.gl/EPxFASazLDi5FekL8',
-    municipality: 'Calles de Leiguarda (Belmonte de Miranda)',
+    venue: 'Iglesia de Leiguarda',
+    address: 'Iglesia parroquial de Leiguarda · 33840 Belmonte de Miranda',
+    mapUrl: 'https://maps.app.goo.gl/dTvxzNexya2aE92J6',
+    municipality: 'Iglesia de Leiguarda (Belmonte de Miranda)',
     photo: CDN + 'ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/03.jpg',
     memoriaSlug: 'paseo-sonoro-en-leiguarda',
     memoriaYear: 2025,
@@ -649,7 +650,8 @@ const EVENTS: Event[] = [
       { name: 'Guillermo Laporta',  role: 'flauta' },
       { name: 'Josefina Urraca',    role: 'piano' },
     ],
-    highlight: 'Žilvinas Brazauskas toca, además del clarinete, el birbynė: el instrumento de lengüeta tradicional de Lituania.',
+    highlightLabel: 'Birbynė en directo',
+    highlight: 'Žilvinas Brazauskas toca, además del clarinete, el <strong>birbynė</strong>: el instrumento de lengüeta tradicional de Lituania.',
     eventbrite: 'https://www.eventbrite.es/e/1993314212468',
     ticketStatus: 'few',
   },
@@ -750,7 +752,7 @@ const EV_I18N: Record<string, Record<string, any>> = {
   "07": { "title": "Micro concert during the eclipse", "subtitle": "Flute quartet", "description": "A flute quartet at the Alto de La Corredoria (Belmonte de Miranda), one of the concejo's finest viewpoints, coinciding with the total solar eclipse. Guillermo Laporta (flute), Maria Florea (violin), Lara Fernández (viola) and Daniel Claret (cello) play as dusk falls, as a complementary activity to the guided eclipse observation organised by Belmonte de Miranda Town Hall." },
   "08": { "title": "Concert of chamber music and visual art", "subtitle": "ADAR ON TOUR", "description": "Beneath the vaults of the Cistercian monastery of Villanueva de Oscos, founded in the 12th century, the ensemble brings together Devin Cholodenko's Twilight at Dawn, the second movement of Schubert's String Trio, Joan Magrané's Andante sostenuto —co-commissioned by L'Auditori de Barcelona—, Brahms's Piano Quartet in C minor Op. 60, and two movements of Dvořák's Quintet Op. 81. Classical and contemporary repertoire read within a 12th-century nave." },
   "09": { "venueNote": "Two 20-minute sittings", "title": "Equilibrium", "subtitle": "Residency showcase · The Rest Project", "description": "\"Equilibrium\" takes 3 as the number of balance—spirit, soul and body: three musicians and three composers in harmony. Coinciding with the centenary of György Kurtág, the trio The Rest Project shares the work developed during its artistic residency at the hórreo, an open programme still in the making. Throughout the concert, the poetry of Joan Margarit also resounds—a poet with whom the group shares a personal bond.", "programName": "Equilibrium" },
-  "10": { "title": "Sound walk in Leiguarda", "subtitle": "Site-specific creation", "description": "A sound walk through the valley with stops at different stations along the route. The quintet Hoffman / Brazauskas / Saeijs / Laporta / Urraca performs original works, arrangements and improvisation along the way, weaving the landscape into the score. Capacity is limited for mobility reasons: the group walks alongside the audience from station to station. Comfortable footwear recommended.", "programNote": "Site-specific creation with original works, arrangements and improvisation throughout the valley of Leiguarda.", "highlight": "Žilvinas Brazauskas plays, in addition to the clarinet, the birbynė: Lithuania's traditional reed instrument." },
+  "10": { "title": "Sound walk in Leiguarda", "subtitle": "Site-specific creation", "description": "A sound walk through Leiguarda, starting and ending at the parish church. The quintet Hoffman / Brazauskas / Saeijs / Laporta / Urraca performs original works, arrangements and improvisation along the way, weaving the surroundings into the score. Capacity is limited for mobility reasons: the group walks alongside the audience from stop to stop. Comfortable footwear recommended.", "programNote": "Site-specific creation with original works, arrangements and improvisation, starting and ending at the church of Leiguarda.", "highlightLabel": "Birbynė, live", "highlight": "Žilvinas Brazauskas plays, in addition to the clarinet, the <strong>birbynė</strong>: Lithuania's traditional reed instrument." },
   "11": { "title": "Closing · Quintet concert and espicha", "subtitle": "Close of the 6th edition", "description": "The close of the 6th edition. The same quintet that gave the sound walk the previous day reunites in the parish church of Leiguarda for a concentrated programme that runs from Vivaldi in Bach's transcription and Mendelssohn to the first movement of Brahms's Clarinet Trio, and continues with Ravel's Ma mère l'Oye, Ligeti's Musica Ricercata, David Lang's sweet air and a traditional mazurka (Monterosano Mazurka) to close. After the concert, an open espicha (traditional Asturian cider gathering) for everyone in the church grounds. The long night that sends off the festival." }
 },
   ast: {
@@ -763,7 +765,7 @@ const EV_I18N: Record<string, Record<string, any>> = {
   "07": { "title": "Micro conciertu durante l'eclís", "subtitle": "Cuartetu con flauta", "description": "Cuartetu con flauta nel Altu de La Corredoria (Belmonte de Miranda), unu de los meyores miradores del conceyu, coincidiendo col eclís total de sol. Guillermo Laporta (flauta), Maria Florea (violín), Lara Fernández (viola) y Daniel Claret (violonchelu) ponen música a la cayida de la tarde, como actividá complementaria a la observación guiada del eclís qu'entama'l Conceyu de Belmonte de Miranda." },
   "08": { "title": "Conciertu de música de cámara y arte visual", "subtitle": "ADAR EN RUTA", "description": "So les bóvedes del monasteriu cisterciense de Villanueva de Uscos, fundáu nel sieglu XII, el conxuntu axunta «Twilight at Dawn» de Devin Cholodenko, el segundu movimientu del Tríu de cuerdes de Schubert, l'Andante sostenuto de Joan Magrané —coencargu de L'Auditori de Barcelona—, el Cuartetu con pianu op. 60 de Brahms y dos movimientos del Quintetu op. 81 de Dvořák. Repertoriu clásicu y contemporáneu lleíu nuna nave del sieglu XII." },
   "09": { "venueNote": "Dos pases de 20 minutos", "title": "Equilibrium", "subtitle": "Muestra de residencia · The Rest Project", "description": "«Equilibrium» parte del 3 como númberu del equilibriu —espíritu, alma y cuerpu—: trés músicos y trés compositores n'armonía. Coincidiendo col centenariu de György Kurtág, el tríu The Rest Project amuesa'l trabayu desarrolláu na so residencia artística nel hórreu, un programa abiertu y en construcción. A lo llargo del conciertu resuena amás la poesía de Joan Margarit, con quien el grupu comparte un vencelu personal.", "programName": "Equilibrium" },
-  "10": { "title": "Paséu sonoru en Lleiguarda", "subtitle": "Creación site-specific", "description": "Caminata sonora pel valle con paraes en distintes estaciones del recorríu. El quintetu Hoffman / Brazauskas / Saeijs / Laporta / Urraca interpreta obres orixinales, iguadures ya improvisación a lo llargo del trayeutu, integrando'l paisaxe na partitura. Aforu llimitáu por motivos de movilidá: el grupu camina xunto al públicu ente estación y estación. Encaláu cómodu recomendáu.", "programNote": "Creación site-specific con obres orixinales, iguadures ya improvisación a lo llargo del valle de Lleiguarda.", "highlight": "Žilvinas Brazauskas toca, amás del clarinete, el birbynė: l'instrumentu de llingüeta tradicional de Lituania." },
+  "10": { "title": "Paséu sonoru en Lleiguarda", "subtitle": "Creación site-specific", "description": "Caminata sonora por Lleiguarda cola ilesia parroquial como puntu de partida y llegada. El quintetu Hoffman / Brazauskas / Saeijs / Laporta / Urraca interpreta obres orixinales, iguadures ya improvisación a lo llargo del recorríu, integrando l'entornu na partitura. Aforu llimitáu por motivos de movilidá: el grupu camina xunto al públicu ente parada y parada. Encaláu cómodu recomendáu.", "programNote": "Creación site-specific con obres orixinales, iguadures ya improvisación, cola ilesia de Lleiguarda como puntu de partida y llegada.", "highlightLabel": "Birbynė en directo", "highlight": "Žilvinas Brazauskas toca, amás del clarinete, el <strong>birbynė</strong>: l'instrumentu de llingüeta tradicional de Lituania." },
   "11": { "title": "Zarru · Conciertu de quintetu y espicha", "subtitle": "Zarru de la VI edición", "description": "Zarru de la VI edición. El mesmu quintetu que firmó'l paséu sonoru del día anterior s'axunta de nuevu na ilesia parroquial de Lleiguarda pa un programa concentráu que percuerre a Vivaldi na transcripción de Bach, Mendelssohn y el primer movimientu del Tríu pa clarinete de Brahms, y sigue con Ma mère l'Oye de Ravel, Musica Ricercata de Ligeti, sweet air de David Lang y una mazurca tradicional (Monterosano Mazurka) pa despidir. Tres del conciertu, espicha abierta pa tol públicu nel campu de la ilesia. La nueche llarga que despide'l festival." }
 },
 };
@@ -1028,8 +1030,8 @@ const POSTER_BG = '/posters/adar-2026.png';
 
               {e.highlight && (
                 <div class="vi26-highlight">
-                  <span class="vi26-highlight-label mono"><span class="vi26-highlight-star" aria-hidden="true">✦</span> {HL_LBL}</span>
-                  <p>{tEv(e, 'highlight')}</p>
+                  <span class="vi26-highlight-label mono"><span class="vi26-highlight-star" aria-hidden="true">✦</span> {tEv(e, 'highlightLabel') || HL_LBL}</span>
+                  <p set:html={tEv(e, 'highlight')} />
                 </div>
               )}
 
