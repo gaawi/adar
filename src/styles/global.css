@@ -6748,6 +6748,29 @@ body.home .adar-footer-cta { display: none !important; }
   text-transform: uppercase;
   color: var(--muted);
 }
+/* Nº de edición del festival, justo encima del título de cada memoria */
+.page-hero-banner-edition,
+.page-hero-edition {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+/* Banner: sobre la franja de papel (texto oscuro) → chip de acento */
+.page-hero-banner-edition {
+  color: var(--accent-ink, #0a0907);
+  background: var(--accent);
+  margin: -6px 0 -2px;
+}
+/* Overlay: sobre imagen oscura → pastilla de acento con borde */
+.page-hero-edition {
+  color: var(--accent-ink, #0a0907);
+  background: var(--accent);
+}
 /* Same specificity trick as .page-hero-title above. */
 .page-hero-banner h1.page-hero-banner-title.page-hero-banner-title {
   font-family: var(--font-serif);
