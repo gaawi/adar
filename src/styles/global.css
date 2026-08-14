@@ -13148,6 +13148,15 @@ body.page .entry-content .vi26 p,
 .vi26-highlight-star { font-size: 12px; }
 .vi26-highlight p { margin: 0; font-size: 14.5px; line-height: 1.5; color: var(--ink); }
 .vi26-highlight strong { font-weight: 800; }
+.vi26-highlight a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--accent);
+  transition: text-decoration-color .15s ease;
+}
+.vi26-highlight a:hover { text-decoration-color: var(--ink); }
 
 /* MÓVIL — display:contents elimina el gap:24px de .vi26-content, así que
    reponemos el ritmo vertical con márgenes (y anulamos el margin -16px del
