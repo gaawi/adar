@@ -2230,13 +2230,13 @@ html, body{ overflow-x: hidden; }
   border-radius: 2px;
   overflow: hidden;
   border: none;
-  aspect-ratio: 1 / 1;
-  background: #f1f1f1;
+  aspect-ratio: 16 / 9;
+  background: #000;
 }
 .adar-archive-page .adar-archive-gallery img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   transition: transform .5s cubic-bezier(.22,.61,.36,1);
 }
@@ -2269,11 +2269,11 @@ html, body{ overflow-x: hidden; }
   .adar-archive-page .adar-archive-gallery a{
     flex: 0 0 100%;
     scroll-snap-align: center;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 16 / 9;
     border-radius: 0;
-    background: #e9e4d8;
+    background: #000;
   }
-  .adar-archive-page .adar-archive-gallery img{ width: 100%; height: 100%; object-fit: cover; }
+  .adar-archive-page .adar-archive-gallery img{ width: 100%; height: 100%; object-fit: contain; }
   .adar-archive-gallery-dots{
     order: -1;
     display: flex; justify-content: center; flex-wrap: wrap; gap: 7px;
