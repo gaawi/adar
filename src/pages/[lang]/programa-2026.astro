@@ -67,6 +67,7 @@ const COPY = {
     recap_video: 'Vídeo en YouTube',
     recap_photos: 'Fotos',
     recap_instagram: 'Ver en Instagram',
+    recap_youtube: 'Ver vídeo',
     recap_page: 'Ver página',
     echoes_cta: 'Abrir el recorrido en Echoes',
     echoes_note: 'Cómo participar: 1) Trae auriculares y el móvil cargado. 2) Descarga la app gratuita Echoes (echoes.xyz). 3) Abre el recorrido con el botón de arriba y camina. Punto de encuentro e inicio: el árbol junto a la iglesia de Leiguarda; el recorrido arranca a la izquierda de la iglesia.',
@@ -161,6 +162,7 @@ const COPY = {
     recap_video: 'Video on YouTube',
     recap_photos: 'Photos',
     recap_instagram: 'View on Instagram',
+    recap_youtube: 'Watch video',
     recap_page: 'View page',
     echoes_cta: 'Open the walk in Echoes',
     echoes_note: 'How to take part: 1) Bring headphones and a charged phone. 2) Download the free Echoes app (echoes.xyz). 3) Open the walk with the button above and start walking. Meeting point & start: the tree by the church in Leiguarda; the route begins to the left of the church.',
@@ -255,6 +257,7 @@ const COPY = {
     recap_video: 'Vídeu en YouTube',
     recap_photos: 'Semeyes',
     recap_instagram: 'Ver n’Instagram',
+    recap_youtube: 'Ver vídeu',
     recap_page: 'Ver páxina',
     echoes_cta: 'Abrir el recorríu n’Echoes',
     echoes_note: 'Cómo participar: 1) Trai auriculares y el móvil cargáu. 2) Descarga la app de baldre Echoes (echoes.xyz). 3) Abri’l recorríu col botón d’arriba y camina. Puntu d’alcuentru y entamu: l’árbol xunto a la ilesia de Lleiguarda; el recorríu arranca a la izquierda de la ilesia.',
@@ -1109,6 +1112,11 @@ const POSTER_BG = '/posters/adar-2026.png';
                       <a class="vi26-recap-btn is-ig" href={recap?.instagram || INSTAGRAM_URL} target="_blank" rel="noopener">
                         <Fragment set:html={IG_SVG} /> {COPY.recap_instagram}
                       </a>
+                      {recap?.youtube && (
+                        <a class="vi26-recap-btn is-yt" href={recap.youtube} target="_blank" rel="noopener">
+                          <Fragment set:html={YT_SVG} /> {COPY.recap_youtube}
+                        </a>
+                      )}
                     </div>
                   </div>
                 )}

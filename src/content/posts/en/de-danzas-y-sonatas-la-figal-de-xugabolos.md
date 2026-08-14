@@ -41,6 +41,12 @@ From the Renaissance variations of Antonio de Cabezón and the celebrated Folía
 
 <div class="adar-archive-social">
 <a class="adar-archive-social-btn is-ig" href="https://www.instagram.com/reel/Dbsb6HUIVE-/" target="_blank" rel="noopener">▶ Watch the reel on Instagram</a>
+<a class="adar-archive-social-btn is-yt" href="https://youtu.be/Ha4VB2EGQXw" target="_blank" rel="noopener">▶ Watch the video on YouTube</a>
+</div>
+
+<h3 style="margin-top:28px">Recap video</h3>
+<div class="adar-archive-video">
+<iframe src="https://www.youtube.com/embed/Ha4VB2EGQXw" title="De danzas y sonatas · La Figal de Xugabolos · Festival ADAR 2026" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <h3 style="margin-top:28px">Programme</h3>
@@ -95,7 +101,8 @@ Micro-concert in a hórreo · Harpsichord recital
 <div class="adar-archive-box">
 <h6>Social</h6>
 <p class="adar-archive-social-list">
-<a href="https://www.instagram.com/reel/Dbsb6HUIVE-/" target="_blank" rel="noopener">▶ Watch the reel on Instagram ↗</a>
+<a href="https://www.instagram.com/reel/Dbsb6HUIVE-/" target="_blank" rel="noopener">▶ Watch the reel on Instagram ↗</a><br>
+<a href="https://youtu.be/Ha4VB2EGQXw" target="_blank" rel="noopener">▶ Watch the video on YouTube ↗</a>
 </p>
 </div>
 

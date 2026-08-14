@@ -1799,6 +1799,8 @@ body.has-header-image #content{
   transition: background .15s ease, transform .15s ease;
 }
 .adar-archive-social-btn:hover{ background: #2a2826; transform: translateY(-1px); }
+.adar-archive-social-btn.is-yt{ background: #ff0000; }
+.adar-archive-social-btn.is-yt:hover{ background: #cc0000; }
 .adar-archive-social-list a{ text-decoration: none; font-weight: 600; border-bottom: 1px solid currentColor; }
 .adar-archive-video{
   margin: 18px 0 16px;

@@ -20,6 +20,7 @@ export const RECAPS: Record<string, Recap> = {
   '01': {
     page: 'de-danzas-y-sonatas-la-figal-de-xugabolos',
     instagram: 'https://www.instagram.com/reel/Dbsb6HUIVE-/',
+    youtube: 'https://youtu.be/Ha4VB2EGQXw',
   },
   // 02 · La forma de la memoria (Parador de Corias)
   '02': {
@@ -30,6 +31,7 @@ export const RECAPS: Record<string, Recap> = {
   '04': {
     page: 'umbral-zero-aula-del-oro',
     instagram: 'https://www.instagram.com/p/DbxxHtwiCQq/',
+    youtube: 'https://youtu.be/1EF7IZPEGc0',
   },
   // 06 · The Rest is Silence (Auditorio As Quintas · El Franco)
   '06': {

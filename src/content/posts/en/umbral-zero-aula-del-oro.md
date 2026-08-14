@@ -41,6 +41,12 @@ A flute-and-piano programme that linked the minimalism of Max Richter with the b
 
 <div class="adar-archive-social">
 <a class="adar-archive-social-btn is-ig" href="https://www.instagram.com/p/DbxxHtwiCQq/" target="_blank" rel="noopener">▶ See on Instagram</a>
+<a class="adar-archive-social-btn is-yt" href="https://youtu.be/1EF7IZPEGc0" target="_blank" rel="noopener">▶ Watch the video on YouTube</a>
+</div>
+
+<h3 style="margin-top:28px">Recap video</h3>
+<div class="adar-archive-video">
+<iframe src="https://www.youtube.com/embed/1EF7IZPEGc0" title="Umbral Zero · Aula del Oro · Festival ADAR 2026" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <h3 style="margin-top:28px">Programme</h3>
@@ -96,7 +102,8 @@ Minimalist music and visual art concert
 <div class="adar-archive-box">
 <h6>Social</h6>
 <p class="adar-archive-social-list">
-<a href="https://www.instagram.com/p/DbxxHtwiCQq/" target="_blank" rel="noopener">▶ See on Instagram ↗</a>
+<a href="https://www.instagram.com/p/DbxxHtwiCQq/" target="_blank" rel="noopener">▶ See on Instagram ↗</a><br>
+<a href="https://youtu.be/1EF7IZPEGc0" target="_blank" rel="noopener">▶ Watch the video on YouTube ↗</a>
 </p>
 </div>
 

@@ -41,6 +41,12 @@ Desde las variaciones renacentistas de Antonio de Cabezón y las célebres Folí
 
 <div class="adar-archive-social">
 <a class="adar-archive-social-btn is-ig" href="https://www.instagram.com/reel/Dbsb6HUIVE-/" target="_blank" rel="noopener">▶ Ver el reel en Instagram</a>
+<a class="adar-archive-social-btn is-yt" href="https://youtu.be/Ha4VB2EGQXw" target="_blank" rel="noopener">▶ Ver el vídeo en YouTube</a>
+</div>
+
+<h3 style="margin-top:28px">Vídeo resumen</h3>
+<div class="adar-archive-video">
+<iframe src="https://www.youtube.com/embed/Ha4VB2EGQXw" title="De danzas y sonatas · La Figal de Xugabolos · Festival ADAR 2026" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <h3 style="margin-top:28px">Programa</h3>
@@ -95,7 +101,8 @@ Micro concierto en hórreo · Recital de clave
 <div class="adar-archive-box">
 <h6>Redes</h6>
 <p class="adar-archive-social-list">
-<a href="https://www.instagram.com/reel/Dbsb6HUIVE-/" target="_blank" rel="noopener">▶ Ver el reel en Instagram ↗</a>
+<a href="https://www.instagram.com/reel/Dbsb6HUIVE-/" target="_blank" rel="noopener">▶ Ver el reel en Instagram ↗</a><br>
+<a href="https://youtu.be/Ha4VB2EGQXw" target="_blank" rel="noopener">▶ Ver el vídeo en YouTube ↗</a>
 </p>
 </div>
 
