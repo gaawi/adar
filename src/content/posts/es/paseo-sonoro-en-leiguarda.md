@@ -109,7 +109,6 @@ Guillermo Laporta (flauta)<br>
 Diego Arribas (artista visual)
 </p>
 
-</div>
 
 <div class="adar-archive-gallery">
 <a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1886T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1886T01.jpg" loading="lazy"></a>
@@ -122,6 +121,8 @@ Diego Arribas (artista visual)
 <a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1897T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1897T01.jpg" loading="lazy"></a>
 <a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1898T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1898T01.jpg" loading="lazy"></a>
 <a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1900T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1900T01.jpg" loading="lazy"></a>
+</div>
+
 </div>
 
 </div>
