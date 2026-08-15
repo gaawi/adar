@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/es/concierto-visual-en-llanes/"
 permalink: "/es/concierto-visual-en-llanes/"
 categories: ["Memoria de Acciones"]
 tags: ["2025", "concierto visual", "Llanes", "lugar emblemático", "música de cámara"]
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_1.jpg"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -24,7 +24,7 @@ translation_group: "pll_69b02566dc7bf"
 <div class="adar-archive-left">
 
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00638.jpg" alt="Concierto Visual en Llanes - Monasterio de San Antolín de Bedón" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_1.jpg" alt="Concierto Visual en Llanes - Monasterio de San Antolín de Bedón" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto Visual en Llanes</h1>
@@ -68,16 +68,12 @@ El público se sentó en un formato circular, rodeando el interior del monasteri
 </div>
 
 <div class="adar-archive-gallery">
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00600.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00600.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00601.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00601.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00603.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00603.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00607.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00607.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00610.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00610.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00612.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00612.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00616.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00616.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00619.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00619.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00622.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00622.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00625.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/08_Concierto_Visual_en_Llanes/DSC00625.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_1.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_2.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_3.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_3.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_4.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_4.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_5.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_5.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_6.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_6.jpg" loading="lazy"></a>
 </div>
 
 </div>

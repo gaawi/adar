@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/es/concierto-en-taramundi/"
 permalink: "/es/concierto-en-taramundi/"
 categories: ["Memoria de Acciones"]
 tags: ["2025", "concierto", "lugar emblemático", "música de cámara", "Taramundi"]
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01048.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_1.jpg"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -24,7 +24,7 @@ translation_group: "pll_69b0256754eb0"
 <div class="adar-archive-left">
 
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01048.jpg" alt="Concierto en Taramundi" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_1.jpg" alt="Concierto en Taramundi" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
 <h1 class="adar-archive-title">Concierto en Taramundi</h1>
@@ -43,14 +43,11 @@ Taramundi, en el occidente de Asturias, es conocido por su cuchillería artesana
 </div>
 
 <div class="adar-archive-gallery">
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01058.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01058.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01055.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01055.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01054.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01054.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01048.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01048.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01047.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01047.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01046.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01046.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01045.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01045.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01007.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01007.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_1.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_2.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_3.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_3.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_4.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_4.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_5.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_5.jpg" loading="lazy"></a>
 </div>
 
 </div>
