@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/en/concert-monastery-villanueva-oscos-20
 permalink: "/en/concert-monastery-villanueva-oscos-2025/"
 categories: ["Projects Archive"]
 tags: ["2025", "concert", "landmark venue", "chamber music", "Villanueva de Oscos"]
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01456.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_1.jpg"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -24,7 +24,7 @@ translation_group: "pll_69b0256774159"
 <div class="adar-archive-left">
 
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01456.jpg" alt="Concierto en el Monasterio de Villanueva de Oscos" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_1.jpg" alt="Concierto en el Monasterio de Villanueva de Oscos" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Concert at the Monastery of Villanueva de Oscos</h1>
@@ -80,26 +80,12 @@ Version for ensemble (arrangement by CreArtBox)<br>
 </div>
 
 <div class="adar-archive-gallery">
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01524.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01524.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01523.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01523.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01512.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01512.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01511.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01511.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01505.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01505.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01493.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01493.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01489.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01489.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01480.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01480.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01479.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01479.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01478.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01478.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01477.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01477.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01475.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01475.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01467.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01467.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01466.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01466.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01465.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01465.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01464.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01464.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01462.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01462.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01460.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01460.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01458.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01458.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01456.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01456.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_1.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_2.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_3.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_3.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_4.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_4.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_5.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_5.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_6.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_6.jpg" loading="lazy"></a>
 </div>
 
 </div>

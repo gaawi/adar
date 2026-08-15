@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/en/closing-event-leiguarda-concert-cider
 permalink: "/en/closing-event-leiguarda-concert-cider-2025/"
 categories: ["Projects Archive"]
 tags: ["2025", "Belmonte de Miranda", "concert", "espicha", "chamber music"]
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_1.jpg"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -25,7 +25,7 @@ translation_group: "pll_69b02567d035d"
 
 <!-- COVER (panorámico, se recorta con CSS del template) -->
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg" alt="Closing Event in Leiguarda - Concert and cider tasting" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_1.jpg" alt="Closing Event in Leiguarda - Concert and cider tasting" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Closing Event in Leiguarda: Concert and Cider Tasting</h1>
@@ -72,16 +72,14 @@ A concert embracing diversity of languages, formats, and generations, as the epi
 -->
 
 <div class="adar-archive-gallery">
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01899.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01899.jpg" alt="Gallery 1" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01898.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01898.jpg" alt="Gallery 2" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01887.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01887.jpg" alt="Gallery 3" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01886.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01886.jpg" alt="Gallery 4" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01885.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01885.jpg" alt="Gallery 5" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01884.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01884.jpg" alt="Gallery 6" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01866.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01866.jpg" alt="Gallery 7" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg" alt="Gallery 8" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01850.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01850.jpg" alt="Gallery 9" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg" alt="Gallery 10" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_1.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_2.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_3.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_3.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_4.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_4.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_5.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_5.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_6.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_6.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_7.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_7.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_8.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_8.jpg" loading="lazy"></a>
 </div>
 
 </div>

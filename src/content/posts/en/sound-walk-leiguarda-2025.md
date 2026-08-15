@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/en/sound-walk-leiguarda-2025/"
 permalink: "/en/sound-walk-leiguarda-2025/"
 categories: ["Projects Archive"]
 tags: ["2025", "Belmonte de Miranda", "sound walk", "visual art"]
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_1.jpg"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -24,7 +24,7 @@ translation_group: "pll_69b0256701e55"
 <div class="adar-archive-left">
 
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg" alt="Paseo Sonoro en Leiguarda" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_1.jpg" alt="Paseo Sonoro en Leiguarda" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Sound Walk in Leiguarda</h1>
@@ -112,16 +112,15 @@ Diego Arribas (visual artist)
 </div>
 
 <div class="adar-archive-gallery">
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1886T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1886T01.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1887T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1887T01.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1889T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1889T01.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1891T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1891T01.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1894T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1894T01.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1895T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1895T01.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1896T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1896T01.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1897T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1897T01.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1898T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1898T01.jpg" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1900T01.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2025/09_Paseo_Sonoro_en_Leiguarda/C1900T01.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_1.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_2.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_3.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_3.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_4.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_4.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_5.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_5.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_6.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_6.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_7.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_7.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_8.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_8.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_9.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_9.jpg" loading="lazy"></a>
 </div>
 
 </div>

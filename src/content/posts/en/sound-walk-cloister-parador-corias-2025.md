@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/en/sound-walk-cloister-parador-corias-20
 permalink: "/en/sound-walk-cloister-parador-corias-2025/"
 categories: ["Projects Archive"]
 tags: ["2025", "Cangas del Narcea", "landmark venue", "chamber music", "sound walk"]
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_1.jpg"
 excerpt: ""
 author: "Guillermo Laporta"
 parent_id: 0
@@ -24,7 +24,7 @@ translation_group: "pll_69b025678d4ce"
 <div class="adar-archive-left">
 
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg" alt="Sound walk - Cloister of the Parador de Corias - ADAR 2025" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_1.jpg" alt="Sound walk - Cloister of the Parador de Corias - ADAR 2025" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Sound walk in the Cloister of the Parador de Corias</h1>
@@ -49,6 +49,17 @@ The programme was built around the music of Bach, with partitas and suites for s
 <strong>Johann Sebastian Bach</strong> – Partita for violin, Partita for flute, Cello Suite No. 3, Sonata for viola<br>
 <strong>Wolfgang Amadeus Mozart</strong> – Flute Quartet in D major, K. 285 (second movement)
 </p>
+
+<div class="adar-archive-gallery">
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_1.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_2.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_3.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_3.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_4.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_4.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_5.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_5.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_6.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_6.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_7.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_7.jpg" loading="lazy"></a>
+</div>
+
 </div>
 
 </div>

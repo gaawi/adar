@@ -10,7 +10,7 @@ original_url: "https://festivaladar.com/en/recital-andrea-casarrubios-church-lei
 permalink: "/en/recital-andrea-casarrubios-church-leiguarda-2025/"
 categories: ["Projects Archive"]
 tags: ["2025", "Belmonte de Miranda", "concert", "chamber music"]
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01590.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_1.jpg"
 excerpt: ""
 author: "gaawi_rei1q"
 parent_id: 0
@@ -25,7 +25,7 @@ translation_group: "pll_69b02567b23d9"
 
 <!-- COVER (panorámico, se recorta con CSS del template) -->
 <div class="adar-archive-hero">
-<img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01590.jpg" alt="Recital by Andrea Casarrubios at the Church of Leiguarda" loading="lazy">
+<img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_1.jpg" alt="Recital by Andrea Casarrubios at the Church of Leiguarda" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
 <h1 class="adar-archive-title">Recital by Andrea Casarrubios at the Church of Leiguarda</h1>
@@ -68,15 +68,12 @@ The second part included Brown Leaves Moving by Guillermo Laporta, a piece that 
 -->
 
 <div class="adar-archive-gallery">
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01828.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01828.jpg" alt="Gallery 1" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01819.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01819.jpg" alt="Gallery 2" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01787.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01787.jpg" alt="Gallery 3" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01765.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01765.jpg" alt="Gallery 4" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01700.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01700.jpg" alt="Gallery 5" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01687.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01687.jpg" alt="Gallery 6" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01680.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01680.jpg" alt="Gallery 7" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01673.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01673.jpg" alt="Gallery 8" loading="lazy"></a>
-<a href="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01632.jpg"><img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01632.jpg" alt="Gallery 9" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_1.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_2.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_3.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_3.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_4.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_4.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_5.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_5.jpg" loading="lazy"></a>
+<a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_6.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_6.jpg" loading="lazy"></a>
 </div>
 
 </div>
