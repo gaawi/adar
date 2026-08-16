@@ -51,4 +51,8 @@ export const RECAPS: Record<string, Recap> = {
   '09': {
     page: 'equilibrium-la-casona-de-belmonte',
   },
+  // 10 · Paseo sonoro dentro de la Iglesia de Leiguarda
+  '10': {
+    page: 'paseo-sonoro-iglesia-de-leiguarda-2026',
+  },
 };
