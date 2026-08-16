@@ -5463,7 +5463,9 @@ body.home article.page { margin: 0 !important; }
    ---------------------------------------------------------------- */
 @media (max-width: 900px) {
   .hm { display: flex; flex-direction: column; }
-  .hm-adar26 { order: -1; }
+  /* Post-festival: el bloque de cartel + programa ya NO lidera en móvil.
+     Fluye en su orden natural (tras el cierre "gracias" y la galería). */
+  .hm-adar26 { order: 0; }
   .hm-hero { min-height: 68vh; min-height: 68svh; }
 }
 
