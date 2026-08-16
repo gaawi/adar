@@ -653,6 +653,10 @@ const POST = {
     n_amigo: 'Hazte amigo',
     n_avisame: 'Avísame de 2027',
     n_secure: 'Asegura tu sitio en 2027',
+    l_eyebrow: 'Cómo se vivió',
+    l_h_pre: 'La VI edición,',
+    l_h_em: 'en imágenes',
+    l_thanks: 'Gracias al <strong>público</strong>, a los <strong>voluntarios</strong>, a los <strong>artistas</strong>, a los <strong>colaboradores</strong> y a los <strong>patrocinadores e instituciones</strong>. ADAR se vive y se hace entre todos.',
   },
   en: {
     t_eyebrow: 'Edition VI · 4–16 August 2026',
@@ -668,6 +672,10 @@ const POST = {
     n_amigo: 'Become a friend',
     n_avisame: 'Notify me about 2027',
     n_secure: 'Secure your seat for 2027',
+    l_eyebrow: 'How it was lived',
+    l_h_pre: 'The 6th edition,',
+    l_h_em: 'in pictures',
+    l_thanks: 'Thank you to the <strong>audience</strong>, the <strong>volunteers</strong>, the <strong>artists</strong>, the <strong>collaborators</strong> and the <strong>sponsors and institutions</strong>. ADAR is lived and made by everyone.',
   },
   ast: {
     t_eyebrow: 'VI edición · 4–16 d’agostu 2026',
@@ -683,8 +691,24 @@ const POST = {
     n_amigo: 'Faite amigu',
     n_avisame: 'Avísame de 2027',
     n_secure: 'Asegura’l to sitiu en 2027',
+    l_eyebrow: 'Cómo se vivió',
+    l_h_pre: 'La VI edición,',
+    l_h_em: 'n’imáxenes',
+    l_thanks: 'Gracies al <strong>públicu</strong>, a los <strong>voluntarios</strong>, a los <strong>artistes</strong>, a los <strong>collaboradores</strong> y a los <strong>patrocinadores y instituciones</strong>. ADAR vívese y faise ente toos.',
   },
 }[lang];
+// Galería "cómo se vivió": una foto por acción de la VI edición, con pie y
+// enlace a su memoria. Portadas verificadas de cada evento.
+const LIVED: { slug: string; img: string; cap: Record<Lang, string> }[] = [
+  { slug: 'de-danzas-y-sonatas-la-figal-de-xugabolos', img: 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_WEB/04.08.26_La%20Figal%20de%20Xugabolos_WEB_1.jpg', cap: { es: 'De danzas y sonatas · La Figal de Xugabolos', en: 'Of Dances and Sonatas · La Figal de Xugabolos', ast: 'De danzas y sonates · La Figal de Xugabolos' } },
+  { slug: 'la-forma-de-la-memoria-parador-de-corias', img: 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_WEB/05.08.26_Parador%20de%20Corias_WEB_1.jpg', cap: { es: 'La forma de la memoria · Parador de Corias', en: 'The Shape of Memory · Parador de Corias', ast: 'La forma de la memoria · Parador de Corias' } },
+  { slug: 'umbral-zero-aula-del-oro', img: 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/07.08.26_Aula%20del%20oro_Fotos/07.08.26_Aula%20del%20oro_WEB/07.08.26_Aula%20del%20oro_WEB_1.jpg', cap: { es: 'Umbral Zero · Aula del Oro', en: 'Umbral Zero · Aula del Oro', ast: 'Umbral Zero · Aula del Oru' } },
+  { slug: 'the-rest-is-silence-el-franco', img: 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/11.08.26_El%20Franco_Fotos/11.08.26_El%20Franco_WEB/11.08.26_El%20Franco_WEB_1.jpg', cap: { es: 'The Rest is Silence · Auditorio As Quintas', en: 'The Rest is Silence · As Quintas Auditorium', ast: 'The Rest is Silence · Auditoriu As Quintas' } },
+  { slug: 'concierto-del-eclipse-la-corredoria', img: 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_1.jpg', cap: { es: 'Concierto del eclipse · Alto de La Corredoria', en: 'Eclipse concert · Alto de La Corredoria', ast: 'Conciertu del eclís · Altu de La Corredoria' } },
+  { slug: 'bajo-las-bovedas-villanueva-de-oscos', img: 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Villanueva%20de%20Oscos_Fotos/13.08.26_Villanueva%20de%20Oscos_WEB/13.08.26_Villanueva%20de%20Oscos_WEB_1.jpg', cap: { es: 'ADAR en Ruta · Villanueva de Oscos', en: 'ADAR on the Road · Villanueva de Oscos', ast: 'ADAR en Ruta · Villanueva d’Oscos' } },
+  { slug: 'equilibrium-la-casona-de-belmonte', img: 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/14.08.26_La%20casona%20de%20Belmonte_Fotos/14.08.26_La%20casona%20de%20Belmonte_WEB/14.08.26_La%20casona%20de%20Belmonte_WEB_1.jpg', cap: { es: 'Equilibrium · La Casona de Belmonte', en: 'Equilibrium · La Casona de Belmonte', ast: 'Equilibrium · La Casona de Belmonte' } },
+  { slug: 'paseo-sonoro-iglesia-de-leiguarda-2026', img: 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.15_Iglesia%20de%20Leiguarda_Fotos/26.08.15_Iglesia%20de%20Leiguarda_WEB/26.08.15_Iglesia%20de%20Leiguarda_WEB_1.jpg', cap: { es: 'Paseo sonoro · Iglesia de Leiguarda', en: 'Sound walk · Church of Leiguarda', ast: 'Paséu sonoru · Ilesia de Lleiguarda' } },
+];
 ---
 
 <div class="hm">
@@ -782,6 +806,25 @@ const POST = {
         <a class="hm-thanks-cta" href={MAP_HREF[lang]}>{POST.t_map} <span aria-hidden="true">↗</span></a>
       </div>
     </div>
+  </section>
+
+  <!-- ============================================
+       § CÓMO SE VIVIÓ · galería + gracias
+       ============================================ -->
+  <section class="hm-lived">
+    <header class="hm-lived-head">
+      <span class="hm-lived-eyebrow mono">{POST.l_eyebrow}</span>
+      <h2 class="hm-lived-h">{POST.l_h_pre} <em>{POST.l_h_em}</em></h2>
+    </header>
+    <div class="hm-lived-grid">
+      {LIVED.map((f) => (
+        <a class="hm-lived-fig" href={`/${lang}/${f.slug}/`}>
+          <span class="hm-lived-imgwrap"><img src={f.img} alt={f.cap[lang]} loading="lazy" /></span>
+          <span class="hm-lived-cap mono">{f.cap[lang]}</span>
+        </a>
+      ))}
+    </div>
+    <p class="hm-lived-thanks" set:html={POST.l_thanks} />
   </section>
 
   <!-- ============================================
