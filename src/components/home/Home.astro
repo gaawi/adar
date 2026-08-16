@@ -513,14 +513,14 @@ const ADAR26_PRESS_HREF = {
 }[lang];
 const ADAR26_COPY = {
   es: {
-    eyebrow: 'Próxima edición · Edición VI',
+    eyebrow: 'VI edición · celebrada',
     dates: '4 — 16 agosto 2026',
     title_pre: 'Festival ADAR',
     title_year: '2026',
     tag: 'Festival para el desarrollo de las artes en el medio rural.',
     sub: 'Once conciertos del 4 al 16 de agosto en siete sedes patrimoniales de Asturias. Música de cámara, intervenciones site-specific en Leiguarda y un cierre con espicha.',
     ix_label: 'Once conciertos',
-    free: 'Entrada gratuita hasta completar aforo · reserva en Eventbrite',
+    free: 'Todos los conciertos fueron de entrada libre.',
     cta_program: 'Ver programa completo',
     cta_press: 'Nota de prensa',
     credits: 'Dirección artística y comisariado: Josefina Urraca y Guillermo Laporta · Compositor residente: Zygmund de Somogyi · Cinematógrafo: Guillermo Ordás.',
@@ -545,14 +545,14 @@ const ADAR26_COPY = {
     today_cta: 'Ver el programa',
   },
   en: {
-    eyebrow: 'Next edition · Edition VI',
+    eyebrow: 'Edition VI · held',
     dates: '4 — 16 August 2026',
     title_pre: 'Festival ADAR',
     title_year: '2026',
     tag: 'A festival for the development of the arts in rural areas.',
     sub: 'Eleven concerts from 4 to 16 August across seven heritage venues in Asturias. Chamber music, site-specific interventions in Leiguarda and a closing with espicha.',
     ix_label: 'Eleven concerts',
-    free: 'Free entry until capacity is reached · RSVP on Eventbrite',
+    free: 'All concerts were free to attend.',
     cta_program: 'See the full programme',
     cta_press: 'Press kit',
     credits: 'Artistic direction & curation: Josefina Urraca and Guillermo Laporta · Resident composer: Zygmund de Somogyi · Cinematographer: Guillermo Ordás.',
@@ -577,14 +577,14 @@ const ADAR26_COPY = {
     today_cta: 'See the programme',
   },
   ast: {
-    eyebrow: 'Próxima edición · Edición VI',
+    eyebrow: 'VI edición · celebrada',
     dates: '4 — 16 d’agostu 2026',
     title_pre: 'Festival ADAR',
     title_year: '2026',
     tag: 'Festival pal desarrollu de les artes nel mediu rural.',
     sub: 'Once conciertos del 4 al 16 d’agostu en siete sedes patrimoniales d’Asturies. Música de cámara, intervenciones site-specific en Lleiguarda y un zarru con espicha.',
     ix_label: 'Once conciertos',
-    free: 'Entrada de baldre hasta completar aforu · reserva n’Eventbrite',
+    free: 'Tolos conciertos fueron d’entrada de baldre.',
     cta_program: 'Ver programa completu',
     cta_press: 'Nota de prensa',
     credits: 'Direición artística y comisariáu: Josefina Urraca y Guillermo Laporta · Compositor residente: Zygmund de Somogyi · Cinematógrafu: Guillermo Ordás.',
@@ -626,17 +626,76 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
   { name: 'Goethe-Institut', logo: '/logos/goethe.png', href: 'https://www.goethe.de/' },
   { name: 'Principado de Asturias', logo: '/logos/asturias.png', href: 'https://www.asturias.es/' },
 ];
+
+// Enlaces y copy para el modo POST-FESTIVAL (la VI edición ya terminó).
+const AMIGOS_HREF: Record<Lang, string> = {
+  es: '/es/amigos-del-festival/',
+  en: '/en/friends-of-the-festival/',
+  ast: '/ast/amigos-del-festival/',
+};
+const NOTIFY_MAIL = {
+  es: 'mailto:leiguardamusic@gmail.com?subject=' + encodeURIComponent('Avísame · ADAR 2027') + '&body=' + encodeURIComponent('Hola, quiero que me aviséis cuando abra la VII edición del Festival ADAR (agosto de 2027). Mi nombre: ___'),
+  en: 'mailto:leiguardamusic@gmail.com?subject=' + encodeURIComponent('Notify me · ADAR 2027') + '&body=' + encodeURIComponent('Hi, please let me know when the 7th edition of Festival ADAR (August 2027) opens. My name: ___'),
+  ast: 'mailto:leiguardamusic@gmail.com?subject=' + encodeURIComponent('Avísame · ADAR 2027') + '&body=' + encodeURIComponent('Hola, quiero que m’aviséis cuando abra la VII edición del Festival ADAR (agostu de 2027). El mio nome: ___'),
+}[lang];
+const POST = {
+  es: {
+    t_eyebrow: 'VI edición · 4–16 agosto 2026',
+    t_h: 'La VI edición ha terminado.',
+    t_em: 'Gracias.',
+    t_lede: 'Once conciertos en hórreos, iglesias, palacios y un monasterio de Asturias, con entrada libre. Gracias por llenar cada sede y por caminar con nosotros.',
+    t_revive: 'Revive la edición',
+    t_map: 'Ver el mapa de acciones',
+    n_eyebrow: 'Próxima edición',
+    n_pre: 'ADAR vuelve en',
+    n_em: 'agosto de 2027',
+    n_lede: 'Las entradas son gratuitas… y vuelan. Hazte amigo y asegura tu sitio, o déjanos tu correo y te avisamos en cuanto abra la VII edición.',
+    n_amigo: 'Hazte amigo',
+    n_avisame: 'Avísame de 2027',
+    n_secure: 'Asegura tu sitio en 2027',
+  },
+  en: {
+    t_eyebrow: 'Edition VI · 4–16 August 2026',
+    t_h: 'The 6th edition has ended.',
+    t_em: 'Thank you.',
+    t_lede: 'Eleven concerts in hórreos, churches, palaces and a monastery across Asturias, free of charge. Thank you for filling every venue and for walking with us.',
+    t_revive: 'Relive the edition',
+    t_map: 'See the map of actions',
+    n_eyebrow: 'Next edition',
+    n_pre: 'ADAR returns in',
+    n_em: 'August 2027',
+    n_lede: 'Tickets are free… and they vanish. Become a friend and secure your seat, or leave us your email and we’ll let you know the moment the 7th edition opens.',
+    n_amigo: 'Become a friend',
+    n_avisame: 'Notify me about 2027',
+    n_secure: 'Secure your seat for 2027',
+  },
+  ast: {
+    t_eyebrow: 'VI edición · 4–16 d’agostu 2026',
+    t_h: 'La VI edición acabó.',
+    t_em: 'Gracies.',
+    t_lede: 'Once conciertos en hórreos, ilesies, palacios y un monasteriu d’Asturies, con entrada de baldre. Gracies por enllenar cada sede y por caminar con nós.',
+    t_revive: 'Revive la edición',
+    t_map: 'Ver el mapa d’acciones',
+    n_eyebrow: 'Próxima edición',
+    n_pre: 'ADAR vuelve n’',
+    n_em: 'agostu de 2027',
+    n_lede: 'Les entraes son de baldre… y vuelen. Faite amigu y asegura’l to sitiu, o déxanos el to corréu y avisámoste en cuanto abra la VII edición.',
+    n_amigo: 'Faite amigu',
+    n_avisame: 'Avísame de 2027',
+    n_secure: 'Asegura’l to sitiu en 2027',
+  },
+}[lang];
 ---
 
 <div class="hm">
   <!-- Sticky side banner (desktop only) — anuncia la programación VI · 2026 -->
-  <aside class="hm-side-banner" aria-label="Programación 2026 disponible">
-    <a class="hm-side-banner-link" href={`/${lang}/programa-2026/`}>
+  <aside class="hm-side-banner" aria-label="Hazte amigo del festival">
+    <a class="hm-side-banner-link" href={AMIGOS_HREF[lang]}>
       <span class="hm-side-banner-pulse" aria-hidden="true"></span>
-      <span class="hm-side-banner-eyebrow mono">Programa 2026</span>
-      <span class="hm-side-banner-h">Ya disponible</span>
-      <span class="hm-side-banner-sub mono">4 — 16 agosto · once conciertos</span>
-      <span class="hm-side-banner-cta mono">Ver programa <span aria-hidden="true">→</span></span>
+      <span class="hm-side-banner-eyebrow mono">{POST.n_eyebrow} · 2027</span>
+      <span class="hm-side-banner-h">{POST.n_amigo}</span>
+      <span class="hm-side-banner-sub mono">{POST.n_secure}</span>
+      <span class="hm-side-banner-cta mono">{POST.n_avisame} <span aria-hidden="true">→</span></span>
     </a>
   </aside>
 
@@ -711,7 +770,22 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
   </section>
 
   <!-- ============================================
-       § ANUNCIO · Edición VI · 2026
+       § CIERRE · gracias VI edición
+       ============================================ -->
+  <section class="hm-thanks">
+    <div class="hm-thanks-inner">
+      <span class="hm-thanks-eyebrow mono">{POST.t_eyebrow}</span>
+      <h2 class="hm-thanks-h">{POST.t_h} <em>{POST.t_em}</em></h2>
+      <p class="hm-thanks-lede">{POST.t_lede}</p>
+      <div class="hm-thanks-ctas">
+        <a class="hm-thanks-cta is-primary" href="#adar26"><span aria-hidden="true">↓</span> {POST.t_revive}</a>
+        <a class="hm-thanks-cta" href={MAP_HREF[lang]}>{POST.t_map} <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       § REVIVE · Edición VI · 2026
        ============================================ -->
   <section class="hm-adar26" id="adar26" aria-labelledby="adar26-h">
     <div class="hm-adar26-wrap">
@@ -1056,6 +1130,21 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
   <!-- ============================================
        § 06 CÍRCULO / COMUNIDAD
        ============================================ -->
+  <!-- ============================================
+       § PRÓXIMA EDICIÓN · 2027
+       ============================================ -->
+  <section class="hm-next">
+    <div class="hm-next-inner">
+      <span class="hm-next-eyebrow mono">{POST.n_eyebrow}</span>
+      <h2 class="hm-next-h">{POST.n_pre} <em>{POST.n_em}</em></h2>
+      <p class="hm-next-lede">{POST.n_lede}</p>
+      <div class="hm-next-ctas">
+        <a class="hm-next-cta is-primary" href={AMIGOS_HREF[lang]}><span aria-hidden="true">♥</span> {POST.n_amigo}</a>
+        <a class="hm-next-cta" href={NOTIFY_MAIL}><span aria-hidden="true">✉</span> {POST.n_avisame}</a>
+      </div>
+    </div>
+  </section>
+
   <section class="hm-join">
     <div class="hm-join-bg" aria-hidden="true">
       <img src={joinBg} alt="" />
