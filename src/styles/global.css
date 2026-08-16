@@ -2269,10 +2269,14 @@ html, body{ overflow-x: hidden; }
     display: flex;
     grid-template-columns: none;
     gap: 0;
-    width: 100vw;
-    margin: 0 0 0;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    /* !important: en muchas memorias la galería es hija directa de
+       .adar-archive-left y la regla .adar-archive-left > * (más específica)
+       le imponía un margin-left que rompía el centrado full-bleed (la foto se
+       iba a la izquierda). Forzamos el full-bleed gane esté donde esté. */
+    width: 100vw !important;
+    margin: 0 0 0 !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%) !important;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
