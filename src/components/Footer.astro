@@ -14,6 +14,8 @@ const copy = {
     contact: 'Contacto',
     funded: 'Con el apoyo de',
     partners: 'Red de colaboración',
+    bill_copy: 'Copiar datos de facturación',
+    bill_done: '¡Copiado!',
   },
   en: {
     desc: 'Festival ADAR is a project of the Association for the Development of Arts in the Rural Environment.',
@@ -21,6 +23,8 @@ const copy = {
     contact: 'Contact',
     funded: 'With the support of',
     partners: 'Network of partners',
+    bill_copy: 'Copy billing details',
+    bill_done: 'Copied!',
   },
   ast: {
     desc: "Festival ADAR ye un proxectu de l'Asociación pal Desarrollu de les Artes nel Mediu Rural.",
@@ -28,8 +32,19 @@ const copy = {
     contact: 'Contautu',
     funded: 'Col sofitu de',
     partners: 'Rede de collaboración',
+    bill_copy: 'Copiar datos de facturación',
+    bill_done: '¡Copiao!',
   },
 }[lang];
+
+// Datos de facturación (razón social · CIF · domicilio fiscal · email).
+// Se copian con los saltos de línea reconstruidos desde el separador '|'.
+const BILLING = [
+  'Asociación para el Desarrollo de las Artes en el Medio Rural',
+  'CIF: G06781884',
+  'Leiguarda 47, 33840 Belmonte de Miranda, Asturias, España',
+  'leiguardamusic@gmail.com',
+].join('|');
 
 const PARTNERS = [
   { name: 'CreArtBox', logo: '/logos/creartbox.jpg', href: 'https://creartbox.nyc/' },
@@ -121,5 +136,37 @@ const FUNDERS = [
     </div>
   </div>
 
-  <div class="adar-footer-bottom">© {new Date().getFullYear()} Festival ADAR</div>
+  <div class="adar-footer-bottom">
+    <span>© {new Date().getFullYear()} Festival ADAR</span>
+    <button type="button" class="adar-bill-btn" data-bill={BILLING} data-done={copy.bill_done}>
+      <span class="adar-bill-ico" aria-hidden="true">⧉</span> {copy.bill_copy}
+    </button>
+  </div>
 </footer>
+
+<script is:inline>
+  (function () {
+    var btn = document.querySelector('.adar-bill-btn');
+    if (!btn) return;
+    var label = btn.innerHTML;
+    btn.addEventListener('click', function () {
+      var text = (btn.getAttribute('data-bill') || '').split('|').join('\n');
+      var done = btn.getAttribute('data-done') || '✓';
+      function ok() {
+        btn.textContent = done;
+        btn.classList.add('is-done');
+        setTimeout(function () { btn.innerHTML = label; btn.classList.remove('is-done'); }, 1900);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(ok, fallback);
+      } else { fallback(); }
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta); ta.focus(); ta.select();
+        try { document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta); ok();
+      }
+    });
+  })();
+</script>

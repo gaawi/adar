@@ -13927,3 +13927,16 @@ body.page .entry-content .hm-next{ background: var(--ink) !important; }
   .hm-lived-cap{ padding: 0 8px; }
   .hm-lived-thanks{ padding: 0 20px; }
 }
+
+/* ===== Botón "copiar datos de facturación" en el pie ===== */
+.adar-footer-bottom{ display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 14px; }
+.adar-bill-btn{
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: inherit; font-size: 11px; letter-spacing: 0.04em;
+  padding: 6px 13px; border-radius: 999px; cursor: pointer;
+  background: transparent; border: 1px solid rgba(255,255,255,0.28); color: #cfcfcf;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.adar-bill-btn:hover{ color: #fff; border-color: rgba(255,255,255,0.6); }
+.adar-bill-btn.is-done{ color: var(--accent); border-color: var(--accent); }
+.adar-bill-ico{ font-size: 12px; line-height: 1; }
