@@ -13914,10 +13914,9 @@ body.page .entry-content .hm-next{ background: var(--ink) !important; }
 .hm-lived-invite p{ margin: 0 0 20px; font-size: clamp(15px, 1.5vw, 18px); line-height: 1.55; color: var(--ink-soft, #3a352c); }
 .hm-lived-cta{ display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px; background: var(--accent); color: var(--accent-ink) !important; font-family: var(--font-mono); font-size: 13px; font-weight: 700; letter-spacing: 0.02em; text-decoration: none; transition: transform .15s ease, background .15s ease, color .15s ease; }
 .hm-lived-cta:hover{ transform: translateY(-1px); background: var(--ink); color: var(--paper) !important; }
-/* En escritorio, las fotos "wide" ocupan media fila (2 de 4 columnas) en 16:9. */
-.hm-lived-fig.is-wide{ grid-column: span 2; }
-.hm-lived-fig.is-wide .hm-lived-imgwrap{ aspect-ratio: 16 / 9; }
-.hm-lived-grid{ grid-auto-flow: dense; }
+/* En escritorio la rejilla es uniforme (4 columnas, todas 4:3): el efecto
+   "wide" (a todo el ancho) es solo para móvil, donde da ritmo tipo Instagram.
+   En escritorio spanear columnas dejaba huecos y desalineaba los pies. */
 @media (max-width: 900px){
   /* Sin hero en móvil: la portada arranca en el cierre "gracias". */
   .hm-hero{ display: none !important; }
