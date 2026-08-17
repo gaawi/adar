@@ -38,7 +38,7 @@ translation_group: "pll_adar26_amigos"
 <p class="ed-lede">Los Amigos del Festival sostienen la música y l’arte contemporáneu nel mediu rural asturianu. A cambiu, viven cada edición dende primer filera —y dende dentro—. Escueyi’l to nivel y xúnite al círculu.</p>
 </div>
 
-<p class="soc-scarcity"><strong>Les entraes son de baldre… y vuelen.</strong> Munchos conciertos agótense’l mesmu día que se publiquen, o a los pocos díes. Ser Amigu garantízate la plaza en cada edición, ensin depender de la suerte.</p>
+<p class="soc-scarcity"><strong>Les entraes son de baldre, pero l’aforu ye llimitáu.</strong> Munchos conciertos agótense’l mesmu día que se publiquen, o a los pocos díes. Ser Amigu garantízate la plaza en cada edición, ensin depender de la suerte.</p>
 
 <div class="soc-tiers">
 

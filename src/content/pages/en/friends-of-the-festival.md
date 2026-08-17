@@ -38,7 +38,7 @@ translation_group: "pll_adar26_amigos"
 <p class="ed-lede">Friends of the Festival keep music and contemporary art alive in rural Asturias. In return, they experience every edition from the front row —and from the inside. Choose your tier and join the circle.</p>
 </div>
 
-<p class="soc-scarcity"><strong>Tickets are free… and they vanish.</strong> Many concerts sell out the same day they are released, or within a few days. Becoming a Friend guarantees your seat every edition —no luck required.</p>
+<p class="soc-scarcity"><strong>Tickets are free, but capacity is limited.</strong> Many concerts sell out the same day they are released, or within a few days. Becoming a Friend guarantees your seat every edition —no luck required.</p>
 
 <div class="soc-tiers">
 

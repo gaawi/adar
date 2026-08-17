@@ -38,7 +38,7 @@ translation_group: "pll_adar26_amigos"
 <p class="ed-lede">Los Amigos del Festival sostienen la música y el arte contemporáneo en el medio rural asturiano. A cambio, viven cada edición desde primera fila —y desde dentro—. Elige tu nivel y únete al círculo.</p>
 </div>
 
-<p class="soc-scarcity"><strong>Las entradas son gratuitas… y vuelan.</strong> Muchos conciertos se agotan el mismo día en que se publican, o a los pocos días. Ser Amigo te garantiza tu plaza en cada edición, sin depender de la suerte.</p>
+<p class="soc-scarcity"><strong>Las entradas son gratuitas, pero el aforo es limitado.</strong> Muchos conciertos se agotan el mismo día en que se publican, o a los pocos días. Ser Amigo te garantiza tu plaza en cada edición, sin depender de la suerte.</p>
 
 <div class="soc-tiers">
 
