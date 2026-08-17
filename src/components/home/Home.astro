@@ -657,6 +657,7 @@ const POST = {
     l_h_pre: 'La VI edición,',
     l_h_em: 'en imágenes',
     l_thanks: 'Gracias al <strong>público</strong>, a los <strong>voluntarios</strong>, a los <strong>artistas</strong>, a los <strong>colaboradores</strong> y a los <strong>patrocinadores e instituciones</strong>. ADAR se vive y se hace entre todos.',
+    l_invite: '¿Te gustó? Hazte amigo del festival para vivir el año que viene desde dentro y descubrir todo lo que tenemos preparado.',
   },
   en: {
     t_eyebrow: 'Edition VI · 4–16 August 2026',
@@ -676,6 +677,7 @@ const POST = {
     l_h_pre: 'The 6th edition,',
     l_h_em: 'in pictures',
     l_thanks: 'Thank you to the <strong>audience</strong>, the <strong>volunteers</strong>, the <strong>artists</strong>, the <strong>collaborators</strong> and the <strong>sponsors and institutions</strong>. ADAR is lived and made by everyone.',
+    l_invite: 'Did you enjoy it? Become a friend of the festival to experience next year from the inside and discover everything we have in store.',
   },
   ast: {
     t_eyebrow: 'VI edición · 4–16 d’agostu 2026',
@@ -695,6 +697,7 @@ const POST = {
     l_h_pre: 'La VI edición,',
     l_h_em: 'n’imáxenes',
     l_thanks: 'Gracies al <strong>públicu</strong>, a los <strong>voluntarios</strong>, a los <strong>artistes</strong>, a los <strong>collaboradores</strong> y a los <strong>patrocinadores y instituciones</strong>. ADAR vívese y faise ente toos.',
+    l_invite: '¿Prestóte? Faite amigu del festival pa vivir l’añu que vien dende dentro y descubrir too lo que tenemos preparao.',
   },
 }[lang];
 // Galería "cómo se vivió": una foto por acción de la VI edición, con pie y
@@ -832,6 +835,10 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
       ))}
     </div>
     <p class="hm-lived-thanks" set:html={POST.l_thanks} />
+    <div class="hm-lived-invite">
+      <p>{POST.l_invite}</p>
+      <a class="hm-lived-cta" href={AMIGOS_HREF[lang]}><span aria-hidden="true">♥</span> {POST.n_amigo}</a>
+    </div>
   </section>
 
   <!-- ============================================
