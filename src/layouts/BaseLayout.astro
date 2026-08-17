@@ -27,8 +27,13 @@ const {
 const fullTitle = title === 'Festival ADAR'
   ? `Festival ADAR – ${description}`
   : `${title} – Festival ADAR`;
+// Imagen para compartir en redes (WhatsApp/Facebook/Twitter): por defecto la
+// foto destacada de CADA página (varía y es coherente con lo que se comparte);
+// solo si falta, una imagen genérica del festival.
 const ogImage =
   featuredImage || 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg';
+const OG_LOCALE = ({ es: 'es_ES', en: 'en_GB', ast: 'ast_ES' } as Record<string, string>)[lang] || 'es_ES';
+const ogType = /\bsingle-post\b/.test(bodyClass || '') ? 'article' : 'website';
 ---
 
 <!doctype html>
@@ -43,12 +48,18 @@ const ogImage =
       <link rel="alternate" hreflang={l} href={`https://festivaladar.com${url}`} />
     ))}
 
+    <meta property="og:site_name" content="Festival ADAR" />
+    <meta property="og:locale" content={OG_LOCALE} />
+    <meta property="og:type" content={ogType} />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:alt" content={fullTitle} />
     <meta property="og:url" content={`https://festivaladar.com${permalink}`} />
-    <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <link rel="icon" type="image/png" href="/favicon.png" />
 
