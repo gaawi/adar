@@ -13908,7 +13908,7 @@ body.page .entry-content .hm-next{ background: var(--ink) !important; }
 .hm-lived-fig:hover .hm-lived-imgwrap img{ transform: scale(1.05); }
 .hm-lived-cap{ display: block; margin-top: 8px; font-size: 11.5px; line-height: 1.35; letter-spacing: 0.02em; color: var(--muted); }
 .hm-lived-fig:hover .hm-lived-cap{ color: var(--ink); }
-.hm-lived-thanks{ max-width: 760px; margin: 42px auto 0; text-align: center; font-size: clamp(16px, 1.6vw, 20px); line-height: 1.6; color: var(--ink); }
+.hm-lived-thanks{ max-width: 760px; margin: clamp(48px, 7vw, 84px) auto 0; text-align: center; font-size: clamp(16px, 1.6vw, 20px); line-height: 1.6; color: var(--ink); }
 .hm-lived-thanks strong{ font-weight: 700; }
 .hm-lived-invite{ max-width: 680px; margin: 20px auto 0; text-align: center; }
 .hm-lived-invite p{ margin: 0 0 20px; font-size: clamp(15px, 1.5vw, 18px); line-height: 1.55; color: var(--ink-soft, #3a352c); }
