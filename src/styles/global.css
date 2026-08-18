@@ -2245,7 +2245,7 @@ html, body{ overflow-x: hidden; }
   overflow: hidden;
   border: none;
   aspect-ratio: 16 / 9;
-  background: #000;
+  background: transparent;
 }
 .adar-archive-page .adar-archive-gallery img{
   width: 100%;
@@ -2289,7 +2289,7 @@ html, body{ overflow-x: hidden; }
     scroll-snap-align: center;
     aspect-ratio: 16 / 9;
     border-radius: 0;
-    background: #000;
+    background: transparent;
   }
   .adar-archive-page .adar-archive-gallery img{ width: 100%; height: 100%; object-fit: contain; }
   .adar-archive-gallery-dots{
