@@ -55,4 +55,8 @@ export const RECAPS: Record<string, Recap> = {
   '10': {
     page: 'paseo-sonoro-iglesia-de-leiguarda-2026',
   },
+  // 11 · Clausura · Quinteto y espicha (Iglesia de Leiguarda)
+  '11': {
+    page: 'clausura-quinteto-y-espicha-leiguarda',
+  },
 };
