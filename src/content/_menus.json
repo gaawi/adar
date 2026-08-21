@@ -241,6 +241,17 @@
       "object_type": "post_type",
       "object": "page",
       "object_id": 0
+    },
+    {
+      "title": "Blog",
+      "url": "/en/blog/",
+      "order": 14,
+      "parent_id": 0,
+      "item_id": 95202,
+      "classes": [],
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": 95202
     }
   ],
   "ast": [
@@ -485,6 +496,17 @@
       "object_type": "post_type",
       "object": "page",
       "object_id": 0
+    },
+    {
+      "title": "Blog",
+      "url": "/ast/blog/",
+      "order": 14,
+      "parent_id": 0,
+      "item_id": 95203,
+      "classes": [],
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": 95203
     }
   ],
   "es": [
@@ -729,6 +751,17 @@
       "object_type": "post_type",
       "object": "page",
       "object_id": 0
+    },
+    {
+      "title": "Blog",
+      "url": "/es/blog/",
+      "order": 14,
+      "parent_id": 0,
+      "item_id": 95201,
+      "classes": [],
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": 95201
     }
   ]
 }

@@ -1,0 +1,96 @@
+backend:
+  name: github
+  repo: gaawi/adar
+  branch: main
+  base_url: https://festivaladar.com
+  auth_endpoint: api/auth
+
+site_url: https://festivaladar.com
+display_url: https://festivaladar.com
+media_folder: "public/uploads"
+public_folder: "/uploads"
+locale: es
+
+collections:
+  - name: blog_es
+    label: "Blog · Español"
+    label_singular: "Artículo (ES)"
+    description: "Noticias y artículos en español. Se publican solo cuando marcas «Publicado»."
+    folder: "src/content/blog/es"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: "Título", widget: string }
+      - { name: lang, label: "Idioma", widget: hidden, default: es }
+      - { name: date, label: "Fecha", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DDTHH:mm:ssZ", picker_utc: true }
+      - name: status
+        label: "Estado"
+        hint: "Solo aparece en la web cuando está en «Publicado». Déjalo en «Borrador» hasta que lo apruebes."
+        widget: select
+        options:
+          - { label: "Borrador (no visible)", value: draft }
+          - { label: "Publicado (visible en la web)", value: publish }
+        default: draft
+      - { name: excerpt, label: "Resumen", hint: "Frase corta para las tarjetas y para compartir en redes.", widget: text, required: false }
+      - { name: featured_image, label: "Imagen destacada", widget: image, required: false, choose_url: true }
+      - { name: author, label: "Autor", widget: string, required: false, default: "Festival ADAR" }
+      - { name: tags, label: "Etiquetas", widget: list, required: false }
+      - { name: body, label: "Contenido", widget: markdown }
+
+  - name: blog_en
+    label: "Blog · English"
+    label_singular: "Article (EN)"
+    description: "News and articles in English. Published only when set to «Publicado»."
+    folder: "src/content/blog/en"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: "Title", widget: string }
+      - { name: lang, label: "Language", widget: hidden, default: en }
+      - { name: date, label: "Date", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DDTHH:mm:ssZ", picker_utc: true }
+      - name: status
+        label: "Status"
+        hint: "Only visible on the site when set to «Publicado»."
+        widget: select
+        options:
+          - { label: "Draft (hidden)", value: draft }
+          - { label: "Published (visible)", value: publish }
+        default: draft
+      - { name: excerpt, label: "Summary", widget: text, required: false }
+      - { name: featured_image, label: "Featured image", widget: image, required: false, choose_url: true }
+      - { name: author, label: "Author", widget: string, required: false, default: "Festival ADAR" }
+      - { name: tags, label: "Tags", widget: list, required: false }
+      - { name: body, label: "Content", widget: markdown }
+
+  - name: blog_ast
+    label: "Blog · Asturianu"
+    label_singular: "Artículu (AST)"
+    description: "Noticies y artículos n'asturianu. Namás se publiquen cuando marques «Publicado»."
+    folder: "src/content/blog/ast"
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: yaml-frontmatter
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: "Títulu", widget: string }
+      - { name: lang, label: "Llingua", widget: hidden, default: ast }
+      - { name: date, label: "Data", widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DDTHH:mm:ssZ", picker_utc: true }
+      - name: status
+        label: "Estáu"
+        widget: select
+        options:
+          - { label: "Borrador (nun visible)", value: draft }
+          - { label: "Publicáu (visible)", value: publish }
+        default: draft
+      - { name: excerpt, label: "Resume", widget: text, required: false }
+      - { name: featured_image, label: "Imaxe destacada", widget: image, required: false, choose_url: true }
+      - { name: author, label: "Autor", widget: string, required: false, default: "Festival ADAR" }
+      - { name: tags, label: "Etiquetes", widget: list, required: false }
+      - { name: body, label: "Conteníu", widget: markdown }

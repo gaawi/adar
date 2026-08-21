@@ -13944,3 +13944,31 @@ body.page .entry-content .hm-next{ background: var(--ink) !important; }
 .adar-bill-btn:hover{ color: #fff; border-color: rgba(255,255,255,0.6); }
 .adar-bill-btn.is-done{ color: var(--accent); border-color: var(--accent); }
 .adar-bill-ico{ font-size: 12px; line-height: 1; }
+
+/* ===================================================================
+   BLOG · índice + artículo (coherente con el resto del sitio)
+   =================================================================== */
+.blog-hero{ padding: clamp(56px, 8vw, 110px) 24px 8px; border-top: 4px solid var(--accent); }
+.blog-hero-inner{ max-width: 1100px; margin: 0 auto; }
+.blog-hero-eyebrow{ display: block; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
+body.is-blog .blog-hero .blog-hero-title{ font-family: var(--font-display, 'Inter', sans-serif); font-weight: 600; font-size: clamp(44px, 8vw, 96px) !important; line-height: 0.98; color: var(--ink) !important; margin: 0; }
+.blog-dot{ color: var(--accent); }
+.blog-hero-lede{ max-width: 640px; margin: 18px 0 0; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.55; color: var(--ink-soft, #3a352c); }
+
+.blog-list-wrap{ max-width: 1100px; margin: 0 auto; padding: 40px 24px clamp(60px, 9vw, 120px); }
+.blog-empty{ font-family: var(--font-mono); color: var(--muted); }
+.blog-list{ list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 34px; }
+.blog-card-link{ display: block; text-decoration: none; color: var(--ink); }
+.blog-card-img{ display: block; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 4px; background: #e9e4d8; margin-bottom: 16px; }
+.blog-card-img img{ width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s cubic-bezier(.22,.61,.36,1); }
+.blog-card-link:hover .blog-card-img img{ transform: scale(1.04); }
+.blog-card-meta{ display: block; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+.blog-card-title{ display: block; font-family: var(--font-serif, Georgia, serif); font-size: clamp(22px, 2.4vw, 28px); line-height: 1.15; color: var(--ink); margin-bottom: 8px; }
+.blog-card-excerpt{ display: block; font-size: 15px; line-height: 1.55; color: var(--ink-soft, #3a352c); margin-bottom: 10px; }
+.blog-card-cta{ display: inline-block; font-size: 12px; letter-spacing: 0.06em; color: var(--ink); border-bottom: 1px solid var(--accent); padding-bottom: 1px; }
+@media (max-width: 720px){ .blog-list{ grid-template-columns: 1fr; gap: 30px; } }
+
+/* Artículo: la prosa usa .entry-content del tema; solo ajustamos meta/volver */
+body.is-blog .entry-content .blog-meta{ color: var(--muted) !important; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; margin: 0 0 20px; }
+body.is-blog .entry-content .blog-back{ margin-top: 44px; }
+body.is-blog .entry-content .blog-back a{ font-family: var(--font-mono); font-size: 13px; color: var(--ink) !important; text-decoration: none; border-bottom: 1px solid var(--accent); }

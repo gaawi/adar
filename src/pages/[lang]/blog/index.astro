@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import type { Lang } from '../../../i18n/strings.ts';
+import { LANGS, HOME_SLUG } from '../../../i18n/strings.ts';
+
+export async function getStaticPaths() {
+  return (LANGS as Lang[]).map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params as { lang: Lang };
+
+const COPY = {
+  es: { eyebrow: 'Festival ADAR', title: 'Blog', lede: 'Noticias, historias y artículos del festival y de la vida cultural en el medio rural.', empty: 'Pronto, las primeras noticias.', read: 'Leer', back: 'Inicio' },
+  en: { eyebrow: 'Festival ADAR', title: 'Blog', lede: 'News, stories and articles from the festival and cultural life in rural areas.', empty: 'The first news, coming soon.', read: 'Read', back: 'Home' },
+  ast: { eyebrow: 'Festival ADAR', title: 'Blog', lede: 'Noticies, hestories y artículos del festival y de la vida cultural nel mediu rural.', empty: 'Aína, les primeres noticies.', read: 'Lleer', back: 'Aniciu' },
+}[lang];
+
+const all = await getCollection('blog', (e) => e.data.status === 'publish' && e.id.startsWith(`${lang}/`));
+const posts = all
+  .map((e) => ({ ...e, slug: e.id.split('/').slice(1).join('/') }))
+  .sort((a, b) => (b.data.date?.getTime() || 0) - (a.data.date?.getTime() || 0));
+
+const fmt = (d?: Date) =>
+  d ? new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : 'es-ES', { day: 'numeric', month: 'short', year: 'numeric' }).format(d) : '';
+---
+
+<BaseLayout
+  title={COPY.title}
+  description={COPY.lede}
+  lang={lang}
+  permalink={`/${lang}/blog/`}
+  bodyClass="page is-blog blog-index"
+>
+  <section class="blog-hero">
+    <div class="blog-hero-inner">
+      <span class="blog-hero-eyebrow mono">{COPY.eyebrow}</span>
+      <h1 class="blog-hero-title">{COPY.title}<span class="blog-dot">.</span></h1>
+      <p class="blog-hero-lede">{COPY.lede}</p>
+    </div>
+  </section>
+
+  <section class="blog-list-wrap">
+    {posts.length === 0 ? (
+      <p class="blog-empty">{COPY.empty}</p>
+    ) : (
+      <ul class="blog-list">
+        {posts.map((p) => (
+          <li class="blog-card">
+            <a class="blog-card-link" href={`/${lang}/blog/${p.slug}/`}>
+              {p.data.featured_image && (
+                <span class="blog-card-img"><img src={p.data.featured_image} alt="" loading="lazy" /></span>
+              )}
+              <span class="blog-card-body">
+                <span class="blog-card-meta mono">{[fmt(p.data.date), ...(p.data.tags || []).slice(0, 1)].filter(Boolean).join(' · ')}</span>
+                <span class="blog-card-title">{p.data.title}</span>
+                {p.data.excerpt && <span class="blog-card-excerpt">{p.data.excerpt}</span>}
+                <span class="blog-card-cta mono">{COPY.read} →</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+</BaseLayout>

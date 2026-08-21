@@ -30,8 +30,11 @@ const fullTitle = title === 'Festival ADAR'
 // Imagen para compartir en redes (WhatsApp/Facebook/Twitter): por defecto la
 // foto destacada de CADA página (varía y es coherente con lo que se comparte);
 // solo si falta, una imagen genérica del festival.
-const ogImage =
+// Las imágenes subidas desde el panel /admin son rutas relativas (/uploads/…).
+// Para OG/Twitter hacen falta URLs absolutas, así que las prefijamos con el dominio.
+const rawOgImage =
   featuredImage || 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01841.jpg';
+const ogImage = rawOgImage.startsWith('/') ? `https://festivaladar.com${rawOgImage}` : rawOgImage;
 const OG_LOCALE = ({ es: 'es_ES', en: 'en_GB', ast: 'ast_ES' } as Record<string, string>)[lang] || 'es_ES';
 const ogType = /\bsingle-post\b/.test(bodyClass || '') ? 'article' : 'website';
 ---

@@ -1,0 +1,65 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Hero from '../../../components/Hero.astro';
+import type { Lang } from '../../../i18n/strings.ts';
+import { LANGS } from '../../../i18n/strings.ts';
+
+export async function getStaticPaths() {
+  // Solo artículos aprobados (status "publish"); los borradores no se construyen.
+  const all = await getCollection('blog', (e) => e.data.status === 'publish');
+  return all.map((entry) => {
+    const [lang, ...rest] = entry.id.split('/');
+    return { params: { lang, slug: rest.join('/') }, props: { entry } };
+  });
+}
+
+const { entry } = Astro.props;
+const [lang, ...rest] = entry.id.split('/');
+const slug = rest.join('/');
+const { Content } = await render(entry);
+const permalink = `/${lang}/blog/${slug}/`;
+
+const EYEBROW: Record<string, string> = { es: 'Blog · Festival ADAR', en: 'Blog · Festival ADAR', ast: 'Blog · Festival ADAR' };
+
+// Cross-language links: si el mismo slug existe (publicado) en otras lenguas.
+const allBlog = await getCollection('blog', (e) => e.data.status === 'publish');
+const translations: Partial<Record<Lang, string>> = {};
+for (const l of LANGS as Lang[]) {
+  if (allBlog.some((e) => e.id === `${l}/${slug}`)) translations[l] = `/${l}/blog/${slug}/`;
+}
+
+const dateFmt = entry.data.date
+  ? new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : 'es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(entry.data.date)
+  : '';
+const backLabel = { es: '← Blog', en: '← Blog', ast: '← Blog' }[lang] || '← Blog';
+---
+
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.excerpt || 'Festival ADAR'}
+  lang={lang as Lang}
+  permalink={permalink}
+  featuredImage={entry.data.featured_image}
+  translations={translations}
+  bodyClass="single single-post is-blog"
+>
+  <Hero
+    eyebrow={EYEBROW[lang] || 'Blog'}
+    title={entry.data.title}
+    lede={entry.data.excerpt}
+    image={entry.data.featured_image}
+    variant="banner"
+  />
+  <div class="builder-wrap full-width">
+    <article class="post type-post status-publish hentry blog-article">
+      <div class="entry-content blog-entry">
+        <p class="blog-meta mono">
+          {[dateFmt, entry.data.author].filter(Boolean).join(' · ')}
+        </p>
+        <Content />
+        <p class="blog-back"><a href={`/${lang}/blog/`}>{backLabel}</a></p>
+      </div>
+    </article>
+  </div>
+</BaseLayout>

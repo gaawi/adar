@@ -39,4 +39,23 @@ const posts = defineCollection({
   schema: baseSchema,
 });
 
-export const collections = { pages, posts };
+// Blog / noticias. Editable desde el panel /admin (Sveltia CMS) con flujo de
+// aprobación: los borradores viven en su propia rama y no se construyen; al
+// aprobar, se fusionan a main y se publican. `status` es una segunda salvaguarda:
+// solo se generan páginas para los artículos con status "publish".
+const blogSchema = z.object({
+  title: z.string(),
+  lang: langEnum.default('es'),
+  date: z.coerce.date(),
+  status: z.enum(['draft', 'publish']).default('draft'),
+  excerpt: z.string().optional(),
+  featured_image: z.string().optional(),
+  author: z.string().optional(),
+  tags: z.array(z.string()).default([]),
+});
+const blog = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog', generateId: byPath }),
+  schema: blogSchema,
+});
+
+export const collections = { pages, posts, blog };
