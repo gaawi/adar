@@ -1,0 +1,566 @@
+---
+// Kit de redes sociales · herramienta interna del panel.
+//
+// Genera, en el navegador y sin servidor, los recortes de cada artículo para
+// cada red (Instagram, Stories, Facebook/LinkedIn, X) y los textos listos para
+// pegar. Las fotos del CDN de Bunny se sirven con Access-Control-Allow-Origin: *,
+// así que el canvas no queda "tainted" y se pueden descargar.
+import { getCollection } from 'astro:content';
+
+const all = await getCollection('blog');
+
+const posts = all
+  .map((e) => {
+    const [lang, ...rest] = e.id.split('/');
+    const slug = rest.join('/');
+    // Texto plano a partir del markdown, para el botón "Descargar texto".
+    const plain = (e.body || '')
+      .replace(/^---[\s\S]*?---\n/, '')
+      .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+      .replace(/^#{1,6}\s+/gm, '')
+      .replace(/\*\*|__|\*|_|`/g, '')
+      .replace(/\n{3,}/g, '\n\n')
+      .trim();
+    return {
+      lang,
+      slug,
+      title: e.data.title,
+      excerpt: e.data.excerpt || '',
+      image: e.data.featured_image || '',
+      status: e.data.status,
+      date: e.data.date ? e.data.date.toISOString().slice(0, 10) : '',
+      tags: e.data.tags || [],
+      url: `https://festivaladar.com/${lang}/blog/${slug}/`,
+      plain,
+    };
+  })
+  .sort((a, b) => (a.status === b.status ? (b.date > a.date ? 1 : -1) : a.status === 'publish' ? -1 : 1));
+
+const published = posts.filter((p) => p.status === 'publish').length;
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Kit de redes · Festival ADAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+    <style>
+      :root {
+        --ink: #0a0907;
+        --ink-soft: #1c1a16;
+        --paper: #f6f4ee;
+        --muted: #6e6a5c;
+        --accent: #f5d72f;
+        --line: rgba(10, 9, 7, 0.14);
+        --font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+        --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: var(--font-display);
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 20px 96px; }
+
+      header.kit-head { border-bottom: 2px solid var(--ink); padding-bottom: 22px; margin-bottom: 8px; }
+      .eyebrow {
+        font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em;
+        text-transform: uppercase; color: var(--muted); margin: 0 0 8px;
+      }
+      h1 { font-size: clamp(34px, 6vw, 60px); line-height: .98; margin: 0 0 12px; letter-spacing: -.02em; }
+      h1 .dot { color: var(--accent); }
+      .lede { margin: 0; max-width: 62ch; color: var(--ink-soft); font-size: 16px; line-height: 1.5; }
+
+      .toolbar {
+        position: sticky; top: 0; z-index: 20; background: var(--paper);
+        border-bottom: 1px solid var(--line); padding: 14px 0; margin-bottom: 26px;
+        display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+      }
+      .toolbar label { font-family: var(--font-mono); font-size: 12px; display: flex; gap: 7px; align-items: center; cursor: pointer; }
+      .toolbar input[type='search'] {
+        font-family: var(--font-mono); font-size: 13px; padding: 8px 12px;
+        border: 1px solid var(--line); background: #fff; border-radius: 999px; min-width: 220px;
+      }
+      .count { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-left: auto; }
+
+      .card {
+        display: grid; grid-template-columns: 190px 1fr; gap: 20px;
+        padding: 20px 0; border-bottom: 1px solid var(--line); align-items: start;
+      }
+      .card.is-hidden { display: none; }
+      .thumb {
+        aspect-ratio: 4/3; background: #ddd8cc; border-radius: 8px; overflow: hidden;
+        display: block; position: relative;
+      }
+      .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+      .thumb.no-img::after {
+        content: 'sin imagen'; position: absolute; inset: 0; display: grid; place-items: center;
+        font-family: var(--font-mono); font-size: 11px; color: var(--muted);
+      }
+      .card h2 { font-size: 20px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; }
+      .meta { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin: 0 0 12px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+      .badge { padding: 2px 8px; border-radius: 999px; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
+      .badge.pub { background: var(--accent); color: var(--ink); }
+      .badge.draft { background: rgba(10,9,7,.08); color: var(--muted); }
+
+      .group { margin-bottom: 10px; }
+      .group-label {
+        font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em;
+        text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px;
+      }
+      .btns { display: flex; flex-wrap: wrap; gap: 6px; }
+      button, a.btn {
+        font-family: var(--font-mono); font-size: 12px; padding: 7px 12px;
+        border: 1px solid var(--ink); background: #fff; color: var(--ink);
+        border-radius: 999px; cursor: pointer; text-decoration: none;
+        transition: background .15s, color .15s; line-height: 1; white-space: nowrap;
+      }
+      button:hover, a.btn:hover { background: var(--ink); color: var(--paper); }
+      button:disabled { opacity: .35; cursor: not-allowed; border-style: dashed; }
+      button:disabled:hover { background: #fff; color: var(--ink); }
+      button.is-busy { background: var(--accent); border-color: var(--accent); color: var(--ink); }
+      button.is-done { background: var(--ink); color: var(--accent); }
+
+      .note { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin: 10px 0 0; line-height: 1.5; }
+      .help {
+        background: #fff; border: 1px solid var(--line); border-radius: 10px;
+        padding: 16px 18px; margin: 22px 0 4px;
+      }
+      .help h3 { margin: 0 0 8px; font-size: 15px; }
+      .help p { margin: 0 0 6px; font-size: 13px; line-height: 1.55; color: var(--ink-soft); }
+      .help code { font-family: var(--font-mono); font-size: 12px; background: rgba(10,9,7,.06); padding: 1px 5px; border-radius: 4px; }
+
+      #toast {
+        position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 20px);
+        background: var(--ink); color: var(--paper); font-family: var(--font-mono); font-size: 13px;
+        padding: 11px 18px; border-radius: 999px; opacity: 0; pointer-events: none;
+        transition: opacity .2s, transform .2s; z-index: 50; max-width: 90vw; text-align: center;
+      }
+      #toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+      @media (max-width: 720px) {
+        .card { grid-template-columns: 1fr; }
+        .thumb { max-width: 260px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="kit-head">
+        <p class="eyebrow">Festival ADAR · Panel</p>
+        <h1>Kit de redes<span class="dot">.</span></h1>
+        <p class="lede">
+          Descarga la imagen ya recortada para cada red y copia el texto listo para pegar.
+          Todo se genera aquí mismo, en tu navegador: no se sube nada a ningún sitio.
+        </p>
+      </header>
+
+      <div class="toolbar">
+        <input type="search" id="q" placeholder="Buscar artículo…" aria-label="Buscar artículo" />
+        <label><input type="checkbox" id="overlay" checked /> Imagen con título y marca</label>
+        <label><input type="checkbox" id="onlyPub" /> Solo publicados</label>
+        <span class="count" id="count">{published} publicados · {posts.length} en total</span>
+      </div>
+
+      {posts.map((p) => (
+        <article class="card" data-title={p.title.toLowerCase()} data-status={p.status}>
+          <span class={`thumb${p.image ? '' : ' no-img'}`}>
+            {p.image && <img src={p.image} alt="" loading="lazy" crossorigin="anonymous" />}
+          </span>
+
+          <div
+            class="card-body"
+            data-url={p.url}
+            data-title-raw={p.title}
+            data-excerpt={p.excerpt}
+            data-image={p.image}
+            data-tags={p.tags.join(',')}
+            data-plain={p.plain}
+            data-slug={p.slug}
+          >
+            <h2>{p.title}</h2>
+            <p class="meta">
+              <span class={`badge ${p.status === 'publish' ? 'pub' : 'draft'}`}>
+                {p.status === 'publish' ? 'Publicado' : 'Borrador'}
+              </span>
+              <span>{p.date}</span>
+              <span>{p.lang.toUpperCase()}</span>
+            </p>
+
+            <div class="group">
+              <span class="group-label">Descargar imagen</span>
+              <div class="btns">
+                <button data-dl="ig" disabled={!p.image}>Instagram 1:1</button>
+                <button data-dl="story" disabled={!p.image}>Story / Reel 9:16</button>
+                <button data-dl="fb" disabled={!p.image}>Facebook · LinkedIn</button>
+                <button data-dl="x" disabled={!p.image}>X 16:9</button>
+                <button data-dl="orig" disabled={!p.image}>Original</button>
+              </div>
+            </div>
+
+            <div class="group">
+              <span class="group-label">Copiar texto</span>
+              <div class="btns">
+                <button data-copy="ig">Instagram</button>
+                <button data-copy="fb">Facebook</button>
+                <button data-copy="li">LinkedIn</button>
+                <button data-copy="x">X</button>
+                <button data-copy="url">Enlace</button>
+                <button data-dl="txt">Descargar .txt</button>
+              </div>
+            </div>
+
+            <div class="group">
+              <span class="group-label">Compartir ahora</span>
+              <div class="btns">
+                <button data-share="fb" disabled={p.status !== 'publish'}>Facebook</button>
+                <button data-share="li" disabled={p.status !== 'publish'}>LinkedIn</button>
+                <button data-share="x" disabled={p.status !== 'publish'}>X</button>
+                <button data-share="wa" disabled={p.status !== 'publish'}>WhatsApp</button>
+                <button data-share="tg" disabled={p.status !== 'publish'}>Telegram</button>
+                <button data-share="native" disabled={p.status !== 'publish'}>Compartir…</button>
+              </div>
+              {p.status !== 'publish' && (
+                <p class="note">Publícalo primero desde el panel para poder compartir el enlace.</p>
+              )}
+            </div>
+          </div>
+        </article>
+      ))}
+
+      <div class="help">
+        <h3>Cómo publicar en Instagram</h3>
+        <p>
+          Instagram no permite publicar desde una web, así que el flujo es en dos pasos:
+          pulsa <code>Instagram 1:1</code> (o <code>Story / Reel 9:16</code>) para descargar la imagen,
+          y <code>Copiar texto → Instagram</code> para el pie de foto. Luego solo tienes que subirlo
+          desde el móvil y pegar.
+        </p>
+        <p>
+          Consejo: si haces esto desde el móvil, la imagen se guarda directamente en tu galería.
+        </p>
+      </div>
+    </div>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+
+    <script is:inline>
+      (function () {
+        var SIZES = {
+          ig: [1080, 1080, 'instagram'],
+          story: [1080, 1920, 'story'],
+          fb: [1200, 630, 'facebook-linkedin'],
+          x: [1600, 900, 'x'],
+        };
+        var BASE_TAGS = ['FestivalADAR', 'Asturias', 'MúsicaClásica', 'MedioRural'];
+
+        var toastEl = document.getElementById('toast');
+        var toastTimer;
+        function toast(msg) {
+          toastEl.textContent = msg;
+          toastEl.classList.add('show');
+          clearTimeout(toastTimer);
+          toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 2600);
+        }
+
+        function slugify(s) {
+          return (s || 'adar').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+            .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60);
+        }
+
+        function hashtags(tags, max) {
+          var extra = (tags || []).filter(Boolean).map(function (t) {
+            return t.trim().replace(/\s+/g, '').replace(/[^\p{L}\p{N}]/gu, '');
+          }).filter(function (t) { return t.length > 2; });
+          var all = BASE_TAGS.concat(extra);
+          var seen = {}, out = [];
+          for (var i = 0; i < all.length && out.length < max; i++) {
+            var k = all[i].toLowerCase();
+            if (!seen[k]) { seen[k] = 1; out.push('#' + all[i]); }
+          }
+          return out.join(' ');
+        }
+
+        function captions(d) {
+          var t = d.title, e = d.excerpt, u = d.url, tags = d.tags;
+          return {
+            ig: t + '\n\n' + e + '\n\n' + 'Artículo completo en el enlace de la bio ↗' + '\n\n' + hashtags(tags, 12),
+            fb: t + '\n\n' + e + '\n\n' + u,
+            li: t + '\n\n' + e + '\n\nLo contamos entero aquí: ' + u + '\n\n' + hashtags(tags, 5),
+            x: (t.length > 90 ? t.slice(0, 87) + '…' : t) + '\n\n' + u,
+            url: u,
+          };
+        }
+
+        function wrapText(ctx, text, maxW) {
+          var words = String(text).split(/\s+/), lines = [], line = '';
+          for (var i = 0; i < words.length; i++) {
+            var test = line ? line + ' ' + words[i] : words[i];
+            if (ctx.measureText(test).width > maxW && line) { lines.push(line); line = words[i]; }
+            else { line = test; }
+          }
+          if (line) lines.push(line);
+          return lines;
+        }
+
+        function loadImage(src) {
+          return new Promise(function (res, rej) {
+            var img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.onload = function () { res(img); };
+            img.onerror = function () { rej(new Error('No se pudo cargar la imagen')); };
+            img.src = src;
+          });
+        }
+
+        async function ensureFonts() {
+          if (!document.fonts || !document.fonts.load) return;
+          try {
+            await Promise.all([
+              document.fonts.load('700 64px "Bricolage Grotesque"'),
+              document.fonts.load('500 24px "JetBrains Mono"'),
+            ]);
+          } catch (err) { /* se usará la tipografía de respaldo */ }
+        }
+
+        async function renderCanvas(d, key, withOverlay) {
+          var spec = SIZES[key], W = spec[0], H = spec[1];
+          await ensureFonts();
+          var img = await loadImage(d.image);
+          var c = document.createElement('canvas');
+          c.width = W; c.height = H;
+          var ctx = c.getContext('2d');
+
+          ctx.fillStyle = '#0a0907';
+          ctx.fillRect(0, 0, W, H);
+
+          // Recorte "cover" centrado.
+          var s = Math.max(W / img.naturalWidth, H / img.naturalHeight);
+          var dw = img.naturalWidth * s, dh = img.naturalHeight * s;
+          ctx.drawImage(img, (W - dw) / 2, (H - dh) / 2, dw, dh);
+
+          if (!withOverlay) return c;
+
+          var pad = Math.round(W * 0.075);
+          var titleSize = Math.round(W * (key === 'story' ? 0.062 : 0.058));
+          var monoSize = Math.max(13, Math.round(W * 0.019));
+
+          // Degradado inferior para que el texto se lea siempre.
+          var gradTop = key === 'story' ? H * 0.42 : H * 0.34;
+          var g = ctx.createLinearGradient(0, gradTop, 0, H);
+          g.addColorStop(0, 'rgba(10,9,7,0)');
+          g.addColorStop(0.55, 'rgba(10,9,7,0.72)');
+          g.addColorStop(1, 'rgba(10,9,7,0.93)');
+          ctx.fillStyle = g;
+          ctx.fillRect(0, gradTop, W, H - gradTop);
+
+          ctx.textBaseline = 'alphabetic';
+          ctx.font = '700 ' + titleSize + 'px "Bricolage Grotesque", system-ui, sans-serif';
+          var lines = wrapText(ctx, d.title, W - pad * 2).slice(0, 4);
+          var lineH = Math.round(titleSize * 1.1);
+          var blockH = lines.length * lineH;
+          var baseY = H - pad - (key === 'story' ? Math.round(H * 0.06) : 0);
+          var startY = baseY - blockH + lineH * 0.78;
+
+          // Filete de acento sobre el título.
+          ctx.fillStyle = '#f5d72f';
+          ctx.fillRect(pad, startY - lineH * 0.78 - Math.round(monoSize * 2.1), Math.round(W * 0.09), Math.max(3, Math.round(W * 0.005)));
+
+          // Antetítulo.
+          ctx.font = '500 ' + monoSize + 'px "JetBrains Mono", ui-monospace, monospace';
+          ctx.fillStyle = '#f5d72f';
+          var eyebrow = 'FESTIVAL ADAR';
+          try { ctx.letterSpacing = Math.round(monoSize * 0.16) + 'px'; } catch (err) {}
+          ctx.fillText(eyebrow, pad, startY - lineH * 0.78 - Math.round(monoSize * 0.7));
+          try { ctx.letterSpacing = '0px'; } catch (err) {}
+
+          // Título.
+          ctx.font = '700 ' + titleSize + 'px "Bricolage Grotesque", system-ui, sans-serif';
+          ctx.fillStyle = '#ffffff';
+          for (var i = 0; i < lines.length; i++) {
+            ctx.fillText(lines[i], pad, startY + i * lineH);
+          }
+
+          // Pie con el dominio.
+          ctx.font = '400 ' + monoSize + 'px "JetBrains Mono", ui-monospace, monospace';
+          ctx.fillStyle = 'rgba(246,244,238,0.72)';
+          ctx.fillText('festivaladar.com', pad, H - Math.round(pad * 0.42));
+
+          return c;
+        }
+
+        function saveBlob(blob, filename) {
+          var url = URL.createObjectURL(blob);
+          var a = document.createElement('a');
+          a.href = url; a.download = filename;
+          document.body.appendChild(a); a.click(); a.remove();
+          setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+        }
+
+        function readData(body) {
+          return {
+            url: body.dataset.url,
+            title: body.dataset.titleRaw,
+            excerpt: body.dataset.excerpt,
+            image: body.dataset.image,
+            tags: (body.dataset.tags || '').split(',').filter(Boolean),
+            plain: body.dataset.plain,
+            slug: body.dataset.slug,
+          };
+        }
+
+        async function copy(text) {
+          try {
+            await navigator.clipboard.writeText(text);
+            return true;
+          } catch (err) {
+            var ta = document.createElement('textarea');
+            ta.value = text;
+            ta.setAttribute('readonly', '');
+            ta.style.position = 'fixed'; ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select(); ta.setSelectionRange(0, ta.value.length);
+            var ok = false;
+            try { ok = document.execCommand('copy'); } catch (e2) { ok = false; }
+            ta.remove();
+            return ok;
+          }
+        }
+
+        function flash(btn, label) {
+          var prev = btn.textContent;
+          btn.classList.remove('is-busy');
+          btn.classList.add('is-done');
+          btn.textContent = label;
+          setTimeout(function () {
+            btn.classList.remove('is-done');
+            btn.textContent = prev;
+          }, 1500);
+        }
+
+        document.addEventListener('click', async function (ev) {
+          var btn = ev.target.closest('button');
+          if (!btn) return;
+          var body = btn.closest('.card-body');
+          if (!body) return;
+          var d = readData(body);
+          var withOverlay = document.getElementById('overlay').checked;
+
+          // --- Descargas ---
+          var dl = btn.dataset.dl;
+          if (dl) {
+            if (dl === 'txt') {
+              var txt = d.title + '\n\n' + (d.excerpt ? d.excerpt + '\n\n' : '') + d.plain + '\n\n' + d.url + '\n';
+              saveBlob(new Blob([txt], { type: 'text/plain;charset=utf-8' }), slugify(d.slug) + '.txt');
+              flash(btn, 'Descargado ✓');
+              return;
+            }
+            if (!d.image) { toast('Este artículo no tiene imagen destacada.'); return; }
+
+            if (dl === 'orig') {
+              btn.classList.add('is-busy');
+              try {
+                var resp = await fetch(d.image, { mode: 'cors' });
+                if (!resp.ok) throw new Error('HTTP ' + resp.status);
+                var blob = await resp.blob();
+                var ext = (d.image.split('.').pop() || 'jpg').split(/[?#]/)[0].slice(0, 4);
+                saveBlob(blob, slugify(d.slug) + '-original.' + ext);
+                flash(btn, 'Descargado ✓');
+              } catch (err) {
+                btn.classList.remove('is-busy');
+                window.open(d.image, '_blank', 'noopener');
+                toast('Se abrió la imagen en otra pestaña: guárdala desde ahí.');
+              }
+              return;
+            }
+
+            btn.classList.add('is-busy');
+            try {
+              var canvas = await renderCanvas(d, dl, withOverlay);
+              await new Promise(function (res) {
+                canvas.toBlob(function (b) {
+                  if (!b) { res(); toast('No se pudo generar la imagen.'); btn.classList.remove('is-busy'); return; }
+                  saveBlob(b, slugify(d.slug) + '-' + SIZES[dl][2] + '.jpg');
+                  flash(btn, 'Descargado ✓');
+                  res();
+                }, 'image/jpeg', 0.92);
+              });
+            } catch (err) {
+              btn.classList.remove('is-busy');
+              toast('No se pudo generar la imagen: ' + err.message);
+            }
+            return;
+          }
+
+          // --- Copiar texto ---
+          var cp = btn.dataset.copy;
+          if (cp) {
+            var text = captions(d)[cp];
+            var ok = await copy(text);
+            if (ok) { flash(btn, 'Copiado ✓'); }
+            else { toast('No se pudo copiar. Selecciona el texto a mano.'); }
+            return;
+          }
+
+          // --- Compartir ---
+          var sh = btn.dataset.share;
+          if (sh) {
+            var u = encodeURIComponent(d.url);
+            var t = encodeURIComponent(d.title);
+            var map = {
+              fb: 'https://www.facebook.com/sharer/sharer.php?u=' + u,
+              li: 'https://www.linkedin.com/sharing/share-offsite/?url=' + u,
+              x: 'https://twitter.com/intent/tweet?url=' + u + '&text=' + t,
+              wa: 'https://wa.me/?text=' + encodeURIComponent(d.title + ' ' + d.url),
+              tg: 'https://t.me/share/url?url=' + u + '&text=' + t,
+            };
+            if (sh === 'native') {
+              if (navigator.share) {
+                try { await navigator.share({ title: d.title, text: d.excerpt, url: d.url }); }
+                catch (err) { /* cancelado por el usuario */ }
+              } else {
+                var ok2 = await copy(d.url);
+                toast(ok2 ? 'Enlace copiado.' : 'Tu navegador no permite compartir aquí.');
+              }
+              return;
+            }
+            window.open(map[sh], '_blank', 'noopener,width=680,height=640');
+            return;
+          }
+        });
+
+        // --- Filtros ---
+        var q = document.getElementById('q');
+        var onlyPub = document.getElementById('onlyPub');
+        var countEl = document.getElementById('count');
+        function applyFilter() {
+          var term = (q.value || '').trim().toLowerCase();
+          var pubOnly = onlyPub.checked;
+          var shown = 0;
+          document.querySelectorAll('.card').forEach(function (card) {
+            var okTerm = !term || card.dataset.title.indexOf(term) > -1;
+            var okPub = !pubOnly || card.dataset.status === 'publish';
+            var show = okTerm && okPub;
+            card.classList.toggle('is-hidden', !show);
+            if (show) shown++;
+          });
+          countEl.textContent = shown + ' artículo' + (shown === 1 ? '' : 's') + ' a la vista';
+        }
+        q.addEventListener('input', applyFilter);
+        onlyPub.addEventListener('change', applyFilter);
+      })();
+    </script>
+  </body>
+</html>

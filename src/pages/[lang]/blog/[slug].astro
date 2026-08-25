@@ -33,6 +33,23 @@ const dateFmt = entry.data.date
   ? new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : 'es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(entry.data.date)
   : '';
 const backLabel = { es: '← Blog', en: '← Blog', ast: '← Blog' }[lang] || '← Blog';
+
+// Compartir: enlaces directos por red + copiar enlace.
+const shareUrl = `https://festivaladar.com${permalink}`;
+const shareU = encodeURIComponent(shareUrl);
+const shareT = encodeURIComponent(entry.data.title);
+const SHARE_COPY: Record<string, { label: string; copy: string; done: string }> = {
+  es: { label: 'Compartir', copy: 'Copiar enlace', done: '¡Copiado!' },
+  en: { label: 'Share', copy: 'Copy link', done: 'Copied!' },
+  ast: { label: 'Compartir', copy: 'Copiar enllaz', done: '¡Copiáu!' },
+};
+const sc = SHARE_COPY[lang] || SHARE_COPY.es;
+const SHARE_LINKS = [
+  { name: 'Facebook', href: `https://www.facebook.com/sharer/sharer.php?u=${shareU}` },
+  { name: 'LinkedIn', href: `https://www.linkedin.com/sharing/share-offsite/?url=${shareU}` },
+  { name: 'X', href: `https://twitter.com/intent/tweet?url=${shareU}&text=${shareT}` },
+  { name: 'WhatsApp', href: `https://wa.me/?text=${encodeURIComponent(entry.data.title + ' ' + shareUrl)}` },
+];
 ---
 
 <BaseLayout
@@ -58,8 +75,48 @@ const backLabel = { es: '← Blog', en: '← Blog', ast: '← Blog' }[lang] || '
           {[dateFmt, entry.data.author].filter(Boolean).join(' · ')}
         </p>
         <Content />
+
+        <div class="blog-share" data-url={shareUrl} data-done={sc.done}>
+          <span class="blog-share-label mono">{sc.label}</span>
+          <div class="blog-share-btns">
+            {SHARE_LINKS.map((s) => (
+              <a class="blog-share-btn" href={s.href} target="_blank" rel="noopener noreferrer">{s.name}</a>
+            ))}
+            <button class="blog-share-btn" type="button" data-share-copy>{sc.copy}</button>
+          </div>
+        </div>
+
         <p class="blog-back"><a href={`/${lang}/blog/`}>{backLabel}</a></p>
       </div>
     </article>
   </div>
+
+  <script is:inline>
+    (function () {
+      var box = document.querySelector('.blog-share');
+      if (!box) return;
+      var btn = box.querySelector('[data-share-copy]');
+      if (!btn) return;
+      btn.addEventListener('click', async function () {
+        var url = box.dataset.url;
+        var prev = btn.textContent;
+        var ok = true;
+        try {
+          await navigator.clipboard.writeText(url);
+        } catch (err) {
+          var ta = document.createElement('textarea');
+          ta.value = url;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'fixed';
+          ta.style.opacity = '0';
+          document.body.appendChild(ta);
+          ta.select();
+          try { ok = document.execCommand('copy'); } catch (e2) { ok = false; }
+          ta.remove();
+        }
+        btn.textContent = ok ? box.dataset.done : prev;
+        setTimeout(function () { btn.textContent = prev; }, 1800);
+      });
+    })();
+  </script>
 </BaseLayout>

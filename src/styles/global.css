@@ -13972,3 +13972,54 @@ body.is-blog .blog-hero .blog-hero-title{ font-family: var(--font-display, 'Inte
 body.is-blog .entry-content .blog-meta{ color: var(--muted) !important; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; margin: 0 0 20px; }
 body.is-blog .entry-content .blog-back{ margin-top: 44px; }
 body.is-blog .entry-content .blog-back a{ font-family: var(--font-mono); font-size: 13px; color: var(--ink) !important; text-decoration: none; border-bottom: 1px solid var(--accent); }
+
+/* ── Blog · compartir en redes ─────────────────────────────────────────────
+   Prefijo body.is-blog .entry-content para ganar a las reglas genéricas del
+   tema (que pintan enlaces y párrafos con sus propios colores). */
+body.is-blog .entry-content .blog-share{
+  margin-top: 52px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(10,9,7,.14);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+body.is-blog .entry-content .blog-share-label{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--muted) !important;
+}
+body.is-blog .entry-content .blog-share-btns{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+body.is-blog .entry-content .blog-share-btn{
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1;
+  /* El tema pone los <button> en mayúsculas: igualamos el botón a los enlaces. */
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  padding: 8px 14px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink) !important;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+}
+body.is-blog .entry-content .blog-share-btn:hover,
+body.is-blog .entry-content .blog-share-btn:focus-visible{
+  background: var(--ink);
+  color: var(--paper) !important;
+}
+@media (max-width: 600px){
+  body.is-blog .entry-content .blog-share{ gap: 10px; }
+  body.is-blog .entry-content .blog-share-btn{ font-size: 11px; padding: 7px 12px; }
+}
