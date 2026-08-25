@@ -1,27 +1,83 @@
 ---
-// Kit de redes sociales · herramienta interna del panel.
+// Kit de redes · herramienta interna del panel (noindex).
 //
-// Genera, en el navegador y sin servidor, los recortes de cada artículo para
-// cada red (Instagram, Stories, Facebook/LinkedIn, X) y los textos listos para
-// pegar. Las fotos del CDN de Bunny se sirven con Access-Control-Allow-Origin: *,
-// así que el canvas no queda "tainted" y se pueden descargar.
+// Dos niveles de uso:
+//   1) Botones rápidos: descargar la portada recortada por red y copiar el texto.
+//   2) "Adaptar a Instagram": convierte el artículo en un carrusel de varias
+//      diapositivas editables, con previsualización y descarga numerada.
+//
+// Todo se genera en el navegador con canvas. Las fotos del CDN de Bunny se
+// sirven con Access-Control-Allow-Origin *, así que la exportación funciona.
 import { getCollection } from 'astro:content';
 
 const all = await getCollection('blog');
+
+// Limpia marcas de markdown para poder pintar el texto en un canvas.
+function clean(s: string): string {
+  return s
+    .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
+    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+    .replace(/\*\*|__|\*|_|`/g, '')
+    .replace(/^>\s*/gm, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// Recorta a un número de frases completas, sin pasarse de `max` caracteres.
+function sentences(text: string, maxChars: number): string {
+  const parts = text.split(/(?<=[.!?…])\s+/);
+  let out = '';
+  for (const p of parts) {
+    if (out && (out + ' ' + p).length > maxChars) break;
+    out = out ? out + ' ' + p : p;
+    if (out.length >= maxChars * 0.72) break;
+  }
+  if (!out) out = text.slice(0, maxChars);
+  return out.trim();
+}
 
 const posts = all
   .map((e) => {
     const [lang, ...rest] = e.id.split('/');
     const slug = rest.join('/');
-    // Texto plano a partir del markdown, para el botón "Descargar texto".
-    const plain = (e.body || '')
-      .replace(/^---[\s\S]*?---\n/, '')
-      .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
-      .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+    const raw = (e.body || '').replace(/^---[\s\S]*?---\n/, '');
+
+    // Secciones "## Titular" + su primer párrafo.
+    const sections: { h: string; p: string }[] = [];
+    let cur: { h: string; p: string[] } | null = null;
+    for (const line of raw.split('\n')) {
+      const m = line.match(/^##\s+(.*)/);
+      if (m) {
+        cur = { h: clean(m[1]), p: [] };
+        sections.push(cur as any);
+        (sections[sections.length - 1] as any).p = [];
+        (cur as any).__ref = sections[sections.length - 1];
+      } else if (cur && line.trim() && !line.startsWith('#')) {
+        cur.p.push(line.trim());
+      }
+      if (cur) (sections[sections.length - 1] as any).p = cur.p as any;
+    }
+    const secs = sections
+      .map((s: any) => ({ h: s.h, p: sentences(clean((s.p || []).join(' ')), 260) }))
+      .filter((s) => s.h && s.p);
+
+    // Semilla del carrusel: portada + hasta 6 secciones + cierre.
+    const slides = [
+      { type: 'cover', title: e.data.title, body: '' },
+      ...secs.slice(0, 6).map((s) => ({ type: 'text', title: s.h, body: s.p })),
+      {
+        type: 'cta',
+        title: 'Léelo entero',
+        body: 'Artículo completo en festivaladar.com · enlace en la bio',
+      },
+    ];
+
+    const plain = clean(raw.replace(/^#{1,6}\s+/gm, '')).slice(0, 4000);
+    const plainFull = raw
       .replace(/^#{1,6}\s+/gm, '')
-      .replace(/\*\*|__|\*|_|`/g, '')
-      .replace(/\n{3,}/g, '\n\n')
+      .replace(/\*\*|__|`/g, '')
       .trim();
+
     return {
       lang,
       slug,
@@ -32,12 +88,15 @@ const posts = all
       date: e.data.date ? e.data.date.toISOString().slice(0, 10) : '',
       tags: e.data.tags || [],
       url: `https://festivaladar.com/${lang}/blog/${slug}/`,
+      slides,
       plain,
+      plainFull,
     };
   })
   .sort((a, b) => (a.status === b.status ? (b.date > a.date ? 1 : -1) : a.status === 'publish' ? -1 : 1));
 
 const published = posts.filter((p) => p.status === 'publish').length;
+const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
 ---
 
 <!doctype html>
@@ -53,7 +112,10 @@ const published = posts.filter((p) => p.status === 'publish').length;
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=JetBrains+Mono:wght@400;500&display=swap"
     />
-    <style>
+    <!-- is:global es imprescindible: las diapositivas del editor se crean por
+         JavaScript y no llevan el atributo de ámbito que añade Astro, así que
+         con estilos encapsulados se quedarían sin aplicar. -->
+    <style is:global>
       :root {
         --ink: #0a0907;
         --ink-soft: #1c1a16;
@@ -65,50 +127,25 @@ const published = posts.filter((p) => p.status === 'publish').length;
         --font-mono: 'JetBrains Mono', ui-monospace, monospace;
       }
       * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        background: var(--paper);
-        color: var(--ink);
-        font-family: var(--font-display);
-        -webkit-font-smoothing: antialiased;
-      }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-display); -webkit-font-smoothing: antialiased; }
       .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 20px 96px; }
 
-      header.kit-head { border-bottom: 2px solid var(--ink); padding-bottom: 22px; margin-bottom: 8px; }
-      .eyebrow {
-        font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em;
-        text-transform: uppercase; color: var(--muted); margin: 0 0 8px;
-      }
+      header.kit-head { border-bottom: 2px solid var(--ink); padding-bottom: 22px; }
+      .eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
       h1 { font-size: clamp(34px, 6vw, 60px); line-height: .98; margin: 0 0 12px; letter-spacing: -.02em; }
       h1 .dot { color: var(--accent); }
-      .lede { margin: 0; max-width: 62ch; color: var(--ink-soft); font-size: 16px; line-height: 1.5; }
+      .lede { margin: 0; max-width: 64ch; color: var(--ink-soft); font-size: 16px; line-height: 1.5; }
 
-      .toolbar {
-        position: sticky; top: 0; z-index: 20; background: var(--paper);
-        border-bottom: 1px solid var(--line); padding: 14px 0; margin-bottom: 26px;
-        display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
-      }
+      .toolbar { position: sticky; top: 0; z-index: 20; background: var(--paper); border-bottom: 1px solid var(--line); padding: 14px 0; margin-bottom: 26px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
       .toolbar label { font-family: var(--font-mono); font-size: 12px; display: flex; gap: 7px; align-items: center; cursor: pointer; }
-      .toolbar input[type='search'] {
-        font-family: var(--font-mono); font-size: 13px; padding: 8px 12px;
-        border: 1px solid var(--line); background: #fff; border-radius: 999px; min-width: 220px;
-      }
+      .toolbar input[type='search'] { font-family: var(--font-mono); font-size: 13px; padding: 8px 12px; border: 1px solid var(--line); background: #fff; border-radius: 999px; min-width: 210px; }
       .count { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-left: auto; }
 
-      .card {
-        display: grid; grid-template-columns: 190px 1fr; gap: 20px;
-        padding: 20px 0; border-bottom: 1px solid var(--line); align-items: start;
-      }
+      .card { display: grid; grid-template-columns: 180px 1fr; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line); align-items: start; }
       .card.is-hidden { display: none; }
-      .thumb {
-        aspect-ratio: 4/3; background: #ddd8cc; border-radius: 8px; overflow: hidden;
-        display: block; position: relative;
-      }
+      .thumb { aspect-ratio: 4/3; background: #ddd8cc; border-radius: 8px; overflow: hidden; display: block; position: relative; }
       .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-      .thumb.no-img::after {
-        content: 'sin imagen'; position: absolute; inset: 0; display: grid; place-items: center;
-        font-family: var(--font-mono); font-size: 11px; color: var(--muted);
-      }
+      .thumb.no-img::after { content: 'sin imagen'; position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
       .card h2 { font-size: 20px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; }
       .meta { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin: 0 0 12px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
       .badge { padding: 2px 8px; border-radius: 999px; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
@@ -116,80 +153,94 @@ const published = posts.filter((p) => p.status === 'publish').length;
       .badge.draft { background: rgba(10,9,7,.08); color: var(--muted); }
 
       .group { margin-bottom: 10px; }
-      .group-label {
-        font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em;
-        text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px;
-      }
+      .group-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
       .btns { display: flex; flex-wrap: wrap; gap: 6px; }
-      button, a.btn {
-        font-family: var(--font-mono); font-size: 12px; padding: 7px 12px;
-        border: 1px solid var(--ink); background: #fff; color: var(--ink);
-        border-radius: 999px; cursor: pointer; text-decoration: none;
-        transition: background .15s, color .15s; line-height: 1; white-space: nowrap;
-      }
+      button, a.btn { font-family: var(--font-mono); font-size: 12px; padding: 7px 12px; border: 1px solid var(--ink); background: #fff; color: var(--ink); border-radius: 999px; cursor: pointer; text-decoration: none; transition: background .15s, color .15s; line-height: 1; white-space: nowrap; }
       button:hover, a.btn:hover { background: var(--ink); color: var(--paper); }
       button:disabled { opacity: .35; cursor: not-allowed; border-style: dashed; }
       button:disabled:hover { background: #fff; color: var(--ink); }
       button.is-busy { background: var(--accent); border-color: var(--accent); color: var(--ink); }
       button.is-done { background: var(--ink); color: var(--accent); }
+      button.primary { background: var(--accent); border-color: var(--ink); font-weight: 500; }
+      button.primary:hover { background: var(--ink); color: var(--accent); }
 
       .note { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin: 10px 0 0; line-height: 1.5; }
-      .help {
-        background: #fff; border: 1px solid var(--line); border-radius: 10px;
-        padding: 16px 18px; margin: 22px 0 4px;
-      }
+      .help { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; margin: 22px 0 4px; }
       .help h3 { margin: 0 0 8px; font-size: 15px; }
       .help p { margin: 0 0 6px; font-size: 13px; line-height: 1.55; color: var(--ink-soft); }
       .help code { font-family: var(--font-mono); font-size: 12px; background: rgba(10,9,7,.06); padding: 1px 5px; border-radius: 4px; }
 
-      #toast {
-        position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 20px);
-        background: var(--ink); color: var(--paper); font-family: var(--font-mono); font-size: 13px;
-        padding: 11px 18px; border-radius: 999px; opacity: 0; pointer-events: none;
-        transition: opacity .2s, transform .2s; z-index: 50; max-width: 90vw; text-align: center;
-      }
+      /* ── Modal del adaptador ─────────────────────────────────────────── */
+      #modal { position: fixed; inset: 0; z-index: 100; background: rgba(10,9,7,.62); display: none; }
+      #modal.open { display: block; }
+      .modal-panel { position: absolute; inset: 3vh 3vw; background: var(--paper); border-radius: 14px; display: grid; grid-template-rows: auto 1fr auto; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,.4); }
+      .modal-head { padding: 16px 22px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .modal-head h3 { margin: 0; font-size: 17px; flex: 1 1 260px; line-height: 1.25; }
+      .modal-body { display: grid; grid-template-columns: 1fr 380px; gap: 0; overflow: hidden; }
+      .slides-col { overflow-y: auto; padding: 18px 22px; }
+      .preview-col { border-left: 1px solid var(--line); background: #ece9e0; padding: 18px; overflow-y: auto; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+      .preview-col canvas { width: 100%; max-width: 320px; height: auto; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,.18); display: block; }
+      .preview-hint { font-family: var(--font-mono); font-size: 11px; color: var(--muted); text-align: center; line-height: 1.5; }
+
+      .slide-item { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #fff; cursor: pointer; }
+      .slide-item.sel { border-color: var(--ink); box-shadow: 0 0 0 2px var(--accent); }
+      .slide-top { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+      .slide-n { font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+      .slide-type { font-family: var(--font-mono); font-size: 10px; padding: 2px 7px; border-radius: 999px; background: rgba(10,9,7,.07); color: var(--muted); }
+      .slide-tools { margin-left: auto; display: flex; gap: 4px; }
+      .slide-tools button { padding: 4px 8px; font-size: 11px; }
+      .slide-item input, .slide-item textarea { width: 100%; font-family: var(--font-display); border: 1px solid var(--line); border-radius: 6px; padding: 7px 9px; margin-bottom: 6px; resize: vertical; background: #fff; color: var(--ink); }
+      .slide-item input { font-weight: 600; font-size: 14px; }
+      .slide-item textarea { font-size: 13px; line-height: 1.45; min-height: 62px; }
+      .chars { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-align: right; }
+      .chars.over { color: #b3261e; }
+
+      .modal-foot { padding: 14px 22px; border-top: 1px solid var(--line); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+      .modal-foot .spacer { flex: 1; }
+      .seg { display: inline-flex; border: 1px solid var(--ink); border-radius: 999px; overflow: hidden; }
+      .seg button { border: 0; border-radius: 0; padding: 7px 14px; }
+      .seg button.on { background: var(--ink); color: var(--accent); }
+
+      #toast { position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 20px); background: var(--ink); color: var(--paper); font-family: var(--font-mono); font-size: 13px; padding: 11px 18px; border-radius: 999px; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 200; max-width: 90vw; text-align: center; }
       #toast.show { opacity: 1; transform: translate(-50%, 0); }
 
+      @media (max-width: 900px) {
+        .modal-body { grid-template-columns: 1fr; }
+        .preview-col { border-left: 0; border-top: 1px solid var(--line); }
+      }
       @media (max-width: 720px) {
         .card { grid-template-columns: 1fr; }
         .thumb { max-width: 260px; }
+        .modal-panel { inset: 0; border-radius: 0; }
       }
     </style>
   </head>
   <body>
     <div class="wrap">
       <header class="kit-head">
-        <p class="eyebrow">Festival ADAR · Panel</p>
+        <p class="eyebrow">Festival ADAR · Panel interno</p>
         <h1>Kit de redes<span class="dot">.</span></h1>
         <p class="lede">
-          Descarga la imagen ya recortada para cada red y copia el texto listo para pegar.
-          Todo se genera aquí mismo, en tu navegador: no se sube nada a ningún sitio.
+          Convierte cada artículo en un post listo para subir tú mismo. «Adaptar a Instagram»
+          lo transforma en un carrusel de varias imágenes que puedes editar antes de descargar.
+          Todo se genera aquí, en tu navegador.
         </p>
       </header>
 
       <div class="toolbar">
         <input type="search" id="q" placeholder="Buscar artículo…" aria-label="Buscar artículo" />
-        <label><input type="checkbox" id="overlay" checked /> Imagen con título y marca</label>
+        <label><input type="checkbox" id="overlay" checked /> Portada con título y marca</label>
         <label><input type="checkbox" id="onlyPub" /> Solo publicados</label>
         <span class="count" id="count">{published} publicados · {posts.length} en total</span>
       </div>
 
-      {posts.map((p) => (
-        <article class="card" data-title={p.title.toLowerCase()} data-status={p.status}>
+      {posts.map((p, i) => (
+        <article class="card" data-title={p.title.toLowerCase()} data-status={p.status} data-i={i}>
           <span class={`thumb${p.image ? '' : ' no-img'}`}>
             {p.image && <img src={p.image} alt="" loading="lazy" crossorigin="anonymous" />}
           </span>
 
-          <div
-            class="card-body"
-            data-url={p.url}
-            data-title-raw={p.title}
-            data-excerpt={p.excerpt}
-            data-image={p.image}
-            data-tags={p.tags.join(',')}
-            data-plain={p.plain}
-            data-slug={p.slug}
-          >
+          <div class="card-body">
             <h2>{p.title}</h2>
             <p class="meta">
               <span class={`badge ${p.status === 'publish' ? 'pub' : 'draft'}`}>
@@ -197,13 +248,22 @@ const published = posts.filter((p) => p.status === 'publish').length;
               </span>
               <span>{p.date}</span>
               <span>{p.lang.toUpperCase()}</span>
+              <span>{p.slides.length} diapositivas sugeridas</span>
             </p>
 
             <div class="group">
-              <span class="group-label">Descargar imagen</span>
+              <span class="group-label">Adaptar y montar el post</span>
+              <div class="btns">
+                <button class="primary" data-adapt="ig" disabled={!p.image}>Adaptar a Instagram (carrusel)</button>
+                <button data-adapt="story" disabled={!p.image}>Adaptar a Story 9:16</button>
+              </div>
+            </div>
+
+            <div class="group">
+              <span class="group-label">Solo la portada</span>
               <div class="btns">
                 <button data-dl="ig" disabled={!p.image}>Instagram 1:1</button>
-                <button data-dl="story" disabled={!p.image}>Story / Reel 9:16</button>
+                <button data-dl="story" disabled={!p.image}>Story 9:16</button>
                 <button data-dl="fb" disabled={!p.image}>Facebook · LinkedIn</button>
                 <button data-dl="x" disabled={!p.image}>X 16:9</button>
                 <button data-dl="orig" disabled={!p.image}>Original</button>
@@ -211,29 +271,17 @@ const published = posts.filter((p) => p.status === 'publish').length;
             </div>
 
             <div class="group">
-              <span class="group-label">Copiar texto</span>
+              <span class="group-label">Texto</span>
               <div class="btns">
-                <button data-copy="ig">Instagram</button>
+                <button data-copy="ig">Pie de foto Instagram</button>
                 <button data-copy="fb">Facebook</button>
                 <button data-copy="li">LinkedIn</button>
                 <button data-copy="x">X</button>
                 <button data-copy="url">Enlace</button>
                 <button data-dl="txt">Descargar .txt</button>
               </div>
-            </div>
-
-            <div class="group">
-              <span class="group-label">Compartir ahora</span>
-              <div class="btns">
-                <button data-share="fb" disabled={p.status !== 'publish'}>Facebook</button>
-                <button data-share="li" disabled={p.status !== 'publish'}>LinkedIn</button>
-                <button data-share="x" disabled={p.status !== 'publish'}>X</button>
-                <button data-share="wa" disabled={p.status !== 'publish'}>WhatsApp</button>
-                <button data-share="tg" disabled={p.status !== 'publish'}>Telegram</button>
-                <button data-share="native" disabled={p.status !== 'publish'}>Compartir…</button>
-              </div>
               {p.status !== 'publish' && (
-                <p class="note">Publícalo primero desde el panel para poder compartir el enlace.</p>
+                <p class="note">Es un borrador: el enlace aún no existe. Publícalo antes de citar la URL.</p>
               )}
             </div>
           </div>
@@ -241,164 +289,272 @@ const published = posts.filter((p) => p.status === 'publish').length;
       ))}
 
       <div class="help">
-        <h3>Cómo publicar en Instagram</h3>
+        <h3>Cómo se sube a Instagram</h3>
         <p>
-          Instagram no permite publicar desde una web, así que el flujo es en dos pasos:
-          pulsa <code>Instagram 1:1</code> (o <code>Story / Reel 9:16</code>) para descargar la imagen,
-          y <code>Copiar texto → Instagram</code> para el pie de foto. Luego solo tienes que subirlo
-          desde el móvil y pegar.
+          Instagram no permite publicar desde una web, así que el último paso siempre es manual:
+          pulsa <code>Adaptar a Instagram</code>, ajusta los textos, y descarga las imágenes
+          (se numeran <code>01</code>, <code>02</code>… para que las subas en orden).
+          Copia el pie de foto y pégalo al publicar.
         </p>
         <p>
-          Consejo: si haces esto desde el móvil, la imagen se guarda directamente en tu galería.
+          Si lo haces desde el móvil, las imágenes van directas a tu galería y puedes
+          seleccionarlas todas de golpe al crear el carrusel.
         </p>
+      </div>
+    </div>
+
+    <div id="modal" role="dialog" aria-modal="true" aria-label="Adaptar a Instagram">
+      <div class="modal-panel">
+        <div class="modal-head">
+          <h3 id="m-title">Adaptar</h3>
+          <div class="seg" id="m-format">
+            <button data-fmt="ig" class="on">Carrusel 1:1</button>
+            <button data-fmt="story">Story 9:16</button>
+          </div>
+          <button id="m-close">Cerrar</button>
+        </div>
+        <div class="modal-body">
+          <div class="slides-col" id="m-slides"></div>
+          <div class="preview-col">
+            <canvas id="m-canvas" width="1080" height="1080"></canvas>
+            <p class="preview-hint" id="m-hint">Vista previa</p>
+            <button id="m-dl-one">Descargar solo esta</button>
+          </div>
+        </div>
+        <div class="modal-foot">
+          <button id="m-add">+ Diapositiva</button>
+          <button id="m-add-quote">+ Cita</button>
+          <button id="m-reset">Reiniciar textos</button>
+          <span class="spacer"></span>
+          <button id="m-copy">Copiar pie de foto</button>
+          <button class="primary" id="m-dl-all">Descargar todas</button>
+        </div>
       </div>
     </div>
 
     <div id="toast" role="status" aria-live="polite"></div>
 
+    <script type="application/json" id="kit-data" set:html={dataJson}></script>
+
     <script is:inline>
       (function () {
-        var SIZES = {
-          ig: [1080, 1080, 'instagram'],
-          story: [1080, 1920, 'story'],
-          fb: [1200, 630, 'facebook-linkedin'],
-          x: [1600, 900, 'x'],
-        };
+        var POSTS = JSON.parse(document.getElementById('kit-data').textContent);
+        var SIZES = { ig: [1080, 1080, 'instagram'], story: [1080, 1920, 'story'], fb: [1200, 630, 'facebook-linkedin'], x: [1600, 900, 'x'] };
         var BASE_TAGS = ['FestivalADAR', 'Asturias', 'MúsicaClásica', 'MedioRural'];
+        var INK = '#0a0907', PAPER = '#f6f4ee', ACCENT = '#f5d72f';
 
-        var toastEl = document.getElementById('toast');
-        var toastTimer;
-        function toast(msg) {
-          toastEl.textContent = msg;
-          toastEl.classList.add('show');
-          clearTimeout(toastTimer);
-          toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 2600);
+        var toastEl = document.getElementById('toast'), toastTimer;
+        function toast(m) {
+          toastEl.textContent = m; toastEl.classList.add('show');
+          clearTimeout(toastTimer); toastTimer = setTimeout(function () { toastEl.classList.remove('show'); }, 2800);
         }
-
         function slugify(s) {
           return (s || 'adar').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
             .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60);
         }
-
         function hashtags(tags, max) {
           var extra = (tags || []).filter(Boolean).map(function (t) {
             return t.trim().replace(/\s+/g, '').replace(/[^\p{L}\p{N}]/gu, '');
           }).filter(function (t) { return t.length > 2; });
-          var all = BASE_TAGS.concat(extra);
-          var seen = {}, out = [];
+          var all = BASE_TAGS.concat(extra), seen = {}, out = [];
           for (var i = 0; i < all.length && out.length < max; i++) {
             var k = all[i].toLowerCase();
             if (!seen[k]) { seen[k] = 1; out.push('#' + all[i]); }
           }
           return out.join(' ');
         }
-
         function captions(d) {
-          var t = d.title, e = d.excerpt, u = d.url, tags = d.tags;
           return {
-            ig: t + '\n\n' + e + '\n\n' + 'Artículo completo en el enlace de la bio ↗' + '\n\n' + hashtags(tags, 12),
-            fb: t + '\n\n' + e + '\n\n' + u,
-            li: t + '\n\n' + e + '\n\nLo contamos entero aquí: ' + u + '\n\n' + hashtags(tags, 5),
-            x: (t.length > 90 ? t.slice(0, 87) + '…' : t) + '\n\n' + u,
-            url: u,
+            ig: d.title + '\n\n' + d.excerpt + '\n\n' + 'Artículo completo en el enlace de la bio ↗' + '\n\n' + hashtags(d.tags, 12),
+            fb: d.title + '\n\n' + d.excerpt + '\n\n' + d.url,
+            li: d.title + '\n\n' + d.excerpt + '\n\nLo contamos entero aquí: ' + d.url + '\n\n' + hashtags(d.tags, 5),
+            x: (d.title.length > 90 ? d.title.slice(0, 87) + '…' : d.title) + '\n\n' + d.url,
+            url: d.url,
           };
         }
-
         function wrapText(ctx, text, maxW) {
           var words = String(text).split(/\s+/), lines = [], line = '';
           for (var i = 0; i < words.length; i++) {
             var test = line ? line + ' ' + words[i] : words[i];
             if (ctx.measureText(test).width > maxW && line) { lines.push(line); line = words[i]; }
-            else { line = test; }
+            else line = test;
           }
           if (line) lines.push(line);
           return lines;
         }
-
+        // Reduce el cuerpo hasta que quepa en la caja disponible.
+        function fitLines(ctx, text, maxW, maxH, weight, family, start, min) {
+          var size = start;
+          while (size > min) {
+            ctx.font = weight + ' ' + size + 'px ' + family;
+            var ls = wrapText(ctx, text, maxW);
+            if (ls.length * size * 1.32 <= maxH) return { size: size, lines: ls };
+            size -= 2;
+          }
+          ctx.font = weight + ' ' + min + 'px ' + family;
+          return { size: min, lines: wrapText(ctx, text, maxW) };
+        }
         function loadImage(src) {
           return new Promise(function (res, rej) {
             var img = new Image();
             img.crossOrigin = 'anonymous';
             img.onload = function () { res(img); };
-            img.onerror = function () { rej(new Error('No se pudo cargar la imagen')); };
+            img.onerror = function () { rej(new Error('no se pudo cargar la imagen')); };
             img.src = src;
           });
         }
-
         async function ensureFonts() {
           if (!document.fonts || !document.fonts.load) return;
           try {
             await Promise.all([
-              document.fonts.load('700 64px "Bricolage Grotesque"'),
+              document.fonts.load('800 64px "Bricolage Grotesque"'),
+              document.fonts.load('400 32px "Bricolage Grotesque"'),
               document.fonts.load('500 24px "JetBrains Mono"'),
             ]);
-          } catch (err) { /* se usará la tipografía de respaldo */ }
+          } catch (e) {}
         }
+        var DISPLAY = '"Bricolage Grotesque", system-ui, sans-serif';
+        var MONO = '"JetBrains Mono", ui-monospace, monospace';
 
-        async function renderCanvas(d, key, withOverlay) {
-          var spec = SIZES[key], W = spec[0], H = spec[1];
+        function mono(ctx, size, color, spacing) {
+          ctx.font = '500 ' + size + 'px ' + MONO;
+          ctx.fillStyle = color;
+          try { ctx.letterSpacing = (spacing || 0) + 'px'; } catch (e) {}
+        }
+        function resetSpacing(ctx) { try { ctx.letterSpacing = '0px'; } catch (e) {} }
+
+        // ── Dibujo de una diapositiva ────────────────────────────────────
+        async function drawSlide(canvas, post, slide, idx, total, fmt, withOverlay) {
+          var spec = SIZES[fmt], W = spec[0], H = spec[1];
+          canvas.width = W; canvas.height = H;
+          var ctx = canvas.getContext('2d');
           await ensureFonts();
-          var img = await loadImage(d.image);
-          var c = document.createElement('canvas');
-          c.width = W; c.height = H;
-          var ctx = c.getContext('2d');
-
-          ctx.fillStyle = '#0a0907';
-          ctx.fillRect(0, 0, W, H);
-
-          // Recorte "cover" centrado.
-          var s = Math.max(W / img.naturalWidth, H / img.naturalHeight);
-          var dw = img.naturalWidth * s, dh = img.naturalHeight * s;
-          ctx.drawImage(img, (W - dw) / 2, (H - dh) / 2, dw, dh);
-
-          if (!withOverlay) return c;
-
-          var pad = Math.round(W * 0.075);
-          var titleSize = Math.round(W * (key === 'story' ? 0.062 : 0.058));
+          var pad = Math.round(W * 0.085);
           var monoSize = Math.max(13, Math.round(W * 0.019));
+          var safeBottom = fmt === 'story' ? Math.round(H * 0.10) : 0;
+          var safeTop = fmt === 'story' ? Math.round(H * 0.07) : 0;
 
-          // Degradado inferior para que el texto se lea siempre.
-          var gradTop = key === 'story' ? H * 0.42 : H * 0.34;
-          var g = ctx.createLinearGradient(0, gradTop, 0, H);
-          g.addColorStop(0, 'rgba(10,9,7,0)');
-          g.addColorStop(0.55, 'rgba(10,9,7,0.72)');
-          g.addColorStop(1, 'rgba(10,9,7,0.93)');
-          ctx.fillStyle = g;
-          ctx.fillRect(0, gradTop, W, H - gradTop);
+          if (slide.type === 'cover') {
+            ctx.fillStyle = INK; ctx.fillRect(0, 0, W, H);
+            if (post.image) {
+              try {
+                var img = await loadImage(post.image);
+                var s = Math.max(W / img.naturalWidth, H / img.naturalHeight);
+                var dw = img.naturalWidth * s, dh = img.naturalHeight * s;
+                ctx.drawImage(img, (W - dw) / 2, (H - dh) / 2, dw, dh);
+              } catch (e) {}
+            }
+            if (!withOverlay) return;
+            var gTop = fmt === 'story' ? H * 0.42 : H * 0.32;
+            var g = ctx.createLinearGradient(0, gTop, 0, H);
+            g.addColorStop(0, 'rgba(10,9,7,0)'); g.addColorStop(.55, 'rgba(10,9,7,.72)'); g.addColorStop(1, 'rgba(10,9,7,.94)');
+            ctx.fillStyle = g; ctx.fillRect(0, gTop, W, H - gTop);
 
-          ctx.textBaseline = 'alphabetic';
-          ctx.font = '700 ' + titleSize + 'px "Bricolage Grotesque", system-ui, sans-serif';
-          var lines = wrapText(ctx, d.title, W - pad * 2).slice(0, 4);
-          var lineH = Math.round(titleSize * 1.1);
-          var blockH = lines.length * lineH;
-          var baseY = H - pad - (key === 'story' ? Math.round(H * 0.06) : 0);
-          var startY = baseY - blockH + lineH * 0.78;
+            var maxTitleH = H * (fmt === 'story' ? 0.30 : 0.34);
+            var fit = fitLines(ctx, slide.title, W - pad * 2, maxTitleH, '800', DISPLAY, Math.round(W * 0.072), Math.round(W * 0.034));
+            var lineH = Math.round(fit.size * 1.12);
+            var baseY = H - pad - safeBottom;
+            var startY = baseY - fit.lines.length * lineH + lineH * 0.8;
 
-          // Filete de acento sobre el título.
-          ctx.fillStyle = '#f5d72f';
-          ctx.fillRect(pad, startY - lineH * 0.78 - Math.round(monoSize * 2.1), Math.round(W * 0.09), Math.max(3, Math.round(W * 0.005)));
+            ctx.fillStyle = ACCENT;
+            ctx.fillRect(pad, startY - lineH * 0.8 - Math.round(monoSize * 2.2), Math.round(W * 0.09), Math.max(3, Math.round(W * 0.005)));
+            mono(ctx, monoSize, ACCENT, Math.round(monoSize * 0.16));
+            ctx.fillText('FESTIVAL ADAR', pad, startY - lineH * 0.8 - Math.round(monoSize * 0.75));
+            resetSpacing(ctx);
 
-          // Antetítulo.
-          ctx.font = '500 ' + monoSize + 'px "JetBrains Mono", ui-monospace, monospace';
-          ctx.fillStyle = '#f5d72f';
-          var eyebrow = 'FESTIVAL ADAR';
-          try { ctx.letterSpacing = Math.round(monoSize * 0.16) + 'px'; } catch (err) {}
-          ctx.fillText(eyebrow, pad, startY - lineH * 0.78 - Math.round(monoSize * 0.7));
-          try { ctx.letterSpacing = '0px'; } catch (err) {}
+            ctx.font = '800 ' + fit.size + 'px ' + DISPLAY;
+            ctx.fillStyle = '#ffffff';
+            for (var i = 0; i < fit.lines.length; i++) ctx.fillText(fit.lines[i], pad, startY + i * lineH);
 
-          // Título.
-          ctx.font = '700 ' + titleSize + 'px "Bricolage Grotesque", system-ui, sans-serif';
-          ctx.fillStyle = '#ffffff';
-          for (var i = 0; i < lines.length; i++) {
-            ctx.fillText(lines[i], pad, startY + i * lineH);
+            mono(ctx, monoSize, 'rgba(246,244,238,.72)', 0);
+            ctx.fillText('festivaladar.com', pad, H - Math.round(pad * 0.4) - safeBottom * 0.4);
+            resetSpacing(ctx);
+            return;
           }
 
-          // Pie con el dominio.
-          ctx.font = '400 ' + monoSize + 'px "JetBrains Mono", ui-monospace, monospace';
-          ctx.fillStyle = 'rgba(246,244,238,0.72)';
-          ctx.fillText('festivaladar.com', pad, H - Math.round(pad * 0.42));
+          // Las diapositivas de texto, cita y cierre centran su bloque en la
+          // zona segura: así funcionan igual de bien en 1:1 que en 9:16.
+          var footY = H - Math.round(pad * 0.45) - safeBottom;
+          var areaTop = pad + safeTop;
+          var areaBottom = footY - monoSize * 2.4;
+          var areaH = areaBottom - areaTop;
+          var maxW = W - pad * 2;
+          var ruleH = Math.max(4, Math.round(W * 0.007));
+          var gapRule = Math.round(W * 0.032);
+          var gapBody = Math.round(W * 0.038);
 
-          return c;
+          if (slide.type === 'cta') {
+            ctx.fillStyle = INK; ctx.fillRect(0, 0, W, H);
+            var cf = fitLines(ctx, slide.title, maxW, areaH * 0.42, '800', DISPLAY, Math.round(W * 0.10), Math.round(W * 0.05));
+            var cbf = fitLines(ctx, slide.body, maxW, areaH * 0.34, '400', DISPLAY, Math.round(W * 0.042), Math.round(W * 0.026));
+            var cTitleH = cf.lines.length * cf.size * 1.12;
+            var cBodyH = cbf.lines.length * cbf.size * 1.42;
+            var cTotal = ruleH + gapRule + cTitleH + gapBody + cBodyH;
+            var cTop = areaTop + Math.max(0, (areaH - cTotal) / 2);
+
+            ctx.fillStyle = ACCENT;
+            ctx.fillRect(pad, cTop, Math.round(W * 0.16), ruleH);
+            ctx.font = '800 ' + cf.size + 'px ' + DISPLAY; ctx.fillStyle = ACCENT;
+            var cy = cTop + ruleH + gapRule + cf.size * 0.86;
+            for (var c = 0; c < cf.lines.length; c++) ctx.fillText(cf.lines[c], pad, cy + c * cf.size * 1.12);
+            ctx.font = '400 ' + cbf.size + 'px ' + DISPLAY; ctx.fillStyle = 'rgba(246,244,238,.9)';
+            var by = cTop + ruleH + gapRule + cTitleH + gapBody + cbf.size * 0.86;
+            for (var b = 0; b < cbf.lines.length; b++) ctx.fillText(cbf.lines[b], pad, by + b * cbf.size * 1.42);
+
+            mono(ctx, monoSize, 'rgba(246,244,238,.6)', 0);
+            ctx.fillText('festivaladar.com', pad, footY);
+            resetSpacing(ctx);
+            return;
+          }
+
+          if (slide.type === 'quote') {
+            ctx.fillStyle = INK; ctx.fillRect(0, 0, W, H);
+            var qf = fitLines(ctx, slide.body || slide.title, maxW, areaH * 0.62, '800', DISPLAY, Math.round(W * 0.072), Math.round(W * 0.036));
+            var qH = qf.lines.length * qf.size * 1.16;
+            var markSize = Math.round(W * 0.20);
+            var qTotal = markSize * 0.42 + qH;
+            var qTop = areaTop + Math.max(0, (areaH - qTotal) / 2);
+
+            ctx.font = '800 ' + markSize + 'px ' + DISPLAY;
+            ctx.fillStyle = 'rgba(245,215,47,.22)';
+            ctx.fillText('“', pad - Math.round(W * 0.012), qTop + markSize * 0.62);
+
+            ctx.font = '800 ' + qf.size + 'px ' + DISPLAY; ctx.fillStyle = PAPER;
+            var qy = qTop + markSize * 0.42 + qf.size * 0.86;
+            for (var q = 0; q < qf.lines.length; q++) ctx.fillText(qf.lines[q], pad, qy + q * qf.size * 1.16);
+
+            mono(ctx, monoSize, ACCENT, Math.round(monoSize * 0.12));
+            ctx.fillText(String(idx + 1).padStart(2, '0') + ' / ' + String(total).padStart(2, '0'), pad, footY);
+            resetSpacing(ctx);
+            return;
+          }
+
+          // type === 'text'
+          ctx.fillStyle = PAPER; ctx.fillRect(0, 0, W, H);
+          var tf = fitLines(ctx, slide.title, maxW, areaH * 0.34, '800', DISPLAY, Math.round(W * 0.066), Math.round(W * 0.036));
+          var tTitleH = tf.lines.length * tf.size * 1.12;
+          var bf2 = fitLines(ctx, slide.body, maxW, areaH - tTitleH - ruleH - gapRule - gapBody, '400', DISPLAY, Math.round(W * 0.042), Math.round(W * 0.024));
+          var tBodyH = bf2.lines.length * bf2.size * 1.42;
+          var tTotal = ruleH + gapRule + tTitleH + gapBody + tBodyH;
+          var tTop = areaTop + Math.max(0, (areaH - tTotal) / 2);
+
+          ctx.fillStyle = ACCENT;
+          ctx.fillRect(pad, tTop, Math.round(W * 0.12), ruleH);
+
+          ctx.font = '800 ' + tf.size + 'px ' + DISPLAY; ctx.fillStyle = INK;
+          var ty = tTop + ruleH + gapRule + tf.size * 0.86;
+          for (var t = 0; t < tf.lines.length; t++) ctx.fillText(tf.lines[t], pad, ty + t * tf.size * 1.12);
+
+          ctx.font = '400 ' + bf2.size + 'px ' + DISPLAY; ctx.fillStyle = '#1c1a16';
+          var bodyTop = tTop + ruleH + gapRule + tTitleH + gapBody + bf2.size * 0.86;
+          for (var u = 0; u < bf2.lines.length; u++) ctx.fillText(bf2.lines[u], pad, bodyTop + u * bf2.size * 1.42);
+
+          mono(ctx, monoSize, '#6e6a5c', Math.round(monoSize * 0.12));
+          ctx.fillText(String(idx + 1).padStart(2, '0') + ' / ' + String(total).padStart(2, '0'), pad, footY);
+          ctx.textAlign = 'right';
+          ctx.fillText('FESTIVAL ADAR', W - pad, footY);
+          ctx.textAlign = 'left';
+          resetSpacing(ctx);
         }
 
         function saveBlob(blob, filename) {
@@ -406,153 +562,266 @@ const published = posts.filter((p) => p.status === 'publish').length;
           var a = document.createElement('a');
           a.href = url; a.download = filename;
           document.body.appendChild(a); a.click(); a.remove();
-          setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+          setTimeout(function () { URL.revokeObjectURL(url); }, 5000);
         }
-
-        function readData(body) {
-          return {
-            url: body.dataset.url,
-            title: body.dataset.titleRaw,
-            excerpt: body.dataset.excerpt,
-            image: body.dataset.image,
-            tags: (body.dataset.tags || '').split(',').filter(Boolean),
-            plain: body.dataset.plain,
-            slug: body.dataset.slug,
-          };
+        function canvasToBlob(c) {
+          return new Promise(function (r) { c.toBlob(r, 'image/jpeg', 0.92); });
         }
-
         async function copy(text) {
-          try {
-            await navigator.clipboard.writeText(text);
-            return true;
-          } catch (err) {
+          try { await navigator.clipboard.writeText(text); return true; }
+          catch (e) {
             var ta = document.createElement('textarea');
-            ta.value = text;
-            ta.setAttribute('readonly', '');
+            ta.value = text; ta.setAttribute('readonly', '');
             ta.style.position = 'fixed'; ta.style.opacity = '0';
-            document.body.appendChild(ta);
-            ta.select(); ta.setSelectionRange(0, ta.value.length);
-            var ok = false;
-            try { ok = document.execCommand('copy'); } catch (e2) { ok = false; }
-            ta.remove();
-            return ok;
+            document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, ta.value.length);
+            var ok = false; try { ok = document.execCommand('copy'); } catch (e2) {}
+            ta.remove(); return ok;
+          }
+        }
+        function flash(btn, label) {
+          var prev = btn.textContent;
+          btn.classList.remove('is-busy'); btn.classList.add('is-done'); btn.textContent = label;
+          setTimeout(function () { btn.classList.remove('is-done'); btn.textContent = prev; }, 1600);
+        }
+
+        // ── Estado del adaptador ─────────────────────────────────────────
+        var M = { post: null, slides: [], sel: 0, fmt: 'ig' };
+        var modal = document.getElementById('modal');
+        var elSlides = document.getElementById('m-slides');
+        var elCanvas = document.getElementById('m-canvas');
+        var elHint = document.getElementById('m-hint');
+
+        function openAdapter(post, fmt) {
+          M.post = post;
+          M.fmt = fmt;
+          M.slides = JSON.parse(JSON.stringify(post.slides));
+          M.sel = 0;
+          document.getElementById('m-title').textContent = post.title;
+          document.querySelectorAll('#m-format button').forEach(function (b) {
+            b.classList.toggle('on', b.dataset.fmt === fmt);
+          });
+          modal.classList.add('open');
+          document.body.style.overflow = 'hidden';
+          renderList();
+          renderPreview();
+        }
+        function closeAdapter() {
+          modal.classList.remove('open');
+          document.body.style.overflow = '';
+        }
+        var TYPE_LABEL = { cover: 'Portada', text: 'Texto', quote: 'Cita', cta: 'Cierre' };
+
+        function renderList() {
+          elSlides.innerHTML = '';
+          M.slides.forEach(function (s, i) {
+            var d = document.createElement('div');
+            d.className = 'slide-item' + (i === M.sel ? ' sel' : '');
+            d.dataset.i = i;
+            var titleLimit = s.type === 'cover' ? 95 : 70;
+            var bodyLimit = 300;
+            d.innerHTML =
+              '<div class="slide-top">' +
+                '<span class="slide-n">' + String(i + 1).padStart(2, '0') + '</span>' +
+                '<span class="slide-type">' + (TYPE_LABEL[s.type] || s.type) + '</span>' +
+                '<span class="slide-tools">' +
+                  '<button data-up="' + i + '" title="Subir">↑</button>' +
+                  '<button data-down="' + i + '" title="Bajar">↓</button>' +
+                  '<button data-del="' + i + '" title="Eliminar">✕</button>' +
+                '</span>' +
+              '</div>' +
+              '<input data-f="title" data-i="' + i + '" value="" />' +
+              '<div class="chars" data-c="title-' + i + '"></div>' +
+              (s.type === 'cover' ? '' :
+                '<textarea data-f="body" data-i="' + i + '" rows="3"></textarea>' +
+                '<div class="chars" data-c="body-' + i + '"></div>');
+            elSlides.appendChild(d);
+            d.querySelector('[data-f="title"]').value = s.title || '';
+            var bt = d.querySelector('[data-f="body"]');
+            if (bt) bt.value = s.body || '';
+            updateChars(i, 'title', (s.title || '').length, titleLimit);
+            if (bt) updateChars(i, 'body', (s.body || '').length, bodyLimit);
+          });
+        }
+        function updateChars(i, field, len, limit) {
+          var el = elSlides.querySelector('[data-c="' + field + '-' + i + '"]');
+          if (!el) return;
+          el.textContent = len + ' / ' + limit;
+          el.classList.toggle('over', len > limit);
+        }
+
+        var previewToken = 0;
+        async function renderPreview() {
+          var my = ++previewToken;
+          var s = M.slides[M.sel];
+          if (!s) return;
+          elHint.textContent = 'Generando…';
+          try {
+            await drawSlide(elCanvas, M.post, s, M.sel, M.slides.length, M.fmt, document.getElementById('overlay').checked);
+            if (my !== previewToken) return;
+            elHint.textContent = 'Diapositiva ' + (M.sel + 1) + ' de ' + M.slides.length +
+              ' · ' + SIZES[M.fmt][0] + '×' + SIZES[M.fmt][1];
+          } catch (e) {
+            if (my !== previewToken) return;
+            elHint.textContent = 'No se pudo generar: ' + e.message;
           }
         }
 
-        function flash(btn, label) {
-          var prev = btn.textContent;
-          btn.classList.remove('is-busy');
-          btn.classList.add('is-done');
-          btn.textContent = label;
-          setTimeout(function () {
-            btn.classList.remove('is-done');
-            btn.textContent = prev;
-          }, 1500);
-        }
+        elSlides.addEventListener('input', function (ev) {
+          var el = ev.target;
+          var i = parseInt(el.dataset.i, 10);
+          if (isNaN(i)) return;
+          var f = el.dataset.f;
+          M.slides[i][f] = el.value;
+          var limit = f === 'title' ? (M.slides[i].type === 'cover' ? 95 : 70) : 300;
+          updateChars(i, f, el.value.length, limit);
+          if (i === M.sel) renderPreview();
+        });
+        elSlides.addEventListener('click', function (ev) {
+          var b = ev.target.closest('button');
+          if (b) {
+            var iu = b.dataset.up, idn = b.dataset.down, idel = b.dataset.del;
+            if (iu !== undefined) { var i1 = +iu; if (i1 > 0) { var tmp = M.slides[i1 - 1]; M.slides[i1 - 1] = M.slides[i1]; M.slides[i1] = tmp; M.sel = i1 - 1; renderList(); renderPreview(); } return; }
+            if (idn !== undefined) { var i2 = +idn; if (i2 < M.slides.length - 1) { var t2 = M.slides[i2 + 1]; M.slides[i2 + 1] = M.slides[i2]; M.slides[i2] = t2; M.sel = i2 + 1; renderList(); renderPreview(); } return; }
+            if (idel !== undefined) {
+              if (M.slides.length <= 1) { toast('Tiene que quedar al menos una diapositiva.'); return; }
+              M.slides.splice(+idel, 1);
+              if (M.sel >= M.slides.length) M.sel = M.slides.length - 1;
+              renderList(); renderPreview(); return;
+            }
+          }
+          var item = ev.target.closest('.slide-item');
+          if (item && ev.target.tagName !== 'INPUT' && ev.target.tagName !== 'TEXTAREA') {
+            M.sel = +item.dataset.i; renderList(); renderPreview();
+          }
+          if (ev.target.tagName === 'INPUT' || ev.target.tagName === 'TEXTAREA') {
+            var it = ev.target.closest('.slide-item');
+            if (it && +it.dataset.i !== M.sel) { M.sel = +it.dataset.i; renderList(); renderPreview(); }
+          }
+        });
 
+        document.getElementById('m-close').addEventListener('click', closeAdapter);
+        modal.addEventListener('click', function (e) { if (e.target === modal) closeAdapter(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && modal.classList.contains('open')) closeAdapter(); });
+
+        document.getElementById('m-format').addEventListener('click', function (e) {
+          var b = e.target.closest('button'); if (!b) return;
+          M.fmt = b.dataset.fmt;
+          document.querySelectorAll('#m-format button').forEach(function (x) { x.classList.toggle('on', x === b); });
+          renderPreview();
+        });
+        document.getElementById('m-add').addEventListener('click', function () {
+          var at = Math.max(1, M.sel + 1);
+          M.slides.splice(at, 0, { type: 'text', title: 'Nuevo titular', body: 'Escribe aquí el texto de esta diapositiva.' });
+          M.sel = at; renderList(); renderPreview();
+        });
+        document.getElementById('m-add-quote').addEventListener('click', function () {
+          var at = Math.max(1, M.sel + 1);
+          M.slides.splice(at, 0, { type: 'quote', title: 'Cita', body: 'Una frase que resuma la idea.' });
+          M.sel = at; renderList(); renderPreview();
+        });
+        document.getElementById('m-reset').addEventListener('click', function () {
+          M.slides = JSON.parse(JSON.stringify(M.post.slides));
+          M.sel = 0; renderList(); renderPreview();
+          toast('Textos restaurados.');
+        });
+        document.getElementById('m-copy').addEventListener('click', async function () {
+          var ok = await copy(captions(M.post).ig);
+          if (ok) flash(this, 'Copiado ✓'); else toast('No se pudo copiar.');
+        });
+        document.getElementById('m-dl-one').addEventListener('click', async function () {
+          var btn = this; btn.classList.add('is-busy');
+          try {
+            var c = document.createElement('canvas');
+            await drawSlide(c, M.post, M.slides[M.sel], M.sel, M.slides.length, M.fmt, document.getElementById('overlay').checked);
+            var blob = await canvasToBlob(c);
+            saveBlob(blob, slugify(M.post.slug) + '-' + SIZES[M.fmt][2] + '-' + String(M.sel + 1).padStart(2, '0') + '.jpg');
+            flash(btn, 'Descargada ✓');
+          } catch (e) { btn.classList.remove('is-busy'); toast('Error: ' + e.message); }
+        });
+        document.getElementById('m-dl-all').addEventListener('click', async function () {
+          var btn = this; btn.classList.add('is-busy');
+          var prev = btn.textContent;
+          try {
+            for (var i = 0; i < M.slides.length; i++) {
+              btn.textContent = 'Generando ' + (i + 1) + '/' + M.slides.length + '…';
+              var c = document.createElement('canvas');
+              await drawSlide(c, M.post, M.slides[i], i, M.slides.length, M.fmt, document.getElementById('overlay').checked);
+              var blob = await canvasToBlob(c);
+              saveBlob(blob, slugify(M.post.slug) + '-' + SIZES[M.fmt][2] + '-' + String(i + 1).padStart(2, '0') + '.jpg');
+              await new Promise(function (r) { setTimeout(r, 320); });
+            }
+            btn.classList.remove('is-busy'); btn.textContent = prev;
+            toast(M.slides.length + ' imágenes descargadas, numeradas en orden.');
+          } catch (e) {
+            btn.classList.remove('is-busy'); btn.textContent = prev;
+            toast('Error al generar: ' + e.message);
+          }
+        });
+
+        // ── Botones de las tarjetas ──────────────────────────────────────
         document.addEventListener('click', async function (ev) {
           var btn = ev.target.closest('button');
-          if (!btn) return;
-          var body = btn.closest('.card-body');
-          if (!body) return;
-          var d = readData(body);
+          if (!btn || btn.closest('#modal')) return;
+          var card = btn.closest('.card');
+          if (!card) return;
+          var d = POSTS[+card.dataset.i];
           var withOverlay = document.getElementById('overlay').checked;
 
-          // --- Descargas ---
+          if (btn.dataset.adapt) { openAdapter(d, btn.dataset.adapt); return; }
+
           var dl = btn.dataset.dl;
           if (dl) {
             if (dl === 'txt') {
-              var txt = d.title + '\n\n' + (d.excerpt ? d.excerpt + '\n\n' : '') + d.plain + '\n\n' + d.url + '\n';
+              var txt = d.title + '\n\n' + (d.excerpt ? d.excerpt + '\n\n' : '') + d.plainFull + '\n\n' + d.url + '\n';
               saveBlob(new Blob([txt], { type: 'text/plain;charset=utf-8' }), slugify(d.slug) + '.txt');
-              flash(btn, 'Descargado ✓');
-              return;
+              flash(btn, 'Descargado ✓'); return;
             }
             if (!d.image) { toast('Este artículo no tiene imagen destacada.'); return; }
-
             if (dl === 'orig') {
               btn.classList.add('is-busy');
               try {
                 var resp = await fetch(d.image, { mode: 'cors' });
                 if (!resp.ok) throw new Error('HTTP ' + resp.status);
-                var blob = await resp.blob();
+                var b0 = await resp.blob();
                 var ext = (d.image.split('.').pop() || 'jpg').split(/[?#]/)[0].slice(0, 4);
-                saveBlob(blob, slugify(d.slug) + '-original.' + ext);
+                saveBlob(b0, slugify(d.slug) + '-original.' + ext);
                 flash(btn, 'Descargado ✓');
-              } catch (err) {
+              } catch (e) {
                 btn.classList.remove('is-busy');
                 window.open(d.image, '_blank', 'noopener');
-                toast('Se abrió la imagen en otra pestaña: guárdala desde ahí.');
+                toast('Se abrió en otra pestaña: guárdala desde ahí.');
               }
               return;
             }
-
             btn.classList.add('is-busy');
             try {
-              var canvas = await renderCanvas(d, dl, withOverlay);
-              await new Promise(function (res) {
-                canvas.toBlob(function (b) {
-                  if (!b) { res(); toast('No se pudo generar la imagen.'); btn.classList.remove('is-busy'); return; }
-                  saveBlob(b, slugify(d.slug) + '-' + SIZES[dl][2] + '.jpg');
-                  flash(btn, 'Descargado ✓');
-                  res();
-                }, 'image/jpeg', 0.92);
-              });
-            } catch (err) {
-              btn.classList.remove('is-busy');
-              toast('No se pudo generar la imagen: ' + err.message);
-            }
+              var cc = document.createElement('canvas');
+              await drawSlide(cc, d, { type: 'cover', title: d.title, body: '' }, 0, 1, dl === 'ig' || dl === 'story' ? dl : 'ig', withOverlay);
+              if (dl === 'fb' || dl === 'x') {
+                cc = document.createElement('canvas');
+                await drawSlide(cc, d, { type: 'cover', title: d.title, body: '' }, 0, 1, dl, withOverlay);
+              }
+              var bb = await canvasToBlob(cc);
+              saveBlob(bb, slugify(d.slug) + '-' + SIZES[dl][2] + '.jpg');
+              flash(btn, 'Descargado ✓');
+            } catch (e) { btn.classList.remove('is-busy'); toast('No se pudo generar: ' + e.message); }
             return;
           }
 
-          // --- Copiar texto ---
           var cp = btn.dataset.copy;
           if (cp) {
-            var text = captions(d)[cp];
-            var ok = await copy(text);
-            if (ok) { flash(btn, 'Copiado ✓'); }
-            else { toast('No se pudo copiar. Selecciona el texto a mano.'); }
-            return;
-          }
-
-          // --- Compartir ---
-          var sh = btn.dataset.share;
-          if (sh) {
-            var u = encodeURIComponent(d.url);
-            var t = encodeURIComponent(d.title);
-            var map = {
-              fb: 'https://www.facebook.com/sharer/sharer.php?u=' + u,
-              li: 'https://www.linkedin.com/sharing/share-offsite/?url=' + u,
-              x: 'https://twitter.com/intent/tweet?url=' + u + '&text=' + t,
-              wa: 'https://wa.me/?text=' + encodeURIComponent(d.title + ' ' + d.url),
-              tg: 'https://t.me/share/url?url=' + u + '&text=' + t,
-            };
-            if (sh === 'native') {
-              if (navigator.share) {
-                try { await navigator.share({ title: d.title, text: d.excerpt, url: d.url }); }
-                catch (err) { /* cancelado por el usuario */ }
-              } else {
-                var ok2 = await copy(d.url);
-                toast(ok2 ? 'Enlace copiado.' : 'Tu navegador no permite compartir aquí.');
-              }
-              return;
-            }
-            window.open(map[sh], '_blank', 'noopener,width=680,height=640');
+            var ok = await copy(captions(d)[cp]);
+            if (ok) flash(btn, 'Copiado ✓'); else toast('No se pudo copiar.');
             return;
           }
         });
 
-        // --- Filtros ---
-        var q = document.getElementById('q');
-        var onlyPub = document.getElementById('onlyPub');
-        var countEl = document.getElementById('count');
+        // ── Filtros ──────────────────────────────────────────────────────
+        var q = document.getElementById('q'), onlyPub = document.getElementById('onlyPub'), countEl = document.getElementById('count');
         function applyFilter() {
-          var term = (q.value || '').trim().toLowerCase();
-          var pubOnly = onlyPub.checked;
-          var shown = 0;
+          var term = (q.value || '').trim().toLowerCase(), pubOnly = onlyPub.checked, shown = 0;
           document.querySelectorAll('.card').forEach(function (card) {
-            var okTerm = !term || card.dataset.title.indexOf(term) > -1;
-            var okPub = !pubOnly || card.dataset.status === 'publish';
-            var show = okTerm && okPub;
+            var show = (!term || card.dataset.title.indexOf(term) > -1) && (!pubOnly || card.dataset.status === 'publish');
             card.classList.toggle('is-hidden', !show);
             if (show) shown++;
           });
