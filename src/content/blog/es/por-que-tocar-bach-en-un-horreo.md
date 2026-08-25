@@ -1,8 +1,8 @@
 ---
 title: ¿Por qué tocar a Bach en un hórreo y no en un auditorio?
 lang: es
-date: 2026-08-14T00:00:00+00:00
-status: draft
+date: 2026-08-25T00:00:00+00:00
+status: publish
 excerpt: 'En ADAR el sitio no es el decorado: es la mitad de la música. Una reflexión sobre por qué una iglesia de aldea, un hórreo o un parador cambian lo que se oye y lo que se siente.'
 featured_image: https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_WEB/04.08.26_La%20Figal%20de%20Xugabolos_WEB_2.jpg
 author: Festival ADAR
