@@ -37,6 +37,9 @@ const rawOgImage =
 const ogImage = rawOgImage.startsWith('/') ? `https://festivaladar.com${rawOgImage}` : rawOgImage;
 const OG_LOCALE = ({ es: 'es_ES', en: 'en_GB', ast: 'ast_ES' } as Record<string, string>)[lang] || 'es_ES';
 const ogType = /\bsingle-post\b/.test(bodyClass || '') ? 'article' : 'website';
+// Las vistas previas de borradores no deben indexarse nunca (el middleware ya
+// las protege; esto es una segunda barrera por si alguna vez se sirvieran).
+const noIndex = /\bis-draft-preview\b/.test(bodyClass || '');
 ---
 
 <!doctype html>
@@ -46,7 +49,8 @@ const ogType = /\bsingle-post\b/.test(bodyClass || '') ? 'article' : 'website';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={`https://festivaladar.com${permalink}`} />
+    {noIndex && <meta name="robots" content="noindex, nofollow" />}
+    {!noIndex && <link rel="canonical" href={`https://festivaladar.com${permalink}`} />}
     {Object.entries(translations).map(([l, url]) => (
       <link rel="alternate" hreflang={l} href={`https://festivaladar.com${url}`} />
     ))}

@@ -14023,3 +14023,51 @@ body.is-blog .entry-content .blog-share-btn:focus-visible{
   body.is-blog .entry-content .blog-share{ gap: 10px; }
   body.is-blog .entry-content .blog-share-btn{ font-size: 11px; padding: 7px 12px; }
 }
+
+/* ── Vista previa de borradores (privada) ──────────────────────────────────
+   Barra de aviso arriba del artículo. Prefijos largos para ganar al tema. */
+body.is-draft-preview .draft-bar,
+body.is-draft-preview .entry-content .draft-bar{
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: var(--ink);
+  color: var(--paper);
+  border-bottom: 3px solid var(--accent);
+  padding: 10px clamp(14px, 4vw, 40px);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.5;
+}
+body.is-draft-preview .draft-bar-tag{
+  background: var(--accent);
+  color: var(--ink) !important;
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+body.is-draft-preview .draft-bar-text{ color: var(--paper) !important; }
+body.is-draft-preview .draft-bar-text strong{ color: var(--accent) !important; }
+body.is-draft-preview .draft-bar-link{
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(245,215,47,.45);
+  white-space: nowrap;
+}
+body.is-draft-preview .draft-bar-link:hover{ border-bottom-color: var(--accent); }
+body.is-draft-preview .entry-content .draft-note{
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--muted) !important;
+}
+@media (max-width: 600px){
+  body.is-draft-preview .draft-bar{ font-size: 11px; gap: 9px; }
+}

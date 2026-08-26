@@ -1,0 +1,70 @@
+---
+// Vista previa de un borrador, con el diseño real del blog.
+//
+// Estas páginas se construyen igual que las publicadas, pero viven bajo
+// /borradores/ y el middleware de Vercel exige haber iniciado sesión con
+// GitHub (el mismo login del panel /admin). Además llevan noindex y quedan
+// fuera del sitemap.
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Hero from '../../../components/Hero.astro';
+import type { Lang } from '../../../i18n/strings.ts';
+
+export async function getStaticPaths() {
+  const drafts = await getCollection('blog', (e) => e.data.status !== 'publish');
+  return drafts.map((entry) => {
+    const [lang, ...rest] = entry.id.split('/');
+    return { params: { lang, slug: rest.join('/') }, props: { entry } };
+  });
+}
+
+const { entry } = Astro.props;
+const [lang, ...rest] = entry.id.split('/');
+const slug = rest.join('/');
+const { Content } = await render(entry);
+
+const dateFmt = entry.data.date
+  ? new Intl.DateTimeFormat(lang === 'en' ? 'en-GB' : 'es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(entry.data.date)
+  : '';
+const liveUrl = `/${lang}/blog/${slug}/`;
+---
+
+<BaseLayout
+  title={`[Borrador] ${entry.data.title}`}
+  description={entry.data.excerpt || 'Festival ADAR'}
+  lang={lang as Lang}
+  permalink={`/borradores/${lang}/${slug}/`}
+  featuredImage={entry.data.featured_image}
+  bodyClass="single single-post is-blog is-draft-preview"
+>
+  <div class="draft-bar">
+    <span class="draft-bar-tag">Borrador</span>
+    <span class="draft-bar-text">
+      Vista previa privada. Este artículo <strong>no está publicado</strong>: nadie más puede verlo.
+    </span>
+    <a class="draft-bar-link" href="/admin/#/collections/blog_es">Editar en el panel</a>
+    <a class="draft-bar-link" href="/borradores/">Todos los borradores</a>
+  </div>
+
+  <Hero
+    eyebrow="Blog · Festival ADAR"
+    title={entry.data.title}
+    lede={entry.data.excerpt}
+    image={entry.data.featured_image}
+    variant="banner"
+  />
+  <div class="builder-wrap full-width">
+    <article class="post type-post hentry blog-article">
+      <div class="entry-content blog-entry">
+        <p class="blog-meta mono">
+          {[dateFmt, entry.data.author].filter(Boolean).join(' · ')}
+        </p>
+        <Content />
+        <p class="blog-back">
+          <a href="/borradores/">← Borradores</a>
+          <span class="draft-note mono">Al publicarlo estará en {liveUrl}</span>
+        </p>
+      </div>
+    </article>
+  </div>
+</BaseLayout>

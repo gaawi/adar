@@ -41,6 +41,15 @@ function render(status, payload) {
 </body></html>`;
 }
 
+// Cookie firmada (HMAC-SHA256) que autoriza las vistas previas de borradores.
+// Formato: "<caduca en ms>.<firma hex>".
+async function previewCookie(secret, days) {
+  const { createHmac } = await import('node:crypto');
+  const exp = String(Date.now() + days * 24 * 3600 * 1000);
+  const sig = createHmac('sha256', secret).update('preview:' + exp).digest('hex');
+  return `${exp}.${sig}`;
+}
+
 export default async function handler(req, res) {
   const clientId = process.env.GITHUB_CLIENT_ID;
   const clientSecret = process.env.GITHUB_CLIENT_SECRET;
@@ -78,6 +87,16 @@ export default async function handler(req, res) {
       res.status(401).send(render('error', { error: data.error_description || data.error || 'Sin token.' }));
       return;
     }
+
+    // Además del token para el CMS, dejamos una cookie firmada que habilita
+    // las vistas previas de borradores (/borradores/...). La comprueba
+    // middleware.js con el mismo secreto.
+    const preview = await previewCookie(clientSecret, 30);
+    res.setHeader('Set-Cookie', [
+      'csm_state=; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=0',
+      `adar_preview=${preview}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${30 * 24 * 3600}`,
+    ]);
+
     res.status(200).send(render('success', { token: data.access_token, provider: 'github' }));
   } catch (err) {
     res.status(500).send(render('error', { error: 'Fallo al contactar con GitHub.' }));

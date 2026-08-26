@@ -1,0 +1,76 @@
+---
+// Índice privado de borradores. Protegido por el middleware de Vercel.
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const drafts = (await getCollection('blog', (e) => e.data.status !== 'publish'))
+  .map((e) => {
+    const [lang, ...rest] = e.id.split('/');
+    return {
+      lang,
+      slug: rest.join('/'),
+      title: e.data.title,
+      excerpt: e.data.excerpt || '',
+      image: e.data.featured_image || '',
+      date: e.data.date ? e.data.date.toISOString().slice(0, 10) : '',
+      tags: e.data.tags || [],
+    };
+  })
+  .sort((a, b) => (a.date < b.date ? 1 : -1));
+
+const published = (await getCollection('blog', (e) => e.data.status === 'publish')).length;
+---
+
+<BaseLayout
+  title="Borradores"
+  description="Vista previa privada de artículos sin publicar."
+  lang="es"
+  permalink="/borradores/"
+  bodyClass="page is-blog is-draft-preview"
+>
+  <div class="draft-bar">
+    <span class="draft-bar-tag">Privado</span>
+    <span class="draft-bar-text">
+      Solo tú ves esta página. Aquí están los artículos que aún no están publicados.
+    </span>
+    <a class="draft-bar-link" href="/admin/">Ir al panel</a>
+    <a class="draft-bar-link" href="/kit-redes/">Kit de redes</a>
+  </div>
+
+  <section class="blog-hero">
+    <div class="blog-hero-inner">
+      <span class="blog-hero-eyebrow mono">Festival ADAR · Privado</span>
+      <h1 class="blog-hero-title">Borradores<span class="blog-dot">.</span></h1>
+      <p class="blog-hero-lede">
+        {drafts.length} artículo{drafts.length === 1 ? '' : 's'} sin publicar · {published} ya publicado{published === 1 ? '' : 's'}.
+        Ábrelos para verlos tal y como quedarán en la web.
+      </p>
+    </div>
+  </section>
+
+  <section class="blog-list-wrap">
+    {drafts.length === 0 ? (
+      <p class="blog-empty">No hay borradores: está todo publicado.</p>
+    ) : (
+      <ul class="blog-list">
+        {drafts.map((p) => (
+          <li class="blog-card">
+            <a class="blog-card-link" href={`/borradores/${p.lang}/${p.slug}/`}>
+              {p.image && (
+                <span class="blog-card-img"><img src={p.image} alt="" loading="lazy" /></span>
+              )}
+              <span class="blog-card-body">
+                <span class="blog-card-meta mono">
+                  {[p.date, p.lang.toUpperCase(), ...(p.tags || []).slice(0, 1)].filter(Boolean).join(' · ')}
+                </span>
+                <span class="blog-card-title">{p.title}</span>
+                {p.excerpt && <span class="blog-card-excerpt">{p.excerpt}</span>}
+                <span class="blog-card-cta mono">Ver borrador →</span>
+              </span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+</BaseLayout>

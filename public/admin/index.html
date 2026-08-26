@@ -17,7 +17,25 @@
       box-shadow: 0 4px 16px rgba(10, 9, 7, .28);
     }
     .adar-kit-link:hover { background: #0a0907; color: #f5d72f; }
+    .adar-kit-link.ghost { background: #0a0907; color: #f5d72f; right: 165px; }
+    .adar-kit-link.ghost:hover { background: #f5d72f; color: #0a0907; }
     @media print { .adar-kit-link { display: none; } }
+
+    /* Aviso cuando llegas aquí desde una vista previa de borrador. */
+    .adar-preview-note {
+      position: fixed; left: 50%; top: 14px; transform: translateX(-50%);
+      z-index: 2147483000; max-width: min(560px, 92vw);
+      background: #0a0907; color: #f6f4ee; border-left: 4px solid #f5d72f;
+      padding: 12px 16px; border-radius: 8px;
+      font: 400 13px/1.5 ui-monospace, "JetBrains Mono", monospace;
+      box-shadow: 0 6px 22px rgba(10, 9, 7, .32);
+      display: flex; gap: 12px; align-items: center; flex-wrap: wrap;
+    }
+    .adar-preview-note a { color: #f5d72f; }
+    .adar-preview-note button {
+      margin-left: auto; background: none; border: 0; color: #f6f4ee;
+      cursor: pointer; font-size: 16px; line-height: 1; padding: 2px 4px;
+    }
   </style>
 </head>
 <body>
@@ -26,8 +44,28 @@
        se ve en la web cuando lo marcas como "Publicado". -->
   <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
 
+  <a class="adar-kit-link ghost" href="/borradores/" target="_blank" rel="noopener">
+    ↗ Borradores
+  </a>
   <a class="adar-kit-link" href="/kit-redes/" target="_blank" rel="noopener">
     ↗ Kit de redes
   </a>
+
+  <script>
+    // Si llegas desde /borradores/... sin sesión, el middleware te trae aquí.
+    // Mostramos el aviso con el enlace para volver una vez iniciada la sesión.
+    (function () {
+      var target = new URLSearchParams(location.search).get('preview');
+      if (!target || !/^\/borradores\//.test(target)) return;
+      var box = document.createElement('div');
+      box.className = 'adar-preview-note';
+      box.innerHTML =
+        '<span>Inicia sesión con GitHub y luego vuelve al borrador: ' +
+        '<a href="' + target.replace(/"/g, '&quot;') + '">abrir vista previa</a></span>' +
+        '<button type="button" aria-label="Cerrar">✕</button>';
+      box.querySelector('button').addEventListener('click', function () { box.remove(); });
+      document.body.appendChild(box);
+    })();
+  </script>
 </body>
 </html>

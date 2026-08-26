@@ -15,5 +15,10 @@ export default defineConfig({
       prefixDefaultLocale: true,
     },
   },
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      // Fuera del sitemap: herramientas internas y vistas previas de borradores.
+      filter: (page) => !/\/(borradores|kit-redes)\//.test(page),
+    }),
+  ],
 });
