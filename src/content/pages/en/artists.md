@@ -33,48 +33,58 @@ translation_group: "pll_6993500e5b2bc"
 </div>
 </div>
 
-<!-- EDICIÓN VI · 2026 -->
-<section class="ed-section" id="artistas-2026">
+<!-- ARTISTAS · listado único, sin destacar ninguna edición -->
+<section class="ed-section" id="artistas">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Edition VI</p>
-<h2>2026 Lineup</h2>
+<p class="ed-eyebrow">2021 — 2026</p>
+<h2>All artists</h2>
 <p class="ed-lede">
-Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 August 2026.
+Performers, composers, visual artists and ensembles who have taken part in the festival across its six editions.
 </p>
 </div>
 
 <div class="ed-grid-3">
 
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-ignacio-prego/">
+<a class="ed-artist-link" href="/en/artist-almudena-arribas/">
 <div class="at-artist-img">
-<img src="https://s1.abcstatics.com/abc/www/multimedia/sevilla/2023/01/18/ignacio-priego-uno_20230118120520-kJAB-Rz4H5Ye2vCc2SwoCBKMcEPM-1200x840@abc.jpg" alt="Ignacio Prego" loading="lazy">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.02.35.jpg" alt="Almudena Arribas" loading="lazy">
 </div>
-<h3>Ignacio Prego</h3>
+<h3>Almudena Arribas</h3>
 </a>
-<p class="at-artist-role">Harpsichord</p>
-<p class="at-artist-years">2026</p>
+<p class="at-artist-role">Violist</p>
+<p class="at-artist-years">2022 · 23 · 24 · 25</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-maria-martinez/">
+<a class="ed-artist-link" href="/en/artist-andrea-casarrubios/">
 <div class="at-artist-img">
-<img src="https://katarinagurska.com/wp-content/uploads/2022/03/maria-martinez-interior.jpg" alt="María Martínez" loading="lazy">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/img-3981-3028023682.jpg" alt="Andrea Casarrubios" loading="lazy">
 </div>
-<h3>María Martínez</h3>
+<h3>Andrea Casarrubios</h3>
 </a>
-<p class="at-artist-role">Cello</p>
-<p class="at-artist-years">2026</p>
+<p class="at-artist-role">Cellist &amp; composer</p>
+<p class="at-artist-years">2025</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-frederieke-saeijs/">
+<a class="ed-artist-link" href="/en/artist-ballarte-ensemble/">
 <div class="at-artist-img">
-<img src="https://creartbox-archive.b-cdn.net/adarimages/images/artists/Frederieke.jpg" alt="Frederieke Saeijs" loading="lazy">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="BellArte Ensemble" loading="lazy">
 </div>
-<h3>Frederieke Saeijs</h3>
+<h3>BallArte Ensemble</h3>
 </a>
-<p class="at-artist-role">Violin</p>
-<p class="at-artist-years">2026</p>
+<p class="at-artist-role">Resident ensemble</p>
+<p class="at-artist-years">2025</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-beatriz-blanco/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/78e28e_662f092233ee41e3ba36d51a977adb20_mv2_d_3311_3310_s_4_2.jpeg" alt="Beatriz Blanco" loading="lazy">
+</div>
+<h3>Beatriz Blanco</h3>
+</a>
+<p class="at-artist-role">Cellist</p>
+<p class="at-artist-years">2021</p>
 </article>
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/en/artist-coco-moya/">
@@ -84,16 +94,6 @@ Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 Augu
 <h3>Coco Moya</h3>
 </a>
 <p class="at-artist-role">Voice, electronics &amp; sound creation</p>
-<p class="at-artist-years">2026</p>
-</article>
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-ivan-cebrian/">
-<div class="at-artist-img">
-<img src="https://laboralcentrodearte.org/wp-content/uploads/2015/09/Menhir-Instalacion-0_72ppp.webp" alt="Iván Cebrián" loading="lazy">
-</div>
-<h3>Iván Cebrián</h3>
-</a>
-<p class="at-artist-role">Electronics &amp; sound creation</p>
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
@@ -107,24 +107,14 @@ Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 Augu
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-maria-florea/">
+<a class="ed-artist-link" href="/en/artist-companeras-pandereteras/">
 <div class="at-artist-img">
-<img src="https://www.schubertiada.cat/images/Biografies/MariaFlorea_bio.jpg" alt="Maria Florea" loading="lazy">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+11.13.00.jpg" alt="Compañeras Panderetas" loading="lazy">
 </div>
-<h3>Maria Florea</h3>
+<h3>Compañeras Pandereteras</h3>
 </a>
-<p class="at-artist-role">Violin</p>
-<p class="at-artist-years">2026</p>
-</article>
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-lara-fernandez/">
-<div class="at-artist-img">
-<img src="https://csma.es/wp-content/uploads/2024/05/Foto-CV-Lara-scaled.jpg" alt="Lara Fernández" loading="lazy">
-</div>
-<h3>Lara Fernández</h3>
-</a>
-<p class="at-artist-role">Viola</p>
-<p class="at-artist-years">2026</p>
+<p class="at-artist-role">Guest group</p>
+<p class="at-artist-years">2025</p>
 </article>
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/en/artist-daniel-claret/">
@@ -137,14 +127,34 @@ Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 Augu
 <p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-josefina-urraca/">
+<a class="ed-artist-link" href="/en/artist-diego-arribas/">
 <div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg" alt="Josefina Urraca" loading="lazy">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Diego-Arribas.jpg" alt="Diego Arribas" loading="lazy">
 </div>
-<h3>Josefina Urraca</h3>
+<h3>Diego Arribas</h3>
 </a>
-<p class="at-artist-role">Piano · Artistic direction</p>
-<p class="at-artist-years">2021 · 22 · 23 · 24 · 25 · 26</p>
+<p class="at-artist-role">Visual artist</p>
+<p class="at-artist-years">2025</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-emmanuel-bach/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Emmanuel-Bach-1-400.jpg.jpg" alt="Emmanuel Bach" loading="lazy">
+</div>
+<h3>Emmanuel Bach</h3>
+</a>
+<p class="at-artist-role">Violinist</p>
+<p class="at-artist-years">2022</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-frederieke-saeijs/">
+<div class="at-artist-img">
+<img src="https://creartbox-archive.b-cdn.net/adarimages/images/artists/Frederieke.jpg" alt="Frederieke Saeijs" loading="lazy">
+</div>
+<h3>Frederieke Saeijs</h3>
+</a>
+<p class="at-artist-role">Violin</p>
+<p class="at-artist-years">2026</p>
 </article>
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/en/artist-guillermo-laporta/">
@@ -156,7 +166,176 @@ Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 Augu
 <p class="at-artist-role">Flute · Executive direction</p>
 <p class="at-artist-years">2021 · 22 · 23 · 24 · 25 · 26</p>
 </article>
-
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-guillermo-ordas/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Guillermo.JPG" alt="Guillermo Ordás" loading="lazy">
+</div>
+<h3>Guillermo Ordás</h3>
+</a>
+<p class="at-artist-role">Cinematographer</p>
+<p class="at-artist-years">2023 · 24 · 25 · 26</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-ignacio-prego/">
+<div class="at-artist-img">
+<img src="https://s1.abcstatics.com/abc/www/multimedia/sevilla/2023/01/18/ignacio-priego-uno_20230118120520-kJAB-Rz4H5Ye2vCc2SwoCBKMcEPM-1200x840@abc.jpg" alt="Ignacio Prego" loading="lazy">
+</div>
+<h3>Ignacio Prego</h3>
+</a>
+<p class="at-artist-role">Harpsichord</p>
+<p class="at-artist-years">2026</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-ivan-cebrian/">
+<div class="at-artist-img">
+<img src="https://laboralcentrodearte.org/wp-content/uploads/2015/09/Menhir-Instalacion-0_72ppp.webp" alt="Iván Cebrián" loading="lazy">
+</div>
+<h3>Iván Cebrián</h3>
+</a>
+<p class="at-artist-role">Electronics &amp; sound creation</p>
+<p class="at-artist-years">2026</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-jone-de-la-fuente/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.01.37.jpg" alt="Jone de la Fuente" loading="lazy">
+</div>
+<h3>Jone de la Fuente</h3>
+</a>
+<p class="at-artist-role">Violinist</p>
+<p class="at-artist-years">2022 · 23 · 24 · 25</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-josefina-urraca/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/094.jpeg" alt="Josefina Urraca" loading="lazy">
+</div>
+<h3>Josefina Urraca</h3>
+</a>
+<p class="at-artist-role">Piano · Artistic direction</p>
+<p class="at-artist-years">2021 · 22 · 23 · 24 · 25 · 26</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-lara-fernandez/">
+<div class="at-artist-img">
+<img src="https://csma.es/wp-content/uploads/2024/05/Foto-CV-Lara-scaled.jpg" alt="Lara Fernández" loading="lazy">
+</div>
+<h3>Lara Fernández</h3>
+</a>
+<p class="at-artist-role">Viola</p>
+<p class="at-artist-years">2026</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-marcos-fernandez/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Nocturno-Sinfonico-Auditorio-de-Galicia.jpeg" alt="Marcos Fernández" loading="lazy">
+</div>
+<h3>Marcos Fernández</h3>
+</a>
+<p class="at-artist-role">Composer</p>
+<p class="at-artist-years">2021</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-maria-del-buey/">
+<div class="at-artist-img">
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fin-sonora.org%2Fwp-content%2Fuploads%2F2022%2F02%2Fmaria-buey-in12-profile.jpg&f=1&nofb=1&ipt=9e737c74a901df03eb60c2111b4e0761dd1f968bd3bb4880e51b1dfdc3355d78" alt="Maria del Buey" loading="lazy">
+</div>
+<h3>María del Buey</h3>
+</a>
+<p class="at-artist-role">Guest artist</p>
+<p class="at-artist-years">2025</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-maria-florea/">
+<div class="at-artist-img">
+<img src="https://www.schubertiada.cat/images/Biografies/MariaFlorea_bio.jpg" alt="Maria Florea" loading="lazy">
+</div>
+<h3>Maria Florea</h3>
+</a>
+<p class="at-artist-role">Violin</p>
+<p class="at-artist-years">2026</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-maria-martinez/">
+<div class="at-artist-img">
+<img src="https://katarinagurska.com/wp-content/uploads/2022/03/maria-martinez-interior.jpg" alt="María Martínez" loading="lazy">
+</div>
+<h3>María Martínez</h3>
+</a>
+<p class="at-artist-role">Cello</p>
+<p class="at-artist-years">2026</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-mario-molina/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Mario.jpg" alt="Mario Molina" loading="lazy">
+</div>
+<h3>Mario Molina</h3>
+</a>
+<p class="at-artist-role">Pianist</p>
+<p class="at-artist-years">2024</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-mizuko-kaji/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Mizuko+Kaji.jpeg" alt="Mizuko Kaji" loading="lazy">
+</div>
+<h3>Mizuko Kaji</h3>
+</a>
+<p class="at-artist-role">Visual artist</p>
+<p class="at-artist-years">2023</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-nacho-laguna/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="Nacho Laguna" loading="lazy">
+</div>
+<h3>Nacho Laguna</h3>
+</a>
+<p class="at-artist-role">Guest artist</p>
+<p class="at-artist-years">2025</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-natania-hoffman/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Natania+Hoffman.jpeg" alt="Natania Hoffman" loading="lazy">
+</div>
+<h3>Natania Hoffman</h3>
+</a>
+<p class="at-artist-role">Cellist</p>
+<p class="at-artist-years">2022 · 23 · 24 · 25</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-nathaniel-sullivan/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/NathanielSullivan_2017_1002w.jpeg" alt="Nathaniel Sullivan" loading="lazy">
+</div>
+<h3>Nathaniel Sullivan</h3>
+</a>
+<p class="at-artist-role">Baritone</p>
+<p class="at-artist-years">2021</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-sarah-k-williams/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Sarah-K-Williams_Website-Image-3088365824.jpg" alt="Sara K. Williams" loading="lazy">
+</div>
+<h3>Sarah K. Williams</h3>
+</a>
+<p class="at-artist-role">Visual artist</p>
+<p class="at-artist-years">2024</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-zilvinas-brazauskas/">
+<div class="at-artist-img">
+<img src="https://zitahouse.com/zita-api/uploads/musician_zilvinas_604aebd0d0.webp" alt="Žilvinas Brazauskas" loading="lazy">
+</div>
+<h3>Žilvinas Brazauskas</h3>
+</a>
+<p class="at-artist-role">Clarinettist</p>
+<p class="at-artist-years">2022</p>
+</article>
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/en/artist-zygmund-de-somogyi/">
 <div class="at-artist-img">
@@ -168,271 +347,10 @@ Performers and creators of the sixth edition of Festival ADAR, from 4 to 16 Augu
 <p class="at-artist-years">2026</p>
 </article>
 
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-guillermo-ordas/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Guillermo.JPG" alt="Guillermo Ordás" loading="lazy">
-</div>
-<h3>Guillermo Ordás</h3>
-</a>
-<p class="at-artist-role">Cinematographer</p>
-<p class="at-artist-years">2023 · 24 · 25 · 26</p>
-</article>
-
 </div>
 </div>
 </section>
 
-<!-- ARTISTAS RESIDENTES -->
-<section class="ed-section" id="artistas-residentes">
-<div class="ed-wrap">
-<div class="ed-head">
-<p class="ed-eyebrow">Resident</p>
-<h2>Festival artists</h2>
-<p class="ed-lede">
-Musicians, composers, filmmakers and visual artists who have taken part across the editions.
-</p>
-</div>
-
-<div class="ed-grid-3">
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-andrea-casarrubios/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/img-3981-3028023682.jpg" alt="Andrea Casarrubios" loading="lazy">
-</div>
-<h3>Andrea Casarrubios</h3>
-</a>
-<p class="at-artist-role">Cellist &amp; composer</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-ballarte-ensemble/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="BellArte Ensemble" loading="lazy">
-</div>
-<h3>BallArte Ensemble</h3>
-</a>
-<p class="at-artist-role">Resident ensemble</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-almudena-arribas/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.02.35.jpg" alt="Almudena Arribas" loading="lazy">
-</div>
-<h3>Almudena Arribas</h3>
-</a>
-<p class="at-artist-role">Violist</p>
-<p class="at-artist-years">2022 · 23 · 24 · 25</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-jone-de-la-fuente/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+10.01.37.jpg" alt="Jone de la Fuente" loading="lazy">
-</div>
-<h3>Jone de la Fuente</h3>
-</a>
-<p class="at-artist-role">Violinist</p>
-<p class="at-artist-years">2022 · 23 · 24 · 25</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-natania-hoffman/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Natania+Hoffman.jpeg" alt="Natania Hoffman" loading="lazy">
-</div>
-<h3>Natania Hoffman</h3>
-</a>
-<p class="at-artist-role">Cellist</p>
-<p class="at-artist-years">2022 · 23 · 24 · 25</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-nathaniel-sullivan/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/NathanielSullivan_2017_1002w.jpeg" alt="Nathaniel Sullivan" loading="lazy">
-</div>
-<h3>Nathaniel Sullivan</h3>
-</a>
-<p class="at-artist-role">Baritone</p>
-<p class="at-artist-years">2021</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-emmanuel-bach/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Emmanuel-Bach-1-400.jpg.jpg" alt="Emmanuel Bach" loading="lazy">
-</div>
-<h3>Emmanuel Bach</h3>
-</a>
-<p class="at-artist-role">Violinist</p>
-<p class="at-artist-years">2022</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-zilvinas-brazauskas/">
-<div class="at-artist-img">
-<img src="https://zitahouse.com/zita-api/uploads/musician_zilvinas_604aebd0d0.webp" alt="Žilvinas Brazauskas" loading="lazy">
-</div>
-<h3>Žilvinas Brazauskas</h3>
-</a>
-<p class="at-artist-role">Clarinettist</p>
-<p class="at-artist-years">2022</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-beatriz-blanco/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/78e28e_662f092233ee41e3ba36d51a977adb20_mv2_d_3311_3310_s_4_2.jpeg" alt="Beatriz Blanco" loading="lazy">
-</div>
-<h3>Beatriz Blanco</h3>
-</a>
-<p class="at-artist-role">Cellist</p>
-<p class="at-artist-years">2021</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-marcos-fernandez/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Nocturno-Sinfonico-Auditorio-de-Galicia.jpeg" alt="Marcos Fernández" loading="lazy">
-</div>
-<h3>Marcos Fernández</h3>
-</a>
-<p class="at-artist-role">Composer</p>
-<p class="at-artist-years">2021</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-mario-molina/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Mario.jpg" alt="Mario Molina" loading="lazy">
-</div>
-<h3>Mario Molina</h3>
-</a>
-<p class="at-artist-role">Pianist</p>
-<p class="at-artist-years">2024</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- ARTISTAS VISUALES -->
-<section class="ed-section" id="artistas-visuales">
-<div class="ed-wrap">
-<div class="ed-head">
-<p class="ed-eyebrow">Visual arts</p>
-<h2>Visual artists</h2>
-<p class="ed-lede">
-Creators who have brought their visual vision to the festival through installations, projections and in-situ work.
-</p>
-</div>
-
-<div class="ed-grid-3">
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-sarah-k-williams/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Sarah-K-Williams_Website-Image-3088365824.jpg" alt="Sara K. Williams" loading="lazy">
-</div>
-<h3>Sarah K. Williams</h3>
-</a>
-<p class="at-artist-role">Visual artist</p>
-<p class="at-artist-years">2024</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-guillermo-ordas/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Guillermo.JPG" alt="Guillermo Ordás" loading="lazy">
-</div>
-<h3>Guillermo Ordás</h3>
-</a>
-<p class="at-artist-role">Cinematographer</p>
-<p class="at-artist-years">2023 · 24 · 25 · 26</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-mizuko-kaji/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Mizuko+Kaji.jpeg" alt="Mizuko Kaji" loading="lazy">
-</div>
-<h3>Mizuko Kaji</h3>
-</a>
-<p class="at-artist-role">Visual artist</p>
-<p class="at-artist-years">2023</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-diego-arribas/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Diego-Arribas.jpg" alt="Diego Arribas" loading="lazy">
-</div>
-<h3>Diego Arribas</h3>
-</a>
-<p class="at-artist-role">Visual artist</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- ENSEMBLES Y GRUPOS INVITADOS -->
-<section class="ed-section" id="grupos-invitados">
-<div class="ed-wrap">
-<div class="ed-head">
-<p class="ed-eyebrow">Guests</p>
-<h2>Guest ensembles and groups</h2>
-<p class="ed-lede">
-Ensembles that have enriched the festival's programme with their participation.
-</p>
-</div>
-
-<div class="ed-grid-3">
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-companeras-pandereteras/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+11.13.00.jpg" alt="Compañeras Panderetas" loading="lazy">
-</div>
-<h3>Compañeras Pandereteras</h3>
-</a>
-<p class="at-artist-role">Guest group</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-nacho-laguna/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="Nacho Laguna" loading="lazy">
-</div>
-<h3>Nacho Laguna</h3>
-</a>
-<p class="at-artist-role">Guest artist</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-maria-del-buey/">
-<div class="at-artist-img">
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fin-sonora.org%2Fwp-content%2Fuploads%2F2022%2F02%2Fmaria-buey-in12-profile.jpg&f=1&nofb=1&ipt=9e737c74a901df03eb60c2111b4e0761dd1f968bd3bb4880e51b1dfdc3355d78" alt="Maria del Buey" loading="lazy">
-</div>
-<h3>María del Buey</h3>
-</a>
-<p class="at-artist-role">Guest artist</p>
-<p class="at-artist-years">2025</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- DIRECCIÓN ARTÍSTICA -->
 <section class="ed-section" id="direccion-artistica">
 <div class="ed-wrap">
 <div class="ed-head">
