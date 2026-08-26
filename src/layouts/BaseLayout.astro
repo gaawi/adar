@@ -40,6 +40,8 @@ const ogType = /\bsingle-post\b/.test(bodyClass || '') ? 'article' : 'website';
 // Las vistas previas de borradores no deben indexarse nunca (el middleware ya
 // las protege; esto es una segunda barrera por si alguna vez se sirvieran).
 const noIndex = /\bis-draft-preview\b/.test(bodyClass || '');
+// Páginas internas: ni se indexan ni cuentan como visita.
+const isInternal = noIndex || permalink.startsWith('/borradores/') || permalink.startsWith('/kit-redes/');
 ---
 
 <!doctype html>
@@ -76,6 +78,12 @@ const noIndex = /\bis-draft-preview\b/.test(bodyClass || '');
       href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=EB+Garamond:ital,wght@0,400..600;1,400..600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
+    {/* Vercel Web Analytics: recuento de visitas sin cookies ni datos
+        personales, así que no necesita banner de consentimiento. Se excluyen
+        las páginas internas (panel, kit de redes y borradores) para no
+        contaminar las cifras con nuestra propia navegación. */}
+    {!isInternal && <script defer src="/_vercel/insights/script.js"></script>}
   </head>
   <body class={`page ${bodyClass}`}>
     <div id="page" class="site">
