@@ -14118,3 +14118,113 @@ body.is-draft-preview .state-pill{
 }
 body.is-draft-preview .state-pill.is-pub{ background: var(--accent); color: var(--ink); }
 body.is-draft-preview .state-pill.is-draft{ background: var(--ink); color: var(--accent); }
+
+/* ===================================================================
+   ARTISTAS · rejilla editorial
+   Sustituye los retratos circulares de 110 px dentro de cajas con borde
+   por fotografías grandes en vertical, sin marco. Las clases .at-artist-*
+   solo se usan en las tres páginas de artistas (es/en/ast), y la rejilla
+   se acota con :has() para no tocar las de otras páginas.
+   =================================================================== */
+body.page .entry-content .ed-grid-3:has(.ed-artist-card){
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: clamp(30px, 3.2vw, 46px) clamp(16px, 1.8vw, 26px);
+}
+
+body.page .entry-content .ed-artist-card{
+  border: 0;
+  padding: 0;
+  gap: 0;
+  background: transparent;
+}
+/* El movimiento pasa del contenedor a la imagen. */
+body.page .entry-content .ed-artist-card:has(.ed-artist-link):hover{
+  transform: none;
+  border-color: transparent;
+}
+
+body.page .entry-content .at-artist-img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  border: 0;
+  border-radius: 0;
+  margin: 0 0 16px;
+  overflow: hidden;
+  background: #e4dfd2;
+  position: relative;
+}
+body.page .entry-content .at-artist-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Muchos retratos son fotos de prensa apaisadas: al recortarlas a 4:5 el
+     centro geométrico cae por debajo de la cara, así que subimos el encuadre. */
+  object-position: 50% 28%;
+  display: block;
+  /* Las fotos llegan de fuentes muy distintas (prensa, agencias, archivo
+     propio). Una bajada leve de saturación las unifica; al pasar el ratón
+     recuperan su color. */
+  filter: saturate(.84) contrast(1.03);
+  transition: transform .7s cubic-bezier(.22,.61,.36,1), filter .4s ease;
+}
+body.page .entry-content .ed-artist-card:hover .at-artist-img img{
+  transform: scale(1.05);
+  filter: saturate(1) contrast(1);
+}
+/* Filete de acento que se despliega bajo la foto. */
+body.page .entry-content .at-artist-img::after{
+  content: '';
+  position: absolute;
+  left: 0; right: 100%; bottom: 0;
+  height: 4px;
+  background: var(--accent);
+  transition: right .45s cubic-bezier(.22,.61,.36,1);
+}
+body.page .entry-content .ed-artist-card:hover .at-artist-img::after{ right: 0; }
+
+body.page .entry-content .ed-artist-card h3{
+  font-size: clamp(19px, 1.7vw, 23px);
+  line-height: 1.15;
+  margin: 0 0 6px;
+  color: var(--ink);
+}
+body.page .entry-content .at-artist-role{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+}
+body.page .entry-content .at-artist-years{
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+  opacity: .65;
+  margin: 7px 0 0;
+}
+
+/* Dirección artística: mismo lenguaje, retrato mayor. */
+body.page .entry-content .ed-person .ed-avatar{
+  width: clamp(120px, 12vw, 168px);
+  height: clamp(150px, 15vw, 210px);
+  border-radius: 0;
+  overflow: hidden;
+}
+body.page .entry-content .ed-person .ed-avatar img{
+  width: 100%; height: 100%; object-fit: cover; object-position: 50% 28%; display: block;
+  filter: saturate(.84) contrast(1.03);
+  transition: filter .4s ease;
+}
+body.page .entry-content .ed-person:hover .ed-avatar img{ filter: none; }
+
+@media (max-width: 600px){
+  body.page .entry-content .ed-grid-3:has(.ed-artist-card){
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px 14px;
+  }
+  body.page .entry-content .ed-artist-card h3{ font-size: 16px; }
+  body.page .entry-content .at-artist-role{ font-size: 10px; }
+}
