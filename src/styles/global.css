@@ -14071,3 +14071,50 @@ body.is-draft-preview .entry-content .draft-note{
 @media (max-width: 600px){
   body.is-draft-preview .draft-bar{ font-size: 11px; gap: 9px; }
 }
+
+/* ── Blog · caja del artículo ──────────────────────────────────────────────
+   El tema no da ningún margen lateral a .entry-content, así que en móvil el
+   texto llegaba pegado a los dos bordes. Le damos el mismo ancho y sangrado
+   que la cabecera del blog para que los márgenes izquierdos coincidan. */
+body.is-blog .builder-wrap .blog-entry{
+  box-sizing: border-box;
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: clamp(20px, 5vw, 24px);
+}
+
+/* ── Vista privada · estado de cada artículo ───────────────────────────── */
+body.is-draft-preview .draft-filters{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+body.is-draft-preview .draft-filters button{
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: 0;
+  padding: 8px 14px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+body.is-draft-preview .draft-filters button.on{
+  background: var(--ink);
+  color: var(--accent);
+}
+body.is-draft-preview .state-pill{
+  display: inline-block;
+  margin-right: 8px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+body.is-draft-preview .state-pill.is-pub{ background: var(--accent); color: var(--ink); }
+body.is-draft-preview .state-pill.is-draft{ background: var(--ink); color: var(--accent); }

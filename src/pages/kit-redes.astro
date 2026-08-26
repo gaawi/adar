@@ -180,7 +180,16 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
       .slides-col { overflow-y: auto; padding: 18px 22px; }
       .preview-col { border-left: 1px solid var(--line); background: #ece9e0; padding: 18px; overflow-y: auto; display: flex; flex-direction: column; align-items: center; gap: 12px; }
       .preview-col canvas { width: 100%; max-width: 320px; height: auto; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,.18); display: block; }
-      .preview-hint { font-family: var(--font-mono); font-size: 11px; color: var(--muted); text-align: center; line-height: 1.5; }
+      .preview-hint { font-family: var(--font-mono); font-size: 11px; color: var(--muted); text-align: center; line-height: 1.5; margin: 0; }
+      .style-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; width: 100%; max-width: 320px; }
+      .style-options button {
+        padding: 5px; border-radius: 8px; border: 1px solid var(--line); background: #fff;
+        display: flex; flex-direction: column; gap: 5px; align-items: center; white-space: normal;
+      }
+      .style-options button.on { border-color: var(--ink); box-shadow: 0 0 0 2px var(--accent); }
+      .style-options button:hover { background: #fff; color: var(--ink); }
+      .style-options canvas { width: 100%; height: auto; border-radius: 4px; display: block; box-shadow: none; }
+      .style-options span { font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
 
       .slide-item { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #fff; cursor: pointer; }
       .slide-item.sel { border-color: var(--ink); box-shadow: 0 0 0 2px var(--accent); }
@@ -230,6 +239,11 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
       <div class="toolbar">
         <input type="search" id="q" placeholder="Buscar artículo…" aria-label="Buscar artículo" />
         <label><input type="checkbox" id="overlay" checked /> Portada con título y marca</label>
+        <span class="seg" id="styleSeg" title="Diseño de las imágenes con texto">
+          <button data-style="cinta" class="on">Cinta</button>
+          <button data-style="bloque">Bloque</button>
+          <button data-style="marco">Marco</button>
+        </span>
         <label><input type="checkbox" id="onlyPub" /> Solo publicados</label>
         <span class="count" id="count">{published} publicados · {posts.length} en total</span>
       </div>
@@ -318,6 +332,18 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
           <div class="preview-col">
             <canvas id="m-canvas" width="1080" height="1080"></canvas>
             <p class="preview-hint" id="m-hint">Vista previa</p>
+            <p class="preview-hint"><strong>Elige diseño</strong></p>
+            <div class="style-options" id="m-styles">
+              <button type="button" data-style="cinta" class="on">
+                <canvas width="540" height="540"></canvas><span>Cinta</span>
+              </button>
+              <button type="button" data-style="bloque">
+                <canvas width="540" height="540"></canvas><span>Bloque</span>
+              </button>
+              <button type="button" data-style="marco">
+                <canvas width="540" height="540"></canvas><span>Marco</span>
+              </button>
+            </div>
             <button id="m-dl-one">Descargar solo esta</button>
           </div>
         </div>
@@ -424,7 +450,23 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
         function resetSpacing(ctx) { try { ctx.letterSpacing = '0px'; } catch (e) {} }
 
         // ── Dibujo de una diapositiva ────────────────────────────────────
-        async function drawSlide(canvas, post, slide, idx, total, fmt, withOverlay) {
+        // Dibuja la foto recortada "cover" dentro de un rectángulo.
+        async function drawPhoto(ctx, src, x, y, w, h) {
+          if (!src) return false;
+          try {
+            var img = await loadImage(src);
+            var s = Math.max(w / img.naturalWidth, h / img.naturalHeight);
+            var dw = img.naturalWidth * s, dh = img.naturalHeight * s;
+            ctx.save();
+            ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
+            ctx.drawImage(img, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
+            ctx.restore();
+            return true;
+          } catch (e) { return false; }
+        }
+
+        async function drawSlide(canvas, post, slide, idx, total, fmt, withOverlay, style) {
+          style = style || 'cinta';
           var spec = SIZES[fmt], W = spec[0], H = spec[1];
           canvas.width = W; canvas.height = H;
           var ctx = canvas.getContext('2d');
@@ -436,14 +478,61 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
 
           if (slide.type === 'cover') {
             ctx.fillStyle = INK; ctx.fillRect(0, 0, W, H);
-            if (post.image) {
-              try {
-                var img = await loadImage(post.image);
-                var s = Math.max(W / img.naturalWidth, H / img.naturalHeight);
-                var dw = img.naturalWidth * s, dh = img.naturalHeight * s;
-                ctx.drawImage(img, (W - dw) / 2, (H - dh) / 2, dw, dh);
-              } catch (e) {}
+
+            // ── Estilo "bloque": foto arriba, franja sólida abajo ──────────
+            if (style === 'bloque') {
+              var bandH = Math.round(H * (fmt === 'story' ? 0.42 : 0.46));
+              await drawPhoto(ctx, post.image, 0, 0, W, H - bandH);
+              if (!withOverlay) return;
+              ctx.fillStyle = INK; ctx.fillRect(0, H - bandH, W, bandH);
+              ctx.fillStyle = ACCENT;
+              ctx.fillRect(0, H - bandH, W, Math.max(5, Math.round(W * 0.009)));
+
+              var bTop = H - bandH + Math.round(pad * 0.75);
+              mono(ctx, monoSize, ACCENT, Math.round(monoSize * 0.16));
+              ctx.fillText('FESTIVAL ADAR', pad, bTop + monoSize);
+              resetSpacing(ctx);
+              var bAvail = bandH - Math.round(pad * 0.75) - monoSize * 3.4 - safeBottom;
+              var bfit = fitLines(ctx, slide.title, W - pad * 2, bAvail, '800', DISPLAY, Math.round(W * 0.070), Math.round(W * 0.032));
+              ctx.font = '800 ' + bfit.size + 'px ' + DISPLAY; ctx.fillStyle = PAPER;
+              var byy = bTop + monoSize * 2.6 + bfit.size * 0.86;
+              for (var bi = 0; bi < bfit.lines.length; bi++) ctx.fillText(bfit.lines[bi], pad, byy + bi * bfit.size * 1.12);
+              mono(ctx, monoSize, 'rgba(246,244,238,.6)', 0);
+              ctx.fillText('festivaladar.com', pad, H - Math.round(pad * 0.4) - safeBottom * 0.4);
+              resetSpacing(ctx);
+              return;
             }
+
+            // ── Estilo "marco": foto a sangre, velo y filete perimetral ────
+            if (style === 'marco') {
+              await drawPhoto(ctx, post.image, 0, 0, W, H);
+              if (!withOverlay) return;
+              ctx.fillStyle = 'rgba(10,9,7,.52)'; ctx.fillRect(0, 0, W, H);
+              var inset = Math.round(W * 0.05);
+              ctx.strokeStyle = 'rgba(245,215,47,.85)';
+              ctx.lineWidth = Math.max(2, Math.round(W * 0.0035));
+              ctx.strokeRect(inset + safeTop * 0.2, inset + safeTop, W - inset * 2 - safeTop * 0.4, H - inset * 2 - safeTop - safeBottom);
+
+              var mAvail = H - safeTop - safeBottom;
+              var mfit = fitLines(ctx, slide.title, W - pad * 2.4, mAvail * 0.44, '800', DISPLAY, Math.round(W * 0.078), Math.round(W * 0.034));
+              ctx.textAlign = 'center';
+              mono(ctx, monoSize, ACCENT, Math.round(monoSize * 0.18));
+              var mBlockH = monoSize * 2.6 + mfit.lines.length * mfit.size * 1.12;
+              var mTop = safeTop + (mAvail - mBlockH) / 2;
+              ctx.fillText('FESTIVAL ADAR', W / 2, mTop + monoSize);
+              resetSpacing(ctx);
+              ctx.font = '800 ' + mfit.size + 'px ' + DISPLAY; ctx.fillStyle = '#ffffff';
+              var myy = mTop + monoSize * 2.6 + mfit.size * 0.86;
+              for (var mi = 0; mi < mfit.lines.length; mi++) ctx.fillText(mfit.lines[mi], W / 2, myy + mi * mfit.size * 1.12);
+              mono(ctx, monoSize, 'rgba(246,244,238,.75)', 0);
+              ctx.fillText('festivaladar.com', W / 2, H - inset - Math.round(pad * 0.35) - safeBottom);
+              ctx.textAlign = 'left';
+              resetSpacing(ctx);
+              return;
+            }
+
+            // ── Estilo "cinta" (por defecto): degradado inferior ───────────
+            await drawPhoto(ctx, post.image, 0, 0, W, H);
             if (!withOverlay) return;
             var gTop = fmt === 'story' ? H * 0.42 : H * 0.32;
             var g = ctx.createLinearGradient(0, gTop, 0, H);
@@ -529,8 +618,18 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
             return;
           }
 
-          // type === 'text'
-          ctx.fillStyle = PAPER; ctx.fillRect(0, 0, W, H);
+          // type === 'text' · la paleta cambia según el estilo elegido
+          var tBg = style === 'bloque' ? INK : PAPER;
+          var tTitleColor = style === 'bloque' ? PAPER : INK;
+          var tBodyColor = style === 'bloque' ? 'rgba(246,244,238,.88)' : '#1c1a16';
+          var tFootColor = style === 'bloque' ? 'rgba(246,244,238,.55)' : '#6e6a5c';
+          ctx.fillStyle = tBg; ctx.fillRect(0, 0, W, H);
+          if (style === 'marco') {
+            var tInset = Math.round(W * 0.05);
+            ctx.strokeStyle = 'rgba(245,215,47,.9)';
+            ctx.lineWidth = Math.max(2, Math.round(W * 0.0035));
+            ctx.strokeRect(tInset, tInset + safeTop, W - tInset * 2, H - tInset * 2 - safeTop - safeBottom);
+          }
           var tf = fitLines(ctx, slide.title, maxW, areaH * 0.34, '800', DISPLAY, Math.round(W * 0.066), Math.round(W * 0.036));
           var tTitleH = tf.lines.length * tf.size * 1.12;
           var bf2 = fitLines(ctx, slide.body, maxW, areaH - tTitleH - ruleH - gapRule - gapBody, '400', DISPLAY, Math.round(W * 0.042), Math.round(W * 0.024));
@@ -541,15 +640,15 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
           ctx.fillStyle = ACCENT;
           ctx.fillRect(pad, tTop, Math.round(W * 0.12), ruleH);
 
-          ctx.font = '800 ' + tf.size + 'px ' + DISPLAY; ctx.fillStyle = INK;
+          ctx.font = '800 ' + tf.size + 'px ' + DISPLAY; ctx.fillStyle = tTitleColor;
           var ty = tTop + ruleH + gapRule + tf.size * 0.86;
           for (var t = 0; t < tf.lines.length; t++) ctx.fillText(tf.lines[t], pad, ty + t * tf.size * 1.12);
 
-          ctx.font = '400 ' + bf2.size + 'px ' + DISPLAY; ctx.fillStyle = '#1c1a16';
+          ctx.font = '400 ' + bf2.size + 'px ' + DISPLAY; ctx.fillStyle = tBodyColor;
           var bodyTop = tTop + ruleH + gapRule + tTitleH + gapBody + bf2.size * 0.86;
           for (var u = 0; u < bf2.lines.length; u++) ctx.fillText(bf2.lines[u], pad, bodyTop + u * bf2.size * 1.42);
 
-          mono(ctx, monoSize, '#6e6a5c', Math.round(monoSize * 0.12));
+          mono(ctx, monoSize, tFootColor, Math.round(monoSize * 0.12));
           ctx.fillText(String(idx + 1).padStart(2, '0') + ' / ' + String(total).padStart(2, '0'), pad, footY);
           ctx.textAlign = 'right';
           ctx.fillText('FESTIVAL ADAR', W - pad, footY);
@@ -585,7 +684,8 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
         }
 
         // ── Estado del adaptador ─────────────────────────────────────────
-        var M = { post: null, slides: [], sel: 0, fmt: 'ig' };
+        var M = { post: null, slides: [], sel: 0, fmt: 'ig', style: 'cinta' };
+        var quickStyle = 'cinta';
         var modal = document.getElementById('modal');
         var elSlides = document.getElementById('m-slides');
         var elCanvas = document.getElementById('m-canvas');
@@ -594,6 +694,7 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
         function openAdapter(post, fmt) {
           M.post = post;
           M.fmt = fmt;
+          M.style = quickStyle;
           M.slides = JSON.parse(JSON.stringify(post.slides));
           M.sel = 0;
           document.getElementById('m-title').textContent = post.title;
@@ -656,7 +757,8 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
           if (!s) return;
           elHint.textContent = 'Generando…';
           try {
-            await drawSlide(elCanvas, M.post, s, M.sel, M.slides.length, M.fmt, document.getElementById('overlay').checked);
+            await drawSlide(elCanvas, M.post, s, M.sel, M.slides.length, M.fmt, document.getElementById('overlay').checked, M.style);
+            renderStyleThumbs();
             if (my !== previewToken) return;
             elHint.textContent = 'Diapositiva ' + (M.sel + 1) + ' de ' + M.slides.length +
               ' · ' + SIZES[M.fmt][0] + '×' + SIZES[M.fmt][1];
@@ -699,6 +801,43 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
           }
         });
 
+        // Dibuja las tres opciones de diseño de la diapositiva actual.
+        var thumbToken = 0;
+        async function renderStyleThumbs() {
+          var my = ++thumbToken;
+          var slide = M.slides[M.sel];
+          if (!slide) return;
+          var btns = document.querySelectorAll('#m-styles button');
+          for (var i = 0; i < btns.length; i++) {
+            var btn = btns[i];
+            var st = btn.dataset.style;
+            btn.classList.toggle('on', st === M.style);
+            try {
+              await drawSlide(btn.querySelector('canvas'), M.post, slide, M.sel, M.slides.length,
+                M.fmt, document.getElementById('overlay').checked, st);
+            } catch (e) { /* si falla la foto, la miniatura queda vacía */ }
+            if (my !== thumbToken) return;
+          }
+        }
+
+        document.getElementById('m-styles').addEventListener('click', function (e) {
+          var b = e.target.closest('button'); if (!b) return;
+          M.style = b.dataset.style;
+          quickStyle = M.style;
+          document.querySelectorAll('#styleSeg button').forEach(function (x) {
+            x.classList.toggle('on', x.dataset.style === M.style);
+          });
+          renderPreview();
+        });
+
+        // Selector de la barra superior (para las descargas rápidas de portada).
+        document.getElementById('styleSeg').addEventListener('click', function (e) {
+          var b = e.target.closest('button'); if (!b) return;
+          quickStyle = b.dataset.style;
+          document.querySelectorAll('#styleSeg button').forEach(function (x) { x.classList.toggle('on', x === b); });
+          if (modal.classList.contains('open')) { M.style = quickStyle; renderPreview(); }
+        });
+
         document.getElementById('m-close').addEventListener('click', closeAdapter);
         modal.addEventListener('click', function (e) { if (e.target === modal) closeAdapter(); });
         document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && modal.classList.contains('open')) closeAdapter(); });
@@ -732,9 +871,9 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
           var btn = this; btn.classList.add('is-busy');
           try {
             var c = document.createElement('canvas');
-            await drawSlide(c, M.post, M.slides[M.sel], M.sel, M.slides.length, M.fmt, document.getElementById('overlay').checked);
+            await drawSlide(c, M.post, M.slides[M.sel], M.sel, M.slides.length, M.fmt, document.getElementById('overlay').checked, M.style);
             var blob = await canvasToBlob(c);
-            saveBlob(blob, slugify(M.post.slug) + '-' + SIZES[M.fmt][2] + '-' + String(M.sel + 1).padStart(2, '0') + '.jpg');
+            saveBlob(blob, slugify(M.post.slug) + '-' + SIZES[M.fmt][2] + '-' + M.style + '-' + String(M.sel + 1).padStart(2, '0') + '.jpg');
             flash(btn, 'Descargada ✓');
           } catch (e) { btn.classList.remove('is-busy'); toast('Error: ' + e.message); }
         });
@@ -745,9 +884,9 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
             for (var i = 0; i < M.slides.length; i++) {
               btn.textContent = 'Generando ' + (i + 1) + '/' + M.slides.length + '…';
               var c = document.createElement('canvas');
-              await drawSlide(c, M.post, M.slides[i], i, M.slides.length, M.fmt, document.getElementById('overlay').checked);
+              await drawSlide(c, M.post, M.slides[i], i, M.slides.length, M.fmt, document.getElementById('overlay').checked, M.style);
               var blob = await canvasToBlob(c);
-              saveBlob(blob, slugify(M.post.slug) + '-' + SIZES[M.fmt][2] + '-' + String(i + 1).padStart(2, '0') + '.jpg');
+              saveBlob(blob, slugify(M.post.slug) + '-' + SIZES[M.fmt][2] + '-' + M.style + '-' + String(i + 1).padStart(2, '0') + '.jpg');
               await new Promise(function (r) { setTimeout(r, 320); });
             }
             btn.classList.remove('is-busy'); btn.textContent = prev;
@@ -796,13 +935,13 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
             btn.classList.add('is-busy');
             try {
               var cc = document.createElement('canvas');
-              await drawSlide(cc, d, { type: 'cover', title: d.title, body: '' }, 0, 1, dl === 'ig' || dl === 'story' ? dl : 'ig', withOverlay);
+              await drawSlide(cc, d, { type: 'cover', title: d.title, body: '' }, 0, 1, dl === 'ig' || dl === 'story' ? dl : 'ig', withOverlay, quickStyle);
               if (dl === 'fb' || dl === 'x') {
                 cc = document.createElement('canvas');
-                await drawSlide(cc, d, { type: 'cover', title: d.title, body: '' }, 0, 1, dl, withOverlay);
+                await drawSlide(cc, d, { type: 'cover', title: d.title, body: '' }, 0, 1, dl, withOverlay, quickStyle);
               }
               var bb = await canvasToBlob(cc);
-              saveBlob(bb, slugify(d.slug) + '-' + SIZES[dl][2] + '.jpg');
+              saveBlob(bb, slugify(d.slug) + '-' + SIZES[dl][2] + '-' + quickStyle + '.jpg');
               flash(btn, 'Descargado ✓');
             } catch (e) { btn.classList.remove('is-busy'); toast('No se pudo generar: ' + e.message); }
             return;

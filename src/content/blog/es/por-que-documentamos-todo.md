@@ -23,7 +23,7 @@ Somos una asociación sin ánimo de lucro con sede en una aldea de cien habitant
 
 En ninguna de esas conversaciones sirve el entusiasmo. Sirve **el archivo.**
 
-Cuando le enseñas a un ayuntamiento las fichas de cinco ediciones, con fotos profesionales, programas reales y una lista de espacios activados, la conversación cambia de sitio. Ya no estás pidiendo confianza: estás mostrando trayectoria. **El archivo convierte «tenemos una idea» en «esto es lo que hacemos».**
+Cuando le enseñas a un ayuntamiento las fichas de seis ediciones, con fotos profesionales, programas reales y una lista de espacios activados, la conversación cambia de sitio. Ya no estás pidiendo confianza: estás mostrando trayectoria. **El archivo convierte «tenemos una idea» en «esto es lo que hacemos».**
 
 Lo mismo con un compositor de Nueva York al que invitas a una aldea que no ha oído nombrar en su vida. No puedes explicarle Leiguarda. Puedes enseñársela.
 
@@ -53,7 +53,7 @@ Dicho crudamente: la música la escuchan ochenta personas, **el paisaje lo ve to
 
 El archivo no está ordenado para la nostalgia. Está ordenado para **usarse.**
 
-Sirve para preparar informes y memorias. Para responder a la prensa con material bueno en dos minutos. Para redactar convocatorias. Para justificar ayudas públicas con datos verificables. Para que un artista sepa a qué espacio va antes de aceptar. Para no repetirnos: cuando llevas cinco ediciones, tienes que poder consultar qué se tocó, dónde y con quién.
+Sirve para preparar informes y memorias. Para responder a la prensa con material bueno en dos minutos. Para redactar convocatorias. Para justificar ayudas públicas con datos verificables. Para que un artista sepa a qué espacio va antes de aceptar. Para no repetirnos: cuando llevas seis ediciones, tienes que poder consultar qué se tocó, dónde y con quién.
 
 Es la diferencia entre tener recuerdos y tener **información.**
 

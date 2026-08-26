@@ -1,17 +1,17 @@
 ---
-title: "El mapa de ADAR: once concejos, cinco años y una idea de Asturias"
+title: "El mapa de ADAR: catorce concejos, seis años y una idea de Asturias"
 lang: es
 date: "2026-09-30T10:00:00.000Z"
 status: draft
-excerpt: "Belmonte, Grado, Gozón, Las Regueras, Tineo, El Franco, Colunga, Llanes, Salas, Somiedo, Taramundi. Un recorrido por el mapa que el festival ha ido dibujando, y por qué el mapa importa tanto como la música."
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/adar24fx30/12/IMG_0203.jpg"
+excerpt: "De Belmonte a Taramundi, de Llanes a Somiedo. Un recorrido por el mapa que el festival ha ido dibujando en seis ediciones, y por qué el mapa importa tanto como la música."
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_1.jpg"
 author: "Festival ADAR"
 tags: ["mapa", "territorio", "concejos", "red"]
 ---
 
 Un festival de ciudad tiene una sede y un cartel. Un festival itinerante tiene un **mapa**, y ese mapa dice tanto del proyecto como la programación.
 
-El nuestro empezó en 2021 con un punto: **el campo de la iglesia de Leiguarda**, en Belmonte de Miranda. Hoy pasa por más de diez concejos del centro, el occidente y el oriente de Asturias.
+El nuestro empezó en 2021 con un punto: **el campo de la iglesia de Leiguarda**, en Belmonte de Miranda. Seis ediciones después pasa por **catorce concejos** del centro, el occidente y el oriente de Asturias.
 
 Este es el recorrido, y lo que hemos aprendido dibujándolo.
 
@@ -39,7 +39,9 @@ Este es el recorrido, y lo que hemos aprendido dibujándolo.
 
 **Las Regueras**, con micro-conciertos en Puerma.
 
-Y a esa lista se suman, en 2026, **Villanueva de Oscos** y el **Parador de Corias**, en Cangas del Narcea.
+**Soto del Barco**, en la desembocadura del Nalón, con uno de los primeros conciertos visuales del festival.
+
+Y en 2026 se suman **Villanueva de Oscos**, con su monasterio, y **Cangas del Narcea**, con el Parador de Corias y su claustro.
 
 ## Por qué itinerar en vez de crecer en un sitio
 
@@ -53,13 +55,13 @@ Itinerar invierte esa relación. En vez de pedirle al territorio que venga, **va
 
 ## Lo que hemos aprendido del mapa
 
-**Que el occidente lo agradece más.** Los concejos montañosos y dispersos del occidente asturiano —Tineo, Taramundi, El Franco, Villanueva de Oscos— son los que están más lejos de la programación habitual y donde el efecto de un concierto se nota más. Ahí es donde menos alternativas hay y donde el público responde con más intensidad.
+**Que el occidente lo agradece más.** Los concejos montañosos y dispersos del occidente asturiano —Tineo, Taramundi, El Franco, Villanueva de Oscos, Cangas del Narcea— son los que están más lejos de la programación habitual y donde el efecto de un concierto se nota más. Ahí es donde menos alternativas hay y donde el público responde con más intensidad.
 
 **Que volver vale más que llegar.** Los sitios donde hemos vuelto varias veces —Belmonte, Grado, El Franco— funcionan de otra manera. El público ya sabe que habrá otra edición, los espacios están rodados, los ayuntamientos saben lo que se les propone. **La confianza acumulada permite ser más ambicioso.** La noche de los tres eventos simultáneos en Grado solo fue posible porque no era nuestro primer año allí.
 
-**Que cada tipo de espacio enseña algo.** Los monasterios nos enseñaron acústica. Los hórreos, intimidad. Los mercados, cómo quitar la ceremonia. Los espacios abiertos, humildad ante el clima. Un festival que solo trabajara en un tipo de sala nunca habría aprendido nada de eso.
+**Que cada tipo de espacio enseña algo.** Los monasterios nos enseñaron acústica. Los hórreos, intimidad. Los mercados, cómo quitar la ceremonia. Los espacios abiertos, humildad ante el clima —y también que se puede tocar en un alto de monte mientras se apaga el sol en un eclipse total—. Un festival que solo trabajara en un tipo de sala nunca habría aprendido nada de eso.
 
-**Y que el mapa es un argumento.** Once concejos en cinco años es un dato que se puede enseñar. Demuestra que esto no es un evento aislado sostenido por el voluntarismo de un pueblo, sino **una red estable** con relaciones sostenidas en el tiempo.
+**Y que el mapa es un argumento.** Catorce concejos en seis años es un dato que se puede enseñar. Demuestra que esto no es un evento aislado sostenido por el voluntarismo de un pueblo, sino **una red estable** con relaciones sostenidas en el tiempo.
 
 ## Una idea de Asturias
 

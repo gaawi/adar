@@ -35,7 +35,7 @@ Fíjate en ese último detalle, porque no es menor. **En su primerísimo concier
 
 ## Lo que aprendimos con la lluvia
 
-Aquella noche nos dio, sin pretenderlo, las tres reglas con las que seguimos trabajando cinco ediciones después:
+Aquella noche nos dio, sin pretenderlo, las tres reglas con las que seguimos trabajando cinco ediciones más tarde:
 
 **Que el sitio manda.** No puedes controlar el orballo, ni la luz, ni la temperatura. Puedes elegir estar en un sitio que valga la pena aunque te llueva encima. Todo lo demás se improvisa.
 

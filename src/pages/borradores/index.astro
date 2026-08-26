@@ -1,29 +1,37 @@
 ---
-// Índice privado de borradores. Protegido por el middleware de Vercel.
+// Índice privado de TODOS los artículos, publicados y sin publicar, marcados
+// con su estado. Protegido por el middleware de Vercel.
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-const drafts = (await getCollection('blog', (e) => e.data.status !== 'publish'))
+const all = (await getCollection('blog'))
   .map((e) => {
     const [lang, ...rest] = e.id.split('/');
+    const slug = rest.join('/');
+    const isPub = e.data.status === 'publish';
     return {
       lang,
-      slug: rest.join('/'),
+      slug,
+      isPub,
       title: e.data.title,
       excerpt: e.data.excerpt || '',
       image: e.data.featured_image || '',
       date: e.data.date ? e.data.date.toISOString().slice(0, 10) : '',
       tags: e.data.tags || [],
+      // Los publicados enlazan a la web real; los borradores, a su vista previa.
+      href: isPub ? `/${lang}/blog/${slug}/` : `/borradores/${lang}/${slug}/`,
     };
   })
-  .sort((a, b) => (a.date < b.date ? 1 : -1));
+  // Primero los borradores (que son los que hay que revisar), luego por fecha.
+  .sort((a, b) => (a.isPub === b.isPub ? (a.date < b.date ? 1 : -1) : a.isPub ? 1 : -1));
 
-const published = (await getCollection('blog', (e) => e.data.status === 'publish')).length;
+const drafts = all.filter((p) => !p.isPub).length;
+const published = all.length - drafts;
 ---
 
 <BaseLayout
-  title="Borradores"
-  description="Vista previa privada de artículos sin publicar."
+  title="Todos los artículos"
+  description="Vista privada de artículos publicados y sin publicar."
   lang="es"
   permalink="/borradores/"
   bodyClass="page is-blog is-draft-preview"
@@ -31,7 +39,7 @@ const published = (await getCollection('blog', (e) => e.data.status === 'publish
   <div class="draft-bar">
     <span class="draft-bar-tag">Privado</span>
     <span class="draft-bar-text">
-      Solo tú ves esta página. Aquí están los artículos que aún no están publicados.
+      Solo tú ves esta página. Están <strong>todos</strong> los artículos, marcados según su estado.
     </span>
     <a class="draft-bar-link" href="/admin/">Ir al panel</a>
     <a class="draft-bar-link" href="/kit-redes/">Kit de redes</a>
@@ -40,32 +48,40 @@ const published = (await getCollection('blog', (e) => e.data.status === 'publish
   <section class="blog-hero">
     <div class="blog-hero-inner">
       <span class="blog-hero-eyebrow mono">Festival ADAR · Privado</span>
-      <h1 class="blog-hero-title">Borradores<span class="blog-dot">.</span></h1>
+      <h1 class="blog-hero-title">Artículos<span class="blog-dot">.</span></h1>
       <p class="blog-hero-lede">
-        {drafts.length} artículo{drafts.length === 1 ? '' : 's'} sin publicar · {published} ya publicado{published === 1 ? '' : 's'}.
-        Ábrelos para verlos tal y como quedarán en la web.
+        {drafts} sin publicar · {published} publicado{published === 1 ? '' : 's'}.
+        Los borradores se abren en vista previa con el diseño real; los publicados, en la web.
       </p>
+      <div class="draft-filters mono">
+        <button type="button" data-filter="all" class="on">Todos ({all.length})</button>
+        <button type="button" data-filter="draft">Sin publicar ({drafts})</button>
+        <button type="button" data-filter="pub">Publicados ({published})</button>
+      </div>
     </div>
   </section>
 
   <section class="blog-list-wrap">
-    {drafts.length === 0 ? (
-      <p class="blog-empty">No hay borradores: está todo publicado.</p>
+    {all.length === 0 ? (
+      <p class="blog-empty">Todavía no hay artículos.</p>
     ) : (
-      <ul class="blog-list">
-        {drafts.map((p) => (
-          <li class="blog-card">
-            <a class="blog-card-link" href={`/borradores/${p.lang}/${p.slug}/`}>
+      <ul class="blog-list" id="draft-list">
+        {all.map((p) => (
+          <li class="blog-card" data-state={p.isPub ? 'pub' : 'draft'}>
+            <a class="blog-card-link" href={p.href}>
               {p.image && (
                 <span class="blog-card-img"><img src={p.image} alt="" loading="lazy" /></span>
               )}
               <span class="blog-card-body">
                 <span class="blog-card-meta mono">
-                  {[p.date, p.lang.toUpperCase(), ...(p.tags || []).slice(0, 1)].filter(Boolean).join(' · ')}
+                  <span class={`state-pill ${p.isPub ? 'is-pub' : 'is-draft'}`}>
+                    {p.isPub ? 'Publicado' : 'Sin publicar'}
+                  </span>
+                  {[p.date, p.lang.toUpperCase()].filter(Boolean).join(' · ')}
                 </span>
                 <span class="blog-card-title">{p.title}</span>
                 {p.excerpt && <span class="blog-card-excerpt">{p.excerpt}</span>}
-                <span class="blog-card-cta mono">Ver borrador →</span>
+                <span class="blog-card-cta mono">{p.isPub ? 'Ver en la web' : 'Ver borrador'} →</span>
               </span>
             </a>
           </li>
@@ -73,4 +89,20 @@ const published = (await getCollection('blog', (e) => e.data.status === 'publish
       </ul>
     )}
   </section>
+
+  <script is:inline>
+    (function () {
+      var btns = document.querySelectorAll('.draft-filters button');
+      if (!btns.length) return;
+      btns.forEach(function (b) {
+        b.addEventListener('click', function () {
+          var f = b.dataset.filter;
+          btns.forEach(function (x) { x.classList.toggle('on', x === b); });
+          document.querySelectorAll('#draft-list .blog-card').forEach(function (card) {
+            card.style.display = (f === 'all' || card.dataset.state === f) ? '' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
 </BaseLayout>
