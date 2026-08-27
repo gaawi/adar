@@ -1610,7 +1610,7 @@ body.adar-nav-open header.site-header.cd-header .cd-lang-dd summary{
   border-color: rgba(246,244,238,0.4) !important;
 }
 
-@media (max-width: 980px){
+@media (max-width: 1220px){
   .adar-nav-toggle{ display: block; }
 
   .header-navigation-wrapper{
@@ -4750,7 +4750,7 @@ body.has-floating-header:not(.is-scrolled) header.site-header.cd-header .cd-lang
   border-color: rgba(246,244,238,0.4);
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1220px) {
   .cd-nav { display: none; }
   .cd-status .cd-status-region { display: none; }
   /* Swap the inline switch for a compact dropdown, kept at the top to the
@@ -14228,3 +14228,32 @@ body.page .entry-content .ed-person:hover .ed-avatar img{ filter: none; }
   body.page .entry-content .ed-artist-card h3{ font-size: 16px; }
   body.page .entry-content .at-artist-role{ font-size: 10px; }
 }
+
+/* ── Cabecera · que el menú no se salga por la derecha ─────────────────────
+   .cd-nav ocupa la columna 1fr de un grid, pero sus enlaces son nowrap: sin
+   min-width:0 la pista no puede encoger por debajo de su ancho mínimo y la
+   fila entera se desborda. Además, entre 1180 y 1400 px apretamos el espaciado
+   y ocultamos la numeración; por debajo de 1180 se pasa al menú hamburguesa,
+   que es más limpio que amontonar seis entradas. */
+.cd-main { min-width: 0; }
+.cd-nav {
+  min-width: 0;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 1660px) {
+  /* La numeración es decorativa y cuesta unos 130 px: se sacrifica antes que
+     el texto del menú. El corte va holgado por encima del límite real (~1570)
+     para que ningún ancho intermedio quede al filo. */
+  .cd-nav .cd-nav-num { display: none; }
+  .cd-nav { gap: 20px; }
+}
+@media (max-width: 1420px) {
+  .cd-nav { gap: 14px; }
+}
+@media (max-width: 1340px) {
+  .cd-nav { gap: 11px; font-size: 12px; letter-spacing: 0.05em; }
+  .cd-nav-item.has-children > a { padding-right: 12px; }
+  .cd-nav-item.has-children::after { right: 4px; }
+}
+

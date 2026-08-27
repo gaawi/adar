@@ -41,8 +41,13 @@ const tops = flat
       .filter((c) => c.parent_id === parent.item_id)
       .sort((a, b) => a.order - b.order);
     if (raw.length === 0) return { ...parent, children: [] };
+    // Si un hijo ya apunta a la página del grupo, encabeza el panel con ese
+    // hijo: así se conserva su nombre propio ("Blog", "Catálogo de Acciones")
+    // en vez de repetir el rótulo del grupo.
+    const selfChild = raw.find((c) => c.url === parent.url);
+    const head: MenuItem = selfChild ?? parent;
     const seen = new Set<string>();
-    const childList: MenuItem[] = [parent, ...raw].filter((c) => {
+    const childList: MenuItem[] = [head, ...raw].filter((c) => {
       if (seen.has(c.url)) return false;
       seen.add(c.url);
       return true;

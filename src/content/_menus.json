@@ -113,8 +113,8 @@
     {
       "title": "Actions Archive",
       "url": "/en/category/projects-archive/",
-      "order": 11,
-      "parent_id": 0,
+      "order": 1,
+      "parent_id": 96001,
       "item_id": 290,
       "classes": "",
       "object_type": "custom",
@@ -124,8 +124,8 @@
     {
       "title": "Map of actions",
       "url": "/en/map-of-actions/",
-      "order": 12,
-      "parent_id": 0,
+      "order": 2,
+      "parent_id": 96001,
       "item_id": 961,
       "classes": "",
       "object_type": "post_type",
@@ -157,8 +157,8 @@
     {
       "title": "Press",
       "url": "/en/prensa/",
-      "order": 10,
-      "parent_id": 0,
+      "order": 2,
+      "parent_id": 96011,
       "item_id": 9004,
       "classes": "",
       "object_type": "custom",
@@ -245,13 +245,35 @@
     {
       "title": "Blog",
       "url": "/en/blog/",
-      "order": 14,
-      "parent_id": 0,
+      "order": 1,
+      "parent_id": 96011,
       "item_id": 95202,
       "classes": [],
       "object_type": "custom",
       "object": "custom",
       "object_id": 95202
+    },
+    {
+      "title": "Actions",
+      "url": "/en/category/projects-archive/",
+      "order": 11,
+      "parent_id": 0,
+      "item_id": 96001,
+      "classes": [],
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": 96001
+    },
+    {
+      "title": "News",
+      "url": "/en/blog/",
+      "order": 12,
+      "parent_id": 0,
+      "item_id": 96011,
+      "classes": [],
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": 96011
     }
   ],
   "ast": [
@@ -368,8 +390,8 @@
     {
       "title": "Memoria d’Acciones",
       "url": "/ast/category/memoria-dacciones/",
-      "order": 11,
-      "parent_id": 0,
+      "order": 1,
+      "parent_id": 96001,
       "item_id": 347,
       "classes": "",
       "object_type": "custom",
@@ -379,8 +401,8 @@
     {
       "title": "Mapa d’Acciones",
       "url": "/ast/mapa-dacciones/",
-      "order": 12,
-      "parent_id": 0,
+      "order": 2,
+      "parent_id": 96001,
       "item_id": 965,
       "classes": "",
       "object_type": "post_type",
@@ -412,8 +434,8 @@
     {
       "title": "Prensa",
       "url": "/ast/prensa/",
-      "order": 10,
-      "parent_id": 0,
+      "order": 2,
+      "parent_id": 96011,
       "item_id": 9005,
       "classes": "",
       "object_type": "custom",
@@ -500,13 +522,35 @@
     {
       "title": "Blog",
       "url": "/ast/blog/",
-      "order": 14,
-      "parent_id": 0,
+      "order": 1,
+      "parent_id": 96011,
       "item_id": 95203,
       "classes": [],
       "object_type": "custom",
       "object": "custom",
       "object_id": 95203
+    },
+    {
+      "title": "Acciones",
+      "url": "/ast/category/memoria-dacciones/",
+      "order": 11,
+      "parent_id": 0,
+      "item_id": 96001,
+      "classes": [],
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": 96001
+    },
+    {
+      "title": "Actualidá",
+      "url": "/ast/blog/",
+      "order": 12,
+      "parent_id": 0,
+      "item_id": 96011,
+      "classes": [],
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": 96011
     }
   ],
   "es": [
@@ -623,8 +667,8 @@
     {
       "title": "Mapa de Acciones",
       "url": "/es/mapa-de-acciones/",
-      "order": 11,
-      "parent_id": 0,
+      "order": 2,
+      "parent_id": 96001,
       "item_id": 956,
       "classes": "",
       "object_type": "post_type",
@@ -634,8 +678,8 @@
     {
       "title": "Catálogo de Acciones",
       "url": "/es/category/memoria-de-acciones/",
-      "order": 12,
-      "parent_id": 0,
+      "order": 1,
+      "parent_id": 96001,
       "item_id": 124,
       "classes": "",
       "object_type": "custom",
@@ -667,8 +711,8 @@
     {
       "title": "Prensa",
       "url": "/es/prensa/",
-      "order": 10,
-      "parent_id": 0,
+      "order": 2,
+      "parent_id": 96011,
       "item_id": 9006,
       "classes": "",
       "object_type": "custom",
@@ -755,13 +799,35 @@
     {
       "title": "Blog",
       "url": "/es/blog/",
-      "order": 14,
-      "parent_id": 0,
+      "order": 1,
+      "parent_id": 96011,
       "item_id": 95201,
       "classes": [],
       "object_type": "custom",
       "object": "custom",
       "object_id": 95201
+    },
+    {
+      "title": "Acciones",
+      "url": "/es/category/memoria-de-acciones/",
+      "order": 11,
+      "parent_id": 0,
+      "item_id": 96001,
+      "classes": [],
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": 96001
+    },
+    {
+      "title": "Actualidad",
+      "url": "/es/blog/",
+      "order": 12,
+      "parent_id": 0,
+      "item_id": 96011,
+      "classes": [],
+      "object_type": "custom",
+      "object": "custom",
+      "object_id": 96011
     }
   ]
 }
