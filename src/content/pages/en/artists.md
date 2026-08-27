@@ -40,7 +40,7 @@ translation_group: "pll_6993500e5b2bc"
 <p class="ed-eyebrow">2021 — 2026</p>
 <h2>All artists</h2>
 <p class="ed-lede">
-Performers, composers, visual artists and ensembles who have taken part in the festival across its six editions.
+Performers, composers and visual artists who have taken part in the festival across its six editions.
 </p>
 </div>
 
@@ -67,16 +67,6 @@ Performers, composers, visual artists and ensembles who have taken part in the f
 <p class="at-artist-years">2025</p>
 </article>
 <article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-ballarte-ensemble/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="BellArte Ensemble" loading="lazy">
-</div>
-<h3>BallArte Ensemble</h3>
-</a>
-<p class="at-artist-role">Resident ensemble</p>
-<p class="at-artist-years">2025</p>
-</article>
-<article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/en/artist-beatriz-blanco/">
 <div class="at-artist-img">
 <img src="https://creartbox-media-cdn.b-cdn.net/adarimages/78e28e_662f092233ee41e3ba36d51a977adb20_mv2_d_3311_3310_s_4_2.jpeg" alt="Beatriz Blanco" loading="lazy">
@@ -95,26 +85,6 @@ Performers, composers, visual artists and ensembles who have taken part in the f
 </a>
 <p class="at-artist-role">Voice, electronics &amp; sound creation</p>
 <p class="at-artist-years">2026</p>
-</article>
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-colectivo-menhir/">
-<div class="at-artist-img">
-<img src="https://laboralcentrodearte.org/wp-content/uploads/2015/09/Menhir-Instalacion-0_72ppp.webp" alt="Colectivo Menhir" loading="lazy">
-</div>
-<h3>Colectivo Menhir</h3>
-</a>
-<p class="at-artist-role">Artistic research &amp; site-specific creation</p>
-<p class="at-artist-years">2026</p>
-</article>
-<article class="ed-card ed-artist-card">
-<a class="ed-artist-link" href="/en/artist-companeras-pandereteras/">
-<div class="at-artist-img">
-<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+11.13.00.jpg" alt="Compañeras Panderetas" loading="lazy">
-</div>
-<h3>Compañeras Pandereteras</h3>
-</a>
-<p class="at-artist-role">Guest group</p>
-<p class="at-artist-years">2025</p>
 </article>
 <article class="ed-card ed-artist-card">
 <a class="ed-artist-link" href="/en/artist-daniel-claret/">
@@ -345,6 +315,54 @@ Performers, composers, visual artists and ensembles who have taken part in the f
 </a>
 <p class="at-artist-role">Resident composer</p>
 <p class="at-artist-years">2026</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- ENSEMBLES · formaciones con proyecto propio, aparte de las personas -->
+<section class="ed-section" id="ensembles">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Groups</p>
+<h2>Ensembles and collectives</h2>
+<p class="ed-lede">
+Groups with their own artistic project that have been resident or guest formations at the festival.
+</p>
+</div>
+
+<div class="ed-grid-3">
+
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-ballarte-ensemble/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1570T01.jpg" alt="BellArte Ensemble" loading="lazy">
+</div>
+<h3>BallArte Ensemble</h3>
+</a>
+<p class="at-artist-role">Resident ensemble</p>
+<p class="at-artist-years">2025</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-colectivo-menhir/">
+<div class="at-artist-img">
+<img src="https://laboralcentrodearte.org/wp-content/uploads/2015/09/Menhir-Instalacion-0_72ppp.webp" alt="Colectivo Menhir" loading="lazy">
+</div>
+<h3>Colectivo Menhir</h3>
+</a>
+<p class="at-artist-role">Artistic research &amp; site-specific creation</p>
+<p class="at-artist-years">2026</p>
+</article>
+<article class="ed-card ed-artist-card">
+<a class="ed-artist-link" href="/en/artist-companeras-pandereteras/">
+<div class="at-artist-img">
+<img src="https://creartbox-media-cdn.b-cdn.net/adarimages/Screenshot+2025-07-19+at+11.13.00.jpg" alt="Compañeras Panderetas" loading="lazy">
+</div>
+<h3>Compañeras Pandereteras</h3>
+</a>
+<p class="at-artist-role">Guest group</p>
+<p class="at-artist-years">2025</p>
 </article>
 
 </div>

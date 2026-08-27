@@ -190,6 +190,13 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
       .style-options button:hover { background: #fff; color: var(--ink); }
       .style-options canvas { width: 100%; height: auto; border-radius: 4px; display: block; box-shadow: none; }
       .style-options span { font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
+      .photo-tools { width: 100%; max-width: 320px; display: flex; flex-direction: column; gap: 8px; padding-top: 6px; border-top: 1px solid var(--line); }
+      .photo-tools.is-off { opacity: .4; pointer-events: none; }
+      .photo-row { display: flex; gap: 6px; }
+      .photo-row button { flex: 1; }
+      .slider { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
+      .slider span { flex: 0 0 74px; }
+      .slider input[type='range'] { flex: 1; accent-color: var(--ink); }
 
       .slide-item { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 10px; background: #fff; cursor: pointer; }
       .slide-item.sel { border-color: var(--ink); box-shadow: 0 0 0 2px var(--accent); }
@@ -344,6 +351,23 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
                 <canvas width="540" height="540"></canvas><span>Marco</span>
               </button>
             </div>
+            <div class="photo-tools" id="m-photo">
+              <p class="preview-hint"><strong>Foto de la portada</strong></p>
+              <div class="photo-row">
+                <button type="button" id="m-photo-pick">Cambiar foto…</button>
+                <button type="button" id="m-photo-reset">Original</button>
+              </div>
+              <input type="file" id="m-photo-file" accept="image/*" hidden />
+              <label class="slider">
+                <span>Encuadre ↔</span>
+                <input type="range" id="m-fx" min="0" max="100" value="50" />
+              </label>
+              <label class="slider">
+                <span>Encuadre ↕</span>
+                <input type="range" id="m-fy" min="0" max="100" value="50" />
+              </label>
+              <p class="preview-hint" id="m-photo-hint">Arrastra para mover el centro de la foto.</p>
+            </div>
             <button id="m-dl-one">Descargar solo esta</button>
           </div>
         </div>
@@ -451,22 +475,34 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
 
         // ── Dibujo de una diapositiva ────────────────────────────────────
         // Dibuja la foto recortada "cover" dentro de un rectángulo.
-        async function drawPhoto(ctx, src, x, y, w, h) {
+        // fx/fy (0-1) son el punto de la foto que queda centrado en el recorte:
+        // 0.5/0.5 es el centro geométrico, valores menores desplazan el
+        // encuadre hacia la izquierda o hacia arriba.
+        async function drawPhoto(ctx, src, x, y, w, h, fx, fy) {
           if (!src) return false;
+          fx = typeof fx === 'number' ? fx : 0.5;
+          fy = typeof fy === 'number' ? fy : 0.5;
           try {
             var img = await loadImage(src);
             var s = Math.max(w / img.naturalWidth, h / img.naturalHeight);
             var dw = img.naturalWidth * s, dh = img.naturalHeight * s;
+            // Sin salirse: el desplazamiento se limita al sobrante del recorte.
+            var ox = Math.min(0, Math.max(w - dw, -(dw - w) * fx));
+            var oy = Math.min(0, Math.max(h - dh, -(dh - h) * fy));
             ctx.save();
             ctx.beginPath(); ctx.rect(x, y, w, h); ctx.clip();
-            ctx.drawImage(img, x + (w - dw) / 2, y + (h - dh) / 2, dw, dh);
+            ctx.drawImage(img, x + ox, y + oy, dw, dh);
             ctx.restore();
             return true;
           } catch (e) { return false; }
         }
 
-        async function drawSlide(canvas, post, slide, idx, total, fmt, withOverlay, style) {
+        async function drawSlide(canvas, post, slide, idx, total, fmt, withOverlay, style, opts) {
           style = style || 'cinta';
+          opts = opts || {};
+          var photo = opts.image || post.image;
+          var fx = typeof opts.fx === 'number' ? opts.fx : 0.5;
+          var fy = typeof opts.fy === 'number' ? opts.fy : 0.5;
           var spec = SIZES[fmt], W = spec[0], H = spec[1];
           canvas.width = W; canvas.height = H;
           var ctx = canvas.getContext('2d');
@@ -482,7 +518,7 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
             // ── Estilo "bloque": foto arriba, franja sólida abajo ──────────
             if (style === 'bloque') {
               var bandH = Math.round(H * (fmt === 'story' ? 0.42 : 0.46));
-              await drawPhoto(ctx, post.image, 0, 0, W, H - bandH);
+              await drawPhoto(ctx, photo, 0, 0, W, H - bandH, fx, fy);
               if (!withOverlay) return;
               ctx.fillStyle = INK; ctx.fillRect(0, H - bandH, W, bandH);
               ctx.fillStyle = ACCENT;
@@ -505,7 +541,7 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
 
             // ── Estilo "marco": foto a sangre, velo y filete perimetral ────
             if (style === 'marco') {
-              await drawPhoto(ctx, post.image, 0, 0, W, H);
+              await drawPhoto(ctx, photo, 0, 0, W, H, fx, fy);
               if (!withOverlay) return;
               ctx.fillStyle = 'rgba(10,9,7,.52)'; ctx.fillRect(0, 0, W, H);
               var inset = Math.round(W * 0.05);
@@ -532,7 +568,7 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
             }
 
             // ── Estilo "cinta" (por defecto): degradado inferior ───────────
-            await drawPhoto(ctx, post.image, 0, 0, W, H);
+            await drawPhoto(ctx, photo, 0, 0, W, H, fx, fy);
             if (!withOverlay) return;
             var gTop = fmt === 'story' ? H * 0.42 : H * 0.32;
             var g = ctx.createLinearGradient(0, gTop, 0, H);
@@ -684,7 +720,7 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
         }
 
         // ── Estado del adaptador ─────────────────────────────────────────
-        var M = { post: null, slides: [], sel: 0, fmt: 'ig', style: 'cinta' };
+        var M = { post: null, slides: [], sel: 0, fmt: 'ig', style: 'cinta', image: null, fx: 0.5, fy: 0.5 };
         var quickStyle = 'cinta';
         var modal = document.getElementById('modal');
         var elSlides = document.getElementById('m-slides');
@@ -695,6 +731,9 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
           M.post = post;
           M.fmt = fmt;
           M.style = quickStyle;
+          M.image = null; M.fx = 0.5; M.fy = 0.5;
+          document.getElementById('m-fx').value = 50;
+          document.getElementById('m-fy').value = 50;
           M.slides = JSON.parse(JSON.stringify(post.slides));
           M.sel = 0;
           document.getElementById('m-title').textContent = post.title;
@@ -757,8 +796,9 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
           if (!s) return;
           elHint.textContent = 'Generando…';
           try {
-            await drawSlide(elCanvas, M.post, s, M.sel, M.slides.length, M.fmt, document.getElementById('overlay').checked, M.style);
+            await drawSlide(elCanvas, M.post, s, M.sel, M.slides.length, M.fmt, document.getElementById('overlay').checked, M.style, photoOpts());
             renderStyleThumbs();
+            syncPhotoTools();
             if (my !== previewToken) return;
             elHint.textContent = 'Diapositiva ' + (M.sel + 1) + ' de ' + M.slides.length +
               ' · ' + SIZES[M.fmt][0] + '×' + SIZES[M.fmt][1];
@@ -814,7 +854,7 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
             btn.classList.toggle('on', st === M.style);
             try {
               await drawSlide(btn.querySelector('canvas'), M.post, slide, M.sel, M.slides.length,
-                M.fmt, document.getElementById('overlay').checked, st);
+                M.fmt, document.getElementById('overlay').checked, st, photoOpts());
             } catch (e) { /* si falla la foto, la miniatura queda vacía */ }
             if (my !== thumbToken) return;
           }
@@ -836,6 +876,49 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
           quickStyle = b.dataset.style;
           document.querySelectorAll('#styleSeg button').forEach(function (x) { x.classList.toggle('on', x === b); });
           if (modal.classList.contains('open')) { M.style = quickStyle; renderPreview(); }
+        });
+
+        function photoOpts() {
+          return { image: M.image || undefined, fx: M.fx, fy: M.fy };
+        }
+
+        // Los controles de foto solo aplican a la portada, que es la única
+        // diapositiva con imagen; en las de texto se atenúan.
+        function syncPhotoTools() {
+          var isCover = (M.slides[M.sel] || {}).type === 'cover';
+          document.getElementById('m-photo').classList.toggle('is-off', !isCover);
+          document.getElementById('m-photo-hint').textContent = isCover
+            ? (M.image ? 'Usando una foto tuya.' : 'Arrastra para mover el centro de la foto.')
+            : 'Esta diapositiva no lleva foto.';
+        }
+
+        document.getElementById('m-photo-pick').addEventListener('click', function () {
+          document.getElementById('m-photo-file').click();
+        });
+        document.getElementById('m-photo-file').addEventListener('change', function (ev) {
+          var f = ev.target.files && ev.target.files[0];
+          if (!f) return;
+          if (M.image && M.image.startsWith('blob:')) URL.revokeObjectURL(M.image);
+          M.image = URL.createObjectURL(f);
+          // Una foto nueva parte del centro.
+          M.fx = 0.5; M.fy = 0.5;
+          document.getElementById('m-fx').value = 50;
+          document.getElementById('m-fy').value = 50;
+          ev.target.value = '';
+          renderPreview();
+        });
+        document.getElementById('m-photo-reset').addEventListener('click', function () {
+          if (M.image && M.image.startsWith('blob:')) URL.revokeObjectURL(M.image);
+          M.image = null; M.fx = 0.5; M.fy = 0.5;
+          document.getElementById('m-fx').value = 50;
+          document.getElementById('m-fy').value = 50;
+          renderPreview();
+        });
+        ['m-fx', 'm-fy'].forEach(function (id) {
+          document.getElementById(id).addEventListener('input', function (e) {
+            if (id === 'm-fx') M.fx = e.target.value / 100; else M.fy = e.target.value / 100;
+            renderPreview();
+          });
         });
 
         document.getElementById('m-close').addEventListener('click', closeAdapter);
@@ -871,7 +954,7 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
           var btn = this; btn.classList.add('is-busy');
           try {
             var c = document.createElement('canvas');
-            await drawSlide(c, M.post, M.slides[M.sel], M.sel, M.slides.length, M.fmt, document.getElementById('overlay').checked, M.style);
+            await drawSlide(c, M.post, M.slides[M.sel], M.sel, M.slides.length, M.fmt, document.getElementById('overlay').checked, M.style, photoOpts());
             var blob = await canvasToBlob(c);
             saveBlob(blob, slugify(M.post.slug) + '-' + SIZES[M.fmt][2] + '-' + M.style + '-' + String(M.sel + 1).padStart(2, '0') + '.jpg');
             flash(btn, 'Descargada ✓');
@@ -884,7 +967,7 @@ const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
             for (var i = 0; i < M.slides.length; i++) {
               btn.textContent = 'Generando ' + (i + 1) + '/' + M.slides.length + '…';
               var c = document.createElement('canvas');
-              await drawSlide(c, M.post, M.slides[i], i, M.slides.length, M.fmt, document.getElementById('overlay').checked, M.style);
+              await drawSlide(c, M.post, M.slides[i], i, M.slides.length, M.fmt, document.getElementById('overlay').checked, M.style, photoOpts());
               var blob = await canvasToBlob(c);
               saveBlob(blob, slugify(M.post.slug) + '-' + SIZES[M.fmt][2] + '-' + M.style + '-' + String(i + 1).padStart(2, '0') + '.jpg');
               await new Promise(function (r) { setTimeout(r, 320); });
