@@ -43,6 +43,11 @@ Un recorrido íntimo por uno de los entornos más recogidos del occidente asturi
 <a class="adar-archive-social-btn is-ig" href="https://www.instagram.com/reel/DbvDkAEoQrP/" target="_blank" rel="noopener">▶ Ver el reel en Instagram</a>
 </div>
 
+<h3 style="margin-top:28px">Vídeo resumen</h3>
+<div class="adar-archive-video">
+<iframe src="https://iframe.mediadelivery.net/embed/449741/c8134628-10df-4680-aa7e-a38e11448b68?autoplay=false&loop=false&muted=false&preload=true&responsive=true" title="La forma de la memoria · Parador de Corias · Festival ADAR 2026" loading="lazy" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe>
+</div>
+
 <h3 style="margin-top:28px">Programa</h3>
 <p style="margin-top:18px">
 <strong>Lili Boulanger</strong> — Nocturne para violín y piano<br>

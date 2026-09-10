@@ -43,6 +43,11 @@ Guillermo Laporta (flute), Maria Florea (violin), Lara Fernández (viola) and Da
 <a class="adar-archive-social-btn is-ig" href="https://www.instagram.com/p/Db_Hl0LiNys/" target="_blank" rel="noopener">View on Instagram ↗</a>
 </div>
 
+<h3 style="margin-top:28px">Recap video</h3>
+<div class="adar-archive-video">
+<iframe src="https://iframe.mediadelivery.net/embed/449741/5c2369bd-16a1-4108-b0a3-c779d63afe47?autoplay=false&loop=false&muted=false&preload=true&responsive=true" title="Eclipse concert · Alto de La Corredoria · Festival ADAR 2026" loading="lazy" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture;" allowfullscreen="true"></iframe>
+</div>
+
 <div class="adar-archive-gallery">
 <a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_1.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_1.jpg" loading="lazy"></a>
 <a href="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_2.jpg"><img src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_2.jpg" loading="lazy"></a>
