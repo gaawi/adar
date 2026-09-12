@@ -2,7 +2,7 @@
 title: La España que no se vacía cuando hay música
 lang: es
 date: 2026-08-20T00:00:00+00:00
-status: draft
+status: publish
 excerpt: 'Se habla mucho de la España vaciada. Pero un pueblo no se vacía solo de gente: se vacía de motivos para quedarse. Un festival no arregla eso, pero puede ser uno de esos motivos.'
 featured_image: https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Villanueva%20de%20Oscos_Fotos/13.08.26_Villanueva%20de%20Oscos_WEB/13.08.26_Villanueva%20de%20Oscos_WEB_1.jpg
 author: Festival ADAR
