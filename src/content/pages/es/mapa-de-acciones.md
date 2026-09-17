@@ -175,9 +175,16 @@ var concejos = [
 /* MAP */
 if (typeof L !== 'undefined') {
 var map = L.map('adar-leaflet-map',{center:[43.28,-6.05],zoom:8,zoomControl:true,scrollWheelZoom:false,tap:false});
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{
-attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com">CARTO</a>',
-subdomains:'abcd', maxZoom:19
+/* CARTO pasó a exigir clave de API y marcaba las teselas con "API KEY
+   REQUIRED". Se sustituye por el lienzo gris claro de Esri, que no necesita
+   clave y encaja mejor con la paleta del sitio: los marcadores amarillos
+   destacan sobre un fondo apagado. La segunda capa son los rótulos. */
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}',{
+attribution:'Teselas &copy; <a href="https://www.esri.com">Esri</a> &mdash; Esri, DeLorme, NAVTEQ',
+maxZoom:18, maxNativeZoom:16
+}).addTo(map);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}',{
+maxZoom:18, maxNativeZoom:16, pane:'overlayPane'
 }).addTo(map);
 
 /* POPUP */
