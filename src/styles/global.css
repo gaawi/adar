@@ -4869,8 +4869,11 @@ body.home article.page { margin: 0 !important; }
 }
 .hm-hero-l1, .hm-hero-l3 {
   font-family: var(--font-display);
-  font-stretch: 55%;
-  font-size: clamp(68px, 14vw, 220px);
+  /* El tamaño estaba calibrado para Bricolage Grotesque con font-stretch:55%,
+     es decir, condensada. Alegreya no tiene eje de anchura, así que esa
+     propiedad no hacía nada y el titular salía casi al doble de ancho,
+     invadiendo el banner lateral. Se recalibra para Alegreya. */
+  font-size: clamp(56px, 12vw, 190px);
   line-height: 0.82;
   letter-spacing: -0.055em;
   color: var(--paper);
@@ -4880,7 +4883,7 @@ body.home article.page { margin: 0 !important; }
 .hm-hero-l2 {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(40px, 7vw, 110px);
+  font-size: clamp(34px, 6vw, 95px);
   line-height: 0.95;
   letter-spacing: -0.02em;
   color: var(--paper);
