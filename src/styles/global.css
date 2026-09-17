@@ -6283,7 +6283,10 @@ body.home .adar-footer-cta { display: none !important; }
 .page-hero-inner {
   position: relative;
   z-index: 2;
-  max-width: 1600px;
+  /* Mismo ancho y sangrado que .ed-wrap, el contenedor del contenido que va
+     debajo: con 1600 el titular del hero arrancaba más a la izquierda y la
+     página quedaba escalonada (80px de desfase a 1440 y 160 a 1920). */
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   padding: 140px 40px 56px;
