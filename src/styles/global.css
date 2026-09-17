@@ -4869,27 +4869,27 @@ body.home article.page { margin: 0 !important; }
 }
 .hm-hero-l1, .hm-hero-l3 {
   font-family: var(--font-display);
-  /* El tamaño estaba calibrado para Bricolage Grotesque con font-stretch:55%,
-     es decir, condensada. Alegreya no tiene eje de anchura, así que esa
-     propiedad no hacía nada y el titular salía casi al doble de ancho,
-     invadiendo el banner lateral. Se recalibra para Alegreya. */
-  font-size: clamp(56px, 12vw, 190px);
-  line-height: 0.82;
-  letter-spacing: -0.055em;
+  /* Escala contenida: Alegreya no tiene eje de anchura, así que el
+     font-stretch:55% con el que se calibró Bricolage dejó de surtir efecto.
+     El interletrado cerrado y la sombra dura venían de un titular de cartel;
+     con la serif resultan agresivos, así que se relajan. */
+  font-size: clamp(38px, 7.2vw, 104px);
+  line-height: 0.98;
+  letter-spacing: -0.02em;
   color: var(--paper);
-  font-weight: 500;
-  text-shadow: 0 2px 24px rgba(0,0,0,0.45);
+  font-weight: 400;
+  text-shadow: 0 1px 12px rgba(0,0,0,0.28);
 }
 .hm-hero-l2 {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(34px, 6vw, 95px);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
+  font-size: clamp(26px, 4.6vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
   color: var(--paper);
-  padding-left: clamp(40px, 8vw, 140px);
-  font-weight: 500;
-  text-shadow: 0 2px 24px rgba(0,0,0,0.45);
+  padding-left: clamp(24px, 5vw, 86px);
+  font-weight: 400;
+  text-shadow: 0 1px 12px rgba(0,0,0,0.28);
 }
 .hm-hero-l2 em { font-style: italic; }
 /* Stronger selector (.hm-hero p.hm-hero-lede, 0,2,1) so the rule wins
@@ -13526,8 +13526,6 @@ body.page .entry-content .hm-next{ background: var(--ink) !important; }
    "wide" (a todo el ancho) es solo para móvil, donde da ritmo tipo Instagram.
    En escritorio spanear columnas dejaba huecos y desalineaba los pies. */
 @media (max-width: 900px){
-  /* Sin hero en móvil: la portada arranca en el cierre "gracias". */
-  .hm-hero{ display: none !important; }
   /* Galería a sangre (full-bleed) con ritmo tipo Instagram: filas de dos y
      algunas fotos a todo el ancho. */
   .hm-lived{ padding-left: 0; padding-right: 0; }
@@ -14108,4 +14106,64 @@ footer h4 {
   font-family: var(--font-legal);
   font-weight: 400;
   letter-spacing: 0.02em;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   HERO DE LA HOME · versión contenida, también en móvil
+   El titular ya no grita: el peso lo lleva la fotografía y el aire.
+   ═══════════════════════════════════════════════════════════════════════ */
+@media (max-width: 900px) {
+  /* Alto contenido: la portada no tiene por qué ocupar toda la pantalla. */
+  .hm-hero {
+    min-height: 74svh;
+    grid-template-rows: auto 1fr auto;
+  }
+  /* La franja de coordenadas es decorativa y compite con la cabecera. */
+  .hm-hero .hm-hero-meta { display: none; }
+
+  .hm-hero-body {
+    padding-top: 104px;
+    padding-bottom: 8px;
+    align-self: end;
+  }
+  .hm-hero-l1, .hm-hero-l3 {
+    font-size: clamp(34px, 11vw, 52px);
+    line-height: 1.0;
+    letter-spacing: -0.015em;
+  }
+  .hm-hero-l2 {
+    font-size: clamp(22px, 7vw, 34px);
+    padding-left: 16px;
+  }
+  /* La entradilla vuelve: con el titular contenido, ya cabe y explica. */
+  .hm-hero p.hm-hero-lede {
+    display: block;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 38ch;
+    margin-top: 16px;
+    color: rgba(246, 244, 238, 0.86);
+  }
+  .hm-hero-foot { padding-bottom: 22px; }
+  /* El velo sube un poco para que el texto se lea sin sombras duras. */
+  .hm-hero-veil {
+    background: linear-gradient(180deg,
+      rgba(10,9,7,0.10)  0%,
+      rgba(10,9,7,0.30) 35%,
+      rgba(10,9,7,0.70) 68%,
+      rgba(10,9,7,0.94) 100%);
+  }
+  /* El banner lateral pasa a ser una línea más del flujo, no un pegote. */
+  .hm-side-banner { position: static; margin: 0 20px 24px; max-width: none; }
+}
+
+/* En escritorio, el velo también se suaviza: menos contraste, más foto. */
+@media (min-width: 901px) {
+  .hm-hero-veil {
+    background: linear-gradient(180deg,
+      rgba(10,9,7,0)    0%,
+      rgba(10,9,7,0.05) 40%,
+      rgba(10,9,7,0.42) 76%,
+      rgba(10,9,7,0.88) 100%);
+  }
 }
