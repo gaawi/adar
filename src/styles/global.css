@@ -14170,3 +14170,39 @@ footer h4 {
       rgba(10,9,7,0.88) 100%);
   }
 }
+
+/* ── Primer elemento del desplegable: parecía un título ──────────────────
+   Iba en negrita, con una flecha delante y un filete debajo: la combinación
+   se leía como encabezado de sección y no invitaba a pulsarlo, aunque es el
+   enlace a la página de la sección. Se le da forma de acción: mismo peso que
+   sus hermanos y la flecha al final, alineada a la derecha, que es la
+   convención de "ir a esta página". */
+.cd-submenu a.is-overview {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 1px solid var(--line);
+}
+.cd-submenu a.is-overview::before { content: none; }
+.cd-submenu a.is-overview::after {
+  content: '→';
+  font-family: var(--font-ui);
+  color: var(--ink);
+  opacity: 0.45;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+.cd-submenu a.is-overview:hover::after,
+.cd-submenu a.is-overview:focus-visible::after {
+  transform: translateX(3px);
+  opacity: 1;
+}
+/* Refuerzo de que todo el panel es pulsable: subrayado al pasar por encima. */
+.cd-submenu a:hover,
+.cd-submenu a:focus-visible {
+  background: var(--paper-2);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
