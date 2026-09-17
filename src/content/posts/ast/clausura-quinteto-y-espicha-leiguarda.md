@@ -27,7 +27,7 @@ translation_group: "pll_adar26_11"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_Fotos/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB_1.jpg" alt="Zarru · Quintetu y espicha" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Zarru · Quintetu y espicha</h1>
+<h2 class="adar-archive-title">Zarru · Quintetu y espicha</h2>
 <p class="adar-archive-lede">
 VI edición. El zarru del festival na ilesia parroquial de Lleiguarda: un quintetu que percuerre a Vivaldi, Mendelssohn, Brahms, Ravel, Ligeti y David Lang, y depués, espicha abierta pa tol públicu.
 </p>

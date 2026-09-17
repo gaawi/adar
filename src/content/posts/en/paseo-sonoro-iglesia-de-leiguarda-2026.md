@@ -27,7 +27,7 @@ translation_group: "pll_adar26_10"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.15_Iglesia%20de%20Leiguarda_Fotos/26.08.15_Iglesia%20de%20Leiguarda_WEB/26.08.15_Iglesia%20de%20Leiguarda_WEB_1.jpg" alt="Sound walk in the Church of Leiguarda" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Projects Archive</span>
-<h1 class="adar-archive-title">Sound walk in the Church of Leiguarda</h1>
+<h2 class="adar-archive-title">Sound walk in the Church of Leiguarda</h2>
 <p class="adar-archive-lede">
 6th edition. A sound walk inside the church of Leiguarda: the musicians spread across the nave and the audience moving among them, from one piece to the next.
 </p>

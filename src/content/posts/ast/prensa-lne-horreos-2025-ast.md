@@ -23,7 +23,7 @@ translation_group: "press-prensa-lne-horreos-2025"
 
 <p class="press-kicker">Concurso de hórreos y paneras 2025</p>
 
-<h1 class="press-clipping-title">El Festival Adar busca los mejores hórreos para música de cámara</h1>
+<h2 class="press-clipping-title">El Festival Adar busca los mejores hórreos para música de cámara</h2>
 
 <p class="press-lede">
 El festival convoca un concurso para seleccionar tres hórreos o paneras de Asturias que se convertirán en escenarios únicos de música de cámara durante su quinta edición, del 4 al 17 de agosto.

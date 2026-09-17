@@ -23,7 +23,7 @@ translation_group: "press-prensa-lne-tocan-newyork-leiguarda"
 
 <p class="press-kicker">Festival ADAR · Belmonte de Miranda</p>
 
-<h1 class="press-clipping-title">Josefina y Guillermo: un día tocan en Nueva York y otro en una panera de Leiguarda</h1>
+<h2 class="press-clipping-title">Josefina y Guillermo: un día tocan en Nueva York y otro en una panera de Leiguarda</h2>
 
 <p class="press-lede">
 Una pareja de músicos españoles se afinca en Belmonte de Miranda, desde donde continúa con sus proyectos internacionales y donde ha puesto en marcha un festival para llevar las artes al medio rural.

@@ -24,7 +24,7 @@ translation_group: "pll_sobremesa_2024"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Cider and Empanada Gathering (Leiguarda, 2024)</h1>
+<h2 class="adar-archive-title">Cider and Empanada Gathering (Leiguarda, 2024)</h2>
 <p class="adar-archive-lede">
 Cider and empanada for everyone in Leiguarda as the communal closing of the 2024 edition of Festival ADAR.
 </p>

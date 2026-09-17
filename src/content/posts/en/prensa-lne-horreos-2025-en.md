@@ -23,7 +23,7 @@ translation_group: "press-prensa-lne-horreos-2025"
 
 <p class="press-kicker">Hórreos and paneras contest 2025</p>
 
-<h1 class="press-clipping-title">The Adar Festival seeks the best hórreos for chamber music</h1>
+<h2 class="press-clipping-title">The Adar Festival seeks the best hórreos for chamber music</h2>
 
 <p class="press-lede">
 The festival launches a contest to select three hórreos or paneras in Asturias that will become unique chamber-music stages during its fifth edition, from 4 to 17 August.

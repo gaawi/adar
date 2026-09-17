@@ -23,7 +23,7 @@ translation_group: "press-prensa-lavoztrubia-paseos-2024"
 
 <p class="press-kicker">4th edition · ADAR en Ruta</p>
 
-<h1 class="press-clipping-title">Sound walks and concerts in Grado, Salas, Somiedo and Belmonte</h1>
+<h2 class="press-clipping-title">Sound walks and concerts in Grado, Salas, Somiedo and Belmonte</h2>
 
 <p class="press-lede">
 From 8 to 18 August 2024, the ADAR Festival holds its fourth edition, offering a cultural experience that blends the beauty of rural Asturias with contemporary artistic expression.

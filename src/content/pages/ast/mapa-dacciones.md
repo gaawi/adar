@@ -18,9 +18,6 @@ menu_order: 0
 translation_group: "pll_69b06583421f1"
 ---
 
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/vendor/leaflet/leaflet.css"/>
 <link rel="stylesheet" href="/vendor/leaflet/MarkerCluster.css"/>
 
@@ -217,7 +214,7 @@ var mapEl = document.getElementById('adar-leaflet-map');
 if(mapEl){
 var ld = document.createElement('div');
 ld.id = 'adar-map-loader';
-ld.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;background:rgba(255,255,255,.85);padding:14px 22px;border-radius:4px;font-family:Josefin Sans,sans-serif;font-size:11px;letter-spacing:.12em;color:#1e3d28;text-transform:uppercase;';
+ld.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;background:rgba(255,255,255,.85);padding:14px 22px;border-radius:4px;font-family:var(--font-dato);font-size:11px;letter-spacing:.12em;color:#1e3d28;text-transform:uppercase;';
 ld.textContent = 'Cargando…';
 mapEl.style.position = 'relative';
 mapEl.appendChild(ld);

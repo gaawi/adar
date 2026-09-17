@@ -23,7 +23,7 @@ translation_group: "press-prensa-rne-ojo-critico-2023"
 
 <p class="press-kicker">Entrevista · Josefina Urraca</p>
 
-<h1 class="press-clipping-title">El Festival Adar con Josefina Urraca</h1>
+<h2 class="press-clipping-title">El Festival Adar con Josefina Urraca</h2>
 
 <p class="press-lede">
 Movidos por el deseo de reivindicar las zonas rurales a través de las artes vivas, el festival celebra su nueva edición con conciertos, charlas y paseos sonoros.

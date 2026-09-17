@@ -27,7 +27,7 @@ translation_group: "pll_adar26_02"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_WEB/05.08.26_Parador%20de%20Corias_WEB_1.jpg" alt="The Shape of Memory - Library of the Parador de Corias" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memory of Actions</span>
-<h1 class="adar-archive-title">The Shape of Memory</h1>
+<h2 class="adar-archive-title">The Shape of Memory</h2>
 <p class="adar-archive-lede">
 In the library of the Parador de Corias —a former 11th-century Benedictine monastery in Cangas del Narcea— the trio of María Martínez, Frederieke Saeijs and Josefina Urraca explored the ideas of remembrance and mourning with a chamber programme bringing together Classicism, Impressionism and recent creation.
 </p>

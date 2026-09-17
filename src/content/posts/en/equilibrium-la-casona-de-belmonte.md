@@ -27,7 +27,7 @@ translation_group: "pll_adar26_09"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/14.08.26_La%20casona%20de%20Belmonte_Fotos/14.08.26_La%20casona%20de%20Belmonte_WEB/14.08.26_La%20casona%20de%20Belmonte_WEB_1.jpg" alt="Equilibrium" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Projects Archive</span>
-<h1 class="adar-archive-title">Equilibrium</h1>
+<h2 class="adar-archive-title">Equilibrium</h2>
 <p class="adar-archive-lede">
 6th edition · Residency showcase. The trio The Rest Project opens up the work of its artistic residency at the second winning hórreo of the 2026 competition: La Casona de Belmonte.
 </p>

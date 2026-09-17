@@ -27,7 +27,7 @@ translation_group: "pll_69b025651736a"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/28.jpg" alt="Sound walk - Palacio Fontela - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Sound walk at the Palacio Fontela (Grado)</h1>
+<h2 class="adar-archive-title">Sound walk at the Palacio Fontela (Grado)</h2>
 <p class="adar-archive-lede">
 With the desire to bring classical music to unique settings and breathe life into historic rooms, the ADAR Festival presented a sound walk at the Ethnographic Museum of the Palacio Fontela. Musicians performed surrounded by antique furniture and an apothecary from bygone eras.
 </p>

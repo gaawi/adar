@@ -27,7 +27,7 @@ translation_group: "pll_adar26_bach_ordas"
 <img class="adar-archive-cover" src="https://i.ytimg.com/vi/Xk_Qz361e0o/maxresdefault.jpg" alt="Natania Hoffman and Guillermo Ordás · J.S. Bach" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Projects Archive</span>
-<h1 class="adar-archive-title">Bach on film</h1>
+<h2 class="adar-archive-title">Bach on film</h2>
 <p class="adar-archive-lede">
 Video art by Guillermo Ordás on J.S. Bach's Cello Suite No. 1, with Natania Hoffman on cello. Filmed in Leiguarda during Festival ADAR 2023.
 </p>

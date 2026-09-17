@@ -27,7 +27,7 @@ translation_group: "pll_69b02566c2c19"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.07_The%20Whale%20%C2%B7%20Monasterio%20S.%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.07_The%20Whale%20%C2%B7%20Monasterio%20S.%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.07_The%20Whale%20%C2%B7%20Monasterio%20S.%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_1.jpg" alt="The Whale - Ballarte - Monasterio de San Antolín de Bedón - ADAR 2025" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">The Whale (Ballarte) nel Monasteriu de San Antolín de Bedón</h1>
+<h2 class="adar-archive-title">The Whale (Ballarte) nel Monasteriu de San Antolín de Bedón</h2>
 <p class="adar-archive-lede">
 Tres una semana como artistes residentes convidaos na edición 2025 del Festival ADAR, l'ensemble Ballarte enllenó de maxia y música antigua'l Monasteriu de San Antolín de Bedón con <em>The Whale</em>, un espectáculu multidisciplinar basáu nun relatu escritu por Giulio Tanasini.
 </p>

@@ -21,7 +21,7 @@ translation_group: "press-prensa-elcomercio-paseo-caridad-2023"
 
 <p class="press-kicker">Festival ADAR · El Franco</p>
 
-<h1 class="press-clipping-title">Un ‘paseo sonoro’ por La Caridad para acercar la música y el arte al pueblo</h1>
+<h2 class="press-clipping-title">Un ‘paseo sonoro’ por La Caridad para acercar la música y el arte al pueblo</h2>
 
 <p class="press-lede">
 El parque María Cristina y el auditorio As Quintas acogen el festival itinerante ADAR, que pretende «revitalizar las zonas rurales».

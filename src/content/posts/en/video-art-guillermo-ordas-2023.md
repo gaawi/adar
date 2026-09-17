@@ -26,7 +26,7 @@ translation_group: "pll_69b02564e411d"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Projects Archive</span>
-<h1 class="adar-archive-title">Video art by Guillermo Ordás</h1>
+<h2 class="adar-archive-title">Video art by Guillermo Ordás</h2>
 <p class="adar-archive-lede">
 Video art piece by the Asturian visual artist Guillermo Ordás, presented as part of ADAR Festival 2023. An audiovisual intervention in dialogue with the rural heritage and sites where the festival's programme takes place.
 </p>

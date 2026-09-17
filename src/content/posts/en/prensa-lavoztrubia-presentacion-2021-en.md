@@ -23,7 +23,7 @@ translation_group: "press-prensa-lavoztrubia-presentacion-2021"
 
 <p class="press-kicker">Belmonte de Miranda · Launch event</p>
 
-<h1 class="press-clipping-title">The Leiguarda Classical Music festival sells out on the day of its launch</h1>
+<h2 class="press-clipping-title">The Leiguarda Classical Music festival sells out on the day of its launch</h2>
 
 <p class="press-lede">
 Belmonte’s socio-cultural centre yesterday hosted the launch of the Association for the Development of the Arts in Rural Areas, driven by the musicians Josefina Urraca and Guillermo Laporta.

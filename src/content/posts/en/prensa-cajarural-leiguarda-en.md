@@ -23,7 +23,7 @@ translation_group: "press-prensa-cajarural-leiguarda"
 
 <p class="press-kicker">The origins of the ADAR Festival</p>
 
-<h1 class="press-clipping-title">Festival de Música Clásica de Leiguarda</h1>
+<h2 class="press-clipping-title">Festival de Música Clásica de Leiguarda</h2>
 
 <p class="press-lede">
 Leiguarda (Lleiguarda in Asturian) is a village of barely 150 inhabitants in the municipality of Belmonte de Miranda. During the pandemic, it gained two new residents: the flautist Guillermo Laporta and the pianist Josefina Urraca.

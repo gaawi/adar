@@ -21,7 +21,7 @@ translation_group: "press-prensa-lne-despliega-belmonte-2024"
 
 <p class="press-kicker">IV edición · ADAR en Ruta</p>
 
-<h1 class="press-clipping-title">El Festival Adar despliega desde Belmonte otra edición de arte y música en entornos rurales</h1>
+<h2 class="press-clipping-title">El Festival Adar despliega desde Belmonte otra edición de arte y música en entornos rurales</h2>
 
 <p class="press-lede">
 La cuarta edición arranca esta semana con un recorrido por monasterios, palacios y hórreos del occidente y centro asturiano, con clausura el 18 de agosto en Leiguarda.

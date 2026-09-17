@@ -27,7 +27,7 @@ translation_group: "pll_69b025658f71e"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg" alt="Sound walk - Museo de las Ayalgas - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Sound walk at the Museo de las Ayalgas (Belmonte de Miranda)</h1>
+<h2 class="adar-archive-title">Sound walk at the Museo de las Ayalgas (Belmonte de Miranda)</h2>
 <p class="adar-archive-lede">
 The Museo de las Ayalgas in Silviella, one of the area's major cultural attractions, hosted ADAR Festival musicians for a sound walk where historic artefacts of rural life blended with the music of Bach and Mozart.
 </p>

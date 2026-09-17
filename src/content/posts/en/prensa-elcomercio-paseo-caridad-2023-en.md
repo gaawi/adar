@@ -23,7 +23,7 @@ translation_group: "press-prensa-elcomercio-paseo-caridad-2023"
 
 <p class="press-kicker">Festival ADAR · El Franco</p>
 
-<h1 class="press-clipping-title">A ‘sound walk’ through La Caridad to bring music and art to the village</h1>
+<h2 class="press-clipping-title">A ‘sound walk’ through La Caridad to bring music and art to the village</h2>
 
 <p class="press-lede">
 The María Cristina park and the As Quintas auditorium host the travelling festival ADAR, which aims to “revitalise rural areas”.

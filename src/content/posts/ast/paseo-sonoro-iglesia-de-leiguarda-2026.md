@@ -27,7 +27,7 @@ translation_group: "pll_adar26_10"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.15_Iglesia%20de%20Leiguarda_Fotos/26.08.15_Iglesia%20de%20Leiguarda_WEB/26.08.15_Iglesia%20de%20Leiguarda_WEB_1.jpg" alt="Paséu sonoru na Ilesia de Lleiguarda" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Paséu sonoru na Ilesia de Lleiguarda</h1>
+<h2 class="adar-archive-title">Paséu sonoru na Ilesia de Lleiguarda</h2>
 <p class="adar-archive-lede">
 VI edición. Un paséu sonoru dientro de la ilesia de Lleiguarda: los músicos repartíos pel templu y el públicu desplazándose ente ellos, d’una pieza a la siguiente.
 </p>

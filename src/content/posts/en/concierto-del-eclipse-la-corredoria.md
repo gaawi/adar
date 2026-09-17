@@ -27,7 +27,7 @@ translation_group: "pll_adar26_eclipse"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_1.jpg" alt="Eclipse concert" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Projects Archive</span>
-<h1 class="adar-archive-title">Eclipse concert</h1>
+<h2 class="adar-archive-title">Eclipse concert</h2>
 <p class="adar-archive-lede">
 6th edition. A flute quartet at the Alto de La Corredoria (Belmonte de Miranda), coinciding with the total solar eclipse and the observation organised by Belmonte de Miranda Town Hall.
 </p>

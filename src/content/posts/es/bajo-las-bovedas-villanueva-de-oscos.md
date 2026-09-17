@@ -27,7 +27,7 @@ translation_group: "pll_adar26_villanuevaoscos"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Villanueva%20de%20Oscos_Fotos/13.08.26_Villanueva%20de%20Oscos_WEB/13.08.26_Villanueva%20de%20Oscos_WEB_1.jpg" alt="Bajo las bóvedas de Villanueva de Oscos" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Bajo las bóvedas de Villanueva de Oscos</h1>
+<h2 class="adar-archive-title">Bajo las bóvedas de Villanueva de Oscos</h2>
 <p class="adar-archive-lede">
 VI edición · ADAR en Ruta. Quinteto con flauta y piano bajo las bóvedas del monasterio cisterciense de Santa María de Villanueva de Oscos, fundado en el siglo XII.
 </p>

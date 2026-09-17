@@ -26,7 +26,7 @@ translation_group: "pll_69b02564e411d"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Videu arte de Guillermo Ordás</h1>
+<h2 class="adar-archive-title">Videu arte de Guillermo Ordás</h2>
 <p class="adar-archive-lede">
 Pieza de videu arte del artista visual asturianu Guillermo Ordás, presentada nel marcu del Festival ADAR 2023. Una intervención audiovisual qu’entabla diálogu col patrimoniu rural y los espacios onde s’inscribe la programación del festival.
 </p>

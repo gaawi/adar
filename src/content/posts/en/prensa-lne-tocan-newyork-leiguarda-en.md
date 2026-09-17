@@ -23,7 +23,7 @@ translation_group: "press-prensa-lne-tocan-newyork-leiguarda"
 
 <p class="press-kicker">Festival ADAR · Belmonte de Miranda</p>
 
-<h1 class="press-clipping-title">Josefina and Guillermo: one day they play in New York, the next in a granary in Leiguarda</h1>
+<h2 class="press-clipping-title">Josefina and Guillermo: one day they play in New York, the next in a granary in Leiguarda</h2>
 
 <p class="press-lede">
 A pair of Spanish musicians have settled in Belmonte de Miranda, from where they continue their international projects and where they have launched a festival to bring the arts to rural areas.

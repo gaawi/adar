@@ -21,7 +21,7 @@ translation_group: "press-prensa-ayto-llanes-bedon-2024"
 
 <p class="press-kicker">Llanes · San Antolín de Bedón</p>
 
-<h1 class="press-clipping-title">El Festival ADAR comenzará en Llanes con un concierto en el Monasterio de San Antolín</h1>
+<h2 class="press-clipping-title">El Festival ADAR comenzará en Llanes con un concierto en el Monasterio de San Antolín</h2>
 
 <p class="press-lede">
 La cuarta edición del Festival ADAR, del 8 al 18 de agosto, abrirá su itinerancia en Llanes con un concierto en el Monasterio de San Antolín de Bedón el lunes 12 de agosto a las 19:30.

@@ -27,7 +27,7 @@ translation_group: "pll_69b02565ee20e"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_02_03.jpg" alt="Concierto en el Mercado de Pola de Somiedo" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Concert at the Market of Pola de Somiedo</h1>
+<h2 class="adar-archive-title">Concert at the Market of Pola de Somiedo</h2>
 <p class="adar-archive-lede">
 4th edition of the festival · a chamber concert at the Market of Pola de Somiedo, capital of the Somiedo Natural Park (a UNESCO Biosphere Reserve and home to Spain's largest brown-bear population).
 </p>

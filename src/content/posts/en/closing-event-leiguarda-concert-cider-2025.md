@@ -28,7 +28,7 @@ translation_group: "pll_69b02567d035d"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_1.jpg" alt="Closing Event in Leiguarda - Concert and cider tasting" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Closing Event in Leiguarda: Concert and Cider Tasting</h1>
+<h2 class="adar-archive-title">Closing Event in Leiguarda: Concert and Cider Tasting</h2>
 <p class="adar-archive-lede">
 The ADAR Festival 2025 culminates with a musical journey through two emblematic spaces in Leiguarda: the village church and its outdoor scenic greenhouse.
 This divided closing proposes two complementary atmospheres: the introspection of the solo piano repertoire under the church vault, and the celebration

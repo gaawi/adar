@@ -27,7 +27,7 @@ translation_group: "pll_699d9d55e9991"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/15.jpg" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Concert at the Monastery of San Antolín de Bedón, Llanes</h1>
+<h2 class="adar-archive-title">Concert at the Monastery of San Antolín de Bedón, Llanes</h2>
 <p class="adar-archive-lede">
 The 13th-century Romanesque monastery was transformed into an immersive performance space where music, architecture and light engaged with the audience in a circular format.
 </p>

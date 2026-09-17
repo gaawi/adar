@@ -27,7 +27,7 @@ translation_group: "pll_69b0256670ea1"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/capilla.jpg" alt="Concert and performance - Capilla de los Dolores - ADAR 2024" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Concert and performance at the Capilla de los Dolores (Grado, 2024)</h1>
+<h2 class="adar-archive-title">Concert and performance at the Capilla de los Dolores (Grado, 2024)</h2>
 <p class="adar-archive-lede">
 The same evening the ADAR Festival presented its main programme at the Palacio de Miranda-Valdecarzana, visual artist Sarah K. Williams transformed the Capilla de los Dolores in Grado with a uniquely creative installation and performance, in which the musicians interacted with her piece while performing the <em>Duo</em> by Jessie Montgomery.
 </p>

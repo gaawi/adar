@@ -27,7 +27,7 @@ translation_group: "pll_69b025648f1db"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/083.jpg" alt="Instalación Toccata and Bruise - Celeste Oram - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Installation: Toccata and Bruise (Celeste Oram)</h1>
+<h2 class="adar-archive-title">Installation: Toccata and Bruise (Celeste Oram)</h2>
 <p class="adar-archive-lede">
 Composer and projection designer Celeste Oram, originally from New Zealand and based in New York, lent her piece <em>Toccata and Bruise</em> for the 2023 edition of the ADAR Festival. An audiovisual installation that explores the musical concept of touch, presented at ADAR's headquarters in Leiguarda.
 </p>

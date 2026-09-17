@@ -27,7 +27,7 @@ translation_group: "pll_adar26_02"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_WEB/05.08.26_Parador%20de%20Corias_WEB_1.jpg" alt="La forma de la memoria - Biblioteca del Parador de Corias" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d'Acciones</span>
-<h1 class="adar-archive-title">La forma de la memoria</h1>
+<h2 class="adar-archive-title">La forma de la memoria</h2>
 <p class="adar-archive-lede">
 Na biblioteca del Parador de Corias —antiguu monasteriu benedictín del sieglu XI, en Cangas del Narcea— el tríu de María Martínez, Frederieke Saeijs y Josefina Urraca traviesóu la idea del recuerdu y el duelu con un programa de cámara qu'axuntó clasicismu, impresionismu y creación reciente.
 </p>

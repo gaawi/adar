@@ -27,7 +27,7 @@ translation_group: "pll_69b02565aa275"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/02.jpg" alt="Closing visual concert - Leiguarda - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Closing Visual Concert in Leiguarda (2023)</h1>
+<h2 class="adar-archive-title">Closing Visual Concert in Leiguarda (2023)</h2>
 <p class="adar-archive-lede">
 The third edition of the ADAR Festival closed with an open-air visual concert in the field behind the Church of Leiguarda. The emblematic stage with its yellow frame, which had already starred in the 2021 opening, returned as a symbol of the festival on a night that brought together music, projections, and community.
 </p>

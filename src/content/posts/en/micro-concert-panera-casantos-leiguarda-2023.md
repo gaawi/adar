@@ -24,7 +24,7 @@ translation_group: "pll_micro_panera_casantos_2023"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Micro-concert at the Panera Casantos (Leiguarda, 2023)</h1>
+<h2 class="adar-archive-title">Micro-concert at the Panera Casantos (Leiguarda, 2023)</h2>
 <p class="adar-archive-lede">
 An intimate micro-concert at the Panera Casantos, part of the Leiguarda 2023 strand, with limited capacity. Chamber music in one of the most characteristic spaces of traditional Asturian architecture.
 </p>

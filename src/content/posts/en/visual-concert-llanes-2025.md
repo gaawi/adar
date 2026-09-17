@@ -27,7 +27,7 @@ translation_group: "pll_69b02566dc7bf"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_1.jpg" alt="Concierto Visual en Llanes - Monasterio de San Antolín de Bedón" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Visual Concert in Llanes</h1>
+<h2 class="adar-archive-title">Visual Concert in Llanes</h2>
 <p class="adar-archive-lede">
 The Monastery of San Antolín de Bedón, a 13th-century Romanesque building now in a state of abandonment, became for one night an immersive and symbolism-laden stage. With a full house, the space was transformed using an autonomous power generator and a lighting design that dialogued with the ancient architecture, enhancing the audience's sensory experience.
 </p>

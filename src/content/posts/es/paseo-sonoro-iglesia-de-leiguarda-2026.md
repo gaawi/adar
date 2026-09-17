@@ -27,7 +27,7 @@ translation_group: "pll_adar26_10"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.15_Iglesia%20de%20Leiguarda_Fotos/26.08.15_Iglesia%20de%20Leiguarda_WEB/26.08.15_Iglesia%20de%20Leiguarda_WEB_1.jpg" alt="Paseo sonoro en la Iglesia de Leiguarda" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Paseo sonoro en la Iglesia de Leiguarda</h1>
+<h2 class="adar-archive-title">Paseo sonoro en la Iglesia de Leiguarda</h2>
 <p class="adar-archive-lede">
 VI edición. Un paseo sonoro dentro de la iglesia de Leiguarda: los músicos repartidos por el templo y el público desplazándose entre ellos, de una pieza a la siguiente.
 </p>

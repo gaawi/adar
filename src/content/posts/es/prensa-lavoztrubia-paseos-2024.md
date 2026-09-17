@@ -21,7 +21,7 @@ translation_group: "press-prensa-lavoztrubia-paseos-2024"
 
 <p class="press-kicker">IV edición · ADAR en Ruta</p>
 
-<h1 class="press-clipping-title">Paseos sonoros y conciertos en Grado, Salas, Somiedo y Belmonte</h1>
+<h2 class="press-clipping-title">Paseos sonoros y conciertos en Grado, Salas, Somiedo y Belmonte</h2>
 
 <p class="press-lede">
 Del 8 al 18 de agosto de 2024, el Festival ADAR celebra su cuarta edición ofreciendo una experiencia cultural que fusiona la belleza del medio rural asturiano con expresiones artísticas contemporáneas.

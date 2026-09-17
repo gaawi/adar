@@ -27,7 +27,7 @@ translation_group: "pll_69b025656e325"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/11_Concierto_visual_en_Colunga_Sala_Loreto/48.jpg" alt="Visual concert - Sala Loreto - Colunga - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Visual concert in Colunga (Sala Loreto)</h1>
+<h2 class="adar-archive-title">Visual concert in Colunga (Sala Loreto)</h2>
 <p class="adar-archive-lede">
 3rd edition of the festival · a visual concert at the Sala Loreto in Colunga, on Asturias's Jurassic coast: immersive 360° projections around the musicians.
 </p>

@@ -24,7 +24,7 @@ translation_group: "pll_instalacion_fontela_2024"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Instalación artística nel esterior del Palaciu de Fontela (Grau, 2024)</h1>
+<h2 class="adar-archive-title">Instalación artística nel esterior del Palaciu de Fontela (Grau, 2024)</h2>
 <p class="adar-archive-lede">
 Instalación artística y paséu sonoru nocherniegu nel esterior del Palaciu de Fontela, dientro de la xornada del 17 d'agostu del Festival ADAR 2024.
 </p>

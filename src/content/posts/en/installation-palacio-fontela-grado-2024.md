@@ -24,7 +24,7 @@ translation_group: "pll_instalacion_fontela_2024"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Artistic Installation outside the Palacio de Fontela (Grado, 2024)</h1>
+<h2 class="adar-archive-title">Artistic Installation outside the Palacio de Fontela (Grado, 2024)</h2>
 <p class="adar-archive-lede">
 An artistic installation and a nocturnal sound walk outside the Palacio de Fontela, part of the 17 August programme of Festival ADAR 2024.
 </p>

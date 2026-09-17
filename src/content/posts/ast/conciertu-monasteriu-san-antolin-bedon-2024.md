@@ -27,7 +27,7 @@ translation_group: "pll_699d9d55e9991"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/15.jpg" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Concierto en el Monasterio de San Antolín de Bedón, Llanes</h1>
+<h2 class="adar-archive-title">Concierto en el Monasterio de San Antolín de Bedón, Llanes</h2>
 <p class="adar-archive-lede">
 El monasteriu románicu del sieglu XIII tresformóse nun espaciu escénicu inmersivu onde música, arquitectura y lluz dialogaron col públicu en formatu circular.
 </p>

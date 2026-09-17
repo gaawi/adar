@@ -102,7 +102,7 @@ translation_group: "pll_6990ac582687f"
 
 <p class="hc-2027">
 <strong>2027 rules:</strong> to be published in <strong>March 2027</strong>.
-<a class="hc-notify" href="mailto:leiguardamusic@gmail.com?subject=H%C3%B3rreos%20Competition%202027%20%C2%B7%20Notify%20me&body=Hi%2C%20please%20let%20me%20know%20when%20the%202027%20H%C3%B3rreos%20%26%20Paneras%20Competition%20rules%20are%20published.%20My%20name%3A%20___">✉ Notify me when they're out</a>
+<a class="hc-notify" href="mailto:leiguardamusic@gmail.com?subject=H%C3%B3rreos%20Competition%202027%20%C2%B7%20Notify%20me&body=Hi%2C%20please%20let%20me%20know%20when%20the%202027%20H%C3%B3rreos%20%26%20Paneras%20Competition%20rules%20are%20published.%20My%20name%3A%20___">Notify me when they're out</a>
 </p>
 
 <details class="hc-bases">

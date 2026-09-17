@@ -21,7 +21,7 @@ translation_group: "press-prensa-lavoztrubia-amplia-2023"
 
 <p class="press-kicker">III edición · ADAR en Ruta</p>
 
-<h1 class="press-clipping-title">El Festival ADAR se amplía desde Belmonte a Grado, Colunga y El Franco</h1>
+<h2 class="press-clipping-title">El Festival ADAR se amplía desde Belmonte a Grado, Colunga y El Franco</h2>
 
 <p class="press-lede">
 El Festival ADAR de Artes en el Medio Rural amplía su recorrido por concejos asturianos, llevando música clásica y arte visual a Grado, El Franco y Colunga junto a la sede en Belmonte de Miranda.

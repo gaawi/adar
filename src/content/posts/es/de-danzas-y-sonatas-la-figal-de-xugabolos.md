@@ -27,7 +27,7 @@ translation_group: "pll_adar26_01"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_WEB/04.08.26_La%20Figal%20de%20Xugabolos_WEB_1.jpg" alt="De danzas y sonatas - Ignacio Prego en La Figal de Xugabolos" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">De danzas y sonatas</h1>
+<h2 class="adar-archive-title">De danzas y sonatas</h2>
 <p class="adar-archive-lede">
 El concierto inaugural de la VI edición sonó dentro de un hórreo: La Figal de Xugabolos, en Casazorrina (Salas), uno de los ganadores del Concurso de Hórreos y Paneras 2026. El clavecinista Ignacio Prego abrió el festival con un recorrido por las formas de danza que vertebraron la música para teclado entre los siglos XVI y XVIII.
 </p>

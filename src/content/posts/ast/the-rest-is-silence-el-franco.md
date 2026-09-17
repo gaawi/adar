@@ -27,7 +27,7 @@ translation_group: "pll_adar26_elfranco"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/11.08.26_El%20Franco_Fotos/11.08.26_El%20Franco_WEB/11.08.26_El%20Franco_WEB_1.jpg" alt="The Rest is Silence" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">The Rest is Silence</h1>
+<h2 class="adar-archive-title">The Rest is Silence</h2>
 <p class="adar-archive-lede">
 VI edición · ADAR en ruta. El tríu The Rest Project nel Auditoriu As Quintas d’El Franco: quince pieces breves del sieglu XX y XXI enfilaes con cánones de la Ofrenda Musical de Bach.
 </p>

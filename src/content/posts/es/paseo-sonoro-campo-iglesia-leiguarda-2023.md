@@ -24,7 +24,7 @@ translation_group: "pll_paseo_video_mapping_2023"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Paseo sonoro con video mapping en el Campo de la Iglesia (Leiguarda, 2023)</h1>
+<h2 class="adar-archive-title">Paseo sonoro con video mapping en el Campo de la Iglesia (Leiguarda, 2023)</h2>
 <p class="adar-archive-lede">
 Paseo sonoro nocturno por el Campo de la Iglesia de Leiguarda con proyecciones de video mapping sobre la fachada de la iglesia. Cierre de la jornada del 12 de agosto.
 </p>

@@ -27,7 +27,7 @@ translation_group: "pll_adar26_09"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/14.08.26_La%20casona%20de%20Belmonte_Fotos/14.08.26_La%20casona%20de%20Belmonte_WEB/14.08.26_La%20casona%20de%20Belmonte_WEB_1.jpg" alt="Equilibrium" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Equilibrium</h1>
+<h2 class="adar-archive-title">Equilibrium</h2>
 <p class="adar-archive-lede">
 VI edición · Muestra de residencia. El tríu The Rest Project abre'l trabayu de la so residencia artística nel segundu hórreu ganador del Concursu 2026: La Casona de Belmonte.
 </p>

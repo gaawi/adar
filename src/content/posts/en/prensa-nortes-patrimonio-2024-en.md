@@ -23,7 +23,7 @@ translation_group: "press-prensa-nortes-patrimonio-2024"
 
 <p class="press-kicker">4th edition · Asturian heritage</p>
 
-<h1 class="press-clipping-title">ADAR: A festival to enjoy Asturian heritage</h1>
+<h2 class="press-clipping-title">ADAR: A festival to enjoy Asturian heritage</h2>
 
 <p class="press-lede">
 The fourth edition of the Festival ADAR, from 8 to 18 August, blends Asturias's rural and cultural heritage with contemporary artistic expression. The opening concert takes place on Monday the 12th at 19:30 at the Monasterio de San Antolín de Bedón.

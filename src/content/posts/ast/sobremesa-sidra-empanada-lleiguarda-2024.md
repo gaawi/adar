@@ -24,7 +24,7 @@ translation_group: "pll_sobremesa_2024"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Sobremesa con sidra y empanada (Lleiguarda, 2024)</h1>
+<h2 class="adar-archive-title">Sobremesa con sidra y empanada (Lleiguarda, 2024)</h2>
 <p class="adar-archive-lede">
 Sidra y empanada pa toos en Lleiguarda como zarru comunitariu de la edición 2024 del Festival ADAR.
 </p>

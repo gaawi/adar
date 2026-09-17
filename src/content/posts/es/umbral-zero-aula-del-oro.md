@@ -27,7 +27,7 @@ translation_group: "pll_adar26_04"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/07.08.26_Aula%20del%20oro_Fotos/07.08.26_Aula%20del%20oro_WEB/07.08.26_Aula%20del%20oro_WEB_1.jpg" alt="Umbral Zero - Aula del Oro, Belmonte de Miranda" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Umbral Zero</h1>
+<h2 class="adar-archive-title">Umbral Zero</h2>
 <p class="adar-archive-lede">
 En el Aula del Oro de Belmonte de Miranda —antiguo espacio expositivo del concejo— Guillermo Laporta y Josefina Urraca ofrecieron una noche íntima de música minimalista y arte visual: una música que tiende a cero, reducida al mínimo gesto hasta rozar el silencio.
 </p>

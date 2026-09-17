@@ -27,7 +27,7 @@ translation_group: "pll_adar26_04"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/07.08.26_Aula%20del%20oro_Fotos/07.08.26_Aula%20del%20oro_WEB/07.08.26_Aula%20del%20oro_WEB_1.jpg" alt="Umbral Zero - Aula del Oro, Belmonte de Miranda" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Umbral Zero</h1>
+<h2 class="adar-archive-title">Umbral Zero</h2>
 <p class="adar-archive-lede">
 At the Aula del Oro in Belmonte de Miranda —a former exhibition space of the municipality— Guillermo Laporta and Josefina Urraca offered an intimate night of minimalist music and visual art: music that tends towards zero, reduced to the smallest gesture until it grazes silence.
 </p>

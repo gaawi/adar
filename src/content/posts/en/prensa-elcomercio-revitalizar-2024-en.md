@@ -23,7 +23,7 @@ translation_group: "press-prensa-elcomercio-revitalizar-2024"
 
 <p class="press-kicker">4th edition · Belmonte · Salas · Grado · Somiedo · Llanes</p>
 
-<h1 class="press-clipping-title">Adar, a different festival to revitalise the rural world</h1>
+<h2 class="press-clipping-title">Adar, a different festival to revitalise the rural world</h2>
 
 <p class="press-lede">
 The 4th edition of the summer event will bring music, installations, dance and visual art to villages in Belmonte, Salas, Somiedo, Grado and Llanes from 8 to 18 August.

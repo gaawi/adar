@@ -24,7 +24,7 @@ translation_group: "pll_micro_panera_casantos_2023"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Micro-conciertu na Panera Casantos (Lleiguarda, 2023)</h1>
+<h2 class="adar-archive-title">Micro-conciertu na Panera Casantos (Lleiguarda, 2023)</h2>
 <p class="adar-archive-lede">
 Un micro-conciertu íntimu na Panera Casantos, dientro del exe Lleiguarda 2023, con aforu llindáu. Música de cámara nún de los espacios más carauterísticos de la arquiteutura tradicional asturiana.
 </p>

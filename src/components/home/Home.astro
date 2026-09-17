@@ -838,7 +838,7 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
     <p class="hm-lived-thanks" set:html={POST.l_thanks} />
     <div class="hm-lived-invite">
       <p>{POST.l_invite}</p>
-      <a class="hm-lived-cta" href={AMIGOS_HREF[lang]}><span aria-hidden="true">♥</span> {POST.n_amigo}</a>
+      <a class="hm-lived-cta" href={AMIGOS_HREF[lang]}>{POST.n_amigo}</a>
     </div>
   </section>
 
@@ -1197,8 +1197,8 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
       <h2 class="hm-next-h">{POST.n_pre} <em>{POST.n_em}</em></h2>
       <p class="hm-next-lede">{POST.n_lede}</p>
       <div class="hm-next-ctas">
-        <a class="hm-next-cta is-primary" href={AMIGOS_HREF[lang]}><span aria-hidden="true">♥</span> {POST.n_amigo}</a>
-        <a class="hm-next-cta" href={NOTIFY_MAIL}><span aria-hidden="true">✉</span> {POST.n_avisame}</a>
+        <a class="hm-next-cta is-primary" href={AMIGOS_HREF[lang]}>{POST.n_amigo}</a>
+        <a class="hm-next-cta" href={NOTIFY_MAIL}>{POST.n_avisame}</a>
       </div>
     </div>
   </section>

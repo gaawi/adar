@@ -27,7 +27,7 @@ translation_group: "pll_69b02567369bf"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.12_Monasterio%20de%20Obona_Fotos/25.08.12_Monasterio%20de%20Obona_WEB/25.08.12_Monasterio%20de%20Obona_WEB_1.jpg" alt="Concierto en el Monasterio de Obona" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Concierto en el Monasterio de Obona, Tineo</h1>
+<h2 class="adar-archive-title">Concierto en el Monasterio de Obona, Tineo</h2>
 <p class="adar-archive-lede">
 V edición del festival · concierto de cámara en el Monasterio de Santa María la Real de Obona (Tineo), uno de los cenobios más antiguos de Asturias. Aforo completo, con los solistas del festival: Jone de la Fuente (violín), Almudena Arribas (viola), Natania Hoffman (violonchelo), Guillermo Laporta (flauta) y Josefina Urraca (piano).
 </p>

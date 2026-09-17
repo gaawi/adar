@@ -27,7 +27,7 @@ translation_group: "pll_69b025678d4ce"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_1.jpg" alt="Paseo sonoro - Claustro del Parador de Corias - ADAR 2025" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Paseo sonoro en el Claustro del Parador de Corias</h1>
+<h2 class="adar-archive-title">Paseo sonoro en el Claustro del Parador de Corias</h2>
 <p class="adar-archive-lede">
 Como parte de la quinta edición del Festival ADAR, los músicos se distribuyeron por el Claustro del Parador de Corias para ofrecer un paseo sonoro en el que Bach y Mozart resonaron entre las arcadas de este antiguo monasterio benedictino.
 </p>

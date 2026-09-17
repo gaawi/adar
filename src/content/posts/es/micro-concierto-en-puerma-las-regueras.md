@@ -27,7 +27,7 @@ translation_group: "pll_69b025671d38d"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_Fotos/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_WEB/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_WEB_1.jpg" alt="Micro-Concierto en Puerma (Las Regueras)" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Micro-Concierto en Puerma (Las Regueras)</h1>
+<h2 class="adar-archive-title">Micro-Concierto en Puerma (Las Regueras)</h2>
 <p class="adar-archive-lede">
 En el marco del Concurso de Hórreos y Paneras impulsado por el Festival ADAR en la primavera de 2025, este micro-concierto tuvo lugar en una de las estructuras tradicionales seleccionadas por su valor arquitectónico, su entorno y su potencial escénico.
 </p>

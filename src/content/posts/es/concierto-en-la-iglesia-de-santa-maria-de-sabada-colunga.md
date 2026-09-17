@@ -27,7 +27,7 @@ translation_group: "pll_69b02563da4c2"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/10_Concierto_en_la_Iglesia_de_Santa_Maria_de_Sabada_Colunga/PXL_20220810_175359505.jpg" alt="Concierto - Iglesia de Santa María de Sabada - ADAR 2022" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Concierto en la Iglesia de Santa María de Sabada (Colunga)</h1>
+<h2 class="adar-archive-title">Concierto en la Iglesia de Santa María de Sabada (Colunga)</h2>
 <p class="adar-archive-lede">
 La Iglesia de Santa María de Sabada, en Lastres, ofreció una acústica excepcional para el tercer concierto de la segunda edición del Festival ADAR. En este enclave histórico de Colunga, una audiencia entregada disfrutó de un programa que reunió música de Brahms, Dvořák, Mozart, Caroline Shaw y JP Jofre.
 </p>

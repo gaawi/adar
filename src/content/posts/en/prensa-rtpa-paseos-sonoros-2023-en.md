@@ -23,7 +23,7 @@ translation_group: "press-prensa-rtpa-paseos-sonoros-2023"
 
 <p class="press-kicker">Sound walks · El Franco</p>
 
-<h1 class="press-clipping-title">‘Sound walks’ brings classical music to El Franco and will then visit Grado, Colunga and Belmonte de Miranda</h1>
+<h2 class="press-clipping-title">‘Sound walks’ brings classical music to El Franco and will then visit Grado, Colunga and Belmonte de Miranda</h2>
 
 <p class="press-lede">
 This is the third edition of these concerts, which aim to reach more municipalities in the summers to come.

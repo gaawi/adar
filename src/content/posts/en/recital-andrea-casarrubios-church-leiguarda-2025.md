@@ -28,7 +28,7 @@ translation_group: "pll_69b02567b23d9"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_1.jpg" alt="Recital by Andrea Casarrubios at the Church of Leiguarda" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Recital by Andrea Casarrubios at the Church of Leiguarda</h1>
+<h2 class="adar-archive-title">Recital by Andrea Casarrubios at the Church of Leiguarda</h2>
 <p class="adar-archive-lede">
 In this evening of the ADAR Festival 2025, cellist and composer Andrea Casarrubios starred in a recital at the Church of Leiguarda. Trained between Spain and the United States and recently nominated for a Grammy for her work SEVEN, Casarrubios offered a proposal that united interpretive virtuosity and a deeply personal compositional voice.
 </p>

@@ -27,7 +27,7 @@ translation_group: "pll_69b0256533f1b"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/Festival%20ADAR%20Photos/2023/06%20concierto%20grado/image5.jpg" alt="Concierto - Palacio de Miranda-Valdecarzana - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Concierto en el Palacio de Miranda-Valdecarzana (Grado, 2023)</h1>
+<h2 class="adar-archive-title">Concierto en el Palacio de Miranda-Valdecarzana (Grado, 2023)</h2>
 <p class="adar-archive-lede">
 III edición del festival · concierto de cámara en el Palacio de Miranda-Valdecarzana de Grado, de origen medieval y reformado en estilo barroco en el siglo XVII (hoy Casa de Cultura).
 </p>

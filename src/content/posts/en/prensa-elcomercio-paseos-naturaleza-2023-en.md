@@ -23,7 +23,7 @@ translation_group: "press-prensa-elcomercio-paseos-naturaleza-2023"
 
 <p class="press-kicker">Festival ADAR · Video mapping in Ibias</p>
 
-<h1 class="press-clipping-title">Walks through nature in search of art and classical music</h1>
+<h2 class="press-clipping-title">Walks through nature in search of art and classical music</h2>
 
 <p class="press-lede">
 The Adar festival brings artistic creation to rural Asturias in collaboration with the Reina Sofía School of Music.

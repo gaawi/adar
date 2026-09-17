@@ -23,7 +23,7 @@ translation_group: "press-prensa-rtpa-i-festival-2021"
 
 <p class="press-kicker">Lleiguarda · Belmonte de Miranda</p>
 
-<h1 class="press-clipping-title">1st Classical Music Festival of Lleiguarda</h1>
+<h2 class="press-clipping-title">1st Classical Music Festival of Lleiguarda</h2>
 
 <p class="press-lede">
 A festival driven by two Spanish musicians who left New York for Belmonte.

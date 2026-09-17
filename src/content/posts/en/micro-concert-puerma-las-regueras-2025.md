@@ -27,7 +27,7 @@ translation_group: "pll_69b025671d38d"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_Fotos/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_WEB/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_WEB_1.jpg" alt="Micro-Concierto en Puerma (Las Regueras)" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Micro Concert in Puerma (Las Regueras)</h1>
+<h2 class="adar-archive-title">Micro Concert in Puerma (Las Regueras)</h2>
 <p class="adar-archive-lede">
 Within the framework of the Hórreo and Granary Contest launched by the ADAR Festival in spring 2025, this micro concert took place in one of the traditional structures selected for its architectural value, setting, and scenic potential.
 </p>

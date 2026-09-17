@@ -29,7 +29,7 @@ Pega este bloque en tu página (Custom HTML / Bloque HTML).
 <header class="oc-hero" id="top">
 <div class="oc-wrap">
 <p class="oc-eyebrow">Festival ADAR</p>
-<h1>Open Call - Compositor Residente</h1>
+<h2>Open Call - Compositor Residente</h2>
 <p class="oc-sub">
 Residencia artística n'Asturies rural pa desendolcar obra nueva, trabayar con artistes convidaos y compartir procesu cola comunidá.
 </p>

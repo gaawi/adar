@@ -23,7 +23,7 @@ translation_group: "press-prensa-rne-ojo-critico-2023"
 
 <p class="press-kicker">Interview · Josefina Urraca</p>
 
-<h1 class="press-clipping-title">The ADAR Festival with Josefina Urraca</h1>
+<h2 class="press-clipping-title">The ADAR Festival with Josefina Urraca</h2>
 
 <p class="press-lede">
 Driven by the desire to champion rural areas through the living arts, the festival holds its new edition with concerts, talks and sound walks.

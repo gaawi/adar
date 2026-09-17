@@ -27,7 +27,7 @@ translation_group: "pll_69b0256754eb0"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_1.jpg" alt="Concierto en Taramundi" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Concert in Taramundi</h1>
+<h2 class="adar-archive-title">Concert in Taramundi</h2>
 <p class="adar-archive-lede">
 5th edition of the festival · a one-hour chamber concert at the church of Taramundi, in western Asturias.
 </p>

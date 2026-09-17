@@ -24,7 +24,7 @@ translation_group: "pll_clausura_belmonte_2021"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Conciertu de clausura en Balmonte de Miranda (2021)</h1>
+<h2 class="adar-archive-title">Conciertu de clausura en Balmonte de Miranda (2021)</h2>
 <p class="adar-archive-lede">
 Zarru de la edición inaugural del Festival ADAR en Balmonte de Miranda, capital del conceyu onde s'asienta'l proyeutu, n'agostu de 2021.
 </p>

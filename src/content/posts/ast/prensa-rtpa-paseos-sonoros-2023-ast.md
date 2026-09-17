@@ -23,7 +23,7 @@ translation_group: "press-prensa-rtpa-paseos-sonoros-2023"
 
 <p class="press-kicker">Paseos sonoros · El Franco</p>
 
-<h1 class="press-clipping-title">‘Paseos sonoros’ lleva música clásica a El Franco y después visitará Grado, Colunga y Belmonte de Miranda</h1>
+<h2 class="press-clipping-title">‘Paseos sonoros’ lleva música clásica a El Franco y después visitará Grado, Colunga y Belmonte de Miranda</h2>
 
 <p class="press-lede">
 Es la tercera edición de conciertos que aspiran a llegar a más concejos en próximos veranos.

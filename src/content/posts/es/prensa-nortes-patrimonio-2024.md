@@ -21,7 +21,7 @@ translation_group: "press-prensa-nortes-patrimonio-2024"
 
 <p class="press-kicker">IV edición · Patrimonio asturiano</p>
 
-<h1 class="press-clipping-title">ADAR: Un festival para disfrutar del patrimonio asturiano</h1>
+<h2 class="press-clipping-title">ADAR: Un festival para disfrutar del patrimonio asturiano</h2>
 
 <p class="press-lede">
 La cuarta edición del Festival ADAR, del 8 al 18 de agosto, fusiona el patrimonio rural y cultural asturiano con las expresiones artísticas contemporáneas. El concierto de apertura tiene lugar el lunes 12 a las 19:30 en el Monasterio de San Antolín de Bedón.

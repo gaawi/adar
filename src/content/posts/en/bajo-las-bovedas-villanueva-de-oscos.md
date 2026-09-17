@@ -27,7 +27,7 @@ translation_group: "pll_adar26_villanuevaoscos"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Villanueva%20de%20Oscos_Fotos/13.08.26_Villanueva%20de%20Oscos_WEB/13.08.26_Villanueva%20de%20Oscos_WEB_1.jpg" alt="Under the vaults of Villanueva de Oscos" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Projects Archive</span>
-<h1 class="adar-archive-title">Under the vaults of Villanueva de Oscos</h1>
+<h2 class="adar-archive-title">Under the vaults of Villanueva de Oscos</h2>
 <p class="adar-archive-lede">
 6th edition · ADAR on the Road. A quintet with flute and piano under the vaults of the Cistercian monastery of Santa María de Villanueva de Oscos, founded in the 12th century.
 </p>

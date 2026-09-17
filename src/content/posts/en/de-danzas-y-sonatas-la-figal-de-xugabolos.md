@@ -27,7 +27,7 @@ translation_group: "pll_adar26_01"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_WEB/04.08.26_La%20Figal%20de%20Xugabolos_WEB_1.jpg" alt="Of Dances and Sonatas - Ignacio Prego at La Figal de Xugabolos" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memory of Actions</span>
-<h1 class="adar-archive-title">Of Dances and Sonatas</h1>
+<h2 class="adar-archive-title">Of Dances and Sonatas</h2>
 <p class="adar-archive-lede">
 The opening concert of the 6th edition took place inside a hórreo: La Figal de Xugabolos, in Casazorrina (Salas), one of the winners of the 2026 Hórreos & Paneras Competition. Harpsichordist Ignacio Prego opened the festival with a journey through the dance forms that shaped keyboard music between the 16th and 18th centuries.
 </p>

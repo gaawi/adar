@@ -26,7 +26,7 @@ translation_group: "pll_69b02564ab184"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Paseo_sonoro_El_Franco/01.jpg" alt="Sound walk - El Franco - ADAR 2023" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Sound walk (El Franco)</h1>
+<h2 class="adar-archive-title">Sound walk (El Franco)</h2>
 <p class="adar-archive-lede">
 Before the concert at the As Quintas Auditorium, the town of El Franco gathered at the Town Hall Square and María Cristina Park, where musicians performed Bach pieces at different corners.
 </p>

@@ -24,7 +24,7 @@ translation_group: "pll_clausura_belmonte_2021"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Closing Concert in Belmonte de Miranda (2021)</h1>
+<h2 class="adar-archive-title">Closing Concert in Belmonte de Miranda (2021)</h2>
 <p class="adar-archive-lede">
 The closing of the inaugural edition of Festival ADAR in Belmonte de Miranda, capital of the municipality where the project is based, in August 2021.
 </p>

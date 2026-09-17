@@ -102,7 +102,7 @@ translation_group: "pll_6990ac582687f"
 
 <p class="hc-2027">
 <strong>Bases 2027:</strong> van publicase en <strong>marzu de 2027</strong>.
-<a class="hc-notify" href="mailto:leiguardamusic@gmail.com?subject=Concursu%20d%27H%C3%B3rreos%202027%20%C2%B7%20Av%C3%ADsame&body=Hola%2C%20quiero%20que%20m%27avis%C3%A9is%20cuando%20se%20publiquen%20les%20bases%20del%20Concursu%20d%27H%C3%B3rreos%20y%20Paneres%202027.%20El%20mio%20nome%3A%20___">✉ Avísame cuando salgan</a>
+<a class="hc-notify" href="mailto:leiguardamusic@gmail.com?subject=Concursu%20d%27H%C3%B3rreos%202027%20%C2%B7%20Av%C3%ADsame&body=Hola%2C%20quiero%20que%20m%27avis%C3%A9is%20cuando%20se%20publiquen%20les%20bases%20del%20Concursu%20d%27H%C3%B3rreos%20y%20Paneres%202027.%20El%20mio%20nome%3A%20___">Avísame cuando salgan</a>
 </p>
 
 <details class="hc-bases">

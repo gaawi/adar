@@ -27,7 +27,7 @@ translation_group: "pll_adar26_bach_ordas"
 <img class="adar-archive-cover" src="https://i.ytimg.com/vi/Xk_Qz361e0o/maxresdefault.jpg" alt="Natania Hoffman y Guillermo Ordás · J.S. Bach" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">La Suite de Bach, en vídeu</h1>
+<h2 class="adar-archive-title">La Suite de Bach, en vídeu</h2>
 <p class="adar-archive-lede">
 Videoarte de Guillermo Ordás sobre la Suite pa violonchelu n.º 1 de J.S. Bach, con Natania Hoffman al violonchelu. Grabáu en Lleiguarda mientres el Festival ADAR 2023.
 </p>

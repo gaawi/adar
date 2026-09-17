@@ -27,7 +27,7 @@ translation_group: "pll_69b025663352f"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/20.jpg" alt="Concierto - Palacio de Miranda-Valdecarzana - ADAR 2024" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2024)</h1>
+<h2 class="adar-archive-title">Conciertu nel Palaciu de Miranda-Valdecarzana (Grau, 2024)</h2>
 <p class="adar-archive-lede">
 IV edición del festival · tercer añu nel Palaciu de Miranda-Valdecarzana de Grau. Esa nueche Grau axuntó tres actos: el conciertu nel palaciu, una instalación de Sarah K. Williams na Oficina de Turismu y una performance na Capilla de los Dolores.
 </p>

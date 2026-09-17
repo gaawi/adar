@@ -24,7 +24,7 @@ translation_group: "pll_paseo_video_mapping_2023"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Sound Walk with Video Mapping at the Campo de la Iglesia (Leiguarda, 2023)</h1>
+<h2 class="adar-archive-title">Sound Walk with Video Mapping at the Campo de la Iglesia (Leiguarda, 2023)</h2>
 <p class="adar-archive-lede">
 A nocturnal sound walk through the Campo de la Iglesia of Leiguarda with video mapping projections on the church façade. The closing of the 12 August programme.
 </p>

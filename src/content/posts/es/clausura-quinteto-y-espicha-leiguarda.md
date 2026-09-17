@@ -27,7 +27,7 @@ translation_group: "pll_adar26_11"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_Fotos/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB_1.jpg" alt="Clausura · Quinteto y espicha" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria de Acciones</span>
-<h1 class="adar-archive-title">Clausura · Quinteto y espicha</h1>
+<h2 class="adar-archive-title">Clausura · Quinteto y espicha</h2>
 <p class="adar-archive-lede">
 VI edición. El cierre del festival en la iglesia parroquial de Leiguarda: un quinteto que recorre a Vivaldi, Mendelssohn, Brahms, Ravel, Ligeti, David Lang y una mazurca tradicional, y después, espicha abierta para todo el público.
 </p>

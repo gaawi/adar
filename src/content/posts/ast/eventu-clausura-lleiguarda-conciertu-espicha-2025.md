@@ -28,7 +28,7 @@ translation_group: "pll_69b02567d035d"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_1.jpg" alt="Evento de Clausura en Leiguarda - Conciertu y espicha" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Evento de Clausura en Leiguarda: Conciertu y espicha</h1>
+<h2 class="adar-archive-title">Evento de Clausura en Leiguarda: Conciertu y espicha</h2>
 <p class="adar-archive-lede">
 El Festival ADAR 2025 culmina con un percorríu musical en dos espacios emblemáticos de Lleiguarda: la ilesia del pueblu y el so invernaderiu escénicu al aire llibre.
 Esta clausura dividida propón dos atmósferes complementaries: la introspección del repertoriu pa pianu solo baxo la bóveda de la ilesia, y la celebración

@@ -27,7 +27,7 @@ translation_group: "pll_69b02565ee20e"
 <img class="adar-archive-cover" src="https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_02_03.jpg" alt="Concierto en el Mercado de Pola de Somiedo" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Conciertu nel Mercáu de Pola de Somiéu</h1>
+<h2 class="adar-archive-title">Conciertu nel Mercáu de Pola de Somiéu</h2>
 <p class="adar-archive-lede">
 IV edición del festival · conciertu de cámara nel Mercáu de Pola de Somiéu, capital del Parque Natural de Somiéu (Reserva de la Biosfera y la mayor población d’osu pardu d’España).
 </p>

@@ -21,7 +21,7 @@ translation_group: "press-prensa-lavoztrubia-presentacion-2021"
 
 <p class="press-kicker">Belmonte de Miranda · Presentación</p>
 
-<h1 class="press-clipping-title">El festival de Música Clásica de Leiguarda agota entradas el día de su presentación</h1>
+<h2 class="press-clipping-title">El festival de Música Clásica de Leiguarda agota entradas el día de su presentación</h2>
 
 <p class="press-lede">
 El centro sociocultural de Belmonte acogió ayer la presentación de la Asociación para el Desarrollo de las Artes en el Medio Rural, impulsada por los músicos Josefina Urraca y Guillermo Laporta.

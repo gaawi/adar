@@ -24,7 +24,7 @@ translation_group: "pll_paseo_video_mapping_2023"
 <div class="adar-archive-hero">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Memoria d’Acciones</span>
-<h1 class="adar-archive-title">Paséu sonoru con video mapping nel Campu de la Ilesia (Lleiguarda, 2023)</h1>
+<h2 class="adar-archive-title">Paséu sonoru con video mapping nel Campu de la Ilesia (Lleiguarda, 2023)</h2>
 <p class="adar-archive-lede">
 Paséu sonoru nocherniegu pel Campu de la Ilesia de Lleiguarda con proyeiciones de video mapping sobre la fachada de la ilesia. Zarru de la xornada del 12 d'agostu.
 </p>

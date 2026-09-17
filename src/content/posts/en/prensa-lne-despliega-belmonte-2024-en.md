@@ -23,7 +23,7 @@ translation_group: "press-prensa-lne-despliega-belmonte-2024"
 
 <p class="press-kicker">4th edition · ADAR en Ruta</p>
 
-<h1 class="press-clipping-title">The Adar Festival unfolds another edition of art and music in rural settings from Belmonte</h1>
+<h2 class="press-clipping-title">The Adar Festival unfolds another edition of art and music in rural settings from Belmonte</h2>
 
 <p class="press-lede">
 The fourth edition kicks off this week with a tour of monasteries, palaces and hórreos across western and central Asturias, closing on 18 August in Leiguarda.

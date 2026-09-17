@@ -27,7 +27,7 @@ translation_group: "pll_69b0256701e55"
 <img class="adar-archive-cover" src="https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_1.jpg" alt="Paseo Sonoro en Leiguarda" loading="lazy">
 <div class="adar-archive-hero-text">
 <span class="adar-archive-eyebrow">Festival ADAR · Actions Archive</span>
-<h1 class="adar-archive-title">Sound Walk in Leiguarda</h1>
+<h2 class="adar-archive-title">Sound Walk in Leiguarda</h2>
 <p class="adar-archive-lede">
 The ADAR Festival proposed on this day a sonic experience in motion: a guided walk from the festival's hórreo headquarters to the church of Leiguarda, accompanied by live music. The combination of natural landscape, nocturnal journey, and solo repertoire transformed this activity into an intimate ritual of listening and connection with the surroundings.
 </p>
