@@ -70,7 +70,10 @@ const isInternal = noIndex || permalink.startsWith('/borradores/') || permalink.
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    {/* El archivo es .svg/.ico: apuntar a un .png inexistente daba 404 en todas
+        las páginas. */}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" sizes="any" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

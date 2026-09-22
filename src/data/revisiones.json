@@ -1,0 +1,5 @@
+{
+  "_ayuda": "Revisiones de los artículos del blog, escritas desde /borradores/. Cada clave es 'idioma/slug'. estado: 'listo' (listo para publicar) o 'cambios' (hay que corregir algo, la nota dice qué). Este archivo lo escribe la propia página; no hace falta editarlo a mano.",
+  "actualizado": null,
+  "posts": {}
+}
