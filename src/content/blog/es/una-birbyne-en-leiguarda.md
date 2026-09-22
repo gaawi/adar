@@ -9,7 +9,7 @@ author: "Festival ADAR"
 tags: ["birbynė", "instrumentos", "Leiguarda", "Lituania"]
 ---
 
-Casi nadie en la iglesia de Leiguarda había oído hablar de la **birbynė** antes de ese día. Al salir, muchos no sabían pronunciarla del todo —se dice *bir-bi-né*, con la última sílaba abierta—, pero ya no la iban a olvidar.
+Casi nadie en la iglesia de Leiguarda había oído hablar de la **birbynė** antes de ese día. Al salir, muchos no sabían pronunciarla del todo (se dice *bir-bi-né*, con la última sílaba abierta), pero ya no la iban a olvidar.
 
 ## Un juguete de pastores del año 1625
 
@@ -25,7 +25,7 @@ Ese viaje es, para nosotros, lo más ADAR que puede pasar. Porque no es folclore
 
 ## Un clarinetista que se atreve con las dos cosas
 
-Žilvinas Brazauskas —lituano, formado en la gran tradición clarinetística europea— no tocó *solo* la birbynė. En el mismo programa pasó del **clarinete** al instrumento de su tierra y viceversa. Y ahí está la gracia: escuchar seguidos el instrumento que conquistó las salas de concierto del mundo y el que se quedó en las aldeas te hace oír los dos de otra manera. El clarinete suena de pronto más doméstico; la birbynė, más noble.
+Žilvinas Brazauskas (lituano, formado en la gran tradición clarinetística europea) no tocó *solo* la birbynė. En el mismo programa pasó del **clarinete** al instrumento de su tierra y viceversa. Y ahí está la gracia: escuchar seguidos el instrumento que conquistó las salas de concierto del mundo y el que se quedó en las aldeas te hace oír los dos de otra manera. El clarinete suena de pronto más doméstico; la birbynė, más noble.
 
 No hace falta ser experto para notarlo. Solo hace falta estar en la sala.
 

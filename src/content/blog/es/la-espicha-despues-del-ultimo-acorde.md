@@ -15,7 +15,7 @@ En ADAR, cuando cae el último acorde, **no nos vamos.** Sacamos la sidra.
 
 ## Qué es una espicha (por si no eres de aquí)
 
-Para quien no sea asturiano: una **espicha** es una reunión en torno a la sidra. El nombre viene del *espiche*, el palo que tapa el agujero del tonel; "espichar" es abrirlo y empezar a escanciar. Alrededor se pone comida para compartir —empanada, tortilla, quesos, embutido— y la gente **come de pie, se mueve, cambia de conversación, se mezcla.**
+Para quien no sea asturiano: una **espicha** es una reunión en torno a la sidra. El nombre viene del *espiche*, el palo que tapa el agujero del tonel; "espichar" es abrirlo y empezar a escanciar. Alrededor se pone comida para compartir (empanada, tortilla, quesos, embutido) y la gente **come de pie, se mueve, cambia de conversación, se mezcla.**
 
 No es una cena con sitios asignados. Es lo contrario: un formato pensado para que nadie se quede en su esquina.
 
@@ -33,4 +33,4 @@ Esto conecta con algo que creemos a fondo. **El acontecimiento no es solo la hor
 
 La sidra no es el postre del concierto. Es la parte donde la comunidad, que la música había juntado en silencio, por fin **habla en voz alta.** Y para un festival que existe para tejer vínculos en el medio rural, esa parte no es un extra. Es tan importante como el programa.
 
-Así que sí: terminamos con el tonel abierto, la empanada partida y todos revueltos. Porque la mejor manera de despedir la música es exactamente la misma con la que este territorio despide todo lo que importa —**juntos, de pie y con un culín en la mano.**
+Así que sí: terminamos con el tonel abierto, la empanada partida y todos revueltos. Porque la mejor manera de despedir la música es exactamente la misma con la que este territorio despide todo lo que importa: **juntos, de pie y con un culín en la mano.**

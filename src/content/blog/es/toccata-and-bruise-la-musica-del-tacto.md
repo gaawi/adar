@@ -41,7 +41,7 @@ La obra plantea un contraste que quizá nunca te habías planteado, y que es fas
 
 *Toccata & Bruise* pone esos dos mundos a hablar. Coge una música escrita para un instrumento **insensible al tacto** (el órgano de Sweelinck), pasada por un pianista **obsesionado con el tacto** (Gould), y la convierte en **una coreografía visual y gestual** del propio acto de tocar.
 
-De ahí el título: *toccata* —de *toccare*, tocar— y *bruise*, el moratón. El tacto que produce música y el tacto que deja marca.
+De ahí el título: *toccata* (de *toccare*, tocar) y *bruise*, el moratón. El tacto que produce música y el tacto que deja marca.
 
 ## Cuando el sonido desaparece y solo queda el gesto
 
@@ -49,7 +49,7 @@ La estructura sigue las tres secciones de la obra original: **fuga, toccata y fa
 
 La compositora lo compara con **un molde perdido**: esa técnica de fundición donde el modelo original se destruye para que exista la pieza final. En la obra, **los sonidos del piano van desapareciendo del proceso**, y al final solo queda **el rastro del gesto y del tacto que los generó.**
 
-Piénsalo: una pieza musical que termina prescindiendo de la música, dejando visible únicamente el cuerpo que la producía. Es una idea que podría sonar a boutade de laboratorio, y sin embargo, viéndola, produce algo muy físico —casi incómodo—, porque de pronto miras las manos de alguien como no las habías mirado nunca.
+Piénsalo: una pieza musical que termina prescindiendo de la música, dejando visible únicamente el cuerpo que la producía. Es una idea que podría sonar a boutade de laboratorio, y sin embargo, viéndola, produce algo muy físico, casi incómodo, porque de pronto miras las manos de alguien como no las habías mirado nunca.
 
 ## Por qué esto, en Leiguarda
 

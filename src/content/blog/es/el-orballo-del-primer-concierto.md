@@ -15,7 +15,7 @@ Y llovió.
 
 ## Una semana de sol y justo esa noche, orballo
 
-Había hecho sol toda la semana. Ese día, cuando el escenario ya estaba montado —un gran **marco amarillo** plantado en la hierba, con la aldea de Leiguarda de telón de fondo—, apareció el **orballo**: esa lluvia fina asturiana que no llega a mojar de golpe pero que no para nunca.
+Había hecho sol toda la semana. Ese día, cuando el escenario ya estaba montado (un gran **marco amarillo** plantado en la hierba, con la aldea de Leiguarda de telón de fondo), apareció el **orballo**: esa lluvia fina asturiana que no llega a mojar de golpe pero que no para nunca.
 
 Para un concierto al aire libre con instrumentos de cuerda y madera, el orballo no es un detalle atmosférico. Es un problema. **No se pudo interpretar el programa entero.** Hubo que recortar, decidir sobre la marcha, proteger los instrumentos.
 
@@ -29,7 +29,7 @@ Eso contestó, de golpe y sin discusión, la pregunta que nos hacían todos: *¿
 
 ## Lo que se tocó aquella noche
 
-El programa ya contenía, en germen, todo lo que ADAR sería después. Obras de **Mendelssohn, Haydn y Falla** —el repertorio clásico y la tradición española— junto a **John Harbison**, compositor estadounidense contemporáneo. Y una pieza nueva: ***Atlantic*, de Marcos Fernández, escrita expresamente para la ocasión.**
+El programa ya contenía, en germen, todo lo que ADAR sería después. Obras de **Mendelssohn, Haydn y Falla**, el repertorio clásico y la tradición española, junto a **John Harbison**, compositor estadounidense contemporáneo. Y una pieza nueva: ***Atlantic*, de Marcos Fernández, escrita expresamente para la ocasión.**
 
 Fíjate en ese último detalle, porque no es menor. **En su primerísimo concierto, un festival sin presupuesto ni historial encargó una obra nueva.** Podríamos haber tocado solo repertorio seguro. Decidimos que, si esto iba a existir, iba a existir creando cosas y no solo repitiéndolas. Ese encargo de 2021 es el abuelo de todos los que han venido después.
 

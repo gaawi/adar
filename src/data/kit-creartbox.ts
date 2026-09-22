@@ -35,7 +35,7 @@ The centre of the season is the New York Series: four productions at The DiMenna
 
 ## Eleven works came through the open call
 
-Eleven of the works this season reached the programme through CreArtBox's open call for scores — more than in any season before. In April an entire evening is given over to it.
+Eleven of the works this season reached the programme through CreArtBox's open call for scores, more than in any season before. In April an entire evening is given over to it.
 
 ## A world premiere in December
 
@@ -47,7 +47,7 @@ The ensemble opens the Engelbach-Hart Music Festival at Illinois College with fr
 
 ## Five days in Kuopio
 
-Guillermo Laporta and Josefina Urraca spend five days at the Kuopio Conservatory in Finland, giving masterclasses and a workshop on building a chamber piece on stage — working closer to the audience, drawing on design and other disciplines.
+Guillermo Laporta and Josefina Urraca spend five days at the Kuopio Conservatory in Finland, giving masterclasses and a workshop on building a chamber piece on stage: working closer to the audience, drawing on design and other disciplines.
 
 ## The season ends in Asturias
 
@@ -60,7 +60,7 @@ The seventh Festival ADAR runs from 2 to 15 August 2027 across rural Asturias: r
     slug: 'currents',
     title: 'Currents opens the season',
     excerpt:
-      'Built around one idea — current: moving air, moving water, energy going from one place to another. 30 October 2026, The DiMenna Center, 7:30 pm.',
+      'Built around one idea. Current: moving air, moving water, energy going from one place to another. 30 October 2026, The DiMenna Center, 7:30 pm.',
     image: PHOTO + 'creartbox-currents-dimenna.jpg',
     status: 'publish',
     date: '2026-10-30',
@@ -107,7 +107,7 @@ The evening opens with the world premiere of Hannah Selin's Tectonic Lullaby, wr
 
 ## Petroushka, five players
 
-It closes with Stravinsky's Petroushka in a chamber arrangement — the ballet reduced to the forces of the room, and the more exposed for it.
+It closes with Stravinsky's Petroushka in a chamber arrangement: the ballet reduced to the forces of the room, and the more exposed for it.
 
 ## December in New York
 
@@ -120,7 +120,7 @@ The DiMenna Center for Classical Music, 11 December 2026, 7:30 pm.
     slug: 'pressure-and-release',
     title: 'Pressure and Release: seven works, seven composers, one evening',
     excerpt:
-      'An entire production given over to the open call — the first time CreArtBox has programmed a whole evening this way. 23 April 2027.',
+      'An entire production given over to the open call, the first time CreArtBox has programmed a whole evening this way. 23 April 2027.',
     image: PHOTO + 'creartbox-fragile-form.jpg',
     status: 'publish',
     date: '2027-04-23',
@@ -163,7 +163,7 @@ The last of the four New York Series productions.
 
 ## Sibelius in G minor
 
-The season closes with the Piano Quintet in G minor — early Sibelius, and rarely played.
+The season closes with the Piano Quintet in G minor: early Sibelius, and rarely played.
 
 ## A score that travelled both ways
 

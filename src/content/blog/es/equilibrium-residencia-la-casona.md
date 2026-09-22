@@ -9,7 +9,7 @@ author: "Festival ADAR"
 tags: ["residencia", "La Casona de Belmonte", "proceso creativo", "Equilibrium"]
 ---
 
-La mayoría de los conciertos que ves son la punta de un iceberg. Debajo hay meses de trabajo que ocurren en otra parte —en conservatorios de ciudad, en salas de ensayo alquiladas por horas— y que tú nunca ves. La música llega a tu pueblo ya hecha, terminada, de visita.
+La mayoría de los conciertos que ves son la punta de un iceberg. Debajo hay meses de trabajo que ocurren en otra parte (en conservatorios de ciudad, en salas de ensayo alquiladas por horas) y que tú nunca ves. La música llega a tu pueblo ya hecha, terminada, de visita.
 
 Una **residencia artística** le da la vuelta a eso. En vez de que la música pase por aquí, hace que **nazca aquí**.
 

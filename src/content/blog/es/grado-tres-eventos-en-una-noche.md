@@ -23,7 +23,7 @@ Le ofrecimos un sitio que nadie habría considerado un espacio expositivo: **un 
 
 Williams la recuperó como espacio de arte y montó dentro una pieza que hacía algo poco habitual: **incorporaba alimentos que el público podía degustar.** Es decir, quien se acercaba no miraba la obra: **la comía.** Se convertía en participante activo, no en espectador.
 
-Piensa en el recorrido completo de ese objeto. Una vitrina construida para dar información turística. Años cerrada, invisible, muerta. Una noche de agosto: obra de arte comestible en el centro del pueblo. Y a la mañana siguiente, la misma caja de cristal —pero ya con una historia dentro.
+Piensa en el recorrido completo de ese objeto. Una vitrina construida para dar información turística. Años cerrada, invisible, muerta. Una noche de agosto: obra de arte comestible en el centro del pueblo. Y a la mañana siguiente, la misma caja de cristal, pero ya con una historia dentro.
 
 **Eso es «patrimonio activado» aplicado a algo que nadie consideraba patrimonio.** No hace falta un monasterio del siglo XI para que el gesto funcione. Basta con un cubículo abandonado y alguien que lo mire con ganas.
 
@@ -45,7 +45,7 @@ En la **capilla**, una performance: algo más arriesgado, para quien tiene curio
 
 En la **calle**, una instalación de acceso libre: para el que pasaba por allí sin plan y se encontró con arte de camino a otra cosa.
 
-Ese tercer público es el más valioso de todos, y el más difícil de conseguir. **Es el que nunca compraría una entrada** —no por falta de interés, sino porque «eso no es para mí»—. Cuando el arte está en el cubículo de la oficina de turismo, ese filtro desaparece. No has decidido ir a un evento cultural: simplemente te ha pasado.
+Ese tercer público es el más valioso de todos, y el más difícil de conseguir. **Es el que nunca compraría una entrada** (no por falta de interés, sino porque «eso no es para mí»). Cuando el arte está en el cubículo de la oficina de turismo, ese filtro desaparece. No has decidido ir a un evento cultural: simplemente te ha pasado.
 
 ## Grado, un socio recurrente
 

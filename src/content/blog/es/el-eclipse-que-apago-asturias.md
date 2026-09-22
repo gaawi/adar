@@ -11,11 +11,11 @@ tags: ["eclipse", "crónica", "La Corredoria", "2026"]
 
 Hay conciertos que se programan por una fecha. Este se programó por un fenómeno que no volverá a ocurrir en Asturias en lo que dura una vida.
 
-El **12 de agosto de 2026**, el Principado entero quedó dentro de la franja de totalidad del eclipse solar. No una parte: **Asturias completa**, de Oviedo a los Picos, vio la sombra de la Luna tapar el disco entero del sol. Era el **primer eclipse total visible desde la España peninsular desde 1905** —121 años—, y la línea central del fenómeno pasó, literalmente, por encima de nosotros.
+El **12 de agosto de 2026**, el Principado entero quedó dentro de la franja de totalidad del eclipse solar. No una parte: **Asturias completa**, de Oviedo a los Picos, vio la sombra de la Luna tapar el disco entero del sol. Era el **primer eclipse total visible desde la España peninsular desde 1905** (121 años) y la línea central del fenómeno pasó, literalmente, por encima de nosotros.
 
 ## Tocar contra el reloj del cielo
 
-Un eclipse no admite ensayo con público, ni segundo pase. La totalidad estaba prevista para las **20:27**, con el sol a apenas **diez grados sobre el horizonte**, casi rozando el mar por el oeste. Es un margen brutal: bastaba una nube mal puesta —y agosto en Asturias es el tramo más nuboso de todo el recorrido del eclipse en España— para que el instante se nos escapara.
+Un eclipse no admite ensayo con público, ni segundo pase. La totalidad estaba prevista para las **20:27**, con el sol a apenas **diez grados sobre el horizonte**, casi rozando el mar por el oeste. Es un margen brutal: bastaba una nube mal puesta (y agosto en Asturias es el tramo más nuboso de todo el recorrido del eclipse en España) para que el instante se nos escapara.
 
 Por eso subimos al **Alto de La Corredoria**: un horizonte limpio hacia el oeste-noroeste, sin edificios, sin árboles altos, mirando a donde el sol iba a apagarse.
 
@@ -25,7 +25,7 @@ La pregunta que nos hicimos al diseñar el programa fue sencilla y difícil: **�
 
 No quisimos ilustrar el eclipse ni "acompañarlo" como quien pone banda sonora. Buscamos lo contrario: una música que hiciera con el oído lo que el eclipse hacía con la vista. Sonidos que se van retirando. Notas largas que parecen no acabar nunca. Silencios que, de pronto, pesan.
 
-Y entonces llegó el minuto y medio de totalidad. La temperatura bajó. Los pájaros callaron —eso no se puede provocar, solo esperar—. La gente dejó de mirar los teléfonos. Durante **poco menos de dos minutos**, un alto de Belmonte de Miranda fue uno de los mejores sitios del planeta para estar vivo y en silencio a la vez.
+Y entonces llegó el minuto y medio de totalidad. La temperatura bajó. Los pájaros callaron (eso no se puede provocar, solo esperar). La gente dejó de mirar los teléfonos. Durante **poco menos de dos minutos**, un alto de Belmonte de Miranda fue uno de los mejores sitios del planeta para estar vivo y en silencio a la vez.
 
 ## Por qué esto es exactamente lo que hace ADAR
 

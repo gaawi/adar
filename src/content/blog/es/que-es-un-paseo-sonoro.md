@@ -33,7 +33,7 @@ Y ahí pasó algo que no estaba en el guion. Al poner la música más refinada d
 
 ## La misma noche, tres capas de patrimonio
 
-Aquella jornada de 2023 siguió y es un buen retrato de cómo pensamos la programación. Después del museo hubo un **micro-concierto en la Panera Casantos** —aforo mínimo, dentro de una estructura de madera sobre pegollos— y, ya de noche, un **paseo sonoro por el Campo de la Iglesia de Leiguarda con video mapping proyectado sobre la fachada de piedra.**
+Aquella jornada de 2023 siguió y es un buen retrato de cómo pensamos la programación. Después del museo hubo un **micro-concierto en la Panera Casantos** (aforo mínimo, dentro de una estructura de madera sobre pegollos) y, ya de noche, un **paseo sonoro por el Campo de la Iglesia de Leiguarda con video mapping proyectado sobre la fachada de piedra.**
 
 Patrimonio etnográfico, arquitectura rural y arquitectura religiosa, en una sola noche, recorridos a pie. La iglesia convertida a la vez en pantalla y en caja de resonancia.
 

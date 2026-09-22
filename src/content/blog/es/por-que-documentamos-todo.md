@@ -35,13 +35,13 @@ Tocamos en monasterios con problemas de conservación. En paneras de madera que 
 
 **No hay ninguna garantía de que todos esos sitios sigan ahí dentro de treinta años.** Ojalá. Pero la despoblación y la falta de uso son implacables, y ya hemos visto desaparecer construcciones así.
 
-Cuando fotografías bien un espacio y documentas lo que ocurrió dentro, estás haciendo dos cosas a la vez: darle un motivo para seguir existiendo en el presente —**un edificio con uso es un edificio que se conserva**— y dejar constancia por si ese motivo no llega a tiempo.
+Cuando fotografías bien un espacio y documentas lo que ocurrió dentro, estás haciendo dos cosas a la vez: darle un motivo para seguir existiendo en el presente, **un edificio con uso es un edificio que se conserva**, y dejar constancia por si ese motivo no llega a tiempo.
 
 Es la parte del trabajo que hacemos con más cuidado y de la que menos nos gusta hablar.
 
 ## 3. Porque el aforo es diminuto y el archivo no tiene aforo
 
-Un concierto en un monasterio rural puede tener ochenta personas dentro. Eso es maravilloso —esa cercanía es justo lo que buscamos— y es, a la vez, poquísimo.
+Un concierto en un monasterio rural puede tener ochenta personas dentro. Eso es maravilloso, esa cercanía es justo lo que buscamos, y es, a la vez, poquísimo.
 
 Nuestros objetivos incluyen **conectar zonas rurales de Asturias con audiencias y circuitos internacionales.** Con ochenta butacas por noche, eso es imposible por la vía de la asistencia. Solo se consigue de una manera: **que lo que pasa aquí se pueda ver desde fuera.**
 

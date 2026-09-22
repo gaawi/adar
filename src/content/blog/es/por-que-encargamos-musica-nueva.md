@@ -19,7 +19,7 @@ Nosotros lo hicimos en nuestro primer concierto. Y seguimos haciéndolo.
 
 El **14 de agosto de 2021**, en el campo de la iglesia de Leiguarda, el programa del concierto inaugural incluía Mendelssohn, Haydn, Falla, John Harbison... y ***Atlantic*, de Marcos Fernández, escrita expresamente para la ocasión.**
 
-Aquello era un festival sin ediciones anteriores, sin presupuesto consolidado, sin público garantizado —de hecho, esa noche llovió y no se pudo tocar el programa entero—. Lo prudente habría sido tocar solo repertorio seguro y dejar los experimentos para cuando hubiera dinero.
+Aquello era un festival sin ediciones anteriores, sin presupuesto consolidado, sin público garantizado (de hecho, esa noche llovió y no se pudo tocar el programa entero). Lo prudente habría sido tocar solo repertorio seguro y dejar los experimentos para cuando hubiera dinero.
 
 Hicimos lo contrario a propósito, porque un encargo en el primer concierto **define lo que eres.** Dice: este proyecto no viene a repetir el canon, viene a añadirle cosas.
 
@@ -41,7 +41,7 @@ Nuestros encargos no son un cheque en blanco. Piden una cosa muy concreta: que l
 
 En la convocatoria de compositor residente lo decimos casi con estas palabras: buscamos a alguien con interés real en **procesos situados**, en trabajar con intérpretes y en **crear con escucha del contexto**. La residencia ofrece un marco para componer, **probar material con los intérpretes** y construir **una pieza situada en diálogo con el territorio.**
 
-Traducido: no queremos una obra que podría haberse escrito en cualquier parte y que casualmente se estrena aquí. Queremos una obra que **tenga que ver con este lugar** — con su paisaje, su acústica, su gente, su silencio.
+Traducido: no queremos una obra que podría haberse escrito en cualquier parte y que casualmente se estrena aquí. Queremos una obra que **tenga que ver con este lugar**: con su paisaje, su acústica, su gente, su silencio.
 
 Y hay una ventaja práctica enorme en hacerlo así. El compositor no escribe a ciegas en su casa y manda un PDF. Está **en la sede, con los músicos delante**, probando si esa idea suena como pensaba. Puede corregir. Puede tirar algo que no funciona. La obra llega al estreno ya rodada.
 
@@ -51,7 +51,7 @@ Cuando esto sale bien, el resultado es música que le habla directamente a su p�
 
 Pensemos en *Afilador*, de **Andrea Casarrubios**, que tocamos en el mercado de Pola de Somiedo. Una pieza construida sobre la figura del afilador ambulante, ese oficio que iba de pueblo en pueblo anunciándose con un silbato. Delante de un público que **recuerda perfectamente al afilador pasando por su calle.**
 
-Ese día, la música contemporánea —esa cosa que supuestamente nadie entiende— fue lo más cercano del programa. Hablaba de algo que la gente de la sala conocía mejor que nadie.
+Ese día, la música contemporánea, esa cosa que supuestamente nadie entiende, fue lo más cercano del programa. Hablaba de algo que la gente de la sala conocía mejor que nadie.
 
 Ese es el objetivo del encargo. No la modernidad por la modernidad: **la pertinencia.**
 

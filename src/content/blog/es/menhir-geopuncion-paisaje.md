@@ -33,7 +33,7 @@ Es un menhir invisible. No queda piedra, pero queda marca.
 
 ## Lo humano y lo no humano
 
-La otra mitad de su investigación es igual de pertinente para un festival rural. Menhir indaga en **los modos de escucha y de conocimiento** como vía para **repensar la habitabilidad del territorio**, explorando la simbiosis entre música y paisaje —y en particular **el paisaje asturiano**.
+La otra mitad de su investigación es igual de pertinente para un festival rural. Menhir indaga en **los modos de escucha y de conocimiento** como vía para **repensar la habitabilidad del territorio**, explorando la simbiosis entre música y paisaje, y en particular **el paisaje asturiano**.
 
 Esa expresión, «lo humano y lo no humano», es clave. En una ciudad es fácil pensar que el mundo se compone de personas y de cosas que las personas han hecho. En el medio rural asturiano eso es insostenible: aquí el monte, el agua, el ganado, el bosque y el clima **no son escenografía, son actores.** Deciden si se puede tocar al aire libre. Deciden si hay orballo. Deciden cuándo se hace de noche.
 
@@ -43,7 +43,7 @@ Un arte que se toma en serio esa convivencia tiene mucho más que decir sobre es
 
 Todo esto podría quedarse en especulación agradable si no hubiera obra detrás. La hay.
 
-Menhir ha publicado el LP ***Geomantic Works*** (2022, Piano and Coffee Records), ***Just Before Silence*** junto a **Suso Saiz** (2021), el sencillo ***Osiris*** (2021) y ***Music for Mountain*** (2016) —fíjate en ese título de hace diez años: *música para una montaña*, no música para un público—.
+Menhir ha publicado el LP ***Geomantic Works*** (2022, Piano and Coffee Records), ***Just Before Silence*** junto a **Suso Saiz** (2021), el sencillo ***Osiris*** (2021) y ***Music for Mountain*** (2016). Fíjate en ese título de hace diez años: *música para una montaña*, no música para un público.
 
 Y han presentado su trabajo en sitios que no reparten credenciales a la ligera: el **Museo Reina Sofía**, **CentroCentro Cibeles**, la **Academia de España en Roma**, **La Casa Encendida**, el **Museo Arqueológico Nacional** y **LABoral Centro de Arte**.
 

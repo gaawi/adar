@@ -23,7 +23,7 @@ Ahí está, en una frase, el gesto que resume el proyecto entero: coger una cons
 
 ## Del sueño al registro oficial
 
-No dejaron pasar mucho tiempo. El sueño tenía nombre y registro: **Asociación para el Desarrollo de las Artes en el Medio Rural (ADAR)**, fundada en 2020. Las siglas se convirtieron en programa —*Artes, Desarrollo, Rural*— y de la asociación nació el festival, que estrenó en agosto de 2021.
+No dejaron pasar mucho tiempo. El sueño tenía nombre y registro: **Asociación para el Desarrollo de las Artes en el Medio Rural (ADAR)**, fundada en 2020. Las siglas se convirtieron en programa (*Artes, Desarrollo, Rural*) y de la asociación nació el festival, que estrenó en agosto de 2021.
 
 La idea nunca fue montar «un festival más». Como lo cuentan ellos:
 

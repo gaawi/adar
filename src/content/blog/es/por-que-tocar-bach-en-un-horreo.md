@@ -29,7 +29,7 @@ El espacio responde. Empuja al intérprete a tocar más despacio, a dejar respir
 
 En un auditorio escuchas con los oídos. En los espacios de ADAR escuchas con **todo**.
 
-Notas el frío de la piedra, el olor a madera vieja, la luz que entra de lado a las ocho de la tarde. Oyes el silencio _de verdad_ —no el aire acondicionado, sino el silencio de un pueblo donde no pasan coches—. Y a veces oyes también lo que no estaba en el programa: un pájaro fuera, el viento, una campana lejana. En vez de tapar esos sonidos, los dejamos entrar. Forman parte del concierto.
+Notas el frío de la piedra, el olor a madera vieja, la luz que entra de lado a las ocho de la tarde. Oyes el silencio _de verdad_ (no el aire acondicionado, sino el silencio de un pueblo donde no pasan coches). Y a veces oyes también lo que no estaba en el programa: un pájaro fuera, el viento, una campana lejana. En vez de tapar esos sonidos, los dejamos entrar. Forman parte del concierto.
 
 Esa escucha con el cuerpo entero es imposible de reproducir en streaming o en un disco. Es la razón por la que la gente conduce media hora por carreteras de montaña para sentarse en un banco duro. Lo saben: eso no se graba.
 

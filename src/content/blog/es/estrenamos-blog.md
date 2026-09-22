@@ -10,7 +10,7 @@ tags:
   - novedades
 ---
 
-Durante años, ADAR ha vivido sobre todo en agosto: once conciertos, hórreos, iglesias y palacios llenos de música. Pero el festival pasa el resto del año trabajando —programando, cuidando el patrimonio, tejiendo comunidad— y hasta ahora no teníamos dónde contarlo.
+Durante años, ADAR ha vivido sobre todo en agosto: once conciertos, hórreos, iglesias y palacios llenos de música. Pero el festival pasa el resto del año trabajando (programando, cuidando el patrimonio, tejiendo comunidad) y hasta ahora no teníamos dónde contarlo.
 
 Este blog es ese sitio. Aquí publicaremos **noticias, historias y artículos**: lo que preparamos para la próxima edición, las sedes que visitamos, las personas que hacen posible el proyecto y algo de la vida cultural del medio rural asturiano.
 

@@ -41,7 +41,7 @@ Fíjate en algo de la lista anterior: casi todas ellas son **compositoras vivas.
 
 Eso es lo verdaderamente decisivo, más que el género. Un programa que mezcla a Vivaldi con Jessie Montgomery, o a Boccherini con Casarrubios, le está diciendo al público algo muy concreto: **que esto no se acabó.** Que la música clásica no es un catálogo cerrado de obras de gente muerta, sino un oficio que alguien está practicando ahora mismo, en algún sitio, y que puede hablar de la pandemia, del afilador que pasaba por tu calle o del paisaje que tienes delante.
 
-Un festival que solo programa muertos convierte la música en museo. Y en el medio rural asturiano —donde la lucha es contra la idea de que lo importante ya pasó o pasa lejos— ese mensaje sería justo el contrario del que queremos dar.
+Un festival que solo programa muertos convierte la música en museo. Y en el medio rural asturiano, donde la lucha es contra la idea de que lo importante ya pasó o pasa lejos, ese mensaje sería justo el contrario del que queremos dar.
 
 ## Cómo funciona en la práctica
 
@@ -49,7 +49,7 @@ La receta que usamos no tiene ningún misterio: **poner lo nuevo dentro de lo co
 
 Nadie programa una noche entera de música de 2024 en un pueblo donde no hay costumbre de conciertos. Pero un programa que va de Boccherini a Debussy, luego a tres piezas de Casarrubios y cierra con Dvořák funciona perfectamente. El público entra por lo que reconoce, se queda por curiosidad, y descubre que lo desconocido no le ha hecho daño.
 
-Y hay otra cosa que se nota: **cuando la compositora está en la sala** —tocando su propia obra, como hizo Casarrubios en Leiguarda—, la música contemporánea deja de ser una abstracción. Es una persona a la que puedes ver respirar, y luego saludar en la espicha. Cuesta mucho menos escuchar con simpatía a alguien a quien vas a conocer en media hora.
+Y hay otra cosa que se nota: **cuando la compositora está en la sala** (tocando su propia obra, como hizo Casarrubios en Leiguarda), la música contemporánea deja de ser una abstracción. Es una persona a la que puedes ver respirar, y luego saludar en la espicha. Cuesta mucho menos escuchar con simpatía a alguien a quien vas a conocer en media hora.
 
 ## Sin etiqueta
 

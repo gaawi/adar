@@ -17,7 +17,7 @@ Queremos desmontar esa frase, porque es la más injusta de todas. Y vamos a hace
 
 David Lang es un compositor estadounidense, **premio Pulitzer de música** en 2008 por su *The Little Match Girl Passion*, y una de las cabezas del colectivo *Bang on a Can*, que lleva décadas acercando la música de hoy a públicos que creían que no era para ellos.
 
-Su música suele etiquetarse como **postminimalista**. Traducido del argot: en vez de melodías que van "de aquí para allá" como en una canción, Lang trabaja con **pequeñas células que se repiten y cambian poquito a poco.** «sweet air» —una pieza serena, hipnótica, que forma parte de su obra *Child*— es un ejemplo perfecto.
+Su música suele etiquetarse como **postminimalista**. Traducido del argot: en vez de melodías que van "de aquí para allá" como en una canción, Lang trabaja con **pequeñas células que se repiten y cambian poquito a poco.** «sweet air» (una pieza serena, hipnótica, que forma parte de su obra *Child*) es un ejemplo perfecto.
 
 ## El error: escucharla como si fuera Beethoven
 
@@ -37,4 +37,4 @@ Para la próxima vez que te enfrentes a una pieza así, prueba esto:
 
 En ADAR mezclamos a Bach con Ligeti, a Vivaldi con David Lang, a propósito. No para presumir de modernos, sino porque **la buena música de todas las épocas se lleva mejor de lo que la gente teme.** Un público que acaba de emocionarse con una sarabanda barroca está perfectamente preparado para dejarse llevar por «sweet air» diez minutos después. Solo hace falta que nadie le diga antes que "no lo va a entender".
 
-Así que la próxima vez, cuando te venga esa frase a la boca, cámbiala por otra: *"a ver qué me hace sentir esto".* Es una manera mucho más honesta —y mucho más divertida— de estar en un concierto.
+Así que la próxima vez, cuando te venga esa frase a la boca, cámbiala por otra: *"a ver qué me hace sentir esto".* Es una manera mucho más honesta, y mucho más divertida, de estar en un concierto.

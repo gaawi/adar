@@ -3,7 +3,7 @@ title: "Hórreos y paneras: por qué un festival de música organiza un concurso
 lang: es
 date: "2026-08-18T10:00:00.000Z"
 status: draft
-excerpt: "El hórreo es la obra de arquitectura popular más asturiana que existe, y desaparece en silencio. Contamos por qué ADAR —un festival de música— decidió meterse a defenderlo."
+excerpt: "El hórreo es la obra de arquitectura popular más asturiana que existe, y desaparece en silencio. Contamos por qué ADAR, un festival de música, decidió meterse a defenderlo."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Villanueva%20de%20Oscos_Fotos/13.08.26_Villanueva%20de%20Oscos_WEB/13.08.26_Villanueva%20de%20Oscos_WEB_2.jpg"
 author: "Festival ADAR"
 tags: ["hórreos", "patrimonio", "arquitectura popular", "concurso"]
@@ -13,7 +13,7 @@ Suena raro dicho así: un festival de música que convoca un **concurso de hórr
 
 ## La escultura útil de Asturias
 
-El hórreo es probablemente la pieza de arquitectura popular más reconocible del noroeste peninsular. Una construcción de madera elevada sobre pilares —los *pegollos*—, rematados por unas losas planas, las *muelas*, cuya única función es que los ratones no puedan subir a la despensa. Dentro se guardaba el grano, la matanza, la cosecha: **era la nevera, el almacén y el seguro de vida de una familia campesina.**
+El hórreo es probablemente la pieza de arquitectura popular más reconocible del noroeste peninsular. Una construcción de madera elevada sobre pilares, los *pegollos*, rematados por unas losas planas, las *muelas*, cuya única función es que los ratones no puedan subir a la despensa. Dentro se guardaba el grano, la matanza, la cosecha: **era la nevera, el almacén y el seguro de vida de una familia campesina.**
 
 La **panera** es su hermana mayor: más grande, rectangular, sobre seis pilares o más. Muchas están talladas, pintadas, fechadas. No son monumentos que alguien encargó a un arquitecto famoso: son el saber acumulado de generaciones que aprendieron, sin planos, a construir algo perfecto para su función y bellísimo casi por accidente.
 

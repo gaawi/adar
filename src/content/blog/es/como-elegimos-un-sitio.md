@@ -31,7 +31,7 @@ Aquí está la diferencia entre alquilar un espacio y trabajar con él.
 
 Antes de decidir nada, hay que averiguar **qué es ese sitio para la gente que vive alrededor.** ¿Es una iglesia en uso, donde hay misa el domingo? ¿Es un edificio que despierta orgullo, o uno que despierta un pleito vecinal? ¿Hay alguien que lo cuida desde hace treinta años sin cobrar nada?
 
-Esa persona existe casi siempre. Y hablar con ella primero **no es cortesía: es información.** Sabe dónde entra el agua, a qué hora da el sol de lado, qué se puede tocar y qué no, y cuánta gente cabe de verdad —no cuánta cabe según el plano—.
+Esa persona existe casi siempre. Y hablar con ella primero **no es cortesía: es información.** Sabe dónde entra el agua, a qué hora da el sol de lado, qué se puede tocar y qué no, y cuánta gente cabe de verdad, no cuánta cabe según el plano.
 
 Un concierto que ignora eso puede salir bien una vez. Nunca podrá volver.
 
@@ -71,7 +71,7 @@ Cuando esa conexión existe, no hay que explicarla: **el público la nota.** Sal
 
 El último paso se decide antes, no después: **cómo se va a fotografiar y filmar.**
 
-Suena a comunicación, y también lo es. Pero para nosotros es parte de la obra. El concierto lo viven ochenta personas; el archivo lo puede ver cualquiera, hoy o en veinte años. Y para sitios frágiles —un monasterio con problemas de conservación, una panera de madera— **la documentación es lo único que va a quedar con seguridad.**
+Suena a comunicación, y también lo es. Pero para nosotros es parte de la obra. El concierto lo viven ochenta personas; el archivo lo puede ver cualquiera, hoy o en veinte años. Y para sitios frágiles (un monasterio con problemas de conservación, una panera de madera), **la documentación es lo único que va a quedar con seguridad.**
 
 ## El resumen
 

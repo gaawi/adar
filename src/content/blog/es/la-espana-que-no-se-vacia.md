@@ -19,7 +19,7 @@ Un pueblo no se vacía solo de **gente**. Se vacía, antes, de **motivos para qu
 
 ## El vacío cultural también cuenta
 
-Cuando en un territorio no pasa nada —ni un concierto, ni una exposición, ni un acontecimiento que merezca la pena contar— se instala una idea peligrosa: la de que **lo importante ocurre siempre en otro sitio.** En la ciudad. Lejos. Donde tú no estás.
+Cuando en un territorio no pasa nada (ni un concierto, ni una exposición, ni un acontecimiento que merezca la pena contar), se instala una idea peligrosa: la de que **lo importante ocurre siempre en otro sitio.** En la ciudad. Lejos. Donde tú no estás.
 
 Esa idea es corrosiva. Un chaval que crece con ella aprende que para vivir cosas buenas hay que marcharse. Y termina marchándose, no solo por el trabajo, sino por la sensación de estar de más en su propio paisaje.
 
@@ -37,8 +37,8 @@ Lo que sí puede hacer un festival es más modesto y, creemos, nada pequeño:
 
 ## Llenar, aunque sea por una noche
 
-Cada vez que una iglesia de aldea se llena para escuchar música, ese pueblo —esa noche— no está vacío. Está exactamente al revés: está en el centro de algo.
+Cada vez que una iglesia de aldea se llena para escuchar música, ese pueblo, esa noche, no está vacío. Está exactamente al revés: está en el centro de algo.
 
-No es un truco de marketing. Es una manera de plantar una idea: **que este territorio merece cosas buenas, y que puede tenerlas.** Si esa idea prende en unos cuantos —un vecino que se anima, un chaval que decide estudiar música, un ayuntamiento que apuesta por la cultura— habremos hecho mucho más que un concierto.
+No es un truco de marketing. Es una manera de plantar una idea: **que este territorio merece cosas buenas, y que puede tenerlas.** Si esa idea prende en unos cuantos (un vecino que se anima, un chaval que decide estudiar música, un ayuntamiento que apuesta por la cultura), habremos hecho mucho más que un concierto.
 
 La España vaciada existe. Pero hay noches, en Belmonte, en Leiguarda, en un alto de monte, en las que se vacía un poco menos. Nosotros trabajamos para que haya más de esas noches. Y para que, algún día, dejen de ser la excepción.

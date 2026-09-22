@@ -17,7 +17,7 @@ En las últimas ediciones hemos tocado en el de **Santa María la Real de Obona*
 
 Nadie construyó Obona pensando en música de cámara. Y sin embargo, ahí está el asunto: **los monasterios se construyeron para el sonido humano.**
 
-Su función era albergar canto litúrgico varias veces al día, todos los días, durante siglos. Voces sin amplificar que tenían que llenar un espacio grande y llegar con claridad. Toda la arquitectura —la altura, la piedra, la proporción de las naves, la bóveda— es una respuesta a ese problema.
+Su función era albergar canto litúrgico varias veces al día, todos los días, durante siglos. Voces sin amplificar que tenían que llenar un espacio grande y llegar con claridad. Toda la arquitectura (la altura, la piedra, la proporción de las naves, la bóveda) es una respuesta a ese problema.
 
 El resultado es una **reverberación larga y envolvente**: el sonido no se apaga cuando el instrumento calla, sigue vivo un par de segundos más, mezclándose con lo siguiente. En un estudio de grabación eso se considera un defecto que hay que corregir. Para música escrita antes del siglo XIX, **es el medio natural.**
 
@@ -49,7 +49,7 @@ Muchos de estos monasterios tienen problemas de conservación, poco uso y visita
 
 **Programar un concierto en un monasterio es un acto de conservación**, aunque no toquemos una piedra. Lleva gente, genera fotografías y relato, aparece en prensa, obliga a que alguien lo abra, lo limpie y lo revise. Le da un motivo para existir en el presente, no solo en el folleto turístico.
 
-Nuestros objetivos incluyen literalmente **«patrimonio activado»**: reutilizar espacios rurales no convencionales o en desuso —hórreos, iglesias, monasterios, palacios, capillas, mercados—. La palabra clave es *activado*. No visitado, no fotografiado: **usado.**
+Nuestros objetivos incluyen literalmente **«patrimonio activado»**: reutilizar espacios rurales no convencionales o en desuso (hórreos, iglesias, monasterios, palacios, capillas, mercados). La palabra clave es *activado*. No visitado, no fotografiado: **usado.**
 
 ## Mil años esperando
 

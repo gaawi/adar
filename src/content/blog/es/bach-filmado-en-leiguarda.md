@@ -19,7 +19,7 @@ Y esa distinción es el asunto de este artículo.
 
 Casi todos los festivales graban sus conciertos. Se pone una cámara al fondo, quizá dos, y se sube el resultado a YouTube. Es útil: sirve de prueba, de memoria y de material para pedir subvenciones.
 
-Pero un vídeo así **no es una obra**. Es un documento. Cuando lo ves, estás viendo el registro de algo que ocurrió en otro sitio y del que te has perdido lo importante —el volumen real, el espacio, la presencia—. El vídeo siempre pierde.
+Pero un vídeo así **no es una obra**. Es un documento. Cuando lo ves, estás viendo el registro de algo que ocurrió en otro sitio y del que te has perdido lo importante (el volumen real, el espacio, la presencia). El vídeo siempre pierde.
 
 Un videoarte hace la operación contraria: **acepta que la pantalla es otro medio y compone para ella.** Elige planos, decide qué se ve y qué no, usa el montaje como si fuera una voz más. No intenta sustituir al concierto: hace una cosa distinta con la misma música.
 
@@ -27,7 +27,7 @@ Un videoarte hace la operación contraria: **acepta que la pantalla es otro medi
 
 La elección de la obra no podía ser mejor. Las suites para violonchelo solo de Bach son **una persona sola con un instrumento**: sin acompañamiento, sin orquesta, sin nada donde esconderse. Es la música más desnuda del repertorio occidental.
 
-Y Leiguarda —una aldea de montaña, con su piedra, su madera, su luz que cambia cada media hora— es un escenario con la misma calidad de desnudez. **No hay decoración.** Hay materia.
+Y Leiguarda (una aldea de montaña, con su piedra, su madera, su luz que cambia cada media hora) es un escenario con la misma calidad de desnudez. **No hay decoración.** Hay materia.
 
 Poner esas dos desnudeces juntas, una sonora y otra visual, es una idea de cine muy sencilla y muy buena. La cámara no tiene que hacer malabares: solo tiene que mirar bien.
 
@@ -45,11 +45,11 @@ Dicho de otra manera: la música la escuchan los que vienen; **el paisaje lo ve 
 
 ## La documentación como parte de la obra
 
-Esto forma parte de un principio más amplio del proyecto: **el archivo.** Todo lo que hacemos se documenta con estándares profesionales, foto y vídeo, y se ordena para que pueda reutilizarse —en prensa, en convocatorias, en la memoria del proyecto—.
+Esto forma parte de un principio más amplio del proyecto: **el archivo.** Todo lo que hacemos se documenta con estándares profesionales, foto y vídeo, y se ordena para que pueda reutilizarse (en prensa, en convocatorias, en la memoria del proyecto).
 
 En un festival grande eso es burocracia. En uno pequeño y rural es supervivencia: **el archivo es la prueba de que esto existe.** Cuando pides apoyo institucional, cuando invitas a un artista internacional a venir a una aldea, cuando le explicas a un ayuntamiento qué le estás proponiendo, lo que enseñas es el archivo.
 
-Y hay una razón más honda. Los sitios donde tocamos —una panera, un monasterio con problemas de conservación, una iglesia de aldea— son **frágiles**. La música pasa y no deja rastro. El edificio puede no estar dentro de treinta años.
+Y hay una razón más honda. Los sitios donde tocamos (una panera, un monasterio con problemas de conservación, una iglesia de aldea) son **frágiles**. La música pasa y no deja rastro. El edificio puede no estar dentro de treinta años.
 
 Filmarlos bien es una manera de decir: **esto estuvo aquí, y merecía la pena.**
 

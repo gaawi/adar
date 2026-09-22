@@ -11,7 +11,7 @@ tags: ["Mizuko Kaji", "instalación", "El Franco", "2023"]
 
 El **3 de agosto de 2023**, en el Complejo Cultural **As Quintas** de El Franco, ocurrió algo un poco desconcertante: **el escenario estaba lleno de telas de tul y el público podía pasear por dentro.**
 
-No había concierto. El concierto sería días después, en ese mismo escenario. Lo que había era una **instalación de luz y proyecciones** de **Mizuko Kaji**, arquitecta y diseñadora de escenografías, acompañada por música de Guillermo Laporta —su pieza *Brown Leaves*—.
+No había concierto. El concierto sería días después, en ese mismo escenario. Lo que había era una **instalación de luz y proyecciones** de **Mizuko Kaji**, arquitecta y diseñadora de escenografías, acompañada por música de Guillermo Laporta, su pieza *Brown Leaves*.
 
 Y la idea que hay detrás nos sigue pareciendo una de las más astutas que hemos programado.
 
@@ -49,7 +49,7 @@ Aquella instalación tiene además un valor histórico dentro del festival: **20
 
 Fue una decisión importante, porque cambiaba la definición del proyecto. Hasta entonces éramos, básicamente, un festival de música que ocurría en sitios singulares. A partir de ahí, el festival pasó a incluir también **arte visual contemporáneo, video-mapping, danza e instalaciones site-specific**, con la música como columna vertebral pero no como única materia.
 
-Eso amplió el público —hay gente que entra por lo visual y descubre la música, y viceversa— y amplió lo que podíamos hacer con un espacio. Un auditorio, una capilla o un cubículo abandonado ya no eran solo sitios donde tocar: eran **sitios donde intervenir.**
+Eso amplió el público (hay gente que entra por lo visual y descubre la música, y viceversa) y amplió lo que podíamos hacer con un espacio. Un auditorio, una capilla o un cubículo abandonado ya no eran solo sitios donde tocar: eran **sitios donde intervenir.**
 
 ## La lección para cualquiera
 

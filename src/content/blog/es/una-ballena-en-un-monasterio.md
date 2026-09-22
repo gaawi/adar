@@ -13,7 +13,7 @@ La trama es de una simplicidad perfecta: **un día, los habitantes de un valle s
 
 Nada más. No se explica cómo llegó, ni por qué. Lo único que ocurre a partir de ahí son las reacciones de la gente, encadenadas una tras otra, hasta desembocar en un epílogo poético con aire de realismo mágico.
 
-Ese es *The Whale* —*La Balena*—, el espectáculo con el que el ensemble **Ballarte** cerró una semana de residencia en el Festival ADAR de 2025, el **7 de agosto**, dentro del **monasterio de San Antolín de Bedón**, en Llanes.
+Ese es *The Whale*, *La Balena*, el espectáculo con el que el ensemble **Ballarte** cerró una semana de residencia en el Festival ADAR de 2025, el **7 de agosto**, dentro del **monasterio de San Antolín de Bedón**, en Llanes.
 
 ## De dónde sale la ballena
 
@@ -27,7 +27,7 @@ El relato lo escribió **Giulio Tanasini**, que además toca la viola da gamba e
 
 Merece la pena detenerse en esa idea. Antes de que existieran las salas de conciertos, las orquestas y las entradas numeradas, la música tenía un trabajo muy concreto: **contar historias a gente reunida.** El trovador no era un artista sobre un pedestal; era el que sabía la historia y sabía cantarla, y su público estaba a un metro.
 
-Un ensemble de música antigua —violín, viola da gamba, tiorba, voz— tiene los instrumentos exactos para hacer eso. *The Whale* no los usa para tocar «música del pasado»: los usa para **recuperar la función del pasado.** Es una diferencia enorme.
+Un ensemble de música antigua (violín, viola da gamba, tiorba, voz) tiene los instrumentos exactos para hacer eso. *The Whale* no los usa para tocar «música del pasado»: los usa para **recuperar la función del pasado.** Es una diferencia enorme.
 
 En el escenario: **Berta Ares** (violín), **María del Buey** (visuales y voz), **Nacho Laguna** (tiorba, guitarras y electrónicas) y **Giulio Tanasini** (viola da gamba). Instrumentos de hace cuatro siglos conviviendo con electrónica y proyecciones, sin que ninguno pida perdón.
 
@@ -35,7 +35,7 @@ En el escenario: **Berta Ares** (violín), **María del Buey** (visuales y voz),
 
 El **monasterio de San Antolín de Bedón** es uno de esos sitios que hacen la mitad del trabajo antes de que empiece la música. Un monasterio de origen medieval cerca de la costa de Llanes, con la piedra a la vista y una atmósfera que no necesita añadidos.
 
-Para una historia de realismo mágico —un pueblo, una montaña, una aparición inexplicable— el marco es casi demasiado adecuado. **El público entra ya predispuesto a creerse cualquier cosa.** Y eso, para un espectáculo que necesita que te tragues una ballena en una cima, es medio camino hecho.
+Para una historia de realismo mágico (un pueblo, una montaña, una aparición inexplicable), el marco es casi demasiado adecuado. **El público entra ya predispuesto a creerse cualquier cosa.** Y eso, para un espectáculo que necesita que te tragues una ballena en una cima, es medio camino hecho.
 
 ## La residencia que hizo posible la noche
 

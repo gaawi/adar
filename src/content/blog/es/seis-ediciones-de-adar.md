@@ -19,7 +19,7 @@ Al empezar, más de una vez nos preguntaron si "para el pueblo" no convendría u
 
 ## 2. El sitio importa tanto como el programa.
 
-Aprendimos que un concierto en una iglesia de aldea, en un parador, en un alto de monte, **no es el mismo concierto** que en un auditorio. El lugar entra en la música. Y esa suma —una gran obra en un gran sitio— produce algo que no se puede fabricar en ningún otro lado. Es nuestra materia prima.
+Aprendimos que un concierto en una iglesia de aldea, en un parador, en un alto de monte, **no es el mismo concierto** que en un auditorio. El lugar entra en la música. Y esa suma, una gran obra en un gran sitio, produce algo que no se puede fabricar en ningún otro lado. Es nuestra materia prima.
 
 ## 3. Lo extraordinario cabe en un pueblo.
 
@@ -33,6 +33,6 @@ Es la lección más importante. Nada de esto existiría sin **el público** que 
 
 No vamos a caer en la nostalgia, porque el proyecto mira hacia delante. Ya estamos trabajando en la **próxima edición**, con cosas que aún no podemos contar pero que nos hacen mucha ilusión. Habrá nuevos sitios, nuevas músicas y, esperamos, nuevas caras entre el público.
 
-Si estos años te han dado algo —una noche que recuerdas, una música que no conocías, la sensación de que aquí también pasan cosas grandes— hay una manera muy concreta de que sigan ocurriendo: **hazte amigo del festival.** Cada apoyo, por pequeño que sea, es lo que nos permite volver el año que viene y seguir llevando la música donde no se la espera.
+Si estos años te han dado algo (una noche que recuerdas, una música que no conocías, la sensación de que aquí también pasan cosas grandes), hay una manera muy concreta de que sigan ocurriendo: **hazte amigo del festival.** Cada apoyo, por pequeño que sea, es lo que nos permite volver el año que viene y seguir llevando la música donde no se la espera.
 
 Gracias por estas seis ediciones. Nos vemos en la séptima.

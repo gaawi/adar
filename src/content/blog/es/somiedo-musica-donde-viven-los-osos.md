@@ -19,7 +19,7 @@ Podríamos haber buscado un templo, que es lo cómodo. Elegimos **el mercado**, 
 
 Un mercado es el sitio más civil que tiene un pueblo. No es sagrado, no es institucional, no impone silencio por sí mismo. Es donde la gente **compra, discute el precio de las cosas y se pone al día.** Es la infraestructura de la vida cotidiana.
 
-Meter ahí música de cámara tiene un efecto muy concreto: **elimina la ceremonia.** Nadie tiene que vestirse de nada ni sentirse fuera de lugar. Estás en el mercado de tu pueblo. Si te apetece entrar, entras. El umbral psicológico —ese que hace que muchísima gente no pise nunca un auditorio— desaparece.
+Meter ahí música de cámara tiene un efecto muy concreto: **elimina la ceremonia.** Nadie tiene que vestirse de nada ni sentirse fuera de lugar. Estás en el mercado de tu pueblo. Si te apetece entrar, entras. El umbral psicológico, ese que hace que muchísima gente no pise nunca un auditorio, desaparece.
 
 Y hay un segundo efecto, más bonito: al día siguiente, el mercado sigue siendo el mercado. Pero ya ha sido otra cosa. **El sitio se queda con la memoria.**
 
@@ -27,19 +27,19 @@ Y hay un segundo efecto, más bonito: al día siguiente, el mercado sigue siendo
 
 Tocaron **Guillermo Laporta** (flauta), **Mario Molina** (piano), **Jone de la Fuente** (violín), **Almudena Arribas** (viola) y **Natania Hoffman** (violonchelo). Y el programa fue este:
 
-- **Andrea Casarrubios** — *Mensajes de Agua*
-- **Mozart** — Cuarteto para piano en mi bemol mayor, K. 493
-- **Andrea Casarrubios** — *Afilador*
-- **Debussy** — *Petite Suite*
-- **Richard Strauss** — *Morgen!*
-- **Jessie Montgomery** — Dúo para violín y violonchelo
-- **Vivaldi** — *La Notte*
+- **Andrea Casarrubios** · *Mensajes de Agua*
+- **Mozart** · Cuarteto para piano en mi bemol mayor, K. 493
+- **Andrea Casarrubios** · *Afilador*
+- **Debussy** · *Petite Suite*
+- **Richard Strauss** · *Morgen!*
+- **Jessie Montgomery** · Dúo para violín y violonchelo
+- **Vivaldi** · *La Notte*
 
 Mira la mezcla: dos compositoras vivas (**Casarrubios** y **Jessie Montgomery**, una de las voces más programadas de Estados Unidos hoy) en el mismo programa que Mozart, Debussy, Strauss y Vivaldi. En un mercado. En un pueblo de montaña.
 
 Nadie pidió una versión más fácil. Y nadie se fue.
 
-Un detalle que nos encanta: *Afilador*. Casarrubios escribió una pieza a partir de la figura del afilador —el oficio ambulante que iba de pueblo en pueblo con su rueda, anunciándose con un silbato—. Tocar eso en Somiedo, delante de gente que recuerda perfectamente al afilador pasando por su calle, es hacer que la música contemporánea hable de algo que el público conoce mejor que el compositor.
+Un detalle que nos encanta: *Afilador*. Casarrubios escribió una pieza a partir de la figura del afilador (el oficio ambulante que iba de pueblo en pueblo con su rueda, anunciándose con un silbato). Tocar eso en Somiedo, delante de gente que recuerda perfectamente al afilador pasando por su calle, es hacer que la música contemporánea hable de algo que el público conoce mejor que el compositor.
 
 ## La palabra «sostenible», dicha en serio
 

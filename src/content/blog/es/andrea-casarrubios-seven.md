@@ -19,7 +19,7 @@ En agosto de 2025 sonó en la **iglesia de Leiguarda**, delante de vecinos de un
 
 Casarrubios es **violonchelista y compositora española**, y su currículum es de los que cuesta resumir sin que parezca exagerado.
 
-Se formó como chelista con maestros como **Lluís Claret, Amit Peled, Marcy Rosen y Ralph Kirshbaum**, y cursó un doctorado centrado en composición bajo la tutela de **John Corigliano** —uno de los grandes compositores estadounidenses vivos—. Fue miembro de **Ensemble Connect**, el programa de élite del Carnegie Hall.
+Se formó como chelista con maestros como **Lluís Claret, Amit Peled, Marcy Rosen y Ralph Kirshbaum**, y cursó un doctorado centrado en composición bajo la tutela de **John Corigliano**, uno de los grandes compositores estadounidenses vivos. Fue miembro de **Ensemble Connect**, el programa de élite del Carnegie Hall.
 
 Como compositora ha recibido encargos de la **Sinfónica de Chicago** (la versión orquestal de *Afilador*) y de **Sphinx Virtuosi** (*Herencia*, para orquesta de cuerda). Su álbum ***SEVEN: Works by Andrea Casarrubios* (2024) fue nominado al Grammy en 2025.** Ha tocado en el Auditorio Nacional de Madrid, en el Centro Nacional de Artes Escénicas de Pekín, en Ravinia, en Verbier. Ha sido profesora afiliada a **Juilliard, USC y CUNY**.
 
@@ -29,7 +29,7 @@ Ese es el nivel de la persona que se sentó a tocar en una iglesia de aldea astu
 
 El recital de Leiguarda es un buen ejemplo de cómo se construye un programa que no aburre a nadie y no renuncia a nada.
 
-Abrió con dos **sonatas de Luigi Boccherini** —el italiano que desarrolló casi toda su carrera en España, así que empezar por él en un pueblo español tiene su lógica— y siguió con la delicadeza impresionista de **Debussy**.
+Abrió con dos **sonatas de Luigi Boccherini** (el italiano que desarrolló casi toda su carrera en España, así que empezar por él en un pueblo español tiene su lógica) y siguió con la delicadeza impresionista de **Debussy**.
 
 La parte central fue la más íntima: **tres obras suyas**, compuestas entre 2018 y 2023, donde memoria, folclore y emoción hablan en un idioma propio. Después, ***Brown Leaves Moving*, de Guillermo Laporta**, una pieza abierta que entrelaza improvisación y escritura. Luego *SEVEN*. Y el cierre, una sección del **Trío *Dumky* de Dvořák**, con su mezcla de melancolía y energía popular.
 
@@ -47,6 +47,6 @@ Y funciona en las dos direcciones. El público de Belmonte escucha a alguien de 
 
 Si hay un motivo por el que *SEVEN* nos parece la pieza perfecta para un festival como este, es que **habla de algo que le pasó a todo el mundo.**
 
-No es música abstracta para iniciados. Es una obra sobre gente que fue a trabajar cuando ir a trabajar daba miedo. Cualquier vecino de Leiguarda, de Tineo o de Somiedo entiende de qué va antes de que suene la primera nota. Y eso —que la música contemporánea pueda tratar de la vida y no solo de sí misma— es lo que convence a la gente que llegó pensando que no lo iba a entender.
+No es música abstracta para iniciados. Es una obra sobre gente que fue a trabajar cuando ir a trabajar daba miedo. Cualquier vecino de Leiguarda, de Tineo o de Somiedo entiende de qué va antes de que suene la primera nota. Y eso, que la música contemporánea pueda tratar de la vida y no solo de sí misma, es lo que convence a la gente que llegó pensando que no lo iba a entender.
 
 A las siete de la tarde, en la primavera de 2020, medio mundo salió al balcón. Andrea Casarrubios convirtió eso en una partitura. Y esa partitura ha sonado en el Carnegie Hall y en la iglesia de Leiguarda, que es la clase de frase que a nosotros nos hace mucha ilusión poder escribir.
