@@ -18,7 +18,8 @@ falta para replicarlo.
 
 | Pieza | Fichero en gaawi/adar | Portabilidad a creartbox.nyc |
 |---|---|---|
-| **Kit de redes** (carrusel, 3 diseños, foco, foto propia) | `src/pages/kit-redes.astro` | **Alta.** Es una página autónoma con CSS y JS en línea y `<canvas>`. Solo hay que cambiar de dónde saca los datos. |
+| **Kit de redes** (carrusel, 3 diseños, foco, foto propia) | `src/components/KitRedes.astro` + `src/data/kit-brands.ts` | **Alta.** El motor ya está separado de la marca y **la marca CreArtBox ya está definida**, tomada de creartbox.nyc/brand.html. Es una página autónoma con CSS y JS en línea y `<canvas>`; solo hay que cambiar de dónde saca los datos. |
+| **Kit de redes ya montado con la identidad de CreArtBox** | `src/pages/kit-redes-creartbox.astro` + `src/data/kit-creartbox.ts` | **Inmediata.** Funciona hoy en `festivaladar.com/kit-redes-creartbox/` (interno, `noindex`) mientras creartbox.nyc no tenga panel. Al mover el sitio, esta página se copia tal cual. |
 | **Botones de compartir** para lectores | `src/pages/[lang]/blog/[slug].astro` + bloque CSS `Blog · compartir en redes` | **Alta.** HTML + CSS + 20 líneas de JS. |
 | **Blog** (listado + artículo) | `src/content.config.ts`, `src/pages/[lang]/blog/*` | **Media.** Depende de colecciones de contenido y rutas dinámicas de Astro. Sin build hay que decidir cómo se genera el HTML. |
 | **Panel de aprobación** (Sveltia CMS) | `public/admin/index.html`, `public/admin/config.yml` | **Media.** El CMS es de cliente y escribe markdown en el repo, pero necesita OAuth y algo que convierta ese markdown en HTML. |
@@ -44,35 +45,54 @@ valor inmediato y no bloquea las otras dos.
 
 ---
 
-## 2. Identidad visual: NO copiar la de ADAR
+## 2. Identidad visual: ya resuelta
 
-El kit de ADAR pinta las imágenes con los tokens del festival
-(`#0a0907` tinta, `#f6f4ee` papel, `#f5d72f` acento, Bricolage Grotesque y
-JetBrains Mono). **Hay que sustituirlos por los de CreArtBox**, que ya están en
-`assets/styles.css`:
+El motor del kit **ya no tiene la marca dentro**. La identidad entra por
+`src/data/kit-brands.ts`, donde están las dos: `BRANDS.adar` y
+`BRANDS.creartbox`. La de CreArtBox está tomada del manual real
+(<https://creartbox.nyc/brand.html>), no inferida de la hoja de estilos:
 
 ```
---paper:  #fafaf7    (modo claro)     --paper:  #0f1115   (modo oscuro)
---ink:    #131820                     --ink:    #f3f1ea
---ink-soft: #757b85                   --quiet:  #a0a4ad
---rule:   rgba(19,24,32,.12)
---yellow: #fbda41    --yellow-deep: #e7c01f
---red:    #a82424    --accent: #9c8516
---serif:  "Fraunces", Garamond, serif
---sans:   "Inter", "Helvetica Neue", Arial, sans-serif
+Superficies   --sala #070706 · --foso #100F0E · --filete #2B2825 · --filete-alto #3D3934
+Tinta         --papel #F2EFE8 · --papel-medio #C9C3B9 · --papel-dim #9C968C
+              --papel-tenue #8A847A · --papel-mudo #6B655D (solo filetes e iconos)
+Señal         --senal #FFC403 · --sobre-senal #0B0705
+Tipografía    Literata (titulares, citas) · Archivo (cuerpo, rótulos, tablas)
+Esquinas      rectas, también en los botones
 ```
 
-En el canvas conviene usar **Fraunces** para titulares e **Inter** para el
-cuerpo, y `#fbda41` como acento (equivale al amarillo de ADAR).
+Reglas del manual que el kit respeta y hay que seguir respetando:
+
+- **Una sola señal por pantalla.** En las imágenes el ámbar es el filete; el
+  titular va en `--papel`. Por eso `ctaInk` de CreArtBox es `#F2EFE8` y no el
+  ámbar (en ADAR sí es el acento).
+- **Nada de blanco puro.** Los titulares sobre foto usan `--papel`
+  (`overPhotoInk`), no `#ffffff`.
+- **`--papel-mudo` nunca en texto**: baja de 4,5:1 sobre `--sala`.
+- Las diapositivas de texto usan `--foso` como fondo, porque la paleta no
+  tiene superficie clara.
+- El ámbar **no se pone sobre tinta hueso** (no hay contraste). En la interfaz
+  eso lo resuelve el token `--pop`.
+
+Para añadir una marca nueva: una entrada en `BRANDS`, una en `KITS` y una
+página de dos líneas en `src/pages/`. El motor no se toca.
+
 Recuerda `await document.fonts.load(...)` antes de dibujar, o el canvas usará
-la tipografía de reserva.
+la tipografía de reserva. Las fuentes a precargar están en `fontLoads` de cada
+marca.
+
+Las fotos deben servirse con `Access-Control-Allow-Origin`, o `canvas.toBlob()`
+falla por lienzo contaminado. Comprobado: el CDN de Bunny y creartbox.nyc
+mandan `*`.
 
 ---
 
 ## 3. El kit de redes, pieza por pieza
 
-Todo vive en un único fichero, `src/pages/kit-redes.astro`, con `noindex`.
-Funciona **entero en el navegador**: no sube nada a ningún servidor.
+El motor vive en `src/components/KitRedes.astro`, con `noindex`, y recibe dos
+props: `brand` (la identidad) y `posts` (el material). Las páginas
+`src/pages/kit-redes.astro` y `src/pages/kit-redes-creartbox.astro` solo eligen
+una y otra. Funciona **entero en el navegador**: no sube nada a ningún servidor.
 
 ### 3.1 Lo que hace
 

@@ -1,0 +1,15 @@
+---
+// Kit de redes · CreArtBox. Mismo motor, identidad de CreArtBox y material
+// propio, porque creartbox.nyc todavía no tiene su panel montado.
+// El material se edita en src/data/kit-creartbox.ts.
+import KitRedes from '../components/KitRedes.astro';
+import { BRANDS, buildPost } from '../data/kit-brands';
+import { CREARTBOX_SOURCES } from '../data/kit-creartbox';
+
+const brand = BRANDS.creartbox;
+// Sin ordenar por fecha: aquí las fechas son de conciertos futuros y la nota de
+// la temporada quedaría última. Manda el orden en que están escritas.
+const posts = CREARTBOX_SOURCES.map((s) => buildPost(s, brand));
+---
+
+<KitRedes brand={brand} posts={posts} />
