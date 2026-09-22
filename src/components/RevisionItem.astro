@@ -1,0 +1,36 @@
+---
+// Controles de revisión de UNA ficha: listo / hay que cambiar algo / sin marcar,
+// más el cuadro de nota. El comportamiento lo pone <RevisionBar />, que busca
+// estos elementos por sus atributos data-rv-*.
+//
+// Quien lo use tiene que marcar la tarjeta contenedora con
+//   data-rv-item data-rv-key="<clave>" data-rv-title="<título>"
+// y, si quiere la etiqueta de estado, poner <span data-rv-pill hidden></span>
+// donde le encaje.
+interface Props {
+  /** Texto de la nota ya guardada, para que aparezca escrita. */
+  nota?: string;
+  /** Etiqueta del grupo; el kit la necesita para alinearse con sus bloques. */
+  label?: string;
+  /** Clase extra, para que cada página lo encaje en su maquetación. */
+  class?: string;
+}
+const { nota = '', label = '', class: extra = '' } = Astro.props;
+---
+
+<div class={`rv ${extra}`} data-rv-controls>
+  {label && <span class="rv-group-label">{label}</span>}
+  <div class="rv-choice">
+    <button type="button" data-rv-set="listo">Listo para publicar</button>
+    <button type="button" data-rv-set="cambios">Hay que cambiar algo</button>
+    <button type="button" data-rv-set="" class="rv-clear" title="Quitar la marca">Sin marcar</button>
+  </div>
+  <label class="rv-note" data-rv-note-wrap hidden>
+    <span class="rv-note-label">Qué hay que cambiar</span>
+    <textarea
+      data-rv-note
+      rows="2"
+      placeholder="Ej.: demasiado largo, el segundo párrafo sobra, falta decir dónde fue…"
+    >{nota}</textarea>
+  </label>
+</div>

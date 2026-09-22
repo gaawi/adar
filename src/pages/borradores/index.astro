@@ -3,15 +3,15 @@
 // con su estado. Protegido por el middleware de Vercel.
 //
 // Además de listarlos, es la mesa de revisión: por cada artículo se puede
-// marcar «listo para publicar» o «hay que cambiar algo» y dejar una nota.
-// Las marcas se guardan al instante en el navegador y se suben al repositorio
-// (src/data/revisiones.json) con el botón de guardar, usando el mismo login de
-// GitHub que el panel. Ahí es donde las leo yo para ir afinando los siguientes.
+// marcar «listo para publicar» o «hay que cambiar algo» y dejar una nota. El
+// mecanismo vive en <RevisionBar /> y se comparte con el kit de redes.
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import RevisionBar from '../../components/RevisionBar.astro';
+import RevisionItem from '../../components/RevisionItem.astro';
 import revisiones from '../../data/revisiones.json';
 
-const guardadas: Record<string, { estado?: string; nota?: string; fecha?: string }> =
+const guardadas: Record<string, { estado?: string; nota?: string; titulo?: string; fecha?: string }> =
   (revisiones as any).posts || {};
 
 const all = (await getCollection('blog'))
@@ -88,9 +88,9 @@ const sinRevisar = all.length - listos - conNotas;
       <div class="draft-filters mono" data-group="revision">
         <span class="filter-label">Revisión</span>
         <button type="button" data-rev="all" class="on">Todas</button>
-        <button type="button" data-rev="sin">Sin revisar (<span data-count="sin">{sinRevisar}</span>)</button>
-        <button type="button" data-rev="listo">Listos (<span data-count="listo">{listos}</span>)</button>
-        <button type="button" data-rev="cambios">Con notas (<span data-count="cambios">{conNotas}</span>)</button>
+        <button type="button" data-rev="sin">Sin revisar (<span data-rv-count="sin">{sinRevisar}</span>)</button>
+        <button type="button" data-rev="listo">Listos (<span data-rv-count="listo">{listos}</span>)</button>
+        <button type="button" data-rev="cambios">Con notas (<span data-rv-count="cambios">{conNotas}</span>)</button>
       </div>
     </div>
   </section>
@@ -101,7 +101,13 @@ const sinRevisar = all.length - listos - conNotas;
     ) : (
       <ul class="blog-list" id="draft-list">
         {all.map((p) => (
-          <li class="blog-card" data-state={p.isPub ? 'pub' : 'draft'} data-key={p.key} data-title={p.title}>
+          <li
+            class="blog-card"
+            data-state={p.isPub ? 'pub' : 'draft'}
+            data-rv-item
+            data-rv-key={p.key}
+            data-rv-title={p.title}
+          >
             <a class="blog-card-link" href={p.href}>
               {p.image && (
                 <span class="blog-card-img"><img src={p.image} alt="" loading="lazy" /></span>
@@ -111,7 +117,7 @@ const sinRevisar = all.length - listos - conNotas;
                   <span class={`state-pill ${p.isPub ? 'is-pub' : 'is-draft'}`}>
                     {p.isPub ? 'Publicado' : 'Sin publicar'}
                   </span>
-                  <span class="rev-pill" data-pill hidden></span>
+                  <span class="rv-pill" data-rv-pill hidden></span>
                   {[p.date, p.lang.toUpperCase()].filter(Boolean).join(' · ')}
                 </span>
                 <span class="blog-card-title">{p.title}</span>
@@ -121,34 +127,19 @@ const sinRevisar = all.length - listos - conNotas;
             </a>
 
             {/* Fuera del enlace: si estuviera dentro, pulsar un botón navegaría. */}
-            <div class="rev mono">
-              <div class="rev-choice">
-                <button type="button" data-set="listo">Listo para publicar</button>
-                <button type="button" data-set="cambios">Hay que cambiar algo</button>
-                <button type="button" data-set="" class="rev-clear" title="Quitar la marca">Sin marcar</button>
-              </div>
-              <label class="rev-note" data-note-wrap hidden>
-                <span class="rev-note-label">Qué hay que cambiar</span>
-                <textarea
-                  data-note
-                  rows="2"
-                  placeholder="Ej.: demasiado largo, el segundo párrafo sobra, falta decir dónde fue…"
-                >{p.nota}</textarea>
-              </label>
-            </div>
+            <RevisionItem nota={p.nota} class="mono" />
           </li>
         ))}
       </ul>
     )}
   </section>
 
-  <div class="rev-bar" id="rev-bar" hidden>
-    <span class="rev-bar-text mono" id="rev-bar-text"></span>
-    <button type="button" class="rev-bar-btn" id="rev-copy">Copiar notas</button>
-    <button type="button" class="rev-bar-btn is-primary" id="rev-save">Guardar en GitHub</button>
-  </div>
-
-  <div class="rev-toast mono" id="rev-toast" role="status" aria-live="polite"></div>
+  <RevisionBar
+    path="src/data/revisiones.json"
+    lsKey="adar_revisiones_v1"
+    guardadas={guardadas}
+    unidad="artículo"
+  />
 
   <style>
     .filter-label {
@@ -161,494 +152,44 @@ const sinRevisar = all.length - listos - conNotas;
     }
     .draft-filters + .draft-filters { margin-top: 8px; }
     .rev-intro { margin-top: 10px; opacity: 0.8; font-size: 0.95em; }
-
-    /* Un display propio gana al atributo `hidden`, que solo trae display:none
-       de la hoja del navegador. Sin esto, ocultar no oculta. */
-    .rev-pill[hidden],
-    .rev-note[hidden],
-    .rev-bar[hidden] { display: none; }
-
-    .rev-pill {
-      display: inline-block;
-      padding: 2px 8px;
-      border-radius: 999px;
-      font-size: 10px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      border: 1px solid currentColor;
-    }
-    .rev-pill.is-listo { color: #2f6b3a; }
-    .rev-pill.is-cambios { color: #9a5b12; }
-
-    .rev {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: flex-start;
-      padding: 12px 0 2px;
-      border-top: 1px dashed var(--line, rgba(10, 9, 7, 0.16));
-      margin-top: 12px;
-    }
-    .rev-choice { display: flex; flex-wrap: wrap; gap: 6px; }
-    .rev-choice button {
-      font-family: inherit;
-      font-size: 12px;
-      line-height: 1;
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid currentColor;
-      background: transparent;
-      color: inherit;
-      cursor: pointer;
-      opacity: 0.6;
-      transition: opacity 0.15s, background 0.15s, color 0.15s;
-    }
-    .rev-choice button:hover { opacity: 1; }
-    .rev-choice button.on { opacity: 1; font-weight: 600; }
-    .rev-choice button[data-set='listo'].on { background: #2f6b3a; border-color: #2f6b3a; color: #fff; }
-    .rev-choice button[data-set='cambios'].on { background: #9a5b12; border-color: #9a5b12; color: #fff; }
-    .rev-clear { opacity: 0.35; }
-    /* El botón de quitar la marca solo aparece cuando hay algo que quitar. */
-    .blog-card:not(.has-rev) .rev-clear { display: none; }
-
-    .rev-note { flex: 1 1 320px; display: flex; flex-direction: column; gap: 4px; }
-    .rev-note-label {
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      opacity: 0.55;
-    }
-    .rev-note textarea {
-      font-family: inherit;
-      font-size: 13px;
-      line-height: 1.45;
-      padding: 8px 10px;
-      border: 1px solid var(--line, rgba(10, 9, 7, 0.2));
-      border-radius: 6px;
-      background: rgba(255, 255, 255, 0.72);
-      color: inherit;
-      resize: vertical;
-      width: 100%;
-    }
-
-    /* Fija, no sticky: al final del documento solo se vería tras recorrer los
-       31 artículos, que es justo cuando ya no hace falta. */
-    .rev-bar {
-      position: fixed;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 30;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      padding: 12px 20px;
-      background: var(--ink, #0a0907);
-      color: var(--paper, #f6f4ee);
-      box-shadow: 0 -6px 20px rgba(10, 9, 7, 0.18);
-    }
-    /* Hueco para que la barra no tape el final de la lista. */
-    :global(body.has-rev-bar) { padding-bottom: 86px; }
-    .rev-bar-text { flex: 1 1 200px; font-size: 12px; }
-    .rev-bar-btn {
-      font-family: inherit;
-      font-size: 12px;
-      line-height: 1;
-      padding: 10px 16px;
-      border-radius: 999px;
-      border: 1px solid currentColor;
-      background: transparent;
-      color: inherit;
-      cursor: pointer;
-    }
-    .rev-bar-btn:hover { background: var(--paper, #f6f4ee); color: var(--ink, #0a0907); }
-    .rev-bar-btn.is-primary { background: #f5d72f; border-color: #f5d72f; color: #0a0907; font-weight: 600; }
-    .rev-bar-btn[disabled] { opacity: 0.45; cursor: progress; }
-
-    .rev-toast {
-      position: fixed;
-      left: 50%;
-      bottom: 84px;
-      transform: translate(-50%, 16px);
-      background: #0a0907;
-      color: #f6f4ee;
-      font-size: 13px;
-      padding: 11px 18px;
-      border-radius: 999px;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.2s, transform 0.2s;
-      z-index: 40;
-      max-width: 90vw;
-      text-align: center;
-    }
-    .rev-toast.show { opacity: 1; transform: translate(-50%, 0); }
-
-    @media (max-width: 640px) {
-      .rev { flex-direction: column; }
-      .rev-note { flex: 1 1 auto; width: 100%; }
-    }
   </style>
-
-  <script type="application/json" id="rev-data" set:html={JSON.stringify(guardadas).replace(/</g, '\\u003c')}></script>
 
   <script is:inline>
     (function () {
-      var GUARDADAS = JSON.parse(document.getElementById('rev-data').textContent);
-      var REPO = 'gaawi/adar';
-      var PATH = 'src/data/revisiones.json';
-      var BRANCH = 'main';
-      var LS = 'adar_revisiones_v1';
-
       var list = document.getElementById('draft-list');
       if (!list) return;
 
-      // ── Estado ──────────────────────────────────────────────────────────
-      // Base: lo que ya está en el repositorio (viene del build). Encima, lo
-      // que haya en este navegador, que puede ser más reciente.
-      var estado = {};
-      Object.keys(GUARDADAS || {}).forEach(function (k) {
-        estado[k] = Object.assign({}, GUARDADAS[k]);
-      });
-      var local = {};
-      try { local = JSON.parse(localStorage.getItem(LS) || '{}'); } catch (e) { local = {}; }
-      Object.keys(local).forEach(function (k) {
-        var a = estado[k], b = local[k];
-        if (!a || !a.fecha || (b.fecha && b.fecha > a.fecha)) estado[k] = b;
-      });
-      // Marcas hechas aquí y todavía no subidas.
-      var sucio = {};
-      Object.keys(local).forEach(function (k) {
-        var g = (GUARDADAS || {})[k];
-        if (!g || g.estado !== local[k].estado || (g.nota || '') !== (local[k].nota || '')) sucio[k] = true;
-      });
-
-      function persistir() {
-        var salida = {};
-        Object.keys(estado).forEach(function (k) {
-          if (estado[k] && (estado[k].estado || estado[k].nota)) salida[k] = estado[k];
-        });
-        try { localStorage.setItem(LS, JSON.stringify(salida)); } catch (e) {}
-      }
-
-      // ── Pintado ─────────────────────────────────────────────────────────
-      var PILL = { listo: 'Listo', cambios: 'Con notas' };
-
-      // `inicial` solo es true en el primer pintado: ahí sí se vuelca la nota
-      // guardada en el cuadro de texto. Después no, para no pisar lo que se
-      // esté escribiendo.
-      function pintarTarjeta(card, inicial) {
-        var k = card.dataset.key;
-        var r = estado[k] || {};
-        var marcado = r.estado || '';
-        card.dataset.rev = marcado || 'sin';
-        card.classList.toggle('has-rev', !!marcado);
-
-        card.querySelectorAll('.rev-choice button').forEach(function (b) {
-          b.classList.toggle('on', b.dataset.set === marcado && marcado !== '');
-        });
-
-        var pill = card.querySelector('[data-pill]');
-        if (marcado) {
-          pill.hidden = false;
-          pill.textContent = PILL[marcado];
-          pill.className = 'rev-pill is-' + marcado;
-        } else {
-          pill.hidden = true;
-        }
-
-        var wrap = card.querySelector('[data-note-wrap]');
-        wrap.hidden = marcado !== 'cambios';
-
-        if (inicial) {
-          var ta = card.querySelector('[data-note]');
-          if (ta && (r.nota || '') !== ta.value) ta.value = r.nota || '';
-        }
-      }
-
-      function pintarTodo(inicial) {
-        list.querySelectorAll('.blog-card').forEach(function (c) { pintarTarjeta(c, inicial); });
-        actualizarContadores();
-        aplicarFiltros();
-        actualizarBarra();
-      }
-
-      function actualizarContadores() {
-        var c = { listo: 0, cambios: 0, sin: 0 };
-        list.querySelectorAll('.blog-card').forEach(function (card) {
-          var e = (estado[card.dataset.key] || {}).estado;
-          if (e === 'listo') c.listo++;
-          else if (e === 'cambios') c.cambios++;
-          else c.sin++;
-        });
-        Object.keys(c).forEach(function (k) {
-          var el = document.querySelector('[data-count="' + k + '"]');
-          if (el) el.textContent = c[k];
-        });
-      }
-
-      function actualizarBarra() {
-        var n = Object.keys(sucio).length;
-        var bar = document.getElementById('rev-bar');
-        var txt = document.getElementById('rev-bar-text');
-        var conNota = Object.keys(estado).filter(function (k) {
-          return estado[k] && estado[k].estado === 'cambios' && (estado[k].nota || '').trim();
-        }).length;
-        document.body.classList.toggle('has-rev-bar', !!(n || conNota));
-        if (!n && !conNota) { bar.hidden = true; return; }
-        bar.hidden = false;
-        txt.textContent = n
-          ? n + (n === 1 ? ' marca sin subir' : ' marcas sin subir') + '. Se guardan en este navegador; súbelas para que yo pueda leerlas.'
-          : 'Todo subido al repositorio.';
-      }
-
-      // ── Interacción ─────────────────────────────────────────────────────
-      list.addEventListener('click', function (ev) {
-        var b = ev.target.closest('.rev-choice button');
-        if (!b) return;
-        ev.preventDefault();
-        var card = b.closest('.blog-card');
-        var k = card.dataset.key;
-        var quiere = b.dataset.set;
-        var actual = (estado[k] || {}).estado || '';
-        var nuevo = quiere === actual ? '' : quiere;
-
-        var nota = (card.querySelector('[data-note]') || {}).value || '';
-        estado[k] = {
-          estado: nuevo,
-          nota: nuevo === 'cambios' ? nota : '',
-          titulo: card.dataset.title,
-          fecha: new Date().toISOString(),
-        };
-        if (!nuevo) estado[k].nota = '';
-        sucio[k] = true;
-        persistir();
-        pintarTarjeta(card);
-        actualizarContadores();
-        aplicarFiltros();
-        actualizarBarra();
-        if (nuevo === 'cambios') {
-          var ta = card.querySelector('[data-note]');
-          if (ta) ta.focus();
-        }
-      });
-
-      var guardarNota;
-      list.addEventListener('input', function (ev) {
-        var ta = ev.target.closest('[data-note]');
-        if (!ta) return;
-        var card = ta.closest('.blog-card');
-        var k = card.dataset.key;
-        clearTimeout(guardarNota);
-        guardarNota = setTimeout(function () {
-          estado[k] = Object.assign({}, estado[k], {
-            estado: 'cambios',
-            nota: ta.value,
-            titulo: card.dataset.title,
-            fecha: new Date().toISOString(),
-          });
-          sucio[k] = true;
-          persistir();
-          actualizarBarra();
-        }, 400);
-      });
-
-      // ── Filtros (publicación y revisión, combinados) ─────────────────────
+      // Dos filtros independientes que se combinan: estado de publicación y
+      // estado de revisión (este último lo escribe <RevisionBar /> en
+      // data-rv-state).
       var fEstado = 'all';
       var fRev = 'all';
 
-      function aplicarFiltros() {
+      function aplicar() {
         list.querySelectorAll('.blog-card').forEach(function (card) {
           var okEstado = fEstado === 'all' || card.dataset.state === fEstado;
-          var okRev = fRev === 'all' || card.dataset.rev === fRev;
+          var okRev = fRev === 'all' || card.dataset.rvState === fRev;
           card.style.display = okEstado && okRev ? '' : 'none';
         });
       }
 
-      document.querySelectorAll('[data-group="estado"] button').forEach(function (b) {
-        b.addEventListener('click', function () {
-          fEstado = b.dataset.filter;
-          document.querySelectorAll('[data-group="estado"] button').forEach(function (x) {
-            x.classList.toggle('on', x === b);
+      function grupo(selector, prop, set) {
+        document.querySelectorAll(selector).forEach(function (b) {
+          b.addEventListener('click', function () {
+            set(b.dataset[prop]);
+            document.querySelectorAll(selector).forEach(function (x) {
+              x.classList.toggle('on', x === b);
+            });
+            aplicar();
           });
-          aplicarFiltros();
-        });
-      });
-      document.querySelectorAll('[data-group="revision"] button').forEach(function (b) {
-        b.addEventListener('click', function () {
-          fRev = b.dataset.rev;
-          document.querySelectorAll('[data-group="revision"] button').forEach(function (x) {
-            x.classList.toggle('on', x === b);
-          });
-          aplicarFiltros();
-        });
-      });
-
-      // ── Avisos ──────────────────────────────────────────────────────────
-      var toastEl = document.getElementById('rev-toast');
-      var toastT;
-      function toast(m, ms) {
-        toastEl.textContent = m;
-        toastEl.classList.add('show');
-        clearTimeout(toastT);
-        toastT = setTimeout(function () { toastEl.classList.remove('show'); }, ms || 3200);
-      }
-
-      // ── Copiar las notas (por si quieres pegármelas directamente) ────────
-      document.getElementById('rev-copy').addEventListener('click', async function () {
-        var lineas = [];
-        list.querySelectorAll('.blog-card').forEach(function (card) {
-          var r = estado[card.dataset.key];
-          if (!r || !r.estado) return;
-          lineas.push(
-            (r.estado === 'listo' ? '✓ LISTO' : '✎ CAMBIOS') + ' · ' + card.dataset.title +
-            (r.nota && r.nota.trim() ? '\n   ' + r.nota.trim() : '')
-          );
-        });
-        var texto = lineas.length ? 'Revisión de artículos\n\n' + lineas.join('\n\n') : 'Todavía no has marcado ningún artículo.';
-        try {
-          await navigator.clipboard.writeText(texto);
-          toast('Notas copiadas.');
-        } catch (e) {
-          toast('No se pudo copiar; mira la consola.');
-          console.log(texto);
-        }
-      });
-
-      // ── Guardar en el repositorio ────────────────────────────────────────
-      // Reutiliza el login de GitHub del panel: la ventana emergente de
-      // /api/auth devuelve un token por postMessage, igual que al CMS.
-      function pedirToken() {
-        return new Promise(function (resolve, reject) {
-          var cache = sessionStorage.getItem('adar_gh_token');
-          if (cache) return resolve(cache);
-          var w = window.open('/api/auth', 'adar-gh-auth', 'width=700,height=740');
-          if (!w) return reject(new Error('El navegador bloqueó la ventana. Permite las ventanas emergentes y vuelve a intentarlo.'));
-          var tope = setTimeout(function () {
-            window.removeEventListener('message', recibir);
-            reject(new Error('Se agotó el tiempo esperando a GitHub.'));
-          }, 120000);
-          function recibir(e) {
-            if (e.origin !== window.location.origin) return;
-            var d = e.data;
-            if (typeof d !== 'string') return;
-            if (d === 'authorizing:github') { try { w.postMessage('adar', window.location.origin); } catch (err) {} return; }
-            var m = d.match(/^authorization:github:(success|error):([\s\S]*)$/);
-            if (!m) return;
-            clearTimeout(tope);
-            window.removeEventListener('message', recibir);
-            var payload;
-            try { payload = JSON.parse(m[2]); } catch (err) { return reject(new Error('Respuesta de GitHub no válida.')); }
-            if (m[1] === 'success' && payload.token) {
-              try { sessionStorage.setItem('adar_gh_token', payload.token); } catch (err) {}
-              resolve(payload.token);
-            } else {
-              reject(new Error(payload.error || 'GitHub no autorizó la sesión.'));
-            }
-          }
-          window.addEventListener('message', recibir);
         });
       }
+      grupo('[data-group="estado"] button', 'filter', function (v) { fEstado = v; });
+      grupo('[data-group="revision"] button', 'rev', function (v) { fRev = v; });
 
-      function b64a(str) {
-        var bytes = new TextEncoder().encode(str);
-        var bin = '';
-        for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
-        return btoa(bin);
-      }
-      function ab64(s) {
-        var bin = atob(String(s).replace(/\s/g, ''));
-        var bytes = new Uint8Array(bin.length);
-        for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
-        return new TextDecoder('utf-8').decode(bytes);
-      }
-
-      async function leerRemoto(token) {
-        var r = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + PATH + '?ref=' + BRANCH, {
-          headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' },
-          cache: 'no-store',
-        });
-        if (r.status === 404) return { sha: null, datos: { actualizado: null, posts: {} } };
-        if (!r.ok) throw new Error('GitHub respondió ' + r.status + ' al leer el archivo.');
-        var j = await r.json();
-        var datos;
-        try { datos = JSON.parse(ab64(j.content)); } catch (e) { datos = { posts: {} }; }
-        if (!datos.posts) datos.posts = {};
-        return { sha: j.sha, datos: datos };
-      }
-
-      async function subir(token) {
-        var remoto = await leerRemoto(token);
-        var fusion = remoto.datos;
-        // Gana la marca más reciente, mirada entrada por entrada: así dos
-        // dispositivos distintos no se pisan el trabajo.
-        Object.keys(estado).forEach(function (k) {
-          var mio = estado[k];
-          if (!mio || (!mio.estado && !mio.nota)) { delete fusion.posts[k]; return; }
-          var suyo = fusion.posts[k];
-          if (!suyo || !suyo.fecha || (mio.fecha && mio.fecha > suyo.fecha)) fusion.posts[k] = mio;
-        });
-        fusion._ayuda = 'Revisiones de los artículos del blog, escritas desde /borradores/. Cada clave es «idioma/slug». estado: «listo» (listo para publicar) o «cambios» (hay que corregir algo, la nota dice qué). Este archivo lo escribe la propia página; no hace falta editarlo a mano.';
-        fusion.actualizado = new Date().toISOString();
-
-        var cuerpo = {
-          message: 'Revisión de artículos desde /borradores/',
-          content: b64a(JSON.stringify(fusion, null, 2) + '\n'),
-          branch: BRANCH,
-        };
-        if (remoto.sha) cuerpo.sha = remoto.sha;
-
-        var r = await fetch('https://api.github.com/repos/' + REPO + '/contents/' + PATH, {
-          method: 'PUT',
-          headers: {
-            Authorization: 'Bearer ' + token,
-            Accept: 'application/vnd.github+json',
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(cuerpo),
-        });
-        if (!r.ok) {
-          var detalle = '';
-          try { detalle = (await r.json()).message || ''; } catch (e) {}
-          var err = new Error(detalle || ('GitHub respondió ' + r.status));
-          err.status = r.status;
-          throw err;
-        }
-        return fusion;
-      }
-
-      document.getElementById('rev-save').addEventListener('click', async function () {
-        var btn = this;
-        var antes = btn.textContent;
-        btn.disabled = true;
-        btn.textContent = 'Guardando…';
-        try {
-          var token = await pedirToken();
-          try {
-            await subir(token);
-          } catch (e) {
-            // 409: alguien escribió entre medias. Se relee y se reintenta una vez.
-            if (e.status === 409) await subir(token);
-            else throw e;
-          }
-          sucio = {};
-          persistir();
-          actualizarBarra();
-          toast('Guardado. Lo leeré de src/data/revisiones.json.', 4200);
-        } catch (e) {
-          // Un token caducado deja de servir: se borra para pedirlo otra vez.
-          if (/401|403|Bad credentials/i.test(e.message || '')) {
-            try { sessionStorage.removeItem('adar_gh_token'); } catch (err) {}
-          }
-          toast('No se pudo guardar: ' + (e.message || e), 6000);
-        } finally {
-          btn.disabled = false;
-          btn.textContent = antes;
-        }
-      });
-
-      pintarTodo(true);
+      // Al marcar o desmarcar hay que rehacer el filtro de revisión.
+      document.addEventListener('rv:change', aplicar);
+      aplicar();
     })();
   </script>
 </BaseLayout>

@@ -4,6 +4,8 @@
 import { getCollection } from 'astro:content';
 import KitRedes from '../components/KitRedes.astro';
 import { BRANDS, buildPost, sortPosts } from '../data/kit-brands';
+// Mismo archivo que /borradores/: una sola verdad para las revisiones de ADAR.
+import revisiones from '../data/revisiones.json';
 
 const brand = BRANDS.adar;
 
@@ -28,4 +30,4 @@ const posts = sortPosts(
 );
 ---
 
-<KitRedes brand={brand} posts={posts} />
+<KitRedes brand={brand} posts={posts} revisiones={(revisiones as any).posts || {}} />

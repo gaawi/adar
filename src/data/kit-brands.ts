@@ -82,6 +82,13 @@ export interface KitBrand {
   statusLabels: { publish: string; draft: string };
   /** Aviso en las fichas que aún no tienen URL pública. */
   draftNote: string;
+
+  // ── Revisión ───────────────────────────────────────────────────────────
+  /** Archivo del repositorio donde se acumulan las marcas y notas. */
+  reviewPath: string;
+  /** Clave de localStorage. Festival ADAR la comparte con /borradores/ para
+   *  que las dos pantallas vean lo mismo sin tener que subir nada. */
+  reviewLS: string;
 }
 
 const ADAR_FONTS =
@@ -138,6 +145,8 @@ export const BRANDS: Record<string, KitBrand> = {
     newQuote: { title: 'Cita', body: 'Una frase que resuma la idea.' },
     statusLabels: { publish: 'Publicado', draft: 'Borrador' },
     draftNote: 'Es un borrador: el enlace aún no existe. Publícalo antes de citar la URL.',
+    reviewPath: 'src/data/revisiones.json',
+    reviewLS: 'adar_revisiones_v1',
   },
 
   // ── CreArtBox · Brand guidelines (creartbox.nyc/brand.html) ────────────
@@ -197,6 +206,8 @@ export const BRANDS: Record<string, KitBrand> = {
     newQuote: { title: 'Quote', body: 'One sentence that carries the idea.' },
     statusLabels: { publish: 'Nota de prensa', draft: 'Borrador' },
     draftNote: 'Aún no está publicado: el enlace no existe todavía.',
+    reviewPath: 'src/data/revisiones-creartbox.json',
+    reviewLS: 'creartbox_revisiones_v1',
   },
 };
 

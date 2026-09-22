@@ -1,0 +1,547 @@
+---
+// Mecanismo de revisión compartido: barra fija, avisos y toda la lógica.
+//
+// Funciona sobre cualquier lista. Cada ficha se marca con
+//   data-rv-item data-rv-key data-rv-title
+// y lleva dentro un <RevisionItem />. La barra:
+//   · guarda las marcas al instante en el navegador (no espera a nada),
+//   · las sube al repositorio con el login de GitHub del panel,
+//   · deja `data-rv-state` en cada ficha («listo», «cambios» o «sin») para que
+//     cada página lo combine con sus propios filtros,
+//   · lanza el evento `rv:change` en document cuando algo cambia.
+//
+// Escribir en GitHub usa el token del usuario que devuelve /api/auth, el mismo
+// que usa el CMS. No hace falta ningún secreto en el servidor.
+interface Props {
+  /** Ruta del JSON en el repositorio donde se acumulan las revisiones. */
+  path: string;
+  /** Clave de localStorage; dos páginas de la misma marca deben compartirla. */
+  lsKey: string;
+  /** Marcas ya guardadas en el repositorio (vienen del build). */
+  guardadas: Record<string, { estado?: string; nota?: string; titulo?: string; fecha?: string }>;
+  repo?: string;
+  branch?: string;
+  /** Cómo se llama una ficha en los mensajes. */
+  unidad?: string;
+}
+const {
+  path,
+  lsKey,
+  guardadas,
+  repo = 'gaawi/adar',
+  branch = 'main',
+  unidad = 'artículo',
+} = Astro.props;
+
+const config = { path, lsKey, repo, branch, unidad, guardadas };
+---
+
+<div class="rv-bar" id="rv-bar" hidden>
+  <span class="rv-bar-text" id="rv-bar-text"></span>
+  <button type="button" class="rv-bar-btn" id="rv-copy">Copiar notas</button>
+  <button type="button" class="rv-bar-btn is-primary" id="rv-save">Guardar en GitHub</button>
+</div>
+
+<div class="rv-toast" id="rv-toast" role="status" aria-live="polite"></div>
+
+<script type="application/json" id="rv-config" set:html={JSON.stringify(config).replace(/</g, '\\u003c')}></script>
+
+<!-- Global: los estilos tienen que alcanzar el marcado de la página anfitriona,
+     que tiene otro ámbito. Los colores salen de tokens con alternativa, así
+     que valen igual sobre papel que sobre fondo oscuro. -->
+<style is:global>
+  /* Los colores van con alternativa dentro de var(), no como :root propio: si
+     se definieran aquí competirían en igualdad con los de la página anfitriona
+     y decidiría el orden del CSS, que es justo lo que no queremos. Así, quien
+     defina --rv-* manda siempre. */
+
+  /* Un display propio gana al atributo `hidden`, que solo trae display:none de
+     la hoja del navegador. Sin esto, ocultar no oculta. */
+  .rv-pill[hidden],
+  .rv-note[hidden],
+  .rv-bar[hidden] { display: none; }
+
+  .rv-pill {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: var(--rv-radius, 999px);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid currentColor;
+    white-space: nowrap;
+  }
+  .rv-pill.is-listo { color: var(--rv-ok, #2f6b3a); }
+  .rv-pill.is-cambios { color: var(--rv-warn, #9a5b12); }
+
+  .rv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line, rgba(128, 128, 128, 0.35));
+    margin-top: 12px;
+  }
+  .rv-group-label {
+    flex: 0 0 100%;
+    font-family: var(--font-mono, inherit);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+  .rv-choice { display: flex; flex-wrap: wrap; gap: 6px; }
+  .rv-choice button {
+    font-family: var(--font-mono, inherit);
+    font-size: 12px;
+    line-height: 1;
+    padding: 8px 12px;
+    border-radius: var(--rv-radius, 999px);
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.6;
+    white-space: nowrap;
+    transition: opacity 0.15s, background 0.15s, color 0.15s;
+  }
+  .rv-choice button:hover { opacity: 1; }
+  .rv-choice button.on { opacity: 1; font-weight: 600; }
+  .rv-choice button[data-rv-set='listo'].on {
+    background: var(--rv-ok, #2f6b3a);
+    border-color: var(--rv-ok, #2f6b3a);
+    color: var(--rv-ok-ink, #ffffff);
+  }
+  .rv-choice button[data-rv-set='cambios'].on {
+    background: var(--rv-warn, #9a5b12);
+    border-color: var(--rv-warn, #9a5b12);
+    color: var(--rv-warn-ink, #ffffff);
+  }
+  .rv-clear { opacity: 0.35; }
+  /* Quitar la marca solo tiene sentido si hay marca. */
+  [data-rv-item]:not(.rv-has) .rv-clear { display: none; }
+
+  .rv-note { flex: 1 1 320px; display: flex; flex-direction: column; gap: 4px; }
+  .rv-note-label {
+    font-family: var(--font-mono, inherit);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.55;
+  }
+  .rv-note textarea {
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 1.45;
+    padding: 8px 10px;
+    border: 1px solid var(--line, rgba(128, 128, 128, 0.4));
+    border-radius: var(--rv-radius-sm, 6px);
+    background: var(--card, rgba(255, 255, 255, 0.72));
+    color: inherit;
+    resize: vertical;
+    width: 100%;
+  }
+
+  .rv-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 120;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    padding: 12px 20px;
+    background: var(--rv-bar-bg, var(--fg, var(--ink, #0a0907)));
+    color: var(--rv-bar-fg, var(--bg, var(--paper, #f6f4ee)));
+    border-top: 1px solid var(--rv-bar-line, transparent);
+    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.22);
+  }
+  .rv-bar-text { flex: 1 1 220px; font-family: var(--font-mono, inherit); font-size: 12px; }
+  .rv-bar-btn {
+    font-family: var(--font-mono, inherit);
+    font-size: 12px;
+    line-height: 1;
+    padding: 10px 16px;
+    border-radius: var(--rv-radius, 999px);
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .rv-bar-btn:hover {
+    background: var(--rv-bar-fg, var(--bg, var(--paper, #f6f4ee)));
+    color: var(--rv-bar-bg, var(--fg, var(--ink, #0a0907)));
+  }
+  .rv-bar-btn.is-primary {
+    background: var(--accent, #f5d72f);
+    border-color: var(--accent, #f5d72f);
+    color: var(--on-accent, #0a0907);
+    font-weight: 600;
+  }
+  .rv-bar-btn[disabled] { opacity: 0.45; cursor: progress; }
+  body.rv-bar-on { padding-bottom: 86px; }
+
+  .rv-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 84px;
+    transform: translate(-50%, 16px);
+    background: var(--rv-bar-bg, var(--fg, var(--ink, #0a0907)));
+    color: var(--rv-bar-fg, var(--bg, var(--paper, #f6f4ee)));
+    border: 1px solid var(--rv-bar-line, transparent);
+    font-family: var(--font-mono, inherit);
+    font-size: 13px;
+    padding: 11px 18px;
+    border-radius: var(--rv-radius, 999px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s, transform 0.2s;
+    z-index: 130;
+    max-width: 90vw;
+    text-align: center;
+  }
+  .rv-toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+  @media (max-width: 640px) {
+    .rv { flex-direction: column; }
+    .rv-note { flex: 1 1 auto; width: 100%; }
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    var CFG = JSON.parse(document.getElementById('rv-config').textContent);
+    var GUARDADAS = CFG.guardadas || {};
+    var fichas = document.querySelectorAll('[data-rv-item]');
+    if (!fichas.length) return;
+
+    // ── Estado ────────────────────────────────────────────────────────────
+    // Base: lo que ya está en el repositorio (viene del build). Encima, lo de
+    // este navegador, que puede ser más reciente.
+    var estado = {};
+    Object.keys(GUARDADAS).forEach(function (k) { estado[k] = Object.assign({}, GUARDADAS[k]); });
+    var local = {};
+    try { local = JSON.parse(localStorage.getItem(CFG.lsKey) || '{}'); } catch (e) { local = {}; }
+    Object.keys(local).forEach(function (k) {
+      var a = estado[k], b = local[k];
+      if (!a || !a.fecha || (b.fecha && b.fecha > a.fecha)) estado[k] = b;
+    });
+
+    // Marcas hechas aquí y todavía no subidas.
+    var sucio = {};
+    Object.keys(local).forEach(function (k) {
+      var g = GUARDADAS[k];
+      if (!g || g.estado !== local[k].estado || (g.nota || '') !== (local[k].nota || '')) sucio[k] = true;
+    });
+
+    function persistir() {
+      var salida = {};
+      Object.keys(estado).forEach(function (k) {
+        if (estado[k] && (estado[k].estado || estado[k].nota)) salida[k] = estado[k];
+      });
+      try { localStorage.setItem(CFG.lsKey, JSON.stringify(salida)); } catch (e) {}
+    }
+
+    // ── Pintado ───────────────────────────────────────────────────────────
+    var PILL = { listo: 'Listo', cambios: 'Con notas' };
+
+    // `inicial` solo es true en el primer pintado: ahí sí se vuelca la nota
+    // guardada en el cuadro de texto. Después no, para no pisar lo que se
+    // esté escribiendo.
+    function pintar(ficha, inicial) {
+      var r = estado[ficha.dataset.rvKey] || {};
+      var marcado = r.estado || '';
+      ficha.dataset.rvState = marcado || 'sin';
+      ficha.classList.toggle('rv-has', !!marcado);
+
+      ficha.querySelectorAll('[data-rv-set]').forEach(function (b) {
+        b.classList.toggle('on', b.dataset.rvSet === marcado && marcado !== '');
+      });
+
+      var pill = ficha.querySelector('[data-rv-pill]');
+      if (pill) {
+        if (marcado) {
+          pill.hidden = false;
+          pill.textContent = PILL[marcado];
+          pill.className = 'rv-pill is-' + marcado;
+        } else {
+          pill.hidden = true;
+        }
+      }
+
+      var wrap = ficha.querySelector('[data-rv-note-wrap]');
+      if (wrap) wrap.hidden = marcado !== 'cambios';
+
+      if (inicial) {
+        var ta = ficha.querySelector('[data-rv-note]');
+        if (ta && (r.nota || '') !== ta.value) ta.value = r.nota || '';
+      }
+    }
+
+    function contar() {
+      var c = { listo: 0, cambios: 0, sin: 0 };
+      fichas.forEach(function (f) {
+        var e = (estado[f.dataset.rvKey] || {}).estado;
+        if (e === 'listo') c.listo++;
+        else if (e === 'cambios') c.cambios++;
+        else c.sin++;
+      });
+      Object.keys(c).forEach(function (k) {
+        var el = document.querySelector('[data-rv-count="' + k + '"]');
+        if (el) el.textContent = c[k];
+      });
+    }
+
+    var bar = document.getElementById('rv-bar');
+    var barText = document.getElementById('rv-bar-text');
+
+    function actualizarBarra() {
+      var n = Object.keys(sucio).length;
+      var marcadas = Object.keys(estado).filter(function (k) {
+        return estado[k] && estado[k].estado;
+      }).length;
+      var hay = !!(n || marcadas);
+      document.body.classList.toggle('rv-bar-on', hay);
+      bar.hidden = !hay;
+      if (!hay) return;
+      barText.textContent = n
+        ? n + (n === 1 ? ' marca sin subir' : ' marcas sin subir') +
+          '. Se guardan en este navegador; súbelas para que yo pueda leerlas.'
+        : 'Todo subido al repositorio.';
+    }
+
+    function avisarCambio() {
+      contar();
+      actualizarBarra();
+      document.dispatchEvent(new CustomEvent('rv:change'));
+    }
+
+    // ── Interacción ───────────────────────────────────────────────────────
+    document.addEventListener('click', function (ev) {
+      var b = ev.target.closest('[data-rv-set]');
+      if (!b) return;
+      var ficha = b.closest('[data-rv-item]');
+      if (!ficha) return;
+      ev.preventDefault();
+      var k = ficha.dataset.rvKey;
+      var quiere = b.dataset.rvSet;
+      var actual = (estado[k] || {}).estado || '';
+      var nuevo = quiere === actual ? '' : quiere;
+      var ta = ficha.querySelector('[data-rv-note]');
+
+      estado[k] = {
+        estado: nuevo,
+        nota: nuevo === 'cambios' && ta ? ta.value : '',
+        titulo: ficha.dataset.rvTitle || '',
+        fecha: new Date().toISOString(),
+      };
+      sucio[k] = true;
+      persistir();
+      pintar(ficha);
+      avisarCambio();
+      if (nuevo === 'cambios' && ta) ta.focus();
+    });
+
+    var temporizador;
+    document.addEventListener('input', function (ev) {
+      var ta = ev.target.closest('[data-rv-note]');
+      if (!ta) return;
+      var ficha = ta.closest('[data-rv-item]');
+      if (!ficha) return;
+      var k = ficha.dataset.rvKey;
+      clearTimeout(temporizador);
+      temporizador = setTimeout(function () {
+        estado[k] = Object.assign({}, estado[k], {
+          estado: 'cambios',
+          nota: ta.value,
+          titulo: ficha.dataset.rvTitle || '',
+          fecha: new Date().toISOString(),
+        });
+        sucio[k] = true;
+        persistir();
+        actualizarBarra();
+      }, 400);
+    });
+
+    // ── Avisos ────────────────────────────────────────────────────────────
+    var toastEl = document.getElementById('rv-toast');
+    var toastT;
+    function toast(m, ms) {
+      toastEl.textContent = m;
+      toastEl.classList.add('show');
+      clearTimeout(toastT);
+      toastT = setTimeout(function () { toastEl.classList.remove('show'); }, ms || 3200);
+    }
+
+    // ── Copiar las notas, por si prefieres pegarlas en la conversación ─────
+    document.getElementById('rv-copy').addEventListener('click', async function () {
+      var lineas = [];
+      fichas.forEach(function (f) {
+        var r = estado[f.dataset.rvKey];
+        if (!r || !r.estado) return;
+        lineas.push(
+          (r.estado === 'listo' ? '✓ LISTO' : '✎ CAMBIOS') + ' · ' + (f.dataset.rvTitle || f.dataset.rvKey) +
+          (r.nota && r.nota.trim() ? '\n   ' + r.nota.trim() : '')
+        );
+      });
+      var texto = lineas.length
+        ? 'Revisión · ' + CFG.path + '\n\n' + lineas.join('\n\n')
+        : 'Todavía no has marcado ningún ' + CFG.unidad + '.';
+      try {
+        await navigator.clipboard.writeText(texto);
+        toast('Notas copiadas.');
+      } catch (e) {
+        toast('No se pudo copiar; están en la consola.');
+        console.log(texto);
+      }
+    });
+
+    // ── Guardar en el repositorio ──────────────────────────────────────────
+    // Reutiliza el login de GitHub del panel: /api/auth abre una ventana que
+    // devuelve el token por postMessage, igual que al CMS.
+    function pedirToken() {
+      return new Promise(function (resolve, reject) {
+        var cache;
+        try { cache = sessionStorage.getItem('adar_gh_token'); } catch (e) {}
+        if (cache) return resolve(cache);
+        var w = window.open('/api/auth', 'adar-gh-auth', 'width=700,height=740');
+        if (!w) return reject(new Error('El navegador bloqueó la ventana. Permite las ventanas emergentes y vuelve a intentarlo.'));
+        var tope = setTimeout(function () {
+          window.removeEventListener('message', recibir);
+          reject(new Error('Se agotó el tiempo esperando a GitHub.'));
+        }, 120000);
+        function recibir(e) {
+          if (e.origin !== window.location.origin) return;
+          var d = e.data;
+          if (typeof d !== 'string') return;
+          if (d === 'authorizing:github') {
+            try { w.postMessage('adar', window.location.origin); } catch (err) {}
+            return;
+          }
+          var m = d.match(/^authorization:github:(success|error):([\s\S]*)$/);
+          if (!m) return;
+          clearTimeout(tope);
+          window.removeEventListener('message', recibir);
+          var payload;
+          try { payload = JSON.parse(m[2]); } catch (err) { return reject(new Error('Respuesta de GitHub no válida.')); }
+          if (m[1] === 'success' && payload.token) {
+            try { sessionStorage.setItem('adar_gh_token', payload.token); } catch (err) {}
+            resolve(payload.token);
+          } else {
+            reject(new Error(payload.error || 'GitHub no autorizó la sesión.'));
+          }
+        }
+        window.addEventListener('message', recibir);
+      });
+    }
+
+    function aBase64(str) {
+      var bytes = new TextEncoder().encode(str);
+      var bin = '';
+      for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+      return btoa(bin);
+    }
+    function deBase64(s) {
+      var bin = atob(String(s).replace(/\s/g, ''));
+      var bytes = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      return new TextDecoder('utf-8').decode(bytes);
+    }
+
+    var API = 'https://api.github.com/repos/' + CFG.repo + '/contents/' + CFG.path;
+
+    async function leerRemoto(token) {
+      var r = await fetch(API + '?ref=' + CFG.branch, {
+        headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' },
+        cache: 'no-store',
+      });
+      if (r.status === 404) return { sha: null, datos: { actualizado: null, posts: {} } };
+      if (!r.ok) throw new Error('GitHub respondió ' + r.status + ' al leer el archivo.');
+      var j = await r.json();
+      var datos;
+      try { datos = JSON.parse(deBase64(j.content)); } catch (e) { datos = { posts: {} }; }
+      if (!datos.posts) datos.posts = {};
+      return { sha: j.sha, datos: datos };
+    }
+
+    async function subir(token) {
+      var remoto = await leerRemoto(token);
+      var fusion = remoto.datos;
+      // Entrada por entrada, gana la marca más reciente: así revisar desde el
+      // móvil y desde el ordenador no se pisa.
+      Object.keys(estado).forEach(function (k) {
+        var mio = estado[k];
+        if (!mio || (!mio.estado && !mio.nota)) { delete fusion.posts[k]; return; }
+        var suyo = fusion.posts[k];
+        if (!suyo || !suyo.fecha || (mio.fecha && mio.fecha > suyo.fecha)) fusion.posts[k] = mio;
+      });
+      fusion._ayuda =
+        'Revisiones escritas desde el panel interno. Cada clave es «idioma/slug». ' +
+        'estado: «listo» (listo para publicar) o «cambios» (hay que corregir algo, la nota dice qué). ' +
+        'Lo escribe la propia página; no hace falta editarlo a mano.';
+      fusion.actualizado = new Date().toISOString();
+
+      var cuerpo = {
+        message: 'Revisión desde el panel interno',
+        content: aBase64(JSON.stringify(fusion, null, 2) + '\n'),
+        branch: CFG.branch,
+      };
+      if (remoto.sha) cuerpo.sha = remoto.sha;
+
+      var r = await fetch(API, {
+        method: 'PUT',
+        headers: {
+          Authorization: 'Bearer ' + token,
+          Accept: 'application/vnd.github+json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(cuerpo),
+      });
+      if (!r.ok) {
+        var detalle = '';
+        try { detalle = (await r.json()).message || ''; } catch (e) {}
+        var err = new Error(detalle || 'GitHub respondió ' + r.status);
+        err.status = r.status;
+        throw err;
+      }
+    }
+
+    document.getElementById('rv-save').addEventListener('click', async function () {
+      var btn = this;
+      var antes = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Guardando…';
+      try {
+        var token = await pedirToken();
+        try {
+          await subir(token);
+        } catch (e) {
+          // 409: alguien escribió entre medias. Se relee y se reintenta una vez.
+          if (e.status === 409) await subir(token);
+          else throw e;
+        }
+        sucio = {};
+        persistir();
+        actualizarBarra();
+        toast('Guardado. Lo leeré de ' + CFG.path + '.', 4200);
+      } catch (e) {
+        // Un token caducado deja de servir: se borra para pedirlo otra vez.
+        if (/401|403|Bad credentials/i.test(e.message || '')) {
+          try { sessionStorage.removeItem('adar_gh_token'); } catch (err) {}
+        }
+        toast('No se pudo guardar: ' + (e.message || e), 6000);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = antes;
+      }
+    });
+
+    fichas.forEach(function (f) { pintar(f, true); });
+    contar();
+    actualizarBarra();
+  })();
+</script>

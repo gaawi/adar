@@ -5,6 +5,7 @@
 import KitRedes from '../components/KitRedes.astro';
 import { BRANDS, buildPost } from '../data/kit-brands';
 import { CREARTBOX_SOURCES } from '../data/kit-creartbox';
+import revisiones from '../data/revisiones-creartbox.json';
 
 const brand = BRANDS.creartbox;
 // Sin ordenar por fecha: aquí las fechas son de conciertos futuros y la nota de
@@ -12,4 +13,4 @@ const brand = BRANDS.creartbox;
 const posts = CREARTBOX_SOURCES.map((s) => buildPost(s, brand));
 ---
 
-<KitRedes brand={brand} posts={posts} />
+<KitRedes brand={brand} posts={posts} revisiones={(revisiones as any).posts || {}} />

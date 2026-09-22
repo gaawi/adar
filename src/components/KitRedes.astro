@@ -15,12 +15,24 @@
 // (Festival ADAR) y en creartbox.nyc (CreArtBox).
 import type { KitBrand, KitPost } from '../data/kit-brands';
 import { KITS } from '../data/kit-brands';
+import RevisionBar from './RevisionBar.astro';
+import RevisionItem from './RevisionItem.astro';
 
 interface Props {
   brand: KitBrand;
   posts: KitPost[];
+  /** Marcas de revisión ya guardadas en el repositorio. */
+  revisiones?: Record<string, { estado?: string; nota?: string; titulo?: string; fecha?: string }>;
 }
-const { brand, posts } = Astro.props;
+const { brand, posts, revisiones = {} } = Astro.props;
+
+const marcadas = { listo: 0, cambios: 0 };
+posts.forEach((p) => {
+  const e = revisiones[`${p.lang}/${p.slug}`]?.estado;
+  if (e === 'listo') marcadas.listo++;
+  else if (e === 'cambios') marcadas.cambios++;
+});
+const sinRevisar = posts.length - marcadas.listo - marcadas.cambios;
 
 const published = posts.filter((p) => p.status === 'publish').length;
 const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
@@ -48,6 +60,17 @@ const tokens: Record<string, string> = {
   '--r-pill': brand.radius === '0' ? '0' : '999px',
   '--r-box': brand.radius === '0' ? '0' : '10px',
   '--r-sm': brand.radius === '0' ? '0' : '6px',
+  // Los controles de revisión heredan la forma y buscan contraste sobre el
+  // fondo real: el verde y el ámbar oscuros no se leen sobre sala.
+  '--rv-radius': brand.radius === '0' ? '0' : '999px',
+  '--rv-radius-sm': brand.radius === '0' ? '0' : '6px',
+  '--rv-ok': dark ? '#6FBF85' : '#2f6b3a',
+  '--rv-ok-ink': dark ? '#08140c' : '#ffffff',
+  '--rv-warn': dark ? '#E0A33F' : '#9a5b12',
+  '--rv-warn-ink': dark ? '#1a1206' : '#ffffff',
+  // En oscuro la barra es una superficie más de la marca (--foso), no una
+  // franja crema; sobre papel se queda como estaba, oscura sobre claro.
+  ...(dark ? { '--rv-bar-bg': brand.card, '--rv-bar-fg': brand.paper, '--rv-bar-line': brand.line } : {}),
   '--font-display': brand.ui,
   '--font-voz': brand.display,
   '--font-mono': brand.label,
@@ -211,11 +234,25 @@ const rootCss = `:root{${Object.entries(tokens)
           <button data-style="marco">Marco</button>
         </span>
         <label><input type="checkbox" id="onlyPub" /> Solo publicados</label>
+        <span class="seg" id="revSeg" title="Filtrar por estado de revisión">
+          <button data-rev="all" class="on">Todas</button>
+          <button data-rev="sin">Sin revisar (<span data-rv-count="sin">{sinRevisar}</span>)</button>
+          <button data-rev="listo">Listos (<span data-rv-count="listo">{marcadas.listo}</span>)</button>
+          <button data-rev="cambios">Con notas (<span data-rv-count="cambios">{marcadas.cambios}</span>)</button>
+        </span>
         <span class="count" id="count">{published} publicados · {posts.length} en total</span>
       </div>
 
       {posts.map((p, i) => (
-        <article class="card" data-title={p.title.toLowerCase()} data-status={p.status} data-i={i}>
+        <article
+          class="card"
+          data-title={p.title.toLowerCase()}
+          data-status={p.status}
+          data-i={i}
+          data-rv-item
+          data-rv-key={`${p.lang}/${p.slug}`}
+          data-rv-title={p.title}
+        >
           <span class={`thumb${p.image ? '' : ' no-img'}`}>
             {p.image && <img src={p.image} alt="" loading="lazy" crossorigin="anonymous" />}
           </span>
@@ -229,6 +266,7 @@ const rootCss = `:root{${Object.entries(tokens)
               <span>{p.date}</span>
               <span>{p.lang.toUpperCase()}</span>
               <span>{p.slides.length} diapositivas sugeridas</span>
+              <span class="rv-pill" data-rv-pill hidden></span>
             </p>
 
             <div class="group">
@@ -262,6 +300,8 @@ const rootCss = `:root{${Object.entries(tokens)
               </div>
               {p.status !== 'publish' && <p class="note">{brand.draftNote}</p>}
             </div>
+
+            <RevisionItem nota={revisiones[`${p.lang}/${p.slug}`]?.nota || ''} label="Revisión" />
           </div>
         </article>
       ))}
@@ -344,6 +384,13 @@ const rootCss = `:root{${Object.entries(tokens)
     </div>
 
     <div id="toast" role="status" aria-live="polite"></div>
+
+    <RevisionBar
+      path={brand.reviewPath}
+      lsKey={brand.reviewLS}
+      guardadas={revisiones}
+      unidad={brand.unit.one}
+    />
 
     <script type="application/json" id="kit-data" set:html={dataJson}></script>
     <script type="application/json" id="kit-brand" set:html={brandJson}></script>
@@ -1009,10 +1056,15 @@ const rootCss = `:root{${Object.entries(tokens)
 
         // ── Filtros ──────────────────────────────────────────────────────
         var q = document.getElementById('q'), onlyPub = document.getElementById('onlyPub'), countEl = document.getElementById('count');
+        var revFilter = 'all';
         function applyFilter() {
           var term = (q.value || '').trim().toLowerCase(), pubOnly = onlyPub.checked, shown = 0;
           document.querySelectorAll('.card').forEach(function (card) {
-            var show = (!term || card.dataset.title.indexOf(term) > -1) && (!pubOnly || card.dataset.status === 'publish');
+            // data-rv-state lo escribe RevisionBar; aquí solo se combina.
+            var show =
+              (!term || card.dataset.title.indexOf(term) > -1) &&
+              (!pubOnly || card.dataset.status === 'publish') &&
+              (revFilter === 'all' || card.dataset.rvState === revFilter);
             card.classList.toggle('is-hidden', !show);
             if (show) shown++;
           });
@@ -1020,6 +1072,14 @@ const rootCss = `:root{${Object.entries(tokens)
         }
         q.addEventListener('input', applyFilter);
         onlyPub.addEventListener('change', applyFilter);
+        document.getElementById('revSeg').addEventListener('click', function (e) {
+          var b = e.target.closest('button'); if (!b) return;
+          revFilter = b.dataset.rev;
+          document.querySelectorAll('#revSeg button').forEach(function (x) { x.classList.toggle('on', x === b); });
+          applyFilter();
+        });
+        // Al marcar o desmarcar hay que rehacer el filtro.
+        document.addEventListener('rv:change', applyFilter);
       })();
     </script>
   </body>
