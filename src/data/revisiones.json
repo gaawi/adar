@@ -1,5 +1,11 @@
 {
-  "_ayuda": "Revisiones de los artículos del blog, escritas desde /borradores/. Cada clave es 'idioma/slug'. estado: 'listo' (listo para publicar) o 'cambios' (hay que corregir algo, la nota dice qué). Este archivo lo escribe la propia página; no hace falta editarlo a mano.",
-  "actualizado": null,
-  "posts": {}
+  "_ayuda": "Revisiones escritas desde el panel interno. Cada clave es «idioma/slug». estado: «listo» (listo para publicar) o «cambios» (hay que corregir algo, la nota dice qué). Lo escribe la propia página; no hace falta editarlo a mano.",
+  "actualizado": "2026-09-23T15:57:47.970Z",
+  "posts": {
+    "es/por-que-tocar-bach-en-un-horreo": {
+      "fecha_prevista": "2026-09-23",
+      "titulo": "¿Por qué tocar a Bach en un hórreo y no en un auditorio?",
+      "fecha": "2026-09-23T15:57:36.702Z"
+    }
+  }
 }
