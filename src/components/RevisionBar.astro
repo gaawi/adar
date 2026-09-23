@@ -18,7 +18,7 @@ interface Props {
   /** Clave de localStorage; dos páginas de la misma marca deben compartirla. */
   lsKey: string;
   /** Marcas ya guardadas en el repositorio (vienen del build). */
-  guardadas: Record<string, { estado?: string; nota?: string; titulo?: string; fecha?: string }>;
+  guardadas: Record<string, { estado?: string; nota?: string; titulo?: string; fecha?: string; fecha_prevista?: string }>;
   repo?: string;
   branch?: string;
   /** Cómo se llama una ficha en los mensajes. */
@@ -121,6 +121,20 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
   .rv-clear { opacity: 0.35; }
   /* Quitar la marca solo tiene sentido si hay marca. */
   [data-rv-item]:not(.rv-has) .rv-clear { display: none; }
+
+  .rv-fecha { display: flex; flex-direction: column; gap: 4px; }
+  .rv-fecha input {
+    font-family: var(--font-mono, inherit);
+    font-size: 12px;
+    padding: 7px 10px;
+    border: 1px solid var(--line, rgba(128, 128, 128, 0.4));
+    border-radius: var(--rv-radius, 999px);
+    background: var(--card, rgba(255, 255, 255, 0.72));
+    color: inherit;
+    color-scheme: var(--rv-scheme, light);
+  }
+  /* Aprobado pero sin fecha: quien publique no sabría cuándo. */
+  [data-rv-item].rv-sin-fecha .rv-fecha input { border-color: var(--rv-warn, #9a5b12); }
 
   .rv-note { flex: 1 1 320px; display: flex; flex-direction: column; gap: 4px; }
   .rv-note-label {
@@ -235,13 +249,16 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     var sucio = {};
     Object.keys(local).forEach(function (k) {
       var g = GUARDADAS[k];
-      if (!g || g.estado !== local[k].estado || (g.nota || '') !== (local[k].nota || '')) sucio[k] = true;
+      var l = local[k];
+      if (!g || g.estado !== l.estado || (g.nota || '') !== (l.nota || '') ||
+          (g.fecha_prevista || '') !== (l.fecha_prevista || '')) sucio[k] = true;
     });
 
     function persistir() {
       var salida = {};
       Object.keys(estado).forEach(function (k) {
-        if (estado[k] && (estado[k].estado || estado[k].nota)) salida[k] = estado[k];
+        var e = estado[k];
+        if (e && (e.estado || e.nota || e.fecha_prevista)) salida[k] = e;
       });
       try { localStorage.setItem(CFG.lsKey, JSON.stringify(salida)); } catch (e) {}
     }
@@ -261,6 +278,12 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       ficha.querySelectorAll('[data-rv-set]').forEach(function (b) {
         b.classList.toggle('on', b.dataset.rvSet === marcado && marcado !== '');
       });
+
+      if (inicial) {
+        var fi0 = ficha.querySelector('[data-rv-fecha]');
+        if (fi0 && (r.fecha_prevista || '') !== fi0.value) fi0.value = r.fecha_prevista || '';
+      }
+      ficha.classList.toggle('rv-sin-fecha', marcado === 'listo' && !(r.fecha_prevista || ''));
 
       var pill = ficha.querySelector('[data-rv-pill]');
       if (pill) {
@@ -308,10 +331,14 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       document.body.classList.toggle('rv-bar-on', hay);
       bar.hidden = !hay;
       if (!hay) return;
-      barText.textContent = n
+      var sinFecha = document.querySelectorAll('[data-rv-item].rv-sin-fecha').length;
+      var aviso = sinFecha
+        ? ' · ' + sinFecha + (sinFecha === 1 ? ' aprobado sin fecha' : ' aprobados sin fecha')
+        : '';
+      barText.textContent = (n
         ? n + (n === 1 ? ' marca sin subir' : ' marcas sin subir') +
           '. Se guardan en este navegador; súbelas para que yo pueda leerlas.'
-        : 'Todo subido al repositorio.';
+        : 'Todo subido al repositorio.') + aviso;
     }
 
     function avisarCambio() {
@@ -332,10 +359,12 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       var actual = (estado[k] || {}).estado || '';
       var nuevo = quiere === actual ? '' : quiere;
       var ta = ficha.querySelector('[data-rv-note]');
+      var fi = ficha.querySelector('[data-rv-fecha]');
 
       estado[k] = {
         estado: nuevo,
         nota: nuevo === 'cambios' && ta ? ta.value : '',
+        fecha_prevista: fi ? fi.value : (estado[k] || {}).fecha_prevista || '',
         titulo: ficha.dataset.rvTitle || '',
         fecha: new Date().toISOString(),
       };
@@ -344,6 +373,24 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       pintar(ficha);
       avisarCambio();
       if (nuevo === 'cambios' && ta) ta.focus();
+    });
+
+    // La fecha es un <input type="date">: se guarda en cuanto cambia.
+    document.addEventListener('change', function (ev) {
+      var fi = ev.target.closest('[data-rv-fecha]');
+      if (!fi) return;
+      var fichaF = fi.closest('[data-rv-item]');
+      if (!fichaF) return;
+      var kf = fichaF.dataset.rvKey;
+      estado[kf] = Object.assign({}, estado[kf], {
+        fecha_prevista: fi.value,
+        titulo: fichaF.dataset.rvTitle || '',
+        fecha: new Date().toISOString(),
+      });
+      sucio[kf] = true;
+      persistir();
+      pintar(fichaF);
+      avisarCambio();
     });
 
     var temporizador;
@@ -385,6 +432,7 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
         if (!r || !r.estado) return;
         lineas.push(
           (r.estado === 'listo' ? '✓ LISTO' : '✎ CAMBIOS') + ' · ' + (f.dataset.rvTitle || f.dataset.rvKey) +
+          (r.fecha_prevista ? '   [publicar el ' + r.fecha_prevista + ']' : '') +
           (r.nota && r.nota.trim() ? '\n   ' + r.nota.trim() : '')
         );
       });
@@ -475,7 +523,7 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       // móvil y desde el ordenador no se pisa.
       Object.keys(estado).forEach(function (k) {
         var mio = estado[k];
-        if (!mio || (!mio.estado && !mio.nota)) { delete fusion.posts[k]; return; }
+        if (!mio || (!mio.estado && !mio.nota && !mio.fecha_prevista)) { delete fusion.posts[k]; return; }
         var suyo = fusion.posts[k];
         if (!suyo || !suyo.fecha || (mio.fecha && mio.fecha > suyo.fecha)) fusion.posts[k] = mio;
       });

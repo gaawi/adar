@@ -1,7 +1,7 @@
 ---
 // Controles de revisión de UNA ficha: listo / hay que cambiar algo / sin marcar,
-// más el cuadro de nota. El comportamiento lo pone <RevisionBar />, que busca
-// estos elementos por sus atributos data-rv-*.
+// la nota, y la fecha prevista de publicación. El comportamiento lo pone
+// <RevisionBar />, que busca estos elementos por sus atributos data-rv-*.
 //
 // Quien lo use tiene que marcar la tarjeta contenedora con
 //   data-rv-item data-rv-key="<clave>" data-rv-title="<título>"
@@ -10,12 +10,14 @@
 interface Props {
   /** Texto de la nota ya guardada, para que aparezca escrita. */
   nota?: string;
+  /** Fecha prevista ya guardada (AAAA-MM-DD). */
+  fecha?: string;
   /** Etiqueta del grupo; el kit la necesita para alinearse con sus bloques. */
   label?: string;
   /** Clase extra, para que cada página lo encaje en su maquetación. */
   class?: string;
 }
-const { nota = '', label = '', class: extra = '' } = Astro.props;
+const { nota = '', fecha = '', label = '', class: extra = '' } = Astro.props;
 ---
 
 <div class={`rv ${extra}`} data-rv-controls>
@@ -25,6 +27,12 @@ const { nota = '', label = '', class: extra = '' } = Astro.props;
     <button type="button" data-rv-set="cambios">Hay que cambiar algo</button>
     <button type="button" data-rv-set="" class="rv-clear" title="Quitar la marca">Sin marcar</button>
   </div>
+
+  <label class="rv-fecha">
+    <span class="rv-note-label">Publicar el</span>
+    <input type="date" data-rv-fecha value={fecha} />
+  </label>
+
   <label class="rv-note" data-rv-note-wrap hidden>
     <span class="rv-note-label">Qué hay que cambiar</span>
     <textarea

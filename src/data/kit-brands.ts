@@ -89,6 +89,10 @@ export interface KitBrand {
   /** Clave de localStorage. Festival ADAR la comparte con /borradores/ para
    *  que las dos pantallas vean lo mismo sin tener que subir nada. */
   reviewLS: string;
+  /** ¿La fecha de la pieza es su fecha de publicación? En el blog de ADAR sí;
+   *  en CreArtBox es la fecha del concierto, así que en el calendario solo
+   *  cuenta la fecha prevista que se ponga a mano. */
+  calendarUsesPostDate: boolean;
 }
 
 const ADAR_FONTS =
@@ -147,6 +151,7 @@ export const BRANDS: Record<string, KitBrand> = {
     draftNote: 'Es un borrador: el enlace aún no existe. Publícalo antes de citar la URL.',
     reviewPath: 'src/data/revisiones.json',
     reviewLS: 'adar_revisiones_v1',
+    calendarUsesPostDate: true,
   },
 
   // ── CreArtBox · Brand guidelines (creartbox.nyc/brand.html) ────────────
@@ -208,6 +213,7 @@ export const BRANDS: Record<string, KitBrand> = {
     draftNote: 'Aún no está publicado: el enlace no existe todavía.',
     reviewPath: 'src/data/revisiones-creartbox.json',
     reviewLS: 'creartbox_revisiones_v1',
+    calendarUsesPostDate: false,
   },
 };
 

@@ -11,7 +11,7 @@ import RevisionBar from '../../components/RevisionBar.astro';
 import RevisionItem from '../../components/RevisionItem.astro';
 import revisiones from '../../data/revisiones.json';
 
-const guardadas: Record<string, { estado?: string; nota?: string; titulo?: string; fecha?: string }> =
+const guardadas: Record<string, { estado?: string; nota?: string; titulo?: string; fecha?: string; fecha_prevista?: string }> =
   (revisiones as any).posts || {};
 
 const all = (await getCollection('blog'))
@@ -33,6 +33,7 @@ const all = (await getCollection('blog'))
       tags: e.data.tags || [],
       estado: rev.estado || '',
       nota: rev.nota || '',
+      fechaPrevista: rev.fecha_prevista || '',
       // Los publicados enlazan a la web real; los borradores, a su vista previa.
       href: isPub ? `/${lang}/blog/${slug}/` : `/borradores/${lang}/${slug}/`,
     };
@@ -61,6 +62,7 @@ const sinRevisar = all.length - listos - conNotas;
     </span>
     <a class="draft-bar-link" href="/admin/">Ir al panel</a>
     <a class="draft-bar-link" href="/kit-redes/">Kit de redes</a>
+    <a class="draft-bar-link" href="/calendario/">Calendario</a>
   </div>
 
   <section class="blog-hero">
@@ -127,7 +129,7 @@ const sinRevisar = all.length - listos - conNotas;
             </a>
 
             {/* Fuera del enlace: si estuviera dentro, pulsar un botón navegaría. */}
-            <RevisionItem nota={p.nota} class="mono" />
+            <RevisionItem nota={p.nota} fecha={p.fechaPrevista} class="mono" />
           </li>
         ))}
       </ul>

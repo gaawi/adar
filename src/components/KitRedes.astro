@@ -22,7 +22,7 @@ interface Props {
   brand: KitBrand;
   posts: KitPost[];
   /** Marcas de revisión ya guardadas en el repositorio. */
-  revisiones?: Record<string, { estado?: string; nota?: string; titulo?: string; fecha?: string }>;
+  revisiones?: Record<string, { estado?: string; nota?: string; titulo?: string; fecha?: string; fecha_prevista?: string }>;
 }
 const { brand, posts, revisiones = {} } = Astro.props;
 
@@ -68,6 +68,7 @@ const tokens: Record<string, string> = {
   '--rv-ok-ink': dark ? '#08140c' : '#ffffff',
   '--rv-warn': dark ? '#E0A33F' : '#9a5b12',
   '--rv-warn-ink': dark ? '#1a1206' : '#ffffff',
+  '--rv-scheme': dark ? 'dark' : 'light',
   // En oscuro la barra es una superficie más de la marca (--foso), no una
   // franja crema; sobre papel se queda como estaba, oscura sobre claro.
   ...(dark ? { '--rv-bar-bg': brand.card, '--rv-bar-fg': brand.paper, '--rv-bar-line': brand.line } : {}),
@@ -106,8 +107,12 @@ const rootCss = `:root{${Object.entries(tokens)
       h1 .dot { color: var(--accent); }
       .lede { margin: 0; max-width: 64ch; color: var(--fg-soft); font-size: 16px; line-height: 1.5; }
 
+      .kit-nav { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 0 0 18px; }
+      .kit-cal { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 9px 16px; text-decoration: none; color: var(--muted); border: 1px solid var(--line); border-radius: var(--r-pill); }
+      .kit-cal:hover { color: var(--fg); background: var(--chip-soft); }
+
       /* Selector de kit: siempre visible, para no confundir una marca con la otra. */
-      .kit-switch { display: flex; gap: 0; margin: 0 0 18px; border: 1px solid var(--line); border-radius: var(--r-pill); overflow: hidden; width: max-content; max-width: 100%; }
+      .kit-switch { display: flex; gap: 0; margin: 0; border: 1px solid var(--line); border-radius: var(--r-pill); overflow: hidden; width: max-content; max-width: 100%; }
       .kit-switch a { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 9px 16px; text-decoration: none; color: var(--muted); border: 0; }
       .kit-switch a + a { border-left: 1px solid var(--line); }
       .kit-switch a:hover { color: var(--fg); background: var(--chip-soft); }
@@ -211,13 +216,16 @@ const rootCss = `:root{${Object.entries(tokens)
   </head>
   <body>
     <div class="wrap">
-      <nav class="kit-switch" aria-label="Elegir kit">
-        {KITS.map((k) => (
-          <a href={k.href} class={k.id === brand.id ? 'on' : ''} aria-current={k.id === brand.id ? 'page' : undefined}>
-            {k.label}
-          </a>
-        ))}
-      </nav>
+      <div class="kit-nav">
+        <nav class="kit-switch" aria-label="Elegir kit">
+          {KITS.map((k) => (
+            <a href={k.href} class={k.id === brand.id ? 'on' : ''} aria-current={k.id === brand.id ? 'page' : undefined}>
+              {k.label}
+            </a>
+          ))}
+        </nav>
+        <a class="kit-cal" href="/calendario/">Calendario →</a>
+      </div>
 
       <header class="kit-head">
         <p class="eyebrow">{brand.org} · Panel interno</p>
@@ -301,7 +309,11 @@ const rootCss = `:root{${Object.entries(tokens)
               {p.status !== 'publish' && <p class="note">{brand.draftNote}</p>}
             </div>
 
-            <RevisionItem nota={revisiones[`${p.lang}/${p.slug}`]?.nota || ''} label="Revisión" />
+            <RevisionItem
+              nota={revisiones[`${p.lang}/${p.slug}`]?.nota || ''}
+              fecha={revisiones[`${p.lang}/${p.slug}`]?.fecha_prevista || ''}
+              label="Revisión"
+            />
           </div>
         </article>
       ))}

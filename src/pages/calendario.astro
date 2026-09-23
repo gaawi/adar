@@ -1,0 +1,465 @@
+---
+// Calendario de publicación · herramienta interna (noindex).
+//
+// Pensado para compartirlo con quien publique: aquí se ve qué está ya
+// publicado y qué toca publicar cada día, mezclando Festival ADAR y CreArtBox
+// pero pudiendo separarlos con un filtro.
+//
+// Las fechas previstas se ponen en el kit de redes o en /borradores/, y se
+// guardan en los mismos archivos de revisiones. Esta página solo lee.
+//
+// Qué fecha usa cada pieza:
+//   · Si tiene fecha prevista puesta a mano, va ahí como «previsto»: quiere
+//     decir que ese día hay algo que hacer.
+//   · Si no, y ya está publicada, va en su fecha de publicación como
+//     «publicado», que es historia. Solo vale para el blog de ADAR: en
+//     CreArtBox la fecha de la pieza es la del concierto, no la de publicar.
+//   · Y si no tiene ninguna, sale abajo en «sin fecha».
+import { getCollection } from 'astro:content';
+import { BRANDS, buildPost } from '../data/kit-brands';
+import { CREARTBOX_SOURCES } from '../data/kit-creartbox';
+import revAdar from '../data/revisiones.json';
+import revCreartbox from '../data/revisiones-creartbox.json';
+
+type Rev = { estado?: string; nota?: string; fecha_prevista?: string };
+
+const FUENTES = [
+  {
+    brand: BRANDS.adar,
+    revisiones: ((revAdar as any).posts || {}) as Record<string, Rev>,
+    panel: '/kit-redes/',
+    piezas: (await getCollection('blog')).map((e) => {
+      const [lang, ...rest] = e.id.split('/');
+      const slug = rest.join('/');
+      return {
+        lang,
+        slug,
+        title: e.data.title,
+        status: e.data.status,
+        date: e.data.date ? e.data.date.toISOString().slice(0, 10) : '',
+        url: e.data.status === 'publish' ? `/${lang}/blog/${slug}/` : `/borradores/${lang}/${slug}/`,
+      };
+    }),
+  },
+  {
+    brand: BRANDS.creartbox,
+    revisiones: ((revCreartbox as any).posts || {}) as Record<string, Rev>,
+    panel: '/kit-redes-creartbox/',
+    piezas: CREARTBOX_SOURCES.map((s) => {
+      const p = buildPost(s, BRANDS.creartbox);
+      return { lang: p.lang, slug: p.slug, title: p.title, status: p.status, date: p.date, url: p.url };
+    }),
+  },
+];
+
+interface Pieza {
+  key: string;
+  marca: string;
+  marcaNombre: string;
+  titulo: string;
+  status: string;
+  date: string;
+  url: string;
+  panel: string;
+  usaFechaPost: boolean;
+}
+
+const piezas: Pieza[] = [];
+for (const f of FUENTES) {
+  for (const p of f.piezas) {
+    piezas.push({
+      key: `${p.lang}/${p.slug}`,
+      marca: f.brand.id,
+      marcaNombre: f.brand.org,
+      titulo: p.title,
+      status: p.status,
+      date: p.date,
+      url: p.url,
+      panel: f.panel,
+      usaFechaPost: f.brand.calendarUsesPostDate,
+    });
+  }
+}
+
+const MARCAS = FUENTES.map((f) => ({
+  id: f.brand.id,
+  nombre: f.brand.org,
+  panel: f.panel,
+  lsKey: f.brand.reviewLS,
+  accent: f.brand.accent,
+  // Cada ficha se pinta con la superficie de su marca, así que se distinguen
+  // de un vistazo aunque los dos amarillos se parezcan.
+  chipBg: f.brand.theme === 'dark' ? f.brand.card : '#ffffff',
+  chipInk: f.brand.theme === 'dark' ? f.brand.paper : f.brand.ink,
+  revisiones: f.revisiones,
+}));
+
+const datos = JSON.stringify({ piezas, marcas: MARCAS }).replace(/</g, '\\u003c');
+const hoy = new Date().toISOString().slice(0, 10);
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Calendario de publicación</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Chivo:wght@400;500;700&family=Chivo+Mono:wght@400;500&display=swap"
+    />
+    <style is:global>
+      :root {
+        --ink: #0a0907;
+        --paper: #f6f4ee;
+        --muted: #6e6a5c;
+        --line: rgba(10, 9, 7, 0.14);
+        --card: #fff;
+        --accent: #f5d72f;
+        --voz: 'Alegreya', Georgia, serif;
+        --ui: 'Chivo', system-ui, sans-serif;
+        --mono: 'Chivo Mono', ui-monospace, monospace;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--ui); -webkit-font-smoothing: antialiased; }
+      .wrap { max-width: 1240px; margin: 0 auto; padding: 28px 20px 80px; }
+
+      .vuelta { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+      .vuelta a {
+        font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase;
+        padding: 8px 14px; text-decoration: none; color: var(--muted);
+        border: 1px solid var(--line); border-radius: 999px;
+      }
+      .vuelta a:hover { color: var(--ink); background: rgba(10,9,7,.05); }
+
+      header.cal-head { border-bottom: 2px solid var(--ink); padding-bottom: 20px; margin-bottom: 20px; }
+      .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+      h1 { font-family: var(--voz); font-size: clamp(32px, 5.5vw, 54px); line-height: .98; margin: 0 0 12px; letter-spacing: -.02em; }
+      h1 .dot { color: var(--accent); }
+      .lede { margin: 0; max-width: 66ch; color: #1c1a16; font-size: 15px; line-height: 1.55; }
+
+      .barra { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 22px 0 16px; }
+      .seg { display: inline-flex; border: 1px solid var(--ink); border-radius: 999px; overflow: hidden; }
+      .seg button {
+        font-family: var(--mono); font-size: 12px; padding: 8px 14px; border: 0;
+        background: transparent; color: var(--ink); cursor: pointer; line-height: 1; white-space: nowrap;
+      }
+      .seg button.on { background: var(--ink); color: var(--accent); }
+      .nav { display: inline-flex; gap: 6px; align-items: center; margin-left: auto; }
+      .nav button {
+        font-family: var(--mono); font-size: 12px; padding: 8px 13px; line-height: 1;
+        border: 1px solid var(--ink); background: var(--card); color: var(--ink);
+        border-radius: 999px; cursor: pointer;
+      }
+      .nav button:hover { background: var(--ink); color: var(--paper); }
+      #mes { font-family: var(--voz); font-size: 22px; min-width: 200px; text-transform: capitalize; }
+
+      .rejilla { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+      .dow { background: var(--paper); font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding: 8px 10px; text-align: center; }
+      .dia { background: var(--card); min-height: 116px; padding: 7px 8px; display: flex; flex-direction: column; gap: 5px; }
+      .dia.fuera { background: #f1efe8; }
+      .dia.hoy { box-shadow: inset 0 0 0 2px var(--accent); }
+      .dia-n { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+      .dia.fuera .dia-n { opacity: .45; }
+
+      .chip {
+        display: block; text-decoration: none; font-size: 11.5px; line-height: 1.3;
+        padding: 5px 7px 5px 9px; border-radius: 4px;
+        border: 1px solid rgba(128, 128, 128, 0.26);
+        border-left-width: 4px; border-left-style: solid;
+        overflow: hidden; text-overflow: ellipsis;
+      }
+      /* Lo previsto se dibuja con el contorno discontinuo: está por hacer. */
+      .chip.previsto { border-style: dashed; border-left-style: solid; }
+      .chip .quien { display: block; font-family: var(--mono); font-size: 9px; letter-spacing: .1em; text-transform: uppercase; opacity: .65; margin-bottom: 1px; }
+      .chip.sin-aprobar .quien::after { content: ' · sin aprobar'; }
+      .chip.sin-subir { box-shadow: 0 0 0 2px rgba(10, 9, 7, 0.1); }
+
+      .leyenda { display: flex; flex-wrap: wrap; gap: 16px; margin: 16px 0 0; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+      .leyenda span { display: inline-flex; align-items: center; gap: 6px; }
+      .muestra { width: 22px; height: 12px; border-radius: 3px; border-left: 4px solid; display: inline-block; }
+
+      .lista { margin-top: 36px; }
+      .lista h2 { font-family: var(--voz); font-size: 22px; margin: 0 0 4px; }
+      .lista p.sub { font-family: var(--mono); font-size: 12px; color: var(--muted); margin: 0 0 14px; }
+      .lista ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+      .lista li a { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; text-decoration: none; padding: 9px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: inherit; }
+      .lista li a:hover { border-color: var(--ink); }
+      .lista .quien { font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+      .vacio { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+      @media (max-width: 760px) {
+        .dia { min-height: 82px; padding: 5px 5px; }
+        .chip { font-size: 10.5px; padding: 4px 5px 4px 7px; }
+        .chip .quien { font-size: 8px; }
+        .nav { margin-left: 0; width: 100%; }
+        #mes { font-size: 19px; min-width: 0; flex: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <nav class="vuelta">
+        <a href="/kit-redes/">← Kit Festival ADAR</a>
+        <a href="/kit-redes-creartbox/">← Kit CreArtBox</a>
+        <a href="/borradores/">Artículos</a>
+      </nav>
+
+      <header class="cal-head">
+        <p class="eyebrow">Panel interno · Publicación</p>
+        <h1>Calendario<span class="dot">.</span></h1>
+        <p class="lede">
+          Qué está publicado y qué toca publicar, con las dos marcas juntas o por separado.
+          Las fechas se ponen en el kit de cada marca, en el bloque «Revisión» de cada pieza;
+          aquí solo se ven. <span id="resumen"></span>
+        </p>
+      </header>
+
+      <div class="barra">
+        <span class="seg" id="fMarca">
+          <button data-marca="todas" class="on">Las dos</button>
+          {MARCAS.map((m) => <button data-marca={m.id}>{m.nombre}</button>)}
+        </span>
+        <span class="seg" id="fTipo">
+          <button data-tipo="todo" class="on">Todo</button>
+          <button data-tipo="previsto">Previstos</button>
+          <button data-tipo="publicado">Publicados</button>
+        </span>
+        <span class="nav">
+          <button id="prev" aria-label="Mes anterior">←</button>
+          <span id="mes"></span>
+          <button id="next" aria-label="Mes siguiente">→</button>
+          <button id="hoy">Hoy</button>
+        </span>
+      </div>
+
+      <div class="rejilla" id="rejilla"></div>
+
+      <div class="leyenda" id="leyenda"></div>
+
+      <section class="lista">
+        <h2>Sin fecha prevista</h2>
+        <p class="sub">Nadie sabe cuándo van. Ponles fecha en el kit de su marca.</p>
+        <ul id="sinFecha"></ul>
+      </section>
+    </div>
+
+    <script type="application/json" id="cal-datos" set:html={datos}></script>
+    <script type="application/json" id="cal-hoy" set:html={JSON.stringify(hoy)}></script>
+
+    <script is:inline>
+      (function () {
+        var D = JSON.parse(document.getElementById('cal-datos').textContent);
+        var HOY = JSON.parse(document.getElementById('cal-hoy').textContent);
+        var MARCA = {};
+        D.marcas.forEach(function (m) { MARCA[m.id] = m; });
+
+        // Las revisiones de cada marca: lo subido al repositorio, y encima lo
+        // que haya en este navegador sin subir todavía. Misma regla que la
+        // barra de revisión: gana la marca más reciente, entrada por entrada.
+        var REV = {};
+        D.marcas.forEach(function (m) {
+          var fusion = {};
+          Object.keys(m.revisiones || {}).forEach(function (k) {
+            fusion[k] = Object.assign({}, m.revisiones[k]);
+          });
+          var local = {};
+          try { local = JSON.parse(localStorage.getItem(m.lsKey) || '{}'); } catch (e) { local = {}; }
+          Object.keys(local).forEach(function (k) {
+            var a = fusion[k], b = local[k];
+            if (!a || !a.fecha || (b.fecha && b.fecha > a.fecha)) {
+              fusion[k] = Object.assign({}, b, { sinSubir: true });
+            }
+          });
+          REV[m.id] = fusion;
+        });
+
+        // Cada pieza cae en una fecha, o en la lista de las que no tienen.
+        var eventos = [], sinFecha = [];
+        D.piezas.forEach(function (p) {
+          var r = (REV[p.marca] || {})[p.key] || {};
+          var base = {
+            marca: p.marca,
+            marcaNombre: p.marcaNombre,
+            titulo: p.titulo,
+            aprobado: r.estado === 'listo',
+            nota: r.nota || '',
+            sinSubir: !!r.sinSubir,
+            url: p.url,
+            panel: p.panel,
+          };
+          // Una fecha puesta a mano manda siempre: significa «ese día hay algo
+          // que hacer», aunque la pieza ya estuviera publicada en la web. Solo
+          // si no la hay se cae a la fecha de publicación, y entonces es
+          // historia, no tarea.
+          if (r.fecha_prevista) {
+            eventos.push(Object.assign({}, base, { fecha: r.fecha_prevista, tipo: 'previsto' }));
+          } else if (p.usaFechaPost && p.status === 'publish' && p.date) {
+            eventos.push(Object.assign({}, base, { fecha: p.date, tipo: 'publicado' }));
+          } else {
+            sinFecha.push(base);
+          }
+        });
+        eventos.sort(function (a, b) { return a.fecha < b.fecha ? -1 : a.fecha > b.fecha ? 1 : 0; });
+        D.eventos = eventos;
+        D.sinFecha = sinFecha;
+
+        var resumen = document.getElementById('resumen');
+        var nPrev = eventos.filter(function (e) { return e.tipo === 'previsto'; }).length;
+        var nPub = eventos.length - nPrev;
+        var nSinSubir = eventos.concat(sinFecha).filter(function (e) { return e.sinSubir; }).length;
+        resumen.textContent =
+          nPub + (nPub === 1 ? ' publicado' : ' publicados') + ' · ' +
+          nPrev + (nPrev === 1 ? ' previsto' : ' previstos') + ' · ' +
+          sinFecha.length + ' sin fecha' +
+          (nSinSubir ? ' · ' + nSinSubir + ' sin subir desde este navegador' : '');
+
+        var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+        var DOW = ['lun','mar','mié','jue','vie','sáb','dom'];
+
+        var fMarca = 'todas', fTipo = 'todo';
+        // Arranca en el mes que tenga algo previsto; si no, en el de hoy.
+        var primerPrevisto = D.eventos.filter(function (e) { return e.tipo === 'previsto'; })[0];
+        var ancla = (primerPrevisto || {}).fecha || HOY;
+        var cursor = new Date(ancla.slice(0, 4), Number(ancla.slice(5, 7)) - 1, 1);
+
+        function visible(e) {
+          return (fMarca === 'todas' || e.marca === fMarca) && (fTipo === 'todo' || e.tipo === fTipo);
+        }
+
+        function chip(e) {
+          var m = MARCA[e.marca] || {};
+          var a = document.createElement('a');
+          a.className = 'chip ' + e.tipo +
+            (e.tipo === 'previsto' && !e.aprobado ? ' sin-aprobar' : '') +
+            (e.sinSubir ? ' sin-subir' : '');
+          a.href = e.url;
+          a.style.background = m.chipBg;
+          a.style.color = m.chipInk;
+          a.style.borderLeftColor = m.accent;
+          a.title =
+            e.marcaNombre + ' · ' + (e.tipo === 'publicado' ? 'publicado' : 'previsto') +
+            (e.tipo === 'previsto' ? (e.aprobado ? ' y aprobado' : ', SIN aprobar') : '') +
+            (e.sinSubir ? ' · todavía sin subir al repositorio' : '') +
+            (e.nota ? '\n\nNota: ' + e.nota : '');
+          var q = document.createElement('span');
+          q.className = 'quien';
+          q.textContent = e.marcaNombre;
+          a.appendChild(q);
+          a.appendChild(document.createTextNode((e.tipo === 'publicado' ? '✓ ' : '') + e.titulo));
+          return a;
+        }
+
+        function pinta() {
+          var y = cursor.getFullYear(), mth = cursor.getMonth();
+          document.getElementById('mes').textContent = MESES[mth] + ' ' + y;
+
+          var porDia = {};
+          D.eventos.filter(visible).forEach(function (e) {
+            (porDia[e.fecha] = porDia[e.fecha] || []).push(e);
+          });
+
+          var rej = document.getElementById('rejilla');
+          rej.innerHTML = '';
+          DOW.forEach(function (d) {
+            var c = document.createElement('div');
+            c.className = 'dow';
+            c.textContent = d;
+            rej.appendChild(c);
+          });
+
+          // La semana empieza en lunes: getDay() da 0 al domingo.
+          var primero = new Date(y, mth, 1);
+          var desplaza = (primero.getDay() + 6) % 7;
+          var inicio = new Date(y, mth, 1 - desplaza);
+
+          for (var i = 0; i < 42; i++) {
+            var d = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + i);
+            var iso = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+            var cel = document.createElement('div');
+            cel.className = 'dia' + (d.getMonth() !== mth ? ' fuera' : '') + (iso === HOY ? ' hoy' : '');
+            var n = document.createElement('span');
+            n.className = 'dia-n';
+            n.textContent = d.getDate();
+            cel.appendChild(n);
+            (porDia[iso] || []).forEach(function (e) { cel.appendChild(chip(e)); });
+            rej.appendChild(cel);
+            // Sexta fila solo si hace falta.
+            if (i === 34 && new Date(y, mth + 1, 0).getDate() + desplaza <= 35) break;
+          }
+
+          var ley = document.getElementById('leyenda');
+          ley.innerHTML = '';
+          D.marcas.forEach(function (m) {
+            var s = document.createElement('span');
+            var mu = document.createElement('i');
+            mu.className = 'muestra';
+            mu.style.background = m.chipBg;
+            mu.style.borderLeftColor = m.accent;
+            s.appendChild(mu);
+            s.appendChild(document.createTextNode(m.nombre));
+            ley.appendChild(s);
+          });
+          var s2 = document.createElement('span');
+          s2.textContent = '✓ ya publicado · contorno discontinuo: por publicar · «sin aprobar»: falta tu visto bueno · con halo: aún sin subir, nadie más lo ve';
+          ley.appendChild(s2);
+        }
+
+        function pintaSinFecha() {
+          var ul = document.getElementById('sinFecha');
+          ul.innerHTML = '';
+          var items = D.sinFecha.filter(function (e) { return fMarca === 'todas' || e.marca === fMarca; });
+          if (!items.length) {
+            var li0 = document.createElement('li');
+            li0.className = 'vacio';
+            li0.textContent = 'Nada pendiente de fecha.';
+            ul.appendChild(li0);
+            return;
+          }
+          items.forEach(function (e) {
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = e.panel;
+            var q = document.createElement('span');
+            q.className = 'quien';
+            q.textContent = e.marcaNombre;
+            a.appendChild(q);
+            a.appendChild(document.createTextNode(e.titulo));
+            li.appendChild(a);
+            ul.appendChild(li);
+          });
+        }
+
+        function todo() { pinta(); pintaSinFecha(); }
+
+        function grupo(sel, attr, set) {
+          document.querySelectorAll(sel + ' button').forEach(function (b) {
+            b.addEventListener('click', function () {
+              set(b.dataset[attr]);
+              document.querySelectorAll(sel + ' button').forEach(function (x) { x.classList.toggle('on', x === b); });
+              todo();
+            });
+          });
+        }
+        grupo('#fMarca', 'marca', function (v) { fMarca = v; });
+        grupo('#fTipo', 'tipo', function (v) { fTipo = v; });
+
+        document.getElementById('prev').addEventListener('click', function () {
+          cursor = new Date(cursor.getFullYear(), cursor.getMonth() - 1, 1); pinta();
+        });
+        document.getElementById('next').addEventListener('click', function () {
+          cursor = new Date(cursor.getFullYear(), cursor.getMonth() + 1, 1); pinta();
+        });
+        document.getElementById('hoy').addEventListener('click', function () {
+          cursor = new Date(Number(HOY.slice(0, 4)), Number(HOY.slice(5, 7)) - 1, 1); pinta();
+        });
+
+        todo();
+      })();
+    </script>
+  </body>
+</html>
