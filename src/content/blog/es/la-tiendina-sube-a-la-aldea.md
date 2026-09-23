@@ -31,7 +31,7 @@ Si lo concentráramos todo en un sitio tendríamos un buen festival local. Para 
 
 ## Por eso vamos nosotros
 
-El festival no tiene una sede: tiene un mapa. Catorce concejos en seis ediciones. En vez de pedirle al territorio que venga, vamos nosotros. Como la tiendina.
+Tenemos sede en Leiguarda, pero el festival no se queda en ella: tiene también un mapa. Catorce concejos en seis ediciones. En vez de pedirle al territorio que venga, vamos nosotros. Como la tiendina.
 
 ## Esta vez, lo importante pasa aquí
 

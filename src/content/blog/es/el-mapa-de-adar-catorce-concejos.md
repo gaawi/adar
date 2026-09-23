@@ -9,7 +9,7 @@ author: "Festival ADAR"
 tags: ["mapa", "territorio", "concejos", "red"]
 ---
 
-Un festival de ciudad tiene una sede y un cartel. Un festival itinerante tiene un **mapa**, y ese mapa dice tanto del proyecto como la programación.
+Un festival de ciudad se explica con una sede y un cartel. Uno itinerante necesita además un **mapa**, y ese mapa dice tanto del proyecto como la programación.
 
 El nuestro empezó en 2021 con un punto: **el campo de la iglesia de Leiguarda**, en Belmonte de Miranda. Seis ediciones después pasa por **catorce concejos** del centro, el occidente y el oriente de Asturias.
 
