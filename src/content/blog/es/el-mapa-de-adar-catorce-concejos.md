@@ -17,31 +17,35 @@ Este es el recorrido, y lo que hemos aprendido dibujándolo.
 
 ## De un punto a una red
 
-**Belmonte de Miranda** es la casa. Leiguarda, la sede; el Museo de las Ayalgas de Silviella; la Panera Casantos; La Casona de Belmonte; el Aula del Oro; la iglesia de Leiguarda, que ha acogido conciertos, paseos sonoros, video-mapping y espichas de clausura. Aquí se ensaya todo el año y aquí vuelve todo.
+**Belmonte de Miranda** es la casa desde 2021. Leiguarda, la sede; el [Museo de las Ayalgas](/es/paseo-sonoro-en-el-museo-de-las-ayalgas-belmonte-de-miranda-2/) en Silviella; la [Panera Casantos](/es/micro-concierto-panera-casantos-leiguarda-2023/); [La Casona de Belmonte](/es/equilibrium-la-casona-de-belmonte/); el [Aula del Oro](/es/umbral-zero-aula-del-oro/); la [iglesia de Leiguarda](/es/paseo-sonoro-iglesia-de-leiguarda-2026/), que ha acogido conciertos, paseos sonoros, video-mapping y espichas de clausura. Aquí se ensaya todo el año y aquí vuelve todo.
 
-**Grado** es el socio recurrente: el Palacio de Miranda-Valdecarzana, la Capilla de los Dolores, el Palacio de Fontela, y hasta un cubículo en desuso de la oficina de turismo convertido en sala de exposiciones.
+**Grado**, entre 2022 y 2024, con el [Palacio de Miranda-Valdecarzana](/es/concierto-en-el-palacio-de-miranda-valdecarzana-grado-2024-2/), la [Capilla de los Dolores](/es/concierto-y-performance-en-la-capilla-de-los-dolores-grado-2024/), el [Palacio de Fontela](/es/instalacion-palacio-fontela-grado-2024/) y hasta [un cubículo en desuso de la oficina de turismo](/es/instalacion-de-sarah-k-williams-en-la-oficina-de-turismo-grado/) convertido en sala de exposiciones.
 
-**El Franco**, en el occidente, con el Complejo Cultural As Quintas: conciertos, instalaciones, paseos sonoros. Uno de los espacios con mejores condiciones técnicas de toda la red.
+**El Franco**, en el occidente, con el Complejo Cultural As Quintas: [conciertos](/es/concierto-en-el-franco/), [paseos sonoros](/es/paseo-sonoro-el-franco/) y, en 2026, [The Rest is Silence](/es/the-rest-is-silence-el-franco/). Uno de los espacios con mejores condiciones técnicas de toda la red.
 
-**Tineo**, con el Monasterio de Santa María la Real de Obona, uno de los cenobios más antiguos de Asturias, lleno hasta el aforo en 2025.
+**Tineo**, con el [Monasterio de Santa María la Real de Obona](/es/concierto-en-el-monasterio-de-obona-tineo/), uno de los cenobios más antiguos de Asturias, lleno hasta el aforo en 2025.
 
-**Salas**, con el Monasterio de San Salvador de Cornellana, en el Camino de Santiago.
+**Salas**, con el [Monasterio de San Salvador de Cornellana](/es/concierto-en-el-monasterio-de-san-salvador-cornellana-2/) en el Camino de Santiago, y con [La Figal de Xugabolos](/es/de-danzas-y-sonatas-la-figal-de-xugabolos/), el hórreo que ganó el concurso y abrió la edición de 2026.
 
-**Llanes**, en el oriente, con el Monasterio de San Antolín de Bedón, donde apareció una ballena en la cima de una montaña.
+**Llanes**, en el oriente, con el [Monasterio de San Antolín de Bedón](/es/the-whale-ballarte-en-el-monasterio-de-san-antolin-de-bedon/), donde apareció una ballena en la cima de una montaña.
 
-**Colunga**, con la iglesia de Santa María de Sabada en Lastres y la Sala Loreto.
+**Colunga**, con la [iglesia de Santa María de Sabada](/es/concierto-en-la-iglesia-de-santa-maria-de-sabada-colunga/) en Lastres y la [Sala Loreto](/es/concierto-visual-en-colunga-sala-loreto/).
 
-**Gozón**, con Susacasa Agrocultural, un proyecto de permacultura donde una panera hace de sala de conciertos.
+**Gozón**, con [Susacasa Agrocultural](/es/micro-concierto-en-susacasa-agrocultural/), un proyecto de permacultura donde una panera hace de sala de conciertos.
 
-**Somiedo**, Parque Natural y Reserva de la Biosfera, con su mercado convertido en auditorio.
+**Somiedo**, Parque Natural y Reserva de la Biosfera, con su [mercado convertido en auditorio](/es/concierto-en-el-mercado-de-pola-de-somiedo/).
 
-**Taramundi**, en el extremo occidental, el pueblo de la cuchillería artesana.
+**Taramundi**, en el extremo occidental, [el pueblo de la cuchillería artesana](/es/concierto-en-taramundi/).
 
-**Las Regueras**, con micro-conciertos en Puerma.
+**Las Regueras**, con [micro-conciertos en Puerma](/es/micro-concierto-en-puerma-las-regueras/).
 
-**Soto del Barco**, en la desembocadura del Nalón, con uno de los primeros conciertos visuales del festival.
+**Soto del Barco**, en la desembocadura del Nalón, con uno de los primeros [conciertos visuales](/es/concierto-visual-en-soto-del-barco-2/) del festival.
 
-Y en 2026 se suman **Villanueva de Oscos**, con su monasterio, y **Cangas del Narcea**, con el Parador de Corias y su claustro.
+**Villanueva de Oscos**, con su monasterio cisterciense, [en 2025](/es/concierto-en-el-monasterio-de-villanueva-de-oscos/) y otra vez [en 2026](/es/bajo-las-bovedas-villanueva-de-oscos/).
+
+**Cangas del Narcea**, con el Parador de Corias: [su claustro en 2025](/es/paseo-sonoro-en-el-claustro-del-parador-de-corias/) y [La forma de la memoria en 2026](/es/la-forma-de-la-memoria-parador-de-corias/).
+
+En 2026 el mapa no creció. La sexta edición volvió entera a sitios donde ya habíamos estado: Salas, Belmonte de Miranda, Cangas del Narcea, Villanueva de Oscos y El Franco. También fue el año del [concierto del eclipse](/es/concierto-del-eclipse-la-corredoria/), en el Alto de La Corredoria.
 
 ## Por qué itinerar en vez de crecer en un sitio
 
@@ -57,7 +61,7 @@ Itinerar invierte esa relación. En vez de pedirle al territorio que venga, **va
 
 **Que el occidente lo agradece más.** Los concejos montañosos y dispersos del occidente asturiano (Tineo, Taramundi, El Franco, Villanueva de Oscos, Cangas del Narcea) son los que están más lejos de la programación habitual y donde el efecto de un concierto se nota más. Ahí es donde menos alternativas hay y donde el público responde con más intensidad.
 
-**Que volver vale más que llegar.** Los sitios donde hemos vuelto varias veces (Belmonte, Grado, El Franco) funcionan de otra manera. El público ya sabe que habrá otra edición, los espacios están rodados, los ayuntamientos saben lo que se les propone. **La confianza acumulada permite ser más ambicioso.** La noche de los tres eventos simultáneos en Grado solo fue posible porque no era nuestro primer año allí.
+**Que volver vale más que llegar.** Los sitios donde hemos vuelto varias veces (Belmonte, El Franco, Salas) funcionan de otra manera. El público ya sabe que habrá otra edición, los espacios están rodados, los ayuntamientos saben lo que se les propone. **La confianza acumulada permite ser más ambicioso.** La noche de los tres eventos simultáneos en Grado, en 2024, solo fue posible porque no era el primer año allí. Y en 2026 no estrenamos ni un concejo: la edición entera se apoyó en relaciones ya construidas.
 
 **Que cada tipo de espacio enseña algo.** Los monasterios nos enseñaron acústica. Los hórreos, intimidad. Los mercados, cómo quitar la ceremonia. Los espacios abiertos, humildad ante el clima, y también que se puede tocar en un alto de monte mientras se apaga el sol en un eclipse total. Un festival que solo trabajara en un tipo de sala nunca habría aprendido nada de eso.
 
