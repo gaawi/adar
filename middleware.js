@@ -1,14 +1,24 @@
-// Edge Middleware de Vercel: protege las vistas previas de borradores.
+// Edge Middleware de Vercel: protege todas las páginas internas.
 //
 // Solo deja pasar a quien tenga la cookie `adar_preview`, que crea
-// /api/callback cuando se inicia sesión con GitHub en el panel /admin.
+// /api/callback cuando se inicia sesión con GitHub en el panel /admin, y solo
+// si la cuenta puede escribir en el repositorio o está en ADAR_LOGINS.
 // La cookie va firmada con HMAC-SHA256 usando GITHUB_CLIENT_SECRET, así que
 // no se puede falsificar desde el navegador.
 //
 // Si no hay sesión, redirige al panel en vez de mostrar un error.
 
 export const config = {
-  matcher: ['/borradores', '/borradores/:path*'],
+  matcher: [
+    '/borradores',
+    '/borradores/:path*',
+    '/kit-redes',
+    '/kit-redes/:path*',
+    '/kit-redes-creartbox',
+    '/kit-redes-creartbox/:path*',
+    '/calendario',
+    '/calendario/:path*',
+  ],
 };
 
 function hexToBytes(hex) {

@@ -41,6 +41,54 @@ function render(status, payload) {
 </body></html>`;
 }
 
+// Quién puede entrar. La firma de la cookie garantiza que no se falsifica,
+// pero no dice nada de quién es: sin esta comprobación, cualquier cuenta de
+// GitHub que autorizara la aplicación conseguía sesión, y el repositorio es
+// público. Pasan dos tipos de cuenta:
+//   · las que pueden escribir en el repositorio (colaboradores), y
+//   · las que estén en ADAR_LOGINS, por si se quiere dar acceso a alguien sin
+//     darle permisos sobre el código.
+async function autorizado(token) {
+  const gh = (ruta) =>
+    fetch('https://api.github.com' + ruta, {
+      headers: {
+        Authorization: 'Bearer ' + token,
+        Accept: 'application/vnd.github+json',
+        'User-Agent': 'festivaladar-admin',
+      },
+    });
+
+  let login = '';
+  try {
+    const meRes = await gh('/user');
+    if (!meRes.ok) return { ok: false, motivo: 'GitHub no devolvió la identidad de la cuenta.' };
+    login = String((await meRes.json()).login || '');
+  } catch (e) {
+    return { ok: false, motivo: 'No se pudo comprobar la cuenta con GitHub.' };
+  }
+
+  const permitidos = (process.env.ADAR_LOGINS || '')
+    .split(',')
+    .map((x) => x.trim().toLowerCase())
+    .filter(Boolean);
+  if (permitidos.includes(login.toLowerCase())) return { ok: true, login };
+
+  const repo = process.env.GITHUB_REPO || 'gaawi/adar';
+  try {
+    const repoRes = await gh('/repos/' + repo);
+    if (repoRes.ok) {
+      const info = await repoRes.json();
+      if (info && info.permissions && info.permissions.push) return { ok: true, login };
+    }
+  } catch (e) {
+    return { ok: false, motivo: 'No se pudo comprobar el acceso al repositorio.' };
+  }
+  return {
+    ok: false,
+    motivo: `La cuenta ${login} no tiene acceso a este panel. Pide que te añadan al repositorio.`,
+  };
+}
+
 // Cookie firmada (HMAC-SHA256) que autoriza las vistas previas de borradores.
 // Formato: "<caduca en ms>.<firma hex>".
 async function previewCookie(secret, days) {
@@ -88,8 +136,15 @@ export default async function handler(req, res) {
       return;
     }
 
+    // Antes de entregar nada: comprobar que la cuenta es de las nuestras.
+    const permiso = await autorizado(data.access_token);
+    if (!permiso.ok) {
+      res.status(403).send(render('error', { error: permiso.motivo }));
+      return;
+    }
+
     // Además del token para el CMS, dejamos una cookie firmada que habilita
-    // las vistas previas de borradores (/borradores/...). La comprueba
+    // las páginas internas (/borradores/, el kit y el calendario). La comprueba
     // middleware.js con el mismo secreto.
     const preview = await previewCookie(clientSecret, 30);
     res.setHeader('Set-Cookie', [

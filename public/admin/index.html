@@ -50,18 +50,23 @@
   <a class="adar-kit-link" href="/kit-redes/" target="_blank" rel="noopener">
     ↗ Kit de redes
   </a>
+  <a class="adar-kit-link" href="/calendario/" target="_blank" rel="noopener">
+    ↗ Calendario
+  </a>
 
   <script>
-    // Si llegas desde /borradores/... sin sesión, el middleware te trae aquí.
+    // Si llegas a una página interna sin sesión, el middleware te trae aquí.
     // Mostramos el aviso con el enlace para volver una vez iniciada la sesión.
+    // La expresión exige que empiece por una de las rutas conocidas, así que
+    // no sirve para colar una redirección a otro dominio («//otrositio»).
     (function () {
       var target = new URLSearchParams(location.search).get('preview');
-      if (!target || !/^\/borradores\//.test(target)) return;
+      if (!target || !/^\/(borradores|kit-redes|kit-redes-creartbox|calendario)\//.test(target)) return;
       var box = document.createElement('div');
       box.className = 'adar-preview-note';
       box.innerHTML =
-        '<span>Inicia sesión con GitHub y luego vuelve al borrador: ' +
-        '<a href="' + target.replace(/"/g, '&quot;') + '">abrir vista previa</a></span>' +
+        '<span>Inicia sesión con GitHub y luego vuelve: ' +
+        '<a href="' + target.replace(/"/g, '&quot;') + '">' + target + '</a></span>' +
         '<button type="button" aria-label="Cerrar">✕</button>';
       box.querySelector('button').addEventListener('click', function () { box.remove(); });
       document.body.appendChild(box);
