@@ -1,5 +1,13 @@
 {
-  "_ayuda": "Revisiones de las piezas de CreArtBox, escritas desde /kit-redes-creartbox/. Cada clave es «idioma/slug». estado: «listo» (listo para publicar) o «cambios» (hay que corregir algo, la nota dice qué). Lo escribe la propia página; no hace falta editarlo a mano.",
-  "actualizado": null,
-  "posts": {}
+  "_ayuda": "Revisiones escritas desde el panel interno. Cada clave es «idioma/slug». estado: «listo» (listo para publicar) o «cambios» (hay que corregir algo, la nota dice qué). Lo escribe la propia página; no hace falta editarlo a mano.",
+  "actualizado": "2026-09-24T07:06:33.067Z",
+  "posts": {
+    "en/season-2026-27": {
+      "estado": "listo",
+      "nota": "",
+      "fecha_prevista": "2026-09-24",
+      "titulo": "CreArtBox announces its twelfth season",
+      "fecha": "2026-09-24T07:06:25.349Z"
+    }
+  }
 }
