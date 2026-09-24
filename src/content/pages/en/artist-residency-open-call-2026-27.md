@@ -310,8 +310,6 @@ translation_group: "adar_residency_call_2026_27"
 </ol>
 
 <div class="rc-thats-it">
-<p class="rc-thats-it-t">That's it.</p>
-<p>No CV. No cover letter. No official documents at this stage.</p>
 <p class="ed-stat-t">Deadline · 28 September 2026</p>
 <a class="ed-btn" href="mailto:leiguardamusic@gmail.com?subject=ADAR%20Residency%20%E2%80%93%20%5BGroup%20%2F%20Project%20Name%5D">Apply by email →</a>
 </div>

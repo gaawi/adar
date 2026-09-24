@@ -310,8 +310,6 @@ translation_group: "adar_residency_call_2026_27"
 </ol>
 
 <div class="rc-thats-it">
-<p class="rc-thats-it-t">Ya está.</p>
-<p>Sin currículum. Sin carta de motivación. Sin documentos oficiales por ahora.</p>
 <p class="ed-stat-t">Plazo · 28 de septiembre de 2026</p>
 <a class="ed-btn" href="mailto:leiguardamusic@gmail.com?subject=ADAR%20Residency%20%E2%80%93%20%5BGrupo%20%2F%20Proyecto%5D">Solicitar por email →</a>
 </div>
