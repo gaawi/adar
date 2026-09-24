@@ -665,9 +665,20 @@
       "object_id": "233"
     },
     {
+      "title": "Convocatoria de residencias 2026–27",
+      "url": "/es/convocatoria-residencias-2026-27/",
+      "order": 10,
+      "parent_id": 89,
+      "item_id": 9403,
+      "classes": "",
+      "object_type": "post_type",
+      "object": "page",
+      "object_id": "9403"
+    },
+    {
       "title": "Red de colaboración",
       "url": "/es/red-de-colaboracion/",
-      "order": 10,
+      "order": 11,
       "parent_id": 89,
       "item_id": 413,
       "classes": "",

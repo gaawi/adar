@@ -628,6 +628,37 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
 ];
 
 // Enlaces y copy para el modo POST-FESTIVAL (la VI edición ya terminó).
+// Convocatoria de residencias 2026-27. La página existe en español e inglés;
+// en asturiano se manda a la española, que es la que se entiende.
+const CALL_HREF: Record<Lang, string> = {
+  es: '/es/convocatoria-residencias-2026-27/',
+  en: '/en/artist-residency-open-call-2026-27/',
+  ast: '/es/convocatoria-residencias-2026-27/',
+};
+const CALL = {
+  es: {
+    eyebrow: 'Convocatoria abierta · Culture Moves Europe',
+    h: 'Residencia artística internacional',
+    lede: 'Buscamos un grupo de 4-5 artistas o profesionales de la cultura que residan legalmente fuera de España para una residencia de 21 a 30 días en Leiguarda. Alojamiento, 30 € al día por persona y ayuda de viaje.',
+    deadline: 'Plazo: 28 de septiembre de 2026',
+    cta: 'Ver la convocatoria',
+  },
+  en: {
+    eyebrow: 'Open call · Culture Moves Europe',
+    h: 'International artist residency',
+    lede: 'We are looking for a group of 4–5 artists or cultural professionals legally resident outside Spain, for a 21–30 day residency in Leiguarda. Accommodation, €30 a day each and a travel allowance.',
+    deadline: 'Deadline: 28 September 2026',
+    cta: 'Read the open call',
+  },
+  ast: {
+    eyebrow: 'Convocatoria abierta · Culture Moves Europe',
+    h: 'Residencia artística internacional',
+    lede: 'Buscamos un grupu de 4-5 artistes o profesionales de la cultura que residan llegalmente fuera d\'España pa una residencia de 21 a 30 díes en Leiguarda. Aloxamientu, 30 € al día por persona y ayuda de viaxe.',
+    deadline: 'Plazu: 28 de setiembre de 2026',
+    cta: 'Ver la convocatoria',
+  },
+}[lang];
+
 const AMIGOS_HREF: Record<Lang, string> = {
   es: '/es/amigos-del-festival/',
   en: '/en/friends-of-the-festival/',
@@ -807,6 +838,19 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
   <!-- ============================================
        § CIERRE · gracias VI edición
        ============================================ -->
+  <!-- ============================================
+       § CONVOCATORIA · residencias 2026-27
+       ============================================ -->
+  <section class="hm-call" aria-labelledby="hm-call-h">
+    <div class="hm-call-inner">
+      <span class="hm-call-eyebrow mono">{CALL.eyebrow}</span>
+      <h2 class="hm-call-h" id="hm-call-h">{CALL.h}</h2>
+      <p class="hm-call-lede">{CALL.lede}</p>
+      <p class="hm-call-date mono">{CALL.deadline}</p>
+      <a class="hm-call-cta" href={CALL_HREF[lang]}>{CALL.cta} <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
   <section class="hm-thanks">
     <div class="hm-thanks-inner">
       <span class="hm-thanks-eyebrow mono">{POST.t_eyebrow}</span>

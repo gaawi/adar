@@ -44,6 +44,19 @@ IMPORTANT: this block uses the .adar-impact-v3 CSS.
 </div>
 </div>
 
+<!-- OPEN CALL 2026-27 -->
+<section class="ed-section">
+<div class="ed-wrap">
+<div class="rc-callout">
+<p class="ed-stat-t">Open call · Culture Moves Europe</p>
+<h2 class="rc-callout-h">We are looking for a group of 4–5 artists for a 21–30 day residency</h2>
+<p class="rc-callout-p">Accommodation, €30 a day per person, a travel allowance and applicable top-ups. All residents must legally reside in a Creative Europe country other than Spain. Applying takes about five minutes and one email.</p>
+<p class="rc-callout-date">Deadline · 28 September 2026</p>
+<a class="ed-btn" href="/en/artist-residency-open-call-2026-27/">Read the open call →</a>
+</div>
+</div>
+</section>
+
 <!-- GALLERY (Impact figures) -->
 <section class="ed-section" aria-label="Residency gallery">
 <div class="ed-wrap">

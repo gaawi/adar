@@ -44,6 +44,19 @@ IMPORTANTE: este bloque usa el CSS de .adar-impact-v3.
 </div>
 </div>
 
+<!-- CONVOCATORIA 2026-27 -->
+<section class="ed-section">
+<div class="ed-wrap">
+<div class="rc-callout">
+<p class="ed-stat-t">Convocatoria abierta · Culture Moves Europe</p>
+<h2 class="rc-callout-h">Buscamos un grupo de 4-5 artistas para una residencia de 21 a 30 días</h2>
+<p class="rc-callout-p">Alojamiento, 30 € al día por persona, ayuda de viaje y los complementos que correspondan. Todos los residentes tienen que residir legalmente en un país de Europa Creativa que no sea España. Solicitarla son cinco minutos y un email.</p>
+<p class="rc-callout-date">Plazo · 28 de septiembre de 2026</p>
+<a class="ed-btn" href="/es/convocatoria-residencias-2026-27/">Ver la convocatoria →</a>
+</div>
+</div>
+</section>
+
 <!-- GALLERY (Impact figures) -->
 <section class="ed-section" aria-label="Galería de residencias">
 <div class="ed-wrap">
