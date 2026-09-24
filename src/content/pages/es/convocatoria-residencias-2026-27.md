@@ -263,7 +263,7 @@ translation_group: "adar_residency_call_2026_27"
 <p>Lo que cuenta no es la nacionalidad, sino la residencia legal. Una artista española que reside legalmente en Francia, por ejemplo, sí puede.</p>
 </div>
 
-<p class="ed-prose rc-note"><strong>Sectores admitidos:</strong> arquitectura · patrimonio cultural · diseño y diseño de moda · literatura · música · artes escénicas · artes visuales.</p>
+<p class="ed-prose rc-note"><strong>Sectores admitidos:</strong> arquitectura · patrimonio cultural · diseño y diseño de moda · literatura · música · artes escénicas · artes visuales. Los países de Europa Creativa son los 27 de la Unión Europea más otros catorce — <a href="https://culture.ec.europa.eu/resources/creative-europe-desks" target="_blank" rel="noopener">consulta la lista actual</a>.</p>
 
 </div>
 </section>
@@ -349,56 +349,8 @@ translation_group: "adar_residency_call_2026_27"
 <article class="ed-card"><h3>¿Podemos partir la estancia en dos viajes?</h3><p>No. Tiene que ser un único periodo continuo.</p></article>
 <article class="ed-card"><h3>¿Hay que dar fechas exactas ya?</h3><p>Decidnos cuántos días y qué fechas buscáis. Si podéis ofrecer una segunda ventana, mejor. Las fechas definitivas las cerramos con el grupo seleccionado.</p></article>
 <article class="ed-card"><h3>¿Está incluido el alojamiento?</h3><p>Sí, lo pone ADAR además de la ayuda económica.</p></article>
+<article class="ed-card"><h3>Uno de nosotros ya hizo una residencia de Culture Moves Europe. ¿Puede venir?</h3><p>No. Quien participe como residente en una Call for Residency Hosts entre 2025 y 2028 no puede repetir.</p></article>
 </div>
-
-</div>
-</section>
-
-<!-- ── LAS REGLAS OFICIALES ─────────────────────────────────────────── -->
-<section class="ed-section" id="reglas">
-<div class="ed-wrap">
-<div class="ed-head">
-<p class="ed-eyebrow">El programa</p>
-<h2>Qué dice la convocatoria oficial</h2>
-<p class="ed-lede">Esta residencia va dentro de la <em>Call for Residency Hosts 2025-2026</em> de Culture Moves Europe. ADAR es la entidad anfitriona. Estas reglas son del programa, no nuestras: no podemos hacer excepciones.</p>
-</div>
-
-<div class="ed-twocol">
-
-<article class="ed-card">
-<h3>Quién cuenta como residente</h3>
-<p>18 años o más. Artista o profesional de la cultura en uno de los siete sectores admitidos. Con residencia legal en un país de Europa Creativa que no sea España, sea cual sea la nacionalidad. Emergente o consagrado, de cualquier formación.</p>
-<p>Una entidad puede acoger entre 1 y 5 residentes; nosotros buscamos 4-5.</p>
-</article>
-
-<article class="ed-card">
-<h3>Una vez, no dos</h3>
-<p>Quien sea seleccionado aquí no podrá ser residente en otra residencia de Culture Moves Europe dentro de ninguna Call for Residency Hosts entre 2025 y 2028.</p>
-</article>
-
-<article class="ed-card">
-<h3>La estancia</h3>
-<p>El programa permite de 21 a 90 días. Nosotros ofrecemos la franja corta: <strong>de 21 a 30 días seguidos</strong>, en un único periodo continuo y con todo el mundo presente. Los días de viaje no cuentan para la duración.</p>
-</article>
-
-<article class="ed-card">
-<h3>Qué tiene que poner la anfitriona</h3>
-<p>Espacio de trabajo adecuado y equipado, alojamiento apropiado y seguro, y al menos una persona que ejerza de mentora y dé acompañamiento artístico. ADAR pone las tres cosas.</p>
-</article>
-
-<article class="ed-card">
-<h3>El dinero, y de quién es</h3>
-<p>Cada residente recibe 30 € al día más su ayuda de viaje, que se pagan a través de la entidad anfitriona. Aparte, el programa paga a ADAR una ayuda de acogida de 50 € por día y residente para alojamiento, equipamiento y mentoría: <strong>esa parte no es dinero para vosotros</strong>, y no está contada en ninguna cifra de esta página.</p>
-</article>
-
-<article class="ed-card">
-<h3>Países de Europa Creativa</h3>
-<p>Los 27 estados de la Unión Europea más Albania, Armenia, Bosnia-Herzegovina, Georgia, Islandia, Kosovo, Liechtenstein, Moldavia, Montenegro, Macedonia del Norte, Noruega, Serbia, Túnez y Ucrania, y sus países y territorios de ultramar y regiones ultraperiféricas. España queda fuera aquí solo porque es donde ocurre la residencia.</p>
-</article>
-
-</div>
-
-<p class="ed-prose rc-note">Las condiciones completas están en las bases oficiales: <a href="https://culture.ec.europa.eu/sites/default/files/2026-02/call-residency-hosts-2025-2026_culture-moves-europe-270226.pdf" target="_blank" rel="noopener">Culture Moves Europe · Call for Residency Hosts 2025-2026 (PDF, en inglés)</a>. Si algo de esta página contradice ese documento, manda el documento.</p>
 
 </div>
 </section>
@@ -414,7 +366,7 @@ translation_group: "adar_residency_call_2026_27"
 <p class="rc-btns"><a class="ed-btn ed-btn-ghost" href="/es/que-es-adar/">Conoce ADAR →</a> <a class="ed-btn ed-btn-ghost" href="/es/residencias-artisticas-adar/">Nuestras residencias →</a></p>
 
 <div class="rc-support">
-<p class="ed-prose">Esta residencia cuenta con el apoyo de <strong>Culture Moves Europe</strong>, el programa de movilidad de Europa Creativa, financiado por la Unión Europea y gestionado por el Goethe-Institut.</p>
+<p class="ed-prose">Esta residencia cuenta con el apoyo de <strong>Culture Moves Europe</strong>, el programa de movilidad de Europa Creativa, financiado por la Unión Europea y gestionado por el Goethe-Institut. Las condiciones completas están en las <a href="https://culture.ec.europa.eu/sites/default/files/2026-02/call-residency-hosts-2025-2026_culture-moves-europe-270226.pdf" target="_blank" rel="noopener">bases oficiales (PDF, en inglés)</a>; si algo de esta página las contradice, mandan ellas.</p>
 <div class="rc-logos">
 <img src="/logos/eu.png" alt="Financiado por la Unión Europea" loading="lazy" />
 <img src="/logos/goethe.png" alt="Goethe-Institut" loading="lazy" />
