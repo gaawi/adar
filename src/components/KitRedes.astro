@@ -200,6 +200,33 @@ const rootCss = `:root{${Object.entries(tokens)
       .seg button { border: 0; border-radius: 0; padding: 7px 14px; }
       .seg button.on { background: var(--fg); color: var(--pop); }
 
+      /* ── Editor de textos por red ─────────────────────────────────────── */
+      #tmodal { position: fixed; inset: 0; z-index: 110; background: var(--scrim); display: none; }
+      #tmodal.open { display: block; }
+      .t-panel { position: absolute; inset: 4vh 4vw; background: var(--bg); border-radius: var(--r-box); display: grid; grid-template-rows: auto 1fr auto; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,.4); }
+      .t-head { padding: 16px 22px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+      .t-head h3 { font-family: var(--font-voz); margin: 0; font-size: 17px; flex: 1 1 260px; line-height: 1.25; }
+      .t-body { overflow-y: auto; padding: 18px 22px; display: grid; gap: 18px; }
+      .t-red { border: 1px solid var(--line); border-radius: var(--r-box); background: var(--card); padding: 14px 16px; }
+      .t-red-top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+      .t-red-top strong { font-family: var(--font-voz); font-size: 16px; }
+      .t-red-top .pista { font-family: var(--font-mono); font-size: 11px; color: var(--muted); flex: 1; }
+      .t-red textarea {
+        width: 100%; font-family: var(--font-display); font-size: 14px; line-height: 1.5;
+        padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--r-sm);
+        background: var(--bg); color: var(--fg); resize: vertical; min-height: 120px;
+      }
+      .t-pie { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+      .t-cuenta { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-right: auto; }
+      .t-cuenta.pasa { color: #e2574c; font-weight: 600; }
+      .t-editado { font-family: var(--font-mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+      .t-foot { padding: 14px 22px; border-top: 1px solid var(--line); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+      .t-foot .spacer { flex: 1; }
+
+      @media (max-width: 720px) {
+        .t-panel { inset: 0; border-radius: 0; }
+      }
+
       #toast { position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 20px); background: var(--fg); color: var(--bg); font-family: var(--font-mono); font-size: 13px; padding: 11px 18px; border-radius: var(--r-pill); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 200; max-width: 90vw; text-align: center; }
       #toast.show { opacity: 1; transform: translate(-50%, 0); }
 
@@ -299,6 +326,7 @@ const rootCss = `:root{${Object.entries(tokens)
             <div class="group">
               <span class="group-label">Texto</span>
               <div class="btns">
+                <button class="primary" data-textos>Ver y editar textos</button>
                 <button data-copy="ig">Pie de foto Instagram</button>
                 <button data-copy="fb">Facebook</button>
                 <button data-copy="li">LinkedIn</button>
@@ -395,6 +423,21 @@ const rootCss = `:root{${Object.entries(tokens)
       </div>
     </div>
 
+    <div id="tmodal" role="dialog" aria-modal="true" aria-label="Textos para redes">
+      <div class="t-panel">
+        <div class="t-head">
+          <h3 id="t-title">Textos</h3>
+          <button id="t-close">Cerrar</button>
+        </div>
+        <div class="t-body" id="t-body"></div>
+        <div class="t-foot">
+          <button id="t-reset">Volver a los automáticos</button>
+          <span class="spacer"></span>
+          <span class="t-editado" id="t-estado"></span>
+        </div>
+      </div>
+    </div>
+
     <div id="toast" role="status" aria-live="polite"></div>
 
     <RevisionBar
@@ -456,6 +499,23 @@ const rootCss = `:root{${Object.entries(tokens)
             url: d.url,
           };
         }
+        // Redes que se pueden editar, con el límite que impone cada una.
+        var REDES = [
+          { id: 'ig', nombre: 'Instagram', limite: 2200, pista: 'Pie de foto. Los hashtags cuentan.' },
+          { id: 'fb', nombre: 'Facebook', limite: 63206, pista: 'Sin límite en la práctica; las primeras líneas son las que se leen.' },
+          { id: 'li', nombre: 'LinkedIn', limite: 3000, pista: 'Se corta en «ver más» a las 3 líneas.' },
+          { id: 'x', nombre: 'X', limite: 280, pista: 'El enlace también ocupa.' },
+        ];
+
+        function claveDe(d) { return d.lang + '/' + d.slug; }
+
+        /** Lo guardado a mano para esa red, o el automático si no se ha tocado. */
+        function textoDe(d, red) {
+          var guardado = (window.ADAR_REV ? (ADAR_REV.obtener(claveDe(d)).textos || {}) : {})[red];
+          if (typeof guardado === 'string' && guardado.trim()) return guardado;
+          return captions(d)[red];
+        }
+
         function wrapText(ctx, text, maxW) {
           var words = String(text).split(/\s+/), lines = [], line = '';
           for (var i = 0; i < words.length; i++) {
@@ -979,7 +1039,7 @@ const rootCss = `:root{${Object.entries(tokens)
           toast('Textos restaurados.');
         });
         document.getElementById('m-copy').addEventListener('click', async function () {
-          var ok = await copy(captions(M.post).ig);
+          var ok = await copy(textoDe(M.post, 'ig'));
           if (ok) flash(this, 'Copiado ✓'); else toast('No se pudo copiar.');
         });
         document.getElementById('m-dl-one').addEventListener('click', async function () {
@@ -1058,12 +1118,124 @@ const rootCss = `:root{${Object.entries(tokens)
             return;
           }
 
+          if (btn.dataset.textos !== undefined) { abrirTextos(d); return; }
+
           var cp = btn.dataset.copy;
           if (cp) {
-            var ok = await copy(captions(d)[cp]);
+            // 'url' no se edita; el resto usa lo que haya escrito a mano.
+            var ok = await copy(cp === 'url' ? captions(d).url : textoDe(d, cp));
             if (ok) flash(btn, 'Copiado ✓'); else toast('No se pudo copiar.');
             return;
           }
+        });
+
+        // ── Editor de textos por red ─────────────────────────────────────
+        var tmodal = document.getElementById('tmodal');
+        var tbody = document.getElementById('t-body');
+        var tActual = null;
+        var tGuardar;
+
+        function estadoTextos(d) {
+          var t = (window.ADAR_REV ? ADAR_REV.obtener(claveDe(d)).textos : null) || {};
+          var n = REDES.filter(function (r) { return (t[r.id] || '').trim(); }).length;
+          return n ? n + (n === 1 ? ' texto escrito a mano' : ' textos escritos a mano') : 'Todos automáticos';
+        }
+
+        function pintaCuenta(caja) {
+          var ta = caja.querySelector('textarea');
+          var el = caja.querySelector('.t-cuenta');
+          var limite = Number(caja.dataset.limite);
+          var n = ta.value.length;
+          el.textContent = n.toLocaleString('es-ES') + ' / ' + limite.toLocaleString('es-ES');
+          el.classList.toggle('pasa', n > limite);
+        }
+
+        function abrirTextos(d) {
+          tActual = d;
+          document.getElementById('t-title').textContent = d.title;
+          tbody.innerHTML = '';
+          REDES.forEach(function (r) {
+            var caja = document.createElement('div');
+            caja.className = 't-red';
+            caja.dataset.red = r.id;
+            caja.dataset.limite = r.limite;
+            caja.innerHTML =
+              '<div class="t-red-top"><strong></strong><span class="pista"></span></div>' +
+              '<textarea rows="6"></textarea>' +
+              '<div class="t-pie"><span class="t-cuenta"></span>' +
+              '<button type="button" data-t-copiar>Copiar</button>' +
+              '<button type="button" data-t-auto>Texto automático</button></div>';
+            caja.querySelector('strong').textContent = r.nombre;
+            caja.querySelector('.pista').textContent = r.pista;
+            caja.querySelector('textarea').value = textoDe(d, r.id);
+            tbody.appendChild(caja);
+            pintaCuenta(caja);
+          });
+          document.getElementById('t-estado').textContent = estadoTextos(d);
+          tmodal.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        }
+
+        function cerrarTextos() {
+          tmodal.classList.remove('open');
+          document.body.style.overflow = '';
+          tActual = null;
+        }
+
+        function guardaTextos() {
+          if (!tActual || !window.ADAR_REV) return;
+          var auto = captions(tActual);
+          var textos = {};
+          tbody.querySelectorAll('.t-red').forEach(function (caja) {
+            var red = caja.dataset.red;
+            var v = caja.querySelector('textarea').value;
+            // Si coincide con el automático no se guarda: así el texto sigue
+            // actualizándose solo cuando cambie el artículo.
+            if (v.trim() && v !== auto[red]) textos[red] = v;
+          });
+          ADAR_REV.guardar(claveDe(tActual), { textos: textos }, tActual.title);
+          document.getElementById('t-estado').textContent = estadoTextos(tActual);
+        }
+
+        tbody.addEventListener('input', function (ev) {
+          var caja = ev.target.closest('.t-red');
+          if (!caja) return;
+          pintaCuenta(caja);
+          clearTimeout(tGuardar);
+          tGuardar = setTimeout(guardaTextos, 400);
+        });
+
+        tbody.addEventListener('click', async function (ev) {
+          var caja = ev.target.closest('.t-red');
+          if (!caja) return;
+          var ta = caja.querySelector('textarea');
+          if (ev.target.closest('[data-t-copiar]')) {
+            var ok = await copy(ta.value);
+            if (ok) flash(ev.target.closest('button'), 'Copiado ✓'); else toast('No se pudo copiar.');
+            return;
+          }
+          if (ev.target.closest('[data-t-auto]')) {
+            ta.value = captions(tActual)[caja.dataset.red];
+            pintaCuenta(caja);
+            guardaTextos();
+          }
+        });
+
+        document.getElementById('t-reset').addEventListener('click', function () {
+          if (!tActual) return;
+          var auto = captions(tActual);
+          tbody.querySelectorAll('.t-red').forEach(function (caja) {
+            caja.querySelector('textarea').value = auto[caja.dataset.red];
+            pintaCuenta(caja);
+          });
+          guardaTextos();
+          toast('Textos automáticos restaurados.');
+        });
+
+        document.getElementById('t-close').addEventListener('click', cerrarTextos);
+        tmodal.addEventListener('click', function (e) { if (e.target === tmodal) cerrarTextos(); });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && tmodal.classList.contains('open')) cerrarTextos();
         });
 
         // ── Filtros ──────────────────────────────────────────────────────

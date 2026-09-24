@@ -45,6 +45,8 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
 <div class="rv-toast" id="rv-toast" role="status" aria-live="polite"></div>
 
 <script type="application/json" id="rv-config" set:html={JSON.stringify(config).replace(/</g, '\\u003c')}></script>
+<!-- Sin defer ni async: el script de abajo lo necesita ya cargado. -->
+<script is:inline src="/kit/gh.js"></script>
 
 <!-- Global: los estilos tienen que alcanzar el marcado de la página anfitriona,
      que tiene otro ámbito. Los colores salen de tokens con alternativa, así
@@ -251,14 +253,14 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       var g = GUARDADAS[k];
       var l = local[k];
       if (!g || g.estado !== l.estado || (g.nota || '') !== (l.nota || '') ||
-          (g.fecha_prevista || '') !== (l.fecha_prevista || '')) sucio[k] = true;
+          (g.fecha_prevista || '') !== (l.fecha_prevista || '') ||
+          JSON.stringify(g.textos || {}) !== JSON.stringify(l.textos || {})) sucio[k] = true;
     });
 
     function persistir() {
       var salida = {};
       Object.keys(estado).forEach(function (k) {
-        var e = estado[k];
-        if (e && (e.estado || e.nota || e.fecha_prevista)) salida[k] = e;
+        if (ADAR_GH.tieneAlgo(estado[k])) salida[k] = estado[k];
       });
       try { localStorage.setItem(CFG.lsKey, JSON.stringify(salida)); } catch (e) {}
     }
@@ -449,114 +451,9 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     });
 
     // ── Guardar en el repositorio ──────────────────────────────────────────
-    // Reutiliza el login de GitHub del panel: /api/auth abre una ventana que
-    // devuelve el token por postMessage, igual que al CMS.
-    function pedirToken() {
-      return new Promise(function (resolve, reject) {
-        var cache;
-        try { cache = sessionStorage.getItem('adar_gh_token'); } catch (e) {}
-        if (cache) return resolve(cache);
-        var w = window.open('/api/auth', 'adar-gh-auth', 'width=700,height=740');
-        if (!w) return reject(new Error('El navegador bloqueó la ventana. Permite las ventanas emergentes y vuelve a intentarlo.'));
-        var tope = setTimeout(function () {
-          window.removeEventListener('message', recibir);
-          reject(new Error('Se agotó el tiempo esperando a GitHub.'));
-        }, 120000);
-        function recibir(e) {
-          if (e.origin !== window.location.origin) return;
-          var d = e.data;
-          if (typeof d !== 'string') return;
-          if (d === 'authorizing:github') {
-            try { w.postMessage('adar', window.location.origin); } catch (err) {}
-            return;
-          }
-          var m = d.match(/^authorization:github:(success|error):([\s\S]*)$/);
-          if (!m) return;
-          clearTimeout(tope);
-          window.removeEventListener('message', recibir);
-          var payload;
-          try { payload = JSON.parse(m[2]); } catch (err) { return reject(new Error('Respuesta de GitHub no válida.')); }
-          if (m[1] === 'success' && payload.token) {
-            try { sessionStorage.setItem('adar_gh_token', payload.token); } catch (err) {}
-            resolve(payload.token);
-          } else {
-            reject(new Error(payload.error || 'GitHub no autorizó la sesión.'));
-          }
-        }
-        window.addEventListener('message', recibir);
-      });
-    }
-
-    function aBase64(str) {
-      var bytes = new TextEncoder().encode(str);
-      var bin = '';
-      for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
-      return btoa(bin);
-    }
-    function deBase64(s) {
-      var bin = atob(String(s).replace(/\s/g, ''));
-      var bytes = new Uint8Array(bin.length);
-      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
-      return new TextDecoder('utf-8').decode(bytes);
-    }
-
-    var API = 'https://api.github.com/repos/' + CFG.repo + '/contents/' + CFG.path;
-
-    async function leerRemoto(token) {
-      var r = await fetch(API + '?ref=' + CFG.branch, {
-        headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' },
-        cache: 'no-store',
-      });
-      if (r.status === 404) return { sha: null, datos: { actualizado: null, posts: {} } };
-      if (!r.ok) throw new Error('GitHub respondió ' + r.status + ' al leer el archivo.');
-      var j = await r.json();
-      var datos;
-      try { datos = JSON.parse(deBase64(j.content)); } catch (e) { datos = { posts: {} }; }
-      if (!datos.posts) datos.posts = {};
-      return { sha: j.sha, datos: datos };
-    }
-
-    async function subir(token) {
-      var remoto = await leerRemoto(token);
-      var fusion = remoto.datos;
-      // Entrada por entrada, gana la marca más reciente: así revisar desde el
-      // móvil y desde el ordenador no se pisa.
-      Object.keys(estado).forEach(function (k) {
-        var mio = estado[k];
-        if (!mio || (!mio.estado && !mio.nota && !mio.fecha_prevista)) { delete fusion.posts[k]; return; }
-        var suyo = fusion.posts[k];
-        if (!suyo || !suyo.fecha || (mio.fecha && mio.fecha > suyo.fecha)) fusion.posts[k] = mio;
-      });
-      fusion._ayuda =
-        'Revisiones escritas desde el panel interno. Cada clave es «idioma/slug». ' +
-        'estado: «listo» (listo para publicar) o «cambios» (hay que corregir algo, la nota dice qué). ' +
-        'Lo escribe la propia página; no hace falta editarlo a mano.';
-      fusion.actualizado = new Date().toISOString();
-
-      var cuerpo = {
-        message: 'Revisión desde el panel interno',
-        content: aBase64(JSON.stringify(fusion, null, 2) + '\n'),
-        branch: CFG.branch,
-      };
-      if (remoto.sha) cuerpo.sha = remoto.sha;
-
-      var r = await fetch(API, {
-        method: 'PUT',
-        headers: {
-          Authorization: 'Bearer ' + token,
-          Accept: 'application/vnd.github+json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(cuerpo),
-      });
-      if (!r.ok) {
-        var detalle = '';
-        try { detalle = (await r.json()).message || ''; } catch (e) {}
-        var err = new Error(detalle || 'GitHub respondió ' + r.status);
-        err.status = r.status;
-        throw err;
-      }
-    }
+    // La mecánica (login, lectura, fusión y reintento) vive en /kit/gh.js,
+    // compartida con el calendario.
+    var DESTINO = { repo: CFG.repo, path: CFG.path, branch: CFG.branch };
 
     document.getElementById('rv-save').addEventListener('click', async function () {
       var btn = this;
@@ -564,29 +461,36 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       btn.disabled = true;
       btn.textContent = 'Guardando…';
       try {
-        var token = await pedirToken();
-        try {
-          await subir(token);
-        } catch (e) {
-          // 409: alguien escribió entre medias. Se relee y se reintenta una vez.
-          if (e.status === 409) await subir(token);
-          else throw e;
-        }
+        await ADAR_GH.guardarRevisiones(DESTINO, estado);
         sucio = {};
         persistir();
         actualizarBarra();
         toast('Guardado. Lo leeré de ' + CFG.path + '.', 4200);
       } catch (e) {
-        // Un token caducado deja de servir: se borra para pedirlo otra vez.
-        if (/401|403|Bad credentials/i.test(e.message || '')) {
-          try { sessionStorage.removeItem('adar_gh_token'); } catch (err) {}
-        }
         toast('No se pudo guardar: ' + (e.message || e), 6000);
       } finally {
         btn.disabled = false;
         btn.textContent = antes;
       }
     });
+
+    // Puerta para que otras partes de la página (el editor de textos del kit)
+    // escriban en la misma revisión, en vez de tocar localStorage por su cuenta
+    // y pisarse con esta.
+    window.ADAR_REV = {
+      obtener: function (k) { return Object.assign({}, estado[k] || {}); },
+      guardar: function (k, cambios, titulo) {
+        estado[k] = Object.assign({}, estado[k], cambios, {
+          titulo: titulo || (estado[k] || {}).titulo || '',
+          fecha: new Date().toISOString(),
+        });
+        sucio[k] = true;
+        persistir();
+        var ficha = document.querySelector('[data-rv-item][data-rv-key="' + (window.CSS && CSS.escape ? CSS.escape(k) : k) + '"]');
+        if (ficha) pintar(ficha);
+        avisarCambio();
+      },
+    };
 
     fichas.forEach(function (f) { pintar(f, true); });
     contar();

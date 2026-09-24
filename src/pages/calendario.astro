@@ -86,6 +86,7 @@ const MARCAS = FUENTES.map((f) => ({
   nombre: f.brand.org,
   panel: f.panel,
   lsKey: f.brand.reviewLS,
+  rutaRepo: f.brand.reviewPath,
   accent: f.brand.accent,
   // Cada ficha se pinta con la superficie de su marca, así que se distinguen
   // de un vistazo aunque los dos amarillos se parezcan.
@@ -179,6 +180,40 @@ const hoy = new Date().toISOString().slice(0, 10);
       .chip.sin-aprobar .quien::after { content: ' · sin aprobar'; }
       .chip.sin-subir { box-shadow: 0 0 0 2px rgba(10, 9, 7, 0.1); }
 
+      /* Arrastre */
+      .chip.previsto { cursor: grab; }
+      .chip.previsto:active { cursor: grabbing; }
+      .chip.arrastrando { opacity: .35; }
+      .dia.sobre { background: #fdf6cf; box-shadow: inset 0 0 0 2px var(--accent); }
+      .lista.sobre { outline: 2px dashed var(--accent); outline-offset: 6px; border-radius: 8px; }
+      .lista li a[draggable='true'] { cursor: grab; }
+
+      /* Barra de guardado, igual que la del kit */
+      .cal-bar {
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 120;
+        display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+        padding: 12px 20px; background: var(--ink); color: var(--paper);
+        box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.22);
+      }
+      .cal-bar[hidden] { display: none; }
+      .cal-bar-text { flex: 1 1 220px; font-family: var(--mono); font-size: 12px; }
+      .cal-bar button {
+        font-family: var(--mono); font-size: 12px; line-height: 1; padding: 10px 16px;
+        border-radius: 999px; border: 1px solid currentColor; background: transparent;
+        color: inherit; cursor: pointer; white-space: nowrap;
+      }
+      .cal-bar button.primario { background: var(--accent); border-color: var(--accent); color: var(--ink); font-weight: 600; }
+      .cal-bar button[disabled] { opacity: .45; cursor: progress; }
+      body.con-barra { padding-bottom: 86px; }
+
+      .cal-aviso {
+        position: fixed; left: 50%; bottom: 84px; transform: translate(-50%, 16px);
+        background: var(--ink); color: var(--paper); font-family: var(--mono); font-size: 13px;
+        padding: 11px 18px; border-radius: 999px; opacity: 0; pointer-events: none;
+        transition: opacity .2s, transform .2s; z-index: 130; max-width: 90vw; text-align: center;
+      }
+      .cal-aviso.ver { opacity: 1; transform: translate(-50%, 0); }
+
       .leyenda { display: flex; flex-wrap: wrap; gap: 16px; margin: 16px 0 0; font-family: var(--mono); font-size: 11px; color: var(--muted); }
       .leyenda span { display: inline-flex; align-items: center; gap: 6px; }
       .muestra { width: 22px; height: 12px; border-radius: 3px; border-left: 4px solid; display: inline-block; }
@@ -214,8 +249,9 @@ const hoy = new Date().toISOString().slice(0, 10);
         <h1>Calendario<span class="dot">.</span></h1>
         <p class="lede">
           Qué está publicado y qué toca publicar, con las dos marcas juntas o por separado.
-          Las fechas se ponen en el kit de cada marca, en el bloque «Revisión» de cada pieza;
-          aquí solo se ven. <span id="resumen"></span>
+          <strong>Arrastra una ficha para cambiarle el día</strong>, o súbela desde la lista de
+          abajo si aún no tiene fecha. Lo publicado no se mueve: ya pasó.
+          <span id="resumen"></span>
         </p>
       </header>
 
@@ -243,13 +279,22 @@ const hoy = new Date().toISOString().slice(0, 10);
 
       <section class="lista">
         <h2>Sin fecha prevista</h2>
-        <p class="sub">Nadie sabe cuándo van. Ponles fecha en el kit de su marca.</p>
+        <p class="sub">Nadie sabe cuándo van. Arrastra una hasta un día del calendario para ponerle fecha; suelta aquí una ficha para quitársela.</p>
         <ul id="sinFecha"></ul>
       </section>
     </div>
 
+    <div class="cal-bar" id="cal-bar" hidden>
+      <span class="cal-bar-text" id="cal-bar-text"></span>
+      <button type="button" class="primario" id="cal-guardar">Guardar en GitHub</button>
+    </div>
+    <div class="cal-aviso" id="cal-aviso" role="status" aria-live="polite"></div>
+
     <script type="application/json" id="cal-datos" set:html={datos}></script>
     <script type="application/json" id="cal-hoy" set:html={JSON.stringify(hoy)}></script>
+
+    <!-- Sin defer ni async: el script de abajo lo necesita ya cargado. -->
+    <script is:inline src="/kit/gh.js"></script>
 
     <script is:inline>
       (function () {
@@ -259,78 +304,136 @@ const hoy = new Date().toISOString().slice(0, 10);
         D.marcas.forEach(function (m) { MARCA[m.id] = m; });
 
         // Las revisiones de cada marca: lo subido al repositorio, y encima lo
-        // que haya en este navegador sin subir todavía. Misma regla que la
-        // barra de revisión: gana la marca más reciente, entrada por entrada.
-        var REV = {};
+        // que haya en este navegador sin subir todavía.
+        var REV = {}, SUCIO = {};
         D.marcas.forEach(function (m) {
-          var fusion = {};
-          Object.keys(m.revisiones || {}).forEach(function (k) {
-            fusion[k] = Object.assign({}, m.revisiones[k]);
+          REV[m.id] = ADAR_GH.fusionaLocal(m.revisiones, m.lsKey);
+          SUCIO[m.id] = {};
+          Object.keys(REV[m.id]).forEach(function (k) {
+            if (REV[m.id][k].sinSubir) SUCIO[m.id][k] = true;
           });
-          var local = {};
-          try { local = JSON.parse(localStorage.getItem(m.lsKey) || '{}'); } catch (e) { local = {}; }
-          Object.keys(local).forEach(function (k) {
-            var a = fusion[k], b = local[k];
-            if (!a || !a.fecha || (b.fecha && b.fecha > a.fecha)) {
-              fusion[k] = Object.assign({}, b, { sinSubir: true });
+        });
+
+        function persistir(marca) {
+          var salida = {};
+          Object.keys(REV[marca]).forEach(function (k) {
+            if (ADAR_GH.tieneAlgo(REV[marca][k])) {
+              var e = Object.assign({}, REV[marca][k]);
+              delete e.sinSubir; // es un apunte de esta pantalla, no del archivo
+              salida[k] = e;
             }
           });
-          REV[m.id] = fusion;
-        });
-
-        // Cada pieza cae en una fecha, o en la lista de las que no tienen.
-        var eventos = [], sinFecha = [];
-        D.piezas.forEach(function (p) {
-          var r = (REV[p.marca] || {})[p.key] || {};
-          var base = {
-            marca: p.marca,
-            marcaNombre: p.marcaNombre,
-            titulo: p.titulo,
-            aprobado: r.estado === 'listo',
-            nota: r.nota || '',
-            sinSubir: !!r.sinSubir,
-            url: p.url,
-            panel: p.panel,
-          };
-          // Una fecha puesta a mano manda siempre: significa «ese día hay algo
-          // que hacer», aunque la pieza ya estuviera publicada en la web. Solo
-          // si no la hay se cae a la fecha de publicación, y entonces es
-          // historia, no tarea.
-          if (r.fecha_prevista) {
-            eventos.push(Object.assign({}, base, { fecha: r.fecha_prevista, tipo: 'previsto' }));
-          } else if (p.usaFechaPost && p.status === 'publish' && p.date) {
-            eventos.push(Object.assign({}, base, { fecha: p.date, tipo: 'publicado' }));
-          } else {
-            sinFecha.push(base);
-          }
-        });
-        eventos.sort(function (a, b) { return a.fecha < b.fecha ? -1 : a.fecha > b.fecha ? 1 : 0; });
-        D.eventos = eventos;
-        D.sinFecha = sinFecha;
-
-        var resumen = document.getElementById('resumen');
-        var nPrev = eventos.filter(function (e) { return e.tipo === 'previsto'; }).length;
-        var nPub = eventos.length - nPrev;
-        var nSinSubir = eventos.concat(sinFecha).filter(function (e) { return e.sinSubir; }).length;
-        resumen.textContent =
-          nPub + (nPub === 1 ? ' publicado' : ' publicados') + ' · ' +
-          nPrev + (nPrev === 1 ? ' previsto' : ' previstos') + ' · ' +
-          sinFecha.length + ' sin fecha' +
-          (nSinSubir ? ' · ' + nSinSubir + ' sin subir desde este navegador' : '');
+          try { localStorage.setItem(MARCA[marca].lsKey, JSON.stringify(salida)); } catch (e) {}
+        }
 
         var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
         var DOW = ['lun','mar','mié','jue','vie','sáb','dom'];
 
         var fMarca = 'todas', fTipo = 'todo';
-        // Arranca en el mes que tenga algo previsto; si no, en el de hoy.
-        var primerPrevisto = D.eventos.filter(function (e) { return e.tipo === 'previsto'; })[0];
-        var ancla = (primerPrevisto || {}).fecha || HOY;
-        var cursor = new Date(ancla.slice(0, 4), Number(ancla.slice(5, 7)) - 1, 1);
+        var cursor = null;
+
+        // ── De piezas a fichas de calendario ────────────────────────────────
+        function recalcular() {
+          var eventos = [], sinFecha = [];
+          D.piezas.forEach(function (p) {
+            var r = (REV[p.marca] || {})[p.key] || {};
+            var base = {
+              key: p.key,
+              marca: p.marca,
+              marcaNombre: p.marcaNombre,
+              titulo: p.titulo,
+              aprobado: r.estado === 'listo',
+              nota: r.nota || '',
+              sinSubir: !!r.sinSubir,
+              url: p.url,
+              panel: p.panel,
+            };
+            // Una fecha puesta a mano manda siempre: significa «ese día hay algo
+            // que hacer», aunque la pieza ya estuviera publicada en la web. Solo
+            // si no la hay se cae a la fecha de publicación, y entonces es
+            // historia, no tarea.
+            if (r.fecha_prevista) {
+              eventos.push(Object.assign({}, base, { fecha: r.fecha_prevista, tipo: 'previsto' }));
+            } else if (p.usaFechaPost && p.status === 'publish' && p.date) {
+              eventos.push(Object.assign({}, base, { fecha: p.date, tipo: 'publicado' }));
+            } else {
+              sinFecha.push(base);
+            }
+          });
+          eventos.sort(function (a, b) { return a.fecha < b.fecha ? -1 : a.fecha > b.fecha ? 1 : 0; });
+          D.eventos = eventos;
+          D.sinFecha = sinFecha;
+
+          var nPrev = eventos.filter(function (e) { return e.tipo === 'previsto'; }).length;
+          var nPub = eventos.length - nPrev;
+          var nSinSubir = eventos.concat(sinFecha).filter(function (e) { return e.sinSubir; }).length;
+          document.getElementById('resumen').textContent =
+            nPub + (nPub === 1 ? ' publicado' : ' publicados') + ' · ' +
+            nPrev + (nPrev === 1 ? ' previsto' : ' previstos') + ' · ' +
+            sinFecha.length + ' sin fecha' +
+            (nSinSubir ? ' · ' + nSinSubir + ' sin subir' : '');
+
+          if (!cursor) {
+            var ancla = (eventos.filter(function (e) { return e.tipo === 'previsto'; })[0] || {}).fecha || HOY;
+            cursor = new Date(Number(ancla.slice(0, 4)), Number(ancla.slice(5, 7)) - 1, 1);
+          }
+        }
 
         function visible(e) {
           return (fMarca === 'todas' || e.marca === fMarca) && (fTipo === 'todo' || e.tipo === fTipo);
         }
 
+        // ── Mover una pieza de día (o quitarle la fecha) ────────────────────
+        function mover(marca, key, fecha) {
+          var actual = REV[marca][key] || {};
+          if ((actual.fecha_prevista || '') === (fecha || '')) return;
+          REV[marca][key] = Object.assign({}, actual, {
+            fecha_prevista: fecha || '',
+            titulo: actual.titulo || (D.piezas.filter(function (p) { return p.marca === marca && p.key === key; })[0] || {}).titulo || '',
+            fecha: new Date().toISOString(),
+            sinSubir: true,
+          });
+          SUCIO[marca][key] = true;
+          persistir(marca);
+          todo();
+          aviso(fecha ? 'Movido al ' + fecha + '. Acuérdate de guardar.' : 'Fecha quitada. Acuérdate de guardar.');
+        }
+
+        function datosArrastre(ev) {
+          var crudo = '';
+          try { crudo = ev.dataTransfer.getData('text/plain') || ''; } catch (e) {}
+          var i = crudo.indexOf('|');
+          if (i < 1) return null;
+          var marca = crudo.slice(0, i), key = crudo.slice(i + 1);
+          return REV[marca] ? { marca: marca, key: key } : null;
+        }
+
+        function arrastrable(el, marca, key) {
+          el.draggable = true;
+          el.addEventListener('dragstart', function (ev) {
+            ev.dataTransfer.setData('text/plain', marca + '|' + key);
+            ev.dataTransfer.effectAllowed = 'move';
+            el.classList.add('arrastrando');
+          });
+          el.addEventListener('dragend', function () { el.classList.remove('arrastrando'); });
+        }
+
+        function zonaSoltar(el, obtenerFecha) {
+          el.addEventListener('dragover', function (ev) {
+            ev.preventDefault();
+            ev.dataTransfer.dropEffect = 'move';
+            el.classList.add('sobre');
+          });
+          el.addEventListener('dragleave', function () { el.classList.remove('sobre'); });
+          el.addEventListener('drop', function (ev) {
+            ev.preventDefault();
+            el.classList.remove('sobre');
+            var d = datosArrastre(ev);
+            if (d) mover(d.marca, d.key, obtenerFecha());
+          });
+        }
+
+        // ── Pintado ─────────────────────────────────────────────────────────
         function chip(e) {
           var m = MARCA[e.marca] || {};
           var a = document.createElement('a');
@@ -345,12 +448,18 @@ const hoy = new Date().toISOString().slice(0, 10);
             e.marcaNombre + ' · ' + (e.tipo === 'publicado' ? 'publicado' : 'previsto') +
             (e.tipo === 'previsto' ? (e.aprobado ? ' y aprobado' : ', SIN aprobar') : '') +
             (e.sinSubir ? ' · todavía sin subir al repositorio' : '') +
+            (e.tipo === 'previsto' ? '\n\nArrástralo a otro día para cambiarle la fecha.' : '') +
             (e.nota ? '\n\nNota: ' + e.nota : '');
           var q = document.createElement('span');
           q.className = 'quien';
           q.textContent = e.marcaNombre;
           a.appendChild(q);
           a.appendChild(document.createTextNode((e.tipo === 'publicado' ? '✓ ' : '') + e.titulo));
+          // Lo publicado no se arrastra: su fecha es cuándo salió, no un plan.
+          // Hay que apagarlo a mano: los enlaces son arrastrables por defecto,
+          // y si no, parecería que se puede mover aunque no haga nada.
+          if (e.tipo === 'previsto') arrastrable(a, e.marca, e.key);
+          else a.draggable = false;
           return a;
         }
 
@@ -382,11 +491,13 @@ const hoy = new Date().toISOString().slice(0, 10);
             var iso = d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
             var cel = document.createElement('div');
             cel.className = 'dia' + (d.getMonth() !== mth ? ' fuera' : '') + (iso === HOY ? ' hoy' : '');
+            cel.dataset.fecha = iso;
             var n = document.createElement('span');
             n.className = 'dia-n';
             n.textContent = d.getDate();
             cel.appendChild(n);
             (porDia[iso] || []).forEach(function (e) { cel.appendChild(chip(e)); });
+            zonaSoltar(cel, (function (f) { return function () { return f; }; })(iso));
             rej.appendChild(cel);
             // Sexta fila solo si hace falta.
             if (i === 34 && new Date(y, mth + 1, 0).getDate() + desplaza <= 35) break;
@@ -424,24 +535,91 @@ const hoy = new Date().toISOString().slice(0, 10);
             var li = document.createElement('li');
             var a = document.createElement('a');
             a.href = e.panel;
+            a.title = 'Arrástralo a un día del calendario para ponerle fecha.';
             var q = document.createElement('span');
             q.className = 'quien';
             q.textContent = e.marcaNombre;
             a.appendChild(q);
             a.appendChild(document.createTextNode(e.titulo));
+            arrastrable(a, e.marca, e.key);
             li.appendChild(a);
             ul.appendChild(li);
           });
         }
 
-        function todo() { pinta(); pintaSinFecha(); }
+        // ── Guardar ─────────────────────────────────────────────────────────
+        var avisoEl = document.getElementById('cal-aviso'), avisoT;
+        function aviso(m, ms) {
+          avisoEl.textContent = m;
+          avisoEl.classList.add('ver');
+          clearTimeout(avisoT);
+          avisoT = setTimeout(function () { avisoEl.classList.remove('ver'); }, ms || 3000);
+        }
+
+        function pendientes() {
+          return D.marcas
+            .map(function (m) { return { marca: m.id, n: Object.keys(SUCIO[m.id]).length }; })
+            .filter(function (x) { return x.n > 0; });
+        }
+
+        function actualizarBarra() {
+          var p = pendientes();
+          var total = p.reduce(function (a, x) { return a + x.n; }, 0);
+          var bar = document.getElementById('cal-bar');
+          document.body.classList.toggle('con-barra', total > 0);
+          bar.hidden = total === 0;
+          if (!total) return;
+          document.getElementById('cal-bar-text').textContent =
+            total + (total === 1 ? ' cambio sin subir' : ' cambios sin subir') +
+            ' (' + p.map(function (x) { return MARCA[x.marca].nombre + ': ' + x.n; }).join(' · ') + ').' +
+            ' Hasta que no lo subas, solo lo ves tú.';
+        }
+
+        document.getElementById('cal-guardar').addEventListener('click', async function () {
+          var btn = this, antes = btn.textContent;
+          btn.disabled = true;
+          btn.textContent = 'Guardando…';
+          try {
+            for (var i = 0; i < D.marcas.length; i++) {
+              var m = D.marcas[i];
+              if (!Object.keys(SUCIO[m.id]).length) continue;
+              var limpio = {};
+              Object.keys(REV[m.id]).forEach(function (k) {
+                var e = Object.assign({}, REV[m.id][k]);
+                delete e.sinSubir;
+                limpio[k] = e;
+              });
+              await ADAR_GH.guardarRevisiones(
+                { repo: 'gaawi/adar', path: m.rutaRepo, branch: 'main' },
+                limpio,
+                'Calendario: fechas de publicación'
+              );
+              SUCIO[m.id] = {};
+              Object.keys(REV[m.id]).forEach(function (k) { delete REV[m.id][k].sinSubir; });
+              persistir(m.id);
+            }
+            todo();
+            aviso('Guardado. Ya lo ve todo el mundo.', 4200);
+          } catch (e) {
+            aviso('No se pudo guardar: ' + (e.message || e), 6000);
+          } finally {
+            btn.disabled = false;
+            btn.textContent = antes;
+          }
+        });
+
+        // ── Arranque y controles ────────────────────────────────────────────
+        function todo() { recalcular(); pinta(); pintaSinFecha(); actualizarBarra(); }
+
+        // Soltar en la lista de abajo quita la fecha.
+        zonaSoltar(document.querySelector('.lista'), function () { return ''; });
 
         function grupo(sel, attr, set) {
           document.querySelectorAll(sel + ' button').forEach(function (b) {
             b.addEventListener('click', function () {
               set(b.dataset[attr]);
               document.querySelectorAll(sel + ' button').forEach(function (x) { x.classList.toggle('on', x === b); });
-              todo();
+              pinta(); pintaSinFecha();
             });
           });
         }
