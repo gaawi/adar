@@ -100,9 +100,20 @@
       "object_id": "388"
     },
     {
+      "title": "Residency Open Call 2026–27",
+      "url": "/en/artist-residency-open-call-2026-27/",
+      "order": 10,
+      "parent_id": 405,
+      "item_id": 9402,
+      "classes": "",
+      "object_type": "post_type",
+      "object": "page",
+      "object_id": "9402"
+    },
+    {
       "title": "Partners",
       "url": "/en/partners-2/",
-      "order": 10,
+      "order": 11,
       "parent_id": 405,
       "item_id": 414,
       "classes": "",
