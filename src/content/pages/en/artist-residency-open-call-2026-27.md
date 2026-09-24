@@ -50,7 +50,15 @@ menu_order: 0
 <div class="rc-fact"><strong>+ top-ups</strong><span>when applicable</span></div>
 </div>
 
-<p class="ed-prose rc-when">The residency must last <strong>21 to 30 consecutive days</strong> and be completed <strong>before 7 June 2027</strong>.</p>
+<div class="rc-when">
+<p class="ed-stat-t">Dates and duration — read this before applying</p>
+<ul class="rc-when-list">
+<li><strong>21 to 30 consecutive days.</strong> One continuous stay. It cannot be split into two visits.</li>
+<li><strong>Every member of the group must be present for the whole stay.</strong> Culture Moves Europe does not allow anyone to arrive late, leave early or interrupt their stay.</li>
+<li><strong>It must take place between the end of October 2026 and 7 June 2027.</strong> Culture Moves Europe needs 30 days after we send them the list of residents, and 7 June 2027 is the last possible end date.</li>
+<li><strong>In your email you must tell us how many days you would come and on which dates.</strong> Without that we cannot assess the application.</li>
+</ul>
+</div>
 
 </div>
 </section>
@@ -133,7 +141,7 @@ menu_order: 0
 <section class="ed-section">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">On top</p>
+<p class="ed-eyebrow">Top-ups</p>
 <h2>Additional top-ups</h2>
 <p class="ed-lede">Residents may also qualify for further Culture Moves Europe support.</p>
 </div>
@@ -142,26 +150,26 @@ menu_order: 0
 <div class="adar-stat">
 <p class="ed-stat-k">Green mobility</p>
 <p class="ed-stat-v">+ €400</p>
-<p class="ed-stat-t">per eligible resident</p>
+<p class="ed-stat-t">travelling by any means other than a plane, over a distance of 600 km or more</p>
 </div>
 <div class="adar-stat">
 <p class="ed-stat-k">Visa</p>
 <p class="ed-stat-v">+ €120</p>
-<p class="ed-stat-t">per eligible resident</p>
+<p class="ed-stat-t">if you need a visa to enter Spain</p>
 </div>
 <div class="adar-stat">
 <p class="ed-stat-k">Family</p>
 <p class="ed-stat-v">+ €200</p>
-<p class="ed-stat-t">per child under 18</p>
+<p class="ed-stat-t">per child under 18, per resident</p>
 </div>
 <div class="adar-stat">
 <p class="ed-stat-k">OCT / OR</p>
 <p class="ed-stat-v">+ €175</p>
-<p class="ed-stat-t">per eligible resident</p>
+<p class="ed-stat-t">if you live in an overseas country or territory, or an outermost region</p>
 </div>
 </div>
 
-<p class="ed-prose rc-note">All top-ups are subject to the applicable Culture Moves Europe eligibility and documentation requirements.</p>
+<p class="ed-prose rc-note">All top-ups are decided by Culture Moves Europe, not by ADAR, and require supporting documents. One rule worth knowing before you plan your journey: <strong>if you live less than 600 km away you must travel by means other than a plane</strong>, unless a disability prevents it or your home or destination is only reachable by air.</p>
 
 </div>
 </section>
@@ -171,7 +179,7 @@ menu_order: 0
 <div class="ed-wrap">
 <div class="ed-head">
 <p class="ed-eyebrow">The residency</p>
-<h2>Time to work, in a village</h2>
+<h2>What the residency is</h2>
 <p class="ed-lede">ADAR invites groups of 4–5 artists and cultural professionals to spend 21 to 30 consecutive days developing a project in Leiguarda, a small rural village in Asturias, northern Spain.</p>
 </div>
 
@@ -197,7 +205,7 @@ menu_order: 0
 <div class="ed-wrap">
 <div class="ed-head">
 <p class="ed-eyebrow">The place</p>
-<h2>Your time at ADAR</h2>
+<h2>Where you would live and work</h2>
 <p class="ed-lede">The residency takes place in Leiguarda, a small village in Belmonte de Miranda, surrounded by the mountains and landscape of central Asturias.</p>
 </div>
 </div>
@@ -289,9 +297,10 @@ menu_order: 0
 <p>One link where we can see it: website, portfolio, Instagram, YouTube, Vimeo, SoundCloud or similar. Add individual links if you need to. <strong>No CV required.</strong></p>
 </div></li>
 <li><div class="rc-step-body">
-<h3>Availability</h3>
-<p>When the whole group could come. Give us as much flexibility as you can. The stay must be 21–30 consecutive days and finish before 7 June 2027.</p>
-<p class="rc-eg">“We are available between 10 January and 15 March 2027 and could do 21–30 days in that window.”</p>
+<h3>How many days, and when</h3>
+<p><strong>How many days you would stay</strong> (between 21 and 30) and <strong>the dates</strong>. The whole group has to be there for all of them, without interruptions, between the end of October 2026 and 7 June 2027.</p>
+<p>Give us more than one possible window if you can — it makes it easier to fit you in.</p>
+<p class="rc-eg">“We would stay 24 days. Our first choice is 12 January to 4 February 2027; we could also do 2 to 25 March 2027. All five of us would be there the whole time.”</p>
 </div></li>
 <li><div class="rc-step-body">
 <h3>Your idea</h3>
@@ -325,7 +334,7 @@ menu_order: 0
 <div class="ed-wrap">
 <div class="ed-head">
 <p class="ed-eyebrow">FAQ</p>
-<h2>Quick answers</h2>
+<h2>Questions</h2>
 </div>
 
 <div class="ed-twocol">
@@ -336,10 +345,62 @@ menu_order: 0
 <article class="ed-card"><h3>Do we need a full project proposal?</h3><p>No. A few sentences are enough for the initial application.</p></article>
 <article class="ed-card"><h3>Do we need to send CVs?</h3><p>Not at this stage.</p></article>
 <article class="ed-card"><h3>Do we have to produce a finished work?</h3><p>No. Research, experimentation, rehearsal, creation or developing a future project are all valid.</p></article>
-<article class="ed-card"><h3>How long is the residency?</h3><p>Between 21 and 30 consecutive days, completed before 7 June 2027.</p></article>
+<article class="ed-card"><h3>How long is the residency?</h3><p>Between 21 and 30 consecutive days, in one go, starting no earlier than the end of October 2026 and finishing by 7 June 2027.</p></article>
+<article class="ed-card"><h3>Can one of us arrive later or leave earlier?</h3><p>No. Culture Moves Europe requires every resident to be present for the entire stay, without interruption.</p></article>
+<article class="ed-card"><h3>Can we split the stay into two visits?</h3><p>No. It has to be one continuous period.</p></article>
+<article class="ed-card"><h3>Do we have to give exact dates now?</h3><p>Tell us how many days and which dates you are aiming for. If you can offer a second window, do — it helps. We will confirm the final dates with the selected group.</p></article>
 <article class="ed-card"><h3>Is accommodation included?</h3><p>Yes, provided by ADAR on top of the financial support.</p></article>
 <article class="ed-card"><h3>Can we prepare a future album, performance or exhibition?</h3><p>Yes.</p></article>
 </div>
+
+</div>
+</section>
+
+<!-- ── THE OFFICIAL RULES ───────────────────────────────────────────── -->
+<section class="ed-section" id="rules">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">The programme</p>
+<h2>What the official call says</h2>
+<p class="ed-lede">This residency runs under the Culture Moves Europe <em>Call for Residency Hosts 2025-2026</em>. ADAR is the host. These are the programme's own rules, not ours — we cannot make exceptions to them.</p>
+</div>
+
+<div class="ed-twocol">
+
+<article class="ed-card">
+<h3>Who counts as a resident</h3>
+<p>18 or over. An artist or cultural professional in one of the seven eligible sectors. Legally resident in a Creative Europe country other than Spain, whatever your nationality. Emerging or established, any background.</p>
+<p>A host may take between 1 and 5 residents; we are asking for 4–5.</p>
+</article>
+
+<article class="ed-card">
+<h3>Once, not twice</h3>
+<p>Anyone selected as a resident here cannot be a resident in another Culture Moves Europe residency under any Call for Residency Hosts running from 2025 to 2028.</p>
+</article>
+
+<article class="ed-card">
+<h3>The stay</h3>
+<p>The programme allows 21 to 90 days. We are offering the short-term band: <strong>21 to 30 consecutive days</strong>, in one continuous period, with everyone present throughout. Travel days do not count towards the duration.</p>
+</article>
+
+<article class="ed-card">
+<h3>What the host must provide</h3>
+<p>Adequate working space with the necessary equipment, appropriate and safe accommodation, and at least one mentor who gives artistic guidance. ADAR provides all three.</p>
+</article>
+
+<article class="ed-card">
+<h3>The money, and who gets it</h3>
+<p>Each resident receives €30 per day plus their travel allowance, paid through the host. Separately, the programme pays ADAR a hosting allowance of €50 per day per resident to cover accommodation, equipment and the mentor — <strong>that part is not money for you</strong>, and we have not counted it in any figure on this page.</p>
+</article>
+
+<article class="ed-card">
+<h3>Creative Europe countries</h3>
+<p>The 27 EU member states plus Albania, Armenia, Bosnia-Herzegovina, Georgia, Iceland, Kosovo, Liechtenstein, Moldova, Montenegro, North Macedonia, Norway, Serbia, Tunisia and Ukraine — and their overseas countries, territories and outermost regions. Spain is excluded here only because it is where the residency takes place.</p>
+</article>
+
+</div>
+
+<p class="ed-prose rc-note">The full conditions are in the official guidelines: <a href="https://culture.ec.europa.eu/sites/default/files/2026-02/call-residency-hosts-2025-2026_culture-moves-europe-270226.pdf" target="_blank" rel="noopener">Culture Moves Europe · Call for Residency Hosts 2025-2026 (PDF)</a>. If anything on this page disagrees with that document, the document is right.</p>
 
 </div>
 </section>
@@ -369,14 +430,13 @@ menu_order: 0
 <section class="rc-final">
 <img class="rc-final-bg" src="https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_3684.JPG" alt="The hórreo at sunset with the mountains of central Asturias behind" loading="lazy" />
 <div class="rc-final-inner">
-<h2>Come create in Asturias</h2>
+<h2>Apply by 28 September 2026</h2>
 <ul class="rc-final-list">
-<li>4–5 artists</li>
-<li>21–30 consecutive days, before 7 June 2027</li>
-<li>€30 / day / person</li>
-<li>€400–800 travel / person</li>
-<li>Accommodation provided</li>
-<li>+ applicable top-ups</li>
+<li>4–5 artists, all present for the whole stay</li>
+<li>21–30 consecutive days, between the end of October 2026 and 7 June 2027</li>
+<li>Tell us how many days and which dates</li>
+<li>€30 / day / person · €400–800 travel / person</li>
+<li>Accommodation provided · + applicable top-ups</li>
 </ul>
 <p class="rc-final-date">Deadline · 28 September 2026</p>
 <a class="ed-btn rc-apply" href="mailto:leiguardamusic@gmail.com?subject=ADAR%20Residency%20%E2%80%93%20%5BGroup%20%2F%20Project%20Name%5D">Apply by email →</a>
@@ -416,7 +476,13 @@ body.page .entry-content .adar-res-call .rc-fact span {
   font-size: 11px; letter-spacing: .12em; text-transform: uppercase;
   color: var(--muted, #6e6a5c);
 }
-body.page .entry-content .adar-res-call .rc-when { margin-top: 22px; }
+body.page .entry-content .adar-res-call .rc-when {
+  margin-top: 26px; padding: 22px 26px;
+  border-left: 6px solid var(--accent, #f5d72f);
+  background: rgba(245,215,47,.12); border-radius: 0 12px 12px 0;
+}
+body.page .entry-content .adar-res-call .rc-when-list { margin: 12px 0 0; padding-left: 20px; }
+body.page .entry-content .adar-res-call .rc-when-list li { margin-bottom: 8px; line-height: 1.55; }
 
 body.page .entry-content .adar-res-call .rc-money {
   display: flex; flex-wrap: wrap; align-items: flex-start;
