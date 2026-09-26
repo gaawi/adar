@@ -21,7 +21,7 @@ translation_group: "pll_art_guillermo_laporta"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Biografía</p>
+<p class="qea-eyebrow">Biografía</p>
 <p class="qea-lede">
 Guillermo Laporta es flautista, compositor y gestor cultural, reconocido por integrar música, teatro, danza y vídeo en propuestas escénicas que exploran el concepto de concierto visual. Se formó en el Royal College of Music de Londres (Bachelor y Máster), en Musikene y obtuvo un Máster en Gestión de las Artes por la Universidad de Alcalá de Henares. Entre sus maestros figuran Jaime Martín, Sue Thomas, Paul Edmund-Davies y Miguel Ángel Angulo. Fue flauta co-principal de la Oviedo Filarmonía entre 2009 y 2012 y ha actuado bajo la dirección de maestros como Roger Norrington y Vladimir Ashkenazy en escenarios internacionales, entre ellos Carnegie Hall (Nueva York). En 2013 fundó CreArtBox, de la que es director ejecutivo, y en 2020 creó el Festival ADAR, dedicado a acercar la música clásica a las comunidades rurales de Asturias. Como compositor, destacan obras como <em>Awave</em> (2018–2019) y <em>Architecture of a Common Man</em> (2023). Su trabajo ha recibido el apoyo del New York State Council on the Arts (NYSCA) y la Aaron Copland Fund for Music, y ha sido reseñado en The New Yorker y El País.
 </p>

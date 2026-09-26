@@ -21,7 +21,7 @@ translation_group: "pll_6993527cab919"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 01 · Definición</p>
+<p class="qea-eyebrow">Definición</p>
 <h2 class="qea-h">
 Una plataforma cultural <em>itinerante</em> con sede en una aldea de cien habitantes.
 </h2>
@@ -48,7 +48,7 @@ Guillermo Laporta (flauta) y Josefina Urraca (piano) crearon la asociación dura
 </section>
 
 <section class="qea-objectives">
-<p class="qea-eyebrow">§ 02 · Objetivos</p>
+<p class="qea-eyebrow">Objetivos</p>
 <h2 class="qea-h">Seis líneas que cruzan cada edición.</h2>
 <ol class="qea-list">
 <li><span class="qea-list-n mono">01</span><div><strong>Revitalización.</strong> Proyectos culturales de impacto internacional en zonas rurales asturianas con escasa oferta cultural especializada.</div></li>
@@ -61,7 +61,7 @@ Guillermo Laporta (flauta) y Josefina Urraca (piano) crearon la asociación dura
 </section>
 
 <section class="qea-mode">
-<p class="qea-eyebrow">§ 03 · Cómo funciona</p>
+<p class="qea-eyebrow">Cómo funciona</p>
 <h2 class="qea-h">Residencia y festival <em>como un mismo ecosistema</em>.</h2>
 <div class="qea-twocol">
 <div>

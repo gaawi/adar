@@ -21,7 +21,7 @@ translation_group: "pll_art_josefina_urraca"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Biografía</p>
+<p class="qea-eyebrow">Biografía</p>
 <p class="qea-lede">
 Josefina Urraca ye una pianista española, cofundadora y codirectora de CreArtBox dende 2013 y codirectora artística del Festival ADAR dende 2021. Formada n'España, Francia y Estaos Xuníos, estudió con destacaos maestros como Dmitri Bashkirov, Maria João Pires, Ferenc Rados, Josep Colom y Claudio Martínez-Mehner. Actuó en sales como'l Carnegie Hall (Nueva York), la Salle Cortot (París) y el Sony Auditorium (Madrid). La so actividá artística abarca tanto'l repertoriu clásicu como la música contemporánea, y compagina la so carrera como intérprete cola creación, producción y direición artística de proyectos internacionales que fomenten el diálogu ente la música, otres disciplines y les nueves formes de creación. Con CreArtBox impulsó iniciatives n'Europa y Estaos Xuníos, reconocíes col Certamen de Música de Cámara d'INJUVE, el Premiu Montehermoso de Creación Contemporánea y delles ayudes d'instituciones culturales estauxunidenses. Vive ente Nueva York y Asturies.
 </p>

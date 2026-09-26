@@ -21,7 +21,7 @@ translation_group: "pll_art_frederieke_saeijs"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Biografía</p>
+<p class="qea-eyebrow">Biografía</p>
 <blockquote class="qea-pull">
 <p>«La so interpretación tien el poder de conmover y de dexate con ganes d'escuchar más.»</p>
 <cite>International Record Review</cite>

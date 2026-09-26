@@ -21,7 +21,7 @@ translation_group: "pll_art_zilvinas_brazauskas"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Biography</p>
+<p class="qea-eyebrow">Biography</p>
 <p class="qea-lede">
 Žilvinas Brazauskas is a Lithuanian clarinettist active as a soloist and chamber musician. He has won first prize at the F. Mendelssohn-Bartholdy Competition in Berlin and at the Jeunesses International Music Competition in Bucharest, as well as being a prizewinner at the 4th International Clarinet Competition in Ghent, a finalist of the Deutscher Musikwettbewerb and a semifinalist of the ARD Competition. He has received the DAAD Prize and support from the Deutsche Stiftung Musikleben and the Rostropovich Foundation. He has performed with orchestras such as the Konzerthausorchester Berlin, the Brussels Philharmonic, the Beethoven Orchester Bonn and the Lithuanian National Symphony Orchestra, appearing at venues such as the Berlin Philharmonie and the Elbphilharmonie in Hamburg. He is a member of Trio Agora, with which he has recorded several albums, and is part of the duo Jazzical Class. He is an endorsed artist for Henri Selmer Paris clarinets.
 </p>

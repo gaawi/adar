@@ -21,7 +21,7 @@ translation_group: "pll_art_frederieke_saeijs"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Biografía</p>
+<p class="qea-eyebrow">Biografía</p>
 <blockquote class="qea-pull">
 <p>«Su interpretación tiene el poder de conmover y de dejarte con ganas de escuchar más.»</p>
 <cite>International Record Review</cite>

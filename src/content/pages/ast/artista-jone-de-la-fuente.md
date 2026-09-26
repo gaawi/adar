@@ -21,7 +21,7 @@ translation_group: "pll_art_jone_de_la_fuente"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Biografía</p>
+<p class="qea-eyebrow">Biografía</p>
 <p class="qea-lede">
 Jone de la Fuente Gorostiza ye violinista y formó parte de la programación del Festival ADAR ente les ediciones 2022 y 2025.
 </p>

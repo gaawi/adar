@@ -4196,31 +4196,6 @@ body.home #content {
 }
 
 .cd-header { border-bottom: 1px solid var(--line); }
-.cd-status {
-  background: var(--ink-soft);
-  border-bottom: 1px solid rgba(246,244,238,0.12);
-  font-size: 11px;
-}
-.cd-status-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 36px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: rgba(246,244,238,0.78);
-  font-family: var(--font-mono);
-}
-.cd-status .cd-status-region { color: rgba(246,244,238,0.65); }
-.cd-status-dot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background: var(--accent);
-  border-radius: 50%;
-  margin-right: 8px;
-  vertical-align: middle;
-}
 .cd-main {
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -4357,7 +4332,6 @@ body.has-floating-header:not(.is-scrolled) header.site-header.cd-header .cd-lang
 
 @media (max-width: 1220px) {
   .cd-nav { display: none; }
-  .cd-status .cd-status-region { display: none; }
   /* Swap the inline switch for a compact dropdown, kept at the top to the
      right of the yellow CTA (before the hamburger). */
   .cd-right { gap: 10px; }
@@ -8009,10 +7983,6 @@ body.has-floating-header header.site-header.cd-header {
   left: 0;
   right: 0;
 }
-body.has-floating-header header.site-header.cd-header .cd-status {
-  background: var(--ink-soft);
-  border-bottom: 1px solid rgba(246,244,238,0.12);
-}
 body.has-floating-header header.site-header.cd-header .cd-main {
   background: transparent;
 }
@@ -8028,11 +7998,6 @@ body.has-floating-header.is-scrolled header.site-header.cd-header .cd-lang-dd-me
 }
 body.has-floating-header header.site-header.cd-header .cd-lang-dd-menu a.is-active {
   color: var(--paper) !important;
-}
-body.has-floating-header header.site-header.cd-header .cd-status,
-body.has-floating-header header.site-header.cd-header .cd-status-inner span,
-body.has-floating-header header.site-header.cd-header .cd-status-region {
-  color: rgba(246,244,238,0.85) !important;
 }
 body.has-floating-header header.site-header.cd-header .cd-lang a { color: rgba(246,244,238,0.65) !important; }
 body.has-floating-header header.site-header.cd-header .cd-lang a.is-active {
@@ -8056,18 +8021,12 @@ body.has-floating-header.is-scrolled header.site-header.cd-header {
   background: var(--paper) !important;
   border-bottom: 1px solid var(--line) !important;
 }
-body.has-floating-header.is-scrolled header.site-header.cd-header .cd-status,
 body.has-floating-header.is-scrolled header.site-header.cd-header .cd-main {
   background: transparent;
 }
 body.has-floating-header.is-scrolled header.site-header.cd-header,
 body.has-floating-header.is-scrolled header.site-header.cd-header a {
   color: var(--ink) !important;
-}
-body.has-floating-header.is-scrolled header.site-header.cd-header .cd-status,
-body.has-floating-header.is-scrolled header.site-header.cd-header .cd-status-inner span,
-body.has-floating-header.is-scrolled header.site-header.cd-header .cd-status-region {
-  color: var(--muted) !important;
 }
 body.has-floating-header.is-scrolled header.site-header.cd-header .cd-lang a {
   color: var(--muted) !important;
@@ -8102,13 +8061,13 @@ body.adar-nav-open header.site-header.cd-header .header-navigation-wrapper ul.na
   color: rgba(255,255,255,0.55) !important;
 }
 
-/* Hero begins below the opaque cd-status strip and extends behind
-   the transparent cd-main bar. Negative margin equals cd-main height
-   only; padding-top reserves room below it before content. */
+/* El hero se mete por detrás de la barra transparente del header. El margen
+   negativo equivale a la altura de cd-main; el padding reserva sitio debajo
+   antes del contenido. */
 body.has-floating-header .page-hero,
 body.has-floating-header .hm-hero {
-  margin-top: -88px;          /* cd-main height */
-  padding-top: 220px;          /* cd-status (36) + cd-main (88) + margin pull (88) + 8px breathing */
+  margin-top: -88px;          /* alto de cd-main */
+  padding-top: 184px;          /* cd-main (88) + tirón del margen (88) + 8 de respiro */
 }
 @media (max-width: 720px) {
   body.has-floating-header .page-hero,

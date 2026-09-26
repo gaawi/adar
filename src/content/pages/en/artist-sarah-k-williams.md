@@ -21,7 +21,7 @@ translation_group: "pll_art_sarah_k_williams"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Biography</p>
+<p class="qea-eyebrow">Biography</p>
 <p class="qea-lede">
 Sarah K. Williams is a sculptor, performer and food artist based in Brooklyn, New York, who defines herself as a visual artist. She completed an MFA at the School of the Art Institute of Chicago and, thanks to a Fulbright scholarship, studied experimental music at the Universität der Künste in Berlin. In 2016 she founded the Sprechgesang Institute, a research collective for artists working across disciplines, and in 2020 she launched Aesthetically Complex Pies, in which she approaches food from an aesthetic perspective, combining flavour and texture with form and design. Her portfolio includes pieces such as Past and Future Poundcakes, Perennial, Touching & Tasting, Fragile Form, The Pitting, Overgrown and Orientation.
 </p>

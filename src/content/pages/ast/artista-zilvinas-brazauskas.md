@@ -21,7 +21,7 @@ translation_group: "pll_art_zilvinas_brazauskas"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Biografía</p>
+<p class="qea-eyebrow">Biografía</p>
 <p class="qea-lede">
 Žilvinas Brazauskas ye un clarinetista lituanu activu como solista y músicu de cámara. Consiguió'l primer premiu nel Concursu F. Mendelssohn-Bartholdy de Berlín y nel Jeunesses International Music Competition de Bucarest, amás de ser premiáu nel 4th International Clarinet Competition de Gante, finalista del Deutscher Musikwettbewerb y semifinalista del Concursu ARD. Recibió'l Premiu DAAD y encontos de la Deutsche Stiftung Musikleben y la Fundación Rostropovich. Actuó con orquestes como la Konzerthausorchester de Berlín, la Filarmónica de Bruxeles, la Beethoven Orchester Bonn y la Orquesta Sinfónica Nacional de Lituania, presentándose en sales como la Filarmónica de Berlín y la Elbphilharmonie de Hamburgu. Ye miembru del Tríu Agora, col que grabó varios discos, y forma parte del dúu Jazzical Class. Ye artista endosáu de clarinetes Henri Selmer Paris.
 </p>

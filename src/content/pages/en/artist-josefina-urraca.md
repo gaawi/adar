@@ -21,7 +21,7 @@ translation_group: "pll_art_josefina_urraca"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Biography</p>
+<p class="qea-eyebrow">Biography</p>
 <p class="qea-lede">
 Josefina Urraca is a Spanish pianist, co-founder and co-director of CreArtBox since 2013 and co-artistic director of Festival ADAR since 2021. Trained in Spain, France and the United States, she has studied with leading teachers such as Dmitri Bashkirov, Maria João Pires, Ferenc Rados, Josep Colom and Claudio Martínez-Mehner. She has performed in halls such as Carnegie Hall (New York), the Salle Cortot (Paris) and the Sony Auditorium (Madrid). Her artistic work spans both the classical repertoire and contemporary music, and she combines her career as a performer with the creation, production and artistic direction of international projects that foster dialogue between music, other disciplines and new forms of creation. With CreArtBox she has driven initiatives across Europe and the United States, recognised with the INJUVE Chamber Music Competition, the Montehermoso Prize for Contemporary Creation and various grants from US cultural institutions. She lives between New York and Asturias.
 </p>

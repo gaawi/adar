@@ -21,7 +21,7 @@ translation_group: "pll_art_frederieke_saeijs"
 <article class="qea">
 
 <section class="qea-intro">
-<p class="qea-eyebrow">§ 00 · Biography</p>
+<p class="qea-eyebrow">Biography</p>
 <blockquote class="qea-pull">
 <p>"Her playing has the power to move you and to leave you wanting to hear more."</p>
 <cite>International Record Review</cite>
