@@ -668,7 +668,7 @@ form.submitting .wpcf7-spinner {
   --adar-green-mid:   #2e5a3a;
   --adar-green-light: #4a7c59;
   --adar-gold:        #c8a84b;
-  --adar-cream:       #f5f0e8;
+  --adar-cream:       #ffffff;
   --adar-white:       #fafaf7;
   /* Definían Cormorant Garamond y 'work Sans' (con la w minúscula, que además
      nunca llegó a casar con la familia autoalojada que le correspondía).
@@ -3653,7 +3653,7 @@ div#comments{ display: none; }
   --text2:  #2c3d2e;
   --muted:  #4a5e4c;
   --border: #d6e0d8;
-  --cream:  #f5f0e8;
+  --cream:  #ffffff;
   --bglite: #f7faf8;
   background: #fff;
   color: var(--text);
@@ -4058,13 +4058,13 @@ div#comments{ display: none; }
    and hero treatments per the catalogo/index designs.
    ============================================================= */
 :root {
-  --paper: #f6f4ee;
-  --paper-2: #ecead9;
+  --paper: #ffffff;
+  --paper-2: #f2f2f2;
   --ink: #0a0907;
   --ink-soft: #1c1a16;
   --muted: #6e6a5c;
-  --line: #cfc9b6;
-  --line-soft: #e0dccc;
+  --line: #e3e3e3;
+  --line-soft: #efefef;
   --accent: #f5d72f;
   --accent-ink: #0a0907;
 
@@ -4626,7 +4626,7 @@ body.home article.page { margin: 0 !important; }
   width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
-  background: var(--paper-2, #ebe5d8);
+  background: var(--paper-2, #f2f2f2);
 }
 .hm-today-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .hm-today-body { display: flex; flex-direction: column; gap: 3px; padding: 18px 20px 22px; }
@@ -4736,7 +4736,7 @@ body.home article.page { margin: 0 !important; }
 .hm .hm-map .hm-map-h {
   font-family: var(--font-display); font-stretch: 75%; font-weight: 700;
   font-size: clamp(28px, 3.6vw, 48px); line-height: 1.02; letter-spacing: -0.02em;
-  margin: 0 0 16px; color: #f6f4ee !important;
+  margin: 0 0 16px; color: #ffffff !important;
 }
 .hm-map .hm-map-lede {
   font-size: clamp(14px, 1.3vw, 17px); line-height: 1.55;
@@ -5229,7 +5229,7 @@ body.home article.page { margin: 0 !important; }
   width: 64px;
   height: 64px;
   overflow: hidden;
-  background: var(--paper-2, #ebe5d8);
+  background: var(--paper-2, #f2f2f2);
 }
 .hm-adar26-thumb img {
   width: 100%;
@@ -10271,7 +10271,7 @@ body.archive-sheet-open { overflow: hidden; }
 
 .vi26 {
   --vi-ink:   #0a0907;
-  --vi-paper: #f4eee2;
+  --vi-paper: #ffffff;
   --vi-acid:  var(--accent);
   --vi-mute:  rgba(244,238,226,0.55);
   --vi-line:  rgba(244,238,226,0.16);
@@ -11740,12 +11740,12 @@ body.page .entry-content .vi26 p,
 .vi26-body,
 .vi26-body .entry-content,
 .vi26-body .builder-wrap,
-.vi26-body .builder-wrap.full-width { background: #f4eee2; }
+.vi26-body .builder-wrap.full-width { background: #ffffff; }
 
 .vi26 {
   --vi-mute:  rgba(10,9,7,0.55);
   --vi-line:  rgba(10,9,7,0.16);
-  background: #f4eee2;
+  background: #ffffff;
   color: #0a0907;
 }
 .vi26 p { color: #0a0907; }
@@ -11754,7 +11754,7 @@ body.page .entry-content .vi26 p,
 .vi26 { font-size: 16px; }
 
 /* Poster */
-.vi26-poster { background: #f4eee2; color: #0a0907; }
+.vi26-poster { background: #ffffff; color: #0a0907; }
 .vi26-poster-bg img {
   filter: grayscale(1) contrast(1.05) brightness(1.05);
   opacity: 0.28;
@@ -11781,7 +11781,7 @@ body.page .entry-content .vi26 p,
     -3px 3px 0 rgba(10,9,7,0.15);
 }
 .vi26-poster-h { color: #0a0907; }
-.vi26-poster-h span { background: #0a0907; color: #f4eee2; }
+.vi26-poster-h span { background: #0a0907; color: #ffffff; }
 .vi26-poster-sub { color: rgba(10,9,7,0.7); }
 .vi26-poster-bottom { border-top-color: rgba(10,9,7,0.25); }
 .vi26-poster-stats li { color: rgba(10,9,7,0.82); }
@@ -11805,7 +11805,7 @@ body.page .entry-content .vi26 p,
   .vi26-venue.is-reverse { grid-template-columns: 1fr !important; }
 }
 .vi26-cover {
-  background: #ebe5d8;
+  background: #f2f2f2;
   border-color: rgba(10,9,7,0.16);
 }
 .vi26-venue:hover .vi26-cover { border-color: #0a0907; }
@@ -11981,7 +11981,7 @@ body.page .entry-content .vi26 p,
 .vi26-rsvp-soon { border-color: rgba(10,9,7,0.2); color: rgba(10,9,7,0.4); }
 
 /* Info section (was already light, ensure consistent paper bg) */
-.vi26-info { background: #ebe5d8; color: #0a0907; }
+.vi26-info { background: #f2f2f2; color: #0a0907; }
 .vi26-info .vi26-section-sub { color: rgba(10,9,7,0.65) !important; }
 
 /* Follow section — keep yellow */
@@ -12016,7 +12016,7 @@ body.page .entry-content .vi26 p,
 /* CTAs general — keep dark text on yellow */
 .vi26-cta { background: var(--accent); color: var(--accent-ink) !important; }
 .vi26-cta-ghost { background: transparent; color: #0a0907 !important; border-color: #0a0907; }
-.vi26-cta-ghost:hover { background: #ebe5d8; color: #0a0907 !important; }
+.vi26-cta-ghost:hover { background: #f2f2f2; color: #0a0907 !important; }
 
 /* =============================================================
    VI26 · HERO RING ("Festival ADAR 2026" gigante)
@@ -12266,7 +12266,7 @@ body.page .entry-content .vi26 p,
   gap: 9px;
   padding: 12px 20px;
   background: #0a0907;
-  color: #f4eee2;
+  color: #ffffff;
   border: 0;
   cursor: pointer;
   font-family: inherit;
@@ -13340,7 +13340,7 @@ html.has-hm-today .hm-side-banner { display: none !important; }
 /* Perk VIP estrella (asientos VIP): el más destacado, chip oscuro premium */
 .soc-perks li.is-vip{
   background: #0f0d0a;
-  color: #f6f4ee !important;
+  color: #ffffff !important;
   box-shadow: 0 4px 16px rgba(10,9,7,0.18);
 }
 .soc-perks li.is-vip::before{
@@ -13353,7 +13353,7 @@ html.has-hm-today .hm-side-banner { display: none !important; }
   font-weight: 700; font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase;
   transition: background .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
 }
-.soc-cta:hover{ background: var(--ink, #0a0907); color: var(--paper, #f6f4ee); }
+.soc-cta:hover{ background: var(--ink, #0a0907); color: var(--paper, #ffffff); }
 .soc-cta.is-primary{ background: #c8a84b; border-color: #c8a84b; color: #1a1508; }
 .soc-cta.is-primary:hover{ background: #d8bb62; border-color: #d8bb62; }
 .soc-note{ margin: 24px 0 0; font-size: 12px; letter-spacing: 0.03em; color: rgba(10,9,7,0.55); }
@@ -13378,7 +13378,7 @@ html.has-hm-today .hm-side-banner { display: none !important; }
 .hc-card{ flex: 0 0 82%; max-width: 320px; scroll-snap-align: start; display: flex; flex-direction: column; border: 1px solid rgba(10,9,7,0.16); border-radius: 8px; overflow: hidden; background: #fff; text-decoration: none; color: var(--ink,#0a0907); transition: box-shadow .2s ease, transform .2s ease; }
 @media (min-width:640px){ .hc-card{ flex-basis: 290px; } }
 .hc-card:hover{ box-shadow: 0 8px 24px rgba(10,9,7,0.1); transform: translateY(-2px); }
-.hc-card-img{ display: block; width: 100%; aspect-ratio: 4/3; background: #e9e4d8; overflow: hidden; }
+.hc-card-img{ display: block; width: 100%; aspect-ratio: 4/3; background: #f2f2f2; overflow: hidden; }
 .hc-card-img img{ width: 100%; height: 100%; object-fit: cover; display: block; }
 .hc-card-ph{ display: flex; align-items: center; justify-content: center; font-size: 34px; color: rgba(10,9,7,0.28); }
 .hc-card-body{ display: flex; flex-direction: column; gap: 3px; padding: 13px 15px; }
@@ -13473,7 +13473,7 @@ body.page .entry-content .hm-next{ background: var(--ink) !important; }
 .hm-lived-h em{ font-family: var(--font-serif, Georgia, serif); font-style: normal; font-weight: 500; }
 .hm-lived-grid{ max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .hm-lived-fig{ display: block; text-decoration: none; color: var(--ink); }
-.hm-lived-imgwrap{ display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 2px; background: #e9e4d8; }
+.hm-lived-imgwrap{ display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 2px; background: #f2f2f2; }
 .hm-lived-imgwrap img{ width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s cubic-bezier(.22,.61,.36,1); }
 .hm-lived-fig:hover .hm-lived-imgwrap img{ transform: scale(1.05); }
 .hm-lived-cap{ display: block; margin-top: 8px; font-size: 11.5px; line-height: 1.35; letter-spacing: 0.02em; color: var(--muted); }
@@ -13527,7 +13527,7 @@ body.is-blog .blog-hero .blog-hero-title{ font-family: var(--font-display, 'Inte
 .blog-empty{ font-family: var(--font-mono); color: var(--muted); }
 .blog-list{ list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px 34px; }
 .blog-card-link{ display: block; text-decoration: none; color: var(--ink); }
-.blog-card-img{ display: block; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 4px; background: #e9e4d8; margin-bottom: 16px; }
+.blog-card-img{ display: block; aspect-ratio: 16 / 10; overflow: hidden; border-radius: 4px; background: #f2f2f2; margin-bottom: 16px; }
 .blog-card-img img{ width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .5s cubic-bezier(.22,.61,.36,1); }
 .blog-card-link:hover .blog-card-img img{ transform: scale(1.04); }
 .blog-card-meta{ display: block; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
@@ -13719,7 +13719,7 @@ body.page .entry-content .at-artist-img{
   border-radius: 0;
   margin: 0 0 16px;
   overflow: hidden;
-  background: #e4dfd2;
+  background: #efefef;
   position: relative;
 }
 body.page .entry-content .at-artist-img img{
@@ -14237,7 +14237,7 @@ body.page .entry-content .adar-res-call .rc-ex-total {
 }
 body.page .entry-content .adar-res-call .rc-group-total {
   margin-top: var(--rc-gap); padding: clamp(28px, 5vw, 56px);
-  background: var(--ink, #0a0907); color: var(--paper, #f6f4ee);
+  background: var(--ink, #0a0907); color: var(--paper, #ffffff);
   border-radius: 18px; text-align: center;
 }
 body.page .entry-content .adar-res-call .rc-group-total .ed-stat-t { color: rgba(246,244,238,.62); }
@@ -14248,7 +14248,7 @@ body.page .entry-content .adar-res-call .rc-huge {
 }
 body.page .entry-content .adar-res-call .rc-huge-sub {
   font-size: clamp(16px, 2vw, 22px); line-height: 1.4; margin: 0 auto;
-  max-width: 34ch; color: var(--paper, #f6f4ee);
+  max-width: 34ch; color: var(--paper, #ffffff);
 }
 body.page .entry-content .adar-res-call .rc-caveat {
   font-family: var(--font-mono); font-size: 12px; line-height: 1.6;
@@ -14328,7 +14328,7 @@ body.page .entry-content .adar-res-call .rc-final-bg {
 body.page .entry-content .adar-res-call .rc-final-inner {
   position: relative; align-self: end; padding: clamp(28px, 6vw, 80px);
   background: linear-gradient(to top, rgba(10,9,7,.92), rgba(10,9,7,.55) 62%, rgba(10,9,7,0));
-  color: var(--paper, #f6f4ee); width: 100%;
+  color: var(--paper, #ffffff); width: 100%;
 }
 /* El tema fuerza `color: var(--ink) !important` en todos los h2 de
    .entry-content; sus propios bloques oscuros (.ed-footer-cta) lo resuelven
@@ -14336,7 +14336,7 @@ body.page .entry-content .adar-res-call .rc-final-inner {
 body.page .entry-content .adar-res-call .rc-final-inner h2 {
   font-family: var(--font-display); font-size: clamp(36px, 7vw, 92px);
   line-height: .98; letter-spacing: -.03em; margin: 0 0 18px;
-  color: var(--paper, #f6f4ee) !important;
+  color: var(--paper, #ffffff) !important;
 }
 body.page .entry-content .adar-res-call .rc-final-list {
   list-style: none; padding: 0; margin: 0 0 20px; display: flex; flex-wrap: wrap;
@@ -14345,7 +14345,7 @@ body.page .entry-content .adar-res-call .rc-final-list {
 body.page .entry-content .adar-res-call .rc-final-list li { list-style: none; }
 body.page .entry-content .adar-res-call .rc-final-list li::marker,
 body.page .entry-content .adar-res-call .rc-final-list li::before { content: none; }
-body.page .entry-content .adar-res-call .rc-final-inner p { color: var(--paper, #f6f4ee) !important; }
+body.page .entry-content .adar-res-call .rc-final-inner p { color: var(--paper, #ffffff) !important; }
 body.page .entry-content .adar-res-call .rc-final-date {
   font-family: var(--font-display); font-size: clamp(20px, 3vw, 30px); margin: 0 0 20px;
 }
