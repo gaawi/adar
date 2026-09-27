@@ -674,7 +674,7 @@ form.submitting .wpcf7-spinner {
      nunca llegó a casar con la familia autoalojada que le correspondía).
      Se redirigen al sistema de marca; los valores reales viven en el :root
      del manual, más abajo. */
-  --font-serif:       'Alegreya', Georgia, serif;
+  --font-serif:       'Commissioner', system-ui, sans-serif;
   --font-sans:        'Chivo', system-ui, sans-serif;
 
   /* ═══════════════════════════════════════════════════════════
@@ -4071,10 +4071,10 @@ div#comments{ display: none; }
   /* ── Sistema tipográfico · Manual de Marca ADAR v2.0 ───────────────────
      Cuatro familias y ninguna más. Cualquier font-family literal fuera de
      este bloque es un error. */
-  --font-voz:   'Alegreya', Georgia, serif;            /* titulares y voz   */
+  --font-voz:   'Commissioner', system-ui, sans-serif; /* titulares y voz   */
   --font-ui:    'Chivo', system-ui, sans-serif;        /* interfaz y lectura*/
   --font-dato:  'Chivo Mono', ui-monospace, monospace; /* etiquetas y datos */
-  --font-legal: 'Alegreya SC', Georgia, serif;         /* epígrafes legales */
+  --font-legal: 'Commissioner', system-ui, sans-serif; /* epígrafes legales */
 
   /* Alias de los nombres heredados: el sitio los consume en ~200 sitios y
      así la migración no exige reescribirlos uno a uno. No añadir más. */
@@ -4843,7 +4843,7 @@ body.home article.page { margin: 0 !important; }
 }
 .hm-hero-l1, .hm-hero-l3 {
   font-family: var(--font-display);
-  /* Escala contenida: Alegreya no tiene eje de anchura, así que el
+  /* Escala contenida: la voz no tiene eje de anchura, así que el
      font-stretch:55% con el que se calibró Bricolage dejó de surtir efecto.
      El interletrado cerrado y la sombra dura venían de un titular de cartel;
      con la serif resultan agresivos, así que se relajan. */
@@ -13850,7 +13850,7 @@ body.single .entry-content li {
   line-height: var(--lh-cuerpo);
 }
 
-/* ── H1: uno por página, voz en Alegreya ─────────────────────────────── */
+/* ── H1: uno por página, voz en Commissioner ─────────────────────────────── */
 body h1,
 body.page .entry-content h1,
 body.single .entry-content h1 {
@@ -13861,7 +13861,7 @@ body.single .entry-content h1 {
   letter-spacing: -0.01em;
 }
 
-/* ── H2 de sección: voz en Alegreya ──────────────────────────────────── */
+/* ── H2 de sección: voz en Commissioner ──────────────────────────────────── */
 body.page .entry-content h2,
 body.single .entry-content h2 {
   font-family: var(--font-voz);
@@ -13932,11 +13932,12 @@ body.page .entry-content .amp-eyebrow {
   color: #8A857A;
 }
 
-/* ── Epígrafes de documento legal: Alegreya SC ───────────────────────── */
+/* ── Epígrafes de documento legal: versalitas ───────────────────────── */
 .es-normativa h3,
 .legal-epigrafe,
 .adar-bill-legal {
   font-family: var(--font-legal);
+  font-variant-caps: small-caps;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
@@ -13968,7 +13969,7 @@ body.home header.site-header a.cd-cta {
 }
 
 /* ── Guardas del manual ──────────────────────────────────────────────── */
-/* Alegreya nunca por debajo de 16px (salvo Alegreya SC en epígrafes). */
+/* La voz nunca por debajo de 16px (salvo las versalitas de los epígrafes). */
 body.page .entry-content h2,
 body.page .entry-content h3 { min-height: 0; }
 /* Chivo Mono nunca en texto corrido: se limita a una línea. */
@@ -13977,7 +13978,7 @@ body.page .entry-content h3 { min-height: 0; }
 .adar-archive-tags { white-space: normal; }
 
 /* ── Correcciones de rol detectadas en la verificación ───────────────────
-   La navegación es interfaz, no voz: los submenús heredaban Alegreya a 14px,
+   La navegación es interfaz, no voz: los submenús heredaban la voz a 14px,
    por debajo del mínimo que fija el manual para esa familia. */
 .header-navigation-wrapper ul.nav a,
 .header-navigation-wrapper ul.nav .sub-menu a,
@@ -14009,13 +14010,14 @@ body.page .entry-content h3 { min-height: 0; }
   text-transform: none;
 }
 
-/* ── Epígrafes de normativa: la cuarta familia, Alegreya SC ──────────────
+/* ── Epígrafes de normativa: versalitas ──────────────
    Son los «1. Objeto», «2. Participantes»… de las bases. El manual permite
-   aquí un cuerpo por debajo de 16px, que en Alegreya normal no se admite. */
+   aquí un cuerpo por debajo de 16px, que en la voz normal no se admite. */
 .hc-bases-body h4,
 .hc-bases h4,
 .es-normativa h4 {
   font-family: var(--font-legal);
+  font-variant-caps: small-caps;
   font-weight: 700;
   font-size: var(--fs-base);
   line-height: var(--lh-titular);
@@ -14039,7 +14041,7 @@ body.page .entry-content h3 { min-height: 0; }
 }
 
 /* ── Últimos ajustes de rol ──────────────────────────────────────────────
-   Rótulos del pie: son navegación, y a 14px Alegreya no está permitida. */
+   Rótulos del pie: son navegación, y a 14px la voz no está permitida. */
 .site-footer h4,
 .adar-footer h4,
 footer h4 {
@@ -14062,10 +14064,11 @@ footer h4 {
   text-transform: none;
 }
 
-/* ── Razón social: el manual la reserva a Alegreya SC, igual que los
+/* ── Razón social: versalitas, igual que los
    epígrafes legales. ──────────────────────────────────────────────────── */
 .adar-razon-social {
   font-family: var(--font-legal);
+  font-variant-caps: small-caps;
   font-weight: 400;
   letter-spacing: 0.02em;
 }

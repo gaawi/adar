@@ -96,7 +96,7 @@ export interface KitBrand {
 }
 
 const ADAR_FONTS =
-  'https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500;1,700&family=Chivo:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&family=Chivo+Mono:wght@400;500&display=swap';
+  'https://fonts.googleapis.com/css2?family=Commissioner:wght@300..900&family=Chivo:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&family=Chivo+Mono:wght@400;500&display=swap';
 
 const CREARTBOX_FONTS =
   'https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap';
@@ -130,12 +130,12 @@ export const BRANDS: Record<string, KitBrand> = {
     textFoot: '#6e6a5c',
 
     fontsHref: ADAR_FONTS,
-    display: '"Alegreya", Georgia, serif',
+    display: '"Commissioner", system-ui, sans-serif',
     ui: '"Chivo", system-ui, sans-serif',
     label: '"Chivo Mono", ui-monospace, monospace',
     labelWeight: '500',
     titleWeight: '700',
-    fontLoads: ['700 64px "Alegreya"', '400 32px "Chivo"', '700 32px "Chivo"', '500 24px "Chivo Mono"'],
+    fontLoads: ['700 64px "Commissioner"', '400 32px "Chivo"', '700 32px "Chivo"', '500 24px "Chivo Mono"'],
 
     lede:
       'Convierte cada artículo del blog en un post listo para subir tú mismo. «Adaptar a Instagram» lo transforma en un carrusel de varias imágenes que puedes editar antes de descargar. Todo se genera aquí, en tu navegador.',
