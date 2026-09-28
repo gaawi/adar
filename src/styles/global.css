@@ -302,7 +302,7 @@ font-size: 26px;
 } }
 h1, h2, h3, h4, h5, h6, .home.blog .entry-title, .page .entry-title, .page-title, #comments>h3, #respond>h3, .wp-block-button a, .entry-footer {
 font-family: var(--font-voz);
-font-weight: 400;
+font-weight: var(--peso-titulo);
 line-height: 1.4;
 }
 .home.blog .entry-title, .single .entry-title, .single .entry-cover-image .entry-header .entry-title {
@@ -694,7 +694,7 @@ form.submitting .wpcf7-spinner {
 
   /* Title */
   --hero-title-size:      clamp(2.4rem, 5vw, 4rem);
-  --hero-title-weight:    400;
+  --hero-title-weight:    740;
   --hero-title-lh:        1.06;
   --hero-title-ls:        -.01em;
   --hero-title-mb:        12px;
@@ -1693,7 +1693,7 @@ html, body{ overflow-x: hidden; }
   margin: 0 0 18px;
   padding: 0;
   font-family: var(--font-voz);
-  font-weight: 400;
+  font-weight: var(--peso-titulo);
   font-size: clamp(40px, 5.6vw, 78px);
   line-height: 1.05;
   letter-spacing: -0.015em;
@@ -1727,7 +1727,7 @@ html, body{ overflow-x: hidden; }
   margin: 64px 0 18px;
   padding: 0 0 18px;
   font-family: var(--font-voz);
-  font-weight: 400;
+  font-weight: var(--peso-titulo);
   font-size: clamp(30px, 3.6vw, 46px);
   line-height: 1.12;
   color: #1a1c1f;
@@ -1750,7 +1750,7 @@ html, body{ overflow-x: hidden; }
 .adar-archive-page .adar-archive-body h3,
 .adar-archive-page .adar-archive-body h4{
   font-family: var(--font-voz);
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: 24px;
   margin: 36px 0 12px;
   letter-spacing: -0.005em;
@@ -2551,7 +2551,7 @@ footer.site-footer,
 .adar-horreos-v2 .open-h {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(32px, 4.4vw, 64px);
   line-height: 0.98;
   letter-spacing: -0.02em;
@@ -2653,7 +2653,7 @@ footer.site-footer,
 .adar-horreos-v2 .winners-h {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(28px, 3.4vw, 48px);
   line-height: 1.05;
   letter-spacing: -0.01em;
@@ -2720,7 +2720,7 @@ footer.site-footer,
 .adar-horreos-v2 .winner-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(20px, 1.8vw, 26px);
   line-height: 1.2;
   letter-spacing: -0.005em;
@@ -2765,7 +2765,7 @@ footer.site-footer,
 .adar-horreos-v2 .press-h {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(28px, 3.4vw, 48px);
   line-height: 1.02;
   letter-spacing: -0.02em;
@@ -2776,7 +2776,7 @@ footer.site-footer,
   font-family: var(--font-serif);
   font-style: normal;
   font-stretch: 100%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
 }
 .adar-horreos-v2 .press-sub {
   font-family: var(--font-sans);
@@ -3711,7 +3711,7 @@ div#comments{ display: none; }
   display: block;
   font-family: var(--font-voz);
   font-size: clamp(1.8rem, 2.8vw, 2.4rem);
-  font-weight: 400; color: var(--green); line-height: 1;
+  font-weight: var(--peso-titulo); color: var(--green); line-height: 1;
 }
 #adar-map-page .amp-stat-l {
   display: block; margin-top: 6px;
@@ -3879,7 +3879,7 @@ div#comments{ display: none; }
 }
 .amp-popup-title {
   font-family: var(--font-voz);
-  font-size: 1.18rem; font-weight: 500; color: #1e3d28;
+  font-size: 1.18rem; font-weight: var(--peso-titulo); color: #1e3d28;
   line-height: 1.18; padding-right: 16px;
 }
 .amp-popup-count {
@@ -4076,6 +4076,12 @@ div#comments{ display: none; }
   --font-dato:  'Chivo Mono', ui-monospace, monospace; /* etiquetas y datos */
   --font-legal: 'Commissioner', system-ui, sans-serif; /* epígrafes legales */
 
+  /* Peso de los titulares. Commissioner es variable (300-900), así que el
+     valor no se redondea a un corte: 740 es 740. Los pesos que había
+     (400/500/700) estaban calibrados para una serif, que aguanta fina; una
+     sans en ese peso queda floja en titular. */
+  --peso-titulo: 740;
+
   /* Alias de los nombres heredados: el sitio los consume en ~200 sitios y
      así la migración no exige reescribirlos uno a uno. No añadir más. */
   --font-display: var(--font-voz);
@@ -4122,7 +4128,7 @@ body { overflow-x: hidden; }
   font-family: var(--font-display);
   font-stretch: 75%;
   letter-spacing: -0.04em;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
 }
 .garamond { font-family: var(--font-serif); font-style: italic; }
 .mono { font-family: var(--font-mono); font-feature-settings: "ss05" on; }
@@ -4402,7 +4408,7 @@ body.has-floating-header:not(.is-scrolled) header.site-header.cd-header .cd-lang
   font-size: clamp(56px, 9vw, 180px) !important;
   line-height: 0.86 !important;
   font-stretch: 55% !important;
-  font-weight: 500 !important;
+  font-weight: var(--peso-titulo) !important;
   color: var(--paper) !important;
   text-wrap: balance;
   text-shadow: none !important;
@@ -4526,7 +4532,7 @@ body.has-floating-header:not(.is-scrolled) header.site-header.cd-header .cd-lang
 .adar-archive-body h3,
 .prose h3 {
   font-family: var(--font-display);
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   letter-spacing: -0.025em;
   font-stretch: 75%;
   color: var(--ink);
@@ -4586,7 +4592,7 @@ body.home article.page { margin: 0 !important; }
 .hm-h2 {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(36px, 5.2vw, 84px);
   line-height: 0.95;
   letter-spacing: -0.04em;
@@ -4663,7 +4669,7 @@ body.home article.page { margin: 0 !important; }
 .hm-today-title {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(30px, 8.5vw, 46px);
   line-height: 1.0;
   letter-spacing: -0.02em;
@@ -4721,20 +4727,22 @@ body.home article.page { margin: 0 !important; }
 }
 .hm-map .hm-map-link:hover { border-color: rgba(200,168,75,0.65); }
 .hm-map .hm-map-illo { position: relative; }
-.hm-map .hm-map-illo svg { display: block; width: 100%; height: auto; }
-.hm-map-ping-ring { transform-origin: center; animation: hmMapPing 3s ease-out infinite; }
-.hm-map-ping-2 .hm-map-ping-ring { animation-delay: 1.4s; }
-@keyframes hmMapPing {
-  0%   { transform: scale(0.5); opacity: 0.9; }
-  70%  { transform: scale(2.1); opacity: 0; }
-  100% { transform: scale(2.1); opacity: 0; }
+.hm-map .hm-map-illo img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid rgba(200,168,75,0.16);
+}
+/* Las teselas de Esri piden atribución; va debajo de la imagen, pequeña. */
+.hm-map .hm-map-credit {
+  display: block; margin-top: 8px;
+  font-family: var(--font-dato); font-size: 10px; letter-spacing: 0.08em;
+  color: rgba(244,239,227,0.38);
 }
 .hm-map .hm-map-eyebrow {
   display: block; font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase;
   color: #d8bb62; margin-bottom: 14px;
 }
 .hm .hm-map .hm-map-h {
-  font-family: var(--font-display); font-stretch: 75%; font-weight: 700;
+  font-family: var(--font-display); font-stretch: 75%; font-weight: var(--peso-titulo);
   font-size: clamp(28px, 3.6vw, 48px); line-height: 1.02; letter-spacing: -0.02em;
   margin: 0 0 16px; color: #ffffff !important;
 }
@@ -4749,7 +4757,7 @@ body.home article.page { margin: 0 !important; }
 }
 .hm-map .hm-map-stat b {
   display: block; font-family: var(--font-display); font-stretch: 75%;
-  font-weight: 700; font-size: 32px; letter-spacing: 0; color: #d8bb62;
+  font-weight: var(--peso-titulo); font-size: 32px; letter-spacing: 0; color: #d8bb62;
   text-transform: none; margin-bottom: 2px;
 }
 .hm-map .hm-map-cta {
@@ -4763,7 +4771,9 @@ body.home article.page { margin: 0 !important; }
 .hm-map .hm-map-link:hover .hm-map-arrow { transform: translateX(4px); }
 @media (max-width: 760px) {
   .hm-map .hm-map-link { grid-template-columns: 1fr; gap: 22px; }
-  .hm-map .hm-map-illo { max-width: 340px; margin: 0 auto; }
+  /* El mapa es una banda ancha (3:1): limitarlo a 340px lo dejaba en una
+     tira de 110px de alto. En una columna ocupa todo el ancho. */
+  .hm-map .hm-map-illo { max-width: none; margin: 0; }
 }
 
 .hm-section-head { padding: 0 40px; max-width: 1600px; margin: 0 auto; }
@@ -4836,7 +4846,7 @@ body.home article.page { margin: 0 !important; }
 }
 .hm-hero-title {
   margin: 0;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   display: flex;
   flex-direction: column;
   text-wrap: balance;
@@ -4851,7 +4861,7 @@ body.home article.page { margin: 0 !important; }
   line-height: 0.98;
   letter-spacing: -0.02em;
   color: var(--paper);
-  font-weight: 400;
+  font-weight: var(--peso-titulo);
   text-shadow: 0 1px 12px rgba(0,0,0,0.28);
 }
 .hm-hero-l2 {
@@ -4862,7 +4872,7 @@ body.home article.page { margin: 0 !important; }
   letter-spacing: -0.01em;
   color: var(--paper);
   padding-left: clamp(24px, 5vw, 86px);
-  font-weight: 400;
+  font-weight: var(--peso-titulo);
   text-shadow: 0 1px 12px rgba(0,0,0,0.28);
 }
 .hm-hero-l2 em { font-style: normal; }
@@ -5132,7 +5142,7 @@ body.home article.page { margin: 0 !important; }
 .hm-adar26-h {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(48px, 6.4vw, 108px);
   line-height: 0.92;
   letter-spacing: -0.025em;
@@ -5144,7 +5154,7 @@ body.home article.page { margin: 0 !important; }
   font-family: var(--font-serif);
   font-style: normal;
   font-stretch: 100%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   color: var(--accent-ink);
   background: var(--accent);
   padding: 0 12px;
@@ -5555,7 +5565,7 @@ body.home article.page { margin: 0 !important; }
 .hm-stat-n {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(44px, 4.5vw, 68px);
   line-height: 1;
   letter-spacing: -0.04em;
@@ -5675,7 +5685,7 @@ body.home article.page { margin: 0 !important; }
 .hm-card-title {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(22px, 2vw, 32px);
   line-height: 1.05;
   letter-spacing: -0.025em;
@@ -5885,7 +5895,7 @@ body.home article.page { margin: 0 !important; }
 .hm-join-h {
   font-family: var(--font-display);
   font-stretch: 65%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(54px, 9vw, 160px);
   line-height: 0.92;
   letter-spacing: -0.05em;
@@ -5897,7 +5907,7 @@ body.home article.page { margin: 0 !important; }
   font-style: normal;
   font-stretch: 100%;
   letter-spacing: -0.02em;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
 }
 .hm-join-lede {
   max-width: 580px;
@@ -5954,7 +5964,7 @@ body.home article.page { margin: 0 !important; }
   flex-direction: column;
   margin: 56px auto;
   max-width: 1600px;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   text-wrap: balance;
 }
 .hm-monument-h span {
@@ -6282,7 +6292,7 @@ body.home .adar-footer-cta { display: none !important; }
 .page-hero h1.page-hero-title.page-hero-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(40px, 6vw, 120px);
   line-height: 0.96;
   letter-spacing: -0.02em;
@@ -6380,7 +6390,7 @@ body.home .adar-footer-cta { display: none !important; }
 .page-hero-banner h1.page-hero-banner-title.page-hero-banner-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(32px, 5vw, 96px);
   line-height: 1.0;
   letter-spacing: -0.015em;
@@ -6528,7 +6538,7 @@ body.archive .entry-header { display: none; }
 .archive-card-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(20px, 1.6vw, 26px);
   line-height: 1.2;
   letter-spacing: -0.005em;
@@ -6691,7 +6701,7 @@ body.archive .entry-header { display: none; }
 .vi26-poster-hero .vi26-hero-title {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(28px, 3vw, 44px);
   line-height: 1.0;
   letter-spacing: -0.02em;
@@ -6769,7 +6779,7 @@ body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 
 .prog-current-h {
   font-family: var(--font-display);
   font-stretch: 65%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(56px, 9vw, 160px);
   line-height: 0.9;
   letter-spacing: -0.045em;
@@ -6783,7 +6793,7 @@ body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 
   font-stretch: 100%;
   letter-spacing: -0.02em;
   color: var(--accent-ink);
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
 }
 .prog-current-lede {
   margin: 32px auto 40px;
@@ -6868,7 +6878,7 @@ body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 
 .prog-call-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(22px, 1.7vw, 28px);
   line-height: 1.1;
   margin: 0;
@@ -6919,7 +6929,7 @@ body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 
 .prog-archive-h {
   font-family: var(--font-display);
   font-stretch: 70%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(40px, 5vw, 80px);
   line-height: 0.96;
   letter-spacing: -0.03em;
@@ -6932,7 +6942,7 @@ body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 
   font-stretch: 100%;
   letter-spacing: -0.01em;
   color: var(--ink);
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
 }
 .prog-archive-lede {
   max-width: 640px;
@@ -6964,7 +6974,7 @@ body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 
 .prog-year-num {
   font-family: var(--font-display);
   font-stretch: 55%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(80px, 9vw, 160px);
   line-height: 0.85;
   letter-spacing: -0.045em;
@@ -7015,7 +7025,7 @@ body:not(.has-floating-header):not(.home) main .vi26-poster-hero { padding-top: 
 .prog-year-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(17px, 1.3vw, 21px);
   line-height: 1.2;
   margin: 0;
@@ -7084,7 +7094,7 @@ header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link.i
 .prog-follow-h {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(28px, 2.4vw, 40px);
   line-height: 1.15;
   letter-spacing: -0.01em;
@@ -7186,7 +7196,7 @@ header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link.i
 .prog-event-venue {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(18px, 1.5vw, 24px);
   line-height: 1.2;
   margin: 0;
@@ -7423,7 +7433,7 @@ header.site-header.cd-header .header-navigation-wrapper .adar-header-lang-link.i
   display: block;
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(20px, 1.8vw, 26px);
   line-height: 1.2;
   letter-spacing: -0.005em;
@@ -7540,7 +7550,7 @@ body.is-press h1.entry-title,
 body.is-press .press-clipping-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(32px, 4vw, 56px);
   line-height: 1.05;
   letter-spacing: -0.015em;
@@ -7612,7 +7622,7 @@ body.is-press .press-source a:hover { color: var(--ink); border-bottom-color: va
 .press-masthead-name {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(24px, 2.8vw, 36px);
   line-height: 1;
   letter-spacing: -0.01em;
@@ -7681,7 +7691,7 @@ body.is-contact article.page { padding: 0; margin: 0; max-width: none; }
    rule that paints color: #fff and font-size: 64px on every other h1. */
 .ct h1.ct-title.ct-title {
   margin: 0;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -7774,7 +7784,7 @@ body.is-contact article.page { padding: 0; margin: 0; max-width: none; }
 .ct-card-title {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(40px, 4.5vw, 72px);
   line-height: 0.95;
   letter-spacing: -0.025em;
@@ -7844,7 +7854,7 @@ body.is-contact article.page { padding: 0; margin: 0; max-width: none; }
 .ct-socials-name {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(22px, 1.8vw, 28px);
   letter-spacing: -0.02em;
   line-height: 1;
@@ -7894,7 +7904,7 @@ body.is-contact article.page { padding: 0; margin: 0; max-width: none; }
 .ct-office-name {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(28px, 2.4vw, 36px);
   line-height: 1.1;
   margin: 0 0 18px;
@@ -8159,7 +8169,7 @@ html { scroll-padding-top: 130px; }
   display: block;
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: 17px;
   letter-spacing: -0.005em;
   text-transform: none;
@@ -8179,7 +8189,7 @@ html { scroll-padding-top: 130px; }
 .hm-press-row .hm-press-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(19px, 1.45vw, 23px);
   line-height: 1.2;
   letter-spacing: -0.005em;
@@ -8414,7 +8424,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
 .press-wall h1.press-wall-title.press-wall-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(40px, 6vw, 120px);
   line-height: 0.96;
   letter-spacing: -0.02em;
@@ -8493,7 +8503,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
 .press-clip-outlet {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: 17px;
   letter-spacing: -0.005em;
   color: var(--ink);
@@ -8505,7 +8515,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
 }
 .press-clip-title {
   font-family: var(--font-serif);
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(20px, 1.7vw, 26px);
   line-height: 1.18;
   letter-spacing: -0.005em;
@@ -8584,7 +8594,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
 .qea-h {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(36px, 5vw, 80px);
   line-height: 0.98;
   letter-spacing: -0.03em;
@@ -8598,7 +8608,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
   font-stretch: 100%;
   letter-spacing: -0.01em;
   color: var(--ink);
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
 }
 .qea-lede {
   margin: 28px 0 0;
@@ -8648,7 +8658,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
 .qea-twocol h3 {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(22px, 2vw, 30px);
   line-height: 1.15;
   letter-spacing: -0.01em;
@@ -8874,7 +8884,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
 .qea-winner-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(22px, 1.9vw, 28px);
   line-height: 1.2;
   letter-spacing: -0.005em;
@@ -8928,7 +8938,7 @@ body.has-floating-header header.site-header.cd-header .cd-submenu a {
 .qea-press-outlet {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: 16px;
   letter-spacing: -0.005em;
   color: var(--ink);
@@ -9015,7 +9025,7 @@ body.page .entry-content h2,
 body.single .entry-content h2 {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(28px, 4vw, 56px);
   line-height: 1.0;
   letter-spacing: -0.03em;
@@ -9031,7 +9041,7 @@ body.single .entry-content h2 em {
   font-style: normal;
   font-stretch: 100%;
   letter-spacing: -0.01em;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   color: var(--ink);
 }
 body.page .entry-content .adar-dark-title { color: var(--ink) !important; }
@@ -9040,7 +9050,7 @@ body.page .entry-content h3,
 body.single .entry-content h3 {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(20px, 1.8vw, 28px);
   line-height: 1.18;
   letter-spacing: -0.005em;
@@ -9147,7 +9157,7 @@ body.page .entry-content .adar-card-title,
 body.page .entry-content .at-card-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: 19px;
   margin: 0 0 12px;
   color: var(--ink);
@@ -9316,7 +9326,7 @@ body.page .entry-content .amp-stat-n,
 body.page .entry-content .amp-counter {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(36px, 4vw, 64px);
   line-height: 1;
   letter-spacing: -0.03em;
@@ -9507,7 +9517,7 @@ body.page .entry-content .ed-artist-link:hover h3 {
 body.page .entry-content .ed-card-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: 19px;
   margin: 0 0 12px;
   color: var(--ink);
@@ -9755,7 +9765,7 @@ body.page .entry-content .ed-chips > div {
 body.page .entry-content .ed-stat-v {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(36px, 4vw, 64px);
   line-height: 1;
   letter-spacing: -0.03em;
@@ -9878,7 +9888,7 @@ body.page .entry-content .ed-social {
 .archive-memoria h1.archive-mast-title.archive-mast-title {
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(24px, 2.4vw, 36px);
   line-height: 1.05;
   letter-spacing: -0.01em;
@@ -10028,7 +10038,7 @@ body.page .entry-content .ed-social {
   margin: 6px 0 0;
   font-family: var(--font-serif);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: 22px;
   color: var(--ink);
 }
@@ -10379,7 +10389,7 @@ body.page .entry-content .vi26 p,
   transform: translateY(-50%);
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-style: normal;
   font-size: clamp(280px, 50vw, 720px);
   line-height: 0.78;
@@ -10411,7 +10421,7 @@ body.page .entry-content .vi26 p,
 .vi26-hero-h {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(48px, 8vw, 140px);
   line-height: 0.86;
   letter-spacing: -0.025em;
@@ -10425,7 +10435,7 @@ body.page .entry-content .vi26 p,
   font-family: var(--font-serif);
   font-style: normal;
   font-stretch: 100%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   color: var(--vi-acid);
   padding-left: 0.4em;
 }
@@ -10548,7 +10558,7 @@ body.page .entry-content .vi26 p,
 .vi26-section-h {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(40px, 5.5vw, 92px);
   line-height: 0.92;
   letter-spacing: -0.025em;
@@ -10731,7 +10741,7 @@ body.page .entry-content .vi26 p,
 .vi26-night-venue {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(22px, 1.8vw, 32px);
   line-height: 1.05;
   letter-spacing: -0.015em;
@@ -10836,7 +10846,7 @@ body.page .entry-content .vi26 p,
 .vi26-artist-name {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(18px, 1.6vw, 26px);
   line-height: 1.05;
   letter-spacing: -0.01em;
@@ -10879,7 +10889,7 @@ body.page .entry-content .vi26 p,
 .vi26-info-h {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(22px, 1.8vw, 32px);
   line-height: 1.1;
   letter-spacing: -0.015em;
@@ -11123,7 +11133,7 @@ body.page .entry-content .vi26 p,
 .vi26-venue-name {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(28px, 3.4vw, 52px);
   line-height: 0.98;
   letter-spacing: -0.02em;
@@ -11135,7 +11145,7 @@ body.page .entry-content .vi26 p,
   font-family: var(--font-serif);
   font-style: italic;
   font-stretch: 100%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   color: var(--vi-acid);
 }
 .vi26-venue-muni {
@@ -11363,7 +11373,7 @@ body.page .entry-content .vi26 p,
 .vi26-poster-date {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(64px, 12vw, 180px);
   line-height: 0.85;
   letter-spacing: -0.04em;
@@ -11389,7 +11399,7 @@ body.page .entry-content .vi26 p,
 .vi26-poster-vi {
   font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(180px, 26vw, 420px);
   line-height: 0.78;
   letter-spacing: -0.05em;
@@ -11401,7 +11411,7 @@ body.page .entry-content .vi26 p,
 .vi26-poster-h {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(48px, 9vw, 120px);
   line-height: 0.86;
   letter-spacing: 0.06em;
@@ -11653,7 +11663,7 @@ body.page .entry-content .vi26 p,
 .vi26-rest-label {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-style: italic;
   font-size: clamp(28px, 3vw, 44px);
   letter-spacing: -0.015em;
@@ -11709,7 +11719,7 @@ body.page .entry-content .vi26 p,
 .vi26-cartel-name {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(22px, 2.4vw, 38px);
   line-height: 1.05;
   letter-spacing: -0.015em;
@@ -12024,7 +12034,7 @@ body.page .entry-content .vi26 p,
 .vi26-hero-ring .vi26-hero-title {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(56px, 9vw, 156px);
   line-height: 0.92;
   letter-spacing: -0.035em;
@@ -12168,7 +12178,7 @@ body.page .entry-content .vi26 p,
 .vi26-event-muni {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(22px, 2vw, 30px);
   line-height: 1.05;
   letter-spacing: -0.01em;
@@ -12427,7 +12437,7 @@ body.page .entry-content .vi26 p,
 .vi26-aside-when-date {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(34px, 3vw, 46px);
   line-height: 0.95;
   letter-spacing: -0.02em;
@@ -12600,7 +12610,7 @@ body.page .entry-content .vi26 p,
 .vi26-event-place-venue {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: clamp(28px, 3.4vw, 52px);
   line-height: 0.98;
   letter-spacing: -0.02em;
@@ -12664,7 +12674,7 @@ body.page .entry-content .vi26 p,
 .vi26-event-place-date {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(24px, 2.2vw, 36px);
   line-height: 1;
   letter-spacing: -0.02em;
@@ -12696,7 +12706,7 @@ body.page .entry-content .vi26 p,
 .vi26-event-title {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 500;
+  font-weight: var(--peso-titulo);
   font-size: clamp(30px, 3.4vw, 52px);
   line-height: 1.02;
   letter-spacing: -0.02em;
@@ -12958,7 +12968,7 @@ body.page .entry-content .doc h1.doc-h1,
 .doc h1.doc-h1 {
   font-family: var(--font-voz);
   font-size: clamp(24px, 2.4vw, 34px) !important;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   line-height: 1.25;
   letter-spacing: -0.005em;
   color: #111;
@@ -12987,7 +12997,7 @@ body.page .entry-content .doc h2.doc-h2,
 .doc h2.doc-h2 {
   font-family: var(--font-voz);
   font-size: 18px !important;
-  font-weight: 700 !important;
+  font-weight: var(--peso-titulo) !important;
   color: #111 !important;
   margin: 32px 0 12px !important;
   padding-bottom: 6px;
@@ -13112,7 +13122,7 @@ body.page .entry-content .legal h2.legal-h2,
 .legal h2.legal-h2 {
   font-family: var(--font-voz);
   font-size: 17px !important;
-  font-weight: 700 !important;
+  font-weight: var(--peso-titulo) !important;
   color: #111 !important;
   margin: 32px 0 10px !important;
   text-transform: uppercase;
@@ -13216,7 +13226,7 @@ body.page .entry-content .legal ol,
 .hm-side-banner-h {
   font-family: var(--font-display);
   font-stretch: 75%;
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: 28px;
   line-height: 0.98;
   letter-spacing: -0.02em;
@@ -13298,7 +13308,7 @@ html.has-hm-today .hm-side-banner { display: none !important; }
 }
 .soc-price{ display: flex; align-items: baseline; gap: 7px; margin: 0; }
 .soc-amount{
-  font-family: var(--font-display); font-stretch: 75%; font-weight: 700;
+  font-family: var(--font-display); font-stretch: 75%; font-weight: var(--peso-titulo);
   font-size: 50px; line-height: 0.9; letter-spacing: -0.02em; color: var(--ink, #0a0907);
 }
 .soc-per{ font-size: 13px; letter-spacing: 0.04em; color: rgba(10,9,7,0.55); }
@@ -13361,7 +13371,7 @@ html.has-hm-today .hm-side-banner { display: none !important; }
 /* =============================================================
    CONCURSO DE HÓRREOS Y PANERAS · sección informativa
    ============================================================= */
-.hc-subhead{ font-family: var(--font-display); font-stretch: 75%; font-weight: 700; font-size: clamp(20px,2.4vw,28px); margin: 40px 0 14px; color: var(--ink,#0a0907); letter-spacing:-0.01em; }
+.hc-subhead{ font-family: var(--font-display); font-stretch: 75%; font-weight: var(--peso-titulo); font-size: clamp(20px,2.4vw,28px); margin: 40px 0 14px; color: var(--ink,#0a0907); letter-spacing:-0.01em; }
 .hc-note{ font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(10,9,7,0.45); margin: 0 0 10px; }
 
 .hc-winners{ display: grid; grid-template-columns: repeat(2,1fr); gap: 18px; margin: 0 0 4px; }
@@ -13383,7 +13393,7 @@ html.has-hm-today .hm-side-banner { display: none !important; }
 .hc-card-ph{ display: flex; align-items: center; justify-content: center; font-size: 34px; color: rgba(10,9,7,0.28); }
 .hc-card-body{ display: flex; flex-direction: column; gap: 3px; padding: 13px 15px; }
 .hc-card-year{ font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent-ink,#8a6a12); }
-.hc-card-title{ font-family: var(--font-display); font-stretch: 75%; font-weight: 700; font-size: 19px; line-height: 1.05; color: var(--ink,#0a0907); }
+.hc-card-title{ font-family: var(--font-display); font-stretch: 75%; font-weight: var(--peso-titulo); font-size: 19px; line-height: 1.05; color: var(--ink,#0a0907); }
 .hc-card-venue{ font-size: 11px; letter-spacing: 0.03em; color: rgba(10,9,7,0.55); }
 
 .hc-2027{ margin: 6px 0 18px; padding: 15px 18px; background: rgba(200,168,75,0.16); border-left: 3px solid #c8a84b; border-radius: 0 8px 8px 0; font-size: 15px; line-height: 1.6; color: var(--ink,#0a0907); }
@@ -13415,10 +13425,10 @@ html.has-hm-today .hm-side-banner { display: none !important; }
 }
 .hm-thanks-h{
   font-family: var(--font-display, 'Inter', sans-serif);
-  font-weight: 700; font-size: clamp(34px, 6.4vw, 78px); line-height: 1.02;
+  font-weight: var(--peso-titulo); font-size: clamp(34px, 6.4vw, 78px); line-height: 1.02;
   letter-spacing: -0.01em; color: var(--ink); margin: 0;
 }
-.hm-thanks-h em{ font-family: var(--font-serif, Georgia, serif); font-style: normal; font-weight: 500; }
+.hm-thanks-h em{ font-family: var(--font-serif, Georgia, serif); font-style: normal; font-weight: var(--peso-titulo); }
 .hm-thanks-lede{
   max-width: 640px; margin: 22px auto 0; font-size: clamp(16px, 1.5vw, 20px);
   line-height: 1.55; color: var(--ink-soft, #3a352c);
@@ -13446,10 +13456,10 @@ body.page .entry-content .hm-next{ background: var(--ink) !important; }
   color: var(--accent) !important; margin-bottom: 16px;
 }
 .hm .hm-next .hm-next-h{
-  font-family: var(--font-display, 'Inter', sans-serif); font-weight: 700;
+  font-family: var(--font-display, 'Inter', sans-serif); font-weight: var(--peso-titulo);
   font-size: clamp(32px, 5.6vw, 68px); line-height: 1.03; color: var(--paper) !important; margin: 0;
 }
-.hm .hm-next .hm-next-h em{ font-family: var(--font-serif, Georgia, serif); font-style: normal; font-weight: 500; color: var(--accent) !important; }
+.hm .hm-next .hm-next-h em{ font-family: var(--font-serif, Georgia, serif); font-style: normal; font-weight: var(--peso-titulo); color: var(--accent) !important; }
 .hm .hm-next .hm-next-lede{
   max-width: 600px; margin: 20px auto 0; font-size: clamp(16px, 1.5vw, 19px);
   line-height: 1.55; color: rgba(255, 255, 255,0.85) !important;
@@ -13469,8 +13479,8 @@ body.page .entry-content .hm-next{ background: var(--ink) !important; }
 .hm-lived{ padding: clamp(48px, 7vw, 96px) 24px; }
 .hm-lived-head{ max-width: 1200px; margin: 0 auto 34px; text-align: center; }
 .hm-lived-eyebrow{ display: block; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
-.hm-lived-h{ font-family: var(--font-display, 'Inter', sans-serif); font-weight: 700; font-size: clamp(30px, 5vw, 60px); line-height: 1.04; color: var(--ink); margin: 0; }
-.hm-lived-h em{ font-family: var(--font-serif, Georgia, serif); font-style: normal; font-weight: 500; }
+.hm-lived-h{ font-family: var(--font-display, 'Inter', sans-serif); font-weight: var(--peso-titulo); font-size: clamp(30px, 5vw, 60px); line-height: 1.04; color: var(--ink); margin: 0; }
+.hm-lived-h em{ font-family: var(--font-serif, Georgia, serif); font-style: normal; font-weight: var(--peso-titulo); }
 .hm-lived-grid{ max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .hm-lived-fig{ display: block; text-decoration: none; color: var(--ink); }
 .hm-lived-imgwrap{ display: block; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 2px; background: #f2f2f2; }
@@ -13519,7 +13529,7 @@ body.page .entry-content .hm-next{ background: var(--ink) !important; }
 .blog-hero{ padding: clamp(56px, 8vw, 110px) 24px 8px; border-top: 4px solid var(--accent); }
 .blog-hero-inner{ max-width: 1100px; margin: 0 auto; }
 .blog-hero-eyebrow{ display: block; font-size: 12px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; }
-body.is-blog .blog-hero .blog-hero-title{ font-family: var(--font-display, 'Inter', sans-serif); font-weight: 700; font-size: clamp(44px, 8vw, 96px) !important; line-height: 0.98; color: var(--ink) !important; margin: 0; }
+body.is-blog .blog-hero .blog-hero-title{ font-family: var(--font-display, 'Inter', sans-serif); font-weight: var(--peso-titulo); font-size: clamp(44px, 8vw, 96px) !important; line-height: 0.98; color: var(--ink) !important; margin: 0; }
 .blog-dot{ color: var(--accent); }
 .blog-hero-lede{ max-width: 640px; margin: 18px 0 0; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.55; color: var(--ink-soft, #3a352c); }
 
@@ -13855,7 +13865,7 @@ body h1,
 body.page .entry-content h1,
 body.single .entry-content h1 {
   font-family: var(--font-voz);
-  font-weight: 400;
+  font-weight: var(--peso-titulo);
   font-size: var(--fs-3xl);
   line-height: 1.02;
   letter-spacing: -0.01em;
@@ -13865,7 +13875,7 @@ body.single .entry-content h1 {
 body.page .entry-content h2,
 body.single .entry-content h2 {
   font-family: var(--font-voz);
-  font-weight: 400;
+  font-weight: var(--peso-titulo);
   font-size: var(--fs-2xl);
   line-height: var(--lh-titular);
 }
@@ -13883,7 +13893,7 @@ body .es-normativa h2 {
 body.page .entry-content h3,
 body.single .entry-content h3 {
   font-family: var(--font-voz);
-  font-weight: 700;
+  font-weight: var(--peso-titulo);
   font-size: var(--fs-xl);
   line-height: var(--lh-titular);
 }

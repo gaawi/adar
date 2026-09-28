@@ -134,8 +134,10 @@ export const BRANDS: Record<string, KitBrand> = {
     ui: '"Chivo", system-ui, sans-serif',
     label: '"Chivo Mono", ui-monospace, monospace',
     labelWeight: '500',
-    titleWeight: '700',
-    fontLoads: ['700 64px "Commissioner"', '400 32px "Chivo"', '700 32px "Chivo"', '500 24px "Chivo Mono"'],
+    // 740 igual que en la web: Commissioner es variable, así que el canvas
+    // no redondea el peso a un corte.
+    titleWeight: '740',
+    fontLoads: ['740 64px "Commissioner"', '400 32px "Chivo"', '700 32px "Chivo"', '500 24px "Chivo Mono"'],
 
     lede:
       'Convierte cada artículo del blog en un post listo para subir tú mismo. «Adaptar a Instagram» lo transforma en un carrusel de varias imágenes que puedes editar antes de descargar. Todo se genera aquí, en tu navegador.',
