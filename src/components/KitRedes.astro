@@ -173,11 +173,14 @@ const rootCss = `:root{${Object.entries(tokens)
          Plegada queda el título, los datos y poco más: así caben muchas en
          pantalla cuando lo que buscas es una en concreto. */
       .card-fold {
-        border: 0; background: transparent; color: var(--muted); padding: 0 8px 0 0;
-        font-size: 15px; line-height: 1; cursor: pointer; border-radius: 0;
-        transition: transform .15s;
+        flex: 0 0 auto; margin-left: auto;
+        width: 38px; height: 38px; display: grid; place-items: center;
+        border: 1px solid var(--line); background: transparent; color: var(--muted);
+        padding: 0; font-size: 22px; line-height: 1; cursor: pointer;
+        border-radius: var(--r-pill);
+        transition: transform .15s, color .15s, border-color .15s;
       }
-      .card-fold:hover { background: transparent; color: var(--fg); }
+      .card-fold:hover { background: transparent; color: var(--fg); border-color: var(--fg); }
       .card.is-folded .card-fold { transform: rotate(-90deg); }
       .card.is-folded { padding: 10px 0; grid-template-columns: 62px 1fr; gap: 14px; align-items: center; }
       .card.is-folded .thumb { aspect-ratio: 1/1; }
@@ -214,7 +217,8 @@ const rootCss = `:root{${Object.entries(tokens)
       .thumb { aspect-ratio: 4/3; background: var(--chip); border-radius: var(--r-sm); overflow: hidden; display: block; position: relative; }
       .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
       .thumb.no-img::after { content: 'sin imagen'; position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-chrome); font-size: 11px; color: var(--muted); }
-      .card h2 { font-family: var(--font-voz); font-size: 20px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; }
+      .card h2 { font-family: var(--font-voz); font-size: 20px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; display: flex; align-items: center; gap: 14px; }
+      .card h2 > span { min-width: 0; }
       .meta { font-family: var(--font-dato); font-size: 11px; color: var(--muted); margin: 0 0 12px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
       .badge { padding: 2px 8px; border-radius: var(--r-pill); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
       .badge.pub { background: var(--accent); color: var(--on-accent); }
@@ -273,6 +277,8 @@ const rootCss = `:root{${Object.entries(tokens)
       button:disabled:hover { background: var(--card); color: var(--fg); }
       button.is-busy { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
       button.is-done { background: var(--fg); color: var(--pop); }
+      /* Botón que se queda pulsado, como «Plegar todas». */
+      button.on { background: var(--fg); border-color: var(--fg); color: var(--pop); }
       button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 500; }
       button.primary:hover { background: var(--fg); color: var(--pop); border-color: var(--fg); }
 
@@ -450,7 +456,7 @@ const rootCss = `:root{${Object.entries(tokens)
             <button data-pub="parte">A medias (<span data-rv-count="pubparte">0</span>)</button>
             <button data-pub="todo">Subidas (<span data-rv-count="pubtodo">0</span>)</button>
           </span>
-          <label title="Ver solo título y datos de cada pieza"><input type="checkbox" id="plegarTodo" /> Vista compacta</label>
+          <button id="plegarTodo" aria-pressed="false" title="Ver solo el título y los datos de cada pieza">Plegar todas</button>
           <span class="count" id="count">{published} en la web · {posts.length} en total</span>
         </div>
       </header>
@@ -485,10 +491,12 @@ const rootCss = `:root{${Object.entries(tokens)
 
           <div class="card-body">
             <h2>
-              {/* Plegar la ficha: con treinta y dos, verlas todas de un
-                  vistazo vale más que tener los botones a mano. */}
-              <button class="card-fold" data-fold aria-expanded="true" title="Plegar o desplegar esta ficha">▾</button>
               <span>{p.title}</span>
+              {/* Plegar la ficha: con treinta y dos, verlas todas de un
+                  vistazo vale más que tener los botones a mano. Va a la
+                  derecha, en la misma columna en todas las filas, para poder
+                  bajar plegando sin perseguir el final de cada título. */}
+              <button class="card-fold" data-fold aria-expanded="true" title="Plegar o desplegar esta ficha">▾</button>
             </h2>
             <p class="meta">
               <span class={`badge ${p.status === 'publish' ? 'pub' : 'draft'}`}>
@@ -1570,17 +1578,25 @@ const rootCss = `:root{${Object.entries(tokens)
         // Vista compacta: pliega o despliega todas a la vez. Se recuerda,
         // porque quien entra a repasar suele querer siempre la misma.
         var plegarTodo = document.getElementById('plegarTodo');
+        var todoPlegado = false;
         function aplicaPlegado() {
           document.querySelectorAll('.card').forEach(function (c) {
-            c.classList.toggle('is-folded', plegarTodo.checked);
+            c.classList.toggle('is-folded', todoPlegado);
             var f = c.querySelector('[data-fold]');
-            if (f) f.setAttribute('aria-expanded', plegarTodo.checked ? 'false' : 'true');
+            if (f) f.setAttribute('aria-expanded', todoPlegado ? 'false' : 'true');
           });
-          try { localStorage.setItem('kit_compacta_' + B.id, plegarTodo.checked ? '1' : ''); } catch (e) {}
+          // El botón dice lo que va a hacer, no en qué estado está.
+          plegarTodo.textContent = todoPlegado ? 'Desplegar todas' : 'Plegar todas';
+          plegarTodo.setAttribute('aria-pressed', todoPlegado ? 'true' : 'false');
+          plegarTodo.classList.toggle('on', todoPlegado);
+          try { localStorage.setItem('kit_compacta_' + B.id, todoPlegado ? '1' : ''); } catch (e) {}
         }
-        try { plegarTodo.checked = localStorage.getItem('kit_compacta_' + B.id) === '1'; } catch (e) {}
-        if (plegarTodo.checked) aplicaPlegado();
-        plegarTodo.addEventListener('change', aplicaPlegado);
+        try { todoPlegado = localStorage.getItem('kit_compacta_' + B.id) === '1'; } catch (e) {}
+        aplicaPlegado();
+        plegarTodo.addEventListener('click', function () {
+          todoPlegado = !todoPlegado;
+          aplicaPlegado();
+        });
         document.getElementById('revSeg').addEventListener('click', function (e) {
           var b = e.target.closest('button'); if (!b) return;
           revFilter = b.dataset.rev;
