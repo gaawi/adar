@@ -106,7 +106,10 @@ const tokens: Record<string, string> = {
   ...(dark ? { '--rv-bar-bg': brand.card, '--rv-bar-fg': brand.paper, '--rv-bar-line': brand.line } : {}),
   '--font-display': brand.ui,
   '--font-voz': brand.display,
-  '--font-mono': brand.label,
+  // Chapa del panel: la letra de interfaz de la marca, proporcional.
+  '--font-chrome': brand.ui,
+  // Solo para cifras: contadores y fechas, donde el monoespaciado alinea.
+  '--font-dato': brand.label,
   '--w-label': brand.labelWeight,
 };
 const rootCss = `:root{${Object.entries(tokens)
@@ -139,8 +142,8 @@ const rootCss = `:root{${Object.entries(tokens)
          ni texto explicativo: lo que se necesita a mano es el filtro. */
       .pnl { position: sticky; top: 0; z-index: 30; background: var(--bg); border-bottom: 1px solid var(--line); margin-bottom: 22px; }
       .pnl-top { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 12px 0 11px; }
-      .pnl-titulo { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-      .pnl-link { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 8px 14px; text-decoration: none; color: var(--muted); border: 1px solid var(--line); border-radius: var(--r-pill); }
+      .pnl-titulo { font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+      .pnl-link { font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 8px 14px; text-decoration: none; color: var(--muted); border: 1px solid var(--line); border-radius: var(--r-pill); }
       .pnl-link:hover { color: var(--fg); background: var(--chip-soft); }
       /* El logotipo cierra la fila por la derecha: es la señal de en qué kit
          estás, y por eso va pegado al borde y no se mueve. */
@@ -151,26 +154,68 @@ const rootCss = `:root{${Object.entries(tokens)
 
       /* Selector de kit: siempre visible, para no confundir una marca con la otra. */
       .kit-switch { display: flex; gap: 0; margin: 0; border: 1px solid var(--line); border-radius: var(--r-pill); overflow: hidden; width: max-content; max-width: 100%; }
-      .kit-switch a { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 9px 16px; text-decoration: none; color: var(--muted); border: 0; }
+      .kit-switch a { font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 9px 16px; text-decoration: none; color: var(--muted); border: 0; }
       .kit-switch a + a { border-left: 1px solid var(--line); }
       .kit-switch a:hover { color: var(--fg); background: var(--chip-soft); }
       .kit-switch a.on { background: var(--fg); color: var(--bg); }
 
       /* Dentro de .pnl, que ya es la parte fija. */
       .toolbar { border-top: 1px solid var(--line); padding: 11px 0; display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
-      .toolbar label { font-family: var(--font-mono); font-size: 12px; display: flex; gap: 7px; align-items: center; cursor: pointer; }
-      .toolbar input[type='search'] { font-family: var(--font-mono); font-size: 13px; padding: 8px 12px; border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: var(--r-pill); min-width: 210px; }
+      .toolbar label { font-family: var(--font-chrome); font-size: 12px; display: flex; gap: 7px; align-items: center; cursor: pointer; }
+      .toolbar input[type='search'] { font-family: var(--font-chrome); font-size: 13px; padding: 8px 12px; border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: var(--r-pill); min-width: 210px; }
       .toolbar input[type='checkbox'] { accent-color: var(--accent); }
-      .count { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-left: auto; }
+      .count { font-family: var(--font-chrome); font-size: 12px; color: var(--muted); margin-left: auto; }
 
-      .card { display: grid; grid-template-columns: 250px 1fr; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--line); align-items: start; }
+      .card { position: relative; display: grid; grid-template-columns: 250px 1fr; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--line); align-items: start; }
       .card-side { display: flex; flex-direction: column; gap: 12px; }
+
+      /* ── Plegado ───────────────────────────────────────────────────────
+         Plegada queda el título, los datos y poco más: así caben muchas en
+         pantalla cuando lo que buscas es una en concreto. */
+      .card-fold {
+        border: 0; background: transparent; color: var(--muted); padding: 0 8px 0 0;
+        font-size: 15px; line-height: 1; cursor: pointer; border-radius: 0;
+        transition: transform .15s;
+      }
+      .card-fold:hover { background: transparent; color: var(--fg); }
+      .card.is-folded .card-fold { transform: rotate(-90deg); }
+      .card.is-folded { padding: 10px 0; grid-template-columns: 62px 1fr; gap: 14px; align-items: center; }
+      .card.is-folded .thumb { aspect-ratio: 1/1; }
+      .card.is-folded .rv, .card.is-folded .redes, .card.is-folded .note { display: none; }
+      .card.is-folded h2 { font-size: 16px; margin: 0 0 4px; }
+      .card.is-folded .meta { margin: 0; }
+
+      /* ── Sello de terminado ────────────────────────────────────────────
+         Un velo por encima de la ficha: si está todo subido, no hay nada
+         que hacer ahí y se nota sin tener que leer las casillas. */
+      .card-hecho {
+        position: absolute; inset: 0; z-index: 2;
+        display: none; place-items: center;
+        background: color-mix(in srgb, var(--bg) 78%, transparent);
+        pointer-events: none;
+      }
+      .card.is-hecho .card-hecho { display: grid; }
+      .card.is-hecho:hover .card-hecho { display: none; }
+      .card-hecho span {
+        font-family: var(--font-chrome); font-weight: var(--w-label);
+        font-size: 13px; letter-spacing: .16em; text-transform: uppercase;
+        color: var(--on-accent); background: var(--accent);
+        padding: 10px 20px; border-radius: var(--r-pill);
+        transform: rotate(-3deg);
+        box-shadow: 0 6px 22px color-mix(in srgb, var(--fg) 22%, transparent);
+        animation: selloEntra .28s cubic-bezier(.2,1.3,.4,1);
+      }
+      @keyframes selloEntra {
+        from { transform: rotate(-3deg) scale(.7); opacity: 0; }
+        to   { transform: rotate(-3deg) scale(1); opacity: 1; }
+      }
+      @media (prefers-reduced-motion: reduce) { .card-hecho span { animation: none; } }
       .card.is-hidden { display: none; }
       .thumb { aspect-ratio: 4/3; background: var(--chip); border-radius: var(--r-sm); overflow: hidden; display: block; position: relative; }
       .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-      .thumb.no-img::after { content: 'sin imagen'; position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+      .thumb.no-img::after { content: 'sin imagen'; position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-chrome); font-size: 11px; color: var(--muted); }
       .card h2 { font-family: var(--font-voz); font-size: 20px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; }
-      .meta { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin: 0 0 12px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+      .meta { font-family: var(--font-dato); font-size: 11px; color: var(--muted); margin: 0 0 12px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
       .badge { padding: 2px 8px; border-radius: var(--r-pill); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
       .badge.pub { background: var(--accent); color: var(--on-accent); }
       .badge.draft { background: var(--chip); color: var(--muted); }
@@ -180,21 +225,36 @@ const rootCss = `:root{${Object.entries(tokens)
          horizontal, una red por fila, que es como se trabaja. */
       .redes { display: grid; grid-template-columns: 104px minmax(0, 1fr) auto auto 48px; align-items: center; column-gap: 12px; }
       .red-cab { display: contents; }
-      .red-cab > span { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+      .red-cab > span { font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding-bottom: 6px; border-bottom: 1px solid var(--line); }
       .red-cab > span:last-child, .red-ok { text-align: center; }
       .red-fila { display: contents; }
       .red-fila > span { padding: 7px 0; border-bottom: 1px solid var(--line-soft, rgba(128,128,128,.16)); min-height: 42px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
       .red-fila > .red-ok { justify-content: center; }
-      .red-n { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; }
-      .red-na { font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+      .red-n { font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 12px; }
+      .red-na { font-style: normal; font-family: var(--font-chrome); font-size: 11px; color: var(--muted); }
       .red-fila button { font-size: 12px; padding: 6px 11px; }
-      .red-a { font-family: var(--font-mono); font-size: 11px; line-height: 1; padding: 6px 9px; border: 1px solid var(--line); border-radius: var(--r-pill); color: var(--muted); text-decoration: none; background: transparent; cursor: pointer; white-space: nowrap; }
+      .red-a { font-family: var(--font-chrome); font-size: 11px; line-height: 1; padding: 6px 9px; border: 1px solid var(--line); border-radius: var(--r-pill); color: var(--muted); text-decoration: none; background: transparent; cursor: pointer; white-space: nowrap; }
       .red-a:hover { color: var(--fg); border-color: var(--fg); }
       .red-ok input { accent-color: var(--accent); width: 17px; height: 17px; cursor: pointer; margin: 0; }
       .red-ok input:disabled { cursor: not-allowed; }
       /* Una red ya subida se apaga: lo que queda por hacer salta a la vista. */
       .red-fila:has(input[data-rv-pub]:checked) > span { opacity: .45; }
       .red-fila:has(input[data-rv-pub]:checked) > .red-ok { opacity: 1; }
+      /* Enlace de la publicación: ocupa toda la fila, debajo de su red. */
+      /* Gana a `.red-fila > span { display:flex }`, que es más específica. */
+      .red-fila > .red-url { grid-column: 1 / -1; display: none; gap: 8px; align-items: center; padding: 0 0 8px; min-height: 0; border-bottom: 1px solid var(--line-soft, rgba(128,128,128,.16)); }
+      .red-fila:has(input[data-rv-pub]:checked) > .red-url { display: flex; opacity: 1; }
+      .red-url input {
+        flex: 1 1 auto; min-width: 0;
+        font-family: var(--font-chrome); font-size: 11px;
+        padding: 5px 9px; border: 1px dashed var(--line); border-radius: var(--r-sm);
+        background: transparent; color: var(--fg);
+      }
+      .red-url input:focus { border-style: solid; outline: none; border-color: var(--fg); }
+      .red-url-ir { font-family: var(--font-chrome); font-size: 11px; color: var(--muted); text-decoration: none; white-space: nowrap; padding: 5px 8px; border: 1px solid var(--line); border-radius: var(--r-pill); }
+      .red-url-ir:hover { color: var(--fg); border-color: var(--fg); }
+      .red-url-ir[hidden] { display: none; }
+
       .red-extra { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding-top: 12px; }
       .red-extra button { font-size: 12px; padding: 6px 11px; }
 
@@ -205,9 +265,9 @@ const rootCss = `:root{${Object.entries(tokens)
       .rv-col .rv-note { flex: 1 1 100%; }
 
       .group { margin-bottom: 10px; }
-      .group-label { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
+      .group-label { font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
       .btns { display: flex; flex-wrap: wrap; gap: 6px; }
-      button, a.btn { font-family: var(--font-mono); font-size: 12px; padding: 7px 12px; border: 1px solid var(--fg); background: var(--card); color: var(--fg); border-radius: var(--r-pill); cursor: pointer; text-decoration: none; transition: background .15s, color .15s; line-height: 1; white-space: nowrap; }
+      button, a.btn { font-family: var(--font-chrome); font-size: 12px; padding: 7px 12px; border: 1px solid var(--fg); background: var(--card); color: var(--fg); border-radius: var(--r-pill); cursor: pointer; text-decoration: none; transition: background .15s, color .15s; line-height: 1; white-space: nowrap; }
       button:hover, a.btn:hover { background: var(--fg); color: var(--bg); }
       button:disabled { opacity: .35; cursor: not-allowed; border-style: dashed; }
       button:disabled:hover { background: var(--card); color: var(--fg); }
@@ -216,11 +276,11 @@ const rootCss = `:root{${Object.entries(tokens)
       button.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 500; }
       button.primary:hover { background: var(--fg); color: var(--pop); border-color: var(--fg); }
 
-      .note { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin: 10px 0 0; line-height: 1.5; }
+      .note { font-family: var(--font-chrome); font-size: 11px; color: var(--muted); margin: 10px 0 0; line-height: 1.5; }
       .help { background: var(--card); border: 1px solid var(--line); border-radius: var(--r-box); padding: 16px 18px; margin: 22px 0 4px; }
       .help h3 { font-family: var(--font-voz); margin: 0 0 8px; font-size: 15px; }
       .help p { margin: 0 0 6px; font-size: 13px; line-height: 1.55; color: var(--fg-soft); }
-      .help code { font-family: var(--font-mono); font-size: 12px; background: var(--chip-soft); padding: 1px 5px; border-radius: var(--r-sm); }
+      .help code { font-family: var(--font-chrome); font-size: 12px; background: var(--chip-soft); padding: 1px 5px; border-radius: var(--r-sm); }
 
       /* ── Modal del adaptador ─────────────────────────────────────────── */
       #modal { position: fixed; inset: 0; z-index: 140; background: var(--scrim); display: none; }
@@ -232,7 +292,7 @@ const rootCss = `:root{${Object.entries(tokens)
       .slides-col { overflow-y: auto; padding: 18px 22px; }
       .preview-col { border-left: 1px solid var(--line); background: var(--stage); padding: 18px; overflow-y: auto; display: flex; flex-direction: column; align-items: center; gap: 12px; }
       .preview-col canvas { width: 100%; max-width: 320px; height: auto; border-radius: var(--r-sm); box-shadow: 0 4px 14px rgba(0,0,0,.18); display: block; }
-      .preview-hint { font-family: var(--font-mono); font-size: 11px; color: var(--muted); text-align: center; line-height: 1.5; margin: 0; }
+      .preview-hint { font-family: var(--font-chrome); font-size: 11px; color: var(--muted); text-align: center; line-height: 1.5; margin: 0; }
       .style-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; width: 100%; max-width: 320px; }
       .style-options button {
         padding: 5px; border-radius: var(--r-sm); border: 1px solid var(--line); background: var(--card);
@@ -241,26 +301,26 @@ const rootCss = `:root{${Object.entries(tokens)
       .style-options button.on { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
       .style-options button:hover { background: var(--card); color: var(--fg); }
       .style-options canvas { width: 100%; height: auto; border-radius: 0; display: block; box-shadow: none; }
-      .style-options span { font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
+      .style-options span { font-family: var(--font-chrome); font-size: 10px; color: var(--muted); }
       .photo-tools { width: 100%; max-width: 320px; display: flex; flex-direction: column; gap: 8px; padding-top: 6px; border-top: 1px solid var(--line); }
       .photo-tools.is-off { opacity: .4; pointer-events: none; }
       .photo-row { display: flex; gap: 6px; }
       .photo-row button { flex: 1; }
-      .slider { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: 10px; color: var(--muted); }
+      .slider { display: flex; align-items: center; gap: 8px; font-family: var(--font-chrome); font-size: 10px; color: var(--muted); }
       .slider span { flex: 0 0 74px; }
       .slider input[type='range'] { flex: 1; accent-color: var(--accent); }
 
       .slide-item { border: 1px solid var(--line); border-radius: var(--r-box); padding: 12px 14px; margin-bottom: 10px; background: var(--card); cursor: pointer; }
       .slide-item.sel { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent); }
       .slide-top { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-      .slide-n { font-family: var(--font-mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
-      .slide-type { font-family: var(--font-mono); font-size: 10px; padding: 2px 7px; border-radius: var(--r-pill); background: var(--chip); color: var(--muted); }
+      .slide-n { font-family: var(--font-chrome); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+      .slide-type { font-family: var(--font-chrome); font-size: 10px; padding: 2px 7px; border-radius: var(--r-pill); background: var(--chip); color: var(--muted); }
       .slide-tools { margin-left: auto; display: flex; gap: 4px; }
       .slide-tools button { padding: 4px 8px; font-size: 11px; }
       .slide-item input, .slide-item textarea { width: 100%; font-family: var(--font-display); border: 1px solid var(--line); border-radius: var(--r-sm); padding: 7px 9px; margin-bottom: 6px; resize: vertical; background: var(--bg); color: var(--fg); }
       .slide-item input { font-weight: 600; font-size: 14px; }
       .slide-item textarea { font-size: 13px; line-height: 1.45; min-height: 62px; }
-      .chars { font-family: var(--font-mono); font-size: 10px; color: var(--muted); text-align: right; }
+      .chars { font-family: var(--font-chrome); font-size: 10px; color: var(--muted); text-align: right; }
       .chars.over { color: #e2574c; }
 
       .modal-foot { padding: 14px 22px; border-top: 1px solid var(--line); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
@@ -270,7 +330,7 @@ const rootCss = `:root{${Object.entries(tokens)
       .seg button.on { background: var(--fg); color: var(--pop); }
       /* Dos filtros seguidos con un botón «Todas» cada uno no se distinguen:
          cada grupo lleva su nombre dentro, como parte del control. */
-      .seg-label { display: flex; align-items: center; padding: 0 11px; background: var(--chip); border-right: 1px solid var(--line); font-family: var(--font-mono); font-weight: var(--w-label); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+      .seg-label { display: flex; align-items: center; padding: 0 11px; background: var(--chip); border-right: 1px solid var(--line); font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
 
       /* ── Editor de textos por red ─────────────────────────────────────── */
       #tmodal { position: fixed; inset: 0; z-index: 150; background: var(--scrim); display: none; }
@@ -285,15 +345,15 @@ const rootCss = `:root{${Object.entries(tokens)
       /* Editor de textos. Todo lo que no es el campo (nombre, pista, cuenta y
          botones) se va a una columna estrecha a la izquierda: así el texto
          ocupa el resto y crece hasta caber entero, sin scroll dentro. */
-      .t-body { overflow-y: auto; padding: 14px 20px; display: grid; gap: 8px; }
+      .t-body { overflow-y: auto; padding: 12px 18px; display: grid; gap: 6px; }
       .t-red {
         border: 1px solid var(--line); border-radius: var(--r-box); background: var(--card);
         padding: 10px 12px;
-        display: grid; grid-template-columns: 156px minmax(0, 1fr); gap: 14px; align-items: start;
+        display: grid; grid-template-columns: 132px minmax(0, 1fr); gap: 12px; align-items: start;
       }
-      .t-lado { display: flex; flex-direction: column; gap: 6px; align-items: stretch; }
+      .t-lado { display: flex; flex-direction: column; gap: 5px; align-items: stretch; }
       .t-lado strong { font-family: var(--font-voz); font-size: 15px; line-height: 1.15; }
-      .t-lado .pista { font-family: var(--font-mono); font-size: 10px; line-height: 1.4; color: var(--muted); }
+      .t-lado .pista { font-family: var(--font-chrome); font-size: 10px; line-height: 1.4; color: var(--muted); }
       .t-lado button { width: 100%; }
       .t-red textarea {
         width: 100%; font-family: var(--font-display); font-size: 14px; line-height: 1.55;
@@ -303,9 +363,9 @@ const rootCss = `:root{${Object.entries(tokens)
            propia ni tirador, porque siempre cabe entero. */
         resize: none; overflow: hidden; min-height: 0; display: block;
       }
-      .t-cuenta { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+      .t-cuenta { font-family: var(--font-dato); font-size: 11px; color: var(--muted); }
       .t-cuenta.pasa { color: #e2574c; font-weight: 600; }
-      .t-editado { font-family: var(--font-mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+      .t-editado { font-family: var(--font-chrome); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
       .t-foot { padding: 14px 22px; border-top: 1px solid var(--line); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
       .t-foot .spacer { flex: 1; }
 
@@ -320,7 +380,7 @@ const rootCss = `:root{${Object.entries(tokens)
         .t-logo { display: none; }
       }
 
-      #toast { position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 20px); background: var(--fg); color: var(--bg); font-family: var(--font-mono); font-size: 13px; padding: 11px 18px; border-radius: var(--r-pill); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 200; max-width: 90vw; text-align: center; }
+      #toast { position: fixed; left: 50%; bottom: 26px; transform: translate(-50%, 20px); background: var(--fg); color: var(--bg); font-family: var(--font-chrome); font-size: 13px; padding: 11px 18px; border-radius: var(--r-pill); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; z-index: 200; max-width: 90vw; text-align: center; }
       #toast.show { opacity: 1; transform: translate(-50%, 0); }
 
       @media (max-width: 900px) {
@@ -390,6 +450,7 @@ const rootCss = `:root{${Object.entries(tokens)
             <button data-pub="parte">A medias (<span data-rv-count="pubparte">0</span>)</button>
             <button data-pub="todo">Subidas (<span data-rv-count="pubtodo">0</span>)</button>
           </span>
+          <label title="Ver solo título y datos de cada pieza"><input type="checkbox" id="plegarTodo" /> Vista compacta</label>
           <span class="count" id="count">{published} en la web · {posts.length} en total</span>
         </div>
       </header>
@@ -418,8 +479,17 @@ const rootCss = `:root{${Object.entries(tokens)
             />
           </div>
 
+          {/* Sello de terminado: aparece cuando el post está en la web y las
+              cinco redes están marcadas. */}
+          <div class="card-hecho" aria-hidden="true"><span>Publicado en todas ✦</span></div>
+
           <div class="card-body">
-            <h2>{p.title}</h2>
+            <h2>
+              {/* Plegar la ficha: con treinta y dos, verlas todas de un
+                  vistazo vale más que tener los botones a mano. */}
+              <button class="card-fold" data-fold aria-expanded="true" title="Plegar o desplegar esta ficha">▾</button>
+              <span>{p.title}</span>
+            </h2>
             <p class="meta">
               <span class={`badge ${p.status === 'publish' ? 'pub' : 'draft'}`}>
                 {p.status === 'publish' ? brand.statusLabels.publish : brand.statusLabels.draft}
@@ -488,6 +558,18 @@ const rootCss = `:root{${Object.entries(tokens)
                     )}
                   </span>
                   <span class="red-ok"><input type="checkbox" data-rv-pub={f.id} /></span>
+                  {/* Enlace de la publicación, para poder volver a ella al
+                      revisar. Solo aparece cuando la red está marcada: antes
+                      de subirla no hay nada que pegar. */}
+                  <span class="red-url">
+                    <input
+                      type="url"
+                      data-rv-url={f.id}
+                      placeholder={`Pega aquí el enlace de la publicación en ${f.nombre}`}
+                      spellcheck="false"
+                    />
+                    <a class="red-url-ir" data-rv-url-ir={f.id} target="_blank" rel="noopener" hidden>Ver ↗</a>
+                  </span>
                 </div>
               ))}
 
@@ -1261,6 +1343,12 @@ const rootCss = `:root{${Object.entries(tokens)
           // caer dentro del gesto del clic o el navegador lo bloquea.
           // Ninguna de las tres redes admite el texto en el enlace, así que se
           // deja en el portapapeles y se abre su página. X sí lo admite.
+          if (btn.dataset.fold !== undefined) {
+            var plegada = card.classList.toggle('is-folded');
+            btn.setAttribute('aria-expanded', plegada ? 'false' : 'true');
+            return;
+          }
+
           if (btn.dataset.rvIr) {
             var red = btn.dataset.rvIr;
             var texto = textoDe(d, red);
@@ -1478,6 +1566,21 @@ const rootCss = `:root{${Object.entries(tokens)
         }
         q.addEventListener('input', applyFilter);
         onlyPub.addEventListener('change', applyFilter);
+
+        // Vista compacta: pliega o despliega todas a la vez. Se recuerda,
+        // porque quien entra a repasar suele querer siempre la misma.
+        var plegarTodo = document.getElementById('plegarTodo');
+        function aplicaPlegado() {
+          document.querySelectorAll('.card').forEach(function (c) {
+            c.classList.toggle('is-folded', plegarTodo.checked);
+            var f = c.querySelector('[data-fold]');
+            if (f) f.setAttribute('aria-expanded', plegarTodo.checked ? 'false' : 'true');
+          });
+          try { localStorage.setItem('kit_compacta_' + B.id, plegarTodo.checked ? '1' : ''); } catch (e) {}
+        }
+        try { plegarTodo.checked = localStorage.getItem('kit_compacta_' + B.id) === '1'; } catch (e) {}
+        if (plegarTodo.checked) aplicaPlegado();
+        plegarTodo.addEventListener('change', aplicaPlegado);
         document.getElementById('revSeg').addEventListener('click', function (e) {
           var b = e.target.closest('button'); if (!b) return;
           revFilter = b.dataset.rev;

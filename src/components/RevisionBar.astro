@@ -265,8 +265,15 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       if (!g || g.estado !== l.estado || (g.nota || '') !== (l.nota || '') ||
           (g.fecha_prevista || '') !== (l.fecha_prevista || '') ||
           JSON.stringify(g.textos || {}) !== JSON.stringify(l.textos || {}) ||
-          JSON.stringify(g.publicado || {}) !== JSON.stringify(l.publicado || {})) sucio[k] = true;
+          JSON.stringify(g.publicado || {}) !== JSON.stringify(l.publicado || {}) ||
+          JSON.stringify(g.enlaces || {}) !== JSON.stringify(l.enlaces || {})) sucio[k] = true;
     });
+
+    /** ¿Hay algún enlace de publicación guardado? */
+    function hayEnlaces(x) {
+      var l = x && x.enlaces;
+      return !!(l && Object.keys(l).some(function (c) { return (l[c] || '').trim(); }));
+    }
 
     /** ¿Hay alguna red marcada como publicada en esta entrada? */
     function hayPublicado(e) {
@@ -323,19 +330,21 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
         if (ta && (r.nota || '') !== ta.value) ta.value = r.nota || '';
       }
 
-      pintarPublicado(ficha, r);
+      pintarPublicado(ficha, r, inicial);
     }
 
     // ── Checklist de publicación ──────────────────────────────────────────
     // El estado del post no se guarda: lo sabe el sitio (la casilla viene ya
     // marcada del build). Aquí solo se guardan las redes.
-    function pintarPublicado(ficha, r) {
+    function pintarPublicado(ficha, r, inicial) {
       var cajas = ficha.querySelectorAll('[data-rv-pub]');
       if (!cajas.length) return;
       var pub = r.publicado || {};
+      var urls = r.enlaces || {};
       var hechas = 0;
       cajas.forEach(function (cb) {
-        var cuando = pub[cb.dataset.rvPub];
+        var canal = cb.dataset.rvPub;
+        var cuando = pub[canal];
         cb.checked = !!cuando;
         if (cuando) hechas++;
         // El título va en la propia casilla: cada página la maqueta a su
@@ -343,6 +352,26 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
         cb.title = cuando ? 'Subido el ' + fechaCorta(cuando) : 'Marcar cuando esté subido';
       });
       ficha.dataset.rvPubState = hechas === 0 ? 'no' : (hechas === cajas.length ? 'todo' : 'parte');
+
+      // Enlaces de las publicaciones. El campo solo se rellena en el primer
+      // pintado, para no pisar lo que se esté escribiendo.
+      ficha.querySelectorAll('[data-rv-url]').forEach(function (inp) {
+        var v = urls[inp.dataset.rvUrl] || '';
+        if (inicial && inp.value !== v) inp.value = v;
+        var ir = ficha.querySelector('[data-rv-url-ir="' + inp.dataset.rvUrl + '"]');
+        if (ir) {
+          var actual = (inp.value || '').trim();
+          ir.hidden = !/^https?:\/\//i.test(actual);
+          if (!ir.hidden) ir.href = actual;
+        }
+      });
+
+      // Terminado del todo: el post en la web y todas las redes subidas.
+      var postOk = ficha.querySelector('[data-rv-pub-auto="post"]');
+      ficha.classList.toggle(
+        'is-hecho',
+        cajas.length > 0 && hechas === cajas.length && (!postOk || postOk.checked)
+      );
 
       // Redes marcadas con el post todavía en borrador: los enlaces de los
       // pies de foto no llevarían a ninguna parte.
@@ -405,7 +434,7 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     function actualizarBarra() {
       var n = Object.keys(sucio).length;
       var marcadas = Object.keys(estado).filter(function (k) {
-        return estado[k] && (estado[k].estado || hayPublicado(estado[k]));
+        return estado[k] && (estado[k].estado || hayPublicado(estado[k]) || hayEnlaces(estado[k]));
       }).length;
       var hay = !!(n || marcadas);
       document.body.classList.toggle('rv-bar-on', hay);
@@ -471,6 +500,31 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       persistir();
       pintar(fichaF);
       avisarCambio();
+    });
+
+    // Enlace de la publicación: se guarda al dejar de escribir, como la nota.
+    var tempEnlace;
+    document.addEventListener('input', function (ev) {
+      var inp = ev.target.closest('[data-rv-url]');
+      if (!inp) return;
+      var ficha = inp.closest('[data-rv-item]');
+      if (!ficha) return;
+      var k = ficha.dataset.rvKey;
+      clearTimeout(tempEnlace);
+      tempEnlace = setTimeout(function () {
+        var enlaces = Object.assign({}, (estado[k] || {}).enlaces || {});
+        var v = (inp.value || '').trim();
+        if (v) enlaces[inp.dataset.rvUrl] = v; else delete enlaces[inp.dataset.rvUrl];
+        estado[k] = Object.assign({}, estado[k], {
+          enlaces: enlaces,
+          titulo: ficha.dataset.rvTitle || '',
+          fecha: new Date().toISOString(),
+        });
+        sucio[k] = true;
+        persistir();
+        pintar(ficha);
+        actualizarBarra();
+      }, 500);
     });
 
     var temporizador;

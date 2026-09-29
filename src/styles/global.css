@@ -6386,8 +6386,12 @@ body.home .adar-footer-cta { display: none !important; }
   color: var(--accent-ink, #0a0907);
   background: var(--accent);
 }
-/* Same specificity trick as .page-hero-title above. */
-.page-hero-banner h1.page-hero-banner-title.page-hero-banner-title {
+/* El truco de repetir la clase (0,3,1) no bastaba: el tema heredado trae
+   `.archive h1:not(.entry-title):not(.page-title):not(.site-title)` con
+   (0,4,1) y más abajo en el archivo, así que ganaba y dejaba el titular en
+   24px, más pequeño que los H2 del propio artículo. Con el ancestro y una
+   repetición más son (0,5,1) y ya no hay empate. */
+.page-hero .page-hero-banner h1.page-hero-banner-title.page-hero-banner-title.page-hero-banner-title {
   font-family: var(--font-serif);
   font-style: normal;
   font-weight: var(--peso-titulo);
@@ -13659,6 +13663,18 @@ body.is-blog .builder-wrap .blog-entry{
   max-width: 1100px;
   margin-inline: auto;
   padding-inline: clamp(20px, 5vw, 24px);
+}
+/* Los párrafos se cortan a 70ch pero los títulos no tenían tope, así que
+   sobresalían 360px por la derecha de su propia columna. Misma medida para
+   los dos: el artículo se lee como un bloque, no como dos.
+   En rem, no en ch: `ch` se mide sobre la letra del propio elemento, así que
+   70ch en un H2 de 32px salen el doble de anchos que en un párrafo de 16.
+   39rem son 702px con la raíz en 18px, justo por dentro de los ~712 que da
+   el 70ch del cuerpo: más vale que el título quede corto que asomado. */
+body.is-blog .builder-wrap .blog-entry h2,
+body.is-blog .builder-wrap .blog-entry h3,
+body.is-blog .builder-wrap .blog-entry h4{
+  max-width: 39rem;
 }
 
 /* ── Vista privada · estado de cada artículo ───────────────────────────── */
