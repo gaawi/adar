@@ -160,61 +160,9 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     width: 100%;
   }
 
-  /* ── Checklist de publicación ──────────────────────────────────────────
-     Ocupa su propia fila: son cinco casillas y un aviso, y partidas entre
-     los botones de revisión no se leen como una lista. */
-  .rv-pub { flex: 1 1 100%; display: flex; flex-direction: column; gap: 6px; }
-  .rv-pub-list { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
-  .rv-pub-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-family: var(--font-mono, inherit);
-    font-size: 12px;
-    line-height: 1;
-    cursor: pointer;
-    opacity: 0.72;
-    white-space: nowrap;
-    transition: opacity 0.15s;
-  }
-  .rv-pub-item:hover { opacity: 1; }
-  .rv-pub-item input { accent-color: var(--rv-ok, #2f6b3a); cursor: pointer; margin: 0; }
-  .rv-pub-item:has(input:checked) { opacity: 1; color: var(--rv-ok, #2f6b3a); }
-  /* El estado del post lo sabe el sitio, no se marca a mano: se ve que la
-     casilla no responde, pero los enlaces de al lado sí. */
-  .rv-pub-item.is-auto { cursor: default; }
-  .rv-pub-item.is-auto input { cursor: not-allowed; }
-  .rv-pub-post, .rv-pub-red { display: inline-flex; align-items: center; gap: 6px; }
-  /* Atajo para publicar: copia el texto de esa red y abre su página. */
-  .rv-pub-ir {
-    font-family: var(--font-mono, inherit);
-    font-size: 11px;
-    line-height: 1;
-    padding: 4px 7px;
-    border-radius: var(--rv-radius-sm, 6px);
-    border: 1px solid currentColor;
-    background: transparent;
-    color: inherit;
-    cursor: pointer;
-    opacity: 0.4;
-    transition: opacity 0.15s;
-  }
-  .rv-pub-ir:hover { opacity: 1; }
-  .rv-pub-ir.is-done { opacity: 1; color: var(--rv-ok, #2f6b3a); }
-  .rv-pub-link {
-    font-family: var(--font-mono, inherit);
-    font-size: 11px;
-    line-height: 1;
-    padding: 5px 9px;
-    border-radius: var(--rv-radius, 999px);
-    border: 1px solid currentColor;
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.6;
-    white-space: nowrap;
-    transition: opacity 0.15s;
-  }
-  .rv-pub-link:hover { opacity: 1; }
+  /* El checklist de publicación lo maqueta cada página (en el kit es una
+     columna de su tabla de redes). Aquí solo vive el aviso, que es lógica
+     compartida: la barra decide cuándo se enseña. */
   .rv-pub-aviso {
     font-family: var(--font-mono, inherit);
     font-size: 11px;
@@ -390,8 +338,9 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
         var cuando = pub[cb.dataset.rvPub];
         cb.checked = !!cuando;
         if (cuando) hechas++;
-        var lab = cb.closest('label');
-        if (lab) lab.title = cuando ? 'Marcado el ' + fechaCorta(cuando) : '';
+        // El título va en la propia casilla: cada página la maqueta a su
+        // manera y no siempre hay una <label> alrededor.
+        cb.title = cuando ? 'Subido el ' + fechaCorta(cuando) : 'Marcar cuando esté subido';
       });
       ficha.dataset.rvPubState = hechas === 0 ? 'no' : (hechas === cajas.length ? 'todo' : 'parte');
 

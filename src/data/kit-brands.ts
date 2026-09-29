@@ -103,7 +103,7 @@ export interface KitBrand {
    * X no está aquí porque sí lo admite y se compone sobre la marcha.
    * Vacío = esa red no tiene botón.
    */
-  redes: { ig: string; fb: string; li: string };
+  redes: { ig: string; fb: string; li: string; tt: string };
   /** ¿La fecha de la pieza es su fecha de publicación? En el blog de ADAR sí;
    *  en CreArtBox es la fecha del concierto, así que en el calendario solo
    *  cuenta la fecha prevista que se ponga a mano. */
@@ -172,6 +172,7 @@ export const BRANDS: Record<string, KitBrand> = {
       ig: 'https://www.instagram.com/create/select/',
       fb: 'https://business.facebook.com/latest/posts/published_posts',
       li: 'https://www.linkedin.com/company/73443698/admin/page-posts/published/?share=true',
+      tt: 'https://www.tiktok.com/tiktokstudio/upload',
     },
     calendarUsesPostDate: true,
   },
@@ -246,6 +247,7 @@ export const BRANDS: Record<string, KitBrand> = {
       ig: 'https://www.instagram.com/create/select/',
       fb: 'https://business.facebook.com/latest/posts/published_posts',
       li: '',
+      tt: 'https://www.tiktok.com/tiktokstudio/upload',
     },
     calendarUsesPostDate: false,
   },

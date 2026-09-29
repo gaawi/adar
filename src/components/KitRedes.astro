@@ -38,13 +38,34 @@ const published = posts.filter((p) => p.status === 'publish').length;
 
 // Redes del checklist de «ya publicado». Las mismas cuatro para las que el kit
 // genera texto; el post no está aquí porque su estado lo sabe el propio sitio.
-// `href` es la página desde la que se publica; X no lleva porque su enlace se
-// compone con el texto dentro.
-const CANALES = [
-  { id: 'ig', nombre: 'Instagram', href: brand.redes.ig },
-  { id: 'fb', nombre: 'Facebook', href: brand.redes.fb },
-  { id: 'li', nombre: 'LinkedIn', href: brand.redes.li },
-  { id: 'x', nombre: 'X', href: 'https://x.com/' },
+// Una fila por red: qué imagen lleva, y adónde se va a publicar. El orden es
+// el de la rutina, no el alfabético. `href` es la página desde la que se sube;
+// el de X se compone con el texto dentro, así que aquí va la raíz.
+const FILAS = [
+  {
+    id: 'ig',
+    nombre: 'Instagram',
+    href: brand.redes.ig,
+    imgs: [
+      { adapt: 'ig', label: 'Carrusel 1:1' },
+      { dl: 'ig', label: 'Portada 1:1' },
+      { dl: 'story', label: 'Story 9:16' },
+    ],
+  },
+  {
+    id: 'tt',
+    nombre: 'TikTok',
+    href: brand.redes.tt,
+    // Mismo 9:16 que las stories: es el formato que pide, y los márgenes del
+    // motor ya están calculados para que no lo tape ninguna de las dos.
+    imgs: [
+      { adapt: 'story', label: 'Carrusel 9:16' },
+      { dl: 'story', label: 'Portada 9:16' },
+    ],
+  },
+  { id: 'fb', nombre: 'Facebook', href: brand.redes.fb, imgs: [{ dl: 'fb', label: 'Portada 1200×630' }] },
+  { id: 'li', nombre: 'LinkedIn', href: brand.redes.li, imgs: [{ dl: 'fb', label: 'Portada 1200×630' }] },
+  { id: 'x', nombre: 'X', href: 'https://x.com/', imgs: [{ dl: 'x', label: 'Portada 1600×900' }] },
 ];
 const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
 const brandJson = JSON.stringify(brand).replace(/</g, '\\u003c');
@@ -142,7 +163,8 @@ const rootCss = `:root{${Object.entries(tokens)
       .toolbar input[type='checkbox'] { accent-color: var(--accent); }
       .count { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-left: auto; }
 
-      .card { display: grid; grid-template-columns: 180px 1fr; gap: 20px; padding: 20px 0; border-bottom: 1px solid var(--line); align-items: start; }
+      .card { display: grid; grid-template-columns: 250px 1fr; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--line); align-items: start; }
+      .card-side { display: flex; flex-direction: column; gap: 12px; }
       .card.is-hidden { display: none; }
       .thumb { aspect-ratio: 4/3; background: var(--chip); border-radius: var(--r-sm); overflow: hidden; display: block; position: relative; }
       .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -152,6 +174,35 @@ const rootCss = `:root{${Object.entries(tokens)
       .badge { padding: 2px 8px; border-radius: var(--r-pill); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
       .badge.pub { background: var(--accent); color: var(--on-accent); }
       .badge.draft { background: var(--chip); color: var(--muted); }
+
+      /* ── Tabla de redes ────────────────────────────────────────────────
+         Cinco columnas fijas: red, imagen, texto, subir y hecho. Se lee en
+         horizontal, una red por fila, que es como se trabaja. */
+      .redes { display: grid; grid-template-columns: 104px minmax(0, 1fr) auto auto 48px; align-items: center; column-gap: 12px; }
+      .red-cab { display: contents; }
+      .red-cab > span { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+      .red-cab > span:last-child, .red-ok { text-align: center; }
+      .red-fila { display: contents; }
+      .red-fila > span { padding: 7px 0; border-bottom: 1px solid var(--line-soft, rgba(128,128,128,.16)); min-height: 42px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+      .red-fila > .red-ok { justify-content: center; }
+      .red-n { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; }
+      .red-na { font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+      .red-fila button { font-size: 12px; padding: 6px 11px; }
+      .red-a { font-family: var(--font-mono); font-size: 11px; line-height: 1; padding: 6px 9px; border: 1px solid var(--line); border-radius: var(--r-pill); color: var(--muted); text-decoration: none; background: transparent; cursor: pointer; white-space: nowrap; }
+      .red-a:hover { color: var(--fg); border-color: var(--fg); }
+      .red-ok input { accent-color: var(--accent); width: 17px; height: 17px; cursor: pointer; margin: 0; }
+      .red-ok input:disabled { cursor: not-allowed; }
+      /* Una red ya subida se apaga: lo que queda por hacer salta a la vista. */
+      .red-fila:has(input[data-rv-pub]:checked) > span { opacity: .45; }
+      .red-fila:has(input[data-rv-pub]:checked) > .red-ok { opacity: 1; }
+      .red-extra { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding-top: 12px; }
+      .red-extra button { font-size: 12px; padding: 6px 11px; }
+
+      /* Revisión bajo la foto: en una columna estrecha se apila sola. */
+      .rv-col { border-top: 0; margin-top: 0; padding-top: 0; }
+      .rv-col .rv-choice { flex-direction: column; align-items: stretch; width: 100%; }
+      .rv-col .rv-fecha { width: 100%; }
+      .rv-col .rv-note { flex: 1 1 100%; }
 
       .group { margin-bottom: 10px; }
       .group-label { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); display: block; margin-bottom: 6px; }
@@ -255,10 +306,23 @@ const rootCss = `:root{${Object.entries(tokens)
         .modal-body { grid-template-columns: 1fr; }
         .preview-col { border-left: 0; border-top: 1px solid var(--line); }
       }
-      @media (max-width: 720px) {
+      @media (max-width: 900px) {
         .card { grid-template-columns: 1fr; }
+        /* En una columna, el título tiene que ir antes que nada: si no, la
+           foto y la revisión aparecen sin saber todavía de qué pieza son. */
+        .card-side { order: 2; }
+        .card-body { order: 1; }
         .thumb { max-width: 260px; }
         .modal-panel { inset: 0; border-radius: 0; }
+        /* La tabla de cinco columnas no cabe: cada red pasa a ser un bloque
+           con su nombre arriba y la casilla a la derecha del todo. */
+        .redes { display: block; }
+        .red-cab { display: none; }
+        .red-fila { display: grid; grid-template-columns: 1fr 28px; gap: 4px 10px; padding: 10px 0; border-bottom: 1px solid var(--line-soft, rgba(128,128,128,.16)); }
+        .red-fila > span { border-bottom: 0; padding: 0; min-height: 0; }
+        .red-n { grid-column: 1; font-size: 13px; }
+        .red-ok { grid-column: 2; grid-row: 1 / span 4; align-items: start !important; }
+        .red-img, .red-txt, .red-ir { grid-column: 1; }
       }
     </style>
   </head>
@@ -319,9 +383,19 @@ const rootCss = `:root{${Object.entries(tokens)
           data-rv-key={`${p.lang}/${p.slug}`}
           data-rv-title={p.title}
         >
-          <span class={`thumb${p.image ? '' : ' no-img'}`}>
-            {p.image && <img src={p.image} alt="" loading="lazy" crossorigin="anonymous" />}
-          </span>
+          {/* Columna izquierda: la foto y la revisión, que es lo que se
+              decide una vez por pieza. */}
+          <div class="card-side">
+            <span class={`thumb${p.image ? '' : ' no-img'}`}>
+              {p.image && <img src={p.image} alt="" loading="lazy" crossorigin="anonymous" />}
+            </span>
+            <RevisionItem
+              nota={revisiones[`${p.lang}/${p.slug}`]?.nota || ''}
+              fecha={revisiones[`${p.lang}/${p.slug}`]?.fecha_prevista || ''}
+              label="Revisión"
+              class="rv-col"
+            />
+          </div>
 
           <div class="card-body">
             <h2>{p.title}</h2>
@@ -335,50 +409,76 @@ const rootCss = `:root{${Object.entries(tokens)
               <span class="rv-pill" data-rv-pill hidden></span>
             </p>
 
-            <div class="group">
-              <span class="group-label">Adaptar y montar el post</span>
-              <div class="btns">
-                <button class="primary" data-adapt="ig" disabled={!p.image}>Adaptar a Instagram (carrusel)</button>
-                <button data-adapt="story" disabled={!p.image}>Adaptar a Story 9:16</button>
+            {/* Una fila por red, en el orden en que se publica: la imagen, el
+                texto, el atajo para subirlo y la casilla de hecho. Así se va
+                de una en una sin saltar de un bloque a otro. */}
+            <div class="redes">
+              <div class="red-cab">
+                <span>Red</span><span>Imagen</span><span>Texto</span><span>Subir</span><span>Hecho</span>
               </div>
-            </div>
 
-            <div class="group">
-              <span class="group-label">Solo la portada</span>
-              <div class="btns">
-                <button data-dl="ig" disabled={!p.image}>Instagram 1:1</button>
-                <button data-dl="story" disabled={!p.image}>Story 9:16</button>
-                <button data-dl="fb" disabled={!p.image}>Facebook · LinkedIn</button>
-                <button data-dl="x" disabled={!p.image}>X 16:9</button>
-                <button data-dl="orig" disabled={!p.image}>Original</button>
+              <div class="red-fila">
+                <span class="red-n">Post en la web</span>
+                <span class="red-img"><em class="red-na">la foto de arriba</em></span>
+                <span class="red-txt"><button data-textos>Ver y editar textos</button></span>
+                <span class="red-ir">
+                  {p.status === 'publish' && <a class="red-a" href={p.url} target="_blank" rel="noopener">Ver ↗</a>}
+                  {brand.cmsEditHref && (
+                    <a
+                      class="red-a"
+                      href={brand.cmsEditHref.replace('{lang}', p.lang).replace('{slug}', p.slug)}
+                      target="_blank"
+                      rel="noopener"
+                    >{p.status === 'publish' ? 'Editar ↗' : 'Publicar ↗'}</a>
+                  )}
+                </span>
+                <span class="red-ok">
+                  <input
+                    type="checkbox"
+                    disabled
+                    checked={p.status === 'publish'}
+                    data-rv-pub-auto="post"
+                    title={p.status === 'publish'
+                      ? 'Ya está en la web. Se marca solo.'
+                      : 'Todavía es borrador. Publícalo en el editor y aquí se marca solo.'}
+                  />
+                </span>
               </div>
-            </div>
 
-            <div class="group">
-              <span class="group-label">Texto</span>
-              <div class="btns">
-                <button class="primary" data-textos>Ver y editar textos</button>
-                <button data-copy="ig">Pie de foto Instagram</button>
-                <button data-copy="fb">Facebook</button>
-                <button data-copy="li">LinkedIn</button>
-                <button data-copy="x">X</button>
-                <button data-copy="url">Enlace</button>
+              {FILAS.map((f) => (
+                <div class="red-fila">
+                  <span class="red-n">{f.nombre}</span>
+                  <span class="red-img">
+                    {f.imgs.map((b) =>
+                      b.adapt
+                        ? <button data-adapt={b.adapt} disabled={!p.image}>{b.label}</button>
+                        : <button data-dl={b.dl} disabled={!p.image}>{b.label}</button>
+                    )}
+                  </span>
+                  <span class="red-txt"><button data-copy={f.id}>Copiar</button></span>
+                  <span class="red-ir">
+                    {f.href && (
+                      <button
+                        class="red-a"
+                        data-rv-ir={f.id}
+                        data-rv-ir-href={f.href}
+                        title={`Copia el texto de ${f.nombre} y abre la página para publicar`}
+                      >Abrir ↗</button>
+                    )}
+                  </span>
+                  <span class="red-ok"><input type="checkbox" data-rv-pub={f.id} /></span>
+                </div>
+              ))}
+
+              <div class="red-extra">
+                <button data-dl="orig" disabled={!p.image}>Foto original</button>
+                <button data-copy="url">Copiar enlace</button>
                 <button data-dl="txt">Descargar .txt</button>
+                <span class="rv-pub-aviso" data-rv-pub-aviso hidden></span>
               </div>
-              {p.status !== 'publish' && <p class="note">{brand.draftNote}</p>}
             </div>
 
-            <RevisionItem
-              nota={revisiones[`${p.lang}/${p.slug}`]?.nota || ''}
-              fecha={revisiones[`${p.lang}/${p.slug}`]?.fecha_prevista || ''}
-              label="Revisión"
-              canales={CANALES}
-              postPublicado={p.status === 'publish'}
-              verHref={p.url}
-              editarHref={brand.cmsEditHref
-                .replace('{lang}', p.lang)
-                .replace('{slug}', p.slug)}
-            />
+            {p.status !== 'publish' && <p class="note">{brand.draftNote}</p>}
           </div>
         </article>
       ))}
@@ -408,7 +508,7 @@ const rootCss = `:root{${Object.entries(tokens)
           <h3 id="m-title">Adaptar</h3>
           <div class="seg" id="m-format">
             <button data-fmt="ig" class="on">Carrusel 1:1</button>
-            <button data-fmt="story">Story 9:16</button>
+            <button data-fmt="story">Story · TikTok 9:16</button>
           </div>
           <button id="m-close">Cerrar</button>
         </div>
@@ -533,6 +633,10 @@ const rootCss = `:root{${Object.entries(tokens)
             fb: d.title + '\n\n' + d.excerpt + '\n\n' + d.url,
             li: d.title + '\n\n' + d.excerpt + '\n\n' + B.captionLead + d.url + '\n\n' + hashtags(d.tags, 5),
             x: (d.title.length > 90 ? d.title.slice(0, 87) + '…' : d.title) + '\n\n' + d.url,
+            // TikTok no hace pulsable ningún enlace del pie: pegar la URL solo
+            // gastaría caracteres, así que se manda a la bio como en Instagram.
+            // Y como apenas se lee la primera línea, el titular va solo delante.
+            tt: d.title + '\n\n' + d.excerpt + '\n\n' + B.captionTail + '\n\n' + hashtags(d.tags, 6),
             url: d.url,
           };
         }
@@ -542,6 +646,7 @@ const rootCss = `:root{${Object.entries(tokens)
           { id: 'fb', nombre: 'Facebook', limite: 63206, pista: 'Sin límite en la práctica; las primeras líneas son las que se leen.' },
           { id: 'li', nombre: 'LinkedIn', limite: 3000, pista: 'Se corta en «ver más» a las 3 líneas.' },
           { id: 'x', nombre: 'X', limite: 280, pista: 'El enlace también ocupa.' },
+          { id: 'tt', nombre: 'TikTok', limite: 4000, pista: 'El enlace no se puede pulsar: va en la bio. Solo se lee la primera línea.' },
         ];
 
         function claveDe(d) { return d.lang + '/' + d.slug; }
@@ -638,8 +743,16 @@ const rootCss = `:root{${Object.entries(tokens)
           await ensureFonts();
           var pad = Math.round(W * 0.085);
           var labelSize = Math.max(13, Math.round(W * 0.019));
-          var safeBottom = fmt === 'story' ? Math.round(H * 0.10) : 0;
-          var safeTop = fmt === 'story' ? Math.round(H * 0.07) : 0;
+          // El 9:16 va a Stories y a TikTok con el mismo archivo. TikTok tapa
+          // más abajo que Instagram (pie, usuario y música ocupan cerca de un
+          // quinto), así que el margen se calcula para la peor de las dos: así
+          // no hay que generar dos versiones.
+          var safeBottom = fmt === 'story' ? Math.round(H * 0.18) : 0;
+          var safeTop = fmt === 'story' ? Math.round(H * 0.09) : 0;
+          // El carril de botones de TikTok (me gusta, comentarios, compartir)
+          // se come la banda derecha. En Instagram no hay nada ahí, pero el
+          // archivo es el mismo, así que el texto se queda a este lado.
+          var safeRight = fmt === 'story' ? Math.round(W * 0.16) : 0;
 
           if (slide.type === 'cover') {
             ctx.fillStyle = B.ink; ctx.fillRect(0, 0, W, H);
@@ -658,12 +771,12 @@ const rootCss = `:root{${Object.entries(tokens)
               ctx.fillText(B.stamp, pad, bTop + labelSize);
               resetSpacing(ctx);
               var bAvail = bandH - Math.round(pad * 0.75) - labelSize * 3.4 - safeBottom;
-              var bfit = fitLines(ctx, slide.title, W - pad * 2, bAvail, TW, DISPLAY, Math.round(W * 0.070), Math.round(W * 0.032));
+              var bfit = fitLines(ctx, slide.title, W - pad * 2 - safeRight, bAvail, TW, DISPLAY, Math.round(W * 0.070), Math.round(W * 0.032));
               ctx.font = TW + ' ' + bfit.size + 'px ' + DISPLAY; ctx.fillStyle = B.paper;
               var byy = bTop + labelSize * 2.6 + bfit.size * 0.86;
               for (var bi = 0; bi < bfit.lines.length; bi++) ctx.fillText(bfit.lines[bi], pad, byy + bi * bfit.size * 1.12);
               label(ctx, labelSize, rgba(B.paper, 0.6), 0);
-              ctx.fillText(B.site, pad, H - Math.round(pad * 0.4) - safeBottom * 0.4);
+              ctx.fillText(B.site, pad, H - Math.round(pad * 0.4) - safeBottom);
               resetSpacing(ctx);
               return;
             }
@@ -679,7 +792,7 @@ const rootCss = `:root{${Object.entries(tokens)
               ctx.strokeRect(inset + safeTop * 0.2, inset + safeTop, W - inset * 2 - safeTop * 0.4, H - inset * 2 - safeTop - safeBottom);
 
               var mAvail = H - safeTop - safeBottom;
-              var mfit = fitLines(ctx, slide.title, W - pad * 2.4, mAvail * 0.44, TW, DISPLAY, Math.round(W * 0.078), Math.round(W * 0.034));
+              var mfit = fitLines(ctx, slide.title, W - pad * 2.4 - safeRight, mAvail * 0.44, TW, DISPLAY, Math.round(W * 0.078), Math.round(W * 0.034));
               ctx.textAlign = 'center';
               label(ctx, labelSize, B.accent, Math.round(labelSize * 0.18));
               var mBlockH = labelSize * 2.6 + mfit.lines.length * mfit.size * 1.12;
@@ -705,7 +818,7 @@ const rootCss = `:root{${Object.entries(tokens)
             ctx.fillStyle = g; ctx.fillRect(0, gTop, W, H - gTop);
 
             var maxTitleH = H * (fmt === 'story' ? 0.30 : 0.34);
-            var fit = fitLines(ctx, slide.title, W - pad * 2, maxTitleH, TW, DISPLAY, Math.round(W * 0.072), Math.round(W * 0.034));
+            var fit = fitLines(ctx, slide.title, W - pad * 2 - safeRight, maxTitleH, TW, DISPLAY, Math.round(W * 0.072), Math.round(W * 0.034));
             var lineH = Math.round(fit.size * 1.12);
             var baseY = H - pad - safeBottom;
             var startY = baseY - fit.lines.length * lineH + lineH * 0.8;
@@ -721,7 +834,7 @@ const rootCss = `:root{${Object.entries(tokens)
             for (var i = 0; i < fit.lines.length; i++) ctx.fillText(fit.lines[i], pad, startY + i * lineH);
 
             label(ctx, labelSize, rgba(B.paper, 0.72), 0);
-            ctx.fillText(B.site, pad, H - Math.round(pad * 0.4) - safeBottom * 0.4);
+            ctx.fillText(B.site, pad, H - Math.round(pad * 0.4) - safeBottom);
             resetSpacing(ctx);
             return;
           }
@@ -732,7 +845,7 @@ const rootCss = `:root{${Object.entries(tokens)
           var areaTop = pad + safeTop;
           var areaBottom = footY - labelSize * 2.4;
           var areaH = areaBottom - areaTop;
-          var maxW = W - pad * 2;
+          var maxW = W - pad * 2 - safeRight;
           var ruleH = Math.max(4, Math.round(W * 0.007));
           var gapRule = Math.round(W * 0.032);
           var gapBody = Math.round(W * 0.038);
@@ -1128,7 +1241,7 @@ const rootCss = `:root{${Object.entries(tokens)
             var texto = textoDe(d, red);
             if (red === 'x') {
               window.open('https://x.com/intent/post?text=' + encodeURIComponent(texto), '_blank', 'noopener');
-              flash(btn, '↗');
+              flash(btn, 'Abierto ↗');
               return;
             }
             // El escribir arranca ya, con el documento todavía enfocado; la
@@ -1138,8 +1251,8 @@ const rootCss = `:root{${Object.entries(tokens)
               : Promise.reject();
             window.open(btn.dataset.rvIrHref, '_blank', 'noopener');
             copiando.then(
-              function () { flash(btn, '✓'); },
-              function () { copy(texto); flash(btn, '✓'); }
+              function () { flash(btn, 'Copiado ✓'); },
+              function () { copy(texto); flash(btn, 'Copiado ✓'); }
             );
             return;
           }
