@@ -35,6 +35,17 @@ posts.forEach((p) => {
 const sinRevisar = posts.length - marcadas.listo - marcadas.cambios;
 
 const published = posts.filter((p) => p.status === 'publish').length;
+
+// Redes del checklist de «ya publicado». Las mismas cuatro para las que el kit
+// genera texto; el post no está aquí porque su estado lo sabe el propio sitio.
+// `href` es la página desde la que se publica; X no lleva porque su enlace se
+// compone con el texto dentro.
+const CANALES = [
+  { id: 'ig', nombre: 'Instagram', href: brand.redes.ig },
+  { id: 'fb', nombre: 'Facebook', href: brand.redes.fb },
+  { id: 'li', nombre: 'LinkedIn', href: brand.redes.li },
+  { id: 'x', nombre: 'X', href: 'https://x.com/' },
+];
 const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
 const brandJson = JSON.stringify(brand).replace(/</g, '\\u003c');
 
@@ -99,17 +110,23 @@ const rootCss = `:root{${Object.entries(tokens)
     <style is:global>
       * { box-sizing: border-box; }
       body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-display); -webkit-font-smoothing: antialiased; }
-      .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 20px 96px; }
+      .wrap { max-width: 1180px; margin: 0 auto; padding: 0 20px 96px; }
 
-      header.kit-head { border-bottom: 2px solid var(--fg); padding-bottom: 22px; }
-      .eyebrow { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
-      h1 { font-family: var(--font-voz); font-size: clamp(34px, 6vw, 60px); line-height: .98; margin: 0 0 12px; letter-spacing: -.02em; }
-      h1 .dot { color: var(--accent); }
-      .lede { margin: 0; max-width: 64ch; color: var(--fg-soft); font-size: 16px; line-height: 1.5; }
-
-      .kit-nav { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 0 0 18px; }
-      .kit-cal { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 9px 16px; text-decoration: none; color: var(--muted); border: 1px solid var(--line); border-radius: var(--r-pill); }
-      .kit-cal:hover { color: var(--fg); background: var(--chip-soft); }
+      /* ── Cabecera del panel ───────────────────────────────────────────────
+         Una sola pieza fija: identidad y navegación arriba, filtros debajo.
+         Es una herramienta de trabajo diario, así que no hay titular grande
+         ni texto explicativo: lo que se necesita a mano es el filtro. */
+      .pnl { position: sticky; top: 0; z-index: 30; background: var(--bg); border-bottom: 1px solid var(--line); margin-bottom: 22px; }
+      .pnl-top { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; padding: 12px 0 11px; }
+      .pnl-titulo { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+      .pnl-link { font-family: var(--font-mono); font-weight: var(--w-label); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; padding: 8px 14px; text-decoration: none; color: var(--muted); border: 1px solid var(--line); border-radius: var(--r-pill); }
+      .pnl-link:hover { color: var(--fg); background: var(--chip-soft); }
+      /* El logotipo cierra la fila por la derecha: es la señal de en qué kit
+         estás, y por eso va pegado al borde y no se mueve. */
+      .pnl-logo { margin-left: auto; height: 36px; width: auto; max-width: 160px; display: block; object-fit: contain; object-position: right center; }
+      /* En móvil los filtros ocupan cuatro filas: fija son 350px de pantalla
+         comida, así que ahí la cabecera se va con el scroll. */
+      @media (max-width: 860px) { .pnl { position: static; } }
 
       /* Selector de kit: siempre visible, para no confundir una marca con la otra. */
       .kit-switch { display: flex; gap: 0; margin: 0; border: 1px solid var(--line); border-radius: var(--r-pill); overflow: hidden; width: max-content; max-width: 100%; }
@@ -118,7 +135,8 @@ const rootCss = `:root{${Object.entries(tokens)
       .kit-switch a:hover { color: var(--fg); background: var(--chip-soft); }
       .kit-switch a.on { background: var(--fg); color: var(--bg); }
 
-      .toolbar { position: sticky; top: 0; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); padding: 14px 0; margin-bottom: 26px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+      /* Dentro de .pnl, que ya es la parte fija. */
+      .toolbar { border-top: 1px solid var(--line); padding: 11px 0; display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
       .toolbar label { font-family: var(--font-mono); font-size: 12px; display: flex; gap: 7px; align-items: center; cursor: pointer; }
       .toolbar input[type='search'] { font-family: var(--font-mono); font-size: 13px; padding: 8px 12px; border: 1px solid var(--line); background: var(--card); color: var(--fg); border-radius: var(--r-pill); min-width: 210px; }
       .toolbar input[type='checkbox'] { accent-color: var(--accent); }
@@ -196,9 +214,12 @@ const rootCss = `:root{${Object.entries(tokens)
 
       .modal-foot { padding: 14px 22px; border-top: 1px solid var(--line); display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
       .modal-foot .spacer { flex: 1; }
-      .seg { display: inline-flex; border: 1px solid var(--fg); border-radius: var(--r-pill); overflow: hidden; }
+      .seg { display: inline-flex; align-items: stretch; border: 1px solid var(--fg); border-radius: var(--r-pill); overflow: hidden; }
       .seg button { border: 0; border-radius: 0; padding: 7px 14px; }
       .seg button.on { background: var(--fg); color: var(--pop); }
+      /* Dos filtros seguidos con un botón «Todas» cada uno no se distinguen:
+         cada grupo lleva su nombre dentro, como parte del control. */
+      .seg-label { display: flex; align-items: center; padding: 0 11px; background: var(--chip); border-right: 1px solid var(--line); font-family: var(--font-mono); font-weight: var(--w-label); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
 
       /* ── Editor de textos por red ─────────────────────────────────────── */
       #tmodal { position: fixed; inset: 0; z-index: 110; background: var(--scrim); display: none; }
@@ -243,40 +264,50 @@ const rootCss = `:root{${Object.entries(tokens)
   </head>
   <body>
     <div class="wrap">
-      <div class="kit-nav">
-        <nav class="kit-switch" aria-label="Elegir kit">
-          {KITS.map((k) => (
-            <a href={k.href} class={k.id === brand.id ? 'on' : ''} aria-current={k.id === brand.id ? 'page' : undefined}>
-              {k.label}
-            </a>
-          ))}
-        </nav>
-        <a class="kit-cal" href="/calendario/">Calendario →</a>
-      </div>
+      {/* Cabecera del panel: fija arriba, con el logotipo de la marca a la
+          derecha. Es lo único que distingue un kit del otro de un vistazo,
+          así que no se va con el scroll. */}
+      <header class="pnl">
+        <div class="pnl-top">
+          <span class="pnl-titulo">Kit de redes</span>
+          <nav class="kit-switch" aria-label="Elegir kit">
+            {KITS.map((k) => (
+              <a href={k.href} class={k.id === brand.id ? 'on' : ''} aria-current={k.id === brand.id ? 'page' : undefined}>
+                {k.label}
+              </a>
+            ))}
+          </nav>
+          <a class="pnl-link" href="/calendario/">Calendario</a>
+          {brand.cmsEditHref && <a class="pnl-link" href="/admin/" target="_blank" rel="noopener">Editor</a>}
+          <img class="pnl-logo" src={brand.logo} alt={brand.org} width="120" height="40" />
+        </div>
 
-      <header class="kit-head">
-        <p class="eyebrow">{brand.org} · Panel interno</p>
-        <h1>Kit de redes<span class="dot">.</span></h1>
-        <p class="lede">{brand.lede}</p>
+        <div class="toolbar">
+          <input type="search" id="q" placeholder="Buscar…" aria-label="Buscar" />
+          <label><input type="checkbox" id="overlay" checked /> Portada con título y marca</label>
+          <span class="seg" id="styleSeg" title="Diseño de las imágenes con texto">
+            <button data-style="cinta" class="on">Cinta</button>
+            <button data-style="bloque">Bloque</button>
+            <button data-style="marco">Marco</button>
+          </span>
+          <label><input type="checkbox" id="onlyPub" /> Solo en la web</label>
+          <span class="seg" id="revSeg">
+            <span class="seg-label">Revisión</span>
+            <button data-rev="all" class="on">Todas</button>
+            <button data-rev="sin">Sin revisar (<span data-rv-count="sin">{sinRevisar}</span>)</button>
+            <button data-rev="listo">Listos (<span data-rv-count="listo">{marcadas.listo}</span>)</button>
+            <button data-rev="cambios">Con notas (<span data-rv-count="cambios">{marcadas.cambios}</span>)</button>
+          </span>
+          <span class="seg" id="pubSeg">
+            <span class="seg-label">En redes</span>
+            <button data-pub="all" class="on">Todas</button>
+            <button data-pub="no">Sin subir (<span data-rv-count="pubno">{posts.length}</span>)</button>
+            <button data-pub="parte">A medias (<span data-rv-count="pubparte">0</span>)</button>
+            <button data-pub="todo">Subidas (<span data-rv-count="pubtodo">0</span>)</button>
+          </span>
+          <span class="count" id="count">{published} en la web · {posts.length} en total</span>
+        </div>
       </header>
-
-      <div class="toolbar">
-        <input type="search" id="q" placeholder="Buscar…" aria-label="Buscar" />
-        <label><input type="checkbox" id="overlay" checked /> Portada con título y marca</label>
-        <span class="seg" id="styleSeg" title="Diseño de las imágenes con texto">
-          <button data-style="cinta" class="on">Cinta</button>
-          <button data-style="bloque">Bloque</button>
-          <button data-style="marco">Marco</button>
-        </span>
-        <label><input type="checkbox" id="onlyPub" /> Solo publicados</label>
-        <span class="seg" id="revSeg" title="Filtrar por estado de revisión">
-          <button data-rev="all" class="on">Todas</button>
-          <button data-rev="sin">Sin revisar (<span data-rv-count="sin">{sinRevisar}</span>)</button>
-          <button data-rev="listo">Listos (<span data-rv-count="listo">{marcadas.listo}</span>)</button>
-          <button data-rev="cambios">Con notas (<span data-rv-count="cambios">{marcadas.cambios}</span>)</button>
-        </span>
-        <span class="count" id="count">{published} publicados · {posts.length} en total</span>
-      </div>
 
       {posts.map((p, i) => (
         <article
@@ -341,6 +372,12 @@ const rootCss = `:root{${Object.entries(tokens)
               nota={revisiones[`${p.lang}/${p.slug}`]?.nota || ''}
               fecha={revisiones[`${p.lang}/${p.slug}`]?.fecha_prevista || ''}
               label="Revisión"
+              canales={CANALES}
+              postPublicado={p.status === 'publish'}
+              verHref={p.url}
+              editarHref={brand.cmsEditHref
+                .replace('{lang}', p.lang)
+                .replace('{slug}', p.slug)}
             />
           </div>
         </article>
@@ -1081,6 +1118,32 @@ const rootCss = `:root{${Object.entries(tokens)
           var d = POSTS[+card.dataset.i];
           var withOverlay = document.getElementById('overlay').checked;
 
+          // ── Atajo para publicar ────────────────────────────────────────
+          // Va lo primero y sin `await` por delante: window.open tiene que
+          // caer dentro del gesto del clic o el navegador lo bloquea.
+          // Ninguna de las tres redes admite el texto en el enlace, así que se
+          // deja en el portapapeles y se abre su página. X sí lo admite.
+          if (btn.dataset.rvIr) {
+            var red = btn.dataset.rvIr;
+            var texto = textoDe(d, red);
+            if (red === 'x') {
+              window.open('https://x.com/intent/post?text=' + encodeURIComponent(texto), '_blank', 'noopener');
+              flash(btn, '↗');
+              return;
+            }
+            // El escribir arranca ya, con el documento todavía enfocado; la
+            // ventana se abre en este mismo tick.
+            var copiando = navigator.clipboard && navigator.clipboard.writeText
+              ? navigator.clipboard.writeText(texto)
+              : Promise.reject();
+            window.open(btn.dataset.rvIrHref, '_blank', 'noopener');
+            copiando.then(
+              function () { flash(btn, '✓'); },
+              function () { copy(texto); flash(btn, '✓'); }
+            );
+            return;
+          }
+
           if (btn.dataset.adapt) { openAdapter(d, btn.dataset.adapt); return; }
 
           var dl = btn.dataset.dl;
@@ -1240,14 +1303,16 @@ const rootCss = `:root{${Object.entries(tokens)
 
         // ── Filtros ──────────────────────────────────────────────────────
         var q = document.getElementById('q'), onlyPub = document.getElementById('onlyPub'), countEl = document.getElementById('count');
-        var revFilter = 'all';
+        var revFilter = 'all', pubFilter = 'all';
         function applyFilter() {
           var term = (q.value || '').trim().toLowerCase(), pubOnly = onlyPub.checked, shown = 0;
           document.querySelectorAll('.card').forEach(function (card) {
-            // data-rv-state lo escribe RevisionBar; aquí solo se combina.
+            // data-rv-state y data-rv-pub-state los escribe RevisionBar; aquí
+            // solo se combinan con los filtros propios del kit.
             var show =
               (!term || card.dataset.title.indexOf(term) > -1) &&
               (!pubOnly || card.dataset.status === 'publish') &&
+              (pubFilter === 'all' || card.dataset.rvPubState === pubFilter) &&
               (revFilter === 'all' || card.dataset.rvState === revFilter);
             card.classList.toggle('is-hidden', !show);
             if (show) shown++;
@@ -1260,6 +1325,12 @@ const rootCss = `:root{${Object.entries(tokens)
           var b = e.target.closest('button'); if (!b) return;
           revFilter = b.dataset.rev;
           document.querySelectorAll('#revSeg button').forEach(function (x) { x.classList.toggle('on', x === b); });
+          applyFilter();
+        });
+        document.getElementById('pubSeg').addEventListener('click', function (e) {
+          var b = e.target.closest('button'); if (!b) return;
+          pubFilter = b.dataset.pub;
+          document.querySelectorAll('#pubSeg button').forEach(function (x) { x.classList.toggle('on', x === b); });
           applyFilter();
         });
         // Al marcar o desmarcar hay que rehacer el filtro.

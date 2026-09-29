@@ -13,6 +13,8 @@ window.ADAR_GH = (function () {
     'Revisiones escritas desde el panel interno. Cada clave es «idioma/slug». ' +
     'estado: «listo» (listo para publicar) o «cambios» (hay que corregir algo, la nota dice qué). ' +
     'fecha_prevista: cuándo toca publicarlo. textos: los pies de foto de cada red. ' +
+    'publicado: qué redes se han publicado ya y cuándo (el post no está aquí: ' +
+    'eso lo sabe el propio sitio). ' +
     'Lo escribe la propia página; no hace falta editarlo a mano.';
 
   var CLAVE_TOKEN = 'adar_gh_token';
@@ -127,6 +129,7 @@ window.ADAR_GH = (function () {
   function tieneAlgo(e) {
     if (!e) return false;
     if (e.estado || e.nota || e.fecha_prevista) return true;
+    if (e.publicado && Object.keys(e.publicado).some(function (k) { return e.publicado[k]; })) return true;
     return !!(e.textos && Object.keys(e.textos).some(function (k) { return (e.textos[k] || '').trim(); }));
   }
 

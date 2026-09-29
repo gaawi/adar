@@ -16,6 +16,9 @@ export interface KitBrand {
   stamp: string;
   /** Dominio que firma el pie de las imágenes. */
   site: string;
+  /** Logotipo del panel: va fijo arriba a la derecha y es lo que distingue
+   *  un kit del otro de un vistazo. Tinta oscura sobre fondo claro. */
+  logo: string;
   /** Idioma de los textos que acaban en las imágenes y los pies de foto. */
   copyLang: 'es' | 'en';
 
@@ -68,8 +71,6 @@ export interface KitBrand {
   fontLoads: string[];
 
   // ── Textos ─────────────────────────────────────────────────────────────
-  /** Entradilla de la cabecera del kit. */
-  lede: string;
   /** Cómo se llama una ficha: «artículo» en ADAR, «nota» en CreArtBox. */
   unit: { one: string; many: string };
   baseTags: string[];
@@ -89,6 +90,20 @@ export interface KitBrand {
   /** Clave de localStorage. Festival ADAR la comparte con /borradores/ para
    *  que las dos pantallas vean lo mismo sin tener que subir nada. */
   reviewLS: string;
+  /**
+   * Plantilla del enlace de edición en el panel; {lang} y {slug} se sustituyen.
+   * Vacío = esta marca no se edita desde aquí (CreArtBox todavía no tiene
+   * panel propio, su material se escribe a mano en kit-creartbox.ts).
+   */
+  cmsEditHref: string;
+  /**
+   * Desde dónde se publica en cada red. El botón «↗» de cada casilla copia el
+   * texto de esa red y abre esta página, que es lo más cerca que se puede
+   * llegar: ninguna de las tres admite que el texto vaya en el enlace.
+   * X no está aquí porque sí lo admite y se compone sobre la marcha.
+   * Vacío = esa red no tiene botón.
+   */
+  redes: { ig: string; fb: string; li: string };
   /** ¿La fecha de la pieza es su fecha de publicación? En el blog de ADAR sí;
    *  en CreArtBox es la fecha del concierto, así que en el calendario solo
    *  cuenta la fecha prevista que se ponga a mano. */
@@ -108,6 +123,7 @@ export const BRANDS: Record<string, KitBrand> = {
     org: 'Festival ADAR',
     stamp: 'FESTIVAL ADAR',
     site: 'festivaladar.com',
+    logo: '/logos/adar.png',
     copyLang: 'es',
     theme: 'light',
     radius: '999px',
@@ -139,8 +155,6 @@ export const BRANDS: Record<string, KitBrand> = {
     titleWeight: '740',
     fontLoads: ['740 64px "Commissioner"', '400 32px "Chivo"', '700 32px "Chivo"', '500 24px "Chivo Mono"'],
 
-    lede:
-      'Convierte cada artículo del blog en un post listo para subir tú mismo. «Adaptar a Instagram» lo transforma en un carrusel de varias imágenes que puedes editar antes de descargar. Todo se genera aquí, en tu navegador.',
     unit: { one: 'artículo', many: 'artículos' },
     baseTags: ['FestivalADAR', 'Asturias', 'MúsicaClásica', 'MedioRural'],
     ctaTitle: 'Léelo entero',
@@ -153,6 +167,12 @@ export const BRANDS: Record<string, KitBrand> = {
     draftNote: 'Es un borrador: el enlace aún no existe. Publícalo antes de citar la URL.',
     reviewPath: 'src/data/revisiones.json',
     reviewLS: 'adar_revisiones_v1',
+    cmsEditHref: '/admin/#/collections/blog_{lang}/entries/{slug}',
+    redes: {
+      ig: 'https://www.instagram.com/create/select/',
+      fb: 'https://business.facebook.com/latest/posts/published_posts',
+      li: 'https://www.linkedin.com/company/73443698/admin/page-posts/published/?share=true',
+    },
     calendarUsesPostDate: true,
   },
 
@@ -164,8 +184,12 @@ export const BRANDS: Record<string, KitBrand> = {
     org: 'CreArtBox',
     stamp: 'CREARTBOX',
     site: 'creartbox.nyc',
+    logo: '/logos/creartbox.png',
     copyLang: 'en',
-    theme: 'dark',
+    // El panel va en claro, como el de ADAR: lo que distingue un kit del otro
+    // es el logotipo fijo de la cabecera, no el color de fondo. Las imágenes
+    // que se generan siguen siendo sala y hueso; eso no lo toca el tema.
+    theme: 'light',
     radius: '0',
 
     ink: '#070706', // --sala
@@ -175,11 +199,13 @@ export const BRANDS: Record<string, KitBrand> = {
     overPhotoInk: '#F2EFE8', // --papel: su paleta no admite blanco puro
     // Una sola señal por pantalla: el filete ámbar. El titular va en papel.
     ctaInk: '#F2EFE8',
-    inkSoft: '#C9C3B9', // --papel-medio
-    muted: '#9C968C', // --papel-dim
-    line: '#2B2825', // --filete
-    card: '#100F0E', // --foso
-    stage: '#0B0A09',
+    // Estos cinco son solo del panel, no se dibujan: son la escala de la
+    // marca leída sobre hueso en vez de sobre sala.
+    inkSoft: '#3E3A36',
+    muted: '#6F6962',
+    line: '#DCD7CC',
+    card: '#F8F6F1',
+    stage: '#E7E3D9',
 
     // Su paleta no tiene superficie clara, así que las diapositivas de texto
     // usan --foso: se distinguen del fondo sin salirse de la marca.
@@ -201,8 +227,6 @@ export const BRANDS: Record<string, KitBrand> = {
       '700 32px "Archivo"',
     ],
 
-    lede:
-      'El mismo kit, con la identidad de CreArtBox: fondo sala, tinta hueso, un solo ámbar por imagen, Literata y Archivo, esquinas rectas. Los textos que van dentro de las imágenes están en inglés. El material sale de la nota de prensa de la temporada; se edita en src/data/kit-creartbox.ts hasta que la web tenga su propio panel.',
     unit: { one: 'nota', many: 'notas' },
     baseTags: ['CreArtBox', 'ChamberMusic', 'NewYork', 'NewMusic'],
     ctaTitle: 'Read the release',
@@ -215,6 +239,14 @@ export const BRANDS: Record<string, KitBrand> = {
     draftNote: 'Aún no está publicado: el enlace no existe todavía.',
     reviewPath: 'src/data/revisiones-creartbox.json',
     reviewLS: 'creartbox_revisiones_v1',
+    cmsEditHref: '',
+    // Falta el identificador de la página de empresa de CreArtBox; hasta que
+    // esté, LinkedIn se queda sin botón (la casilla sigue estando).
+    redes: {
+      ig: 'https://www.instagram.com/create/select/',
+      fb: 'https://business.facebook.com/latest/posts/published_posts',
+      li: '',
+    },
     calendarUsesPostDate: false,
   },
 };

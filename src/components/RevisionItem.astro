@@ -1,7 +1,8 @@
 ---
 // Controles de revisión de UNA ficha: listo / hay que cambiar algo / sin marcar,
-// la nota, y la fecha prevista de publicación. El comportamiento lo pone
-// <RevisionBar />, que busca estos elementos por sus atributos data-rv-*.
+// la nota, la fecha prevista de publicación y, si se piden, el checklist de
+// «ya publicado» por red. El comportamiento lo pone <RevisionBar />, que busca
+// estos elementos por sus atributos data-rv-*.
 //
 // Quien lo use tiene que marcar la tarjeta contenedora con
 //   data-rv-item data-rv-key="<clave>" data-rv-title="<título>"
@@ -16,8 +17,32 @@ interface Props {
   label?: string;
   /** Clase extra, para que cada página lo encaje en su maquetación. */
   class?: string;
+  /**
+   * Redes del checklist de publicación. Lista vacía (lo normal fuera del kit)
+   * = sin checklist.
+   */
+  canales?: { id: string; nombre: string; href?: string }[];
+  /**
+   * Si el post ya está en la web. No se marca a mano: lo sabe el sitio, que se
+   * construye desde el mismo contenido. Así no puede quedarse desfasado ni
+   * depender de que alguien se acuerde de marcarlo.
+   */
+  postPublicado?: boolean;
+  /** URL pública del post. Solo se enlaza si ya está publicado. */
+  verHref?: string;
+  /** URL de edición en el panel. Vacío = esta pieza no se edita desde aquí. */
+  editarHref?: string;
 }
-const { nota = '', fecha = '', label = '', class: extra = '' } = Astro.props;
+const {
+  nota = '',
+  fecha = '',
+  label = '',
+  class: extra = '',
+  canales = [],
+  postPublicado = false,
+  verHref = '',
+  editarHref = '',
+} = Astro.props;
 ---
 
 <div class={`rv ${extra}`} data-rv-controls>
@@ -41,4 +66,54 @@ const { nota = '', fecha = '', label = '', class: extra = '' } = Astro.props;
       placeholder="Ej.: demasiado largo, el segundo párrafo sobra, falta decir dónde fue…"
     >{nota}</textarea>
   </label>
+
+  {canales.length > 0 && (
+    <div class="rv-pub" data-rv-pub-wrap>
+      <span class="rv-note-label">Ya publicado</span>
+      <div class="rv-pub-list">
+        {/* El post va primero porque es el primer paso: hasta que no está en
+            la web, el enlace de los pies de foto no lleva a ninguna parte. */}
+        <span class="rv-pub-post">
+          <label
+            class="rv-pub-item is-auto"
+            title={
+              postPublicado
+                ? 'El post ya está en la web. Se marca solo: no hace falta tocarlo.'
+                : 'Todavía es un borrador. Publícalo en el editor y aquí se marca solo.'
+            }
+          >
+            <input type="checkbox" disabled checked={postPublicado} data-rv-pub-auto="post" />
+            <span>Post</span>
+          </label>
+          {postPublicado && verHref && (
+            <a class="rv-pub-link" href={verHref} target="_blank" rel="noopener">Ver post ↗</a>
+          )}
+          {editarHref && (
+            <a class="rv-pub-link" href={editarHref} target="_blank" rel="noopener">
+              {postPublicado ? 'Editar post ↗' : 'Publicar en el editor ↗'}
+            </a>
+          )}
+        </span>
+        {canales.map((c) => (
+          <span class="rv-pub-red">
+            <label class="rv-pub-item">
+              <input type="checkbox" data-rv-pub={c.id} />
+              <span>{c.nombre}</span>
+            </label>
+            {c.href && (
+              <button
+                type="button"
+                class="rv-pub-ir"
+                data-rv-ir={c.id}
+                data-rv-ir-href={c.href}
+                title={`Copia el texto de ${c.nombre} y abre la página para publicar`}
+                aria-label={`Publicar en ${c.nombre}`}
+              >↗</button>
+            )}
+          </span>
+        ))}
+      </div>
+      <span class="rv-pub-aviso" data-rv-pub-aviso hidden></span>
+    </div>
+  )}
 </div>
