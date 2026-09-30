@@ -316,6 +316,13 @@ export interface KitSource {
   body: string;
   /** URL pública; si falta se compone con `urlBase`. */
   url?: string;
+  /**
+   * Qué es la pieza. `post`: hay un artículo detrás y el enlace lleva a él.
+   * `social`: solo va a redes, el enlace lleva a la página de la que habla
+   * (un concierto, una convocatoria) y no hay nada que publicar en la web.
+   * Por defecto, `post`.
+   */
+  kind?: "post" | "social";
 }
 
 export interface KitPost extends Omit<KitSource, 'body' | 'url'> {
@@ -346,6 +353,7 @@ export function buildPost(src: KitSource, brand: KitBrand): KitPost {
     date: src.date,
     tags: src.tags,
     url: src.url || `https://${brand.site}/${src.lang}/blog/${src.slug}/`,
+    kind: src.kind || "post",
     slides,
     plain: clean(raw.replace(/^#{1,6}\s+/gm, '')).slice(0, 4000),
     plainFull: raw

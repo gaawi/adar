@@ -287,6 +287,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: 'currents-who-plays',
+    kind: 'social',
     title: 'Who is on stage on 30 October',
     excerpt:
       'Guillermo Laporta, flute. Josefina Urraca, piano. Emilie-Anne Gendron, violin. Matthew Cohen, viola. Julia Yang, cello.',
@@ -312,6 +313,7 @@ Gendron is a longtime member of the Momenta Quartet and one of the concertmaster
   {
     lang: 'en',
     slug: 'currents-the-night',
+    kind: 'social',
     title: 'Sixty minutes, no interval',
     excerpt:
       'Currents runs about an hour, played straight through. Tickets from $15. The premium seats are the closest rows to the players, and come with a small treat on the night, usually chocolate.',

@@ -266,7 +266,8 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
           (g.fecha_prevista || '') !== (l.fecha_prevista || '') ||
           JSON.stringify(g.textos || {}) !== JSON.stringify(l.textos || {}) ||
           JSON.stringify(g.publicado || {}) !== JSON.stringify(l.publicado || {}) ||
-          JSON.stringify(g.enlaces || {}) !== JSON.stringify(l.enlaces || {})) sucio[k] = true;
+          JSON.stringify(g.enlaces || {}) !== JSON.stringify(l.enlaces || {}) ||
+          g.orden !== l.orden) sucio[k] = true;
     });
 
     /** ¿Hay algún enlace de publicación guardado? */
@@ -434,7 +435,8 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     function actualizarBarra() {
       var n = Object.keys(sucio).length;
       var marcadas = Object.keys(estado).filter(function (k) {
-        return estado[k] && (estado[k].estado || hayPublicado(estado[k]) || hayEnlaces(estado[k]));
+        return estado[k] && (estado[k].estado || hayPublicado(estado[k]) ||
+          hayEnlaces(estado[k]) || typeof estado[k].orden === 'number');
       }).length;
       var hay = !!(n || marcadas);
       document.body.classList.toggle('rv-bar-on', hay);
@@ -623,6 +625,20 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
         persistir();
         var ficha = document.querySelector('[data-rv-item][data-rv-key="' + (window.CSS && CSS.escape ? CSS.escape(k) : k) + '"]');
         if (ficha) pintar(ficha);
+        avisarCambio();
+      },
+      // Para cuando cambian muchas a la vez, como al reordenar la lista:
+      // un solo guardado y un solo aviso, no treinta y dos.
+      guardarVarios: function (entradas) {
+        var ahora = new Date().toISOString();
+        entradas.forEach(function (e) {
+          estado[e.clave] = Object.assign({}, estado[e.clave], e.cambios, {
+            titulo: e.titulo || (estado[e.clave] || {}).titulo || '',
+            fecha: ahora,
+          });
+          sucio[e.clave] = true;
+        });
+        persistir();
         avisarCambio();
       },
     };

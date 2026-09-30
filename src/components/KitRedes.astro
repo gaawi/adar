@@ -172,6 +172,29 @@ const rootCss = `:root{${Object.entries(tokens)
       /* ── Plegado ───────────────────────────────────────────────────────
          Plegada queda el título, los datos y poco más: así caben muchas en
          pantalla cuando lo que buscas es una en concreto. */
+      /* ── Tipo de pieza ─────────────────────────────────────────────────
+         «Post» lleva artículo detrás; «Solo redes» no, y su enlace va a la
+         página de la que habla. Cambia lo que hay que hacer con ella. */
+      .badge.tipo { border: 1px solid currentColor; background: transparent; }
+      .badge.tipo.post { color: var(--fg); opacity: .55; }
+      .badge.tipo.social { color: var(--accent); opacity: 1; background: var(--chip); }
+
+      /* ── Arrastrar para ordenar ────────────────────────────────────────
+         El orden a mano se guarda con las revisiones: lo urgente arriba, y
+         quien entre después lo ve igual. */
+      .card-grip {
+        flex: 0 0 auto;
+        border: 0; background: transparent; color: var(--muted);
+        padding: 0 2px; font-size: 15px; line-height: 1; cursor: grab;
+        border-radius: 0; letter-spacing: -.1em;
+      }
+      .card-grip:hover { background: transparent; color: var(--fg); }
+      .card-grip:active { cursor: grabbing; }
+      .card.is-dragging { opacity: .35; }
+      /* Dónde va a caer: un filete de acento en el borde que toca. */
+      .card.drop-antes { box-shadow: 0 -3px 0 0 var(--accent); }
+      .card.drop-despues { box-shadow: 0 3px 0 0 var(--accent); }
+
       .card-fold {
         flex: 0 0 auto; margin-left: auto;
         width: 38px; height: 38px; display: grid; place-items: center;
@@ -456,7 +479,14 @@ const rootCss = `:root{${Object.entries(tokens)
             <button data-pub="parte">A medias (<span data-rv-count="pubparte">0</span>)</button>
             <button data-pub="todo">Subidas (<span data-rv-count="pubtodo">0</span>)</button>
           </span>
+          <span class="seg" id="tipoSeg">
+            <span class="seg-label">Tipo</span>
+            <button data-tipo="all" class="on">Todas</button>
+            <button data-tipo="post">Post ({posts.filter((p) => p.kind !== 'social').length})</button>
+            <button data-tipo="social">Solo redes ({posts.filter((p) => p.kind === 'social').length})</button>
+          </span>
           <button id="plegarTodo" aria-pressed="false" title="Ver solo el título y los datos de cada pieza">Plegar todas</button>
+          <button id="ordenFecha" title="Deshacer el orden a mano y volver al orden por fecha" hidden>Orden por fecha</button>
           <span class="count" id="count">{published} en la web · {posts.length} en total</span>
         </div>
       </header>
@@ -466,7 +496,9 @@ const rootCss = `:root{${Object.entries(tokens)
           class="card"
           data-title={p.title.toLowerCase()}
           data-status={p.status}
+          data-kind={p.kind === 'social' ? 'social' : 'post'}
           data-i={i}
+          data-nat={i}
           data-rv-item
           data-rv-key={`${p.lang}/${p.slug}`}
           data-rv-title={p.title}
@@ -491,6 +523,9 @@ const rootCss = `:root{${Object.entries(tokens)
 
           <div class="card-body">
             <h2>
+              {/* Asa de arrastre: la ficha entera no puede serlo, está llena de
+                  botones y campos que hay que poder seleccionar. */}
+              <button class="card-grip" data-grip title="Arrastra para mover esta pieza" aria-label="Mover esta pieza">⠿</button>
               <span>{p.title}</span>
               {/* Plegar la ficha: con treinta y dos, verlas todas de un
                   vistazo vale más que tener los botones a mano. Va a la
@@ -499,6 +534,12 @@ const rootCss = `:root{${Object.entries(tokens)
               <button class="card-fold" data-fold aria-expanded="true" title="Plegar o desplegar esta ficha">▾</button>
             </h2>
             <p class="meta">
+              {/* Qué es: una pieza con artículo detrás o algo que solo va a
+                  redes. Cambia lo que hay que hacer con ella, así que va
+                  delante del todo. */}
+              <span class={`badge tipo ${p.kind === 'social' ? 'social' : 'post'}`}>
+                {p.kind === 'social' ? 'Solo redes' : 'Post'}
+              </span>
               <span class={`badge ${p.status === 'publish' ? 'pub' : 'draft'}`}>
                 {p.status === 'publish' ? brand.statusLabels.publish : brand.statusLabels.draft}
               </span>
@@ -517,8 +558,8 @@ const rootCss = `:root{${Object.entries(tokens)
               </div>
 
               <div class="red-fila">
-                <span class="red-n">Post en la web</span>
-                <span class="red-img"><em class="red-na">la foto de arriba</em></span>
+                <span class="red-n">{p.kind === 'social' ? 'Página' : 'Post en la web'}</span>
+                <span class="red-img"><em class="red-na">{p.kind === 'social' ? 'no hay artículo que publicar' : 'la foto de arriba'}</em></span>
                 <span class="red-txt"><button data-textos>Ver y editar textos</button></span>
                 <span class="red-ir">
                   {p.status === 'publish' && <a class="red-a" href={p.url} target="_blank" rel="noopener">Ver ↗</a>}
@@ -1556,7 +1597,7 @@ const rootCss = `:root{${Object.entries(tokens)
 
         // ── Filtros ──────────────────────────────────────────────────────
         var q = document.getElementById('q'), onlyPub = document.getElementById('onlyPub'), countEl = document.getElementById('count');
-        var revFilter = 'all', pubFilter = 'all';
+        var revFilter = 'all', pubFilter = 'all', tipoFilter = 'all';
         function applyFilter() {
           var term = (q.value || '').trim().toLowerCase(), pubOnly = onlyPub.checked, shown = 0;
           document.querySelectorAll('.card').forEach(function (card) {
@@ -1566,6 +1607,7 @@ const rootCss = `:root{${Object.entries(tokens)
               (!term || card.dataset.title.indexOf(term) > -1) &&
               (!pubOnly || card.dataset.status === 'publish') &&
               (pubFilter === 'all' || card.dataset.rvPubState === pubFilter) &&
+              (tipoFilter === 'all' || card.dataset.kind === tipoFilter) &&
               (revFilter === 'all' || card.dataset.rvState === revFilter);
             card.classList.toggle('is-hidden', !show);
             if (show) shown++;
@@ -1609,8 +1651,125 @@ const rootCss = `:root{${Object.entries(tokens)
           document.querySelectorAll('#pubSeg button').forEach(function (x) { x.classList.toggle('on', x === b); });
           applyFilter();
         });
+        document.getElementById('tipoSeg').addEventListener('click', function (e) {
+          var b = e.target.closest('button'); if (!b) return;
+          tipoFilter = b.dataset.tipo;
+          document.querySelectorAll('#tipoSeg button').forEach(function (x) { x.classList.toggle('on', x === b); });
+          applyFilter();
+        });
         // Al marcar o desmarcar hay que rehacer el filtro.
         document.addEventListener('rv:change', applyFilter);
+
+        // ── Orden a mano ─────────────────────────────────────────────────
+        // Se arrastra por el asa y se guarda con las revisiones, así que lo
+        // que tú pongas arriba lo ve arriba quien entre después. Las piezas
+        // sin posición guardada van detrás, en su orden natural.
+        var btnFecha = document.getElementById('ordenFecha');
+        if (!window.ADAR_REV) btnFecha.hidden = true;
+
+        function clave(card) { return card.dataset.rvKey; }
+        function cards() { return [].slice.call(document.querySelectorAll('.card')); }
+
+        function hayOrdenAMano() {
+          return cards().some(function (c) {
+            return typeof (ADAR_REV.obtener(clave(c)).orden) === 'number';
+          });
+        }
+
+        function ordenar() {
+          var cs = cards();
+          if (!cs.length) return;
+          var conOrden = [], sinOrden = [];
+          cs.forEach(function (c) {
+            var o = ADAR_REV.obtener(clave(c)).orden;
+            if (typeof o === 'number') conOrden.push({ c: c, o: o });
+            else sinOrden.push({ c: c, o: Number(c.dataset.nat) });
+          });
+          conOrden.sort(function (a, b) { return a.o - b.o; });
+          sinOrden.sort(function (a, b) { return a.o - b.o; });
+          // Las fichas van todas seguidas, justo antes del bloque de ayuda:
+          // así la cabecera se queda arriba y la ayuda al final.
+          var padre = cs[0].parentNode;
+          var ayuda = padre.querySelector('.help');
+          conOrden.concat(sinOrden).forEach(function (x) { padre.insertBefore(x.c, ayuda); });
+          btnFecha.hidden = !hayOrdenAMano();
+        }
+
+        function guardarOrden() {
+          var entradas = cards().map(function (c, i) {
+            return { clave: clave(c), cambios: { orden: i }, titulo: c.dataset.rvTitle || "" };
+          });
+          ADAR_REV.guardarVarios(entradas);
+          btnFecha.hidden = false;
+        }
+
+        var arrastrada = null;
+        document.addEventListener("dragstart", function (e) {
+          var grip = e.target.closest("[data-grip]");
+          var card = e.target.closest(".card");
+          if (!grip || !card) { if (card) e.preventDefault(); return; }
+          arrastrada = card;
+          card.classList.add("is-dragging");
+          e.dataTransfer.effectAllowed = "move";
+          // Firefox no arranca el arrastre sin datos.
+          try { e.dataTransfer.setData("text/plain", clave(card)); } catch (err) {}
+        });
+
+        document.addEventListener("dragover", function (e) {
+          if (!arrastrada) return;
+          var sobre = e.target.closest(".card");
+          if (!sobre || sobre === arrastrada) return;
+          e.preventDefault();
+          e.dataTransfer.dropEffect = "move";
+          var r = sobre.getBoundingClientRect();
+          var antes = e.clientY < r.top + r.height / 2;
+          cards().forEach(function (c) { c.classList.remove("drop-antes", "drop-despues"); });
+          sobre.classList.add(antes ? "drop-antes" : "drop-despues");
+        });
+
+        document.addEventListener("drop", function (e) {
+          if (!arrastrada) return;
+          var sobre = e.target.closest(".card");
+          if (!sobre || sobre === arrastrada) return;
+          e.preventDefault();
+          var r = sobre.getBoundingClientRect();
+          var antes = e.clientY < r.top + r.height / 2;
+          sobre.parentNode.insertBefore(arrastrada, antes ? sobre : sobre.nextSibling);
+          cards().forEach(function (c) { c.classList.remove("drop-antes", "drop-despues"); });
+          guardarOrden();
+          toast("Orden guardado en este navegador. Súbelo para que lo vea quien publique.");
+        });
+
+        document.addEventListener("dragend", function () {
+          if (arrastrada) arrastrada.classList.remove("is-dragging");
+          cards().forEach(function (c) {
+            c.classList.remove("drop-antes", "drop-despues");
+            c.draggable = false;
+          });
+          arrastrada = null;
+        });
+
+        btnFecha.addEventListener("click", function () {
+          ADAR_REV.guardarVarios(cards().map(function (c) {
+            return { clave: clave(c), cambios: { orden: undefined }, titulo: c.dataset.rvTitle || "" };
+          }));
+          cards().sort(function (a, b) { return Number(a.dataset.nat) - Number(b.dataset.nat); })
+            .forEach(function (c) { c.parentNode.appendChild(c); });
+          ordenar();
+          toast("Vuelta al orden por fecha.");
+        });
+
+        // La ficha solo se vuelve arrastrable mientras el ratón está sobre el
+        // asa. Si estuviera siempre, no se podría seleccionar un texto dentro.
+        document.addEventListener("mousedown", function (e) {
+          var g = e.target.closest("[data-grip]");
+          if (g) g.closest(".card").draggable = true;
+        });
+        document.addEventListener("mouseup", function () {
+          cards().forEach(function (c) { c.draggable = false; });
+        });
+
+        ordenar();
       })();
     </script>
   </body>
