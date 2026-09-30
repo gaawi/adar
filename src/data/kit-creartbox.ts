@@ -13,6 +13,7 @@ import type { KitSource } from './kit-brands';
 const PHOTO = 'https://creartbox.nyc/assets/press/photos/';
 const RELEASE = 'https://creartbox.nyc/press/season-2026-27.html';
 const CALENDAR = 'https://creartbox.nyc/concerts.html';
+const CURRENTS = 'https://creartbox.nyc/concerts/currents-2026.html';
 
 export const CREARTBOX_SOURCES: KitSource[] = [
   {
@@ -176,6 +177,159 @@ De Somogyi is a Royal Philharmonic Society composer for 2025 and a Fromm Foundat
 ## Details
 
 The DiMenna Center for Classical Music, 7 May 2027, 7:30 pm.
+`,
+  },
+
+  // ── Currents · 30 de octubre de 2026 ─────────────────────────────────────
+  // Los cinco siguientes son para empujar el próximo concierto. Todo lo que
+  // dicen sale de creartbox.nyc/concerts/currents-2026.html y de about.html;
+  // los precios, de la página de Eventbrite que enlaza la web.
+  // Los dos últimos son solo para redes: no hay artículo detrás, llevan al
+  // propio concierto, y por eso el carrusel es corto.
+
+  {
+    lang: 'en',
+    slug: 'currents-walk-on',
+    title: 'The players walk on stage already playing',
+    excerpt:
+      'Currents opens with Brown Leaves Moving. The five musicians start offstage and walk on as they play, so the ensemble forms in front of the audience instead of waiting for it. 30 October, The DiMenna Center.',
+    image: PHOTO + 'creartbox-in-performance.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: CURRENTS,
+    tags: ['Currents', 'BrownLeavesMoving', 'DiMennaCenter', 'NewYorkSeries'],
+    body: `
+Most concerts begin with five people already seated.
+
+## The stage is empty when the music starts
+
+Brown Leaves Moving begins with the players offstage. They walk on as they play, over an electronic background, so the ensemble forms in front of the audience instead of waiting for it.
+
+## Four minutes
+
+It is the shortest work of the night and the first one. Guillermo Laporta wrote it in 2018, for the suite AWAVE, first performed in Queens that year.
+
+## Why it opens
+
+Currents assembles five works around a single idea: movement carried from one place to another. Two of them take the idea literally. This is the one that does it with the players themselves.
+
+## Details
+
+30 October 2026, 7:30 pm. The DiMenna Center for Classical Music, 450 W 37th St. About 60 minutes, played without intermission.
+`,
+  },
+
+  {
+    lang: 'en',
+    slug: 'currents-joachim',
+    title: 'One violinist connects three works on this programme',
+    excerpt:
+      "Joseph Joachim received the dedication of Clara Schumann's Three Romances in 1853, and it was Joachim who read the viola part of Brahms's A minor Trio in rehearsal. Both are on the programme on 30 October.",
+    image: PHOTO + 'creartbox-currents-dimenna.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: CURRENTS,
+    tags: ['Currents', 'ClaraSchumann', 'Brahms', 'DiMennaCenter'],
+    body: `
+Three of the five works on Currents run through the same small circle of people.
+
+## 1853, a dedication
+
+Clara Schumann's Three Romances, Op. 22 carry a dedication to the violinist Joseph Joachim.
+
+## The trio, played with viola
+
+It was Joachim who read the viola part of Brahms's Trio in A minor, Op. 114 in rehearsal. That is the scoring heard here: viola, cello and piano.
+
+## 1844, Clara at the Gewandhaus
+
+Clara Schumann gave the first public performance of her husband's Piano Quartet in E-flat major at the Leipzig Gewandhaus in 1844. It closes the evening, twenty-eight minutes of it.
+
+## Details
+
+Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
+`,
+  },
+
+  {
+    lang: 'en',
+    slug: 'currents-laminar-flow',
+    title: 'A title taken from fluid dynamics',
+    excerpt:
+      "Laminar flow is movement in smooth parallel layers, with no mixing between them. The opposite of turbulence. Eric Moe's Laminar Flow in Upsidedown Creek reached the season through the open call.",
+    image: PHOTO + 'creartbox-ensemble.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: CURRENTS,
+    tags: ['Currents', 'EricMoe', 'CallForScores', 'NewMusic'],
+    body: `
+Five minutes, and a title that explains itself once you know the term.
+
+## Laminar flow
+
+In fluid dynamics, movement in smooth parallel layers with no mixing between them. The opposite of turbulence.
+
+## It came in through the open call
+
+Eric Moe's score reached the season through CreArtBox's open Call for Scores, which has run since the ensemble's first season. Eleven works this season arrived the same way, more than in any season before.
+
+## Eric Moe
+
+A Guggenheim fellow, honoured by the American Academy of Arts and Letters.
+
+## Details
+
+Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
+`,
+  },
+
+  // Solo redes.
+  {
+    lang: 'en',
+    slug: 'currents-who-plays',
+    title: 'Who is on stage on 30 October',
+    excerpt:
+      'Guillermo Laporta, flute. Josefina Urraca, piano. Emilie-Anne Gendron, violin. Matthew Cohen, viola. Julia Yang, cello.',
+    image: PHOTO + 'creartbox-ensemble.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: CURRENTS,
+    tags: ['Currents', 'DiMennaCenter', 'ChamberMusic'],
+    body: `
+Flute, piano, violin, viola and cello.
+
+## The five
+
+Guillermo Laporta, flute. Josefina Urraca, piano. Emilie-Anne Gendron, violin. Matthew Cohen, viola. Julia Yang, cello.
+
+## Where they play the rest of the year
+
+Gendron is a longtime member of the Momenta Quartet and one of the concertmasters of the Orpheus Chamber Orchestra. Cohen was a special prize winner at the Primrose International Viola Competition. Yang is a founding member of the Naumburg-winning Merz Trio.
+`,
+  },
+
+  // Solo redes, para la semana del concierto.
+  {
+    lang: 'en',
+    slug: 'currents-the-night',
+    title: 'Sixty minutes, no interval',
+    excerpt:
+      'Currents runs about an hour, played straight through. Tickets from $15. The premium seats are the closest rows to the players, and come with a small treat on the night, usually chocolate.',
+    image: PHOTO + 'creartbox-currents-dimenna.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: CURRENTS,
+    tags: ['Currents', 'Tickets', 'DiMennaCenter'],
+    body: `
+What the night looks like, in practical terms.
+
+## The shape of it
+
+Five works, about sixty minutes, played without intermission. The DiMenna Center for Classical Music, 450 W 37th St, 7:30 pm.
+
+## Tickets
+
+From $15, through Eventbrite. The premium tier is the closest rows to the players, and comes with a small treat on the night, usually chocolate.
 `,
   },
 ];
