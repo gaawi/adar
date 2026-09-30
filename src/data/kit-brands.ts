@@ -111,7 +111,7 @@ export interface KitBrand {
 }
 
 const ADAR_FONTS =
-  'https://fonts.googleapis.com/css2?family=Commissioner:wght@300..900&family=Chivo:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&family=Chivo+Mono:wght@400;500&display=swap';
+  'https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alegreya+SC:ital,wght@0,400;0,500;0,700;1,400&family=Chivo:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&family=Chivo+Mono:wght@400;500&display=swap';
 
 const CREARTBOX_FONTS =
   'https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap';
@@ -146,14 +146,14 @@ export const BRANDS: Record<string, KitBrand> = {
     textFoot: '#6e6a5c',
 
     fontsHref: ADAR_FONTS,
-    display: '"Commissioner", system-ui, sans-serif',
+    display: '"Alegreya", Georgia, serif',
     ui: '"Chivo", system-ui, sans-serif',
     label: '"Chivo Mono", ui-monospace, monospace',
     labelWeight: '500',
-    // 740 igual que en la web: Commissioner es variable, así que el canvas
-    // no redondea el peso a un corte.
+    // 740 igual que en la web: el eje de Alegreya va de 400 a 900, así que
+    // el canvas no redondea el peso a un corte.
     titleWeight: '740',
-    fontLoads: ['740 64px "Commissioner"', '400 32px "Chivo"', '700 32px "Chivo"', '500 24px "Chivo Mono"'],
+    fontLoads: ['740 64px "Alegreya"', '400 32px "Chivo"', '700 32px "Chivo"', '500 24px "Chivo Mono"'],
 
     unit: { one: 'artículo', many: 'artículos' },
     baseTags: ['FestivalADAR', 'Asturias', 'MúsicaClásica', 'MedioRural'],
