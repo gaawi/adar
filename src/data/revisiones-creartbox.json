@@ -78,6 +78,12 @@
       "orden": 10,
       "titulo": "Sixty minutes, no interval",
       "fecha": "2026-10-01T06:57:15.039Z"
+    },
+    "en/eric-moe-interview": {
+      "estado": "espera",
+      "nota": "Esperando las respuestas de Eric Moe. Preguntas enviadas por correo; cuando lleguen, se rellenan los seis apartados y pasa a «Listo para publicar».",
+      "titulo": "Eric Moe on Laminar Flow in Upsidedown Creek",
+      "fecha": "2026-10-01T08:00:00.000Z"
     }
   }
 }

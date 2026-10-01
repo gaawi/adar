@@ -26,13 +26,14 @@ interface Props {
 }
 const { brand, posts, revisiones = {} } = Astro.props;
 
-const marcadas = { listo: 0, cambios: 0 };
+const marcadas = { listo: 0, cambios: 0, espera: 0 };
 posts.forEach((p) => {
   const e = revisiones[`${p.lang}/${p.slug}`]?.estado;
   if (e === 'listo') marcadas.listo++;
   else if (e === 'cambios') marcadas.cambios++;
+  else if (e === 'espera') marcadas.espera++;
 });
-const sinRevisar = posts.length - marcadas.listo - marcadas.cambios;
+const sinRevisar = posts.length - marcadas.listo - marcadas.cambios - marcadas.espera;
 
 const published = posts.filter((p) => p.status === 'publish').length;
 
@@ -101,6 +102,8 @@ const tokens: Record<string, string> = {
   '--rv-ok': dark ? '#6FBF85' : '#2f6b3a',
   '--rv-ok-ink': dark ? '#08140c' : '#ffffff',
   '--rv-warn': dark ? '#E0A33F' : '#9a5b12',
+  '--rv-wait': dark ? '#9A9AC8' : '#4a4a7a',
+  '--rv-wait-ink': dark ? '#0b0b14' : '#ffffff',
   '--rv-warn-ink': dark ? '#1a1206' : '#ffffff',
   '--rv-scheme': dark ? 'dark' : 'light',
   // En oscuro la barra es una superficie más de la marca (--foso), no una
@@ -482,6 +485,7 @@ const rootCss = `:root{${Object.entries(tokens)
             <button data-rev="sin">Sin revisar (<span data-rv-count="sin">{sinRevisar}</span>)</button>
             <button data-rev="listo">Listos (<span data-rv-count="listo">{marcadas.listo}</span>)</button>
             <button data-rev="cambios">Con notas (<span data-rv-count="cambios">{marcadas.cambios}</span>)</button>
+            <button data-rev="espera">En espera (<span data-rv-count="espera">{marcadas.espera}</span>)</button>
           </span>
           <span class="seg" id="pubSeg">
             <span class="seg-label">En redes</span>

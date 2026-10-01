@@ -76,6 +76,7 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
   }
   .rv-pill.is-listo { color: var(--rv-ok, #2f6b3a); }
   .rv-pill.is-cambios { color: var(--rv-warn, #9a5b12); }
+  .rv-pill.is-espera { color: var(--rv-wait, #5a5a8a); }
 
   .rv {
     display: flex;
@@ -120,6 +121,11 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     background: var(--rv-warn, #9a5b12);
     border-color: var(--rv-warn, #9a5b12);
     color: var(--rv-warn-ink, #ffffff);
+  }
+  .rv-choice button[data-rv-set='espera'].on {
+    background: var(--rv-wait, #5a5a8a);
+    border-color: var(--rv-wait, #5a5a8a);
+    color: var(--rv-wait-ink, #ffffff);
   }
   .rv-clear { opacity: 0.35; }
   /* Quitar la marca solo tiene sentido si hay marca. */
@@ -291,7 +297,13 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     }
 
     // ── Pintado ───────────────────────────────────────────────────────────
-    var PILL = { listo: 'Listo', cambios: 'Con notas' };
+    var PILL = { listo: 'Listo', cambios: 'Con notas', espera: 'En espera' };
+    // «Cambios» es una nota para nosotros; «espera» es un bloqueo de fuera:
+    // falta que conteste alguien, que llegue una foto, que se confirme algo.
+    var ETIQUETA_NOTA = {
+      cambios: 'Qué hay que cambiar',
+      espera: 'A qué está esperando',
+    };
 
     // `inicial` solo es true en el primer pintado: ahí sí se vuelca la nota
     // guardada en el cuadro de texto. Después no, para no pisar lo que se
@@ -324,7 +336,9 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       }
 
       var wrap = ficha.querySelector('[data-rv-note-wrap]');
-      if (wrap) wrap.hidden = marcado !== 'cambios';
+      if (wrap) wrap.hidden = marcado !== 'cambios' && marcado !== 'espera';
+      var etiq = ficha.querySelector('[data-rv-note-label]');
+      if (etiq && ETIQUETA_NOTA[marcado]) etiq.textContent = ETIQUETA_NOTA[marcado];
 
       if (inicial) {
         var ta = ficha.querySelector('[data-rv-note]');
@@ -406,11 +420,12 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     });
 
     function contar() {
-      var c = { listo: 0, cambios: 0, sin: 0, pubno: 0, pubparte: 0, pubtodo: 0 };
+      var c = { listo: 0, cambios: 0, espera: 0, sin: 0, pubno: 0, pubparte: 0, pubtodo: 0 };
       fichas.forEach(function (f) {
         var e = (estado[f.dataset.rvKey] || {}).estado;
         if (e === 'listo') c.listo++;
         else if (e === 'cambios') c.cambios++;
+        else if (e === 'espera') c.espera++;
         else c.sin++;
         var p = f.dataset.rvPubState;
         if (p === 'todo') c.pubtodo++;
@@ -468,7 +483,7 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
 
       estado[k] = {
         estado: nuevo,
-        nota: nuevo === 'cambios' && ta ? ta.value : '',
+        nota: (nuevo === 'cambios' || nuevo === 'espera') && ta ? ta.value : '',
         fecha_prevista: fi ? fi.value : (estado[k] || {}).fecha_prevista || '',
         titulo: ficha.dataset.rvTitle || '',
         fecha: new Date().toISOString(),
@@ -533,7 +548,7 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       clearTimeout(temporizador);
       temporizador = setTimeout(function () {
         estado[k] = Object.assign({}, estado[k], {
-          estado: 'cambios',
+          estado: (estado[k] || {}).estado === 'espera' ? 'espera' : 'cambios',
           nota: ta.value,
           titulo: ficha.dataset.rvTitle || '',
           fecha: new Date().toISOString(),
@@ -562,7 +577,7 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
         if (!r || (!r.estado && !hayPublicado(r))) return;
         var redes = Object.keys(r.publicado || {}).filter(function (c) { return r.publicado[c]; });
         lineas.push(
-          (r.estado === 'listo' ? '✓ LISTO' : r.estado === 'cambios' ? '✎ CAMBIOS' : '·') +
+          (r.estado === 'listo' ? '✓ LISTO' : r.estado === 'cambios' ? '✎ CAMBIOS' : r.estado === 'espera' ? '⧗ EN ESPERA' : '·') +
           ' · ' + (f.dataset.rvTitle || f.dataset.rvKey) +
           (r.fecha_prevista ? '   [publicar el ' + r.fecha_prevista + ']' : '') +
           (redes.length ? '\n   publicado en: ' + redes.join(', ') : '') +

@@ -29,6 +29,7 @@ const { nota = '', fecha = '', label = '', class: extra = '' } = Astro.props;
   <div class="rv-choice">
     <button type="button" data-rv-set="listo">Listo para publicar</button>
     <button type="button" data-rv-set="cambios">Hay que cambiar algo</button>
+    <button type="button" data-rv-set="espera">En espera</button>
     <button type="button" data-rv-set="" class="rv-clear" title="Quitar la marca">Sin marcar</button>
   </div>
 
@@ -38,7 +39,7 @@ const { nota = '', fecha = '', label = '', class: extra = '' } = Astro.props;
   </label>
 
   <label class="rv-note" data-rv-note-wrap hidden>
-    <span class="rv-note-label">Qué hay que cambiar</span>
+    <span class="rv-note-label" data-rv-note-label>Qué hay que cambiar</span>
     <textarea
       data-rv-note
       rows="2"

@@ -375,4 +375,48 @@ Why Brown Leaves Moving begins with the players offstage. What laminar flow is. 
 Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
 `,
   },
+
+  // En espera de las respuestas de Eric Moe. Los apartados son sus ocho
+  // preguntas; el cuerpo se escribe cuando conteste. Está marcado «En espera»
+  // en revisiones-creartbox.json, así que sale con su etiqueta y se puede
+  // filtrar sin tener que acordarse de cuál era.
+  {
+    lang: 'en',
+    slug: 'eric-moe-interview',
+    title: 'Eric Moe on Laminar Flow in Upsidedown Creek',
+    excerpt:
+      'The composer of the newest piece on Currents answers eight questions: where the title came from, what flow means to him, and what he hopes to hear on 30 October.',
+    image: PHOTO + 'creartbox-ensemble.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: CURRENTS,
+    tags: ['EricMoe', 'Currents', 'CallForScores', 'NewMusic'],
+    body: `
+Eight questions to the composer, two weeks before the premiere.
+
+## Where the title came from
+
+[Pendiente · respuesta de Eric a la pregunta 1]
+
+## The image behind the piece
+
+[Pendiente · respuesta de Eric a la pregunta 2]
+
+## What flow means, musically
+
+[Pendiente · respuesta de Eric a la pregunta 3]
+
+## What to listen for
+
+[Pendiente · respuesta de Eric a la pregunta 4]
+
+## Science, nature and music
+
+[Pendiente · respuesta de Eric a la pregunta 5]
+
+## From the other side of the desk
+
+[Pendiente · respuesta de Eric a la pregunta 8, sobre Music on the Edge]
+`,
+  },
 ];
