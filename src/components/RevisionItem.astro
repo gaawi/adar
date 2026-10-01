@@ -26,12 +26,20 @@ const { nota = '', fecha = '', label = '', class: extra = '' } = Astro.props;
 
 <div class={`rv ${extra}`} data-rv-controls>
   {label && <span class="rv-group-label">{label}</span>}
-  <div class="rv-choice">
-    <button type="button" data-rv-set="listo">Listo para publicar</button>
-    <button type="button" data-rv-set="cambios">Hay que cambiar algo</button>
-    <button type="button" data-rv-set="espera">En espera</button>
-    <button type="button" data-rv-set="" class="rv-clear" title="Quitar la marca">Sin marcar</button>
-  </div>
+  {/* Siete estados no caben en botones. El ciclo entero en un desplegable:
+      de idea a publicable, o a la papelera. */}
+  <label class="rv-estado">
+    <span class="rv-note-label">Estado</span>
+    <select data-rv-estado>
+      <option value="">Sin marcar</option>
+      <option value="idea">Idea</option>
+      <option value="borrador">Borrador</option>
+      <option value="cambios">Hay que cambiar algo</option>
+      <option value="espera">En espera</option>
+      <option value="listo">Listo para publicar</option>
+      <option value="descartado">Descartado</option>
+    </select>
+  </label>
 
   <label class="rv-fecha">
     <span class="rv-note-label">Publicar el</span>

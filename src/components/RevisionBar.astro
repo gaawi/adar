@@ -77,6 +77,27 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
   .rv-pill.is-listo { color: var(--rv-ok, #2f6b3a); }
   .rv-pill.is-cambios { color: var(--rv-warn, #9a5b12); }
   .rv-pill.is-espera { color: var(--rv-wait, #5a5a8a); }
+  .rv-pill.is-idea,
+  .rv-pill.is-borrador { opacity: .7; }
+  .rv-pill.is-descartado { color: var(--rv-off, #8a8a8a); text-decoration: line-through; }
+  /* Descartada: sigue ahí, pero deja de pedir atención. */
+  [data-rv-item].rv-descartado { opacity: .42; }
+  [data-rv-item].rv-descartado:hover { opacity: 1; }
+
+  .rv-estado { display: flex; flex-direction: column; gap: 4px; }
+  .rv-estado select {
+    font-family: var(--font-mono, inherit);
+    font-size: 12px;
+    padding: 7px 10px;
+    border: 1px solid var(--line, rgba(128, 128, 128, 0.4));
+    border-radius: var(--rv-radius, 999px);
+    background: var(--card, rgba(255, 255, 255, 0.72));
+    color: inherit;
+    cursor: pointer;
+  }
+  [data-rv-item][data-rv-state='listo'] .rv-estado select { border-color: var(--rv-ok, #2f6b3a); color: var(--rv-ok, #2f6b3a); }
+  [data-rv-item][data-rv-state='cambios'] .rv-estado select { border-color: var(--rv-warn, #9a5b12); color: var(--rv-warn, #9a5b12); }
+  [data-rv-item][data-rv-state='espera'] .rv-estado select { border-color: var(--rv-wait, #5a5a8a); color: var(--rv-wait, #5a5a8a); }
 
   .rv {
     display: flex;
@@ -297,12 +318,18 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     }
 
     // ── Pintado ───────────────────────────────────────────────────────────
-    var PILL = { listo: 'Listo', cambios: 'Con notas', espera: 'En espera' };
+    var PILL = {
+      idea: 'Idea', borrador: 'Borrador', cambios: 'Con notas',
+      espera: 'En espera', listo: 'Listo', descartado: 'Descartado',
+    };
     // «Cambios» es una nota para nosotros; «espera» es un bloqueo de fuera:
     // falta que conteste alguien, que llegue una foto, que se confirme algo.
     var ETIQUETA_NOTA = {
+      idea: 'De qué va la idea',
+      borrador: 'Qué falta',
       cambios: 'Qué hay que cambiar',
       espera: 'A qué está esperando',
+      descartado: 'Por qué se descarta',
     };
 
     // `inicial` solo es true en el primer pintado: ahí sí se vuelca la nota
@@ -314,15 +341,15 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       ficha.dataset.rvState = marcado || 'sin';
       ficha.classList.toggle('rv-has', !!marcado);
 
-      ficha.querySelectorAll('[data-rv-set]').forEach(function (b) {
-        b.classList.toggle('on', b.dataset.rvSet === marcado && marcado !== '');
-      });
+      var sel = ficha.querySelector('[data-rv-estado]');
+      if (sel && sel.value !== marcado) sel.value = marcado;
 
       if (inicial) {
         var fi0 = ficha.querySelector('[data-rv-fecha]');
         if (fi0 && (r.fecha_prevista || '') !== fi0.value) fi0.value = r.fecha_prevista || '';
       }
       ficha.classList.toggle('rv-sin-fecha', marcado === 'listo' && !(r.fecha_prevista || ''));
+      ficha.classList.toggle('rv-descartado', marcado === 'descartado');
 
       var pill = ficha.querySelector('[data-rv-pill]');
       if (pill) {
@@ -336,7 +363,7 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
       }
 
       var wrap = ficha.querySelector('[data-rv-note-wrap]');
-      if (wrap) wrap.hidden = marcado !== 'cambios' && marcado !== 'espera';
+      if (wrap) wrap.hidden = !ETIQUETA_NOTA[marcado];
       var etiq = ficha.querySelector('[data-rv-note-label]');
       if (etiq && ETIQUETA_NOTA[marcado]) etiq.textContent = ETIQUETA_NOTA[marcado];
 
@@ -420,12 +447,11 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     });
 
     function contar() {
-      var c = { listo: 0, cambios: 0, espera: 0, sin: 0, pubno: 0, pubparte: 0, pubtodo: 0 };
+      var c = { listo: 0, cambios: 0, espera: 0, idea: 0, borrador: 0, descartado: 0,
+                sin: 0, pubno: 0, pubparte: 0, pubtodo: 0 };
       fichas.forEach(function (f) {
         var e = (estado[f.dataset.rvKey] || {}).estado;
-        if (e === 'listo') c.listo++;
-        else if (e === 'cambios') c.cambios++;
-        else if (e === 'espera') c.espera++;
+        if (e && c[e] !== undefined) c[e]++;
         else c.sin++;
         var p = f.dataset.rvPubState;
         if (p === 'todo') c.pubtodo++;
@@ -468,6 +494,33 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
     }
 
     // ── Interacción ───────────────────────────────────────────────────────
+    document.addEventListener('change', function (ev) {
+      var sel = ev.target.closest('[data-rv-estado]');
+      if (!sel) return;
+      var ficha = sel.closest('[data-rv-item]');
+      if (!ficha) return;
+      var k = ficha.dataset.rvKey;
+      var ta = ficha.querySelector('[data-rv-note]');
+      var fi = ficha.querySelector('[data-rv-fecha]');
+      estado[k] = {
+        estado: sel.value,
+        nota: ETIQUETA_NOTA[sel.value] && ta ? ta.value : '',
+        fecha_prevista: fi ? fi.value : (estado[k] || {}).fecha_prevista || '',
+        publicado: (estado[k] || {}).publicado,
+        enlaces: (estado[k] || {}).enlaces,
+        textos: (estado[k] || {}).textos,
+        post: (estado[k] || {}).post,
+        orden: (estado[k] || {}).orden,
+        titulo: ficha.dataset.rvTitle || '',
+        fecha: new Date().toISOString(),
+      };
+      sucio[k] = true;
+      persistir();
+      pintar(ficha);
+      avisarCambio();
+      if (ETIQUETA_NOTA[sel.value] && ta) ta.focus();
+    });
+
     document.addEventListener('click', function (ev) {
       var b = ev.target.closest('[data-rv-set]');
       if (!b) return;

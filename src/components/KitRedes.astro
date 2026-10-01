@@ -212,6 +212,15 @@ const rootCss = `:root{${Object.entries(tokens)
         transition: transform .15s, color .15s, border-color .15s;
       }
       .card-fold:hover { background: transparent; color: var(--fg); border-color: var(--fg); }
+      /* Alineado con la columna de flechas de las fichas: se lee como su mando. */
+      .plegar-fila { display: flex; align-items: center; justify-content: flex-end; gap: 12px; padding: 0 0 6px; }
+      .plegar-rotulo { font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+      /* El mando se comporta como las flechas de las fichas: gira, no se
+         rellena. La regla general de button.on lo pintaba de negro entero. */
+      #plegarTodo.on { background: transparent; color: var(--fg); border-color: var(--accent); transform: rotate(-90deg); }
+      #plegarTodo.on:hover { background: transparent; }
+      .filtro { display: inline-flex; align-items: center; gap: 8px; }
+      .filtro select { font-family: var(--font-chrome); font-size: 12px; padding: 7px 11px; max-width: 190px; border: 1px solid var(--fg); background: var(--card); color: var(--fg); border-radius: var(--r-pill); cursor: pointer; }
       .card.is-folded .card-fold { transform: rotate(-90deg); }
       .card.is-folded { padding: 10px 0; grid-template-columns: 62px 1fr; gap: 14px; align-items: center; }
       .card.is-folded .thumb { aspect-ratio: 1/1; }
@@ -479,13 +488,29 @@ const rootCss = `:root{${Object.entries(tokens)
             <button data-style="marco">Marco</button>
           </span>
           <label><input type="checkbox" id="onlyPub" /> Solo en la web</label>
-          <span class="seg" id="revSeg">
+          <label class="filtro">
             <span class="seg-label">Revisión</span>
-            <button data-rev="all" class="on">Todas</button>
-            <button data-rev="sin">Sin revisar (<span data-rv-count="sin">{sinRevisar}</span>)</button>
-            <button data-rev="listo">Listos (<span data-rv-count="listo">{marcadas.listo}</span>)</button>
-            <button data-rev="cambios">Con notas (<span data-rv-count="cambios">{marcadas.cambios}</span>)</button>
-            <button data-rev="espera">En espera (<span data-rv-count="espera">{marcadas.espera}</span>)</button>
+            {/* Sin marcado dentro de los <option>: un <span> ahí es HTML
+                inválido y el navegador se come las opciones siguientes. Los
+                recuentos los escribe el JavaScript en el propio texto. */}
+            <select id="revSel">
+              <option value="all">Todas</option>
+              <option value="sin" data-cuenta="sin">Sin revisar</option>
+              <option value="idea" data-cuenta="idea">Idea</option>
+              <option value="borrador" data-cuenta="borrador">Borrador</option>
+              <option value="cambios" data-cuenta="cambios">Hay que cambiar algo</option>
+              <option value="espera" data-cuenta="espera">En espera</option>
+              <option value="listo" data-cuenta="listo">Listo para publicar</option>
+              <option value="descartado" data-cuenta="descartado">Descartado</option>
+            </select>
+          </label>
+          {/* RevisionBar escribe aquí los recuentos; de aquí los copiamos a
+              las opciones del desplegable. */}
+          <span class="cuentas" hidden>
+            <span data-rv-count="sin">{sinRevisar}</span><span data-rv-count="idea">0</span>
+            <span data-rv-count="borrador">0</span><span data-rv-count="cambios">{marcadas.cambios}</span>
+            <span data-rv-count="espera">{marcadas.espera}</span><span data-rv-count="listo">{marcadas.listo}</span>
+            <span data-rv-count="descartado">0</span>
           </span>
           <span class="seg" id="pubSeg">
             <span class="seg-label">En redes</span>
@@ -500,11 +525,16 @@ const rootCss = `:root{${Object.entries(tokens)
             <button data-tipo="post">Post ({posts.filter((p) => p.kind !== 'social').length})</button>
             <button data-tipo="social">Solo redes ({posts.filter((p) => p.kind === 'social').length})</button>
           </span>
-          <button id="plegarTodo" aria-pressed="false" title="Ver solo el título y los datos de cada pieza">Plegar todas</button>
           <button id="ordenFecha" title="Deshacer el orden a mano y volver al orden por fecha" hidden>Orden por fecha</button>
           <span class="count" id="count">{published} en la web · {posts.length} en total</span>
         </div>
       </header>
+
+      {/* El mando de la columna de flechas, justo encima de la primera. */}
+      <div class="plegar-fila">
+        <span class="plegar-rotulo" id="plegarRotulo">Plegar todas</span>
+        <button class="card-fold" id="plegarTodo" aria-pressed="false" title="Plegar o desplegar todas las piezas">▾</button>
+      </div>
 
       {posts.map((p, i) => {
         // Las diapositivas son portada + contenido + cierre. Sin ninguna de
@@ -1795,8 +1825,8 @@ const rootCss = `:root{${Object.entries(tokens)
             var f = c.querySelector('[data-fold]');
             if (f) f.setAttribute('aria-expanded', todoPlegado ? 'false' : 'true');
           });
-          // El botón dice lo que va a hacer, no en qué estado está.
-          plegarTodo.textContent = todoPlegado ? 'Desplegar todas' : 'Plegar todas';
+          // El rótulo dice lo que va a hacer, no en qué estado está.
+          document.getElementById('plegarRotulo').textContent = todoPlegado ? 'Desplegar todas' : 'Plegar todas';
           plegarTodo.setAttribute('aria-pressed', todoPlegado ? 'true' : 'false');
           plegarTodo.classList.toggle('on', todoPlegado);
           try { localStorage.setItem('kit_compacta_' + B.id, todoPlegado ? '1' : ''); } catch (e) {}
@@ -1807,12 +1837,19 @@ const rootCss = `:root{${Object.entries(tokens)
           todoPlegado = !todoPlegado;
           aplicaPlegado();
         });
-        document.getElementById('revSeg').addEventListener('click', function (e) {
-          var b = e.target.closest('button'); if (!b) return;
-          revFilter = b.dataset.rev;
-          document.querySelectorAll('#revSeg button').forEach(function (x) { x.classList.toggle('on', x === b); });
-          applyFilter();
-        });
+        var revSel = document.getElementById('revSel');
+        revSel.addEventListener('change', function () { revFilter = revSel.value; applyFilter(); });
+
+        // Cada opción lleva su recuento al lado.
+        function pintaCuentasFiltro() {
+          revSel.querySelectorAll('[data-cuenta]').forEach(function (o) {
+            var n = document.querySelector('[data-rv-count="' + o.dataset.cuenta + '"]');
+            var base = o.textContent.replace(/\s*\(\d+\)$/, '');
+            o.textContent = base + ' (' + (n ? n.textContent : '0') + ')';
+          });
+        }
+        pintaCuentasFiltro();
+        document.addEventListener('rv:change', pintaCuentasFiltro);
         document.getElementById('pubSeg').addEventListener('click', function (e) {
           var b = e.target.closest('button'); if (!b) return;
           pubFilter = b.dataset.pub;
