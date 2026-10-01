@@ -14,6 +14,10 @@ const PHOTO = 'https://creartbox.nyc/assets/press/photos/';
 const RELEASE = 'https://creartbox.nyc/press/season-2026-27.html';
 const CALENDAR = 'https://creartbox.nyc/concerts.html';
 const CURRENTS = 'https://creartbox.nyc/concerts/currents-2026.html';
+const PROGRAMA = 'https://creartbox.nyc/programs/currents-2026.html';
+// Las páginas del programa se sirven sueltas, p01.jpg a p16.jpg, con
+// Access-Control-Allow-Origin: *, así que el canvas del kit puede pintarlas.
+const PAGINA = 'https://creartbox.nyc/assets/programs/currents-2026/';
 
 export const CREARTBOX_SOURCES: KitSource[] = [
   {
@@ -332,6 +336,45 @@ Five works, about sixty minutes, played without intermission. The DiMenna Center
 ## Tickets
 
 From $15, through Eventbrite. The premium tier is the closest rows to the players, and comes with a small treat on the night, usually chocolate.
+`,
+  },
+
+  // Solo redes. La imagen es la portada del propio programa. Dos avisos,
+  // comprobados generando la imagen:
+  //   · Quita «Portada con título y marca» en la barra. La portada ya trae su
+  //     título, y el rótulo del kit cae justo encima del sello ámbar.
+  //   · El 9:16 de Story es el que mejor le va: la página es 1080x1620, así
+  //     que en 1:1 se pierde el pie con «12th season».
+  {
+    lang: 'en',
+    slug: 'currents-programme-online',
+    kind: 'social',
+    title: 'You can read the programme before the concert',
+    excerpt:
+      'The printed booklet for Currents is on the site: all sixteen pages, the programme with the timing of every work, and the notes. Turn the pages, zoom in, or download the PDF.',
+    image: PAGINA + 'p01.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: PROGRAMA,
+    tags: ['Currents', 'ConcertProgramme', 'DiMennaCenter', 'NewYorkSeries'],
+    body: `
+Normally the programme reaches you five minutes before the lights go down.
+
+## New on the site
+
+The printed booklet for Currents is online, all sixteen pages. Turn the pages, zoom in, read it full screen, or download the PDF.
+
+## What is in it
+
+The programme with the timing of every work, fifty-six minutes of music in total. Notes on all five pieces. And the photographs from the series.
+
+## Things you can find out before you come
+
+Why Brown Leaves Moving begins with the players offstage. What laminar flow is. How Joseph Joachim ties together three of the five works.
+
+## Details
+
+Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
 `,
   },
 ];
