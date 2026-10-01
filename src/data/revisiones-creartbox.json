@@ -1,90 +1,97 @@
 {
   "_ayuda": "Revisiones escritas desde el panel interno. Cada clave es «idioma/slug». estado: «listo» (listo para publicar) o «cambios» (hay que corregir algo, la nota dice qué). fecha_prevista: cuándo toca publicarlo. textos: los pies de foto de cada red. publicado: qué redes se han publicado ya y cuándo (el post no está aquí: eso lo sabe el propio sitio). enlaces: la URL de cada publicación. orden: la posición a mano en la lista del kit, lo urgente arriba. Lo escribe la propia página; no hace falta editarlo a mano.",
-  "actualizado": "2026-10-01T07:49:46.362Z",
+  "actualizado": "2026-10-01T08:05:30.013Z",
   "posts": {
     "en/season-2026-27": {
       "estado": "listo",
       "nota": "",
       "fecha_prevista": "2026-09-24",
-      "titulo": "CreArtBox announces its twelfth season",
-      "fecha": "2026-10-01T07:16:22.647Z",
-      "orden": 0,
       "publicado": {
         "ig": "2026-10-01T07:16:18.972Z",
         "tt": "2026-10-01T07:16:19.922Z",
         "fb": "2026-10-01T07:16:21.356Z",
         "li": "2026-10-01T07:16:22.023Z",
         "x": "2026-10-01T07:16:22.647Z"
-      }
+      },
+      "orden": 0,
+      "titulo": "CreArtBox announces its twelfth season",
+      "fecha": "2026-10-01T08:04:58.206Z"
     },
     "en/currents": {
       "estado": "listo",
       "nota": "",
       "fecha_prevista": "2026-10-01",
       "titulo": "Currents opens the season",
-      "fecha": "2026-10-01T07:17:20.603Z",
+      "fecha": "2026-10-01T08:04:58.206Z",
       "publicado": {
         "ig": "2026-10-01T07:05:23.668Z",
         "fb": "2026-10-01T07:09:12.200Z",
         "tt": "2026-10-01T07:15:54.572Z",
         "li": "2026-10-01T07:17:04.348Z",
         "x": "2026-10-01T07:17:20.603Z"
-      }
+      },
+      "orden": 9
     },
     "en/winterlight": {
       "orden": 3,
       "titulo": "Winterlight: a world premiere, and Petroushka",
-      "fecha": "2026-10-01T06:57:15.039Z"
+      "fecha": "2026-10-01T08:04:58.206Z"
     },
     "en/pressure-and-release": {
       "orden": 4,
       "titulo": "Pressure and Release: seven works, seven composers, one evening",
-      "fecha": "2026-10-01T06:57:15.039Z"
+      "fecha": "2026-10-01T08:04:58.206Z"
     },
     "en/feverdream": {
       "orden": 5,
       "titulo": "Feverdream closes the twelfth season",
-      "fecha": "2026-10-01T06:57:15.039Z"
+      "fecha": "2026-10-01T08:04:58.206Z"
     },
     "en/currents-walk-on": {
       "estado": "cambios",
       "nota": "no me convence, del todo pero me gusta la idea",
       "fecha_prevista": "",
       "titulo": "The players walk on stage already playing",
-      "fecha": "2026-10-01T07:49:44.725Z"
+      "fecha": "2026-10-01T08:04:58.206Z",
+      "orden": 10
     },
     "en/currents-joachim": {
-      "orden": 7,
+      "orden": 6,
       "titulo": "One violinist connects three works on this programme",
-      "fecha": "2026-10-01T06:57:15.039Z"
+      "fecha": "2026-10-01T08:04:58.206Z"
     },
     "en/currents-laminar-flow": {
-      "orden": 8,
+      "estado": "idea",
+      "nota": "",
+      "fecha_prevista": "",
+      "orden": 2,
       "titulo": "A title taken from fluid dynamics",
-      "fecha": "2026-10-01T06:57:15.039Z"
+      "fecha": "2026-10-01T08:04:58.206Z"
     },
     "en/currents-programme-online": {
       "estado": "",
       "nota": "",
       "fecha_prevista": "2026-10-03",
       "titulo": "Read the program before the concert!",
-      "fecha": "2026-10-01T07:48:07.670Z"
+      "fecha": "2026-10-01T08:04:58.206Z",
+      "orden": 11
     },
     "en/currents-who-plays": {
-      "orden": 9,
+      "orden": 7,
       "titulo": "Who is on stage on 30 October",
-      "fecha": "2026-10-01T06:57:15.039Z"
+      "fecha": "2026-10-01T08:04:58.206Z"
     },
     "en/currents-the-night": {
-      "orden": 10,
+      "orden": 8,
       "titulo": "Sixty minutes, no interval",
-      "fecha": "2026-10-01T06:57:15.039Z"
+      "fecha": "2026-10-01T08:04:58.206Z"
     },
     "en/eric-moe-interview": {
       "estado": "espera",
       "nota": "Esperando las respuestas de Eric Moe. Preguntas enviadas por correo; cuando lleguen, se rellenan los seis apartados y pasa a «Listo para publicar».",
       "titulo": "Eric Moe on Laminar Flow in Upsidedown Creek",
-      "fecha": "2026-10-01T08:00:00.000Z"
+      "fecha": "2026-10-01T08:04:58.206Z",
+      "orden": 1
     }
   }
 }
