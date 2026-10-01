@@ -389,6 +389,12 @@ const rootCss = `:root{${Object.entries(tokens)
       .t-lado strong { font-family: var(--font-voz); font-size: 15px; line-height: 1.15; }
       .t-lado .pista { font-family: var(--font-chrome); font-size: 10px; line-height: 1.4; color: var(--muted); }
       .t-lado button { width: 100%; }
+      /* El texto del post: tres campos en vez de uno, y marcado para que no
+         se confunda con los pies de foto de cada red. */
+      .t-post { border-color: var(--accent); }
+      .t-campos { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+      .t-campos label { display: flex; flex-direction: column; gap: 3px; }
+      .t-campos label span { font-family: var(--font-dato); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
       .t-red textarea {
         width: 100%; font-family: var(--font-display); font-size: 14px; line-height: 1.55;
         padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--r-sm);
@@ -809,7 +815,66 @@ const rootCss = `:root{${Object.entries(tokens)
           }
           return out.join(' ');
         }
-        function captions(d) {
+        // ── El texto del post ────────────────────────────────────────────
+        // CreArtBox no tiene panel: su material se escribe a mano en un
+        // archivo del repositorio. Para poder leerlo y corregirlo sin salir
+        // de aquí, el texto editado se guarda con las revisiones y de ahí lo
+        // recoge quien toque el archivo.
+        function postDe(d) {
+          var g = (window.ADAR_REV ? ADAR_REV.obtener(claveDe(d)).post : null) || {};
+          return {
+            title: typeof g.title === 'string' && g.title.trim() ? g.title : d.title,
+            excerpt: typeof g.excerpt === 'string' && g.excerpt.trim() ? g.excerpt : d.excerpt,
+            body: typeof g.body === 'string' && g.body.trim() ? g.body : d.body,
+          };
+        }
+        function postTocado(d) {
+          var p = postDe(d);
+          return p.title !== d.title || p.excerpt !== d.excerpt || p.body !== d.body;
+        }
+        /** Markdown fuera, que esto acaba pintado en un canvas. */
+        function limpiaMd(s) {
+          return String(s)
+            .replace(/!\[[^\]]*\]\([^)]*\)/g, '')
+            .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1')
+            .replace(/\*\*|__|\*|_|`/g, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+        }
+        /** Corta por el final de frase, como hace el build. */
+        function recorta(s, max) {
+          if (s.length <= max) return s;
+          var trozo = s.slice(0, max);
+          var p = Math.max(trozo.lastIndexOf('. '), trozo.lastIndexOf('; '));
+          return (p > max * 0.4 ? trozo.slice(0, p + 1) : trozo).trim();
+        }
+        /** Parte el cuerpo por «## » igual que el build. */
+        function seccionesDe(md) {
+          var out = [], act = null;
+          String(md).split(/\r?\n/).forEach(function (ln) {
+            var m = ln.match(/^##\s+(.*)$/);
+            if (m) { if (act) out.push(act); act = { h: m[1].trim(), p: [] }; }
+            else if (act && ln.trim()) act.p.push(ln.trim());
+          });
+          if (act) out.push(act);
+          return out
+            .map(function (s) { return { h: limpiaMd(s.h), p: recorta(limpiaMd(s.p.join(' ')), 260) }; })
+            .filter(function (s) { return s.h && s.p; });
+        }
+        /** Las diapositivas, rehechas si el texto se ha tocado. */
+        function slidesDe(d) {
+          if (!postTocado(d)) return d.slides;
+          var p = postDe(d);
+          var cierre = d.slides[d.slides.length - 1];
+          return [{ type: 'cover', title: p.title, body: '' }]
+            .concat(seccionesDe(p.body).slice(0, 6).map(function (s) {
+              return { type: 'text', title: s.h, body: s.p };
+            }))
+            .concat([cierre]);
+        }
+
+        function captions(d0) {
+          var d = Object.assign({}, d0, postDe(d0));
           return {
             ig: d.title + '\n\n' + d.excerpt + '\n\n' + B.captionTail + '\n\n' + hashtags(d.tags, 12),
             fb: d.title + '\n\n' + d.excerpt + '\n\n' + d.url,
@@ -1158,7 +1223,7 @@ const rootCss = `:root{${Object.entries(tokens)
           M.image = null; M.fx = 0.5; M.fy = 0.5;
           document.getElementById('m-fx').value = 50;
           document.getElementById('m-fy').value = 50;
-          M.slides = JSON.parse(JSON.stringify(post.slides));
+          M.slides = JSON.parse(JSON.stringify(slidesDe(post)));
           M.sel = 0;
           document.getElementById('m-title').textContent = post.title;
           document.querySelectorAll('#m-format button').forEach(function (b) {
@@ -1450,7 +1515,8 @@ const rootCss = `:root{${Object.entries(tokens)
           var dl = btn.dataset.dl;
           if (dl) {
             if (dl === 'txt') {
-              var txt = d.title + '\n\n' + (d.excerpt ? d.excerpt + '\n\n' : '') + d.plainFull + '\n\n' + d.url + '\n';
+              var pz = postDe(d);
+              var txt = pz.title + '\n\n' + (pz.excerpt ? pz.excerpt + '\n\n' : '') + pz.body + '\n\n' + d.url + '\n';
               saveBlob(new Blob([txt], { type: 'text/plain;charset=utf-8' }), fileName(d.slug, ['texto']) + '.txt');
               flash(btn, 'Descargado ✓'); return;
             }
@@ -1474,7 +1540,7 @@ const rootCss = `:root{${Object.entries(tokens)
             btn.classList.add('is-busy');
             try {
               var cc = document.createElement('canvas');
-              await drawSlide(cc, d, { type: 'cover', title: d.title, body: '' }, 0, 1, dl, withOverlay, quickStyle);
+              await drawSlide(cc, d, { type: 'cover', title: postDe(d).title, body: '' }, 0, 1, dl, withOverlay, quickStyle);
               var bb = await canvasToBlob(cc);
               saveBlob(bb, fileName(d.slug, [SIZES[dl][2], quickStyle]) + '.jpg');
               flash(btn, 'Descargado ✓');
@@ -1505,6 +1571,12 @@ const rootCss = `:root{${Object.entries(tokens)
           return n ? n + (n === 1 ? ' texto escrito a mano' : ' textos escritos a mano') : 'Todos automáticos';
         }
 
+        function pintaCuentaPost(caja, d) {
+          var n = seccionesDe(caja.querySelector('[data-p="body"]').value).length;
+          caja.querySelector('.t-cuenta').textContent =
+            (n + 2) + (n + 2 === 1 ? ' diapositiva' : ' diapositivas');
+        }
+
         function pintaCuenta(caja) {
           var ta = caja.querySelector('textarea');
           var el = caja.querySelector('.t-cuenta');
@@ -1521,6 +1593,30 @@ const rootCss = `:root{${Object.entries(tokens)
           if (d.image) { timg.src = d.image; timg.hidden = false; }
           else { timg.removeAttribute('src'); timg.hidden = true; }
           tbody.innerHTML = '';
+
+          // El texto del post va primero: es la fuente de todo lo demás.
+          var pst = postDe(d);
+          var cajaPost = document.createElement('div');
+          cajaPost.className = 't-red t-post';
+          cajaPost.innerHTML =
+            '<div class="t-lado">' +
+              '<strong>El post</strong>' +
+              '<span class="pista">Lo que se publica en la web. Cada «## » abre una diapositiva del carrusel.</span>' +
+              '<span class="t-cuenta"></span>' +
+              '<button type="button" data-p-copiar>Copiar todo</button>' +
+              '<button type="button" data-p-auto>Texto original</button>' +
+            '</div>' +
+            '<div class="t-campos">' +
+              '<label><span>Titular</span><textarea data-p="title" rows="1"></textarea></label>' +
+              '<label><span>Entradilla</span><textarea data-p="excerpt" rows="2"></textarea></label>' +
+              '<label><span>Cuerpo</span><textarea data-p="body"></textarea></label>' +
+            '</div>';
+          cajaPost.querySelector('[data-p="title"]').value = pst.title;
+          cajaPost.querySelector('[data-p="excerpt"]').value = pst.excerpt;
+          cajaPost.querySelector('[data-p="body"]').value = pst.body;
+          tbody.appendChild(cajaPost);
+          pintaCuentaPost(cajaPost, d);
+
           REDES.forEach(function (r) {
             var caja = document.createElement('div');
             caja.className = 't-red';
@@ -1561,6 +1657,28 @@ const rootCss = `:root{${Object.entries(tokens)
           tActual = null;
         }
 
+        function guardaPost() {
+          if (!tActual || !window.ADAR_REV) return;
+          var caja = tbody.querySelector('.t-post');
+          if (!caja) return;
+          var v = {};
+          ['title', 'excerpt', 'body'].forEach(function (campo) {
+            var t = caja.querySelector('[data-p="' + campo + '"]').value;
+            // Si no se ha cambiado respecto al original no se guarda: así el
+            // texto sigue viniendo del archivo mientras nadie lo toque.
+            if (t.trim() && t !== tActual[campo]) v[campo] = t;
+          });
+          ADAR_REV.guardar(claveDe(tActual), { post: v }, tActual.title);
+          pintaCuentaPost(caja, tActual);
+          // Las diapositivas y el recuento de la ficha salen del mismo texto.
+          var ficha = document.querySelector('.card[data-i="' + POSTS.indexOf(tActual) + '"]');
+          if (ficha) {
+            var et = [].slice.call(ficha.querySelectorAll('.meta span'))
+              .filter(function (s) { return /diaposit/.test(s.textContent); })[0];
+            if (et) et.textContent = slidesDe(tActual).length + ' diapositivas sugeridas';
+          }
+        }
+
         function guardaTextos() {
           if (!tActual || !window.ADAR_REV) return;
           var auto = captions(tActual);
@@ -1579,7 +1697,12 @@ const rootCss = `:root{${Object.entries(tokens)
         tbody.addEventListener('input', function (ev) {
           var caja = ev.target.closest('.t-red');
           if (!caja) return;
-          ajustaAlto(caja.querySelector('textarea'));
+          ajustaAlto(ev.target);
+          if (caja.classList.contains('t-post')) {
+            clearTimeout(tGuardar);
+            tGuardar = setTimeout(guardaPost, 400);
+            return;
+          }
           pintaCuenta(caja);
           clearTimeout(tGuardar);
           tGuardar = setTimeout(guardaTextos, 400);
@@ -1588,6 +1711,21 @@ const rootCss = `:root{${Object.entries(tokens)
         tbody.addEventListener('click', async function (ev) {
           var caja = ev.target.closest('.t-red');
           if (!caja) return;
+          if (caja.classList.contains('t-post')) {
+            var campos = [].slice.call(caja.querySelectorAll('[data-p]'));
+            if (ev.target.closest('[data-p-copiar]')) {
+              var todo = campos.map(function (t) { return t.value; }).join('\n\n');
+              var ok2 = await copy(todo);
+              if (ok2) flash(ev.target.closest('button'), 'Copiado ✓'); else toast('No se pudo copiar.');
+              return;
+            }
+            if (ev.target.closest('[data-p-auto]')) {
+              campos.forEach(function (t) { t.value = tActual[t.dataset.p]; ajustaAlto(t); });
+              guardaPost();
+              toast('Vuelto al texto del archivo.');
+            }
+            return;
+          }
           var ta = caja.querySelector('textarea');
           if (ev.target.closest('[data-t-copiar]')) {
             var ok = await copy(ta.value);

@@ -326,6 +326,8 @@ export interface KitSource {
 export interface KitPost extends Omit<KitSource, 'body' | 'url'> {
   url: string;
   slides: { type: string; title: string; body: string }[];
+  /** Cuerpo en markdown, tal cual. El kit lo deja leer y editar. */
+  body: string;
   plain: string;
   plainFull: string;
 }
@@ -353,6 +355,7 @@ export function buildPost(src: KitSource, brand: KitBrand): KitPost {
     url: src.url || `https://${brand.site}/${src.lang}/blog/${src.slug}/`,
     kind: src.kind || "post",
     slides,
+    body: raw.trim(),
     plain: clean(raw.replace(/^#{1,6}\s+/gm, '')).slice(0, 4000),
     plainFull: raw
       .replace(/^#{1,6}\s+/gm, '')
