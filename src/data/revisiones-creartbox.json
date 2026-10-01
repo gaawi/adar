@@ -1,6 +1,6 @@
 {
   "_ayuda": "Revisiones escritas desde el panel interno. Cada clave es «idioma/slug». estado: «listo» (listo para publicar) o «cambios» (hay que corregir algo, la nota dice qué). fecha_prevista: cuándo toca publicarlo. textos: los pies de foto de cada red. publicado: qué redes se han publicado ya y cuándo (el post no está aquí: eso lo sabe el propio sitio). enlaces: la URL de cada publicación. orden: la posición a mano en la lista del kit, lo urgente arriba. Lo escribe la propia página; no hace falta editarlo a mano.",
-  "actualizado": "2026-10-01T07:00:58.126Z",
+  "actualizado": "2026-10-01T07:16:04.956Z",
   "posts": {
     "en/season-2026-27": {
       "estado": "listo",
@@ -11,9 +11,16 @@
       "orden": 0
     },
     "en/currents": {
-      "orden": 1,
+      "estado": "listo",
+      "nota": "",
+      "fecha_prevista": "2026-10-01",
       "titulo": "Currents opens the season",
-      "fecha": "2026-10-01T06:57:15.039Z"
+      "fecha": "2026-10-01T07:15:54.573Z",
+      "publicado": {
+        "ig": "2026-10-01T07:05:23.668Z",
+        "fb": "2026-10-01T07:09:12.200Z",
+        "tt": "2026-10-01T07:15:54.572Z"
+      }
     },
     "en/winterlight": {
       "orden": 3,
