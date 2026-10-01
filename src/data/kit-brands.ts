@@ -241,12 +241,10 @@ export const BRANDS: Record<string, KitBrand> = {
     reviewPath: 'src/data/revisiones-creartbox.json',
     reviewLS: 'creartbox_revisiones_v1',
     cmsEditHref: '',
-    // Falta el identificador de la página de empresa de CreArtBox; hasta que
-    // esté, LinkedIn se queda sin botón (la casilla sigue estando).
     redes: {
       ig: 'https://www.instagram.com/create/select/',
       fb: 'https://business.facebook.com/latest/posts/published_posts',
-      li: '',
+      li: 'https://www.linkedin.com/company/73443698/admin/page-posts/published/?share=true',
       tt: 'https://www.tiktok.com/tiktokstudio/upload',
     },
     calendarUsesPostDate: false,

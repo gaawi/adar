@@ -263,6 +263,11 @@ const rootCss = `:root{${Object.entries(tokens)
       .red-n { font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 12px; }
       .red-na { font-style: normal; font-family: var(--font-chrome); font-size: 11px; color: var(--muted); }
       .red-fila button { font-size: 12px; padding: 6px 11px; }
+      /* Montar abre el editor; el resto baja el archivo y ya está. Que se vea
+         cuál de las dos cosas va a pasar antes de pulsar. */
+      .red-fila button.es-montar { border-color: var(--accent); color: var(--fg); background: var(--chip); font-weight: 500; }
+      .red-fila button.es-montar:hover { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+      .red-fila button.es-montar:disabled { border-color: var(--line); background: transparent; }
       .red-a { font-family: var(--font-chrome); font-size: 11px; line-height: 1; padding: 6px 9px; border: 1px solid var(--line); border-radius: var(--r-pill); color: var(--muted); text-decoration: none; background: transparent; cursor: pointer; white-space: nowrap; }
       .red-a:hover { color: var(--fg); border-color: var(--fg); }
       .red-ok input { accent-color: var(--accent); width: 17px; height: 17px; cursor: pointer; margin: 0; }
@@ -494,7 +499,11 @@ const rootCss = `:root{${Object.entries(tokens)
         </div>
       </header>
 
-      {posts.map((p, i) => (
+      {posts.map((p, i) => {
+        // Las diapositivas son portada + contenido + cierre. Sin ninguna de
+        // contenido no hay carrusel que montar, solo una imagen que bajar.
+        const hayCarrusel = p.slides.length >= 3;
+        return (
         <article
           class="card"
           data-title={p.title.toLowerCase()}
@@ -557,7 +566,7 @@ const rootCss = `:root{${Object.entries(tokens)
                 de una en una sin saltar de un bloque a otro. */}
             <div class="redes">
               <div class="red-cab">
-                <span>Red</span><span>Imagen</span><span>Texto</span><span>Subir</span><span>Hecho</span>
+                <span>Red</span><span>Imagen · ✎ editar · ↓ descargar</span><span>Texto</span><span>Subir</span><span>Hecho</span>
               </div>
 
               <div class="red-fila">
@@ -592,10 +601,26 @@ const rootCss = `:root{${Object.entries(tokens)
                 <div class="red-fila">
                   <span class="red-n">{f.nombre}</span>
                   <span class="red-img">
-                    {f.imgs.map((b) =>
-                      b.adapt
-                        ? <button data-adapt={b.adapt} disabled={!p.image}>{b.label}</button>
-                        : <button data-dl={b.dl} disabled={!p.image}>{b.label}</button>
+                    {f.imgs
+                      .filter((b) => !b.adapt || hayCarrusel)
+                      .map((b) =>
+                        b.adapt ? (
+                          <button
+                            class="es-montar"
+                            data-adapt={b.adapt}
+                            disabled={!p.image}
+                            title={`Abre el editor con ${p.slides.length} diapositivas: cámbialas y descárgalas en orden`}
+                          >{b.label} ✎</button>
+                        ) : (
+                          <button
+                            data-dl={b.dl}
+                            disabled={!p.image}
+                            title="Descarga la imagen tal cual, sin pasar por el editor"
+                          >{b.label} ↓</button>
+                        )
+                      )}
+                    {!hayCarrusel && f.imgs.some((b) => b.adapt) && (
+                      <em class="red-na">una sola imagen, no hay carrusel que montar</em>
                     )}
                   </span>
                   <span class="red-txt"><button data-copy={f.id}>Copiar</button></span>
@@ -636,7 +661,8 @@ const rootCss = `:root{${Object.entries(tokens)
             {p.status !== 'publish' && <p class="note">{brand.draftNote}</p>}
           </div>
         </article>
-      ))}
+        );
+      })}
 
       <div class="help">
         <h3>Cómo se sube a Instagram</h3>
