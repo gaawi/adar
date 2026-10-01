@@ -183,10 +183,13 @@ const rootCss = `:root{${Object.entries(tokens)
          El orden a mano se guarda con las revisiones: lo urgente arriba, y
          quien entre después lo ve igual. */
       .card-grip {
-        flex: 0 0 auto;
-        border: 0; background: transparent; color: var(--muted);
-        padding: 0 2px; font-size: 15px; line-height: 1; cursor: grab;
-        border-radius: 0; letter-spacing: -.1em;
+        flex: 0 0 auto; display: inline-flex; align-items: center;
+        align-self: stretch; padding: 0 6px 0 0;
+        color: var(--muted); font-size: 15px; line-height: 1;
+        cursor: grab; letter-spacing: -.1em;
+        /* Sin selección: al arrastrar, el navegador intentaría coger el texto
+           del asa en vez de la ficha. */
+        user-select: none; -webkit-user-select: none;
       }
       .card-grip:hover { background: transparent; color: var(--fg); }
       .card-grip:active { cursor: grabbing; }
@@ -525,7 +528,7 @@ const rootCss = `:root{${Object.entries(tokens)
             <h2>
               {/* Asa de arrastre: la ficha entera no puede serlo, está llena de
                   botones y campos que hay que poder seleccionar. */}
-              <button class="card-grip" data-grip title="Arrastra para mover esta pieza" aria-label="Mover esta pieza">⠿</button>
+              <span class="card-grip" data-grip role="button" tabindex="0" title="Arrastra para mover esta pieza" aria-label="Mover esta pieza">⠿</span>
               <span>{p.title}</span>
               {/* Plegar la ficha: con treinta y dos, verlas todas de un
                   vistazo vale más que tener los botones a mano. Va a la
@@ -1703,11 +1706,14 @@ const rootCss = `:root{${Object.entries(tokens)
           btnFecha.hidden = false;
         }
 
-        var arrastrada = null;
+        var arrastrada = null, desdeAsa = false;
         document.addEventListener("dragstart", function (e) {
-          var grip = e.target.closest("[data-grip]");
           var card = e.target.closest(".card");
-          if (!grip || !card) { if (card) e.preventDefault(); return; }
+          // dragstart se dispara sobre el elemento arrastrable, que es la
+          // ficha, NO sobre el asa: mirar e.target para saber si el gesto
+          // empezó en el asa daba siempre que no, y cancelaba todo. Lo que
+          // vale es dónde se apretó el ratón, que lo apunta `desdeAsa`.
+          if (!card || !desdeAsa) { if (card) e.preventDefault(); return; }
           arrastrada = card;
           card.classList.add("is-dragging");
           e.dataTransfer.effectAllowed = "move";
@@ -1742,11 +1748,12 @@ const rootCss = `:root{${Object.entries(tokens)
 
         document.addEventListener("dragend", function () {
           if (arrastrada) arrastrada.classList.remove("is-dragging");
-          cards().forEach(function (c) {
-            c.classList.remove("drop-antes", "drop-despues");
-            c.draggable = false;
-          });
+          cards().forEach(function (c) { c.classList.remove("drop-antes", "drop-despues"); });
+          // Durante un arrastre nativo no llega pointerup, así que la bandera
+          // se limpia aquí o el siguiente gesto se daría por bueno.
           arrastrada = null;
+          desdeAsa = false;
+          armar(null);
         });
 
         btnFecha.addEventListener("click", function () {
@@ -1759,15 +1766,27 @@ const rootCss = `:root{${Object.entries(tokens)
           toast("Vuelta al orden por fecha.");
         });
 
-        // La ficha solo se vuelve arrastrable mientras el ratón está sobre el
-        // asa. Si estuviera siempre, no se podría seleccionar un texto dentro.
-        document.addEventListener("mousedown", function (e) {
+        // La ficha solo es arrastrable mientras el puntero está sobre su asa.
+        // Si lo fuera siempre no se podría seleccionar un texto dentro, y si
+        // se activara al apretar llegaría tarde: el navegador mira el atributo
+        // al empezar el gesto, así que se arma antes, al pasar por encima.
+        var armada = null;
+        function armar(card) {
+          if (armada === card) return;
+          if (armada) armada.draggable = false;
+          armada = card;
+          if (card) card.draggable = true;
+        }
+        document.addEventListener("pointerover", function (e) {
+          if (arrastrada) return;
           var g = e.target.closest("[data-grip]");
-          if (g) g.closest(".card").draggable = true;
+          armar(g ? g.closest(".card") : null);
         });
-        document.addEventListener("mouseup", function () {
-          cards().forEach(function (c) { c.draggable = false; });
+        document.addEventListener("pointerdown", function (e) {
+          desdeAsa = !!e.target.closest("[data-grip]");
         });
+        document.addEventListener("pointerup", function () { desdeAsa = false; });
+        document.addEventListener("pointercancel", function () { desdeAsa = false; });
 
         ordenar();
       })();
