@@ -367,12 +367,6 @@ const config = { path, lsKey, repo, branch, unidad, guardadas };
         }
       });
 
-      // Terminado del todo: el post en la web y todas las redes subidas.
-      var postOk = ficha.querySelector('[data-rv-pub-auto="post"]');
-      ficha.classList.toggle(
-        'is-hecho',
-        cajas.length > 0 && hechas === cajas.length && (!postOk || postOk.checked)
-      );
 
       // Redes marcadas con el post todavía en borrador: los enlaces de los
       // pies de foto no llevarían a ninguna parte.

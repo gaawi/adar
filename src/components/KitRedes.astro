@@ -45,6 +45,7 @@ const FILAS = [
   {
     id: 'ig',
     nombre: 'Instagram',
+    corto: 'IG',
     href: brand.redes.ig,
     imgs: [
       { adapt: 'ig', label: 'Carrusel 1:1' },
@@ -55,6 +56,7 @@ const FILAS = [
   {
     id: 'tt',
     nombre: 'TikTok',
+    corto: 'TT',
     href: brand.redes.tt,
     // Mismo 9:16 que las stories: es el formato que pide, y los márgenes del
     // motor ya están calculados para que no lo tape ninguna de las dos.
@@ -63,9 +65,9 @@ const FILAS = [
       { dl: 'story', label: 'Portada 9:16' },
     ],
   },
-  { id: 'fb', nombre: 'Facebook', href: brand.redes.fb, imgs: [{ dl: 'fb', label: 'Portada 1200×630' }] },
-  { id: 'li', nombre: 'LinkedIn', href: brand.redes.li, imgs: [{ dl: 'fb', label: 'Portada 1200×630' }] },
-  { id: 'x', nombre: 'X', href: 'https://x.com/', imgs: [{ dl: 'x', label: 'Portada 1600×900' }] },
+  { id: 'fb', nombre: 'Facebook', corto: 'FB', href: brand.redes.fb, imgs: [{ dl: 'fb', label: 'Portada 1200×630' }] },
+  { id: 'li', nombre: 'LinkedIn', corto: 'LI', href: brand.redes.li, imgs: [{ dl: 'fb', label: 'Portada 1200×630' }] },
+  { id: 'x', nombre: 'X', corto: 'X', href: 'https://x.com/', imgs: [{ dl: 'x', label: 'Portada 1600×900' }] },
 ];
 const dataJson = JSON.stringify(posts).replace(/</g, '\\u003c');
 const brandJson = JSON.stringify(brand).replace(/</g, '\\u003c');
@@ -210,35 +212,27 @@ const rootCss = `:root{${Object.entries(tokens)
       .card.is-folded .card-fold { transform: rotate(-90deg); }
       .card.is-folded { padding: 10px 0; grid-template-columns: 62px 1fr; gap: 14px; align-items: center; }
       .card.is-folded .thumb { aspect-ratio: 1/1; }
-      .card.is-folded .rv, .card.is-folded .redes, .card.is-folded .note { display: none; }
+      .card.is-folded .rv, .card.is-folded .note { display: none; }
+      /* Plegada, de la tabla solo queda la fila de casillas: saber qué falta
+         por subir es justo lo que se mira cuando se repasa la lista entera. */
+      .card.is-folded .redes { display: flex; flex-wrap: wrap; gap: 2px 12px; align-items: center; margin-top: 4px; }
+      .card.is-folded .red-cab,
+      .card.is-folded .red-extra,
+      .card.is-folded .red-n,
+      .card.is-folded .red-img,
+      .card.is-folded .red-txt,
+      .card.is-folded .red-ir,
+      .card.is-folded .red-url { display: none; }
+      .card.is-folded .red-fila { display: contents; }
+      .card.is-folded .red-fila > .red-ok {
+        display: inline-flex; align-items: center; gap: 4px;
+        border: 0; padding: 0; min-height: 0; justify-content: flex-start;
+      }
+      .card.is-folded .red-corto { display: inline; }
+      .card.is-folded .red-ok input { width: 13px; height: 13px; }
       .card.is-folded h2 { font-size: 16px; margin: 0 0 4px; }
       .card.is-folded .meta { margin: 0; }
 
-      /* ── Sello de terminado ────────────────────────────────────────────
-         Un velo por encima de la ficha: si está todo subido, no hay nada
-         que hacer ahí y se nota sin tener que leer las casillas. */
-      .card-hecho {
-        position: absolute; inset: 0; z-index: 2;
-        display: none; place-items: center;
-        background: color-mix(in srgb, var(--bg) 78%, transparent);
-        pointer-events: none;
-      }
-      .card.is-hecho .card-hecho { display: grid; }
-      .card.is-hecho:hover .card-hecho { display: none; }
-      .card-hecho span {
-        font-family: var(--font-chrome); font-weight: var(--w-label);
-        font-size: 13px; letter-spacing: .16em; text-transform: uppercase;
-        color: var(--on-accent); background: var(--accent);
-        padding: 10px 20px; border-radius: var(--r-pill);
-        transform: rotate(-3deg);
-        box-shadow: 0 6px 22px color-mix(in srgb, var(--fg) 22%, transparent);
-        animation: selloEntra .28s cubic-bezier(.2,1.3,.4,1);
-      }
-      @keyframes selloEntra {
-        from { transform: rotate(-3deg) scale(.7); opacity: 0; }
-        to   { transform: rotate(-3deg) scale(1); opacity: 1; }
-      }
-      @media (prefers-reduced-motion: reduce) { .card-hecho span { animation: none; } }
       .card.is-hidden { display: none; }
       .thumb { aspect-ratio: 4/3; background: var(--chip); border-radius: var(--r-sm); overflow: hidden; display: block; position: relative; }
       .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -271,6 +265,7 @@ const rootCss = `:root{${Object.entries(tokens)
       .red-a { font-family: var(--font-chrome); font-size: 11px; line-height: 1; padding: 6px 9px; border: 1px solid var(--line); border-radius: var(--r-pill); color: var(--muted); text-decoration: none; background: transparent; cursor: pointer; white-space: nowrap; }
       .red-a:hover { color: var(--fg); border-color: var(--fg); }
       .red-ok input { accent-color: var(--accent); width: 17px; height: 17px; cursor: pointer; margin: 0; }
+      .red-corto { display: none; font-family: var(--font-dato); font-size: 10px; letter-spacing: .06em; color: var(--muted); }
       .red-ok input:disabled { cursor: not-allowed; }
       /* Una red ya subida se apaga: lo que queda por hacer salta a la vista. */
       .red-fila:has(input[data-rv-pub]:checked) > span { opacity: .45; }
@@ -278,7 +273,9 @@ const rootCss = `:root{${Object.entries(tokens)
       /* Enlace de la publicación: ocupa toda la fila, debajo de su red. */
       /* Gana a `.red-fila > span { display:flex }`, que es más específica. */
       .red-fila > .red-url { grid-column: 1 / -1; display: none; gap: 8px; align-items: center; padding: 0 0 8px; min-height: 0; border-bottom: 1px solid var(--line-soft, rgba(128,128,128,.16)); }
-      .red-fila:has(input[data-rv-pub]:checked) > .red-url { display: flex; opacity: 1; }
+      /* Solo desplegada: plegada no cabe, y la regla del :has le ganaba en
+         especificidad a la que oculta la tabla. */
+      .card:not(.is-folded) .red-fila:has(input[data-rv-pub]:checked) > .red-url { display: flex; opacity: 1; }
       .red-url input {
         flex: 1 1 auto; min-width: 0;
         font-family: var(--font-chrome); font-size: 11px;
@@ -529,10 +526,6 @@ const rootCss = `:root{${Object.entries(tokens)
             />
           </div>
 
-          {/* Sello de terminado: aparece cuando el post está en la web y las
-              cinco redes están marcadas. */}
-          <div class="card-hecho" aria-hidden="true"><span>Publicado en todas ✦</span></div>
-
           <div class="card-body">
             <h2>
               {/* Asa de arrastre: la ficha entera no puede serlo, está llena de
@@ -585,6 +578,7 @@ const rootCss = `:root{${Object.entries(tokens)
                   )}
                 </span>
                 <span class="red-ok">
+                  <span class="red-corto">{p.kind === 'social' ? 'Pág' : 'Post'}</span>
                   <input
                     type="checkbox"
                     disabled
@@ -634,7 +628,10 @@ const rootCss = `:root{${Object.entries(tokens)
                       >Abrir ↗</button>
                     )}
                   </span>
-                  <span class="red-ok"><input type="checkbox" data-rv-pub={f.id} /></span>
+                  <span class="red-ok">
+                    <span class="red-corto">{f.corto}</span>
+                    <input type="checkbox" data-rv-pub={f.id} title={f.nombre} />
+                  </span>
                   {/* Enlace de la publicación, para poder volver a ella al
                       revisar. Solo aparece cuando la red está marcada: antes
                       de subirla no hay nada que pegar. */}
