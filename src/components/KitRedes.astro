@@ -222,6 +222,12 @@ const rootCss = `:root{${Object.entries(tokens)
       .filtro { display: inline-flex; align-items: center; gap: 8px; }
       .filtro select { font-family: var(--font-chrome); font-size: 12px; padding: 7px 11px; max-width: 190px; border: 1px solid var(--fg); background: var(--card); color: var(--fg); border-radius: var(--r-pill); cursor: pointer; }
       .card.is-folded .card-fold { transform: rotate(-90deg); }
+      .card.is-folded { cursor: pointer; }
+      .card.is-folded:hover { background: var(--chip-soft); }
+      .card.is-folded button, .card.is-folded a,
+      .card.is-folded input, .card.is-folded select { cursor: auto; }
+      .card.is-folded .card-fold, .card.is-folded .card-grip { cursor: pointer; }
+      .card.is-folded input[type='checkbox'] { cursor: pointer; }
       .card.is-folded { padding: 10px 0; grid-template-columns: 62px 1fr; gap: 14px; align-items: center; }
       .card.is-folded .thumb { aspect-ratio: 1/1; }
       .card.is-folded .rv, .card.is-folded .note { display: none; }
@@ -301,6 +307,13 @@ const rootCss = `:root{${Object.entries(tokens)
 
       .red-extra { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding-top: 12px; }
       .red-extra button { font-size: 12px; padding: 6px 11px; }
+
+      /* El estado, en la línea de datos: pequeño y sin rótulo, porque las
+         propias opciones dicen lo que son. Se ve también plegada. */
+      .rv.rv-inline { display: inline-flex; border: 0; margin: 0; padding: 0; gap: 0; vertical-align: middle; }
+      .rv-inline .rv-note-label { display: none; }
+      .rv-inline select { font-size: 11px; padding: 3px 7px; }
+      .card.is-folded .rv.rv-inline { display: inline-flex; }
 
       /* Revisión bajo la foto: en una columna estrecha se apila sola. */
       .rv-col { border-top: 0; margin-top: 0; padding-top: 0; }
@@ -563,6 +576,7 @@ const rootCss = `:root{${Object.entries(tokens)
               fecha={revisiones[`${p.lang}/${p.slug}`]?.fecha_prevista || ''}
               label="Revisión"
               class="rv-col"
+              partes="resto"
             />
           </div>
 
@@ -592,6 +606,10 @@ const rootCss = `:root{${Object.entries(tokens)
               <span>{p.lang.toUpperCase()}</span>
               <span>{p.slides.length} diapositivas sugeridas</span>
               <span class="rv-pill" data-rv-pill hidden></span>
+              {/* El estado va con los datos, no debajo de la foto: así se ve
+                  y se cambia con la ficha plegada, que es cuando se repasa
+                  la lista entera. */}
+              <RevisionItem partes="estado" class="rv-inline" />
             </p>
 
             {/* Una fila por red, en el orden en que se publica: la imagen, el
@@ -1501,6 +1519,18 @@ const rootCss = `:root{${Object.entries(tokens)
             btn.classList.remove('is-busy'); btn.textContent = prev;
             toast('Error al generar: ' + e.message);
           }
+        });
+
+        // Plegada, toda la ficha es el mando de desplegar: buscar la flecha
+        // para abrir algo que ocupa toda la fila no tiene sentido. Se
+        // excluyen los controles, que ahí siguen sirviendo para lo suyo.
+        document.addEventListener('click', function (ev) {
+          var card = ev.target.closest('.card');
+          if (!card || !card.classList.contains('is-folded')) return;
+          if (ev.target.closest('button, a, input, select, textarea, label, [data-grip]')) return;
+          card.classList.remove('is-folded');
+          var f = card.querySelector('[data-fold]');
+          if (f) f.setAttribute('aria-expanded', 'true');
         });
 
         // ── Botones de las tarjetas ──────────────────────────────────────

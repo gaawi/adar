@@ -19,6 +19,9 @@ const PROGRAMA = 'https://creartbox.nyc/programs/currents-2026.html';
 // al servirse desde el mismo dominio que el kit, el canvas lo puede pintar sin
 // depender de los permisos de otro servidor.
 const MOCKUP = '/kit/creartbox-currents-programa.jpg';
+// Retrato de prensa de Eric Moe, foto de Mara Rago, descargado de su
+// representante. Servido desde aquí para que el canvas pueda pintarlo.
+const MOE = '/kit/eric-moe.jpg';
 
 export const CREARTBOX_SOURCES: KitSource[] = [
   {
@@ -376,47 +379,49 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
 `,
   },
 
-  // En espera de las respuestas de Eric Moe. Los apartados son sus ocho
-  // preguntas; el cuerpo se escribe cuando conteste. Está marcado «En espera»
-  // en revisiones-creartbox.json, así que sale con su etiqueta y se puede
-  // filtrar sin tener que acordarse de cuál era.
+  // Escrito con sus respuestas del 2 de octubre. El retrato es su foto de
+  // prensa oficial, descargada de su representante (stokar.com) y servida
+  // desde este repositorio, porque el canvas necesita el mismo dominio.
+  // El crédito «Photo: Mara Rago» va en la entradilla a propósito: así entra
+  // en todos los pies de foto automáticos y no depende de que alguien se
+  // acuerde de ponerlo.
   {
     lang: 'en',
     slug: 'eric-moe-interview',
-    title: 'Eric Moe on Laminar Flow in Upsidedown Creek',
+    title: 'Upsidedown Creek is a real place',
     excerpt:
-      'The composer of the newest piece on Currents answers eight questions: where the title came from, what flow means to him, and what he hopes to hear on 30 October.',
-    image: PHOTO + 'creartbox-ensemble.jpg',
+      'Eric Moe on the piece CreArtBox plays on 30 October. The creek is a real one in Montana, the sign at the trailhead really is upside down, and the music came partly from a tango. Photo: Mara Rago.',
+    image: MOE,
     status: 'publish',
     date: '2026-10-30',
     url: CURRENTS,
     tags: ['EricMoe', 'Currents', 'CallForScores', 'NewMusic'],
     body: `
-Eight questions to the composer, two weeks before the premiere.
+Eight questions to the composer, four weeks before we play his piece.
 
-## Where the title came from
+## The creek is real
 
-[Pendiente · respuesta de Eric a la pregunta 1]
+Upsidedown Creek is a short steep stream that dives off the Lake Plateau in the Beartooth Mountains of Montana into the Boulder River. The hiking trail that climbs along it has a famous inverted sign at the trailhead. Moe has been up and down that trail more than once.
 
-## The image behind the piece
+## There is not much laminar flow in it
 
-[Pendiente · respuesta de Eric a la pregunta 2]
+He admits it. Laminar flow is a fluid moving smoothly, without eddies or turbulence, and the real creek is not that. The piece is: quietly syncopated, gently flowing music, with melodies that often turn upside down while re-examining themselves.
 
-## What flow means, musically
+## A tango with three dancers
 
-[Pendiente · respuesta de Eric a la pregunta 3]
+The visual idea came from mountain streams, from the places where water sheets transparently over rocks and streambed. The kinetic idea came from playing and listening to the suave tango-inspired music of Pablo Ortiz. Moe calls the result a tango with three dancers.
 
-## What to listen for
+## What to listen for near the end
 
-[Pendiente · respuesta de Eric a la pregunta 4]
+Two melodic lines run through the piece, a soprano and a bass, and the instruments take turns expressing them. Near the end those two streams, which have been flowing side by side, are joined by a third. His word for it is apotheosis, gently.
 
-## Science, nature and music
+## Only the second time it has been played
 
-[Pendiente · respuesta de Eric a la pregunta 5]
+As far as he knows, 30 October is the second performance of the trio. He is curious to hear it beside Schumann and Brahms, music he has loved and studied for years, and says the piece is an unusually intimate thing for the players: they spend it completing and echoing one another.
 
-## From the other side of the desk
+## Why he says yes to a score he has never heard
 
-[Pendiente · respuesta de Eric a la pregunta 8, sobre Music on the Edge]
+He co-directs Music on the Edge in Pittsburgh, so he reads scores from the other side of the desk too. He looks for rhythmic interest, fresh ideas, dramatic pacing. And above all for a piece that will reward the performer, difficult or not. If the players are excited, he says, the listeners are bound to be.
 `,
   },
 ];

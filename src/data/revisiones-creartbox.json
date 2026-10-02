@@ -1,6 +1,6 @@
 {
   "_ayuda": "Revisiones escritas desde el panel interno. Cada clave es «idioma/slug». estado: «listo» (listo para publicar) o «cambios» (hay que corregir algo, la nota dice qué). fecha_prevista: cuándo toca publicarlo. textos: los pies de foto de cada red. publicado: qué redes se han publicado ya y cuándo (el post no está aquí: eso lo sabe el propio sitio). enlaces: la URL de cada publicación. orden: la posición a mano en la lista del kit, lo urgente arriba. Lo escribe la propia página; no hace falta editarlo a mano.",
-  "actualizado": "2026-10-01T08:05:30.013Z",
+  "actualizado": "2026-10-02T15:44:20.878Z",
   "posts": {
     "en/season-2026-27": {
       "estado": "listo",
@@ -87,11 +87,10 @@
       "fecha": "2026-10-01T08:04:58.206Z"
     },
     "en/eric-moe-interview": {
-      "estado": "espera",
-      "nota": "Esperando las respuestas de Eric Moe. Preguntas enviadas por correo; cuando lleguen, se rellenan los seis apartados y pasa a «Listo para publicar».",
-      "titulo": "Eric Moe on Laminar Flow in Upsidedown Creek",
-      "fecha": "2026-10-01T08:04:58.206Z",
-      "orden": 1
+      "estado": "borrador",
+      "nota": "Escrito con las respuestas que mandó Eric el 2 de octubre. Repásalo y, si encaja, pásalo a «Listo para publicar». El crédito de la foto (Mara Rago) va en la entradilla, así que sale solo en todos los pies: no lo quites al editar.",
+      "titulo": "Upsidedown Creek is a real place",
+      "fecha": "2026-10-02T10:00:00.000Z"
     }
   }
 }

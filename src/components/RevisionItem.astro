@@ -20,14 +20,23 @@ interface Props {
   label?: string;
   /** Clase extra, para que cada página lo encaje en su maquetación. */
   class?: string;
+  /**
+   * Qué parte se pinta. El kit necesita el estado arriba, junto a los datos,
+   * para poder cambiarlo con la ficha plegada, y el resto debajo de la foto.
+   * La barra encuentra los controles estén donde estén dentro de la ficha.
+   */
+  partes?: 'todo' | 'estado' | 'resto';
 }
-const { nota = '', fecha = '', label = '', class: extra = '' } = Astro.props;
+const { nota = '', fecha = '', label = '', class: extra = '', partes = 'todo' } = Astro.props;
+const hayEstado = partes === 'todo' || partes === 'estado';
+const hayResto = partes === 'todo' || partes === 'resto';
 ---
 
 <div class={`rv ${extra}`} data-rv-controls>
-  {label && <span class="rv-group-label">{label}</span>}
+  {label && hayResto && <span class="rv-group-label">{label}</span>}
   {/* Siete estados no caben en botones. El ciclo entero en un desplegable:
       de idea a publicable, o a la papelera. */}
+  {hayEstado && (
   <label class="rv-estado">
     <span class="rv-note-label">Estado</span>
     <select data-rv-estado>
@@ -40,12 +49,16 @@ const { nota = '', fecha = '', label = '', class: extra = '' } = Astro.props;
       <option value="descartado">Descartado</option>
     </select>
   </label>
+  )}
 
+  {hayResto && (
   <label class="rv-fecha">
     <span class="rv-note-label">Publicar el</span>
     <input type="date" data-rv-fecha value={fecha} />
   </label>
+  )}
 
+  {hayResto && (
   <label class="rv-note" data-rv-note-wrap hidden>
     <span class="rv-note-label" data-rv-note-label>Qué hay que cambiar</span>
     <textarea
@@ -54,4 +67,5 @@ const { nota = '', fecha = '', label = '', class: extra = '' } = Astro.props;
       placeholder="Ej.: demasiado largo, el segundo párrafo sobra, falta decir dónde fue…"
     >{nota}</textarea>
   </label>
+  )}
 </div>
