@@ -22,6 +22,8 @@ const MOCKUP = '/kit/creartbox-currents-programa.jpg';
 // Retrato de prensa de Eric Moe, foto de Mara Rago, descargado de su
 // representante. Servido desde aquí para que el canvas pueda pintarlo.
 const MOE = '/kit/eric-moe.jpg';
+// La serie de entrevistas vive en la sección News de creartbox.nyc.
+const ENTREVISTA_MOE = 'https://creartbox.nyc/news/eric-moe-interview.html';
 
 export const CREARTBOX_SOURCES: KitSource[] = [
   {
@@ -388,13 +390,14 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: 'eric-moe-interview',
+    kind: 'entrevista',
     title: 'Upsidedown Creek is a real place',
     excerpt:
       'Eric Moe on the piece CreArtBox plays on 30 October. The creek is a real one in Montana, the sign at the trailhead really is upside down, and the music came partly from a tango. Photo: Mara Rago.',
     image: MOE,
     status: 'publish',
     date: '2026-10-30',
-    url: CURRENTS,
+    url: ENTREVISTA_MOE,
     tags: ['EricMoe', 'Currents', 'CallForScores', 'NewMusic'],
     body: `
 Eight questions to the composer, four weeks before we play his piece.

@@ -320,7 +320,7 @@ export interface KitSource {
    * (un concierto, una convocatoria) y no hay nada que publicar en la web.
    * Por defecto, `post`.
    */
-  kind?: "post" | "social";
+  kind?: "post" | "social" | "entrevista";
 }
 
 export interface KitPost extends Omit<KitSource, 'body' | 'url'> {

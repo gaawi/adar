@@ -183,6 +183,7 @@ const rootCss = `:root{${Object.entries(tokens)
       .badge.tipo { border: 1px solid currentColor; background: transparent; }
       .badge.tipo.post { color: var(--fg); opacity: .55; }
       .badge.tipo.social { color: var(--accent); opacity: 1; background: var(--chip); }
+      .badge.tipo.entrevista { color: var(--fg); opacity: 1; background: var(--accent); border-color: var(--accent); }
 
       /* ── Arrastrar para ordenar ────────────────────────────────────────
          El orden a mano se guarda con las revisiones: lo urgente arriba, y
@@ -537,6 +538,7 @@ const rootCss = `:root{${Object.entries(tokens)
             <button data-tipo="all" class="on">Todas</button>
             <button data-tipo="post">Post ({posts.filter((p) => p.kind !== 'social').length})</button>
             <button data-tipo="social">Solo redes ({posts.filter((p) => p.kind === 'social').length})</button>
+            <button data-tipo="entrevista">Entrevistas ({posts.filter((p) => p.kind === 'entrevista').length})</button>
           </span>
           <button id="ordenFecha" title="Deshacer el orden a mano y volver al orden por fecha" hidden>Orden por fecha</button>
           <span class="count" id="count">{published} en la web · {posts.length} en total</span>
@@ -552,13 +554,15 @@ const rootCss = `:root{${Object.entries(tokens)
       {posts.map((p, i) => {
         // Las diapositivas son portada + contenido + cierre. Sin ninguna de
         // contenido no hay carrusel que montar, solo una imagen que bajar.
-        const hayCarrusel = p.slides.length >= 3;
+        // Una entrevista no se trocea en diapositivas: va la portada, y el
+        // texto entero en el pie si cabe. Lo demás, si tiene apartados.
+        const hayCarrusel = p.slides.length >= 3 && p.kind !== 'entrevista';
         return (
         <article
           class="card"
           data-title={p.title.toLowerCase()}
           data-status={p.status}
-          data-kind={p.kind === 'social' ? 'social' : 'post'}
+          data-kind={p.kind === 'social' ? 'social' : p.kind === 'entrevista' ? 'entrevista' : 'post'}
           data-i={i}
           data-nat={i}
           data-rv-item
@@ -596,8 +600,8 @@ const rootCss = `:root{${Object.entries(tokens)
               {/* Qué es: una pieza con artículo detrás o algo que solo va a
                   redes. Cambia lo que hay que hacer con ella, así que va
                   delante del todo. */}
-              <span class={`badge tipo ${p.kind === 'social' ? 'social' : 'post'}`}>
-                {p.kind === 'social' ? 'Solo redes' : 'Post'}
+              <span class={`badge tipo ${p.kind === 'social' ? 'social' : p.kind === 'entrevista' ? 'entrevista' : 'post'}`}>
+                {p.kind === 'social' ? 'Solo redes' : p.kind === 'entrevista' ? 'Entrevista' : 'Post'}
               </span>
               <span class={`badge ${p.status === 'publish' ? 'pub' : 'draft'}`}>
                 {p.status === 'publish' ? brand.statusLabels.publish : brand.statusLabels.draft}
@@ -621,8 +625,8 @@ const rootCss = `:root{${Object.entries(tokens)
               </div>
 
               <div class="red-fila">
-                <span class="red-n">{p.kind === 'social' ? 'Página' : 'Post en la web'}</span>
-                <span class="red-img"><em class="red-na">{p.kind === 'social' ? 'no hay artículo que publicar' : 'la foto de arriba'}</em></span>
+                <span class="red-n">{p.kind === 'social' ? 'Página' : p.kind === 'entrevista' ? 'Entrevista' : 'Post en la web'}</span>
+                <span class="red-img"><em class="red-na">{p.kind === 'social' ? 'no hay artículo que publicar' : p.kind === 'entrevista' ? 'solo la portada' : 'la foto de arriba'}</em></span>
                 <span class="red-txt"><button data-textos>Ver y editar textos</button></span>
                 <span class="red-ir">
                   {p.status === 'publish' && <a class="red-a" href={p.url} target="_blank" rel="noopener">Ver ↗</a>}
@@ -671,7 +675,7 @@ const rootCss = `:root{${Object.entries(tokens)
                           >{b.label} ↓</button>
                         )
                       )}
-                    {!hayCarrusel && f.imgs.some((b) => b.adapt) && (
+                    {!hayCarrusel && p.kind !== 'entrevista' && f.imgs.some((b) => b.adapt) && (
                       <em class="red-na">una sola imagen, no hay carrusel que montar</em>
                     )}
                   </span>
@@ -925,8 +929,41 @@ const rootCss = `:root{${Object.entries(tokens)
             .concat([cierre]);
         }
 
+        /** El límite de caracteres que impone cada red. */
+        function limiteDe(red) {
+          for (var i = 0; i < REDES.length; i++) if (REDES[i].id === red) return REDES[i].limite;
+          return 2200;
+        }
+        /** Dónde acaba el pie: enlace donde se pueda pulsar, bio donde no. */
+        function cierre(d, red) {
+          return (red === 'ig' || red === 'tt') ? B.captionTail : d.url;
+        }
+        /**
+         * Una entrevista entera cabe en Facebook, LinkedIn o TikTok, y a veces
+         * en Instagram. Donde no cabe se cuenta que la hemos hecho y se manda
+         * a leerla. El corte lo decide el propio límite, no nosotros.
+         */
+        function entrevista(d0, red) {
+          var d = Object.assign({}, d0, postDe(d0));
+          var cuerpo = String(d.body).replace(/^##\s+/gm, '').trim();
+          var tags = hashtags(d.tags, red === 'li' ? 5 : 8);
+          var entera = d.title + '\n\n' + cuerpo + '\n\n' + cierre(d, red) + '\n\n' + tags;
+          if (entera.length <= limiteDe(red)) return entera;
+          if (red === 'x') {
+            var t = d.title.length > 90 ? d.title.slice(0, 87) + '…' : d.title;
+            return 'New interview: ' + t + '\n\n' + d.url;
+          }
+          return d.title + '\n\n' + d.excerpt + '\n\n' + 'The whole interview: ' + d.url + '\n\n' + tags;
+        }
+
         function captions(d0) {
           var d = Object.assign({}, d0, postDe(d0));
+          if (d0.kind === 'entrevista') {
+            return {
+              ig: entrevista(d0, 'ig'), fb: entrevista(d0, 'fb'), li: entrevista(d0, 'li'),
+              x: entrevista(d0, 'x'), tt: entrevista(d0, 'tt'), url: d.url,
+            };
+          }
           return {
             ig: d.title + '\n\n' + d.excerpt + '\n\n' + B.captionTail + '\n\n' + hashtags(d.tags, 12),
             fb: d.title + '\n\n' + d.excerpt + '\n\n' + d.url,
