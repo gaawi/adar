@@ -393,38 +393,46 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     kind: 'entrevista',
     title: 'Upsidedown Creek is a real place',
     excerpt:
-      'Eric Moe on the piece CreArtBox plays on 30 October. The creek is a real one in Montana, the sign at the trailhead really is upside down, and the music came partly from a tango. Photo: Mara Rago.',
+      'Eight questions to Eric Moe, whose Laminar Flow in Upsidedown Creek we play on 30 October. The creek is a real one in Montana, the sign at the trailhead really is upside down, and the music came partly from a tango. Photo: Mara Rago.',
     image: MOE,
     status: 'publish',
     date: '2026-10-30',
     url: ENTREVISTA_MOE,
     tags: ['EricMoe', 'Currents', 'CallForScores', 'NewMusic'],
     body: `
-Eight questions to the composer, four weeks before we play his piece.
+Eric Moe’s Laminar Flow in Upsidedown Creek lasts five minutes and reached our season through the open Call for Scores. We play it on 30 October at The DiMenna Center, between Brahms and both Schumanns. Moe is Andrew W. Mellon Professor of Composition and Theory at the University of Pittsburgh, where he co-directs the Music on the Edge series. He answered these eight questions from a residency at the Jentel Foundation in Wyoming, four weeks before the concert.
 
-## The creek is real
+Where did the title Laminar Flow in Upsidedown Creek come from?
 
-Upsidedown Creek is a short steep stream that dives off the Lake Plateau in the Beartooth Mountains of Montana into the Boulder River. The hiking trail that climbs along it has a famous inverted sign at the trailhead. Moe has been up and down that trail more than once.
+“Laminar flow” is a term used to describe a fluid moving smoothly without eddies or turbulence. Upsidedown Creek is a short steep stream that dives off the Lake Plateau in the Beartooth Mountains of Montana into the Boulder River. (A hiking trail that ascends along the stream has a famous inverted sign at the trailhead). I admit that there’s not a lot of laminar flow in the actual Upsidedown Creek – I’ve been up and down the trail more than once – but my piece has a lot of quietly syncopated, gently flowing music with melodies that often turn upside down while re-examining themselves.
 
-## There is not much laminar flow in it
+What was the initial idea or image behind the piece?
 
-He admits it. Laminar flow is a fluid moving smoothly, without eddies or turbulence, and the real creek is not that. The piece is: quietly syncopated, gently flowing music, with melodies that often turn upside down while re-examining themselves.
+The visual idea of the piece came from looking at mountain streams and taking delight in the places where water sheets transparently over rocks and streambed. The kinetic idea of the piece came from performing and listening to suave tango-inspired compositions by Pablo Ortiz; a tango with three dancers.
 
-## A tango with three dancers
+What does “flow” mean to you musically?
 
-The visual idea came from mountain streams, from the places where water sheets transparently over rocks and streambed. The kinetic idea came from playing and listening to the suave tango-inspired music of Pablo Ortiz. Moe calls the result a tango with three dancers.
+“Flow” suggests more or less continual, more or less gentle rhythmic movement to me; a flow state is something I seek when writing music.
 
-## What to listen for near the end
+Is there something in the piece you would especially like listeners to notice or listen for?
 
-Two melodic lines run through the piece, a soprano and a bass, and the instruments take turns expressing them. Near the end those two streams, which have been flowing side by side, are joined by a third. His word for it is apotheosis, gently.
+It’s not essential to the enjoyment of the piece, but there’s a place near the end of the piece that I think is pretty cool. In the piece up to that point, there are essentially two melodic lines that the instruments take turns expressing. These two streams that have been flowing side by side – the soprano and bass lines – are finally joined by a third in a gentle apotheosis.
 
-## Only the second time it has been played
+How does nature, science, or the physical world influence the way you think about music?
 
-As far as he knows, 30 October is the second performance of the trio. He is curious to hear it beside Schumann and Brahms, music he has loved and studied for years, and says the piece is an unusually intimate thing for the players: they spend it completing and echoing one another.
+As the title suggests, I’m a nature-lover and a science-lover as well as a music-, art-, and literature-lover. I look to experience the sublime wherever I can find it in all its various forms and flavors.
 
-## Why he says yes to a score he has never heard
+What are some recent or upcoming projects you’re particularly excited about and would like to share?
 
-He co-directs Music on the Edge in Pittsburgh, so he reads scores from the other side of the desk too. He looks for rhythmic interest, fresh ideas, dramatic pacing. And above all for a piece that will reward the performer, difficult or not. If the players are excited, he says, the listeners are bound to be.
+My song cycle Girl Soup, a setting of surreal feminist poems by the poet Sawako Nakayasu, will be premiered on December 6 in New York by soprano Anna Elder and pianist Huizi Zhang (details forthcoming). A portrait CD, No Time Like The Present, including my new piano concerto has just been released by bmop/sound.
+
+What are you most curious to hear in CreArtBox’s interpretation of the piece?
+
+I’m very excited to hear what will be (as far as I know) only the second performance of the trio. The piece provides an intimate experience for the performers, who are (to an unusual degree) completing or echoing one another’s musical thoughts throughout. Additionally, I’m curious to hear Laminar Flow in the context of pieces I have loved and studied for many years (Schumann, Brahms).
+
+You co-direct Music on the Edge and have been programming new music in Pittsburgh for years. From the other side of the desk: what makes you say yes to a score you have never heard of?
+
+In considering new work for programming, in addition to pieces with engaging, unsurprising qualities – rhythmic interest (unrelated to tempo, btw), fresh musical ideas, dramatic pacing – I admire and favor pieces that will provide a rewarding experience for the performer. This doesn’t mean that the piece has to be easy or even idiomatically written for the instruments – after all, overcoming challenges is part of the joy of musicmaking. But if the performers are excited about the piece, then listeners are bound to be excited as well.
 `,
   },
 ];

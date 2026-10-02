@@ -950,7 +950,9 @@ const rootCss = `:root{${Object.entries(tokens)
             var t = d.title.length > 90 ? d.title.slice(0, 87) + '…' : d.title;
             return 'New interview: ' + t + '\n\n' + d.url;
           }
-          return d.title + '\n\n' + d.excerpt + '\n\n' + 'The whole interview: ' + d.url + '\n\n' + tags;
+          // Donde el enlace no se pulsa, mandarlo escrito no sirve de nada.
+          var donde = r.enlaces ? 'The whole interview: ' + d.url : 'Full interview at the link in bio ↗';
+          return d.title + '\n\n' + d.excerpt + '\n\n' + donde + '\n\n' + tags;
         }
 
         function captions(d0) {
