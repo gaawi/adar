@@ -23,7 +23,7 @@ const MOCKUP = '/kit/creartbox-currents-programa.jpg';
 // representante. Servido desde aquí para que el canvas pueda pintarlo.
 const MOE = '/kit/eric-moe.jpg';
 // La serie de entrevistas vive en la sección News de creartbox.nyc.
-const ENTREVISTA_MOE = 'https://creartbox.nyc/news/eric-moe-interview.html';
+const ENTREVISTA_MOE = 'https://creartbox.nyc/news/upsidedown-creek-is-a-real-place.html';
 
 export const CREARTBOX_SOURCES: KitSource[] = [
   {

@@ -930,26 +930,23 @@ const rootCss = `:root{${Object.entries(tokens)
         }
 
         /** El límite de caracteres que impone cada red. */
-        function limiteDe(red) {
-          for (var i = 0; i < REDES.length; i++) if (REDES[i].id === red) return REDES[i].limite;
-          return 2200;
-        }
         /** Dónde acaba el pie: enlace donde se pueda pulsar, bio donde no. */
-        function cierre(d, red) {
-          return (red === 'ig' || red === 'tt') ? B.captionTail : d.url;
+        function cierre(d, id) {
+          return red(id).enlaces ? d.url : B.captionTail;
         }
         /**
          * Una entrevista entera cabe en Facebook, LinkedIn o TikTok, y a veces
          * en Instagram. Donde no cabe se cuenta que la hemos hecho y se manda
          * a leerla. El corte lo decide el propio límite, no nosotros.
          */
-        function entrevista(d0, red) {
+        function entrevista(d0, id) {
           var d = Object.assign({}, d0, postDe(d0));
+          var r = red(id);
           var cuerpo = String(d.body).replace(/^##\s+/gm, '').trim();
-          var tags = hashtags(d.tags, red === 'li' ? 5 : 8);
-          var entera = d.title + '\n\n' + cuerpo + '\n\n' + cierre(d, red) + '\n\n' + tags;
-          if (entera.length <= limiteDe(red)) return entera;
-          if (red === 'x') {
+          var tags = hashtags(d.tags, r.tags);
+          var entera = d.title + '\n\n' + cuerpo + '\n\n' + cierre(d, id) + '\n\n' + tags;
+          if (cuentaReal(entera, id) <= r.limite) return entera;
+          if (id === 'x') {
             var t = d.title.length > 90 ? d.title.slice(0, 87) + '…' : d.title;
             return 'New interview: ' + t + '\n\n' + d.url;
           }
@@ -965,25 +962,42 @@ const rootCss = `:root{${Object.entries(tokens)
             };
           }
           return {
-            ig: d.title + '\n\n' + d.excerpt + '\n\n' + B.captionTail + '\n\n' + hashtags(d.tags, 12),
-            fb: d.title + '\n\n' + d.excerpt + '\n\n' + d.url,
-            li: d.title + '\n\n' + d.excerpt + '\n\n' + B.captionLead + d.url + '\n\n' + hashtags(d.tags, 5),
+            ig: d.title + '\n\n' + d.excerpt + '\n\n' + B.captionTail + '\n\n' + hashtags(d.tags, 5),
+            fb: d.title + '\n\n' + d.excerpt + '\n\n' + d.url + '\n\n' + hashtags(d.tags, 2),
+            li: d.title + '\n\n' + d.excerpt + '\n\n' + B.captionLead + d.url + '\n\n' + hashtags(d.tags, 3),
             x: (d.title.length > 90 ? d.title.slice(0, 87) + '…' : d.title) + '\n\n' + d.url,
             // TikTok no hace pulsable ningún enlace del pie: pegar la URL solo
             // gastaría caracteres, así que se manda a la bio como en Instagram.
             // Y como apenas se lee la primera línea, el titular va solo delante.
-            tt: d.title + '\n\n' + d.excerpt + '\n\n' + B.captionTail + '\n\n' + hashtags(d.tags, 6),
+            tt: d.title + '\n\n' + d.excerpt + '\n\n' + B.captionTail + '\n\n' + hashtags(d.tags, 4),
             url: d.url,
           };
         }
         // Redes que se pueden editar, con el límite que impone cada una.
+        // `corte`: lo que se ve antes del «ver más», que es lo único que lee
+        // la mayoría. `enlaces`: si se pueden pulsar. `tags`: cuántas etiquetas
+        // aguanta sin parecer spam, según lo que recomienda cada plataforma.
         var REDES = [
-          { id: 'ig', nombre: 'Instagram', limite: 2200, pista: 'Pie de foto. Los hashtags cuentan.' },
-          { id: 'fb', nombre: 'Facebook', limite: 63206, pista: 'Sin límite en la práctica; las primeras líneas son las que se leen.' },
-          { id: 'li', nombre: 'LinkedIn', limite: 3000, pista: 'Se corta en «ver más» a las 3 líneas.' },
-          { id: 'x', nombre: 'X', limite: 280, pista: 'El enlace también ocupa.' },
-          { id: 'tt', nombre: 'TikTok', limite: 4000, pista: 'El enlace no se puede pulsar: va en la bio. Solo se lee la primera línea.' },
+          { id: 'ig', nombre: 'Instagram', limite: 2200, corte: 125, enlaces: false, tags: 5,
+            pista: 'Se ven 125 caracteres antes del «más». El enlace no se puede pulsar: va en la bio.' },
+          { id: 'fb', nombre: 'Facebook', limite: 63206, corte: 480, enlaces: true, tags: 2,
+            pista: 'Corta por alto, no por caracteres: unas 480. El enlace sí se pulsa y genera tarjeta.' },
+          { id: 'li', nombre: 'LinkedIn', limite: 3000, corte: 140, enlaces: true, tags: 3,
+            pista: 'En el móvil se ven 140 caracteres; en el ordenador, 210. El enlace se pulsa.' },
+          { id: 'x', nombre: 'X', limite: 280, corte: 280, enlaces: true, tags: 1,
+            pista: 'Cualquier enlace ocupa 23 caracteres, da igual lo largo que sea.' },
+          { id: 'tt', nombre: 'TikTok', limite: 4000, corte: 80, enlaces: false, tags: 4,
+            pista: 'Se ven 80 caracteres sobre el vídeo. El enlace no se puede pulsar: va en la bio.' },
         ];
+        function red(id) {
+          for (var i = 0; i < REDES.length; i++) if (REDES[i].id === id) return REDES[i];
+          return REDES[0];
+        }
+        /** Lo que cuenta la plataforma: en X un enlace vale 23 y punto. */
+        function cuentaReal(texto, id) {
+          if (id !== 'x') return texto.length;
+          return texto.replace(/https?:\/\/\S+/g, 'x'.repeat(23)).length;
+        }
 
         function claveDe(d) { return d.lang + '/' + d.slug; }
 
@@ -1681,10 +1695,11 @@ const rootCss = `:root{${Object.entries(tokens)
         function pintaCuenta(caja) {
           var ta = caja.querySelector('textarea');
           var el = caja.querySelector('.t-cuenta');
-          var limite = Number(caja.dataset.limite);
-          var n = ta.value.length;
-          el.textContent = n.toLocaleString('es-ES') + ' / ' + limite.toLocaleString('es-ES');
-          el.classList.toggle('pasa', n > limite);
+          var r = red(caja.dataset.red);
+          var n = cuentaReal(ta.value, r.id);
+          el.textContent = n.toLocaleString('es-ES') + ' / ' + r.limite.toLocaleString('es-ES') +
+            '  ·  se ven ' + r.corte;
+          el.classList.toggle('pasa', n > r.limite);
         }
 
         function abrirTextos(d) {
