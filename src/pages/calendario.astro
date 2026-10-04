@@ -103,7 +103,18 @@ const hoy = new Date().toISOString().slice(0, 10);
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    {/* Instalable desde el iPhone: «Añadir a pantalla de inicio» y se abre sin
+        barra de navegador, con su icono. viewport-fit=cover deja que el
+        contenido llegue a los bordes y que env(safe-area-*) tenga valor. */}
+    <link rel="manifest" href="/kit/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Kit" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex, nofollow" />
     <title>Calendario de publicación</title>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -159,7 +170,10 @@ const hoy = new Date().toISOString().slice(0, 10);
       .nav button:hover { background: var(--ink); color: var(--paper); }
       #mes { font-family: var(--voz); font-size: 22px; min-width: 200px; text-transform: capitalize; }
 
-      .rejilla { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+      /* minmax(0,·) y no 1fr a secas: con 1fr cada columna crece hasta lo que
+         mida su ficha más larga, y en el móvil el domingo se salía de la
+         rejilla y quedaba cortado por el overflow. */
+      .rejilla { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
       .dow { background: var(--paper); font-family: var(--mono); font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); padding: 8px 10px; text-align: center; }
       .dia { background: var(--card); min-height: 116px; padding: 7px 8px; display: flex; flex-direction: column; gap: 5px; }
       .dia.fuera { background: #f1efe8; }
@@ -233,6 +247,37 @@ const hoy = new Date().toISOString().slice(0, 10);
         .chip .quien { font-size: 8px; }
         .nav { margin-left: 0; width: 100%; }
         #mes { font-size: 19px; min-width: 0; flex: 1; }
+      }
+
+      /* ── En el móvil ───────────────────────────────────────────────────
+         Las mismas reglas que el kit: nada que tocar por debajo de 44px,
+         ningún campo por debajo de 16 (iOS hace zoom al enfocarlo), sin
+         destello azul y respetando el hueco de abajo del iPhone. */
+      @media (max-width: 860px) {
+        html { -webkit-text-size-adjust: 100%; }
+        body { -webkit-tap-highlight-color: transparent; }
+        .vuelta a, .seg button, .nav button, .cal-bar button, .lista li a {
+          min-height: 44px; display: inline-flex; align-items: center; justify-content: center;
+        }
+        .lista li a { justify-content: flex-start; }
+        .seg button, .nav button, .cal-bar button, .cal-bar-text { font-size: 14px; }
+        input, select, textarea { font-size: 16px; }
+        .barra, .vuelta, .seg { -webkit-user-select: none; user-select: none; }
+        .cal-bar { padding-bottom: calc(12px + env(safe-area-inset-bottom)); }
+        body.con-barra { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
+        .cal-aviso { bottom: calc(96px + env(safe-area-inset-bottom)); }
+        /* La rejilla del mes, a lo justo: los nombres de los días en dos
+           letras para que quepan las siete columnas sin apreturas. */
+        .dow { padding: 8px 2px; font-size: 9px; letter-spacing: .04em; }
+        .dia { padding: 4px 3px; }
+        .dia-n { font-size: 10px; }
+        /* En una columna de 50px un título se partía letra a letra y el día
+           crecía media pantalla. Aquí cada ficha es una línea: el color dice
+           de quién es y el día se mantiene cuadrado. El texto entero está al
+           tocarla. */
+        .chip { white-space: nowrap; font-size: 10px; padding: 3px 3px 3px 5px; border-left-width: 5px; }
+        .chip .quien { display: none; }
+        .chip.sin-aprobar::after { content: ' ·'; }
       }
     </style>
   </head>

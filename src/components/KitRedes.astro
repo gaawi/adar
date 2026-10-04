@@ -126,7 +126,18 @@ const rootCss = `:root{${Object.entries(tokens)
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    {/* Instalable desde el iPhone: «Añadir a pantalla de inicio» y se abre sin
+        barra de navegador, con su icono. viewport-fit=cover deja que el
+        contenido llegue a los bordes y que env(safe-area-*) tenga valor. */}
+    <link rel="manifest" href="/kit/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Kit" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f6f4ee" />
+    <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex, nofollow" />
     <title>Kit de redes · {brand.org}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -257,7 +268,10 @@ const rootCss = `:root{${Object.entries(tokens)
       .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
       .thumb.no-img::after { content: 'sin imagen'; position: absolute; inset: 0; display: grid; place-items: center; font-family: var(--font-chrome); font-size: 11px; color: var(--muted); }
       .card h2 { font-family: var(--font-voz); font-size: 20px; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; display: flex; align-items: center; gap: 14px; }
-      .card h2 > span { min-width: 0; }
+      /* El título es el que se estira; min-width:0 solo para que pueda
+         romper. Sin flex-grow se quedaba en cero de ancho en cuanto el asa
+         creció a 44px, y se partía letra a letra en vertical. */
+      .card h2 > span:not([data-grip]) { flex: 1 1 auto; min-width: 0; }
       .meta { font-family: var(--font-dato); font-size: 11px; color: var(--muted); margin: 0 0 12px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
       .badge { padding: 2px 8px; border-radius: var(--r-pill); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
       .badge.pub { background: var(--accent); color: var(--on-accent); }
@@ -271,7 +285,8 @@ const rootCss = `:root{${Object.entries(tokens)
       .red-cab > span { font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); padding-bottom: 6px; border-bottom: 1px solid var(--line); }
       .red-cab > span:last-child, .red-ok { text-align: center; }
       .red-fila { display: contents; }
-      .red-fila > span { padding: 7px 0; border-bottom: 1px solid var(--line-soft, rgba(128,128,128,.16)); min-height: 42px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+      .red-fila > span, .red-fila > label { padding: 7px 0; border-bottom: 1px solid var(--line-soft, rgba(128,128,128,.16)); min-height: 42px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+      .red-fila > .red-ok { cursor: pointer; }
       .red-fila > .red-ok { justify-content: center; }
       .red-n { font-family: var(--font-chrome); font-weight: var(--w-label); font-size: 12px; }
       .red-na { font-style: normal; font-family: var(--font-chrome); font-size: 11px; color: var(--muted); }
@@ -462,14 +477,160 @@ const rootCss = `:root{${Object.entries(tokens)
         .thumb { max-width: 260px; }
         .modal-panel { inset: 0; border-radius: 0; }
         /* La tabla de cinco columnas no cabe: cada red pasa a ser un bloque
-           con su nombre arriba y la casilla a la derecha del todo. */
+           con el nombre y la casilla en la primera línea, y los botones
+           debajo en una sola fila. Apilados —imagen, copiar, abrir— cada red
+           se comía media pantalla y había que hacer scroll para ver cinco. */
         .redes { display: block; }
         .red-cab { display: none; }
-        .red-fila { display: grid; grid-template-columns: 1fr 28px; gap: 4px 10px; padding: 10px 0; border-bottom: 1px solid var(--line-soft, rgba(128,128,128,.16)); }
-        .red-fila > span { border-bottom: 0; padding: 0; min-height: 0; }
-        .red-n { grid-column: 1; font-size: 13px; }
-        .red-ok { grid-column: 2; grid-row: 1 / span 4; align-items: start !important; }
-        .red-img, .red-txt, .red-ir { grid-column: 1; }
+        .red-fila {
+          position: relative;
+          display: flex; flex-wrap: wrap; align-items: center;
+          gap: 8px; padding: 10px 0;
+          /* Hueco fijo a la derecha para la casilla. */
+          padding-right: 52px;
+          border-bottom: 1px solid var(--line-soft, rgba(128,128,128,.16));
+        }
+        .red-fila > span, .red-fila > label { border-bottom: 0; padding: 0; min-height: 0; flex: 0 0 auto; }
+        .red-n { font-size: 13px; }
+        /* La casilla, anclada arriba a la derecha: siempre en la misma
+           vertical, sin que la empujen los botones ni se quede sola en una
+           línea. De un vistazo se ve qué falta por subir. */
+        .card:not(.is-folded) .red-fila > .red-ok { position: absolute; top: 4px; right: 0; margin: 0; }
+        .red-fila > .red-url { flex: 1 1 100%; }
+      }
+
+      /* ═══════════════════════════════════════════════════════════════════
+         EN EL MÓVIL
+         Esto se usa casi siempre desde un iPhone, así que aquí no se trata de
+         que quepa: se trata de que se maneje con el pulgar y no se note que
+         es una web. Cuatro reglas, por orden de lo que más canta:
+           1. Ningún campo por debajo de 16px. iOS hace zoom al enfocarlos y
+              es lo que más delata a una web metida en el móvil.
+           2. Nada que tocar por debajo de 44px, que es el mínimo de Apple.
+           3. La cabecera, una barra fija y corta; los filtros se desplazan a
+              lo ancho, como las pestañas de una app, en vez de apilarse.
+           4. Sin destello azul al tocar y sin menú de selección en la chapa.
+         ═══════════════════════════════════════════════════════════════════ */
+      @media (max-width: 860px) {
+        html { -webkit-text-size-adjust: 100%; }
+        body {
+          -webkit-tap-highlight-color: transparent;
+          overscroll-behavior-y: none;
+        }
+        /* La chapa no se selecciona al dejar el dedo apoyado; el texto sí. */
+        .pnl, .toolbar, .meta, .red-n, .red-cab, .plegar-fila, .card h2 { -webkit-user-select: none; user-select: none; }
+        .card h2 > span:not([data-grip]), .t-red textarea, .red-url input { -webkit-user-select: text; user-select: text; }
+
+        /* 1 · Ningún campo por debajo de 16px. */
+        input, select, textarea,
+        .toolbar input[type='search'], .filtro select, .rv-estado select,
+        .rv-fecha input, .rv-note textarea, .t-red textarea, .red-url input,
+        .rv-inline select, .t-campos textarea {
+          font-size: 16px;
+        }
+
+        /* 2 · Zonas de toque. */
+        .wrap { padding-left: 16px; padding-right: 16px; }
+        button, a.btn, .red-a, .pnl-link, .kit-switch a, .seg button, .filtro select, .rv-estado select {
+          min-height: 44px;
+          display: inline-flex; align-items: center; justify-content: center;
+        }
+        .red-fila button, .red-extra button, .t-lado button { min-height: 44px; padding: 0 14px; font-size: 14px; }
+        .toolbar input[type='search'], .red-url input, .rv-fecha input { min-height: 44px; }
+        .card-fold, #plegarTodo { width: 44px; height: 44px; font-size: 24px; }
+        .card-grip { min-width: 44px; min-height: 44px; justify-content: center; font-size: 20px; }
+        /* La casilla se agranda sin deformarse, y se toca con holgura. */
+        .red-ok input[type='checkbox'] { width: 22px; height: 22px; }
+        .card.is-folded .red-ok input { width: 22px; height: 22px; }
+        .card.is-folded .red-fila > .red-ok { min-height: 44px; padding: 0 2px; }
+
+        /* 3 · Cabecera de app: fija, corta, y los filtros en una sola fila
+           que se arrastra a lo ancho. Apilados ocupaban casi media pantalla. */
+        .pnl {
+          position: sticky; top: 0;
+          padding-top: env(safe-area-inset-top);
+          background: var(--bg);
+        }
+        .pnl-top { padding: 8px 0; gap: 8px; }
+        .pnl-titulo { display: none; }
+        .pnl-logo { height: 28px; }
+        /* Encogida: se va la fila de marca y quedan los filtros. */
+        .pnl-top {
+          max-height: 160px; overflow: hidden;
+          transition: max-height .22s ease, opacity .18s ease, padding .22s ease;
+        }
+        .pnl-encogida .pnl-top { max-height: 0; opacity: 0; padding-top: 0; padding-bottom: 0; }
+        .toolbar {
+          display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 8px;
+          padding: 8px 0; margin: 0 -16px; padding-left: 16px; padding-right: 16px;
+          scroll-snap-type: x proximity;
+          -webkit-overflow-scrolling: touch;
+          scrollbar-width: none;
+        }
+        .toolbar::-webkit-scrollbar { display: none; }
+        .toolbar > * { flex: 0 0 auto; scroll-snap-align: start; }
+        .toolbar input[type='search'] { min-width: 180px; }
+        .toolbar label { white-space: nowrap; min-height: 44px; }
+        .count { margin-left: 0; }
+
+        /* 4 · La barra de guardado, por encima del indicador de inicio. */
+        .rv-bar {
+          padding-bottom: calc(12px + env(safe-area-inset-bottom));
+          gap: 8px;
+        }
+        .rv-bar-btn { min-height: 44px; }
+        body.rv-bar-on { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
+
+        /* Los modales, a pantalla completa y sin arrastrar el scroll de detrás.
+           dvh y no vh: en iOS la barra del navegador aparece y desaparece. */
+        .modal-panel, .t-panel {
+          inset: 0; border-radius: 0;
+          height: 100dvh; max-height: 100dvh;
+          padding-top: env(safe-area-inset-top);
+          padding-bottom: env(safe-area-inset-bottom);
+        }
+        #modal, #tmodal { overscroll-behavior: contain; }
+        /* En vertical, la vista previa debajo del editor: basta con verla,
+           lo que se toca es el texto. A mitad y mitad apenas cabían dos
+           diapositivas. */
+        .modal-body { grid-template-rows: 1.7fr 1fr; }
+        .preview-col { padding: 12px; }
+        .preview-col canvas { max-width: 190px; }
+        .t-body, .modal-body { overscroll-behavior: contain; -webkit-overflow-scrolling: touch; }
+        .t-head, .t-foot { padding-left: 16px; padding-right: 16px; }
+        .t-foot button, .t-head button { min-height: 44px; }
+
+        /* La ficha desplegada mide más de una pantalla: en el móvil se entra
+           en compacto y se abre la que interese. */
+        .card { gap: 14px; padding: 14px 0; }
+        .card h2 { font-size: 17px; }
+        /* Plegada vuelve a dos columnas —miniatura y texto—, pero .card-side
+           y .card-body arrastran el `order` de la vista en una columna: el
+           cuerpo caía en la columna de 62px y el título, con el asa ya a
+           44px, se quedaba en cero y se partía letra a letra. */
+        .card.is-folded .card-side { order: 1; }
+        .card.is-folded .card-body { order: 2; }
+        /* La miniatura, a la altura del título y no centrada en toda la
+           ficha: plegada se lee como una lista, no como una tarjeta. */
+        .card.is-folded { align-items: start; }
+        /* El estado, del ancho de su texto. A 16px —que es lo que evita el
+           zoom de iOS— se estiraba a toda la línea y la ficha plegada se
+           comía media pantalla. */
+        .rv-inline select { width: auto; max-width: 100%; padding: 0 10px; min-height: 44px; }
+        .card.is-folded .red-fila > .red-ok { gap: 5px; }
+        .card.is-folded .redes { gap: 2px 10px; }
+        /* Plegada se mira qué falta por subir, no cuántas diapositivas
+           saldrán: ese dato se gana una línea entera que no vale. */
+        .card.is-folded .meta-slides { display: none; }
+        /* La casilla, con sitio para el dedo. El resto de la fila no necesita
+           alto mínimo: los botones ya miden 44. */
+        .red-fila > .red-ok { min-height: 44px; min-width: 44px; }
+      }
+
+      /* Instalada en la pantalla de inicio no hay barra de navegador: el
+         contenido llega al borde y hay que devolver ese aire. */
+      @media (display-mode: standalone) {
+        .pnl { padding-top: calc(env(safe-area-inset-top) + 4px); }
       }
     </style>
   </head>
@@ -608,7 +769,7 @@ const rootCss = `:root{${Object.entries(tokens)
               </span>
               <span>{p.date}</span>
               <span>{p.lang.toUpperCase()}</span>
-              <span>{p.slides.length} diapositivas sugeridas</span>
+              <span class="meta-slides">{p.slides.length} diapositivas sugeridas</span>
               <span class="rv-pill" data-rv-pill hidden></span>
               {/* El estado va con los datos, no debajo de la foto: así se ve
                   y se cambia con la ficha plegada, que es cuando se repasa
@@ -639,7 +800,7 @@ const rootCss = `:root{${Object.entries(tokens)
                     >{p.status === 'publish' ? 'Editar ↗' : 'Publicar ↗'}</a>
                   )}
                 </span>
-                <span class="red-ok">
+                <label class="red-ok">
                   <span class="red-corto">{p.kind === 'social' ? 'Pág' : 'Post'}</span>
                   <input
                     type="checkbox"
@@ -650,7 +811,7 @@ const rootCss = `:root{${Object.entries(tokens)
                       ? 'Ya está en la web. Se marca solo.'
                       : 'Todavía es borrador. Publícalo en el editor y aquí se marca solo.'}
                   />
-                </span>
+                </label>
               </div>
 
               {FILAS.map((f) => (
@@ -690,10 +851,10 @@ const rootCss = `:root{${Object.entries(tokens)
                       >Abrir ↗</button>
                     )}
                   </span>
-                  <span class="red-ok">
+                  <label class="red-ok">
                     <span class="red-corto">{f.corto}</span>
                     <input type="checkbox" data-rv-pub={f.id} title={f.nombre} />
-                  </span>
+                  </label>
                   {/* Enlace de la publicación, para poder volver a ella al
                       revisar. Solo aparece cuando la red está marcada: antes
                       de subirla no hay nada que pegar. */}
@@ -1915,7 +2076,14 @@ const rootCss = `:root{${Object.entries(tokens)
           plegarTodo.classList.toggle('on', todoPlegado);
           try { localStorage.setItem('kit_compacta_' + B.id, todoPlegado ? '1' : ''); } catch (e) {}
         }
-        try { todoPlegado = localStorage.getItem('kit_compacta_' + B.id) === '1'; } catch (e) {}
+        // En el móvil se entra en compacto: una ficha desplegada mide más que
+        // la pantalla, así que abrir con 33 abiertas es empezar perdido. Si ya
+        // hay preferencia guardada, manda la suya.
+        var movil = window.matchMedia('(max-width: 860px)').matches;
+        try {
+          var guardado = localStorage.getItem('kit_compacta_' + B.id);
+          todoPlegado = guardado === null ? movil : guardado === '1';
+        } catch (e) { todoPlegado = movil; }
         aplicaPlegado();
         plegarTodo.addEventListener('click', function () {
           todoPlegado = !todoPlegado;
@@ -2075,6 +2243,48 @@ const rootCss = `:root{${Object.entries(tokens)
         document.addEventListener("pointercancel", function () { desdeAsa = false; });
 
         ordenar();
+      })();
+
+      /* ── La cabecera encoge al bajar ─────────────────────────────────────
+         En el móvil la cabecera ocupaba 178 de 790 px. Al bajar se retira la
+         fila de marca y quedan solo los filtros; al subir vuelve entera. Es
+         el gesto de cualquier app, y aquí además devuelve una cuarta parte
+         de la pantalla a las fichas. */
+      (function () {
+        var pnl = document.querySelector('.pnl');
+        if (!pnl) return;
+        var movil = window.matchMedia('(max-width: 860px)');
+        var antes = 0, pedido = false, bloqueo = 0;
+
+        /* Al encoger, la cabecera deja de ocupar sitio y el navegador corrige
+           el scroll para que el contenido no salte. Esa corrección llega como
+           un scroll más y, sin freno, volvía a desplegarla: la cabecera
+           temblaba sola. De ahí el candado mientras dura la animación. */
+        function cambiar(encoger) {
+          if (pnl.classList.contains('pnl-encogida') === encoger) return;
+          pnl.classList.toggle('pnl-encogida', encoger);
+          bloqueo = performance.now() + 320;
+        }
+
+        function mirar() {
+          pedido = false;
+          var y = window.scrollY;
+          if (!movil.matches) { cambiar(false); antes = y; return; }
+          if (performance.now() < bloqueo) { antes = y; return; }
+          /* Arriba del todo, siempre entera. El umbral se acumula desde el
+             último cambio: así un dedo tembloroso no la abre y la cierra. */
+          if (y < 90) cambiar(false);
+          else if (y - antes > 24) cambiar(true);
+          else if (antes - y > 24) cambiar(false);
+          else return;
+          antes = y;
+        }
+        window.addEventListener('scroll', function () {
+          if (pedido) return;
+          pedido = true;
+          requestAnimationFrame(mirar);
+        }, { passive: true });
+        movil.addEventListener('change', mirar);
       })();
     </script>
   </body>
