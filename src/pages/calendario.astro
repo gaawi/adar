@@ -271,13 +271,21 @@ const hoy = new Date().toISOString().slice(0, 10);
         .dow { padding: 8px 2px; font-size: 9px; letter-spacing: .04em; }
         .dia { padding: 4px 3px; }
         .dia-n { font-size: 10px; }
-        /* En una columna de 50px un título se partía letra a letra y el día
-           crecía media pantalla. Aquí cada ficha es una línea: el color dice
-           de quién es y el día se mantiene cuadrado. El texto entero está al
-           tocarla. */
-        .chip { white-space: nowrap; font-size: 10px; padding: 3px 3px 3px 5px; border-left-width: 5px; }
+        /* En una columna de 50px el título se partía letra a letra y el día
+           crecía media pantalla. Letra pequeña y tres líneas como mucho: se
+           lee de qué va sin que el mes deje de caber de un vistazo. */
+        .chip {
+          font-size: 8.5px; line-height: 1.2; padding: 3px 3px 3px 4px;
+          border-left-width: 4px; border-radius: 3px;
+          /* Tres líneas, cortadas con max-height y no con -webkit-line-clamp:
+             el minificador se come el `-webkit-box-orient` que necesita y
+             entonces asomaba media cuarta línea partida. */
+          /* +6px: la caja es border-box y el relleno también cuenta. */
+          max-height: calc(3.6em + 6px); overflow: hidden; hyphens: auto;
+        }
         .chip .quien { display: none; }
-        .chip.sin-aprobar::after { content: ' ·'; }
+        /* El punto hace de «sin aprobar»: el rótulo no cabe. */
+        .chip.sin-aprobar::before { content: '· '; font-weight: 700; }
       }
     </style>
   </head>
