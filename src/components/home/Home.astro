@@ -1471,15 +1471,10 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
       return img;
     }
 
-    /* El resto, de una en una y con calma, cuando ya no molestan a nadie. */
-    function cargarElResto() {
-      var n = 1;
-      (function siguiente() {
-        if (n >= fotos.length) return;
-        cargar(n++);
-        setTimeout(siguiente, 450);
-      })();
-    }
+    /* Solo la siguiente. Bajar las siete de golpe son cuatro megas y medio,
+       y en el móvil casi nadie se queda a verlas: la mayoría pasa de largo
+       en cinco segundos. Con siete segundos entre foto da tiempo de sobra a
+       traer la que toca, y si no ha llegado se espera. */
 
     function ir(n, aMano) {
       n = (n + fotos.length) % fotos.length;
@@ -1543,12 +1538,34 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
       t.addEventListener('click', function () { ir(n, true); });
     });
 
+    /* Con el dedo. Los oyentes son pasivos y no se cancela nada: el gesto
+       vertical sigue siendo el scroll de la página, que es lo que se hace el
+       99% de las veces. Solo cuenta como pase si el recorrido horizontal
+       pasa de 44px y manda sobre el vertical. */
+    var x0 = 0, y0 = 0, gesto = false;
+    hero.addEventListener('touchstart', function (e) {
+      gesto = e.touches.length === 1;
+      if (!gesto) return;
+      x0 = e.touches[0].clientX;
+      y0 = e.touches[0].clientY;
+    }, { passive: true });
+    hero.addEventListener('touchend', function (e) {
+      if (!gesto) return;
+      gesto = false;
+      var t = e.changedTouches[0];
+      if (!t) return;
+      var dx = t.clientX - x0, dy = t.clientY - y0;
+      if (Math.abs(dx) < 44 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+      ir(i + (dx < 0 ? 1 : -1), true);
+    }, { passive: true });
+    hero.addEventListener('touchcancel', function () { gesto = false; }, { passive: true });
+
     if (enReposo()) {
       hero.classList.add('is-quieto');
     } else if (document.readyState === 'complete') {
-      cargarElResto(); programar();
+      cargar(1); programar();
     } else {
-      window.addEventListener('load', function () { cargarElResto(); programar(); });
+      window.addEventListener('load', function () { cargar(1); programar(); });
     }
     menos.addEventListener('change', function () {
       hero.classList.toggle('is-quieto', enReposo());

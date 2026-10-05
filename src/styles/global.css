@@ -4822,7 +4822,6 @@ body.page .entry-content > div > section.hm-hero { padding: 0; }
   opacity: 0;
   transform: scale(1.005);
   transition: opacity var(--hero-fundido) ease-in-out;
-  will-change: opacity;
 }
 .hm-slide.is-on {
   opacity: 1;
@@ -5060,7 +5059,9 @@ a.hm-cap.is-on:hover .hm-cap-t { text-decoration: underline; text-underline-offs
   padding: 14px 2px;
   cursor: pointer;
   line-height: 0;
+  -webkit-tap-highlight-color: transparent;
 }
+.hm-cap { -webkit-tap-highlight-color: transparent; }
 .hm-seg-rail {
   display: block;
   width: 34px;
@@ -5099,10 +5100,15 @@ a.hm-cap.is-on:hover .hm-cap-t { text-decoration: underline; text-underline-offs
   .hm-rail-caps { flex: 1 1 100%; order: 1; }
   .hm-cap { gap: 10px; }
   .hm-cap-t { font-size: 15px; }
-  .hm-segs { order: 2; }
-  .hm-seg { padding: 10px 2px; }
-  .hm-seg-rail { width: 26px; }
-  .hm-rail .hm-scroll { order: 3; margin-left: auto; }
+  .hm-segs { order: 2; gap: 3px; }
+  /* Con el dedo: 34px de alto y algo más de filete, que un pelo de 2px no
+     se acierta. Pasar foto a foto se hace sobre todo deslizando, pero los
+     tramos tienen que poder pulsarse. */
+  .hm-seg { padding: 15px 3px; }
+  .hm-seg-rail { width: 30px; height: 3px; }
+  /* En el móvil, «desplazarse» sobra —nadie necesita que le digan que se
+     desplaza— y además no cabía: empujaba los tramos a una tercera línea. */
+  .hm-rail .hm-scroll { display: none; }
 }
 
 /* Quien pide menos movimiento ve una foto quieta, sin fundidos ni zoom. */
