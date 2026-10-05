@@ -95,8 +95,7 @@ const COPY = {
       'ADAR es una asociación cultural fundada en Leiguarda (Asturias) que produce arte contemporáneo y música de excelencia en aldeas, iglesias, hórreos y paisajes del medio rural.',
     watchVideo: 'Manifiesto en vídeo',
     scrollHint: 'Desplazarse',
-    marquee:
-      ['Música clásica', 'Arte visual contemporáneo', 'Patrimonio rural', 'Residencias creativas', 'Música de cámara', 'Site-specific', 'Mediación cultural', 'Instalaciones sonoras', 'Paseos sonoros', 'Comunidad'],
+    slidesLabel: 'Fotos de la portada',
     coord_eyebrow: 'Qué es ADAR',
     coord_h: 'Revitalizando el medio rural con artes vivas.',
     coord_lede:
@@ -235,8 +234,7 @@ const COPY = {
       'ADAR is a cultural association based in Leiguarda (Asturias) producing contemporary art and music of excellence in villages, churches, granaries and landscapes of rural Spain.',
     watchVideo: 'Watch the manifesto',
     scrollHint: 'Scroll',
-    marquee:
-      ['Classical music', 'Contemporary visual art', 'Rural heritage', 'Artist residencies', 'Chamber music', 'Site-specific', 'Cultural mediation', 'Sound installations', 'Sound walks', 'Community'],
+    slidesLabel: 'Cover photographs',
     coord_eyebrow: 'What ADAR is',
     coord_h: 'Revitalising the countryside through living arts.',
     coord_lede:
@@ -324,8 +322,7 @@ const COPY = {
       'ADAR ye una asociación cultural fundada en Lleiguarda (Asturies) que produz arte contemporáneo y música d’escelencia n’aldegues, ilesies, hórreos y paisaxes del mediu rural.',
     watchVideo: 'Manifiestu en videu',
     scrollHint: 'Esllizar',
-    marquee:
-      ['Música clásica', 'Arte visual contemporáneu', 'Patrimoniu rural', 'Residencies creatives', 'Música de cámara', 'Site-specific', 'Mediación cultural', 'Instalaciones sonores', 'Paseos sonoros', 'Comunidá'],
+    slidesLabel: 'Semeyes de la portada',
     coord_eyebrow: 'Qué ye ADAR',
     coord_h: 'Revitalizando’l mediu rural con artes vives.',
     coord_lede:
@@ -406,8 +403,51 @@ const COPY = {
   },
 }[lang];
 
-const heroImage =
-  'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01523.jpg';
+const F26 = 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026';
+
+// ── Portada ─────────────────────────────────────────────────────────────
+// La portada es una secuencia lenta de la última edición, no una foto fija.
+// Cada fotograma lleva detrás su acción, así que la portada es además la
+// puerta al archivo: se lee el pie y se entra. El orden alterna oscuro y
+// claro para que el fundido se note.
+// Los pies vienen de la selección que hizo la organización para cada acción
+// (los mismos que la galería «Cómo se vivió»): no se inventa ninguno.
+const HERO_SLIDES: { img: string; slug?: string; cap: Record<Lang, string> }[] = [
+  {
+    img: 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01523.jpg',
+    cap: { es: 'Festival ADAR · edición 2025', en: 'Festival ADAR · 2025 edition', ast: 'Festival ADAR · edición 2025' },
+  },
+  {
+    img: `${F26}/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_2.jpg`,
+    slug: 'concierto-del-eclipse-la-corredoria',
+    cap: { es: 'Concierto del eclipse · Alto de La Corredoria', en: 'Eclipse concert · Alto de La Corredoria', ast: 'Conciertu del eclís · Altu de La Corredoria' },
+  },
+  {
+    img: `${F26}/13.08.26_Villanueva%20de%20Oscos_Fotos/13.08.26_Villanueva%20de%20Oscos_WEB/13.08.26_Villanueva%20de%20Oscos_WEB_1.jpg`,
+    slug: 'bajo-las-bovedas-villanueva-de-oscos',
+    cap: { es: 'ADAR en Ruta · Villanueva de Oscos', en: 'ADAR on the Road · Villanueva de Oscos', ast: 'ADAR en Ruta · Villanueva d’Oscos' },
+  },
+  {
+    img: `${F26}/14.08.26_La%20casona%20de%20Belmonte_Fotos/14.08.26_La%20casona%20de%20Belmonte_WEB/14.08.26_La%20casona%20de%20Belmonte_WEB_5.jpg`,
+    slug: 'equilibrium-la-casona-de-belmonte',
+    cap: { es: 'Equilibrium · La Casona de Belmonte', en: 'Equilibrium · La Casona de Belmonte', ast: 'Equilibrium · La Casona de Belmonte' },
+  },
+  {
+    img: `${F26}/11.08.26_El%20Franco_Fotos/11.08.26_El%20Franco_WEB/11.08.26_El%20Franco_WEB_4.jpg`,
+    slug: 'the-rest-is-silence-el-franco',
+    cap: { es: 'The Rest is Silence · Auditorio As Quintas', en: 'The Rest is Silence · As Quintas Auditorium', ast: 'The Rest is Silence · Auditoriu As Quintas' },
+  },
+  {
+    img: `${F26}/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_WEB/05.08.26_Parador%20de%20Corias_WEB_3.jpg`,
+    slug: 'la-forma-de-la-memoria-parador-de-corias',
+    cap: { es: 'La forma de la memoria · Parador de Corias', en: 'The Shape of Memory · Parador de Corias', ast: 'La forma de la memoria · Parador de Corias' },
+  },
+  {
+    img: `${F26}/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_WEB/04.08.26_La%20Figal%20de%20Xugabolos_WEB_2.jpg`,
+    slug: 'de-danzas-y-sonatas-la-figal-de-xugabolos',
+    cap: { es: 'De danzas y sonatas · La Figal de Xugabolos', en: 'Of Dances and Sonatas · La Figal de Xugabolos', ast: 'De danzas y sonates · La Figal de Xugabolos' },
+  },
+];
 const joinBg =
   'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg';
 
@@ -730,7 +770,6 @@ const POST = {
 }[lang];
 // Galería "cómo se vivió": una foto por acción de la VI edición, con pie y
 // enlace a su memoria. Portadas verificadas de cada evento.
-const F26 = 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026';
 const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, string> }[] = [
   // Fotos elegidas por la organización para cada acción; se completan con
   // alguna toma extra para dar más recorrido a la galería.
@@ -789,9 +828,24 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
   <!-- ============================================
        HERO · acto inaugural
        ============================================ -->
-  <section class="hm-hero">
-    <div class="hm-hero-img">
-      <img src={heroImage} alt="Festival ADAR" />
+  <section class="hm-hero" data-slides>
+    {/* Las fotos van apiladas y se cruzan por opacidad. Solo la primera
+        lleva src: las demás las carga el script cuando la página ya está
+        pintada, para no competir con ella. Sin JavaScript se queda la
+        primera, que es exactamente la portada de siempre. */}
+    <div class="hm-hero-img" aria-hidden="true">
+      {HERO_SLIDES.map((sl, i) => (
+        <img
+          class:list={['hm-slide', i === 0 && 'is-on']}
+          src={i === 0 ? sl.img : undefined}
+          data-src={i === 0 ? undefined : sl.img}
+          alt=""
+          width="1920"
+          height="1013"
+          decoding="async"
+          fetchpriority={i === 0 ? 'high' : undefined}
+        />
+      ))}
     </div>
     <div class="hm-hero-veil"></div>
 
@@ -806,24 +860,48 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
         <span class="hm-hero-l3">{COPY.title3}<span class="hm-dot">.</span></span>
       </h1>
       <p class="hm-hero-lede">{COPY.lede}</p>
-    </div>
-
-    <div class="hm-hero-foot">
       <a href="#video" class="hm-hero-watch">
         <span class="hm-play" aria-hidden="true"></span>
         {COPY.watchVideo}
       </a>
-      <span class="hm-scroll mono">↓ {COPY.scrollHint}</span>
     </div>
 
-    <div class="hm-marquee" aria-hidden="false">
-      <div class="hm-marquee-track">
-        {COPY.marquee.map((place, i) => (
-          <span class="hm-marquee-item">
-            <span class="hm-marquee-num mono">{String(i + 1).padStart(2, '0')}</span>
-            {place}
-          </span>
-        ))}
+    {/* La banda de abajo va con la foto: dice qué se está viendo y lleva a
+        esa acción. Los tramos hacen de barra de avance y de navegación. */}
+    <div class="hm-rail">
+      <div class="hm-rail-in">
+        <div class="hm-rail-caps">
+          {HERO_SLIDES.map((sl, i) => {
+            const Tag = sl.slug ? 'a' : 'span';
+            return (
+              <Tag
+                class:list={['hm-cap', i === 0 && 'is-on']}
+                href={sl.slug ? `/${lang}/${sl.slug}/` : undefined}
+                tabindex={i === 0 ? undefined : '-1'}
+              >
+                <span class="hm-cap-n mono">{String(i + 1).padStart(2, '0')}</span>
+                <span class="hm-cap-t">{sl.cap[lang]}</span>
+                {sl.slug && <span class="hm-cap-go" aria-hidden="true">↗</span>}
+              </Tag>
+            );
+          })}
+        </div>
+
+        <div class="hm-segs" role="group" aria-label={COPY.slidesLabel}>
+          {HERO_SLIDES.map((sl, i) => (
+            <button
+              type="button"
+              class:list={['hm-seg', i === 0 && 'is-on']}
+              data-seg={String(i)}
+              aria-label={`${i + 1} · ${sl.cap[lang]}`}
+              aria-current={i === 0 ? 'true' : undefined}
+            >
+              <span class="hm-seg-rail"><span class="hm-seg-fill"></span></span>
+            </button>
+          ))}
+        </div>
+
+        <span class="hm-scroll mono">↓ {COPY.scrollHint}</span>
       </div>
     </div>
   </section>
@@ -1346,5 +1424,135 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
         document.documentElement.classList.add('has-hm-today');
       }
     }
+  })();
+</script>
+
+<script is:inline>
+  /* ── La secuencia de la portada ─────────────────────────────────────────
+     Siete fotos que se cruzan despacio. Nada se precarga antes de que la
+     página esté pintada: la primera foto es la que decide lo rápido que
+     parece abrir la web, y las otras seis no pueden estorbarle.
+     Sin este script queda la primera foto y su pie, que es la portada de
+     siempre: la secuencia es un añadido, no un requisito. */
+  (function () {
+    var hero = document.querySelector('[data-slides]');
+    if (!hero) return;
+    var fotos = [].slice.call(hero.querySelectorAll('.hm-slide'));
+    var pies = [].slice.call(hero.querySelectorAll('.hm-cap'));
+    var tramos = [].slice.call(hero.querySelectorAll('.hm-seg'));
+    if (fotos.length < 2) return;
+
+    var menos = window.matchMedia('(prefers-reduced-motion: reduce)');
+    /* Con poca red —y en un festival rural pasa— no se bajan siete fotos de
+       dos megas para que nadie las mire: queda la primera y los tramos, que
+       siguen sirviendo para ir a la que interese. */
+    var red = navigator.connection || {};
+    var pocaRed = red.saveData === true || /^(slow-2g|2g)$/.test(red.effectiveType || '');
+    function enReposo() { return menos.matches || pocaRed; }
+    hero.classList.add('is-vivo');
+
+    /* Los tiempos los manda el CSS, para no tener dos verdades. */
+    function ms(prop, porDefecto) {
+      var v = getComputedStyle(hero).getPropertyValue(prop).trim();
+      if (!v) return porDefecto;
+      var n = parseFloat(v);
+      return /ms$/.test(v) ? n : n * 1000;
+    }
+    var ESPERA = ms('--hero-espera', 7000);
+
+    var i = 0, reloj = null;
+
+    function cargar(n) {
+      var img = fotos[n];
+      if (img && !img.src) {
+        var d = img.getAttribute('data-src');
+        if (d) img.src = d;
+      }
+      return img;
+    }
+
+    /* El resto, de una en una y con calma, cuando ya no molestan a nadie. */
+    function cargarElResto() {
+      var n = 1;
+      (function siguiente() {
+        if (n >= fotos.length) return;
+        cargar(n++);
+        setTimeout(siguiente, 450);
+      })();
+    }
+
+    function ir(n, aMano) {
+      n = (n + fotos.length) % fotos.length;
+      if (n === i) return;
+      cargar(n);
+      cargar((n + 1) % fotos.length);
+
+      fotos[i].classList.remove('is-on');
+      pies[i].classList.remove('is-on');
+      pies[i].setAttribute('tabindex', '-1');
+      tramos[i].classList.remove('is-on');
+      tramos[i].removeAttribute('aria-current');
+      /* La que deja de estar activa se queda llena: la banda se lee como un
+         sumario de por dónde va la vuelta. */
+      tramos[i].classList.add('is-vista');
+
+      i = n;
+      if (i === 0) tramos.forEach(function (t) { t.classList.remove('is-vista'); });
+
+      fotos[i].classList.add('is-on');
+      pies[i].classList.add('is-on');
+      pies[i].removeAttribute('tabindex');
+      tramos[i].classList.remove('is-vista');
+      tramos[i].classList.add('is-on');
+      tramos[i].setAttribute('aria-current', 'true');
+
+      if (aMano) programar();
+    }
+
+    function programar() {
+      clearTimeout(reloj);
+      if (enReposo() || document.hidden || !visible) return;
+      /* Si la siguiente aún no ha bajado, se espera: cruzar a una foto a
+         medio cargar es un parpadeo en negro. */
+      reloj = setTimeout(function avanzar() {
+        var sig = cargar((i + 1) % fotos.length);
+        if (sig && !sig.complete) { reloj = setTimeout(avanzar, 400); return; }
+        ir(i + 1);
+        programar();
+      }, ESPERA);
+    }
+
+    function parar() { clearTimeout(reloj); reloj = null; }
+
+    /* Fuera de pantalla no pasa nada: ni animación ni temporizador. */
+    var visible = true;
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (e) {
+        visible = e[0].isIntersecting;
+        /* Quien pide menos movimiento se queda quieto siempre: si no, este
+           observador le quitaba la clase en cuanto la portada entraba. */
+        hero.classList.toggle('is-quieto', !visible || enReposo());
+        if (visible) programar(); else parar();
+      }, { threshold: 0.12 }).observe(hero);
+    }
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) parar(); else programar();
+    });
+
+    tramos.forEach(function (t, n) {
+      t.addEventListener('click', function () { ir(n, true); });
+    });
+
+    if (enReposo()) {
+      hero.classList.add('is-quieto');
+    } else if (document.readyState === 'complete') {
+      cargarElResto(); programar();
+    } else {
+      window.addEventListener('load', function () { cargarElResto(); programar(); });
+    }
+    menos.addEventListener('change', function () {
+      hero.classList.toggle('is-quieto', enReposo());
+      if (enReposo()) parar(); else programar();
+    });
   })();
 </script>
