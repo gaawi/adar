@@ -23,7 +23,7 @@ const MOCKUP = '/kit/creartbox-currents-programa.jpg';
 // representante. Servido desde aquí para que el canvas pueda pintarlo.
 const MOE = '/kit/eric-moe.jpg';
 // La serie de entrevistas vive en la sección News de creartbox.nyc.
-const ENTREVISTA_MOE = 'https://creartbox.nyc/news/upsidedown-creek-is-a-real-place.html';
+const ENTREVISTA_MOE = 'https://creartbox.nyc/news/eight-questions-for-eric-moe.html';
 
 export const CREARTBOX_SOURCES: KitSource[] = [
   {
@@ -391,16 +391,16 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     lang: 'en',
     slug: 'eric-moe-interview',
     kind: 'entrevista',
-    title: 'Upsidedown Creek is a real place',
+    title: 'Eight questions for Eric Moe',
     excerpt:
-      'Eight questions to Eric Moe, whose Laminar Flow in Upsidedown Creek we play on 30 October. The creek is a real one in Montana, the sign at the trailhead really is upside down, and the music came partly from a tango. Photo: Mara Rago.',
+      'The piece that opens our twelfth season is named after a stream in Montana. Its composer on laminar flow, a tango with three dancers, and what to listen for near the end. Photo: Mara Rago.',
     image: MOE,
     status: 'publish',
-    date: '2026-10-30',
+    date: '2026-10-02',
     url: ENTREVISTA_MOE,
     tags: ['EricMoe', 'Currents', 'CallForScores', 'NewMusic'],
     body: `
-Eric Moe’s Laminar Flow in Upsidedown Creek lasts five minutes and reached our season through the open Call for Scores. We play it on 30 October at The DiMenna Center, between Brahms and both Schumanns. Moe is Andrew W. Mellon Professor of Composition and Theory at the University of Pittsburgh, where he co-directs the Music on the Edge series. He answered these eight questions from a residency at the Jentel Foundation in Wyoming, four weeks before the concert.
+We have interviewed the composer Eric Moe because on 30 October we play his Laminar Flow in Upsidedown Creek at The DiMenna Center for Classical Music, in Currents, the first night of our twelfth season. The piece reached the programme through our open Call for Scores, and it sits that evening between Brahms and both Schumanns. Moe is a Guggenheim fellow, honoured by the American Academy of Arts and Letters, and co-directs Music on the Edge in Pittsburgh, which means he reads scores from the other side of the desk as well. Four weeks before the concert, we sent him eight questions.
 
 Where did the title Laminar Flow in Upsidedown Creek come from?
 
