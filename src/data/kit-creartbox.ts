@@ -337,7 +337,20 @@ Gendron is a longtime member of the Momenta Quartet and one of the concertmaster
   {
     lang: 'en',
     slug: 'currents-the-night',
-    estilo: 'franja',
+    // El orden de la noche, compuesto. Sale tal cual del cuadernillo
+    // (downloads/currents-2026-program.pdf), duraciones incluidas.
+    estilo: 'tabla',
+    tabla: {
+      rotulo: '30 October 2026 · 7:30 pm · The DiMenna Center',
+      filas: [
+        { quien: 'Guillermo Laporta', que: 'Brown Leaves Moving', cifra: '4′' },
+        { quien: 'Johannes Brahms', que: 'Trio in A minor, Op. 114', cifra: '8′' },
+        { quien: 'Eric Moe', que: 'Laminar Flow in Upsidedown Creek', cifra: '5′' },
+        { quien: 'Clara Schumann', que: 'Three Romances, Op. 22', cifra: '11′' },
+        { quien: 'Robert Schumann', que: 'Piano Quartet in E-flat major, Op. 47', cifra: '28′' },
+      ],
+      total: { que: 'Total playing time', cifra: '56′' },
+    },
     kind: 'social',
     title: 'Sixty minutes, no interval',
     excerpt:

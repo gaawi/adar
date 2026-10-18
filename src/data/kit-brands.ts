@@ -38,6 +38,18 @@ export interface KitBrand {
   onAccent: string;
   /** Tinta de los titulares que van sobre una foto. */
   overPhotoInk: string;
+  /**
+   * La escala de tinta para dibujar encima de foto o de fondo oscuro.
+   * El manual de CreArtBox lo dice sin rodeos: «fade with ink, not opacity».
+   * Para apagar algo se baja de tono, no se le pone alfa, porque el alfa
+   * deja pasar la foto y el texto se ensucia distinto en cada imagen.
+   */
+  sobreFoto: string;
+  sobreFotoMedio: string;
+  sobreFotoDim: string;
+  sobreFotoMudo: string;
+  /** El filete: líneas que separan, no que señalan. Nunca ámbar. */
+  filete: string;
   /** Tinta del titular de la diapositiva de cierre. */
   ctaInk: string;
   /** Tinta secundaria. */
@@ -133,6 +145,11 @@ export const BRANDS: Record<string, KitBrand> = {
     accent: '#f5d72f',
     onAccent: '#0a0907',
     overPhotoInk: '#ffffff',
+    sobreFoto: '#ffffff',
+    sobreFotoMedio: '#e4e1d8',
+    sobreFotoDim: '#b9b4a7',
+    sobreFotoMudo: '#8e8a7e',
+    filete: '#2a2721',
     ctaInk: '#f5d72f', // la señal: es el titular que se quiere leer primero
     inkSoft: '#1c1a16',
     muted: '#6e6a5c',
@@ -198,6 +215,11 @@ export const BRANDS: Record<string, KitBrand> = {
     accent: '#FFC403', // --senal
     onAccent: '#0B0705', // --sobre-senal
     overPhotoInk: '#F2EFE8', // --papel: su paleta no admite blanco puro
+    sobreFoto: '#F2EFE8', // --papel
+    sobreFotoMedio: '#C9C3B9', // --papel-medio
+    sobreFotoDim: '#9C968C', // --papel-dim
+    sobreFotoMudo: '#6B655D', // --papel-mudo: solo filetes e iconos, no texto
+    filete: '#2B2825', // --filete
     // Una sola señal por pantalla: el filete ámbar. El titular va en papel.
     ctaInk: '#F2EFE8',
     // Estos cinco son solo del panel, no se dibujan: son la escala de la
@@ -223,6 +245,7 @@ export const BRANDS: Record<string, KitBrand> = {
     titleWeight: '600',
     fontLoads: [
       '600 64px "Literata"',
+      'italic 400 32px "Literata"',
       '400 32px "Archivo"',
       '600 32px "Archivo"',
       '700 32px "Archivo"',
@@ -331,6 +354,12 @@ export interface KitSource {
   estilo?: string;
   /** El dato que dibuja el estilo «cifra»: el número manda en la imagen. */
   cifra?: { valor: string; rotulo?: string; pie: string; posicion?: 'arriba' | 'abajo' };
+  /** El orden de la noche para el estilo «tabla». `cifra` es la duración. */
+  tabla?: {
+    rotulo?: string;
+    filas: { quien: string; que: string; cifra: string }[];
+    total?: { que: string; cifra: string };
+  };
 }
 
 export interface KitPost extends Omit<KitSource, 'body' | 'url'> {
