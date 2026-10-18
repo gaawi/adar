@@ -13,6 +13,11 @@ import type { KitSource } from './kit-brands';
 const PHOTO = 'https://creartbox.nyc/assets/press/photos/';
 // Las de la web, que no se estaban usando y son las mejores que hay.
 const IMG = 'https://creartbox.nyc/assets/img/';
+// El archivo de la web: una carpeta por noche, nombrada por fecha. Es el
+// fondo de verdad —cientos de fotos con su concierto detrás— y es lo que
+// evita que la misma imagen salga cuatro veces en el muro.
+//   20251017 = Beyond the Surface · 20251212 = Musica Ricercata
+const ARCHIVO = 'https://creartbox.nyc/assets/img/archive/';
 const RELEASE = 'https://creartbox.nyc/press/season-2026-27.html';
 const CALENDAR = 'https://creartbox.nyc/concerts.html';
 const CURRENTS = 'https://creartbox.nyc/concerts/currents-2026.html';
@@ -236,10 +241,12 @@ Currents assembles five works around a single idea: movement carried from one pl
   {
     lang: 'en',
     slug: 'currents-joachim',
+    estilo: 'cinta',
     title: 'One violinist connects three works on this programme',
     excerpt:
       "Joseph Joachim received the dedication of Clara Schumann's Three Romances in 1853, and it was Joachim who read the viola part of Brahms's A minor Trio in rehearsal. Both are on the programme on 30 October.",
-    image: PHOTO + 'creartbox-currents-dimenna.jpg',
+    // la viola en primer plano, que es de lo que habla
+    image: ARCHIVO + '20251017__MG_0688.jpg',
     status: 'publish',
     date: '2026-10-30',
     url: CURRENTS,
@@ -271,7 +278,8 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     title: 'A title taken from fluid dynamics',
     excerpt:
       "Laminar flow is movement in smooth parallel layers, with no mixing between them. The opposite of turbulence. Eric Moe's Laminar Flow in Upsidedown Creek reached the season through the open call.",
-    image: PHOTO + 'creartbox-ensemble.jpg',
+    // los tubos de luz en capas paralelas, que es literalmente el flujo laminar
+    image: ARCHIVO + '20251212__MG_0058.jpg',
     status: 'publish',
     date: '2026-10-30',
     url: CURRENTS,
@@ -301,11 +309,13 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: 'currents-who-plays',
+    estilo: 'limpia',
     kind: 'social',
     title: 'Who is on stage on 30 October',
     excerpt:
       'Guillermo Laporta, flute. Josefina Urraca, piano. Emilie-Anne Gendron, violin. Matthew Cohen, viola. Julia Yang, cello.',
-    image: PHOTO + 'creartbox-ensemble.jpg',
+    // los cuatro en el escenario
+    image: ARCHIVO + '20251017__MG_0655.jpg',
     status: 'publish',
     date: '2026-10-30',
     url: CURRENTS,
@@ -327,11 +337,13 @@ Gendron is a longtime member of the Momenta Quartet and one of the concertmaster
   {
     lang: 'en',
     slug: 'currents-the-night',
+    estilo: 'franja',
     kind: 'social',
     title: 'Sixty minutes, no interval',
     excerpt:
       'Currents runs about an hour, played straight through. Tickets from $15. The premium seats are the closest rows to the players, and come with a small treat on the night, usually chocolate.',
-    image: PHOTO + 'creartbox-currents-dimenna.jpg',
+    // la sala con el público delante y el grupo tocando: es lo que se vende
+    image: ARCHIVO + '20251212__DSC0350.jpg',
     status: 'publish',
     date: '2026-10-30',
     url: CURRENTS,
@@ -449,6 +461,7 @@ In considering new work for programming, in addition to pieces with engaging, un
   {
     lang: 'en',
     slug: 'currents-cello-retune',
+    estilo: 'duo',
     kind: 'social',
     title: 'Julia has to retune her cello in the middle of the movement',
     excerpt:
@@ -456,7 +469,8 @@ In considering new work for programming, in addition to pieces with engaging, un
       'reach, so the player tunes the bottom C string down a whole step to B flat, holds the ' +
       'note under the final bars, and tunes it back up for the finale. It serves the music and ' +
       'inconveniences the cellist.',
-    image: PHOTO + 'creartbox-ensemble.jpg',
+    // el chelo en primer plano
+    image: ARCHIVO + '20251212__MG_0047.jpg',
     status: 'publish',
     date: '2026-10-30',
     url: ENTRADAS,
@@ -475,6 +489,7 @@ Twenty-eight minutes, the last work of the night. Julia Yang plays cello.
   {
     lang: 'en',
     slug: 'currents-brahms-quit',
+    estilo: 'cartel',
     kind: 'social',
     title: 'Brahms had already announced he was finished',
     excerpt:
@@ -508,7 +523,8 @@ Simrock published the Trio in 1892 with a viola part offered instead of the clar
       'door that September; Robert collapsed the following February. From then on she composed ' +
       'almost nothing new and gave her working life to performing and to editing his music. ' +
       'Eleven minutes, on 30 October.',
-    image: IMG + 'arch-folk.jpg',
+    // al piano: Clara escribía para ella misma
+    image: ARCHIVO + '20251017__MG_0620.jpg',
     status: 'publish',
     date: '2026-10-30',
     url: ENTRADAS,
@@ -527,13 +543,25 @@ The piano writing is a virtuoso writing for herself. Emilie-Anne Gendron plays v
   {
     lang: 'en',
     slug: 'currents-full-room',
+    estilo: 'cifra',
+    cifra: {
+      rotulo: 'Mary Flagler Cary Hall · The DiMenna Center',
+      // Arriba: el público de esta foto está en la franja de abajo y es
+      // justamente lo que el post enseña. No se le puede poner el número encima.
+      posicion: 'arriba',
+      // 250 es el aforo de la sala y lo publica el propio DiMenna. No es un
+      // recuento de asistencia: eso no lo tenemos y no se puede afirmar.
+      valor: '250',
+      pie: 'seats in the hall. On 30 October we would like every one of them taken.',
+    },
     kind: 'social',
-    title: 'Last October this room was full',
+    title: 'There are 250 seats in this room',
     excerpt:
-      'Two hundred and fifty people came to The DiMenna Center for Beyond the Surface, and the ' +
-      'room was so quiet during the premiere that you could hear the building. We are back there ' +
-      'on 30 October with Currents, and we would love to fill it again.',
-    image: IMG + 'currents-2026.jpg',
+      'Mary Flagler Cary Hall at The DiMenna Center seats two hundred and fifty. This photograph ' +
+      'is from last October, Beyond the Surface, and the room was so quiet during the premiere ' +
+      'that you could hear the building. Currents is on 30 October. We would like every seat taken.',
+    // la Cary Hall llena, el 17 de octubre, la noche de la que habla
+    image: ARCHIVO + '20251017__DSC0028.jpg',
     status: 'publish',
     date: '2026-10-30',
     url: ENTRADAS,
@@ -542,7 +570,7 @@ The piano writing is a virtuoso writing for herself. Emilie-Anne Gendron plays v
     body: `
 ## What that night was like
 
-Full capacity, the world premiere of Devin Cholodenko's Twilight at Dawn with the composer sitting in the hall, and Ravel's Ma Mère l'Oye with animations drawn from the book that inspired it.
+Beyond the Surface, last October: the world premiere of Devin Cholodenko's Twilight at Dawn with the composer sitting in the hall, and Ravel's Ma Mère l'Oye with animations drawn from the book that inspired it.
 
 ## The room holds what it holds
 
@@ -552,6 +580,7 @@ Currents is on 30 October at 7:30 pm. Sixty minutes, no interval. The seats clos
   {
     lang: 'en',
     slug: 'currents-open-call-moe',
+    estilo: 'bloque',
     kind: 'social',
     title: 'He wrote it at a refuge in Montana',
     excerpt:
@@ -578,13 +607,15 @@ Violin, viola and cello. Jeanne Golan recorded a piano version of it in 2021, bu
   {
     lang: 'en',
     slug: 'currents-you-can-see',
+    estilo: 'limpia',
     kind: 'social',
     title: 'Chamber music you can see',
     excerpt:
       'Guillermo Laporta is on the programme twice: the piece that opens the night is his, and ' +
       'so is the video art that moves across the hall while we play. He founded CreArtBox in ' +
       '2013 and has always treated the staging of a piece as part of its writing.',
-    image: PHOTO + 'creartbox-fragile-form.jpg',
+    // la proyección sobre la sala: «chamber music you can see»
+    image: ARCHIVO + '20251017__DSC0057.jpg',
     status: 'publish',
     date: '2026-10-30',
     url: ENTRADAS,
@@ -603,6 +634,14 @@ The projections run through the whole evening. The New Yorker has called us one 
   {
     lang: 'en',
     slug: 'currents-no-barrier',
+    estilo: 'cifra',
+    // $15 el más barato y $70 el premium: lo dice la ficha de Eventbrite a la
+    // que enlaza creartbox.nyc, que es la única fuente que publica el precio.
+    cifra: {
+      rotulo: 'Currents · 30 October',
+      valor: '$15',
+      pie: 'is the cheapest seat in the hall. If that is still the reason you are not coming, write to us.',
+    },
     kind: 'social',
     title: 'Cost should never be the reason you miss it',
     excerpt:
@@ -634,7 +673,8 @@ Write to us about group rates, access, or a subsidized seat. Someone answers.
       'Photos from 30 October at The DiMenna Center. Josefina Urraca, Emilie-Anne Gendron, ' +
       'Matthew Cohen and Julia Yang played Laporta, Brahms, Moe, Clara Schumann and Robert ' +
       'Schumann, straight through, with no interval.',
-    image: PHOTO + 'creartbox-currents-dimenna.jpg',
+    // marcador de sitio hasta que haya fotos del 30
+    image: ARCHIVO + '20251017__DSC0080.jpg',
     status: 'draft',
     date: '2026-10-31',
     url: 'https://creartbox.nyc/concerts.html',

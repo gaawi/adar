@@ -321,6 +321,16 @@ export interface KitSource {
    * Por defecto, `post`.
    */
   kind?: "post" | "social" | "entrevista";
+  /**
+   * Los tres de abajo no los usa el kit de ADAR: los lee la cola editorial
+   * (repositorio editorial-cola), que publica desde este mismo material.
+   */
+  /** Cierre propio del pie, en lugar del `captionTail` de la marca. */
+  cta?: string;
+  /** Diseño de la portada. Si falta lo decide el tipo de post. */
+  estilo?: string;
+  /** El dato que dibuja el estilo «cifra»: el número manda en la imagen. */
+  cifra?: { valor: string; rotulo?: string; pie: string; posicion?: 'arriba' | 'abajo' };
 }
 
 export interface KitPost extends Omit<KitSource, 'body' | 'url'> {
