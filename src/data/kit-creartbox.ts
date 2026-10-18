@@ -11,6 +11,8 @@
 import type { KitSource } from './kit-brands';
 
 const PHOTO = 'https://creartbox.nyc/assets/press/photos/';
+// Las de la web, que no se estaban usando y son las mejores que hay.
+const IMG = 'https://creartbox.nyc/assets/img/';
 const RELEASE = 'https://creartbox.nyc/press/season-2026-27.html';
 const CALENDAR = 'https://creartbox.nyc/concerts.html';
 const CURRENTS = 'https://creartbox.nyc/concerts/currents-2026.html';
@@ -24,6 +26,8 @@ const MOCKUP = '/kit/creartbox-currents-programa.jpg';
 const MOE = '/kit/eric-moe.jpg';
 // La serie de entrevistas vive en la sección News de creartbox.nyc.
 const ENTREVISTA_MOE = 'https://creartbox.nyc/news/eight-questions-for-eric-moe.html';
+// Las entradas de Currents, que es a donde hay que llevar a la gente ahora.
+const ENTRADAS = 'https://www.eventbrite.com/e/creartbox-nyc-season-schumann-brahms-clara-schumann-currents-tickets-2000173994260';
 
 export const CREARTBOX_SOURCES: KitSource[] = [
   {
@@ -433,6 +437,138 @@ I’m very excited to hear what will be (as far as I know) only the second perfo
 You co-direct Music on the Edge and have been programming new music in Pittsburgh for years. From the other side of the desk: what makes you say yes to a score you have never heard of?
 
 In considering new work for programming, in addition to pieces with engaging, unsurprising qualities – rhythmic interest (unrelated to tempo, btw), fresh musical ideas, dramatic pacing – I admire and favor pieces that will provide a rewarding experience for the performer. This doesn’t mean that the piece has to be easy or even idiomatically written for the instruments – after all, overcoming challenges is part of the joy of musicmaking. But if the performers are excited about the piece, then listeners are bound to be excited as well.
+`,
+  },
+
+  // ── Currents · 30 de octubre ──────────────────────────────────────────
+  // Las cinco de abajo se escribieron a doce días del concierto, con un solo
+  // objetivo: vender entradas. Por eso llevan `cta` propio —al enlace de
+  // Eventbrite, no a la nota de prensa— y están escritas como habla la
+  // cuenta de verdad: en primera persona del plural, con los nombres de
+  // quien toca y sin frases cortadas a cuchillo.
+  {
+    lang: 'en',
+    slug: 'currents-full-room',
+    kind: 'social',
+    title: 'Last October this room was full',
+    excerpt:
+      'Two hundred and fifty people came to The DiMenna Center for Beyond the Surface, and the ' +
+      'room was so quiet during the premiere that you could hear the building. We are back there ' +
+      'on 30 October with Currents, and we would love to fill it again.',
+    image: IMG + 'currents-2026.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    tags: ['DiMennaCenter', 'Currents', 'NYCMusic'],
+    body: `
+## What that night was like
+
+Full capacity, the world premiere of Devin Cholodenko's Twilight at Dawn with the composer sitting in the hall, and Ravel's Ma Mère l'Oye with animations drawn from the book that inspired it.
+
+## Why we are telling you now
+
+Because the room holds what it holds. Currents is on 30 October at 7:30 pm, and the seats closest to the players go first.
+`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-clara',
+    kind: 'social',
+    title: 'Eleven minutes of Clara Schumann',
+    excerpt:
+      'Clara Schumann wrote the Three Romances, Op. 22 in 1853, the same year she met Brahms. ' +
+      'Emilie-Anne Gendron and Josefina Urraca play them on 30 October, and her husband closes ' +
+      'the evening with the Piano Quartet in E-flat. Both Schumanns, one programme.',
+    image: IMG + 'ensemble.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    tags: ['ClaraSchumann', 'WomenComposers', 'Currents'],
+    body: `
+## Three Romances, Op. 22
+
+Written in 1853 and dedicated to Joseph Joachim, who carried them around Europe and played them for anyone who would listen. Eleven minutes for violin and piano.
+
+## And then Robert
+
+The Piano Quartet in E-flat, Op. 47, from 1842, twenty-eight minutes, closes the night. They were married for sixteen years and it is still rare to hear them on the same bill.
+`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-video-art',
+    kind: 'social',
+    title: 'The hall is part of the piece',
+    excerpt:
+      'Guillermo Laporta is on the programme twice: as the composer who opens the evening and as ' +
+      'the one making the video art that moves across the walls while we play. We have been ' +
+      'building concerts this way for years and it still changes how the music lands.',
+    image: IMG + 'arch-folk.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    tags: ['VideoArt', 'Currents', 'GuillermoLaporta'],
+    body: `
+## Two jobs in one evening
+
+Brown Leaves Moving, four minutes, opens the concert. The projections that run through the rest of it are his as well.
+
+## Why we keep doing it
+
+Because a concert hall is a room before it is a venue, and what you see in it changes what you hear. People tell us afterwards that they watched the music.
+`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-open-call-moe',
+    kind: 'social',
+    title: 'Almost four hundred scores arrived. This one is on the programme.',
+    excerpt:
+      'Eric Moe sent us Laminar Flow in Upsidedown Creek through the open call, alongside nearly ' +
+      'four hundred other composers. Five minutes for violin, viola and cello, named after a ' +
+      'stream in Montana. It gets its hearing on 30 October.',
+    image: IMG + 'arch-echoes.jpg',
+    status: 'publish',
+    date: '2026-10-30',
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    tags: ['EricMoe', 'CallForScores', 'NewMusic', 'Currents'],
+    body: `
+## Eleven of them made it
+
+Eleven works from this year's open call are on our season, more than in any season before. Eric Moe's is the one that opens the new music in Currents.
+
+## Laminar flow
+
+Movement in smooth parallel layers, with no mixing between them. The opposite of turbulence. He told us about it in our interview last week.
+`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-recap',
+    kind: 'social',
+    title: 'Thank you for coming to Currents',
+    excerpt:
+      'Photos from 30 October at The DiMenna Center. Josefina Urraca, Emilie-Anne Gendron, ' +
+      'Matthew Cohen and Julia Yang played Laporta, Brahms, Moe, Clara Schumann and Robert ' +
+      'Schumann, straight through, with no interval.',
+    image: IMG + 'feat-circlenoir.jpg',
+    status: 'draft',
+    date: '2026-10-31',
+    url: 'https://creartbox.nyc/concerts.html',
+    cta: 'More at creartbox.nyc ↗',
+    tags: ['Currents', 'DiMennaCenter', 'ChamberMusic'],
+    body: `
+## The room
+
+Write here what the night was actually like, and swap the photo for one of the real ones. This one is a placeholder.
+
+## Next
+
+Winterlight, 11 December, same hall. Hannah Selin's Tectonic Lullaby gets its world premiere.
 `,
   },
 ];
