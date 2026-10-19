@@ -570,7 +570,8 @@ Last year's opening was such a wonderful evening, and we're hoping to fill the h
     date: '2026-10-22',
     url: CURRENTS,
     falta:
-      'Provisional, elegida por ti. La de ensayo de verdad llega el 28: mándamela y la cambio.',
+      'La foto del ensayo de verdad llega el 28, cuatro días después de que salga esto, así que ' +
+      'se queda con la que elegiste. Esa va al post del 28, que es el que gana con ser de ese día.',
     tags: ['Currents', 'ChamberMusic', 'DiMennaCenter'],
     pie: `Putting the 30th together.
 
@@ -729,6 +730,10 @@ Tickets in bio.
     date: '2026-10-28',
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
+    falta:
+      'Esperando tu foto del ensayo del 28. Ahora lleva una de archivo; con una de ese mismo ' +
+      'día, un «faltan dos días» pasa de anuncio a instantánea. Está programado, así que al ' +
+      'cambiarla hay que rehacer la imagen y actualizarlo en Metricool.',
     tags: ['Currents', 'NYCConcerts', 'DiMennaCenter'],
     pie: `Two days to go.
 
