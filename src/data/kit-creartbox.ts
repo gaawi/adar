@@ -14,7 +14,7 @@ const PHOTO = 'https://creartbox.nyc/assets/press/photos/';
 // Las de la web, que no se estaban usando y son las mejores que hay.
 const IMG = 'https://creartbox.nyc/assets/img/';
 // El archivo de la web: una carpeta por noche, nombrada por fecha. Es el
-// fondo de verdad —cientos de fotos con su concierto detrás— y es lo que
+// fondo de verdad, cientos de fotos con su concierto detrás, y es lo que
 // evita que la misma imagen salga cuatro veces en el muro.
 //   20251017 = Beyond the Surface · 20251212 = Musica Ricercata
 const ARCHIVO = 'https://creartbox.nyc/assets/img/archive/';
@@ -33,6 +33,10 @@ const MOCKUP = '/kit/creartbox-currents-programa.jpg';
 // Retrato de prensa de Eric Moe, foto de Mara Rago, descargado de su
 // representante. Servido desde aquí para que el canvas pueda pintarlo.
 const MOE = '/kit/eric-moe.jpg';
+// La Cary Hall vacía, con el piano bajo la luz. Es la foto oficial del
+// DiMenna (dimennacenter.org), guardada aquí por lo mismo que las otras dos:
+// el canvas necesita que la imagen venga del mismo dominio que el kit.
+const SALA = '/kit/dimenna-cary-hall.jpg';
 // La serie de entrevistas vive en la sección News de creartbox.nyc.
 const ENTREVISTA_MOE = 'https://creartbox.nyc/news/eight-questions-for-eric-moe.html';
 // Las entradas de Currents, que es a donde hay que llevar a la gente ahora.
@@ -225,7 +229,7 @@ The DiMenna Center for Classical Music, 7 May 2027, 7:30 pm.
 
 Joseph Joachim was twenty-two in 1853 when Clara Schumann dedicated her Three Romances to him. The two of them toured the pieces around Germany and Britain.
 
-Nearly forty years later it was Joachim again, on viola this time, who read through the alternative scoring of Brahms's A minor Trio before Simrock printed it. That's the version we play — viola instead of clarinet.
+Nearly forty years later it was Joachim again, on viola this time, who read through the alternative scoring of Brahms's A minor Trio before Simrock printed it. That's the version we play: viola instead of clarinet.
 
 Two pieces, nearly four decades apart, and the same violinist standing behind both of them.
 
@@ -445,9 +449,9 @@ In considering new work for programming, in addition to pieces with engaging, un
     estilo: 'limpia',
     title: 'Five days in Kuopio',
     excerpt:
-      'The conservatory asked for a look at how we work rather than a recital, so we gave them a ' +
-      'concert, a week of masterclasses, a talk that ran long, and a workshop that ended with one ' +
-      'cellist alone in a dark hall surrounded by lamps.',
+      'Kuopio Conservatory asked for a look at how we work rather than a recital, so we gave them ' +
+      'a concert, a week of masterclasses, and a workshop that ended with a cellist playing alone ' +
+      'in a darkened hall, surrounded by lamps and projections responding to her music.',
     image: IMG + 'kuopio/kuopio-workshop.jpg',
     // Las cinco de la noticia, en el orden en que se cuenta la semana:
     // el taller, el concierto, las clases, la charla y las preguntas.
@@ -462,15 +466,19 @@ In considering new work for programming, in addition to pieces with engaging, un
     date: '2026-10-19',
     url: 'https://creartbox.nyc/news/five-days-in-kuopio.html',
     tags: ['Kuopio', 'Finland', 'ChamberMusic'],
-    pie: `Five days in Kuopio 🇫🇮
+    pie: `Five days in Kuopio, Finland 🇫🇮
 
-The conservatory invited us over and asked for something we don't get asked for often. Not a recital — a look at how we actually work.
+We were invited by Kuopio Conservatory to share something a little different. Not just a concert or masterclasses, but a look at how we work at CreArtBox, bringing music together with light, video, and other visual elements.
 
-So Guillermo and Josefina did a bit of everything. A concert in the chamber hall at the Music Centre: Lili Boulanger, Messiaen, Janáček, Debussy, Clara Schumann, two of Falla's Siete canciones, Frank Martin's Ballade. Masterclasses all week, piano and flute. And a talk that ran well over time because the students kept asking things.
+Guillermo and Josefina performed at the Kuopio Music Centre, with music by Lili Boulanger, Messiaen, Janáček, Debussy, Clara Schumann, Falla, and Frank Martin. We also spent the week teaching flute and piano masterclasses and talking with students about everything that goes into making a performance.
 
-The workshop was the best part. We took music apart and put it back together with light and video. At one point we looped the opening bars of the Falla while the others walked slowly around the cello. It finished with a single cellist in a darkened hall, surrounded by lamps, the video answering whatever she played.
+One of our favorite moments was the workshop. We experimented with how light, movement, and video can change the way we experience music. We looped a few bars of Falla, moved around the space, played with different lighting ideas, and ended up with a cellist playing alone in a darkened hall, surrounded by lamps and projections responding to her music.
 
-Thanks to everyone at Kuopio Conservatory. We'd go back tomorrow.
+It was great to see how quickly the students started coming up with their own ideas.
+
+A big thank you to everyone at Kuopio Conservatory for inviting us and being so open to experimenting with us. We'd love to come back!
+
+We wrote a little more about the experience (and shared some photos) on our website. Full story at the link in bio!
 
 #CreArtBox #Kuopio #ChamberMusic`,
     body: `A five-day residency at the Kuopio Conservatory, Finland.`,
@@ -478,6 +486,7 @@ Thanks to everyone at Kuopio Conservatory. We'd go back tomorrow.
   {
     lang: 'en',
     slug: 'currents-sketched-in-october',
+    pegatinas: [{ texto: '184 years later' }, { texto: 'Tickets in bio', senal: true }],
     kind: 'social',
     estilo: 'duo',
     kicker: 'Did you know?',
@@ -499,7 +508,7 @@ Thanks to everyone at Kuopio Conservatory. We'd go back tomorrow.
     tags: ['RobertSchumann', 'Currents', 'ChamberMusic'],
     pie: `We only noticed this while putting the programme notes together.
 
-1842 was Schumann's chamber music year — three string quartets, the Piano Quintet, this Piano Quartet, and the trio that later became the Phantasiestücke.
+1842 was Schumann's chamber music year: three string quartets, the Piano Quintet, this Piano Quartet, and the trio that later became the Phantasiestücke.
 
 He sketched the Quartet between 24 and 30 October, then spent most of November copying it out.
 
@@ -521,19 +530,17 @@ Nobody planned that. We just liked the piece.
     excerpt:
       'Mary Flagler Cary Hall, empty, with eleven days to go. Two hundred and forty seats and a ' +
       'piano under a light. Currents is on 30 October.',
-    // Provisional: la de verdad es la foto de la sala vacía con el piano,
-    // que él tiene y me va a mandar. Esta es lo más parecido que hay en el
-    // archivo —sala ancha, casi sin nadie— y no es lo mismo.
-    image: THRESHOLD + '_DSC0001.jpg',
+    // La sala vacía con el piano, que es la que él quería. Es la foto
+    // oficial del propio DiMenna (dimennacenter.org), descargada y servida
+    // desde este repositorio para que el canvas la pueda pintar.
+    image: SALA,
     status: 'publish',
     date: '2026-10-21',
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
     falta:
-      'Mándame la foto de la sala vacía con el piano que me enseñaste: la necesito como archivo o ' +
-      'como URL, porque desde el chat no la puedo guardar en el repositorio. En cuanto la tenga, ' +
-      'la pongo. También quedó pendiente si el año pasado se agotó de verdad; con este enfoque ya ' +
-      'no hace falta decirlo, pero si quieres lo añado.',
+      'La foto es la oficial del DiMenna, de su propia web. Para promocionar un concierto en su ' +
+      'sala es lo normal, pero mira si quieres acreditarlos en el pie o prefieres una vuestra.',
     tags: ['Currents', 'DiMennaCenter', 'NYCConcerts'],
     pie: `An empty hall is a strange thing to be fond of.
 
@@ -579,6 +586,7 @@ Eight days to go. See you at DiMenna.
   {
     lang: 'en',
     slug: 'currents-brahms',
+    pegatinas: [{ texto: '30 Oct · 7:30 pm' }, { texto: 'Tickets in bio', senal: true }],
     kind: 'social',
     estilo: 'duo',
     kicker: 'Did you know?',
@@ -596,11 +604,11 @@ Eight days to go. See you at DiMenna.
     tags: ['Brahms', 'Currents', 'ChamberMusic'],
     pie: `A small Brahms story.
 
-By the end of 1890 he had written to his publisher saying he was finished composing. He meant it — he'd put his affairs in order.
+By the end of 1890 he had written to his publisher saying he was finished composing. He meant it. He had put his affairs in order.
 
 Then in March 1891 he heard Richard Mühlfeld, the principal clarinettist at the Meiningen court orchestra, and changed his mind. That summer at Bad Ischl he wrote two new pieces for him: the Clarinet Quintet and the A minor Trio.
 
-Here's the part we like. When Simrock published the Trio in 1892, Brahms offered a viola part as an alternative to the clarinet, and both versions were tried out in rehearsal before it went to print — with Joachim on viola.
+Here's the part we like. When Simrock published the Trio in 1892, Brahms offered a viola part as an alternative to the clarinet, and both versions were tried out in rehearsal before it went to print, with Joachim on viola.
 
 That's the version Matthew, Julia and Josefina play on the 30th.
 
@@ -638,6 +646,7 @@ It's four minutes long. It's a strange way to begin a concert and we wouldn't st
   {
     lang: 'en',
     slug: 'currents-clara',
+    pegatinas: [{ texto: '30 Oct · The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
     kind: 'social',
     estilo: 'duo',
     kicker: 'Did you know?',
@@ -669,9 +678,13 @@ These Romances are among the last original pieces she wrote. Eleven minutes, pla
   {
     lang: 'en',
     slug: 'currents-schumann-quartet',
+    pegatinas: [{ texto: '30 Oct · 7:30 pm' }, { texto: 'Tickets in bio', senal: true }],
     kind: 'social',
     estilo: 'duo',
     kicker: 'Did you know?',
+    // Historia y no post, como Brahms y Clara: las cuatro curiosidades van
+    // juntas a los circulitos y el muro se queda con lo que invita.
+    formato: 'historia',
     // Lo pide la partitura, no la intérprete: nombrarla a ella lo convertía
     // en una manía suya cuando es una instrucción de Schumann.
     title: 'Schumann asks the cellist to retune mid-movement',
@@ -689,7 +702,7 @@ These Romances are among the last original pieces she wrote. Eleven minutes, pla
 
 Robert Schumann's Piano Quartet in E flat, Op. 47. Clara gave the public premiere at the Leipzig Gewandhaus on 8 December 1844, with Ferdinand David on violin and Niels Gade on viola. Almost two centuries later it closes our night.
 
-The slow movement is the one. Schumann hands the melody to the cello, and then ends the movement underneath everything on a low B flat — a note the cello does not have.
+The slow movement is the one. Schumann hands the melody to the cello, and then ends the movement underneath everything on a low B flat, a note the cello does not have.
 
 So he writes in the fix. The cellist tunes the bottom C string down a whole step in the middle of the movement, holds that note under the final bars, and tunes it back up in time for the finale.
 
@@ -811,7 +824,7 @@ Tickets in bio.
     tags: ['Currents', 'DiMennaCenter', 'ChamberMusic'],
     pie: `Thank you.
 
-A few photographs from Friday at The DiMenna Center. We opened the twelfth New York season with Currents — Laporta, Brahms, Moe, Clara Schumann, Robert Schumann, straight through.
+A few photographs from Friday at The DiMenna Center. We opened the twelfth New York season with Currents: Laporta, Brahms, Moe, Clara Schumann, Robert Schumann, straight through.
 
 Thanks to everyone who came out, and to Josefina, Emilie-Anne, Matthew and Julia for the work that went into it.
 
@@ -835,14 +848,14 @@ Next stop: Illinois.
     url: 'https://creartbox.nyc/concerts/illinois-college-piano-trio-2026.html',
     cta: 'Details at creartbox.nyc ↗',
     falta:
-      'Mejor una foto de las tres que van —Josefina, Emilie-Anne y Ana Kim—. De Ana Kim no tengo ' +
+      'Mejor una foto de las tres que van: Josefina, Emilie-Anne y Ana Kim. De Ana Kim no tengo ' +
       'ninguna en la web.',
     tags: ['IllinoisCollege', 'PianoTrio', 'ChamberMusic'],
     pie: `Next stop: Illinois.
 
 On Friday Josefina, Emilie-Anne and guest cellist Ana Kim open the Engelbach-Hart Music Festival at Illinois College.
 
-The programme is almost entirely early work — Lili Boulanger, Rachmaninoff and Shostakovich all wrote their pieces on it while they were still teenagers — plus Nadia Boulanger, Bloch, Kurtág, and Andrea Casarrubios's Silbo and 24 Mozas.
+The programme is almost entirely early work. Lili Boulanger, Rachmaninoff and Shostakovich all wrote their pieces on it while they were still teenagers. Then Nadia Boulanger, Bloch, Kurtág, and Andrea Casarrubios's Silbo and 24 Mozas.
 
 The festival was a gift from the Engelbach and Hart families to the town, so admission is free. You just reserve a seat.
 
@@ -901,7 +914,7 @@ Josefina, Emilie-Anne and Ana play tonight at 7:30 at Rammelkamp Chapel. Admissi
     tags: ['AWAVE', 'Tokyo', 'VisualConcert'],
     pie: `A throwback to Tokyo, 2019.
 
-This is AWAVE at the Ryogoku Concert Hall — flute, piano, and a stage built with Mizuko Kaji, the set and costume designer we'd already worked with once before.
+This is AWAVE at the Ryogoku Concert Hall: flute, piano, and a stage built with Mizuko Kaji, the set and costume designer we had already worked with once before.
 
 It was a big thing to put together and a very good one. Brown Leaves Moving, which opens our concert in New York this season, comes from that same suite.
 
@@ -927,7 +940,7 @@ We'd bring it back given half a chance.
     tags: ['CallForScores', 'NewMusic', 'CreArtBox'],
     pie: `We've been reading a lot of new music.
 
-Eleven works on this season came in through our open Call for Scores — more than any season before. One of them is Eric Moe's Laminar Flow in Upsidedown Creek, which we played on the 30th.
+Eleven works on this season came in through our open Call for Scores, more than any season before. One of them is Eric Moe's Laminar Flow in Upsidedown Creek, which we played on the 30th.
 
 And on 23 April we're giving a whole evening to seven of them: Yurui (Rain), Alex Burtzos, Luke Carlson, Gilad Cohen, Samantha Leigh Sack, Paul Novak and Sam Wu. Seven premieres in one night.
 
@@ -960,7 +973,7 @@ Going through the submissions takes forever, and every year it turns up composer
 
 Alongside the New York Series we work with public libraries, schools and community institutions, in New York and beyond. A library concert is a completely different thing from a hall: people walk in, sit down, and listen for half an hour without planning an evening around it.
 
-And for the concerts that are ticketed, cost shouldn't be what stops you. We run subsidised seats through the NYC Culture Pass and with the Queens Public Library — ticket revenue has never covered what a concert costs to put on, and donor support is what makes that possible.
+And for the concerts that are ticketed, cost shouldn't be what stops you. We run subsidised seats through the NYC Culture Pass and with the Queens Public Library. Ticket revenue has never covered what a concert costs to put on, and donor support is what makes that possible.
 
 If the price is the reason you're not coming, write to us at info@creartbox.nyc. Someone answers.
 

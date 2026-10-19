@@ -376,6 +376,11 @@ export interface KitSource {
    * del perfil, que es permanente.
    */
   formato?: 'historia';
+  /**
+   * Pegatinas de historia: van encima de la imagen y solo en 9:16. Dos como
+   * mucho, que es lo que cabe sin tapar nada. `senal` la pinta en ámbar.
+   */
+  pegatinas?: { texto: string; senal?: boolean }[];
   /** El orden de la noche para el estilo «tabla». `cifra` es la duración. */
   tabla?: {
     rotulo?: string;
