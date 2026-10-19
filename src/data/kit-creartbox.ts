@@ -236,7 +236,9 @@ Two pieces, nearly four decades apart, and the same violinist standing behind bo
     // única violinista de aquella noche, así que la foto es suya sin duda.
     image: THRESHOLD + '_MG_0013.jpg',
     status: 'publish',
-    date: '2026-10-30',
+    // El 27 y no el 30: el día del concierto toca decir «esta noche», no
+    // contar quién era Joachim. Esta es una pieza de la cuesta de antes.
+    date: '2026-10-27',
     url: CURRENTS,
     tags: ['Currents', 'ClaraSchumann', 'Brahms', 'DiMennaCenter'],
     body: `
