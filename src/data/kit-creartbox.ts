@@ -18,6 +18,10 @@ const IMG = 'https://creartbox.nyc/assets/img/';
 // evita que la misma imagen salga cuatro veces en el muro.
 //   20251017 = Beyond the Surface · 20251212 = Musica Ricercata
 const ARCHIVO = 'https://creartbox.nyc/assets/img/archive/';
+// Las fotos de Threshold (6 de febrero de 2026) están en el CDN del archivo,
+// no en el sitio. Es de donde salen los retratos de Emilie-Anne.
+const THRESHOLD =
+  'https://creartbox-archive.b-cdn.net/archive-creartbox/2026-02-06-threshold-photos/web/';
 const RELEASE = 'https://creartbox.nyc/press/season-2026-27.html';
 const CALENDAR = 'https://creartbox.nyc/concerts.html';
 const CURRENTS = 'https://creartbox.nyc/concerts/currents-2026.html';
@@ -113,7 +117,8 @@ On sale now through Eventbrite. The DiMenna Center for Classical Music, 30 Octob
     title: 'Winterlight: a world premiere, and Petroushka',
     excerpt:
       "Hannah Selin's Tectonic Lullaby for piano quintet gets its first performance, and the evening closes with Stravinsky's Petroushka in a chamber arrangement. 11 December 2026.",
-    image: PHOTO + 'creartbox-in-performance.jpg',
+    // otra, para no repetir con la del paseo de entrada
+    image: ARCHIVO + '20251212__MG_0071.jpg',
     status: 'publish',
     date: '2026-12-11',
     url: CALENDAR,
@@ -211,11 +216,25 @@ The DiMenna Center for Classical Music, 7 May 2027, 7:30 pm.
     lang: 'en',
     slug: 'currents-joachim',
     estilo: 'cinta',
-    title: 'One violinist connects three works on this programme',
+    title: 'Emilie-Anne plays two works that run back to the same man',
     excerpt:
-      "Joseph Joachim received the dedication of Clara Schumann's Three Romances in 1853, and it was Joachim who read the viola part of Brahms's A minor Trio in rehearsal. Both are on the programme on 30 October.",
-    // la viola en primer plano, que es de lo que habla
-    image: ARCHIVO + '20251017__MG_0688.jpg',
+      "Joseph Joachim received the dedication of Clara Schumann's Three Romances in 1853, and it was " +
+      "Joachim who read the viola part of Brahms's A minor Trio in rehearsal. Both are on the " +
+      'programme on 30 October.',
+    pie: `Two of the works Emilie-Anne plays on the 30th run back to the same man, and he isn't on the programme.
+
+Joseph Joachim was twenty-two in 1853 when Clara Schumann dedicated her Three Romances to him. The two of them toured the pieces around Germany and Britain.
+
+Nearly forty years later it was Joachim again, on viola this time, who read through the alternative scoring of Brahms's A minor Trio before Simrock printed it. That's the version we play — viola instead of clarinet.
+
+Two pieces, nearly four decades apart, and the same violinist standing behind both of them.
+
+30 October at The DiMenna Center.
+
+#CreArtBox #Brahms #ClaraSchumann`,
+    // Emilie-Anne, en Threshold (6 de febrero de 2026, DiMenna): era la
+    // única violinista de aquella noche, así que la foto es suya sin duda.
+    image: THRESHOLD + '_MG_0013.jpg',
     status: 'publish',
     date: '2026-10-30',
     url: CURRENTS,
@@ -430,6 +449,15 @@ In considering new work for programming, in addition to pieces with engaging, un
       'concert, a week of masterclasses, a talk that ran long, and a workshop that ended with one ' +
       'cellist alone in a dark hall surrounded by lamps.',
     image: IMG + 'kuopio/kuopio-workshop.jpg',
+    // Las cinco de la noticia, en el orden en que se cuenta la semana:
+    // el taller, el concierto, las clases, la charla y las preguntas.
+    fotos: [
+      IMG + 'kuopio/kuopio-workshop.jpg',
+      IMG + 'kuopio/kuopio-concert.jpg',
+      IMG + 'kuopio/kuopio-coaching.jpg',
+      IMG + 'kuopio/kuopio-talk.jpg',
+      IMG + 'kuopio/kuopio-questions.jpg',
+    ],
     status: 'publish',
     date: '2026-10-19',
     url: 'https://creartbox.nyc/news/five-days-in-kuopio.html',
@@ -449,58 +477,62 @@ Thanks to everyone at Kuopio Conservatory. We'd go back tomorrow.
   },
   {
     lang: 'en',
-    slug: 'currents-crew',
+    slug: 'currents-sketched-in-october',
     kind: 'social',
-    estilo: 'limpia',
-    title: 'This is the crew',
+    estilo: 'duo',
+    kicker: 'Did you know?',
+    title: 'Schumann finished sketching it on 30 October',
     excerpt:
-      'Josefina Urraca on piano, Emilie-Anne Gendron on violin, Matthew Cohen on viola, Julia Yang ' +
-      'on cello, and Guillermo Laporta on the visuals. Our twelfth New York season opens on 30 October.',
-    image: ARCHIVO + '20251017__MG_0655.jpg',
+      'He sketched the Piano Quartet between 24 and 30 October 1842 and copied it out in November. ' +
+      'We play it on 30 October, a hundred and eighty-four years to the day after he put the last ' +
+      'sketch down.',
+    image: ARCHIVO + '20251212__MG_0093.jpg',
     status: 'publish',
     date: '2026-10-20',
-    url: CURRENTS,
-    tags: ['ChamberMusic', 'NYC', 'DiMennaCenter'],
-    pie: `Here's the crew for the 30th.
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    tags: ['RobertSchumann', 'Currents', 'ChamberMusic'],
+    pie: `We only noticed this while putting the programme notes together.
 
-Josefina on piano, Emilie-Anne on violin, Matthew on viola, Julia on cello. Guillermo is not playing this one — he's on the video, which for Currents runs the whole evening.
+1842 was Schumann's chamber music year — three string quartets, the Piano Quintet, this Piano Quartet, and the trio that later became the Phantasiestücke.
 
-We've been at this together for a while now, and this is the twelfth New York season. First night is 30 October at The DiMenna Center.
+He sketched the Quartet between 24 and 30 October, then spent most of November copying it out.
 
-Hope to see a few familiar faces.
+We play it on 30 October. A hundred and eighty-four years to the day after he put the last sketch down.
 
-#CreArtBox #ChamberMusic #NYC`,
-    body: `Who is on stage on 30 October.`,
+Nobody planned that. We just liked the piece.
+
+30 October at The DiMenna Center. Tickets in bio.
+
+#RobertSchumann #CreArtBox #ChamberMusic`,
+    body: `Sketched 24 to 30 October 1842. Played 30 October 2026.`,
   },
   {
     lang: 'en',
     slug: 'currents-full-house',
     kind: 'social',
-    estilo: 'cifra',
-    cifra: {
-      rotulo: 'Mary Flagler Cary Hall · The DiMenna Center',
-      posicion: 'arriba',
-      valor: '250',
-      pie: 'seats in the hall. On 30 October we would like every one of them taken.',
-    },
-    title: 'Last year we filled this room',
+    // Era «cifra», con el 240 a tamaño de pared. Él lo paró: demasiado. El
+    // dato va en el pie, donde se lee sin que grite, y la imagen es la foto.
+    estilo: 'cinta',
+    title: 'Last October this room was full',
     excerpt:
-      'Mary Flagler Cary Hall seats two hundred and fifty. Last October it was full for Beyond the ' +
-      'Surface, and so quiet during the premiere that you could hear the building. Currents is on ' +
+      'Mary Flagler Cary Hall seats two hundred and forty. Last October it was full for our season ' +
+      'opening, and so quiet during the premiere that you could hear the building. Currents is on ' +
       '30 October and we would like the same.',
-    image: ARCHIVO + '20251017__DSC0028.jpg',
+    // La pide él: la proyección sobre la sala, con el público delante.
+    image: ARCHIVO + '20251017__DSC0057.jpg',
     status: 'publish',
     date: '2026-10-21',
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
     falta:
-      'El plan decía «SOLD OUT» y eso no lo he encontrado en ninguna parte: ni en la web, ni en ' +
-      'el archivo, ni en el cuadernillo. Lo he dejado en «filled this room», que sí se ve en la ' +
-      'foto. Si de verdad se agotó, dímelo y lo pongo.',
+      'Dos cosas tuyas aquí. Una: 240 asientos es tu número, no el de la web del DiMenna, que ' +
+      'publica 250. He puesto el tuyo. Dos: el plan decía «SOLD OUT» y eso no está en ninguna ' +
+      'parte, así que dice «full». Si se agotó de verdad, dímelo y lo pongo.',
     tags: ['Currents', 'DiMennaCenter', 'NYCConcerts'],
     pie: `Last October this room was full 🎟️
 
-Mary Flagler Cary Hall holds 250. For our season opening it filled up, and during the premiere it went so quiet you could hear the building.
+Mary Flagler Cary Hall holds 240. For our season opening it filled up, and during the premiere it went so quiet you could hear the building.
 
 We'd like the same on the 30th. Currents opens our twelfth New York season: Brahms, Clara and Robert Schumann, Eric Moe, Guillermo Laporta.
 
@@ -509,7 +541,7 @@ If you're thinking of coming, don't leave it to the last minute.
 Tickets in bio.
 
 #CreArtBox #NYCConcerts #ChamberMusic`,
-    body: `The hall holds 250 and we would like it full again.`,
+    body: `The hall holds 240 and we would like it full again.`,
   },
   {
     lang: 'en',
@@ -525,8 +557,8 @@ Tickets in bio.
     date: '2026-10-22',
     url: CURRENTS,
     falta:
-      'Esta pide foto de ensayo de esta semana, hecha con el móvil. La que lleva es de archivo y ' +
-      'se nota: un post que dice «entre bastidores» con una foto de concierto no cuela.',
+      'Esperando tu foto de ensayo: dijiste que no hay hasta dos días antes del concierto. La que ' +
+      'lleva ahora es de archivo y se nota. Mándamela el 28 y la cambio.',
     tags: ['Currents', 'ChamberMusic', 'DiMennaCenter'],
     pie: `Putting the 30th together.
 
@@ -630,6 +662,7 @@ These Romances are among the last original pieces she wrote. Eleven minutes, pla
     slug: 'currents-schumann-quartet',
     kind: 'social',
     estilo: 'duo',
+    kicker: 'Did you know?',
     title: 'Julia has to retune her cello mid-movement',
     excerpt:
       'The slow movement of Schumann’s Piano Quartet ends on a low B flat the cello cannot reach, ' +
@@ -663,7 +696,7 @@ Tickets in bio.
     excerpt:
       'The projections are written into the programme, not added on top of it. Guillermo is on ' +
       'Currents twice: the piece that opens the night, and the video that runs through all of it.',
-    image: ARCHIVO + '20251017__DSC0057.jpg',
+    image: ARCHIVO + '20251017__DSC0028.jpg',
     status: 'publish',
     date: '2026-10-27',
     url: CURRENTS,
@@ -689,7 +722,8 @@ We're putting it all together this week.
     title: 'Two days to Currents',
     excerpt:
       'Friday 30 October, 7:30 pm, The DiMenna Center. Five works, about sixty minutes, no interval.',
-    image: ARCHIVO + '20251212__DSC0350.jpg',
+    // la sala desde atrás, con público
+    image: ARCHIVO + '20251212__DSC0352.jpg',
     status: 'publish',
     date: '2026-10-28',
     url: ENTRADAS,

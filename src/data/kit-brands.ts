@@ -362,6 +362,14 @@ export interface KitSource {
   pie?: string;
   /** Qué material falta para poder publicarlo. La app lo avisa en la ficha. */
   falta?: string;
+  /**
+   * Fotos que se publican tal cual, sin pasar por el motor de dibujo. Para
+   * los posts que no quieren diseño: una crónica, un viaje, un carrusel de
+   * lo que pasó. Cuando están, el carrusel son ellas.
+   */
+  fotos?: string[];
+  /** Antetítulo del panel ámbar del estilo «duo». P. ej. «Did you know?». */
+  kicker?: string;
   /** El orden de la noche para el estilo «tabla». `cifra` es la duración. */
   tabla?: {
     rotulo?: string;
