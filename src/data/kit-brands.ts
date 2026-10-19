@@ -383,6 +383,8 @@ export interface KitSource {
   pegatinas?: { texto: string; senal?: boolean }[];
   /** Las líneas de datos del estilo «cartel»: fecha, hora, sitio, entradas. */
   cartel?: { lineas: string[] };
+  /** El trapecio ámbar del estilo «programa», como en el cuadernillo. */
+  trapecio?: { rotulo?: string; sub?: string; titulo?: string; pie?: string };
   /** El orden de la noche para el estilo «tabla». `cifra` es la duración. */
   tabla?: {
     rotulo?: string;

@@ -734,7 +734,7 @@ Currents, this Friday at The DiMenna Center. Four players, five works, about an 
 
 Brahms, Clara and Robert Schumann, Eric Moe, Guillermo Laporta. Video running the whole way.
 
-The hall holds 250 and it filled up last year, so if you've been meaning to get a ticket this is the moment.
+The hall holds 240 and every seat was taken last year, so if you've been meaning to get a ticket this is the moment.
 
 Friday 30 October, 7:30 pm. Tickets in bio.
 
@@ -745,18 +745,26 @@ Friday 30 October, 7:30 pm. Tickets in bio.
     lang: 'en',
     slug: 'currents-tomorrow',
     kind: 'social',
-    // Nota suya: «pon solo texto, diseña una especie de cartel». Sin imagen
-    // el estilo cartel se queda en tipografía sola, que es lo que pedía.
-    estilo: 'cartel',
+    // Nota suya: «pon solo texto, diseña una especie de cartel», y luego
+    // «más tipo el programa de mano con el trapecio amarillo». Es su propia
+    // portada, medida del PDF del cuadernillo.
+    estilo: 'programa',
+    kicker: 'Tomorrow · Opening night',
     cartel: {
       lineas: [
-        'Friday 30 October 2026 · 7:30 pm',
-        'The DiMenna Center · 450 W 37th Street, New York',
-        'Laporta · Brahms · Moe · Clara and Robert Schumann',
-        'Tickets from $15 · link in bio',
+        'Friday, October 30, 2026 · 7:30 pm',
+        '450 W 37th St, New York',
+        'Guillermo Laporta · Johannes Brahms · Eric Moe',
+        'Clara Schumann · Robert Schumann',
       ],
     },
-    title: 'Currents. Tomorrow.',
+    trapecio: {
+      rotulo: 'New York Series',
+      sub: 'at The DiMenna Center for Classical Music',
+      titulo: '12th season',
+      pie: '2026 / 27',
+    },
+    title: 'Currents',
     excerpt:
       'Currents. Friday 30 October, 7:30 pm. The DiMenna Center, 450 W 37th Street. Tickets from $15.',
     image: '',
