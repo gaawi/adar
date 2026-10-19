@@ -354,6 +354,14 @@ export interface KitSource {
   estilo?: string;
   /** El dato que dibuja el estilo «cifra»: el número manda en la imagen. */
   cifra?: { valor: string; rotulo?: string; pie: string; posicion?: 'arriba' | 'abajo' };
+  /**
+   * El pie escrito a mano. Cuando está, es el pie: no se compone nada a
+   * partir del titular y la entradilla. Es para los posts que se escriben
+   * como se habla, que son casi todos los que funcionan.
+   */
+  pie?: string;
+  /** Qué material falta para poder publicarlo. La app lo avisa en la ficha. */
+  falta?: string;
   /** El orden de la noche para el estilo «tabla». `cifra` es la duración. */
   tabla?: {
     rotulo?: string;

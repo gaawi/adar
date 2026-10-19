@@ -206,37 +206,6 @@ The DiMenna Center for Classical Music, 7 May 2027, 7:30 pm.
   // Los dos últimos son solo para redes: no hay artículo detrás, llevan al
   // propio concierto, y por eso el carrusel es corto.
 
-  {
-    lang: 'en',
-    slug: 'currents-walk-on',
-    title: 'The players walk on stage already playing',
-    excerpt:
-      'Currents opens with Brown Leaves Moving. The five musicians start offstage and walk on as they play, so the ensemble forms in front of the audience instead of waiting for it. 30 October, The DiMenna Center.',
-    image: PHOTO + 'creartbox-in-performance.jpg',
-    status: 'publish',
-    date: '2026-10-30',
-    url: CURRENTS,
-    tags: ['Currents', 'BrownLeavesMoving', 'DiMennaCenter', 'NewYorkSeries'],
-    body: `
-Most concerts begin with five people already seated.
-
-## The stage is empty when the music starts
-
-Brown Leaves Moving begins with the players offstage. They walk on as they play, over an electronic background, so the ensemble forms in front of the audience instead of waiting for it.
-
-## Four minutes
-
-It is the shortest work of the night and the first one. Guillermo Laporta wrote it in 2018, for the suite AWAVE, first performed in Queens that year.
-
-## Why it opens
-
-Currents assembles five works around a single idea: movement carried from one place to another. Two of them take the idea literally. This is the one that does it with the players themselves.
-
-## Details
-
-30 October 2026, 7:30 pm. The DiMenna Center for Classical Music, 450 W 37th St. About 60 minutes, played without intermission.
-`,
-  },
 
   {
     lang: 'en',
@@ -305,33 +274,6 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
 `,
   },
 
-  // Solo redes.
-  {
-    lang: 'en',
-    slug: 'currents-who-plays',
-    estilo: 'limpia',
-    kind: 'social',
-    title: 'Who is on stage on 30 October',
-    excerpt:
-      'Guillermo Laporta, flute. Josefina Urraca, piano. Emilie-Anne Gendron, violin. Matthew Cohen, viola. Julia Yang, cello.',
-    // los cuatro en el escenario
-    image: ARCHIVO + '20251017__MG_0655.jpg',
-    status: 'publish',
-    date: '2026-10-30',
-    url: CURRENTS,
-    tags: ['Currents', 'DiMennaCenter', 'ChamberMusic'],
-    body: `
-Flute, piano, violin, viola and cello.
-
-## The five
-
-Guillermo Laporta, flute. Josefina Urraca, piano. Emilie-Anne Gendron, violin. Matthew Cohen, viola. Julia Yang, cello.
-
-## Where they play the rest of the year
-
-Gendron is a longtime member of the Momenta Quartet and one of the concertmasters of the Orpheus Chamber Orchestra. Cohen was a special prize winner at the Primrose International Viola Competition. Yang is a founding member of the Naumburg-winning Merz Trio.
-`,
-  },
 
   // Solo redes, para la semana del concierto.
   {
@@ -465,242 +407,572 @@ In considering new work for programming, in addition to pieces with engaging, un
 `,
   },
 
-  // ── Currents · 30 de octubre ──────────────────────────────────────────
-  // Escritas a doce días del concierto con un objetivo: vender entradas.
-  // El material sale del cuadernillo de mano (downloads/currents-2026-program.pdf),
-  // que es donde están las notas al programa de verdad. Llevan `cta` propio,
-  // al Eventbrite, y están escritas como habla la cuenta: en primera persona
-  // del plural, con nombres, y sin frases cortadas a cuchillo.
+  // ── La tanda del 19 de octubre al 14 de noviembre ──────────────────────
+  //
+  // Estas llevan `pie`: el texto va escrito entero y a mano, y el compositor
+  // de pies no lo toca. El plan venía de fuera y el registro es suyo; lo que
+  // se ha hecho aquí es devolverle el detalle concreto, que es lo que lo
+  // separa de un texto que podría haber escrito cualquiera. Cada dato está
+  // comprobado contra creartbox.nyc o contra el cuadernillo; lo que no se ha
+  // podido comprobar va dicho en `falta`, no publicado como si tal cosa.
+  //
+  // Casi todas son foto y pie, sin carrusel: son posts que se leen, no
+  // piezas de diseño. Por eso `estilo: 'limpia'` y cuerpo de una línea.
+
   {
     lang: 'en',
-    slug: 'currents-cello-retune',
-    estilo: 'duo',
+    slug: 'kuopio-residency',
     kind: 'social',
-    title: 'Julia has to retune her cello in the middle of the movement',
+    estilo: 'limpia',
+    title: 'Five days in Kuopio',
     excerpt:
-      'The slow movement of Schumann\'s Piano Quartet ends on a pedal note the cello cannot ' +
-      'reach, so the player tunes the bottom C string down a whole step to B flat, holds the ' +
-      'note under the final bars, and tunes it back up for the finale. It serves the music and ' +
-      'inconveniences the cellist.',
-    // el chelo en primer plano
-    image: ARCHIVO + '20251212__MG_0047.jpg',
+      'The conservatory asked for a look at how we work rather than a recital, so we gave them a ' +
+      'concert, a week of masterclasses, a talk that ran long, and a workshop that ended with one ' +
+      'cellist alone in a dark hall surrounded by lamps.',
+    image: IMG + 'kuopio/kuopio-workshop.jpg',
     status: 'publish',
-    date: '2026-10-30',
-    url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
-    tags: ['Schumann', 'Currents', 'ChamberMusic'],
-    body: `
-## A note that is not there
+    date: '2026-10-19',
+    url: 'https://creartbox.nyc/news/five-days-in-kuopio.html',
+    tags: ['Kuopio', 'Finland', 'ChamberMusic'],
+    pie: `Five days in Kuopio 🇫🇮
 
-The Andante cantabile hands its melody to the cello first, and ends underneath everything on a low B flat. The instrument does not go that low. Schumann asked for it anyway.
+The conservatory invited us over and asked for something we don't get asked for often. Not a recital — a look at how we actually work.
 
-## Watch for it on 30 October
+So Guillermo and Josefina did a bit of everything. A concert in the chamber hall at the Music Centre: Lili Boulanger, Messiaen, Janáček, Debussy, Clara Schumann, two of Falla's Siete canciones, Frank Martin's Ballade. Masterclasses all week, piano and flute. And a talk that ran well over time because the students kept asking things.
 
-Twenty-eight minutes, the last work of the night. Julia Yang plays cello.
-`,
+The workshop was the best part. We took music apart and put it back together with light and video. At one point we looped the opening bars of the Falla while the others walked slowly around the cello. It finished with a single cellist in a darkened hall, surrounded by lamps, the video answering whatever she played.
+
+Thanks to everyone at Kuopio Conservatory. We'd go back tomorrow.
+
+#CreArtBox #Kuopio #ChamberMusic`,
+    body: `A five-day residency at the Kuopio Conservatory, Finland.`,
   },
   {
     lang: 'en',
-    slug: 'currents-brahms-quit',
-    estilo: 'cartel',
+    slug: 'currents-crew',
     kind: 'social',
-    title: 'Brahms had already announced he was finished',
+    estilo: 'limpia',
+    title: 'This is the crew',
     excerpt:
-      'In December 1890 he wrote to his publisher that he was done composing. Then in March ' +
-      '1891 he heard a clarinettist in Meiningen called Richard Mühlfeld, and that summer he ' +
-      'wrote two more works. The A minor Trio is one of them, and we play its first movement ' +
-      'on 30 October.',
-    image: IMG + 'arch-echoes.jpg',
+      'Josefina Urraca on piano, Emilie-Anne Gendron on violin, Matthew Cohen on viola, Julia Yang ' +
+      'on cello, and Guillermo Laporta on the visuals. Our twelfth New York season opens on 30 October.',
+    image: ARCHIVO + '20251017__MG_0655.jpg',
     status: 'publish',
-    date: '2026-10-30',
-    url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
-    tags: ['Brahms', 'Currents', 'ChamberMusic'],
-    body: `
-## One player changed his mind
+    date: '2026-10-20',
+    url: CURRENTS,
+    tags: ['ChamberMusic', 'NYC', 'DiMennaCenter'],
+    pie: `Here's the crew for the 30th.
 
-Mühlfeld was the principal clarinettist at the Meiningen court orchestra. Brahms heard him in March and by the summer, at Bad Ischl, there were two new pieces: this Trio and the Clarinet Quintet.
+Josefina on piano, Emilie-Anne on violin, Matthew on viola, Julia on cello. Guillermo is not playing this one — he's on the video, which for Currents runs the whole evening.
 
-## Why a viola plays it tonight
+We've been at this together for a while now, and this is the twelfth New York season. First night is 30 October at The DiMenna Center.
 
-Simrock published the Trio in 1892 with a viola part offered instead of the clarinet. Both versions were rehearsed before it went to print, with Joachim on viola. Matthew Cohen plays it.
-`,
+Hope to see a few familiar faces.
+
+#CreArtBox #ChamberMusic #NYC`,
+    body: `Who is on stage on 30 October.`,
   },
   {
     lang: 'en',
-    slug: 'currents-clara-last',
+    slug: 'currents-full-house',
     kind: 'social',
-    title: 'Among the last pieces Clara Schumann ever wrote',
-    excerpt:
-      'She wrote the Three Romances in Düsseldorf in 1853. Brahms knocked on the Schumanns\' ' +
-      'door that September; Robert collapsed the following February. From then on she composed ' +
-      'almost nothing new and gave her working life to performing and to editing his music. ' +
-      'Eleven minutes, on 30 October.',
-    // al piano: Clara escribía para ella misma
-    image: ARCHIVO + '20251017__MG_0620.jpg',
-    status: 'publish',
-    date: '2026-10-30',
-    url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
-    tags: ['ClaraSchumann', 'WomenComposers', 'Currents'],
-    body: `
-## Dedicated to Joachim
-
-He was twenty-two and at the Hanoverian court. The two of them toured the Romances through Germany and Britain, including a performance for King George V, who by Joachim's account loved them.
-
-## Three pieces, one idea each
-
-The piano writing is a virtuoso writing for herself. Emilie-Anne Gendron plays violin, Josefina Urraca piano.
-`,
-  },
-  {
-    lang: 'en',
-    slug: 'currents-full-room',
     estilo: 'cifra',
     cifra: {
       rotulo: 'Mary Flagler Cary Hall · The DiMenna Center',
-      // Arriba: el público de esta foto está en la franja de abajo y es
-      // justamente lo que el post enseña. No se le puede poner el número encima.
       posicion: 'arriba',
-      // 250 es el aforo de la sala y lo publica el propio DiMenna. No es un
-      // recuento de asistencia: eso no lo tenemos y no se puede afirmar.
       valor: '250',
       pie: 'seats in the hall. On 30 October we would like every one of them taken.',
     },
-    kind: 'social',
-    title: 'There are 250 seats in this room',
+    title: 'Last year we filled this room',
     excerpt:
-      'Mary Flagler Cary Hall at The DiMenna Center seats two hundred and fifty. This photograph ' +
-      'is from last October, Beyond the Surface, and the room was so quiet during the premiere ' +
-      'that you could hear the building. Currents is on 30 October. We would like every seat taken.',
-    // la Cary Hall llena, el 17 de octubre, la noche de la que habla
+      'Mary Flagler Cary Hall seats two hundred and fifty. Last October it was full for Beyond the ' +
+      'Surface, and so quiet during the premiere that you could hear the building. Currents is on ' +
+      '30 October and we would like the same.',
     image: ARCHIVO + '20251017__DSC0028.jpg',
     status: 'publish',
-    date: '2026-10-30',
+    date: '2026-10-21',
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
-    tags: ['DiMennaCenter', 'Currents', 'NYCMusic'],
-    body: `
-## What that night was like
+    falta:
+      'El plan decía «SOLD OUT» y eso no lo he encontrado en ninguna parte: ni en la web, ni en ' +
+      'el archivo, ni en el cuadernillo. Lo he dejado en «filled this room», que sí se ve en la ' +
+      'foto. Si de verdad se agotó, dímelo y lo pongo.',
+    tags: ['Currents', 'DiMennaCenter', 'NYCConcerts'],
+    pie: `Last October this room was full 🎟️
 
-Beyond the Surface, last October: the world premiere of Devin Cholodenko's Twilight at Dawn with the composer sitting in the hall, and Ravel's Ma Mère l'Oye with animations drawn from the book that inspired it.
+Mary Flagler Cary Hall holds 250. For our season opening it filled up, and during the premiere it went so quiet you could hear the building.
 
-## The room holds what it holds
+We'd like the same on the 30th. Currents opens our twelfth New York season: Brahms, Clara and Robert Schumann, Eric Moe, Guillermo Laporta.
 
-Currents is on 30 October at 7:30 pm. Sixty minutes, no interval. The seats closest to the players go first.
-`,
+If you're thinking of coming, don't leave it to the last minute.
+
+Tickets in bio.
+
+#CreArtBox #NYCConcerts #ChamberMusic`,
+    body: `The hall holds 250 and we would like it full again.`,
   },
   {
     lang: 'en',
-    slug: 'currents-open-call-moe',
-    estilo: 'bloque',
+    slug: 'currents-getting-ready',
     kind: 'social',
-    title: 'He wrote it at a refuge in Montana',
-    excerpt:
-      'Eric Moe wrote Laminar Flow in Upsidedown Creek during a residency at the Montana ' +
-      'Artists Refuge, and it reached our programme through the open Call for Scores. Laminar ' +
-      'flow is what fluid dynamics calls movement in smooth parallel layers, with no mixing. ' +
-      'The opposite of turbulence.',
-    image: IMG + 'feat-circlenoir.jpg',
-    status: 'publish',
-    date: '2026-10-30',
-    url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
-    tags: ['EricMoe', 'CallForScores', 'NewMusic', 'Currents'],
-    body: `
-## How it got here
-
-Our open Call for Scores puts selected composers on the season roster and gives the music a New York performance with the core ensemble. Eleven works arrived that way this season, more than ever before.
-
-## Five minutes, three strings
-
-Violin, viola and cello. Jeanne Golan recorded a piano version of it in 2021, but this one you have to be in the room for.
-`,
-  },
-  {
-    lang: 'en',
-    slug: 'currents-you-can-see',
     estilo: 'limpia',
-    kind: 'social',
-    title: 'Chamber music you can see',
+    title: 'Getting Currents ready',
     excerpt:
-      'Guillermo Laporta is on the programme twice: the piece that opens the night is his, and ' +
-      'so is the video art that moves across the hall while we play. He founded CreArtBox in ' +
-      '2013 and has always treated the staging of a piece as part of its writing.',
-    // la proyección sobre la sala: «chamber music you can see»
+      'Rehearsals, scores, projections, lighting cues, and the small things that always take longer ' +
+      'than anyone expects. Eight days to go.',
+    image: ARCHIVO + '20251212__MG_0061.jpg',
+    status: 'publish',
+    date: '2026-10-22',
+    url: CURRENTS,
+    falta:
+      'Esta pide foto de ensayo de esta semana, hecha con el móvil. La que lleva es de archivo y ' +
+      'se nota: un post que dice «entre bastidores» con una foto de concierto no cuela.',
+    tags: ['Currents', 'ChamberMusic', 'DiMennaCenter'],
+    pie: `Putting the 30th together.
+
+Brahms, the Schumanns, a piece by Eric Moe that came in through the open call, and Guillermo's video running underneath all of it.
+
+There's always more going on than the programme suggests. Rehearsals, yes, but also projection cues, lighting, and the little things that take three times as long as you planned for.
+
+Eight days to go. See you at DiMenna.
+
+#CreArtBox #Currents #ChamberMusic`,
+    body: `What the week before a concert actually looks like.`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-brahms',
+    kind: 'social',
+    estilo: 'cartel',
+    title: 'Brahms had already announced he was finished',
+    excerpt:
+      'In December 1890 he told his publisher he was done composing. Then in March 1891 he heard a ' +
+      'clarinettist in Meiningen, and that summer he wrote two more pieces. We play the first ' +
+      'movement of one of them on 30 October.',
+    image: IMG + 'arch-echoes.jpg',
+    status: 'publish',
+    date: '2026-10-23',
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    tags: ['Brahms', 'Currents', 'ChamberMusic'],
+    pie: `A small Brahms story.
+
+By the end of 1890 he had written to his publisher saying he was finished composing. He meant it — he'd put his affairs in order.
+
+Then in March 1891 he heard Richard Mühlfeld, the principal clarinettist at the Meiningen court orchestra, and changed his mind. That summer at Bad Ischl he wrote two new pieces for him: the Clarinet Quintet and the A minor Trio.
+
+Here's the part we like. When Simrock published the Trio in 1892, Brahms offered a viola part as an alternative to the clarinet, and both versions were tried out in rehearsal before it went to print — with Joachim on viola.
+
+That's the version Matthew, Julia and Josefina play on the 30th.
+
+Tickets in bio.
+
+#Brahms #CreArtBox #ChamberMusic`,
+    body: `One clarinettist changed his mind about retiring.`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-offstage',
+    kind: 'social',
+    estilo: 'marco',
+    title: 'The concert starts before anyone is on stage',
+    excerpt:
+      'Brown Leaves Moving begins with the players offstage. They walk on as they play, over an ' +
+      'electronic background, so the group assembles in front of you instead of waiting for you.',
+    image: PHOTO + 'creartbox-in-performance.jpg',
+    status: 'publish',
+    date: '2026-10-24',
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    tags: ['ContemporaryMusic', 'Currents', 'CreArtBox'],
+    pie: `We open with a piece that starts before anyone is on stage.
+
+Brown Leaves Moving is Guillermo's, from a suite first performed in Queens in 2018. The four players begin offstage and walk on while playing, over an electronic background, so the ensemble forms in front of the audience instead of sitting there waiting for it.
+
+It's four minutes long. It's a strange way to begin a concert and we wouldn't start any other way.
+
+30 October, The DiMenna Center.
+
+#CreArtBox #ContemporaryMusic #Currents`,
+    body: `The players walk on while already playing.`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-clara',
+    kind: 'social',
+    estilo: 'marco',
+    title: 'Among the last things Clara Schumann wrote',
+    excerpt:
+      'She wrote the Three Romances in 1853 and dedicated them to Joachim. Brahms knocked on the ' +
+      'door that September; Robert collapsed the following February. After that she wrote almost ' +
+      'nothing new.',
+    image: ARCHIVO + '20251017__MG_0620.jpg',
+    status: 'publish',
+    date: '2026-10-25',
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    tags: ['ClaraSchumann', 'WomenComposers', 'Currents'],
+    pie: `We've been working on Clara Schumann's Three Romances.
+
+She wrote them in Düsseldorf in 1853 and dedicated them to Joseph Joachim, who was twenty-two at the time. The two of them toured the pieces around Germany and Britain, including a performance for King George V, who by Joachim's account loved them.
+
+The dates are the part that stays with you. Brahms, twenty years old, arrived at the Schumanns' door on 30 September that same year. Robert collapsed the following February. From then on Clara wrote almost nothing new and gave her working life to performing and to editing his music.
+
+These Romances are among the last original pieces she wrote. Eleven minutes, played by Emilie-Anne and Josefina.
+
+30 October at DiMenna.
+
+#ClaraSchumann #CreArtBox #WomenComposers`,
+    body: `Three pieces from 1853, dedicated to Joachim.`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-schumann-quartet',
+    kind: 'social',
+    estilo: 'duo',
+    title: 'Julia has to retune her cello mid-movement',
+    excerpt:
+      'The slow movement of Schumann’s Piano Quartet ends on a low B flat the cello cannot reach, ' +
+      'so the player tunes the bottom string down a whole step, holds the note, and tunes it back ' +
+      'up for the finale.',
+    image: ARCHIVO + '20251212__MG_0047.jpg',
+    status: 'publish',
+    date: '2026-10-26',
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    tags: ['RobertSchumann', 'Currents', 'ChamberMusic'],
+    pie: `The piece we're most looking forward to, and a detail worth watching for.
+
+Robert Schumann's Piano Quartet in E flat, Op. 47. Clara gave the public premiere at the Leipzig Gewandhaus on 8 December 1844, with Ferdinand David on violin and Niels Gade on viola. Almost two centuries later it closes our night.
+
+The slow movement is the one. Schumann hands the melody to the cello, and then ends the movement underneath everything on a low B flat — a note the cello does not have. So the cellist tunes the bottom C string down a whole step mid-movement, holds that note under the final bars, and tunes it back up in time for the finale.
+
+It serves the music and it inconveniences the cellist. Julia does it on the 30th.
+
+Tickets in bio.
+
+#RobertSchumann #CreArtBox #ChamberMusic`,
+    body: `A note the instrument does not have.`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-visuals',
+    kind: 'social',
+    estilo: 'limpia',
+    title: 'Nothing on stage is decoration',
+    excerpt:
+      'The projections are written into the programme, not added on top of it. Guillermo is on ' +
+      'Currents twice: the piece that opens the night, and the video that runs through all of it.',
     image: ARCHIVO + '20251017__DSC0057.jpg',
     status: 'publish',
-    date: '2026-10-30',
-    url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
-    tags: ['VideoArt', 'Currents', 'GuillermoLaporta'],
-    body: `
-## The players walk on while playing
+    date: '2026-10-27',
+    url: CURRENTS,
+    tags: ['VisualConcert', 'CreArtBox', 'Currents'],
+    pie: `A bit about the visual side.
 
-Brown Leaves Moving is about leaves moved by the wind, and the movement is built into the performance: the five start offstage and walk on as they play, so the ensemble assembles itself in front of you.
+We say this to students whenever we teach and we mean it: nothing on stage is decoration. If the video is there, it's because the piece needs it — otherwise we leave the lights alone.
 
-## Four minutes, and then the rest
+Sometimes that means something barely noticeable. Sometimes the whole room changes. For Currents the projections run through the entire evening, and Guillermo is on the programme twice over: the piece that opens the night is his, and so is everything moving on the walls while we play.
 
-The projections run through the whole evening. The New Yorker has called us one of its art and music top picks; Time Out, an ensemble devoted to multidisciplinary events.
-`,
+We're putting it all together this week.
+
+30 October at The DiMenna Center.
+
+#CreArtBox #VisualConcert #Currents`,
+    body: `Chamber music you can see.`,
   },
   {
     lang: 'en',
-    slug: 'currents-no-barrier',
-    estilo: 'cifra',
-    // $15 el más barato y $70 el premium: lo dice la ficha de Eventbrite a la
-    // que enlaza creartbox.nyc, que es la única fuente que publica el precio.
-    cifra: {
-      rotulo: 'Currents · 30 October',
-      valor: '$15',
-      pie: 'is the cheapest seat in the hall. If that is still the reason you are not coming, write to us.',
-    },
+    slug: 'currents-two-days',
     kind: 'social',
-    title: 'Cost should never be the reason you miss it',
+    estilo: 'limpia',
+    title: 'Two days to Currents',
     excerpt:
-      'Ticket revenue does not cover what it costs to put a concert on, so donor support lets ' +
-      'us run subsidized tickets through the NYC Culture Pass and with the Queens Public ' +
-      'Library. If the price is what is stopping you from coming on 30 October, write to us.',
-    image: IMG + 'acm-1.jpg',
+      'Friday 30 October, 7:30 pm, The DiMenna Center. Five works, about sixty minutes, no interval.',
+    image: ARCHIVO + '20251212__DSC0350.jpg',
+    status: 'publish',
+    date: '2026-10-28',
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    tags: ['Currents', 'NYCConcerts', 'DiMennaCenter'],
+    pie: `Two days to go.
+
+Currents, this Friday at The DiMenna Center. Four players, five works, about an hour, straight through with no interval.
+
+Brahms, Clara and Robert Schumann, Eric Moe, Guillermo Laporta. Video running the whole way.
+
+The hall holds 250 and it filled up last year, so if you've been meaning to get a ticket this is the moment.
+
+Friday 30 October, 7:30 pm. Tickets in bio.
+
+#CreArtBox #NYCConcerts #Currents`,
+    body: `Two days out.`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-tomorrow',
+    kind: 'social',
+    estilo: 'cinta',
+    title: 'Tomorrow at The DiMenna Center',
+    excerpt:
+      'Currents. Friday 30 October, 7:30 pm. The DiMenna Center, 450 W 37th Street. Tickets from $15.',
+    image: ARCHIVO + '20251017__DSC0080.jpg',
+    status: 'publish',
+    date: '2026-10-29',
+    url: ENTRADAS,
+    cta: 'Tickets at the link in bio ↗',
+    falta:
+      'El plan pedía el cartel oficial. Si lo tenéis como imagen, mándamelo y lo pongo; mientras ' +
+      'va una foto de sala.',
+    tags: ['Currents', 'NYC', 'DiMennaCenter'],
+    pie: `Tomorrow.
+
+Currents
+Friday 30 October · 7:30 pm
+The DiMenna Center, 450 W 37th Street
+
+Our twelfth New York season starts here. Tickets from $15, and the cheapest seats are still the same room as the expensive ones.
+
+If you've been thinking about it, we'd love to see you.
+
+Tickets in bio.
+
+#CreArtBox #Currents #NYC`,
+    body: `The night before.`,
+  },
+  {
+    lang: 'en',
+    slug: 'currents-today',
+    kind: 'social',
+    estilo: 'limpia',
+    title: 'Tonight',
+    excerpt:
+      'Currents, tonight at 7:30 pm at The DiMenna Center. Doors at seven. Tickets on the door if ' +
+      'there are any left.',
+    image: ARCHIVO + '20251212__DSC0345.jpg',
     status: 'publish',
     date: '2026-10-30',
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
-    tags: ['Currents', 'NYCulture', 'ChamberMusic'],
-    body: `
-## Why we do it this way
+    falta:
+      'Esta hay que hacerla el día: una foto de la prueba de sonido o de la sala vacía antes de ' +
+      'abrir. Es la que más gana con ser de verdad de ese rato.',
+    tags: ['Currents', 'NYCClassicalMusic', 'DiMennaCenter'],
+    pie: `Concert day.
 
-We want world-class chamber music open to everyone, whatever their background or circumstances. That is in our charter, not in our marketing.
+We're at The DiMenna Center tonight for Currents, the first New York night of the season. Sound check this afternoon, video cues after that, doors at seven.
 
-## info@creartbox.nyc
+Brahms, the Schumanns, a piece from our open call, and one of Guillermo's. An hour, no interval.
 
-Write to us about group rates, access, or a subsidized seat. Someone answers.
-`,
+If you're in the city with nothing on tonight, come.
+
+7:30 pm · 450 W 37th Street
+
+Tickets in bio.
+
+#CreArtBox #NYCClassicalMusic`,
+    body: `Tonight at 7:30.`,
   },
   {
     lang: 'en',
-    slug: 'currents-recap',
+    slug: 'currents-thanks',
     kind: 'social',
+    estilo: 'limpia',
     title: 'Thank you for coming to Currents',
-    excerpt:
-      'Photos from 30 October at The DiMenna Center. Josefina Urraca, Emilie-Anne Gendron, ' +
-      'Matthew Cohen and Julia Yang played Laporta, Brahms, Moe, Clara Schumann and Robert ' +
-      'Schumann, straight through, with no interval.',
-    // marcador de sitio hasta que haya fotos del 30
-    image: ARCHIVO + '20251017__DSC0080.jpg',
+    excerpt: 'Photographs from Friday at The DiMenna Center.',
+    image: ARCHIVO + '20251017__MG_0641.jpg',
     status: 'draft',
-    date: '2026-10-31',
-    url: 'https://creartbox.nyc/concerts.html',
+    date: '2026-11-01',
+    url: CALENDAR,
     cta: 'More at creartbox.nyc ↗',
+    falta:
+      'Marcador de sitio. Hay que cambiar la foto por las del 30 y reescribir el pie con lo que ' +
+      'pasó de verdad: no tiene sentido darlo por escrito antes de que ocurra.',
     tags: ['Currents', 'DiMennaCenter', 'ChamberMusic'],
-    body: `
-## The room
+    pie: `Thank you.
 
-Escribe aquí cómo fue la noche de verdad y cambia la foto por una real. Esta es un marcador de sitio.
+A few photographs from Friday at The DiMenna Center. We opened the twelfth New York season with Currents — Laporta, Brahms, Moe, Clara Schumann, Robert Schumann, straight through.
 
-## Next
+Thanks to everyone who came out, and to Josefina, Emilie-Anne, Matthew and Julia for the work that went into it.
 
-Winterlight, 11 December, same hall. Hannah Selin's Tectonic Lullaby gets its world premiere.
-`,
+Next stop: Illinois.
+
+#CreArtBox #Currents #ChamberMusic`,
+    body: `Write this one properly after the concert.`,
+  },
+  {
+    lang: 'en',
+    slug: 'illinois-preview',
+    kind: 'social',
+    estilo: 'limpia',
+    title: 'Next stop: Illinois',
+    excerpt:
+      'Josefina Urraca, Emilie-Anne Gendron and guest cellist Ana Kim open the Engelbach-Hart ' +
+      'Music Festival at Illinois College on 6 November. Admission is free.',
+    image: ARCHIVO + '20250207_08.jpg',
+    status: 'publish',
+    date: '2026-11-03',
+    url: 'https://creartbox.nyc/concerts/illinois-college-piano-trio-2026.html',
+    cta: 'Details at creartbox.nyc ↗',
+    falta:
+      'Mejor una foto de las tres que van —Josefina, Emilie-Anne y Ana Kim—. De Ana Kim no tengo ' +
+      'ninguna en la web.',
+    tags: ['IllinoisCollege', 'PianoTrio', 'ChamberMusic'],
+    pie: `Next stop: Illinois.
+
+On Friday Josefina, Emilie-Anne and guest cellist Ana Kim open the Engelbach-Hart Music Festival at Illinois College.
+
+The programme is almost entirely early work — Lili Boulanger, Rachmaninoff and Shostakovich all wrote their pieces on it while they were still teenagers — plus Nadia Boulanger, Bloch, Kurtág, and Andrea Casarrubios's Silbo and 24 Mozas.
+
+The festival was a gift from the Engelbach and Hart families to the town, so admission is free. You just reserve a seat.
+
+6 November, 7:30 pm. Rammelkamp Chapel, Jacksonville.
+
+#CreArtBox #IllinoisCollege #ChamberMusic`,
+    body: `A piano trio programme of early works.`,
+  },
+  {
+    lang: 'en',
+    slug: 'illinois-today',
+    kind: 'social',
+    estilo: 'cifra',
+    cifra: {
+      rotulo: 'Rammelkamp Chapel · Illinois College',
+      // 16: Shostakóvich nació en septiembre de 1906 y el Trío Op. 8 es de
+      // 1923. Es el más joven de los tres y el único con fecha redonda.
+      valor: '16',
+      pie: 'was how old Shostakovich was when he wrote tonight’s piano trio. Most of this programme is teenage work.',
+    },
+    title: 'Most of tonight was written by teenagers',
+    excerpt:
+      'Lili Boulanger was eighteen when she wrote her Nocturne, Rachmaninoff eighteen for the ' +
+      'Trio élégiaque, Shostakovich sixteen for his first piano trio. Tonight in Jacksonville, free.',
+    image: ARCHIVO + '20250207_02.jpg',
+    status: 'publish',
+    date: '2026-11-06',
+    url: 'https://creartbox.nyc/concerts/illinois-college-piano-trio-2026.html',
+    cta: 'Details at creartbox.nyc ↗',
+    tags: ['LiliBoulanger', 'IllinoisCollege', 'ChamberMusic'],
+    pie: `We're in Jacksonville, Illinois today.
+
+Something we only noticed putting this programme together: most of it was written by people who were barely out of school.
+
+Lili Boulanger was eighteen when she wrote her Nocturne, in two days, in 1911. Rachmaninoff was eighteen for the Trio élégiaque. Shostakovich was sixteen for his first piano trio. Hearing them in one sitting is a strange and rather moving thing.
+
+Josefina, Emilie-Anne and Ana play tonight at 7:30 at Rammelkamp Chapel. Admission is free.
+
+#CreArtBox #IllinoisCollege #LiliBoulanger`,
+    body: `Early works, played in one sitting.`,
+  },
+  {
+    lang: 'en',
+    slug: 'awave-tokyo',
+    kind: 'social',
+    estilo: 'limpia',
+    title: 'A throwback to Tokyo',
+    excerpt:
+      'AWAVE premiered at the Ryogoku Concert Hall in 2019, our second collaboration with set and ' +
+      'costume designer Mizuko Kaji.',
+    image: IMG + 'awave-1.jpg',
+    status: 'publish',
+    date: '2026-11-08',
+    url: CALENDAR,
+    cta: 'More at creartbox.nyc ↗',
+    tags: ['AWAVE', 'Tokyo', 'VisualConcert'],
+    pie: `A throwback to Tokyo, 2019.
+
+This is AWAVE at the Ryogoku Concert Hall — flute, piano, and a stage built with Mizuko Kaji, the set and costume designer we'd already worked with once before.
+
+It was a big thing to put together and a very good one. Brown Leaves Moving, which opens our concert in New York this season, comes from that same suite.
+
+We'd bring it back given half a chance.
+
+#CreArtBox #AWAVE #Tokyo`,
+    body: `AWAVE at the Ryogoku Concert Hall, 2019.`,
+  },
+  {
+    lang: 'en',
+    slug: 'call-for-scores-reading',
+    kind: 'social',
+    estilo: 'bloque',
+    title: 'We have been reading a lot of new music',
+    excerpt:
+      'Eleven works on this season came through the open Call for Scores, more than in any season ' +
+      'before, and in April an entire evening goes to seven of those composers.',
+    image: IMG + 'feat-circlenoir.jpg',
+    status: 'publish',
+    date: '2026-11-10',
+    url: 'https://creartbox.nyc/concerts/pressure-and-release-2027.html',
+    cta: 'More at creartbox.nyc ↗',
+    tags: ['CallForScores', 'NewMusic', 'CreArtBox'],
+    pie: `We've been reading a lot of new music.
+
+Eleven works on this season came in through our open Call for Scores — more than any season before. One of them is Eric Moe's Laminar Flow in Upsidedown Creek, which we played on the 30th.
+
+And on 23 April we're giving a whole evening to seven of them: Yurui (Rain), Alex Burtzos, Luke Carlson, Gilad Cohen, Samantha Leigh Sack, Paul Novak and Sam Wu. Seven premieres in one night.
+
+Going through the submissions takes forever, and every year it turns up composers we'd never have found otherwise. Thank you to everyone who sent us something.
+
+#CreArtBox #CallForScores #NewMusic`,
+    body: `Eleven works this season came through the open call.`,
+  },
+  {
+    lang: 'en',
+    slug: 'libraries-queens',
+    kind: 'social',
+    estilo: 'limpia',
+    title: 'Music where you do not need a ticket',
+    excerpt:
+      'Alongside the ticketed concerts we work with public libraries, schools and community ' +
+      'institutions, and run subsidised tickets through the NYC Culture Pass and Queens Public Library.',
+    image: ARCHIVO + '20251004_LNB_MUSICA_DE_CRISTAL_IVAN_MARTINEZ_7557.jpg',
+    status: 'publish',
+    date: '2026-11-12',
+    url: 'https://creartbox.nyc/projects.html',
+    cta: 'More at creartbox.nyc ↗',
+    falta:
+      'El plan decía «hemos tocado en varias sucursales de Queens» y «estamos cerrando fechas». Lo ' +
+      'que la web documenta es el programa de bibliotecas y colegios y las entradas subvencionadas ' +
+      'con la Queens Public Library, así que lo he escrito así. Si hay fechas cerradas, dímelas y ' +
+      'lo concreto. Y la foto pide una de biblioteca de verdad.',
+    tags: ['QueensPublicLibrary', 'Outreach', 'NYC'],
+    pie: `Not everything we do needs a ticket.
+
+Alongside the New York Series we work with public libraries, schools and community institutions, in New York and beyond. A library concert is a completely different thing from a hall: people walk in, sit down, and listen for half an hour without planning an evening around it.
+
+And for the concerts that are ticketed, cost shouldn't be what stops you. We run subsidised seats through the NYC Culture Pass and with the Queens Public Library — ticket revenue has never covered what a concert costs to put on, and donor support is what makes that possible.
+
+If the price is the reason you're not coming, write to us at info@creartbox.nyc. Someone answers.
+
+#CreArtBox #QueensPublicLibrary #NYC`,
+    body: `Libraries, schools, and subsidised seats.`,
+  },
+  {
+    lang: 'en',
+    slug: 'winterlight-coming',
+    kind: 'social',
+    estilo: 'cinta',
+    title: 'Winterlight is next',
+    excerpt:
+      'A world premiere by Hannah Selin, Ravel’s Ma Mère l’Oye, Oliver Caplan, and Petroushka in ' +
+      'a chamber arrangement. 11 December at The DiMenna Center.',
+    image: ARCHIVO + '20251212__MG_0124.jpg',
+    status: 'publish',
+    date: '2026-11-14',
+    url: 'https://creartbox.nyc/concerts/tectonic-lullaby-2026.html',
+    cta: 'Details at creartbox.nyc ↗',
+    tags: ['Winterlight', 'HannahSelin', 'DiMennaCenter'],
+    pie: `Already on to the next one.
+
+Winterlight, 11 December at The DiMenna Center. It opens with the world premiere of Hannah Selin's Tectonic Lullaby for piano quintet, and finishes with Petroushka in a chamber arrangement.
+
+In between: Ravel's Ma Mère l'Oye, and Oliver Caplan's Canciones de Monteverde for flute and string trio.
+
+Petroushka with five of us is going to take some preparing. Quite a lot to learn before December.
+
+More soon.
+
+#CreArtBox #Winterlight #ChamberMusic`,
+    body: `11 December, The DiMenna Center.`,
   },
 ];
