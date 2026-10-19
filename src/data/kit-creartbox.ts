@@ -799,7 +799,7 @@ Tickets in bio.
     // NO va en tipografía sola, así que mantiene la foto y gana titular:
     // antes era la foto pelada y sin una palabra encima.
     estilo: 'cinta',
-    title: 'Tonight at 7:30, and then it is gone',
+    title: 'Tonight, 7:30, The DiMenna Center',
     excerpt:
       'Currents, tonight at 7:30 pm at The DiMenna Center. Doors at seven. Tickets on the door if ' +
       'there are any left.',
