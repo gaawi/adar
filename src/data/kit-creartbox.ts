@@ -522,10 +522,10 @@ Nobody planned that. We just liked the piece.
     slug: 'currents-full-house',
     kind: 'social',
     estilo: 'limpia',
-    title: 'It filled up last year',
+    title: 'Every one of the 240 seats was filled last year',
     excerpt:
-      'Mary Flagler Cary Hall holds two hundred and forty, and last year our season opening filled ' +
-      'it. Currents is on 30 October and we would like the same.',
+      'Last year our season opening filled Mary Flagler Cary Hall, all two hundred and forty seats. ' +
+      'On 30 October we open the twelfth season in the same room and we would love to do it again.',
     // La pide él: la primera fila esperando, con la luz cruzando el suelo.
     image: ARCHIVO + '20231114_001.jpg',
     status: 'publish',
@@ -533,21 +533,23 @@ Nobody planned that. We just liked the piece.
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
     falta:
-      'Lo de que el año pasado se llenó lo pones tú: no está en la web ni en el archivo, así que ' +
-      'va escrito en vuestra voz y no como dato. La foto es de noviembre de 2023, no de la noche ' +
-      'de la que habla, por eso el texto no la fecha.',
+      'Un detalle por si te importa: la foto es de noviembre de 2023, no de la apertura del año ' +
+      'pasado de la que habla el texto. El pie no la fecha, así que no dice nada falso, pero si ' +
+      'tienes una de esa noche queda mejor.',
     tags: ['Currents', 'DiMennaCenter', 'NYCConcerts'],
-    pie: `This is the part of a concert we like most, and it happens before anybody plays.
+    pie: `Last year, every single one of the 240 seats at The DiMenna Center was filled for our season opening. Can we do it again? 🤞
 
-People coming in, finding a seat, talking to whoever they came with. The hall holds 240 and last year our season opening filled it, which still surprises us a bit.
+There's always something special about the first concert of the season. Seeing familiar faces again, meeting people who are coming for the first time, and finally sharing the music we've been working on for months.
 
-On 30 October we do it again. Brahms, Clara and Robert Schumann, Eric Moe and Guillermo Laporta, with video running the whole way. About an hour, no interval.
+On October 30, we're opening our 12th season at Mary Flagler Cary Hall, and we'd love to have you there.
 
-If you have been meaning to come to one of these, this is a good one to pick.
+Last year's opening was such a wonderful evening, and we're hoping to fill the hall again. So if you're planning to come, now is a good time to get your tickets!
 
-Tickets in bio.
+📅 October 30 · 7:30 PM
+📍 The DiMenna Center, NYC
+🎟️ Tickets in bio!
 
-#CreArtBox #DiMennaCenter #NYCConcerts`,
+#CreArtBox #DiMennaCenter #NYCConcerts #ChamberMusic`,
     body: `The room before it starts.`,
   },
   {
