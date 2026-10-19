@@ -561,13 +561,14 @@ Last year's opening was such a wonderful evening, and we're hoping to fill the h
     excerpt:
       'Rehearsals, scores, projections, lighting cues, and the small things that always take longer ' +
       'than anyone expects. Eight days to go.',
-    image: ARCHIVO + '20251212__MG_0061.jpg',
+    // La elige él: el violín dejado en la silla en un descanso. Dice
+    // «entre bastidores» mucho mejor que una foto de concierto.
+    image: ARCHIVO + '20241211_DSC0005.jpg',
     status: 'publish',
     date: '2026-10-22',
     url: CURRENTS,
     falta:
-      'Esperando tu foto de ensayo: dijiste que no hay hasta dos días antes del concierto. La que ' +
-      'lleva ahora es de archivo y se nota. Mándamela el 28 y la cambio.',
+      'Provisional, elegida por ti. La de ensayo de verdad llega el 28: mándamela y la cambio.',
     tags: ['Currents', 'ChamberMusic', 'DiMennaCenter'],
     pie: `Putting the 30th together.
 
@@ -623,7 +624,9 @@ Tickets in bio.
     excerpt:
       'Brown Leaves Moving begins with the players offstage. They walk on as they play, over an ' +
       'electronic background, so the group assembles in front of you instead of waiting for you.',
-    image: PHOTO + 'creartbox-in-performance.jpg',
+    // La pide él: el público mirando al escenario todavía vacío, que es
+    // exactamente el momento del que habla la pieza.
+    image: ARCHIVO + '20241211_DSC0114.jpg',
     status: 'publish',
     date: '2026-10-24',
     url: ENTRADAS,
