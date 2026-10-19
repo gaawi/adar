@@ -481,7 +481,12 @@ Thanks to everyone at Kuopio Conservatory. We'd go back tomorrow.
     kind: 'social',
     estilo: 'duo',
     kicker: 'Did you know?',
-    title: 'Schumann finished sketching it on 30 October',
+    // Historia y no post: la coincidencia de fechas es buenísima para un
+    // día y no para quedarse en la rejilla del perfil para siempre.
+    formato: 'historia',
+    // Una historia no lleva pie: lo que no esté en la imagen no se cuenta.
+    // El titular tiene que traer la coincidencia entera, no la mitad.
+    title: 'Sketched 30 October 1842. Played 30 October 2026.',
     excerpt:
       'He sketched the Piano Quartet between 24 and 30 October 1842 and copied it out in November. ' +
       'We play it on 30 October, a hundred and eighty-four years to the day after he put the last ' +
@@ -511,37 +516,37 @@ Nobody planned that. We just liked the piece.
     lang: 'en',
     slug: 'currents-full-house',
     kind: 'social',
-    // Era «cifra», con el 240 a tamaño de pared. Él lo paró: demasiado. El
-    // dato va en el pie, donde se lee sin que grite, y la imagen es la foto.
-    estilo: 'cinta',
-    title: 'Last October this room was full',
+    estilo: 'limpia',
+    title: 'The hall is waiting',
     excerpt:
-      'Mary Flagler Cary Hall seats two hundred and forty. Last October it was full for our season ' +
-      'opening, and so quiet during the premiere that you could hear the building. Currents is on ' +
-      '30 October and we would like the same.',
-    // La pide él: la proyección sobre la sala, con el público delante.
-    image: ARCHIVO + '20251017__DSC0057.jpg',
+      'Mary Flagler Cary Hall, empty, with eleven days to go. Two hundred and forty seats and a ' +
+      'piano under a light. Currents is on 30 October.',
+    // Provisional: la de verdad es la foto de la sala vacía con el piano,
+    // que él tiene y me va a mandar. Esta es lo más parecido que hay en el
+    // archivo —sala ancha, casi sin nadie— y no es lo mismo.
+    image: THRESHOLD + '_DSC0001.jpg',
     status: 'publish',
     date: '2026-10-21',
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
     falta:
-      'Dos cosas tuyas aquí. Una: 240 asientos es tu número, no el de la web del DiMenna, que ' +
-      'publica 250. He puesto el tuyo. Dos: el plan decía «SOLD OUT» y eso no está en ninguna ' +
-      'parte, así que dice «full». Si se agotó de verdad, dímelo y lo pongo.',
+      'Mándame la foto de la sala vacía con el piano que me enseñaste: la necesito como archivo o ' +
+      'como URL, porque desde el chat no la puedo guardar en el repositorio. En cuanto la tenga, ' +
+      'la pongo. También quedó pendiente si el año pasado se agotó de verdad; con este enfoque ya ' +
+      'no hace falta decirlo, pero si quieres lo añado.',
     tags: ['Currents', 'DiMennaCenter', 'NYCConcerts'],
-    pie: `Last October this room was full 🎟️
+    pie: `An empty hall is a strange thing to be fond of.
 
-Mary Flagler Cary Hall holds 240. For our season opening it filled up, and during the premiere it went so quiet you could hear the building.
+This is Mary Flagler Cary Hall at The DiMenna Center with nobody in it. Two hundred and forty seats, a piano under a light, and very good acoustics going to waste.
 
-We'd like the same on the 30th. Currents opens our twelfth New York season: Brahms, Clara and Robert Schumann, Eric Moe, Guillermo Laporta.
+In eleven days it will be full of people and the four of us will be where that piano is, playing Brahms, Clara and Robert Schumann, Eric Moe and Guillermo Laporta. For about an hour, no interval.
 
-If you're thinking of coming, don't leave it to the last minute.
+Right now it's just sitting there waiting for you.
 
-Tickets in bio.
+30 October, 7:30 pm. Tickets in bio.
 
-#CreArtBox #NYCConcerts #ChamberMusic`,
-    body: `The hall holds 240 and we would like it full again.`,
+#CreArtBox #DiMennaCenter #NYCConcerts`,
+    body: `The hall, empty, eleven days out.`,
   },
   {
     lang: 'en',
@@ -575,13 +580,15 @@ Eight days to go. See you at DiMenna.
     lang: 'en',
     slug: 'currents-brahms',
     kind: 'social',
-    estilo: 'cartel',
-    title: 'Brahms had already announced he was finished',
+    estilo: 'duo',
+    kicker: 'Did you know?',
+    formato: 'historia',
+    title: 'He had announced he was finished. Then he heard one clarinettist.',
     excerpt:
       'In December 1890 he told his publisher he was done composing. Then in March 1891 he heard a ' +
       'clarinettist in Meiningen, and that summer he wrote two more pieces. We play the first ' +
       'movement of one of them on 30 October.',
-    image: IMG + 'arch-echoes.jpg',
+    image: ARCHIVO + '20251017__MG_0688.jpg',
     status: 'publish',
     date: '2026-10-23',
     url: ENTRADAS,
@@ -632,8 +639,10 @@ It's four minutes long. It's a strange way to begin a concert and we wouldn't st
     lang: 'en',
     slug: 'currents-clara',
     kind: 'social',
-    estilo: 'marco',
-    title: 'Among the last things Clara Schumann wrote',
+    estilo: 'duo',
+    kicker: 'Did you know?',
+    formato: 'historia',
+    title: 'She wrote these in 1853. After 1854 she wrote almost nothing new.',
     excerpt:
       'She wrote the Three Romances in 1853 and dedicated them to Joachim. Brahms knocked on the ' +
       'door that September; Robert collapsed the following February. After that she wrote almost ' +
@@ -663,11 +672,13 @@ These Romances are among the last original pieces she wrote. Eleven minutes, pla
     kind: 'social',
     estilo: 'duo',
     kicker: 'Did you know?',
-    title: 'Julia has to retune her cello mid-movement',
+    // Lo pide la partitura, no la intérprete: nombrarla a ella lo convertía
+    // en una manía suya cuando es una instrucción de Schumann.
+    title: 'Schumann asks the cellist to retune mid-movement',
     excerpt:
-      'The slow movement of Schumann’s Piano Quartet ends on a low B flat the cello cannot reach, ' +
-      'so the player tunes the bottom string down a whole step, holds the note, and tunes it back ' +
-      'up for the finale.',
+      'The slow movement of the Piano Quartet ends on a low B flat the cello cannot reach, so ' +
+      'Schumann has the player tune the bottom string down a whole step mid-movement, hold the ' +
+      'note under the final bars, and tune it back up for the finale.',
     image: ARCHIVO + '20251212__MG_0047.jpg',
     status: 'publish',
     date: '2026-10-26',
@@ -678,41 +689,16 @@ These Romances are among the last original pieces she wrote. Eleven minutes, pla
 
 Robert Schumann's Piano Quartet in E flat, Op. 47. Clara gave the public premiere at the Leipzig Gewandhaus on 8 December 1844, with Ferdinand David on violin and Niels Gade on viola. Almost two centuries later it closes our night.
 
-The slow movement is the one. Schumann hands the melody to the cello, and then ends the movement underneath everything on a low B flat — a note the cello does not have. So the cellist tunes the bottom C string down a whole step mid-movement, holds that note under the final bars, and tunes it back up in time for the finale.
+The slow movement is the one. Schumann hands the melody to the cello, and then ends the movement underneath everything on a low B flat — a note the cello does not have.
 
-It serves the music and it inconveniences the cellist. Julia does it on the 30th.
+So he writes in the fix. The cellist tunes the bottom C string down a whole step in the middle of the movement, holds that note under the final bars, and tunes it back up in time for the finale.
+
+It serves the music and it inconveniences the cellist, and Schumann asked for it anyway.
 
 Tickets in bio.
 
 #RobertSchumann #CreArtBox #ChamberMusic`,
     body: `A note the instrument does not have.`,
-  },
-  {
-    lang: 'en',
-    slug: 'currents-visuals',
-    kind: 'social',
-    estilo: 'limpia',
-    title: 'Nothing on stage is decoration',
-    excerpt:
-      'The projections are written into the programme, not added on top of it. Guillermo is on ' +
-      'Currents twice: the piece that opens the night, and the video that runs through all of it.',
-    image: ARCHIVO + '20251017__DSC0028.jpg',
-    status: 'publish',
-    date: '2026-10-27',
-    url: CURRENTS,
-    tags: ['VisualConcert', 'CreArtBox', 'Currents'],
-    pie: `A bit about the visual side.
-
-We say this to students whenever we teach and we mean it: nothing on stage is decoration. If the video is there, it's because the piece needs it — otherwise we leave the lights alone.
-
-Sometimes that means something barely noticeable. Sometimes the whole room changes. For Currents the projections run through the entire evening, and Guillermo is on the programme twice over: the piece that opens the night is his, and so is everything moving on the walls while we play.
-
-We're putting it all together this week.
-
-30 October at The DiMenna Center.
-
-#CreArtBox #VisualConcert #Currents`,
-    body: `Chamber music you can see.`,
   },
   {
     lang: 'en',

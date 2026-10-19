@@ -370,6 +370,12 @@ export interface KitSource {
   fotos?: string[];
   /** Antetítulo del panel ámbar del estilo «duo». P. ej. «Did you know?». */
   kicker?: string;
+  /**
+   * Dónde va. Sin poner nada, al muro y a historias. Con 'historia', solo a
+   * historias: hay cosas que duran un día y no merecen sitio en la rejilla
+   * del perfil, que es permanente.
+   */
+  formato?: 'historia';
   /** El orden de la noche para el estilo «tabla». `cifra` es la duración. */
   tabla?: {
     rotulo?: string;
