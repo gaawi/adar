@@ -33,10 +33,6 @@ const MOCKUP = '/kit/creartbox-currents-programa.jpg';
 // Retrato de prensa de Eric Moe, foto de Mara Rago, descargado de su
 // representante. Servido desde aquí para que el canvas pueda pintarlo.
 const MOE = '/kit/eric-moe.jpg';
-// La Cary Hall vacía, con el piano bajo la luz. Es la foto oficial del
-// DiMenna (dimennacenter.org), guardada aquí por lo mismo que las otras dos:
-// el canvas necesita que la imagen venga del mismo dominio que el kit.
-const SALA = '/kit/dimenna-cary-hall.jpg';
 // La serie de entrevistas vive en la sección News de creartbox.nyc.
 const ENTREVISTA_MOE = 'https://creartbox.nyc/news/eight-questions-for-eric-moe.html';
 // Las entradas de Currents, que es a donde hay que llevar a la gente ahora.
@@ -526,34 +522,33 @@ Nobody planned that. We just liked the piece.
     slug: 'currents-full-house',
     kind: 'social',
     estilo: 'limpia',
-    title: 'The hall is waiting',
+    title: 'It filled up last year',
     excerpt:
-      'Mary Flagler Cary Hall, empty, with eleven days to go. Two hundred and forty seats and a ' +
-      'piano under a light. Currents is on 30 October.',
-    // La sala vacía con el piano, que es la que él quería. Es la foto
-    // oficial del propio DiMenna (dimennacenter.org), descargada y servida
-    // desde este repositorio para que el canvas la pueda pintar.
-    image: SALA,
+      'Mary Flagler Cary Hall holds two hundred and forty, and last year our season opening filled ' +
+      'it. Currents is on 30 October and we would like the same.',
+    // La pide él: la primera fila esperando, con la luz cruzando el suelo.
+    image: ARCHIVO + '20231114_001.jpg',
     status: 'publish',
     date: '2026-10-21',
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
     falta:
-      'La foto es la oficial del DiMenna, de su propia web. Para promocionar un concierto en su ' +
-      'sala es lo normal, pero mira si quieres acreditarlos en el pie o prefieres una vuestra.',
+      'Lo de que el año pasado se llenó lo pones tú: no está en la web ni en el archivo, así que ' +
+      'va escrito en vuestra voz y no como dato. La foto es de noviembre de 2023, no de la noche ' +
+      'de la que habla, por eso el texto no la fecha.',
     tags: ['Currents', 'DiMennaCenter', 'NYCConcerts'],
-    pie: `An empty hall is a strange thing to be fond of.
+    pie: `This is the part of a concert we like most, and it happens before anybody plays.
 
-This is Mary Flagler Cary Hall at The DiMenna Center with nobody in it. Two hundred and forty seats, a piano under a light, and very good acoustics going to waste.
+People coming in, finding a seat, talking to whoever they came with. The hall holds 240 and last year our season opening filled it, which still surprises us a bit.
 
-In eleven days it will be full of people and the four of us will be where that piano is, playing Brahms, Clara and Robert Schumann, Eric Moe and Guillermo Laporta. For about an hour, no interval.
+On 30 October we do it again. Brahms, Clara and Robert Schumann, Eric Moe and Guillermo Laporta, with video running the whole way. About an hour, no interval.
 
-Right now it's just sitting there waiting for you.
+If you have been meaning to come to one of these, this is a good one to pick.
 
-30 October, 7:30 pm. Tickets in bio.
+Tickets in bio.
 
 #CreArtBox #DiMennaCenter #NYCConcerts`,
-    body: `The hall, empty, eleven days out.`,
+    body: `The room before it starts.`,
   },
   {
     lang: 'en',
