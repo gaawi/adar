@@ -381,6 +381,8 @@ export interface KitSource {
    * mucho, que es lo que cabe sin tapar nada. `senal` la pinta en ámbar.
    */
   pegatinas?: { texto: string; senal?: boolean }[];
+  /** Las líneas de datos del estilo «cartel»: fecha, hora, sitio, entradas. */
+  cartel?: { lineas: string[] };
   /** El orden de la noche para el estilo «tabla». `cifra` es la duración. */
   tabla?: {
     rotulo?: string;

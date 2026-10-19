@@ -745,18 +745,28 @@ Friday 30 October, 7:30 pm. Tickets in bio.
     lang: 'en',
     slug: 'currents-tomorrow',
     kind: 'social',
-    estilo: 'cinta',
-    title: 'Tomorrow at The DiMenna Center',
+    // Nota suya: «pon solo texto, diseña una especie de cartel». Sin imagen
+    // el estilo cartel se queda en tipografía sola, que es lo que pedía.
+    estilo: 'cartel',
+    cartel: {
+      lineas: [
+        'Friday 30 October 2026 · 7:30 pm',
+        'The DiMenna Center · 450 W 37th Street, New York',
+        'Laporta · Brahms · Moe · Clara and Robert Schumann',
+        'Tickets from $15 · link in bio',
+      ],
+    },
+    title: 'Currents. Tomorrow.',
     excerpt:
       'Currents. Friday 30 October, 7:30 pm. The DiMenna Center, 450 W 37th Street. Tickets from $15.',
-    image: ARCHIVO + '20251017__DSC0080.jpg',
+    image: '',
     status: 'publish',
     date: '2026-10-29',
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
     falta:
-      'El plan pedía el cartel oficial. Si lo tenéis como imagen, mándamelo y lo pongo; mientras ' +
-      'va una foto de sala.',
+      'Cartel dibujado aquí, sin foto, como pediste. Si tenéis uno oficial y lo preferís, ' +
+      'mándamelo y lo pongo en su lugar.',
     tags: ['Currents', 'NYC', 'DiMennaCenter'],
     pie: `Tomorrow.
 
@@ -777,8 +787,11 @@ Tickets in bio.
     lang: 'en',
     slug: 'currents-today',
     kind: 'social',
-    estilo: 'limpia',
-    title: 'Tonight',
+    // Nota suya: «no todo solo texto, bien diseñado». Se lee como que este
+    // NO va en tipografía sola, así que mantiene la foto y gana titular:
+    // antes era la foto pelada y sin una palabra encima.
+    estilo: 'cinta',
+    title: 'Tonight at 7:30, and then it is gone',
     excerpt:
       'Currents, tonight at 7:30 pm at The DiMenna Center. Doors at seven. Tickets on the door if ' +
       'there are any left.',
