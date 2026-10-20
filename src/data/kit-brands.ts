@@ -385,6 +385,11 @@ export interface KitSource {
   cartel?: { lineas: string[] };
   /** El trapecio ámbar del estilo «programa», como en el cuadernillo. */
   trapecio?: { rotulo?: string; sub?: string; titulo?: string; pie?: string };
+  /**
+   * Encuadre a mano cuando el automático no acierta. `x` e `y` van de 0 a 1
+   * y mueven el centro del recorte; `zoom` mayor que 1 se acerca.
+   */
+  encuadre?: { x?: number; y?: number; zoom?: number };
   /** El orden de la noche para el estilo «tabla». `cifra` es la duración. */
   tabla?: {
     rotulo?: string;

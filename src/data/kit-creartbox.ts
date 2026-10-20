@@ -565,7 +565,10 @@ Last year's opening was such a wonderful evening, and we're hoping to fill the h
       'than anyone expects. Eight days to go.',
     // La elige él: el violín dejado en la silla en un descanso. Dice
     // «entre bastidores» mucho mejor que una foto de concierto.
-    image: ARCHIVO + '20241211_DSC0005.jpg',
+    // La pide él: el grupo ensayando, ropa de calle y atriles. Cortada,
+    // también a petición suya: en el plano general el grupo sale lejos.
+    image: ARCHIVO + '20241211_DSC0103.jpg',
+    encuadre: { x: 0.54, y: 0.56, zoom: 1.4 },
     status: 'publish',
     date: '2026-10-22',
     url: CURRENTS,
