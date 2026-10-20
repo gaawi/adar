@@ -592,7 +592,8 @@ Eight days to go. See you at DiMenna.
     estilo: 'duo',
     kicker: 'Did you know?',
     formato: 'historia',
-    title: 'He had announced he was finished. Then he heard one clarinettist.',
+    // Una historia no lleva pie: si el titular dice «he», no se sabe quién.
+    title: 'Brahms had announced he was finished. Then he heard one clarinettist.',
     excerpt:
       'In December 1890 he told his publisher he was done composing. Then in March 1891 he heard a ' +
       'clarinettist in Meiningen, and that summer he wrote two more pieces. We play the first ' +
