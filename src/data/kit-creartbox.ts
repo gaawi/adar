@@ -491,9 +491,9 @@ We wrote a little more about the experience (and shared some photos) on our webs
     // Historia y no post: la coincidencia de fechas es buenísima para un
     // día y no para quedarse en la rejilla del perfil para siempre.
     formato: 'historia',
-    // Una historia no lleva pie: lo que no esté en la imagen no se cuenta.
-    // El titular tiene que traer la coincidencia entera, no la mitad.
-    title: 'Sketched 30 October 1842. Played 30 October 2026.',
+    // Mismo arreglo que las otras dos: sin pie, «sketched» a secas no dice
+    // quién ni qué. La coincidencia de fechas tiene que caber igual.
+    title: 'Schumann finished sketching his Piano Quartet on 30 October 1842. We play it 184 years later, to the day.',
     excerpt:
       'He sketched the Piano Quartet between 24 and 30 October 1842 and copied it out in November. ' +
       'We play it on 30 October, a hundred and eighty-four years to the day after he put the last ' +
@@ -655,7 +655,8 @@ It's four minutes long. It's a strange way to begin a concert and we wouldn't st
     estilo: 'duo',
     kicker: 'Did you know?',
     formato: 'historia',
-    title: 'She wrote these in 1853. After 1854 she wrote almost nothing new.',
+    // Ni «she» ni «these» se entienden sin pie, y una historia no lleva pie.
+    title: 'Clara Schumann wrote her Three Romances in 1853. After 1854 she wrote almost nothing new.',
     excerpt:
       'She wrote the Three Romances in 1853 and dedicated them to Joachim. Brahms knocked on the ' +
       'door that September; Robert collapsed the following February. After that she wrote almost ' +
