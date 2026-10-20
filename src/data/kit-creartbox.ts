@@ -562,19 +562,21 @@ Last year's opening was such a wonderful evening, and we're hoping to fill the h
     title: 'Getting Currents ready',
     excerpt:
       'Rehearsals, scores, projections, lighting cues, and the small things that always take longer ' +
-      'than anyone expects. Eight days to go.',
-    // La elige él: el violín dejado en la silla en un descanso. Dice
-    // «entre bastidores» mucho mejor que una foto de concierto.
-    // La pide él: el grupo ensayando, ropa de calle y atriles. Cortada,
-    // también a petición suya: en el plano general el grupo sale lejos.
+      'than anyone expects. Tomorrow night.',
+    // Provisional: el grupo ensayando, ropa de calle y atriles, cortada porque
+    // en el plano general el grupo sale lejos. Él quiere publicar con la foto
+    // del ensayo de esta misma semana, que llega el 28; esta es la de reserva.
     image: ARCHIVO + '20241211_DSC0103.jpg',
     encuadre: { x: 0.54, y: 0.56, zoom: 1.4 },
     status: 'publish',
-    date: '2026-10-22',
+    // Era el 22. Él lo pasó a la semana que viene para publicarlo con la foto
+    // buena del ensayo, y el 29 le deja el día 28 entero para mandarla.
+    date: '2026-10-29',
     url: CURRENTS,
     falta:
-      'La foto del ensayo de verdad llega el 28, cuatro días después de que salga esto, así que ' +
-      'se queda con la que elegiste. Esa va al post del 28, que es el que gana con ser de ese día.',
+      'Sale el 29 a las 11:00 de Nueva York y espera tu foto del ensayo, que dijiste que llega el ' +
+      '28. Si no llega, saldría con la de archivo cortada que lleva ahora. Para cambiarla hay que ' +
+      'rehacer la imagen y actualizar Metricool.',
     tags: ['Currents', 'ChamberMusic', 'DiMennaCenter'],
     pie: `Putting the 30th together.
 
@@ -582,7 +584,7 @@ Brahms, the Schumanns, a piece by Eric Moe that came in through the open call, a
 
 There's always more going on than the programme suggests. Rehearsals, yes, but also projection cues, lighting, and the little things that take three times as long as you planned for.
 
-Eight days to go. See you at DiMenna.
+Tomorrow night. See you at DiMenna.
 
 #CreArtBox #Currents #ChamberMusic`,
     body: `What the week before a concert actually looks like.`,
@@ -735,10 +737,6 @@ Tickets in bio.
     date: '2026-10-28',
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
-    falta:
-      'Esperando tu foto del ensayo del 28. Ahora lleva una de archivo; con una de ese mismo ' +
-      'día, un «faltan dos días» pasa de anuncio a instantánea. Está programado, así que al ' +
-      'cambiarla hay que rehacer la imagen y actualizarlo en Metricool.',
     tags: ['Currents', 'NYCConcerts', 'DiMennaCenter'],
     pie: `Two days to go.
 
@@ -784,9 +782,6 @@ Friday 30 October, 7:30 pm. Tickets in bio.
     date: '2026-10-29',
     url: ENTRADAS,
     cta: 'Tickets at the link in bio ↗',
-    falta:
-      'Cartel dibujado aquí, sin foto, como pediste. Si tenéis uno oficial y lo preferís, ' +
-      'mándamelo y lo pongo en su lugar.',
     tags: ['Currents', 'NYC', 'DiMennaCenter'],
     pie: `Tomorrow.
 
