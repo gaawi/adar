@@ -81,6 +81,18 @@ export interface KitBrand {
   titleWeight: string;
   /** Fuentes a precargar antes de pintar, para que el canvas no use fallback. */
   fontLoads: string[];
+  /**
+   * Titulares fijados a un tamaño óptico. El canvas no aplica
+   * `font-optical-sizing: auto` como el DOM, así que un titular de 230 px sale
+   * con el corte de texto (más ancho y grueso) y no con el de display que se
+   * ve en la web. `href` pide a Google Fonts instancias estáticas con ese opsz
+   * y `family` es el nombre con el que el motor las registra, distinto del de
+   * la familia normal para que no se pisen. Solo lo lee el motor de la cola
+   * editorial; el kit de ADAR lo ignora y cae a `display`.
+   */
+  displayPin?: { family: string; href: string };
+  /** Tracking de los titulares, en em. El manual de CreArtBox lo fija en -0.015. */
+  displayTracking?: number;
 
   // ── Textos ─────────────────────────────────────────────────────────────
   /** Cómo se llama una ficha: «artículo» en ADAR, «nota» en CreArtBox. */
@@ -126,7 +138,13 @@ const ADAR_FONTS =
   'https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Alegreya+SC:ital,wght@0,400;0,500;0,700;1,400&family=Chivo:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,700&family=Chivo+Mono:wght@400;500&display=swap';
 
 const CREARTBOX_FONTS =
-  'https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;0,7..72,700;1,7..72,400&display=swap';
+  'https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400&display=swap';
+
+// La web fija los titulares con `font-variation-settings: "opsz" 144`, que en
+// Literata (eje de 7 a 72) se queda en 72: el corte de display, de trazo fino y
+// más cerrado. Aquí se piden esas mismas instancias ya fijadas.
+const CREARTBOX_DISPLAY_PIN =
+  'https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,72,400;0,72,500;1,72,400;1,72,500&display=swap';
 
 export const BRANDS: Record<string, KitBrand> = {
   // ── Festival ADAR · Manual de Marca v2.0 ───────────────────────────────
@@ -238,13 +256,16 @@ export const BRANDS: Record<string, KitBrand> = {
     textFoot: '#9C968C',
 
     fontsHref: CREARTBOX_FONTS,
-    display: '"Literata", Georgia, serif',
+    display: '"Literata Display", "Literata", Georgia, serif',
     ui: '"Archivo", Helvetica, Arial, sans-serif',
     label: '"Archivo", Helvetica, Arial, sans-serif',
     labelWeight: '600',
-    titleWeight: '600',
+    // Los titulares de brand.html van en 500, no en 600.
+    titleWeight: '500',
+    displayPin: { family: 'Literata Display', href: CREARTBOX_DISPLAY_PIN },
+    displayTracking: -0.015,
     fontLoads: [
-      '600 64px "Literata"',
+      '500 64px "Literata"',
       'italic 400 32px "Literata"',
       '400 32px "Archivo"',
       '600 32px "Archivo"',
