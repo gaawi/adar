@@ -959,7 +959,7 @@ We'd bring it back given half a chance.
     // narrativo y a Guillermo no le gustó. Aquí solo los datos; todo lo demás está
     // en la web. Foto de CA2 de fondo, como pidió.
     estilo: 'programa',
-    kicker: 'Now open',
+    kicker: 'For composers',
     cartel: {
       lineas: [
         'For the 2027/28 season',
@@ -973,9 +973,10 @@ We'd bring it back given half a chance.
       titulo: '15 December 2026',
       pie: 'Two works · any instrumentation',
     },
-    title: 'Calls for Scores',
+    // «Calls for Scores» le suena raro a Guillermo (22 oct): «Open Call».
+    title: 'Open Call',
     excerpt:
-      'Two calls for the 2027/28 season, open until 15 December 2026: CA1/2026 for composers of any ' +
+      'Open call for the 2027/28 season, until 15 December 2026: CA1/2026 for composers of any ' +
       'nationality and CA2/2026 for American composers.',
     // La foto de la convocatoria americana (CA2), de fondo del cartel.
     image: 'https://creartbox.nyc/assets/img/calls/ca2-2026.jpg',
@@ -984,14 +985,14 @@ We'd bring it back given half a chance.
     status: 'publish',
     // Las convocatorias abrieron el 22 de octubre. El primer post (largo) salió ese día a las
     // 10:00 y se sustituye por este cuando Guillermo borre los dos; 23 de octubre es la fecha propuesta.
-    date: '2026-10-23',
+    date: '2026-10-22',
     url: 'https://creartbox.nyc/news/calls-for-scores-2027-28.html',
     tags: ['CallForScores', 'NewMusic', 'Composers'],
     // Todo sale de la noticia de la web y de la página de convocatorias, con sus mismas palabras:
     // «for composers of any nationality», «for American composers». Dejados fuera a propósito la
     // tasa, el formulario, la lectura a ciegas y los 10.000 $ de ciclos anteriores: está en la web
     // y Guillermo quiere el post corto.
-    pie: `Our Calls for Scores for the 2027/28 season are open.
+    pie: `Open call for composers, 2027/28 season.
 
 CA1/2026, for composers of any nationality.
 CA2/2026, for American composers.
@@ -1001,7 +1002,7 @@ Two works, any instrumentation, any career stage.
 
 Guidelines and application at the link in bio.
 
-#CreArtBox #CallForScores #NewMusic #Composers`,
+#CreArtBox #OpenCall #NewMusic #Composers`,
     body: `Two calls for scores for the 2027/28 season, open until 15 December 2026.`,
   },
   {
