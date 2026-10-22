@@ -955,56 +955,51 @@ We'd bring it back given half a chance.
     lang: 'en',
     slug: 'call-for-scores-open',
     kind: 'social',
-    // Cartel tipográfico, sin foto: lo que importa es el plazo y quién puede
-    // presentarse, y ese dato va en el trapecio, que es lo más grande.
+    // Versión sencilla, tipo guideline (22 oct): el primer post salió largo y
+    // narrativo y a Guillermo no le gustó. Aquí solo los datos; todo lo demás está
+    // en la web. Foto de CA2 de fondo, como pidió.
     estilo: 'programa',
-    kicker: 'Open today',
+    kicker: 'Now open',
     cartel: {
       lineas: [
         'For the 2027/28 season',
-        'CA1/2026 · Composers of any nationality',
-        'CA2/2026 · Composers based in the US',
+        'CA1/2026 · International composers',
+        'CA2/2026 · American composers',
       ],
     },
     trapecio: {
       rotulo: 'Deadline',
       sub: 'creartbox.nyc/opportunities',
       titulo: '15 December 2026',
-      pie: 'Two works · $20 fee',
+      pie: 'Two works · any instrumentation',
     },
     title: 'Calls for Scores',
     excerpt:
-      'Two calls for the 2027/28 season, open from 22 October to 15 December 2026: one for ' +
-      'composers of any nationality and one for composers based in the US.',
+      'Two calls for the 2027/28 season, open until 15 December 2026: CA1/2026 for composers of any ' +
+      'nationality and CA2/2026 for American composers.',
     // La foto de la convocatoria americana (CA2), de fondo del cartel.
     image: 'https://creartbox.nyc/assets/img/calls/ca2-2026.jpg',
     // El destello de la lámpara queda a la izquierda, fuera de las líneas de texto.
     encuadre: { x: 0.84, y: 0.5, zoom: 1 },
     status: 'publish',
-    // Las convocatorias se abren el 22 de octubre: el post sale el día de la apertura.
-    date: '2026-10-22',
+    // Las convocatorias abrieron el 22 de octubre. El primer post (largo) salió ese día a las
+    // 10:00 y se sustituye por este cuando Guillermo borre los dos; 23 de octubre es la fecha propuesta.
+    date: '2026-10-23',
     url: 'https://creartbox.nyc/news/calls-for-scores-2027-28.html',
     tags: ['CallForScores', 'NewMusic', 'Composers'],
-    // Todo lo que dice sale de las tres páginas de la web (la noticia y las dos
-    // convocatorias, CA1 y CA2), contrastado con el texto original. Frases como
-    // la de Brahms y la de los cinco que leen cada partitura son de su propia
-    // noticia. Se ha dejado fuera lo de las comisiones de 10.000 $: la web lo
-    // cuenta de ediciones anteriores, y en un post se lee como una promesa.
-    // CA2 va como «based in the US» porque lo pidió así Guillermo (22 oct): es más
-    // genérico y las directrices ya definen con detalle quién cuenta como americano.
-    // El 22 de octubre, antes de salir, quitó a mano en Metricool lo de la tasa y lo
-    // del formulario: el texto de aquí es el que quedó, no el primero que se escribió.
-    pie: `Our calls for scores for the 2027/28 season open today! 🎼
+    // Todo sale de la noticia de la web y de la página de convocatorias, con sus mismas palabras:
+    // «for composers of any nationality», «for American composers». Dejados fuera a propósito la
+    // tasa, el formulario, la lectura a ciegas y los 10.000 $ de ciclos anteriores: está en la web
+    // y Guillermo quiere el post corto.
+    pie: `Our Calls for Scores for the 2027/28 season are open.
 
-There are two: one for composers of any nationality, and one for composers based in the US. Same jury, same season, same deadline: December 15.
+CA1/2026, for composers of any nationality.
+CA2/2026, for American composers.
 
-The five of us read every score that comes in, and we read everything twice. The first time, we don't know whose it is. Someone outside the jury prepares the material so that no name, biography, website or country reaches us. It's how a composer nobody in the room has heard of ends up on the same programme as Brahms.
+Deadline: December 15, 2026.
+Two works, any instrumentation, any career stage.
 
-Send us two works, for any instrumentation. Any age, any stage of your career, and pieces that have already been performed or recorded are welcome. Most of what we program runs five to fifteen minutes with no more than eight players, but that's a guideline, not a rule.
-
-Everyone who applies hears back from us by spring 2027, whatever the answer is.
-
-Everything is at the link in bio, or at creartbox.nyc/opportunities.
+Guidelines and application at the link in bio.
 
 #CreArtBox #CallForScores #NewMusic #Composers`,
     body: `Two calls for scores for the 2027/28 season, open until 15 December 2026.`,
