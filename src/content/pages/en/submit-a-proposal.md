@@ -1,5 +1,5 @@
 ---
-title: "Artistic proposals"
+title: "If you want to play at ADAR"
 slug: "submit-a-proposal"
 lang: "en"
 date: "2026-10-24T09:00:00Z"
@@ -9,31 +9,31 @@ permalink: "/en/submit-a-proposal/"
 categories: []
 tags: []
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.15_Iglesia%20de%20Leiguarda_Fotos/26.08.15_Iglesia%20de%20Leiguarda_WEB/26.08.15_Iglesia%20de%20Leiguarda_WEB_6.jpg"
-excerpt: "How to propose a concert at Festival ADAR: what we programme, what to include in your email, the subject line to use and where to send it. Classical, early music, jazz, experimental and music from other cultures, in August, in rural Asturias, Spain."
+excerpt: "Write to me and send your proposal. Here is what we programme at Festival ADAR, what I need you to send, which projects stand the best chance, and why I sometimes take a while to reply."
 author: "Festival ADAR"
 menu_order: 0
 translation_group: "adar_propuestas_artisticas"
 faq:
-  - q: "What kind of music does Festival ADAR programme?"
-    a: "Classical and chamber music, early music, jazz, experimental and electronic music, traditional music and music from other cultures, contemporary composition, and interdisciplinary projects combining sound with visual art, dance or video. We do not programme commercial music: rock, pop and related genres do not suit the spaces we play in."
+  - q: "What music does Festival ADAR programme?"
+    a: "Classical and chamber music, early music, jazz, experimental, electronic, traditional music and music from other cultures, and contemporary composition. Also sound walks, installations and projects with video or dance. We do not programme rock, pop or commercial music, because they do not work in the places we play: granaries, Romanesque churches and open-air spaces, nearly always without a stage and without amplification."
   - q: "How do I send a proposal to Festival ADAR?"
-    a: "By email to leiguardamusic@gmail.com, with the subject line «PROPUESTA ADAR · [name of the group or soloist] · [line-up]». There is no form. We prefer email to phone calls."
-  - q: "What should the proposal include?"
-    a: "Who you are and how many people would travel; links to recordings, preferably video of a live concert; the proposed programme with works and durations; a short biography; your fee; technical requirements; your availability in August; and a contact with email and phone number."
-  - q: "Do I have to state my fee?"
-    a: "Yes. Without a fee we cannot assess the proposal. State the fee per concert, whether it includes VAT, whether it covers travel, accommodation and per diems, and for how many people. Also state any mobility funding you have."
-  - q: "Which proposals have the best chance of being programmed?"
-    a: "Those connected to the festival's mission: developing the arts in rural areas, concerts in non-conventional spaces, residency work, and a social or community-engagement dimension. ADAR is funded mainly by public grants for that purpose, so a proposal that takes it into account goes further."
-  - q: "Does Festival ADAR accept collaborations and exchanges with other groups?"
-    a: "Yes. We are interested in exchange projects where a group comes to play at the festival and, in return, festival musicians play at their venue, concert series or festival. With groups from Spain, from Europe and from outside Europe."
+    a: "By email to leiguardamusic@gmail.com, with «PROPUESTA ADAR · [your name or the group's] · [line-up]» in the subject line. There is no form. I prefer email to phone calls."
+  - q: "What should I send in the proposal?"
+    a: "Who you are and how many of you would come, a link so I can hear you (video of a live concert is better than a studio recording), what you want to play with durations, four lines of biography, your fee, what you need technically, which August dates you can do, and a phone number."
+  - q: "Do I have to give a fee?"
+    a: "Yes, always. It is the thing most often left out and without it I cannot assess anything. Tell me the all-in fee, whether it includes VAT, and whether it covers travel, beds and food, and for how many people. If you have mobility funding from your country or an institution, tell me that too."
+  - q: "Which proposals stand the best chance of being programmed?"
+    a: "The ones that do something more than the concert. The festival is funded largely by grants for the development of the arts in rural areas, so it is far easier for me to make the case for a project that includes residency days in the village, a programme thought out for the place where it will be played, something open with the people who live here, or a real connection with Asturias."
+  - q: "Does Festival ADAR do exchanges with other festivals or venues?"
+    a: "Yes, and it is the format that works best: a group comes to play at ADAR and one of our musicians goes to play at their venue, series or festival. That way the travel is shared between two programmes. With groups from Spain, from Europe and from outside Europe."
   - q: "I am a manager. Can I send my artist roster?"
-    a: "Yes. Send the full roster, but only with artists who suit what we programme and who are available in August. State each artist's fee and specific availability."
+    a: "Yes, but send it filtered: only the artists you genuinely see fitting this festival and who have August free. A list of twenty with no criteria gets skimmed and closed; three well chosen get looked at one by one. Tell me each one's fee and their real dates."
   - q: "Do you reply to every proposal?"
-    a: "We read them all, but we cannot reply to them all. We receive far more proposals than we can programme and the team is small. No reply does not mean the proposal was of no interest: we keep them and review them when preparing each edition."
-  - q: "When and where does Festival ADAR take place?"
-    a: "In August, in rural Asturias, northern Spain. Around ten concerts per edition, in hórreos (traditional raised granaries), churches, palaces, monasteries and outdoors, in villages across the centre and west of the region. Admission is free."
+    a: "I read them all and I listen to them all, but I do not reply to them all. There are very few of us and the festival is produced by the same hands that read the email. No reply does not mean I did not like it: I keep them and look again when I put each edition together."
+  - q: "When and where is Festival ADAR?"
+    a: "In August, in villages across the centre and west of Asturias, in northern Spain. We play in hórreos — the traditional raised granaries — in churches, palaces, a monastery and in the open air. Admission is free."
   - q: "Is there a deadline for proposals?"
-    a: "There is no fixed deadline. Each edition's programme is settled during the preceding winter, so it is best to send it before then."
+    a: "No deadline. Each edition's programme is settled in winter, so if it arrives before then I can look at it properly."
 ---
 
 <div class="adar-impact-v3 adar-res-call">
@@ -44,172 +44,135 @@ faq:
 </div>
 <div class="amp-hero-inner">
 <span class="amp-eyebrow">Proposals</span>
-<h2 class="amp-title">Artistic <em>proposals</em></h2>
-<p class="amp-subtitle">How to propose a concert at ADAR: what we programme, what to include and where to send it.</p>
+<h2 class="amp-title">If you want to play at <em>ADAR</em></h2>
+<p class="amp-subtitle">Write to me. Here is what we programme, what I need to know, and why I sometimes take a while to reply.</p>
 </div>
 </div>
 
-<!-- ── THE FESTIVAL, IN FIGURES ─────────────────────────────────────── -->
-<section class="ed-section rc-top" id="the-festival">
+<section class="ed-section rc-top">
 <div class="ed-wrap">
 
-<div class="rc-facts">
-<div class="rc-fact"><strong>August</strong><span>festival dates</span></div>
-<div class="rc-fact"><strong>~10</strong><span>concerts per edition</span></div>
-<div class="rc-fact"><strong>VI</strong><span>editions since 2021</span></div>
-<div class="rc-fact"><strong>Asturias</strong><span>rural Spain</span></div>
-<div class="rc-fact"><strong>Free</strong><span>admission</span></div>
-<div class="rc-fact"><strong>Email</strong><span>how to reach us</span></div>
-</div>
+<p class="ed-prose">I get a lot of emails from musicians and agencies who want to play at the festival, and I am glad they arrive: a good part of the people who have passed through ADAR turned up that way, writing without anyone having called them. So yes, write to me.</p>
+
+<p class="ed-prose">What follows is not a set of rules or a form. It is what helps me decide, told the way I would tell a colleague.</p>
 
 <div class="rc-send">
-<p class="ed-stat-t">Address</p>
-<p class="rc-send-v"><a href="mailto:leiguardamusic@gmail.com?subject=PROPUESTA%20ADAR%20%C2%B7%20%5Bname%20of%20the%20group%20or%20soloist%5D%20%C2%B7%20%5Bline-up%5D">leiguardamusic@gmail.com</a></p>
-<p class="ed-stat-t">Subject line</p>
-<p class="rc-send-s">PROPUESTA ADAR · [name of the group or soloist] · [line-up]</p>
+<p class="ed-stat-t">My email</p>
+<p class="rc-send-v"><a href="mailto:leiguardamusic@gmail.com?subject=PROPUESTA%20ADAR%20%C2%B7%20%5Byour%20name%20or%20the%20group%27s%5D%20%C2%B7%20%5Bline-up%5D">leiguardamusic@gmail.com</a></p>
+<p class="ed-stat-t">Put this in the subject line</p>
+<p class="rc-send-s">PROPUESTA ADAR · [your name or the group's] · [line-up]</p>
 </div>
 
-<div class="rc-callout">
-<p><strong>Use that subject line, in capitals and in that order</strong>, including when you write in English. Keep the Spanish words <code>PROPUESTA ADAR</code>: a single mail filter then collects every proposal in every language. Examples:</p>
-<ul class="rc-when-list">
-<li><code>PROPUESTA ADAR · Bretón Quartet · string quartet</code></li>
-<li><code>PROPUESTA ADAR · Ana Ruiz &amp; Lía Montes · voice and theorbo</code></li>
+<p class="ed-prose">I ask for that subject line because everything comes into the same inbox. If it starts with <code>PROPUESTA ADAR</code> I can gather them and read them in one sitting in winter, which is when the programme gets decided. If it does not, it gets lost in everything else. Keep the Spanish words even when you write to me in English — that way a single filter catches them all — in capitals, then your name and the line-up: <code>PROPUESTA ADAR · Bretón Quartet · string quartet</code>.</p>
+
+<p class="ed-prose">I prefer email to phone calls. There is no form and there is not going to be one.</p>
+
+</div>
+</section>
+
+<!-- ── WHAT GETS PLAYED HERE ────────────────────────────────────────── -->
+<section class="ed-section">
+<div class="ed-wrap">
+<div class="ed-head">
+<h2>What gets played here</h2>
+</div>
+
+<p class="ed-prose">ADAR is a small festival in villages in Asturias, in the north of Spain. We play in hórreos — the raised stone granaries you see all over the region — in Romanesque churches, in a monastery, in palaces and in the open air. There is almost never a stage and almost never any amplification: you play inside a stone building that has been standing for eight hundred years and the sound is what it is. That decides what fits far more than the genre label does.</p>
+
+<p class="ed-prose">We programme classical and chamber music, early music — on historical instruments or not — jazz, experimental, electronic, traditional music and music from other cultures, and contemporary composition. Also things that are not exactly a concert: sound walks, installations, projects with video or with dance. If it is conceived for a particular place, better still, because that is how we work ourselves.</p>
+
+<p class="ed-prose">What we do not programme is rock, pop and commercial music. It is not a judgement on anyone: it just does not work in the places we play. If you are not sure whether your thing belongs here, send it anyway and I will look.</p>
+
+</div>
+</section>
+
+<!-- ── WHAT STANDS THE BEST CHANCE ──────────────────────────────────── -->
+<section class="ed-section">
+<div class="ed-wrap">
+<div class="ed-head">
+<h2>What stands the best chance</h2>
+</div>
+
+<p class="ed-prose">Let me save you some time with something that does not always get said. The festival is kept going largely by grants for the development of the arts in rural areas. That is not paperwork: it is what ADAR is. And it means that a concert on its own is much harder for me to make the case for than a project that also leaves something behind here.</p>
+
+<p class="ed-prose">What stands the best chance, roughly in this order:</p>
+
+<ul class="rc-when-list rc-managers">
+<li><strong>Coming a few days earlier to work in the village.</strong> We have a <a href="/en/adar-artistic-residencies/">residency house</a> in Leiguarda. A group that arrives, stays, rehearses, tries things out and then plays is nothing like a group that arrives in the afternoon and leaves at night. You can hear it in the concert.</li>
+<li><strong>A programme thought out for the place.</strong> It does not need reinventing: sometimes it is just choosing different repertoire knowing you will be playing in a twelfth-century church and not in a concert hall.</li>
+<li><strong>Something with the people who live here.</strong> A workshop, an open rehearsal, an hour with the children at the school or with the older people in the village. It does not have to be complicated; it just has to be thought through rather than tacked on at the last minute.</li>
+<li><strong>A connection with Asturias,</strong> with rural heritage or with the memory of the place — in the repertoire, in the material, or in who you collaborate with.</li>
 </ul>
-<p><strong>We prefer email to phone calls.</strong> There is no form. Do include your phone number in the email: if the proposal moves forward, we will call you.</p>
-</div>
+
+<p class="ed-prose">You do not need all four. One, properly thought out, is plenty.</p>
 
 </div>
 </section>
 
-<!-- ── WHAT WE PROGRAMME ────────────────────────────────────────────── -->
-<section class="ed-section" id="what-we-programme">
+<!-- ── EXCHANGES ────────────────────────────────────────────────────── -->
+<section class="ed-section">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Repertoire</p>
-<h2>What we programme</h2>
-<p class="ed-lede">Concerts take place in hórreos — the traditional raised granaries of Asturias — and in churches, palaces, monasteries and in the open air, in small villages. Most venues have no stage and no amplification. That determines what fits, more than genre does.</p>
+<h2>If you programme too, let's talk about an exchange</h2>
 </div>
 
-<div class="ed-twocol">
+<p class="ed-prose">This interests me a great deal and almost nobody proposes it. If as well as playing you run a venue, a concert series or a festival, tell me in your first email. The format that works best for us is an exchange: you come and play at ADAR, and one of our musicians goes to play at your place.</p>
 
-<article class="ed-card">
-<h3>Yes</h3>
-<p>Classical and chamber music. Early music, on historical instruments or not. Jazz. Experimental and electronic music. Traditional music and music from other cultures. Contemporary composition and premieres.</p>
-<p>Also interdisciplinary projects: sound with visual art, dance or video; sound walks; installations. Work conceived for a specific place is of particular interest.</p>
-</article>
-
-<article class="ed-card">
-<h3>No</h3>
-<p>Rock, pop and commercial music generally. They do not suit the spaces we play in.</p>
-<p>If you are unsure whether your project falls within the above, send it anyway.</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- ── WHAT FITS BEST ───────────────────────────────────────────────── -->
-<section class="ed-section" id="what-fits-best">
-<div class="ed-wrap">
-<div class="ed-head">
-<p class="ed-eyebrow">Criteria</p>
-<h2>Which proposals have the best chance</h2>
-<p class="ed-lede">ADAR is funded mainly by public grants for the development of the arts in rural areas. That is the festival's mission and also the condition attached to its budget. Proposals that take it into account go further than those that are only a concert.</p>
-</div>
-
-<div class="ed-twocol">
-
-<article class="ed-card">
-<h3>Residency</h3>
-<p>Proposals including days of work in the territory before the concert: preparation, creation, open rehearsal. We have <a href="/en/adar-artistic-residencies/">residency space</a> in Leiguarda, and that is where a project gains depth.</p>
-</article>
-
-<article class="ed-card">
-<h3>Non-conventional spaces</h3>
-<p>Projects that work outside a concert hall: a Romanesque church, the covered space under a granary, a landscape. If the programme adapts to the place, or is conceived for it, say so.</p>
-</article>
-
-<article class="ed-card">
-<h3>Social dimension</h3>
-<p>Community engagement: workshops, meetings with residents, work with schools or with older people, open activities. It need not be elaborate, but it should be thought through.</p>
-</article>
-
-<article class="ed-card">
-<h3>Connection to the territory</h3>
-<p>Repertoire, material or collaborations in dialogue with Asturias, with rural heritage or with the memory of the place. Any of these strands counts; you do not need all of them.</p>
-</article>
-
-</div>
-</div>
-</section>
-
-<!-- ── COLLABORATIONS ───────────────────────────────────────────────── -->
-<section class="ed-section" id="collaborations">
-<div class="ed-wrap">
-<div class="ed-head">
-<p class="ed-eyebrow">Exchange</p>
-<h2>Collaborations with other groups and festivals</h2>
-<p class="ed-lede">We accept collaboration proposals, with groups from Spain, from Europe and from outside Europe.</p>
-</div>
-
-<p class="ed-prose">The format that interests us most is exchange: a group comes to play at ADAR and, in return, festival musicians play at their venue, their concert series or their festival. It spreads travel costs across two programmes and opens a circuit for both sides.</p>
-
-<p class="ed-prose">If you programme your own series, have access to a venue, or work with a festival, say so in the email, with dates and the type of space. It substantially changes what we can offer you.</p>
+<p class="ed-prose">That way the travel is shared between two programmes instead of falling entirely on one, and both of us open up a circuit. It makes no difference whether you are just down the road, anywhere in Europe or on the other side of the world — we have worked with all three. Tell me what space you have, when you programme and what kind of room it is, and let's talk.</p>
 
 </div>
 </section>
 
-<!-- ── WHAT TO INCLUDE ──────────────────────────────────────────────── -->
-<section class="ed-section" id="what-to-include">
+<!-- ── WHAT TO SEND ME ──────────────────────────────────────────────── -->
+<section class="ed-section">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Submission</p>
-<h2>What to include in the email</h2>
-<p class="ed-lede">Links and short text. No heavy attachments. If something is missing we have to write and ask for it, which delays the assessment.</p>
+<h2>What I need you to send me</h2>
+<p class="ed-lede">Links and not much text. If something is missing I have to write and ask for it, and that is where the weeks go.</p>
 </div>
 
 <ol class="rc-steps">
 
 <li><div class="rc-step-body">
-<h3>The group</h3>
-<p>Name, line-up, number of people who would travel, city and country, and website if you have one.</p>
+<h3>Who you are and how many of you come</h3>
+<p>The name, the line-up, how many people would travel, where you are from, and your website if you have one. How many of you come matters more than it sounds: out here, beds and a van count.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Recordings</h3>
-<p>Links to YouTube, Vimeo, Bandcamp, SoundCloud or your own site. Please do not attach files.</p>
-<p>We prefer video of a live concert — one complete work or movement, unedited — to a studio recording.</p>
+<h3>Something I can listen to</h3>
+<p>A link: YouTube, Vimeo, Bandcamp, SoundCloud, your own site. Please do not send attachments, they get stuck in the mail.</p>
+<p>And if you have a choice, send me <strong>video of a concert</strong>: one whole piece or movement, no cuts, with an audience in front of you. It tells me far more than a carefully produced studio recording. I want to hear how you sound in a room.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Proposed programme</h3>
-<p>Works, composers, durations and total length. If you have several programmes, send them all: it makes assigning a venue easier.</p>
+<h3>What you want to play</h3>
+<p>The works, with composers and durations, and how long the whole thing runs. If you have several programmes, send them all: it helps me place you in one venue or another.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Biography</h3>
-<p>Ten lines. If you have a longer dossier, link to it, but the email should be understandable without opening it.</p>
+<h3>Four lines about yourselves</h3>
+<p>Four lines will do. If you have a long dossier, send the link, but the email should make sense without opening it.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Fee</h3>
-<p>Fee per concert, with or without VAT, and whether it covers travel, accommodation and per diems, and for how many people. Also state any mobility funding from your country or institution.</p>
-<p>Without this we cannot assess the proposal.</p>
+<h3>The fee</h3>
+<p>This is the thing most often left out and the thing I most need. Without a fee I cannot assess anything, and it forces me to write and ask.</p>
+<p>Tell me the all-in fee, whether it includes VAT, and whether it covers travel, beds and food, and for how many people. And if you have mobility funding from your country or an institution, say so: it changes the whole conversation.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Technical requirements</h3>
-<p>Piano or harpsichord and of what kind, amplification, power, projection, minimum space. Many venues are granaries and churches with no installation.</p>
+<h3>What you need technically</h3>
+<p>Whether you need a piano or harpsichord and what kind, amplification, light, power, projection, how much space. A lot of our venues are granaries and churches with no installation of any kind, so this sometimes decides whether a proposal is possible at all.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Availability in August</h3>
-<p>Specific August dates and how flexible they are. Say if you are already touring northern Spain around then.</p>
+<h3>Which August dates you can do</h3>
+<p>The festival is in August. Tell me which days you have free and whether there is any give. And if you are already touring the north of Spain around then, say so: sometimes that is exactly what makes the numbers work.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Contact</h3>
-<p>Name, email and <strong>phone number</strong> of the person who decides. We work by email, but we need the phone number to settle dates if the proposal moves forward.</p>
+<h3>A phone number</h3>
+<p>I work by email and I prefer email. But leave me your number anyway: once a proposal is moving, whatever is left to settle gets settled in five minutes on the phone. I will call you.</p>
 </div></li>
 
 </ol>
@@ -217,83 +180,74 @@ faq:
 </section>
 
 <!-- ── MANAGERS ─────────────────────────────────────────────────────── -->
-<section class="ed-section" id="managers">
+<section class="ed-section">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Agencies</p>
-<h2>For managers and agents</h2>
-<p class="ed-lede">You are welcome to send your full roster, with the same information requested above for each artist.</p>
+<h2>If you are a manager</h2>
 </div>
 
-<ul class="rc-when-list rc-managers">
-<li><strong>Filter before sending.</strong> Include only artists who suit what we programme. A submission of three well-chosen artists gets read in full; one of twenty unfiltered does not.</li>
-<li><strong>Real August availability.</strong> It is the festival's only window. Give each artist's free dates, not a generic availability.</li>
-<li><strong>Fee per artist.</strong> With a breakdown of what it covers and for how many people.</li>
-<li><strong>Flag what fits the mission.</strong> If any of your artists work in residency, in non-conventional spaces or with communities, say so explicitly: those have the best chance.</li>
-<li><strong>One email per submission.</strong> With the same subject line. To add an artist later, reply on that same thread.</li>
-</ul>
+<p class="ed-prose">Send me your whole roster, with the same details as above for each artist. But send it filtered, and I mean this: if a list of twenty artists arrives with no criteria behind it, I skim it and close it. If three arrive that you have chosen thinking about this festival, I look at them one by one and I reply.</p>
+
+<p class="ed-prose">For each one I need the fee and the August dates they genuinely have free, not a generic availability. And if any of your artists work in residency, in unusual spaces or with communities, put that in the first line: those stand the best chance of getting in.</p>
+
+<p class="ed-prose">One email per submission, with the same subject line. If you want to add someone later, reply on that same thread so it does not scatter.</p>
 
 </div>
 </section>
 
-<!-- ── REPLY ────────────────────────────────────────────────────────── -->
-<section class="ed-section" id="reply">
+<!-- ── WHY I SOMETIMES DO NOT REPLY ─────────────────────────────────── -->
+<section class="ed-section">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Reply</p>
-<h2>What happens next</h2>
+<h2>Why I sometimes do not reply</h2>
 </div>
 
-<div class="rc-warning">
-<p class="rc-warning-t">We read every proposal. We cannot reply to every proposal.</p>
-<p>We receive far more than we can programme, and the team that produces the festival is small. No reply does not mean the proposal was of no interest.</p>
-</div>
+<p class="ed-prose">I read everything and I listen to everything. But I do not reply to everything, and I would rather say so here than leave you waiting for an answer that never comes. There are very few of us, and the festival is produced by the same hands that read the email; replying one by one would take weeks I do not have.</p>
 
-<p class="ed-prose">Proposals are filed and reviewed when each edition is prepared. One that does not fit in 2027 may fit in 2028, or may fit as soon as a new venue joins. That is why it is worth writing even when no open call is running.</p>
+<p class="ed-prose">No reply does not mean I did not like it. It means it did not fit that year. I keep every proposal and look at them again when I put each edition together: some that did not fit have come in two years later, or have come in suddenly because a new venue appeared that suited them. That is why it is worth writing even when there is no open call.</p>
 
-<p class="ed-prose"><strong>ADAR is a small festival with a small budget.</strong> We cannot match the fees of a large festival, and we say so up front. That is precisely why we ask for your fee in the first email: it shows from the start whether there is room to negotiate.</p>
+<p class="ed-prose">And the other thing I owe you up front: this is a small festival with a small budget. I cannot pay what a large festival pays, and I would rather you knew before you waste your time. That is why I ask for the fee in the first email — that way we both know straight away whether there is room to talk.</p>
 
 </div>
 </section>
 
-<!-- ── QUESTIONS ────────────────────────────────────────────────────── -->
-<section class="ed-section" id="questions">
+<!-- ── OTHER THINGS ─────────────────────────────────────────────────── -->
+<section class="ed-section">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Queries</p>
-<h2>Frequently asked questions</h2>
+<h2>Other things people ask me</h2>
 </div>
 
 <div class="ed-twocol">
 
 <article class="ed-card">
 <h3>Is there a deadline?</h3>
-<p>No fixed deadline. Each edition's programme is settled during the preceding winter, so it is best to send it before then.</p>
+<p>No. Each edition's programme is settled in winter, so if it arrives before then I can look at it properly. But write whenever you like.</p>
 </article>
 
 <article class="ed-card">
 <h3>Which language should I write in?</h3>
-<p>English, Spanish or Asturian. The subject line, in every case, exactly as it appears above.</p>
+<p>Spanish, English or Asturian, whichever suits you. All I ask is that the subject line stays exactly as it is, including when you write in English.</p>
 </article>
 
 <article class="ed-card">
-<h3>Do I have to be from Asturias?</h3>
-<p>No. We programme artists from anywhere. Travel comes out of the same budget as the fee, so do say whether you have mobility funding.</p>
+<h3>Do I have to be from here?</h3>
+<p>No. People come from everywhere. The one thing: travel comes out of the same money as the fee, so if you are coming from far away tell me whether you have any mobility funding.</p>
 </article>
 
 <article class="ed-card">
-<h3>Can I write again?</h3>
-<p>Yes, particularly with new recordings or a different programme. A short email noting the earlier proposal and what has changed is enough.</p>
+<h3>I wrote to you last year</h3>
+<p>Write again, especially if you have new recordings or a different programme. A short email reminding me of the last one and what has changed is enough.</p>
 </article>
 
 <article class="ed-card">
-<h3>Is this the same as the residency?</h3>
-<p>No. The <a href="/en/artist-residency-open-call-2026-27/">artist residency</a> has its own call and deadline. This page is for proposing a concert, even one that includes residency days.</p>
+<h3>Is this the residency?</h3>
+<p>No, they are two different things. The <a href="/en/artist-residency-open-call-2026-27/">residency</a> has its own call and its own deadline. This page is for proposing a concert, even one with residency days inside it.</p>
 </article>
 
 <article class="ed-card">
 <h3>Do you programme premieres?</h3>
-<p>Yes. State whose the work is, whether it is finished, and whether there is a commission or funding behind it.</p>
+<p>Yes, and they interest me. Tell me whose the work is, whether it is finished, and whether there is a commission or any funding behind it.</p>
 </article>
 
 </div>
@@ -301,13 +255,15 @@ faq:
 </section>
 
 <!-- ── CLOSING ──────────────────────────────────────────────────────── -->
-<section class="ed-section rc-final">
+<section class="ed-section">
 <div class="ed-wrap">
-<div class="rc-final-inner">
-<h2>Send a proposal</h2>
-<p class="rc-send-s">PROPUESTA ADAR · [name of the group or soloist] · [line-up]</p>
-<a class="ed-btn rc-apply" href="mailto:leiguardamusic@gmail.com?subject=PROPUESTA%20ADAR%20%C2%B7%20%5Bname%20of%20the%20group%20or%20soloist%5D%20%C2%B7%20%5Bline-up%5D">leiguardamusic@gmail.com →</a>
-</div>
+
+<p class="ed-prose">That is all. If you have got this far, write to me.</p>
+
+<p class="rc-firma">Guillermo Laporta<br /><span>Festival ADAR · Leiguarda, Asturias</span></p>
+
+<p class="ed-prose"><a class="ed-btn rc-apply" href="mailto:leiguardamusic@gmail.com?subject=PROPUESTA%20ADAR%20%C2%B7%20%5Byour%20name%20or%20the%20group%27s%5D%20%C2%B7%20%5Bline-up%5D">leiguardamusic@gmail.com →</a></p>
+
 </div>
 </section>
 
