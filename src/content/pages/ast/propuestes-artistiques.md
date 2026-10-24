@@ -1,5 +1,5 @@
 ---
-title: "Unviar una propuesta artística"
+title: "Propuestes artístiques"
 slug: "propuestes-artistiques"
 lang: "ast"
 date: "2026-10-24T09:00:00Z"
@@ -9,25 +9,31 @@ permalink: "/ast/propuestes-artistiques/"
 categories: []
 tags: []
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.15_Iglesia%20de%20Leiguarda_Fotos/26.08.15_Iglesia%20de%20Leiguarda_WEB/26.08.15_Iglesia%20de%20Leiguarda_WEB_6.jpg"
-excerpt: "Únvianos la to propuesta pal Festival ADAR. Programamos música clásica, antigua, jazz, esperimental y músiques d'otres cultures n'hórreos, ilesies y paisaxes del mediu rural asturianu. Cómo unviala, qué poner nel asuntu y qué incluyir: grabaciones, biografía, contautu y caché."
+excerpt: "Cómo proponer un conciertu nel Festival ADAR: qué programamos, qué incluyir nel email, l'asuntu que hai qu'usar y a qué direición unvialo. Música clásica, antigua, jazz, esperimental y músiques d'otres cultures, n'agostu, nel mediu rural d'Asturies."
 author: "Festival ADAR"
 menu_order: 0
 translation_group: "adar_propuestas_artisticas"
 faq:
   - q: "¿Qué triba de música programa'l Festival ADAR?"
-    a: "Música clásica y de cámara, música antigua, jazz, música esperimental y electrónica, músiques tradicionales y d'otres cultures, creación contemporánea y proyeutos interdisciplinares que mecen sonidu con artes visuales, danza o vídeu. Nun programamos música comercial: rock, pop y xéneros asemeyaos nun encaxen col que facemos nin colos espacios onde tocamos."
+    a: "Música clásica y de cámara, música antigua, jazz, música esperimental y electrónica, músiques tradicionales y d'otres cultures, creación contemporánea y proyeutos interdisciplinares que combinen sonidu con artes visuales, danza o vídeu. Nun programamos música comercial: rock, pop y xéneros asemeyaos nun encaxen nos espacios onde tocamos."
   - q: "¿Cómo unvio una propuesta al Festival ADAR?"
-    a: "Per email a leiguardamusic@gmail.com, col asuntu «PROPUESTA ADAR · [nome del grupu o solista] · [formación]». Nun hai formulariu. Nel cuerpu del mensaxe: quién sois, enllaces a grabaciones, el programa que proponéis, una biografía curtia, les necesidaes téuniques, la vuesa disponibilidá n'agostu, un contautu direutu y el caché."
-  - q: "¿Hai que dicir el caché na propuesta?"
-    a: "Sí, siempres. Ensin caché nun podemos valorar la propuesta. Di'l caché zarráu por conciertu, si lleva IVA o non, si cubre desplazamientu, agospiamientu y dietes, y pa cuántes persones. Dinos tamién si cuntáis con dalguna ayuda de movilidá del vuesu país o institución."
+    a: "Per email a leiguardamusic@gmail.com, col asuntu «PROPUESTA ADAR · [nome del grupu o solista] · [formación]». Nun hai formulariu. Preferimos el corréu a la llamada telefónica."
+  - q: "¿Qué tengo qu'incluyir na propuesta?"
+    a: "Quién sois y cuántes persones viaxaríen; enllaces a grabaciones, meyor vídeu d'un conciertu en direuto; el programa propuestu con obres y duraciones; una biografía curtia; el caché; les necesidaes téuniques; la vuesa disponibilidá n'agostu; y un contautu con email y teléfonu."
+  - q: "¿Hai que dicir el caché?"
+    a: "Sí. Ensin caché nun podemos valorar la propuesta. Diz el caché por conciertu, si lleva IVA, si cubre desplazamientu, agospiamientu y dietes, y pa cuántes persones. Diz tamién cualquier ayuda de movilidá cola que cuntéis."
+  - q: "¿Qué propuestes tienen más posibilidaes de programase?"
+    a: "Les que se vinculen a la misión del festival: desarrollu de les artes nel mediu rural, conciertos n'espacios non convencionales, trabayu de residencia y dimensión social o de mediación cola comunidá. ADAR financiase principalmente con subvenciones destinaes a esi fin, asina qu'una propuesta que lo contemple tien más recorríu."
+  - q: "¿El Festival ADAR acepta collaboraciones ya intercambios con otros grupos?"
+    a: "Sí. Interésennos los proyeutos d'intercambiu nos qu'un grupu vien a tocar al festival y, a cambiu, músicos del festival toquen na so sala, ciclu o festival. Con grupos d'España, d'Europa y de fuera d'Europa."
+  - q: "Soi manager. ¿Puedo unviar el mio porfoliu d'artistes?"
+    a: "Sí. Unviái el porfoliu completu, pero namái colos artistes qu'encaxen no que programamos y tengan disponibilidá n'agostu. Diz el caché y la disponibilidá concreta de cada ún."
   - q: "¿Respondéis a toles propuestes?"
-    a: "Lleémosles toes, pero nun podemos contestar a tol mundu. Recibimos munches más propuestes de les que podemos programar y somos un equipu pequeñu. Si nun tienes rempuesta nun quier dicir que la to propuesta nun nos interesare: quier dicir qu'esti añu nun encaxa. Guardámosles, y una propuesta que nun encaxa agora pue encaxar n'otra edición."
-  - q: "¿Cuándo ye'l Festival ADAR y ónde?"
-    a: "N'agostu, nel mediu rural d'Asturies. Los conciertos fáense n'hórreos, ilesies, palacios, monesterios y al aire llibre, n'aldees del centru y l'occidente de la rexón. La entrada ye llibre."
+    a: "Lleémosles toes, pero nun podemos responder a toes. Recibimos munches más de les que podemos programar y l'equipu ye pequeñu. Nun recibir rempuesta nun quier dicir que la propuesta nun interese: guardámosles y revisámosles al preparar cada edición."
+  - q: "¿Cuándo y ónde ye'l Festival ADAR?"
+    a: "N'agostu, nel mediu rural d'Asturies. Alredor de diez conciertos por edición, n'hórreos, ilesies, palacios, monesterios y al aire llibre, n'aldees del centru y l'occidente de la rexón. Entrada llibre."
   - q: "¿Hai plazu pa unviar propuestes?"
-    a: "Nun hai plazu zarráu: pues escribir en cualquier momentu del añu. La programación de cada edición zárrase pel iviernu anterior, asina que cuanto antes llegue, más posibilidaes tien d'entrar nesa edición."
-  - q: "¿Cuánto paga'l Festival ADAR a los artistes?"
-    a: "ADAR ye un festival pequeñu, con un presupuestu pequeñu. Nun podemos competir colos cachés d'un festival grande y preferimos dicilo enantes de que naide pierda'l tiempu. Por eso pidimos el caché dende'l primer email: asina sabemos nel intre si podemos falar."
+    a: "Nun hai plazu zarráu. La programación de cada edición zárrase pel iviernu anterior, asina que convién unviala enantes."
 ---
 
 <div class="adar-impact-v3 adar-res-call">
@@ -38,32 +44,39 @@ faq:
 </div>
 <div class="amp-hero-inner">
 <span class="amp-eyebrow">Propuestes</span>
-<h2 class="amp-title">Tocar n'<em>ADAR</em></h2>
-<p class="amp-subtitle">Únvianos la to propuesta. Ta bien que nos escribas: encántanos recibiles y lleémosles toes.</p>
+<h2 class="amp-title">Propuestes <em>artístiques</em></h2>
+<p class="amp-subtitle">Cómo proponer un conciertu n'ADAR: qué programamos, qué incluyir y ónde unvialo.</p>
 </div>
 </div>
 
-<!-- ── CÓMO S'UNVIA ─────────────────────────────────────────────────── -->
-<section class="ed-section rc-top" id="unviar">
+<!-- ── EL FESTIVAL, EN DATOS ────────────────────────────────────────── -->
+<section class="ed-section rc-top" id="el-festival">
 <div class="ed-wrap">
 
+<div class="rc-facts">
+<div class="rc-fact"><strong>Agostu</strong><span>feches del festival</span></div>
+<div class="rc-fact"><strong>~10</strong><span>conciertos por edición</span></div>
+<div class="rc-fact"><strong>VI</strong><span>ediciones dende 2021</span></div>
+<div class="rc-fact"><strong>Asturies</strong><span>mediu rural</span></div>
+<div class="rc-fact"><strong>Llibre</strong><span>entrada</span></div>
+<div class="rc-fact"><strong>Email</strong><span>vía de contautu</span></div>
+</div>
+
 <div class="rc-send">
-<p class="ed-stat-t">Escribi a</p>
+<p class="ed-stat-t">Direición</p>
 <p class="rc-send-v"><a href="mailto:leiguardamusic@gmail.com?subject=PROPUESTA%20ADAR%20%C2%B7%20%5Bnome%20del%20grupu%20o%20solista%5D%20%C2%B7%20%5Bformaci%C3%B3n%5D">leiguardamusic@gmail.com</a></p>
-<p class="ed-stat-t">Asuntu, tal cual</p>
+<p class="ed-stat-t">Asuntu</p>
 <p class="rc-send-s">PROPUESTA ADAR · [nome del grupu o solista] · [formación]</p>
 </div>
 
 <div class="rc-callout">
-<p><strong>L'asuntu importa de verdá.</strong> Recibimos les propuestes nel mesmu buzón que tolo demás. Si entama por <code>PROPUESTA ADAR</code> va direuta a la so carpeta y lleémosla entera; si non, piérdese ente los correos del día.</p>
-<p>Escríbilo en mayúscules y con esi orde, anque nos escribas n'inglés o n'español. Dos exemplos de cómo queda:</p>
+<p><strong>Usái esi asuntu, en mayúscules y nesi orde</strong>, tamién si escribís n'inglés o n'español. Ye lo que permite filtrar les propuestes nel corréu y lleeles xuntes. Exemplos:</p>
 <ul class="rc-when-list">
 <li><code>PROPUESTA ADAR · Cuartetu Bretón · cuartetu de cuerda</code></li>
 <li><code>PROPUESTA ADAR · Ana Ruiz &amp; Lía Montes · voz y tiorba</code></li>
 </ul>
+<p><strong>Preferimos el corréu a la llamada telefónica.</strong> Nun hai formulariu. Incluyí'l vuesu teléfonu nel email: si la propuesta avanza, llamámosvos nós.</p>
 </div>
-
-<p class="ed-prose rc-note">Nun hai formulariu y nun va habelu. Un email, escritu por una persona, lléese meyor qu'un formulariu.</p>
 
 </div>
 </section>
@@ -72,102 +85,173 @@ faq:
 <section class="ed-section" id="que-programamos">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Qué programamos</p>
-<h2>Cuasi too, menos lo comercial</h2>
-<p class="ed-lede">ADAR ye un festival d'artes vives nel mediu rural. Tocamos n'hórreos, ilesies, palacios, monesterios y al aire llibre, con entrada llibre, n'aldees d'Asturies. Eso condiciona lo qu'encaxa más que cualquier etiqueta de xéneru.</p>
+<p class="ed-eyebrow">Repertoriu</p>
+<h2>Qué programamos</h2>
+<p class="ed-lede">Los conciertos celébrense n'hórreos, ilesies, palacios, monesterios y al aire llibre, n'aldees d'Asturies. La mayoría de les sedes nun tienen escenariu nin amplificación. Eso determina lo qu'encaxa más que'l xéneru.</p>
 </div>
 
 <div class="ed-twocol">
 
 <article class="ed-card">
-<h3>Sí, únvianosla</h3>
+<h3>Sí</h3>
 <p>Música clásica y de cámara. Música antigua, con instrumentos históricos o ensin ellos. Jazz. Música esperimental y electrónica. Músiques tradicionales y d'otres cultures. Creación contemporánea y estrenos.</p>
-<p>Tamién proyeutos que nun caben nuna sola casilla: sonidu con artes visuales, con danza, con vídeu, col paisaxe. Paseos sonoros. Instalaciones. <strong>Lo específico pa un llugar interésanos especialmente</strong>, porque ye como trabayamos.</p>
+<p>Tamién proyeutos interdisciplinares: sonidu con artes visuales, danza o vídeu; paseos sonoros; instalaciones. El trabayu pensáu pa un llugar concretu interésanos especialmente.</p>
 </article>
 
 <article class="ed-card">
-<h3>Por agora, non</h3>
-<p>Rock, pop y música comercial en xeneral. Nun ye un xuiciu sobre la so calidá: ye que nun encaxa nin col que programamos nin colos sitios onde tocamos, que son una ilesia románica o l'espaciu baxo un hórreu, ensin escenariu y cuasi siempres ensin amplificación.</p>
-<p>Si tienes dudes sobre si'l to proyeutu entra no que facemos, únvialo igual y mirámoslo.</p>
+<h3>Non</h3>
+<p>Rock, pop y música comercial en xeneral. Nun encaxen nos espacios onde tocamos.</p>
+<p>Si tenéis dudes sobre si'l vuesu proyeutu entra no anterior, unviáilo igualmente.</p>
 </article>
 
 </div>
 </div>
 </section>
 
-<!-- ── QUÉ UNVIAR ───────────────────────────────────────────────────── -->
-<section class="ed-section" id="que-unviar">
+<!-- ── QUÉ ENCAXA MEYOR ─────────────────────────────────────────────── -->
+<section class="ed-section" id="que-encaxa-meyor">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Qué unviar</p>
-<h2>Ocho coses nun solu email</h2>
-<p class="ed-lede">Nada de dosieres de cuarenta páxines nin ficheros pesaos axuntos. Enllaces y testu curtiu. Si falta daqué d'esto, vamos tener qu'escribite pa pidítelo, y pue que nun nos dea tiempu.</p>
+<p class="ed-eyebrow">Criteriu</p>
+<h2>Qué propuestes tienen más posibilidaes</h2>
+<p class="ed-lede">ADAR financiase principalmente con subvenciones destinaes al desarrollu de les artes nel mediu rural. Esa ye la misión del festival y tamién la condición del so presupuestu. Les propuestes que la contemplen tienen más recorríu que les que son namái un conciertu.</p>
+</div>
+
+<div class="ed-twocol">
+
+<article class="ed-card">
+<h3>Residencia</h3>
+<p>Propuestes qu'incluyan díes de trabayu nel territoriu enantes del conciertu: preparación, creación, ensayu abiertu. Tenemos <a href="/ast/residencias-artisticas-adar-2/">espaciu de residencia</a> en Lleiguarda y ye onde'l proyeutu gana fondura.</p>
+</article>
+
+<article class="ed-card">
+<h3>Espacios non convencionales</h3>
+<p>Proyeutos que funcionen fuera d'un auditoriu: una ilesia románica, l'espaciu baxo un hórreu, un paisaxe. Si'l programa s'adapta al llugar o se concibe pa elli, dicíilo.</p>
+</article>
+
+<article class="ed-card">
+<h3>Dimensión social</h3>
+<p>Mediación cola comunidá: talleres, alcuentros con vecinos, trabayu con escueles o con mayores, actividaes abiertes. Nun fai falta que seya complexo; sí que tea pensao.</p>
+</article>
+
+<article class="ed-card">
+<h3>Vínculu col territoriu</h3>
+<p>Repertoriu, materiales o collaboraciones que dialoguen con Asturies, col patrimoniu rural o cola memoria del llugar. Cualquiera d'estes llinies suma; nun fai falta cumplileas toes.</p>
+</article>
+
+</div>
+</div>
+</section>
+
+<!-- ── COLLABORACIONES ──────────────────────────────────────────────── -->
+<section class="ed-section" id="collaboraciones">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Intercambiu</p>
+<h2>Collaboraciones con otros grupos y festivales</h2>
+<p class="ed-lede">Aceptamos propuestes de collaboración, con grupos d'España, d'Europa y de fuera d'Europa.</p>
+</div>
+
+<p class="ed-prose">El formatu que más nos interesa ye l'intercambiu: un grupu vien a tocar a ADAR y, a cambiu, músicos del festival toquen na so sala, el so ciclu o'l so festival. Permite repartir los costos de desplazamientu ente dos programaciones y abre circuitu a dambes partes.</p>
+
+<p class="ed-prose">Si tenéis programación propia, accesu a una sala o trabayáis con un festival, dicíilo nel email coles feches y la triba d'espaciu. Camuda de forma sustancial lo que podemos ofrecevos.</p>
+
+</div>
+</section>
+
+<!-- ── QUÉ INCLUYIR ─────────────────────────────────────────────────── -->
+<section class="ed-section" id="que-incluyir">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Unviu</p>
+<h2>Qué incluyir nel email</h2>
+<p class="ed-lede">Enllaces y testu curtiu. Ensin ficheros axuntos pesaos. Si falta dalgún datu tenemos qu'escribir pa pidilu, y eso retrasa la valoración.</p>
 </div>
 
 <ol class="rc-steps">
 
 <li><div class="rc-step-body">
-<h3>Quién sois</h3>
-<p>Nome del grupu o del solista, formación, cuántes persones viaxaríen, ciudá y país, y la vuesa web si la tenéis.</p>
+<h3>Grupu</h3>
+<p>Nome, formación, númberu de persones que viaxaríen, ciudá y país, y web si la tenéis.</p>
 </div></li>
 
 <li><div class="rc-step-body">
 <h3>Grabaciones</h3>
-<p>Ye lo primero que miramos. Enllaces a YouTube, Vimeo, Bandcamp, SoundCloud o la vuesa web — <strong>nun axuntéis ficheros</strong>, que se queden atascaos nel corréu.</p>
-<p>Preferimos <strong>vídeu d'un conciertu en direuto</strong>, una obra o un movimientu enteru y ensin editar, a una maqueta d'estudiu mui producida. Queremos oyer cómo sonáis nuna sala, non nun ordenador.</p>
+<p>Enllaces a YouTube, Vimeo, Bandcamp, SoundCloud o web propia. Nun axuntéis ficheros.</p>
+<p>Preferimos vídeu d'un conciertu en direuto —una obra o un movimientu completu, ensin editar— a una grabación d'estudiu.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>El programa que proponéis</h3>
-<p>Les obres, con autores y duraciones, y la duración total. Si tenéis varios programes posibles, únvialos: ayúdanos a encaxavos nuna sede concreta.</p>
+<h3>Programa propuestu</h3>
+<p>Obres, autores, duraciones y duración total. Si manexáis varios programes, unviáilos toos: facilita asignar una sede.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Biografía curtia</h3>
-<p>Diez llinies abonden. Lo que ficisteis, ónde tocasteis y qué vos distingue. Si hai un dosier llargu, enllázalu, pero que l'email s'entienda ensin abrilu.</p>
+<h3>Biografía</h3>
+<p>Diez llinies. Si tenéis un dosier estensu, enllazáilu, pero l'email tien d'entendese ensin abrilu.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>El caché</h3>
-<p><strong>Esto ye lo que más s'escaez y lo que más necesitamos.</strong> Ensin caché nun podemos valorar la propuesta, y oblíganos a escribir pa entrugalo.</p>
-<p>Dinos el caché zarráu por conciertu, si lleva IVA o non, y <strong>si incluye desplazamientu, agospiamientu y dietes, y pa cuántes persones</strong>. Si cuntáis con dalguna ayuda de movilidá del vuesu país o d'una institución, dilo tamién: camuda muncho les cuentes.</p>
+<h3>Caché</h3>
+<p>Caché por conciertu, con o ensin IVA, y si cubre desplazamientu, agospiamientu y dietes, y pa cuántes persones. Dicíi tamién cualquier ayuda de movilidá del vuesu país o institución.</p>
+<p>Ensin esti datu nun podemos valorar la propuesta.</p>
 </div></li>
 
 <li><div class="rc-step-body">
 <h3>Necesidaes téuniques</h3>
-<p>Lo imprescindible: si necesitáis pianu o clave y de qué triba, amplificación, electricidá, proyeición, espaciu mínimu. Munches de les nueses sedes son hórreos ya ilesies ensin instalación, asina qu'esto decide si una propuesta ye posible.</p>
+<p>Pianu o clave y de qué triba, amplificación, electricidá, proyeición, espaciu mínimu. Munches sedes son hórreos ya ilesies ensin instalación.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Disponibilidá</h3>
-<p>El festival ye n'<strong>agostu</strong>. Dinos qué feches d'agostu podríeis y si tenéis flexibilidá; a vegaes podemos encaxar un conciertu aprovechando que yá tais de xira pel norte.</p>
+<h3>Disponibilidá n'agostu</h3>
+<p>Feches concretes d'agostu y marxe de flexibilidá. Dicíi si yá tenéis xira pel norte d'España nesas feches.</p>
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Un contautu direutu</h3>
-<p>Nome, email y teléfonu de quien decide. Si vos representa una axencia, pon en copia a quien toca.</p>
+<h3>Contautu</h3>
+<p>Nome, email y <strong>teléfonu</strong> de la persona que decide. Trabayamos per email, pero necesitamos el teléfonu pa zarrar feches si la propuesta avanza.</p>
 </div></li>
 
 </ol>
 </div>
 </section>
 
-<!-- ── QUÉ PASA DEMPUÉS ─────────────────────────────────────────────── -->
-<section class="ed-section" id="que-pasa-dempues">
+<!-- ── MANAGERS ─────────────────────────────────────────────────────── -->
+<section class="ed-section" id="managers">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Qué pasa dempués</p>
-<h2>Lleémoslo too. Nun podemos contestar a too.</h2>
+<p class="ed-eyebrow">Axencies</p>
+<h2>Pa managers y representantes</h2>
+<p class="ed-lede">Podéis unviar el vuesu porfoliu completu, cola mesma información que se pide arriba pa cada artista.</p>
+</div>
+
+<ul class="rc-when-list rc-managers">
+<li><strong>Filtrái enantes d'unviar.</strong> Incluyí namái a los artistes qu'encaxen no que programamos. Un unviu de trés artistes bien escoyíos lléese enteru; ún de venti ensin filtrar, non.</li>
+<li><strong>Disponibilidá real n'agostu.</strong> Ye la única ventana del festival. Dicíi les feches llibres de cada artista, non una disponibilidá xenérica.</li>
+<li><strong>Caché por artista.</strong> Col desglose de lo qu'inclúi y pa cuántes persones.</li>
+<li><strong>Señalái lo qu'encaxa cola misión.</strong> Si dalgún de los vuesos artistes trabaya en residencia, n'espacios non convencionales o con comunidaes, dicíilo espresamente: ye lo que más posibilidaes tien.</li>
+<li><strong>Un email por unviu.</strong> Col mesmu asuntu. Si dempués queréis amestar un artista, respondéi sobre esi mesmu filu.</li>
+</ul>
+
+</div>
+</section>
+
+<!-- ── REMPUESTA ────────────────────────────────────────────────────── -->
+<section class="ed-section" id="rempuesta">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Rempuesta</p>
+<h2>Qué pasa dempués</h2>
 </div>
 
 <div class="rc-warning">
-<p class="rc-warning-t">Si nun te contestamos, nun ye un non al to trabayu.</p>
-<p>Recibimos munches más propuestes de les que podemos programar, y somos un equipu pequeñu qu'amás produz el festival. Contestar a cada una, una por una, llevaríanos selmanes que nun tenemos. Preferimos dicítelo claro equí enantes de que te quedes esperando.</p>
+<p class="rc-warning-t">Lleemos toles propuestes. Nun podemos responder a toes.</p>
+<p>Recibimos munches más de les que podemos programar, y l'equipu que produz el festival ye pequeñu. Nun recibir rempuesta nun quier dicir que la propuesta nun interese.</p>
 </div>
 
-<p class="ed-prose">Lo que sí facemos con toes: <strong>lleeles, escuchales y guardales.</strong> Cuando montamos la programación d'una edición repasamos lo que foi llegando a lo llargo del añu. Una propuesta que nun encaxa en 2027 pue encaxar en 2028, o pue encaxar de sutaque porque apaez una sede nueva que-y va bien. Por eso paga la pena escribir anque nun haya una convocatoria abierta.</p>
+<p class="ed-prose">Les propuestes archívense y revísense al preparar cada edición. Una que nun encaxa en 2027 pue encaxar en 2028, o encaxar en cuanto s'incorpora una sede nueva. Por eso tien sentíu escribir anque nun haya convocatoria abierta.</p>
 
-<p class="ed-prose">Y una cosa más, por honestidá: <strong>ADAR ye un festival pequeñu, con un presupuestu pequeñu.</strong> Nun tenemos dineru pa contratar a muncha xente nin pa pagar cachés de festival grande. Dicímoslo d'entrada pa nun facer perder el tiempu a naide. Aun asina, encántanos recibir propuestes: ye la manera na que conocemos a xente cola que nun nos tendríemos cruciao.</p>
+<p class="ed-prose"><strong>ADAR ye un festival pequeñu, con presupuestu pequeñu.</strong> Nun podemos igualar los cachés d'un festival grande y dicímoslo d'entrada. Pidimos el caché nel primer email precisamente por eso: permite saber dende l'entamu si hai marxe pa negociar.</p>
 
 </div>
 </section>
@@ -176,40 +260,40 @@ faq:
 <section class="ed-section" id="entrugues">
 <div class="ed-wrap">
 <div class="ed-head">
-<p class="ed-eyebrow">Entrugues</p>
-<h2>Lo que nos entrugáis siempres</h2>
+<p class="ed-eyebrow">Dudes</p>
+<h2>Entrugues frecuentes</h2>
 </div>
 
 <div class="ed-twocol">
 
 <article class="ed-card">
 <h3>¿Hai plazu?</h3>
-<p>Nun hai plazu zarráu: escribi cuando quieras. La programación de cada edición zárrase pel iviernu anterior, asina que cuanto antes llegue, más posibilidaes tien d'entrar nesa edición.</p>
+<p>Nun hai plazu zarráu. La programación de cada edición zárrase pel iviernu anterior, asina que convién unviala enantes.</p>
 </article>
 
 <article class="ed-card">
-<h3>¿Puedo escribir n'inglés?</h3>
-<p>Sí, n'asturianu, español o inglés. Lo único que te pidimos ye que l'asuntu vaya tal cual apaez arriba, en mayúscules y entamando por <code>PROPUESTA ADAR</code>, seya cual seya la llingua del mensaxe.</p>
+<h3>¿En qué llingua escribo?</h3>
+<p>Asturianu, español o inglés. L'asuntu, en tolos casos, tal como apaez arriba.</p>
 </article>
 
 <article class="ed-card">
-<h3>¿Tengo que ser d'Asturies?</h3>
-<p>Non. Programamos artistes de cualquier sitiu. Agora bien, el desplazamientu sal del mesmu presupuestu que'l caché, asina que si vienes de lloñe convién que nos digas si tienes dalguna ayuda de movilidá.</p>
+<h3>¿Hai que ser d'Asturies?</h3>
+<p>Non. Programamos artistes de cualquier procedencia. El desplazamientu sal del mesmu presupuestu que'l caché, asina que dicíi si cuntáis con ayudes de movilidá.</p>
 </article>
 
 <article class="ed-card">
-<h3>¿Y si yá vos escribí l'añu pasáu?</h3>
-<p>Vuelvi a escribir, sobre too si tienes grabaciones nueves o un programa distintu. Un email curtiu recordando la propuesta anterior y lo que camudó ye abondo.</p>
+<h3>¿Puedo volver a escribir?</h3>
+<p>Sí, sobre too con grabaciones nueves o un programa distintu. Abonda un email curtiu indicando la propuesta anterior y qué camudó.</p>
 </article>
 
 <article class="ed-card">
-<h3>¿Esto ye lo mesmo que la residencia?</h3>
-<p>Non. La <a href="/ast/residencias-artisticas-adar-2/">residencia artística</a> ye otra cosa: una estadía de trés a cuatro selmanes pa crear, con convocatoria y plazu propios. Esta páxina ye pa proponer un conciertu.</p>
+<h3>¿Ye lo mesmo que la residencia?</h3>
+<p>Non. La <a href="/ast/residencias-artisticas-adar-2/">residencia artística</a> tien convocatoria y plazu propios. Esta páxina ye pa proponer un conciertu, anque incluya díes de residencia.</p>
 </article>
 
 <article class="ed-card">
 <h3>¿Programáis estrenos?</h3>
-<p>Sí, ya interésennos. Si la propuesta inclúi una obra nueva, dinos de quién ye, si ta acabada y si hai dalgún encargu o ayuda detrás.</p>
+<p>Sí. Dicíi de quién ye la obra, si ta acabada y si hai encargu o financiación detrás.</p>
 </article>
 
 </div>
@@ -220,10 +304,9 @@ faq:
 <section class="ed-section rc-final">
 <div class="ed-wrap">
 <div class="rc-final-inner">
-<h2>Únviala</h2>
-<p class="ed-lede">Un email, ocho coses, l'asuntu bien puestu.</p>
+<h2>Unviar propuesta</h2>
 <p class="rc-send-s">PROPUESTA ADAR · [nome del grupu o solista] · [formación]</p>
-<a class="ed-btn rc-apply" href="mailto:leiguardamusic@gmail.com?subject=PROPUESTA%20ADAR%20%C2%B7%20%5Bnome%20del%20grupu%20o%20solista%5D%20%C2%B7%20%5Bformaci%C3%B3n%5D">Escribir a leiguardamusic@gmail.com →</a>
+<a class="ed-btn rc-apply" href="mailto:leiguardamusic@gmail.com?subject=PROPUESTA%20ADAR%20%C2%B7%20%5Bnome%20del%20grupu%20o%20solista%5D%20%C2%B7%20%5Bformaci%C3%B3n%5D">leiguardamusic@gmail.com →</a>
 </div>
 </div>
 </section>

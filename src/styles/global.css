@@ -14444,6 +14444,11 @@ body.page .entry-content .adar-res-call .rc-send-v a:focus-visible {
   box-shadow: inset 0 -0.55em 0 0 var(--accent);
 }
 
+/* La lista para managers: mismos filetes que las entrugues, pero con la
+   medida de lectura del cuerpo. A ancho completo las líneas se hacían
+   inseguibles. */
+body.page .entry-content .adar-res-call .rc-managers { max-width: 46rem; }
+body.page .entry-content .adar-res-call .rc-managers li { margin: 0 0 12px; }
 body.page .entry-content .adar-res-call .rc-steps { list-style: none; counter-reset: paso; padding: 0; margin: 0; display: grid; gap: 4px; }
 body.page .entry-content .adar-res-call .rc-steps li {
   counter-increment: paso; display: grid; grid-template-columns: 62px minmax(0, 1fr);
