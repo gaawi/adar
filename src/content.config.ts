@@ -21,6 +21,15 @@ const baseSchema = z.object({
   parent_id: z.number().optional(),
   menu_order: z.number().optional(),
   translation_group: z.string().optional(),
+  /**
+   * Preguntas frecuentes de la página. Se pintan en el cuerpo a mano y, desde
+   * aquí, se publican además como datos estructurados (schema.org/FAQPage).
+   * Es lo que permite que un buscador —o un asistente— responda citando esta
+   * página en vez de adivinar.
+   */
+  faq: z
+    .array(z.object({ q: z.string(), a: z.string() }))
+    .optional(),
 });
 
 // Folder-qualified id: the default glob id is the filename only, so two

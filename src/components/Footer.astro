@@ -12,6 +12,8 @@ const copy = {
     desc: 'Festival ADAR es un proyecto de la Asociación para el Desarrollo de las Artes en el Medio Rural.',
     base: 'Sede: Leiguarda 47 · Belmonte de Miranda · Asturias · CIF G06781884',
     contact: 'Contacto',
+    propose: 'Enviar una propuesta artística',
+    propose_href: '/es/propuestas-artisticas/',
     funded: 'Con el apoyo de',
     partners: 'Red de colaboración',
     bill_copy: 'Copiar datos de facturación',
@@ -21,6 +23,8 @@ const copy = {
     desc: 'Festival ADAR is a project of the Association for the Development of Arts in the Rural Environment.',
     base: 'Headquarters: Leiguarda 47 · Belmonte de Miranda · Asturias · CIF G06781884',
     contact: 'Contact',
+    propose: 'Submit an artistic proposal',
+    propose_href: '/en/submit-a-proposal/',
     funded: 'With the support of',
     partners: 'Network of partners',
     bill_copy: 'Copy billing details',
@@ -30,6 +34,8 @@ const copy = {
     desc: "Festival ADAR ye un proxectu de l'Asociación pal Desarrollu de les Artes nel Mediu Rural.",
     base: 'Sede: Leiguarda 47 · Belmonte de Miranda · Asturies · CIF G06781884',
     contact: 'Contautu',
+    propose: 'Unviar una propuesta artística',
+    propose_href: '/ast/propuestes-artistiques/',
     funded: 'Col sofitu de',
     partners: 'Rede de collaboración',
     bill_copy: 'Copiar datos de facturación',
@@ -121,6 +127,12 @@ const FUNDERS = [
       <p>
         <a class="adar-footer-link" href="https://wa.me/34663604030" target="_blank" rel="noopener">
           WhatsApp · +34 663 60 40 30
+        </a>
+      </p>
+
+      <p>
+        <a class="adar-footer-link adar-footer-propose" href={copy.propose_href}>
+          {copy.propose} <span aria-hidden="true">→</span>
         </a>
       </p>
 

@@ -12,6 +12,8 @@ interface Props {
   bodyClass?: string;
   featuredImage?: string;
   translations?: Partial<Record<Lang, string>>;
+  /** Preguntas frecuentes, para publicarlas como datos estructurados. */
+  faq?: { q: string; a: string }[];
 }
 
 const {
@@ -22,6 +24,7 @@ const {
   bodyClass = '',
   featuredImage,
   translations = {},
+  faq,
 } = Astro.props;
 
 const fullTitle = title === 'Festival ADAR'
@@ -57,6 +60,24 @@ const isInternal = noIndex || permalink.startsWith('/borradores/') || permalink.
       <link rel="alternate" hreflang={l} href={`https://festivaladar.com${url}`} />
     ))}
 
+    {/* Datos estructurados. Sin esto, un buscador ve texto corrido; con esto,
+        sabe que hay preguntas con respuesta y puede citarlas. Lo mismo vale
+        para un asistente que lea la página. Nunca en páginas internas. */}
+    {!isInternal && faq && faq.length > 0 && (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          inLanguage: lang,
+          mainEntity: faq.map((f) => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a },
+          })),
+        })}
+      />
+    )}
     <meta property="og:site_name" content="Festival ADAR" />
     <meta property="og:locale" content={OG_LOCALE} />
     <meta property="og:type" content={ogType} />

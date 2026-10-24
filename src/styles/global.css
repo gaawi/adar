@@ -14431,6 +14431,18 @@ body.page .entry-content .adar-res-call .rc-send-v {
   line-height: 1.1; margin: 6px 0 20px; word-break: break-word;
 }
 body.page .entry-content .adar-res-call .rc-send-s { font-family: var(--font-mono); font-size: 15px; margin: 6px 0 0; }
+/* El email es el único enlace de la caja y va a cuerpo de titular: dejarlo en
+   el azul subrayado del navegador lo convertía en lo más feo de la página.
+   Vale para esta página y para la de residencias, que usa el mismo bloque. */
+body.page .entry-content .adar-res-call .rc-send-v a {
+  color: inherit; text-decoration: none;
+  box-shadow: inset 0 -3px 0 0 var(--accent);
+  transition: box-shadow .18s ease;
+}
+body.page .entry-content .adar-res-call .rc-send-v a:hover,
+body.page .entry-content .adar-res-call .rc-send-v a:focus-visible {
+  box-shadow: inset 0 -0.55em 0 0 var(--accent);
+}
 
 body.page .entry-content .adar-res-call .rc-steps { list-style: none; counter-reset: paso; padding: 0; margin: 0; display: grid; gap: 4px; }
 body.page .entry-content .adar-res-call .rc-steps li {
