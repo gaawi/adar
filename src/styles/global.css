@@ -1646,42 +1646,70 @@ html, body{ overflow-x: hidden; }
   font-weight: 500;
 }
 
-/* INNER CONTENT: centered container starts BELOW the hero. The right
-   sidebar floats to the right of the title and body. */
+/* ── Cuerpo y ficha, en dos columnas de verdad ──────────────────────────
+   La ficha iba en position:absolute con `top: calc(min(65vh,620px) + 60px)`,
+   una medida calculada a partir del héroe que el propio artículo traía
+   dentro. Ese héroe lleva oculto desde que lo pinta el componente del sitio
+   (`body.single-post .entry-content .adar-archive-hero { display:none }`), y
+   además ningún ancestro de la ficha está posicionado, así que ese `top` se
+   medía desde el documento: la ficha subía 500px y se plantaba encima del
+   titular. Se veía en cualquier ancho, no solo en pantallas grandes.
+   Con una rejilla no hay nada que calcular: la ficha ocupa su columna y se
+   queda pegada al hacer scroll. */
+.adar-archive-page .adar-archive-header{
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 0 48px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+.adar-archive-page .adar-archive-left{ min-width: 0; }
 .adar-archive-page .adar-archive-left > *:not(.adar-archive-cover):not(.adar-archive-hero){
   max-width: 720px;
-  margin-left: max(32px, calc((100% - 1200px) / 2 + 32px));
-  margin-right: 24px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .adar-archive-page .adar-archive-right{
-  position: absolute;
-  top: calc(65vh + 60px);
-  right: max(32px, calc((100% - 1200px) / 2 + 32px));
-  width: 320px;
+  position: sticky;
+  top: 104px;
+  width: auto;
   z-index: 3;
 }
-@supports (top: min(65vh, 620px)){
-  .adar-archive-page .adar-archive-right{ top: calc(min(65vh, 620px) + 60px); }
+/* El enlace de la ficha salía en el azul subrayado del navegador: la regla
+   que lo peinaba —`.adar-archive-social-list a`— perdía contra la del tema
+   heredado, `body.single .entry-content a:not([class])`, que es mucho más
+   larga. Se le añade el contenedor para ganarle sin !important. */
+body.single .entry-content .adar-archive-page .adar-archive-social-list a,
+body.single-post .entry-content .adar-archive-page .adar-archive-social-list a{
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+body.single .entry-content .adar-archive-page .adar-archive-social-list a:hover,
+body.single-post .entry-content .adar-archive-page .adar-archive-social-list a:hover{
+  color: var(--accent, #FFC107);
+  border-bottom-color: var(--accent, #FFC107);
 }
 @media (max-width: 1100px){
-  .adar-archive-page .adar-archive-right{
-    width: 300px;
-    right: 24px;
-  }
-  .adar-archive-page .adar-archive-left > *:not(.adar-archive-cover):not(.adar-archive-hero){
-    margin-right: 360px;
+  .adar-archive-page .adar-archive-header{
+    grid-template-columns: minmax(0, 1fr) 300px;
+    gap: 0 32px;
+    padding: 0 24px;
   }
 }
 @media (max-width: 900px){
+  .adar-archive-page .adar-archive-header{
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
   .adar-archive-page .adar-archive-right{
     position: static;
-    width: auto;
-    margin: 32px 20px 0;
+    margin: 32px 0 0;
   }
   .adar-archive-page .adar-archive-left > *:not(.adar-archive-cover):not(.adar-archive-hero){
-    margin-left: 20px;
-    margin-right: 20px;
     max-width: none;
   }
   .adar-archive-page .adar-archive-cover{ max-height: 70vh; }
