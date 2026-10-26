@@ -296,6 +296,35 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   },
 
 
+  // Sacado de la newsletter del 26 de octubre («This Friday at DiMenna»): la oferta
+  // de dos entradas por 50 $ y el arranque con los músicos entrando mientras tocan.
+  {
+    lang: 'en',
+    slug: 'currents-two-for-50',
+    kind: 'social',
+    estilo: 'cinta',
+    title: 'Coming with someone? Two tickets for $50',
+    excerpt: 'Two tickets for $50 for Currents, Friday 30 October at The DiMenna Center.',
+    image: ARCHIVO + '20251212__DSC0350.jpg',
+    status: 'publish',
+    date: '2026-10-26',
+    url: 'https://www.eventbrite.com/e/creartbox-nyc-season-schumann-brahms-clara-schumann-currents-tickets-2000173994260',
+    tags: ['Currents', 'Tickets', 'DiMennaCenter'],
+    pie: `Coming with someone? 🎟️
+
+For Friday's concert we're offering two tickets for $50.
+
+Currents opens our season at The DiMenna Center. About an hour of music, no intermission, and we're starting a little differently this time: the musicians walk into the hall while they play.
+
+📅 Friday, October 30 · 7:30 PM
+📍 The DiMenna Center, 450 W 37th St
+🎟️ Tickets in bio
+
+Hope to see you on Friday!
+
+#CreArtBox #Currents #NYCConcerts #ChamberMusic`,
+    body: `Two tickets for $50 for Currents, Friday 30 October.`,
+  },
   // Solo redes, para la semana del concierto.
   {
     lang: 'en',
