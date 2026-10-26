@@ -3,13 +3,13 @@ title: "Si quieres tocar en ADAR"
 slug: "propuestas-artisticas"
 lang: "es"
 date: "2026-10-24T09:00:00Z"
-modified: "2026-10-24T09:00:00Z"
+modified: "2026-10-26T09:00:00Z"
 status: "publish"
 permalink: "/es/propuestas-artisticas/"
 categories: []
 tags: []
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.15_Iglesia%20de%20Leiguarda_Fotos/26.08.15_Iglesia%20de%20Leiguarda_WEB/26.08.15_Iglesia%20de%20Leiguarda_WEB_6.jpg"
-excerpt: "Escríbeme y mándame tu propuesta. Te cuento qué programamos en el Festival ADAR, qué necesito que me mandes, qué proyectos tienen más posibilidades y por qué a veces tardo en contestar."
+excerpt: "Escríbenos y mándanos tu propuesta. Te contamos qué programamos en el Festival ADAR, qué necesitamos que nos mandes, qué proyectos tienen más posibilidades y por qué a veces tardamos en contestar."
 author: "Festival ADAR"
 menu_order: 0
 translation_group: "adar_propuestas_artisticas"
@@ -17,23 +17,23 @@ faq:
   - q: "¿Qué música se programa en el Festival ADAR?"
     a: "Clásica y música de cámara, música antigua, jazz, experimental, electrónica, músicas tradicionales y de otras culturas, y creación contemporánea. También paseos sonoros, instalaciones y proyectos con vídeo o danza. No programamos rock, pop ni música comercial, porque no funcionan en los sitios en los que tocamos: hórreos, iglesias románicas y espacios al aire libre, casi siempre sin escenario y sin amplificación."
   - q: "¿Cómo mando una propuesta al Festival ADAR?"
-    a: "Por correo a leiguardamusic@gmail.com, poniendo en el asunto «PROPUESTA ADAR · [tu nombre o el del grupo] · [formación]». No hay formulario. Prefiero el correo a la llamada de teléfono."
+    a: "Por correo a leiguardamusic@gmail.com, poniendo en el asunto «PROPUESTA ADAR · [tu nombre o el del grupo] · [formación]». No hay formulario. Preferimos el correo a la llamada de teléfono."
   - q: "¿Qué tengo que mandar en la propuesta?"
     a: "Quiénes sois y cuántos vendríais, un enlace para escucharos (mejor vídeo de un concierto en directo que una grabación de estudio), qué queréis tocar con duraciones, cuatro líneas de biografía, el caché, lo que necesitáis técnicamente, qué días de agosto podéis y un teléfono de contacto."
   - q: "¿Hay que decir el caché?"
-    a: "Sí, siempre. Es lo que más se olvida y sin ello no puedo valorar nada. Dime el caché cerrado, si lleva IVA, y si incluye viaje, cama y comida y para cuánta gente. Si tenéis una ayuda de movilidad de vuestro país o de alguna institución, dímelo también."
+    a: "Sí, siempre. Es lo que más se olvida y sin ello no podemos valorar nada. Dinos el caché cerrado, si lleva IVA, y si incluye viaje, cama y comida y para cuánta gente. Si tenéis una ayuda de movilidad de vuestro país o de alguna institución, decídnoslo también."
   - q: "¿Qué propuestas tienen más posibilidades de entrar en el festival?"
-    a: "Las que hacen algo más que el concierto. El festival se sostiene con subvenciones para el desarrollo de las artes en el medio rural, así que me resulta mucho más fácil defender un proyecto que incluya días de residencia en el pueblo, un programa pensado para el sitio donde se va a tocar, algo abierto con la gente de aquí o un vínculo real con Asturias."
+    a: "Las que hacen algo más que el concierto. El festival se sostiene con subvenciones para el desarrollo de las artes en el medio rural, así que nos resulta mucho más fácil defender un proyecto que incluya días de residencia en el pueblo, un programa pensado para el sitio donde se va a tocar, algo abierto con la gente de aquí o un vínculo real con Asturias."
   - q: "¿El Festival ADAR hace intercambios con otros festivales o salas?"
     a: "Sí, y es el formato que mejor funciona: un grupo viene a tocar a ADAR y alguno de nuestros músicos va a tocar a su sala, su ciclo o su festival. Así el viaje se reparte entre dos programaciones. Con grupos de España, de Europa y de fuera de Europa."
   - q: "Soy manager, ¿puedo mandar mi catálogo de artistas?"
-    a: "Sí, pero mándalo filtrado: solo los artistas que de verdad veas encajar en este festival y que tengan agosto libre. Una lista de veinte sin criterio se ojea y se cierra; tres bien elegidos se miran uno por uno. Dime el caché de cada uno y sus fechas reales."
+    a: "Sí, pero mándalo filtrado: solo los artistas que de verdad veas encajar en este festival y que tengan agosto libre. Una lista de veinte sin criterio se ojea y se cierra; tres bien elegidos se miran uno por uno. Dinos el caché de cada uno y sus fechas reales."
   - q: "¿Contestáis a todas las propuestas?"
-    a: "Las leo todas y las escucho todas, pero no contesto a todas. Somos muy pocos y el festival se produce con las mismas manos que leen el correo. Que no haya respuesta no quiere decir que no me haya gustado: las guardo y las vuelvo a mirar al armar cada edición."
+    a: "Las leemos todas y las escuchamos todas, pero no contestamos a todas. Somos muy pocos y el festival se produce con las mismas manos que leen el correo. Que no haya respuesta no quiere decir que no nos haya gustado: las guardamos y las volvemos a mirar al armar cada edición."
   - q: "¿Cuándo y dónde es el Festival ADAR?"
     a: "En agosto, en aldeas del centro y el occidente de Asturias. Se toca en hórreos, iglesias, palacios, un monasterio y al aire libre, y la entrada es libre."
   - q: "¿Hay plazo para mandar propuestas?"
-    a: "No hay plazo. El programa de cada edición se cierra en invierno, así que si llega antes la puedo mirar con tiempo."
+    a: "No hay plazo. El programa de cada edición se cierra en invierno, así que si llega antes la podemos mirar con tiempo."
 ---
 
 <div class="adar-impact-v3 adar-res-call">
@@ -47,27 +47,27 @@ faq:
 <div class="amp-hero-inner">
 <span class="amp-eyebrow">Propuestas</span>
 <h2 class="amp-title">Si quieres tocar en <em>ADAR</em></h2>
-<p class="amp-subtitle">Escríbeme. Aquí te cuento qué programamos, qué necesito saber y por qué a veces tardo en contestar.</p>
+<p class="amp-subtitle">Escríbenos. Aquí te contamos qué programamos, qué necesitamos saber y por qué a veces tardamos en contestar.</p>
 </div>
 </div>
 
 <section class="ed-section rc-top">
 <div class="ed-wrap">
 
-<p class="ed-prose">Me llegan muchos correos de músicos y de agencias que quieren tocar en el festival, y me alegra que lleguen: buena parte de la gente que ha pasado por ADAR apareció así, escribiendo sin que nadie los llamara. Así que sí, escríbeme.</p>
+<p class="ed-prose">Nos llegan muchos correos de músicos y de agencias que quieren tocar en el festival, y nos alegra que lleguen: buena parte de la gente que ha pasado por ADAR apareció así, escribiendo sin que nadie los llamara. Así que sí, escríbenos.</p>
 
-<p class="ed-prose">Lo que viene aquí abajo no son unas bases ni un formulario. Es lo que me ayuda a decidir, contado como se lo contaría a un colega.</p>
+<p class="ed-prose">Lo que viene aquí abajo no son unas bases ni un formulario. Es lo que nos ayuda a decidir, contado como se lo contaríamos a un colega.</p>
 
 <div class="rc-send">
-<p class="ed-stat-t">Mi correo</p>
+<p class="ed-stat-t">Nuestro correo</p>
 <p class="rc-send-v"><a href="mailto:leiguardamusic@gmail.com?subject=PROPUESTA%20ADAR%20%C2%B7%20%5Btu%20nombre%20o%20el%20del%20grupo%5D%20%C2%B7%20%5Bformaci%C3%B3n%5D">leiguardamusic@gmail.com</a></p>
-<p class="ed-stat-t">Ponme esto en el asunto</p>
+<p class="ed-stat-t">Pon esto en el asunto</p>
 <p class="rc-send-s">PROPUESTA ADAR · [tu nombre o el del grupo] · [formación]</p>
 </div>
 
-<p class="ed-prose">Te pido ese asunto porque todo entra al mismo buzón. Si empieza por <code>PROPUESTA ADAR</code> puedo juntarlas y leerlas de una sentada en invierno, que es cuando se decide el programa. Si no, se pierde entre lo demás. Ponlo así aunque me escribas en inglés o en asturiano, en mayúsculas, y detrás tu nombre y la formación: <code>PROPUESTA ADAR · Cuarteto Bretón · cuarteto de cuerda</code>.</p>
+<p class="ed-prose">Te pedimos ese asunto porque todo entra al mismo buzón. Si empieza por <code>PROPUESTA ADAR</code> podemos juntarlas y leerlas de una sentada en invierno, que es cuando se decide el programa. Si no, se pierde entre lo demás. Ponlo así aunque nos escribas en inglés o en asturiano, en mayúsculas, y detrás tu nombre y la formación: <code>PROPUESTA ADAR · Cuarteto Bretón · cuarteto de cuerda</code>.</p>
 
-<p class="ed-prose">Prefiero el correo a la llamada. No hay formulario y no lo va a haber.</p>
+<p class="ed-prose">Preferimos el correo a la llamada. No hay formulario y no lo va a haber.</p>
 
 </div>
 </section>
@@ -83,7 +83,7 @@ faq:
 
 <p class="ed-prose">Programamos clásica y música de cámara, música antigua —con instrumentos históricos o sin ellos—, jazz, experimental, electrónica, músicas tradicionales y de otras culturas, y creación contemporánea. También cosas que no son exactamente un concierto: paseos sonoros, instalaciones, proyectos con vídeo o con danza. Si está pensado para un sitio concreto, mejor todavía, porque es como trabajamos nosotros.</p>
 
-<p class="ed-prose">Lo que no programamos es rock, pop y música comercial. No es un juicio sobre nadie: es que no funciona en los sitios en los que tocamos. Si dudas de si lo tuyo entra o no, mándamelo igual y lo miro.</p>
+<p class="ed-prose">Lo que no programamos es rock, pop y música comercial. No es un juicio sobre nadie: es que no funciona en los sitios en los que tocamos. Si dudas de si lo tuyo entra o no, mándanoslo igual y lo miramos.</p>
 
 </div>
 </section>
@@ -95,7 +95,7 @@ faq:
 <h2>Lo que más posibilidades tiene</h2>
 </div>
 
-<p class="ed-prose">Te ahorro tiempo con una cosa que no siempre se dice. El festival se sostiene sobre todo con subvenciones para el desarrollo de las artes en el medio rural. No es papeleo: es lo que ADAR es. Y significa que un concierto a secas me cuesta mucho más defenderlo que un proyecto que además deje algo aquí.</p>
+<p class="ed-prose">Te ahorramos tiempo con una cosa que no siempre se dice. El festival se sostiene sobre todo con subvenciones para el desarrollo de las artes en el medio rural. No es papeleo: es lo que ADAR es. Y significa que un concierto a secas nos cuesta mucho más defenderlo que un proyecto que además deje algo aquí.</p>
 
 <p class="ed-prose">Lo que más posibilidades tiene, más o menos por este orden:</p>
 
@@ -118,19 +118,19 @@ faq:
 <h2>Si tú también programas, hablemos de intercambio</h2>
 </div>
 
-<p class="ed-prose">Esto me interesa mucho y casi nadie lo propone. Si además de tocar llevas una sala, un ciclo o un festival, dímelo en el primer correo. El formato que mejor nos funciona es el intercambio: vosotros venís a tocar a ADAR y alguno de nuestros músicos va a tocar a vuestra casa.</p>
+<p class="ed-prose">Esto nos interesa mucho y casi nadie lo propone. Si además de tocar llevas una sala, un ciclo o un festival, dínoslo en el primer correo. El formato que mejor nos funciona es el intercambio: vosotros venís a tocar a ADAR y alguno de nuestros músicos va a tocar a vuestra casa.</p>
 
-<p class="ed-prose">Así el viaje se reparte entre dos programaciones en vez de caer entero sobre una, y los dos abrimos circuito. Da igual que seáis de aquí al lado, de cualquier sitio de Europa o del otro lado del mundo: hemos trabajado con gente de los tres casos. Dime qué espacio tienes, cuándo programas y qué tipo de sala es, y hablamos.</p>
+<p class="ed-prose">Así el viaje se reparte entre dos programaciones en vez de caer entero sobre una, y los dos abrimos circuito. Da igual que seáis de aquí al lado, de cualquier sitio de Europa o del otro lado del mundo. Dinos qué espacio tienes, cuándo programas y qué tipo de sala es, y hablamos.</p>
 
 </div>
 </section>
 
-<!-- ── QUÉ MANDARME ─────────────────────────────────────────────────── -->
+<!-- ── QUÉ MANDARNOS ────────────────────────────────────────────────── -->
 <section class="ed-section">
 <div class="ed-wrap">
 <div class="ed-head">
-<h2>Qué necesito que me mandes</h2>
-<p class="ed-lede">Enlaces y poco texto. Si me falta algo tengo que escribirte para pedírtelo, y ahí es donde se pierden las semanas.</p>
+<h2>Qué necesitamos que nos mandes</h2>
+<p class="ed-lede">Enlaces y poco texto. Si nos falta algo tenemos que escribirte para pedírtelo, y ahí es donde se pierden las semanas.</p>
 </div>
 
 <ol class="rc-steps">
@@ -141,25 +141,25 @@ faq:
 </div></li>
 
 <li><div class="rc-step-body">
-<h3>Algo que pueda escuchar</h3>
-<p>Un enlace: YouTube, Vimeo, Bandcamp, SoundCloud, vuestra web. No me mandes archivos adjuntos, que se atascan en el correo.</p>
-<p>Y si puedes elegir, mándame <strong>vídeo de un concierto</strong>: una obra o un movimiento entero, sin cortes, con gente delante. Me dice muchísimo más que una grabación de estudio muy trabajada. Quiero oír cómo sonáis en una sala.</p>
+<h3>Algo que podamos escuchar</h3>
+<p>Un enlace: YouTube, Vimeo, Bandcamp, SoundCloud, vuestra web. No nos mandes archivos adjuntos, que se atascan en el correo.</p>
+<p>Y si puedes elegir, mándanos <strong>vídeo de un concierto</strong>: una obra o un movimiento entero, sin cortes, con gente delante. Nos dice muchísimo más que una grabación de estudio muy trabajada. Queremos oír cómo sonáis en una sala.</p>
 </div></li>
 
 <li><div class="rc-step-body">
 <h3>Qué queréis tocar</h3>
-<p>Las obras, con autores y duraciones, y cuánto dura entero. Si manejáis varios programas, mándamelos todos: me ayuda a encajaros en una sede u otra.</p>
+<p>Las obras, con autores y duraciones, y cuánto dura entero. Si manejáis varios programas, mándanoslos todos: nos ayuda a encajaros en una sede u otra.</p>
 </div></li>
 
 <li><div class="rc-step-body">
 <h3>Cuatro líneas de quiénes sois</h3>
-<p>Con cuatro líneas me vale. Si tenéis un dosier largo, pásame el enlace, pero que el correo se entienda sin abrirlo.</p>
+<p>Con cuatro líneas nos vale. Si tenéis un dosier largo, pásanos el enlace, pero que el correo se entienda sin abrirlo.</p>
 </div></li>
 
 <li><div class="rc-step-body">
 <h3>El caché</h3>
-<p>Esto es lo que más se olvida y lo que más necesito. Sin caché no puedo valorar nada y me obliga a escribir para preguntarlo.</p>
-<p>Dime el caché cerrado, si lleva IVA o no, y si incluye viaje, cama y comida y para cuánta gente. Y si tenéis alguna ayuda de movilidad de vuestro país o de alguna institución, dímelo: cambia la conversación entera.</p>
+<p>Esto es lo que más se olvida y lo que más necesitamos. Sin caché no podemos valorar nada y nos obliga a escribir para preguntarlo.</p>
+<p>Dinos el caché cerrado, si lleva IVA o no, y si incluye viaje, cama y comida y para cuánta gente. Y si tenéis alguna ayuda de movilidad de vuestro país o de alguna institución, decídnoslo: cambia la conversación entera.</p>
 </div></li>
 
 <li><div class="rc-step-body">
@@ -169,12 +169,12 @@ faq:
 
 <li><div class="rc-step-body">
 <h3>Qué días de agosto podéis</h3>
-<p>El festival es en agosto. Dime qué días tenéis libres y si hay margen. Y si ya andáis de gira por el norte por esas fechas, dímelo también: a veces es justo lo que hace que salgan las cuentas.</p>
+<p>El festival es en agosto. Dinos qué días tenéis libres y si hay margen. Y si ya andáis de gira por el norte por esas fechas, decídnoslo también: a veces es justo lo que hace que salgan las cuentas.</p>
 </div></li>
 
 <li><div class="rc-step-body">
 <h3>Un teléfono</h3>
-<p>Trabajo por correo y prefiero el correo. Pero déjame tu teléfono igualmente: cuando una propuesta avanza, lo que queda por cerrar se cierra en cinco minutos hablando. Ya te llamo yo.</p>
+<p>Trabajamos por correo y lo preferimos. Pero déjanos tu teléfono igualmente: cuando una propuesta avanza, lo que queda por cerrar se cierra en cinco minutos hablando. Ya te llamamos nosotros.</p>
 </div></li>
 
 </ol>
@@ -188,27 +188,27 @@ faq:
 <h2>Si eres manager</h2>
 </div>
 
-<p class="ed-prose">Mándame tu catálogo entero, con los mismos datos de arriba para cada artista. Pero mándamelo filtrado, y te lo pido de verdad: si me llega una lista de veinte artistas sin criterio, la ojeo y la cierro. Si me llegan tres que has elegido pensando en este festival, los miro uno por uno y te contesto.</p>
+<p class="ed-prose">Mándanos tu catálogo entero, con los mismos datos de arriba para cada artista. Pero mándanoslo filtrado, y te lo pedimos de verdad: si nos llega una lista de veinte artistas sin criterio, la ojeamos y la cerramos. Si nos llegan tres que has elegido pensando en este festival, los miramos uno por uno y te contestamos.</p>
 
-<p class="ed-prose">De cada uno necesito el caché y las fechas de agosto que tiene libres de verdad, no una disponibilidad genérica. Y si alguno de tus artistas trabaja en residencia, en espacios raros o con comunidades, dímelo en primera línea: es lo que más posibilidades tiene de entrar.</p>
+<p class="ed-prose">De cada uno necesitamos el caché y las fechas de agosto que tiene libres de verdad, no una disponibilidad genérica. Y si alguno de tus artistas trabaja en residencia, en espacios raros o con comunidades, dínoslo en primera línea: es lo que más posibilidades tiene de entrar.</p>
 
-<p class="ed-prose">Un correo por envío, con el mismo asunto. Si luego quieres añadir a alguien, contéstame sobre ese mismo hilo y así no se desparrama.</p>
+<p class="ed-prose">Un correo por envío, con el mismo asunto. Si luego quieres añadir a alguien, contéstanos sobre ese mismo hilo y así no se desparrama.</p>
 
 </div>
 </section>
 
-<!-- ── POR QUÉ A VECES NO CONTESTO ──────────────────────────────────── -->
+<!-- ── POR QUÉ A VECES NO CONTESTAMOS ───────────────────────────────── -->
 <section class="ed-section">
 <div class="ed-wrap">
 <div class="ed-head">
-<h2>Por qué a veces no contesto</h2>
+<h2>Por qué a veces no contestamos</h2>
 </div>
 
-<p class="ed-prose">Lo leo todo y lo escucho todo. Pero no contesto a todo, y prefiero decírtelo aquí a dejarte esperando una respuesta que no llega. Somos muy pocos y el festival se produce con las mismas manos que leen el correo; contestar una por una me llevaría semanas que no tengo.</p>
+<p class="ed-prose">Lo leemos todo y lo escuchamos todo. Pero no contestamos a todo, y preferimos decírtelo aquí a dejarte esperando una respuesta que no llega. Somos muy pocos y el festival se produce con las mismas manos que leen el correo; contestar una por una nos llevaría semanas que no tenemos.</p>
 
-<p class="ed-prose">Que no haya respuesta no significa que no me haya gustado. Significa que ese año no encajó. Guardo todas las propuestas y las vuelvo a mirar cuando armo cada edición: alguna que no cabía ha entrado dos años después, o ha entrado de golpe porque apareció una sede nueva que le iba bien. Por eso merece la pena escribir aunque no haya ninguna convocatoria abierta.</p>
+<p class="ed-prose">Que no haya respuesta no significa que no nos haya gustado. Significa que ese año no encajó. Guardamos todas las propuestas y las volvemos a mirar cuando armamos cada edición: alguna que no cabía ha entrado dos años después, o ha entrado de golpe porque apareció una sede nueva que le iba bien. Por eso merece la pena escribir aunque no haya ninguna convocatoria abierta.</p>
 
-<p class="ed-prose">Y lo otro que te debo decir de entrada: esto es un festival pequeño con un presupuesto pequeño. No puedo pagar lo que paga un festival grande y prefiero que lo sepas antes de que pierdas el tiempo. Por eso te pido el caché en el primer correo: así los dos sabemos enseguida si hay margen para hablar.</p>
+<p class="ed-prose">Y lo otro que te debemos decir de entrada: esto es un festival pequeño con un presupuesto pequeño. No podemos pagar lo que paga un festival grande y preferimos que lo sepas antes de que pierdas el tiempo. Por eso te pedimos el caché en el primer correo: así los dos sabemos enseguida si hay margen para hablar.</p>
 
 </div>
 </section>
@@ -217,29 +217,29 @@ faq:
 <section class="ed-section">
 <div class="ed-wrap">
 <div class="ed-head">
-<h2>Otras cosas que me preguntáis</h2>
+<h2>Otras cosas que nos preguntáis</h2>
 </div>
 
 <div class="ed-twocol">
 
 <article class="ed-card">
 <h3>¿Hay plazo?</h3>
-<p>No. El programa de cada edición se cierra en invierno, así que si llega antes la puedo mirar con tiempo. Pero escribe cuando quieras.</p>
+<p>No. El programa de cada edición se cierra en invierno, así que si llega antes la podemos mirar con tiempo. Pero escribe cuando quieras.</p>
 </article>
 
 <article class="ed-card">
-<h3>¿En qué idioma te escribo?</h3>
-<p>Español, inglés o asturiano, el que te sea más cómodo. Solo te pido que el asunto vaya tal cual, también si escribes en inglés.</p>
+<h3>¿En qué idioma escribo?</h3>
+<p>Español, inglés o asturiano, el que te sea más cómodo. Solo te pedimos que el asunto vaya tal cual, también si escribes en inglés.</p>
 </article>
 
 <article class="ed-card">
 <h3>¿Hay que ser de aquí?</h3>
-<p>No. Viene gente de todas partes. Lo único: el viaje sale del mismo dinero que el caché, así que si venís de lejos dime si tenéis alguna ayuda de movilidad.</p>
+<p>No. Viene gente de todas partes. Lo único: el viaje sale del mismo dinero que el caché, así que si venís de lejos dinos si tenéis alguna ayuda de movilidad.</p>
 </article>
 
 <article class="ed-card">
-<h3>Ya te escribí el año pasado</h3>
-<p>Vuelve a escribirme, sobre todo si tienes grabaciones nuevas o un programa distinto. Con un correo corto recordándome lo anterior y lo que ha cambiado me vale.</p>
+<h3>Ya os escribí el año pasado</h3>
+<p>Vuelve a escribirnos, sobre todo si tienes grabaciones nuevas o un programa distinto. Con un correo corto recordándonos lo anterior y lo que ha cambiado nos vale.</p>
 </article>
 
 <article class="ed-card">
@@ -249,7 +249,7 @@ faq:
 
 <article class="ed-card">
 <h3>¿Programáis estrenos?</h3>
-<p>Sí, y me interesan. Dime de quién es la obra, si está terminada y si hay un encargo o alguna ayuda detrás.</p>
+<p>Sí, y nos interesan. Dinos de quién es la obra, si está terminada y si hay un encargo o alguna ayuda detrás.</p>
 </article>
 
 </div>
@@ -260,9 +260,9 @@ faq:
 <section class="ed-section">
 <div class="ed-wrap">
 
-<p class="ed-prose">Eso es todo. Si has llegado hasta aquí, escríbeme.</p>
+<p class="ed-prose">Eso es todo. Si has llegado hasta aquí, escríbenos.</p>
 
-<p class="rc-firma">Guillermo Laporta<br /><span>Festival ADAR · Leiguarda, Asturias</span></p>
+<p class="rc-firma">Festival ADAR<br /><span>Leiguarda · Belmonte de Miranda · Asturias</span></p>
 
 <p class="ed-prose"><a class="ed-btn rc-apply" href="mailto:leiguardamusic@gmail.com?subject=PROPUESTA%20ADAR%20%C2%B7%20%5Btu%20nombre%20o%20el%20del%20grupo%5D%20%C2%B7%20%5Bformaci%C3%B3n%5D">leiguardamusic@gmail.com →</a></p>
 
