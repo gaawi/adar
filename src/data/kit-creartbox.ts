@@ -818,7 +818,7 @@ Currents
 Friday 30 October · 7:30 pm
 The DiMenna Center, 450 W 37th Street
 
-Our twelfth New York season starts here. Tickets from $15, and the cheapest seats are still the same room as the expensive ones.
+Our twelfth New York season starts here. Student tickets are $15, and the cheapest seats are still the same room as the expensive ones.
 
 If you've been thinking about it, we'd love to see you.
 
