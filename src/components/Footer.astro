@@ -14,7 +14,10 @@ const copy = {
     contact: 'Contacto',
     propose: 'Enviar una propuesta artística',
     propose_href: '/es/propuestas-artisticas/',
-    funded: 'Con el apoyo de',
+    funded: 'Financiado por',
+    funded_note: 'Financiado por la Unión Europea e implementado por el Goethe-Institut.',
+    funded_link: 'Qué financia la Unión Europea',
+    funded_href: '/es/financiacion-europea/',
     partners: 'Red de colaboración',
     bill_copy: 'Copiar datos de facturación',
     bill_done: '¡Copiado!',
@@ -25,7 +28,10 @@ const copy = {
     contact: 'Contact',
     propose: 'Submit an artistic proposal',
     propose_href: '/en/submit-a-proposal/',
-    funded: 'With the support of',
+    funded: 'Funded by',
+    funded_note: 'Funded by the European Union and implemented by the Goethe-Institut.',
+    funded_link: 'What the European Union funds',
+    funded_href: '/en/european-funding/',
     partners: 'Network of partners',
     bill_copy: 'Copy billing details',
     bill_done: 'Copied!',
@@ -36,7 +42,10 @@ const copy = {
     contact: 'Contautu',
     propose: 'Unviar una propuesta artística',
     propose_href: '/ast/propuestes-artistiques/',
-    funded: 'Col sofitu de',
+    funded: 'Financiao por',
+    funded_note: 'Financiao pola Xunión Europea ya implementao pol Goethe-Institut.',
+    funded_link: 'Qué financia la Xunión Europea',
+    funded_href: '/ast/financiacion-europea/',
     partners: 'Rede de collaboración',
     bill_copy: 'Copiar datos de facturación',
     bill_done: '¡Copiao!',
@@ -64,9 +73,19 @@ const PARTNERS = [
   { name: 'Escuela Reina Sofía', logo: '/logos/reina-sofia.jpg', href: 'https://www.escuelasuperiordemusicareinasofia.es/' },
 ];
 
+// El emblema de la Unión Europea tiene reglas de uso: se reproduce en su
+// color, sobre fondo claro y sin deformarlo. Antes eran dos logotipos
+// sueltos pintados de blanco con un filtro, y la bandera salía como una
+// mancha sin estrellas. Ahora va el bloque oficial «Funded by the European
+// Union · Goethe-Institut» que manda Culture Moves Europe, tal cual, sobre
+// una banda clara.
 const FUNDERS = [
-  { name: 'European Commission', logo: '/logos/eu.png', href: 'https://european-union.europa.eu/' },
-  { name: 'Goethe-Institut', logo: '/logos/goethe.png', href: 'https://www.goethe.de/' },
+  {
+    name: 'Funded by the European Union · Goethe-Institut',
+    logo: '/logos/ue-goethe.webp',
+    href: 'https://culture.ec.europa.eu/calls/culture-moves-europe',
+    wide: true,
+  },
   { name: 'Principado de Asturias', logo: '/logos/asturias.png', href: 'https://www.asturias.es/' },
 ];
 ---
@@ -81,15 +100,20 @@ const FUNDERS = [
 
   <div class="adar-footer-logos">
     <div class="adar-footer-logos-row adar-footer-logos-funders">
+      <p class="adar-funders-label">{copy.funded}</p>
       <ul>
         {FUNDERS.map((f) => (
-          <li>
+          <li class={f.wide ? 'is-wide' : undefined}>
             <a href={f.href} target="_blank" rel="noopener" aria-label={f.name}>
               <img src={f.logo} alt={f.name} loading="lazy" />
             </a>
           </li>
         ))}
       </ul>
+      <p class="adar-funders-note">
+        {copy.funded_note}{' '}
+        <a href={copy.funded_href}>{copy.funded_link} →</a>
+      </p>
     </div>
     <div class="adar-footer-logos-row adar-footer-logos-partners">
       <ul>

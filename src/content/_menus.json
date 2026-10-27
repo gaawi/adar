@@ -296,6 +296,17 @@
    "object_type": "post_type",
    "object": "page",
    "object_id": "96101"
+  },
+  {
+   "title": "European funding",
+   "url": "/en/european-funding/",
+   "order": 7,
+   "parent_id": 13,
+   "item_id": 96201,
+   "classes": "",
+   "object_type": "post_type",
+   "object": "page",
+   "object_id": "96201"
   }
  ],
  "ast": [
@@ -584,6 +595,17 @@
    "object_type": "post_type",
    "object": "page",
    "object_id": "96102"
+  },
+  {
+   "title": "Financiación europea",
+   "url": "/ast/financiacion-europea/",
+   "order": 7,
+   "parent_id": 427,
+   "item_id": 96202,
+   "classes": "",
+   "object_type": "post_type",
+   "object": "page",
+   "object_id": "96202"
   }
  ],
  "es": [
@@ -883,6 +905,17 @@
    "object_type": "post_type",
    "object": "page",
    "object_id": "96100"
+  },
+  {
+   "title": "Financiación europea",
+   "url": "/es/financiacion-europea/",
+   "order": 7,
+   "parent_id": 428,
+   "item_id": 96200,
+   "classes": "",
+   "object_type": "post_type",
+   "object": "page",
+   "object_id": "96200"
   }
  ]
 }
