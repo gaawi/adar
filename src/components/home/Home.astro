@@ -403,19 +403,6 @@ const COPY = {
   },
 }[lang];
 
-// Acreditación institucional dentro de la portada: tiene que verse en la
-// primera pantalla, sin bajar. Van en color y sobre banda clara porque ni el
-// escudo del Estado ni el emblema de la Unión Europea se pueden teñir, y ese
-// es justo el motivo por el que antes se veían mal.
-// `h` es el alto de cada una: igualadas a ojo, que es lo que importa, no a
-// regla. El bloque del Ministerio lleva mucho aire dentro del recuadro.
-const APOYOS = [
-  { name: 'Funded by the European Union · Goethe-Institut', logo: '/logos/ue-goethe.webp', href: 'https://culture.ec.europa.eu/calls/culture-moves-europe', h: 26 },
-  { name: 'Gobierno de España · Ministerio de Cultura', logo: '/logos/ministerio-cultura.svg', href: 'https://www.cultura.gob.es/', h: 36 },
-  { name: 'Principado de Asturias', logo: '/logos/asturias.png', href: 'https://www.asturias.es/', h: 30 },
-  { name: 'Caja Rural de Asturias', logo: '/logos/caja-rural.jpg', href: 'https://www.cajaruraldeasturias.com/', h: 28 },
-];
-
 const F26 = 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026';
 
 // ── Portada ─────────────────────────────────────────────────────────────
@@ -881,20 +868,6 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
 
     {/* La banda de abajo va con la foto: dice qué se está viendo y lleva a
         esa acción. Los tramos hacen de barra de avance y de navegación. */}
-    {/* Logotipos en la primera pantalla. Banda clara y estrecha: lo justo
-        para que se lean sin comerse la portada. */}
-    <div class="hm-apoyos">
-      <ul class="hm-apoyos-lista">
-        {APOYOS.map((f) => (
-          <li style={`--marca-h:${f.h}px`}>
-            <a href={f.href} target="_blank" rel="noopener" aria-label={f.name}>
-              <img src={f.logo} alt={f.name} />
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-
     <div class="hm-rail">
       <div class="hm-rail-in">
         <div class="hm-rail-caps">
