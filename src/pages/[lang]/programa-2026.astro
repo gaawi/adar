@@ -21,6 +21,7 @@ const COPY = {
     title: 'ADAR VI · 2026',
     topbar: 'FESTIVAL ADAR · EDICIÓN VI · 4—16 AGO 2026 · ASTURIES / ES · ENTRADA LIBRE · RESERVA EN EVENTBRITE',
     poster_kicker: 'Edición VI · 4 — 16 agosto 2026',
+    apoyo_rotulo: 'Con el apoyo de',
     hero_h: 'Festival ADAR 2026',
     hero_tag: 'Festival para el desarrollo de las artes en el medio rural.',
     poster_dates: '4 → 16',
@@ -110,6 +111,7 @@ const COPY = {
     title: 'ADAR VI · 2026',
     topbar: 'FESTIVAL ADAR · EDITION VI · 4—16 AUG 2026 · ASTURIAS / ES · FREE ENTRY · RSVP ON EVENTBRITE',
     poster_kicker: 'Edition VI · 4 — 16 August 2026',
+    apoyo_rotulo: 'With the support of',
     hero_h: 'Festival ADAR 2026',
     hero_tag: 'A festival for the development of the arts in rural areas.',
     poster_dates: '4 → 16',
@@ -199,6 +201,7 @@ const COPY = {
     title: 'ADAR VI · 2026',
     topbar: 'FESTIVAL ADAR · EDICIÓN VI · 4—16 AGO 2026 · ASTURIES / ES · ENTRADA LLIBRE · RESERVA N’EVENTBRITE',
     poster_kicker: 'Edición VI · 4 — 16 d’agostu 2026',
+    apoyo_rotulo: 'Col sofitu de',
     hero_h: 'Festival ADAR 2026',
     hero_tag: 'Festival pal desarrollu de les artes nel mediu rural.',
     poster_dates: '4 → 16',
@@ -912,6 +915,36 @@ const POSTER_BG = '/posters/adar-2026.png';
           </a>
         </div>
       </div>
+    </div>
+  </section>
+
+  {/* Acreditación institucional. Va arriba, bajo el cartel, porque esta
+      página es el material de difusión del festival y la Resolución exige
+      que el logotipo del Principado, el del Ministerio y el texto literal
+      vayan en él. Sobre banda clara: los tres son marcas en color y sobre
+      el fondo oscuro habría que filtrarlas, que es justo lo que las
+      estropea. */}
+  <section class="vi26-apoyos" aria-label={COPY.apoyo_rotulo}>
+    <div class="vi26-apoyos-in">
+      <p class="vi26-apoyos-rot mono">{COPY.apoyo_rotulo}</p>
+      <ul class="vi26-apoyos-marcas">
+        <li style="--marca-h:66px">
+          <a href="https://www.cultura.gob.es/" target="_blank" rel="noopener" aria-label="Gobierno de España · Ministerio de Cultura">
+            <img src="/logos/ministerio-cultura.svg" alt="Gobierno de España · Ministerio de Cultura" width="229" height="77" />
+          </a>
+        </li>
+        <li style="--marca-h:54px">
+          <a href="https://www.asturias.es/" target="_blank" rel="noopener" aria-label="Principado de Asturias">
+            <img src="/logos/asturias.png" alt="Principado de Asturias" width="422" height="174" />
+          </a>
+        </li>
+        <li style="--marca-h:52px">
+          <a href="https://www.cajaruraldeasturias.com/" target="_blank" rel="noopener" aria-label="Caja Rural de Asturias">
+            <img src="/logos/caja-rural.jpg" alt="Caja Rural de Asturias" width="350" height="100" />
+          </a>
+        </li>
+      </ul>
+      <p class="vi26-apoyos-nota">Actividad subvencionada por el Gobierno del Principado de Asturias.</p>
     </div>
   </section>
 

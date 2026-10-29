@@ -4817,7 +4817,7 @@ body.home article.page { margin: 0 !important; }
   color: var(--paper);
   overflow: hidden;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto auto;
   /* Lo que tardan las fotos: el fundido y lo que aguanta cada una. En un
      sitio para que se pueda cambiar de una vez, y el script las lee de
      aquí para no tener dos verdades. */
@@ -4831,7 +4831,41 @@ body.home article.page { margin: 0 !important; }
 body.page .entry-content > div > section.hm-hero { padding: 0; }
 .hm-hero-meta { grid-row: 1; }
 .hm-hero-body { grid-row: 2; }
-.hm-rail      { grid-row: 3; }
+.hm-apoyos    { grid-row: 3; }
+.hm-rail      { grid-row: 4; }
+
+/* ── Portada · acreditación institucional ───────────────────────────────
+   Banda clara y estrecha dentro de la portada, encima del pie de la foto.
+   Clara a propósito: el emblema de la Unión Europea y el escudo del Estado
+   se reproducen en su color sobre fondo claro, nunca teñidos de blanco. */
+.hm-apoyos {
+  background: var(--paper, #F2EFE8);
+  border-top: 1px solid rgba(10, 9, 7, 0.1);
+}
+.hm-apoyos-lista {
+  list-style: none;
+  margin: 0 auto;
+  padding: 9px 40px;
+  max-width: 1600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 28px;
+}
+.hm-apoyos-lista > li { display: inline-flex; align-items: center; }
+.hm-apoyos-lista img {
+  display: block;
+  height: var(--marca-h, 28px);
+  width: auto;
+  max-width: 100%;
+  opacity: .92;
+  transition: opacity .2s ease;
+}
+.hm-apoyos-lista a:hover img { opacity: 1; }
+@media (max-width: 860px) {
+  .hm-apoyos-lista { padding: 7px 20px; gap: 6px 18px; }
+  .hm-apoyos-lista img { height: calc(var(--marca-h, 28px) * 0.76); }
+}
 .hm-hero-img {
   position: absolute;
   inset: 0;
@@ -6318,7 +6352,10 @@ body.home .adar-footer-cta { display: none !important; }
   transition: opacity 0.2s ease;
 }
 .adar-footer-logos-row > ul img[src$=".jpg"],
-.adar-footer-logos-row > ul img[src$=".jpeg"] { filter: none; opacity: 1; }
+.adar-footer-logos-row > ul img[src$=".jpeg"],
+/* Los vectores ya vienen en su versión para fondo oscuro: teñirlos de
+   blanco les borraría el color que llevan a propósito. */
+.adar-footer-logos-row > ul img[src$=".svg"] { filter: none; opacity: 1; }
 .adar-footer-logos-row > ul > li > a:hover img { opacity: 1; }
 
 /* ── Financiadores: banda clara ─────────────────────────────────────────
@@ -14714,3 +14751,59 @@ body.page .entry-content .rc-callout-date{
   text-transform: uppercase; margin: 0 0 20px;
 }
 body.page .entry-content .rc-callout .ed-btn{ background: var(--ink); }
+
+/* ── Programa 2026 · acreditación institucional ─────────────────────────
+   Banda clara bajo el cartel. En color y sin filtros: el escudo del Estado
+   y el del Principado no se pueden teñir de blanco, y el de Caja Rural
+   tampoco. Cada marca lleva su alto en --marca-h, igualadas a ojo porque el
+   bloque del Ministerio lleva mucho aire dentro del recuadro. */
+.vi26-apoyos {
+  background: var(--paper, #F2EFE8);
+  border-bottom: 1px solid var(--line, rgba(10, 9, 7, 0.14));
+}
+.vi26-apoyos-in {
+  max-width: var(--container-width, 1200px);
+  margin: 0 auto;
+  padding: 26px clamp(20px, 4vw, 40px) 22px;
+}
+.vi26-apoyos-rot {
+  margin: 0 0 16px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted, #6F6962);
+}
+.vi26-apoyos-marcas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px 40px;
+}
+.vi26-apoyos-marcas > li { display: inline-flex; align-items: center; }
+.vi26-apoyos-marcas img {
+  display: block;
+  height: var(--marca-h, 52px);
+  width: auto;
+  max-width: 100%;
+}
+.vi26-apoyos-nota {
+  margin: 18px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--ink-soft, #3E3A36);
+}
+@media (max-width: 720px) {
+  .vi26-apoyos-in { padding: 20px 20px 18px; }
+  .vi26-apoyos-marcas { gap: 18px 26px; }
+  .vi26-apoyos-marcas img { height: calc(var(--marca-h, 52px) * 0.68); }
+}
+/* En móvil, `.vi26` es columna flex y `.vi26-venues` lleva `order: -1` para
+   que la programación vaya lo primero. Sin tocar nada, la banda se iba
+   detrás del listado entero: 24.000px abajo. Con -2 queda arriba del todo,
+   que es donde se pide que esté en el material de difusión. */
+@media (max-width: 900px) {
+  .vi26-apoyos { order: -2; }
+}
