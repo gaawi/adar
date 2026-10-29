@@ -39,7 +39,7 @@ translation_group: "adar_financiacion_europea"
 
 <div class="adar-funding-logos">
 <img class="es-ancho" src="/logos/ue-goethe.webp" alt="Financiao pola Xunión Europea · Goethe-Institut" />
-<img class="es-ministerio" src="/logos/ministerio-cultura.svg" alt="Gobiernu d’España · Ministeriu de Cultura" />
+<img class="es-ministerio" src="/logos/ministerio-cultura.png" alt="Gobiernu d’España · Ministeriu de Cultura" />
 <img src="/logos/asturias.png" alt="Principáu d’Asturies" />
 <img src="/logos/caja-rural.jpg" alt="Caja Rural de Asturias" />
 </div>

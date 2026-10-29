@@ -14560,12 +14560,12 @@ body.page .entry-content .adar-res-call .adar-funding-logos img {
   height: 50px; width: auto; max-width: 100%; display: block;
 }
 body.page .entry-content .adar-res-call .adar-funding-logos img.es-ancho { height: 46px; }
-body.page .entry-content .adar-res-call .adar-funding-logos img.es-ministerio { height: 62px; }
+body.page .entry-content .adar-res-call .adar-funding-logos img.es-ministerio { height: 46px; }
 @media (max-width: 720px) {
   body.page .entry-content .adar-res-call .adar-funding-logos { padding: 18px 16px; gap: 18px 22px; }
   body.page .entry-content .adar-res-call .adar-funding-logos img { height: 36px; }
   body.page .entry-content .adar-res-call .adar-funding-logos img.es-ancho { height: 32px; }
-  body.page .entry-content .adar-res-call .adar-funding-logos img.es-ministerio { height: 44px; }
+  body.page .entry-content .adar-res-call .adar-funding-logos img.es-ministerio { height: 33px; }
 }
 /* La firma del final: es una carta, así que se firma. */
 body.page .entry-content .adar-res-call .rc-firma {
