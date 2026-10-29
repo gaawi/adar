@@ -37,9 +37,14 @@ translation_group: "adar_financiacion_europea"
 
 <p class="ed-prose">The project is a twenty-one-day stay in Leiguarda, in the municipality of Belmonte de Miranda, for a group of five artists and cultural professionals living in other European countries. The implementation period runs until 7 June 2027.</p>
 
-<figure class="rc-wide adar-funding-logos">
-<img src="/logos/ue-goethe.webp" alt="Funded by the European Union · Goethe-Institut" width="2000" height="330" />
-</figure>
+<div class="adar-funding-logos">
+<img class="es-ancho" src="/logos/ue-goethe.webp" alt="Funded by the European Union · Goethe-Institut" />
+<img class="es-ministerio" src="/logos/ministerio-cultura.svg" alt="Government of Spain · Ministry of Culture" />
+<img src="/logos/asturias.png" alt="Principality of Asturias" />
+<img src="/logos/caja-rural.jpg" alt="Caja Rural de Asturias" />
+</div>
+
+<p class="ed-prose"><strong>Actividad subvencionada por el Gobierno del Principado de Asturias.</strong> Festival ADAR is also supported by the Ministry of Culture of the Government of Spain and by Caja Rural de Asturias.</p>
 
 </div>
 </section>

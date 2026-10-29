@@ -18,6 +18,7 @@ const copy = {
     funded_note: 'Financiado por la Unión Europea e implementado por el Goethe-Institut.',
     funded_link: 'Qué financia la Unión Europea',
     funded_href: '/es/financiacion-europea/',
+    funded_asturias: 'Actividad subvencionada por el Gobierno del Principado de Asturias.',
     partners: 'Red de colaboración',
     bill_copy: 'Copiar datos de facturación',
     bill_done: '¡Copiado!',
@@ -32,6 +33,7 @@ const copy = {
     funded_note: 'Funded by the European Union and implemented by the Goethe-Institut.',
     funded_link: 'What the European Union funds',
     funded_href: '/en/european-funding/',
+    funded_asturias: 'Actividad subvencionada por el Gobierno del Principado de Asturias.',
     partners: 'Network of partners',
     bill_copy: 'Copy billing details',
     bill_done: 'Copied!',
@@ -46,6 +48,7 @@ const copy = {
     funded_note: 'Financiao pola Xunión Europea ya implementao pol Goethe-Institut.',
     funded_link: 'Qué financia la Xunión Europea',
     funded_href: '/ast/financiacion-europea/',
+    funded_asturias: 'Actividad subvencionada por el Gobierno del Principado de Asturias.',
     partners: 'Rede de collaboración',
     bill_copy: 'Copiar datos de facturación',
     bill_done: '¡Copiao!',
@@ -69,7 +72,6 @@ const PARTNERS = [
   { name: 'Asociación Musical Diego Silva Montero', logo: '/logos/diego-silva.jpg', href: '#' },
   { name: 'Ballarte Festival', logo: '/logos/ballarte.png', href: 'https://ballartefestival.benasque.com/' },
   { name: 'Paradores', logo: '/logos/paradores.jpg', href: 'https://paradores.es/' },
-  { name: 'Caja Rural de Asturias', logo: '/logos/caja-rural.jpg', href: 'https://www.cajaruraldeasturias.com/' },
   { name: 'Escuela Reina Sofía', logo: '/logos/reina-sofia.jpg', href: 'https://www.escuelasuperiordemusicareinasofia.es/' },
 ];
 
@@ -79,14 +81,25 @@ const PARTNERS = [
 // mancha sin estrellas. Ahora va el bloque oficial «Funded by the European
 // Union · Goethe-Institut» que manda Culture Moves Europe, tal cual, sobre
 // una banda clara.
+// `h` es el alto de cada marca. No vale uno común: el bloque del Ministerio
+// lleva mucho aire dentro de su recuadro y, a la misma altura que el resto,
+// «MINISTERIO DE CULTURA» no se lee. Las cifras están igualadas a ojo para
+// que las cuatro pesen lo mismo, no para que midan lo mismo.
 const FUNDERS = [
   {
     name: 'Funded by the European Union · Goethe-Institut',
     logo: '/logos/ue-goethe.webp',
     href: 'https://culture.ec.europa.eu/calls/culture-moves-europe',
-    wide: true,
+    h: 48,
   },
-  { name: 'Principado de Asturias', logo: '/logos/asturias.png', href: 'https://www.asturias.es/' },
+  {
+    name: 'Gobierno de España · Ministerio de Cultura',
+    logo: '/logos/ministerio-cultura.svg',
+    href: 'https://www.cultura.gob.es/',
+    h: 66,
+  },
+  { name: 'Principado de Asturias', logo: '/logos/asturias.png', href: 'https://www.asturias.es/', h: 54 },
+  { name: 'Caja Rural de Asturias', logo: '/logos/caja-rural.jpg', href: 'https://www.cajaruraldeasturias.com/', h: 52 },
 ];
 ---
 
@@ -103,7 +116,7 @@ const FUNDERS = [
       <p class="adar-funders-label">{copy.funded}</p>
       <ul>
         {FUNDERS.map((f) => (
-          <li class={f.wide ? 'is-wide' : undefined}>
+          <li style={`--marca-h:${f.h}px`}>
             <a href={f.href} target="_blank" rel="noopener" aria-label={f.name}>
               <img src={f.logo} alt={f.name} loading="lazy" />
             </a>
@@ -111,7 +124,7 @@ const FUNDERS = [
         ))}
       </ul>
       <p class="adar-funders-note">
-        {copy.funded_note}{' '}
+        {copy.funded_asturias}{' '}{copy.funded_note}{' '}
         <a href={copy.funded_href}>{copy.funded_link} →</a>
       </p>
     </div>

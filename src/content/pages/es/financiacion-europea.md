@@ -39,9 +39,14 @@ translation_group: "adar_financiacion_europea"
 
 <p class="ed-prose">El proyecto consiste en una estancia de veintiún días en Leiguarda, en el concejo de Belmonte de Miranda, para un grupo de cinco artistas y profesionales de la cultura residentes en otros países europeos. El periodo de ejecución se extiende hasta el 7 de junio de 2027.</p>
 
-<figure class="rc-wide adar-funding-logos">
-<img src="/logos/ue-goethe.webp" alt="Financiado por la Unión Europea · Goethe-Institut" width="2000" height="330" />
-</figure>
+<div class="adar-funding-logos">
+<img class="es-ancho" src="/logos/ue-goethe.webp" alt="Financiado por la Unión Europea · Goethe-Institut" />
+<img class="es-ministerio" src="/logos/ministerio-cultura.svg" alt="Gobierno de España · Ministerio de Cultura" />
+<img src="/logos/asturias.png" alt="Principado de Asturias" />
+<img src="/logos/caja-rural.jpg" alt="Caja Rural de Asturias" />
+</div>
+
+<p class="ed-prose"><strong>Actividad subvencionada por el Gobierno del Principado de Asturias.</strong> El Festival ADAR cuenta también con el apoyo del Ministerio de Cultura del Gobierno de España y de Caja Rural de Asturias.</p>
 
 </div>
 </section>

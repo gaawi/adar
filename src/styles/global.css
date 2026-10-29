@@ -6327,8 +6327,16 @@ body.home .adar-footer-cta { display: none !important; }
    resto de logotipos del pie, la bandera se quedaba en una mancha sin
    estrellas: ni se leía ni cumplía. Así que esta fila sale del fondo oscuro
    y se pone sobre papel, con los logotipos tal cual vienen. */
-.adar-footer-logos-funders {
-  display: block;
+/* Doble clase: `.adar-footer-logos-row` también declara display y, en empate
+   de especificidad, ganaba ella. Con flex el rótulo se ponía al lado de los
+   logotipos, la fila se iba hasta los 1.234px y el último quedaba debajo del
+   banner fijo de «Hazte amigo». En bloque, el rótulo va encima y la fila
+   termina mucho antes. */
+.adar-footer-logos-row.adar-footer-logos-funders {
+  /* El !important es obligado: `.adar-footer-logos-row` ya declara
+     `display: flex !important`, y a un !important solo se le gana con otro.
+     Comprobado con CSS.getMatchedStylesForNode, no a ojo. */
+  display: block !important;
   background: var(--paper, #F2EFE8);
   color: var(--ink, #15171a);
   border-radius: 10px;
@@ -6336,15 +6344,19 @@ body.home .adar-footer-cta { display: none !important; }
   border-top: 0;
 }
 .adar-footer-logos-funders > ul { gap: 20px 40px; align-items: center; }
-/* Sin filtro y sin recorte de ancho: el bloque oficial es apaisado. */
+/* Sin filtro y sin recorte de ancho: los bloques oficiales son apaisados.
+   Cada marca lleva su alto en --marca-h, puesto desde el pie. */
 .adar-footer-logos-funders > ul img {
-  height: 52px;
+  height: var(--marca-h, 52px);
   max-width: none;
   filter: none;
   opacity: 1;
 }
 .adar-footer-logos-funders > ul > li > a { height: auto; }
-.adar-footer-logos-funders > ul > li.is-wide img { height: 46px; }
+/* Cuatro marcas en una fila: que respiren y que ninguna quede diminuta al
+   lado del bloque apaisado de la Unión Europea. */
+.adar-footer-logos-funders > ul { row-gap: 24px; }
+.adar-footer-logos-funders > ul > li { flex: 0 0 auto; }
 .adar-funders-label {
   margin: 0 0 14px;
   font-family: var(--font-mono);
@@ -6364,8 +6376,14 @@ body.home .adar-footer-cta { display: none !important; }
 @media (max-width: 720px) {
   .adar-footer-logos-funders { padding: 18px 16px 16px; }
   .adar-footer-logos-funders > ul { gap: 18px 24px; }
-  .adar-footer-logos-funders > ul img { height: 40px; }
-  .adar-footer-logos-funders > ul > li.is-wide img { height: 34px; }
+  /* En el móvil, todo a dos tercios, manteniendo la proporción entre marcas.
+     Doble clase para ganarle a la regla general de la fila, que más abajo
+     fija 36px y recorta el ancho a 130: los bloques oficiales son apaisados
+     y ahí se quedaban en nada. */
+  .adar-footer-logos-row.adar-footer-logos-funders > ul img {
+    height: calc(var(--marca-h, 52px) * 0.68);
+    max-width: none;
+  }
 }
 
 @media (max-width: 720px) {
@@ -14530,10 +14548,21 @@ body.page .entry-content .adar-res-call .ed-prose + .ed-prose { margin-top: 1.1e
    papel, que es como se reproduce el emblema de la Unión Europea. */
 body.page .entry-content .adar-res-call .adar-funding-logos {
   background: #fff; border: 1px solid var(--line, rgba(10,9,7,.14));
-  border-radius: 12px; padding: 26px 28px; margin: 32px 0 0; max-width: 46rem;
+  border-radius: 12px; padding: 26px 28px; margin: 32px 0 24px; max-width: 46rem;
+  display: flex; flex-wrap: wrap; align-items: center; gap: 24px 34px;
 }
+/* Cada marca con su alto: igualadas a ojo, no a regla. El bloque del
+   Ministerio lleva mucho aire dentro del recuadro y necesita más. */
 body.page .entry-content .adar-res-call .adar-funding-logos img {
-  width: 100%; height: auto; display: block;
+  height: 50px; width: auto; max-width: 100%; display: block;
+}
+body.page .entry-content .adar-res-call .adar-funding-logos img.es-ancho { height: 46px; }
+body.page .entry-content .adar-res-call .adar-funding-logos img.es-ministerio { height: 62px; }
+@media (max-width: 720px) {
+  body.page .entry-content .adar-res-call .adar-funding-logos { padding: 18px 16px; gap: 18px 22px; }
+  body.page .entry-content .adar-res-call .adar-funding-logos img { height: 36px; }
+  body.page .entry-content .adar-res-call .adar-funding-logos img.es-ancho { height: 32px; }
+  body.page .entry-content .adar-res-call .adar-funding-logos img.es-ministerio { height: 44px; }
 }
 /* La firma del final: es una carta, así que se firma. */
 body.page .entry-content .adar-res-call .rc-firma {
