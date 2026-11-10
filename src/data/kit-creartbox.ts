@@ -327,6 +327,8 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/petroushka-1911-partitura.jpg",
     // La partitura clara no se lee como historia: ahí va en duo (panel ámbar con el titular).
     estilos: { story: 'duo' },
+    // Las historias no llevan texto: la fecha, el sitio y dónde comprar van en pegatinas.
+    pegatinas: [{ texto: 'Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
     status: 'publish',
     date: "2026-11-17",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
@@ -394,6 +396,8 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     title: "2 for 1 tickets: a gift for two this Christmas",
     excerpt: "A gift for two this Christmas",
     image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0627_1.jpg",
+    // Las historias no llevan texto: la fecha, el sitio y dónde comprar van en pegatinas.
+    pegatinas: [{ texto: 'Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
     status: 'publish',
     date: "2026-11-27",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
@@ -460,6 +464,8 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/dore-belle-1-camino.jpg",
     // Carrusel: la portada dibujada sobre Doré y dos láminas más de La bella durmiente.
     fotos: ['https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/en-winterlight-ravel-ig-1.jpg', 'https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/dore-belle-2-corte.jpg', 'https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/dore-belle-3-despertar.jpg'],
+    // Las historias no llevan texto: la fecha, el sitio y dónde comprar van en pegatinas.
+    pegatinas: [{ texto: 'Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
     status: 'publish',
     date: "2026-11-19",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
