@@ -389,6 +389,8 @@ export interface KitSource {
    * lo que pasó. Cuando están, el carrusel son ellas.
    */
   fotos?: string[];
+  /** Las fotos van enteras, con su proporción, sin recortar a 4:5. */
+  fotosEnteras?: boolean;
   /** Antetítulo del panel ámbar del estilo «duo». P. ej. «Did you know?». */
   kicker?: string;
   /**

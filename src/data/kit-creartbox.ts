@@ -1074,11 +1074,11 @@ Tickets in bio.
     estilo: 'limpia',
     title: 'Thank you for coming to Currents',
     excerpt: 'Photographs from Currents, 30 October 2026, at The DiMenna Center.',
-    // Fotos del archivo del concierto (creartbox.nyc/archive/currents-2026-10.html):
-    // la sala con el vídeo, Emilie-Anne, Julia y Josefina, Matthew, Josefina, la
-    // proyección en espiral y el saludo final.
-    image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0603.jpg",
-    fotos: ["https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0603.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0535.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_MG_0426.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_MG_0474.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0469.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0635.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_MG_0661.jpg"],
+    // Las tres que eligió Guillermo, enteras: son 3:2 apaisadas y no se
+    // recortan. Instagram admite apaisado hasta 1,91:1.
+    image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0589.jpg",
+    fotos: ["https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0589.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0602.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0635.jpg"],
+    fotosEnteras: true,
     status: 'publish',
     date: '2026-11-12',
     url: 'https://creartbox.nyc/archive/currents-2026-10.html',
