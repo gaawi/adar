@@ -346,12 +346,13 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     title: "Winterlight early bird: $19 until November 11",
     excerpt: "Early bird tickets for Winterlight",
     image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0606.jpg",
+    pegatinas: [{ texto: 'Ends tomorrow' }, { texto: '$19 · Dec 11' }, { texto: 'Tickets in bio', senal: true }],
     status: 'publish',
     date: "2026-11-10",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ["Winterlight"],
     // Precio y fin que mandó Guillermo el 10 nov (Eventbrite: «Early Bird (Ends Nov 11) $19.00»).
-    pie: "Early bird tickets for Winterlight end Wednesday, November 11. ❄️\n\n$19 for an evening of Stravinsky's Petroushka, Ravel's Mother Goose, Oliver Caplan's Canciones de Monteverde and a world premiere by Hannah Selin.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #NYCConcerts #ChamberMusic",
+    pie: "Last chance: early bird tickets for Winterlight end tomorrow, Wednesday, November 11. ❄️\n\n$19 for an evening of Stravinsky's Petroushka, Ravel's Mother Goose, Oliver Caplan's Canciones de Monteverde and a world premiere by Hannah Selin.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #NYCConcerts #ChamberMusic",
     body: "Early bird tickets for Winterlight",
   },
   {
