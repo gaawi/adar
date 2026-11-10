@@ -320,16 +320,15 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     slug: "winterlight-petroushka",
     porque: 'Petroushka es la pieza que vende el concierto. A tres semanas y media toca contar por qué merece la pena venir.',
     kind: 'social',
-    estilo: "limpia",
+    estilo: "cinta",
     title: "Petroushka, for five",
     excerpt: "Petroushka, for five",
-    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-cuadrado.jpg",
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/petroushka-1911-partitura.jpg",
     status: 'publish',
     date: "2026-11-17",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ["Winterlight"],
-    falta: 'Foto distinta del cartel. Propuesta: el telón de Alexandre Benois para el estreno de 1911 o Nijinsky como Petrushka (dominio público, en Wikimedia Commons). O sube tú una en Editar.',
-    pie: "Petroushka was written for a full orchestra and a ballet company. On December 11 we're playing it with five of us. 🎭\n\nStravinsky's ballet premiered in Paris in 1911 with the Ballets Russes. It's set at a Shrovetide fair in Russia, where three puppets come to life in a story of love, jealousy and tragedy.\n\nOur chamber arrangement runs about 40 minutes, with projections alongside it, and it closes the evening.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #Petroushka #Stravinsky",
+    pie: "Petroushka was written for a full orchestra and a ballet company. On December 11 we're playing it with five of us. 🎭\n\nStravinsky's ballet premiered in Paris in 1911 with the Ballets Russes. It's set at a Shrovetide fair in Russia, where three puppets come to life in a story of love, jealousy and tragedy.\n\nOur chamber arrangement runs about 40 minutes, with projections alongside it, and it closes the evening.\n\n(The image is the first page of the score Stravinsky published in 1911.)\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #Petroushka #Stravinsky",
     body: "Petroushka, for five",
   },
   {
@@ -354,18 +353,17 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     slug: "winterlight-caplan",
     porque: 'Junta las dos cosas que estamos promocionando: el concierto y la Open Call. Enseña que de la convocatoria sale música que se toca de verdad.',
     kind: 'social',
-    estilo: "cartel",
+    estilo: "cinta",
     kicker: 'From our open call',
     cartel: { lineas: ['Canciones de Monteverde', 'Flute and string trio · 12 minutes', 'Winterlight · December 11'] },
     title: "From our open call: Oliver Caplan",
     excerpt: "From our open call: Oliver Caplan",
-    image: "",
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/oliver-caplan.jpg",
     status: 'publish',
     date: "2026-11-24",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ["Winterlight"],
-    falta: "Una frase tuya sobre la obra, y si hay foto de Oliver Caplan mejor que el cartel tipográfico.",
-    pie: "One of the pieces at Winterlight came to us through our International Call for Scores.\n\nOliver Caplan's Canciones de Monteverde is for flute, violin, viola and cello, about 12 minutes long, and we play it on December 11 at The DiMenna Center.\n\n[UNA FRASE DE GUILLERMO SOBRE LA OBRA: qué le llamó la atención al leerla]\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #OpenCall #NewMusic",
+    pie: "One of the pieces at Winterlight came to us through our Open Call.\n\nOliver Caplan's Canciones de Monteverde is for flute, violin, viola and cello, about 12 minutes long, and we play it on December 11 at The DiMenna Center.\n\nMonteverde is the cloud forest in Costa Rica, and Caplan's music often starts from the natural world.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #OpenCall #NewMusic",
     body: "From our open call: Oliver Caplan",
   },
   {
@@ -381,7 +379,6 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     date: "2026-11-27",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ["Winterlight"],
-    falta: "Confirma cómo funciona el 2x1 (código, tipo de entrada, hasta qué día) para ponerlo exacto.",
     pie: "Looking for a gift for someone who loves music? 🎁\n\nFor Winterlight, tickets are 2 for 1: bring someone with you on December 11, or give them both.\n\nPetroushka, Ravel's Mother Goose and a world premiere, at The DiMenna Center in Midtown, a couple of weeks before Christmas.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #HolidayGift #NYCConcerts",
     body: "A gift for two this Christmas",
   },
@@ -438,16 +435,17 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     slug: "winterlight-ravel",
     porque: 'Las proyecciones con ilustraciones antiguas de los cuentos son lo más visual de la noche, y eso en Instagram funciona.',
     kind: 'social',
-    estilo: 'limpia',
+    estilo: 'cinta',
     title: "Ravel, Mother Goose",
     excerpt: "Ravel, Mother Goose",
-    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-cuadrado.jpg",
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/dore-belle-1-camino.jpg",
+    // Carrusel: la portada dibujada sobre Doré y dos láminas más de La bella durmiente.
+    fotos: ['https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/en-winterlight-ravel-ig-1.jpg', 'https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/dore-belle-2-corte.jpg', 'https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/dore-belle-3-despertar.jpg'],
     status: 'publish',
     date: "2026-11-19",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ['Winterlight'],
-    falta: 'Foto distinta del cartel. Propuesta: una ilustración de Gustave Doré para los cuentos de Perrault (1867), que es justo lo que se proyecta en el concierto (dominio público). O sube tú una en Editar.',
-    pie: "Sleeping Beauty, Tom Thumb, Beauty and the Beast.\n\nRavel wrote Ma Mère l'Oye (Mother Goose) for piano four hands between 1908 and 1910, five little pieces built on old French fairy tales.\n\nWhen we play it at Winterlight, the projections behind us come from illustrations in historical editions of those same stories.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #Ravel #NYCConcerts",
+    pie: "Sleeping Beauty, Tom Thumb, Beauty and the Beast.\n\nRavel wrote Ma Mère l'Oye (Mother Goose) for piano four hands between 1908 and 1910, five little pieces built on old French fairy tales.\n\nWhen we play it at Winterlight, the projections behind us come from illustrations in historical editions of those same stories. The engravings here are Gustave Doré's, for Perrault's Sleeping Beauty.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #Ravel #NYCConcerts",
     body: "Ravel, Mother Goose",
   },
   {
@@ -1088,10 +1086,10 @@ Tickets in bio.
     estilo: 'limpia',
     title: 'Thank you for coming to Currents',
     excerpt: 'Photographs from Currents, 30 October 2026, at The DiMenna Center.',
-    // Las tres que eligió Guillermo, enteras: son 3:2 apaisadas y no se
+    // Las tres que eligió Guillermo primero y doce más del archivo, enteras: son 3:2 apaisadas y no se
     // recortan. Instagram admite apaisado hasta 1,91:1.
     image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0589.jpg",
-    fotos: ["https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0589.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0602.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0635.jpg"],
+    fotos: ["https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0589.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0602.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0635.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0603.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0634.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0466.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0534.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0549.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0550.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0612.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0656.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0670.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_MG_0426.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_MG_0473.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_MG_0660.jpg"],
     fotosEnteras: true,
     status: 'publish',
     date: '2026-11-12',
@@ -1275,25 +1273,22 @@ Going through the submissions takes forever, and every year it turns up composer
     slug: 'libraries-queens',
     porque: 'Enseña lo que hacemos fuera de la sala, sin entrada. Equilibra tanto post de venta.',
     kind: 'social',
-    estilo: 'limpia',
+    estilo: 'cartel',
+    kicker: 'Culture Pass',
+    cartel: { lineas: ['Queens Public Library', 'Leonard Library · Brooklyn', 'Messiaen · Bach · van der Aa'] },
     title: 'Music where you do not need a ticket',
     excerpt:
       'Alongside the ticketed concerts we work with public libraries, schools and community ' +
       'institutions, and run subsidised tickets through the NYC Culture Pass and Queens Public Library.',
-    image: ARCHIVO + '20251004_LNB_MUSICA_DE_CRISTAL_IVAN_MARTINEZ_7557.jpg',
+    image: '',
     status: 'publish',
     date: '2026-11-12',
     url: 'https://creartbox.nyc/projects.html',
     cta: 'More at creartbox.nyc ↗',
-    falta:
-      'El plan decía «hemos tocado en varias sucursales de Queens» y «estamos cerrando fechas». Lo ' +
-      'que la web documenta es el programa de bibliotecas y colegios y las entradas subvencionadas ' +
-      'con la Queens Public Library, así que lo he escrito así. Si hay fechas cerradas, dímelas y ' +
-      'lo concreto. Y la foto pide una de biblioteca de verdad.',
     tags: ['QueensPublicLibrary', 'Outreach', 'NYC'],
     pie: `Not everything we do needs a ticket.
 
-Alongside the New York Series we work with public libraries, schools and community institutions, in New York and beyond. A library concert is a completely different thing from a hall: people walk in, sit down, and listen for half an hour without planning an evening around it.
+Last winter we played at the Queens Public Library and at the Leonard Library in Brooklyn, through the Culture Pass program: Messiaen's Le Merle Noir, Bach, Michel van der Aa, Greg Karnilaw and Guillermo's Heart Rate. A library concert is a completely different thing from a hall: people walk in, sit down, and listen for half an hour without planning an evening around it.
 
 And for the concerts that are ticketed, cost shouldn't be what stops you. We run subsidised seats through the NYC Culture Pass and with the Queens Public Library. Ticket revenue has never covered what a concert costs to put on, and donor support is what makes that possible.
 
