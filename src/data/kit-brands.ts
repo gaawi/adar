@@ -393,6 +393,8 @@ export interface KitSource {
   fotosEnteras?: boolean;
   /** Por qué este post y por qué ese día: se enseña en la app junto a los botones. */
   porque?: string;
+  /** Cuentas de Instagram que van como colaboradoras (máximo 3). */
+  colaboradores?: string[];
   /** Antetítulo del panel ámbar del estilo «duo». P. ej. «Did you know?». */
   kicker?: string;
   /**
