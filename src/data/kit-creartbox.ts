@@ -302,13 +302,14 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "open-call-one-month",
-    // Fondo: una intérprete leyendo la partitura en Currents (pidió otra foto; antes era el diseño del post anterior).
+    // Fondo: la foto que subió él desde la app el 10 de noviembre.
     porque: 'El 15 queda justo un mes para que cierre la Open Call. La cuenta atrás empuja a quien lo iba dejando para más tarde.',
     kind: 'social',
     estilo: "cinta",
     title: "Open Call: one month left",
     excerpt: "Open Call: one month left",
-    image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0465.jpg",
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/subidas/20261110T175638-ed77c5.jpg",
+    pegatinas: [{ texto: 'Deadline · Dec 15' }, { texto: 'CA1 & CA2 / 2026' }, { texto: 'Apply: link in bio', senal: true }],
     status: 'publish',
     date: "2026-11-15",
     url: "https://creartbox.nyc/opportunities.html",
