@@ -21,6 +21,14 @@ Si `main` se ha movido, **no** forzar: rebasar la rama encima y repetir.
 Decírselo en el mensaje, sí; pararse a preguntar, no. Sigue haciendo falta
 preguntar antes de deshacer algo que ya esté publicado.
 
+## «repaso redes»
+
+Cuando Guillermo escribe **«repaso redes»** en el chat, hacer el repaso que
+describe `editorial-cola/herramientas/REPASO.md`: preparar lo aprobado en la
+app, atender cambios, archivar lo caducado, sugerir ideas y acabar con un
+resumen corto. No hay tarea programada: la borró él el 10 de noviembre de
+2026 y prefiere pedirlo aquí.
+
 ## El proyecto
 
 - Astro estático, `trailingSlash: 'always'`, se despliega en Vercel.
