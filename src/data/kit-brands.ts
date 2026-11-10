@@ -391,6 +391,8 @@ export interface KitSource {
   fotos?: string[];
   /** Las fotos van enteras, con su proporción, sin recortar a 4:5. */
   fotosEnteras?: boolean;
+  /** Por qué este post y por qué ese día: se enseña en la app junto a los botones. */
+  porque?: string;
   /** Antetítulo del panel ámbar del estilo «duo». P. ej. «Did you know?». */
   kicker?: string;
   /**

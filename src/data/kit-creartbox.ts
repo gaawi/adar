@@ -114,6 +114,7 @@ On sale now through Eventbrite. The DiMenna Center for Classical Music, 30 Octob
   {
     lang: 'en',
     slug: 'winterlight',
+    porque: 'Es el anuncio general de Winterlight: sirve de base para todo lo demás del concierto hasta el 4 de diciembre.',
     title: 'Winterlight: a world premiere, and Petroushka',
     excerpt:
       "Hannah Selin's Tectonic Lullaby for piano quintet gets its first performance, and the evening closes with Stravinsky's Petroushka in a chamber arrangement. 11 December 2026.",
@@ -301,6 +302,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "open-call-one-month",
+    porque: 'El 15 queda justo un mes para que cierre la Open Call. La cuenta atrás empuja a quien lo iba dejando para más tarde.',
     kind: 'social',
     estilo: "limpia",
     title: "Open Call: one month left",
@@ -316,6 +318,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "winterlight-petroushka",
+    porque: 'Petroushka es la pieza que vende el concierto. A tres semanas y media toca contar por qué merece la pena venir.',
     kind: 'social',
     estilo: "limpia",
     title: "Petroushka, for five",
@@ -332,6 +335,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "winterlight-early-bird",
+    porque: 'Queda un día de early bird a $19. Que se acabe mañana es la mejor razón para comprar hoy.',
     kind: 'social',
     estilo: "cinta",
     title: "Winterlight early bird: $19 until November 11",
@@ -348,6 +352,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "winterlight-caplan",
+    porque: 'Junta las dos cosas que estamos promocionando: el concierto y la Open Call. Enseña que de la convocatoria sale música que se toca de verdad.',
     kind: 'social',
     estilo: "cartel",
     kicker: 'From our open call',
@@ -366,6 +371,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "winterlight-gift",
+    porque: 'El 27 es Black Friday y la gente está buscando regalos. Dos entradas para Navidad encajan justo ahí.',
     kind: 'social',
     estilo: "cinta",
     title: "A gift for two this Christmas",
@@ -382,6 +388,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "open-call-last-week",
+    porque: 'Queda una semana para que cierre la Open Call. El último aviso suele ser el que más envíos trae.',
     kind: 'social',
     estilo: "limpia",
     title: "Open Call: one week left",
@@ -429,6 +436,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "winterlight-ravel",
+    porque: 'Las proyecciones con ilustraciones antiguas de los cuentos son lo más visual de la noche, y eso en Instagram funciona.',
     kind: 'social',
     estilo: 'limpia',
     title: "Ravel, Mother Goose",
@@ -445,6 +453,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "winterlight-selin",
+    porque: 'Un estreno mundial es noticia por sí solo, y a diez días del concierto empuja la venta final. Además el 1 es Giving Tuesday.',
     kind: 'social',
     estilo: 'limpia',
     title: "Tectonic Lullaby, a world premiere",
@@ -460,6 +469,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "winterlight-this-friday",
+    porque: 'Es la semana del concierto: recordatorio para quien todavía no tiene entrada.',
     kind: 'social',
     estilo: 'limpia',
     title: "This Friday: Winterlight",
@@ -490,6 +500,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   {
     lang: 'en',
     slug: "winterlight-story-tomorrow",
+    porque: 'Víspera del concierto. Una historia dura un día, igual que el aviso.',
     kind: 'social',
     estilo: 'limpia',
     formato: 'historia',
@@ -1072,6 +1083,7 @@ Tickets in bio.
   {
     lang: 'en',
     slug: 'currents-thanks',
+    porque: 'Cierra Currents dando las gracias y enseña cómo es un concierto nuestro a quien no vino, justo mientras vendemos Winterlight.',
     kind: 'social',
     estilo: 'limpia',
     title: 'Thank you for coming to Currents',
@@ -1261,6 +1273,7 @@ Going through the submissions takes forever, and every year it turns up composer
   {
     lang: 'en',
     slug: 'libraries-queens',
+    porque: 'Enseña lo que hacemos fuera de la sala, sin entrada. Equilibra tanto post de venta.',
     kind: 'social',
     estilo: 'limpia',
     title: 'Music where you do not need a ticket',
@@ -1292,6 +1305,7 @@ If the price is the reason you're not coming, write to us at info@creartbox.nyc.
   {
     lang: 'en',
     slug: 'winterlight-coming',
+    porque: 'Recuerda que Winterlight es el siguiente concierto. Hace de puente entre el early bird y Petroushka.',
     kind: 'social',
     estilo: 'cinta',
     title: 'Winterlight is next',
