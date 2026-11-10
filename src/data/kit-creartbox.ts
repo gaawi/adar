@@ -1120,12 +1120,12 @@ Tickets in bio.
     colaboradores: ['dimennacenter', 'toseiho'],
     // La historia: con titular y pegatinas, que una foto sola no dice nada.
     estilos: { story: 'cinta' },
-    pegatinas: [{ texto: 'Currents · Oct 30' }, { texto: 'Photos by Tao Ho' }, { texto: 'All 95 photos: link in bio', senal: true }],
+    pegatinas: [{ texto: 'Currents · Oct 30' }, { texto: 'Photos by Tao Ho' }, { texto: 'Next: Winterlight · Dec 11', senal: true }],
     status: 'publish',
     date: '2026-11-12',
     url: 'https://creartbox.nyc/archive/currents-2026-10.html',
     tags: ['Currents', 'DiMennaCenter', 'ChamberMusic'],
-    pie: "Thank you to everyone who came to Currents! 🤍\n\nA few photos from the night at The DiMenna Center: the players walking on for Brown Leaves Moving, Eric Moe's Laminar Flow, Clara Schumann's Romances, Brahms, and the Schumann Piano Quartet to close, with Guillermo's video running behind the music the whole time.\n\nThank you to Josefina, Emilie-Anne, Matthew and Julia, and to all of you who came out to start our 12th season with us.\n\nAll 95 photos are on our website (link in bio).\n\nNext up: Winterlight, December 11. ❄️\n\n📷 Photos by Tao Ho (@toseiho)\n\n#CreArtBox #Currents #ChamberMusic #DiMennaCenter",
+    pie: "Thank you to everyone who came to Currents! 🤍\n\nA few photos from the night at The DiMenna Center: the players walking on for Brown Leaves Moving, Eric Moe's Laminar Flow, Clara Schumann's Romances, Brahms, and the Schumann Piano Quartet to close, with Guillermo's video running behind the music the whole time.\n\nThank you to Josefina, Emilie-Anne, Matthew and Julia, and to all of you who came out to start our 12th season with us.\n\nNext up: Winterlight, December 11. ❄️\n\nThese wonderful photos are by Tao Ho (@toseiho), always so creative. Thank you, Tao! 📷\n\n#CreArtBox #Currents #ChamberMusic #DiMennaCenter",
     body: `Photographs from Currents.`,
   },
   {
