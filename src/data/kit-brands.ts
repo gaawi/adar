@@ -395,6 +395,8 @@ export interface KitSource {
   porque?: string;
   /** Cuentas de Instagram que van como colaboradoras (máximo 3). */
   colaboradores?: string[];
+  /** Estilo por formato cuando uno no vale para todos, p. ej. { story: 'marco' }. */
+  estilos?: Partial<Record<'ig' | 'fb' | 'story', string>>;
   /** Antetítulo del panel ámbar del estilo «duo». P. ej. «Did you know?». */
   kicker?: string;
   /**

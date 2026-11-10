@@ -325,6 +325,8 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     title: "Petroushka, for five",
     excerpt: "Petroushka, for five",
     image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/petroushka-1911-partitura.jpg",
+    // La partitura clara no se lee como historia: ahí va en duo (panel ámbar con el titular).
+    estilos: { story: 'duo' },
     status: 'publish',
     date: "2026-11-17",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
