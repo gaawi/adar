@@ -296,6 +296,103 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   },
 
 
+  // Tanda de noviembre (pedida el 10 nov): Petroushka, el compositor de la
+  // convocatoria, early bird, regalo 2x1 y recordatorios de la convocatoria.
+  {
+    lang: 'en',
+    slug: "open-call-one-month",
+    kind: 'social',
+    estilo: "limpia",
+    title: "Open Call: one month left",
+    excerpt: "Open Call: one month left",
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/en-open-call-v4-ig-1.jpg",
+    status: 'publish',
+    date: "2026-11-15",
+    url: "https://creartbox.nyc/opportunities.html",
+    tags: ["OpenCall", "Composers"],
+    pie: "One month left to apply to our open call for composers.\n\nCA1/2026, for composers of any nationality.\nCA2/2026, for American composers.\n\nDeadline: December 15, 2026.\nTwo works, any instrumentation, any career stage.\n\nGuidelines and application at the link in bio.\n\n#CreArtBox #OpenCall #NewMusic #Composers",
+    body: "Open Call: one month left",
+  },
+  {
+    lang: 'en',
+    slug: "winterlight-petroushka",
+    kind: 'social',
+    estilo: "limpia",
+    title: "Petroushka, for five",
+    excerpt: "Petroushka, for five",
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-cuadrado.jpg",
+    status: 'publish',
+    date: "2026-11-17",
+    url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
+    tags: ["Winterlight"],
+    pie: "Petroushka was written for a full orchestra and a ballet company. On December 11 we're playing it with five of us. 🎭\n\nStravinsky's ballet premiered in Paris in 1911 with the Ballets Russes. It's set at a Shrovetide fair in Russia, where three puppets come to life in a story of love, jealousy and tragedy.\n\nOur chamber arrangement runs about 40 minutes, with projections alongside it, and it closes the evening.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #Petroushka #Stravinsky",
+    body: "Petroushka, for five",
+  },
+  {
+    lang: 'en',
+    slug: "winterlight-early-bird",
+    kind: 'social',
+    estilo: "cinta",
+    title: "Early bird tickets for Winterlight",
+    excerpt: "Early bird tickets for Winterlight",
+    image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0606.jpg",
+    status: 'publish',
+    date: "2026-11-21",
+    url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
+    tags: ["Winterlight"],
+    falta: "Faltan el precio early bird, el precio normal y hasta cuándo dura. En Eventbrite no se ve el detalle de las entradas desde fuera.",
+    pie: "Early bird tickets for Winterlight are on sale until [FECHA]. ❄️\n\n[PRECIO EARLY BIRD] instead of [PRECIO NORMAL] for an evening of Petroushka, Ravel's Mother Goose, a piece from our open call and a world premiere by Hannah Selin.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #NYCConcerts #ChamberMusic",
+    body: "Early bird tickets for Winterlight",
+  },
+  {
+    lang: 'en',
+    slug: "winterlight-caplan",
+    kind: 'social',
+    estilo: "cartel",
+    kicker: 'From our open call',
+    cartel: { lineas: ['Canciones de Monteverde', 'Flute and string trio · 12 minutes', 'Winterlight · December 11'] },
+    title: "From our open call: Oliver Caplan",
+    excerpt: "From our open call: Oliver Caplan",
+    image: "",
+    status: 'publish',
+    date: "2026-11-24",
+    url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
+    tags: ["Winterlight"],
+    falta: "Una frase tuya sobre la obra, y si hay foto de Oliver Caplan mejor que el cartel tipográfico.",
+    pie: "One of the pieces at Winterlight came to us through our International Call for Scores.\n\nOliver Caplan's Canciones de Monteverde is for flute, violin, viola and cello, about 12 minutes long, and we play it on December 11 at The DiMenna Center.\n\n[UNA FRASE DE GUILLERMO SOBRE LA OBRA: qué le llamó la atención al leerla]\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #OpenCall #NewMusic",
+    body: "From our open call: Oliver Caplan",
+  },
+  {
+    lang: 'en',
+    slug: "winterlight-gift",
+    kind: 'social',
+    estilo: "cinta",
+    title: "A gift for two this Christmas",
+    excerpt: "A gift for two this Christmas",
+    image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_MG_0661.jpg",
+    status: 'publish',
+    date: "2026-11-27",
+    url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
+    tags: ["Winterlight"],
+    falta: "Confirma cómo funciona el 2x1 (código, tipo de entrada, hasta qué día) para ponerlo exacto.",
+    pie: "Looking for a gift for someone who loves music? 🎁\n\nFor Winterlight, tickets are 2 for 1: bring someone with you on December 11, or give them both.\n\nPetroushka, Ravel's Mother Goose and a world premiere, at The DiMenna Center in Midtown, a couple of weeks before Christmas.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #HolidayGift #NYCConcerts",
+    body: "A gift for two this Christmas",
+  },
+  {
+    lang: 'en',
+    slug: "open-call-last-week",
+    kind: 'social',
+    estilo: "limpia",
+    title: "Open Call: one week left",
+    excerpt: "Open Call: one week left",
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/en-open-call-v4-ig-1.jpg",
+    status: 'publish',
+    date: "2026-12-08",
+    url: "https://creartbox.nyc/opportunities.html",
+    tags: ["OpenCall", "Composers"],
+    pie: "One week left. Our open call for composers closes on December 15.\n\nCA1/2026, for composers of any nationality.\nCA2/2026, for American composers.\n\nTwo works, any instrumentation, any career stage.\n\nGuidelines and application at the link in bio.\n\n#CreArtBox #OpenCall #NewMusic #Composers",
+    body: "Open Call: one week left",
+  },
   // Posts creados directamente en Metricool con imágenes de Guillermo (cartel ya
   // hecho): se añaden para que la app y Metricool cuenten lo mismo.
   {
@@ -976,26 +1073,18 @@ Tickets in bio.
     kind: 'social',
     estilo: 'limpia',
     title: 'Thank you for coming to Currents',
-    excerpt: 'Photographs from Friday at The DiMenna Center.',
-    image: ARCHIVO + '20251017__MG_0641.jpg',
-    status: 'draft',
-    date: '2026-11-01',
-    url: CALENDAR,
-    cta: 'More at creartbox.nyc ↗',
-    falta:
-      'Marcador de sitio. Hay que cambiar la foto por las del 30 y reescribir el pie con lo que ' +
-      'pasó de verdad: no tiene sentido darlo por escrito antes de que ocurra.',
+    excerpt: 'Photographs from Currents, 30 October 2026, at The DiMenna Center.',
+    // Fotos del archivo del concierto (creartbox.nyc/archive/currents-2026-10.html):
+    // la sala con el vídeo, Emilie-Anne, Julia y Josefina, Matthew, Josefina, la
+    // proyección en espiral y el saludo final.
+    image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0603.jpg",
+    fotos: ["https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0603.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0535.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_MG_0426.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_MG_0474.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0469.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0635.jpg", "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_MG_0661.jpg"],
+    status: 'publish',
+    date: '2026-11-12',
+    url: 'https://creartbox.nyc/archive/currents-2026-10.html',
     tags: ['Currents', 'DiMennaCenter', 'ChamberMusic'],
-    pie: `Thank you.
-
-A few photographs from Friday at The DiMenna Center. We opened the twelfth New York season with Currents: Laporta, Brahms, Moe, Clara Schumann, Robert Schumann, straight through.
-
-Thanks to everyone who came out, and to Josefina, Emilie-Anne, Matthew and Julia for the work that went into it.
-
-Next stop: Illinois.
-
-#CreArtBox #Currents #ChamberMusic`,
-    body: `Write this one properly after the concert.`,
+    pie: "Thank you to everyone who came to Currents! 🤍\n\nA few photos from the night at The DiMenna Center: the players walking on for Brown Leaves Moving, Eric Moe's Laminar Flow, Clara Schumann's Romances, Brahms, and the Schumann Piano Quartet to close, with Guillermo's video running behind the music the whole time.\n\nThank you to Josefina, Emilie-Anne, Matthew and Julia, and to all of you who came out to start our 12th season with us.\n\nAll 95 photos are on our website (link in bio).\n\nNext up: Winterlight, December 11. ❄️\n\n#CreArtBox #Currents #ChamberMusic #DiMennaCenter",
+    body: `Photographs from Currents.`,
   },
   {
     lang: 'en',
