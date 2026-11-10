@@ -382,6 +382,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     title: "Thank you",
     excerpt: "Thank you",
     image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_MG_0446.jpg",
+    pegatinas: [{ texto: 'Happy Thanksgiving' }, { texto: 'Next: Winterlight · Dec 11', senal: true }],
     status: 'publish',
     date: "2026-11-26",
     url: "https://creartbox.nyc/support.html",
@@ -400,6 +401,8 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0627_1.jpg",
     // Las historias no llevan texto: la fecha, el sitio y dónde comprar van en pegatinas.
     pegatinas: [{ texto: 'Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    // En la historia (9:16) el automático dejaba a los músicos en el borde: centrados y algo más cerca.
+    encuadres: { story: { x: 0.42, y: 0.55, zoom: 1.15 } },
     status: 'publish',
     date: "2026-11-27",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
@@ -412,10 +415,12 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     slug: "open-call-last-week",
     porque: 'Queda una semana para que cierre la Open Call. El último aviso suele ser el que más envíos trae.',
     kind: 'social',
-    estilo: "limpia",
+    estilo: "cinta",
     title: "Open Call: one week left",
     excerpt: "Open Call: one week left",
-    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/en-open-call-v4-ig-1.jpg",
+    image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0483.jpg",
+    // Otra foto para no repetir: manos en el teclado, Currents (Tao Ho).
+    pegatinas: [{ texto: 'Deadline · Dec 15' }, { texto: 'CA1 & CA2 / 2026' }, { texto: 'Apply: link in bio', senal: true }],
     status: 'publish',
     date: "2026-12-08",
     url: "https://creartbox.nyc/opportunities.html",
@@ -499,7 +504,10 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     estilo: 'limpia',
     title: "This Friday: Winterlight",
     excerpt: "This Friday: Winterlight",
-    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-vertical.jpg",
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-this-friday.jpg",
+    // El cartel de la campaña con «This Friday» en lugar de la fecha (editado a mano el 10 nov).
+    fotos: ['https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-this-friday.jpg'],
+    fotosEnteras: true,
     status: 'publish',
     date: "2026-12-07",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
