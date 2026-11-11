@@ -399,6 +399,8 @@ export interface KitSource {
   pegatinasMuro?: boolean;
   /** Diapositivas de texto con fondo ámbar y titular grande. */
   fondoAmbar?: boolean;
+  /** Logo obligatorio de quien financia: en qué diapositivas y si va en la historia. */
+  logo?: { src: string; diapositivas?: number[]; historia?: boolean };
   /** Cuentas de Instagram que van como colaboradoras (máximo 3). */
   colaboradores?: string[];
   /** Estilo por formato cuando uno no vale para todos, p. ej. { story: 'marco' }. */
