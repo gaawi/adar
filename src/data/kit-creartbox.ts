@@ -1119,7 +1119,7 @@ Tickets in bio.
     porque: 'Cierra Currents dando las gracias y enseña cómo es un concierto nuestro a quien no vino, justo mientras vendemos Winterlight.',
     kind: 'social',
     estilo: 'limpia',
-    title: 'Thank you for coming to Currents',
+    title: 'Currents, through the lens of Tao Ho',
     excerpt: 'Photographs from Currents, 30 October 2026, at The DiMenna Center.',
     // Las tres que eligió Guillermo primero y doce más del archivo, enteras: son 3:2 apaisadas y no se
     // recortan. Instagram admite apaisado hasta 1,91:1.
@@ -1134,7 +1134,7 @@ Tickets in bio.
     date: '2026-11-12',
     url: 'https://creartbox.nyc/archive/currents-2026-10.html',
     tags: ['Currents', 'DiMennaCenter', 'ChamberMusic'],
-    pie: "Thank you to everyone who came to Currents! 🤍\n\nA few photos from the night at The DiMenna Center: the players walking on for Brown Leaves Moving, Eric Moe's Laminar Flow, Clara Schumann's Romances, Brahms, and the Schumann Piano Quartet to close, with Guillermo's video running behind the music the whole time.\n\nThank you to Josefina, Emilie-Anne, Matthew and Julia, and to all of you who came out to start our 12th season with us.\n\nNext up: Winterlight, December 11. ❄️\n\nThese wonderful photos are by Tao Ho (@toseiho), always so creative. Thank you, Tao! 📷\n\n#CreArtBox #Currents #ChamberMusic #DiMennaCenter",
+    pie: "Today we share these fantastic photos from our last concert at The DiMenna Center, by fine art photographer Tao Ho (@toseiho). 📷\n\nFrom the night: the players walking on for Brown Leaves Moving, Eric Moe's Laminar Flow, Clara Schumann's Romances, Brahms, and the Schumann Piano Quartet to close, with Guillermo's video running behind the music the whole time.\n\nThank you to Josefina, Emilie-Anne, Matthew and Julia, and to all of you who came out to start our 12th season with us.\n\nNext up: Winterlight, December 11. ❄️\n\nThank you, Tao, always so creative!\n\n#CreArtBox #Currents #ChamberMusic #DiMennaCenter",
     body: `Photographs from Currents.`,
   },
   {
