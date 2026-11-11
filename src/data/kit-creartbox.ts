@@ -410,11 +410,11 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     url: "https://creartbox.nyc/news/winterlight-ticket-lottery.html",
     tags: ["Winterlight"],
     pie: "Ten pairs of tickets to Winterlight, free. 🎟️\n\nOn December 11 we're giving away twenty seats at The DiMenna Center, by lottery.\n\nTo enter, email info@creartbox.nyc with WINTERLIGHT LOTTERY in the subject line and one sentence on why you'd like to come. That's all. It isn't a competition: the draw is random.\n\nEntries close at midnight on December 3. The draw is on December 4, and everyone who entered hears back the same day.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\nDetails at the link in bio.\n\n#CreArtBox #Winterlight #FreeTickets #NYCConcerts",
-    body: `## How to enter
-Email info@creartbox.nyc with WINTERLIGHT LOTTERY in the subject and one sentence on why you would like to come.
+    body: `## Write to us
+Email info@creartbox.nyc with WINTERLIGHT LOTTERY in the subject line.
 
-## No catch
-The draw is random. Your email is only used to tell you the result.
+## One sentence
+Tell us why you would like to come. That is the whole entry, and the draw is random.
 
 ## December 3
 Entries close at midnight. The draw is on December 4.`,
