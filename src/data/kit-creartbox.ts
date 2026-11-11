@@ -405,6 +405,8 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     colaboradores: ['thedimennacenter'],
     diapositivas: 4,
     pegatinas: [{ texto: 'Free tickets' }, { texto: 'Closes Dec 3' }, { texto: 'How to enter: link in bio', senal: true }],
+    // Pidió que el título sea parte de la imagen, como en las historias.
+    pegatinasMuro: true,
     status: 'publish',
     date: "2026-11-13",
     url: "https://creartbox.nyc/news/winterlight-ticket-lottery.html",

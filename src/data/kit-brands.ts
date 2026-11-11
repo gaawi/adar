@@ -395,6 +395,8 @@ export interface KitSource {
   porque?: string;
   /** Cuántas diapositivas como mucho en el carrusel (por defecto 3). */
   diapositivas?: number;
+  /** Pegatinas también en la portada del post de Instagram, no solo en la historia. */
+  pegatinasMuro?: boolean;
   /** Cuentas de Instagram que van como colaboradoras (máximo 3). */
   colaboradores?: string[];
   /** Estilo por formato cuando uno no vale para todos, p. ej. { story: 'marco' }. */
