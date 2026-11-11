@@ -394,6 +394,51 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
   },
   {
     lang: 'en',
+    slug: "winterlight-lottery",
+    porque: 'La web lo anunció el 11 de noviembre: cuanto antes se cuente, más gente entra. Y lleva a la sala a quien nunca ha venido a un concierto nuestro.',
+    kind: 'social',
+    estilo: "cinta",
+    title: "Ten pairs of tickets to Winterlight, free",
+    excerpt: "Ten pairs of tickets to Winterlight, free",
+    // El público en la sala, con la proyección: el sitio donde podrías estar.
+    image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0605.jpg",
+    colaboradores: ['thedimennacenter'],
+    diapositivas: 4,
+    pegatinas: [{ texto: 'Free tickets' }, { texto: 'Closes Dec 3' }, { texto: 'How to enter: link in bio', senal: true }],
+    status: 'publish',
+    date: "2026-11-13",
+    url: "https://creartbox.nyc/news/winterlight-ticket-lottery.html",
+    tags: ["Winterlight"],
+    pie: "Ten pairs of tickets to Winterlight, free. 🎟️\n\nOn December 11 we're giving away twenty seats at The DiMenna Center, by lottery.\n\nTo enter, email info@creartbox.nyc with WINTERLIGHT LOTTERY in the subject line and one sentence on why you'd like to come. That's all. It isn't a competition: the draw is random.\n\nEntries close at midnight on December 3. The draw is on December 4, and everyone who entered hears back the same day.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\nDetails at the link in bio.\n\n#CreArtBox #Winterlight #FreeTickets #NYCConcerts",
+    body: `## How to enter
+Email info@creartbox.nyc with WINTERLIGHT LOTTERY in the subject and one sentence on why you would like to come.
+
+## No catch
+The draw is random. Your email is only used to tell you the result.
+
+## December 3
+Entries close at midnight. The draw is on December 4.`,
+  },
+  {
+    lang: 'en',
+    slug: "winterlight-lottery-last-call",
+    porque: 'El sorteo cierra el 3 a medianoche: la víspera es el último empujón. Da para una historia, no para un post.',
+    kind: 'social',
+    estilo: "cinta",
+    formato: 'historia',
+    title: "Last call: free tickets to Winterlight",
+    excerpt: "Last call: free tickets to Winterlight",
+    image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0605.jpg",
+    pegatinas: [{ texto: 'Closes tomorrow' }, { texto: 'Subject: WINTERLIGHT LOTTERY' }, { texto: 'info@creartbox.nyc', senal: true }],
+    status: 'publish',
+    date: "2026-12-02",
+    url: "https://creartbox.nyc/news/winterlight-ticket-lottery.html",
+    tags: ["Winterlight"],
+    pie: "Last call: free tickets to Winterlight.",
+    body: "Last call: free tickets to Winterlight",
+  },
+  {
+    lang: 'en',
     slug: "winterlight-gift",
     porque: 'El 27 es Black Friday y la gente está buscando regalos. Dos entradas para Navidad encajan justo ahí.',
     kind: 'social',
