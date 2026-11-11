@@ -397,6 +397,8 @@ export interface KitSource {
   diapositivas?: number;
   /** Pegatinas también en la portada del post de Instagram, no solo en la historia. */
   pegatinasMuro?: boolean;
+  /** Diapositivas de texto con fondo ámbar y titular grande. */
+  fondoAmbar?: boolean;
   /** Cuentas de Instagram que van como colaboradoras (máximo 3). */
   colaboradores?: string[];
   /** Estilo por formato cuando uno no vale para todos, p. ej. { story: 'marco' }. */

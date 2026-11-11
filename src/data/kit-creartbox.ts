@@ -368,6 +368,9 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     excerpt: "From our open call: Oliver Caplan",
     image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/oliver-caplan-2.jpg",
     // Foto menos de despacho (pidió eso): la del árbol, de su kit de prensa.
+    pegatinas: [{ texto: 'Winterlight · Dec 11' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    // En Facebook (apaisado) el automático cortaba la cara: el encuadre, arriba.
+    encuadres: { fb: { x: 0.5, y: 0.12 } },
     status: 'publish',
     date: "2026-11-24",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
@@ -426,11 +429,12 @@ Entries close at midnight. The draw is on December 4.`,
     slug: "winterlight-lottery-last-call",
     porque: 'El sorteo cierra el 3 a medianoche: la víspera es el último empujón. Da para una historia, no para un post.',
     kind: 'social',
-    estilo: "cinta",
+    estilo: "ambar",
     formato: 'historia',
     title: "Last call for our holiday giveaway",
     excerpt: "Last call for our holiday giveaway",
-    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-limpia.jpg",
+    // Fondo ámbar entero, sin foto (pidió no repetir la del cartel).
+    image: "",
     pegatinas: [{ texto: 'Closes tomorrow' }, { texto: 'Subject: WINTERLIGHT LOTTERY' }, { texto: 'info@creartbox.nyc', senal: true }],
     status: 'publish',
     date: "2026-12-02",
@@ -477,6 +481,9 @@ Entries close at midnight. The draw is on December 4.`,
     pie: "One week left. Our open call for composers closes on December 15.\n\nCA1/2026, for composers of any nationality.\nCA2/2026, for American composers.\n\nTwo works, any instrumentation, any career stage.\n\nGuidelines and application at the link in bio.\n\n#CreArtBox #OpenCall #NewMusic #Composers",
     // Carrusel diseñado (lo pidió: «más gráfico, más texto, varios slides»).
     diapositivas: 4,
+    // Pidió fondo amarillo y más etiquetas.
+    fondoAmbar: true,
+    pegatinasMuro: true,
     body: `## CA1/2026
 Composers of any nationality. Two works, any instrumentation, any career stage.
 
@@ -548,6 +555,9 @@ The deadline is one week away. Guidelines and application at the link in bio.`,
     excerpt: "Tectonic Lullaby, a world premiere",
     image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/hannah-selin.jpg",
     // Retrato de Hannah de su web (Alice and Chris Photography); antes era el cartel.
+    pegatinas: [{ texto: 'Winterlight · Dec 11' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    // En Facebook (apaisado) el automático cortaba la cara: el encuadre, arriba.
+    encuadres: { fb: { x: 0.5, y: 0.12 } },
     status: 'publish',
     date: "2026-12-01",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
@@ -560,12 +570,14 @@ The deadline is one week away. Guidelines and application at the link in bio.`,
     slug: "winterlight-this-friday",
     porque: 'Es la semana del concierto: recordatorio para quien todavía no tiene entrada.',
     kind: 'social',
-    estilo: 'cinta',
-    title: "This Friday: Winterlight",
+    estilo: 'cielo',
+    title: "This Friday",
     excerpt: "This Friday: Winterlight",
     image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-limpia.jpg",
     // El cartel de la campaña limpio de textos, con los nuestros encima (lo pidió así).
-    pegatinas: [{ texto: 'Fri Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    // «This Friday» más grande y sin oscurecer a los músicos (lo pidió): estilo cielo.
+    pegatinas: [{ texto: 'Winterlight · Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinasMuro: true,
     status: 'publish',
     date: "2026-12-07",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
