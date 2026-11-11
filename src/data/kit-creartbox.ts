@@ -178,8 +178,9 @@ The DiMenna Center for Classical Music, 23 April 2027, 7:30 pm.
     slug: 'feverdream',
     title: 'Feverdream closes the twelfth season',
     excerpt:
-      "Sibelius's Piano Quintet in G minor, and a score by Festival ADAR's composer in residence that reached New York through the open call. 7 May 2027.",
-    image: PHOTO + 'creartbox-festival-adar.jpg',
+      "Sibelius's Piano Quintet in G minor, and two works from our open call by Zygmund de Somogyi and Eli Tausen á Lava. 7 May 2027.",
+    // Quinteto con piano en la DiMenna, como el de Sibelius (Currents, Tao Ho).
+    image: 'https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_MG_0637.jpg',
     status: 'publish',
     date: '2027-05-07',
     url: CALENDAR,
@@ -365,7 +366,8 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     cartel: { lineas: ['Canciones de Monteverde', 'Flute and string trio · 12 minutes', 'Winterlight · December 11'] },
     title: "From our open call: Oliver Caplan",
     excerpt: "From our open call: Oliver Caplan",
-    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/oliver-caplan.jpg",
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/oliver-caplan-2.jpg",
+    // Foto menos de despacho (pidió eso): la del árbol, de su kit de prensa.
     status: 'publish',
     date: "2026-11-24",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
@@ -426,7 +428,16 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     url: "https://creartbox.nyc/opportunities.html",
     tags: ["OpenCall", "Composers"],
     pie: "One week left. Our open call for composers closes on December 15.\n\nCA1/2026, for composers of any nationality.\nCA2/2026, for American composers.\n\nTwo works, any instrumentation, any career stage.\n\nGuidelines and application at the link in bio.\n\n#CreArtBox #OpenCall #NewMusic #Composers",
-    body: "Open Call: one week left",
+    // Carrusel diseñado (lo pidió: «más gráfico, más texto, varios slides»).
+    diapositivas: 4,
+    body: `## CA1/2026
+Composers of any nationality. Two works, any instrumentation, any career stage.
+
+## CA2/2026
+American composers. Same rules: two works, any instrumentation, any career stage.
+
+## December 15
+The deadline is one week away. Guidelines and application at the link in bio.`,
   },
   // Posts creados directamente en Metricool con imágenes de Guillermo (cartel ya
   // hecho): se añaden para que la app y Metricool cuenten lo mismo.
@@ -485,15 +496,16 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     slug: "winterlight-selin",
     porque: 'Un estreno mundial es noticia por sí solo, y a diez días del concierto empuja la venta final. Además el 1 es Giving Tuesday.',
     kind: 'social',
-    estilo: 'limpia',
+    estilo: 'cinta',
     title: "Tectonic Lullaby, a world premiere",
     excerpt: "Tectonic Lullaby, a world premiere",
-    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-apaisado.jpg",
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/hannah-selin.jpg",
+    // Retrato de Hannah de su web (Alice and Chris Photography); antes era el cartel.
     status: 'publish',
     date: "2026-12-01",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ['Winterlight'],
-    pie: "Winterlight opens with a piece nobody has heard yet.\n\nTectonic Lullaby is Hannah Selin's new work for piano quintet, about ten minutes long, and December 11 at The DiMenna Center will be its first performance.\n\nHannah is a composer, violist and vocalist, and it's not our first premiere together: we gave the first performance of her The Soft Moon at DiMenna in 2024.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #HannahSelin #WorldPremiere",
+    pie: "Winterlight opens with a piece nobody has heard yet.\n\nTectonic Lullaby is Hannah Selin's new work for piano quintet, about ten minutes long, and December 11 at The DiMenna Center will be its first performance.\n\nHannah is a composer, violist and vocalist, and it's not our first premiere together: we gave the first performance of her The Soft Moon at DiMenna in 2024.\n\n📷 Hannah Selin by Alice and Chris Photography\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #HannahSelin #WorldPremiere",
     body: "Tectonic Lullaby, a world premiere",
   },
   {
@@ -501,13 +513,12 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     slug: "winterlight-this-friday",
     porque: 'Es la semana del concierto: recordatorio para quien todavía no tiene entrada.',
     kind: 'social',
-    estilo: 'limpia',
+    estilo: 'cinta',
     title: "This Friday: Winterlight",
     excerpt: "This Friday: Winterlight",
-    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-this-friday.jpg",
-    // El cartel de la campaña con «This Friday» en lugar de la fecha (editado a mano el 10 nov).
-    fotos: ['https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-this-friday.jpg'],
-    fotosEnteras: true,
+    image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-limpia.jpg",
+    // El cartel de la campaña limpio de textos, con los nuestros encima (lo pidió así).
+    pegatinas: [{ texto: 'Fri Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
     status: 'publish',
     date: "2026-12-07",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",

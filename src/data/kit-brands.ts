@@ -393,6 +393,8 @@ export interface KitSource {
   fotosEnteras?: boolean;
   /** Por qué este post y por qué ese día: se enseña en la app junto a los botones. */
   porque?: string;
+  /** Cuántas diapositivas como mucho en el carrusel (por defecto 3). */
+  diapositivas?: number;
   /** Cuentas de Instagram que van como colaboradoras (máximo 3). */
   colaboradores?: string[];
   /** Estilo por formato cuando uno no vale para todos, p. ej. { story: 'marco' }. */
