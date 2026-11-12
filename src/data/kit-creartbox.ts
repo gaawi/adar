@@ -467,9 +467,6 @@ Entries close at midnight. The draw is on December 4.`,
     date: "2026-11-16",
     url: "https://www.queenslibrary.org/",
     tags: ["QueensPublicLibrary"],
-    // Logo de Flushing Town Hall obligatorio en lo del Passport (lo financia su regrant):
-    // va pegado en su cartel (diapositiva 2).
-    logo: { src: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/logo-flushing-town-hall.png", diapositivas: [1] },
     pie: "A project of their own: our directors Guillermo Laporta and Josefina Urraca have put together two free concerts for children and families at Queens libraries. 📚🎶\n\n🎟️ The Queens Passport\nThursday, November 19 · 6–7 PM\nHunters Point Library, 47-40 Center Blvd, Long Island City\nGuillermo Laporta and the Ivalas Quartet play classical repertoire and new pieces inspired by the sounds of the neighborhood, and the children help shape the music by conducting guided improvisations. Kids get a passport to stamp and a bilingual English–Spanish activity book.\n\n🎹 The Queens Mother Goose\nSaturday, November 21 · 12–1 PM\nFlushing Library, 41-17 Main St, Flushing\nPianist Josefina Urraca reimagines Ravel's Mother Goose through the eyes of an immigrant mother raising her child in Queens, with bilingual storytelling and projections inspired by everyday family life. With pianist Yalin Chi and dancer Taylor Hennings. For children ages 2–12 and their families.\n\nFree, no registration needed.\n\nThe Queens Passport, a project by Guillermo Laporta, is made possible with funds from the Statewide Community Regrant program, a program of the New York State Council on the Arts with the support of Governor Kathy Hochul and the New York State Legislature and administered by Flushing Town Hall.\n\nThe Queens Mother Goose, a project by Josefina Urraca, is made possible (in part) with public funds from the Queens Arts Fund, a re-grant program supported by the New York City Department of Cultural Affairs in partnership with the City Council and administered by New York Foundation for the Arts.\n\n#QueensPublicLibrary #FamilyConcert #Ravel #LongIslandCity #Flushing",
     body: `## The Queens Passport
 Thursday, November 19, 6 to 7 PM. Hunters Point Library. Guillermo Laporta and the Ivalas Quartet, with children conducting guided improvisations.
@@ -488,7 +485,6 @@ Saturday, November 21, 12 to 1 PM. Flushing Library. Ravel's Mother Goose reimag
     excerpt: "Tonight: The Queens Musical Passport",
     image: "",
     pegatinas: [{ texto: '6 PM · Hunters Point Library' }, { texto: 'Free · for families' }, { texto: 'With the Ivalas Quartet', senal: true }],
-    logo: { src: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/logo-flushing-town-hall.png", historia: true },
     sinMarca: true,
     status: 'publish',
     date: "2026-11-19",
