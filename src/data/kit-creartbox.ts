@@ -310,12 +310,12 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     title: "Open Call: one month left",
     excerpt: "Open Call: one month left",
     image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/subidas/20261110T175638-ed77c5.jpg",
-    pegatinas: [{ texto: 'Deadline · Dec 15' }, { texto: 'CA1 & CA2 / 2026' }, { texto: 'Apply: link in bio', senal: true }],
+    pegatinas: [{ texto: 'Deadline · Dec 15' }, { texto: 'CA1 & CA2 / 2026' }, { texto: 'Apply: creartbox.nyc', senal: true }],
     status: 'publish',
     date: "2026-11-15",
     url: "https://creartbox.nyc/opportunities.html",
     tags: ["OpenCall", "Composers"],
-    pie: "One month left to apply to our open call for composers.\n\nCA1/2026, for composers of any nationality.\nCA2/2026, for American composers.\n\nDeadline: December 15, 2026.\nTwo works, any instrumentation, any career stage.\n\nGuidelines and application at the link in bio.\n\n#CreArtBox #OpenCall #NewMusic #Composers",
+    pie: "One month left to apply to our open call for composers.\n\nCA1/2026, for composers of any nationality.\nCA2/2026, for American composers.\n\nDeadline: December 15, 2026.\nTwo works, any instrumentation, any career stage.\n\nGuidelines and application at creartbox.nyc.\n\n#CreArtBox #OpenCall #NewMusic #Composers",
     body: "Open Call: one month left",
   },
   {
@@ -330,12 +330,12 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     // La partitura clara no se lee como historia: ahí va en duo (panel ámbar con el titular).
     estilos: { story: 'duo' },
     // Las historias no llevan texto: la fecha, el sitio y dónde comprar van en pegatinas.
-    pegatinas: [{ texto: 'Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: 'Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     status: 'publish',
     date: "2026-11-17",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ["Winterlight"],
-    pie: "Petroushka was written for a full orchestra and a ballet company. On December 11 we're playing it with five of us. 🎭\n\nStravinsky's ballet premiered in Paris in 1911 with the Ballets Russes. It's set at a Shrovetide fair in Russia, where three puppets come to life in a story of love, jealousy and tragedy.\n\nOur chamber arrangement runs about 40 minutes, with projections alongside it, and it closes the evening.\n\n(The image is the first page of the score Stravinsky published in 1911.)\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #Petroushka #Stravinsky",
+    pie: "Petroushka was written for a full orchestra and a ballet company. On December 11 we're playing it with five of us. 🎭\n\nStravinsky's ballet premiered in Paris in 1911 with the Ballets Russes. It's set at a Shrovetide fair in Russia, where three puppets come to life in a story of love, jealousy and tragedy.\n\nOur chamber arrangement runs about 40 minutes, with projections alongside it, and it closes the evening.\n\n(The image is the first page of the score Stravinsky published in 1911.)\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets at creartbox.nyc\n\n#CreArtBox #Winterlight #Petroushka #Stravinsky",
     body: "Petroushka, for five",
   },
   {
@@ -347,13 +347,13 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     title: "Winterlight early bird: $19 until November 11",
     excerpt: "Early bird tickets for Winterlight",
     image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/hd/_DSC0606.jpg",
-    pegatinas: [{ texto: 'Ends tomorrow' }, { texto: '$19 · Dec 11' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: 'Ends tomorrow' }, { texto: '$19 · Dec 11' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     status: 'publish',
     date: "2026-11-10",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ["Winterlight"],
     // Precio y fin que mandó Guillermo el 10 nov (Eventbrite: «Early Bird (Ends Nov 11) $19.00»).
-    pie: "Last chance: early bird tickets for Winterlight end tomorrow, Wednesday, November 11. ❄️\n\n$19 for an evening of Stravinsky's Petroushka, Ravel's Mother Goose, Oliver Caplan's Canciones de Monteverde and a world premiere by Hannah Selin.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #NYCConcerts #ChamberMusic",
+    pie: "Last chance: early bird tickets for Winterlight end tomorrow, Wednesday, November 11. ❄️\n\n$19 for an evening of Stravinsky's Petroushka, Ravel's Mother Goose, Oliver Caplan's Canciones de Monteverde and a world premiere by Hannah Selin.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets at creartbox.nyc\n\n#CreArtBox #Winterlight #NYCConcerts #ChamberMusic",
     body: "Early bird tickets for Winterlight",
   },
   {
@@ -368,14 +368,14 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     excerpt: "From our open call: Oliver Caplan",
     image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/oliver-caplan-2.jpg",
     // Foto menos de despacho (pidió eso): la del árbol, de su kit de prensa.
-    pegatinas: [{ texto: 'Winterlight · Dec 11' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: 'Winterlight · Dec 11' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     // En Facebook (apaisado) el automático cortaba la cara: el encuadre, arriba.
     encuadres: { fb: { x: 0.5, y: 0.12 } },
     status: 'publish',
     date: "2026-11-24",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ["Winterlight"],
-    pie: "One of the pieces at Winterlight came to us through our Open Call.\n\nOliver Caplan's Canciones de Monteverde is for flute, violin, viola and cello, about 12 minutes long, and we play it on December 11 at The DiMenna Center.\n\nMonteverde is the cloud forest in Costa Rica, and Caplan's music often starts from the natural world.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #OpenCall #NewMusic",
+    pie: "One of the pieces at Winterlight came to us through our Open Call.\n\nOliver Caplan's Canciones de Monteverde is for flute, violin, viola and cello, about 12 minutes long, and we play it on December 11 at The DiMenna Center.\n\nMonteverde is the cloud forest in Costa Rica, and Caplan's music often starts from the natural world.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets at creartbox.nyc\n\n#CreArtBox #Winterlight #OpenCall #NewMusic",
     body: "From our open call: Oliver Caplan",
   },
   {
@@ -414,7 +414,7 @@ Currents. 30 October 2026, 7:30 pm. The DiMenna Center, New York.
     date: "2026-11-13",
     url: "https://creartbox.nyc/news/winterlight-ticket-lottery.html",
     tags: ["Winterlight"],
-    pie: "Our holiday gift to you: ten pairs of tickets to Winterlight, free. 🎁❄️\n\nThis season we want to celebrate with as many of you as possible, so we're giving away twenty seats for December 11 at The DiMenna Center.\n\nTo enter, email info@creartbox.nyc with WINTERLIGHT LOTTERY in the subject line and one sentence on why you'd like to come. That's all. The draw is random.\n\nEntries close at midnight on December 3. The draw is on December 4, and everyone who entered hears back the same day.\n\nBring someone you love, and come celebrate the holidays with Petroushka, Ravel's fairy tales and a world premiere. ✨\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\nDetails at the link in bio.\n\n#CreArtBox #Winterlight #HolidayGiveaway #FreeTickets #NYCConcerts",
+    pie: "Our holiday gift to you: ten pairs of tickets to Winterlight, free. 🎁❄️\n\nThis season we want to celebrate with as many of you as possible, so we're giving away twenty seats for December 11 at The DiMenna Center.\n\nTo enter, email info@creartbox.nyc with WINTERLIGHT LOTTERY in the subject line and one sentence on why you'd like to come. That's all. The draw is random.\n\nEntries close at midnight on December 3. The draw is on December 4, and everyone who entered hears back the same day.\n\nBring someone you love, and come celebrate the holidays with Petroushka, Ravel's fairy tales and a world premiere. ✨\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\nDetails at creartbox.nyc.\n\n#CreArtBox #Winterlight #HolidayGiveaway #FreeTickets #NYCConcerts",
     body: `## Write to us
 Email info@creartbox.nyc with WINTERLIGHT LOTTERY in the subject line.
 
@@ -560,14 +560,14 @@ Saturday, November 21, 12 to 1 PM. Flushing Library. Ravel's Mother Goose reimag
     excerpt: "A gift for two this Christmas",
     image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0627_1.jpg",
     // Las historias no llevan texto: la fecha, el sitio y dónde comprar van en pegatinas.
-    pegatinas: [{ texto: 'Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: 'Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     // En la historia (9:16) el automático dejaba a los músicos en el borde: centrados y algo más cerca.
     encuadres: { story: { x: 0.42, y: 0.55, zoom: 1.15 } },
     status: 'publish',
     date: "2026-11-27",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ["Winterlight"],
-    pie: "Looking for a gift for someone who loves music? 🎁\n\nFor Winterlight, tickets are 2 for 1: bring someone with you on December 11, or give them both.\n\nPetroushka, Ravel's Mother Goose and a world premiere, at The DiMenna Center in Midtown, a couple of weeks before Christmas.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #HolidayGift #NYCConcerts",
+    pie: "Looking for a gift for someone who loves music? 🎁\n\nFor Winterlight, tickets are 2 for 1: bring someone with you on December 11, or give them both.\n\nPetroushka, Ravel's Mother Goose and a world premiere, at The DiMenna Center in Midtown, a couple of weeks before Christmas.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets at creartbox.nyc\n\n#CreArtBox #Winterlight #HolidayGift #NYCConcerts",
     body: "A gift for two this Christmas",
   },
   {
@@ -580,12 +580,12 @@ Saturday, November 21, 12 to 1 PM. Flushing Library. Ravel's Mother Goose reimag
     excerpt: "Open Call: one week left",
     image: "https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0483.jpg",
     // Otra foto para no repetir: manos en el teclado, Currents (Tao Ho).
-    pegatinas: [{ texto: 'Deadline · Dec 15' }, { texto: 'CA1 & CA2 / 2026' }, { texto: 'Apply: link in bio', senal: true }],
+    pegatinas: [{ texto: 'Deadline · Dec 15' }, { texto: 'CA1 & CA2 / 2026' }, { texto: 'Apply: creartbox.nyc', senal: true }],
     status: 'publish',
     date: "2026-12-08",
     url: "https://creartbox.nyc/opportunities.html",
     tags: ["OpenCall", "Composers"],
-    pie: "One week left. Our open call for composers closes on December 15.\n\nCA1/2026, for composers of any nationality.\nCA2/2026, for American composers.\n\nTwo works, any instrumentation, any career stage.\n\nGuidelines and application at the link in bio.\n\n#CreArtBox #OpenCall #NewMusic #Composers",
+    pie: "One week left. Our open call for composers closes on December 15.\n\nCA1/2026, for composers of any nationality.\nCA2/2026, for American composers.\n\nTwo works, any instrumentation, any career stage.\n\nGuidelines and application at creartbox.nyc.\n\n#CreArtBox #OpenCall #NewMusic #Composers",
     // Carrusel diseñado (lo pidió: «más gráfico, más texto, varios slides»).
     diapositivas: 4,
     // Pidió fondo amarillo y más etiquetas.
@@ -598,7 +598,7 @@ Composers of any nationality. Two works, any instrumentation, any career stage.
 American composers. Same rules: two works, any instrumentation, any career stage.
 
 ## December 15
-The deadline is one week away. Guidelines and application at the link in bio.`,
+The deadline is one week away. Guidelines and application at creartbox.nyc.`,
   },
   // Posts creados directamente en Metricool con imágenes de Guillermo (cartel ya
   // hecho): se añaden para que la app y Metricool cuenten lo mismo.
@@ -614,7 +614,7 @@ The deadline is one week away. Guidelines and application at the link in bio.`,
     date: "2026-10-27",
     url: "https://www.eventbrite.com/e/creartbox-nyc-season-schumann-brahms-clara-schumann-currents-tickets-2000173994260",
     tags: ['Winterlight'],
-    pie: "It's opening week! 🎶\n\nOn Friday we start our 12th season at The DiMenna Center with Currents, and we can't wait to be back in that room with all of you.\n\n📅 Friday, October 30 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Currents #OpeningNight #NYCConcerts",
+    pie: "It's opening week! 🎶\n\nOn Friday we start our 12th season at The DiMenna Center with Currents, and we can't wait to be back in that room with all of you.\n\n📅 Friday, October 30 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets at creartbox.nyc\n\n#CreArtBox #Currents #OpeningNight #NYCConcerts",
     body: "Opening week",
   },
   {
@@ -629,7 +629,7 @@ The deadline is one week away. Guidelines and application at the link in bio.`,
     date: "2026-11-09",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ['Winterlight'],
-    pie: "Tickets are on sale for Winterlight, our December concert at The DiMenna Center. ❄️\n\nAt the center of the evening is Stravinsky's Petroushka, in a chamber arrangement for the five of us, with projections running alongside it. Before it: Ravel's Mother Goose, Oliver Caplan's Canciones de Monteverde, and the world premiere of Hannah Selin's Tectonic Lullaby.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #Petroushka #NYCConcerts",
+    pie: "Tickets are on sale for Winterlight, our December concert at The DiMenna Center. ❄️\n\nAt the center of the evening is Stravinsky's Petroushka, in a chamber arrangement for the five of us, with projections running alongside it. Before it: Ravel's Mother Goose, Oliver Caplan's Canciones de Monteverde, and the world premiere of Hannah Selin's Tectonic Lullaby.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets at creartbox.nyc\n\n#CreArtBox #Winterlight #Petroushka #NYCConcerts",
     body: "Winterlight: tickets on sale",
   },
   {
@@ -644,12 +644,12 @@ The deadline is one week away. Guidelines and application at the link in bio.`,
     // Carrusel: la portada dibujada sobre Doré y dos láminas más de La bella durmiente.
     fotos: ['https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/en-winterlight-ravel-ig-1.jpg', 'https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/dore-belle-2-corte.jpg', 'https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/dore-belle-3-despertar.jpg'],
     // Las historias no llevan texto: la fecha, el sitio y dónde comprar van en pegatinas.
-    pegatinas: [{ texto: 'Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: 'Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     status: 'publish',
     date: "2026-11-19",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ['Winterlight'],
-    pie: "Sleeping Beauty, Tom Thumb, Beauty and the Beast.\n\nRavel wrote Ma Mère l'Oye (Mother Goose) for piano four hands between 1908 and 1910, five little pieces built on old French fairy tales.\n\nWhen we play it at Winterlight, the projections behind us come from illustrations in historical editions of those same stories. The engravings here are Gustave Doré's, for Perrault's Sleeping Beauty.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #Ravel #NYCConcerts",
+    pie: "Sleeping Beauty, Tom Thumb, Beauty and the Beast.\n\nRavel wrote Ma Mère l'Oye (Mother Goose) for piano four hands between 1908 and 1910, five little pieces built on old French fairy tales.\n\nWhen we play it at Winterlight, the projections behind us come from illustrations in historical editions of those same stories. The engravings here are Gustave Doré's, for Perrault's Sleeping Beauty.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets at creartbox.nyc\n\n#CreArtBox #Winterlight #Ravel #NYCConcerts",
     body: "Ravel, Mother Goose",
   },
   {
@@ -662,14 +662,14 @@ The deadline is one week away. Guidelines and application at the link in bio.`,
     excerpt: "Tectonic Lullaby, a world premiere",
     image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/hannah-selin.jpg",
     // Retrato de Hannah de su web (Alice and Chris Photography); antes era el cartel.
-    pegatinas: [{ texto: 'Winterlight · Dec 11' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: 'Winterlight · Dec 11' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     // En Facebook (apaisado) el automático cortaba la cara: el encuadre, arriba.
     encuadres: { fb: { x: 0.5, y: 0.12 } },
     status: 'publish',
     date: "2026-12-01",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ['Winterlight'],
-    pie: "Winterlight opens with a piece nobody has heard yet.\n\nTectonic Lullaby is Hannah Selin's new work for piano quintet, about ten minutes long, and December 11 at The DiMenna Center will be its first performance.\n\nHannah is a composer, violist and vocalist, and it's not our first premiere together: we gave the first performance of her The Soft Moon at DiMenna in 2024.\n\n📷 Hannah Selin by Alice and Chris Photography\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #HannahSelin #WorldPremiere",
+    pie: "Winterlight opens with a piece nobody has heard yet.\n\nTectonic Lullaby is Hannah Selin's new work for piano quintet, about ten minutes long, and December 11 at The DiMenna Center will be its first performance.\n\nHannah is a composer, violist and vocalist, and it's not our first premiere together: we gave the first performance of her The Soft Moon at DiMenna in 2024.\n\n📷 Hannah Selin by Alice and Chris Photography\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets at creartbox.nyc\n\n#CreArtBox #Winterlight #HannahSelin #WorldPremiere",
     body: "Tectonic Lullaby, a world premiere",
   },
   {
@@ -683,13 +683,13 @@ The deadline is one week away. Guidelines and application at the link in bio.`,
     image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/winterlight-limpia.jpg",
     // El cartel de la campaña limpio de textos, con los nuestros encima (lo pidió así).
     // «This Friday» más grande y sin oscurecer a los músicos (lo pidió): estilo cielo.
-    pegatinas: [{ texto: 'Winterlight · Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: 'Winterlight · Dec 11 · 7:30 pm' }, { texto: 'The DiMenna Center' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     pegatinasMuro: true,
     status: 'publish',
     date: "2026-12-07",
     url: "https://www.eventbrite.com/e/winterlight-ravel-ma-mere-loye-stravinsky-petroushka-tickets-2004163929263",
     tags: ['Winterlight'],
-    pie: "This Friday: Winterlight. ❄️\n\nPetroushka for the five of us, Ravel's Mother Goose with fairy tale illustrations projected behind us, Oliver Caplan's Canciones de Monteverde, and the very first performance of Hannah Selin's Tectonic Lullaby.\n\nWe've been rehearsing Petroushka for weeks and we can't wait to finally play it for you.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets in bio\n\n#CreArtBox #Winterlight #Petroushka #NYCConcerts",
+    pie: "This Friday: Winterlight. ❄️\n\nPetroushka for the five of us, Ravel's Mother Goose with fairy tale illustrations projected behind us, Oliver Caplan's Canciones de Monteverde, and the very first performance of Hannah Selin's Tectonic Lullaby.\n\nWe've been rehearsing Petroushka for weeks and we can't wait to finally play it for you.\n\n📅 Friday, December 11 · 7:30 PM\n📍 The DiMenna Center, NYC\n🎟️ Tickets at creartbox.nyc\n\n#CreArtBox #Winterlight #Petroushka #NYCConcerts",
     body: "This Friday: Winterlight",
   },
   {
@@ -747,7 +747,7 @@ Currents opens our season at The DiMenna Center. About an hour of music, no inte
 
 📅 Friday, October 30 · 7:30 PM
 📍 The DiMenna Center, 450 W 37th St
-🎟️ Tickets in bio
+🎟️ Tickets at creartbox.nyc
 
 Hope to see you on Friday!
 
@@ -934,7 +934,7 @@ It was great to see how quickly the students started coming up with their own id
 
 A big thank you to everyone at Kuopio Conservatory for inviting us and being so open to experimenting with us. We'd love to come back!
 
-We wrote a little more about the experience (and shared some photos) on our website. Full story at the link in bio!
+We wrote a little more about the experience (and shared some photos) on our website. Full story at creartbox.nyc!
 
 #CreArtBox #Kuopio #ChamberMusic`,
     body: `A five-day residency at the Kuopio Conservatory, Finland.`,
@@ -942,7 +942,7 @@ We wrote a little more about the experience (and shared some photos) on our webs
   {
     lang: 'en',
     slug: 'currents-sketched-in-october',
-    pegatinas: [{ texto: '184 years later' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: '184 years later' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     kind: 'social',
     estilo: 'duo',
     kicker: 'Did you know?',
@@ -960,7 +960,7 @@ We wrote a little more about the experience (and shared some photos) on our webs
     status: 'publish',
     date: '2026-10-20',
     url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
+    cta: 'Tickets at creartbox.nyc ↗',
     tags: ['RobertSchumann', 'Currents', 'ChamberMusic'],
     pie: `We only noticed this while putting the programme notes together.
 
@@ -972,7 +972,7 @@ We play it on 30 October. A hundred and eighty-four years to the day after he pu
 
 Nobody planned that. We just liked the piece.
 
-30 October at The DiMenna Center. Tickets in bio.
+30 October at The DiMenna Center. Tickets at creartbox.nyc.
 
 #RobertSchumann #CreArtBox #ChamberMusic`,
     body: `Sketched 24 to 30 October 1842. Played 30 October 2026.`,
@@ -991,7 +991,7 @@ Nobody planned that. We just liked the piece.
     status: 'publish',
     date: '2026-10-21',
     url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
+    cta: 'Tickets at creartbox.nyc ↗',
     falta:
       'Un detalle por si te importa: la foto es de noviembre de 2023, no de la apertura del año ' +
       'pasado de la que habla el texto. El pie no la fecha, así que no dice nada falso, pero si ' +
@@ -1007,7 +1007,7 @@ Last year's opening was such a wonderful evening, and we're hoping to fill the h
 
 📅 October 30 · 7:30 PM
 📍 The DiMenna Center, NYC
-🎟️ Tickets in bio!
+🎟️ Tickets at creartbox.nyc
 
 #CreArtBox #DiMennaCenter #NYCConcerts #ChamberMusic`,
     body: `The room before it starts.`,
@@ -1050,7 +1050,7 @@ Tomorrow night. See you at DiMenna.
   {
     lang: 'en',
     slug: 'currents-brahms',
-    pegatinas: [{ texto: '30 Oct · 7:30 pm' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: '30 Oct · 7:30 pm' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     kind: 'social',
     estilo: 'duo',
     kicker: 'Did you know?',
@@ -1065,7 +1065,7 @@ Tomorrow night. See you at DiMenna.
     status: 'publish',
     date: '2026-10-23',
     url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
+    cta: 'Tickets at creartbox.nyc ↗',
     tags: ['Brahms', 'Currents', 'ChamberMusic'],
     pie: `A small Brahms story.
 
@@ -1077,7 +1077,7 @@ Here's the part we like. When Simrock published the Trio in 1892, Brahms offered
 
 That's the version Matthew, Julia and Josefina play on the 30th.
 
-Tickets in bio.
+Tickets at creartbox.nyc.
 
 #Brahms #CreArtBox #ChamberMusic`,
     body: `One clarinettist changed his mind about retiring.`,
@@ -1097,7 +1097,7 @@ Tickets in bio.
     status: 'publish',
     date: '2026-10-24',
     url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
+    cta: 'Tickets at creartbox.nyc ↗',
     tags: ['ContemporaryMusic', 'Currents', 'CreArtBox'],
     pie: `We open with a piece that starts before anyone is on stage.
 
@@ -1113,7 +1113,7 @@ It's four minutes long. It's a strange way to begin a concert and we wouldn't st
   {
     lang: 'en',
     slug: 'currents-clara',
-    pegatinas: [{ texto: '30 Oct · The DiMenna Center' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: '30 Oct · The DiMenna Center' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     kind: 'social',
     estilo: 'duo',
     kicker: 'Did you know?',
@@ -1128,7 +1128,7 @@ It's four minutes long. It's a strange way to begin a concert and we wouldn't st
     status: 'publish',
     date: '2026-10-25',
     url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
+    cta: 'Tickets at creartbox.nyc ↗',
     tags: ['ClaraSchumann', 'WomenComposers', 'Currents'],
     pie: `We've been working on Clara Schumann's Three Romances.
 
@@ -1146,7 +1146,7 @@ These Romances are among the last original pieces she wrote. Eleven minutes, pla
   {
     lang: 'en',
     slug: 'currents-schumann-quartet',
-    pegatinas: [{ texto: '30 Oct · 7:30 pm' }, { texto: 'Tickets in bio', senal: true }],
+    pegatinas: [{ texto: '30 Oct · 7:30 pm' }, { texto: 'Tickets: creartbox.nyc', senal: true }],
     kind: 'social',
     estilo: 'duo',
     kicker: 'Did you know?',
@@ -1164,7 +1164,7 @@ These Romances are among the last original pieces she wrote. Eleven minutes, pla
     status: 'publish',
     date: '2026-10-26',
     url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
+    cta: 'Tickets at creartbox.nyc ↗',
     tags: ['RobertSchumann', 'Currents', 'ChamberMusic'],
     pie: `The piece we're most looking forward to, and a detail worth watching for.
 
@@ -1176,7 +1176,7 @@ So he writes in the fix. The cellist tunes the bottom C string down a whole step
 
 It serves the music and it inconveniences the cellist, and Schumann asked for it anyway.
 
-Tickets in bio.
+Tickets at creartbox.nyc.
 
 #RobertSchumann #CreArtBox #ChamberMusic`,
     body: `A note the instrument does not have.`,
@@ -1194,7 +1194,7 @@ Tickets in bio.
     status: 'publish',
     date: '2026-10-28',
     url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
+    cta: 'Tickets at creartbox.nyc ↗',
     tags: ['Currents', 'NYCConcerts', 'DiMennaCenter'],
     pie: `Two days to go.
 
@@ -1204,7 +1204,7 @@ Brahms, Clara and Robert Schumann, Eric Moe, Guillermo Laporta. Video running th
 
 The hall holds 240 and every seat was taken last year, so if you've been meaning to get a ticket this is the moment.
 
-Friday 30 October, 7:30 pm. Tickets in bio.
+Friday 30 October, 7:30 pm. Tickets at creartbox.nyc.
 
 #CreArtBox #NYCConcerts #Currents`,
     body: `Two days out.`,
@@ -1239,7 +1239,7 @@ Friday 30 October, 7:30 pm. Tickets in bio.
     status: 'publish',
     date: '2026-10-29',
     url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
+    cta: 'Tickets at creartbox.nyc ↗',
     tags: ['Currents', 'NYC', 'DiMennaCenter'],
     pie: `Tomorrow.
 
@@ -1251,7 +1251,7 @@ Our twelfth New York season starts here. Student tickets are $15, and the cheape
 
 If you've been thinking about it, we'd love to see you.
 
-Tickets in bio.
+Tickets at creartbox.nyc.
 
 #CreArtBox #Currents #NYC`,
     body: `The night before.`,
@@ -1272,7 +1272,7 @@ Tickets in bio.
     status: 'publish',
     date: '2026-10-30',
     url: ENTRADAS,
-    cta: 'Tickets at the link in bio ↗',
+    cta: 'Tickets at creartbox.nyc ↗',
     falta:
       'Esta hay que hacerla el día: una foto de la prueba de sonido o de la sala vacía antes de ' +
       'abrir. Es la que más gana con ser de verdad de ese rato.',
@@ -1287,7 +1287,7 @@ If you're in the city with nothing on tonight, come.
 
 7:30 pm · 450 W 37th Street
 
-Tickets in bio.
+Tickets at creartbox.nyc.
 
 #CreArtBox #NYCClassicalMusic`,
     body: `Tonight at 7:30.`,
@@ -1455,7 +1455,7 @@ CA2/2026, for American composers.
 Deadline: December 15, 2026.
 Two works, any instrumentation, any career stage.
 
-Guidelines and application at the link in bio.
+Guidelines and application at creartbox.nyc.
 
 #CreArtBox #OpenCall #NewMusic #Composers`,
     body: `Two calls for scores for the 2027/28 season, open until 15 December 2026.`,
