@@ -400,6 +400,8 @@ export interface KitSource {
   /** Diapositivas de texto con fondo ámbar y titular grande. */
   fondoAmbar?: boolean;
   /** Logo obligatorio de quien financia: en qué diapositivas y si va en la historia. */
+  /** Sin la marca CreArtBox en la imagen (proyectos aparte). */
+  sinMarca?: boolean;
   logo?: { src: string; diapositivas?: number[]; historia?: boolean };
   /** Cuentas de Instagram que van como colaboradoras (máximo 3). */
   colaboradores?: string[];
