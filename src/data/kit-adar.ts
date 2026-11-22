@@ -71,6 +71,8 @@ Ya estamos preparando la próxima edición.
   {
     lang: 'es',
     slug: 'propuestas-artisticas-2027',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'propuestas-adar-2027',
     porque: 'Ya estamos programando la VII edición (agosto de 2027). Cuanto antes lleguen las propuestas, más donde elegir. Lo pidió Guillermo el 20 de noviembre.',
     kind: 'social',
     estilo: 'ambar',
@@ -102,6 +104,8 @@ Compártelo con quien creas que encaja. 🙌
   {
     lang: 'es',
     slug: 'ayuntamientos-y-espacios-2027',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'como-elegimos-un-sitio',
     porque: 'Los ayuntamientos cierran presupuestos y agenda del año que viene en invierno. Es el momento de que un concejo o una sala piense en acoger un concierto en 2027. Lo pidió Guillermo el 20 de noviembre.',
     kind: 'social',
     estilo: 'cielo',
@@ -156,6 +160,8 @@ El vídeo completo está en nuestro canal de YouTube, y te contamos cómo se hiz
   {
     lang: 'es',
     slug: 'amigos-giving-tuesday',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'por-que-adar-es-gratis',
     porque: 'El 1 de diciembre es el GivingTuesday, el día internacional de dar. Empieza la campaña de Amigos de cara a Navidad. Lo pidió Guillermo el 20 de noviembre.',
     kind: 'social',
     estilo: 'ambar',
@@ -268,6 +274,8 @@ Más en festivaladar.com
   {
     lang: 'es',
     slug: 'amigos-regalo-navidad',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'leiguarda-47-la-sede',
     porque: 'A diez días de Nochebuena. La web dice que la membresía se puede regalar: es un regalo sin envío, que llega a tiempo. Segunda ola de la campaña de Amigos.',
     kind: 'social',
     estilo: 'ambar',
@@ -375,6 +383,8 @@ Gracias por llenar este año las iglesias, los hórreos y los campos de aldea. N
   {
     lang: 'es',
     slug: 'adar-2026-en-fotos',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'seis-ediciones-de-adar',
     porque: 'Resumen del año la última semana de diciembre, cuando todo el mundo mira atrás. Él pidió fotos de este año y de otros.',
     kind: 'social',
     title: 'ADAR 2026 en fotos',
@@ -415,6 +425,8 @@ Gracias a los músicos, a los vecinos y a quienes vinieron.
   {
     lang: 'es',
     slug: 'brana-sonora-anuncio',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'brana-sonora',
     porque: 'En enero empieza Braña Sonora, el proyecto paralelo al festival con el apoyo del Ministerio de Cultura. Es la noticia más importante del invierno.',
     kind: 'social',
     estilo: 'cielo',
@@ -465,6 +477,8 @@ Ayudas para proyectos de salvaguarda del Patrimonio Cultural Inmaterial. De juli
   {
     lang: 'es',
     slug: 'brana-sonora-vaqueiros',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'brana-sonora',
     porque: 'Segundo post de Braña Sonora: explica en un carrusel de texto qué es la cultura vaqueira de alzada, para quien no la conoce.',
     kind: 'social',
     estilo: 'cinta',
@@ -505,6 +519,8 @@ Cantos, oficios, la tonada y una forma de entender el paisaje. Braña Sonora lo 
   {
     lang: 'es',
     slug: 'brana-sonora-buscamos-portadores',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'brana-sonora',
     porque: 'El 17 es San Antón, patrón de los animales, con bendiciones de ganado por toda Asturias. Buen día para pedir que nos presenten a vaqueiros, cantadores y artesanos.',
     kind: 'social',
     estilo: 'cielo',
@@ -536,6 +552,8 @@ Más en festivaladar.com
   {
     lang: 'es',
     slug: 'orchestra-improvvisata-anuncio',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'orchestra-improvvisata-en-leiguarda',
     porque: 'Anuncia la llegada de Orchestra Improvvisata a Leiguarda con Culture Moves Europe. Es la residencia que financia Culture Moves Europe (Unión Europea).',
     kind: 'social',
     estilo: 'cielo',
@@ -566,6 +584,8 @@ Más en festivaladar.com
   {
     lang: 'es',
     slug: 'dia-educacion-escuelas-rurales',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'brana-sonora',
     porque: 'El 24 de enero es el Día Internacional de la Educación. Braña Sonora tiene una parte para escuelas rurales y este es el día para pedir que se apunten.',
     kind: 'social',
     estilo: 'cielo',
@@ -593,6 +613,8 @@ Más en festivaladar.com
   {
     lang: 'es',
     slug: 'ritmo-con-senas',
+    // Su artículo del blog (se publica en la web el mismo día).
+    blog: 'orchestra-improvvisata-en-leiguarda',
     porque: 'Explica el Ritmo con Señas en un carrusel antes de que llegue Orchestra Improvvisata: es lo que más curiosidad va a dar.',
     kind: 'social',
     estilo: 'cinta',
