@@ -15,6 +15,11 @@ const A26 = 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/';
 const A25 = 'https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/';
 const RES = 'https://creartbox-media-cdn.b-cdn.net/adarimages/residency/';
 const FX25 = 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/';
+const IMG = 'https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/';
+// Logos obligatorios: Braña Sonora (Ministerio de Cultura) y la residencia
+// de Culture Moves Europe (Unión Europea y Goethe-Institut).
+const LOGO_MINISTERIO = `${IMG}logos-brana-sonora.png`;
+const LOGO_UE = `${IMG}logos-ue-goethe.png`;
 const VIEJO = 'https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/';
 const f26 = (noche: string, n: number) =>
   `${A26}${noche}_Fotos/${noche}_WEB/${noche}_WEB_${n}.jpg`;
@@ -33,6 +38,9 @@ const WHALE_25 = '25.08.07_The%20Whale%20%C2%B7%20Monasterio%20S.%20Antol%C3%ADn
 const OBONA_25 = '25.08.12_Monasterio%20de%20Obona';
 const CRISTAL_25 = '25.08.17_Iglesia%20e%20invernadero%20de%20cristal';
 const LEIGUARDA_25 = '25.08.16_Iglesia%20de%20Leiguarda';
+
+// Recortadas a 4:5 (enteras son más anchas de lo que deja Instagram).
+const PASEO_AYALGAS = ['06', '10', '14'].map((n) => `${IMG}paseo-ayalgas-${n}-45.jpg`);
 
 export const ADAR_SOURCES: KitSource[] = [
   // ── Noviembre y diciembre de 2026 ─────────────────────────────────────
@@ -280,12 +288,15 @@ Regala ser Amigo del Festival ADAR: una plaza asegurada en los conciertos de ago
 Amigo · 30 € al año: reserva anticipada en todos los conciertos.
 Amigo VIP · 50 € al año: asientos VIP, celebración privada con los artistas, grabaciones inéditas y la camiseta del festival.
 
+Y un regalo especial: dos noches en la casa de ADAR en Leiguarda, una aldea de diez casas en la montaña asturiana. 🏡
+
 Escríbenos a leiguardamusic@gmail.com y te contamos cómo regalarlo.
 
 Todo sobre los Amigos en festivaladar.com
 
 #FestivalADAR #AmigosDelFestival #RegalosDeNavidad #Asturias #MúsicaEnDirecto`,
     body: 'Regala ADAR esta Navidad',
+    falta: 'La estancia de dos noches en la casa: precio, fechas en las que se puede usar y si incluye algo más (sugerencia del 22 de noviembre).',
   },
   {
     lang: 'es',
@@ -321,6 +332,9 @@ Lo contamos en el blog de festivaladar.com
     title: 'Las compositoras que programamos',
     excerpt: 'Las compositoras que programamos',
     image: `${FX25}C1970T01.jpg`,
+    // Las fotos de prensa de sus webs oficiales, con el crédito en el pie.
+    fotos: ['andrea-casarrubios', 'caroline-shaw', 'jessie-montgomery'].map((n) => `${IMG}compositora-${n}-45.jpg`),
+    fotosEnteras: true,
     status: 'publish',
     date: '2026-12-20',
     url: `${WEB}blog/las-compositoras-que-programamos/`,
@@ -330,6 +344,8 @@ Lo contamos en el blog de festivaladar.com
 Andrea Casarrubios, Caroline Shaw, Jessie Montgomery, Celeste Oram, Mizuko Kaji…
 
 Cuando programamos mujeres, alguien pregunta si es una cuota. No lo es: la música de hoy está llena de compositoras excelentes. Lo que hace falta es no dejar que la inercia elija por ti.
+
+Fotos: Andrea Casarrubios por Titilayo Ayangade, Caroline Shaw por Simon van Boxtel y Jessie Montgomery, de su web.
 
 Lo contamos en el blog de festivaladar.com
 
@@ -363,22 +379,27 @@ Gracias por llenar este año las iglesias, los hórreos y los campos de aldea. N
     kind: 'social',
     title: 'ADAR 2026 en fotos',
     excerpt: 'ADAR 2026 en fotos',
-    image: f26(FIGAL_26, 1),
+    image: f26(ECLIPSE_26, 3),
+    // Fotos del archivo de 2026 que no salieron como portada en Instagram
+    // (comparadas con el historial el 22 de noviembre).
     fotos: [
-      f26(FIGAL_26, 1),
-      f26(CORIAS_26, 1),
-      f26(OSCOS_26, 1),
-      f26(ECLIPSE_26, 1),
-      f26(CASONA_26, 5),
-      f26(LEIGUARDA_26, 6),
-      f26(LEIGUARDA_FINAL_26, 2),
+      f26(ECLIPSE_26, 3),
+      f26(FIGAL_26, 4),
+      f26(CORIAS_26, 4),
+      f26(FRANCO_26, 3),
+      f26(CASONA_26, 2),
+      f26(FIGAL_26, 3),
+      f26(OSCOS_26, 3),
+      f26(ECLIPSE_26, 4),
+      f26(LEIGUARDA_26, 5),
+      f26(LEIGUARDA_FINAL_26, 8),
     ],
     fotosEnteras: true,
     status: 'publish',
     date: '2026-12-29',
     url: WEB,
     tags: ['FestivalADAR', 'Resumen2026'],
-    pie: `ADAR 2026, en fotos. 📸
+    pie: `ADAR 2026, en fotos que todavía no habíamos enseñado. 📸
 
 La VI edición, del 3 al 16 de agosto. Un hórreo en Salas, el Parador de Corias, El Franco, Villanueva de Oscos, el eclipse, la panera de La Casona de Belmonte y las dos noches finales en la iglesia de Leiguarda.
 
@@ -388,7 +409,6 @@ Gracias a los músicos, a los vecinos y a quienes vinieron.
 
 #FestivalADAR #ADAR2026 #Asturias #MúsicaClásica #MedioRural`,
     body: 'ADAR 2026 en fotos',
-    falta: 'Revisar el orden y que las 7 fotos se vean bien enteras (son del archivo de 2026).',
   },
 
   // ── Enero de 2027: Braña Sonora y Orchestra Improvvisata ──────────────
@@ -401,6 +421,9 @@ Gracias a los músicos, a los vecinos y a quienes vinieron.
     kicker: 'Nuevo proyecto',
     title: 'Braña Sonora',
     excerpt: 'Archivo, transmisión y creación a partir del patrimonio inmaterial del medio rural asturiano.',
+    fondoAmbar: true,
+    diapositivas: 4,
+    logo: { src: LOGO_MINISTERIO, diapositivas: [0, 3], historia: true },
     image: `${RES}IMG_2808.jpeg`,
     status: 'publish',
     date: '2027-01-08',
@@ -416,13 +439,28 @@ Un proyecto de ADAR, paralelo al festival, para escuchar y guardar el patrimonio
 
 Vamos a grabar en los concejos donde ya trabaja el festival, con las personas que guardan ese saber. Con ese archivo trabajarán compositoras y compositores residentes, y las obras nuevas se estrenarán en el Festival ADAR de agosto de 2027. También habrá materiales para escuelas rurales.
 
-Con el apoyo del Ministerio de Cultura.
+Braña Sonora cuenta con una ayuda del Ministerio de Cultura para proyectos de salvaguarda del Patrimonio Cultural Inmaterial, y dura de julio de 2026 a diciembre de 2027.
+
+Desliza para saber más. 👉
 
 Más en festivaladar.com
 
-#BrañaSonora #FestivalADAR #PatrimonioInmaterial #Asturias #CulturaVaqueira #Tonada`,
-    body: 'Braña Sonora',
-    falta: 'El logotipo del Ministerio de Cultura: las bases obligan a ponerlo en todo lo que se difunda del proyecto. ¿Lo tienes, y hay ya página de Braña Sonora en la web?',
+#BrañaSonora #FestivalADAR #PatrimonioInmaterial #Asturias #CulturaVaqueira #Tonada #MinisterioDeCultura`,
+    body: `Braña Sonora
+
+## Escuchar y guardar
+
+Grabamos el paisaje sonoro de las brañas, los hórreos y los oficios, y la memoria de la tonada, con quienes la guardan.
+
+## Transmitir y crear
+
+Materiales para escuelas rurales y tres residencias de composición. Las obras nuevas se estrenan en el Festival ADAR de agosto de 2027.
+
+## Con el apoyo del Ministerio de Cultura
+
+Ayudas para proyectos de salvaguarda del Patrimonio Cultural Inmaterial. De julio de 2026 a diciembre de 2027.
+`,
+    falta: '¿Hay ya página de Braña Sonora en la web? Si no, el enlace va a la portada.',
   },
   {
     lang: 'es',
@@ -434,6 +472,7 @@ Más en festivaladar.com
     diapositivas: 4,
     title: '¿Qué es una braña?',
     excerpt: '¿Qué es una braña?',
+    logo: { src: LOGO_MINISTERIO, diapositivas: [3], historia: true },
     image: `${RES}IMG_2788.jpeg`,
     status: 'publish',
     date: '2027-01-12',
@@ -462,17 +501,17 @@ Los vaqueiros de alzada subían a las brañas en mayo y junio y bajaban en septi
 
 Cantos, oficios, la tonada y una forma de entender el paisaje. Braña Sonora lo graba con quienes lo guardan.
 `,
-    falta: 'El logotipo del Ministerio de Cultura (obligatorio en la difusión de Braña Sonora).',
   },
   {
     lang: 'es',
     slug: 'brana-sonora-buscamos-portadores',
     porque: 'El 17 es San Antón, patrón de los animales, con bendiciones de ganado por toda Asturias. Buen día para pedir que nos presenten a vaqueiros, cantadores y artesanos.',
     kind: 'social',
-    estilo: 'ambar',
+    estilo: 'cielo',
     kicker: 'Braña Sonora',
     title: '¿Conoces a quien guarda la memoria de tu pueblo?',
     excerpt: 'Buscamos a quienes guardan la memoria de su pueblo.',
+    logo: { src: LOGO_MINISTERIO, diapositivas: [0], historia: true },
     image: `${FX25}C1981T01.jpg`,
     pegatinas: [{ texto: 'Braña Sonora' }, { texto: 'Vaqueiros · tonada · oficios' }, { texto: 'Escríbenos', senal: true }],
     pegatinasMuro: true,
@@ -492,18 +531,20 @@ Más en festivaladar.com
 
 #BrañaSonora #FestivalADAR #SanAntón #CulturaVaqueira #Tonada #Asturias`,
     body: '¿Conoces a quien guarda la memoria de tu pueblo?',
-    falta: 'Confirmar que leiguardamusic@gmail.com es el correo para Braña Sonora, y el logotipo del Ministerio.',
+    falta: 'Confirmar que leiguardamusic@gmail.com es el correo para Braña Sonora. Si tenéis fotos del trabajo de campo (brañas, vaqueiros, tonada), mejor que esta.',
   },
   {
     lang: 'es',
     slug: 'orchestra-improvvisata-anuncio',
     porque: 'Anuncia la llegada de Orchestra Improvvisata a Leiguarda con Culture Moves Europe. Es la residencia que financia Culture Moves Europe (Unión Europea).',
     kind: 'social',
-    estilo: 'ambar',
+    estilo: 'cielo',
     kicker: 'Residencia',
     title: 'Llega Orchestra Improvvisata',
     excerpt: 'Una orquesta donde todos improvisan juntos.',
-    image: `${RES}IMG_0284.jpeg`,
+    // Fotos de su propio dossier (Orchestra Improvvisata, Roma).
+    image: `${IMG}orchestra-improvvisata-ritmo.jpg`,
+    logo: { src: LOGO_UE, diapositivas: [0], historia: true },
     status: 'publish',
     date: '2027-01-20',
     url: `${WEB}financiacion-europea/`,
@@ -520,7 +561,7 @@ Más en festivaladar.com
 
 #FestivalADAR #OrchestraImprovvisata #RitmoConSeñas #CultureMovesEurope #EuropaCreativa #Asturias`,
     body: 'Llega Orchestra Improvvisata',
-    falta: 'Fechas de la residencia, si habrá actividad abierta (taller, ensayo abierto, concierto), su cuenta de Instagram y una foto del grupo.',
+    falta: 'Fechas de la residencia, si habrá actividad abierta (taller, ensayo abierto, concierto) y su cuenta de Instagram. La foto es de su dossier y tiene poca resolución: si tienen una mejor, la cambio.',
   },
   {
     lang: 'es',
@@ -530,6 +571,7 @@ Más en festivaladar.com
     estilo: 'cielo',
     title: 'Escuelas rurales: la música de vuestro concejo',
     excerpt: 'Braña Sonora para escuelas rurales.',
+    logo: { src: LOGO_MINISTERIO, diapositivas: [0], historia: true },
     image: f25(OBONA_25, 2),
     pegatinas: [{ texto: 'Escuelas rurales' }, { texto: 'Braña Sonora' }, { texto: 'Escríbenos', senal: true }],
     status: 'publish',
@@ -546,7 +588,7 @@ Más en festivaladar.com
 
 #BrañaSonora #FestivalADAR #DíaInternacionalDeLaEducación #EscuelaRural #Asturias`,
     body: 'Escuelas rurales: la música de vuestro concejo',
-    falta: 'Confirmar que en enero se puede invitar ya a los colegios (el plan dice portal en beta de enero a marzo) y el logotipo del Ministerio.',
+    falta: 'Confirmar que en enero se puede invitar ya a los colegios (el plan dice portal en beta de enero a marzo).',
   },
   {
     lang: 'es',
@@ -558,7 +600,8 @@ Más en festivaladar.com
     diapositivas: 4,
     title: '¿Se puede dirigir una orquesta con señas?',
     excerpt: 'El Ritmo con Señas, explicado.',
-    image: `${RES}IMG_0680.jpeg`,
+    image: `${IMG}orchestra-improvvisata-collage.jpg`,
+    logo: { src: LOGO_UE, diapositivas: [3], historia: true },
     status: 'publish',
     date: '2027-01-27',
     url: `${WEB}financiacion-europea/`,
@@ -599,6 +642,10 @@ Niños, adolescentes, personas con discapacidad, principiantes y profesionales t
     title: '¿Qué es un paseo sonoro?',
     excerpt: '¿Qué es un paseo sonoro?',
     image: `${VIEJO}2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg`,
+    // Más fotos (sugerencia del 22 de noviembre): el paseo del Museo de las
+    // Ayalgas, 2023.
+    fotos: PASEO_AYALGAS,
+    fotosEnteras: true,
     status: 'publish',
     date: '2027-01-30',
     url: `${WEB}blog/que-es-un-paseo-sonoro/`,
