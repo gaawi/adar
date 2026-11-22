@@ -1,5 +1,5 @@
 ---
-title: "Qué es exactamente un paseo sonoro (y por qué es nuestro formato favorito)"
+title: "Qué es exactamente un paseo sonoro (y por qué es uno de los favoritos del público)"
 lang: es
 date: "2026-08-29T10:00:00.000Z"
 status: draft
@@ -9,7 +9,7 @@ author: "Festival ADAR"
 tags: ["paseo sonoro", "formatos", "Museo de las Ayalgas", "2023"]
 ---
 
-De todos los formatos que usamos, el **paseo sonoro** es el que más cuesta explicar por escrito y el que más gente convierte en incondicional en cuanto lo prueba una vez.
+De todos los formatos que usamos, el **paseo sonoro** es el que más cuesta explicar por escrito y uno de los favoritos del público: quien lo prueba una vez, vuelve.
 
 La descripción técnica es sosa: los músicos se distribuyen por un espacio y el público lo recorre. Ya está. Pero lo que ocurre dentro de esa frase es otra cosa.
 
@@ -52,3 +52,17 @@ Los paseos sonoros se hacen también en ciudades, pero en el medio rural tienen 
 Si tuviéramos que decir por qué es nuestro formato favorito, sería esta: **el paseo sonoro elimina la frontera entre escenario y público.** No hay tarima, no hay foso, no hay «arriba» y «abajo». Hay un sitio, hay música dentro y hay gente andando.
 
 Y resulta que, cuando quitas esa frontera, mucha gente que creía que la música clásica «no era para ella» descubre que el problema nunca fue la música. Era la silla.
+
+## En fotos
+
+![Paseo sonoro en el Museo de las Ayalgas, 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg)
+
+![Flauta y cuerdas entre motos antiguas](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/10.jpg)
+
+![Violonchelo junto a los aperos de labranza](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/14.jpg)
+
+![El público, de sala en sala](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/17.jpg)
+
+![Paseo sonoro en Leiguarda, 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_3.jpg)
+
+![De noche, alrededor del hórreo Casantos](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_1.jpg)

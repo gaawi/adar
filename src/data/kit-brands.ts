@@ -393,6 +393,8 @@ export interface KitSource {
   fotosEnteras?: boolean;
   /** Por qué este post y por qué ese día: se enseña en la app junto a los botones. */
   porque?: string;
+  /** Fotos tal cual detrás de la portada dibujada (ya en 4:5). */
+  fotosExtra?: string[];
   /** Slug del artículo del blog que acompaña a la ficha (src/content/blog/es). */
   blog?: string;
   /** Cuántas diapositivas como mucho en el carrusel (por defecto 3). */

@@ -105,7 +105,7 @@ Compártelo con quien creas que encaja. 🙌
     lang: 'es',
     slug: 'ayuntamientos-y-espacios-2027',
     // Su artículo del blog (se publica en la web el mismo día).
-    blog: 'como-elegimos-un-sitio',
+    blog: 'y-si-adar-suena-en-tu-pueblo',
     porque: 'Los ayuntamientos cierran presupuestos y agenda del año que viene en invierno. Es el momento de que un concejo o una sala piense en acoger un concierto en 2027. Lo pidió Guillermo el 20 de noviembre.',
     kind: 'social',
     estilo: 'cielo',
@@ -212,7 +212,7 @@ Hazte Amigo en festivaladar.com
 
 14 de agosto de 2021, campo de la iglesia de Leiguarda. Primer concierto de ADAR.
 
-Había hecho sol toda la semana. Esa noche empezó a orbayar y no se pudo tocar el programa entero. Aun así vinieron más de 120 personas, en una aldea de apenas cien vecinos.
+Había hecho sol toda la semana y esa noche empezó a orbayar. Aun así vinieron más de 120 personas, en una aldea de apenas cien vecinos, y la música sonó entre la bruma.
 
 Sonaron Mendelssohn, Haydn, Falla, John Harbison y una obra nueva escrita para esa noche: Atlantic, de Marcos Fernández.
 
@@ -229,7 +229,10 @@ La historia completa, en el blog de festivaladar.com
     estilo: 'cielo',
     title: 'Cómo suena un hórreo por dentro',
     excerpt: 'Cómo suena un hórreo por dentro',
-    image: f26(FIGAL_26, 2),
+    // Portada: el hórreo de La Figal encendido al anochecer (sugerencia del
+    // 22 nov: mejor encuadre y más fotos). Detrás, el concierto por dentro.
+    image: f26(FIGAL_26, 6),
+    fotosExtra: ['2', '4', '5', '1'].map((n) => `${IMG}horreo-figal-${n}-45.jpg`),
     status: 'publish',
     date: '2026-12-07',
     url: `${WEB}blog/el-horreo-como-sala-de-conciertos/`,
@@ -314,7 +317,7 @@ Todo sobre los Amigos en festivaladar.com
     title: 'Una ballena encima de una montaña',
     excerpt: 'Una ballena encima de una montaña',
     image: f25(WHALE_25, 4),
-    fotos: [f25(WHALE_25, 4), f25(WHALE_25, 2), f25(WHALE_25, 1), f25(WHALE_25, 3)],
+    fotos: [4, 2, 1, 3, 5, 6, 7].map((n) => f25(WHALE_25, n)),
     fotosEnteras: true,
     status: 'publish',
     date: '2026-12-17',
@@ -351,7 +354,7 @@ Lo contamos en el blog de festivaladar.com
 
 Andrea Casarrubios, Caroline Shaw, Jessie Montgomery, Celeste Oram, Mizuko Kaji…
 
-Cuando programamos mujeres, alguien pregunta si es una cuota. No lo es: la música de hoy está llena de compositoras excelentes. Lo que hace falta es no dejar que la inercia elija por ti.
+Sus obras son de lo mejor que se escribe hoy, y en cada edición el público lo nota.
 
 Fotos: Andrea Casarrubios por Titilayo Ayangade, Caroline Shaw por Simon van Boxtel y Jessie Montgomery, de su web.
 
@@ -479,42 +482,29 @@ Ayudas para proyectos de salvaguarda del Patrimonio Cultural Inmaterial. De juli
     slug: 'brana-sonora-vaqueiros',
     // Su artículo del blog (se publica en la web el mismo día).
     blog: 'brana-sonora',
-    porque: 'Segundo post de Braña Sonora: explica en un carrusel de texto qué es la cultura vaqueira de alzada, para quien no la conoce.',
+    // 22 nov: «no me convence». En Asturias nadie necesita que le expliquen
+    // qué es una braña; mejor preguntar por los recuerdos de cada uno.
+    porque: 'Segundo post de Braña Sonora. En vez de explicar qué es una braña (en Asturias se sabe), pregunta por los recuerdos de cada uno: da conversación y nos trae gente para el archivo.',
     kind: 'social',
-    estilo: 'cinta',
-    fondoAmbar: true,
-    diapositivas: 4,
-    title: '¿Qué es una braña?',
-    excerpt: '¿Qué es una braña?',
-    logo: { src: LOGO_MINISTERIO, diapositivas: [3], historia: true },
+    estilo: 'cielo',
+    title: '¿Tú también subías a la braña?',
+    excerpt: '¿Tú también subías a la braña?',
+    logo: { src: LOGO_MINISTERIO, diapositivas: [0], historia: true },
     image: `${RES}IMG_2788.jpeg`,
     status: 'publish',
     date: '2027-01-12',
     url: WEB,
     tags: ['BrañaSonora', 'CulturaVaqueira'],
-    pie: `¿Qué es una braña? ⛰️
+    pie: `¿Tú también subías a la braña? ⛰️
 
-Es un pasto de altura con sus cabañas, donde el ganado pasa el verano. Los vaqueiros de alzada subían con él en primavera y bajaban en otoño. Esa vida, de ida y vuelta, dejó costumbres, oficios, cantos y una forma de entender el paisaje.
+En Asturias la braña no hace falta explicarla. Es el verano de los abuelos con el ganado, la cabaña, el camino de subida en mayo y el de bajada en octubre. Y lo que se cantaba por el camino.
 
-Hoy muchas brañas se quedan vacías y en muchas aldeas la edad media pasa de los 65 años. Por eso empezamos Braña Sonora: para grabarlo y escucharlo antes de que se pierda.
+Con Braña Sonora queremos escuchar esas historias y guardarlas antes de que se pierdan.
 
-Desliza para saber más. 👉
+Cuéntanos en los comentarios: ¿quién subía en tu familia? ¿A qué braña? ¿Qué se cantaba?
 
 #BrañaSonora #FestivalADAR #CulturaVaqueira #Brañas #Asturias #PatrimonioInmaterial`,
-    body: `¿Qué es una braña?
-
-## Un pasto de altura
-
-La braña es un pasto de montaña con sus cabañas, donde el ganado pasa el verano.
-
-## La alzada
-
-Los vaqueiros de alzada subían a las brañas en mayo y junio y bajaban en septiembre y octubre. Una vida de ida y vuelta.
-
-## Lo que queda
-
-Cantos, oficios, la tonada y una forma de entender el paisaje. Braña Sonora lo graba con quienes lo guardan.
-`,
+    body: '¿Tú también subías a la braña?',
   },
   {
     lang: 'es',

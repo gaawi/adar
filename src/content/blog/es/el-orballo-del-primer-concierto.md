@@ -3,7 +3,7 @@ title: "El orballo del primer concierto: cómo nació ADAR una noche de agosto d
 lang: es
 date: "2026-08-24T10:00:00.000Z"
 status: draft
-excerpt: "Toda la semana había hecho sol. La noche del estreno, en el campo de la iglesia de Leiguarda, empezó a orbayar. No pudo tocarse el programa entero, y aun así aquella fue la noche que lo cambió todo."
+excerpt: "Toda la semana había hecho sol. La noche del estreno, en el campo de la iglesia de Leiguarda, empezó a orbayar. Y aun así, aquella fue la noche que lo cambió todo."
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg"
 author: "Festival ADAR"
 tags: ["2021", "primera edición", "Leiguarda", "historia"]
@@ -17,7 +17,7 @@ Y llovió.
 
 Había hecho sol toda la semana. Ese día, cuando el escenario ya estaba montado (un gran **marco amarillo** plantado en la hierba, con la aldea de Leiguarda de telón de fondo), apareció el **orballo**: esa lluvia fina asturiana que no llega a mojar de golpe pero que no para nunca.
 
-Para un concierto al aire libre con instrumentos de cuerda y madera, el orballo no es un detalle atmosférico. Es un problema. **No se pudo interpretar el programa entero.** Hubo que recortar, decidir sobre la marcha, proteger los instrumentos.
+Para un concierto al aire libre con instrumentos de cuerda y madera, el orballo obliga a decidir sobre la marcha y a cuidar los instrumentos. Y eso hicimos.
 
 Y sin embargo, quien estuvo allí lo cuenta siempre igual: aquella lluvia fina no arruinó la noche. **La convirtió en otra cosa.** La aldea difuminada entre la bruma, el marco amarillo, la música saliendo hacia un paisaje mojado. Una atmósfera que no se podría repetir ni queriendo.
 

@@ -21,6 +21,16 @@ La sede de ADAR es una casa restaurada en la montaña del occidente asturiano. Y
 
 Es **una casa de trabajo**, y todo lo que necesita está bajo el mismo techo: alojamiento, sala de ensayo con **piano de cola**, estudio de producción y un espacio donde se dan conciertos. Cuatro funciones que en una ciudad estarían repartidas por cuatro barrios, aquí ocurren en el mismo edificio.
 
+## La llamamos Centro ADAR
+
+En los programas y en la web aparece como **Centro ADAR**, y el nombre dice lo que queremos que sea: el centro del proyecto, no solo una casa. Ahí viven y ensayan los residentes, ahí celebran los Amigos VIP del Festival su encuentro con los artistas antes de cada edición, y ahí sonó, por ejemplo, el microconcierto de quinteto del eclipse del 12 de agosto de 2026.
+
+## Los vecinos, lo primero
+
+Leiguarda es una aldea de montaña de un centenar de habitantes, y el Centro ADAR no se entiende sin ellos. En el primer concierto del festival, en agosto de 2021, se juntaron más de 120 personas en el campo de la iglesia: más gente que vecinos censados. Y los conciertos de clausura de 2025 y 2026 acabaron con una espicha, donde la gente del pueblo y la que viene de fuera se mezcla y comenta lo que acaba de oír.
+
+Para los artistas que vienen de Nueva York o de Lituania, los vecinos son la primera gente que conocen aquí. Y para el pueblo, la casa ya es parte del paisaje.
+
 ## Por qué eso cambia el trabajo
 
 Quienes residen en Leiguarda 47 **conviven, comen juntos y desarrollan sus proyectos codo con codo.** Puede sonar a detalle logístico. Es, en realidad, el corazón del método.
@@ -52,3 +62,17 @@ No el silencio relativo de un local insonorizado, con el zumbido del aire acondi
 Eso, que en el medio rural es lo normal y en la ciudad es un lujo carísimo, resulta ser una de las mejores condiciones de trabajo que existen para hacer música.
 
 Es la casa. Está en la montaña. Y es el motivo de que cada agosto haya algo que contar.
+
+## La casa por dentro
+
+![El Centro ADAR, en Leiguarda, al anochecer](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_0284.jpeg)
+
+![La sala de ensayo, en la antigua cuadra](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_0680.jpeg)
+
+![Un rincón de trabajo](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_0740.jpeg)
+
+![El porche](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_0755.jpeg)
+
+![El hórreo junto a la casa](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_2808.jpeg)
+
+![El valle desde Leiguarda](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_2788.jpeg)

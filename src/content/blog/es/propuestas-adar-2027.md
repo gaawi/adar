@@ -3,7 +3,7 @@ title: "Ya estamos preparando ADAR 2027: cómo enviarnos tu propuesta"
 lang: es
 date: "2026-11-24T10:00:00.000Z"
 status: draft
-excerpt: "La VII edición será en agosto de 2027. Estamos seleccionando propuestas de músicos, ensembles y artistas, y buscando ayuntamientos y espacios que quieran acoger un concierto. Así funciona."
+excerpt: "La VII edición será en agosto de 2027. Estamos seleccionando propuestas de músicos, ensembles y artistas. Así funciona."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_1.jpg"
 author: "Festival ADAR"
 tags: ["ADAR 2027", "propuestas", "programación", "sedes"]
@@ -30,6 +30,4 @@ Escríbenos durante todo el año a **leiguardamusic@gmail.com**, con el asunto *
 
 Si representas a varios artistas, mándanos los que creas que encajan mejor. Revisamos todo mientras preparamos la edición y escribimos cuando hay posibilidad de colaborar.
 
-## ¿Y si ADAR suena en tu pueblo?
-
-También buscamos **ayuntamientos, asociaciones vecinales y culturales, propietarios de espacios patrimoniales y salas** que quieran acoger un concierto o un paseo sonoro en 2027. No elegimos un sitio por lo bonito que es, sino por lo que puede pasar dentro: lo contamos en «Cómo elegimos un sitio para un concierto». Si te apetece, escríbenos al mismo correo.
+¿Llevas un ayuntamiento, una asociación o un espacio y quieres que ADAR suene en tu pueblo? Te lo contamos en «¿Y si ADAR suena en tu pueblo?».

@@ -4,7 +4,7 @@ lang: es
 date: "2026-08-18T10:00:00.000Z"
 status: draft
 excerpt: "El hórreo es la obra de arquitectura popular más asturiana que existe, y desaparece en silencio. Contamos por qué ADAR, un festival de música, decidió meterse a defenderlo."
-featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Villanueva%20de%20Oscos_Fotos/13.08.26_Villanueva%20de%20Oscos_WEB/13.08.26_Villanueva%20de%20Oscos_WEB_2.jpg"
+featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_WEB/04.08.26_La%20Figal%20de%20Xugabolos_WEB_6.jpg"
 author: "Festival ADAR"
 tags: ["hórreos", "patrimonio", "arquitectura popular", "concurso"]
 ---
@@ -38,3 +38,13 @@ Es exactamente el mismo gesto que hacemos con la música: coger algo valioso que
 Un concierto en una iglesia de aldea y un concurso de hórreos persiguen lo mismo: **que el medio rural no se lea como un sitio vacío del que la gente se va, sino como un sitio lleno de cosas que merecen quedarse.**
 
 La música entra por el oído; la arquitectura, por los ojos. Pero el mensaje es idéntico. Lo que hay aquí vale la pena. Vamos a defenderlo mientras estemos a tiempo.
+
+## Los hórreos del festival
+
+![La Figal de Xugabolos (Casazorrina, Salas), ganador de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_WEB/04.08.26_La%20Figal%20de%20Xugabolos_WEB_6.jpg)
+
+![Recital de clave de Ignacio Prego dentro del hórreo, 4 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/04.08.26_La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_WEB/04.08.26_La%20Figal%20de%20Xugabolos_WEB_2.jpg)
+
+![Susacasa Agrocultural (Gozón), ganador de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.05_Susacasa%20Agrocultural_Fotos/25.08.05_Susacasa%20Agrocultural_WEB/25.08.05_Susacasa%20Agrocultural_WEB_1.jpg)
+
+![Casería de Paz Mesa y Xandru González (Puerma, Las Regueras), ganador de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_Fotos/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_WEB/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_WEB_1.jpg)

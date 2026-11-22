@@ -4,7 +4,7 @@ lang: es
 date: "2026-08-19T10:00:00.000Z"
 status: draft
 excerpt: "Un compositor lituano que estudió en California, música pensada para instrumentos de folclore báltico y una iglesia asturiana. La historia de una obra que cruzó tres mundos para sonar aquí."
-featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/11.08.26_El%20Franco_Fotos/11.08.26_El%20Franco_WEB/11.08.26_El%20Franco_WEB_4.jpg"
+featured_image: "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=1213,fit=crop/mxBx7079NqIParez/1i1a0339-web-m6L4Jol8GZirnJlZ.jpg"
 author: "Festival ADAR"
 tags: ["Germanavičius", "compositores", "Lituania", "música contemporánea"]
 ---

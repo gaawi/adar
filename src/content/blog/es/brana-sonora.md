@@ -4,7 +4,7 @@ lang: es
 date: "2027-01-08T10:00:00.000Z"
 status: draft
 excerpt: "Empezamos un proyecto paralelo al festival para grabar el patrimonio vivo del medio rural asturiano, con quienes lo guardan, y devolverlo en forma de archivo, materiales para escuelas rurales y música nueva. Con el apoyo del Ministerio de Cultura."
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_2808.jpeg"
+featured_image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/brana-sonora-cartel.jpg"
 author: "Festival ADAR"
 tags: ["Braña Sonora", "patrimonio inmaterial", "cultura vaqueira", "tonada", "hórreos"]
 ---
@@ -37,3 +37,5 @@ En muchas aldeas del occidente y de la montaña la población ha caído más de 
 Si conoces a alguien que cantaba en la braña, que sabe cómo se hacía una panera o que guarda tonadas de su familia, escríbenos a leiguardamusic@gmail.com.
 
 *Braña Sonora cuenta con el apoyo del Ministerio de Cultura del Gobierno de España.*
+
+![Ministerio de Cultura · Festival ADAR](https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/logos-brana-sonora.png)
