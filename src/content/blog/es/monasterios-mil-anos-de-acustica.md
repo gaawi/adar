@@ -1,8 +1,8 @@
 ---
 title: "Mil años de acústica gratis: por qué tocamos en monasterios"
 lang: es
-date: "2026-09-12T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:06:00.000Z"
+status: publish
 excerpt: "Obona, Bedón, Cornellana, Villanueva de Oscos. Asturias está llena de monasterios que llevan siglos siendo, sin saberlo, las mejores salas de conciertos del norte de España."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.12_Monasterio%20de%20Obona_Fotos/25.08.12_Monasterio%20de%20Obona_WEB/25.08.12_Monasterio%20de%20Obona_WEB_1.jpg"
 author: "Festival ADAR"

@@ -1,8 +1,8 @@
 ---
 title: "Por qué un festival pequeño documenta todo lo que hace"
 lang: es
-date: "2026-09-28T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:01:00.000Z"
+status: publish
 excerpt: "Tenemos un archivo navegable por años, lugares y formatos, con foto y vídeo profesional de cada acción. Para un proyecto rural, el archivo es una herramienta de supervivencia."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_Fotos/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_WEB/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_WEB_6.jpg"
 author: "Festival ADAR"

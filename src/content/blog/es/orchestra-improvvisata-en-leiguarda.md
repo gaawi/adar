@@ -1,8 +1,8 @@
 ---
 title: "Orchestra Improvvisata: una orquesta donde todos improvisan, en Leiguarda"
 lang: es
-date: "2027-01-20T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:10:00.000Z"
+status: publish
 excerpt: "Llega a nuestra residencia un proyecto social italiano que, desde 2018, usa la improvisación y el Ritmo con Señas para que niños, principiantes, personas con discapacidad y profesionales toquen juntos. Con Culture Moves Europe."
 featured_image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/orchestra-improvvisata-ritmo.jpg"
 author: "Festival ADAR"

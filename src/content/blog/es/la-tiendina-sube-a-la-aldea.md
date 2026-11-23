@@ -1,8 +1,8 @@
 ---
 title: La tiendina sube a la aldea. La música también.
 lang: es
-date: 2026-09-23T10:00:00+00:00
-status: draft
+date: "2026-11-23T18:03:00.000Z"
+status: publish
 excerpt: 'En los pueblos de montaña lo esencial sube: el pan, la fruta, el correo. Esa furgoneta explica por qué el festival va a los pueblos.'
 featured_image: https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_Fotos/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB_2.jpg
 author: Festival ADAR

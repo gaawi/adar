@@ -1,8 +1,8 @@
 ---
 title: "Llenar de tul un auditorio vacío: cuando el escenario es la obra"
 lang: es
-date: "2026-09-26T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:02:00.000Z"
+status: publish
 excerpt: "En 2023 Mizuko Kaji convirtió el escenario del Auditorio As Quintas en una instalación que el público podía recorrer, días antes de que allí se diera un concierto. Una idea sencilla y muy astuta."
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Concierto_en_El_Franco/53.jpg"
 author: "Festival ADAR"

@@ -1,8 +1,8 @@
 ---
 title: "El mapa de ADAR: catorce concejos, seis años y una idea de Asturias"
 lang: es
-date: "2026-09-30T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:00:00.000Z"
+status: publish
 excerpt: "De Belmonte a Taramundi, de Llanes a Somiedo. Un recorrido por el mapa que el festival ha ido dibujando en seis ediciones, y por qué el mapa importa tanto como la música."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_1.jpg"
 author: "Festival ADAR"

@@ -1,8 +1,8 @@
 ---
 title: "Ya estamos preparando ADAR 2027: cómo enviarnos tu propuesta"
 lang: es
-date: "2026-11-24T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:12:00.000Z"
+status: publish
 excerpt: "La VII edición será en agosto de 2027. Estamos seleccionando propuestas de músicos, ensembles y artistas. Así funciona."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_1.jpg"
 author: "Festival ADAR"

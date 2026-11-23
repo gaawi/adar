@@ -1,8 +1,8 @@
 ---
 title: "Por qué ADAR es gratis (y cómo puedes ayudar a que lo siga siendo)"
 lang: es
-date: "2026-12-01T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:08:00.000Z"
+status: publish
 excerpt: "Los conciertos de ADAR no cuestan nada a quien viene. Contamos por qué y qué hacen los Amigos del Festival para que siga siendo así."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_WEB/05.08.26_Parador%20de%20Corias_WEB_3.jpg"
 author: "Festival ADAR"

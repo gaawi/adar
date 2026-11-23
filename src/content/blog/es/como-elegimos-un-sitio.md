@@ -1,8 +1,8 @@
 ---
 title: "Cómo elegimos un sitio para un concierto (el método completo)"
 lang: es
-date: "2026-09-22T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:04:00.000Z"
+status: publish
 excerpt: "Un monasterio bonito no es automáticamente un buen escenario. Contamos, paso a paso, cómo decidimos dónde se toca: los seis filtros que aplicamos y las preguntas incómodas que hay que hacerse."
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/20.jpg"
 author: "Festival ADAR"

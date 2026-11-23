@@ -1,8 +1,8 @@
 ---
 title: "Braña Sonora: escuchar y guardar la música de las brañas, los hórreos y la tonada"
 lang: es
-date: "2027-01-08T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:11:00.000Z"
+status: publish
 excerpt: "Empezamos un proyecto paralelo al festival para grabar el patrimonio vivo del medio rural asturiano, con quienes lo guardan, y devolverlo en forma de archivo, materiales para escuelas rurales y música nueva. Con el apoyo del Ministerio de Cultura."
 featured_image: "https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/brana-sonora-cartel.jpg"
 author: "Festival ADAR"

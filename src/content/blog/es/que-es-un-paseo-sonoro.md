@@ -1,8 +1,8 @@
 ---
 title: "Qué es exactamente un paseo sonoro (y por qué es uno de los favoritos del público)"
 lang: es
-date: "2026-08-29T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:07:00.000Z"
+status: publish
 excerpt: "Un formato donde tú decides el orden, la distancia y el tiempo. Cómo funciona el paseo sonoro y por qué en el medio rural funciona mejor que en cualquier sala."
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg"
 author: "Festival ADAR"

@@ -1,8 +1,8 @@
 ---
 title: "¿Y si ADAR suena en tu pueblo? Ayuntamientos y espacios para 2027"
 lang: es
-date: "2026-11-26T10:00:00.000Z"
-status: draft
+date: "2026-11-23T18:09:00.000Z"
+status: publish
 excerpt: "Para la VII edición, en agosto de 2027, buscamos ayuntamientos, asociaciones, propietarios de espacios patrimoniales y salas que quieran acoger un concierto o un paseo sonoro. Así trabajamos con cada sitio."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Villanueva%20de%20Oscos_Fotos/13.08.26_Villanueva%20de%20Oscos_WEB/13.08.26_Villanueva%20de%20Oscos_WEB_2.jpg"
 author: "Festival ADAR"
