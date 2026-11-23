@@ -4,7 +4,7 @@ lang: es
 date: "2026-09-26T10:00:00.000Z"
 status: draft
 excerpt: "En 2023 Mizuko Kaji convirtió el escenario del Auditorio As Quintas en una instalación que el público podía recorrer, días antes de que allí se diera un concierto. Una idea sencilla y muy astuta."
-featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_artistica_de_luz_y_proyecciones_Mizuko_Kaji/42.jpg"
+featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Concierto_en_El_Franco/53.jpg"
 author: "Festival ADAR"
 tags: ["Mizuko Kaji", "instalación", "El Franco", "2023"]
 ---
@@ -12,6 +12,8 @@ tags: ["Mizuko Kaji", "instalación", "El Franco", "2023"]
 El **3 de agosto de 2023**, en el Complejo Cultural **As Quintas** de El Franco, ocurrió algo un poco desconcertante: **el escenario estaba lleno de telas de tul y el público podía pasear por dentro.**
 
 El concierto sería días después, en ese mismo escenario. Ese día había una **instalación de luz y proyecciones** de **Mizuko Kaji**, arquitecta y diseñadora de escenografías, acompañada por música de Guillermo Laporta, su pieza *Brown Leaves*.
+
+![Los tules de Mizuko Kaji en el escenario de As Quintas, El Franco, 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Concierto_en_El_Franco/IMG_3237.jpeg)
 
 La idea que hay detrás nos sigue pareciendo una de las más astutas que hemos programado.
 
@@ -35,6 +37,8 @@ Para una arquitecta es un material fascinante precisamente por eso: **construye 
 
 Y para un escenario es el material perfecto para lo que Kaji quería hacer: **convertir un espacio conocido en un espacio desconocido**, sin obra y sin dejar rastro cuando se retira.
 
+![Tul y proyecciones en As Quintas, 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Concierto_en_El_Franco/IMG_3235.jpeg)
+
 ## La música como parte de la instalación
 
 Un detalle que nos importa: la pieza de Guillermo Laporta que acompañaba el recorrido formaba parte de la obra.
@@ -42,6 +46,8 @@ Un detalle que nos importa: la pieza de Guillermo Laporta que acompañaba el rec
 Cuando entras en una instalación y hay música, lo normal es que la música haga de decorado sonoro: rellena el silencio para que el visitante no se sienta raro. Aquí la relación era otra. Se trataba de que la instalación **fuera el espacio de esa música**, y que el visitante, andando, decidiera su propia mezcla entre lo que veía y lo que oía.
 
 Es la misma lógica de nuestros paseos sonoros: **quien anda, programa.** Tu recorrido es tu montaje.
+
+![Los músicos entre los tules, As Quintas, 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Concierto_en_El_Franco/49.jpg)
 
 ## El comienzo de una línea
 
