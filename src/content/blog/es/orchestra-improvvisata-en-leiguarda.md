@@ -17,11 +17,11 @@ Así trabaja **Orchestra Improvvisata**, un proyecto social italiano que desde 2
 
 La herramienta es el **Ritmo con Señas**, creado por el músico argentino **Santiago Vázquez**. Él lo explica así: «es un lenguaje, un juego y un sistema pedagógico».
 
-Es un **lenguaje** de señas hechas con las manos, los brazos y el cuerpo, que sirve para coordinar una improvisación en grupo. Es un **juego**, porque se juega en equipo: hay quien dirige y hay quien improvisa, y cada uno trae sus ritmos y sus ideas. Y es un **sistema pedagógico**: no hace falta saber leer música, hace falta escuchar.
+Es un **lenguaje** de señas hechas con las manos, los brazos y el cuerpo, que sirve para coordinar una improvisación en grupo. Es un **juego**, porque se juega en equipo: hay quien dirige y hay quien improvisa, y cada uno trae sus ritmos y sus ideas. Y es un **sistema pedagógico**: para tocar basta con escuchar, aunque no sepas leer música.
 
 ## La belleza de tocar a la vez
 
-Para Orchestra Improvvisata, cuando todas las personas que improvisan consiguen expresarse al mismo tiempo, lo que suena (sea lo que sea) es, para ellas y en ese momento, la música más bonita del mundo. Es una idea que encaja con lo que buscamos en ADAR: que la música no sea un escaparate, sino algo que se hace en común.
+Para Orchestra Improvvisata, cuando todas las personas que improvisan consiguen expresarse al mismo tiempo, lo que suena (sea lo que sea) es, para ellas y en ese momento, la música más bonita del mundo. Es una idea que encaja con lo que buscamos en ADAR: que la música sea algo que se hace en común.
 
 ## Su residencia en ADAR
 

@@ -3,13 +3,13 @@ title: "Por qué ADAR es gratis (y cómo puedes ayudar a que lo siga siendo)"
 lang: es
 date: "2026-12-01T10:00:00.000Z"
 status: draft
-excerpt: "Los conciertos de ADAR no cuestan nada a quien viene. Esa es una decisión, no un descuido. Contamos por qué y qué hacen los Amigos del Festival para sostenerla."
+excerpt: "Los conciertos de ADAR no cuestan nada a quien viene. Contamos por qué y qué hacen los Amigos del Festival para que siga siendo así."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_WEB/05.08.26_Parador%20de%20Corias_WEB_3.jpg"
 author: "Festival ADAR"
 tags: ["Amigos del Festival", "acceso cultural", "medio rural"]
 ---
 
-Las entradas de ADAR son gratuitas. No es una promoción: es una decisión.
+Las entradas de ADAR son gratuitas, por decisión propia.
 
 ## Una entrada es una puerta
 
@@ -17,7 +17,7 @@ En un pueblo pequeño, cobrar entrada cambia quién viene. El vecino que nunca h
 
 Por eso tocamos en iglesias, hórreos, mercados y campos de aldea, y por eso no cobramos. Queremos que la música llegue donde casi nunca llega en directo, y que nadie se quede fuera por el precio.
 
-## Gratis no quiere decir que no cueste
+## Lo que cuesta un concierto gratis
 
 Un concierto cuesta: músicos, viajes, alojamiento, técnica, grabación, seguros. Una parte la cubren las ayudas públicas y los patrocinadores. El resto lo sostiene la gente.
 

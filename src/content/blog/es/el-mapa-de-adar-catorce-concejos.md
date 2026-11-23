@@ -55,26 +55,22 @@ Lo hacemos igual, por una razón que tiene que ver con lo que significa el mapa.
 
 Si concentráramos todo en Belmonte, tendríamos un buen festival local. Los vecinos de Taramundi, de Somiedo o de Llanes tendrían que conducir dos horas para verlo, y la mayoría no lo haría. **El festival sería, para ellos, otra cosa que pasa lejos.**
 
-Itinerar invierte esa relación. En vez de pedirle al territorio que venga, **vamos nosotros.** Y cada punto nuevo del mapa es una comarca donde, ese año, lo importante pasa en casa.
+Itinerar invierte esa relación. En vez de pedirle al territorio que venga, **vamos nosotros.** Cada punto nuevo del mapa es una comarca donde, ese año, lo importante pasa en casa.
 
 ## Lo que hemos aprendido del mapa
 
 **Que el occidente lo agradece más.** Los concejos montañosos y dispersos del occidente asturiano (Tineo, Taramundi, El Franco, Villanueva de Oscos, Cangas del Narcea) son los que están más lejos de la programación habitual y donde el efecto de un concierto se nota más. Ahí es donde menos alternativas hay y donde el público responde con más intensidad.
 
-**Que volver vale más que llegar.** Los sitios donde hemos vuelto varias veces (Belmonte, El Franco, Salas) funcionan de otra manera. El público ya sabe que habrá otra edición, los espacios están rodados, los ayuntamientos saben lo que se les propone. **La confianza acumulada permite ser más ambicioso.** La noche de los tres eventos simultáneos en Grado, en 2024, solo fue posible porque no era el primer año allí. Y en 2026 no estrenamos ni un concejo: la edición entera se apoyó en relaciones ya construidas.
+**Que volver vale más que llegar.** Los sitios donde hemos vuelto varias veces (Belmonte, El Franco, Salas) funcionan de otra manera. El público ya sabe que habrá otra edición, los espacios están rodados, los ayuntamientos saben lo que se les propone. **La confianza acumulada permite ser más ambicioso.** La noche de los tres eventos simultáneos en Grado, en 2024, solo fue posible porque no era el primer año allí. En 2026 no estrenamos ningún concejo: la edición entera se apoyó en relaciones ya construidas.
 
-**Que cada tipo de espacio enseña algo.** Los monasterios nos enseñaron acústica. Los hórreos, intimidad. Los mercados, cómo quitar la ceremonia. Los espacios abiertos, humildad ante el clima, y también que se puede tocar en un alto de monte mientras se apaga el sol en un eclipse total. Un festival que solo trabajara en un tipo de sala nunca habría aprendido nada de eso.
+**Que cada tipo de espacio enseña algo.** Los monasterios nos enseñaron acústica. Los hórreos, intimidad. Los mercados, cómo quitar la ceremonia. Los espacios abiertos, humildad ante el clima, y también que se puede tocar en un alto de monte mientras se apaga el sol en un eclipse total.
 
-**Y que el mapa es un argumento.** Catorce concejos en seis años es un dato que se puede enseñar. Demuestra que esto no es un evento aislado sostenido por el voluntarismo de un pueblo, sino **una red estable** con relaciones sostenidas en el tiempo.
+**Y que el mapa es un argumento.** Catorce concejos en seis años es un dato que se puede enseñar. Demuestra que esto es **una red estable** con relaciones sostenidas en el tiempo.
 
 ## Una idea de Asturias
 
-Al final, el mapa dice algo que no cabe en ningún cartel.
-
-Cuando pones todos esos puntos juntos (una aldea de cien habitantes, un monasterio del siglo XI, un mercado de montaña, una panera de permacultura, un parador, un pueblo de cuchilleros, un alto de monte durante un eclipse), lo que aparece no es una lista de sitios bonitos.
-
-Es **una manera de leer Asturias**: como un territorio lleno de espacios extraordinarios que están esperando que alguien los use, y de gente dispuesta a llenarlos si se le propone algo que valga la pena.
+Cuando pones todos esos puntos juntos (una aldea de cien habitantes, un monasterio del siglo XI, un mercado de montaña, una panera de permacultura, un parador, un pueblo de cuchilleros, un alto de monte durante un eclipse), aparece **una manera de leer Asturias**: como un territorio lleno de espacios extraordinarios que están esperando que alguien los use, y de gente dispuesta a llenarlos si se le propone algo que valga la pena.
 
 Ese mapa lo hemos dibujado entre todos: con los ayuntamientos que abrieron las puertas, los vecinos que colocaron sillas, los artistas que aceptaron carreteras imposibles y el público que apareció.
 
-Y todavía le quedan huecos por rellenar. Nos vemos el año que viene en alguno de ellos.
+Todavía le quedan huecos por rellenar. Nos vemos el año que viene en alguno de ellos.

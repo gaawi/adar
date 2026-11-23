@@ -9,9 +9,9 @@ author: "Festival ADAR"
 tags: ["eclipse", "crónica", "La Corredoria", "2026"]
 ---
 
-Hay conciertos que se programan por una fecha. Este se programó por un fenómeno que no volverá a ocurrir en Asturias en lo que dura una vida.
+Este concierto se programó por un fenómeno que no volverá a ocurrir en Asturias en lo que dura una vida.
 
-El **12 de agosto de 2026**, el Principado entero quedó dentro de la franja de totalidad del eclipse solar. No una parte: **Asturias completa**, de Oviedo a los Picos, vio la sombra de la Luna tapar el disco entero del sol. Era el **primer eclipse total visible desde la España peninsular desde 1905** (121 años) y la línea central del fenómeno pasó, literalmente, por encima de nosotros.
+El **12 de agosto de 2026**, el Principado entero quedó dentro de la franja de totalidad del eclipse solar. **Asturias completa**, de Oviedo a los Picos, vio la sombra de la Luna tapar el disco entero del sol. Era el **primer eclipse total visible desde la España peninsular desde 1905** (121 años) y la línea central del fenómeno pasó, literalmente, por encima de nosotros.
 
 ## Tocar contra el reloj del cielo
 
@@ -21,18 +21,16 @@ Por eso subimos al **Alto de La Corredoria**: un horizonte limpio hacia el oeste
 
 ## Música para la sombra
 
-La pregunta que nos hicimos al diseñar el programa fue sencilla y difícil: **¿qué se toca mientras el mundo se queda a oscuras?**
+La pregunta que nos hicimos al diseñar el programa fue esta: **¿qué se toca mientras el mundo se queda a oscuras?**
 
-No quisimos ilustrar el eclipse ni "acompañarlo" como quien pone banda sonora. Buscamos lo contrario: una música que hiciera con el oído lo que el eclipse hacía con la vista. Sonidos que se van retirando. Notas largas que parecen no acabar nunca. Silencios que, de pronto, pesan.
+Buscamos una música que hiciera con el oído lo que el eclipse hacía con la vista: sonidos que se van retirando, notas largas que parecen no acabar nunca y silencios que pesan.
 
-Y entonces llegó el minuto y medio de totalidad. La temperatura bajó. Los pájaros callaron (eso no se puede provocar, solo esperar). La gente dejó de mirar los teléfonos. Durante **poco menos de dos minutos**, un alto de Belmonte de Miranda fue uno de los mejores sitios del planeta para estar vivo y en silencio a la vez.
+Entonces llegó el minuto y medio de totalidad. La temperatura bajó. Los pájaros callaron. La gente dejó de mirar los teléfonos. Durante **poco menos de dos minutos**, el alto de Belmonte de Miranda quedó a oscuras y en silencio.
 
-## Por qué esto es exactamente lo que hace ADAR
+## Por qué esto es lo que hace ADAR
 
-Un festival de ciudad habría llevado el eclipse a un auditorio con pantalla. Nosotros hicimos lo de siempre, solo que con un decorado imposible de igualar: **poner la música donde de verdad pasan las cosas.**
+Hicimos lo de siempre: **poner la música donde pasan las cosas.**
 
-El medio rural asturiano no es un telón de fondo bonito. Es el sitio con el horizonte despejado, con el cielo sin contaminación lumínica, con el silencio que un concierto de eclipse necesita de verdad. La totalidad se vio mejor desde un alto de Belmonte que desde el centro de casi cualquier ciudad de la franja.
+El medio rural asturiano tiene el horizonte despejado, el cielo sin contaminación lumínica y el silencio que necesita un concierto de eclipse. La totalidad se vio mejor desde un alto de Belmonte que desde el centro de casi cualquier ciudad de la franja.
 
-El próximo eclipse total en la España peninsular será en **2027**, y luego habrá que esperar décadas. Pero la lección de esa tarde nos vale para todo el año: hay experiencias que solo ocurren si alguien decide llevarlas hasta el sitio donde tienen sentido.
-
-Nosotros seguimos en ese sitio. Con o sin eclipse.
+El próximo eclipse total en la España peninsular será en **2027**, y luego habrá que esperar décadas.

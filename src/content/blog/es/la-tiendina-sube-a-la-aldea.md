@@ -3,7 +3,7 @@ title: La tiendina sube a la aldea. La música también.
 lang: es
 date: 2026-09-23T10:00:00+00:00
 status: draft
-excerpt: 'En los pueblos de montaña lo esencial no espera a que vayas a buscarlo: sube. Esa furgoneta explica, mejor que cualquier informe, por qué el festival va a los pueblos en vez de pedirles que vengan.'
+excerpt: 'En los pueblos de montaña lo esencial sube: el pan, la fruta, el correo. Esa furgoneta explica por qué el festival va a los pueblos.'
 featured_image: https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_Fotos/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB_2.jpg
 author: Festival ADAR
 tags:
@@ -13,7 +13,7 @@ tags:
   - Leiguarda
 ---
 
-A Leiguarda sube la tiendina. Una furgoneta con el pan, la fruta, lo que haga falta. No espera a que bajes tú: viene ella.
+A Leiguarda sube la tiendina. Una furgoneta con el pan, la fruta, lo que haga falta.
 
 Nos gusta esa imagen porque explica el festival entero sin decir una sola palabra sobre música.
 
@@ -31,12 +31,12 @@ Si lo concentráramos todo en un sitio tendríamos un buen festival local. Para 
 
 ## Por eso vamos nosotros
 
-Tenemos sede en Leiguarda, pero el festival no se queda en ella: tiene también un mapa. Catorce concejos en seis ediciones. En vez de pedirle al territorio que venga, vamos nosotros. Como la tiendina.
+Tenemos sede en Leiguarda, y el festival tiene también un mapa: Catorce concejos en seis ediciones. En vez de pedirle al territorio que venga, vamos nosotros. Como la tiendina.
 
 ## Esta vez, lo importante pasa aquí
 
-Y eso cambia la frase entera. Deja de ser «hay un concierto, pero está lejos» y pasa a ser «hay un concierto, y es en la iglesia de al lado». Una noche al año, en tu pueblo, lo importante no ocurre en otro sitio.
+Eso cambia la frase: «hay un concierto, pero está lejos» pasa a ser «hay un concierto, y es en la iglesia de al lado». Una noche al año, lo importante pasa en tu pueblo.
 
 ## Lo mismo que hace la furgoneta
 
-No es una metáfora bonita: es la misma decisión logística, tomada por la misma razón. Cuesta más montar y desmontar catorce veces que abrir catorce veces la misma puerta. Se hace igual, porque de eso va vivir aquí.
+Es la misma decisión logística, tomada por la misma razón. Cuesta más montar y desmontar catorce veces que abrir catorce veces la misma puerta. Se hace igual, porque de eso va vivir aquí.

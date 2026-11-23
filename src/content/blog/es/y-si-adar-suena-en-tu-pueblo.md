@@ -20,7 +20,7 @@ Desde 2021, ADAR ha sonado en iglesias, monasterios, palacios, hórreos, mercado
 
 ## Cómo elegimos un sitio
 
-No elegimos un lugar por lo bonito que sale en las fotos, sino por lo que puede pasar dentro: cómo suena, cómo se llega, cuánta gente cabe y qué relación tiene con el pueblo. Cada concierto se piensa para su espacio, nunca al revés. Lo contamos entero en «Cómo elegimos un sitio para un concierto».
+Elegimos un lugar por lo que puede pasar dentro: cómo suena, cómo se llega, cuánta gente cabe y qué relación tiene con el pueblo. Cada concierto se piensa para su espacio. Lo contamos entero en «Cómo elegimos un sitio para un concierto».
 
 ## Cómo trabajamos
 

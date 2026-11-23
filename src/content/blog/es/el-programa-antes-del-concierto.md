@@ -15,13 +15,13 @@ Dentro llevaba el único sitio donde alguien había escrito por qué se tocan es
 
 Hemos empezado a publicarlo **antes del concierto**, entero y en la web. El de *Currents*, el 30 de octubre en Nueva York, lleva semanas colgado: dieciséis páginas, el programa con el tiempo de cada obra, las notas de las cinco piezas y las fotos. Se pasan las páginas, se amplía, o se descarga el PDF.
 
-No es una versión reducida ni un adelanto. Es el cuadernillo que se va a imprimir.
+Es el mismo cuadernillo que se va a imprimir.
 
 ## A quien está decidiendo si viene
 
 Un cartel dice cinco nombres y una hora. No dice si el Brahms que vas a oír es el del clarinete o la versión con viola, ni cuánto dura, ni si hay descanso.
 
-El programa sí. Y con eso, quien duda puede decidir con información en vez de con fe. Son cincuenta y seis minutos de música, se toca del tirón, y empieza con una pieza en la que los músicos entran andando mientras tocan.
+El programa sí. Y con eso, quien duda puede decidir con información. Son cincuenta y seis minutos de música, se toca del tirón, y empieza con una pieza en la que los músicos entran andando mientras tocan.
 
 Eso último, por cierto, es la clase de cosa que no cabe en un cartel y que cambia bastante lo que vas a ver.
 
@@ -31,7 +31,7 @@ Esta es la parte que más nos importa, y es la misma razón por la que [document
 
 Un concierto en una iglesia de aldea cabe para sesenta personas. Una noche en Nueva York, para doscientas. El programa en la web no tiene aforo.
 
-Quien no puede venir no se lleva el concierto, evidentemente. Pero se lleva lo que se escribió para él: qué se tocó, en qué orden, por qué, quién lo escribió y cuándo. Eso es bastante más de lo que suele quedar.
+Quien no puede venir se lleva al menos lo que se escribió para el concierto: qué se tocó, en qué orden, por qué, quién lo escribió y cuándo. Eso es bastante más de lo que suele quedar.
 
 ## A quien prefiere leer con luz
 
@@ -43,7 +43,7 @@ Leerlas tres días antes, sentado, con tiempo, es sencillamente mejor. Y quien n
 
 Un concierto dura una hora. El programa, si está en la web, dura mientras dure la web.
 
-Dentro de cinco años, cuando alguien busque qué se tocó aquella noche, no va a encontrar un cartel con cinco apellidos. Va a encontrar el programa entero, con los tiempos, las notas y quién tocaba cada parte. Para un proyecto que trabaja en sitios donde no hay crítica ni cobertura, eso no es un extra: es el registro.
+Dentro de cinco años, cuando alguien busque qué se tocó aquella noche, va a encontrar el programa entero, con los tiempos, las notas y quién tocaba cada parte. Para un proyecto que trabaja en sitios donde no hay crítica ni cobertura, eso es el registro.
 
 ## Lo que nos obliga a nosotros
 
@@ -51,4 +51,4 @@ Hay una consecuencia que no habíamos previsto y que ha resultado ser la más ú
 
 Si el programa tiene que estar publicado semanas antes, las notas hay que escribirlas semanas antes. Ya no se pueden despachar el martes anterior. Y escribirlas con tiempo obliga a tener claro por qué está cada obra donde está, lo que a veces cambia el orden del concierto.
 
-Publicarlo pronto no es solo una decisión de comunicación. Acaba siendo una manera de programar mejor.
+Publicarlo pronto acaba siendo una manera de programar mejor.

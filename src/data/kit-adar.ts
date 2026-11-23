@@ -111,7 +111,8 @@ Compártelo con quien creas que encaja. 🙌
     estilo: 'cielo',
     title: '¿Y si ADAR suena en tu pueblo?',
     excerpt: 'Ayuntamientos, asociaciones y espacios que quieran unirse a ADAR 2027.',
-    image: f26(OSCOS_26, 2),
+    // 23 nov: the title sat on top of the violinist; this one has dark space above.
+    image: f26(OSCOS_26, 3),
     pegatinas: [{ texto: 'Ayuntamientos y espacios' }, { texto: 'ADAR 2027' }, { texto: 'Escríbenos', senal: true }],
     pegatinasMuro: true,
     status: 'publish',
@@ -150,7 +151,7 @@ Las sedes en festivaladar.com
 
 En agosto de 2023, mientras el festival ocurría, en Leiguarda se rodaba otra cosa: un videoarte sobre la Suite para violonchelo n.º 1 de Bach, con Natania Hoffman al violonchelo, dirigido y montado por Guillermo Ordás.
 
-No es la grabación de un concierto. Es una obra pensada para la pantalla, con la piedra, la madera y la luz de la aldea.
+Es una obra pensada para la pantalla, con la piedra, la madera y la luz de la aldea.
 
 El vídeo completo está en nuestro canal de YouTube, y te contamos cómo se hizo en el blog de festivaladar.com
 
@@ -265,7 +266,7 @@ Lo contamos entero en el blog de festivaladar.com
 
 El 14 de agosto de 2024 tocamos en el mercado de Pola de Somiedo: Parque Natural, Reserva de la Biosfera y el lugar con más osos pardos de España.
 
-Un quinteto con Mozart, Debussy y Andrea Casarrubios, en el sitio donde el pueblo compra y se pone al día. Sin ceremonia: el que quiso, entró.
+Un quinteto con Mozart, Debussy y Andrea Casarrubios, en el sitio donde el pueblo compra y se pone al día. El que quiso, entró.
 
 La montaña asturiana tiene su propia música, y en 2027 vamos a escucharla más de cerca. Pronto os contamos.
 
@@ -622,7 +623,7 @@ Más en festivaladar.com
 
 Sí. Es el Ritmo con Señas, creado por el argentino Santiago Vázquez. Él lo define así: «es un lenguaje, un juego y un sistema pedagógico».
 
-Una persona dirige con las manos, los brazos y el cuerpo. Las demás improvisan, se escuchan y se contestan. No hace falta saber leer música: hace falta escuchar.
+Una persona dirige con las manos, los brazos y el cuerpo. Las demás improvisan, se escuchan y se contestan. Basta con escuchar, aunque no sepas leer música.
 
 Es lo que trae a Leiguarda Orchestra Improvvisata.
 
@@ -662,7 +663,7 @@ Niños, adolescentes, personas con discapacidad, principiantes y profesionales t
     date: '2027-01-30',
     url: `${WEB}blog/que-es-un-paseo-sonoro/`,
     tags: ['FestivalADAR', 'PaseoSonoro'],
-    pie: `En un concierto te sientas. En un paseo sonoro, decides tú. 🚶
+    pie: `En un paseo sonoro, decides tú. 🚶
 
 Los músicos se reparten por un espacio y el público lo recorre: eliges el orden, la distancia y cuánto te quedas delante de cada cosa. Nadie sale con el mismo concierto.
 

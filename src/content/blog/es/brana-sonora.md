@@ -9,7 +9,7 @@ author: "Festival ADAR"
 tags: ["Braña Sonora", "patrimonio inmaterial", "cultura vaqueira", "tonada", "hórreos"]
 ---
 
-En los concejos donde trabaja ADAR hay una música que no sale en ningún programa de mano: el ganado subiendo a la braña, el golpe de la madera en un hórreo, una tonada cantada en la cocina. Es patrimonio, pero no está en un museo. Está en la gente, y mucha de esa gente es mayor.
+En los concejos donde trabaja ADAR hay una música que no sale en ningún programa de mano: el ganado subiendo a la braña, el golpe de la madera en un hórreo, una tonada cantada en la cocina. Es patrimonio. Lo guarda la gente, y mucha de esa gente es mayor.
 
 **Braña Sonora** es nuestro proyecto para escucharlo, grabarlo y devolverlo. Es paralelo al festival, con su propio equipo y presupuesto, y cuenta con una ayuda del **Ministerio de Cultura** para proyectos de salvaguarda del Patrimonio Cultural Inmaterial. Va de julio de 2026 a diciembre de 2027.
 

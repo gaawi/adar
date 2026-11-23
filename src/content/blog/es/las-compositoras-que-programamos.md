@@ -3,7 +3,7 @@ title: "Las compositoras que programamos (y por qué no lo llamamos «cuota»)"
 lang: es
 date: "2026-09-24T10:00:00.000Z"
 status: draft
-excerpt: "Casarrubios, Caroline Shaw, Jessie Montgomery, Celeste Oram, Mizuko Kaji. Repasamos las creadoras que han pasado por ADAR y explicamos por qué programarlas es lo fácil, no lo difícil."
+excerpt: "Casarrubios, Caroline Shaw, Jessie Montgomery, Celeste Oram, Mizuko Kaji. Repasamos las creadoras que han pasado por ADAR y explicamos por qué programarlas es fácil."
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/10_Concierto_en_la_Iglesia_de_Santa_Maria_de_Sabada_Colunga/PXL_20220810_175359505.jpg"
 author: "Festival ADAR"
 tags: ["compositoras", "programación", "Caroline Shaw", "Jessie Montgomery"]
@@ -27,32 +27,32 @@ Nuestra experiencia dice lo contrario, y es fácil de comprobar. Repasemos quié
 
 Y en el terreno de la interpretación y la creación visual, el festival se sostiene sobre nombres como **Josefina Urraca** (codirectora y pianista), **Jone de la Fuente**, **Almudena Arribas**, **Natania Hoffman**, **María del Buey**, **Berta Ares**, **Coco Moya** o **Sarah K. Williams**.
 
-## Lo difícil no es encontrarlas
+## Encontrarlas es fácil
 
-Ahí está el punto. Ninguno de esos nombres necesita una explicación indulgente. **Pulitzer, Grammy, Carnegie Hall, Sinfónica de Chicago.** Si programar mujeres exigiera bajar el nivel, esta lista sería otra.
+**Pulitzer, Grammy, Carnegie Hall, Sinfónica de Chicago.** Si programar mujeres exigiera bajar el nivel, esta lista sería otra.
 
-La realidad de quien programa hoy es más simple de lo que el debate sugiere: **la música contemporánea está llena de compositoras excelentes**, y muchas de ellas están escribiendo las obras más interesantes del momento. No hay que buscarlas con lupa. Están ahí, con catálogos amplios, y sus piezas funcionan con el público.
+La realidad de quien programa hoy es más simple de lo que el debate sugiere: **la música contemporánea está llena de compositoras excelentes**, y muchas de ellas están escribiendo las obras más interesantes del momento. Están ahí, con catálogos amplios, y sus piezas funcionan con el público.
 
-Lo que sí requiere una decisión consciente es **no dejar que la inercia elija por ti.** Porque la inercia del repertorio clásico tiene doscientos años de sesgo acumulado, y si programas «lo de siempre» sin pensar, el resultado será «lo de siempre».
+Lo que requiere una decisión consciente es **no dejar que la inercia elija por ti.** La inercia del repertorio clásico tiene doscientos años de sesgo acumulado, y si programas «lo de siempre» sin pensar, el resultado será «lo de siempre».
 
 ## El detalle que más nos importa
 
 Fíjate en algo de la lista anterior: casi todas ellas son **compositoras vivas.**
 
-Eso es lo verdaderamente decisivo, más que el género. Un programa que mezcla a Vivaldi con Jessie Montgomery, o a Boccherini con Casarrubios, le está diciendo al público algo muy concreto: **que esto no se acabó.** Que la música clásica no es un catálogo cerrado de obras de gente muerta, sino un oficio que alguien está practicando ahora mismo, en algún sitio, y que puede hablar de la pandemia, del afilador que pasaba por tu calle o del paisaje que tienes delante.
+Eso nos importa todavía más que el género. Un programa que mezcla a Vivaldi con Jessie Montgomery, o a Boccherini con Casarrubios, le está diciendo al público algo muy concreto: **que esto sigue.** La música clásica es un oficio que alguien está practicando ahora mismo, en algún sitio, y que puede hablar de la pandemia, del afilador que pasaba por tu calle o del paisaje que tienes delante.
 
-Un festival que solo programa muertos convierte la música en museo. Y en el medio rural asturiano, donde la lucha es contra la idea de que lo importante ya pasó o pasa lejos, ese mensaje sería justo el contrario del que queremos dar.
+En el medio rural asturiano, donde la lucha es contra la idea de que lo importante ya pasó o pasa lejos, ese mensaje importa mucho.
 
 ## Cómo funciona en la práctica
 
-La receta que usamos no tiene ningún misterio: **poner lo nuevo dentro de lo conocido.**
+La receta que usamos es sencilla: **poner lo nuevo dentro de lo conocido.**
 
 Nadie programa una noche entera de música de 2024 en un pueblo donde no hay costumbre de conciertos. Pero un programa que va de Boccherini a Debussy, luego a tres piezas de Casarrubios y cierra con Dvořák funciona perfectamente. El público entra por lo que reconoce, se queda por curiosidad, y descubre que lo desconocido no le ha hecho daño.
 
-Y hay otra cosa que se nota: **cuando la compositora está en la sala** (tocando su propia obra, como hizo Casarrubios en Leiguarda), la música contemporánea deja de ser una abstracción. Es una persona a la que puedes ver respirar, y luego saludar en la espicha. Cuesta mucho menos escuchar con simpatía a alguien a quien vas a conocer en media hora.
+También se nota otra cosa: **cuando la compositora está en la sala** (tocando su propia obra, como hizo Casarrubios en Leiguarda), la música contemporánea es una persona a la que puedes ver respirar, y luego saludar en la espicha. Cuesta mucho menos escuchar con simpatía a alguien a quien vas a conocer en media hora.
 
 ## Sin etiqueta
 
-Así que no, no lo llamamos cuota. Lo llamamos programar bien.
+Así que lo llamamos programar bien.
 
-Buscamos la mejor música que podamos conseguir, de gente que esté haciendo algo que nos parezca necesario, y la ponemos en el sitio donde signifique más. Cuando lo hacemos con honestidad, la lista sale como ha salido: llena de mujeres, llena de gente viva, y sin una sola concesión.
+Buscamos la mejor música que podamos conseguir, de gente que esté haciendo algo que nos parezca necesario, y la ponemos en el sitio donde signifique más. La lista sale así: llena de mujeres y de gente viva.
