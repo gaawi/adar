@@ -1,19 +1,19 @@
 ---
-title: "Una birbynė en Leiguarda: cuando una flauta de pastor lituano suena en una iglesia asturiana"
+title: "Una birbynė en Leiguarda: el clarinete de los pastores lituanos en una iglesia asturiana"
 lang: es
 date: "2026-08-16T10:00:00.000Z"
 status: draft
-excerpt: "Žilvinas Brazauskas tocó en Leiguarda un instrumento que empezó siendo un juguete de pastores lituanos hace cuatro siglos. La historia de la birbynė es también la historia de por qué el mundo cabe en una aldea."
+excerpt: "Žilvinas Brazauskas tocó en la iglesia de Leiguarda la birbynė, un clarinete popular lituano que empezó siendo un juguete de pastores hace cuatro siglos."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.15_Iglesia%20de%20Leiguarda_Fotos/26.08.15_Iglesia%20de%20Leiguarda_WEB/26.08.15_Iglesia%20de%20Leiguarda_WEB_6.jpg"
 author: "Festival ADAR"
-tags: ["birbynė", "instrumentos", "Leiguarda", "Lituania"]
+tags: ["birbynė", "clarinete", "instrumentos", "Leiguarda", "Lituania"]
 ---
 
 Casi nadie en la iglesia de Leiguarda había oído hablar de la **birbynė** antes de ese día. Al salir, muchos no sabían pronunciarla del todo (se dice *bir-bi-né*, con la última sílaba abierta), pero ya no la iban a olvidar.
 
 ## Un juguete de pastores del año 1625
 
-La birbynė nació en el campo. Es un instrumento de viento lituano, primo lejano del clarinete, hecho en origen con **paja, corteza o cuerno de animal**, con una lengüeta simple o doble. Los primeros que la tocaron fueron **niños, como juguete, y pastores, para guiar el ganado**. La primera mención escrita que se conserva es de **1625**.
+La birbynė nació en el campo. Es un clarinete popular lituano: un instrumento de viento de **lengüeta simple**, hecho en origen con **paja, corteza o cuerno de animal**. Los primeros que la tocaron fueron **niños, como juguete, y pastores, para guiar el ganado**. La primera mención escrita que se conserva es de **1625**.
 
 Durante siglos fue eso: un sonido de aldea, de gente que no grababa discos ni daba conciertos. En el siglo XIX, al contacto con el clarinete "culto", la birbynė empezó a tomarse en serio como instrumento. Y en **1940**, con la creación del conjunto nacional de música folclórica *Lietuva*, unos cuantos lutieres se pusieron a perfeccionarla: en **1950** ya existía una birbynė soprano cromática, capaz de tocar cualquier música. El juguete de pastor se había convertido en instrumento de concierto sin dejar de sonar a campo.
 

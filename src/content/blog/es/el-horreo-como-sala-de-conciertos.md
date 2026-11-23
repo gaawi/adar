@@ -1,52 +1,46 @@
 ---
-title: "Cómo suena un hórreo por dentro: la caja de madera que resultó ser un instrumento"
+title: "Cómo suena un hórreo por dentro: el concurso de 2025"
 lang: es
 date: "2026-08-31T10:00:00.000Z"
 status: draft
-excerpt: "Convocamos un concurso para encontrar los mejores hórreos de Asturias y convertirlos en salas de conciertos. Lo que descubrimos dentro no lo esperábamos: la madera sobre pegollos tiene una acústica propia."
+excerpt: "En la primavera de 2025 pedimos fotos de hórreos y paneras de toda Asturias. En agosto hubo música dentro, en Gozón y en Las Regueras. Así funcionó el concurso y esto es lo que oyeron los músicos."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.05_Susacasa%20Agrocultural_Fotos/25.08.05_Susacasa%20Agrocultural_WEB/25.08.05_Susacasa%20Agrocultural_WEB_1.jpg"
 author: "Festival ADAR"
 tags: ["hórreos", "concurso", "acústica", "Susacasa", "2025"]
 ---
 
-En 2025 hicimos algo que, dicho en voz alta, sonaba a broma: **convocamos un concurso para encontrar los tres mejores hórreos o paneras de Asturias y convertirlos en salas de conciertos.**
+En la primavera de 2025 convocamos el primer **Concurso de Hórreos y Paneras**. Buscábamos tres hórreos o paneras de Asturias para hacer dentro micro-conciertos de música de cámara durante la quinta edición del festival, del 4 al 17 de agosto. *La Nueva España* lo contó el 20 de mayo.
 
-Lo que aprendimos dentro de ellos nos sorprendió a nosotros primero.
+Por qué tocamos en sitios así ya lo explicamos en [¿Por qué tocar a Bach en un hórreo?](/es/blog/por-que-tocar-bach-en-un-horreo/). Aquí contamos cómo fue el concurso.
 
-## «No queremos usar un contenedor»
+## Cómo funcionaba
 
-Esa fue la regla que nos pusimos desde el principio, y conviene explicarla porque marca la diferencia entre lo que hicimos y lo que se hace muchas veces.
+Para participar bastaba con mandar unas fotos por correo o por WhatsApp: una vista general, un detalle y el entorno.
 
-Es fácil coger un edificio bonito y meterle un concierto dentro. El edificio hace de fondo para las fotos, la música podría ser cualquier otra, y al terminar todos se van. El espacio ha sido un **contenedor**: útil, decorativo e intercambiable.
+Llegaron candidaturas de toda Asturias. Mucha gente nos escribió orgullosa del hórreo o la panera que tenía en su finca.
 
-Nuestro objetivo era crear una experiencia que **respetara la arquitectura, el paisaje y la comunidad de cada sitio.** Por eso los hórreos y paneras candidatos se juzgaron por tres cosas a la vez: su **valor arquitectónico**, su **entorno** y su **potencial escénico**. Y por eso los micro-conciertos resultantes se documentaron en vídeo, para que quedaran en el archivo.
+Miramos tres cosas en cada candidatura: el valor arquitectónico, el entorno y sus posibilidades como escenario. Queríamos que el concierto cuidara el edificio, el paisaje y a la gente del lugar. Los músicos salieron de la red del festival y cada concierto se grabó en vídeo.
 
-Participar era sencillo: bastaba mandar unas fotos del hórreo (vista general, detalle y entorno). Se presentó gente de toda Asturias, orgullosa de la construcción que tenía en su finca.
+## Susacasa, en Gozón
 
-## Lo que descubrimos al tocar dentro
+El festival de 2025 empezó el 5 de agosto en **Susacasa Agrocultural**, en Gozón. Es un proyecto de permacultura de **Keko Marcos y Sandra Murillo**. Han adaptado una gran panera para usos comunitarios y la usan para actividades ecológicas, educativas y culturales.
 
-Lo que no habíamos previsto es que un hórreo **suena.**
+A las ocho de la tarde tocaron **Nacho Laguna** (tiorba) y **María del Buey** (voz y visuales). Hicieron una selección de su álbum *Ferrarese*, con repertorio barroco ibérico e improvisación. La tiorba es un laúd del siglo XVII con un cuello larguísimo.
 
-Es una **estructura de madera elevada sobre pegollos**, con paredes de tabla, sin cimientos que la aten al suelo y con aire por debajo. Acústicamente, eso se parece poco a una iglesia de piedra, con su reverberación larga, o a un auditorio con paneles calculados.
+## La casería de Puerma, en Las Regueras
 
-Funciona como **una caja de resonancia.** Como el cuerpo de un instrumento, pero con gente dentro. La madera absorbe los agudos, redondea el sonido y devuelve algo cálido, seco, muy cercano. Y como el aforo es forzosamente mínimo, caben poquísimas personas, el público está a un metro de los intérpretes.
+El 11 de agosto tocamos en la casería de **Paz Mesa y Xandru González**, en Puerma (Las Regueras). Fue un cuarteto: Guillermo Laporta (flauta), Jone de la Fuente (violín), Almudena Arribas (viola) y Natania Hoffman (violonchelo).
 
-En ese formato no puedes esconderte. Se oye la respiración, el roce del arco, el clic de una llave.
+## Lo que notaron los músicos
 
-Hay además un detalle histórico: **el hórreo se construyó para conservar.** Grano, matanza, cosecha. Es un edificio diseñado para proteger algo valioso de la humedad y de los ratones. Meter música dentro de él es, en cierto modo, seguir usándolo para lo que se hizo.
+Un hórreo es madera sobre pegollos, con paredes de tabla y aire por debajo. Al tocar dentro, suena como una caja de resonancia, parecido al cuerpo de un instrumento. La madera suaviza los agudos y devuelve un sonido cálido, seco y muy cercano.
 
-## Susacasa: permacultura, una panera y una tiorba
+Caben muy pocas personas, así que el público se sienta a un metro de quien toca. Se oye la respiración, el roce del arco, el clic de una llave. A esa distancia no hay dónde esconder nada.
 
-Uno de los espacios seleccionados fue **Susacasa Agrocultural**, en Gozón, donde el festival de 2025 arrancó el **5 de agosto**.
+El hórreo se hizo para guardar el grano, la matanza y la cosecha, a salvo de la humedad y de los ratones. Aquellas tardes, durante una hora, dentro hubo música y gente escuchando.
 
-Susacasa es un proyecto de permacultura gestionado por **Keko Marcos y Sandra Murillo**, que han adaptado una gran panera para usos comunitarios y que combinan actividades ecológicas, educativas y culturales. Es decir: gente que ya estaba haciendo con la agricultura lo que nosotros intentamos con la música (**usar el medio rural como sitio donde inventar cosas**).
+## Lo que vino después
 
-Allí tocaron **Nacho Laguna (tiorba)** y **María del Buey (voz y visuales)**, con una selección de su álbum *Ferrarese*, mezclando repertorio barroco ibérico con improvisación contemporánea.
+El concurso siguió en 2026. **La Figal de Xugabolos**, en Casazorrina (Salas), abrió la VI edición el 4 de agosto con un recital de clave de Ignacio Prego. Cabía tan poca gente que hubo dos pases de media hora.
 
-Párate un segundo en esa imagen: una **tiorba** (un laúd enorme de cuello larguísimo, instrumento del siglo XVII) sonando dentro de una panera asturiana, en una finca de permacultura, en 2025.
-
-## Lo que conseguimos
-
-El concurso tuvo además otro efecto. Durante unas semanas, **cientos de personas en Asturias miraron su hórreo con otros ojos.** Le hicieron fotos. Lo enseñaron. Se preguntaron si el suyo podría ser escenario.
-
-Un patrimonio que se cae en silencio necesita **que alguien lo mire.**
+Las bases del Concurso de Hórreos y Paneras 2027 se publican en marzo. Si tienes un hórreo o una panera y te gustaría oír música dentro, ve preparando las fotos.

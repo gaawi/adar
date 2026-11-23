@@ -1,58 +1,32 @@
 ---
-title: "Filmar a Bach en una aldea: el videoarte que se rodó en Leiguarda"
+title: "Leiguarda, escenario de un videoarte sobre Bach"
 lang: es
 date: "2026-09-18T10:00:00.000Z"
 status: draft
-excerpt: "Una suite de Bach para violonchelo solo, un cinematógrafo y una aldea de Belmonte de Miranda. Por qué un festival de música invierte en hacer cine además de conciertos."
+excerpt: "En agosto de 2023 se rodó en Leiguarda (Belmonte de Miranda) un videoarte sobre la Suite n.º 1 para violonchelo de Bach, con Natania Hoffman y dirección de Guillermo Ordás."
 featured_image: "https://i.ytimg.com/vi/Xk_Qz361e0o/maxresdefault.jpg"
 author: "Festival ADAR"
 tags: ["videoarte", "Guillermo Ordás", "Bach", "2023", "archivo"]
 ---
 
-En agosto de 2023, mientras el festival ocurría, en Leiguarda se estaba rodando otra cosa: **un videoarte sobre la Suite para violonchelo n.º 1 en sol mayor de J. S. Bach**, con **Natania Hoffman** al violonchelo, dirigido y montado por **Guillermo Ordás**, cinematógrafo del festival.
+**LEIGUARDA (Belmonte de Miranda).** En agosto de 2023, mientras se celebraba el Festival ADAR, en Leiguarda se rodó un videoarte sobre la Suite para violonchelo n.º 1 en sol mayor de Johann Sebastian Bach. Toca la violonchelista **Natania Hoffman**. Lo dirigió y montó **Guillermo Ordás**, cinematógrafo del festival.
 
-Era una obra en sí misma, con **concepto, cinematografía y montaje** pensados para la pantalla.
+La mayoría de los festivales graban sus conciertos con una o dos cámaras fijas al fondo de la sala. Ese material sirve como registro y para pedir subvenciones. En este caso el trabajo se pensó para la pantalla desde el principio. Ordás firmó el concepto, la fotografía y el montaje, y eligió cada plano.
 
-De esa diferencia va este artículo.
+La suite es música para un solo intérprete, sin acompañamiento. El escenario es la propia aldea: piedra, madera y una luz que cambia cada media hora.
 
-## Grabar un concierto y hacer cine
+En los créditos aparece **Žilvinas Brazauskas** como ayudante de montaje. El clarinetista lituano volvió a Leiguarda en 2026, esta vez para tocar la birbynė en la iglesia del pueblo. En un proyecto pequeño, la misma persona hace varios oficios.
 
-Casi todos los festivales graban sus conciertos. Se pone una cámara al fondo, quizá dos, y se sube el resultado a YouTube. Es útil: sirve de prueba, de memoria y de material para pedir subvenciones.
+## Un concierto sin aforo
 
-Un vídeo así es **un documento**. Cuando lo ves, estás viendo el registro de algo que ocurrió en otro sitio y del que te has perdido lo importante (el volumen real, el espacio, la presencia). El vídeo siempre pierde.
+La organización explica la apuesta por el vídeo con números sencillos. Un concierto en un monasterio rural reúne a unas ochenta personas. Una pieza filmada puede verse en Nueva York, en Berlín o en Oviedo, y no tiene fecha de caducidad.
 
-Un videoarte hace la operación contraria: **acepta que la pantalla es otro medio y compone para ella.** Elige planos, decide qué se ve y qué no, usa el montaje como si fuera una voz más. Hace otra cosa con la misma música.
+ADAR trabaja en aldeas de menos de quinientos habitantes. Uno de sus objetivos es conectar la Asturias rural con públicos y circuitos internacionales, y para eso el vídeo es su principal herramienta.
 
-## Por qué las suites de Bach y por qué en una aldea
+## El archivo
 
-La elección de la obra no podía ser mejor. Las suites para violonchelo solo de Bach son **una persona sola con un instrumento**, sin acompañamiento. Es la música más desnuda del repertorio occidental.
+El festival documenta todo lo que hace en foto y vídeo, con criterios profesionales, y ordena ese material para usarlo en prensa, en convocatorias y en sus memorias. Es lo que enseña cuando pide apoyo institucional, cuando invita a un artista de fuera a venir a una aldea o cuando presenta un proyecto a un ayuntamiento.
 
-Y Leiguarda (una aldea de montaña, con su piedra, su madera, su luz que cambia cada media hora) es un escenario con la misma calidad de desnudez.
+También deja constancia de los sitios. Varios de los espacios donde toca ADAR son frágiles: una panera, una iglesia de aldea, un monasterio con problemas de conservación. Algunos quizá no sigan en pie dentro de treinta años.
 
-Poner esas dos desnudeces juntas, una sonora y otra visual, es una idea de cine muy sencilla y muy buena. A la cámara le basta con mirar bien.
-
-Hay además un detalle que nos gusta mucho: entre los créditos aparece **Žilvinas Brazauskas como ayudante de montaje.** El mismo clarinetista lituano que años después tocaría la birbynė en la iglesia de Leiguarda. En un proyecto pequeño, la gente hace de todo, y esas mezclas de oficios acaban siendo parte de la identidad de la casa.
-
-## Un festival de diez días, una obra para siempre
-
-La razón práctica por la que invertimos en esto es sencilla.
-
-Un concierto dura una hora y lo ven las personas que caben en la sala. En un monasterio rural eso pueden ser ochenta personas. Ochenta personas es maravilloso y es, a la vez, poquísimo.
-
-**Una pieza filmada no tiene aforo.** No caduca en septiembre. La puede ver alguien en Nueva York, en Berlín o en Oviedo, hoy o en 2035. Para un proyecto que trabaja en aldeas de menos de quinientos habitantes y que quiere **conectar zonas rurales de Asturias con audiencias y circuitos internacionales**, el vídeo **es el vehículo principal.**
-
-Cada vez que alguien ve a una violonchelista tocando Bach entre la piedra de Leiguarda, ese sitio deja de ser un punto anónimo en un mapa.
-
-## La documentación como parte de la obra
-
-Esto forma parte de un principio más amplio del proyecto: **el archivo.** Todo lo que hacemos se documenta con estándares profesionales, foto y vídeo, y se ordena para que pueda reutilizarse (en prensa, en convocatorias, en la memoria del proyecto).
-
-En un festival pequeño y rural es cuestión de supervivencia: **el archivo es la prueba de que esto existe.** Cuando pides apoyo institucional, cuando invitas a un artista internacional a venir a una aldea, cuando le explicas a un ayuntamiento qué le estás proponiendo, lo que enseñas es el archivo.
-
-Hay otra razón. Los sitios donde tocamos (una panera, un monasterio con problemas de conservación, una iglesia de aldea) son **frágiles**. La música pasa y no deja rastro. El edificio puede no estar dentro de treinta años.
-
-Filmarlos bien deja constancia de que estuvieron ahí.
-
-## Verlo
-
-El vídeo está disponible en nuestro canal, y se sigue viendo tres años después de rodarse.
+El videoarte de Leiguarda puede verse en el canal de YouTube del festival. Tres años después del rodaje, sigue sumando visitas.

@@ -47,10 +47,8 @@ En la **calle**, una instalación de acceso libre: para el que pasaba por allí 
 
 Ese tercer público es el más valioso de todos, y el más difícil de conseguir. **Es el que nunca compraría una entrada**, porque piensa que «eso no es para mí». Cuando el arte está en el cubículo de la oficina de turismo, ese filtro desaparece.
 
-## Grado, un socio recurrente
+## Grado antes de 2024
 
-Grado aparece en varias ediciones de ADAR, con el **Palacio de Miranda-Valdecarzana**, la **Capilla de los Dolores** y el **Palacio de Fontela** como escenarios recurrentes. Es uno de esos municipios donde la relación se ha sostenido en el tiempo.
+ADAR ya había tocado en Grado en 2022 y 2023, en el Palacio de Miranda-Valdecarzana y en la Capilla de los Dolores. En 2023 hubo además un paseo sonoro en el Palacio de Fontela.
 
-Volver tiene ventajas: **el público sabe que va a haber otra**, los espacios ya están rodados, el ayuntamiento sabe lo que se le propone, y cada edición se apoya en la anterior.
-
-La noche del 17 de agosto de 2024 fue ambiciosa porque se podía ser ambicioso: **había confianza acumulada.**
+Por eso en 2024 los espacios ya estaban probados, el público sabía qué esperar y el ayuntamiento sabía lo que se le proponía. Eso permitió montar tres cosas a la vez la noche del 17 de agosto.

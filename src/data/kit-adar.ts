@@ -229,32 +229,40 @@ La historia completa, en el blog de festivaladar.com
   {
     lang: 'es',
     slug: 'como-suena-un-horreo',
+    // 23 nov: él dijo que se parecía demasiado al artículo publicado «¿Por qué tocar a Bach
+    // en un hórreo…?». Ahora va de los hórreos y paneras que abrieron sus puertas al festival.
     porque: 'Mantiene vivo el Concurso de Hórreos (el post de los ganadores de 2025 es el que más alcance ha tenido nunca) y avisa de que las bases de 2027 salen en marzo. Su artículo está en borrador: al aprobarlo, lo publico.',
     kind: 'social',
     estilo: 'cielo',
-    title: 'Cómo suena un hórreo por dentro',
-    excerpt: 'Cómo suena un hórreo por dentro',
+    title: 'Los hórreos del festival',
+    excerpt: 'Los hórreos del festival',
     // Portada: el hórreo de La Figal encendido al anochecer (sugerencia del
     // 22 nov: mejor encuadre y más fotos). Detrás, el concierto por dentro.
     image: f26(FIGAL_26, 6),
     // 23 nov: «the last photo cuts the head off, better in their original aspect ratio»:
     // a landscape carousel, so the photos go whole.
     apaisado: true,
-    fotosExtra: [2, 4, 5, 1].map((n) => f26(FIGAL_26, n)),
+    fotosExtra: [
+      f26(FIGAL_26, 2),
+      f25('25.08.05_Susacasa%20Agrocultural', 1),
+      f25('25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez', 1),
+    ],
     status: 'publish',
     date: '2026-12-07',
     url: `${WEB}blog/el-horreo-como-sala-de-conciertos/`,
     tags: ['FestivalADAR', 'Hórreos'],
-    pie: `¿Cómo suena un hórreo por dentro? 🌾
+    pie: `Los hórreos del festival 🌾
 
-Una caja de madera sobre pegollos, con aire por debajo. Resulta que es casi un instrumento: la madera redondea el sonido y lo devuelve cálido y muy cercano. Caben poquísimas personas, y el público está a un metro de quien toca.
+En 2025 tocamos en Susacasa Agrocultural, en Gozón, y en la casería de Paz Mesa y Xandru González, en Puerma (Las Regueras).
 
-Por eso cada año buscamos hórreos y paneras de Asturias para convertirlos en salas de conciertos. Las bases del Concurso de Hórreos y Paneras 2027 se publican en marzo.
+En 2026 fue La Figal de Xugabolos, en Casazorrina (Salas). Ignacio Prego dio allí un recital de clave el 4 de agosto.
 
-Lo contamos entero en el blog de festivaladar.com
+¿Tienes un hórreo o una panera? Las bases del Concurso de Hórreos y Paneras 2027 se publican en marzo.
+
+Lo contamos en el blog de festivaladar.com
 
 #FestivalADAR #Hórreos #Paneras #PatrimonioAsturiano #Asturias`,
-    body: 'Cómo suena un hórreo por dentro',
+    body: 'Los hórreos del festival',
   },
   {
     lang: 'es',
@@ -405,16 +413,19 @@ Os deseamos una Navidad tranquila, con buena música y buena mesa. Nos vemos en 
     kind: 'social',
     title: 'ADAR 2026 en fotos',
     excerpt: 'ADAR 2026 en fotos',
-    image: f26(ECLIPSE_26, 3),
+    // Portada cambiada el 23 nov (él pidió otra): el violín de la noche final en Leiguarda.
+    image: f26(LEIGUARDA_FINAL_26, 9),
+    // En la historia, que se vea la cara de la violinista (el foco automático se iba al arco).
+    encuadres: { story: { x: 0.12, y: 0.45 } },
     // Fotos del archivo de 2026 que no salieron como portada en Instagram
     // (comparadas con el historial el 22 de noviembre).
     fotos: [
+      f26(LEIGUARDA_FINAL_26, 9),
       f26(ECLIPSE_26, 3),
       f26(FIGAL_26, 4),
       f26(CORIAS_26, 4),
       f26(FRANCO_26, 3),
       f26(CASONA_26, 2),
-      f26(FIGAL_26, 3),
       f26(OSCOS_26, 3),
       f26(ECLIPSE_26, 4),
       f26(LEIGUARDA_26, 5),
