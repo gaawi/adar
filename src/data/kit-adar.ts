@@ -120,7 +120,7 @@ Compártelo con quien creas que encaja. 🙌
     tags: ['FestivalADAR', 'Sedes'],
     pie: `¿Y si ADAR suena en tu pueblo? 📍
 
-Desde 2021 llevamos música a iglesias, monasterios, palacios, hórreos, mercados y campos de aldea de Asturias. Cada sitio se elige por lo que es, no como decorado.
+Desde 2021 llevamos música a iglesias, monasterios, palacios, hórreos, mercados y campos de aldea de Asturias. Este verano sonó en el hórreo de La Figal, en el Parador de Corias y en el monasterio de Villanueva de Oscos.
 
 Para 2027 buscamos ayuntamientos, asociaciones vecinales y culturales, propietarios de espacios patrimoniales y salas que quieran acoger un concierto o un paseo sonoro.
 
