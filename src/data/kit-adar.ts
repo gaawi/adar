@@ -18,8 +18,11 @@ const FX25 = 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/';
 const IMG = 'https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/';
 // Logos obligatorios: Braña Sonora (Ministerio de Cultura) y la residencia
 // de Culture Moves Europe (Unión Europea y Goethe-Institut).
-const LOGO_MINISTERIO = `${IMG}logos-brana-sonora.png`;
-const LOGO_UE = `${IMG}logos-ue-goethe.png`;
+// Transparent, no plate: «claro» for light/yellow backgrounds, «oscuro» (white text) for photos.
+const LOGO_MINISTERIO = `${IMG}logos-brana-sonora-claro.png`;
+const LOGO_MINISTERIO_OSCURO = `${IMG}logos-brana-sonora-oscuro.png`;
+const LOGO_UE = `${IMG}logos-ue-goethe-claro.png`;
+const LOGO_UE_OSCURO = `${IMG}logos-ue-goethe-oscuro.png`;
 const VIEJO = 'https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/';
 const f26 = (noche: string, n: number) =>
   `${A26}${noche}_Fotos/${noche}_WEB/${noche}_WEB_${n}.jpg`;
@@ -40,6 +43,7 @@ const CRISTAL_25 = '25.08.17_Iglesia%20e%20invernadero%20de%20cristal';
 const LEIGUARDA_25 = '25.08.16_Iglesia%20de%20Leiguarda';
 
 // Recortadas a 4:5 (enteras son más anchas de lo que deja Instagram).
+const CORIAS_25 = '25.08.15_Claustro%20del%20Parador%20de%20Corias';
 const PASEO_AYALGAS = ['06', '10', '14'].map((n) => `${IMG}paseo-ayalgas-${n}-45.jpg`);
 
 export const ADAR_SOURCES: KitSource[] = [
@@ -233,7 +237,10 @@ La historia completa, en el blog de festivaladar.com
     // Portada: el hórreo de La Figal encendido al anochecer (sugerencia del
     // 22 nov: mejor encuadre y más fotos). Detrás, el concierto por dentro.
     image: f26(FIGAL_26, 6),
-    fotosExtra: ['2', '4', '5', '1'].map((n) => `${IMG}horreo-figal-${n}-45.jpg`),
+    // 23 nov: «the last photo cuts the head off, better in their original aspect ratio»:
+    // a landscape carousel, so the photos go whole.
+    apaisado: true,
+    fotosExtra: [2, 4, 5, 1].map((n) => f26(FIGAL_26, n)),
     status: 'publish',
     date: '2026-12-07',
     url: `${WEB}blog/el-horreo-como-sala-de-conciertos/`,
@@ -370,18 +377,23 @@ Lo contamos en el blog de festivaladar.com
     porque: 'Felicitación de Navidad. Mantiene la cuenta viva en las fiestas sin pedir nada.',
     kind: 'social',
     estilo: 'cielo',
-    title: 'Felices fiestas desde Leiguarda',
+    title: '¡Felices fiestas!',
     excerpt: 'Felices fiestas desde Leiguarda',
-    image: f26(ECLIPSE_26, 2),
+    // 23 nov: «something more Christmassy»: the lights of the night sound walk in Leiguarda.
+    image: `${VIEJO}2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg`,
+    pegatinas: [{ texto: 'Leiguarda · Asturias' }, { texto: 'Nos vemos en 2027', senal: true }],
+    pegatinasMuro: true,
     status: 'publish',
     date: '2026-12-23',
     url: WEB,
     tags: ['FestivalADAR', 'Navidad'],
-    pie: `Felices fiestas desde Leiguarda. ✨
+    pie: `¡Felices fiestas desde Leiguarda! 🎄✨
 
-Gracias por llenar este año las iglesias, los hórreos y los campos de aldea. Nos vemos en 2027.
+Este año hubo luces en hórreos, iglesias y campos de aldea, y mucha gente escuchando a nuestro lado. Gracias por venir y por abrirnos vuestros pueblos.
 
-#FestivalADAR #FelicesFiestas #Navidad #Asturias #Leiguarda`,
+Os deseamos una Navidad tranquila, con buena música y buena mesa. Nos vemos en 2027.
+
+#FestivalADAR #FelicesFiestas #Navidad #FelizNavidad #Asturias #Leiguarda`,
     body: 'Felices fiestas desde Leiguarda',
   },
   {
@@ -439,7 +451,7 @@ Gracias a los músicos, a los vecinos y a quienes vinieron.
     excerpt: 'Archivo, transmisión y creación a partir del patrimonio inmaterial del medio rural asturiano.',
     fondoAmbar: true,
     diapositivas: 4,
-    logo: { src: LOGO_MINISTERIO, diapositivas: [0, 3], historia: true },
+    logo: { src: LOGO_MINISTERIO, srcOscuro: LOGO_MINISTERIO_OSCURO, diapositivas: [0, 3], historia: true },
     image: `${RES}IMG_2808.jpeg`,
     status: 'publish',
     date: '2027-01-08',
@@ -490,7 +502,7 @@ Ayudas para proyectos de salvaguarda del Patrimonio Cultural Inmaterial. De juli
     estilo: 'cielo',
     title: '¿Tú también subías a la braña?',
     excerpt: '¿Tú también subías a la braña?',
-    logo: { src: LOGO_MINISTERIO, diapositivas: [0], historia: true },
+    logo: { src: LOGO_MINISTERIO, srcOscuro: LOGO_MINISTERIO_OSCURO, diapositivas: [0], historia: true },
     image: `${RES}IMG_2788.jpeg`,
     status: 'publish',
     date: '2027-01-12',
@@ -518,7 +530,7 @@ Cuéntanos en los comentarios: ¿quién subía en tu familia? ¿A qué braña? �
     kicker: 'Braña Sonora',
     title: '¿Conoces a quien guarda la memoria de tu pueblo?',
     excerpt: 'Buscamos a quienes guardan la memoria de su pueblo.',
-    logo: { src: LOGO_MINISTERIO, diapositivas: [0], historia: true },
+    logo: { src: LOGO_MINISTERIO, srcOscuro: LOGO_MINISTERIO_OSCURO, diapositivas: [0], historia: true },
     image: `${FX25}C1981T01.jpg`,
     pegatinas: [{ texto: 'Braña Sonora' }, { texto: 'Vaqueiros · tonada · oficios' }, { texto: 'Escríbenos', senal: true }],
     pegatinasMuro: true,
@@ -553,7 +565,7 @@ Más en festivaladar.com
     excerpt: 'Una orquesta donde todos improvisan juntos.',
     // Fotos de su propio dossier (Orchestra Improvvisata, Roma).
     image: `${IMG}orchestra-improvvisata-ritmo.jpg`,
-    logo: { src: LOGO_UE, diapositivas: [0], historia: true },
+    logo: { src: LOGO_UE, srcOscuro: LOGO_UE_OSCURO, diapositivas: [0], historia: true },
     status: 'publish',
     date: '2027-01-20',
     url: `${WEB}financiacion-europea/`,
@@ -582,7 +594,7 @@ Más en festivaladar.com
     estilo: 'cielo',
     title: 'Escuelas rurales: la música de vuestro concejo',
     excerpt: 'Braña Sonora para escuelas rurales.',
-    logo: { src: LOGO_MINISTERIO, diapositivas: [0], historia: true },
+    logo: { src: LOGO_MINISTERIO, srcOscuro: LOGO_MINISTERIO_OSCURO, diapositivas: [0], historia: true },
     image: f25(OBONA_25, 2),
     pegatinas: [{ texto: 'Escuelas rurales' }, { texto: 'Braña Sonora' }, { texto: 'Escríbenos', senal: true }],
     status: 'publish',
@@ -614,7 +626,7 @@ Más en festivaladar.com
     title: '¿Se puede dirigir una orquesta con señas?',
     excerpt: 'El Ritmo con Señas, explicado.',
     image: `${IMG}orchestra-improvvisata-collage.jpg`,
-    logo: { src: LOGO_UE, diapositivas: [3], historia: true },
+    logo: { src: LOGO_UE, srcOscuro: LOGO_UE_OSCURO, diapositivas: [3], historia: true },
     status: 'publish',
     date: '2027-01-27',
     url: `${WEB}financiacion-europea/`,
@@ -654,10 +666,9 @@ Niños, adolescentes, personas con discapacidad, principiantes y profesionales t
     estilo: 'cinta',
     title: '¿Qué es un paseo sonoro?',
     excerpt: '¿Qué es un paseo sonoro?',
-    image: `${VIEJO}2023/12_Paseo_sonoro_en_el_Museo_de_las_Ayalgas_Belmonte_de_Miranda/06.jpg`,
-    // Más fotos (sugerencia del 22 de noviembre): el paseo del Museo de las
-    // Ayalgas, 2023.
-    fotos: PASEO_AYALGAS,
+    image: f25(CORIAS_25, 4),
+    // 23 nov: better photos, from the sound walk in the cloister of the Parador de Corias (2025), whole.
+    fotos: [4, 2, 5, 7, 6].map((n) => f25(CORIAS_25, n)),
     fotosEnteras: true,
     status: 'publish',
     date: '2027-01-30',
@@ -667,11 +678,11 @@ Niños, adolescentes, personas con discapacidad, principiantes y profesionales t
 
 Los músicos se reparten por un espacio y el público lo recorre: eliges el orden, la distancia y cuánto te quedas delante de cada cosa. Nadie sale con el mismo concierto.
 
-El 12 de agosto de 2023, en el Museo de las Ayalgas (Belmonte de Miranda), las suites de Bach sonaron entre motos antiguas, cunas del siglo XVIII y aperos de labranza.
+El 15 de agosto de 2025 lo hicimos en el claustro del Parador de Corias (Cangas del Narcea): un violonchelo junto al seto, un violín bajo los arcos y el público paseando por el jardín.
 
 Lo contamos en el blog de festivaladar.com
 
-#FestivalADAR #PaseoSonoro #Bach #BelmonteDeMiranda #Asturias`,
+#FestivalADAR #PaseoSonoro #ParadorDeCorias #CangasDelNarcea #Asturias`,
     body: '¿Qué es un paseo sonoro?',
   },
 ];

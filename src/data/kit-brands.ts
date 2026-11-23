@@ -393,6 +393,8 @@ export interface KitSource {
   fotosEnteras?: boolean;
   /** Por qué este post y por qué ese día: se enseña en la app junto a los botones. */
   porque?: string;
+  /** Landscape carousel (1.91:1): the cover is drawn wide and the photos keep their proportions. */
+  apaisado?: boolean;
   /** Fotos tal cual detrás de la portada dibujada (ya en 4:5). */
   fotosExtra?: string[];
   /** Slug del artículo del blog que acompaña a la ficha (src/content/blog/es). */
@@ -406,7 +408,7 @@ export interface KitSource {
   /** Logo obligatorio de quien financia: en qué diapositivas y si va en la historia. */
   /** Sin la marca CreArtBox en la imagen (proyectos aparte). */
   sinMarca?: boolean;
-  logo?: { src: string; diapositivas?: number[]; historia?: boolean };
+  logo?: { src: string; srcOscuro?: string; diapositivas?: number[]; historia?: boolean };
   /** Cuentas de Instagram que van como colaboradoras (máximo 3). */
   colaboradores?: string[];
   /** Estilo por formato cuando uno no vale para todos, p. ej. { story: 'marco' }. */

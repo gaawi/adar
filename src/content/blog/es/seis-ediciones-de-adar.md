@@ -1,38 +1,84 @@
 ---
-title: "Seis ediciones de ADAR: lo que hemos aprendido llevando la música donde no se la espera"
+title: "Seis veranos de ADAR: un repaso y muchas gracias"
 lang: es
 date: "2026-08-23T10:00:00.000Z"
 status: draft
-excerpt: "Acaba la sexta edición. Un buen momento para mirar atrás y contar qué hemos aprendido en estos años y hacia dónde va el proyecto."
+excerpt: "Del orballo de 2021 en Leiguarda a la espicha de 2026. Repasamos seis ediciones por catorce concejos de Asturias y damos las gracias a quienes las han hecho posibles."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/05.08.26_Parador%20de%20Corias_Fotos/05.08.26_Parador%20de%20Corias_WEB/05.08.26_Parador%20de%20Corias_WEB_3.jpg"
 author: "Festival ADAR"
-tags: ["ADAR", "retrospectiva", "VI edición", "2027"]
+tags: ["ADAR", "retrospectiva", "VI edición", "agradecimientos", "2027"]
 ---
 
-Cae el telón de la **sexta edición**. Y como cada final de festival, nos toca ese rato raro y feliz en que uno recoge las sillas, mira la iglesia vacía y piensa: *¿cómo hemos llegado hasta aquí?*
+El 16 de agosto terminó la sexta edición de ADAR en la iglesia parroquial de Leiguarda. Sonaron Vivaldi en el arreglo de Bach, Mendelssohn, Brahms, Ravel, Ligeti y Lang. Después abrimos la espicha.
 
-En vez de un balance de cifras, preferimos contar **lo que hemos aprendido.**
+Con la sidra todavía en la mesa, nos acordamos de la primera noche. Aquí va un repaso de estos seis veranos y unas cuantas gracias.
 
-## 1. Mantener el nivel.
+## Una noche de orballo en 2021
 
-Al empezar, más de una vez nos preguntaron si "para el pueblo" no convendría una programación más ligera, más fácil. Seis ediciones después lo tenemos claro: **no.** El público del medio rural quiere lo bueno, entero, y lo agradece con una atención que muchas salas de ciudad envidiarían.
+Fundamos la asociación en 2020, en Leiguarda. Guillermo toca la flauta y Josefina, el piano. Un año después llegó el primer concierto.
 
-## 2. El sitio importa tanto como el programa.
+Fue el 14 de agosto de 2021, en el campo de la iglesia. Plantamos un gran marco amarillo en la hierba, con la aldea detrás. Toda la semana había hecho sol. Esa noche empezó a orbayar.
 
-Aprendimos que un concierto en una iglesia de aldea, en un parador, en un alto de monte, **cambia con el sitio**: el lugar entra en la música. Esa suma, una gran obra en un gran sitio, es nuestra materia prima.
+Vinieron más de 120 personas. Leiguarda tiene un centenar de habitantes.
 
-## 3. Lo extraordinario cabe en un pueblo.
+Tocamos Mendelssohn, Haydn, Falla y John Harbison. También estrenamos *Atlantic*, de Marcos Fernández, escrita para esa noche. Fue el primer encargo del festival.
 
-Una birbynė lituana. Un eclipse total de sol. Una residencia artística. Música que va de Bach a David Lang en la misma noche. Todo eso **encaja en el medio rural mejor de lo que nadie esperaba.**
+De aquella noche salió el compromiso de volver cada agosto. Hemos vuelto cinco veces.
 
-## 4. Esto lo hace una comunidad.
+## Catorce concejos en seis veranos
 
-Es la lección más importante. Nada de esto existiría sin **el público** que llena bancos duros y vuelve cada año; sin los **voluntarios** que montan, colocan y recogen; sin los **artistas** que aceptan tocar en sitios imposibles y se quedan a la espicha; sin los **colaboradores, patrocinadores e instituciones** que sostienen lo que no se ve. ADAR es de todos ellos.
+El mapa del festival suma hoy 39 actividades en 14 concejos. Empezó con un solo punto, el campo de la iglesia de Leiguarda.
 
-## Y ahora, hacia 2027
+Hemos tocado en cuatro monasterios: Santa María la Real de Obona, en Tineo; San Antolín de Bedón, en Llanes; San Salvador de Cornellana, en Salas, y el de Villanueva de Oscos. El 12 de agosto de 2025 llenamos Obona con un concierto de cámara de sesenta y dos minutos.
 
-Ya estamos trabajando en la **próxima edición**, con cosas que aún no podemos contar pero que nos hacen mucha ilusión. Habrá nuevos sitios, nuevas músicas y, esperamos, nuevas caras entre el público.
+El 12 de agosto de 2023 hicimos un paseo sonoro en el Museo de las Ayalgas, en Silviella. Las suites de Bach sonaron entre motos antiguas, cunas del siglo XVIII y aperos de labranza. Esa misma noche hubo otro paseo en Leiguarda, con video mapping sobre la fachada de piedra de la iglesia.
 
-Si estos años te han dado algo (una noche que recuerdas, una música que no conocías, la sensación de que aquí también pasan cosas grandes), hay una manera muy concreta de que sigan ocurriendo: **hazte amigo del festival.** Cada apoyo, por pequeño que sea, es lo que nos permite volver el año que viene y seguir llevando la música donde no se la espera.
+En Pola de Somiedo, el mercado hizo de auditorio. En Taramundi tocamos Telemann, Falla y Mussorgsky.
 
-Gracias por estas seis ediciones. Nos vemos en la séptima.
+Los monasterios nos han enseñado mucho de acústica. Los hórreos, de cercanía.
+
+## Los hórreos y la gente que los cuida
+
+En 2025 convocamos el primer concurso de hórreos y paneras. Bastaba con mandar unas fotos: vista general, detalle y entorno. Llegaron candidaturas de toda Asturias.
+
+El 5 de agosto de 2025 empezamos en Susacasa Agrocultural, en Gozón. Allí Keko Marcos y Sandra Murillo han adaptado una gran panera para usos comunitarios. Dentro sonaron la tiorba de Nacho Laguna y la voz de María del Buey. El 11 de agosto tocamos en la casería de Paz Mesa y Xandru González, en Puerma, Las Regueras.
+
+Un hórreo suena como una caja de madera. El público se sienta a un metro de los intérpretes y oye el roce del arco.
+
+En 2026 la edición se abrió el 4 de agosto en La Figal de Xugabolos, en Casazorrina, Salas. Ignacio Prego tocó el clave dentro del hórreo. Cabía tan poca gente que hubo dos pases de media hora.
+
+## La sexta edición
+
+Del hórreo de Salas fuimos al Parador de Corias. En su biblioteca, María Martínez, Frederieke Saeijs y Josefina tocaron *La forma de la memoria*.
+
+Maria Florea, Lara Fernández y Daniel Claret llevaron *The Rest is Silence* a As Quintas. Dos días después tocaron en quinteto en el monasterio de Villanueva de Oscos. El colectivo Menhir, Coco Moya e Iván Cebrián, preparó un recorrido sonoro por el palomar de Leiguarda.
+
+El 12 de agosto tocamos durante el eclipse total de sol. Era el primero visible desde la España peninsular desde 1905. Durante la totalidad bajó la temperatura y los pájaros se callaron.
+
+En la panera de La Casona de Belmonte, el trío The Rest Project presentó *Equilibrium*, su muestra de residencia, con poemas de Joan Margarit. Las dos últimas noches fueron en la iglesia de Leiguarda. Allí Žilvinas Brazauskas tocó la birbynė, un instrumento de pastores lituanos documentado desde 1625.
+
+Zygmund de Somogyi fue el compositor residente. Guillermo Ordás se encargó de filmar y documentar la edición.
+
+## Gracias
+
+Al público. A las 120 personas del orballo y a todas las que han venido después, por carreteras de montaña, a bancos de iglesia y a la hierba.
+
+A los vecinos de Leiguarda, que acogen la sede todo el año.
+
+A los ayuntamientos anfitriones, a las parroquias y a quienes cuidan los monasterios, palacios y capillas donde hemos tocado. A cada familia que nos abrió su hórreo o su panera.
+
+A los músicos, que tocaron con lluvia, bajo bóvedas frías y dentro de una caja de madera, y luego se quedaron a la espicha.
+
+A quienes trabajan con nosotros cerca de casa, de la Panadería Hermanos Marrón a Costel Marin, en Menes, que construye elementos de escenografía.
+
+A nuestros embajadores: Laude Martínez, Pepe Luis Alba, Esther Vergara Prieto, Juan Manuel Sánchez Trujillo, Isabel Vergara Prieto y Miguel Antón García.
+
+Al Principado de Asturias, a Caja Rural y a Culture Moves Europe, que ayudan a que todos los conciertos sean de entrada libre. A los Amigos del Festival, que sostienen el proyecto entre una edición y otra.
+
+## Lo que viene
+
+Ya estamos con la séptima edición, en agosto de 2027. Estamos leyendo propuestas de músicos y ensembles. Entre este otoño y junio de 2027 habrá residencias en Leiguarda, con el apoyo de Culture Moves Europe.
+
+Tenemos curiosidad por la música que saldrá de esas semanas en la sede, y por los sitios nuevos que irán apareciendo.
+
+Gracias por estos seis veranos. Nos vemos en agosto.

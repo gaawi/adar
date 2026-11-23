@@ -31,4 +31,4 @@ Contaremos las fechas y las actividades abiertas en cuanto estén cerradas.
 
 *Financiado por la Unión Europea. Las opiniones y puntos de vista expresados son exclusivamente los de sus autores y no reflejan necesariamente los de la Unión Europea. Ni la Unión Europea ni la autoridad que concede la ayuda pueden ser consideradas responsables de ellos.*
 
-![Financiado por la Unión Europea · Goethe-Institut](https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/logos-ue-goethe.png)
+![Financiado por la Unión Europea · Goethe-Institut](https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/logos-ue-goethe-claro.png)

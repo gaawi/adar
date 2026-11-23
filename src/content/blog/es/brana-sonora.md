@@ -38,4 +38,4 @@ Si conoces a alguien que cantaba en la braña, que sabe cómo se hacía una pane
 
 *Braña Sonora cuenta con el apoyo del Ministerio de Cultura del Gobierno de España.*
 
-![Ministerio de Cultura · Festival ADAR](https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/logos-brana-sonora.png)
+![Ministerio de Cultura · Festival ADAR](https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/logos-brana-sonora-claro.png)
