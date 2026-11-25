@@ -29,9 +29,9 @@ Eso contestó la pregunta que nos hacían todos: *¿pero irá alguien?* Sí, va 
 
 ## Lo que se tocó aquella noche
 
-El programa ya contenía, en germen, todo lo que ADAR sería después. Obras de **Mendelssohn, Haydn y Falla**, el repertorio clásico y la tradición española, junto a **John Harbison**, compositor estadounidense contemporáneo. Y una pieza nueva: ***Atlantic*, de Marcos Fernández, escrita expresamente para la ocasión.**
+Sonaron obras de **Mendelssohn, Haydn y Falla**. También sonó música de **John Harbison**, compositor estadounidense contemporáneo, y ***Atlantic*, de Marcos Fernández**.
 
-**En su primerísimo concierto, un festival sin presupuesto ni historial encargó una obra nueva.** Podríamos haber tocado solo repertorio seguro. Decidimos que, si esto iba a existir, iba a existir creando cosas. Ese encargo de 2021 fue el primero de todos los que han venido después.
+Ya en ese primer programa había clásicos junto a música de ahora. Lo seguimos haciendo cada verano.
 
 ## Lo que aprendimos con la lluvia
 

@@ -3,7 +3,7 @@ title: "Pagar por música que todavía no existe: por qué ADAR encarga obra nue
 lang: es
 date: "2026-09-14T10:00:00.000Z"
 status: draft
-excerpt: "El 14 de agosto de 2021, en su primer concierto, ADAR estrenó Atlantic, de Marcos Fernández, escrita para esa noche. Desde entonces seguimos encargando obra nueva. Contamos por qué y qué riesgos tiene."
+excerpt: "Encargar una obra es pagar por música que todavía no existe. En ADAR lo hacemos, con encargos como los de Andrea Casarrubios en 2024 y una residencia de composición. Contamos por qué y qué riesgos tiene."
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image71.jpg"
 author: "Festival ADAR"
 tags: ["encargos", "compositor residente", "obra nueva", "modelo"]
@@ -13,21 +13,19 @@ Programar a Mozart tiene una ventaja clara: **sabes lo que vas a tener.** La par
 
 Encargar una obra nueva es lo contrario. Pagas por algo que todavía no existe y que no puedes escuchar antes de decidir. Quizá no le guste al público. Ni el propio compositor sabe del todo cómo va a salir.
 
-En ADAR encargamos una pieza nueva para el primer concierto, en 2021. Desde entonces hemos seguido encargando música.
+En ADAR lo hacemos igualmente.
 
-## Una pieza nueva la primera noche
+## Música de ahora desde el primer concierto
 
-El **14 de agosto de 2021**, en el campo de la iglesia de Leiguarda, el concierto inaugural tenía Mendelssohn, Haydn, Falla y John Harbison. También tenía ***Atlantic*, de Marcos Fernández, escrita para esa noche.**
+El **14 de agosto de 2021**, en el campo de la iglesia de Leiguarda, el concierto inaugural tenía Mendelssohn, Haydn y Falla. También tenía música de John Harbison y ***Atlantic*, de Marcos Fernández**.
 
-El festival no tenía ediciones anteriores ni un presupuesto fijo. Esa noche, además, orbayó. Lo prudente habría sido tocar solo repertorio conocido y dejar los estrenos para más adelante.
-
-Lo hicimos a propósito. Queríamos que desde el primer concierto se supiera que ADAR iba a sumar obras al repertorio.
+En 2024 dimos un paso más. El programa de esa edición combinaba obras de Mozart, Debussy y Vivaldi con **encargos a Andrea Casarrubios** y a otras compositoras actuales.
 
 ## Programar y producir
 
 Muchos festivales eligen bien entre la música que ya existe y la traen a su público. Es un trabajo difícil y la gente lo agradece.
 
-Otros, además, encargan obras. Cuando termina la edición hay una partitura más, y otros músicos pueden tocarla en otros sitios durante años. *Atlantic* puede sonar algún día en Berlín. Se estrenó en un prado de Leiguarda.
+Otros, además, encargan obras. Cuando termina la edición hay una partitura más, y otros músicos pueden tocarla en otros sitios durante años.
 
 ## Lo que le pedimos a un compositor
 

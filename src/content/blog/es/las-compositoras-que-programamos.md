@@ -1,58 +1,44 @@
 ---
-title: "Las compositoras que programamos (y por qué no lo llamamos «cuota»)"
+title: "Las compositoras que programamos"
 lang: es
 date: "2026-09-24T10:00:00.000Z"
 status: draft
-excerpt: "Casarrubios, Caroline Shaw, Jessie Montgomery, Celeste Oram, Mizuko Kaji. Repasamos las creadoras que han pasado por ADAR y explicamos por qué programarlas es fácil."
+excerpt: "Andrea Casarrubios, Caroline Shaw, Celeste Oram y Mizuko Kaji. Repasamos qué obras de compositoras y creadoras han sonado en ADAR, dónde y en qué año."
 featured_image: "https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/10_Concierto_en_la_Iglesia_de_Santa_Maria_de_Sabada_Colunga/PXL_20220810_175359505.jpg"
 author: "Festival ADAR"
-tags: ["compositoras", "programación", "Caroline Shaw", "Jessie Montgomery"]
+tags: ["compositoras", "programación", "Caroline Shaw", "Andrea Casarrubios"]
 ---
 
-Cuando un festival programa mujeres compositoras, aparece siempre alguien preguntando si es una cuota. La pregunta lleva dentro una suposición: que hay que **renunciar a algo** para incluirlas.
+Desde 2022 hay obras de compositoras en los programas de ADAR. Aquí repasamos quiénes son, qué obra suya ha sonado y dónde.
 
-Nuestra experiencia dice lo contrario, y es fácil de comprobar. Repasemos quién ha pasado por aquí.
+## Andrea Casarrubios
 
-## La nómina
+Es violonchelista y compositora española. Hizo un doctorado en composición con John Corigliano. Su obra *SEVEN* se estrenó en el **Carnegie Hall**. Ha recibido encargos de la **Sinfónica de Chicago** y de **Sphinx Virtuosi**. Su disco *SEVEN* tuvo una **nominación al Grammy** en 2025.
 
-**Andrea Casarrubios**, violonchelista y compositora española: obra estrenada en el **Carnegie Hall**, encargos de la **Sinfónica de Chicago** y de **Sphinx Virtuosi**, **nominación al Grammy** en 2025, doctorado con John Corigliano. Su música ha sonado en varias ediciones de ADAR y ella misma dio un recital en la iglesia de Leiguarda en 2025.
+En 2024 su música sonó en varios conciertos de la cuarta edición. En el mercado de Pola de Somiedo tocamos *Mensajes de Agua* y *Afilador*. La prensa de ese verano habló de encargos del festival a Casarrubios.
 
-**Caroline Shaw**: la compositora más joven en ganar el **Pulitzer de música**. Su pieza *Blueprint* sonó en la iglesia de Santa María de Sabada, en Lastres, en 2022.
+En 2025 ella misma dio un recital en la iglesia de Leiguarda. Tocó sus *Tres piezas para violonchelo y piano* y *SEVEN* para violonchelo solo, junto a Boccherini, Debussy y Dvořák.
 
-**Jessie Montgomery**: una de las voces más programadas de Estados Unidos hoy. Su dúo para violín y violonchelo formó parte del concierto del mercado de Pola de Somiedo en 2024.
+## Caroline Shaw
 
-**Celeste Oram**, neozelandesa residente en Nueva York: compositora y diseñadora de proyecciones, autora de *Toccata & Bruise*, la instalación que presentamos en 2023.
+Su pieza *Blueprint* sonó en la segunda edición, en 2022. Lo tocamos en seis conciertos: El Franco, Soto del Barco, la iglesia de Santa María de Sabada en Lastres, Llanes, el palacio de Miranda-Valdecarzana en Grado y la clausura en Belmonte de Miranda.
 
-**Mizuko Kaji**, arquitecta y diseñadora de escenografías: llenó de tul el escenario del Auditorio As Quintas en 2023, en la primera instalación de artista internacional del festival.
+## Celeste Oram
 
-Y en el terreno de la interpretación y la creación visual, el festival se sostiene sobre nombres como **Josefina Urraca** (codirectora y pianista), **Jone de la Fuente**, **Almudena Arribas**, **Natania Hoffman**, **María del Buey**, **Berta Ares**, **Coco Moya** o **Sarah K. Williams**.
+Es compositora y diseñadora de proyecciones. Nació en Nueva Zelanda y vive en Nueva York. En 2023 cedió al festival su pieza *Toccata and Bruise*, una instalación audiovisual sobre el tacto. La presentamos en la sede de ADAR, en Leiguarda.
 
-## Encontrarlas es fácil
+## Mizuko Kaji
 
-**Pulitzer, Grammy, Carnegie Hall, Sinfónica de Chicago.** Si programar mujeres exigiera bajar el nivel, esta lista sería otra.
+Es arquitecta y diseñadora de escenografías. En 2023 llenó de tul el escenario del Auditorio As Quintas, en El Franco. Con ella empezamos a invitar a artistas internacionales a hacer instalaciones en el festival.
 
-La realidad de quien programa hoy es más simple de lo que el debate sugiere: **la música contemporánea está llena de compositoras excelentes**, y muchas de ellas están escribiendo las obras más interesantes del momento. Están ahí, con catálogos amplios, y sus piezas funcionan con el público.
+## Las intérpretes
 
-Lo que requiere una decisión consciente es **no dejar que la inercia elija por ti.** La inercia del repertorio clásico tiene doscientos años de sesgo acumulado, y si programas «lo de siempre» sin pensar, el resultado será «lo de siempre».
+En el escenario también hay muchas mujeres. **Josefina Urraca** es pianista y codirige el festival. Han tocado o creado con nosotros **Jone de la Fuente**, **Almudena Arribas**, **Natania Hoffman**, **María del Buey**, **Berta Ares**, **Coco Moya** y **Sarah K. Williams**, entre otras.
 
-## El detalle que más nos importa
+## Cómo las programamos
 
-Fíjate en algo de la lista anterior: casi todas ellas son **compositoras vivas.**
+Casi todas son compositoras vivas. Sus obras van en el mismo programa que la música de siempre.
 
-Eso nos importa todavía más que el género. Un programa que mezcla a Vivaldi con Jessie Montgomery, o a Boccherini con Casarrubios, le está diciendo al público algo muy concreto: **que esto sigue.** La música clásica es un oficio que alguien está practicando ahora mismo, en algún sitio, y que puede hablar de la pandemia, del afilador que pasaba por tu calle o del paisaje que tienes delante.
+En el recital de Casarrubios en Leiguarda, por ejemplo, el programa empezó con Boccherini y Debussy. Luego vinieron sus piezas y terminó con Dvořák. Quien venía por los clásicos escuchó también música escrita hace pocos años.
 
-En el medio rural asturiano, donde la lucha es contra la idea de que lo importante ya pasó o pasa lejos, ese mensaje importa mucho.
-
-## Cómo funciona en la práctica
-
-La receta que usamos es sencilla: **poner lo nuevo dentro de lo conocido.**
-
-Nadie programa una noche entera de música de 2024 en un pueblo donde no hay costumbre de conciertos. Pero un programa que va de Boccherini a Debussy, luego a tres piezas de Casarrubios y cierra con Dvořák funciona perfectamente. El público entra por lo que reconoce, se queda por curiosidad, y descubre que lo desconocido no le ha hecho daño.
-
-También se nota otra cosa: **cuando la compositora está en la sala** (tocando su propia obra, como hizo Casarrubios en Leiguarda), la música contemporánea es una persona a la que puedes ver respirar, y luego saludar en la espicha. Cuesta mucho menos escuchar con simpatía a alguien a quien vas a conocer en media hora.
-
-## Sin etiqueta
-
-Así que lo llamamos programar bien.
-
-Buscamos la mejor música que podamos conseguir, de gente que esté haciendo algo que nos parezca necesario, y la ponemos en el sitio donde signifique más. La lista sale así: llena de mujeres y de gente viva.
+Cuando la compositora está en la sala, además, el público puede hablar con ella después del concierto.

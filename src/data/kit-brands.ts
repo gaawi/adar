@@ -14,6 +14,8 @@ export interface KitBrand {
   org: string;
   /** Rótulo que se dibuja sobre las imágenes. En mayúsculas. */
   stamp: string;
+  /** Firma gráfica: 'trapecio' dibuja las pegatinas como un trapecio ámbar centrado (CreArtBox). */
+  firma?: 'trapecio';
   /** Dominio que firma el pie de las imágenes. */
   site: string;
   /** Logotipo del panel: va fijo arriba a la derecha y es lo que distingue
@@ -219,6 +221,9 @@ export const BRANDS: Record<string, KitBrand> = {
     id: 'creartbox',
     org: 'CreArtBox',
     stamp: 'CREARTBOX',
+    // 25 nov: que CreArtBox no se parezca a ADAR. Sus pegatinas van en un trapecio,
+    // como la portada del cuadernillo de mano, y su «ámbar» va sobre sala.
+    firma: 'trapecio',
     site: 'creartbox.nyc',
     logo: '/logos/creartbox.png',
     copyLang: 'en',
@@ -437,6 +442,8 @@ export interface KitSource {
    * y mueven el centro del recorte; `zoom` mayor que 1 se acerca.
    */
   encuadre?: { x?: number; y?: number; zoom?: number };
+  /** Adorno sobre la foto del estilo «cielo». 'navidad': guirnalda de bombillas y nieve. */
+  adorno?: 'navidad';
   /** El orden de la noche para el estilo «tabla». `cifra` es la duración. */
   tabla?: {
     rotulo?: string;

@@ -32,10 +32,9 @@ Tocaron **Guillermo Laporta** (flauta), **Mario Molina** (piano), **Jone de la F
 - **Andrea Casarrubios** · *Afilador*
 - **Debussy** · *Petite Suite*
 - **Richard Strauss** · *Morgen!*
-- **Jessie Montgomery** · Dúo para violín y violonchelo
 - **Vivaldi** · *La Notte*
 
-Mira la mezcla: dos compositoras vivas (**Casarrubios** y **Jessie Montgomery**, una de las voces más programadas de Estados Unidos hoy) en el mismo programa que Mozart, Debussy, Strauss y Vivaldi, en el mercado de un pueblo de montaña. Nadie pidió una versión más fácil, y nadie se fue.
+Dos obras de **Andrea Casarrubios**, compositora viva, sonaron en el mismo programa que Mozart, Debussy, Strauss y Vivaldi, en el mercado de un pueblo de montaña.
 
 Un detalle que nos encanta: *Afilador*. Casarrubios escribió una pieza a partir de la figura del afilador (el oficio ambulante que iba de pueblo en pueblo con su rueda, anunciándose con un silbato). Tocar eso en Somiedo, delante de gente que recuerda perfectamente al afilador pasando por su calle, es hacer que la música contemporánea hable de algo que el público conoce mejor que el compositor.
 

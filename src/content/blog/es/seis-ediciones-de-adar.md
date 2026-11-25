@@ -23,7 +23,7 @@ Fue el 14 de agosto de 2021, en el campo de la iglesia. Plantamos un gran marco 
 
 Vinieron más de 120 personas. Leiguarda tiene un centenar de habitantes.
 
-Tocamos Mendelssohn, Haydn, Falla y John Harbison. También estrenamos *Atlantic*, de Marcos Fernández, escrita para esa noche. Fue el primer encargo del festival.
+Tocamos Mendelssohn, Haydn, Falla y John Harbison. También tocamos *Atlantic*, de Marcos Fernández.
 
 ![Leiguarda, 2021](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image72.jpg)
 

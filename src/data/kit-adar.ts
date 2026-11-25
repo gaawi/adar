@@ -219,7 +219,7 @@ Hazte Amigo en festivaladar.com
 
 Había hecho sol toda la semana y esa noche empezó a orbayar. Aun así vinieron más de 120 personas, en una aldea de apenas cien vecinos, y la música sonó entre la bruma.
 
-Sonaron Mendelssohn, Haydn, Falla, John Harbison y una obra nueva escrita para esa noche: Atlantic, de Marcos Fernández.
+Sonaron Mendelssohn, Haydn, Falla, John Harbison y Atlantic, de Marcos Fernández.
 
 La historia completa, en el blog de festivaladar.com
 
@@ -360,7 +360,8 @@ Lo contamos en el blog de festivaladar.com
     excerpt: 'Las compositoras que programamos',
     image: `${FX25}C1970T01.jpg`,
     // Las fotos de prensa de sus webs oficiales, con el crédito en el pie.
-    fotos: ['andrea-casarrubios', 'caroline-shaw', 'jessie-montgomery'].map((n) => `${IMG}compositora-${n}-45.jpg`),
+    // 25 nov: él corrigió que Montgomery no se tocó; fuera del post.
+    fotos: ['andrea-casarrubios', 'caroline-shaw'].map((n) => `${IMG}compositora-${n}-45.jpg`),
     fotosEnteras: true,
     status: 'publish',
     date: '2026-12-20',
@@ -368,11 +369,11 @@ Lo contamos en el blog de festivaladar.com
     tags: ['FestivalADAR', 'Compositoras'],
     pie: `Pulitzer, Grammy, Carnegie Hall. Así es la lista de compositoras que han sonado en ADAR. 🎼
 
-Andrea Casarrubios, Caroline Shaw, Jessie Montgomery, Celeste Oram, Mizuko Kaji…
+Andrea Casarrubios, Caroline Shaw, Celeste Oram, Mizuko Kaji…
 
 Sus obras son de lo mejor que se escribe hoy, y en cada edición el público lo nota.
 
-Fotos: Andrea Casarrubios por Titilayo Ayangade, Caroline Shaw por Simon van Boxtel y Jessie Montgomery, de su web.
+Fotos: Andrea Casarrubios por Titilayo Ayangade y Caroline Shaw por Simon van Boxtel.
 
 Lo contamos en el blog de festivaladar.com
 
@@ -389,6 +390,8 @@ Lo contamos en el blog de festivaladar.com
     excerpt: 'Felices fiestas desde Leiguarda',
     // 23 nov: «something more Christmassy»: the lights of the night sound walk in Leiguarda.
     image: `${VIEJO}2025/09_Paseo_Sonoro_en_Leiguarda/C1927T01.jpg`,
+    // 25 nov: «los gráficos alrededor de la foto, más navideños»: guirnalda y nieve.
+    adorno: 'navidad',
     pegatinas: [{ texto: 'Leiguarda · Asturias' }, { texto: 'Nos vemos en 2027', senal: true }],
     pegatinasMuro: true,
     status: 'publish',
@@ -456,8 +459,12 @@ Gracias a los músicos, a los vecinos y a quienes vinieron.
     blog: 'brana-sonora',
     porque: 'En enero empieza Braña Sonora, el proyecto paralelo al festival con el apoyo del Ministerio de Cultura. Es la noticia más importante del invierno.',
     kind: 'social',
-    estilo: 'cielo',
+    // 24 nov: «la foto del hórreo no me gusta… algo más tipo cartel… ¡es un nuevo proyecto!».
+    // Portada de cartel: fondo ámbar, el nombre grande y el aviso de proyecto nuevo.
+    estilo: 'ambar',
     kicker: 'Nuevo proyecto',
+    pegatinas: [{ texto: '¡Nuevo proyecto!', senal: true }, { texto: 'Julio 2026 · diciembre 2027' }, { texto: 'Vaqueiros · hórreos · tonada' }],
+    pegatinasMuro: true,
     title: 'Braña Sonora',
     excerpt: 'Archivo, transmisión y creación a partir del patrimonio inmaterial del medio rural asturiano.',
     fondoAmbar: true,
@@ -468,7 +475,7 @@ Gracias a los músicos, a los vecinos y a quienes vinieron.
     date: '2027-01-08',
     url: WEB,
     tags: ['FestivalADAR', 'BrañaSonora'],
-    pie: `Empezamos Braña Sonora. 🌿
+    pie: `¡Nuevo proyecto! Empezamos Braña Sonora. 🌿
 
 Un proyecto de ADAR, paralelo al festival, para escuchar y guardar el patrimonio vivo del medio rural asturiano:
 
@@ -508,27 +515,33 @@ Ayudas para proyectos de salvaguarda del Patrimonio Cultural Inmaterial. De juli
     blog: 'brana-sonora',
     // 22 nov: «no me convence». En Asturias nadie necesita que le expliquen
     // qué es una braña; mejor preguntar por los recuerdos de cada uno.
-    porque: 'Segundo post de Braña Sonora. En vez de explicar qué es una braña (en Asturias se sabe), pregunta por los recuerdos de cada uno: da conversación y nos trae gente para el archivo.',
+    // 24 nov: «tiene que hablar más de la grant y del proyecto que del nombre».
+    porque: 'Segundo post de Braña Sonora, cuatro días después del anuncio: cuenta qué financia la ayuda del Ministerio y qué vamos a hacer, paso a paso.',
     kind: 'social',
     estilo: 'cielo',
-    title: '¿Tú también subías a la braña?',
-    excerpt: '¿Tú también subías a la braña?',
+    title: 'Qué es Braña Sonora, paso a paso',
+    excerpt: 'Qué es Braña Sonora, paso a paso',
     logo: { src: LOGO_MINISTERIO, srcOscuro: LOGO_MINISTERIO_OSCURO, diapositivas: [0], historia: true },
     image: `${RES}IMG_2788.jpeg`,
     status: 'publish',
     date: '2027-01-12',
     url: WEB,
     tags: ['BrañaSonora', 'CulturaVaqueira'],
-    pie: `¿Tú también subías a la braña? ⛰️
+    pie: `Braña Sonora, paso a paso. 🌿
 
-En Asturias la braña no hace falta explicarla. Es el verano de los abuelos con el ganado, la cabaña, el camino de subida en mayo y el de bajada en octubre. Y lo que se cantaba por el camino.
+El Ministerio de Cultura nos ha dado una ayuda para proyectos de salvaguarda del Patrimonio Cultural Inmaterial. Con ella hacemos Braña Sonora, de julio de 2026 a diciembre de 2027.
 
-Con Braña Sonora queremos escuchar esas historias y guardarlas antes de que se pierdan.
+1. Grabar. En los concejos donde ya trabaja ADAR, con quienes guardan ese saber: la cultura vaqueira de las brañas, el sonido de los hórreos, las paneras y los oficios, y la tonada.
+2. Devolverlo a las escuelas rurales, con materiales en castellano y en asturiano.
+3. Crear. Tres compositoras y compositores harán residencias con ese archivo, y sus obras se estrenarán en el Festival ADAR de agosto de 2027.
+4. Compartirlo en un archivo abierto.
 
-Cuéntanos en los comentarios: ¿quién subía en tu familia? ¿A qué braña? ¿Qué se cantaba?
+Nadie se graba sin su permiso, y cada persona revisa lo suyo antes de publicarlo.
 
-#BrañaSonora #FestivalADAR #CulturaVaqueira #Brañas #Asturias #PatrimonioInmaterial`,
-    body: '¿Tú también subías a la braña?',
+Más en festivaladar.com
+
+#BrañaSonora #FestivalADAR #PatrimonioInmaterial #CulturaVaqueira #MinisterioDeCultura #Asturias`,
+    body: 'Qué es Braña Sonora, paso a paso',
   },
   {
     lang: 'es',
