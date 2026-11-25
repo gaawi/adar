@@ -1,0 +1,424 @@
+---
+// Documento interno de trabajo: cómo integrar las residencias, ADAR NEXT y el
+// nuevo flujo de participación. No es una página pública: va detrás del
+// middleware (ver matcher en /middleware.js) y lleva noindex.
+//
+// Está en castellano y en una sola página a propósito: es para leerlo y
+// decidir, no para publicarlo. Nada de lo que hay aquí sale a la web hasta
+// que él lo apruebe.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const TARIFAS = [
+  { noches: '3 noches', artista: '90 €', grupo: '360 €' },
+  { noches: '7 noches', artista: '175 €', grupo: '700 €' },
+  { noches: '14 noches', artista: '300 €', grupo: '1.200 €' },
+  { noches: '21 noches', artista: '420 €', grupo: '1.680 €' },
+  { noches: '28 noches', artista: '500 €', grupo: '2.000 €' },
+];
+
+// Las cinco vías de «Participa en ADAR», con la dirección que propongo para
+// cada una y de dónde sale el contenido.
+const VIAS = [
+  {
+    n: '01',
+    titulo: 'Propuestas artísticas',
+    url: '/es/propuestas-artisticas/',
+    estado: 'ya existe',
+    que: 'Gratuita, abierta todo el año, para la programación general. Sin garantía de respuesta individual.',
+    hacer: 'Añadir al final un bloque que remita a las otras dos vías. El texto que escribiste se queda como está.',
+  },
+  {
+    n: '02',
+    titulo: 'ADAR NEXT',
+    url: '/es/adar-next/',
+    estado: 'nueva',
+    que: 'Convocatoria internacional con cuota de 20 €, evaluación individual garantizada y honorarios para los seleccionados.',
+    hacer: 'Página nueva con identidad propia dentro de la marca, más el formulario y la pasarela de pago.',
+  },
+  {
+    n: '03',
+    titulo: 'Residencias artísticas',
+    url: '/es/residencias-artisticas-adar/',
+    estado: 'existe, hay que rehacerla',
+    que: 'Las dos modalidades: financiadas (invitación o convocatoria) y cofinanciadas (solicitud directa todo el año).',
+    hacer: 'Reescribir la página actual como portada de las dos modalidades, cada una con su propia subpágina.',
+  },
+  {
+    n: '04',
+    titulo: 'Colaboraciones profesionales',
+    url: '/es/colaboraciones/',
+    estado: 'nueva',
+    que: 'Instituciones, festivales, agencias, coproducciones e intercambios internacionales.',
+    hacer: 'Página corta. Buena parte del texto ya está escrito en la sección de intercambios de propuestas artísticas.',
+  },
+  {
+    n: '05',
+    titulo: 'Contacto general',
+    url: '/es/contacto/',
+    estado: 'ya existe',
+    que: 'Público, prensa, consultas y administración.',
+    hacer: 'Nada, salvo enlazarla desde la página central.',
+  },
+];
+
+const PENDIENTES = [
+  'Cuántos proyectos se seleccionan en ADAR NEXT.',
+  'Fecha de comunicación de resultados.',
+  'Composición del comité artístico.',
+  'Sistema de pago y exenciones de cuota: quién queda exento y cómo se le da acceso.',
+  'Condiciones económicas definitivas de las residencias cofinanciadas.',
+  'Límites y condiciones de los gastos de viaje y producción de ADAR NEXT.',
+];
+---
+
+<BaseLayout
+  title="Plan · Residencias y ADAR NEXT"
+  description="Documento interno de trabajo."
+  lang="es"
+  permalink="/plan-residencias/"
+  bodyClass="page is-draft-preview"
+>
+  {/* Mismo envoltorio que las páginas de contenido: los estilos del sitio
+      (.ed-wrap, .ed-card, .rc-steps…) están atados a .entry-content, y sin
+      él el texto sale a sangre. */}
+  <div class="builder-wrap full-width">
+  <article class="page type-page status-publish hentry">
+  <div class="entry-content">
+  <div class="adar-impact-v3 adar-res-call pr-doc">
+
+    <section class="ed-section">
+      <div class="ed-wrap">
+        <p class="ed-eyebrow">Documento interno · no publicado</p>
+        <h1 class="pr-h1">Residencias, ADAR NEXT y el nuevo flujo de participación</h1>
+        <p class="ed-lede">
+          Cómo lo integraría en la web que ya tienes. Nada de esto está publicado:
+          esta página va detrás de la misma cookie que el kit de redes y lleva
+          <code>noindex</code>. Léelo, corrige lo que no te cuadre y lo monto.
+        </p>
+        <p class="ed-prose pr-aviso">
+          <strong>Dos cosas antes de empezar.</strong> Me dijiste que eran tres
+          tipos de residencia; tu texto define dos. Lo he montado con dos. Y los
+          puntos del apartado 5 de tu documento no los he inventado: están al
+          final, marcados como pendientes, y no aparecen en ninguna página.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── 1 · QUÉ HAY YA ──────────────────────────────────────────────── -->
+    <section class="ed-section" id="infraestructura">
+      <div class="ed-wrap">
+        <div class="ed-head">
+          <p class="ed-eyebrow">01</p>
+          <h2>Qué hay ya y qué se puede reutilizar</h2>
+          <p class="ed-lede">Miré la web antes de proponer nada. Esto es lo que hay.</p>
+        </div>
+
+        <div class="ed-twocol">
+          <article class="ed-card">
+            <h3>Lo que ya resuelve el sitio</h3>
+            <p><strong>Páginas privadas.</strong> Hay un middleware en Vercel que deja pasar solo con la cookie <code>adar_preview</code>, la que te dan al entrar con GitHub en <code>/admin</code>. Añadir una página privada es añadir su ruta a una lista. Esta página ya está ahí.</p>
+            <p><strong>Funciones de servidor.</strong> Ya existen dos en <code>/api</code> para el login del panel. La pasarela de pago va exactamente igual: no hay que montar servidor nuevo.</p>
+            <p><strong>Tres idiomas y menús.</strong> El sistema de traducciones y el menú ya están; una página nueva entra sin tocar nada más.</p>
+          </article>
+
+          <article class="ed-card">
+            <h3>Lo que no existe y hay que crear</h3>
+            <p><strong>Formularios.</strong> Hoy no hay ninguno. Tally se usa en tres páginas (las de compositor residente) y es lo único que hay.</p>
+            <p><strong>Base de datos.</strong> No hay. Lo que se guarda —las revisiones del kit— son ficheros JSON en el repositorio. Sirve para docenas de fichas, no para cientos de candidaturas con estados y evaluadores.</p>
+            <p><strong>Pasarela de pago.</strong> No hay nada. Hace falta una cuenta de Stripe a nombre de la asociación.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 2 · ESTRUCTURA ──────────────────────────────────────────────── -->
+    <section class="ed-section" id="estructura">
+      <div class="ed-wrap">
+        <div class="ed-head">
+          <p class="ed-eyebrow">02</p>
+          <h2>La página central y las cinco vías</h2>
+          <p class="ed-lede">
+            <code>/es/participa/</code> · <code>/en/get-involved/</code> ·
+            <code>/ast/participa/</code>. Una página corta que explica las cinco
+            vías y manda a cada una. Es la dirección que pondrás en la firma del
+            correo y en la respuesta automática.
+          </p>
+        </div>
+
+        <ol class="rc-steps pr-vias">
+          {VIAS.map((v) => (
+            <li>
+              <div class="rc-step-body">
+                <h3>{v.titulo} <span class={`pr-pill pr-${v.estado === 'nueva' ? 'nueva' : v.estado === 'ya existe' ? 'existe' : 'rehacer'}`}>{v.estado}</span></h3>
+                <p class="pr-url"><code>{v.url}</code></p>
+                <p>{v.que}</p>
+                <p class="pr-hacer"><strong>Qué hay que hacer:</strong> {v.hacer}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+
+        <p class="ed-prose pr-nota">
+          Las vías 01, 02 y 03 son independientes y compatibles entre sí, y así
+          se dice en cada una. Nadie tiene que pagar para que ADAR vea su
+          trabajo: la vía gratuita sigue existiendo y se enlaza desde ADAR NEXT.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── 3 · RESIDENCIAS ─────────────────────────────────────────────── -->
+    <section class="ed-section" id="residencias">
+      <div class="ed-wrap">
+        <div class="ed-head">
+          <p class="ed-eyebrow">03</p>
+          <h2>Residencias: dos modalidades</h2>
+          <p class="ed-lede">
+            Tu documento avisa de algo importante: que no parezca alojamiento
+            turístico. Por eso las separo en dos páginas con entradas distintas
+            en vez de meterlas en una tabla de precios.
+          </p>
+        </div>
+
+        <div class="ed-twocol">
+          <article class="ed-card">
+            <h3>Financiadas</h3>
+            <p>Por invitación directa o convocatoria abierta, según haya financiación. ADAR cubre íntegramente el coste.</p>
+            <p>Esta es la que ya tienes en marcha con Culture Moves Europe, así que la página enlaza a la de <a href="/es/financiacion-europea/">financiación europea</a> como caso real.</p>
+          </article>
+
+          <article class="ed-card">
+            <h3>Cofinanciadas</h3>
+            <p>Solicitud abierta todo el año. Selección por proyecto y disponibilidad. ADAR subvenciona parte del coste real.</p>
+            <p>Incluye alojamiento, espacios de trabajo y ensayo, suministros, internet y asistencia básica. No implican necesariamente actuar en el festival.</p>
+          </article>
+        </div>
+
+        <h3 class="pr-sub">Tarifas que propusiste</h3>
+        <div class="pr-tabla-wrap">
+          <table class="pr-tabla">
+            <thead>
+              <tr><th>Duración</th><th>Por artista</th><th>Grupo de 4</th></tr>
+            </thead>
+            <tbody>
+              {TARIFAS.map((t) => (
+                <tr><td>{t.noches}</td><td>{t.artista}</td><td>{t.grupo}</td></tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p class="ed-prose pr-nota">
+          <strong>Cómo lo plantearía en la página.</strong> No como una lista de
+          precios, sino como lo que es: el valor estimado de una semana es de
+          <strong>350 € por artista</strong> y ADAR subvenciona en torno al
+          <strong>50 %</strong>. La cifra que paga el artista va después, como
+          consecuencia. Así se lee como una beca parcial y no como una tarifa de
+          casa rural, que es justo lo que querías evitar.
+        </p>
+        <p class="ed-prose pr-nota">
+          Las tarifas van marcadas como provisionales mientras no las cierres, y
+          la referencia del Arvo Pärt Centre me parece la correcta: becas y
+          residencias de pago conviviendo sin que una desprestigie a la otra.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── 4 · ADAR NEXT ───────────────────────────────────────────────── -->
+    <section class="ed-section" id="adar-next">
+      <div class="ed-wrap">
+        <div class="ed-head">
+          <p class="ed-eyebrow">04</p>
+          <h2>ADAR NEXT</h2>
+          <p class="ed-lede">
+            Identidad propia dentro de la marca, sin parecer un concurso de
+            jóvenes talentos ni un booking de pago.
+          </p>
+        </div>
+
+        <p class="ed-prose">
+          <strong>Cómo lo distinguiría visualmente.</strong> Misma tipografía y
+          misma retícula que el resto del sitio —si se sale de la marca, parece
+          otra cosa y pierde el respaldo del festival—, pero con la portada en
+          negativo: fondo sala, titular en papel y la señal ámbar reservada para
+          los tres conceptos: <em>Beyond networks · Beyond genres · Beyond
+          cities</em>. Es el mismo recurso que usa la portada del festival, así
+          que no hay que inventar nada.
+        </p>
+
+        <p class="ed-prose">
+          <strong>Lo que sí cambiaría de tu borrador.</strong> El apartado que
+          explica la cuota es lo más delicado de toda la página: ahí es donde se
+          decide si alguien lo lee como transparencia o como un peaje. Lo pondría
+          alto, no escondido al final, y con la frase que ya escribiste casi tal
+          cual: <em>«no estás pagando por actuar ni por tener más opciones, sino
+          por el tiempo y la atención dedicados a evaluar tu trabajo»</em>. Y
+          justo debajo, el enlace a la vía gratuita. Enseñar la puerta de al lado
+          es lo que hace creíble la cuota.
+        </p>
+
+        <div class="rc-callout">
+          <p class="ed-stat-t">Dato que sostiene el argumento</p>
+          <p>Cinco propuestas al día, más de treinta a la semana. Ese número va en la página: es el que explica por qué existe ADAR NEXT y por qué la vía gratuita no garantiza respuesta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 5 · FORMULARIO Y PAGO ───────────────────────────────────────── -->
+    <section class="ed-section" id="formulario">
+      <div class="ed-wrap">
+        <div class="ed-head">
+          <p class="ed-eyebrow">05</p>
+          <h2>El formulario y la pasarela de pago</h2>
+          <p class="ed-lede">Sustituir Tally por algo propio. Cómo lo montaría y qué necesito de ti.</p>
+        </div>
+
+        <ol class="rc-steps">
+          <li><div class="rc-step-body">
+            <h3>El formulario, en festivaladar.com</h3>
+            <p>Página nuestra, con la tipografía y los colores del sitio, en español e inglés. Todos los campos son texto y enlaces —grabaciones por enlace, como ya pides en propuestas— así que <strong>no hace falta subir archivos</strong>. Eso simplifica muchísimo el montaje.</p>
+          </div></li>
+
+          <li><div class="rc-step-body">
+            <h3>El pago, con Stripe Checkout</h3>
+            <p>Al enviar, una función en <code>/api</code> crea la sesión de pago y lleva al artista a la pantalla de Stripe. Stripe se encarga de las tarjetas, del 3D Secure, del IVA y del recibo; nosotros no tocamos ni guardamos ningún número de tarjeta.</p>
+            <p>Un <em>webhook</em> nos avisa cuando el pago se confirma y marca la candidatura como pagada. Si alguien abandona a medio pago, la candidatura queda registrada como «pago pendiente» y no se pierde.</p>
+          </div></li>
+
+          <li><div class="rc-step-body">
+            <h3>Dónde se guardan las candidaturas</h3>
+            <p>Aquí te debo una recomendación clara: <strong>Airtable</strong>. No para el formulario —ese es nuestro— sino como back office.</p>
+            <p>El motivo es que los nueve estados que enumeraste, asignar evaluador, puntuar y filtrar son exactamente lo que Airtable te da hecho. Montar un panel propio para eso son semanas de trabajo y luego hay que mantenerlo. La alternativa, si prefieres no depender de nadie, es una base Postgres en Vercel más un panel a medida; es más trabajo y más caro de mantener, pero todo queda en casa.</p>
+            <p class="pr-hacer"><strong>Mi consejo:</strong> Airtable ahora, que te deja operar ya; y si la convocatoria crece, se migra, porque los datos son nuestros y el formulario también.</p>
+          </div></li>
+
+          <li><div class="rc-step-body">
+            <h3>Tally se queda donde está, de momento</h3>
+            <p>Solo lo usan las tres páginas de compositor residente. Cuando el formulario nuevo funcione, esas tres pasan a usarlo y Tally desaparece. No tiene sentido tocarlas antes.</p>
+          </div></li>
+        </ol>
+
+        <div class="rc-warning">
+          <p class="rc-warning-t">Lo que no puedo hacer yo</p>
+          <p>La cuenta de Stripe tiene que crearla la asociación: lleva datos fiscales, cuenta bancaria y verificación de identidad. Lo mismo con Airtable. Yo escribo el código y lo dejo listo; tú creas las cuentas y pegas las claves en Vercel, donde ya están las de GitHub. <strong>Nunca me pases una clave por el chat</strong>: van en el panel de Vercel y ahí se quedan.</p>
+        </div>
+
+        <p class="ed-prose pr-nota">
+          En cuanto tenga la cuenta de Stripe en modo de pruebas, monto el
+          formulario entero y lo dejo en una dirección privada como esta para que
+          lo pruebes con una tarjeta de test, sin mover un euro real.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── 6 · PENDIENTES ──────────────────────────────────────────────── -->
+    <section class="ed-section" id="pendientes">
+      <div class="ed-wrap">
+        <div class="ed-head">
+          <p class="ed-eyebrow">06</p>
+          <h2>Lo que no he inventado</h2>
+          <p class="ed-lede">
+            Tu documento lo pedía expresamente. Estas seis cosas no están
+            escritas en ninguna página ni se publicarán hasta que las cierres.
+          </p>
+        </div>
+        <ul class="rc-when-list rc-managers">
+          {PENDIENTES.map((p) => <li>{p}</li>)}
+        </ul>
+        <p class="ed-prose pr-nota">
+          Lo único con fecha firme que pondría ya es lo que tú diste: plazo el
+          <strong>1 de marzo de 2027</strong>, cuota de <strong>20 €</strong>,
+          honorarios de <strong>1.000 € por artista hasta 5.000 € por
+          proyecto</strong>, y presentación en el festival de verano de 2027.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── 7 · ORDEN ───────────────────────────────────────────────────── -->
+    <section class="ed-section" id="orden">
+      <div class="ed-wrap">
+        <div class="ed-head">
+          <p class="ed-eyebrow">07</p>
+          <h2>En qué orden lo haría</h2>
+        </div>
+        <ol class="rc-steps">
+          <li><div class="rc-step-body"><h3>Las páginas, en privado</h3><p>Participa, ADAR NEXT y las dos de residencias, escritas y maquetadas, en direcciones privadas como esta. Las lees, las corriges y no hay prisa.</p></div></li>
+          <li><div class="rc-step-body"><h3>El formulario, en pruebas</h3><p>Con Stripe en modo test. Lo pruebas de principio a fin con una tarjeta falsa.</p></div></li>
+          <li><div class="rc-step-body"><h3>Publicar</h3><p>Las cuatro páginas a la vez, con el menú y la respuesta automática del correo apuntando a Participa. Y Tally fuera.</p></div></li>
+        </ol>
+        <p class="ed-prose pr-nota">
+          Dime por dónde quieres que empiece y lo hago. Si te vale el enfoque, lo
+          natural es que escriba ya las cuatro páginas en privado mientras tú
+          creas la cuenta de Stripe.
+        </p>
+      </div>
+    </section>
+
+  </div>
+  </div>
+  </article>
+  </div>
+</BaseLayout>
+
+<style is:global>
+  /* Documento interno: se lee, no se publica. Estilos mínimos sobre lo que
+     ya existe en el sitio. */
+  /* Selector largo a propósito: el tema heredado trae
+     `.entry-content h1, h1:not(.entry-title)…` y le ganaba, dejando el
+     titular en 24px. Comprobado con CSS.getMatchedStylesForNode. */
+  body.page .entry-content .pr-doc .pr-h1 {
+    /* …y además lo pintaba de blanco, pensando en un héroe oscuro. */
+    color: var(--ink, #0a0907);
+    font-family: var(--font-voz);
+    font-weight: var(--peso-titulo);
+    font-size: clamp(30px, 4.2vw, 52px);
+    line-height: 1.05;
+    margin: 10px 0 18px;
+  }
+  .pr-doc .pr-aviso {
+    border-left: 3px solid var(--accent);
+    padding-left: 16px;
+    margin-top: 22px;
+  }
+  .pr-doc .pr-sub {
+    font-family: var(--font-voz);
+    font-size: 20px;
+    margin: 34px 0 14px;
+  }
+  .pr-doc .pr-url { margin: 2px 0 8px; }
+  .pr-doc .pr-url code { font-size: 12px; }
+  .pr-doc .pr-hacer { color: var(--ink-soft, #3E3A36); }
+  .pr-doc .pr-nota { max-width: 46rem; }
+  .pr-doc .pr-pill {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    margin-left: 8px;
+    vertical-align: middle;
+    border: 1px solid currentColor;
+  }
+  .pr-doc .pr-nueva { color: #2f6b3a; }
+  .pr-doc .pr-rehacer { color: #9a5b12; }
+  .pr-doc .pr-existe { color: var(--muted); }
+  .pr-doc .pr-tabla-wrap { overflow-x: auto; max-width: 46rem; }
+  .pr-doc .pr-tabla {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: var(--font-mono);
+    font-size: 14px;
+  }
+  .pr-doc .pr-tabla th,
+  .pr-doc .pr-tabla td {
+    text-align: left;
+    padding: 10px 14px 10px 0;
+    border-bottom: 1px solid var(--line, rgba(10,9,7,.14));
+  }
+  .pr-doc .pr-tabla th {
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+</style>
