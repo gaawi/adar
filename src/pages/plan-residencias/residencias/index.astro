@@ -1,0 +1,125 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Borrador from '../_Borrador.astro';
+
+const TARIFAS = [
+  { noches: '3 noches', artista: '90 €', grupo: '360 €' },
+  { noches: '7 noches', artista: '175 €', grupo: '700 €' },
+  { noches: '14 noches', artista: '300 €', grupo: '1.200 €' },
+  { noches: '21 noches', artista: '420 €', grupo: '1.680 €' },
+  { noches: '28 noches', artista: '500 €', grupo: '2.000 €' },
+];
+---
+
+<BaseLayout
+  title="Borrador · Residencias artísticas"
+  description="Borrador privado."
+  lang="es"
+  permalink="/plan-residencias/residencias/"
+  bodyClass="page is-draft-preview"
+>
+<Borrador titulo="Residencias artísticas" destino="/es/residencias-artisticas-adar/">
+
+  <section class="ed-section rc-top">
+    <div class="ed-wrap">
+      <p class="ed-prose">
+        Programa internacional de residencias para músicos, compositores,
+        ensembles, artistas visuales y creadores multidisciplinares, orientado a
+        la creación, la experimentación y la investigación artística en el
+        entorno rural de Asturias.
+      </p>
+      <p class="ed-prose">
+        La residencia es en Leiguarda, en el concejo de Belmonte de Miranda.
+        Hay casa, espacio de trabajo y de ensayo, y el acompañamiento del
+        equipo del festival. Hay dos modalidades.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── 1 · FINANCIADAS ─────────────────────────────────────────────── -->
+  <section class="ed-section" id="financiadas">
+    <div class="ed-wrap">
+      <div class="ed-head">
+        <p class="ed-eyebrow">Modalidad 1</p>
+        <h2>Residencias financiadas</h2>
+        <p class="ed-lede">ADAR cubre íntegramente el coste de la residencia, conforme a las condiciones de cada programa.</p>
+      </div>
+
+      <ul class="rc-when-list rc-managers">
+        <li>Se accede <strong>por invitación directa o por convocatoria abierta</strong>.</li>
+        <li>Las convocatorias se publican según la financiación disponible, así que no hay un plazo permanente.</li>
+        <li>Orientadas a creación, investigación y desarrollo artístico.</li>
+      </ul>
+
+      <p class="ed-prose pr-nota">
+        La que está en marcha ahora mismo está <a href="/es/financiacion-europea/">financiada por la Unión Europea</a>
+        a través de Culture Moves Europe e implementada por el Goethe-Institut:
+        veintiún días en Leiguarda para un grupo de cinco artistas residentes en
+        otros países europeos.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── 2 · COFINANCIADAS ───────────────────────────────────────────── -->
+  <section class="ed-section" id="cofinanciadas">
+    <div class="ed-wrap">
+      <div class="ed-head">
+        <p class="ed-eyebrow">Modalidad 2</p>
+        <h2>Residencias cofinanciadas</h2>
+        <p class="ed-lede">Solicitud abierta durante todo el año. La selección depende del proyecto artístico y de la disponibilidad.</p>
+      </div>
+
+      <p class="ed-prose">
+        <strong>El valor estimado de una semana de residencia es de 350 € por
+        artista</strong>: alojamiento, espacios de trabajo y de ensayo,
+        suministros, internet y asistencia básica. ADAR subvenciona en torno al
+        <strong>50 %</strong> de ese coste real. El resto lo aporta el artista.
+      </p>
+
+      <h3 class="pr-sub">Lo que supone, por duración</h3>
+      <div class="pr-tabla-wrap">
+        <table class="pr-tabla">
+          <thead><tr><th>Duración</th><th>Aportación por artista</th><th>Grupo de 4</th></tr></thead>
+          <tbody>
+            {TARIFAS.map((t) => (
+              <tr><td>{t.noches}</td><td>{t.artista}</td><td>{t.grupo}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ed-prose pr-nota">
+        <span class="pr-pendiente">Provisional</span> Estas cifras se ajustarán a
+        los costes reales y a las necesidades de cada disciplina.
+      </p>
+
+      <p class="ed-prose pr-nota">
+        Una residencia cofinanciada <strong>no implica tocar en el festival</strong>.
+        Es tiempo y espacio para trabajar. Si del trabajo sale algo que encaje
+        en la programación, se habla, pero no es la condición.
+      </p>
+
+      <h3 class="pr-sub">Servicios adicionales</h3>
+      <p class="ed-prose">
+        Grabación audiovisual, producción técnica, materiales artísticos,
+        transporte y posibilidades de exhibición, concierto o presentación
+        pública del trabajo. Se acuerdan aparte, según el proyecto.
+      </p>
+    </div>
+  </section>
+
+  <section class="ed-section">
+    <div class="ed-wrap">
+      <div class="ed-head"><h2>Cómo solicitarla</h2></div>
+      <p class="ed-prose">
+        <span class="pr-pendiente">Por definir</span> Aquí irá el formulario, o
+        el correo con su asunto, según cómo lo montemos.
+      </p>
+    </div>
+  </section>
+
+</Borrador>
+
+<style is:global>
+  .pr-doc .pr-sub { font-family: var(--font-voz); font-size: 20px; margin: 34px 0 14px; }
+</style>
+</BaseLayout>

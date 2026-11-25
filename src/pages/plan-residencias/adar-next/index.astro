@@ -1,0 +1,138 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Borrador from '../_Borrador.astro';
+
+const OFRECEMOS = [
+  'Honorarios de 1.000 € por artista, hasta un máximo de 5.000 € por proyecto.',
+  'Gastos de viaje, alojamiento y manutención.',
+  'Producción artística y técnica.',
+  'Espacios de ensayo, investigación y creación.',
+  'Promoción y documentación audiovisual.',
+  'Entrevista y difusión editorial en la revista del festival, en preparación.',
+  'Presentación pública del proyecto durante el festival.',
+];
+
+const VALORES = [
+  ['Singularidad', 'Una identidad artística propia.'],
+  ['Curiosidad', 'Nuevas perspectivas sobre la creación y la interpretación.'],
+  ['Diálogo', 'Apertura hacia otras culturas, disciplinas y sensibilidades.'],
+  ['Proximidad', 'Capacidad de generar experiencias significativas con el público.'],
+  ['Territorio', 'Voluntad de acercar experiencias artísticas de calidad al medio rural.'],
+];
+---
+
+<BaseLayout
+  title="Borrador · ADAR NEXT"
+  description="Borrador privado."
+  lang="es"
+  permalink="/plan-residencias/adar-next/"
+  bodyClass="page is-draft-preview"
+>
+<Borrador titulo="ADAR NEXT" destino="/es/adar-next/">
+
+  <section class="ed-section rc-top">
+    <div class="ed-wrap">
+      <p class="ed-lede">Beyond networks · Beyond genres · Beyond cities</p>
+      <p class="ed-prose">
+        Convocatoria internacional abierta a músicos, ensembles, artistas
+        visuales y creadores de cualquier disciplina, nacionalidad, edad y
+        trayectoria. Los proyectos seleccionados se presentan en la edición de
+        verano del Festival ADAR 2027.
+      </p>
+      <p class="ed-prose">
+        Pueden ser proyectos ya estrenados o creaciones nuevas que necesiten un
+        periodo de investigación, ensayo y producción.
+      </p>
+    </div>
+  </section>
+
+  <!-- La cuota, arriba y explicada. Es lo que decide si se lee como
+       transparencia o como peaje. -->
+  <section class="ed-section" id="cuota">
+    <div class="ed-wrap">
+      <div class="ed-head">
+        <h2>Por qué hay una cuota de 20 €</h2>
+      </div>
+
+      <p class="ed-prose">
+        Recibimos al menos cinco propuestas al día: más de treinta a la semana.
+        Para un equipo del tamaño del nuestro, dedicar a cada una el tiempo que
+        merece es sencillamente imposible.
+      </p>
+      <p class="ed-prose">
+        Como en casi todas las organizaciones culturales, buena parte de lo que
+        programamos llega por relaciones profesionales, recomendaciones y
+        encuentros. ADAR NEXT nace para ampliar ese horizonte y encontrar
+        artistas fuera de nuestras redes habituales.
+      </p>
+      <p class="ed-prose">
+        La cuota nos permite reservar horas de trabajo específicas para esta
+        convocatoria. <strong>Cada propuesta será revisada individualmente por
+        al menos un miembro del equipo artístico</strong>, y todas recibirán una
+        comunicación con el resultado.
+      </p>
+
+      <div class="rc-callout">
+        <p><strong>No estás pagando por actuar ni por tener más opciones de ser
+        seleccionado</strong>, sino por el tiempo y la atención dedicados a
+        evaluar tu trabajo. La inscripción no garantiza la selección.</p>
+        <p>Si prefieres no pagar nada, puedes mandarnos tu propuesta por la vía
+        de siempre: <a href="/es/propuestas-artisticas/">propuestas artísticas</a>,
+        gratuita y abierta todo el año. Es independiente de esta convocatoria y
+        seguirá existiendo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ed-section">
+    <div class="ed-wrap">
+      <div class="ed-head"><h2>Qué ofrecemos</h2></div>
+      <ul class="rc-when-list rc-managers">
+        {OFRECEMOS.map((o) => <li>{o}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="ed-section">
+    <div class="ed-wrap">
+      <div class="ed-head">
+        <h2>Qué buscamos</h2>
+        <p class="ed-lede">
+          No hay restricción de género ni de disciplina. Un cuarteto de cuerda,
+          un grupo de jazz, una artista visual o un proyecto de danza tienen las
+          mismas posibilidades. Tampoco hace falta que la propuesta sea
+          experimental, interdisciplinar o de temática rural.
+        </p>
+      </div>
+      <ul class="rc-when-list rc-managers">
+        {VALORES.map(([k, v]) => <li><strong>{k}.</strong> {v}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="ed-section" id="convocatoria">
+    <div class="ed-wrap">
+      <div class="ed-head"><h2>Convocatoria 2027</h2></div>
+      <div class="pr-tabla-wrap">
+        <table class="pr-tabla">
+          <tbody>
+            <tr><th>Plazo</th><td>1 de marzo de 2027</td></tr>
+            <tr><th>Cuota</th><td>20 € por proyecto</td></tr>
+            <tr><th>Honorarios</th><td>1.000 € por artista, hasta 5.000 € por proyecto</td></tr>
+            <tr><th>Presentación</th><td>Festival ADAR 2027, edición de verano</td></tr>
+            <tr><th>Resultados</th><td><span class="pr-pendiente">Por definir</span></td></tr>
+            <tr><th>Proyectos seleccionados</th><td><span class="pr-pendiente">Por definir</span></td></tr>
+            <tr><th>Comité artístico</th><td><span class="pr-pendiente">Por definir</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="ed-prose pr-nota">
+        Las tres filas marcadas como «por definir» son las que dejaste
+        pendientes. No las he inventado. En la página publicada desaparecen o se
+        rellenan, según decidas.
+      </p>
+    </div>
+  </section>
+
+</Borrador>
+</BaseLayout>
