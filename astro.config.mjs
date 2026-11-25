@@ -18,7 +18,7 @@ export default defineConfig({
   integrations: [
     sitemap({
       // Fuera del sitemap: herramientas internas y vistas previas de borradores.
-      filter: (page) => !/\/(borradores|kit-redes)\//.test(page),
+      filter: (page) => !/\/(borradores|kit-redes|plan-residencias)\//.test(page),
     }),
   ],
 });

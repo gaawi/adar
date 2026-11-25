@@ -18,6 +18,9 @@ export const config = {
     '/kit-redes-creartbox/:path*',
     '/calendario',
     '/calendario/:path*',
+    // Documentos de trabajo: propuestas que aún no son públicas.
+    '/plan-residencias',
+    '/plan-residencias/:path*',
   ],
 };
 
