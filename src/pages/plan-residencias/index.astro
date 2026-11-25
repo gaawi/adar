@@ -125,7 +125,7 @@ const PENDIENTES = [
             <h3>Lo que no existe y hay que crear</h3>
             <p><strong>Formularios.</strong> Hoy no hay ninguno. Tally se usa en tres páginas (las de compositor residente) y es lo único que hay.</p>
             <p><strong>Base de datos.</strong> No hay. Lo que se guarda —las revisiones del kit— son ficheros JSON en el repositorio. Sirve para docenas de fichas, no para cientos de candidaturas con estados y evaluadores.</p>
-            <p><strong>Pasarela de pago.</strong> No hay nada. Hace falta una cuenta de Stripe a nombre de la asociación.</p>
+            <p><strong>Pasarela de pago.</strong> Ya hay cuenta de Stripe. Escrita la función de <code>/api</code> que crea el pago; falta pegar la clave en Vercel.</p>
           </article>
         </div>
       </div>
@@ -302,10 +302,27 @@ const PENDIENTES = [
           <p>La cuenta de Stripe tiene que crearla la asociación: lleva datos fiscales, cuenta bancaria y verificación de identidad. Lo mismo con Airtable. Yo escribo el código y lo dejo listo; tú creas las cuentas y pegas las claves en Vercel, donde ya están las de GitHub. <strong>Nunca me pases una clave por el chat</strong>: van en el panel de Vercel y ahí se quedan.</p>
         </div>
 
+        <div class="rc-callout">
+          <p><strong>Hecho.</strong> El formulario está montado y funcionando:
+          <a href="/plan-residencias/formulario/">/plan-residencias/formulario/</a>.
+          Catorce campos, validación en el navegador y otra vez en el servidor,
+          y al enviar abre la pantalla de pago de Stripe.</p>
+          <p>Para que funcione <strong>falta una cosa tuya</strong>: entrar en
+          Vercel, Settings → Environment Variables, y añadir
+          <code>STRIPE_SECRET_KEY</code> con la clave de <em>pruebas</em> de
+          Stripe (empieza por <code>sk_test_</code>, está en el panel de Stripe
+          en Developers → API keys con el interruptor de test activado). Luego
+          un redespliegue y ya se puede probar de punta a punta con la tarjeta
+          <code>4242 4242 4242 4242</code>, sin mover un euro.</p>
+          <p>Mientras la clave sea la de pruebas no hay ningún riesgo: no se
+          cobra nada a nadie, aunque la dirección se filtrara.</p>
+        </div>
+
         <p class="ed-prose pr-nota">
-          En cuanto tenga la cuenta de Stripe en modo de pruebas, monto el
-          formulario entero y lo dejo en una dirección privada como esta para que
-          lo pruebes con una tarjeta de test, sin mover un euro real.
+          De momento cada candidatura pagada se queda guardada en el propio
+          panel de Stripe, con todos sus campos, y se puede exportar a CSV. Es
+          suficiente para empezar. El <em>webhook</em> y los nueve estados hacen
+          falta cuando decidas el back office; el formulario no cambia por eso.
         </p>
       </div>
     </section>
@@ -338,7 +355,7 @@ const PENDIENTES = [
       <div class="ed-wrap">
         <div class="ed-head">
           <p class="ed-eyebrow">Para aprobar</p>
-          <h2>Las cuatro páginas, escritas</h2>
+          <h2>Las páginas, escritas</h2>
           <p class="ed-lede">
             Cada una en su dirección privada. Léelas, dime qué cambio, y cuando
             des el visto bueno las traduzco y las publico en la dirección
@@ -361,6 +378,10 @@ const PENDIENTES = [
           <li><div class="rc-step-body">
             <h3><a href="/plan-residencias/colaboraciones/">Colaboraciones profesionales</a></h3>
             <p>Se publicará en <code>/es/colaboraciones/</code>.</p>
+          </div></li>
+          <li><div class="rc-step-body">
+            <h3><a href="/plan-residencias/formulario/">Formulario de ADAR NEXT</a></h3>
+            <p>El que sustituye a Tally, con el pago de Stripe. Funciona en cuanto pongas la clave en Vercel. Se publicará en <code>/es/adar-next/inscripcion/</code>.</p>
           </div></li>
         </ol>
       </div>

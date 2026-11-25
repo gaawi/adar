@@ -1,0 +1,435 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Borrador from '../_Borrador.astro';
+
+const FORMACIONES = [
+  'Solista',
+  'Dúo o grupo de cámara',
+  'Ensemble u orquesta',
+  'Artista visual',
+  'Danza o artes escénicas',
+  'Proyecto multidisciplinar',
+  'Otro',
+];
+
+const ESTADOS = [
+  'Obra o programa ya estrenado',
+  'Creación nueva, necesita periodo de trabajo',
+];
+---
+
+<BaseLayout
+  title="Borrador · Formulario ADAR NEXT"
+  description="Borrador privado."
+  lang="es"
+  permalink="/plan-residencias/formulario/"
+  bodyClass="page is-draft-preview"
+>
+<Borrador
+  titulo="Formulario ADAR NEXT"
+  destino="/es/adar-next/inscripcion/"
+  idiomas="Se traducirá a inglés al aprobarlo. La convocatoria es internacional, así que el inglés manda."
+>
+
+  <section class="ed-section rc-top">
+    <div class="ed-wrap">
+      <div class="pr-banner nx-aviso">
+        <p class="ed-stat-t">Modo de pruebas</p>
+        <p>
+          Esto sustituye a Tally. El pago va por Stripe: aquí no se ve ni se
+          guarda ningún número de tarjeta. Mientras la clave de Vercel sea la de
+          pruebas (<code>sk_test_…</code>), <strong>no se mueve un euro</strong>:
+          se paga con la tarjeta de prueba <code>4242 4242 4242 4242</code>,
+          cualquier fecha futura y cualquier CVC.
+        </p>
+      </div>
+
+      <p class="ed-prose">
+        Cuota de <strong>20 € por proyecto</strong>. Se paga al final, después de
+        rellenar todo. Si cierras la pasarela sin pagar, la candidatura no se
+        registra.
+      </p>
+    </div>
+  </section>
+
+  <section class="ed-section">
+    <div class="ed-wrap">
+      <div id="nx-estado" class="nx-estado" hidden></div>
+
+      <form class="nx-form" id="nx-form" novalidate>
+
+        <fieldset class="nx-grupo">
+          <legend>Quién eres</legend>
+
+          <label class="nx-campo">
+            <span class="nx-label">Nombre del artista o ensemble <i>·</i></span>
+            <input name="nombre" type="text" required autocomplete="organization" enterkeyhint="next" />
+          </label>
+
+          <label class="nx-campo">
+            <span class="nx-label">Correo electrónico <i>·</i></span>
+            <input name="email" type="email" required autocomplete="email" inputmode="email" enterkeyhint="next" />
+            <span class="nx-ayuda">Aquí mandamos el resultado y el recibo del pago.</span>
+          </label>
+
+          <label class="nx-campo">
+            <span class="nx-label">Teléfono</span>
+            <input name="telefono" type="tel" autocomplete="tel" inputmode="tel" enterkeyhint="next" />
+            <span class="nx-ayuda">Solo por si necesitamos localizarte. No llamamos sin avisar antes por correo.</span>
+          </label>
+
+          <label class="nx-campo">
+            <span class="nx-label">País de residencia <i>·</i></span>
+            <input name="pais" type="text" required autocomplete="country-name" enterkeyhint="next" />
+          </label>
+
+          <div class="nx-fila">
+            <label class="nx-campo">
+              <span class="nx-label">Formación <i>·</i></span>
+              <select name="formacion" required>
+                <option value="">Elige…</option>
+                {FORMACIONES.map((f) => <option value={f}>{f}</option>)}
+              </select>
+            </label>
+
+            <label class="nx-campo nx-corto">
+              <span class="nx-label">Nº de personas <i>·</i></span>
+              <input name="personas" type="number" min="1" max="200" required inputmode="numeric" />
+            </label>
+          </div>
+
+          <label class="nx-campo">
+            <span class="nx-label">Web o redes</span>
+            <input name="web" type="url" placeholder="https://" autocomplete="url" inputmode="url" enterkeyhint="next" />
+          </label>
+        </fieldset>
+
+        <fieldset class="nx-grupo">
+          <legend>El proyecto</legend>
+
+          <label class="nx-campo">
+            <span class="nx-label">Título <i>·</i></span>
+            <input name="titulo" type="text" required enterkeyhint="next" />
+          </label>
+
+          <label class="nx-campo">
+            <span class="nx-label">Estado <i>·</i></span>
+            <select name="estado_obra" required>
+              <option value="">Elige…</option>
+              {ESTADOS.map((e) => <option value={e}>{e}</option>)}
+            </select>
+          </label>
+
+          <label class="nx-campo nx-corto">
+            <span class="nx-label">Duración aproximada</span>
+            <input name="duracion" type="text" placeholder="60 min" enterkeyhint="next" />
+          </label>
+
+          <label class="nx-campo">
+            <span class="nx-label">Grabaciones <i>·</i></span>
+            <input name="grabaciones" type="url" required placeholder="https://" inputmode="url" enterkeyhint="next" />
+            <span class="nx-ayuda">
+              Un enlace a vídeo o audio: YouTube, Vimeo, Bandcamp, SoundCloud,
+              Drive. Es lo primero que miramos. Si tienes varios, pon el enlace a
+              una carpeta o a tu web.
+            </span>
+          </label>
+
+          <label class="nx-campo">
+            <span class="nx-label">Descripción del proyecto <i>·</i></span>
+            <textarea name="proyecto" rows="7" required maxlength="2000"></textarea>
+            <span class="nx-ayuda">
+              Qué es, de dónde sale y por qué lo quieres hacer. Sin florituras.
+              <b data-cuenta="proyecto">0</b>/2000.
+            </span>
+          </label>
+
+          <label class="nx-campo">
+            <span class="nx-label">Necesidades técnicas o de producción</span>
+            <textarea name="tecnica" rows="4" maxlength="2000"></textarea>
+            <span class="nx-ayuda">
+              Si ya lo sabes. Si no, se habla más adelante.
+              <b data-cuenta="tecnica">0</b>/2000.
+            </span>
+          </label>
+
+          <label class="nx-campo">
+            <span class="nx-label">¿Cómo nos conociste?</span>
+            <input name="como" type="text" enterkeyhint="done" />
+          </label>
+        </fieldset>
+
+        <!-- Trampa para robots. Oculta de verdad, no solo a la vista. -->
+        <div class="nx-trampa" aria-hidden="true">
+          <label>No rellenes esto
+            <input name="web_empresa" type="text" tabindex="-1" autocomplete="off" />
+          </label>
+        </div>
+
+        <label class="nx-acepta">
+          <input name="acepta" type="checkbox" required />
+          <span>
+            He leído las <a href="/plan-residencias/adar-next/">condiciones de la
+            convocatoria</a> y entiendo que la cuota de 20 € cubre la revisión de
+            la propuesta y <strong>no se devuelve</strong> ni garantiza la
+            selección.
+          </span>
+        </label>
+
+        <div class="nx-enviar">
+          <button type="submit" class="nx-boton">Continuar al pago · 20 €</button>
+          <p class="nx-seguro">Pago gestionado por Stripe.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</Borrador>
+
+<style is:global>
+  /* Selectores largos a propósito: el tema viejo de WordPress tiene reglas
+     sueltas para input, select, textarea, button y legend dentro de
+     .entry-content, y ganan por especificidad si se escribe corto. */
+  body.page .entry-content .pr-doc .nx-form { max-width: 40rem; margin: 0; }
+
+  body.page .entry-content .pr-doc .nx-aviso { background: rgba(154,91,18,.06); }
+
+  body.page .entry-content .pr-doc .nx-grupo {
+    border: 0; padding: 0; margin: 0 0 34px; min-width: 0;
+  }
+  body.page .entry-content .pr-doc .nx-grupo legend {
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--muted); padding: 0;
+    margin: 0 0 16px; width: 100%;
+    border-bottom: 1px solid var(--line, rgba(10,9,7,.14)); padding-bottom: 8px;
+  }
+
+  body.page .entry-content .pr-doc .nx-campo { display: block; margin: 0 0 18px; }
+  body.page .entry-content .pr-doc .nx-label {
+    display: block; font-size: 14px; font-weight: 600; margin: 0 0 5px;
+    line-height: 1.3;
+  }
+  /* El punto naranja marca lo obligatorio sin llenar la página de asteriscos. */
+  body.page .entry-content .pr-doc .nx-label i {
+    color: #9a5b12; font-style: normal; font-weight: 700;
+  }
+  body.page .entry-content .pr-doc .nx-ayuda {
+    display: block; font-size: 12.5px; line-height: 1.45; color: var(--muted);
+    margin: 5px 0 0;
+  }
+
+  body.page .entry-content .pr-doc .nx-form input[type="text"],
+  body.page .entry-content .pr-doc .nx-form input[type="email"],
+  body.page .entry-content .pr-doc .nx-form input[type="tel"],
+  body.page .entry-content .pr-doc .nx-form input[type="url"],
+  body.page .entry-content .pr-doc .nx-form input[type="number"],
+  body.page .entry-content .pr-doc .nx-form select,
+  body.page .entry-content .pr-doc .nx-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    /* 16px exactos: por debajo, iOS hace zoom al enfocar el campo y deja la
+       página descuadrada. Es la única talla que no se negocia. */
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.4;
+    color: var(--ink, #0a0907);
+    background: #fff;
+    border: 1px solid var(--line, rgba(10,9,7,.28));
+    border-radius: 0;
+    padding: 11px 12px;
+    margin: 0;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  body.page .entry-content .pr-doc .nx-form textarea { resize: vertical; min-height: 96px; }
+  body.page .entry-content .pr-doc .nx-form select {
+    /* Flecha propia, porque al quitar el appearance nativo desaparece. */
+    background-image: linear-gradient(45deg, transparent 50%, currentColor 50%),
+                      linear-gradient(135deg, currentColor 50%, transparent 50%);
+    background-position: calc(100% - 17px) 52%, calc(100% - 12px) 52%;
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+    padding-right: 34px;
+  }
+  body.page .entry-content .pr-doc .nx-form input:focus,
+  body.page .entry-content .pr-doc .nx-form select:focus,
+  body.page .entry-content .pr-doc .nx-form textarea:focus {
+    outline: 2px solid var(--ink, #0a0907); outline-offset: -1px;
+  }
+  body.page .entry-content .pr-doc .nx-form .nx-mal input,
+  body.page .entry-content .pr-doc .nx-form .nx-mal select,
+  body.page .entry-content .pr-doc .nx-form .nx-mal textarea {
+    border-color: #a32015; background: rgba(163,32,21,.03);
+  }
+
+  body.page .entry-content .pr-doc .nx-fila { display: flex; gap: 12px; }
+  body.page .entry-content .pr-doc .nx-fila > .nx-campo { flex: 1 1 auto; min-width: 0; }
+  body.page .entry-content .pr-doc .nx-fila > .nx-corto { flex: 0 0 125px; }
+  body.page .entry-content .pr-doc .nx-campo.nx-corto:not(.nx-fila > *) { max-width: 180px; }
+
+  /* Fuera de pantalla, no display:none: así un lector de pantalla puede
+     seguir saltándolo pero el navegador no lo descarta del envío. */
+  body.page .entry-content .pr-doc .nx-trampa {
+    position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;
+  }
+
+  body.page .entry-content .pr-doc .nx-acepta {
+    display: flex; gap: 11px; align-items: flex-start;
+    margin: 0 0 26px; font-size: 14px; line-height: 1.5;
+  }
+  body.page .entry-content .pr-doc .nx-acepta input {
+    flex: 0 0 auto; width: 20px; height: 20px; margin: 2px 0 0;
+    accent-color: #9a5b12;
+  }
+  body.page .entry-content .pr-doc .nx-acepta.nx-mal span { color: #a32015; }
+
+  body.page .entry-content .pr-doc .nx-boton {
+    display: block; width: 100%;
+    font-family: var(--font-mono); font-size: 14px; letter-spacing: .06em;
+    text-transform: uppercase;
+    background: var(--ink, #0a0907); color: #fff;
+    border: 0; border-radius: 0; padding: 17px 20px; margin: 0;
+    cursor: pointer; -webkit-appearance: none; appearance: none;
+  }
+  body.page .entry-content .pr-doc .nx-boton[disabled] { opacity: .5; cursor: progress; }
+  body.page .entry-content .pr-doc .nx-seguro {
+    font-size: 12px; color: var(--muted); text-align: center; margin: 10px 0 0;
+  }
+
+  body.page .entry-content .pr-doc .nx-estado {
+    border-left: 3px solid; padding: 13px 16px; margin: 0 0 26px;
+    max-width: 40rem; font-size: 14.5px; line-height: 1.5;
+  }
+  body.page .entry-content .pr-doc .nx-estado p { margin: 0; }
+  body.page .entry-content .pr-doc .nx-estado p + p { margin-top: 7px; }
+  body.page .entry-content .pr-doc .nx-estado.es-mal { border-color: #a32015; background: rgba(163,32,21,.05); }
+  body.page .entry-content .pr-doc .nx-estado.es-bien { border-color: #1d6b3f; background: rgba(29,107,63,.05); }
+  body.page .entry-content .pr-doc .nx-estado.es-info { border-color: #9a5b12; background: rgba(154,91,18,.05); }
+
+  @media (max-width: 460px) {
+    body.page .entry-content .pr-doc .nx-fila { display: block; }
+    body.page .entry-content .pr-doc .nx-fila > .nx-corto { max-width: 180px; }
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    var form = document.getElementById('nx-form');
+    var caja = document.getElementById('nx-estado');
+    if (!form || !caja) return;
+
+    var boton = form.querySelector('.nx-boton');
+    var textoBoton = boton.textContent;
+
+    function aviso(clase, html) {
+      caja.className = 'nx-estado ' + clase;
+      caja.innerHTML = html;
+      caja.hidden = false;
+      caja.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // Vuelta desde Stripe.
+    var q = new URLSearchParams(location.search);
+    if (q.get('pago') === 'ok') {
+      form.hidden = true;
+      aviso('es-bien',
+        '<p><strong>Candidatura recibida y cuota pagada.</strong></p>' +
+        '<p>En producción esto sería la página de gracias. El justificante va al ' +
+        'correo que pusiste, y la candidatura ya está en el panel de Stripe con ' +
+        'todos sus datos.</p>' +
+        '<p><a href="' + location.pathname + '">Mandar otra de prueba</a></p>');
+    } else if (q.get('pago') === 'cancelado') {
+      aviso('es-info',
+        '<p>Has salido de la pasarela sin pagar, así que la candidatura no se ' +
+        'ha registrado. Los datos del formulario se han perdido: hay que ' +
+        'rellenarlo otra vez.</p>');
+    }
+
+    // Contadores de los textos largos.
+    Array.prototype.forEach.call(form.querySelectorAll('[data-cuenta]'), function (b) {
+      var campo = form.elements[b.getAttribute('data-cuenta')];
+      if (!campo) return;
+      var pinta = function () { b.textContent = String(campo.value.length); };
+      campo.addEventListener('input', pinta);
+      pinta();
+    });
+
+    // Marca y desmarca el campo con error, para no dejarlo en rojo eternamente.
+    function envoltorio(campo) {
+      return campo.closest('.nx-campo') || campo.closest('.nx-acepta');
+    }
+    function limpia(campo) {
+      var w = envoltorio(campo);
+      if (w) w.classList.remove('nx-mal');
+    }
+    Array.prototype.forEach.call(form.elements, function (c) {
+      if (!c.name) return;
+      c.addEventListener('input', function () { limpia(c); });
+      c.addEventListener('change', function () { limpia(c); });
+    });
+
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      caja.hidden = true;
+      Array.prototype.forEach.call(form.querySelectorAll('.nx-mal'), function (w) {
+        w.classList.remove('nx-mal');
+      });
+
+      // Validación en el navegador para no hacer esperar a nadie por un campo
+      // vacío. La de verdad está en el servidor; esta es solo cortesía.
+      var faltan = [];
+      Array.prototype.forEach.call(form.querySelectorAll('[required]'), function (c) {
+        var vacio = c.type === 'checkbox' ? !c.checked : !c.value.trim();
+        var malHecho = !vacio && !c.checkValidity();
+        if (vacio || malHecho) {
+          faltan.push(c);
+          var w = envoltorio(c);
+          if (w) w.classList.add('nx-mal');
+        }
+      });
+      if (faltan.length) {
+        aviso('es-mal', '<p>Faltan ' + faltan.length + ' campo' +
+          (faltan.length > 1 ? 's' : '') + ' por rellenar, marcado' +
+          (faltan.length > 1 ? 's' : '') + ' en rojo.</p>');
+        faltan[0].focus({ preventScroll: true });
+        return;
+      }
+
+      var datos = { vuelta: location.pathname, acepta: form.elements.acepta.checked };
+      Array.prototype.forEach.call(form.elements, function (c) {
+        if (!c.name || c.type === 'checkbox' || c.type === 'submit') return;
+        datos[c.name] = c.value;
+      });
+
+      boton.disabled = true;
+      boton.textContent = 'Abriendo la pasarela…';
+
+      fetch('/api/adar-next', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(datos),
+      })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (res.ok && res.j.url) {
+            location.href = res.j.url;
+            return;
+          }
+          boton.disabled = false;
+          boton.textContent = textoBoton;
+          (res.j.campos || []).forEach(function (n) {
+            var c = form.elements[n];
+            var w = c && envoltorio(c);
+            if (w) w.classList.add('nx-mal');
+          });
+          aviso('es-mal', '<p>' + (res.j.error || 'No se pudo enviar.') + '</p>');
+        })
+        .catch(function () {
+          boton.disabled = false;
+          boton.textContent = textoBoton;
+          aviso('es-mal', '<p>No hay conexión con el servidor. Inténtalo otra vez.</p>');
+        });
+    });
+  })();
+</script>
+</BaseLayout>
