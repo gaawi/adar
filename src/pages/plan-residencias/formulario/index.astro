@@ -404,7 +404,9 @@ const ESTADOS = [
       boton.disabled = true;
       boton.textContent = 'Abriendo la pasarela…';
 
-      fetch('/api/adar-next', {
+      // Con barra final: vercel.json tiene trailingSlash, así que sin ella
+      // Vercel contesta un 308 y el envío da un rodeo para nada.
+      fetch('/api/adar-next/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(datos),
