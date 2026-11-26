@@ -7,7 +7,6 @@
 // se ha convocado antes no depende de quién seas.
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Hero from '../../../components/Hero.astro';
-import ConvocatoriaCard from '../../../components/ConvocatoriaCard.astro';
 import IconoFamilia from '../../../components/IconoFamilia.astro';
 import ParticipaEstilos from '../../../components/ParticipaEstilos.astro';
 import type { Lang } from '../../../i18n/strings.ts';
@@ -24,11 +23,14 @@ const C = copyParticipa(lang);
 
 const IMG = 'https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG';
 
-const cerradas = archivo();
-const archivoPorFamilia = FAMILIAS.map((f) => ({
-  ...f,
-  items: cerradas.filter((c) => c.familia === f.id),
-})).filter((f) => f.items.length > 0);
+// El histórico vive dentro de cada convocatoria —ahí es donde se entiende—,
+// así que aquí no se repiten las tarjetas: se deja una línea de tiempo, que
+// es lo que sirve para mirar de un vistazo todo lo que se ha convocado.
+const historial = archivo().map((c) => {
+  const fam = FAMILIAS.find((f) => f.id === c.familia);
+  const pub = PUBLICOS.find((p) => p.familias.includes(c.familia));
+  return { c, fam, pub };
+});
 
 const translations = Object.fromEntries(LANGS.map((l) => [l, `/${l}/participa/`]));
 ---
@@ -82,17 +84,20 @@ const translations = Object.fromEntries(LANGS.map((l) => [l, `/${l}/participa/`]
           <h2>{C.archivoH}</h2>
           <p class="ed-lede">{C.archivoSub}</p>
         </div>
-        {archivoPorFamilia.map((f) => (
-          <div class="pt-arch-fam">
-            <p class="pt-arch-h">
-              <IconoFamilia familia={f.id} size={17} />
-              <span>{f.titulo[lang]}</span>
-            </p>
-            <div class="cv-grid">
-              {f.items.map((c) => <ConvocatoriaCard c={c} lang={lang} />)}
-            </div>
-          </div>
-        ))}
+        <ol class="pt-hist">
+          {historial.map(({ c, fam, pub }) => (
+            <li>
+              <span class="pt-hist-anio">{c.anio ?? '—'}</span>
+              <span class="pt-hist-ic"><IconoFamilia familia={c.familia} size={16} /></span>
+              <span class="pt-hist-t">
+                {c.href?.[lang] ? <a href={c.href[lang]}>{c.titulo[lang]}</a> : c.titulo[lang]}
+              </span>
+              <span class="pt-hist-via">
+                {pub ? <a href={urlPublico(pub.slug, lang)}>{fam?.titulo[lang]}</a> : fam?.titulo[lang]}
+              </span>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
 

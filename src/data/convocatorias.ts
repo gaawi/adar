@@ -229,6 +229,18 @@ export interface Convocatoria {
   cta?: Record<Lang, string>;
   /** Solo en el archivo: cómo acabó. */
   resultado?: Record<Lang, string>;
+  /**
+   * Solo en las cerradas: el `id` de la convocatoria viva de la que esta fue
+   * una edición. Así el histórico cuelga de la convocatoria a la que
+   * pertenece en vez de vivir en un cajón aparte, y cada una enseña por
+   * dónde ha pasado.
+   *
+   * Una cerrada sin `padre` no se pierde: sigue saliendo en el histórico
+   * general de /participa/.
+   */
+  padre?: string;
+  /** Rótulo corto para la lista de ediciones. Si falta se usa el título. */
+  edicion?: Record<Lang, string>;
 }
 
 export const CONVOCATORIAS: Convocatoria[] = [
@@ -476,6 +488,12 @@ export const CONVOCATORIAS: Convocatoria[] = [
     familia: 'residencias',
     estado: 'cerrada',
     anio: 2026,
+    padre: 'residencias-financiadas',
+    edicion: {
+      es: '2026–27 · con Culture Moves Europe',
+      en: '2026–27 · with Culture Moves Europe',
+      ast: '2026–27 · con Culture Moves Europe',
+    },
     titulo: {
       es: 'Residencia artística · Convocatoria 2026–27',
       en: 'Artist residency · 2026–27 open call',
@@ -505,9 +523,15 @@ export const CONVOCATORIAS: Convocatoria[] = [
   },
   {
     id: 'compositor-residente-2026',
-    familia: 'programacion',
+    familia: 'residencias',
     estado: 'cerrada',
     anio: 2026,
+    padre: 'residencias-financiadas',
+    edicion: {
+      es: '2026 · Compositor/a en residencia',
+      en: '2026 · Composer in residence',
+      ast: '2026 · Compositor/a en residencia',
+    },
     titulo: {
       es: 'Compositor/a en residencia · ADAR 2026',
       en: 'Composer in residence · ADAR 2026',
@@ -548,6 +572,20 @@ export function porEstado(...estados: Estado[]): Convocatoria[] {
     // Dentro del mismo estado, primero las destacadas.
     return Number(!!b.destacada) - Number(!!a.destacada);
   });
+}
+
+/** Las ediciones pasadas de una convocatoria, de la más reciente atrás. */
+export function ediciones(id: string): Convocatoria[] {
+  return CONVOCATORIAS.filter((c) => c.padre === id).sort(
+    (a, b) => (b.anio ?? 0) - (a.anio ?? 0),
+  );
+}
+
+/** Cerradas que no son edición de ninguna convocatoria viva. */
+export function huerfanas(): Convocatoria[] {
+  return CONVOCATORIAS.filter((c) => c.estado === 'cerrada' && !c.padre).sort(
+    (a, b) => (b.anio ?? 0) - (a.anio ?? 0),
+  );
 }
 
 export function archivo(): Convocatoria[] {

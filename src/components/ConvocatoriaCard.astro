@@ -2,7 +2,7 @@
 // Una convocatoria, en tarjeta. Se usa en /participa/ y en el carril lateral
 // de la página de residencias, así que el estilo vive aquí y no en cada página.
 import type { Lang } from '../i18n/strings.ts';
-import { ETIQUETA, diasRestantes, type Convocatoria } from '../data/convocatorias.ts';
+import { ETIQUETA, diasRestantes, ediciones, type Convocatoria } from '../data/convocatorias.ts';
 import IconoFamilia from './IconoFamilia.astro';
 
 interface Props {
@@ -20,6 +20,15 @@ const cta = c.cta?.[lang] ?? { es: 'Más información', en: 'More information', 
 const restan = dias !== null && dias >= 0
   ? { es: `Quedan ${dias} días`, en: `${dias} days left`, ast: `Queden ${dias} díes` }[lang]
   : null;
+
+// El histórico cuelga de la propia convocatoria: lo que se convocó antes
+// bajo este mismo nombre. En el carril lateral no cabe, así que se omite.
+const pasadas = compacta ? [] : ediciones(c.id);
+const EDICIONES_H = {
+  es: 'Ediciones anteriores',
+  en: 'Previous editions',
+  ast: 'Ediciones anteriores',
+}[lang];
 ---
 
 <article class={`cv-card cv-${c.estado}${compacta ? ' cv-compacta' : ''}`}>
@@ -37,6 +46,19 @@ const restan = dias !== null && dias >= 0
     {restan && <b class="cv-restan">{restan}</b>}
   </p>
   {href && <p class="cv-cta"><a href={href}>{cta} <span aria-hidden="true">→</span></a></p>}
+
+  {pasadas.length > 0 && (
+    <div class="cv-ed">
+      <p class="cv-ed-h">{EDICIONES_H}</p>
+      <ul>
+        {pasadas.map((e) => {
+          const eh = e.href?.[lang];
+          const rotulo = e.edicion?.[lang] ?? e.titulo[lang];
+          return <li>{eh ? <a href={eh}>{rotulo}</a> : rotulo}</li>;
+        })}
+      </ul>
+    </div>
+  )}
 </article>
 
 <style is:global>
@@ -120,6 +142,42 @@ const restan = dias !== null && dias >= 0
     border-bottom: 1px solid currentColor;
     padding-bottom: 1px;
   }
+
+  /* El histórico de la convocatoria, dentro de su propia tarjeta. */
+  body .entry-content .cv-card .cv-ed {
+    margin: 16px 0 0;
+    padding: 13px 0 0;
+    border-top: 1px solid var(--line, rgba(10, 9, 7, 0.14));
+  }
+  body .entry-content .cv-card .cv-ed-h {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 7px;
+  }
+  body .entry-content .cv-card .cv-ed ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  body .entry-content .cv-card .cv-ed li {
+    margin: 0 0 4px;
+    padding: 0;
+    list-style: none;
+    font-size: 13.5px;
+    line-height: 1.4;
+  }
+  body .entry-content .cv-card .cv-ed li::before,
+  body .entry-content .cv-card .cv-ed li::marker { content: none; }
+  body .entry-content .cv-card .cv-ed li:last-child { margin-bottom: 0; }
+  body .entry-content .cv-card .cv-ed a {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(10, 9, 7, 0.25);
+  }
+  body .entry-content .cv-card .cv-ed a:hover { color: var(--ink, #0a0907); }
 
   /* Variante estrecha del carril lateral. */
   body .entry-content .cv-card.cv-compacta { padding: 15px 16px 16px; }

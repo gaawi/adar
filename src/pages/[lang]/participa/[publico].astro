@@ -12,7 +12,7 @@ import ParticipaEstilos from '../../../components/ParticipaEstilos.astro';
 import type { Lang } from '../../../i18n/strings.ts';
 import { LANGS } from '../../../i18n/strings.ts';
 import { copyParticipa } from '../../../i18n/participa.ts';
-import { FAMILIAS, PUBLICOS, archivo, urlPublico } from '../../../data/convocatorias.ts';
+import { FAMILIAS, PUBLICOS, huerfanas, urlPublico } from '../../../data/convocatorias.ts';
 
 export function getStaticPaths() {
   return LANGS.flatMap((lang) =>
@@ -40,8 +40,10 @@ const secciones = pub.familias
   .map((id) => FAMILIAS.find((f) => f.id === id)!)
   .filter(Boolean);
 
-// Archivo de esta vía, y solo de esta vía.
-const cerradas = archivo().filter((c) => pub.familias.includes(c.familia));
+// El histórico ya no va aparte: cada convocatoria enseña dentro sus propias
+// ediciones anteriores. Aquí solo quedan las cerradas que no son edición de
+// ninguna viva, para que no se pierda ninguna al cerrarse.
+const cerradas = huerfanas().filter((c) => pub.familias.includes(c.familia));
 
 const otros = PUBLICOS.filter((p) => p.slug !== pub.slug);
 
