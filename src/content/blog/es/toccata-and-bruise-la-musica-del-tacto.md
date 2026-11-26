@@ -19,6 +19,8 @@ La pieza va **del tacto.**
 
 **Celeste Oram** es compositora y diseñadora de proyecciones, originaria de **Nueva Zelanda** y residente en **Nueva York**. Cedió *Toccata & Bruise* para la edición de 2023 del festival, donde se presentó como instalación audiovisual en la propia sede de Leiguarda.
 
+![Fachada de Leiguarda 47, sede de ADAR](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_3610.JPG)
+
 Oram había trabajado estrechamente con **Josefina Urraca y Guillermo Laporta** durante su etapa en Nueva York. Es uno de esos hilos que explican cómo una aldea de Belmonte de Miranda acaba programando a una artista neozelandesa: **el festival es, en buena parte, la red de contactos de dos músicos que vivieron once años en Nueva York, traída a Asturias.**
 
 ## La grabación que el público casi no oye
@@ -28,6 +30,8 @@ El mecanismo de la obra es este.
 Mientras toca, **la pianista está escuchando a Glenn Gould.** Concretamente, una grabación de 1959 en la que Gould interpreta su propia transcripción para piano de una fantasía para órgano de **Jan Pieterszoon Sweelinck**, el gran organista holandés del Renacimiento.
 
 El público **apenas percibe esa grabación.** Funciona como una **partitura sonora**, una guía secreta con la que la intérprete sincroniza sus gestos y el vídeo.
+
+![Toccata & Bruise, de Celeste Oram](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/Screenshot%202026-03-09%20at%2014.41.19.jpg)
 
 Es decir, hay una capa de la obra que solo existe en el oído de quien la ejecuta. Nosotros vemos el resultado de algo que no podemos escuchar.
 
@@ -49,6 +53,8 @@ La estructura sigue las tres secciones de la obra original: **fuga, toccata y fa
 
 La compositora lo compara con **un molde perdido**: esa técnica de fundición donde el modelo original se destruye para que exista la pieza final. En la obra, **los sonidos del piano van desapareciendo del proceso**, y al final solo queda **el rastro del gesto y del tacto que los generó.**
 
+![La pianista y el vídeo en Toccata & Bruise, de Celeste Oram](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/03_Instalacion_Toccata_and_Bruise_Celeste_Oram/prt_275x212_1666288811_2x.jpeg)
+
 Piénsalo: una pieza musical que termina prescindiendo de la música, dejando visible únicamente el cuerpo que la producía. Viéndola, produce algo muy físico, casi incómodo, porque de pronto miras las manos de alguien como no las habías mirado nunca.
 
 ## Por qué esto, en Leiguarda
@@ -60,3 +66,5 @@ La primera: **porque la gente aguanta muchísimo más de lo que se piensa.** El 
 La segunda, y más importante: *Toccata & Bruise* trata en el fondo de **oficio manual**. De manos, de contacto, de la huella que deja el trabajo del cuerpo sobre la materia. No se nos ocurre un público que entienda eso mejor que uno formado por gente que sabe lo que es trabajar con las manos.
 
 En 2023 fue la primera vez que el festival programó instalaciones de artistas internacionales.
+
+![Instalación de Mizuko Kaji en As Quintas, El Franco, 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Concierto_en_El_Franco/image29.jpg)

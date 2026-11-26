@@ -13,6 +13,8 @@ El **17 de agosto de 2024**, en **Grado**, el festival hizo algo que no había h
 
 Un **concierto** en el Palacio de Miranda-Valdecarzana. Una **performance** en la Capilla de los Dolores. Y una **instalación** de la artista visual **Sarah K. Williams** dentro de la antigua Oficina de Turismo.
 
+![Concierto en el Palacio de Miranda-Valdecarzana, Grado, 17 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/27.jpg)
+
 Queríamos probar una idea: **que un pueblo puede funcionar como un festival entero durante unas horas.**
 
 ## La caja de cristal que llevaba años vacía
@@ -41,7 +43,11 @@ La programación simultánea de esa noche tenía además una lógica de acceso.
 
 En el **palacio**, un concierto de cámara: formato reconocible, para quien quiere sentarse y escuchar.
 
+![Cuerdas y piano en el Palacio de Miranda-Valdecarzana, Grado, 17 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/46.jpg)
+
 En la **capilla**, una performance: algo más arriesgado, para quien tiene curiosidad por lo que no sabe nombrar.
+
+![Capilla de los Dolores, Grado, 2024](https://creartbox-archive.b-cdn.net/adarimages/memoria-de-acciones/2024-08-17-concierto-performance-capilla-dolores-grado-2024/capilla.jpg)
 
 En la **calle**, una instalación de acceso libre: para el que pasaba por allí sin plan y se encontró con arte de camino a otra cosa.
 
@@ -51,4 +57,8 @@ Ese tercer público es el más valioso de todos, y el más difícil de conseguir
 
 ADAR ya había tocado en Grado en 2022 y 2023, en el Palacio de Miranda-Valdecarzana y en la Capilla de los Dolores. En 2023 hubo además un paseo sonoro en el Palacio de Fontela.
 
+![Micro concierto en la Capilla de los Dolores, Grado, 10 de agosto de 2023](https://creartbox-archive.b-cdn.net/adarimages/memoria-de-acciones/2023-08-10-micro-concierto-capilla-dolores-grado-2023/31.jpg)
+
 Por eso en 2024 los espacios ya estaban probados, el público sabía qué esperar y el ayuntamiento sabía lo que se le proponía. Eso permitió montar tres cosas a la vez la noche del 17 de agosto.
+
+![Paseo sonoro en el Palacio Fontela, Grado, 10 de agosto de 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/47.jpg)

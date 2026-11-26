@@ -21,6 +21,8 @@ Un mercado es el sitio más civil que tiene un pueblo: es donde la gente **compr
 
 Meter ahí música de cámara tiene un efecto muy concreto: **elimina la ceremonia.** Nadie tiene que vestirse de nada ni sentirse fuera de lugar. Estás en el mercado de tu pueblo. Si te apetece entrar, entras. El umbral psicológico, ese que hace que muchísima gente no pise nunca un auditorio, desaparece.
 
+![Concierto de ADAR en Pola de Somiedo, 14 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_52_08.jpg)
+
 Hay un segundo efecto: al día siguiente, el mercado sigue siendo el mercado, pero **se queda con la memoria** del concierto.
 
 ## Un programa que no se cortó un pelo
@@ -36,7 +38,11 @@ Tocaron **Guillermo Laporta** (flauta), **Mario Molina** (piano), **Jone de la F
 
 Dos obras de **Andrea Casarrubios**, compositora viva, sonaron en el mismo programa que Mozart, Debussy, Strauss y Vivaldi, en el mercado de un pueblo de montaña.
 
+![El quinteto en Pola de Somiedo, 14 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_01_01_16.jpg)
+
 Un detalle que nos encanta: *Afilador*. Casarrubios escribió una pieza a partir de la figura del afilador (el oficio ambulante que iba de pueblo en pueblo con su rueda, anunciándose con un silbato). Tocar eso en Somiedo, delante de gente que recuerda perfectamente al afilador pasando por su calle, es hacer que la música contemporánea hable de algo que el público conoce mejor que el compositor.
+
+![Natania Hoffman, violonchelo, en Pola de Somiedo, 14 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_12_07.jpg)
 
 ## La palabra «sostenible», dicha en serio
 
@@ -53,5 +59,7 @@ Cuando decimos que la cultura puede ser una **palanca de desarrollo rural**, hab
 Hay una última cosa, y es puramente física. **En Somiedo se oye distinto.**
 
 La altitud, el aire limpio, la absoluta falta de ruido de fondo. Un pianissimo que en una ciudad se perdería del todo, allí llega entero. El silencio entre dos movimientos se puede escuchar.
+
+![Guillermo Laporta, flauta, en Pola de Somiedo, 14 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_33_01.jpg)
 
 Los músicos lo notan siempre y siempre lo comentan. Tocar donde no hay ruido es un lujo que ningún dinero compra en una capital.

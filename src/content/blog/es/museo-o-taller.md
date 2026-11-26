@@ -19,17 +19,25 @@ La pregunta vale para cualquier festival. También para uno que toca en hórreos
 
 El primer concierto de ADAR fue el 14 de agosto de 2021, en el campo de la iglesia de Leiguarda. Sonaron Mendelssohn, Haydn, Falla, John Harbison y *Atlantic*, de Marcos Fernández.
 
+![Concierto inaugural de ADAR en Leiguarda, 14 de agosto de 2021](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image67.jpg)
+
 En 2024 el programa del festival combinaba obras de Mozart, Debussy y Vivaldi con encargos a Andrea Casarrubios y a otras compositoras actuales.
 
 ## El museo también hace falta
 
 Rusbridger no desprecia la conservación, y nosotros tampoco. Buena parte de lo que tocamos es música de hace dos o tres siglos. En la última noche de 2026 sonaron Vivaldi en el arreglo de Bach, Mendelssohn y Brahms.
 
+![Josefina Urraca al piano en la clausura, iglesia de Leiguarda, 16 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_Fotos/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB_5.jpg)
+
 Tocar ese repertorio en un monasterio o en una iglesia de aldea tiene sentido. Mucha de esa música se escribió para espacios de piedra parecidos. Además, quien vive lejos de una sala de conciertos no suele oír este repertorio en directo. Para esa persona, Bach en la iglesia de su concejo también es una novedad.
+
+![Concierto en el monasterio de San Antolín de Bedón, Llanes, 12 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/16.jpg)
 
 ## El taller
 
 La otra parte del trabajo es encargar. En ADAR lo hacemos con una residencia de composición. En 2026 el compositor residente fue Zygmund de Somogyi. En la convocatoria pedimos a alguien interesado en trabajar con los intérpretes y con el lugar. El compositor está en la sede con los músicos delante y comprueba en el momento si una idea funciona.
+
+![Vista desde Leiguarda 47, la sede de ADAR](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_3684.JPG)
 
 A veces la obra nueva resulta ser la más cercana del programa. En el mercado de Pola de Somiedo sonó *Afilador*, de Andrea Casarrubios. La pieza parte del afilador ambulante que iba de pueblo en pueblo con su silbato. Mucha gente del público se acordaba de verlo pasar por su calle.
 

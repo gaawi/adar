@@ -15,13 +15,19 @@ Desde 2022 hay obras de compositoras en los programas de ADAR. Aquí repasamos q
 
 Es violonchelista y compositora española. Hizo un doctorado en composición con John Corigliano. Su obra *SEVEN* se estrenó en el **Carnegie Hall**. Ha recibido encargos de la **Sinfónica de Chicago** y de **Sphinx Virtuosi**. Su disco *SEVEN* tuvo una **nominación al Grammy** en 2025.
 
+![Andrea Casarrubios, violonchelista y compositora](https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/compositora-andrea-casarrubios.jpg)
+
 En 2024 su música sonó en varios conciertos de la cuarta edición. En el mercado de Pola de Somiedo tocamos *Mensajes de Agua* y *Afilador*. La prensa de ese verano habló de encargos del festival a Casarrubios.
 
 En 2025 ella misma dio un recital en la iglesia de Leiguarda. Tocó sus *Tres piezas para violonchelo y piano* y *SEVEN* para violonchelo solo, junto a Boccherini, Debussy y Dvořák.
 
+![Andrea Casarrubios en su recital en la iglesia de Leiguarda, 16 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_4.jpg)
+
 ## Caroline Shaw
 
 Su pieza *Blueprint* sonó en la segunda edición, en 2022. Lo tocamos en seis conciertos: El Franco, Soto del Barco, la iglesia de Santa María de Sabada en Lastres, Llanes, el palacio de Miranda-Valdecarzana en Grado y la clausura en Belmonte de Miranda.
+
+![Caroline Shaw, compositora](https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/compositora-caroline-shaw.jpg)
 
 ## Celeste Oram
 
@@ -30,6 +36,8 @@ Es compositora y diseñadora de proyecciones. Nació en Nueva Zelanda y vive en 
 ## Mizuko Kaji
 
 Es arquitecta y diseñadora de escenografías. En 2023 llenó de tul el escenario del Auditorio As Quintas, en El Franco. Con ella empezamos a invitar a artistas internacionales a hacer instalaciones en el festival.
+
+![Instalación de Mizuko Kaji en el Auditorio As Quintas, El Franco, 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/09_Concierto_en_El_Franco/IMG_3231.jpeg)
 
 ## Las intérpretes
 

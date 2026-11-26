@@ -25,15 +25,23 @@ Cuando leímos la palabra pensamos en nuestros propios conciertos.
 
 El primero fue el 14 de agosto de 2021 en el campo de la iglesia de Leiguarda. Llovía orballo y vinieron más de 120 personas, en una aldea de un centenar de habitantes. Ese campo sigue siendo el mismo. Para quien estuvo allí aquella noche, ya es el sitio del primer concierto.
 
+![Campo de la iglesia de Leiguarda en el concierto inaugural, 14 de agosto de 2021](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image50.jpg)
+
 El 12 de agosto de 2026 subimos al Alto de La Corredoria, en Belmonte de Miranda, para tocar durante el eclipse total de sol. Durante la totalidad bajó la temperatura y los pájaros se callaron.
 
+![Concierto del eclipse en el Alto de La Corredoria, Belmonte de Miranda, 12 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_5.jpg)
+
 En agosto de 2026 el trío The Rest Project presentó *Equilibrium* dentro de la panera de La Casona de Belmonte. Una panera es una caja de madera. El público se sienta a un metro de los músicos y oye el roce del arco.
+
+![The Rest Project en La Casona de Belmonte, 14 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/14.08.26_La%20casona%20de%20Belmonte_Fotos/14.08.26_La%20casona%20de%20Belmonte_WEB/14.08.26_La%20casona%20de%20Belmonte_WEB_3.jpg)
 
 ## Escuchar un sitio
 
 Moya y Cebrián tratan la escucha como una forma de conocer el territorio. Se aprende algo de un sitio oyéndolo que no sale mirándolo en un mapa.
 
 Esto lo comprueba cualquiera en un paseo sonoro. Al acabar sabes dónde rebota el sonido en una iglesia, dónde lo apaga la piedra y en qué esquina tarda en volver el eco.
+
+![Paseo sonoro en el Palacio Fontela, Grado, 10 de agosto de 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/10_Paseo_sonoro_en_el_Palacio_Fontela_Grado/30.jpg)
 
 En el medio rural también manda el paisaje. El tiempo decide si se puede tocar fuera, si hay orballo y a qué hora se hace de noche. Hay que contar con eso al elegir el sitio y al preparar el programa.
 

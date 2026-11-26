@@ -19,7 +19,11 @@ En ADAR lo hacemos igualmente.
 
 El **14 de agosto de 2021**, en el campo de la iglesia de Leiguarda, el concierto inaugural tenía Mendelssohn, Haydn y Falla. También tenía música de John Harbison y ***Atlantic*, de Marcos Fernández**.
 
+![Concierto inaugural en Leiguarda, 14 de agosto de 2021](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image73.jpg)
+
 En 2024 dimos un paso más. El programa de esa edición combinaba obras de Mozart, Debussy y Vivaldi con **encargos a Andrea Casarrubios** y a otras compositoras actuales.
+
+![Concierto en el Palacio de Miranda-Valdecarzana, Grado, 17 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/17_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2024/51.jpg)
 
 ## Programar y producir
 
@@ -35,9 +39,13 @@ Dicho de otra forma: queremos una obra que tenga que ver con el lugar donde se e
 
 Trabajar así tiene una ventaja práctica. El compositor está **en la sede, con los músicos delante**, y comprueba si una idea suena como pensaba. Puede corregir o tirar lo que no funciona. La obra llega al estreno ya probada.
 
+![Interior de la casa de residencias de Leiguarda 47](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4393.JPG)
+
 ## El afilador en Pola de Somiedo
 
 En el mercado de Pola de Somiedo tocamos *Afilador*, de **Andrea Casarrubios**. La pieza parte del afilador ambulante, que iba de pueblo en pueblo anunciándose con un silbato. Mucha gente del público se acordaba de verlo pasar por su calle.
+
+![Concierto de ADAR en Pola de Somiedo, 14 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_23_07.jpg)
 
 Ese día, la obra contemporánea fue la más cercana del programa.
 
