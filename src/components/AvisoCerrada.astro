@@ -1,0 +1,113 @@
+---
+// Aviso de «esta convocatoria ya cerró», encima de las bases de una
+// convocatoria pasada.
+//
+// Se pinta desde src/data/convocatorias.ts: en cuanto una convocatoria vuelva
+// a `abierta`, el aviso desaparece solo. Así no hay bases viejas haciéndose
+// pasar por abiertas, que es exactamente lo que estaba pasando.
+import type { Lang } from '../i18n/strings.ts';
+import { porEstado, type Convocatoria } from '../data/convocatorias.ts';
+
+interface Props {
+  c: Convocatoria;
+  lang: Lang;
+}
+const { c, lang } = Astro.props;
+
+const COPY = {
+  es: {
+    t: 'Esta convocatoria está cerrada',
+    p: 'Las bases se quedan publicadas para consulta, pero ya no se admiten solicitudes.',
+    abiertas: 'Convocatorias abiertas ahora:',
+    todas: 'Ver todas las formas de participar',
+    btn: 'cerrada',
+  },
+  en: {
+    t: 'This call is closed',
+    p: 'The guidelines stay published for reference, but applications are no longer accepted.',
+    abiertas: 'Open right now:',
+    todas: 'See all the ways to take part',
+    btn: 'closed',
+  },
+  ast: {
+    t: 'Esta convocatoria ta zarrada',
+    p: 'Les bases queden publicaes pa consulta, pero yá nun s’almiten solicitúes.',
+    abiertas: 'Convocatories abiertes agora:',
+    todas: 'Ver toles formes de participar',
+    btn: 'zarrada',
+  },
+}[lang];
+
+// Solo las que se pueden solicitar hoy: las «próximas» aquí despistan.
+const abiertas = porEstado('abierta', 'permanente').slice(0, 3);
+---
+
+<style is:inline set:html={`:root{--cv-avc-label:" · ${COPY.btn}";}`}></style>
+
+<div class="cv-avc" role="note">
+  <p class="cv-avc-t">{COPY.t}</p>
+  <p class="cv-avc-p">{c.cuando[lang]} {COPY.p}</p>
+  {abiertas.length > 0 && (
+    <p class="cv-avc-alt">
+      {COPY.abiertas}{' '}
+      {abiertas.map((a, i) => (
+        <>
+          {i > 0 && <span aria-hidden="true"> · </span>}
+          <a href={a.href?.[lang]}>{a.titulo[lang]}</a>
+        </>
+      ))}
+    </p>
+  )}
+  <p class="cv-avc-todas"><a href={`/${lang}/participa/`}>{COPY.todas} <span aria-hidden="true">→</span></a></p>
+</div>
+
+<style is:global>
+  body .entry-content .cv-avc {
+    border: 1px solid rgba(163, 32, 21, 0.4);
+    border-left: 3px solid #a32015;
+    background: rgba(163, 32, 21, 0.04);
+    padding: 18px 22px;
+    margin: 0 0 34px;
+    max-width: 46rem;
+  }
+  body .entry-content .cv-avc .cv-avc-t {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #a32015;
+    margin: 0 0 8px;
+  }
+  body .entry-content .cv-avc .cv-avc-p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  body .entry-content .cv-avc .cv-avc-alt,
+  body .entry-content .cv-avc .cv-avc-todas {
+    margin: 10px 0 0;
+    font-size: 13.5px;
+    line-height: 1.5;
+  }
+  body .entry-content .cv-avc .cv-avc-todas {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+  }
+
+  /* En unas bases cerradas, los botones de solicitar siguen ahí abajo
+     invitando a mandar una candidatura que ya no se puede mandar. Se apagan:
+     se quedan a la vista, para que se entienda qué había, pero no se pulsan.
+     Los botones fantasma son de navegación y siguen funcionando. */
+  body.is-convocatoria-cerrada .entry-content .ed-btn:not(.ed-btn-ghost),
+  body.is-convocatoria-cerrada .entry-content .amp-btn {
+    pointer-events: none;
+    opacity: 0.4;
+    filter: grayscale(1);
+  }
+  /* El rótulo lo pone la etiqueta <style> de arriba, que sí sabe el idioma. */
+  body.is-convocatoria-cerrada .entry-content .ed-btn:not(.ed-btn-ghost)::after,
+  body.is-convocatoria-cerrada .entry-content .amp-btn::after {
+    content: var(--cv-avc-label, '');
+    font-size: 0.85em;
+  }
+</style>

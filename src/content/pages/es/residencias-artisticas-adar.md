@@ -44,16 +44,41 @@ IMPORTANTE: este bloque usa el CSS de .adar-impact-v3.
 </div>
 </div>
 
-<!-- CONVOCATORIA 2026-27 -->
-<section class="ed-section">
+<!-- TIPOS DE RESIDENCIA -->
+<section class="ed-section" id="tipos">
 <div class="ed-wrap">
-<div class="rc-callout">
-<p class="ed-stat-t">Convocatoria abierta · Culture Moves Europe</p>
-<h2 class="rc-callout-h">Buscamos un grupo de 4-5 artistas para una residencia de 21 a 30 días</h2>
-<p class="rc-callout-p">Alojamiento, 30 € al día por persona, ayuda de viaje y los complementos que correspondan. Todos los residentes tienen que residir legalmente en un país de Europa Creativa que no sea España. Solicitarla son cinco minutos y un email.</p>
-<p class="rc-callout-date">Plazo · 28 de septiembre de 2026</p>
-<a class="ed-btn" href="/es/convocatoria-residencias-2026-27/">Ver la convocatoria →</a>
+<div class="ed-head">
+<p class="ed-eyebrow">Cómo se entra</p>
+<h2>Hay dos tipos de residencia</h2>
+<p class="ed-lede">La diferencia está en quién paga la estancia. El trabajo, los espacios y el acompañamiento son los mismos en las dos.</p>
 </div>
+</div>
+</section>
+
+<section class="ed-section" id="financiadas">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Tipo 1</p>
+<h2>Residencias financiadas</h2>
+<p class="ed-lede">ADAR cubre íntegramente el coste de la residencia.</p>
+</div>
+<p class="ed-prose">Se entra <strong>por convocatoria abierta o por invitación directa</strong>. Las convocatorias se abren según la financiación disponible en cada momento, así que no hay un plazo permanente: cuando hay una abierta aparece en el carril de esta página y en <a href="/es/participa/">participa</a>.</p>
+<p class="ed-prose">La última fue la de <a href="/es/convocatoria-residencias-2026-27/">Culture Moves Europe 2026–27</a>, que cerró el 28 de septiembre de 2026: veintiún días en Leiguarda para un grupo de artistas residentes en otros países europeos, con alojamiento, dieta diaria y ayuda de viaje.</p>
+</div>
+</section>
+
+<section class="ed-section" id="cofinanciadas">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Tipo 2</p>
+<h2>Residencias cofinanciadas</h2>
+<p class="ed-lede">Solicitud abierta todo el año. ADAR subvenciona una parte y el artista aporta el resto.</p>
+</div>
+<p class="ed-prose">Esta es la vía para quien quiera venir a trabajar por su cuenta, sin esperar a que haya una convocatoria. Se puede pedir cualquier día del año y para la duración que haga falta, desde unas noches hasta un mes.</p>
+<p class="ed-prose">Incluye alojamiento en Leiguarda, espacio de trabajo y de ensayo, suministros, internet y el acompañamiento del equipo del festival. <strong>ADAR subvenciona una parte del coste real de la estancia</strong> y el resto lo aporta el artista; la cantidad depende de los días y de la disciplina, y te la pasamos por escrito al solicitarla, sin compromiso.</p>
+<p class="ed-prose">Aparte se pueden acordar grabación audiovisual, producción técnica, materiales, transporte y la presentación pública del trabajo.</p>
+<p class="ed-prose"><strong>Una residencia cofinanciada no implica tocar en el festival.</strong> Es tiempo y espacio para trabajar. Si de ahí sale algo que encaje en la programación, se habla, pero no es la condición.</p>
+<p class="ed-prose">Para pedirla, escribe a <a href="mailto:leiguardamusic@gmail.com?subject=RESIDENCIA%20ADAR%20%C2%B7%20Nombre%20del%20artista%20o%20ensemble">leiguardamusic@gmail.com</a> con el asunto <strong>RESIDENCIA ADAR · Nombre del artista o ensemble</strong>, y cuéntanos qué quieres trabajar, cuántos sois y en qué fechas.</p>
 </div>
 </section>
 

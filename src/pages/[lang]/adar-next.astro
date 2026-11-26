@@ -1,0 +1,245 @@
+---
+// ADAR NEXT. La convocatoria todavía no está abierta —se abre en diciembre de
+// 2026— así que esta página explica el proyecto y no publica las bases.
+//
+// Lo que NO sale aquí, porque está sin decidir: cuántos proyectos se
+// seleccionan, la fecha de resultados, el comité artístico, las exenciones de
+// cuota y los límites de los gastos de viaje y producción.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Hero from '../../components/Hero.astro';
+import type { Lang } from '../../i18n/strings.ts';
+import { LANGS } from '../../i18n/strings.ts';
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const IMG = 'https://creartbox-media-cdn.b-cdn.net/adarimages/IMG_8026.JPG';
+
+const COPY = {
+  es: {
+    title: 'ADAR NEXT',
+    eyebrow: 'Convocatoria internacional',
+    lede: 'Beyond networks · Beyond genres · Beyond cities. La convocatoria se abre en diciembre de 2026.',
+    avisoT: 'Todavía no está abierta',
+    avisoP: 'La convocatoria de ADAR NEXT se abre en diciembre de 2026, con las bases completas y el formulario de inscripción. Esta página explica el proyecto para que puedas ir preparando la propuesta.',
+    avisoP2: 'Mientras tanto sigue abierta la vía de siempre, gratuita y sin plazo:',
+    avisoLink: 'propuestas artísticas',
+    queH: 'Qué es',
+    queP1: 'Una convocatoria internacional abierta a músicos, ensembles, artistas visuales y creadores de cualquier disciplina, nacionalidad, edad y trayectoria. Los proyectos seleccionados se presentan en la edición de verano del Festival ADAR 2027.',
+    queP2: 'Pueden ser proyectos ya estrenados o creaciones nuevas que necesiten un periodo de investigación, ensayo y producción.',
+    porqueH: 'Por qué existe',
+    porqueP1: 'Recibimos al menos cinco propuestas al día. Como en casi todas las organizaciones culturales, buena parte de lo que programamos llega por relaciones profesionales, recomendaciones y encuentros.',
+    porqueP2: 'ADAR NEXT nace para ampliar ese horizonte y encontrar artistas fuera de nuestras redes habituales. Por eso cada propuesta la revisa individualmente al menos un miembro del equipo artístico, y todas reciben una comunicación con el resultado.',
+    porqueP3: 'Para poder sostener ese trabajo la inscripción tendrá una cuota de 20 € por proyecto. No se paga por actuar ni por tener más opciones de ser seleccionado, sino por el tiempo dedicado a evaluar el trabajo. Las condiciones completas se publican al abrir la convocatoria.',
+    ofrecemosH: 'Qué ofrecemos',
+    ofrecemos: [
+      'Honorarios de 1.000 € por artista, hasta un máximo de 5.000 € por proyecto.',
+      'Gastos de viaje, alojamiento y manutención.',
+      'Producción artística y técnica.',
+      'Espacios de ensayo, investigación y creación.',
+      'Promoción y documentación audiovisual.',
+      'Presentación pública del proyecto durante el festival.',
+    ],
+    buscamosH: 'Qué buscamos',
+    buscamosP: 'No hay restricción de género ni de disciplina. Un cuarteto de cuerda, un grupo de jazz, una artista visual o un proyecto de danza tienen las mismas posibilidades. Tampoco hace falta que la propuesta sea experimental, interdisciplinar o de temática rural.',
+    valores: [
+      ['Singularidad', 'Una identidad artística propia.'],
+      ['Curiosidad', 'Nuevas perspectivas sobre la creación y la interpretación.'],
+      ['Diálogo', 'Apertura hacia otras culturas, disciplinas y sensibilidades.'],
+      ['Proximidad', 'Capacidad de generar experiencias significativas con el público.'],
+      ['Territorio', 'Voluntad de acercar experiencias artísticas de calidad al medio rural.'],
+    ],
+    cuandoH: 'Calendario',
+    cuandoP: 'La convocatoria se abre en diciembre de 2026. El plazo de presentación termina el 1 de marzo de 2027 y los proyectos seleccionados se presentan en la edición de verano del festival.',
+    cuandoP2: 'El resto de fechas —resultados y composición del comité artístico— se publican con las bases.',
+    volver: 'Todas las formas de participar',
+  },
+  en: {
+    title: 'ADAR NEXT',
+    eyebrow: 'International open call',
+    lede: 'Beyond networks · Beyond genres · Beyond cities. The call opens in December 2026.',
+    avisoT: 'Not open yet',
+    avisoP: 'The ADAR NEXT call opens in December 2026, with the full guidelines and the application form. This page explains the project so you can start preparing your proposal.',
+    avisoP2: 'In the meantime the usual route stays open, free and with no deadline:',
+    avisoLink: 'artistic proposals',
+    queH: 'What it is',
+    queP1: 'An international open call for musicians, ensembles, visual artists and creators of any discipline, nationality, age and career stage. The selected projects are presented at the summer edition of Festival ADAR 2027.',
+    queP2: 'They can be projects already premiered, or new creations that need a period of research, rehearsal and production.',
+    porqueH: 'Why it exists',
+    porqueP1: 'We receive at least five proposals a day. As in almost every cultural organisation, much of what we programme reaches us through professional relationships, recommendations and encounters.',
+    porqueP2: 'ADAR NEXT exists to widen that horizon and find artists outside our usual networks. That is why every proposal is read individually by at least one member of the artistic team, and every one of them gets an answer.',
+    porqueP3: 'To make that work possible there will be an entry fee of 20 € per project. You are not paying to perform, or for better odds of being selected, but for the time spent assessing the work. The full conditions are published when the call opens.',
+    ofrecemosH: 'What we offer',
+    ofrecemos: [
+      'A fee of 1,000 € per artist, up to a maximum of 5,000 € per project.',
+      'Travel, accommodation and subsistence.',
+      'Artistic and technical production.',
+      'Rehearsal, research and creation spaces.',
+      'Promotion and audiovisual documentation.',
+      'Public presentation of the project during the festival.',
+    ],
+    buscamosH: 'What we are looking for',
+    buscamosP: 'There is no restriction of genre or discipline. A string quartet, a jazz group, a visual artist or a dance project all stand the same chance. Nor does the proposal need to be experimental, interdisciplinary or rural in subject.',
+    valores: [
+      ['Singularity', 'An artistic identity of your own.'],
+      ['Curiosity', 'New perspectives on creation and performance.'],
+      ['Dialogue', 'Openness to other cultures, disciplines and sensibilities.'],
+      ['Closeness', 'The ability to create meaningful experiences with an audience.'],
+      ['Territory', 'A willingness to bring high-quality artistic experiences to the countryside.'],
+    ],
+    cuandoH: 'Calendar',
+    cuandoP: 'The call opens in December 2026. The deadline for applications is 1 March 2027, and the selected projects are presented at the summer edition of the festival.',
+    cuandoP2: 'The remaining dates — results and the make-up of the artistic committee — are published together with the guidelines.',
+    volver: 'All the ways to take part',
+  },
+  ast: {
+    title: 'ADAR NEXT',
+    eyebrow: 'Convocatoria internacional',
+    lede: 'Beyond networks · Beyond genres · Beyond cities. La convocatoria ábrese n’avientu de 2026.',
+    avisoT: 'Entá nun ta abierta',
+    avisoP: 'La convocatoria d’ADAR NEXT ábrese n’avientu de 2026, coles bases completes y el formulariu d’inscripción. Esta páxina esplica’l proyeutu pa que puedas dir preparando la propuesta.',
+    avisoP2: 'Mentanto sigue abierta la vía de siempres, de baldre y ensin plazu:',
+    avisoLink: 'propuestes artístiques',
+    queH: 'Qué ye',
+    queP1: 'Una convocatoria internacional abierta a músicos, ensembles, artistes visuales y creadores de cualquier disciplina, nacionalidá, edá y trayeutoria. Los proyeutos escoyíos preséntense na edición de branu del Festival ADAR 2027.',
+    queP2: 'Puen ser proyeutos yá estrenaos o creaciones nueves que necesiten un periodu d’investigación, ensayu y producción.',
+    porqueH: 'Por qué esiste',
+    porqueP1: 'Recibimos polo menos cinco propuestes al día. Como en casi toles organizaciones culturales, bona parte de lo que programamos llega per rellaciones profesionales, recomendaciones y alcuentros.',
+    porqueP2: 'ADAR NEXT naz p’ampliar esi horizonte y atopar artistes fuera de les nueses redes habituales. Por eso cada propuesta revísala individualmente polo menos un miembru del equipu artísticu, y toes reciben una comunicación col resultáu.',
+    porqueP3: 'Pa poder sostener esi trabayu la inscripción tendrá una cuota de 20 € por proyeutu. Nun se paga por actuar nin por tener más opciones de ser escoyíu, sinón pol tiempu dedicáu a evaluar el trabayu. Les condiciones completes publíquense al abrir la convocatoria.',
+    ofrecemosH: 'Qué ofrecemos',
+    ofrecemos: [
+      'Honorarios de 1.000 € por artista, hasta un máximu de 5.000 € por proyeutu.',
+      'Gastos de viaxe, agospiamientu y manutención.',
+      'Producción artística y téunica.',
+      'Espacios d’ensayu, investigación y creación.',
+      'Promoción y documentación audiovisual.',
+      'Presentación pública del proyeutu demientres el festival.',
+    ],
+    buscamosH: 'Qué buscamos',
+    buscamosP: 'Nun hai restricción de xéneru nin de disciplina. Un cuartetu de cuerda, un grupu de jazz, una artista visual o un proyeutu de danza tienen les mesmes posibilidaes. Tampoco fai falta que la propuesta seya esperimental, interdisciplinar o de temática rural.',
+    valores: [
+      ['Singularidá', 'Una identidá artística propia.'],
+      ['Curiosidá', 'Nueves perspeutives sobre la creación y la interpretación.'],
+      ['Diálogu', 'Apertura hacia otres cultures, disciplines y sensibilidaes.'],
+      ['Proximidá', 'Capacidá de xenerar esperiencies significatives col públicu.'],
+      ['Territoriu', 'Voluntá d’averar esperiencies artístiques de calidá al mediu rural.'],
+    ],
+    cuandoH: 'Calendariu',
+    cuandoP: 'La convocatoria ábrese n’avientu de 2026. El plazu de presentación acaba’l 1 de marzu de 2027 y los proyeutos escoyíos preséntense na edición de branu del festival.',
+    cuandoP2: 'El restu de feches —resultaos y composición del comité artísticu— publíquense coles bases.',
+    volver: 'Toles formes de participar',
+  },
+}[lang];
+
+const PROPUESTAS: Record<Lang, string> = {
+  es: '/es/propuestas-artisticas/',
+  en: '/en/submit-a-proposal/',
+  ast: '/ast/propuestes-artistiques/',
+};
+
+const translations = Object.fromEntries(LANGS.map((l) => [l, `/${l}/adar-next/`]));
+---
+
+<BaseLayout
+  title={COPY.title}
+  description={COPY.lede}
+  lang={lang}
+  permalink={`/${lang}/adar-next/`}
+  featuredImage={IMG}
+  translations={translations}
+  bodyClass="page has-header-image"
+>
+  <Hero eyebrow={COPY.eyebrow} title={COPY.title} lede={COPY.lede} image={IMG} />
+
+  <div class="builder-wrap full-width">
+  <article class="page type-page status-publish hentry">
+  <div class="entry-content">
+  <div class="adar-impact-v3 adar-res-call nx-doc">
+
+    <section class="ed-section nx-top">
+      <div class="ed-wrap">
+        <div class="nx-aviso">
+          <p class="ed-stat-t">{COPY.avisoT}</p>
+          <p>{COPY.avisoP}</p>
+          <p>{COPY.avisoP2} <a href={PROPUESTAS[lang]}>{COPY.avisoLink}</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ed-section" id="que-es">
+      <div class="ed-wrap">
+        <div class="ed-head"><h2>{COPY.queH}</h2></div>
+        <p class="ed-prose">{COPY.queP1}</p>
+        <p class="ed-prose">{COPY.queP2}</p>
+      </div>
+    </section>
+
+    <section class="ed-section" id="calendario">
+      <div class="ed-wrap">
+        <div class="ed-head"><h2>{COPY.cuandoH}</h2></div>
+        <p class="ed-prose">{COPY.cuandoP}</p>
+        <p class="ed-prose">{COPY.cuandoP2}</p>
+      </div>
+    </section>
+
+    <section class="ed-section" id="que-ofrecemos">
+      <div class="ed-wrap">
+        <div class="ed-head"><h2>{COPY.ofrecemosH}</h2></div>
+        <ul class="rc-when-list rc-managers">
+          {COPY.ofrecemos.map((o) => <li>{o}</li>)}
+        </ul>
+      </div>
+    </section>
+
+    <section class="ed-section" id="que-buscamos">
+      <div class="ed-wrap">
+        <div class="ed-head">
+          <h2>{COPY.buscamosH}</h2>
+          <p class="ed-lede">{COPY.buscamosP}</p>
+        </div>
+        <ul class="rc-when-list rc-managers">
+          {COPY.valores.map(([k, v]) => <li><strong>{k}.</strong> {v}</li>)}
+        </ul>
+      </div>
+    </section>
+
+    <section class="ed-section" id="por-que">
+      <div class="ed-wrap">
+        <div class="ed-head"><h2>{COPY.porqueH}</h2></div>
+        <p class="ed-prose">{COPY.porqueP1}</p>
+        <p class="ed-prose">{COPY.porqueP2}</p>
+        <p class="ed-prose">{COPY.porqueP3}</p>
+      </div>
+    </section>
+
+    <section class="ed-section">
+      <div class="ed-wrap">
+        <p class="ed-prose nx-volver">
+          <a href={`/${lang}/participa/`}>← {COPY.volver}</a>
+        </p>
+      </div>
+    </section>
+
+  </div>
+  </div>
+  </article>
+  </div>
+</BaseLayout>
+
+<style is:global>
+  body.page .entry-content > div > .nx-doc > section { padding: 0; }
+  body.page .entry-content .nx-doc .nx-top { padding-top: 0; }
+  body.page .entry-content .nx-doc .nx-aviso {
+    border-left: 3px solid #9a5b12;
+    background: rgba(154, 91, 18, 0.06);
+    padding: 18px 22px;
+    max-width: 46rem;
+  }
+  body.page .entry-content .nx-doc .nx-aviso .ed-stat-t { color: #9a5b12; }
+  body.page .entry-content .nx-doc .nx-aviso p { margin: 8px 0 0; font-size: 15px; line-height: 1.55; }
+  body.page .entry-content .nx-doc .nx-aviso p:first-child { margin: 0; }
+  body.page .entry-content .nx-doc .nx-volver { font-family: var(--font-mono); font-size: 13px; }
+</style>

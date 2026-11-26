@@ -44,16 +44,41 @@ IMPORTANT: this block uses the .adar-impact-v3 CSS.
 </div>
 </div>
 
-<!-- OPEN CALL 2026-27 -->
-<section class="ed-section">
+<!-- TYPES OF RESIDENCY -->
+<section class="ed-section" id="tipos">
 <div class="ed-wrap">
-<div class="rc-callout">
-<p class="ed-stat-t">Open call · Culture Moves Europe</p>
-<h2 class="rc-callout-h">We are looking for a group of 4–5 artists for a 21–30 day residency</h2>
-<p class="rc-callout-p">Accommodation, €30 a day per person, a travel allowance and applicable top-ups. All residents must legally reside in a Creative Europe country other than Spain. Applying takes about five minutes and one email.</p>
-<p class="rc-callout-date">Deadline · 28 September 2026</p>
-<a class="ed-btn" href="/en/artist-residency-open-call-2026-27/">Read the open call →</a>
+<div class="ed-head">
+<p class="ed-eyebrow">How to come</p>
+<h2>There are two kinds of residency</h2>
+<p class="ed-lede">The difference is who pays for the stay. The work, the spaces and the support are the same in both.</p>
 </div>
+</div>
+</section>
+
+<section class="ed-section" id="financiadas">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Type 1</p>
+<h2>Fully funded residencies</h2>
+<p class="ed-lede">ADAR covers the entire cost of the residency.</p>
+</div>
+<p class="ed-prose">You come in <strong>through an open call or by direct invitation</strong>. These calls open according to the funding available at the time, so there is no standing deadline: when one is open it appears in the rail on this page and on <a href="/en/participa/">take part</a>.</p>
+<p class="ed-prose">The most recent one was <a href="/en/artist-residency-open-call-2026-27/">Culture Moves Europe 2026–27</a>, which closed on 28 September 2026: twenty-one days in Leiguarda for a group of artists based in other European countries, with accommodation, a daily allowance and a travel grant.</p>
+</div>
+</section>
+
+<section class="ed-section" id="cofinanciadas">
+<div class="ed-wrap">
+<div class="ed-head">
+<p class="ed-eyebrow">Type 2</p>
+<h2>Co-funded residencies</h2>
+<p class="ed-lede">Applications open all year round. ADAR subsidises part of the cost and the artist covers the rest.</p>
+</div>
+<p class="ed-prose">This is the route for anyone who wants to come and work on their own initiative, without waiting for a call to open. You can apply any day of the year, for as long as you need, from a few nights to a month.</p>
+<p class="ed-prose">It includes accommodation in Leiguarda, a workspace and a rehearsal space, utilities, internet and the support of the festival team. <strong>ADAR subsidises part of the real cost of the stay</strong> and the artist covers the rest; the amount depends on the number of days and on the discipline, and we send it to you in writing when you apply, with no commitment.</p>
+<p class="ed-prose">Audiovisual recording, technical production, materials, transport and a public presentation of the work can be agreed separately.</p>
+<p class="ed-prose"><strong>A co-funded residency does not mean playing at the festival.</strong> It is time and space to work. If something comes out of it that fits the programme, we talk about it, but that is not the condition.</p>
+<p class="ed-prose">To apply, write to <a href="mailto:leiguardamusic@gmail.com?subject=RESIDENCY%20ADAR%20%C2%B7%20Name%20of%20the%20artist%20or%20ensemble">leiguardamusic@gmail.com</a> with the subject line <strong>RESIDENCY ADAR · Name of the artist or ensemble</strong>, and tell us what you want to work on, how many of you there are and on what dates.</p>
 </div>
 </section>
 

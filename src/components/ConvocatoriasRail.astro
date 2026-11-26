@@ -1,0 +1,90 @@
+---
+// Carril de convocatorias abiertas. Se pega al lado del contenido en pantalla
+// ancha y se apila encima en el móvil, que es donde más se lee.
+//
+// Sale entero de src/data/convocatorias.ts: no hay que tocarlo al abrir o
+// cerrar una convocatoria.
+import type { Lang } from '../i18n/strings.ts';
+import ConvocatoriaCard from './ConvocatoriaCard.astro';
+import { porEstado, type Familia } from '../data/convocatorias.ts';
+
+interface Props {
+  lang: Lang;
+  /** Si se indica, el carril solo muestra esa familia. */
+  familia?: Familia;
+}
+
+const { lang, familia } = Astro.props;
+
+let items = porEstado('abierta', 'permanente', 'proxima');
+if (familia) items = items.filter((c) => c.familia === familia);
+
+const COPY = {
+  es: { h: 'Convocatorias abiertas', todas: 'Ver todas las formas de participar', vacio: 'Ahora mismo no hay ninguna convocatoria abierta.' },
+  en: { h: 'Open calls', todas: 'See all the ways to take part', vacio: 'There are no open calls at the moment.' },
+  ast: { h: 'Convocatories abiertes', todas: 'Ver toles formes de participar', vacio: 'Agora mesmo nun hai nenguna convocatoria abierta.' },
+}[lang];
+---
+
+<aside class="cv-rail" aria-label={COPY.h}>
+  <div class="cv-rail-inner">
+    <p class="cv-rail-h">{COPY.h}</p>
+    {items.length === 0 && <p class="cv-rail-vacio">{COPY.vacio}</p>}
+    {items.map((c) => <ConvocatoriaCard c={c} lang={lang} compacta />)}
+    <p class="cv-rail-todas">
+      <a href={`/${lang}/participa/`}>{COPY.todas} <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+</aside>
+
+<style is:global>
+  body .entry-content .cv-rail {
+    margin: 0 0 36px;
+  }
+  body .entry-content .cv-rail-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  body .entry-content .cv-rail-h {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--line, rgba(10, 9, 7, 0.16));
+  }
+  body .entry-content .cv-rail-vacio { font-size: 14px; color: var(--muted); margin: 0; }
+  body .entry-content .cv-rail-todas { margin: 2px 0 0; font-size: 13px; }
+  body .entry-content .cv-rail-todas a {
+    font-family: var(--font-mono);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+
+  /* El bloque que envuelve al contenido de la página y al carril. En pantalla
+     ancha, dos columnas con el carril pegado arriba al desplazar. */
+  /* En el móvil el carril va DELANTE del contenido. Dejado en su sitio del
+     HTML caía al 74 % de la página, que en un teléfono es no existir. */
+  body .entry-content .cv-conrail {
+    display: flex;
+    flex-direction: column;
+  }
+  body .entry-content .cv-conrail > .cv-rail { order: -1; }
+  @media (min-width: 1080px) {
+    body .entry-content .cv-conrail {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 310px;
+      gap: 46px;
+      align-items: start;
+    }
+    body .entry-content .cv-conrail > .cv-rail {
+      position: sticky;
+      top: 104px;
+      margin: 0;
+      order: 0;
+    }
+  }
+</style>

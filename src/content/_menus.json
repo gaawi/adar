@@ -45,17 +45,6 @@
    "object_id": "385"
   },
   {
-   "title": "Hórreos and Paneras Competition",
-   "url": "/en/horreos-and-paneras-competition/",
-   "order": 5,
-   "parent_id": 13,
-   "item_id": 288,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "285"
-  },
-  {
    "title": "Team",
    "url": "/en/team/",
    "order": 6,
@@ -87,28 +76,6 @@
    "object_type": "post_type",
    "object": "page",
    "object_id": "378"
-  },
-  {
-   "title": "ADAR Artistic Residencies",
-   "url": "/en/adar-artistic-residencies/",
-   "order": 9,
-   "parent_id": 405,
-   "item_id": 402,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "388"
-  },
-  {
-   "title": "Residency Open Call 2026–27",
-   "url": "/en/artist-residency-open-call-2026-27/",
-   "order": 10,
-   "parent_id": 405,
-   "item_id": 9402,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "9402"
   },
   {
    "title": "Partners",
@@ -287,17 +254,6 @@
    "object_id": 96011
   },
   {
-   "title": "Submit a proposal",
-   "url": "/en/submit-a-proposal/",
-   "order": 12,
-   "parent_id": 405,
-   "item_id": 96101,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "96101"
-  },
-  {
    "title": "European funding",
    "url": "/en/european-funding/",
    "order": 7,
@@ -307,6 +263,83 @@
    "object_type": "post_type",
    "object": "page",
    "object_id": "96201"
+  },
+  {
+   "title": "Take part",
+   "url": "/en/participa/",
+   "order": 8,
+   "parent_id": 0,
+   "item_id": 97100,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97100"
+  },
+  {
+   "title": "All open calls",
+   "url": "/en/participa/",
+   "order": 1,
+   "parent_id": 97100,
+   "item_id": 97101,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97101"
+  },
+  {
+   "title": "Artistic residencies",
+   "url": "/en/adar-artistic-residencies/",
+   "order": 2,
+   "parent_id": 97100,
+   "item_id": 97102,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97102"
+  },
+  {
+   "title": "ADAR NEXT",
+   "url": "/en/adar-next/",
+   "order": 3,
+   "parent_id": 97100,
+   "item_id": 97103,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97103"
+  },
+  {
+   "title": "Submit a proposal",
+   "url": "/en/submit-a-proposal/",
+   "order": 4,
+   "parent_id": 97100,
+   "item_id": 97104,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97104"
+  },
+  {
+   "title": "Hórreos and Paneras Competition",
+   "url": "/en/horreos-and-paneras-competition/",
+   "order": 5,
+   "parent_id": 97100,
+   "item_id": 97105,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97105"
+  },
+  {
+   "title": "Past open calls",
+   "url": "/en/participa/#archivo",
+   "order": 6,
+   "parent_id": 97100,
+   "item_id": 97106,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97106"
   }
  ],
  "ast": [
@@ -355,17 +388,6 @@
    "object_id": "385"
   },
   {
-   "title": "Concursu d’Hórreos y Paneres",
-   "url": "/ast/concursu-dhorreos-y-paneres/",
-   "order": 5,
-   "parent_id": 427,
-   "item_id": 425,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "394"
-  },
-  {
    "title": "Equipu",
    "url": "/ast/equipu/",
    "order": 6,
@@ -397,17 +419,6 @@
    "object_type": "post_type",
    "object": "page",
    "object_id": "380"
-  },
-  {
-   "title": "Residencies Artístiques ADAR",
-   "url": "/ast/residencias-artisticas-adar-2/",
-   "order": 9,
-   "parent_id": 438,
-   "item_id": 357,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "353"
   },
   {
    "title": "Rede de collaboración",
@@ -586,17 +597,6 @@
    "object_id": 96011
   },
   {
-   "title": "Propuestes artístiques",
-   "url": "/ast/propuestes-artistiques/",
-   "order": 11,
-   "parent_id": 438,
-   "item_id": 96102,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "96102"
-  },
-  {
    "title": "Financiación europea",
    "url": "/ast/financiacion-europea/",
    "order": 7,
@@ -606,6 +606,83 @@
    "object_type": "post_type",
    "object": "page",
    "object_id": "96202"
+  },
+  {
+   "title": "Participa",
+   "url": "/ast/participa/",
+   "order": 8,
+   "parent_id": 0,
+   "item_id": 97200,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97200"
+  },
+  {
+   "title": "Toles convocatories",
+   "url": "/ast/participa/",
+   "order": 1,
+   "parent_id": 97200,
+   "item_id": 97201,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97201"
+  },
+  {
+   "title": "Residencies artístiques",
+   "url": "/ast/residencias-artisticas-adar-2/",
+   "order": 2,
+   "parent_id": 97200,
+   "item_id": 97202,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97202"
+  },
+  {
+   "title": "ADAR NEXT",
+   "url": "/ast/adar-next/",
+   "order": 3,
+   "parent_id": 97200,
+   "item_id": 97203,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97203"
+  },
+  {
+   "title": "Propuestes artístiques",
+   "url": "/ast/propuestes-artistiques/",
+   "order": 4,
+   "parent_id": 97200,
+   "item_id": 97204,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97204"
+  },
+  {
+   "title": "Concursu d’Hórreos y Paneres",
+   "url": "/ast/concursu-dhorreos-y-paneres/",
+   "order": 5,
+   "parent_id": 97200,
+   "item_id": 97205,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97205"
+  },
+  {
+   "title": "Convocatories anteriores",
+   "url": "/ast/participa/#archivo",
+   "order": 6,
+   "parent_id": 97200,
+   "item_id": 97206,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97206"
   }
  ],
  "es": [
@@ -654,17 +731,6 @@
    "object_id": "202"
   },
   {
-   "title": "Concurso de Hórreos y Paneras",
-   "url": "/es/concurso-de-horreos-y-paneras/",
-   "order": 5,
-   "parent_id": 428,
-   "item_id": 242,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "239"
-  },
-  {
    "title": "Equipo",
    "url": "/es/equipo/",
    "order": 6,
@@ -696,28 +762,6 @@
    "object_type": "post_type",
    "object": "page",
    "object_id": "79"
-  },
-  {
-   "title": "Residencias Artísticas ADAR",
-   "url": "/es/residencias-artisticas-adar/",
-   "order": 9,
-   "parent_id": 89,
-   "item_id": 243,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "233"
-  },
-  {
-   "title": "Convocatoria de residencias 2026–27",
-   "url": "/es/convocatoria-residencias-2026-27/",
-   "order": 10,
-   "parent_id": 89,
-   "item_id": 9403,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "9403"
   },
   {
    "title": "Red de colaboración",
@@ -896,17 +940,6 @@
    "object_id": 96011
   },
   {
-   "title": "Propuestas artísticas",
-   "url": "/es/propuestas-artisticas/",
-   "order": 12,
-   "parent_id": 89,
-   "item_id": 96100,
-   "classes": "",
-   "object_type": "post_type",
-   "object": "page",
-   "object_id": "96100"
-  },
-  {
    "title": "Financiación europea",
    "url": "/es/financiacion-europea/",
    "order": 7,
@@ -916,6 +949,83 @@
    "object_type": "post_type",
    "object": "page",
    "object_id": "96200"
+  },
+  {
+   "title": "Participa",
+   "url": "/es/participa/",
+   "order": 8,
+   "parent_id": 0,
+   "item_id": 97000,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97000"
+  },
+  {
+   "title": "Todas las convocatorias",
+   "url": "/es/participa/",
+   "order": 1,
+   "parent_id": 97000,
+   "item_id": 97001,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97001"
+  },
+  {
+   "title": "Residencias artísticas",
+   "url": "/es/residencias-artisticas-adar/",
+   "order": 2,
+   "parent_id": 97000,
+   "item_id": 97002,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97002"
+  },
+  {
+   "title": "ADAR NEXT",
+   "url": "/es/adar-next/",
+   "order": 3,
+   "parent_id": 97000,
+   "item_id": 97003,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97003"
+  },
+  {
+   "title": "Propuestas artísticas",
+   "url": "/es/propuestas-artisticas/",
+   "order": 4,
+   "parent_id": 97000,
+   "item_id": 97004,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97004"
+  },
+  {
+   "title": "Concurso de Hórreos y Paneras",
+   "url": "/es/concurso-de-horreos-y-paneras/",
+   "order": 5,
+   "parent_id": 97000,
+   "item_id": 97005,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97005"
+  },
+  {
+   "title": "Convocatorias anteriores",
+   "url": "/es/participa/#archivo",
+   "order": 6,
+   "parent_id": 97000,
+   "item_id": 97006,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97006"
   }
  ]
 }

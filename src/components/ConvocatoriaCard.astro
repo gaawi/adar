@@ -1,0 +1,135 @@
+---
+// Una convocatoria, en tarjeta. Se usa en /participa/ y en el carril lateral
+// de la página de residencias, así que el estilo vive aquí y no en cada página.
+import type { Lang } from '../i18n/strings.ts';
+import { ETIQUETA, diasRestantes, type Convocatoria } from '../data/convocatorias.ts';
+
+interface Props {
+  c: Convocatoria;
+  lang: Lang;
+  /** `compacta` quita el «para quién» y el resumen: para el carril lateral. */
+  compacta?: boolean;
+}
+
+const { c, lang, compacta = false } = Astro.props;
+
+const href = c.href?.[lang];
+const dias = diasRestantes(c);
+const cta = c.cta?.[lang] ?? { es: 'Más información', en: 'More information', ast: 'Más información' }[lang];
+const restan = dias !== null && dias >= 0
+  ? { es: `Quedan ${dias} días`, en: `${dias} days left`, ast: `Queden ${dias} díes` }[lang]
+  : null;
+---
+
+<article class={`cv-card cv-${c.estado}${compacta ? ' cv-compacta' : ''}`}>
+  <p class="cv-chip">{ETIQUETA[c.estado][lang]}</p>
+  <h3 class="cv-title">
+    {href ? <a href={href}>{c.titulo[lang]}</a> : c.titulo[lang]}
+  </h3>
+  {!compacta && <p class="cv-quien">{c.paraQuien[lang]}</p>}
+  {!compacta && <p class="cv-que">{c.que[lang]}</p>}
+  <p class="cv-cuando">
+    {c.cuando[lang]}
+    {restan && <b class="cv-restan">{restan}</b>}
+  </p>
+  {href && <p class="cv-cta"><a href={href}>{cta} <span aria-hidden="true">→</span></a></p>}
+</article>
+
+<style is:global>
+  /* Selectores largos: el tema heredado tiene reglas sueltas para h3, p y a
+     dentro de .entry-content que ganan si se escribe corto. */
+  body .entry-content .cv-card {
+    border: 1px solid var(--line, rgba(10, 9, 7, 0.16));
+    border-left: 3px solid var(--line, rgba(10, 9, 7, 0.16));
+    padding: 20px 22px 22px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-width: 0;
+  }
+  body .entry-content .cv-card.cv-permanente,
+  body .entry-content .cv-card.cv-abierta { border-left-color: #1d6b3f; }
+  body .entry-content .cv-card.cv-proxima { border-left-color: #9a5b12; }
+  body .entry-content .cv-card.cv-cerrada { border-left-color: rgba(10, 9, 7, 0.22); background: transparent; }
+
+  body .entry-content .cv-card .cv-chip {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin: 0 0 9px;
+    color: var(--muted);
+  }
+  body .entry-content .cv-card.cv-permanente .cv-chip,
+  body .entry-content .cv-card.cv-abierta .cv-chip { color: #1d6b3f; }
+  body .entry-content .cv-card.cv-proxima .cv-chip { color: #9a5b12; }
+
+  body .entry-content .cv-card .cv-title {
+    font-family: var(--font-voz);
+    font-weight: var(--peso-titulo, 700);
+    font-size: 21px;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    color: var(--ink, #0a0907);
+  }
+  body .entry-content .cv-card .cv-title a {
+    color: inherit;
+    text-decoration: none;
+    border: 0;
+  }
+  body .entry-content .cv-card .cv-title a:hover { text-decoration: underline; }
+
+  body .entry-content .cv-card .cv-quien {
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  body .entry-content .cv-card .cv-que {
+    font-size: 14.5px;
+    line-height: 1.55;
+    margin: 0 0 14px;
+  }
+  body .entry-content .cv-card .cv-cuando {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    line-height: 1.45;
+    margin: 0;
+    color: var(--ink, #0a0907);
+  }
+  body .entry-content .cv-card .cv-restan {
+    display: block;
+    color: #a32015;
+    margin-top: 3px;
+  }
+  body .entry-content .cv-card .cv-cta {
+    margin: 14px 0 0;
+    font-size: 14px;
+  }
+  body .entry-content .cv-card .cv-cta a {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+  }
+
+  /* Variante estrecha del carril lateral. */
+  body .entry-content .cv-card.cv-compacta { padding: 15px 16px 16px; }
+  body .entry-content .cv-card.cv-compacta .cv-title { font-size: 17px; margin-bottom: 7px; }
+  body .entry-content .cv-card.cv-compacta .cv-cta { margin-top: 10px; font-size: 13px; }
+
+  /* Rejilla reutilizable para los grupos de tarjetas. */
+  body .entry-content .cv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  @media (max-width: 700px) {
+    body .entry-content .cv-grid { grid-template-columns: 1fr; gap: 14px; }
+    body .entry-content .cv-card { padding: 17px 18px 19px; }
+  }
+</style>

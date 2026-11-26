@@ -4,6 +4,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Home from '../../components/home/Home.astro';
 import Hero from '../../components/Hero.astro';
 import Contact from '../../components/Contact.astro';
+import ConvocatoriasRail from '../../components/ConvocatoriasRail.astro';
+import AvisoCerrada from '../../components/AvisoCerrada.astro';
+import { CONVOCATORIAS } from '../../data/convocatorias.ts';
 import type { Lang } from '../../i18n/strings.ts';
 import { LANGS } from '../../i18n/strings.ts';
 
@@ -109,6 +112,19 @@ const isContact =
   entry.data.permalink === `/${lang}/contacto/` ||
   entry.data.permalink === `/${lang}/contact/` ||
   entry.data.permalink === `/${lang}/contautu/`;
+// La página de residencias lleva al lado el carril de convocatorias abiertas,
+// que se pinta solo desde src/data/convocatorias.ts. Se reconoce por el
+// permalink porque cada idioma tiene su propio slug heredado de WordPress.
+const isResidencias =
+  entry.data.permalink === '/es/residencias-artisticas-adar/' ||
+  entry.data.permalink === '/en/adar-artistic-residencies/' ||
+  entry.data.permalink === '/ast/residencias-artisticas-adar-2/';
+// Si esta página son las bases de una convocatoria que ya cerró, se le pone
+// el aviso encima. El estado vive en src/data/convocatorias.ts, así que basta
+// con reabrirla allí para que el aviso se quite.
+const convocatoriaCerrada = CONVOCATORIAS.find(
+  (c) => c.estado === 'cerrada' && c.href?.[lang] === entry.data.permalink,
+);
 // Press-release / dossier pages render as plain documents (.doc) — no hero.
 const isPressRelease =
   /nota-de-prensa|press-release/.test(entry.data.permalink);
@@ -119,6 +135,7 @@ const bodyClasses = [
     : '',
   isPress ? 'is-press' : '',
   isContact ? 'is-contact' : '',
+  convocatoriaCerrada ? 'is-convocatoria-cerrada' : '',
   'has-header-image',
   `page-id-${entry.data.wp_id || ''}`,
 ]
@@ -149,7 +166,19 @@ const bodyClasses = [
   <div class="builder-wrap full-width">
     <article id={`post-${entry.data.wp_id || ''}`} class={`post-${entry.data.wp_id || ''} ${entry.collection === 'pages' ? 'page' : 'post'} type-${entry.collection === 'pages' ? 'page' : 'post'} status-publish hentry`}>
       <div class="entry-content">
-        {isHome ? <Home lang={lang} /> : isContact ? <Contact lang={lang} /> : <Content />}
+        {convocatoriaCerrada && <AvisoCerrada c={convocatoriaCerrada} lang={lang} />}
+        {isHome ? (
+          <Home lang={lang} />
+        ) : isContact ? (
+          <Contact lang={lang} />
+        ) : isResidencias ? (
+          <div class="cv-conrail">
+            <div class="cv-conrail-main"><Content /></div>
+            <ConvocatoriasRail lang={lang} />
+          </div>
+        ) : (
+          <Content />
+        )}
       </div>
     </article>
   </div>
