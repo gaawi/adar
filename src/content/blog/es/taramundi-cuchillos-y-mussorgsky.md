@@ -2,7 +2,7 @@
 title: "Taramundi: el pueblo de los cuchillos artesanos donde sonó Mussorgsky"
 lang: es
 date: "2026-11-23T18:05:00.000Z"
-status: publish
+status: draft
 excerpt: "En el extremo occidental de Asturias hay un pueblo famoso por su cuchillería hecha a mano. En 2025 tocamos allí Telemann, Falla y Mussorgsky. Sobre oficios que se aprenden con las manos."
 featured_image: "https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_1.jpg"
 author: "Festival ADAR"

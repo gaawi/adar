@@ -14773,3 +14773,8 @@ body.page .entry-content .rc-callout .ed-btn{ background: var(--ink); }
 @media (max-width: 900px) {
   .vi26-apoyos { order: -2; }
 }
+
+/* Blog photos with their caption (rehype fotosConPie in astro.config.mjs). */
+.blog-entry figure.foto-pie { margin: 1.6em 0; }
+.blog-entry figure.foto-pie img { display: block; width: 100%; height: auto; margin: 0; }
+.blog-entry figure.foto-pie figcaption { margin-top: 0.5em; font-size: 0.85em; line-height: 1.4; color: #6b6b6b; font-style: italic; }
