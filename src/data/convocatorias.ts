@@ -105,6 +105,108 @@ export const FAMILIAS: {
   },
 ];
 
+/**
+ * A quién va dirigido. Un artista y un programador de sala no buscan lo
+ * mismo ni hablan el mismo idioma, así que cada público tiene su página y
+ * /participa/ se queda como el reparto.
+ *
+ * `familias` dice qué secciones se llevan a cada página; entre todas cubren
+ * las cinco, sin repetir ninguna.
+ */
+export const PUBLICOS: {
+  slug: string;
+  /** De qué familia toma el icono. */
+  icono: Familia;
+  familias: Familia[];
+  titulo: Record<Lang, string>;
+  /** «Eres…»: la línea de la tarjeta del reparto. */
+  quien: Record<Lang, string>;
+  lede: Record<Lang, string>;
+}[] = [
+  {
+    slug: 'artistas',
+    icono: 'programacion',
+    familias: ['programacion', 'residencias'],
+    titulo: { es: 'Artistas', en: 'Artists', ast: 'Artistes' },
+    quien: {
+      es: 'Músicos, ensembles, compositores, artistas visuales, danza, mánagers y agencias.',
+      en: 'Musicians, ensembles, composers, visual artists, dance, managers and agencies.',
+      ast: 'Músicos, ensembles, compositores, artistes visuales, danza, mánagers y axencies.',
+    },
+    lede: {
+      es: 'Para tocar en el festival o para venir a trabajar una temporada en Leiguarda.',
+      en: 'To play at the festival, or to come and work for a season in Leiguarda.',
+      ast: 'Pa tocar nel festival o pa venir a trabayar una temporada en Lleiguarda.',
+    },
+  },
+  {
+    slug: 'salas',
+    icono: 'colaboracion',
+    familias: ['colaboracion'],
+    titulo: {
+      es: 'Salas, festivales e instituciones',
+      en: 'Venues, festivals and institutions',
+      ast: 'Sales, festivales ya instituciones',
+    },
+    quien: {
+      es: 'Programadores, festivales, salas, instituciones culturales, agencias y patrocinadores.',
+      en: 'Programmers, festivals, venues, cultural institutions, agencies and sponsors.',
+      ast: 'Programadores, festivales, sales, instituciones culturales, axencies y patrocinadores.',
+    },
+    lede: {
+      es: 'Para programar juntos: intercambios, coproducciones, residencias compartidas y patrocinio.',
+      en: 'To programme together: exchanges, co-productions, shared residencies and sponsorship.',
+      ast: 'Pa programar xuntos: intercambios, coproducciones, residencies compartíes y patrociniu.',
+    },
+  },
+  {
+    slug: 'espacios',
+    icono: 'territorio',
+    familias: ['territorio'],
+    titulo: {
+      es: 'Hórreos y espacios',
+      en: 'Hórreos and spaces',
+      ast: 'Hórreos y espacios',
+    },
+    quien: {
+      es: 'Propietarios de hórreos, paneras y otros espacios de Asturias.',
+      en: 'Owners of hórreos, paneras and other spaces in Asturias.',
+      ast: 'Propietarios d’hórreos, paneres y otros espacios d’Asturies.',
+    },
+    lede: {
+      es: 'Para que el festival suene dentro de un hórreo, una panera o un lugar con memoria.',
+      en: 'So the festival can be played inside an hórreo, a panera or a place with memory.',
+      ast: 'Pa que’l festival suene dientro d’un hórreu, una panera o un llugar con memoria.',
+    },
+  },
+  {
+    slug: 'equipo',
+    icono: 'equipo',
+    familias: ['equipo'],
+    titulo: { es: 'Trabajar en ADAR', en: 'Working at ADAR', ast: 'Trabayar n’ADAR' },
+    quien: {
+      es: 'Estudiantes y profesionales de producción, comunicación y documentación.',
+      en: 'Students and professionals in production, communication and documentation.',
+      ast: 'Estudiantes y profesionales de producción, comunicación y documentación.',
+    },
+    lede: {
+      es: 'Prácticas y puestos para sacar adelante el festival.',
+      en: 'Internships and roles to make the festival happen.',
+      ast: 'Práutiques y puestos pa sacar alantre’l festival.',
+    },
+  },
+];
+
+/** La página de cada público, por idioma. */
+export function urlPublico(slug: string, lang: Lang): string {
+  return `/${lang}/participa/${slug}/`;
+}
+
+/** En qué página vive una familia. */
+export function publicoDeFamilia(familia: Familia) {
+  return PUBLICOS.find((p) => p.familias.includes(familia));
+}
+
 export interface Convocatoria {
   id: string;
   familia: Familia;
@@ -227,7 +329,13 @@ export const CONVOCATORIAS: Convocatoria[] = [
       en: 'Open all year round.',
       ast: 'Abierta tol añu.',
     },
-    href: { es: '#colaboraciones', en: '#colaboraciones', ast: '#colaboraciones' },
+    // Absoluto y no un ancla suelta: esta tarjeta sale también en el carril
+    // de la página de residencias, donde esa sección no existe.
+    href: {
+      es: '/es/participa/salas/#colaboraciones',
+      en: '/en/participa/salas/#colaboraciones',
+      ast: '/ast/participa/salas/#colaboraciones',
+    },
     cta: {
       es: 'Cómo proponer una colaboración',
       en: 'How to propose a partnership',
@@ -350,7 +458,11 @@ export const CONVOCATORIAS: Convocatoria[] = [
       en: 'No places open at the moment. Spontaneous applications are welcome.',
       ast: 'Ensin places abiertes agora mesmo. Puede unviase candidatura espontánea.',
     },
-    href: { es: '#trabajar', en: '#trabajar', ast: '#trabajar' },
+    href: {
+      es: '/es/participa/equipo/#trabajar',
+      en: '/en/participa/equipo/#trabajar',
+      ast: '/ast/participa/equipo/#trabajar',
+    },
     cta: {
       es: 'Mandar candidatura',
       en: 'Send an application',

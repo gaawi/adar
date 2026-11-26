@@ -1,0 +1,149 @@
+---
+// Estilos compartidos por el reparto (/participa/) y por las cuatro páginas
+// de público. Van en un componente porque Astro deduplica los <style> de un
+// mismo componente aunque se incluya varias veces.
+---
+
+<style is:global>
+  body.page .entry-content .pt-doc .pt-nota {
+    font-size: 13.5px;
+    color: var(--muted);
+    max-width: 44rem;
+  }
+  /* El tema heredado mete 64px de relleno a cada <section> dentro de un <div>
+     del contenido. Aquí las secciones ya traen el suyo. */
+  body.page .entry-content > div > .pt-doc > section { padding: 0; }
+  body.page .entry-content .pt-doc .pt-top { padding-top: 0; }
+
+  /* ── Índice de familias ──────────────────────────────────────────── */
+  body.page .entry-content .pt-doc .pt-indice-h {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  body.page .entry-content .pt-doc .pt-indice {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  /* El tema heredado pone `list-style: square` en el propio <li>, así que
+     ponérselo al <ul> no basta: el cuadradito lo dibuja el ::marker del li. */
+  body.page .entry-content .pt-doc .pt-indice li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  body.page .entry-content .pt-doc .pt-indice li::before,
+  body.page .entry-content .pt-doc .pt-indice li::marker { content: none; }
+  body.page .entry-content .pt-doc .pt-indice a {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid var(--line, rgba(10, 9, 7, 0.22));
+    padding: 9px 15px 9px 12px;
+    text-decoration: none;
+    color: var(--ink, #0a0907);
+    font-size: 14.5px;
+    line-height: 1.25;
+  }
+  body.page .entry-content .pt-doc .pt-indice a:hover {
+    background: var(--ink, #0a0907);
+    color: #fff;
+  }
+
+  /* ── Cabecera de cada familia ────────────────────────────────────── */
+  body.page .entry-content .pt-doc .pt-fam-head { position: relative; }
+  body.page .entry-content .pt-doc .pt-fam-ic {
+    display: block;
+    margin: 0 0 12px;
+    color: var(--ink, #0a0907);
+  }
+  body.page .entry-content .pt-doc .pt-extra { margin-top: 26px; }
+
+  /* ── Archivo, agrupado también por familia ───────────────────────── */
+  body.page .entry-content .pt-doc .pt-arch-fam { margin: 0 0 30px; }
+  body.page .entry-content .pt-doc .pt-arch-fam:last-child { margin-bottom: 0; }
+  /* ── Reparto: las tarjetas de «quién eres» ───────────────────────── */
+  body.page .entry-content .pt-doc .pt-publicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  body.page .entry-content .pt-doc .pt-publicos > li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  body.page .entry-content .pt-doc .pt-publicos > li::before,
+  body.page .entry-content .pt-doc .pt-publicos > li::marker { content: none; }
+  body.page .entry-content .pt-doc .pt-publicos a {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    border: 1px solid var(--line, rgba(10, 9, 7, 0.2));
+    padding: 22px 22px 24px;
+    text-decoration: none;
+    color: var(--ink, #0a0907);
+    background: #fff;
+  }
+  body.page .entry-content .pt-doc .pt-publicos a:hover {
+    border-color: var(--ink, #0a0907);
+  }
+  body.page .entry-content .pt-doc .pt-pub-ic { display: block; margin: 0 0 14px; }
+  body.page .entry-content .pt-doc .pt-pub-t {
+    font-family: var(--font-voz);
+    font-weight: var(--peso-titulo, 700);
+    font-size: 21px;
+    line-height: 1.2;
+    margin: 0 0 9px;
+  }
+  body.page .entry-content .pt-doc .pt-pub-q {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--muted);
+    margin: 0 0 16px;
+    flex: 1 1 auto;
+  }
+  body.page .entry-content .pt-doc .pt-pub-n {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    margin: 0;
+    border-bottom: 1px solid currentColor;
+    align-self: flex-start;
+    padding-bottom: 1px;
+  }
+
+  /* Pie de las páginas de público: las otras vías, por si cayó donde no era. */
+  body.page .entry-content .pt-doc .pt-otras-h {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 13px;
+  }
+
+  body.page .entry-content .pt-doc .pt-arch-h {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 13px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line, rgba(10, 9, 7, 0.14));
+  }
+</style>

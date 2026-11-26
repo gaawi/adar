@@ -276,7 +276,7 @@
    "object_id": "97100"
   },
   {
-   "title": "All open calls",
+   "title": "All the ways to take part",
    "url": "/en/participa/",
    "order": 1,
    "parent_id": 97100,
@@ -287,8 +287,8 @@
    "object_id": "97101"
   },
   {
-   "title": "Artistic residencies",
-   "url": "/en/adar-artistic-residencies/",
+   "title": "Artists",
+   "url": "/en/participa/artistas/",
    "order": 2,
    "parent_id": 97100,
    "item_id": 97102,
@@ -298,8 +298,8 @@
    "object_id": "97102"
   },
   {
-   "title": "ADAR NEXT",
-   "url": "/en/adar-next/",
+   "title": "Artistic residencies",
+   "url": "/en/adar-artistic-residencies/",
    "order": 3,
    "parent_id": 97100,
    "item_id": 97103,
@@ -309,8 +309,8 @@
    "object_id": "97103"
   },
   {
-   "title": "Submit a proposal",
-   "url": "/en/submit-a-proposal/",
+   "title": "ADAR NEXT",
+   "url": "/en/adar-next/",
    "order": 4,
    "parent_id": 97100,
    "item_id": 97104,
@@ -320,8 +320,8 @@
    "object_id": "97104"
   },
   {
-   "title": "Hórreos and Paneras Competition",
-   "url": "/en/horreos-and-paneras-competition/",
+   "title": "Venues, festivals and institutions",
+   "url": "/en/participa/salas/",
    "order": 5,
    "parent_id": 97100,
    "item_id": 97105,
@@ -331,8 +331,8 @@
    "object_id": "97105"
   },
   {
-   "title": "Past open calls",
-   "url": "/en/participa/#archivo",
+   "title": "Hórreos and spaces",
+   "url": "/en/participa/espacios/",
    "order": 6,
    "parent_id": 97100,
    "item_id": 97106,
@@ -340,6 +340,28 @@
    "object_type": "custom",
    "object": "custom",
    "object_id": "97106"
+  },
+  {
+   "title": "Working at ADAR",
+   "url": "/en/participa/equipo/",
+   "order": 7,
+   "parent_id": 97100,
+   "item_id": 97107,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97107"
+  },
+  {
+   "title": "Past open calls",
+   "url": "/en/participa/#archivo",
+   "order": 8,
+   "parent_id": 97100,
+   "item_id": 97108,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97108"
   }
  ],
  "ast": [
@@ -619,7 +641,7 @@
    "object_id": "97200"
   },
   {
-   "title": "Toles convocatories",
+   "title": "Toles formes de participar",
    "url": "/ast/participa/",
    "order": 1,
    "parent_id": 97200,
@@ -630,8 +652,8 @@
    "object_id": "97201"
   },
   {
-   "title": "Residencies artístiques",
-   "url": "/ast/residencias-artisticas-adar-2/",
+   "title": "Artistes",
+   "url": "/ast/participa/artistas/",
    "order": 2,
    "parent_id": 97200,
    "item_id": 97202,
@@ -641,8 +663,8 @@
    "object_id": "97202"
   },
   {
-   "title": "ADAR NEXT",
-   "url": "/ast/adar-next/",
+   "title": "Residencies artístiques",
+   "url": "/ast/residencias-artisticas-adar-2/",
    "order": 3,
    "parent_id": 97200,
    "item_id": 97203,
@@ -652,8 +674,8 @@
    "object_id": "97203"
   },
   {
-   "title": "Propuestes artístiques",
-   "url": "/ast/propuestes-artistiques/",
+   "title": "ADAR NEXT",
+   "url": "/ast/adar-next/",
    "order": 4,
    "parent_id": 97200,
    "item_id": 97204,
@@ -663,8 +685,8 @@
    "object_id": "97204"
   },
   {
-   "title": "Concursu d’Hórreos y Paneres",
-   "url": "/ast/concursu-dhorreos-y-paneres/",
+   "title": "Sales, festivales ya instituciones",
+   "url": "/ast/participa/salas/",
    "order": 5,
    "parent_id": 97200,
    "item_id": 97205,
@@ -674,8 +696,8 @@
    "object_id": "97205"
   },
   {
-   "title": "Convocatories anteriores",
-   "url": "/ast/participa/#archivo",
+   "title": "Hórreos y espacios",
+   "url": "/ast/participa/espacios/",
    "order": 6,
    "parent_id": 97200,
    "item_id": 97206,
@@ -683,6 +705,28 @@
    "object_type": "custom",
    "object": "custom",
    "object_id": "97206"
+  },
+  {
+   "title": "Trabayar n’ADAR",
+   "url": "/ast/participa/equipo/",
+   "order": 7,
+   "parent_id": 97200,
+   "item_id": 97207,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97207"
+  },
+  {
+   "title": "Convocatories anteriores",
+   "url": "/ast/participa/#archivo",
+   "order": 8,
+   "parent_id": 97200,
+   "item_id": 97208,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97208"
   }
  ],
  "es": [
@@ -962,7 +1006,7 @@
    "object_id": "97000"
   },
   {
-   "title": "Todas las convocatorias",
+   "title": "Todas las formas de participar",
    "url": "/es/participa/",
    "order": 1,
    "parent_id": 97000,
@@ -973,8 +1017,8 @@
    "object_id": "97001"
   },
   {
-   "title": "Residencias artísticas",
-   "url": "/es/residencias-artisticas-adar/",
+   "title": "Artistas",
+   "url": "/es/participa/artistas/",
    "order": 2,
    "parent_id": 97000,
    "item_id": 97002,
@@ -984,8 +1028,8 @@
    "object_id": "97002"
   },
   {
-   "title": "ADAR NEXT",
-   "url": "/es/adar-next/",
+   "title": "Residencias artísticas",
+   "url": "/es/residencias-artisticas-adar/",
    "order": 3,
    "parent_id": 97000,
    "item_id": 97003,
@@ -995,8 +1039,8 @@
    "object_id": "97003"
   },
   {
-   "title": "Propuestas artísticas",
-   "url": "/es/propuestas-artisticas/",
+   "title": "ADAR NEXT",
+   "url": "/es/adar-next/",
    "order": 4,
    "parent_id": 97000,
    "item_id": 97004,
@@ -1006,8 +1050,8 @@
    "object_id": "97004"
   },
   {
-   "title": "Concurso de Hórreos y Paneras",
-   "url": "/es/concurso-de-horreos-y-paneras/",
+   "title": "Salas, festivales e instituciones",
+   "url": "/es/participa/salas/",
    "order": 5,
    "parent_id": 97000,
    "item_id": 97005,
@@ -1017,8 +1061,8 @@
    "object_id": "97005"
   },
   {
-   "title": "Convocatorias anteriores",
-   "url": "/es/participa/#archivo",
+   "title": "Hórreos y espacios",
+   "url": "/es/participa/espacios/",
    "order": 6,
    "parent_id": 97000,
    "item_id": 97006,
@@ -1026,6 +1070,28 @@
    "object_type": "custom",
    "object": "custom",
    "object_id": "97006"
+  },
+  {
+   "title": "Trabajar en ADAR",
+   "url": "/es/participa/equipo/",
+   "order": 7,
+   "parent_id": 97000,
+   "item_id": 97007,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97007"
+  },
+  {
+   "title": "Convocatorias anteriores",
+   "url": "/es/participa/#archivo",
+   "order": 8,
+   "parent_id": 97000,
+   "item_id": 97008,
+   "classes": "",
+   "object_type": "custom",
+   "object": "custom",
+   "object_id": "97008"
   }
  ]
 }

@@ -1,0 +1,114 @@
+---
+// El reparto. No lista convocatorias: pregunta quién eres y te manda a tu
+// página. Un artista y un programador de sala no buscan lo mismo, y tenerlos
+// en la misma página obligaba a los dos a saltarse la mitad.
+//
+// Lo único que sí se queda aquí es el archivo completo, porque mirar lo que
+// se ha convocado antes no depende de quién seas.
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Hero from '../../../components/Hero.astro';
+import ConvocatoriaCard from '../../../components/ConvocatoriaCard.astro';
+import IconoFamilia from '../../../components/IconoFamilia.astro';
+import ParticipaEstilos from '../../../components/ParticipaEstilos.astro';
+import type { Lang } from '../../../i18n/strings.ts';
+import { LANGS } from '../../../i18n/strings.ts';
+import { copyParticipa, EMAIL_ADAR } from '../../../i18n/participa.ts';
+import { FAMILIAS, PUBLICOS, archivo, urlPublico } from '../../../data/convocatorias.ts';
+
+export function getStaticPaths() {
+  return LANGS.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const C = copyParticipa(lang);
+
+const IMG = 'https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4385.JPG';
+
+const cerradas = archivo();
+const archivoPorFamilia = FAMILIAS.map((f) => ({
+  ...f,
+  items: cerradas.filter((c) => c.familia === f.id),
+})).filter((f) => f.items.length > 0);
+
+const translations = Object.fromEntries(LANGS.map((l) => [l, `/${l}/participa/`]));
+---
+
+<BaseLayout
+  title={C.title}
+  description={C.lede}
+  lang={lang}
+  permalink={`/${lang}/participa/`}
+  featuredImage={IMG}
+  translations={translations}
+  bodyClass="page has-header-image"
+>
+  <Hero eyebrow={C.eyebrow} title={C.title} lede={C.lede} image={IMG} />
+
+  <div class="builder-wrap full-width">
+  <article class="page type-page status-publish hentry">
+  <div class="entry-content">
+  <div class="adar-impact-v3 adar-res-call pt-doc">
+
+    <section class="ed-section pt-top">
+      <div class="ed-wrap">
+        <p class="ed-prose">{C.intro1}</p>
+      </div>
+    </section>
+
+    <section class="ed-section" id="quien-eres">
+      <div class="ed-wrap">
+        <div class="ed-head">
+          <h2>{C.quienEres}</h2>
+          <p class="ed-lede">{C.quienEresSub}</p>
+        </div>
+        <ul class="pt-publicos">
+          {PUBLICOS.map((p) => (
+            <li>
+              <a href={urlPublico(p.slug, lang)}>
+                <span class="pt-pub-ic"><IconoFamilia familia={p.icono} size={30} /></span>
+                <span class="pt-pub-t">{p.titulo[lang]}</span>
+                <span class="pt-pub-q">{p.quien[lang]}</span>
+                <span class="pt-pub-n">{C.verRuta} <span aria-hidden="true">→</span></span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section class="ed-section" id="archivo">
+      <div class="ed-wrap">
+        <div class="ed-head">
+          <h2>{C.archivoH}</h2>
+          <p class="ed-lede">{C.archivoSub}</p>
+        </div>
+        {archivoPorFamilia.map((f) => (
+          <div class="pt-arch-fam">
+            <p class="pt-arch-h">
+              <IconoFamilia familia={f.id} size={17} />
+              <span>{f.titulo[lang]}</span>
+            </p>
+            <div class="cv-grid">
+              {f.items.map((c) => <ConvocatoriaCard c={c} lang={lang} />)}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="ed-section" id="dudas">
+      <div class="ed-wrap">
+        <div class="ed-head"><h2>{C.dudasH}</h2></div>
+        <p class="ed-prose">
+          {C.dudasP} <a href={`mailto:${EMAIL_ADAR}`}>{EMAIL_ADAR}</a> {C.dudasP2}
+        </p>
+      </div>
+    </section>
+
+  </div>
+  </div>
+  </article>
+  </div>
+
+  <ParticipaEstilos />
+</BaseLayout>

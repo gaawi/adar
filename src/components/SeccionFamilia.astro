@@ -1,0 +1,60 @@
+---
+// Una familia de convocatorias: cabecera con icono, tarjetas y, en las dos
+// que lo necesitan, la prosa con el correo y su asunto.
+//
+// La comparten las páginas de público, así que la prosa vive aquí y no
+// repetida en cada una.
+import type { Lang } from '../i18n/strings.ts';
+import { copyParticipa, EMAIL_ADAR, mailto } from '../i18n/participa.ts';
+import ConvocatoriaCard from './ConvocatoriaCard.astro';
+import IconoFamilia from './IconoFamilia.astro';
+import { deFamilia, type Familia } from '../data/convocatorias.ts';
+
+interface Props {
+  familia: Familia;
+  titulo: string;
+  sub: string;
+  ancla: string;
+  lang: Lang;
+}
+const { familia, titulo, sub, ancla, lang } = Astro.props;
+
+const C = copyParticipa(lang);
+const items = deFamilia(familia, 'abierta', 'permanente', 'proxima');
+---
+
+<section class="ed-section pt-fam" id={ancla}>
+  <div class="ed-wrap">
+    <div class="ed-head pt-fam-head">
+      <span class="pt-fam-ic"><IconoFamilia familia={familia} size={30} /></span>
+      <h2>{titulo}</h2>
+      <p class="ed-lede">{sub}</p>
+    </div>
+
+    <div class="cv-grid">
+      {items.map((c) => <ConvocatoriaCard c={c} lang={lang} />)}
+    </div>
+
+    {familia === 'colaboracion' && (
+      <div class="pt-extra">
+        <p class="ed-prose">{C.colabP1}</p>
+        <p class="ed-prose">{C.colabP2}</p>
+        <p class="ed-prose">
+          {C.colabP3} <a href={mailto(C.colabSubject)}>{EMAIL_ADAR}</a>, {C.colabAsunto}
+          <strong>{C.colabSubject}</strong>.
+        </p>
+        <p class="ed-prose pt-nota">{C.colabNota}</p>
+      </div>
+    )}
+
+    {familia === 'equipo' && (
+      <div class="pt-extra">
+        <p class="ed-prose">{C.trabajoP}</p>
+        <p class="ed-prose">
+          {C.trabajoP2} <a href={mailto(C.trabajoSubject)}>{EMAIL_ADAR}</a>, {C.trabajoAsunto}
+          <strong>{C.trabajoSubject}</strong>.
+        </p>
+      </div>
+    )}
+  </div>
+</section>

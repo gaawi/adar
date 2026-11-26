@@ -1,0 +1,151 @@
+---
+// La página de un público: artistas, salas, espacios o equipo. Solo sus
+// convocatorias, con sus condiciones, y al final el archivo de esa misma vía.
+//
+// Abajo van siempre las otras tres, por si alguien ha caído donde no era.
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Hero from '../../../components/Hero.astro';
+import SeccionFamilia from '../../../components/SeccionFamilia.astro';
+import ConvocatoriaCard from '../../../components/ConvocatoriaCard.astro';
+import IconoFamilia from '../../../components/IconoFamilia.astro';
+import ParticipaEstilos from '../../../components/ParticipaEstilos.astro';
+import type { Lang } from '../../../i18n/strings.ts';
+import { LANGS } from '../../../i18n/strings.ts';
+import { copyParticipa } from '../../../i18n/participa.ts';
+import { FAMILIAS, PUBLICOS, archivo, urlPublico } from '../../../data/convocatorias.ts';
+
+export function getStaticPaths() {
+  return LANGS.flatMap((lang) =>
+    PUBLICOS.map((p) => ({ params: { lang, publico: p.slug }, props: { slug: p.slug } })),
+  );
+}
+
+const lang = Astro.params.lang as Lang;
+const { slug } = Astro.props as { slug: string };
+const C = copyParticipa(lang);
+
+const pub = PUBLICOS.find((p) => p.slug === slug)!;
+
+// Dos familias conservan el ancla que ya estaba enlazada desde las tarjetas
+// y desde el menú, para no romper enlaces.
+const ANCLA: Record<string, string> = {
+  programacion: 'programacion',
+  residencias: 'residencias',
+  territorio: 'territorio',
+  colaboracion: 'colaboraciones',
+  equipo: 'trabajar',
+};
+
+const secciones = pub.familias
+  .map((id) => FAMILIAS.find((f) => f.id === id)!)
+  .filter(Boolean);
+
+// Archivo de esta vía, y solo de esta vía.
+const cerradas = archivo().filter((c) => pub.familias.includes(c.familia));
+
+const otros = PUBLICOS.filter((p) => p.slug !== pub.slug);
+
+const IMG: Record<string, string> = {
+  artistas: 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/C1918T01.jpg',
+  salas: 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/corias.jpg',
+  espacios:
+    'https://creartbox-archive.b-cdn.net/adarimages/memoria-de-acciones/2026-08-04%20La%20Figal%20de%20Xugabolos_Fotos/04.08.26_La%20Figal%20de%20Xugabolos_Fotos_1.jpg',
+  equipo: 'https://creartbox-media-cdn.b-cdn.net/adarimages/adar25fx30/DSC01864.jpg',
+};
+
+const translations = Object.fromEntries(
+  LANGS.map((l) => [l, urlPublico(pub.slug, l)]),
+);
+---
+
+<BaseLayout
+  title={pub.titulo[lang]}
+  description={pub.lede[lang]}
+  lang={lang}
+  permalink={urlPublico(pub.slug, lang)}
+  featuredImage={IMG[pub.slug]}
+  translations={translations}
+  bodyClass="page has-header-image"
+>
+  <Hero
+    eyebrow={C.title}
+    title={pub.titulo[lang]}
+    lede={pub.lede[lang]}
+    image={IMG[pub.slug]}
+  />
+
+  <div class="builder-wrap full-width">
+  <article class="page type-page status-publish hentry">
+  <div class="entry-content">
+  <div class="adar-impact-v3 adar-res-call pt-doc">
+
+    <section class="ed-section pt-top">
+      <div class="ed-wrap">
+        {/* Sin repetir aquí a quién va dirigida: ya lo dicen la entradilla del
+            hero y la cabecera de cada sección, y tres veces seguidas cansa. */}
+        <p class="pt-volver-top">
+          <a href={`/${lang}/participa/`}>← {C.volver}</a>
+        </p>
+      </div>
+    </section>
+
+    {secciones.map((f) => (
+      <SeccionFamilia
+        familia={f.id}
+        titulo={f.titulo[lang]}
+        sub={f.sub[lang]}
+        ancla={ANCLA[f.id]}
+        lang={lang}
+      />
+    ))}
+
+    {cerradas.length > 0 && (
+      <section class="ed-section" id="archivo">
+        <div class="ed-wrap">
+          <div class="ed-head">
+            <h2>{C.archivoPub}</h2>
+            <p class="ed-lede">{C.archivoSub}</p>
+          </div>
+          <div class="cv-grid">
+            {cerradas.map((c) => <ConvocatoriaCard c={c} lang={lang} />)}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <section class="ed-section" id="otras-vias">
+      <div class="ed-wrap">
+        <p class="pt-otras-h">{C.otrasVias}</p>
+        <ul class="pt-indice">
+          {otros.map((p) => (
+            <li>
+              <a href={urlPublico(p.slug, lang)}>
+                <IconoFamilia familia={p.icono} size={20} />
+                <span>{p.titulo[lang]}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+  </div>
+  </div>
+  </article>
+  </div>
+
+  <ParticipaEstilos />
+</BaseLayout>
+
+<style is:global>
+  body.page .entry-content .pt-doc .pt-volver-top {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    margin: 0 0 18px;
+  }
+  body.page .entry-content .pt-doc .pt-volver-top a {
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+</style>
