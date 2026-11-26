@@ -13,17 +13,23 @@ Hay una frase que oímos en casi todos los conciertos, dicha en voz baja y con u
 
 Queremos desmontar esa frase, porque es la más injusta de todas. Lo vamos a hacer con una obra concreta que sonó en nuestra clausura: **«sweet air», de David Lang.**
 
+![Guillermo Laporta (flauta) en el concierto de clausura en la iglesia de Leiguarda, 16 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_Fotos/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB_4.jpg)
+
 ## Quién es David Lang
 
 David Lang es un compositor estadounidense, **premio Pulitzer de música** en 2008 por su *The Little Match Girl Passion*, y una de las cabezas del colectivo *Bang on a Can*, que lleva décadas acercando la música de hoy a públicos que creían que no era para ellos.
 
 Su música suele etiquetarse como **postminimalista**. Traducido del argot: en vez de melodías que van "de aquí para allá" como en una canción, Lang trabaja con **pequeñas células que se repiten y cambian poquito a poco.** «sweet air» (una pieza serena, hipnótica, que forma parte de su obra *Child*) es un ejemplo perfecto.
 
+![Frederieke Saeijs (violín) en la clausura del festival en la iglesia de Leiguarda, 16 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_Fotos/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB_9.jpg)
+
 ## El error: escucharla como si fuera Beethoven
 
 El malentendido casi siempre viene de aquí. Escuchamos música contemporánea esperando lo que nos dio la música del XIX: un tema que reconoces, un clímax, una resolución con moraleja. Y cuando eso no llega, concluimos que "no la entendemos".
 
 En ese sentido, en «sweet air» hay poco que "entender". Funciona más como **mirar el mar, o el fuego, o la lluvia en un cristal**: te dejas estar dentro.
+
+![Público en la iglesia de Leiguarda durante la clausura, 16 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_Fotos/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB_3.jpg)
 
 ## Una guía de escucha en tres gestos
 
@@ -36,5 +42,7 @@ Para la próxima vez que te enfrentes a una pieza así, prueba esto:
 ## Por qué la programamos
 
 En ADAR mezclamos a Bach con Ligeti, a Vivaldi con David Lang, a propósito, porque **la buena música de todas las épocas se lleva mejor de lo que la gente teme.** Un público que acaba de emocionarse con una sarabanda barroca está perfectamente preparado para dejarse llevar por «sweet air» diez minutos después. Solo hace falta que nadie le diga antes que "no lo va a entender".
+
+![Josefina Urraca (piano) y Žilvinas Brazauskas (clarinete) en la clausura en Leiguarda, 16 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_Fotos/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB/26.08.16_Iglesia%20de%20Leiguarda%20Concierto%20Final_WEB_8.jpg)
 
 Así que la próxima vez, cuando te venga esa frase a la boca, cámbiala por otra: *"a ver qué me hace sentir esto".*

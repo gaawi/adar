@@ -19,13 +19,19 @@ Un eclipse no admite ensayo con público, ni segundo pase. La totalidad estaba p
 
 Por eso subimos al **Alto de La Corredoria**: un horizonte limpio hacia el oeste-noroeste, sin edificios, sin árboles altos, mirando a donde el sol iba a apagarse.
 
+![Público en el Alto de La Corredoria (Belmonte de Miranda), 12 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_1.jpg)
+
 ## Música para la sombra
 
 La pregunta que nos hicimos al diseñar el programa fue esta: **¿qué se toca mientras el mundo se queda a oscuras?**
 
 Buscamos una música que hiciera con el oído lo que el eclipse hacía con la vista: sonidos que se van retirando, notas largas que parecen no acabar nunca y silencios que pesan.
 
+![El cuarteto y el público en el Alto de La Corredoria, 12 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_5.jpg)
+
 Entonces llegó el minuto y medio de totalidad. La temperatura bajó. Los pájaros callaron. La gente dejó de mirar los teléfonos. Durante **poco menos de dos minutos**, el alto de Belmonte de Miranda quedó a oscuras y en silencio.
+
+![Maria Florea (violín) y Lara Fernández (viola) en el Alto de La Corredoria, 12 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_4.jpg)
 
 ## Por qué esto es lo que hace ADAR
 

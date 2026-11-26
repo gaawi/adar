@@ -17,19 +17,27 @@ Llovió.
 
 Había hecho sol toda la semana. Ese día, cuando el escenario ya estaba montado (un gran **marco amarillo** plantado en la hierba, con la aldea de Leiguarda de telón de fondo), apareció el **orballo**: esa lluvia fina asturiana que no llega a mojar de golpe pero que no para nunca.
 
+![El marco amarillo en el campo de la iglesia de Leiguarda, 14 de agosto de 2021](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image69.jpg)
+
 Para un concierto al aire libre con instrumentos de cuerda y madera, el orballo obliga a decidir sobre la marcha y a cuidar los instrumentos. Eso hicimos.
 
 Quien estuvo allí lo cuenta siempre igual: la aldea difuminada entre la bruma, el marco amarillo, la música saliendo hacia un paisaje mojado.
 
+![El escenario de noche, entre la bruma, en Leiguarda, 14 de agosto de 2021](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image50.jpg)
+
 ## Más de 120 personas en una aldea de cien habitantes
 
 El dato que todavía nos emociona: **se juntaron más de 120 personas.** En una aldea de apenas un centenar de habitantes. Aquella noche había más gente en el campo de la iglesia de Leiguarda que vecinos censados en Leiguarda.
+
+![Músicos y público en el concierto inaugural de Leiguarda, 14 de agosto de 2021](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image72.jpg)
 
 Eso contestó la pregunta que nos hacían todos: *¿pero irá alguien?* Sí, va gente.
 
 ## Lo que se tocó aquella noche
 
 Sonaron obras de **Mendelssohn, Haydn y Falla**. También sonó música de **John Harbison**, compositor estadounidense contemporáneo, y ***Atlantic*, de Marcos Fernández**.
+
+![Presentación del concierto inaugural en Leiguarda, 14 de agosto de 2021](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2021/14_Concierto_de_Inauguracion_en_Leiguarda/image73.jpg)
 
 Ya en ese primer programa había clásicos junto a música de ahora. Lo seguimos haciendo cada verano.
 
@@ -46,6 +54,8 @@ Aquella noche nos dio, sin pretenderlo, las tres reglas con las que seguimos tra
 ## Cinco años después
 
 De aquella noche salió el compromiso de volver cada agosto. Volvimos en 2022, 2023, 2024, 2025 y 2026, ampliando cada vez el mapa de concejos, de espacios y de artistas. De un campo de iglesia con un marco amarillo a monasterios, palacios, mercados, hórreos, un parador y un alto de monte en pleno eclipse total de sol.
+
+![Paseo sonoro en el claustro del Parador de Corias (Cangas del Narcea), 15 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_7.jpg)
 
 Todo esto empezó con **120 personas de pie bajo el orballo**, en un pueblo de cien habitantes.
 

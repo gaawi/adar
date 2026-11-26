@@ -13,11 +13,17 @@ La pandemia hizo que mucha gente se replanteara dónde quería vivir. Casi nadie
 
 Ella, pianista, palentina. Él, flautista, oscense. Llevaban **once años viviendo y trabajando en Nueva York** cuando decidieron que era el momento de buscar casa en algún sitio rural donde afincarse la mitad del año. Querían seguir trabajando igual, desde otro lugar.
 
+![Guillermo Laporta en Umbral Zero, en el Aula del Oro de Belmonte de Miranda, 7 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/07.08.26_Aula%20del%20oro_Fotos/07.08.26_Aula%20del%20oro_WEB/07.08.26_Aula%20del%20oro_WEB_6.jpg)
+
 ## Un pack completo: finca, casa, cuadra, pajar, hórreo
 
 Su búsqueda por Asturias terminó en **Leiguarda**, una aldea del concejo de Belmonte de Miranda. Lo que compraron era lo mismo que hay a cientos por rehabilitar en la región: *«finca, casa, cuadra, pajar, hórreo…»*, en sus propias palabras.
 
+![Leiguarda 47, la sede de ADAR en Leiguarda (Belmonte de Miranda)](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_2938.jpeg)
+
 Lo interesante es en qué lo convirtieron. **La vieja cuadra es hoy una sala de ensayos.** Era, dicen, «indispensable». Sin un sitio donde ensayar, nada de lo demás podía existir.
+
+![Micro-concierto en Leiguarda, agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/14.jpg)
 
 Ese gesto resume el proyecto: coger una construcción rural en desuso y **devolverla a la vida dándole una función nueva**. Es lo mismo que después harían con iglesias, monasterios, paneras, mercados y palacios por todo el occidente asturiano. Empezaron practicando en su propia casa.
 
@@ -39,10 +45,14 @@ Hay una frase de Josefina Urraca que se nos quedó grabada y que explica por qu�
 
 Dice que **lo que se presenta en Nueva York se puede presentar en una aldea asturiana** sin rebajarlo ni adaptarlo «al público de pueblo». La distancia, hoy, es sobre todo un problema logístico.
 
+![Currents, de CreArtBox, en The DiMenna Center de Nueva York, 30 de octubre de 2026](https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0656.jpg)
+
 Por eso ADAR trae artistas de Estados Unidos, Nueva Zelanda, Lituania, Italia, Alemania o Países Bajos a pueblos de menos de quinientos habitantes. Es su funcionamiento normal.
 
 ## Vivir donde trabajas
 
 Lo que hace distinto a ADAR de un festival gestionado desde una oficina en la ciudad es sencillo: **sus directores viven aquí.** Son vecinos. Se cruzan con el público en la tienda. Saben qué iglesia tiene la mejor acústica porque han estado dentro en enero, con frío.
+
+![Vecinos y público en el campo de la iglesia de Leiguarda, clausura de 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/07.jpg)
 
 Cuando el organizador es también vecino, el festival tiene que responder ante la gente que se lo va a encontrar en la carretera al día siguiente.

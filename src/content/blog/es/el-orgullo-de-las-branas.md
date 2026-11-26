@@ -21,9 +21,13 @@ Hoy Las Tabiernas casi no tiene vecinos. Juan vive en Tineo y sube cada día a a
 
 Nos quedamos con una parte del artículo que no tiene que ver con la música. Durante generaciones, quien vivía en la braña aprendió que su forma de vida valía menos. Eso deja huella. Hace que la gente desconfíe de quien llega con una grabadora.
 
+![Público en el micro-concierto de Puerma (Las Regueras), 11 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_Fotos/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_WEB/25.08.11_Caser%C3%ADa%20de%20Paz%20Mesa%20y%20Xandru%20Gonz%C3%A1lez_WEB_9.jpg)
+
 Lo tenemos muy presente en **Braña Sonora**, el proyecto que empezamos en julio de 2026 con una ayuda del Ministerio de Cultura para la salvaguarda del Patrimonio Cultural Inmaterial. Uno de sus tres ejes es la cultura vaqueira de alzada: la subida a las brañas en mayo y junio y la bajada en septiembre y octubre.
 
 Hemos tocado en Tineo. El 12 de agosto de 2025 llenamos el monasterio de Obona. Pero un concierto dura una hora y luego nos vamos. Grabar la memoria de alguien pide otro trato.
+
+![Concierto en el monasterio de Obona (Tineo), 12 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.12_Monasterio%20de%20Obona_Fotos/25.08.12_Monasterio%20de%20Obona_WEB/25.08.12_Monasterio%20de%20Obona_WEB_5.jpg)
 
 ## Cómo queremos trabajar
 
@@ -31,9 +35,13 @@ Hay reglas que pusimos antes de empezar. Nadie se graba sin su permiso. Cada per
 
 Juan Gayo dice otra cosa que nos parece útil. Ahora hay mucha gente que se declara vaqueira, y a él eso le preocupa. Prefiere que se cuide el origen. Para un archivo, eso significa anotar bien quién canta, de dónde es, a quién se lo oyó y cuándo. Una tonada sin esos datos se queda en una canción bonita.
 
+![Dos hombres siguen el concierto de clausura en Leiguarda, agosto de 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/02.jpg)
+
 ## Lo que vuelve al territorio
 
 Lo grabado volverá a los concejos de donde sale. Una parte irá a las escuelas rurales, con materiales para clase en castellano y en asturiano. Otra estará en un archivo abierto. Y tres compositoras y compositores harán residencias con ese material. Sus obras se estrenarán en el Festival ADAR de agosto de 2027, en los sitios donde se grabó.
+
+![Vista del valle desde Leiguarda 47, sede de ADAR](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_2788.jpeg)
 
 El artículo cuenta que los jóvenes preguntan cada vez más por cómo vivían los vaqueiros. Nos gustaría que algún día esas preguntas tuvieran un sitio donde escuchar las respuestas, con las voces de quienes las vivieron.
 

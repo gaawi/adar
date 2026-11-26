@@ -21,9 +21,15 @@ Buena parte de lo que hace ADAR depende del silencio del medio rural.
 
 En un paseo sonoro, un instrumento a cuarenta metros se oye porque el ruido de fondo es casi nulo. En una ciudad, el tráfico se come esas distancias.
 
+![Paseo sonoro en el claustro del Parador de Corias (Cangas del Narcea), 15 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.15_Claustro%20del%20Parador%20de%20Corias_Fotos/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB/25.08.15_Claustro%20del%20Parador%20de%20Corias_WEB_1.jpg)
+
 En Leiguarda 47, nuestra sede, los artistas pueden ensayar a las siete de la mañana o a medianoche. No hay aire acondicionado zumbando ni coches de fondo. Lo mencionan siempre.
 
+![Leiguarda 47, la sede de ADAR](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_20250717_133525.jpg)
+
 En los monasterios, el público baja la voz al entrar sin que nadie se lo pida. El silencio durante la música es difícil de conseguir en una sala normal.
+
+![Público en el monasterio de Villanueva de Oscos, 14 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_2.jpg)
 
 Y el 12 de agosto de 2026, en el Alto de La Corredoria, durante el eclipse, bajó la temperatura y los pájaros se callaron. Ese silencio formaba parte del concierto.
 
@@ -44,6 +50,8 @@ Cada sitio lo elegimos hablando antes con quien lo cuida. Esa persona sabe a qu�
 ## Escuchar antes de tocar
 
 Antes de decidir dónde se toca, vamos al sitio. Damos palmadas y hablamos en voz alta. Escuchamos cuánto tarda el sonido en apagarse. Es un método poco glamuroso, pero nos obliga a escuchar el lugar antes de llenarlo de música.
+
+![El monasterio de San Antolín de Bedón (Llanes) antes de entrar el público, 7 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.07_The%20Whale%20%C2%B7%20Monasterio%20S.%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.07_The%20Whale%20%C2%B7%20Monasterio%20S.%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.07_The%20Whale%20%C2%B7%20Monasterio%20S.%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_3.jpg)
 
 En **Braña Sonora** queremos ir más allá. Vamos a grabar el paisaje sonoro de brañas, hórreos y oficios con técnicas que guardan cómo suena el espacio. Será un archivo de cómo sonaban estos sitios en 2026 y 2027.
 

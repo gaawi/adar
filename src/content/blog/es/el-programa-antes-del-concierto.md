@@ -23,6 +23,8 @@ Un cartel dice cinco nombres y una hora. No dice si el Brahms que vas a oír es 
 
 El programa sí. Y con eso, quien duda puede decidir con información. Son cincuenta y seis minutos de música, se toca del tirón, y empieza con una pieza en la que los músicos entran andando mientras tocan.
 
+![Currents en The DiMenna Center de Nueva York, 30 de octubre de 2026. Foto: Tao Ho](https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_DSC0670.jpg)
+
 Eso último, por cierto, es la clase de cosa que no cabe en un cartel y que cambia bastante lo que vas a ver.
 
 ## A quien no puede venir
@@ -30,6 +32,8 @@ Eso último, por cierto, es la clase de cosa que no cabe en un cartel y que camb
 Esta es la parte que más nos importa, y es la misma razón por la que [documentamos todo lo que hacemos](/es/blog/por-que-documentamos-todo/): nuestros aforos son pequeños y muchas de las personas a las que les interesaría lo que tocamos están lejos.
 
 Un concierto en una iglesia de aldea cabe para sesenta personas. Una noche en Nueva York, para doscientas. El programa en la web no tiene aforo.
+
+![Iglesia de Leiguarda durante el recital de Andrea Casarrubios, 16 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_5.jpg)
 
 Quien no puede venir se lleva al menos lo que se escribió para el concierto: qué se tocó, en qué orden, por qué, quién lo escribió y cuándo. Eso es bastante más de lo que suele quedar.
 
@@ -44,6 +48,8 @@ Leerlas tres días antes, sentado, con tiempo, es sencillamente mejor. Y quien n
 Un concierto dura una hora. El programa, si está en la web, dura mientras dure la web.
 
 Dentro de cinco años, cuando alguien busque qué se tocó aquella noche, va a encontrar el programa entero, con los tiempos, las notas y quién tocaba cada parte. Para un proyecto que trabaja en sitios donde no hay crítica ni cobertura, eso es el registro.
+
+![Violonchelo y piano en Currents, Nueva York, 30 de octubre de 2026. Foto: Tao Ho](https://creartbox-archive.b-cdn.net/archive-creartbox/2026-10-30-currents-photos/web/_MG_0426.jpg)
 
 ## Lo que nos obliga a nosotros
 

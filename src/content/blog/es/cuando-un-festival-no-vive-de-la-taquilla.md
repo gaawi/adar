@@ -19,6 +19,8 @@ Un concierto de ADAR tiene los gastos de cualquier concierto: músicos, viajes, 
 
 Una parte la ponen las ayudas públicas y los patrocinadores. En las últimas ediciones nos han apoyado el Principado de Asturias, Caja Rural y Culture Moves Europe. Otra parte la ponen los **Amigos del Festival**, con cuotas de 10, 30 o 50 euros al año.
 
+![Micro-concierto en Leiguarda, agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/16_Micro_Conciertos_y_Paseo_Sonoro_en_Leiguarda/11.jpg)
+
 La taquilla no existe. Así que el riesgo que describe el artículo, el de un verano con pocas entradas vendidas, no nos afecta de la misma manera.
 
 ## Nuestro riesgo es otro
@@ -26,6 +28,8 @@ La taquilla no existe. Así que el riesgo que describe el artículo, el de un ve
 Depender de ayudas tiene su propia fragilidad. Una convocatoria puede no salir. Puede salir tarde. Puede cambiar de criterios de un año para otro. Un festival que vive de entradas sufre si el público no compra. Uno como el nuestro sufre si una ayuda no llega a tiempo.
 
 Por eso los Amigos nos importan tanto. Son pocos euros por persona. Son cuotas anuales y no dependen de que salga una convocatoria.
+
+![Concierto de clausura en Leiguarda, 17 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_Fotos/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB/25.08.17_Iglesia%20e%20invernadero%20de%20cristal_WEB_7.jpg)
 
 ## Para qué sirve la puerta abierta
 
@@ -35,11 +39,15 @@ En agosto de 2025, el crítico David Nice estuvo en [Kovachevitsa, una aldea de 
 
 No tenemos un recuento de cuánta gente viene a ADAR por primera vez a un concierto de cámara. Sí tenemos algunos datos de público. En agosto de 2021, en el primer concierto, vinieron más de 120 personas a Leiguarda, una aldea de un centenar de habitantes. El 12 de agosto de 2025 se llenó el monasterio de Obona, en Tineo, con un programa de cámara de sesenta y dos minutos.
 
+![Público en el monasterio de Obona (Tineo), 12 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.12_Monasterio%20de%20Obona_Fotos/25.08.12_Monasterio%20de%20Obona_WEB/25.08.12_Monasterio%20de%20Obona_WEB_2.jpg)
+
 ## El problema de lo gratis
 
 Lo gratis tiene un problema práctico. Los sitios son pequeños y muchos conciertos se llenan el mismo día que se anuncian. Hay gente que se queda fuera. Por eso los Amigos tienen reserva anticipada a partir de la cuota de 30 euros.
 
 No tenemos una solución perfecta para esto. Preferimos un concierto lleno con gente que se queda en la puerta a una iglesia medio vacía porque la entrada cuesta veinte euros.
+
+![Público en el concierto de clausura en Leiguarda, agosto de 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/08.jpg)
 
 ## Si quieres ayudar
 

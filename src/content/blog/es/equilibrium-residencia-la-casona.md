@@ -17,13 +17,19 @@ En una **residencia artística**, la música **nace aquí**.
 
 En **La Casona de Belmonte** reunimos a un grupo de artistas para trabajar *Equilibrium* durante varios días. Vinieron a **quedarse**: a ensayar por la mañana, a comer juntos, a discutir una frase musical después de cenar, a salir a mirar el paisaje que iban a interpretar.
 
+![The Rest Project en La Casona de Belmonte (Oviñana), 14 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/14.08.26_La%20casona%20de%20Belmonte_Fotos/14.08.26_La%20casona%20de%20Belmonte_WEB/14.08.26_La%20casona%20de%20Belmonte_WEB_4.jpg)
+
 Eso cambia el resultado más de lo que imaginas. Un músico que ha pasado tres días en un valle toca ese valle de otra manera. La luz, el ritmo del pueblo, los silencios largos de un sitio sin ruido de tráfico se meten en la interpretación sin que nadie lo decida a propósito. La música termina **oliendo al lugar donde se hizo.**
+
+![Daniel Claret (violonchelo) en La Casona de Belmonte, 14 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/14.08.26_La%20casona%20de%20Belmonte_Fotos/14.08.26_La%20casona%20de%20Belmonte_WEB/14.08.26_La%20casona%20de%20Belmonte_WEB_2.jpg)
 
 ## El proceso también es la obra
 
 En una residencia el **proceso** es tan importante como el estreno.
 
 Ahí se prueban ideas que quizá no salen, un intérprete se arriesga porque todavía no hay público juzgando y dos músicos que no se conocían encuentran una manera de tocar juntos. Una muestra de residencia como *Equilibrium* enseña **algo vivo, todavía caliente, con las costuras a la vista.**
+
+![Muestra de residencia de Equilibrium en La Casona de Belmonte, 14 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/14.08.26_La%20casona%20de%20Belmonte_Fotos/14.08.26_La%20casona%20de%20Belmonte_WEB/14.08.26_La%20casona%20de%20Belmonte_WEB_3.jpg)
 
 ## Por qué lo hacemos en el medio rural
 
@@ -32,6 +38,8 @@ Las hacemos aquí a propósito, por dos razones.
 La primera, por los artistas: **el medio rural es un laboratorio.** El silencio, el tiempo que se estira, la falta de distracciones son condiciones de trabajo que muchos creadores no encuentran en ningún otro sitio. Aquí se concentran de una manera que en la ciudad es imposible.
 
 La segunda, por el territorio: una residencia deja poso. Un grupo de artistas **convive** unos días con un pueblo, se cruza con los vecinos en la panadería y hace del sitio parte de su obra.
+
+![Público de la muestra en La Casona de Belmonte, 14 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/14.08.26_La%20casona%20de%20Belmonte_Fotos/14.08.26_La%20casona%20de%20Belmonte_WEB/14.08.26_La%20casona%20de%20Belmonte_WEB_1.jpg)
 
 ## Lo que se queda
 
