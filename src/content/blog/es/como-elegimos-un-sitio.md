@@ -23,6 +23,8 @@ Así que la primera pregunta es **¿cómo suena?** Se contesta de una manera muy
 
 Un espacio de piedra con reverberación larga es magnífico para música barroca y un problema para una pieza con muchas notas rápidas, que se convierte en papilla. Un espacio de madera es cálido y seco, ideal para formatos íntimos. Un espacio abierto no perdona nada. **La acústica se juzga según lo que quieres tocar.**
 
+![Interior del Monasterio de San Antolín de Bedón (Llanes) preparado para el concierto del 12 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/16.jpg)
+
 Por eso el sitio y el programa se eligen *juntos*.
 
 ## 2. Diálogo con el lugar
@@ -39,6 +41,8 @@ En esta fase se cae la mitad de los candidatos.
 
 ¿Hay **electricidad**? ¿Aguanta la instalación un equipo de sonido y luces, o salta el diferencial? ¿Se puede meter un **piano**, o hay tres escalones y una puerta estrecha que lo hacen imposible? ¿Hay **dónde aparcar**, dónde se cambian los músicos, dónde va el público si empieza a llover?
 
+![Montaje del invernadero para el concierto de clausura en Leiguarda, agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/image38.jpg)
+
 La pregunta más aburrida y más importante: **¿se puede sacar a todo el mundo con seguridad si pasa algo?**
 
 Si no se puede llegar, no cabe el instrumento o no se puede salir, el sitio se descarta.
@@ -51,6 +55,8 @@ Cómo llega la gente. Si va a encontrar el sitio de noche o va a estar dando vue
 
 Estas cosas parecen menores frente a la calidad artística, pero **un público incómodo escucha peor.** Alguien que ha pasado cuarenta minutos buscando aparcamiento y otros veinte de pie con frío no está en condiciones de dejarse conmover por nada.
 
+![Público con paraguas en la clausura de ADAR 2024 en Leiguarda](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/18_Concierto_de_clausura_en_el_Invernadero_de_cristal_Leiguarda_2024/image34.jpg)
+
 Cuidar la logística es parte del trabajo artístico.
 
 ## 5. El relato: ¿por qué aquí?
@@ -62,6 +68,8 @@ La pregunta es: **¿este concierto tiene sentido en este sitio, o podría ser en
 Si la respuesta es «podría ser en cualquier otro», no lo hacemos. Nuestro trabajo consiste en encontrar la combinación en la que **el lugar y la música se explican mutuamente.**
 
 Una tiorba barroca en una panera de un proyecto de permacultura. Bach entre las motos antiguas de un museo etnográfico. Un compositor que rescata folclore lituano en una iglesia de aldea asturiana. Música para el instante exacto de un eclipse, en un alto con horizonte limpio hacia el oeste.
+
+![Nacho Laguna (tiorba) en la panera de Susacasa Agrocultural, Gozón, 5 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.05_Susacasa%20Agrocultural_Fotos/25.08.05_Susacasa%20Agrocultural_WEB/25.08.05_Susacasa%20Agrocultural_WEB_3.jpg)
 
 Cuando esa conexión existe, **el público la nota.** Sale del concierto sabiendo que aquello solo podía haber pasado ahí.
 

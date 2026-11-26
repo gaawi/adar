@@ -21,11 +21,15 @@ Su función era albergar canto litúrgico varias veces al día, todos los días,
 
 El resultado es una **reverberación larga y envolvente**: el sonido no se apaga cuando el instrumento calla, sigue vivo un par de segundos más, mezclándose con lo siguiente. En un estudio de grabación eso se considera un defecto que hay que corregir. Para música escrita antes del siglo XIX, **es el medio natural.**
 
+![Concierto en la iglesia del Monasterio de Villanueva de Oscos, 14 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_Fotos/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB/25.08.14_Monasterio%20de%20Villanueva%20de%20Oscos_WEB_4.jpg)
+
 Cuando Bach o Boccherini escribieron su música, no existían los auditorios modernos. Existían iglesias, capillas, salones de palacio. Tocar en un monasterio es **devolver esa música a las condiciones acústicas para las que se pensó.**
 
 ## Obona: uno de los cenobios más antiguos de Asturias
 
 El **12 de agosto de 2025** llenamos el **Monasterio de Santa María la Real de Obona**, en Tineo, uno de los cenobios más antiguos de Asturias. **Aforo completo**, con los solistas del festival: Jone de la Fuente (violín), Almudena Arribas (viola), Natania Hoffman (violonchelo), Guillermo Laporta (flauta) y Josefina Urraca (piano). Sesenta y dos minutos de música.
+
+![Público en el Monasterio de Santa María la Real de Obona (Tineo), 12 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.12_Monasterio%20de%20Obona_Fotos/25.08.12_Monasterio%20de%20Obona_WEB/25.08.12_Monasterio%20de%20Obona_WEB_2.jpg)
 
 Obona está en el interior de Tineo, en el occidente asturiano, lejos de ciudades y autovías. Llenar un monasterio ahí, un martes de agosto, **con un concierto de cámara sin nombres de televisión**, es la clase de dato que desmonta el prejuicio de que en el campo no hay público para esto.
 
@@ -34,6 +38,8 @@ Obona está en el interior de Tineo, en el occidente asturiano, lejos de ciudade
 Hay un efecto que se nota en cuanto la gente entra y que no tiene nada que ver con la física.
 
 Un monasterio **impone un tipo de atención**. Ocurre solo, sin carteles de silencio. La gente baja la voz al pasar la puerta, mira hacia arriba, se sienta con cuidado. Después, durante la música, el silencio del público es de una calidad que en una sala normal cuesta muchísimo conseguir.
+
+![Público en el concierto visual del Monasterio de San Antolín de Bedón (Llanes), 8 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.08_Monasterio%20San%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_1.jpg)
 
 Creemos que es porque un edificio así **lleva escrito el paso del tiempo**. Estás sentado donde se ha estado sentando gente durante ocho o nueve siglos. Eso pone las cosas en perspectiva y calla a cualquiera.
 
@@ -46,6 +52,8 @@ La razón más importante es la menos poética.
 Muchos de estos monasterios tienen problemas de conservación, poco uso y visitas escasas. Y un edificio sin uso es un edificio que se cae. No hay presupuesto público que sostenga indefinidamente algo que a nadie le hace falta.
 
 **Programar un concierto en un monasterio es un acto de conservación**, aunque no toquemos una piedra. Lleva gente, genera fotografías y relato, aparece en prensa, obliga a que alguien lo abra, lo limpie y lo revise. Le da un motivo para existir en el presente.
+
+![Público a la entrada del Monasterio de San Antolín de Bedón (Llanes), 12 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/12_Concierto_en_el_Monasterio_de_San_Antolin_de_Bedon/1a9ed659-d6df-48c1-a612-486aee2c8449.jpg)
 
 Nuestros objetivos incluyen el **«patrimonio activado»**: reutilizar espacios rurales no convencionales o en desuso (hórreos, iglesias, monasterios, palacios, capillas, mercados). *Activado* quiere decir **usado.**
 

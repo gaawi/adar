@@ -19,9 +19,15 @@ Este es el recorrido, y lo que hemos aprendido dibujándolo.
 
 **Belmonte de Miranda** es la casa desde 2021. Leiguarda, la sede; el [Museo de las Ayalgas](/es/paseo-sonoro-en-el-museo-de-las-ayalgas-belmonte-de-miranda-2/) en Silviella; la [Panera Casantos](/es/micro-concierto-panera-casantos-leiguarda-2023/); [La Casona de Belmonte](/es/equilibrium-la-casona-de-belmonte/); el [Aula del Oro](/es/umbral-zero-aula-del-oro/); la [iglesia de Leiguarda](/es/paseo-sonoro-iglesia-de-leiguarda-2026/), que ha acogido conciertos, paseos sonoros, video-mapping y espichas de clausura. Aquí se ensaya todo el año y aquí vuelve todo.
 
+![The Rest Project en La Casona de Belmonte, Oviñana (Belmonte de Miranda), 14 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/14.08.26_La%20casona%20de%20Belmonte_Fotos/14.08.26_La%20casona%20de%20Belmonte_WEB/14.08.26_La%20casona%20de%20Belmonte_WEB_6.jpg)
+
 **Grado**, entre 2022 y 2024, con el [Palacio de Miranda-Valdecarzana](/es/concierto-en-el-palacio-de-miranda-valdecarzana-grado-2024-2/), la [Capilla de los Dolores](/es/concierto-y-performance-en-la-capilla-de-los-dolores-grado-2024/), el [Palacio de Fontela](/es/instalacion-palacio-fontela-grado-2024/) y hasta [un cubículo en desuso de la oficina de turismo](/es/instalacion-de-sarah-k-williams-en-la-oficina-de-turismo-grado/) convertido en sala de exposiciones.
 
+![Concierto en el patio del Palacio de Miranda-Valdecarzana, Grado, 12 de agosto de 2022](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/12_Concierto_en_el_Palacio_de_Miranda-Valdecarzana_Grado_2022/PXL_20220812_184841017.jpg)
+
 **El Franco**, en el occidente, con el Complejo Cultural As Quintas: [conciertos](/es/concierto-en-el-franco/), [paseos sonoros](/es/paseo-sonoro-el-franco/) y, en 2026, [The Rest is Silence](/es/the-rest-is-silence-el-franco/). Uno de los espacios con mejores condiciones técnicas de toda la red.
+
+![Concierto visual en el Complejo Cultural As Quintas, El Franco, 8 de agosto de 2022](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2022/08_Concierto_visual_en_El_Franco/PXL_20220808_201603027~2.jpg)
 
 **Tineo**, con el [Monasterio de Santa María la Real de Obona](/es/concierto-en-el-monasterio-de-obona-tineo/), uno de los cenobios más antiguos de Asturias, lleno hasta el aforo en 2025.
 
@@ -29,11 +35,15 @@ Este es el recorrido, y lo que hemos aprendido dibujándolo.
 
 **Llanes**, en el oriente, con el [Monasterio de San Antolín de Bedón](/es/the-whale-ballarte-en-el-monasterio-de-san-antolin-de-bedon/), donde apareció una ballena en la cima de una montaña.
 
+![The Whale, de Ballarte, en el Monasterio de San Antolín de Bedón (Llanes), 7 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.07_The%20Whale%20%C2%B7%20Monasterio%20S.%20Antol%C3%ADn%20de%20Bed%C3%B3n_Fotos/25.08.07_The%20Whale%20%C2%B7%20Monasterio%20S.%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB/25.08.07_The%20Whale%20%C2%B7%20Monasterio%20S.%20Antol%C3%ADn%20de%20Bed%C3%B3n_WEB_4.jpg)
+
 **Colunga**, con la [iglesia de Santa María de Sabada](/es/concierto-en-la-iglesia-de-santa-maria-de-sabada-colunga/) en Lastres y la [Sala Loreto](/es/concierto-visual-en-colunga-sala-loreto/).
 
 **Gozón**, con [Susacasa Agrocultural](/es/micro-concierto-en-susacasa-agrocultural/), un proyecto de permacultura donde una panera hace de sala de conciertos.
 
 **Somiedo**, Parque Natural y Reserva de la Biosfera, con su [mercado convertido en auditorio](/es/concierto-en-el-mercado-de-pola-de-somiedo/).
+
+![Concierto en Pola de Somiedo, 14 de agosto de 2024](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2024/14_Concierto_en_el_Mercado_de_Pola_de_Somiedo/Pola_01_00_23_07.jpg)
 
 **Taramundi**, en el extremo occidental, [el pueblo de la cuchillería artesana](/es/concierto-en-taramundi/).
 
@@ -64,6 +74,8 @@ Itinerar invierte esa relación. En vez de pedirle al territorio que venga, **va
 **Que volver vale más que llegar.** Los sitios donde hemos vuelto varias veces (Belmonte, El Franco, Salas) funcionan de otra manera. El público ya sabe que habrá otra edición, los espacios están rodados, los ayuntamientos saben lo que se les propone. **La confianza acumulada permite ser más ambicioso.** La noche de los tres eventos simultáneos en Grado, en 2024, solo fue posible porque no era el primer año allí. En 2026 no estrenamos ningún concejo: la edición entera se apoyó en relaciones ya construidas.
 
 **Que cada tipo de espacio enseña algo.** Los monasterios nos enseñaron acústica. Los hórreos, intimidad. Los mercados, cómo quitar la ceremonia. Los espacios abiertos, humildad ante el clima, y también que se puede tocar en un alto de monte mientras se apaga el sol en un eclipse total.
+
+![Concierto del eclipse en el Alto de La Corredoria (Belmonte de Miranda), 12 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_5.jpg)
 
 **Y que el mapa es un argumento.** Catorce concejos en seis años es un dato que se puede enseñar. Demuestra que esto es **una red estable** con relaciones sostenidas en el tiempo.
 

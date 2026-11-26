@@ -11,6 +11,8 @@ tags: ["Braña Sonora", "patrimonio inmaterial", "cultura vaqueira", "tonada", "
 
 En los concejos donde trabaja ADAR hay una música que no sale en ningún programa de mano: el ganado subiendo a la braña, el golpe de la madera en un hórreo, una tonada cantada en la cocina. Es patrimonio. Lo guarda la gente, y mucha de esa gente es mayor.
 
+![Prado con niebla en el entorno de Leiguarda (Belmonte de Miranda)](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_3514.JPG)
+
 **Braña Sonora** es nuestro proyecto para escucharlo, grabarlo y devolverlo. Es paralelo al festival, con su propio equipo y presupuesto, y cuenta con una ayuda del **Ministerio de Cultura** para proyectos de salvaguarda del Patrimonio Cultural Inmaterial. Va de julio de 2026 a diciembre de 2027.
 
 ## Tres cosas que queremos escuchar
@@ -19,11 +21,15 @@ En los concejos donde trabaja ADAR hay una música que no sale en ningún progra
 
 **El paisaje sonoro de los hórreos, las paneras y los oficios.** La construcción en piedra seca está en la Lista Representativa del Patrimonio Inmaterial de la UNESCO desde 2018. En Asturias está en hórreos, paneras, brañas, cabanos y muros.
 
+![Corredor de un hórreo frente a los montes, en Leiguarda (Belmonte de Miranda)](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_3684.JPG)
+
 **La memoria oral musical.** La asturianada, o tonada, es Bien de Interés Cultural desde 2015.
 
 ## Por qué ahora
 
 En muchas aldeas del occidente y de la montaña la población ha caído más de un 30 % en veinticinco años y la edad media pasa de los 65. Se han cerrado escuelas y lugares de encuentro. Lo que no se graba ahora, con quienes lo vivieron, se pierde.
+
+![Casas y montes de Leiguarda (Belmonte de Miranda)](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4426.JPG)
 
 ## Qué vamos a hacer
 

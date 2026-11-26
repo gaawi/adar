@@ -23,6 +23,8 @@ Cuando en un territorio no pasa nada (ni un concierto, ni una exposición, ni un
 
 Esa idea es corrosiva. Un chaval que crece con ella aprende que para vivir cosas buenas hay que marcharse. Y termina marchándose, no solo por el trabajo, sino por la sensación de estar de más en su propio paisaje.
 
+![Dos hombres sentados en un muro durante el concierto visual de clausura en Leiguarda, 13 de agosto de 2023](https://creartbox-media-cdn.b-cdn.net/adarimages/ADAR_Eventos/2023/13_Concierto_visual_de_clausura_en_Leiguarda_2023/02.jpg)
+
 El acceso a la cultura no es un lujo que llega _después_ de arreglar lo demás. Es parte de lo que hace que un sitio sea habitable. Un lugar donde ocurren cosas hermosas es un lugar donde apetece quedarse.
 
 ## Lo que un festival sí puede hacer (y lo que no)
@@ -35,10 +37,16 @@ Lo que sí puede hacer un festival es más modesto y, creemos, nada pequeño:
 - **Darle a un vecino la experiencia de vivir algo extraordinario sin coger el coche una hora.** Que por una vez lo importante pase _aquí_.
 - **Cambiar el relato.** Que cuando alguien piense en estas aldeas no piense solo en despoblación, sino también en aquel concierto imposible, en aquel eclipse, en aquella iglesia llena.
 
+![Público en el Monasterio de Santa María la Real de Obona (Tineo), 12 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.12_Monasterio%20de%20Obona_Fotos/25.08.12_Monasterio%20de%20Obona_WEB/25.08.12_Monasterio%20de%20Obona_WEB_3.jpg)
+
 ## Llenar, aunque sea por una noche
 
 Cada vez que una iglesia de aldea se llena para escuchar música, ese pueblo, esa noche, no está vacío. Está exactamente al revés: está en el centro de algo.
 
+![La iglesia de Leiguarda llena en el recital de Andrea Casarrubios, 16 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.16_Iglesia%20de%20Leiguarda_Fotos/25.08.16_Iglesia%20de%20Leiguarda_WEB/25.08.16_Iglesia%20de%20Leiguarda_WEB_3.jpg)
+
 No es un truco de marketing. Es una manera de plantar una idea: **que este territorio merece cosas buenas, y que puede tenerlas.** Si esa idea prende en unos cuantos (un vecino que se anima, un chaval que decide estudiar música, un ayuntamiento que apuesta por la cultura), habremos hecho mucho más que un concierto.
+
+![Concierto del eclipse en el Alto de La Corredoria (Belmonte de Miranda), 12 de agosto de 2026](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2026/13.08.26_Eclipse_Fotos/13.08.26_Eclipse_WEB/13.08.26_Eclipse_WEB_4.jpg)
 
 La España vaciada existe. Pero hay noches, en Belmonte, en Leiguarda, en un alto de monte, en las que se vacía un poco menos. Nosotros trabajamos para que haya más de esas noches. Y para que, algún día, dejen de ser la excepción.

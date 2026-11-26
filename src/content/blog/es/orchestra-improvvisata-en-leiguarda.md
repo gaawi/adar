@@ -19,13 +19,19 @@ La herramienta es el **Ritmo con Señas**, creado por el músico argentino **San
 
 Es un **lenguaje** de señas hechas con las manos, los brazos y el cuerpo, que sirve para coordinar una improvisación en grupo. Es un **juego**, porque se juega en equipo: hay quien dirige y hay quien improvisa, y cada uno trae sus ritmos y sus ideas. Y es un **sistema pedagógico**: para tocar basta con escuchar, aunque no sepas leer música.
 
+![Sesiones de Orchestra Improvvisata en Italia y otros lugares](https://raw.githubusercontent.com/gaawi/editorial-cola/main/imagenes/orchestra-improvvisata-collage.jpg)
+
 ## La belleza de tocar a la vez
 
 Para Orchestra Improvvisata, cuando todas las personas que improvisan consiguen expresarse al mismo tiempo, lo que suena (sea lo que sea) es, para ellas y en ese momento, la música más bonita del mundo. Es una idea que encaja con lo que buscamos en ADAR: que la música sea algo que se hace en común.
 
+![Público con bolas de luz en el paseo sonoro de Leiguarda, 9 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.09_Horreo%20Casantos%20y%20alrededores_Fotos/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB/25.08.09_Horreo%20Casantos%20y%20alrededores_WEB_3.jpg)
+
 ## Su residencia en ADAR
 
 El grupo viene a nuestra sede de Leiguarda dentro de la residencia que financia **Culture Moves Europe**, el programa de movilidad de Europa Creativa de la Unión Europea, implementado por el Goethe-Institut.
+
+![Interior de Leiguarda 47, la sede de ADAR](https://creartbox-media-cdn.b-cdn.net/adarimages/residency/IMG_4388.JPG)
 
 Contaremos las fechas y las actividades abiertas en cuanto estén cerradas.
 

@@ -21,6 +21,8 @@ Un cuchillo de Taramundi y una sonata de Telemann tienen mucho en común, aunque
 
 **Los dos se aprenden con las manos.** A forjar se aprende forjando, igual que a tocar se aprende tocando. Hay que hacerlo miles de veces, corrigiendo con el cuerpo lo que la cabeza no sabe explicar.
 
+![Flauta y violín en el concierto de la iglesia de Taramundi, 13 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_3.jpg)
+
 **Los dos se transmiten de persona a persona.** El cuchillero aprendió de otro cuchillero; el violinista, de otro violinista. Es una cadena de transmisión directa, con siglos de longitud, donde el conocimiento pasa por imitación y corrección.
 
 **Los dos son técnica al servicio de algo que además tiene que ser bello.** Un cuchillo que corta pero es feo está mal hecho. Una interpretación técnicamente impecable que no dice nada, también.
@@ -32,6 +34,8 @@ Cuando un quinteto toca en la iglesia de un pueblo de artesanos, el encuentro es
 ## El programa: tres siglos y tres países
 
 **Telemann**, alemán del barroco, prolífico y luminoso: el artesano perfecto de la música, alguien que produjo con una regularidad de taller.
+
+![Concierto en la iglesia de Taramundi, 13 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_2.jpg)
 
 **Falla**, español, el compositor que cogió el folclore de su tierra y lo convirtió en música de concierto sin desactivarlo. En un pueblo del occidente asturiano, con su propia tradición, esa operación se entiende sin explicación.
 
@@ -50,6 +54,8 @@ Nuestra red territorial se ha ido extendiendo justamente hacia allí: El Franco,
 ## Lo que queda
 
 Un concierto de una hora en la iglesia de un pueblo de dos mil habitantes deja una idea flotando.
+
+![Un espectador graba con el móvil el concierto en la iglesia de Taramundi, 13 de agosto de 2025](https://creartbox-archive.b-cdn.net/adarimages/ADAR_Eventos/2025/25.08.13_Iglesia%20de%20Taramundi_Fotos/25.08.13_Iglesia%20de%20Taramundi_WEB/25.08.13_Iglesia%20de%20Taramundi_WEB_5.jpg)
 
 La idea es esta: **si aquí se hacen los mejores cuchillos artesanos de España, aquí también puede sonar Mussorgsky.**
 
