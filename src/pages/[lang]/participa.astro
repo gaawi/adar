@@ -9,7 +9,8 @@ import Hero from '../../components/Hero.astro';
 import ConvocatoriaCard from '../../components/ConvocatoriaCard.astro';
 import type { Lang } from '../../i18n/strings.ts';
 import { LANGS } from '../../i18n/strings.ts';
-import { porEstado, archivo } from '../../data/convocatorias.ts';
+import IconoFamilia from '../../components/IconoFamilia.astro';
+import { FAMILIAS, deFamilia, archivo } from '../../data/convocatorias.ts';
 
 export function getStaticPaths() {
   return LANGS.map((lang) => ({ params: { lang } }));
@@ -25,10 +26,7 @@ const COPY = {
     eyebrow: 'Formas de entrar en ADAR',
     lede: 'Todas las convocatorias del festival en una sola página, con su estado y su plazo. Si buscas la forma de trabajar con nosotros, empieza aquí.',
     intro1: 'ADAR no tiene una única puerta. Se puede entrar proponiendo un concierto, pidiendo una residencia, cediendo un hórreo para que suene música dentro, o trayendo a tu festival a músicos de aquí. Cada vía tiene sus condiciones y su calendario, y están todas abajo.',
-    abiertas: 'Abiertas ahora',
-    abiertasSub: 'Se puede solicitar hoy.',
-    proximas: 'Próximamente',
-    proximasSub: 'Anunciadas, todavía sin abrir. Aquí se avisa cuando abren.',
+    indice: 'Qué quieres hacer',
     colabH: 'Colaboraciones e intercambios',
     colabP1: 'Este canal es para instituciones culturales, festivales, salas, agencias, patrocinadores y coproducciones. Si escribes como artista, la vía es la de propuestas artísticas.',
     colabP2: 'El formato que mejor nos funciona y que casi nadie propone es el intercambio: un grupo viene a tocar a ADAR y, a cambio, músicos del festival tocan en tu sala, tu ciclo o tu festival. El viaje se reparte entre dos programaciones en vez de caer entero sobre una, y los dos abrimos circuito. Da igual dónde estéis.',
@@ -52,10 +50,7 @@ const COPY = {
     eyebrow: 'Ways into ADAR',
     lede: 'Every open call the festival runs, on one page, with its status and its deadline. If you are looking for a way to work with us, start here.',
     intro1: 'ADAR does not have a single door. You can come in by proposing a concert, by asking for a residency, by lending a hórreo so that music can be played inside it, or by bringing musicians from here to your own festival. Each route has its own conditions and its own calendar, and they are all below.',
-    abiertas: 'Open now',
-    abiertasSub: 'You can apply today.',
-    proximas: 'Coming soon',
-    proximasSub: 'Announced, not open yet. This is where we say when they open.',
+    indice: 'What do you want to do',
     colabH: 'Partnerships and exchanges',
     colabP1: 'This channel is for cultural institutions, festivals, venues, agencies, sponsors and co-productions. If you are writing as an artist, the route is the artistic proposals one.',
     colabP2: 'The format that works best for us, and that almost nobody proposes, is the exchange: a group comes to play at ADAR and, in return, festival musicians play at your venue, your series or your festival. The travel is shared between two programmes instead of falling on one, and both of us open up our circuit. It does not matter where you are.',
@@ -79,10 +74,7 @@ const COPY = {
     eyebrow: 'Formes d’entrar n’ADAR',
     lede: 'Toles convocatories del festival nuna sola páxina, col so estáu y el so plazu. Si busques la manera de trabayar con nós, entama equí.',
     intro1: 'ADAR nun tien una sola puerta. Puede entrase proponiendo un conciertu, pidiendo una residencia, dexando un hórreu pa que suene música dientro, o llevando al to festival músicos d’equí. Cada vía tien les sos condiciones y el so calendariu, y tán toes embaxo.',
-    abiertas: 'Abiertes agora',
-    abiertasSub: 'Puede solicitase güei.',
-    proximas: 'Próximamente',
-    proximasSub: 'Anunciaes, entá ensin abrir. Equí avísase cuando abren.',
+    indice: 'Qué quies facer',
     colabH: 'Collaboraciones ya intercambios',
     colabP1: 'Esti canal ye pa instituciones culturales, festivales, sales, axencies, patrocinadores y coproducciones. Si escribes como artista, la vía ye la de propuestes artístiques.',
     colabP2: 'El formatu que meyor mos funciona y que casi naide propón ye l’intercambiu: un grupu vien a tocar a ADAR y, a cambiu, músicos del festival toquen na to sala, nel to ciclu o nel to festival. El viaxe repártese ente dos programaciones en cuenta de cayer enteru sobre una, y los dos abrimos circuitu. Da igual ónde téis.',
@@ -103,9 +95,29 @@ const COPY = {
   },
 }[lang];
 
-const abiertas = porEstado('abierta', 'permanente');
-const proximas = porEstado('proxima');
+// Una sección por familia, en el orden de FAMILIAS, y dentro de cada una las
+// abiertas primero. Las que ya cerraron van juntas al final, también por
+// familia, para que el archivo se lea con el mismo mapa que el resto.
+const secciones = FAMILIAS.map((f) => ({
+  ...f,
+  items: deFamilia(f.id, 'abierta', 'permanente', 'proxima'),
+})).filter((f) => f.items.length > 0);
+
+// Dos familias conservan el ancla que ya estaba enlazada desde las tarjetas
+// y desde el menú, para no romper enlaces.
+const ANCLA: Record<string, string> = {
+  programacion: 'programacion',
+  residencias: 'residencias',
+  territorio: 'territorio',
+  colaboracion: 'colaboraciones',
+  equipo: 'trabajar',
+};
+
 const cerradas = archivo();
+const archivoPorFamilia = FAMILIAS.map((f) => ({
+  ...f,
+  items: cerradas.filter((c) => c.familia === f.id),
+})).filter((f) => f.items.length > 0);
 
 const translations = Object.fromEntries(LANGS.map((l) => [l, `/${l}/participa/`]));
 
@@ -141,53 +153,60 @@ function asunto(s: string) {
       </div>
     </section>
 
-    <section class="ed-section" id="abiertas">
+    <!-- Índice: el atajo para quien ya sabe a qué viene. -->
+    <section class="ed-section pt-indice-sec">
       <div class="ed-wrap">
-        <div class="ed-head">
-          <h2>{COPY.abiertas}</h2>
-          <p class="ed-lede">{COPY.abiertasSub}</p>
-        </div>
-        <div class="cv-grid">
-          {abiertas.map((c) => <ConvocatoriaCard c={c} lang={lang} />)}
-        </div>
+        <p class="pt-indice-h">{COPY.indice}</p>
+        <ul class="pt-indice">
+          {secciones.map((f) => (
+            <li>
+              <a href={`#${ANCLA[f.id]}`}>
+                <IconoFamilia familia={f.id} size={20} />
+                <span>{f.titulo[lang]}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
 
-    <section class="ed-section" id="proximamente">
-      <div class="ed-wrap">
-        <div class="ed-head">
-          <h2>{COPY.proximas}</h2>
-          <p class="ed-lede">{COPY.proximasSub}</p>
-        </div>
-        <div class="cv-grid">
-          {proximas.map((c) => <ConvocatoriaCard c={c} lang={lang} />)}
-        </div>
-      </div>
-    </section>
+    {secciones.map((f) => (
+      <section class="ed-section pt-fam" id={ANCLA[f.id]}>
+        <div class="ed-wrap">
+          <div class="ed-head pt-fam-head">
+            <span class="pt-fam-ic"><IconoFamilia familia={f.id} size={30} /></span>
+            <h2>{f.titulo[lang]}</h2>
+            <p class="ed-lede">{f.sub[lang]}</p>
+          </div>
 
-    <section class="ed-section" id="colaboraciones">
-      <div class="ed-wrap">
-        <div class="ed-head"><h2>{COPY.colabH}</h2></div>
-        <p class="ed-prose">{COPY.colabP1}</p>
-        <p class="ed-prose">{COPY.colabP2}</p>
-        <p class="ed-prose">
-          {COPY.colabP3} <a href={asunto(COPY.colabSubject)}>{EMAIL}</a>, {COPY.colabAsunto}
-          <strong>{COPY.colabSubject}</strong>.
-        </p>
-        <p class="ed-prose pt-nota">{COPY.colabNota}</p>
-      </div>
-    </section>
+          <div class="cv-grid">
+            {f.items.map((c) => <ConvocatoriaCard c={c} lang={lang} />)}
+          </div>
 
-    <section class="ed-section" id="trabajar">
-      <div class="ed-wrap">
-        <div class="ed-head"><h2>{COPY.trabajoH}</h2></div>
-        <p class="ed-prose">{COPY.trabajoP}</p>
-        <p class="ed-prose">
-          {COPY.trabajoP2} <a href={asunto(COPY.trabajoSubject)}>{EMAIL}</a>, {COPY.trabajoAsunto}
-          <strong>{COPY.trabajoSubject}</strong>.
-        </p>
-      </div>
-    </section>
+          {f.id === 'colaboracion' && (
+            <div class="pt-extra">
+              <p class="ed-prose">{COPY.colabP1}</p>
+              <p class="ed-prose">{COPY.colabP2}</p>
+              <p class="ed-prose">
+                {COPY.colabP3} <a href={asunto(COPY.colabSubject)}>{EMAIL}</a>, {COPY.colabAsunto}
+                <strong>{COPY.colabSubject}</strong>.
+              </p>
+              <p class="ed-prose pt-nota">{COPY.colabNota}</p>
+            </div>
+          )}
+
+          {f.id === 'equipo' && (
+            <div class="pt-extra">
+              <p class="ed-prose">{COPY.trabajoP}</p>
+              <p class="ed-prose">
+                {COPY.trabajoP2} <a href={asunto(COPY.trabajoSubject)}>{EMAIL}</a>, {COPY.trabajoAsunto}
+                <strong>{COPY.trabajoSubject}</strong>.
+              </p>
+            </div>
+          )}
+        </div>
+      </section>
+    ))}
 
     <section class="ed-section" id="archivo">
       <div class="ed-wrap">
@@ -195,9 +214,17 @@ function asunto(s: string) {
           <h2>{COPY.archivoH}</h2>
           <p class="ed-lede">{COPY.archivoSub}</p>
         </div>
-        <div class="cv-grid">
-          {cerradas.map((c) => <ConvocatoriaCard c={c} lang={lang} />)}
-        </div>
+        {archivoPorFamilia.map((f) => (
+          <div class="pt-arch-fam">
+            <p class="pt-arch-h">
+              <IconoFamilia familia={f.id} size={17} />
+              <span>{f.titulo[lang]}</span>
+            </p>
+            <div class="cv-grid">
+              {f.items.map((c) => <ConvocatoriaCard c={c} lang={lang} />)}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
 
@@ -226,4 +253,72 @@ function asunto(s: string) {
      del contenido. Aquí las secciones ya traen el suyo. */
   body.page .entry-content > div > .pt-doc > section { padding: 0; }
   body.page .entry-content .pt-doc .pt-top { padding-top: 0; }
+
+  /* ── Índice de familias ──────────────────────────────────────────── */
+  body.page .entry-content .pt-doc .pt-indice-h {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 14px;
+  }
+  body.page .entry-content .pt-doc .pt-indice {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  /* El tema heredado pone `list-style: square` en el propio <li>, así que
+     ponérselo al <ul> no basta: el cuadradito lo dibuja el ::marker del li. */
+  body.page .entry-content .pt-doc .pt-indice li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  body.page .entry-content .pt-doc .pt-indice li::before,
+  body.page .entry-content .pt-doc .pt-indice li::marker { content: none; }
+  body.page .entry-content .pt-doc .pt-indice a {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border: 1px solid var(--line, rgba(10, 9, 7, 0.22));
+    padding: 9px 15px 9px 12px;
+    text-decoration: none;
+    color: var(--ink, #0a0907);
+    font-size: 14.5px;
+    line-height: 1.25;
+  }
+  body.page .entry-content .pt-doc .pt-indice a:hover {
+    background: var(--ink, #0a0907);
+    color: #fff;
+  }
+
+  /* ── Cabecera de cada familia ────────────────────────────────────── */
+  body.page .entry-content .pt-doc .pt-fam-head { position: relative; }
+  body.page .entry-content .pt-doc .pt-fam-ic {
+    display: block;
+    margin: 0 0 12px;
+    color: var(--ink, #0a0907);
+  }
+  body.page .entry-content .pt-doc .pt-extra { margin-top: 26px; }
+
+  /* ── Archivo, agrupado también por familia ───────────────────────── */
+  body.page .entry-content .pt-doc .pt-arch-fam { margin: 0 0 30px; }
+  body.page .entry-content .pt-doc .pt-arch-fam:last-child { margin-bottom: 0; }
+  body.page .entry-content .pt-doc .pt-arch-h {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 13px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line, rgba(10, 9, 7, 0.14));
+  }
 </style>

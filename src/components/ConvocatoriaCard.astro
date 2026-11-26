@@ -3,6 +3,7 @@
 // de la página de residencias, así que el estilo vive aquí y no en cada página.
 import type { Lang } from '../i18n/strings.ts';
 import { ETIQUETA, diasRestantes, type Convocatoria } from '../data/convocatorias.ts';
+import IconoFamilia from './IconoFamilia.astro';
 
 interface Props {
   c: Convocatoria;
@@ -22,7 +23,10 @@ const restan = dias !== null && dias >= 0
 ---
 
 <article class={`cv-card cv-${c.estado}${compacta ? ' cv-compacta' : ''}`}>
-  <p class="cv-chip">{ETIQUETA[c.estado][lang]}</p>
+  <p class="cv-chip">
+    <IconoFamilia familia={c.familia} size={15} />
+    <span>{ETIQUETA[c.estado][lang]}</span>
+  </p>
   <h3 class="cv-title">
     {href ? <a href={href}>{c.titulo[lang]}</a> : c.titulo[lang]}
   </h3>
@@ -60,6 +64,9 @@ const restan = dias !== null && dias >= 0
     text-transform: uppercase;
     margin: 0 0 9px;
     color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 7px;
   }
   body .entry-content .cv-card.cv-permanente .cv-chip,
   body .entry-content .cv-card.cv-abierta .cv-chip { color: #1d6b3f; }
@@ -122,7 +129,9 @@ const restan = dias !== null && dias >= 0
   /* Rejilla reutilizable para los grupos de tarjetas. */
   body .entry-content .cv-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    /* auto-fill y no auto-fit: con una sola tarjeta, auto-fit la estiraba a
+       los 1200px del contenido y quedaba ridícula. */
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
     gap: 18px;
     margin: 0;
     padding: 0;

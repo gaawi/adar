@@ -19,8 +19,91 @@ import type { Lang } from '../i18n/strings.ts';
  */
 export type Estado = 'permanente' | 'abierta' | 'proxima' | 'cerrada';
 
-/** Para agrupar en la página: cada vía es de una familia. */
-export type Familia = 'residencias' | 'programacion' | 'territorio' | 'equipo';
+/**
+ * Para agrupar en la página: cada vía es de una familia. La familia es el
+ * «de qué va esto», y es lo primero que mira quien llega: se entra a tocar,
+ * a trabajar una temporada, a poner un hórreo, a programar juntos o a
+ * trabajar en el equipo. El estado (abierta, próxima, cerrada) va después.
+ */
+export type Familia =
+  | 'programacion'
+  | 'residencias'
+  | 'territorio'
+  | 'colaboracion'
+  | 'equipo';
+
+/** Orden en que se presentan las familias y cómo se llaman. */
+export const FAMILIAS: {
+  id: Familia;
+  titulo: Record<Lang, string>;
+  sub: Record<Lang, string>;
+}[] = [
+  {
+    id: 'programacion',
+    titulo: {
+      es: 'Tocar en el festival',
+      en: 'Playing at the festival',
+      ast: 'Tocar nel festival',
+    },
+    sub: {
+      es: 'Para artistas y grupos que quieran estar en la programación.',
+      en: 'For artists and groups who want to be in the programme.',
+      ast: 'Pa artistes y grupos que quieran tar na programación.',
+    },
+  },
+  {
+    id: 'residencias',
+    titulo: {
+      es: 'Venir a trabajar en residencia',
+      en: 'Coming to work in residence',
+      ast: 'Venir a trabayar en residencia',
+    },
+    sub: {
+      es: 'Tiempo y espacio en Leiguarda para crear, investigar y ensayar.',
+      en: 'Time and space in Leiguarda to create, research and rehearse.',
+      ast: 'Tiempu y espaciu en Lleiguarda pa crear, investigar y ensayar.',
+    },
+  },
+  {
+    id: 'territorio',
+    titulo: {
+      es: 'Poner tu espacio',
+      en: 'Offering your space',
+      ast: 'Poner el to espaciu',
+    },
+    sub: {
+      es: 'Para quien tenga un hórreo, una panera o un lugar donde pueda sonar música.',
+      en: 'For anyone with an hórreo, a panera or a place where music can be played.',
+      ast: 'Pa quien tenga un hórreu, una panera o un llugar onde pueda sonar música.',
+    },
+  },
+  {
+    id: 'colaboracion',
+    titulo: {
+      es: 'Programar juntos',
+      en: 'Programming together',
+      ast: 'Programar xuntos',
+    },
+    sub: {
+      es: 'Festivales, salas, instituciones, agencias y patrocinadores.',
+      en: 'Festivals, venues, institutions, agencies and sponsors.',
+      ast: 'Festivales, sales, instituciones, axencies y patrocinadores.',
+    },
+  },
+  {
+    id: 'equipo',
+    titulo: {
+      es: 'Trabajar en ADAR',
+      en: 'Working at ADAR',
+      ast: 'Trabayar n’ADAR',
+    },
+    sub: {
+      es: 'Prácticas y puestos en producción, comunicación y documentación.',
+      en: 'Internships and roles in production, communication and documentation.',
+      ast: 'Práutiques y puestos en producción, comunicación y documentación.',
+    },
+  },
+];
 
 export interface Convocatoria {
   id: string;
@@ -122,7 +205,7 @@ export const CONVOCATORIAS: Convocatoria[] = [
   },
   {
     id: 'colaboraciones',
-    familia: 'programacion',
+    familia: 'colaboracion',
     estado: 'permanente',
     titulo: {
       es: 'Colaboraciones e intercambios',
@@ -242,6 +325,37 @@ export const CONVOCATORIAS: Convocatoria[] = [
       ast: '/ast/concursu-dhorreos-y-paneres/',
     },
     cta: { es: 'Ver las bases', en: 'See the rules', ast: 'Ver les bases' },
+  },
+  {
+    id: 'equipo-practicas',
+    familia: 'equipo',
+    estado: 'proxima',
+    titulo: {
+      es: 'Prácticas y puestos en el equipo',
+      en: 'Internships and roles in the team',
+      ast: 'Práutiques y puestos nel equipu',
+    },
+    paraQuien: {
+      es: 'Estudiantes y profesionales de producción, comunicación y documentación.',
+      en: 'Students and professionals in production, communication and documentation.',
+      ast: 'Estudiantes y profesionales de producción, comunicación y documentación.',
+    },
+    que: {
+      es: 'A lo largo del año abrimos plazas de prácticas y buscamos gente para producir el festival, llevar la comunicación y documentar lo que pasa. Cuando haya una plaza aparece aquí.',
+      en: 'Over the year we open internship places and look for people to produce the festival, run its communication and document what happens. When there is a role it appears here.',
+      ast: 'A lo llargo del añu abrimos places de práutiques y buscamos xente pa producir el festival, llevar la comunicación y documentar lo que pasa. Cuando haya una plaza apaez equí.',
+    },
+    cuando: {
+      es: 'Sin plazas abiertas ahora mismo. Se puede mandar candidatura espontánea.',
+      en: 'No places open at the moment. Spontaneous applications are welcome.',
+      ast: 'Ensin places abiertes agora mesmo. Puede unviase candidatura espontánea.',
+    },
+    href: { es: '#trabajar', en: '#trabajar', ast: '#trabajar' },
+    cta: {
+      es: 'Mandar candidatura',
+      en: 'Send an application',
+      ast: 'Unviar candidatura',
+    },
   },
 
   // ── ARCHIVO ──────────────────────────────────────────────────────────
