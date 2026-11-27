@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import type { Lang } from '../../i18n/strings.ts';
 import { RECAPS } from '../../data/recaps.ts';
+import { ETIQUETA, diasRestantes, porEstado } from '../../data/convocatorias.ts';
 
 interface Props {
   lang: Lang;
@@ -664,37 +665,55 @@ const FUNDERS: { name: string; logo: string; href: string }[] = [
   { name: 'Principado de Asturias', logo: '/logos/asturias.png', href: 'https://www.asturias.es/' },
 ];
 
-// Enlaces y copy para el modo POST-FESTIVAL (la VI edición ya terminó).
-// Convocatoria de residencias 2026-27. La página existe en español e inglés;
-// en asturiano se manda a la española, que es la que se entiende.
-const CALL_HREF: Record<Lang, string> = {
-  es: '/es/convocatoria-residencias-2026-27/',
-  en: '/en/artist-residency-open-call-2026-27/',
-  ast: '/es/convocatoria-residencias-2026-27/',
-};
-const CALL = {
+// Bloque de convocatoria de la portada.
+//
+// Antes llevaba escrita a mano la residencia de Culture Moves Europe, que
+// cerró el 28 de septiembre de 2026 y siguió semanas anunciándose como
+// abierta en la portada. Ahora sale de src/data/convocatorias.ts:
+//
+//   · si hay una convocatoria con plazo de verdad, la portada la enseña;
+//   · si no hay ninguna, lleva a /participa/.
+//
+// Las permanentes y las «próximas» no cuentan: la portada es para lo que
+// corre prisa, y una convocatoria sin plazo no la tiene.
+const conPlazo = porEstado('abierta')[0];
+const diasCall = conPlazo ? diasRestantes(conPlazo) : null;
+
+const CALL_FALLBACK = {
   es: {
-    eyebrow: 'Convocatoria abierta · Culture Moves Europe',
-    h: 'Residencia artística internacional',
-    lede: 'Buscamos un grupo de 4-5 artistas o profesionales de la cultura que residan legalmente fuera de España para una residencia de 21 a 30 días en Leiguarda. Alojamiento, 30 € al día por persona y ayuda de viaje.',
-    deadline: 'Plazo: 28 de septiembre de 2026',
-    cta: 'Ver la convocatoria',
+    eyebrow: 'Participa',
+    h: 'Formas de entrar en ADAR',
+    lede: 'Proponer un concierto, pedir una residencia, ceder un hórreo para que suene música dentro o traer a tu festival a músicos de aquí. Cada vía tiene su página, con sus condiciones y su plazo.',
+    cta: 'Ver todas las convocatorias',
   },
   en: {
-    eyebrow: 'Open call · Culture Moves Europe',
-    h: 'International artist residency',
-    lede: 'We are looking for a group of 4–5 artists or cultural professionals legally resident outside Spain, for a 21–30 day residency in Leiguarda. Accommodation, €30 a day each and a travel allowance.',
-    deadline: 'Deadline: 28 September 2026',
-    cta: 'Read the open call',
+    eyebrow: 'Take part',
+    h: 'Ways into ADAR',
+    lede: 'Propose a concert, ask for a residency, lend an hórreo so music can be played inside it, or bring musicians from here to your own festival. Each route has its own page, conditions and deadline.',
+    cta: 'See all the open calls',
   },
   ast: {
-    eyebrow: 'Convocatoria abierta · Culture Moves Europe',
-    h: 'Residencia artística internacional',
-    lede: 'Buscamos un grupu de 4-5 artistes o profesionales de la cultura que residan llegalmente fuera d\'España pa una residencia de 21 a 30 díes en Leiguarda. Aloxamientu, 30 € al día por persona y ayuda de viaxe.',
-    deadline: 'Plazu: 28 de setiembre de 2026',
-    cta: 'Ver la convocatoria',
+    eyebrow: 'Participa',
+    h: 'Formes d’entrar n’ADAR',
+    lede: 'Proponer un conciertu, pidir una residencia, dexar un hórreu pa que suene música dientro o llevar al to festival músicos d’equí. Cada vía tien la so páxina, coles sos condiciones y el so plazu.',
+    cta: 'Ver toles convocatories',
   },
 }[lang];
+
+const CALL = conPlazo
+  ? {
+      eyebrow: ETIQUETA.abierta[lang],
+      h: conPlazo.titulo[lang],
+      lede: conPlazo.que[lang],
+      deadline:
+        diasCall !== null && diasCall >= 0
+          ? `${conPlazo.cuando[lang]} · ${{ es: `quedan ${diasCall} días`, en: `${diasCall} days left`, ast: `queden ${diasCall} díes` }[lang]}`
+          : conPlazo.cuando[lang],
+      cta: conPlazo.cta?.[lang] ?? CALL_FALLBACK.cta,
+    }
+  : { ...CALL_FALLBACK, deadline: '' };
+
+const CALL_HREF = conPlazo?.href?.[lang] ?? `/${lang}/participa/`;
 
 const AMIGOS_HREF: Record<Lang, string> = {
   es: '/es/amigos-del-festival/',
@@ -910,15 +929,15 @@ const LIVED: { slug: string; img: string; wide?: boolean; cap: Record<Lang, stri
        CIERRE · gracias VI edición
        ============================================ -->
   <!-- ============================================
-       CONVOCATORIA · residencias 2026-27
+       CONVOCATORIA · lo que esté abierto, o /participa/
        ============================================ -->
   <section class="hm-call" aria-labelledby="hm-call-h">
     <div class="hm-call-inner">
       <span class="hm-call-eyebrow mono">{CALL.eyebrow}</span>
       <h2 class="hm-call-h" id="hm-call-h">{CALL.h}</h2>
       <p class="hm-call-lede">{CALL.lede}</p>
-      <p class="hm-call-date mono">{CALL.deadline}</p>
-      <a class="hm-call-cta" href={CALL_HREF[lang]}>{CALL.cta} <span aria-hidden="true">→</span></a>
+      {CALL.deadline && <p class="hm-call-date mono">{CALL.deadline}</p>}
+      <a class="hm-call-cta" href={CALL_HREF}>{CALL.cta} <span aria-hidden="true">→</span></a>
     </div>
   </section>
 
